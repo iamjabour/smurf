@@ -1,0 +1,2476 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<script >
+<!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i&amp;amp;amp;lt;CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") &amp;amp;amp;gt; 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers &amp;amp;amp;lt; 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i&amp;amp;amp;lt;curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") &amp;amp;amp;gt;= 0) &amp;amp;amp;amp;&amp;amp;amp;amp; (bAgent.indexOf("Mozilla/3") &amp;amp;amp;gt;= 0) &amp;amp;amp;amp;&amp;amp;amp;amp; (bAgent.indexOf("Mac") &amp;amp;amp;gt;= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") &amp;amp;amp;gt;= 0) &amp;amp;amp;amp;&amp;amp;amp;amp; (bAgent.indexOf("Mozilla/3") &amp;amp;amp;gt;= 0) &amp;amp;amp;amp;&amp;amp;amp;amp; (bAgent.indexOf("Mac") &amp;amp;amp;gt;= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img &amp;amp;amp;amp;&amp;amp;amp;amp; typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i&amp;amp;amp;lt;5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i&amp;amp;amp;lt;array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+
+		var tempArray = new Array;
+		for(var j=1;j&amp;amp;amp;lt;actArray.length;j++) {
+			if((actArray[j] != null) &amp;amp;amp;amp;&amp;amp;amp;amp; (typeof(actArray[j]) == "object") &amp;amp;amp;amp;&amp;amp;amp;amp; (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+// -->
+</script>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<script >
+<!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button2',/*URL*/'../images/products.gif',/*URL*/'../images/productsdown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button3',/*URL*/'../images/service.gif',/*URL*/'../images/servicedown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button4',/*URL*/'../images/news.gif',/*URL*/'../images/newsdown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button7',/*URL*/'../images/investor.gif',/*URL*/'../images/investordown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button',/*URL*/'../images/aboutmti.gif',/*URL*/'../images/aboutmtigray.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button6',/*URL*/'../images/documents.gif',/*URL*/'../images/documentsdown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button9',/*URL*/'../images/home.gif',/*URL*/'../images/homedown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button10',/*URL*/'../images/contact.gif',/*URL*/'../images/contactdown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button11',/*URL*/'../images/search.gif',/*URL*/'../images/searchdown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button12',/*URL*/'../images/careers.gif',/*URL*/'../images/careersdown.gif',/*URL*/'','');
+
+// -->
+</script>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<title >
+MTI Reports Fiscal 1998 Results
+</title>
+</head>
+<body  topmargin="0">
+<div  align="center">
+<center >
+<table  TABID="09724" topmargin="0">
+<tr  height="66">
+<td  xpos="0">
+<img ></img>
+</td>
+</tr>
+<tr  height="28">
+<td  xpos="0">
+<!--webbot bot="ImageMap" rectangle="(490,3) (559,19) ../../documents.html" rectangle="(394,3) (473,19) ../../aboutmti.html" rectangle="(249,2) (369,19) ../../investor_relations.html" rectangle="(186,2) (226,19) ../../news.html" rectangle="(97,4) (163,19) ../../support.html" rectangle="(12,5) (77,19) ../../products.html" src="../../images/horizontalinks.gif" border="0" startspan -->
+<map  name="FrontPageMap">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<a  href="/cgi-bin/imagemap/PR/pr1998/_derived/980521a.htm.map">
+<img ></img>
+</a>
+<!--webbot bot="ImageMap" endspan i-checksum="54897" -->
+</td>
+</tr>
+</table>
+</center>
+</div>
+<div  align="center">
+<center >
+<table  TABID="09729" cols="1" width="640">
+<tr >
+<td  valign="top">
+<h2  align="center">
+<font  color="#000080" face="Arial" size="4">
+<strong >
+MTI Reports Fiscal 1998 Results
+</strong>
+</font>
+</h2>
+<i >
+<p  align="center">
+<strong >
+MTI Reports Revenues of $200 Million for Fiscal 1998, up 30% Over Prior Year
+</strong>
+</p>
+</i>
+<p >
+<strong >
+ANAHEIM, Calif., May 21, 1998 -- MTI Technology Corp.
+</strong>
+(Nasdaq:MTIC) today reported net income for the fourth quarter of fiscal 1998 ended April 4, 1998 of $5.8 million, or 19 cents diluted earnings per share, compared to net income of $2.2 million, or 8 cents diluted earnings per share, in the same quarter of the previous year, and $5.1 million, or 17 cents diluted earnings per share for the immediately preceding quarter. Total revenue for the fourth quarter rose 32% to $55.5 million, compared to $42.1 million for last year?s fourth quarter, and $54.0 million for the third quarter of fiscal 1998. Net product revenue for the fourth quarter was $45.7 million, compared to $33.9 million in the fourth quarter last year, and $44.8 million for the immediately preceding quarter.
+</p>
+<p >
+Service revenue for the fourth quarter of $9.8 million represented a 19% increase over the $8.2 million reported in the fourth quarter of the previous year, and a 6% increase over the $9.2 million reported in the immediately preceding quarter.
+</p>
+<p >
+Net income for fiscal 1998 was $18.0 million, or 62 cents diluted earnings per share, compared to $5.7 million, or 22 cents diluted earnings per share, for the previous fiscal year. Total revenue for fiscal 1998 rose 30% to $200.0 million, as compared to $153.7 million for fiscal 1997. Net product revenue for fiscal 1998 was $163.7 million, an increase of 36% over fiscal 1997?s net product revenues of $120.4 million. Service revenue for fiscal 1998 was $36.3 million, up 9% over the prior year.
+</p>
+<p >
+The gross profit margin for the fourth quarter was 35.9%, compared to 34.5% for the same period last year, and 34.5% for the third quarter of fiscal 1998. The gross profit margin for fiscal 1998 was 35.5%, compared to 32.5% for fiscal 1997.
+</p>
+<p >
+IN THE QUARTER ENDED JANUARY 3, 1998, THE COMPANY ADOPTED STATEMENT OF FINANCIAL ACCOUNTING STANDARDS NO. 128, "EARNINGS PER SHARE." ALL PRIOR PERIODS HAVE BEEN RESTATED ACCORDINGLY.
+</p>
+<b >
+<p >
+Revenue Trend:
+</p>
+</b>
+<p >
+The Company completed the fourth quarter with approximately 96% of product revenue derived from the sale of products for the Open Systems environment, compared to approximately 81% and 94% for the fourth quarter of last year and the third quarter of fiscal 1998, respectively.
+</p>
+<p >
+"I am very pleased with the Company?s performance for fiscal 1998. In particular, we achieved one of our primary benchmark goals of $200 million of top line revenue," said Earl Pearlman, MTI president and chief executive officer. "During the first half of fiscal 1998 we concentrated on the expansion and enhancement of our products lines, including the release of our flagship product, the Gladiator 3200. We also announced the Gladiator ESS line, which provided our customers with a true terabyte-class of high performance storage solutions. In the second quarter of fiscal 1998, the Company launched the Gladiator 6000 storage system, a new product family of truly fault-tolerant storage solutions utilizing the Company?s proprietary controller technology.
+</p>
+<p >
+During the second half of fiscal 1998, the Company increased its investment in its ability to provide its customers with world-class service and support. The capstone of these efforts was the February 1998 opening of the Company?s Customer Response Center.
+</p>
+<p >
+As we look forward to fiscal 1999, I am very excited by the opportunities presented by what we believe is a strong and growing storage market. During the coming year we will focus on exploring our opportunities for entry into the Pacific Rim market place, as well as seeking strategic partnerships within the OEM channel. In addition, the Company plans to begin shipment of its full line of fibre channel products for both the Gladiator 3000 and 6000 product families. And as always, we will continue to seek ways to improve our ability to provide the highest level of service and support to our customers," said Mr. Pearlman.
+</p>
+<b >
+<p >
+Expense Overview:
+</p>
+</b>
+<p >
+Selling, general and administrative expenses for the fourth quarter were $11.1 million, compared to $9.6 million for the fourth quarter last year, and $10.5 million for the immediately preceding quarter. The increase of $1.5 million over the same quarter of the previous year was primarily the result of an increase in compensation-related sales costs due to increased staff and higher revenues. Selling, general and administrative expenses for fiscal 1998 were $41.1 million, as compared to $34.9 million for the prior fiscal year.
+</p>
+<p >
+Research and development expenses for the fourth quarter of fiscal 1998 were $3.5 million, compared to $3.0 million in the same quarter last year and $3.1 million in the immediately prior quarter. The increase in expenses over the same quarter of the previous year was primarily due to increases in project development costs. Research and development expenses for fiscal 1998 were $12.5 million, as compared to $10.1 million for fiscal 1997.
+</p>
+<b >
+<p >
+Balance Sheet Summary:
+</p>
+</b>
+<p >
+Cash on hand at the end of fiscal 1998 was $7.8 million, compared to $3.5 million at the end of the prior fiscal year. Trade accounts receivable increased $12.4 million from the end of the prior fiscal year, primarily as the result of an increase in sales. Inventories increased $4.2 million, or approximately 29% from the end of fiscal 1997, primarily as the result of an increase in trade inventories held in both the US and Europe. Total bank debt and notes payable declined $16.1 million from the end of fiscal 1997, primarily as a result of the reduction in the outstanding portion of the Company?s bank line of credit. Trade payables and accrued liabilities increased $8.5 million from the end of fiscal 1997, primarily as a result of increased accounts payable related to the increase in inventories.
+</p>
+<p >
+MTI?s mission is to be the premier provider of high-performance, cross-platform data storage management solutions for the enterprise. MTI integrates distributed data management software, a hierarchy of modular storage systems and on-site services to meet the mass storage needs of its customers.
+</p>
+<p >
+This press release includes forward-looking statements which are subject to change, including statements regarding MTI?s beliefs as to the future storage market, geographic expansion, strategic partnerships and its plans for product development and release. The actual results may differ materially from those described in any forward-looking statement.
+</p>
+<p >
+The computer industry in general, and the market for the Company?s products in particular, is characterized by rapidly changing technology, evolving industry standards and frequent new product introductions, resulting in short product life cycles. Accordingly, the Company believes that its future success will depend in part on its ability to enhance existing products and to develop new products that maintain technological leadership, meet a wide range of changing customer needs and achieve market acceptance. In particular, the Company believes it must continue to respond quickly to customers? needs for innovative storage and data management solutions. Lack of market acceptance for the Company?s existing or new products or services, the Company?s failure to introduce new products or services in a timely or cost effective manner, or its failure to increase functionality of existing products or remain price competitive, would materially adversely affect the Company?s operating results. There can be no assurance that the Company will be successful in its product or service development efforts. In addition, there can be no assurance that the Company?s products or services, even if successfully developed, will achieve timely market acceptance. Additional information on potential factors that could affect the company?s financial results are included in the Company?s Annual Report to the SEC on Form 10K-for the year ended April 5, 1997.
+</p>
+<p >
+Headquartered in Anaheim, Calif., the company offers services and support from more than 40 offices in the U.S. and Europe. MTI may be reached by phone: 800-999-9MTI or 714-970-0300, fax: 714-693-2256 or e-mail:
+<a  href="mailto:info@mti.com">
+info@mti.com
+</a>
+. Information can also be accessed via MTI Online, the company?s World Wide Web server on the Internet at:
+<a  href="../../index.html">
+www.mti.com
+</a>
+.
+</p>
+<p  align="center">
+<font  face="Arial">
+<strong >
+MTI TECHNOLOGY CORPORATION
+<br ></br>
+CONDENSED CONSOLIDATED STATEMENTS OF INCOME
+<br ></br>
+(In thousands, except per share data)
+<br ></br>
+(Unaudited)
+</strong>
+</font>
+</p>
+<div  align="center">
+<center >
+<table  TABID="09725" border="0" cellspacing="0" genuinetable="yes" tabletitle="MTI TECHNOLOGY CORPORATION
+CONDENSED CONSOLIDATED STATEMENTS OF INCOME
+(In thousands, except per share data)
+(Unaudited)" width="80%">
+<tr >
+<td  height="16" valign="top" width="51%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<b >
+<p  align="right">
+FY98 Q4
+</p>
+</b>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<b >
+<p  align="right">
+FY97 Q4
+</p>
+</b>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<b >
+<p  align="right">
+FY98 Q3
+</p>
+</b>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Net product revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+$45,693
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+$33,907
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+$44,773
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Service revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+9,758
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+8,224
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+9,216
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Total revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+55,451
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+42,131
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+53,989
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="16" valign="top"></td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Product cost of revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+29,266
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+22,449
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+29,691
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Service cost of revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+6,305
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+5,139
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+5,684
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Total cost of revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+35,571
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+27,588
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+35,375
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="16" valign="top"></td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Gross profit
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+19,880
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+14,543
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+18,614
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+35.9%
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+34.5%
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+34.5%
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="17" valign="top"></td>
+</tr>
+<tr >
+<td  colspan="4" height="17" valign="top">
+<font  face="Arial">
+Operating expenses:
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<blockquote >
+<font  face="Arial">
+<p >
+Selling, general and administrative
+</p>
+</font>
+</blockquote>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+11,105
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+9,615
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+10,489
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<blockquote >
+<font  face="Arial">
+<p >
+Research and development
+</p>
+</font>
+</blockquote>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+3,468
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+3,010
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+3,144
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<blockquote >
+<font  face="Arial">
+<p >
+Total operating expenses
+</p>
+</font>
+</blockquote>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+14,573
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+12,625
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+13,633
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="16" valign="top"></td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Operating income
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+5,307
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+1,918
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+4,981
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="16" valign="top"></td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Interest and other income, net
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+767
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+695
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+626
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="16" valign="top"></td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Income before income taxes
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+6,074
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+2,613
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+5,607
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Income tax expense
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+320
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+364
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+528
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="17" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Net income
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="17" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$5,754
+</p>
+</u>
+</font>
+</td>
+<td  height="17" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$2,249
+</p>
+</u>
+</font>
+</td>
+<td  height="17" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$5,079
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="17" valign="top"></td>
+</tr>
+<tr >
+<td  colspan="4" height="17" valign="top">
+<font  face="Arial">
+Net income per share:
+</font>
+</td>
+</tr>
+<tr >
+<td  height="18" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Basic
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="18" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$0.21
+</p>
+</u>
+</font>
+</td>
+<td  height="18" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$0.09
+</p>
+</u>
+</font>
+</td>
+<td  height="18" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$0.19
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="18" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Diluted
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="18" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$0.19
+</p>
+</u>
+</font>
+</td>
+<td  height="18" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$0.08
+</p>
+</u>
+</font>
+</td>
+<td  height="18" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$0.17
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="17" valign="top"></td>
+</tr>
+<tr >
+<td  colspan="4" height="17" valign="top">
+<blockquote >
+<font  face="Arial">
+<p >
+Weighted average shares used in per share computation:
+</p>
+</font>
+</blockquote>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Basic
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+27,727
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+25,763
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+27,199
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Diluted
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+29,687
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+27,351
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+30,508
+</p>
+</u>
+</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<p  align="center">
+<font  face="Arial">
+<strong >
+MTI TECHNOLOGY CORPORATION
+<br ></br>
+CONDENSED CONSOLIDATED STATEMENTS OF INCOME
+<br ></br>
+(In thousands, except per share data)
+<br ></br>
+(Unaudited)
+</strong>
+</font>
+</p>
+<div  align="center">
+<center >
+<table  TABID="09726" border="0" cellspacing="0" genuinetable="yes" tabletitle="MTI TECHNOLOGY CORPORATION
+CONDENSED CONSOLIDATED STATEMENTS OF INCOME
+(In thousands, except per share data)
+(Unaudited)" width="80%">
+<tr >
+<td  height="16" valign="top" width="51%"></td>
+<td  height="16" valign="top" width="16%">
+<i >
+<b >
+FY98
+</b>
+</i>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<i >
+<b >
+FY97
+</b>
+</i>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%"></td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%"></td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Net product revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+$163,707
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+$120,359
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Service revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+36,304
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+33,368
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Total revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+200,011
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+153,727
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="16" valign="top"></td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Product cost of revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+106,960
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+83,607
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Service cost of revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+22,042
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+20,196
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Total cost of revenue
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+129,002
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+103,803
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="16" valign="top"></td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Gross profit
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+71,009
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+49,924
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+35.5%
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+32.5%
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="15" valign="top"></td>
+</tr>
+<tr >
+<td  colspan="4" height="17" valign="top">
+<font  face="Arial">
+Operating expenses:
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<blockquote >
+<font  face="Arial">
+<p >
+Selling, general and administrative
+</p>
+</font>
+</blockquote>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+41,055
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+34,936
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<blockquote >
+<font  face="Arial">
+<p >
+Research and development
+</p>
+</font>
+</blockquote>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+12,475
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+10,103
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<blockquote >
+<font  face="Arial">
+<p >
+Total operating expenses
+</p>
+</font>
+</blockquote>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+53,530
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+45,039
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="16" valign="top"></td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Operating income
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+17,479
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+4,885
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="16" valign="top"></td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Interest and other income, net
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+2,557
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+1,483
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="16" valign="top"></td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Income before income taxes
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+20,036
+</p>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<p  align="right">
+6,368
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Income tax expense
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+2,020
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+664
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="17" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Net income
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="17" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$18,016
+</p>
+</u>
+</font>
+</td>
+<td  height="17" valign="top" width="16%"></td>
+<td  height="17" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$5,704
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="17" valign="top"></td>
+</tr>
+<tr >
+<td  colspan="4" height="17" valign="top">
+<font  face="Arial">
+Net income per share:
+</font>
+</td>
+</tr>
+<tr >
+<td  height="18" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Basic
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="18" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$0.68
+</p>
+</u>
+</font>
+</td>
+<td  height="18" valign="top" width="16%"></td>
+<td  height="18" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$0.22
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="18" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Diluted
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="18" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$0.62
+</p>
+</u>
+</font>
+</td>
+<td  height="18" valign="top" width="16%"></td>
+<td  height="18" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$0.22
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="17" valign="top"></td>
+</tr>
+<tr >
+<td  colspan="4" height="17" valign="top">
+<blockquote >
+<font  face="Arial">
+<p >
+Weighted average shares used in per share computation:
+</p>
+</font>
+</blockquote>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Basic
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+26,674
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+25,638
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="16" valign="top" width="51%">
+<blockquote >
+<font  face="Arial">
+<p >
+Diluted
+</p>
+</font>
+</blockquote>
+</td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+29,112
+</p>
+</u>
+</font>
+</td>
+<td  height="16" valign="top" width="16%"></td>
+<td  height="16" valign="top" width="16%">
+<font  face="Arial">
+<u >
+<p  align="right">
+26,437
+</p>
+</u>
+</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<p  align="center">
+<font  face="Arial">
+<strong >
+MTI TECHNOLOGY CORPORATION
+<br ></br>
+CONDENSED CONSOLIDATED BALANCE SHEETS
+<br ></br>
+(In thousands)
+<br ></br>
+(Unaudited)
+</strong>
+</font>
+</p>
+<div  align="center">
+<center >
+<table  TABID="09727" border="0" cellspacing="0" genuinetable="yes" tabletitle="MTI TECHNOLOGY CORPORATION
+CONDENSED CONSOLIDATED BALANCE SHEETS
+(In thousands)
+(Unaudited)" width="80%">
+<tr >
+<td  valign="top" width="52%"></td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<u >
+<b >
+<p  align="right">
+April 4, 1998
+</p>
+</b>
+</u>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<u >
+<b >
+<p  align="right">
+April 5, 1997
+</p>
+</b>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top">
+<font  face="Arial">
+<b >
+ASSETS
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Cash
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<p  align="right">
+$7,768
+</p>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<p  align="right">
+$3,487
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Short-term investments
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<p  align="right">
+-
+</p>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<p  align="right">
+850
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Trade accounts receivable, net
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<p  align="right">
+44,260
+</p>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<p  align="right">
+31,899
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Inventories
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<p  align="right">
+18,819
+</p>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<p  align="right">
+14,637
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Other current assets
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<u >
+<p  align="right">
+8,702
+</p>
+</u>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<u >
+<p  align="right">
+3,822
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Total current assets
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<p  align="right">
+79,549
+</p>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<p  align="right">
+54,695
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Fixed assets and other non-current assets, net
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<p  align="right">
+12,789
+</p>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<p  align="right">
+13,870
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Goodwill and intangibles, net
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<u >
+<p  align="right">
+12,753
+</p>
+</u>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<u >
+<p  align="right">
+15,027
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Total assets
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$105,091
+</p>
+</u>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$83,592
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top"></td>
+</tr>
+<tr >
+<td  colspan="3" valign="top">
+<font  face="Arial">
+<b >
+LIABILITIES &amp; STOCKHOLDERS? EQUITY
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Bank line and current portion of debt
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<p  align="right">
+$7,904
+</p>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<p  align="right">
+$23,953
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Trade payables and accrued liabilities
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<p  align="right">
+38,493
+</p>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<p  align="right">
+29,969
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Deferred income
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<u >
+<p  align="right">
+16,441
+</p>
+</u>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<u >
+<p  align="right">
+13,040
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Total current liabilities
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<p  align="right">
+62,838
+</p>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<p  align="right">
+66,962
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Long-term debt, less current maturities
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<p  align="right">
+-
+</p>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<p  align="right">
+6
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Other non-current liabilities
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<u >
+<p  align="right">
+107
+</p>
+</u>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<u >
+<p  align="right">
+247
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Total liabilities
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<p  align="right">
+62,945
+</p>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<p  align="right">
+67,215
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Total stockholders? equity
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<u >
+<p  align="right">
+42,146
+</p>
+</u>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<u >
+<p  align="right">
+16,377
+</p>
+</u>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="52%">
+<blockquote >
+<font  face="Arial">
+<p >
+Total liabilities &amp; stockholders? equity
+</p>
+</font>
+</blockquote>
+</td>
+<td  valign="top" width="24%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$105,091
+</p>
+</u>
+</font>
+</td>
+<td  valign="top" width="23%">
+<font  face="Arial">
+<u >
+<p  align="right">
+$83,592
+</p>
+</u>
+</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<p  align="center">
+<font  color="#000000">
+####
+</font>
+</p>
+<p >
+<font  color="#000000">
+This press release includes forward-looking statements, including statements regarding the company?s product development plans, which are subject to change. The actual results may differ materially from those described in any forward-looking statement. Important factors that may cause actual results to differ are set forth in the company?s periodic filings with the U.S. Securities and Exchange Commission including its Form 10-K for the year ended April 3, 1999.
+</font>
+</p>
+<p >
+<font  face="TimesNewRoman">
+<b >
+<i >
+MTI is a registered trademark, MTI DataServices, HardCache and DataShield are trademarks, and Continuous Access to Online Information is a service mark of MTI Technology Corp. All other company, brand or product names are registered trademarks or trademarks of their respective holders.
+</i>
+</b>
+</font>
+</p>
+<!--webbot bot="Include" u-include="../../_private/contacts.htm" tag="BODY" startspan -->
+<table  TABID="09728" border="0" width="100%">
+<tr >
+<td  width="33%">
+<font  size="2">
+Media Relations Contact:
+<br ></br>
+Kevin J. Liebl
+<br ></br>
+Vice President, Marketing
+<br ></br>
+714-693-2740
+<br ></br>
+<a  href="mailto:kliebl@mti.com">
+kliebl@mti.com
+</a>
+</font>
+</td>
+<td  width="33%">
+<font  size="2">
+Investor Relations Contact:
+<br ></br>
+Frank Yoshino
+<br ></br>
+Treasurer
+<br ></br>
+714-693-2775
+<br ></br>
+<a  href="mailto:fyoshino@mti.com">
+fyoshino@mti.com
+</a>
+</font>
+</td>
+<td  width="34%">
+<font  size="2">
+PR Agency Contact:
+<br ></br>
+Judy Smith
+<br ></br>
+JPR Communications
+<br ></br>
+818-386-0403
+<br ></br>
+<a  href="mailto:JPRCommun@aol.com">
+JPRCommun@aol.com
+</a>
+</font>
+</td>
+</tr>
+</table>
+<!--webbot bot="Include" endspan i-checksum="32521" -->
+</td>
+</tr>
+</table>
+</center>
+</div>
+<p  align="center">
+<a  csbuttonreturn="#DEFAULT" onclick="return">
+<img ></img>
+</a>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<a  csbuttonreturn="#DEFAULT" onclick="return">
+<img ></img>
+</a>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<a  csbuttonreturn="#DEFAULT" onclick="return">
+<img ></img>
+</a>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<a  csbuttonreturn="#DEFAULT" onclick="return">
+<img ></img>
+</a>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+</p>
+<!--webbot bot="Include" U-Include="../../copyrigh.htm" TAG="BODY" startspan -->
+<div  align="center">
+<center >
+<table  TABID="09730" border="0" cellpadding="2" cellspacing="1">
+<tr >
+<td  valign="top">
+<font  face="Arial">
+<a  href="../../copynote.htm">
+Copyright
+</a>
+© 1996-2000 MTI Technology Corporation.
+<br ></br>
+Comments about this web site? Contact the
+<a  href="mailto:jpinson@mti.com">
+MTI Webmaster
+</a>
+.
+</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<!--webbot bot="Include" endspan i-checksum="7022" -->
+</body>
+</html>

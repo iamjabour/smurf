@@ -1,0 +1,723 @@
+<html >
+<!-- #BeginTemplate "/Templates/0201prototype(non-ed).dwt" -->
+<head >
+<!-- #BeginEditable "doctitle" -->
+<title >
+ChicoER.com: Poll Results
+</title>
+<!-- #EndEditable -->
+<link ></link>
+</head>
+<body  bgcolor="#FFFFFF">
+<table  TABID="07240" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr >
+<td  width="345">
+<a  href="/">
+<img ></img>
+</a>
+</td>
+<td  width="401"></td>
+</tr>
+</table>
+<table  TABID="07241" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr  bgcolor="#003399" valign="top">
+<td  align="left" width="20">
+<img ></img>
+</td>
+<td  class="topnav" width="746">
+<a  href="/">
+Home
+</a>
+|
+<a  href="/news/">
+News
+</a>
+|
+<a  href="/classifieds/">
+Classifieds
+</a>
+|
+<a  href="/archives/">
+Archives
+</a>
+|
+<a  href="/about/">
+Feedback
+</a>
+</td>
+<td  align="right" width="20">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="07252" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr >
+<td  bgcolor="#CCCCCC" rowspan="2" valign="top" width="130">
+<!-- begin sections -->
+<!-- begin sections -->
+<table  TABID="07242" class="sidebar">
+<tr >
+<td  align="center" bgcolor="#003399" valign="middle"></td>
+<td  class="sidebar">
+<b >
+Sections
+</b>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="middle" width="12"></td>
+<td  width="109">
+<a  href="/">
+Home
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="middle"></td>
+<td >
+<a  href="/news/">
+News
+</a>
+</td>
+</tr>
+<tr >
+<td  width="12"></td>
+<td  width="109">
+<a  href="/editorial/">
+Editorial/Opinion
+</a>
+</td>
+</tr>
+<tr >
+<td  width="12"></td>
+<td  width="109">
+<a  href="/sports/">
+Sports
+</a>
+</td>
+</tr>
+<tr >
+<td  width="12"></td>
+<td  width="109">
+<a  href="/news/#business">
+Business
+</a>
+</td>
+</tr>
+<tr >
+<td  width="12"></td>
+<td  width="109">
+<a  href="/style/">
+Style
+</a>
+</td>
+</tr>
+<tr >
+<td  width="12"></td>
+<td  width="109">
+<a  href="/recess/">
+@Recess
+</a>
+</td>
+</tr>
+<tr >
+<td  width="12"></td>
+<td  width="109">
+<a  href="/buzz/">
+The Buzz
+</a>
+</td>
+</tr>
+<tr >
+<td  width="12"></td>
+<td  width="109">
+<a  href="/photogallery/">
+Photo Gallery
+</a>
+</td>
+</tr>
+</table>
+<!-- end sections -->
+<!-- begin classifieds -->
+<table  TABID="07243" class="sidebar">
+<tr  valign="top">
+<td  align="center" bgcolor="#003399" height="15" width="11"></td>
+<td  class="sidebar">
+<b >
+Classifieds
+</b>
+</td>
+</tr>
+<tr  valign="top">
+<td  colspan="2"></td>
+<td  width="97">
+<a  href="/classifieds/index.inn?loc=sub&main=Announcements">
+Announcements
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  colspan="2"></td>
+<td  width="97">
+<a  href="/classifieds/index.inn?loc=sub&main=Automotive">
+Automotive
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  colspan="2"></td>
+<td  width="97">
+<a  href="/classifieds/index.inn?loc=sub&main=Employment">
+Employment
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  colspan="2"></td>
+<td  width="97">
+<a  href="/classifieds/index.inn?loc=sub&main=Financial">
+Financial
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  colspan="2"></td>
+<td  width="97">
+<a  href="/classifieds/index.inn?loc=sub&main=Merchandise">
+Merchandise
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  colspan="2"></td>
+<td  width="97">
+<a  href="/classifieds/index.inn?loc=sub&main=Real+Estate">
+Real Estate
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  colspan="2"></td>
+<td  width="97">
+<a  href="/classifieds/index.inn?loc=sub&main=Rentals">
+Rentals
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  colspan="2"></td>
+<td  width="97">
+<a  href="/classifieds/index.inn?loc=sub&main=Services">
+Services
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  colspan="2"></td>
+<td  width="97">
+<a  href="/classifieds/index.inn?loc=sub&main=Transportation">
+Transportation
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  width="11"></td>
+<td  colspan="2">
+<a  href="https://secure.townnews.com/ca/chico/classified.shtml">
+Submit Ad
+</a>
+</td>
+</tr>
+</table>
+<!-- end classifieds -->
+<!-- begin siteservices -->
+<table  TABID="07244" class="sidebar" width="130">
+<tr  valign="top">
+<td  align="center" bgcolor="#003399" width="11"></td>
+<td  class="sidebar">
+<b >
+Site Services
+</b>
+</td>
+</tr>
+<tr  valign="top">
+<td  align="center" width="11"></td>
+<td  colspan="2" width="111">
+<a  href="https://secure.townnews.com/ca/chico/subscription.html">
+Subscription
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  align="center" width="11"></td>
+<td  colspan="2" width="111">
+<a  href="/siteservices/deliveryproblems.shtml">
+Delivery Problems
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  align="center" width="11"></td>
+<td  colspan="2" width="111">
+<a  href="/siteservices/ratecard.shtml">
+Advertising Rates
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  align="center" width="11"></td>
+<td  colspan="2" width="111">
+<a  href="/siteservices/letters.shtml">
+Letters to the Editor
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  align="center" width="11"></td>
+<td  colspan="2" width="111">
+<a  href="/about/contact.shtml">
+Contact Info
+</a>
+</td>
+</tr>
+</table>
+<!-- end siteservices -->
+</td>
+<td  align="left" rowspan="2" valign="top" width="10">
+<img ></img>
+</td>
+<td  rowspan="2" valign="top">
+<table  TABID="07245" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  class="date">
+<!-- #BeginEditable "timestamp" -->
+Updated:
+<!-- #BeginDate format:fcAm1 -->
+Thursday, May 17, 2001
+<!-- #EndDate -->
+<!-- #EndEditable -->
+</td>
+</tr>
+</table>
+<!-- #BeginEditable "body" -->
+<h1 >
+This Week's Web Poll Results
+</h1>
+<div  align="center">
+<table  TABID="07246" align="center" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="May 16, 2001
+                    Do you think Timothy McVeigh will get a retrial thanks to the FBI's
+                    &quot;serious error&quot; in not turning over all documents?" width="450">
+<tr >
+<td  bgcolor="#003399" colspan="2">
+<div  align="center">
+<font  color="#FFFFFF">
+May 16, 2001
+</font>
+</div>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCFF" colspan="2">
+<div  align="left">
+<p >
+Do you think Timothy McVeigh will get a retrial thanks to the FBI's "serious error" in not turning over all documents?
+</p>
+</div>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF">
+No.
+</td>
+<td >
+50.4%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC">
+Yes.
+</td>
+<td >
+49.6%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#003399" colspan="2" height="15">
+<div  align="center">
+<font  color="#FFFFFF">
+117 Votes
+</font>
+</div>
+</td>
+</tr>
+</table>
+<br ></br>
+<table  TABID="07247" align="center" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="May 15, 2001
+                    Do you agree with the Supreme Court's ruling against the medicinal use of
+                    marijuana?" width="450">
+<tr >
+<td  bgcolor="#003399" colspan="2">
+<div  align="center">
+<font  color="#FFFFFF">
+May 15, 2001
+</font>
+</div>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCFF" colspan="2">
+<div  align="left">
+<p >
+Do you agree with the Supreme Court's ruling against the medicinal use of marijuana?
+</p>
+</div>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF">
+No.
+</td>
+<td >
+65.8%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC">
+Yes.
+</td>
+<td >
+34.2%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#003399" colspan="2" height="15">
+<div  align="center">
+<font  color="#FFFFFF">
+161 Votes
+</font>
+</div>
+</td>
+</tr>
+</table>
+<br ></br>
+<table  TABID="07248" align="center" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="May 14, 2001
+                    Do you like the new $3 million project to link Highway 32 to The
+                    Esplanade?" width="450">
+<tr >
+<td  bgcolor="#003399" colspan="2">
+<div  align="center">
+<font  color="#FFFFFF">
+May 14, 2001
+</font>
+</div>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCFF" colspan="2">
+<div  align="left">
+<p >
+Do you like the new $3 million project to link Highway 32 to The Esplanade?
+</p>
+</div>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF">
+Yes.
+</td>
+<td >
+64.3%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC">
+No.
+</td>
+<td >
+35.7%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#003399" colspan="2" height="15">
+<div  align="center">
+<font  color="#FFFFFF">
+98 Votes
+</font>
+</div>
+</td>
+</tr>
+</table>
+<br ></br>
+<table  TABID="07249" align="center" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="May 11-13, 2001
+                    Which Arnold Schwarzenegger action flick is your favorite?" width="450">
+<tr >
+<td  bgcolor="#003399" colspan="2">
+<div  align="center">
+<font  color="#FFFFFF">
+May 11-13, 2001
+</font>
+</div>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCFF" colspan="2">
+<div  align="left">
+<p >
+Which Arnold Schwarzenegger action flick is your favorite?
+</p>
+</div>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF">
+Terminator
+</td>
+<td >
+28.9%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC">
+True Lies
+</td>
+<td >
+25.4%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF">
+Terminator 2
+</td>
+<td >
+24.6%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC">
+Predator
+</td>
+<td >
+10.5%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF">
+Conan
+</td>
+<td >
+07.0%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC">
+The 6th Day
+</td>
+<td >
+03.5%
+</td>
+</tr>
+<tr >
+<td  bgcolor="#003399" colspan="2" height="15">
+<div  align="center">
+<font  color="#FFFFFF">
+228 Votes
+</font>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<!-- #EndEditable -->
+</td>
+<td  align="right" rowspan="2" valign="top" width="10">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#CCCCCC" height="68" valign="top" width="130">
+<!-- begin search -->
+<table  TABID="07251" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  align="center">
+<td >
+<table  TABID="07250" class="sidebar">
+<tr  bgcolor="#003399">
+<td  class="sidebarlinks"></td>
+<td  class="sidebar">
+<b >
+Search Archive:
+</b>
+</td>
+</tr>
+<tr >
+<td  class="sidebarlinks"></td>
+<td  width="111">
+<form  action="/archives/index.inn" method="post">
+<input ></input>
+<input ></input>
+<input ></input>
+</form>
+</td>
+</tr>
+</table>
+<img ></img>
+</td>
+</tr>
+<tr  align="center" valign="middle">
+<td ></td>
+</tr>
+</table>
+<!-- end search -->
+</td>
+</tr>
+<tr >
+<td  align="right" bgcolor="#CCCCCC" valign="top" width="130">
+<!-- #BeginEditable "righthandcolumn" -->
+<!-- #EndEditable -->
+</td>
+</tr>
+</table>
+<table  TABID="07253" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr  bgcolor="#003399">
+<td  height="1" width="760">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="07256" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr >
+<td  valign="top" width="129">
+<img ></img>
+</td>
+<td  valign="top" width="14">
+<img ></img>
+</td>
+<td  valign="top" width="481">
+<!-- begin footer -->
+<table  TABID="07255" border="0" cellpadding="0" cellspacing="0" width="468">
+<tr >
+<td  height="40" valign="top" width="468">
+<table  TABID="07254" class="tableborder">
+<tr  align="center" valign="top">
+<td  class="bottomnav">
+<a  href="/news/">
+News
+</a>
+|
+<a  href="/sports/">
+Sports
+</a>
+|
+<a  href="/style/">
+Style
+</a>
+|
+<a  href="/editorial/">
+Editorial
+</a>
+|
+<a  href="/buzz/">
+The Buzz
+</a>
+|
+<a  href="/recess/">
+Recess
+</a>
+|
+<a  href="/classifieds/">
+Classifieds
+</a>
+</td>
+</tr>
+<tr  align="center" valign="top">
+<td  class="bottomnav">
+<a  href="/index.shtml">
+Home
+</a>
+|
+<a  href="/archives/">
+Archives
+</a>
+|
+<a  href="/about/index.shtml">
+About Us
+</a>
+|
+<a  href="/about/privacy.shtml">
+Privacy Statement
+</a>
+</td>
+</tr>
+<tr  align="center" valign="top">
+<td  class="footer">
+©2001 Chico Enterprise Record
+</td>
+</tr>
+<tr  align="center" valign="top">
+<td >
+<font  color="#000000">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Best Viewed with
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</font>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="http://www.microsoft.com/downloads/" target="_blank">
+Internet Explorer 5.0
+</a>
+<font  color="#000000">
+or
+</font>
+<a  href="http://home.netscape.com/download/index.html?cp=djuc1">
+Netscape 6.0
+</a>
+<font  color="#000000">
+or higher.
+</font>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+</table>
+<!-- end footer -->
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" height="1" width="468"></td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="10">
+<img ></img>
+</td>
+<td  valign="top" width="126">
+<img ></img>
+</td>
+</tr>
+</table>
+</body>
+<!-- #EndTemplate -->
+</html>

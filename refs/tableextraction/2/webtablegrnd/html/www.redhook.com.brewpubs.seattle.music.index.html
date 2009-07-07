@@ -1,0 +1,386 @@
+<html >
+<!-- base URL = http://www.redhook.com/ -->
+<!-- Redhook Ale Brewery, copyright 2000 -->
+<head >
+<script >
+<!--//
+current_menu=0;
+current_item=0;
+
+if (document.images)
+{
+        preloadImages();
+}
+function preloadImages()
+{
+		// load top of page zmenu images
+        menu_images=new Array();
+		menu_images_on=new Array();
+        for (i=0;i&amp;amp;lt;5;i++)
+        {
+                menu_images[i]=new Image();
+                menu_images_on[i]=new Image();
+                menu_images[i].src="/imagelib/nav/"+i+".gif";
+                menu_images_on[i].src="/imagelib/nav/"+i+"-on.gif";
+        }
+}
+function rollover_top(which)
+{
+        if (document.images)
+        {
+				document.images['button'+which].src=menu_images_on[which].src;
+				
+        } 
+}
+function rolloff_top(which)
+{
+        if (document.images)
+        {
+                document.images['button'+which].src=menu_images[which].src;
+				
+        }
+}
+
+numWindows=2;
+Newsite=new Array(numWindows);
+function terms(site,width,height,which) {
+        if (site != "") {
+                        Newsite[which]=window.open(site, "newwindow"+which," location,scrollbars,resizable,width="+width+",height="+height);
+        } 
+}
+
+//-->
+--&gt;
+</script>
+<script >
+<!-- Begin
+function formHandler(){
+var URL = document.form.site.options[document.form.site.selectedIndex].value;
+window.location.href = URL;
+// End -->
+}
+</script>
+<link ></link>
+</head>
+<body >
+<title >
+Redhook Breweries: Trolleyman Music Schedule
+</title>
+<center >
+<table  TABID="11285" border="0" cellpadding="0" cellspacing="0" width="600">
+<!--Top Spacer-->
+<tr >
+<td  bgcolor="#333333" colspan="5" width="600">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<!--Main Navigation-->
+<tr >
+<td  bgcolor="#FFFFFF" width="120">
+<a  href="http://www.redhook.com/company/index.html" onmouseout="rolloff_top(0);window.status=''; return true" onmouseover="rollover_top(0);window.status='Company'; return true" target="_top">
+<img ></img>
+</a>
+<br ></br>
+</td>
+<td  bgcolor="#FFFFFF" width="120">
+<a  href="http://www.redhook.com/ales/index.html" onmouseout="rolloff_top(1);window.status=''; return true" onmouseover="rollover_top(1);window.status='Redhook Ales'; return true" target="_top">
+<img ></img>
+</a>
+<br ></br>
+</td>
+<td  bgcolor="#FFFFFF" width="120">
+<a  href="http://www.redhook.com/brewpubs/index.html" onmouseout="rolloff_top(2);window.status=''; return true" onmouseover="rollover_top(2);window.status='Breweries'; return true" target="_top">
+<img ></img>
+</a>
+<br ></br>
+</td>
+<td  bgcolor="#FFFFFF" width="120">
+<a  href="http://www.redhook.com/happenings/index.html" onmouseout="rolloff_top(3);window.status=''; return true" onmouseover="rollover_top(3);window.status='Happenings'; return true" target="_top">
+<img ></img>
+</a>
+<br ></br>
+</td>
+<td  bgcolor="#FFFFFF" width="120">
+<a  href="http://www.redhook.com/estore/index.html" onmouseout="rolloff_top(4);window.status=''; return true" onmouseover="rollover_top(4);window.status='Store'; return true" target="_top">
+<img ></img>
+</a>
+<br ></br>
+</td>
+</tr>
+<!--Banner and Sub Nav-->
+<tr >
+<td  bgcolor="#FFFFFF" colspan="5" width="600">
+<table  TABID="11282" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  bgcolor="#FFFFFF" rowspan="2" width="75">
+<img ></img>
+<br ></br>
+</td>
+<td  bgcolor="#FFFFFF" rowspan="2" width="300">
+<img ></img>
+<br ></br>
+</td>
+<td  bgcolor="#FFFFFF" width="225">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" width="225">
+<table  TABID="11281" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="225">
+<form  name="form">
+<tr >
+<td  align="right" background="/imagelib/background.gif" bgcolor="#FFFFFF" valign="top" width="217">
+<select >
+<option  value="">
+Redhook Breweries
+</option>
+<option  value="">
+·····································
+</option>
+<option  value="http://www.redhook.com/brewpubs/seattle/index.html">
+Seattle, WA.
+</option>
+<option  value="http://www.redhook.com/brewpubs/woodinville/index.html">
+Woodinville, WA.
+</option>
+<option  value="http://www.redhook.com/brewpubs/portsmouth/index.html">
+Portsmouth, NH.
+</option>
+<option  value="http://www.redhook.com/brewpubs/tour/index.html">
+Virtual Tour
+</option>
+<option  value="">
+·····································
+</option>
+<option  value="http://www.redhook.com/index2.html">
+Redhook Home Page
+</option>
+</select>
+<!-- &amp;amp;lt;input type="button" value="Go!" onClick="formHandler()"&amp;amp;gt; -->
+</td>
+<td  bgcolor="#FFFFFF" rowspan="2" width="8">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+</form>
+<tr >
+<td  bgcolor="#FFFFFF" width="217">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--Main Content-->
+<tr >
+<td  align="center" bgcolor="#FFFFFF" colspan="5" width="600">
+<table  TABID="11283" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  background="/imagelib/bg_fade1.gif" bgcolor="#FFFFFF" width="10"></td>
+<td  background="/imagelib/bg_fade2.gif" bgcolor="#FFFFFF" width="580">
+<font  color="#C32319" face="Trebuchet MS, Arial" size="3">
+<b >
+Trolleyman Music Schedule
+</b>
+</font>
+<br ></br>
+</td>
+<td  bgcolor="#FFFFFF" width="10">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" colspan="5" width="600">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  align="right" bgcolor="#FFFFFF" colspan="5" width="600">
+<table  TABID="11284" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="590">
+<tr >
+<td  bgcolor="#FFFFFF" width="70">
+<img ></img>
+<br ></br>
+</td>
+<td  bgcolor="#FFFFFF" valign="top" width="320">
+<img ></img>
+<br ></br>
+<font  color="#000000" face="Helvetica, Arial, Verdana" size="6">
+May
+</font>
+<p >
+<font  class="text" face="verdana" size="2">
+<b >
+<font  color="brown">
+Thursday Night Music 8:30-10:30
+<br ></br>
+Friday and Saturday Night 9:30-11:30
+</font>
+</b>
+<p >
+No Cover!
+</p>
+<p >
+<!--&amp;amp;lt;font color=red&amp;amp;gt;May calendar should be online May 1&amp;amp;lt;/font&amp;amp;gt;
+				&amp;amp;lt;P&amp;amp;gt;-->
+<b >
+Thursday, May 3:
+</b>
+<br ></br>
+Pearl Django (Swing Jazz)
+<br ></br>
+<b >
+Friday, May 4:
+</b>
+<br ></br>
+BeeCraft (Original Psycho Funk)
+<br ></br>
+<b >
+Saturday, May 5:
+</b>
+<br ></br>
+Reptet (Jazz)
+<br ></br>
+<b >
+Thursday, May 10:
+</b>
+<br ></br>
+Lou Jones (Original Funk)
+<br ></br>
+<b >
+Friday, May 11:
+</b>
+<br ></br>
+Mark Dufresne (Blues)
+<br ></br>
+<b >
+Saturday, May 12:
+</b>
+<br ></br>
+Creeping Time (Contemporary Folk)
+<br ></br>
+<b >
+Thursday, May 17:
+</b>
+<br ></br>
+Sean McGinn Quartet
+<br ></br>
+(Straight Ahead Jazz &amp; Blues)
+<br ></br>
+<b >
+Friday, May 18:
+</b>
+<br ></br>
+Dangerous Brain Clinic (High Energy Jazz)
+<br ></br>
+<b >
+Saturday, May 19:
+</b>
+<br ></br>
+Hudson Blues Band (Blues)
+<br ></br>
+<b >
+Thursday, May 24:
+</b>
+<br ></br>
+1st Circle (Original Jazz)
+<br ></br>
+<b >
+Friday, May 25:
+</b>
+<br ></br>
+Vira-Lata (Samba &amp; Choro Trio)
+<br ></br>
+<b >
+Saturday, May 26:
+</b>
+<br ></br>
+Cantalma (Latin American Love Songs)
+<br ></br>
+<b >
+Thursday, May 31:
+</b>
+<br ></br>
+John Floridis &amp; Brian Oppel
+<br ></br>
+(Dangerously Acoustic)
+<br ></br>
+</p>
+</font>
+</p>
+</td>
+<td  bgcolor="#FFFFFF" valign="top" width="200">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+</table>
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFFF" colspan="5" width="580">
+<center >
+<font  class="textbold" face="verdana, arial" size="2">
+<b >
+The Trolleyman Pub
+</b>
+</font>
+<br ></br>
+<font  class="smalltext" face="verdana" size="1">
+Current
+<a  href="/brewpubs/seattle/index.html">
+business hours
+</a>
+for the Trolleyman Pub.
+<br ></br>
+3400 Phinney Ave N., Seattle, WA. 98103
+<br ></br>
+Phone 206.548.8000
+<br ></br>
+</font>
+</center>
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" colspan="5" width="600">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<!--Bottom Spacer-->
+<tr >
+<td  bgcolor="#333333" colspan="5" width="600">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+<html  name="ImageMap49490">
+<head ></head>
+<body >
+<map >
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</body>
+</html>

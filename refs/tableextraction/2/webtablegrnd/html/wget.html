@@ -1,0 +1,6713 @@
+<html >
+<head >
+<!-- This HTML file has been created by texi2html 1.52
+     from ../texi/wget.texi on 7 November 1998 -->
+<title >
+GNU Wget Manual
+</title>
+</head>
+<body >
+<h1 >
+GNU Wget
+</h1>
+<h2 >
+The noninteractive downloading utility
+</h2>
+<h2 >
+Updated for Wget 1.5.3, Sep 1998
+</h2>
+<address >
+by Hrvoje
+<a  href="mailto:Nik@v">
+Nik@v
+</a>
+{s}i'{c}
+</address>
+<p ></p>
+<p ></p>
+<hr ></hr>
+<p ></p>
+<h1 >
+Table of Contents
+</h1>
+<ul >
+<li >
+<a  href="wget.html#SEC1" name="TOC1">
+Overview
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC2" name="TOC2">
+Invoking
+</a>
+<ul >
+<li >
+<a  href="wget.html#SEC3" name="TOC3">
+URL Format
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC4" name="TOC4">
+Option Syntax
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC5" name="TOC5">
+Basic Startup Options
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC6" name="TOC6">
+Logging and Input File Options
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC7" name="TOC7">
+Download Options
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC8" name="TOC8">
+Directory Options
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC9" name="TOC9">
+HTTP Options
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC10" name="TOC10">
+FTP Options
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC11" name="TOC11">
+Recursive Retrieval Options
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC12" name="TOC12">
+Recursive Accept/Reject Options
+</a>
+</li>
+</ul>
+</li>
+<li >
+<a  href="wget.html#SEC13" name="TOC13">
+Recursive Retrieval
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC14" name="TOC14">
+Following Links
+</a>
+<ul >
+<li >
+<a  href="wget.html#SEC15" name="TOC15">
+Relative Links
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC16" name="TOC16">
+Host Checking
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC17" name="TOC17">
+Domain Acceptance
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC18" name="TOC18">
+All Hosts
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC19" name="TOC19">
+Types of Files
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC20" name="TOC20">
+Directory-Based Limits
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC21" name="TOC21">
+Following FTP Links
+</a>
+</li>
+</ul>
+</li>
+<li >
+<a  href="wget.html#SEC22" name="TOC22">
+Time-Stamping
+</a>
+<ul >
+<li >
+<a  href="wget.html#SEC23" name="TOC23">
+Time-Stamping Usage
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC24" name="TOC24">
+HTTP Time-Stamping Internals
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC25" name="TOC25">
+FTP Time-Stamping Internals
+</a>
+</li>
+</ul>
+</li>
+<li >
+<a  href="wget.html#SEC26" name="TOC26">
+Startup File
+</a>
+<ul >
+<li >
+<a  href="wget.html#SEC27" name="TOC27">
+Wgetrc Location
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC28" name="TOC28">
+Wgetrc Syntax
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC29" name="TOC29">
+Wgetrc Commands
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC30" name="TOC30">
+Sample Wgetrc
+</a>
+</li>
+</ul>
+</li>
+<li >
+<a  href="wget.html#SEC31" name="TOC31">
+Examples
+</a>
+<ul >
+<li >
+<a  href="wget.html#SEC32" name="TOC32">
+Simple Usage
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC33" name="TOC33">
+Advanced Usage
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC34" name="TOC34">
+Guru Usage
+</a>
+</li>
+</ul>
+</li>
+<li >
+<a  href="wget.html#SEC35" name="TOC35">
+Various
+</a>
+<ul >
+<li >
+<a  href="wget.html#SEC36" name="TOC36">
+Proxies
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC37" name="TOC37">
+Distribution
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC38" name="TOC38">
+Mailing List
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC39" name="TOC39">
+Reporting Bugs
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC40" name="TOC40">
+Portability
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC41" name="TOC41">
+Signals
+</a>
+</li>
+</ul>
+</li>
+<li >
+<a  href="wget.html#SEC42" name="TOC42">
+Appendices
+</a>
+<ul >
+<li >
+<a  href="wget.html#SEC43" name="TOC43">
+Robots
+</a>
+<ul >
+<li >
+<a  href="wget.html#SEC44" name="TOC44">
+Introduction to RES
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC45" name="TOC45">
+RES Format
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC46" name="TOC46">
+User-Agent Field
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC47" name="TOC47">
+Disallow Field
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC48" name="TOC48">
+Norobots Examples
+</a>
+</li>
+</ul>
+</li>
+<li >
+<a  href="wget.html#SEC49" name="TOC49">
+Security Considerations
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC50" name="TOC50">
+Contributors
+</a>
+</li>
+</ul>
+</li>
+<li >
+<a  href="wget.html#SEC51" name="TOC51">
+GNU GENERAL PUBLIC LICENSE
+</a>
+<ul >
+<li >
+<a  href="wget.html#SEC52" name="TOC52">
+Preamble
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC53" name="TOC53">
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+</a>
+</li>
+<li >
+<a  href="wget.html#SEC54" name="TOC54">
+How to Apply These Terms to Your New Programs
+</a>
+</li>
+</ul>
+</li>
+<li >
+<a  href="wget.html#SEC55" name="TOC55">
+Concept Index
+</a>
+</li>
+</ul>
+<p ></p>
+<hr ></hr>
+<p ></p>
+<p >
+@dircategory Net Utilities @dircategory World Wide Web @direntry * Wget: (wget). The non-interactive network downloader.
+</p>
+<p >
+Copyright (C) 1996, 1997, 1998 Free Software Foundation, Inc.
+</p>
+<p >
+Permission is granted to make and distribute verbatim copies of this manual provided the copyright notice and this permission notice are preserved on all copies.
+</p>
+<p >
+Permission is granted to copy and distribute modified versions of this manual under the conditions for verbatim copying, provided also that the sections entitled "Copying" and "GNU General Public License" are included exactly as in the original, and provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.
+</p>
+<p >
+Permission is granted to copy and distribute translations of this manual into another language, under the above conditions for modified versions, except that this permission notice may be stated in a translation approved by the Free Software Foundation.
+</p>
+<h1 >
+<a  href="wget.html#TOC1" name="SEC1">
+Overview
+</a>
+</h1>
+<p >
+<a  name="IDX1"></a>
+<a  name="IDX2"></a>
+</p>
+<p >
+GNU Wget is a freely available network utility to retrieve files from the World Wide Web, using HTTP (Hyper Text Transfer Protocol) and FTP (File Transfer Protocol), the two most widely used Internet protocols. It has many useful features to make downloading easier, some of them being:
+</p>
+<ul >
+<li >
+Wget is non-interactive, meaning that it can work in the background, while the user is not logged on. This allows you to start a retrieval and disconnect from the system, letting Wget finish the work. By contrast, most of the Web browsers require constant user's presence, which can be a great hindrance when transferring a lot of data.
+<p ></p>
+</li>
+<li >
+Wget is capable of descending recursively through the structure of HTML documents and FTP directory trees, making a local copy of the directory hierarchy similar to the one on the remote server. This feature can be used to mirror archives and home pages, or traverse the web in search of data, like a WWW robot (See section
+<a  href="wget.html#SEC43">
+Robots
+</a>
+). In that spirit, Wget understands the
+<code >
+norobots
+</code>
+convention.
+<p ></p>
+</li>
+<li >
+File name wildcard matching and recursive mirroring of directories are available when retrieving via FTP. Wget can read the time-stamp information given by both HTTP and FTP servers, and store it locally. Thus Wget can see if the remote file has changed since last retrieval, and automatically retrieve the new version if it has. This makes Wget suitable for mirroring of FTP sites, as well as home pages.
+<p ></p>
+</li>
+<li >
+Wget works exceedingly well on slow or unstable connections, retrying the document until it is fully retrieved, or until a user-specified retry count is surpassed. It will try to resume the download from the point of interruption, using
+<code >
+REST
+</code>
+with FTP and
+<code >
+Range
+</code>
+with HTTP servers that support them.
+<p ></p>
+</li>
+<li >
+By default, Wget supports proxy servers, which can lighten the network load, speed up retrieval and provide access behind firewalls. However, if you are behind a firewall that requires that you use a socks style gateway, you can get the socks library and build wget with support for socks. Wget also supports the passive FTP downloading as an option.
+<p ></p>
+</li>
+<li >
+Builtin features offer mechanisms to tune which links you wish to follow (See section
+<a  href="wget.html#SEC14">
+Following Links
+</a>
+).
+<p ></p>
+</li>
+<li >
+The retrieval is conveniently traced with printing dots, each dot representing a fixed amount of data received (1KB by default). These representations can be customized to your preferences.
+<p ></p>
+</li>
+<li >
+Most of the features are fully configurable, either through command line options, or via the initialization file
+<tt >
+`.wgetrc'
+</tt>
+(See section
+<a  href="wget.html#SEC26">
+Startup File
+</a>
+). Wget allows you to define
+<em >
+global
+</em>
+startup files (
+<tt >
+`/usr/local/etc/wgetrc'
+</tt>
+by default) for site settings.
+<p ></p>
+</li>
+<li >
+Finally, GNU Wget is free software. This means that everyone may use it, redistribute it and/or modify it under the terms of the GNU General Public License, as published by the Free Software Foundation (See section
+<a  href="wget.html#SEC51">
+GNU GENERAL PUBLIC LICENSE
+</a>
+).
+</li>
+</ul>
+<h1 >
+<a  href="wget.html#TOC2" name="SEC2">
+Invoking
+</a>
+</h1>
+<p >
+<a  name="IDX3"></a>
+<a  name="IDX4"></a>
+<a  name="IDX5"></a>
+<a  name="IDX6"></a>
+</p>
+<p >
+By default, Wget is very simple to invoke. The basic syntax is:
+</p>
+<pre >
+wget [
+<var >
+option
+</var>
+]... [
+<var >
+URL
+</var>
+]...
+</pre>
+<p >
+Wget will simply download all the URLs specified on the command line.
+<var >
+URL
+</var>
+is a
+<em >
+Uniform Resource Locator
+</em>
+, as defined below.
+</p>
+<p >
+However, you may wish to change some of the default parameters of Wget. You can do it two ways: permanently, adding the appropriate command to
+<tt >
+`.wgetrc'
+</tt>
+(See section
+<a  href="wget.html#SEC26">
+Startup File
+</a>
+), or specifying it on the command line.
+</p>
+<h2 >
+<a  href="wget.html#TOC3" name="SEC3">
+URL Format
+</a>
+</h2>
+<p >
+<a  name="IDX7"></a>
+<a  name="IDX8"></a>
+</p>
+<p >
+<em >
+URL
+</em>
+is an acronym for Uniform Resource Locator. A uniform resource locator is a compact string representation for a resource available via the Internet. Wget recognizes the URL syntax as per RFC1738. This is the most widely used form (square brackets denote optional parts):
+</p>
+<pre >
+http://host[:port]/directory/file
+ftp://host[:port]/directory/file
+</pre>
+<p >
+You can also encode your username and password within a URL:
+</p>
+<pre >
+ftp://user:password@host/path
+http://user:password@host/path
+</pre>
+<p >
+Either
+<var >
+user
+</var>
+or
+<var >
+password
+</var>
+, or both, may be left out. If you leave out either the HTTP username or password, no authentication will be sent. If you leave out the FTP username,
+<samp >
+`anonymous'
+</samp>
+will be used. If you leave out the FTP password, your email address will be supplied as a default password.
+<a  href="wget.html#FOOT1" name="DOCF1">
+(1)
+</a>
+</p>
+<p >
+You can encode unsafe characters in a URL as
+<samp >
+`%xy'
+</samp>
+,
+<code >
+xy
+</code>
+being the hexadecimal representation of the character's ASCII value. Some common unsafe characters include
+<samp >
+`%'
+</samp>
+(quoted as
+<samp >
+`%25'
+</samp>
+),
+<samp >
+`:'
+</samp>
+(quoted as
+<samp >
+`%3A'
+</samp>
+), and
+<samp >
+`@'
+</samp>
+(quoted as
+<samp >
+`%40'
+</samp>
+). Refer to RFC1738 for a comprehensive list of unsafe characters.
+</p>
+<p >
+Wget also supports the
+<code >
+type
+</code>
+feature for FTP URLs. By default, FTP documents are retrieved in the binary mode (type
+<samp >
+`i'
+</samp>
+), which means that they are downloaded unchanged. Another useful mode is the
+<samp >
+`a'
+</samp>
+(
+<em >
+ASCII
+</em>
+) mode, which converts the line delimiters between the different operating systems, and is thus useful for text files. Here is an example:
+</p>
+<pre >
+ftp://host/directory/file;type=a
+</pre>
+<p >
+Two alternative variants of URL specification are also supported, because of historical (hysterical?) reasons and their wide-spreadedness.
+</p>
+<p >
+FTP-only syntax (supported by
+<code >
+NcFTP
+</code>
+):
+</p>
+<pre >
+host:/dir/file
+</pre>
+<p >
+HTTP-only syntax (introduced by
+<code >
+Netscape
+</code>
+):
+</p>
+<pre >
+host[:port]/dir/file
+</pre>
+<p >
+These two alternative forms are deprecated, and may cease being supported in the future.
+</p>
+<p >
+If you do not understand the difference between these notations, or do not know which one to use, just use the plain ordinary format you use with your favorite browser, like
+<code >
+Lynx
+</code>
+or
+<code >
+Netscape
+</code>
+.
+</p>
+<h2 >
+<a  href="wget.html#TOC4" name="SEC4">
+Option Syntax
+</a>
+</h2>
+<p >
+<a  name="IDX9"></a>
+<a  name="IDX10"></a>
+</p>
+<p >
+Since Wget uses GNU getopts to process its arguments, every option has a short form and a long form. Long options are more convenient to remember, but take time to type. You may freely mix different option styles, or specify options after the command-line arguments. Thus you may write:
+</p>
+<pre >
+wget -r --tries=10 http://fly.cc.fer.hr/ -o log
+</pre>
+<p >
+The space between the option accepting an argument and the argument may be omitted. Instead
+<samp >
+`-o log'
+</samp>
+you can write
+<samp >
+`-olog'
+</samp>
+.
+</p>
+<p >
+You may put several options that do not require arguments together, like:
+</p>
+<pre >
+wget -drc
+<var >
+URL
+</var>
+</pre>
+<p >
+This is a complete equivalent of:
+</p>
+<pre >
+wget -d -r -c
+<var >
+URL
+</var>
+</pre>
+<p >
+Since the options can be specified after the arguments, you may terminate them with
+<samp >
+`--'
+</samp>
+. So the following will try to download URL
+<samp >
+`-x'
+</samp>
+, reporting failure to
+<tt >
+`log'
+</tt>
+:
+</p>
+<pre >
+wget -o log -- -x
+</pre>
+<p >
+The options that accept comma-separated lists all respect the convention that specifying an empty list clears its value. This can be useful to clear the
+<tt >
+`.wgetrc'
+</tt>
+settings. For instance, if your
+<tt >
+`.wgetrc'
+</tt>
+sets
+<code >
+exclude_directories
+</code>
+to
+<tt >
+`/cgi-bin'
+</tt>
+, the following example will first reset it, and then set it to exclude
+<tt >
+`/~nobody'
+</tt>
+and
+<tt >
+`/~somebody'
+</tt>
+. You can also clear the lists in
+<tt >
+`.wgetrc'
+</tt>
+(See section
+<a  href="wget.html#SEC28">
+Wgetrc Syntax
+</a>
+).
+</p>
+<pre >
+wget -X '' -X /~nobody,/~somebody
+</pre>
+<h2 >
+<a  href="wget.html#TOC5" name="SEC5">
+Basic Startup Options
+</a>
+</h2>
+<dl  compact="compact">
+<dt >
+<samp >
+`-V'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--version'
+</samp>
+</dt>
+<dd >
+Display the version of Wget.
+</dd>
+<dt >
+<samp >
+`-h'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--help'
+</samp>
+</dt>
+<dd >
+Print a help message describing all of Wget's command-line options.
+</dd>
+<dt >
+<samp >
+`-b'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--background'
+</samp>
+</dt>
+<dd >
+Go to background immediately after startup. If no output file is specified via the
+<samp >
+`-o'
+</samp>
+, output is redirected to
+<tt >
+`wget-log'
+</tt>
+.
+<a  name="IDX11"></a>
+</dd>
+<dt >
+<samp >
+`-e
+<var >
+command
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--execute
+<var >
+command
+</var>
+'
+</samp>
+</dt>
+<dd >
+Execute
+<var >
+command
+</var>
+as if it were a part of
+<tt >
+`.wgetrc'
+</tt>
+(See section
+<a  href="wget.html#SEC26">
+Startup File
+</a>
+). A command thus invoked will be executed
+<em >
+after
+</em>
+the commands in
+<tt >
+`.wgetrc'
+</tt>
+, thus taking precedence over them.
+</dd>
+</dl>
+<h2 >
+<a  href="wget.html#TOC6" name="SEC6">
+Logging and Input File Options
+</a>
+</h2>
+<dl  compact="compact">
+<dt >
+<samp >
+`-o
+<var >
+logfile
+</var>
+'
+</samp>
+</dt>
+<dd >
+<a  name="IDX12"></a>
+<a  name="IDX13"></a>
+</dd>
+<dt >
+<samp >
+`--output-file=
+<var >
+logfile
+</var>
+'
+</samp>
+</dt>
+<dd >
+Log all messages to
+<var >
+logfile
+</var>
+. The messages are normally reported to standard error.
+<a  name="IDX14"></a>
+</dd>
+<dt >
+<samp >
+`-a
+<var >
+logfile
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--append-output=
+<var >
+logfile
+</var>
+'
+</samp>
+</dt>
+<dd >
+Append to
+<var >
+logfile
+</var>
+. This is the same as
+<samp >
+`-o'
+</samp>
+, only it appends to
+<var >
+logfile
+</var>
+instead of overwriting the old log file. If
+<var >
+logfile
+</var>
+does not exist, a new file is created.
+<a  name="IDX15"></a>
+</dd>
+<dt >
+<samp >
+`-d'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--debug'
+</samp>
+</dt>
+<dd >
+Turn on debug output, meaning various information important to the developers of Wget if it does not work properly. Your system administrator may have chosen to compile Wget without debug support, in which case
+<samp >
+`-d'
+</samp>
+will not work. Please note that compiling with debug support is always safe--Wget compiled with the debug support will
+<em >
+not
+</em>
+print any debug info unless requested with
+<samp >
+`-d'
+</samp>
+. See section
+<a  href="wget.html#SEC39">
+Reporting Bugs
+</a>
+for more information on how to use
+<samp >
+`-d'
+</samp>
+for sending bug reports.
+<a  name="IDX16"></a>
+</dd>
+<dt >
+<samp >
+`-q'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--quiet'
+</samp>
+</dt>
+<dd >
+Turn off Wget's output.
+<a  name="IDX17"></a>
+</dd>
+<dt >
+<samp >
+`-v'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--verbose'
+</samp>
+</dt>
+<dd >
+Turn on verbose output, with all the available data. The default output is verbose.
+</dd>
+<dt >
+<samp >
+`-nv'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--non-verbose'
+</samp>
+</dt>
+<dd >
+Non-verbose output--turn off verbose without being completely quiet (use
+<samp >
+`-q'
+</samp>
+for that), which means that error messages and basic information still get printed.
+<a  name="IDX18"></a>
+</dd>
+<dt >
+<samp >
+`-i
+<var >
+file
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--input-file=
+<var >
+file
+</var>
+'
+</samp>
+</dt>
+<dd >
+Read URLs from
+<var >
+file
+</var>
+, in which case no URLs need to be on the command line. If there are URLs both on the command line and in an input file, those on the command lines will be the first ones to be retrieved. The
+<var >
+file
+</var>
+need not be an HTML document (but no harm if it is)---it is enough if the URLs are just listed sequentially. However, if you specify
+<samp >
+`--force-html'
+</samp>
+, the document will be regarded as
+<samp >
+`html'
+</samp>
+. In that case you may have problems with relative links, which you can solve either by adding
+<code >
+&lt;base href="
+<var >
+url
+</var>
+"&gt;
+</code>
+to the documents or by specifying
+<samp >
+`--base=
+<var >
+url
+</var>
+'
+</samp>
+on the command line.
+<a  name="IDX19"></a>
+</dd>
+<dt >
+<samp >
+`-F'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--force-html'
+</samp>
+</dt>
+<dd >
+When input is read from a file, force it to be treated as an HTML file. This enables you to retrieve relative links from existing HTML files on your local disk, by adding
+<code >
+&lt;base href="
+<var >
+url
+</var>
+"&gt;
+</code>
+to HTML, or using the
+<samp >
+`--base'
+</samp>
+command-line option.
+</dd>
+</dl>
+<h2 >
+<a  href="wget.html#TOC7" name="SEC7">
+Download Options
+</a>
+</h2>
+<dl  compact="compact">
+<dt >
+<samp >
+`-t
+<var >
+number
+</var>
+'
+</samp>
+</dt>
+<dd >
+<a  name="IDX20"></a>
+<a  name="IDX21"></a>
+<a  name="IDX22"></a>
+</dd>
+<dt >
+<samp >
+`--tries=
+<var >
+number
+</var>
+'
+</samp>
+</dt>
+<dd >
+Set number of retries to
+<var >
+number
+</var>
+. Specify 0 or
+<samp >
+`inf'
+</samp>
+for infinite retrying.
+</dd>
+<dt >
+<samp >
+`-O
+<var >
+file
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--output-document=
+<var >
+file
+</var>
+'
+</samp>
+</dt>
+<dd >
+The documents will not be written to the appropriate files, but all will be concatenated together and written to
+<var >
+file
+</var>
+. If
+<var >
+file
+</var>
+already exists, it will be overwritten. If the
+<var >
+file
+</var>
+is
+<samp >
+`-'
+</samp>
+, the documents will be written to standard output. Including this option automatically sets the number of tries to 1.
+<a  name="IDX23"></a>
+</dd>
+<dt >
+<samp >
+`-nc'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--no-clobber'
+</samp>
+</dt>
+<dd >
+Do not clobber existing files when saving to directory hierarchy within recursive retrieval of several files. This option is
+<em >
+extremely
+</em>
+useful when you wish to continue where you left off with retrieval of many files. If the files have the
+<samp >
+`.html'
+</samp>
+or (yuck)
+<samp >
+`.htm'
+</samp>
+suffix, they will be loaded from the local disk, and parsed as if they have been retrieved from the Web.
+<a  name="IDX24"></a>
+</dd>
+<dt >
+<samp >
+`-c'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--continue'
+</samp>
+</dt>
+<dd >
+Continue getting an existing file. This is useful when you want to finish up the download started by another program, or a previous instance of Wget. Thus you can write:
+<pre >
+wget -c ftp://sunsite.doc.ic.ac.uk/ls-lR.Z
+</pre>
+If there is a file name
+<tt >
+`ls-lR.Z'
+</tt>
+in the current directory, Wget will assume that it is the first portion of the remote file, and will require the server to continue the retrieval from an offset equal to the length of the local file. Note that you need not specify this option if all you want is Wget to continue retrieving where it left off when the connection is lost--Wget does this by default. You need this option only when you want to continue retrieval of a file already halfway retrieved, saved by another FTP client, or left by Wget being killed. Without
+<samp >
+`-c'
+</samp>
+, the previous example would just begin to download the remote file to
+<tt >
+`ls-lR.Z.1'
+</tt>
+. The
+<samp >
+`-c'
+</samp>
+option is also applicable for HTTP servers that support the
+<code >
+Range
+</code>
+header.
+<a  name="IDX25"></a>
+<a  name="IDX26"></a>
+</dd>
+<dt >
+<samp >
+`--dot-style=
+<var >
+style
+</var>
+'
+</samp>
+</dt>
+<dd >
+Set the retrieval style to
+<var >
+style
+</var>
+. Wget traces the retrieval of each document by printing dots on the screen, each dot representing a fixed amount of retrieved data. Any number of dots may be separated in a
+<em >
+cluster
+</em>
+, to make counting easier. This option allows you to choose one of the pre-defined styles, determining the number of bytes represented by a dot, the number of dots in a cluster, and the number of dots on the line. With the
+<code >
+default
+</code>
+style each dot represents 1K, there are ten dots in a cluster and 50 dots in a line. The
+<code >
+binary
+</code>
+style has a more "computer"-like orientation--8K dots, 16-dots clusters and 48 dots per line (which makes for 384K lines). The
+<code >
+mega
+</code>
+style is suitable for downloading very large files--each dot represents 64K retrieved, there are eight dots in a cluster, and 48 dots on each line (so each line contains 3M). The
+<code >
+micro
+</code>
+style is exactly the reverse; it is suitable for downloading small files, with 128-byte dots, 8 dots per cluster, and 48 dots (6K) per line.
+</dd>
+<dt >
+<samp >
+`-N'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--timestamping'
+</samp>
+</dt>
+<dd >
+Turn on time-stamping. See section
+<a  href="wget.html#SEC22">
+Time-Stamping
+</a>
+for details.
+<a  name="IDX27"></a>
+</dd>
+<dt >
+<samp >
+`-S'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--server-response'
+</samp>
+</dt>
+<dd >
+Print the headers sent by HTTP servers and responses sent by FTP servers.
+<a  name="IDX28"></a>
+<a  name="IDX29"></a>
+</dd>
+<dt >
+<samp >
+`--spider'
+</samp>
+</dt>
+<dd >
+When invoked with this option, Wget will behave as a Web
+<em >
+spider
+</em>
+, which means that it will not download the pages, just check that they are there. You can use it to check your bookmarks, e.g. with:
+<pre >
+wget --spider --force-html -i bookmarks.html
+</pre>
+This feature needs much more work for Wget to get close to the functionality of real WWW spiders.
+<a  name="IDX30"></a>
+</dd>
+<dt >
+<samp >
+`-T seconds'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--timeout=
+<var >
+seconds
+</var>
+'
+</samp>
+</dt>
+<dd >
+Set the read timeout to
+<var >
+seconds
+</var>
+seconds. Whenever a network read is issued, the file descriptor is checked for a timeout, which could otherwise leave a pending connection (uninterrupted read). The default timeout is 900 seconds (fifteen minutes). Setting timeout to 0 will disable checking for timeouts. Please do not lower the default timeout value with this option unless you know what you are doing.
+<a  name="IDX31"></a>
+<a  name="IDX32"></a>
+</dd>
+<dt >
+<samp >
+`-w
+<var >
+seconds
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--wait=
+<var >
+seconds
+</var>
+'
+</samp>
+</dt>
+<dd >
+Wait the specified number of seconds between the retrievals. Use of this option is recommended, as it lightens the server load by making the requests less frequent. Instead of in seconds, the time can be specified in minutes using the
+<code >
+m
+</code>
+suffix, in hours using
+<code >
+h
+</code>
+suffix, or in days using
+<code >
+d
+</code>
+suffix. Specifying a large value for this option is useful if the network or the destination host is down, so that Wget can wait long enough to reasonably expect the network error to be fixed before the retry.
+<a  name="IDX33"></a>
+</dd>
+<dt >
+<samp >
+`-Y on/off'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--proxy=on/off'
+</samp>
+</dt>
+<dd >
+Turn proxy support on or off. The proxy is on by default if the appropriate environmental variable is defined.
+<a  name="IDX34"></a>
+</dd>
+<dt >
+<samp >
+`-Q
+<var >
+quota
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--quota=
+<var >
+quota
+</var>
+'
+</samp>
+</dt>
+<dd >
+Specify download quota for automatic retrievals. The value can be specified in bytes (default), kilobytes (with
+<samp >
+`k'
+</samp>
+suffix), or megabytes (with
+<samp >
+`m'
+</samp>
+suffix). Note that quota will never affect downloading a single file. So if you specify
+<samp >
+`wget -Q10k ftp://wuarchive.wustl.edu/ls-lR.gz'
+</samp>
+, all of the
+<tt >
+`ls-lR.gz'
+</tt>
+will be downloaded. The same goes even when several URLs are specified on the command-line. However, quota is respected when retrieving either recursively, or from an input file. Thus you may safely type
+<samp >
+`wget -Q2m -i sites'
+</samp>
+---download will be aborted when the quota is exceeded. Setting quota to 0 or to
+<samp >
+`inf'
+</samp>
+unlimits the download quota.
+</dd>
+</dl>
+<h2 >
+<a  href="wget.html#TOC8" name="SEC8">
+Directory Options
+</a>
+</h2>
+<dl  compact="compact">
+<dt >
+<samp >
+`-nd'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--no-directories'
+</samp>
+</dt>
+<dd >
+Do not create a hierarchy of directories when retrieving recursively. With this option turned on, all files will get saved to the current directory, without clobbering (if a name shows up more than once, the filenames will get extensions
+<samp >
+`.n'
+</samp>
+).
+</dd>
+<dt >
+<samp >
+`-x'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--force-directories'
+</samp>
+</dt>
+<dd >
+The opposite of
+<samp >
+`-nd'
+</samp>
+---create a hierarchy of directories, even if one would not have been created otherwise. E.g.
+<samp >
+`wget -x http://fly.cc.fer.hr/robots.txt'
+</samp>
+will save the downloaded file to
+<tt >
+`fly.cc.fer.hr/robots.txt'
+</tt>
+.
+</dd>
+<dt >
+<samp >
+`-nH'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--no-host-directories'
+</samp>
+</dt>
+<dd >
+Disable generation of host-prefixed directories. By default, invoking Wget with
+<samp >
+`-r http://fly.cc.fer.hr/'
+</samp>
+will create a structure of directories beginning with
+<tt >
+`fly.cc.fer.hr/'
+</tt>
+. This option disables such behavior.
+<a  name="IDX35"></a>
+</dd>
+<dt >
+<samp >
+`--cut-dirs=
+<var >
+number
+</var>
+'
+</samp>
+</dt>
+<dd >
+Ignore
+<var >
+number
+</var>
+directory components. This is useful for getting a fine-grained control over the directory where recursive retrieval will be saved. Take, for example, the directory at
+<samp >
+`ftp://ftp.xemacs.org/pub/xemacs/'
+</samp>
+. If you retrieve it with
+<samp >
+`-r'
+</samp>
+, it will be saved locally under
+<tt >
+`ftp.xemacs.org/pub/xemacs/'
+</tt>
+. While the
+<samp >
+`-nH'
+</samp>
+option can remove the
+<tt >
+`ftp.xemacs.org/'
+</tt>
+part, you are still stuck with
+<tt >
+`pub/xemacs'
+</tt>
+. This is where
+<samp >
+`--cut-dirs'
+</samp>
+comes in handy; it makes Wget not "see"
+<var >
+number
+</var>
+remote directory components. Here are several examples of how
+<samp >
+`--cut-dirs'
+</samp>
+option works.
+<pre >
+No options        -&gt; ftp.xemacs.org/pub/xemacs/
+-nH               -&gt; pub/xemacs/
+-nH --cut-dirs=1  -&gt; xemacs/
+-nH --cut-dirs=2  -&gt; .
+
+--cut-dirs=1      -&gt; ftp.xemacs.org/xemacs/
+...
+</pre>
+If you just want to get rid of the directory structure, this option is similar to a combination of
+<samp >
+`-nd'
+</samp>
+and
+<samp >
+`-P'
+</samp>
+. However, unlike
+<samp >
+`-nd'
+</samp>
+,
+<samp >
+`--cut-dirs'
+</samp>
+does not lose with subdirectories--for instance, with
+<samp >
+`-nH --cut-dirs=1'
+</samp>
+, a
+<tt >
+`beta/'
+</tt>
+subdirectory will be placed to
+<tt >
+`xemacs/beta'
+</tt>
+, as one would expect.
+<a  name="IDX36"></a>
+</dd>
+<dt >
+<samp >
+`-P
+<var >
+prefix
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--directory-prefix=
+<var >
+prefix
+</var>
+'
+</samp>
+</dt>
+<dd >
+Set directory prefix to
+<var >
+prefix
+</var>
+. The
+<em >
+directory prefix
+</em>
+is the directory where all other files and subdirectories will be saved to, i.e. the top of the retrieval tree. The default is
+<samp >
+`.'
+</samp>
+(the current directory).
+</dd>
+</dl>
+<h2 >
+<a  href="wget.html#TOC9" name="SEC9">
+HTTP Options
+</a>
+</h2>
+<dl  compact="compact">
+<dt >
+<samp >
+`--http-user=
+<var >
+user
+</var>
+'
+</samp>
+</dt>
+<dd >
+<a  name="IDX37"></a>
+<a  name="IDX38"></a>
+<a  name="IDX39"></a>
+</dd>
+<dt >
+<samp >
+`--http-passwd=
+<var >
+password
+</var>
+'
+</samp>
+</dt>
+<dd >
+Specify the username
+<var >
+user
+</var>
+and password
+<var >
+password
+</var>
+on an HTTP server. According to the type of the challenge, Wget will encode them using either the
+<code >
+basic
+</code>
+(insecure) or the
+<code >
+digest
+</code>
+authentication scheme. Another way to specify username and password is in the URL itself (See section
+<a  href="wget.html#SEC3">
+URL Format
+</a>
+). For more information about security issues with Wget, See section
+<a  href="wget.html#SEC49">
+Security Considerations
+</a>
+.
+<a  name="IDX40"></a>
+<a  name="IDX41"></a>
+</dd>
+<dt >
+<samp >
+`-C on/off'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--cache=on/off'
+</samp>
+</dt>
+<dd >
+When set to off, disable server-side cache. In this case, Wget will send the remote server an appropriate directive (
+<samp >
+`Pragma: no-cache'
+</samp>
+) to get the file from the remote service, rather than returning the cached version. This is especially useful for retrieving and flushing out-of-date documents on proxy servers. Caching is allowed by default.
+<a  name="IDX42"></a>
+<a  name="IDX43"></a>
+</dd>
+<dt >
+<samp >
+`--ignore-length'
+</samp>
+</dt>
+<dd >
+Unfortunately, some HTTP servers (CGI programs, to be more precise) send out bogus
+<code >
+Content-Length
+</code>
+headers, which makes Wget go wild, as it thinks not all the document was retrieved. You can spot this syndrome if Wget retries getting the same document again and again, each time claiming that the (otherwise normal) connection has closed on the very same byte. With this option, Wget will ignore the
+<code >
+Content-Length
+</code>
+header--as if it never existed.
+<a  name="IDX44"></a>
+</dd>
+<dt >
+<samp >
+`--header=
+<var >
+additional-header
+</var>
+'
+</samp>
+</dt>
+<dd >
+Define an
+<var >
+additional-header
+</var>
+to be passed to the HTTP servers. Headers must contain a
+<samp >
+`:'
+</samp>
+preceded by one or more non-blank characters, and must not contain newlines. You may define more than one additional header by specifying
+<samp >
+`--header'
+</samp>
+more than once.
+<pre >
+wget --header='Accept-Charset: iso-8859-2' \
+     --header='Accept-Language: hr'        \
+       http://fly.cc.fer.hr/
+</pre>
+Specification of an empty string as the header value will clear all previous user-defined headers.
+<a  name="IDX45"></a>
+<a  name="IDX46"></a>
+<a  name="IDX47"></a>
+</dd>
+<dt >
+<samp >
+`--proxy-user=
+<var >
+user
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--proxy-passwd=
+<var >
+password
+</var>
+'
+</samp>
+</dt>
+<dd >
+Specify the username
+<var >
+user
+</var>
+and password
+<var >
+password
+</var>
+for authentication on a proxy server. Wget will encode them using the
+<code >
+basic
+</code>
+authentication scheme.
+<a  name="IDX48"></a>
+</dd>
+<dt >
+<samp >
+`-s'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--save-headers'
+</samp>
+</dt>
+<dd >
+Save the headers sent by the HTTP server to the file, preceding the actual contents, with an empty line as the separator.
+<a  name="IDX49"></a>
+</dd>
+<dt >
+<samp >
+`-U
+<var >
+agent-string
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--user-agent=
+<var >
+agent-string
+</var>
+'
+</samp>
+</dt>
+<dd >
+Identify as
+<var >
+agent-string
+</var>
+to the HTTP server. The HTTP protocol allows the clients to identify themselves using a
+<code >
+User-Agent
+</code>
+header field. This enables distinguishing the WWW software, usually for statistical purposes or for tracing of protocol violations. Wget normally identifies as
+<samp >
+`Wget/
+<var >
+version
+</var>
+'
+</samp>
+,
+<var >
+version
+</var>
+being the current version number of Wget. However, some sites have been known to impose the policy of tailoring the output according to the
+<code >
+User-Agent
+</code>
+-supplied information. While conceptually this is not such a bad idea, it has been abused by servers denying information to clients other than
+<code >
+Mozilla
+</code>
+or Microsoft
+<code >
+Internet Explorer
+</code>
+. This option allows you to change the
+<code >
+User-Agent
+</code>
+line issued by Wget. Use of this option is discouraged, unless you really know what you are doing.
+<strong >
+NOTE
+</strong>
+that Netscape Communications Corp. has claimed that false transmissions of
+<samp >
+`Mozilla'
+</samp>
+as the
+<code >
+User-Agent
+</code>
+are a copyright infringement, which will be prosecuted.
+<strong >
+DO NOT
+</strong>
+misrepresent Wget as Mozilla.
+</dd>
+</dl>
+<h2 >
+<a  href="wget.html#TOC10" name="SEC10">
+FTP Options
+</a>
+</h2>
+<dl  compact="compact">
+<dt >
+<samp >
+`--retr-symlinks'
+</samp>
+</dt>
+<dd >
+<a  name="IDX50"></a>
+Retrieve symbolic links on FTP sites as if they were plain files, i.e. don't just create links locally.
+<a  name="IDX51"></a>
+</dd>
+<dt >
+<samp >
+`-g on/off'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--glob=on/off'
+</samp>
+</dt>
+<dd >
+Turn FTP globbing on or off. Globbing means you may use the shell-like special characters (
+<em >
+wildcards
+</em>
+), like
+<samp >
+`*'
+</samp>
+,
+<samp >
+`?'
+</samp>
+,
+<samp >
+`['
+</samp>
+and
+<samp >
+`]'
+</samp>
+to retrieve more than one file from the same directory at once, like:
+<pre >
+wget ftp://gnjilux.cc.fer.hr/*.msg
+</pre>
+By default, globbing will be turned on if the URL contains a globbing character. This option may be used to turn globbing on or off permanently. You may have to quote the URL to protect it from being expanded by your shell. Globbing makes Wget look for a directory listing, which is system-specific. This is why it currently works only with Unix FTP servers (and the ones emulating Unix
+<code >
+ls
+</code>
+output).
+<a  name="IDX52"></a>
+</dd>
+<dt >
+<samp >
+`--passive-ftp'
+</samp>
+</dt>
+<dd >
+Use the
+<em >
+passive
+</em>
+FTP retrieval scheme, in which the client initiates the data connection. This is sometimes required for FTP to work behind firewalls.
+</dd>
+</dl>
+<h2 >
+<a  href="wget.html#TOC11" name="SEC11">
+Recursive Retrieval Options
+</a>
+</h2>
+<dl  compact="compact">
+<dt >
+<samp >
+`-r'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--recursive'
+</samp>
+</dt>
+<dd >
+Turn on recursive retrieving. See section
+<a  href="wget.html#SEC13">
+Recursive Retrieval
+</a>
+for more details.
+</dd>
+<dt >
+<samp >
+`-l
+<var >
+depth
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--level=
+<var >
+depth
+</var>
+'
+</samp>
+</dt>
+<dd >
+Specify recursion maximum depth level
+<var >
+depth
+</var>
+(See section
+<a  href="wget.html#SEC13">
+Recursive Retrieval
+</a>
+). The default maximum depth is 5.
+<a  name="IDX53"></a>
+<a  name="IDX54"></a>
+<a  name="IDX55"></a>
+</dd>
+<dt >
+<samp >
+`--delete-after'
+</samp>
+</dt>
+<dd >
+This option tells Wget to delete every single file it downloads,
+<em >
+after
+</em>
+having done so. It is useful for pre-fetching popular pages through proxy, e.g.:
+<pre >
+wget -r -nd --delete-after http://whatever.com/~popular/page/
+</pre>
+The
+<samp >
+`-r'
+</samp>
+option is to retrieve recursively, and
+<samp >
+`-nd'
+</samp>
+not to create directories.
+<a  name="IDX56"></a>
+<a  name="IDX57"></a>
+</dd>
+<dt >
+<samp >
+`-k'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--convert-links'
+</samp>
+</dt>
+<dd >
+Convert the non-relative links to relative ones locally. Only the references to the documents actually downloaded will be converted; the rest will be left unchanged. Note that only at the end of the download can Wget know which links have been downloaded. Because of that, much of the work done by
+<samp >
+`-k'
+</samp>
+will be performed at the end of the downloads.
+</dd>
+<dt >
+<samp >
+`-m'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--mirror'
+</samp>
+</dt>
+<dd >
+Turn on options suitable for mirroring. This option turns on recursion and time-stamping, sets infinite recursion depth and keeps FTP directory listings. It is currently equivalent to
+<samp >
+`-r -N -l inf -nr'
+</samp>
+.
+</dd>
+<dt >
+<samp >
+`-nr'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--dont-remove-listing'
+</samp>
+</dt>
+<dd >
+Don't remove the temporary
+<tt >
+`.listing'
+</tt>
+files generated by FTP retrievals. Normally, these files contain the raw directory listings received from FTP servers. Not removing them can be useful to access the full remote file list when running a mirror, or for debugging purposes.
+</dd>
+</dl>
+<h2 >
+<a  href="wget.html#TOC12" name="SEC12">
+Recursive Accept/Reject Options
+</a>
+</h2>
+<dl  compact="compact">
+<dt >
+<samp >
+`-A
+<var >
+acclist
+</var>
+--accept
+<var >
+acclist
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`-R
+<var >
+rejlist
+</var>
+--reject
+<var >
+rejlist
+</var>
+'
+</samp>
+</dt>
+<dd >
+Specify comma-separated lists of file name suffixes or patterns to accept or reject (See section
+<a  href="wget.html#SEC19">
+Types of Files
+</a>
+for more details).
+</dd>
+<dt >
+<samp >
+`-D
+<var >
+domain-list
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--domains=
+<var >
+domain-list
+</var>
+'
+</samp>
+</dt>
+<dd >
+Set domains to be accepted and DNS looked-up, where
+<var >
+domain-list
+</var>
+is a comma-separated list. Note that it does
+<em >
+not
+</em>
+turn on
+<samp >
+`-H'
+</samp>
+. This option speeds things up, even if only one host is spanned (See section
+<a  href="wget.html#SEC17">
+Domain Acceptance
+</a>
+).
+</dd>
+<dt >
+<samp >
+`--exclude-domains
+<var >
+domain-list
+</var>
+'
+</samp>
+</dt>
+<dd >
+Exclude the domains given in a comma-separated
+<var >
+domain-list
+</var>
+from DNS-lookup (See section
+<a  href="wget.html#SEC17">
+Domain Acceptance
+</a>
+).
+</dd>
+<dt >
+<samp >
+`-L'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--relative'
+</samp>
+</dt>
+<dd >
+Follow relative links only. Useful for retrieving a specific home page without any distractions, not even those from the same hosts (See section
+<a  href="wget.html#SEC15">
+Relative Links
+</a>
+).
+<a  name="IDX58"></a>
+</dd>
+<dt >
+<samp >
+`--follow-ftp'
+</samp>
+</dt>
+<dd >
+Follow FTP links from HTML documents. Without this option, Wget will ignore all the FTP links.
+</dd>
+<dt >
+<samp >
+`-H'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--span-hosts'
+</samp>
+</dt>
+<dd >
+Enable spanning across hosts when doing recursive retrieving (See section
+<a  href="wget.html#SEC18">
+All Hosts
+</a>
+).
+</dd>
+<dt >
+<samp >
+`-I
+<var >
+list
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--include-directories=
+<var >
+list
+</var>
+'
+</samp>
+</dt>
+<dd >
+Specify a comma-separated list of directories you wish to follow when downloading (See section
+<a  href="wget.html#SEC20">
+Directory-Based Limits
+</a>
+for more details.) Elements of
+<var >
+list
+</var>
+may contain wildcards.
+</dd>
+<dt >
+<samp >
+`-X
+<var >
+list
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--exclude-directories=
+<var >
+list
+</var>
+'
+</samp>
+</dt>
+<dd >
+Specify a comma-separated list of directories you wish to exclude from download (See section
+<a  href="wget.html#SEC20">
+Directory-Based Limits
+</a>
+for more details.) Elements of
+<var >
+list
+</var>
+may contain wildcards.
+</dd>
+<dt >
+<samp >
+`-nh'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--no-host-lookup'
+</samp>
+</dt>
+<dd >
+Disable the time-consuming DNS lookup of almost all hosts (See section
+<a  href="wget.html#SEC16">
+Host Checking
+</a>
+).
+</dd>
+<dt >
+<samp >
+`-np'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--no-parent'
+</samp>
+</dt>
+<dd >
+Do not ever ascend to the parent directory when retrieving recursively. This is a useful option, since it guarantees that only the files
+<em >
+below
+</em>
+a certain hierarchy will be downloaded. See section
+<a  href="wget.html#SEC20">
+Directory-Based Limits
+</a>
+for more details.
+</dd>
+</dl>
+<h1 >
+<a  href="wget.html#TOC13" name="SEC13">
+Recursive Retrieval
+</a>
+</h1>
+<p >
+<a  name="IDX59"></a>
+<a  name="IDX60"></a>
+<a  name="IDX61"></a>
+</p>
+<p >
+GNU Wget is capable of traversing parts of the Web (or a single HTTP or FTP server), depth-first following links and directory structure. This is called
+<em >
+recursive
+</em>
+retrieving, or
+<em >
+recursion
+</em>
+.
+</p>
+<p >
+With HTTP URLs, Wget retrieves and parses the HTML from the given URL, documents, retrieving the files the HTML document was referring to, through markups like
+<code >
+href
+</code>
+, or
+<code >
+src
+</code>
+. If the freshly downloaded file is also of type
+<code >
+text/html
+</code>
+, it will be parsed and followed further.
+</p>
+<p >
+The maximum
+<em >
+depth
+</em>
+to which the retrieval may descend is specified with the
+<samp >
+`-l'
+</samp>
+option (the default maximum depth is five layers). See section
+<a  href="wget.html#SEC13">
+Recursive Retrieval
+</a>
+.
+</p>
+<p >
+When retrieving an FTP URL recursively, Wget will retrieve all the data from the given directory tree (including the subdirectories up to the specified depth) on the remote server, creating its mirror image locally. FTP retrieval is also limited by the
+<code >
+depth
+</code>
+parameter.
+</p>
+<p >
+By default, Wget will create a local directory tree, corresponding to the one found on the remote server.
+</p>
+<p >
+Recursive retrieving can find a number of applications, the most important of which is mirroring. It is also useful for WWW presentations, and any other opportunities where slow network connections should be bypassed by storing the files locally.
+</p>
+<p >
+You should be warned that invoking recursion may cause grave overloading on your system, because of the fast exchange of data through the network; all of this may hamper other users' work. The same stands for the foreign server you are mirroring--the more requests it gets in a rows, the greater is its load.
+</p>
+<p >
+Careless retrieving can also fill your file system unctrollably, which can grind the machine to a halt.
+</p>
+<p >
+The load can be minimized by lowering the maximum recursion level (
+<samp >
+`-l'
+</samp>
+) and/or by lowering the number of retries (
+<samp >
+`-t'
+</samp>
+). You may also consider using the
+<samp >
+`-w'
+</samp>
+option to slow down your requests to the remote servers, as well as the numerous options to narrow the number of followed links (See section
+<a  href="wget.html#SEC14">
+Following Links
+</a>
+).
+</p>
+<p >
+Recursive retrieval is a good thing when used properly. Please take all precautions not to wreak havoc through carelessness.
+</p>
+<h1 >
+<a  href="wget.html#TOC14" name="SEC14">
+Following Links
+</a>
+</h1>
+<p >
+<a  name="IDX62"></a>
+<a  name="IDX63"></a>
+</p>
+<p >
+When retrieving recursively, one does not wish to retrieve the loads of unnecessary data. Most of the time the users bear in mind exactly what they want to download, and want Wget to follow only specific links.
+</p>
+<p >
+For example, if you wish to download the music archive from
+<samp >
+`fly.cc.fer.hr'
+</samp>
+, you will not want to download all the home pages that happen to be referenced by an obscure part of the archive.
+</p>
+<p >
+Wget possesses several mechanisms that allows you to fine-tune which links it will follow.
+</p>
+<h2 >
+<a  href="wget.html#TOC15" name="SEC15">
+Relative Links
+</a>
+</h2>
+<p >
+<a  name="IDX64"></a>
+</p>
+<p >
+When only relative links are followed (option
+<samp >
+`-L'
+</samp>
+), recursive retrieving will never span hosts. No time-expensive DNS-lookups will be performed, and the process will be very fast, with the minimum strain of the network. This will suit your needs often, especially when mirroring the output of various
+<code >
+x2html
+</code>
+converters, since they generally output relative links.
+</p>
+<h2 >
+<a  href="wget.html#TOC16" name="SEC16">
+Host Checking
+</a>
+</h2>
+<p >
+<a  name="IDX65"></a>
+<a  name="IDX66"></a>
+<a  name="IDX67"></a>
+</p>
+<p >
+The drawback of following the relative links solely is that humans often tend to mix them with absolute links to the very same host, and the very same page. In this mode (which is the default mode for following links) all URLs the that refer to the same host will be retrieved.
+</p>
+<p >
+The problem with this option are the aliases of the hosts and domains. Thus there is no way for Wget to know that
+<samp >
+`regoc.srce.hr'
+</samp>
+and
+<samp >
+`www.srce.hr'
+</samp>
+are the same host, or that
+<samp >
+`fly.cc.fer.hr'
+</samp>
+is the same as
+<samp >
+`fly.cc.etf.hr'
+</samp>
+. Whenever an absolute link is encountered, the host is DNS-looked-up with
+<code >
+gethostbyname
+</code>
+to check whether we are maybe dealing with the same hosts. Although the results of
+<code >
+gethostbyname
+</code>
+are cached, it is still a great slowdown, e.g. when dealing with large indices of home pages on different hosts (because each of the hosts must be and DNS-resolved to see whether it just
+<em >
+might
+</em>
+an alias of the starting host).
+</p>
+<p >
+To avoid the overhead you may use
+<samp >
+`-nh'
+</samp>
+, which will turn off DNS-resolving and make Wget compare hosts literally. This will make things run much faster, but also much less reliable (e.g.
+<samp >
+`www.srce.hr'
+</samp>
+and
+<samp >
+`regoc.srce.hr'
+</samp>
+will be flagged as different hosts).
+</p>
+<p >
+Note that modern HTTP servers allows one IP address to host several
+<em >
+virtual servers
+</em>
+, each having its own directory hieratchy. Such "servers" are distinguished by their hostnames (all of which point to the same IP address); for this to work, a client must send a
+<code >
+Host
+</code>
+header, which is what Wget does. However, in that case Wget
+<em >
+must not
+</em>
+try to divine a host's "real" address, nor try to use the same hostname for each access, i.e.
+<samp >
+`-nh'
+</samp>
+must be turned on.
+</p>
+<p >
+In other words, the
+<samp >
+`-nh'
+</samp>
+option must be used to enabling the retrieval from virtual servers distinguished by their hostnames. As the number of such server setups grow, the behavior of
+<samp >
+`-nh'
+</samp>
+may become the default in the future.
+</p>
+<h2 >
+<a  href="wget.html#TOC17" name="SEC17">
+Domain Acceptance
+</a>
+</h2>
+<p >
+With the
+<samp >
+`-D'
+</samp>
+option you may specify the domains that will be followed. The hosts the domain of which is not in this list will not be DNS-resolved. Thus you can specify
+<samp >
+`-Dmit.edu'
+</samp>
+just to make sure that
+<strong >
+nothing outside of MIT gets looked up
+</strong>
+. This is very important and useful. It also means that
+<samp >
+`-D'
+</samp>
+does
+<em >
+not
+</em>
+imply
+<samp >
+`-H'
+</samp>
+(span all hosts), which must be specified explicitly. Feel free to use this options since it will speed things up, with almost all the reliability of checking for all hosts. Thus you could invoke
+</p>
+<pre >
+wget -r -D.hr http://fly.cc.fer.hr/
+</pre>
+<p >
+to make sure that only the hosts in
+<samp >
+`.hr'
+</samp>
+domain get DNS-looked-up for being equal to
+<samp >
+`fly.cc.fer.hr'
+</samp>
+. So
+<samp >
+`fly.cc.etf.hr'
+</samp>
+will be checked (only once!) and found equal, but
+<samp >
+`www.gnu.ai.mit.edu'
+</samp>
+will not even be checked.
+</p>
+<p >
+Of course, domain acceptance can be used to limit the retrieval to particular domains with spanning of hosts in them, but then you must specify
+<samp >
+`-H'
+</samp>
+explicitly. E.g.:
+</p>
+<pre >
+wget -r -H -Dmit.edu,stanford.edu http://www.mit.edu/
+</pre>
+<p >
+will start with
+<samp >
+`http://www.mit.edu/'
+</samp>
+, following links across MIT and Stanford.
+</p>
+<p >
+If there are domains you want to exclude specifically, you can do it with
+<samp >
+`--exclude-domains'
+</samp>
+, which accepts the same type of arguments of
+<samp >
+`-D'
+</samp>
+, but will
+<em >
+exclude
+</em>
+all the listed domains. For example, if you want to download all the hosts from
+<samp >
+`foo.edu'
+</samp>
+domain, with the exception of
+<samp >
+`sunsite.foo.edu'
+</samp>
+, you can do it like this:
+</p>
+<pre >
+wget -rH -Dfoo.edu --exclude-domains sunsite.foo.edu http://www.foo.edu/
+</pre>
+<h2 >
+<a  href="wget.html#TOC18" name="SEC18">
+All Hosts
+</a>
+</h2>
+<p >
+<a  name="IDX68"></a>
+<a  name="IDX69"></a>
+</p>
+<p >
+When
+<samp >
+`-H'
+</samp>
+is specified without
+<samp >
+`-D'
+</samp>
+, all hosts are freely spanned. There are no restrictions whatsoever as to what part of the net Wget will go to fetch documents, other than maximum retrieval depth. If a page references
+<samp >
+`www.yahoo.com'
+</samp>
+, so be it. Such an option is rarely useful for itself.
+</p>
+<h2 >
+<a  href="wget.html#TOC19" name="SEC19">
+Types of Files
+</a>
+</h2>
+<p >
+<a  name="IDX70"></a>
+</p>
+<p >
+When downloading material from the web, you will often want to restrict the retrieval to only certain file types. For example, if you are interested in downloading GIFS, you will not be overjoyed to get loads of Postscript documents, and vice versa.
+</p>
+<p >
+Wget offers two options to deal with this problem. Each option description lists a short name, a long name, and the equivalent command in
+<tt >
+`.wgetrc'
+</tt>
+.
+</p>
+<p >
+<a  name="IDX71"></a>
+<a  name="IDX72"></a>
+<a  name="IDX73"></a>
+<a  name="IDX74"></a>
+</p>
+<dl  compact="compact">
+<dt >
+<samp >
+`-A
+<var >
+acclist
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--accept
+<var >
+acclist
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`accept =
+<var >
+acclist
+</var>
+'
+</samp>
+</dt>
+<dd >
+The argument to
+<samp >
+`--accept'
+</samp>
+option is a list of file suffixes or patterns that Wget will download during recursive retrieval. A suffix is the ending part of a file, and consists of "normal" letters, e.g.
+<samp >
+`gif'
+</samp>
+or
+<samp >
+`.jpg'
+</samp>
+. A matching pattern contains shell-like wildcards, e.g.
+<samp >
+`books*'
+</samp>
+or
+<samp >
+`zelazny*196[0-9]*'
+</samp>
+. So, specifying
+<samp >
+`wget -A gif,jpg'
+</samp>
+will make Wget download only the files ending with
+<samp >
+`gif'
+</samp>
+or
+<samp >
+`jpg'
+</samp>
+, i.e. GIFs and JPEGs. On the other hand,
+<samp >
+`wget -A "zelazny*196[0-9]*"'
+</samp>
+will download only files beginning with
+<samp >
+`zelazny'
+</samp>
+and containing numbers from 1960 to 1969 anywhere within. Look up the manual of your shell for a description of how pattern matching works. Of course, any number of suffixes and patterns can be combined into a comma-separated list, and given as an argument to
+<samp >
+`-A'
+</samp>
+.
+<a  name="IDX75"></a>
+<a  name="IDX76"></a>
+<a  name="IDX77"></a>
+<a  name="IDX78"></a>
+</dd>
+<dt >
+<samp >
+`-R
+<var >
+rejlist
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--reject
+<var >
+rejlist
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`reject =
+<var >
+rejlist
+</var>
+'
+</samp>
+</dt>
+<dd >
+The
+<samp >
+`--reject'
+</samp>
+option works the same way as
+<samp >
+`--accept'
+</samp>
+, only its logic is the reverse; Wget will download all files
+<em >
+except
+</em>
+the ones matching the suffixes (or patterns) in the list. So, if you want to download a whole page except for the cumbersome MPEGs and .AU files, you can use
+<samp >
+`wget -R mpg,mpeg,au'
+</samp>
+. Analogously, to download all files except the ones beginning with
+<samp >
+`bjork'
+</samp>
+, use
+<samp >
+`wget -R "bjork*"'
+</samp>
+. The quotes are to prevent expansion by the shell.
+</dd>
+</dl>
+<p >
+The
+<samp >
+`-A'
+</samp>
+and
+<samp >
+`-R'
+</samp>
+options may be combined to achieve even better fine-tuning of which files to retrieve. E.g.
+<samp >
+`wget -A "*zelazny*" -R .ps'
+</samp>
+will download all the files having
+<samp >
+`zelazny'
+</samp>
+as a part of their name, but
+<em >
+not
+</em>
+the postscript files.
+</p>
+<p >
+Note that these two options do not affect the downloading of HTML files; Wget must load all the HTMLs to know where to go at all--recursive retrieval would make no sense otherwise.
+</p>
+<h2 >
+<a  href="wget.html#TOC20" name="SEC20">
+Directory-Based Limits
+</a>
+</h2>
+<p >
+<a  name="IDX79"></a>
+<a  name="IDX80"></a>
+</p>
+<p >
+Regardless of other link-following facilities, it is often useful to place the restriction of what files to retrieve based on the directories those files are placed in. There can be many reasons for this--the home pages may be organized in a reasonable directory structure; or some directories may contain useless information, e.g.
+<tt >
+`/cgi-bin'
+</tt>
+or
+<tt >
+`/dev'
+</tt>
+directories.
+</p>
+<p >
+Wget offers three different options to deal with this requirement. Each option description lists a short name, a long name, and the equivalent command in
+<tt >
+`.wgetrc'
+</tt>
+.
+</p>
+<p >
+<a  name="IDX81"></a>
+<a  name="IDX82"></a>
+<a  name="IDX83"></a>
+</p>
+<dl  compact="compact">
+<dt >
+<samp >
+`-I
+<var >
+list
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--include
+<var >
+list
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`include_directories =
+<var >
+list
+</var>
+'
+</samp>
+</dt>
+<dd >
+<samp >
+`-I'
+</samp>
+option accepts a comma-separated list of directories included in the retrieval. Any other directories will simply be ignored. The directories are absolute paths. So, if you wish to download from
+<samp >
+`http://host/people/bozo/'
+</samp>
+following only links to bozo's colleagues in the
+<tt >
+`/people'
+</tt>
+directory and the bogus scripts in
+<tt >
+`/cgi-bin'
+</tt>
+, you can specify:
+<pre >
+wget -I /people,/cgi-bin http://host/people/bozo/
+</pre>
+<a  name="IDX84"></a>
+<a  name="IDX85"></a>
+<a  name="IDX86"></a>
+</dd>
+<dt >
+<samp >
+`-X
+<var >
+list
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--exclude
+<var >
+list
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`exclude_directories =
+<var >
+list
+</var>
+'
+</samp>
+</dt>
+<dd >
+<samp >
+`-X'
+</samp>
+option is exactly the reverse of
+<samp >
+`-I'
+</samp>
+---this is a list of directories
+<em >
+excluded
+</em>
+from the download. E.g. if you do not want Wget to download things from
+<tt >
+`/cgi-bin'
+</tt>
+directory, specify
+<samp >
+`-X /cgi-bin'
+</samp>
+on the command line. The same as with
+<samp >
+`-A'
+</samp>
+/
+<samp >
+`-R'
+</samp>
+, these two options can be combined to get a better fine-tuning of downloading subdirectories. E.g. if you want to load all the files from
+<tt >
+`/pub'
+</tt>
+hierarchy except for
+<tt >
+`/pub/worthless'
+</tt>
+, specify
+<samp >
+`-I/pub -X/pub/worthless'
+</samp>
+.
+<a  name="IDX87"></a>
+</dd>
+<dt >
+<samp >
+`-np'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--no-parent'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`no_parent = on'
+</samp>
+</dt>
+<dd >
+The simplest, and often very useful way of limiting directories is disallowing retrieval of the links that refer to the hierarchy
+<em >
+upper
+</em>
+than the beginning directory, i.e. disallowing ascent to the parent directory/directories. The
+<samp >
+`--no-parent'
+</samp>
+option (short
+<samp >
+`-np'
+</samp>
+) is useful in this case. Using it guarantees that you will never leave the existing hierarchy. Supposing you issue Wget with:
+<pre >
+wget -r --no-parent http://somehost/~luzer/my-archive/
+</pre>
+You may rest assured that none of the references to
+<tt >
+`/~his-girls-homepage/'
+</tt>
+or
+<tt >
+`/~luzer/all-my-mpegs/'
+</tt>
+will be followed. Only the archive you are interested in will be downloaded. Essentially,
+<samp >
+`--no-parent'
+</samp>
+is similar to
+<samp >
+`-I/~luzer/my-archive'
+</samp>
+, only it handles redirections in a more intelligent fashion.
+</dd>
+</dl>
+<h2 >
+<a  href="wget.html#TOC21" name="SEC21">
+Following FTP Links
+</a>
+</h2>
+<p >
+<a  name="IDX88"></a>
+</p>
+<p >
+The rules for FTP are somewhat specific, as it is necessary for them to be. FTP links in HTML documents are often included for purposes of reference, and it is often inconvenient to download them by default.
+</p>
+<p >
+To have FTP links followed from HTML documents, you need to specify the
+<samp >
+`--follow-ftp'
+</samp>
+option. Having done that, FTP links will span hosts regardless of
+<samp >
+`-H'
+</samp>
+setting. This is logical, as FTP links rarely point to the same host where the HTTP server resides. For similar reasons, the
+<samp >
+`-L'
+</samp>
+options has no effect on such downloads. On the other hand, domain acceptance (
+<samp >
+`-D'
+</samp>
+) and suffix rules (
+<samp >
+`-A'
+</samp>
+and
+<samp >
+`-R'
+</samp>
+) apply normally.
+</p>
+<p >
+Also note that followed links to FTP directories will not be retrieved recursively further.
+</p>
+<h1 >
+<a  href="wget.html#TOC22" name="SEC22">
+Time-Stamping
+</a>
+</h1>
+<p >
+<a  name="IDX89"></a>
+<a  name="IDX90"></a>
+<a  name="IDX91"></a>
+<a  name="IDX92"></a>
+</p>
+<p >
+One of the most important aspects of mirroring information from the Internet is updating your archives.
+</p>
+<p >
+Downloading the whole archive again and again, just to replace a few changed files is expensive, both in terms of wasted bandwidth and money, and the time to do the update. This is why all the mirroring tools offer the option of incremental updating.
+</p>
+<p >
+Such an updating mechanism means that the remote server is scanned in search of
+<em >
+new
+</em>
+files. Only those new files will be downloaded in the place of the old ones.
+</p>
+<p >
+A file is considered new if one of these two conditions are met:
+</p>
+<ol >
+<li >
+A file of that name does not already exist locally.
+</li>
+<li >
+A file of that name does exist, but the remote file was modified more recently than the local file.
+</li>
+</ol>
+<p >
+To implement this, the program needs to be aware of the time of last modification of both remote and local files. Such information are called the
+<em >
+time-stamps
+</em>
+.
+</p>
+<p >
+The time-stamping in GNU Wget is turned on using
+<samp >
+`--timestamping'
+</samp>
+(
+<samp >
+`-N'
+</samp>
+) option, or through
+<code >
+timestamping = on
+</code>
+directive in
+<tt >
+`.wgetrc'
+</tt>
+. With this option, for each file it intends to download, Wget will check whether a local file of the same name exists. If it does, and the remote file is older, Wget will not download it.
+</p>
+<p >
+If the local file does not exist, or the sizes of the files do not match, Wget will download the remote file no matter what the time-stamps say.
+</p>
+<h2 >
+<a  href="wget.html#TOC23" name="SEC23">
+Time-Stamping Usage
+</a>
+</h2>
+<p >
+<a  name="IDX93"></a>
+<a  name="IDX94"></a>
+</p>
+<p >
+The usage of time-stamping is simple. Say you would like to download a file so that it keeps its date of modification.
+</p>
+<pre >
+wget -S http://www.gnu.ai.mit.edu/
+</pre>
+<p >
+A simple
+<code >
+ls -l
+</code>
+shows that the time stamp on the local file equals the state of the
+<code >
+Last-Modified
+</code>
+header, as returned by the server. As you can see, the time-stamping info is preserved locally, even without
+<samp >
+`-N'
+</samp>
+.
+</p>
+<p >
+Several days later, you would like Wget to check if the remote file has changed, and download it if it has.
+</p>
+<pre >
+wget -N http://www.gnu.ai.mit.edu/
+</pre>
+<p >
+Wget will ask the server for the last-modified date. If the local file is newer, the remote file will not be re-fetched. However, if the remote file is more recent, Wget will proceed fetching it normally.
+</p>
+<p >
+The same goes for FTP. For example:
+</p>
+<pre >
+wget ftp://ftp.ifi.uio.no/pub/emacs/gnus/*
+</pre>
+<p >
+<code >
+ls
+</code>
+will show that the timestamps are set according to the state on the remote server. Reissuing the command with
+<samp >
+`-N'
+</samp>
+will make Wget re-fetch
+<em >
+only
+</em>
+the files that have been modified.
+</p>
+<p >
+In both HTTP and FTP retrieval Wget will time-stamp the local file correctly (with or without
+<samp >
+`-N'
+</samp>
+) if it gets the stamps, i.e. gets the directory listing for FTP or the
+<code >
+Last-Modified
+</code>
+header for HTTP.
+</p>
+<p >
+If you wished to mirror the GNU archive every week, you would use the following command every week:
+</p>
+<pre >
+wget --timestamping -r ftp://prep.ai.mit.edu/pub/gnu/
+</pre>
+<h2 >
+<a  href="wget.html#TOC24" name="SEC24">
+HTTP Time-Stamping Internals
+</a>
+</h2>
+<p >
+<a  name="IDX95"></a>
+</p>
+<p >
+Time-stamping in HTTP is implemented by checking of the
+<code >
+Last-Modified
+</code>
+header. If you wish to retrieve the file
+<tt >
+`foo.html'
+</tt>
+through HTTP, Wget will check whether
+<tt >
+`foo.html'
+</tt>
+exists locally. If it doesn't,
+<tt >
+`foo.html'
+</tt>
+will be retrieved unconditionally.
+</p>
+<p >
+If the file does exist locally, Wget will first check its local time-stamp (similar to the way
+<code >
+ls -l
+</code>
+checks it), and then send a
+<code >
+HEAD
+</code>
+request to the remote server, demanding the information on the remote file.
+</p>
+<p >
+The
+<code >
+Last-Modified
+</code>
+header is examined to find which file was modified more recently (which makes it "newer"). If the remote file is newer, it will be downloaded; if it is older, Wget will give up.
+<a  href="wget.html#FOOT2" name="DOCF2">
+(2)
+</a>
+</p>
+<p >
+Arguably, HTTP time-stamping should be implemented using the
+<code >
+If-Modified-Since
+</code>
+request.
+</p>
+<h2 >
+<a  href="wget.html#TOC25" name="SEC25">
+FTP Time-Stamping Internals
+</a>
+</h2>
+<p >
+<a  name="IDX96"></a>
+</p>
+<p >
+In theory, FTP time-stamping works much the same as HTTP, only FTP has no headers--time-stamps must be received from the directory listings.
+</p>
+<p >
+For each directory files must be retrieved from, Wget will use the
+<code >
+LIST
+</code>
+command to get the listing. It will try to analyze the listing, assuming that it is a Unix
+<code >
+ls -l
+</code>
+listing, and extract the time-stamps. The rest is exactly the same as for HTTP.
+</p>
+<p >
+Assumption that every directory listing is a Unix-style listing may sound extremely constraining, but in practice it is not, as many non-Unix FTP servers use the Unixoid listing format because most (all?) of the clients understand it. Bear in mind that RFC959 defines no standard way to get a file list, let alone the time-stamps. We can only hope that a future standard will define this.
+</p>
+<p >
+Another non-standard solution includes the use of
+<code >
+MDTM
+</code>
+command that is supported by some FTP servers (including the popular
+<code >
+wu-ftpd
+</code>
+), which returns the exact time of the specified file. Wget may support this command in the future.
+</p>
+<h1 >
+<a  href="wget.html#TOC26" name="SEC26">
+Startup File
+</a>
+</h1>
+<p >
+<a  name="IDX97"></a>
+<a  name="IDX98"></a>
+<a  name="IDX99"></a>
+<a  name="IDX100"></a>
+<a  name="IDX101"></a>
+</p>
+<p >
+Once you know how to change default settings of Wget through command line arguments, you may wish to make some of those settings permanent. You can do that in a convenient way by creating the Wget startup file---
+<tt >
+`.wgetrc'
+</tt>
+.
+</p>
+<p >
+Besides
+<tt >
+`.wgetrc'
+</tt>
+is the "main" initialization file, it is convenient to have a special facility for storing passwords. Thus Wget reads and interprets the contents of
+<tt >
+`$HOME/.netrc'
+</tt>
+, if it finds it. You can find
+<tt >
+`.netrc'
+</tt>
+format in your system manuals.
+</p>
+<p >
+Wget reads
+<tt >
+`.wgetrc'
+</tt>
+upon startup, recognizing a limited set of commands.
+</p>
+<h2 >
+<a  href="wget.html#TOC27" name="SEC27">
+Wgetrc Location
+</a>
+</h2>
+<p >
+<a  name="IDX102"></a>
+<a  name="IDX103"></a>
+</p>
+<p >
+When initializing, Wget will look for a
+<em >
+global
+</em>
+startup file,
+<tt >
+`/usr/local/etc/wgetrc'
+</tt>
+by default (or some prefix other than
+<tt >
+`/usr/local'
+</tt>
+, if Wget was not installed there) and read commands from there, if it exists.
+</p>
+<p >
+Then it will look for the user's file. If the environmental variable
+<code >
+WGETRC
+</code>
+is set, Wget will try to load that file. Failing that, no further attempts will be made.
+</p>
+<p >
+If
+<code >
+WGETRC
+</code>
+is not set, Wget will try to load
+<tt >
+`$HOME/.wgetrc'
+</tt>
+.
+</p>
+<p >
+The fact that user's settings are loaded after the system-wide ones means that in case of collision user's wgetrc
+<em >
+overrides
+</em>
+the system-wide wgetrc (in
+<tt >
+`/usr/local/etc/wgetrc'
+</tt>
+by default). Fascist admins, away!
+</p>
+<h2 >
+<a  href="wget.html#TOC28" name="SEC28">
+Wgetrc Syntax
+</a>
+</h2>
+<p >
+<a  name="IDX104"></a>
+<a  name="IDX105"></a>
+</p>
+<p >
+The syntax of a wgetrc command is simple:
+</p>
+<pre >
+variable = value
+</pre>
+<p >
+The
+<em >
+variable
+</em>
+will also be called
+<em >
+command
+</em>
+. Valid
+<em >
+values
+</em>
+are different for different commands.
+</p>
+<p >
+The commands are case-insensitive and underscore-insensitive. Thus
+<samp >
+`DIr__PrefiX'
+</samp>
+is the same as
+<samp >
+`dirprefix'
+</samp>
+. Empty lines, lines beginning with
+<samp >
+`#'
+</samp>
+and lines containing white-space only are discarded.
+</p>
+<p >
+Commands that expect a comma-separated list will clear the list on an empty command. So, if you wish to reset the rejection list specified in global
+<tt >
+`wgetrc'
+</tt>
+, you can do it with:
+</p>
+<pre >
+reject =
+</pre>
+<h2 >
+<a  href="wget.html#TOC29" name="SEC29">
+Wgetrc Commands
+</a>
+</h2>
+<p >
+<a  name="IDX106"></a>
+</p>
+<p >
+The complete set of commands is listed below, the letter after
+<samp >
+`='
+</samp>
+denoting the value the command takes. It is
+<samp >
+`on/off'
+</samp>
+for
+<samp >
+`on'
+</samp>
+or
+<samp >
+`off'
+</samp>
+(which can also be
+<samp >
+`1'
+</samp>
+or
+<samp >
+`0'
+</samp>
+),
+<var >
+string
+</var>
+for any non-empty string or
+<var >
+n
+</var>
+for a positive integer. For example, you may specify
+<samp >
+`use_proxy = off'
+</samp>
+to disable use of proxy servers by default. You may use
+<samp >
+`inf'
+</samp>
+for infinite values, where appropriate.
+</p>
+<p >
+Most of the commands have their equivalent command-line option (See section
+<a  href="wget.html#SEC2">
+Invoking
+</a>
+), except some more obscure or rarely used ones.
+</p>
+<dl  compact="compact">
+<dt >
+accept/reject =
+<var >
+string
+</var>
+</dt>
+<dd >
+Same as
+<samp >
+`-A'
+</samp>
+/
+<samp >
+`-R'
+</samp>
+(See section
+<a  href="wget.html#SEC19">
+Types of Files
+</a>
+).
+</dd>
+<dt >
+add_hostdir = on/off
+</dt>
+<dd >
+Enable/disable host-prefixed file names.
+<samp >
+`-nH'
+</samp>
+disables it.
+</dd>
+<dt >
+continue = on/off
+</dt>
+<dd >
+Enable/disable continuation of the retrieval, the same as
+<samp >
+`-c'
+</samp>
+(which enables it).
+</dd>
+<dt >
+background = on/off
+</dt>
+<dd >
+Enable/disable going to background, the same as
+<samp >
+`-b'
+</samp>
+(which enables it).
+</dd>
+<dt >
+base =
+<var >
+string
+</var>
+</dt>
+<dd >
+Set base for relative URLs, the same as
+<samp >
+`-B'
+</samp>
+.
+</dd>
+<dt >
+cache = on/off
+</dt>
+<dd >
+When set to off, disallow server-caching. See the
+<samp >
+`-C'
+</samp>
+option.
+</dd>
+<dt >
+convert links = on/off
+</dt>
+<dd >
+Convert non-relative links locally. The same as
+<samp >
+`-k'
+</samp>
+.
+</dd>
+<dt >
+cut_dirs =
+<var >
+n
+</var>
+</dt>
+<dd >
+Ignore
+<var >
+n
+</var>
+remote directory components.
+</dd>
+<dt >
+debug = on/off
+</dt>
+<dd >
+Debug mode, same as
+<samp >
+`-d'
+</samp>
+.
+</dd>
+<dt >
+delete_after = on/off
+</dt>
+<dd >
+Delete after download, the same as
+<samp >
+`--delete-after'
+</samp>
+.
+</dd>
+<dt >
+dir_prefix =
+<var >
+string
+</var>
+</dt>
+<dd >
+Top of directory tree, the same as
+<samp >
+`-P'
+</samp>
+.
+</dd>
+<dt >
+dirstruct = on/off
+</dt>
+<dd >
+Turning dirstruct on or off, the same as
+<samp >
+`-x'
+</samp>
+or
+<samp >
+`-nd'
+</samp>
+, respectively.
+</dd>
+<dt >
+domains =
+<var >
+string
+</var>
+</dt>
+<dd >
+Same as
+<samp >
+`-D'
+</samp>
+(See section
+<a  href="wget.html#SEC17">
+Domain Acceptance
+</a>
+).
+</dd>
+<dt >
+dot_bytes =
+<var >
+n
+</var>
+</dt>
+<dd >
+Specify the number of bytes "contained" in a dot, as seen throughout the retrieval (1024 by default). You can postfix the value with
+<samp >
+`k'
+</samp>
+or
+<samp >
+`m'
+</samp>
+, representing kilobytes and megabytes, respectively. With dot settings you can tailor the dot retrieval to suit your needs, or you can use the predefined
+<em >
+styles
+</em>
+(See section
+<a  href="wget.html#SEC7">
+Download Options
+</a>
+).
+</dd>
+<dt >
+dots_in_line =
+<var >
+n
+</var>
+</dt>
+<dd >
+Specify the number of dots that will be printed in each line throughout the retrieval (50 by default).
+</dd>
+<dt >
+dot_spacing =
+<var >
+n
+</var>
+</dt>
+<dd >
+Specify the number of dots in a single cluster (10 by default).
+</dd>
+<dt >
+dot_style =
+<var >
+string
+</var>
+</dt>
+<dd >
+Specify the dot retrieval
+<em >
+style
+</em>
+, as with
+<samp >
+`--dot-style'
+</samp>
+.
+</dd>
+<dt >
+exclude_directories =
+<var >
+string
+</var>
+</dt>
+<dd >
+Specify a comma-separated list of directories you wish to exclude from download, the same as
+<samp >
+`-X'
+</samp>
+(See section
+<a  href="wget.html#SEC20">
+Directory-Based Limits
+</a>
+).
+</dd>
+<dt >
+exclude_domains =
+<var >
+string
+</var>
+</dt>
+<dd >
+Same as
+<samp >
+`--exclude-domains'
+</samp>
+(See section
+<a  href="wget.html#SEC17">
+Domain Acceptance
+</a>
+).
+</dd>
+<dt >
+follow_ftp = on/off
+</dt>
+<dd >
+Follow FTP links from HTML documents, the same as
+<samp >
+`-f'
+</samp>
+.
+</dd>
+<dt >
+force_html = on/off
+</dt>
+<dd >
+If set to on, force the input filename to be regarded as an HTML document, the same as
+<samp >
+`-F'
+</samp>
+.
+</dd>
+<dt >
+ftp_proxy =
+<var >
+string
+</var>
+</dt>
+<dd >
+Use
+<var >
+string
+</var>
+as FTP proxy, instead of the one specified in environment.
+</dd>
+<dt >
+glob = on/off
+</dt>
+<dd >
+Turn globbing on/off, the same as
+<samp >
+`-g'
+</samp>
+.
+</dd>
+<dt >
+header =
+<var >
+string
+</var>
+</dt>
+<dd >
+Define an additional header, like
+<samp >
+`--header'
+</samp>
+.
+</dd>
+<dt >
+http_passwd =
+<var >
+string
+</var>
+</dt>
+<dd >
+Set HTTP password.
+</dd>
+<dt >
+http_proxy =
+<var >
+string
+</var>
+</dt>
+<dd >
+Use
+<var >
+string
+</var>
+as HTTP proxy, instead of the one specified in environment.
+</dd>
+<dt >
+http_user =
+<var >
+string
+</var>
+</dt>
+<dd >
+Set HTTP user to
+<var >
+string
+</var>
+.
+</dd>
+<dt >
+ignore_length = on/off
+</dt>
+<dd >
+When set to on, ignore
+<code >
+Content-Length
+</code>
+header; the same as
+<samp >
+`--ignore-length'
+</samp>
+.
+</dd>
+<dt >
+include_directories =
+<var >
+string
+</var>
+</dt>
+<dd >
+Specify a comma-separated list of directories you wish to follow when downloading, the same as
+<samp >
+`-I'
+</samp>
+.
+</dd>
+<dt >
+input =
+<var >
+string
+</var>
+</dt>
+<dd >
+Read the URLs from
+<var >
+string
+</var>
+, like
+<samp >
+`-i'
+</samp>
+.
+</dd>
+<dt >
+kill_longer = on/off
+</dt>
+<dd >
+Consider data longer than specified in content-length header as invalid (and retry getting it). The default behaviour is to save as much data as there is, provided there is more than or equal to the value in
+<code >
+Content-Length
+</code>
+.
+</dd>
+<dt >
+logfile =
+<var >
+string
+</var>
+</dt>
+<dd >
+Set logfile, the same as
+<samp >
+`-o'
+</samp>
+.
+</dd>
+<dt >
+login =
+<var >
+string
+</var>
+</dt>
+<dd >
+Your user name on the remote machine, for FTP. Defaults to
+<samp >
+`anonymous'
+</samp>
+.
+</dd>
+<dt >
+mirror = on/off
+</dt>
+<dd >
+Turn mirroring on/off. The same as
+<samp >
+`-m'
+</samp>
+.
+</dd>
+<dt >
+netrc = on/off
+</dt>
+<dd >
+Turn reading netrc on or off.
+</dd>
+<dt >
+noclobber = on/off
+</dt>
+<dd >
+Same as
+<samp >
+`-nc'
+</samp>
+.
+</dd>
+<dt >
+no_parent = on/off
+</dt>
+<dd >
+Disallow retrieving outside the directory hierarchy, like
+<samp >
+`--no-parent'
+</samp>
+(See section
+<a  href="wget.html#SEC20">
+Directory-Based Limits
+</a>
+).
+</dd>
+<dt >
+no_proxy =
+<var >
+string
+</var>
+</dt>
+<dd >
+Use
+<var >
+string
+</var>
+as the comma-separated list of domains to avoid in proxy loading, instead of the one specified in environment.
+</dd>
+<dt >
+output_document =
+<var >
+string
+</var>
+</dt>
+<dd >
+Set the output filename, the same as
+<samp >
+`-O'
+</samp>
+.
+</dd>
+<dt >
+passive_ftp = on/off
+</dt>
+<dd >
+Set passive FTP, the same as
+<samp >
+`--passive-ftp'
+</samp>
+.
+</dd>
+<dt >
+passwd =
+<var >
+string
+</var>
+</dt>
+<dd >
+Set your FTP password to
+<var >
+password
+</var>
+. Without this setting, the password defaults to
+<samp >
+`username@hostname.domainname'
+</samp>
+.
+</dd>
+<dt >
+proxy_user =
+<var >
+string
+</var>
+</dt>
+<dd >
+Set proxy authentication user name to
+<var >
+string
+</var>
+, like
+<samp >
+`--proxy-user'
+</samp>
+.
+</dd>
+<dt >
+proxy_passwd =
+<var >
+string
+</var>
+</dt>
+<dd >
+Set proxy authentication password to
+<var >
+string
+</var>
+, like
+<samp >
+`--proxy-passwd'
+</samp>
+.
+</dd>
+<dt >
+quiet = on/off
+</dt>
+<dd >
+Quiet mode, the same as
+<samp >
+`-q'
+</samp>
+.
+</dd>
+<dt >
+quota =
+<var >
+quota
+</var>
+</dt>
+<dd >
+Specify the download quota, which is useful to put in global wgetrc. When download quota is specified, Wget will stop retrieving after the download sum has become greater than quota. The quota can be specified in bytes (default), kbytes
+<samp >
+`k'
+</samp>
+appended) or mbytes (
+<samp >
+`m'
+</samp>
+appended). Thus
+<samp >
+`quota = 5m'
+</samp>
+will set the quota to 5 mbytes. Note that the user's startup file overrides system settings.
+</dd>
+<dt >
+reclevel =
+<var >
+n
+</var>
+</dt>
+<dd >
+Recursion level, the same as
+<samp >
+`-l'
+</samp>
+.
+</dd>
+<dt >
+recursive = on/off
+</dt>
+<dd >
+Recursive on/off, the same as
+<samp >
+`-r'
+</samp>
+.
+</dd>
+<dt >
+relative_only = on/off
+</dt>
+<dd >
+Follow only relative links, the same as
+<samp >
+`-L'
+</samp>
+(See section
+<a  href="wget.html#SEC15">
+Relative Links
+</a>
+).
+</dd>
+<dt >
+remove_listing = on/off
+</dt>
+<dd >
+If set to on, remove FTP listings downloaded by Wget. Setting it to off is the same as
+<samp >
+`-nr'
+</samp>
+.
+</dd>
+<dt >
+retr_symlinks = on/off
+</dt>
+<dd >
+When set to on, retrieve symbolic links as if they were plain files; the same as
+<samp >
+`--retr-symlinks'
+</samp>
+.
+</dd>
+<dt >
+robots = on/off
+</dt>
+<dd >
+Use (or not)
+<tt >
+`/robots.txt'
+</tt>
+file (See section
+<a  href="wget.html#SEC43">
+Robots
+</a>
+). Be sure to know what you are doing before changing the default (which is
+<samp >
+`on'
+</samp>
+).
+</dd>
+<dt >
+server_response = on/off
+</dt>
+<dd >
+Choose whether or not to print the HTTP and FTP server responses, the same as
+<samp >
+`-S'
+</samp>
+.
+</dd>
+<dt >
+simple_host_check = on/off
+</dt>
+<dd >
+Same as
+<samp >
+`-nh'
+</samp>
+(See section
+<a  href="wget.html#SEC16">
+Host Checking
+</a>
+).
+</dd>
+<dt >
+span_hosts = on/off
+</dt>
+<dd >
+Same as
+<samp >
+`-H'
+</samp>
+.
+</dd>
+<dt >
+timeout =
+<var >
+n
+</var>
+</dt>
+<dd >
+Set timeout value, the same as
+<samp >
+`-T'
+</samp>
+.
+</dd>
+<dt >
+timestamping = on/off
+</dt>
+<dd >
+Turn timestamping on/off. The same as
+<samp >
+`-N'
+</samp>
+(See section
+<a  href="wget.html#SEC22">
+Time-Stamping
+</a>
+).
+</dd>
+<dt >
+tries =
+<var >
+n
+</var>
+</dt>
+<dd >
+Set number of retries per URL, the same as
+<samp >
+`-t'
+</samp>
+.
+</dd>
+<dt >
+use_proxy = on/off
+</dt>
+<dd >
+Turn proxy support on/off. The same as
+<samp >
+`-Y'
+</samp>
+.
+</dd>
+<dt >
+verbose = on/off
+</dt>
+<dd >
+Turn verbose on/off, the same as
+<samp >
+`-v'
+</samp>
+/
+<samp >
+`-nv'
+</samp>
+.
+</dd>
+<dt >
+wait =
+<var >
+n
+</var>
+</dt>
+<dd >
+Wait
+<var >
+n
+</var>
+seconds between retrievals, the same as
+<samp >
+`-w'
+</samp>
+.
+</dd>
+</dl>
+<h2 >
+<a  href="wget.html#TOC30" name="SEC30">
+Sample Wgetrc
+</a>
+</h2>
+<p >
+<a  name="IDX107"></a>
+</p>
+<p >
+This is the sample initialization file, as given in the distribution. It is divided in two section--one for global usage (suitable for global startup file), and one for local usage (suitable for
+<tt >
+`$HOME/.wgetrc'
+</tt>
+). Be careful about the things you change.
+</p>
+<p >
+Note that all the lines are commented out. For any line to have effect, you must remove the
+<samp >
+`#'
+</samp>
+prefix at the beginning of line.
+</p>
+<pre >
+###
+### Sample Wget initialization file .wgetrc
+###
+
+## You can use this file to change the default behaviour of wget or to
+## avoid having to type many many command-line options. This file does
+## not contain a comprehensive list of commands -- look at the manual
+## to find out what you can put into this file.
+## 
+## Wget initialization file can reside in /usr/local/etc/wgetrc
+## (global, for all users) or $HOME/.wgetrc (for a single user).
+##
+## To use any of the settings in this file, you will have to uncomment
+## them (and probably change them).
+
+##
+## Global settings (useful for setting up in /usr/local/etc/wgetrc).
+## Think well before you change them, since they may reduce wget's
+## functionality, and make it behave contrary to the documentation:
+##
+
+# You can set retrieve quota for beginners by specifying a value
+# optionally followed by 'K' (kilobytes) or 'M' (megabytes).  The
+# default quota is unlimited.
+#quota = inf
+
+# You can lower (or raise) the default number of retries when
+# downloading a file (default is 20).
+#tries = 20
+
+# Lowering the maximum depth of the recursive retrieval is handy to
+# prevent newbies from going too "deep" when they unwittingly start
+# the recursive retrieval.  The default is 5.
+#reclevel = 5
+
+# Many sites are behind firewalls that do not allow initiation of
+# connections from the outside.  On these sites you have to use the
+# `passive' feature of FTP.  If you are behind such a firewall, you
+# can turn this on to make Wget use passive FTP by default.
+#passive_ftp = off
+
+##
+## Local settings (for a user to set in his $HOME/.wgetrc).  It is
+## *highly* undesirable to put these settings in the global file, since
+## they are potentially dangerous to "normal" users.
+##
+## Even when setting up your own ~/.wgetrc, you should know what you
+## are doing before doing so.
+##
+
+# Set this to on to use timestamping by default:
+#timestamping = off
+
+# It is a good idea to make Wget send your email address in a `From:'
+# header with your request (so that server administrators can contact
+# you in case of errors).  Wget does *not* send `From:' by default.
+#header = From: Your Name &lt;username@site.domain&gt;
+
+# You can set up other headers, like Accept-Language.  Accept-Language
+# is *not* sent by default.
+#header = Accept-Language: en
+
+# You can set the default proxy for Wget to use.  It will override the
+# value in the environment.
+#http_proxy = http://proxy.yoyodyne.com:18023/
+
+# If you do not want to use proxy at all, set this to off.
+#use_proxy = on
+
+# You can customize the retrieval outlook.  Valid options are default,
+# binary, mega and micro.
+#dot_style = default
+
+# Setting this to off makes Wget not download /robots.txt.  Be sure to
+# know *exactly* what /robots.txt is and how it is used before changing
+# the default!
+#robots = on
+
+# It can be useful to make Wget wait between connections.  Set this to
+# the number of seconds you want Wget to wait.
+#wait = 0
+
+# You can force creating directory structure, even if a single is being
+# retrieved, by setting this to on.
+#dirstruct = off
+
+# You can turn on recursive retrieving by default (don't do this if
+# you are not sure you know what it means) by setting this to on.
+#recursive = off
+
+# To have Wget follow FTP links from HTML files by default, set this
+# to on:
+#follow_ftp = off
+</pre>
+<h1 >
+<a  href="wget.html#TOC31" name="SEC31">
+Examples
+</a>
+</h1>
+<p >
+<a  name="IDX108"></a>
+</p>
+<p >
+The examples are classified into three sections, because of clarity. The first section is a tutorial for beginners. The second section explains some of the more complex program features. The third section contains advice for mirror administrators, as well as even more complex features (that some would call perverted).
+</p>
+<h2 >
+<a  href="wget.html#TOC32" name="SEC32">
+Simple Usage
+</a>
+</h2>
+<ul >
+<li >
+Say you want to download a URL. Just type:
+<pre >
+wget http://fly.cc.fer.hr/
+</pre>
+The response will be something like:
+<pre >
+--13:30:45--  http://fly.cc.fer.hr:80/en/
+           =&gt; `index.html'
+Connecting to fly.cc.fer.hr:80... connected!
+HTTP request sent, awaiting response... 200 OK
+Length: 4,694 [text/html]
+
+    0K -&gt; ....                                                   [100%]
+
+13:30:46 (23.75 KB/s) - `index.html' saved [4694/4694]
+</pre>
+</li>
+<li >
+But what will happen if the connection is slow, and the file is lengthy? The connection will probably fail before the whole file is retrieved, more than once. In this case, Wget will try getting the file until it either gets the whole of it, or exceeds the default number of retries (this being 20). It is easy to change the number of tries to 45, to insure that the whole file will arrive safely:
+<pre >
+wget --tries=45 http://fly.cc.fer.hr/jpg/flyweb.jpg
+</pre>
+</li>
+<li >
+Now let's leave Wget to work in the background, and write its progress to log file
+<tt >
+`log'
+</tt>
+. It is tiring to type
+<samp >
+`--tries'
+</samp>
+, so we shall use
+<samp >
+`-t'
+</samp>
+.
+<pre >
+wget -t 45 -o log http://fly.cc.fer.hr/jpg/flyweb.jpg &amp;
+</pre>
+The ampersand at the end of the line makes sure that Wget works in the background. To unlimit the number of retries, use
+<samp >
+`-t inf'
+</samp>
+.
+</li>
+<li >
+The usage of FTP is as simple. Wget will take care of login and password.
+<pre >
+$ wget ftp://gnjilux.cc.fer.hr/welcome.msg
+--10:08:47--  ftp://gnjilux.cc.fer.hr:21/welcome.msg
+           =&gt; `welcome.msg'
+Connecting to gnjilux.cc.fer.hr:21... connected!
+Logging in as anonymous ... Logged in!
+==&gt; TYPE I ... done.  ==&gt; CWD not needed.
+==&gt; PORT ... done.    ==&gt; RETR welcome.msg ... done.
+Length: 1,340 (unauthoritative)
+
+    0K -&gt; .                                                      [100%]
+
+10:08:48 (1.28 MB/s) - `welcome.msg' saved [1340]
+</pre>
+</li>
+<li >
+If you specify a directory, Wget will retrieve the directory listing, parse it and convert it to HTML. Try:
+<pre >
+wget ftp://prep.ai.mit.edu/pub/gnu/
+lynx index.html
+</pre>
+</li>
+</ul>
+<h2 >
+<a  href="wget.html#TOC33" name="SEC33">
+Advanced Usage
+</a>
+</h2>
+<ul >
+<li >
+You would like to read the list of URLs from a file? Not a problem with that:
+<pre >
+wget -i file
+</pre>
+If you specify
+<samp >
+`-'
+</samp>
+as file name, the URLs will be read from standard input.
+</li>
+<li >
+Create a mirror image of GNU WWW site (with the same directory structure the original has) with only one try per document, saving the log of the activities to
+<tt >
+`gnulog'
+</tt>
+:
+<pre >
+wget -r -t1 http://www.gnu.ai.mit.edu/ -o gnulog
+</pre>
+</li>
+<li >
+Retrieve the first layer of yahoo links:
+<pre >
+wget -r -l1 http://www.yahoo.com/
+</pre>
+</li>
+<li >
+Retrieve the index.html of
+<samp >
+`www.lycos.com'
+</samp>
+, showing the original server headers:
+<pre >
+wget -S http://www.lycos.com/
+</pre>
+</li>
+<li >
+Save the server headers with the file:
+<pre >
+wget -s http://www.lycos.com/
+more index.html
+</pre>
+</li>
+<li >
+Retrieve the first two levels of
+<samp >
+`wuarchive.wustl.edu'
+</samp>
+, saving them to /tmp.
+<pre >
+wget -P/tmp -l2 ftp://wuarchive.wustl.edu/
+</pre>
+</li>
+<li >
+You want to download all the GIFs from an HTTP directory.
+<samp >
+`wget http://host/dir/*.gif'
+</samp>
+doesn't work, since HTTP retrieval does not support globbing. In that case, use:
+<pre >
+wget -r -l1 --no-parent -A.gif http://host/dir/
+</pre>
+It is a bit of a kludge, but it works.
+<samp >
+`-r -l1'
+</samp>
+means to retrieve recursively (See section
+<a  href="wget.html#SEC13">
+Recursive Retrieval
+</a>
+), with maximum depth of 1.
+<samp >
+`--no-parent'
+</samp>
+means that references to the parent directory are ignored (See section
+<a  href="wget.html#SEC20">
+Directory-Based Limits
+</a>
+), and
+<samp >
+`-A.gif'
+</samp>
+means to download only the GIF files.
+<samp >
+`-A "*.gif"'
+</samp>
+would have worked too.
+</li>
+<li >
+Suppose you were in the middle of downloading, when Wget was interrupted. Now you do not want to clobber the files already present. It would be:
+<pre >
+wget -nc -r http://www.gnu.ai.mit.edu/
+</pre>
+</li>
+<li >
+If you want to encode your own username and password to HTTP or FTP, use the appropriate URL syntax (See section
+<a  href="wget.html#SEC3">
+URL Format
+</a>
+).
+<pre >
+wget ftp://hniksic:mypassword@jagor.srce.hr/.emacs
+</pre>
+</li>
+<li >
+If you do not like the default retrieval visualization (1K dots with 10 dots per cluster and 50 dots per line), you can customize it through dot settings (See section
+<a  href="wget.html#SEC29">
+Wgetrc Commands
+</a>
+). For example, many people like the "binary" style of retrieval, with 8K dots and 512K lines:
+<pre >
+wget --dot-style=binary ftp://prep.ai.mit.edu/pub/gnu/README
+</pre>
+You can experiment with other styles, like:
+<pre >
+wget --dot-style=mega ftp://ftp.xemacs.org/pub/xemacs/xemacs-20.4/xemacs-20.4.tar.gz
+wget --dot-style=micro http://fly.cc.fer.hr/
+</pre>
+To make these settings permanent, put them in your
+<tt >
+`.wgetrc'
+</tt>
+, as described before (See section
+<a  href="wget.html#SEC30">
+Sample Wgetrc
+</a>
+).
+</li>
+</ul>
+<h2 >
+<a  href="wget.html#TOC34" name="SEC34">
+Guru Usage
+</a>
+</h2>
+<p >
+<a  name="IDX109"></a>
+</p>
+<ul >
+<li >
+If you wish Wget to keep a mirror of a page (or FTP subdirectories), use
+<samp >
+`--mirror'
+</samp>
+(
+<samp >
+`-m'
+</samp>
+), which is the shorthand for
+<samp >
+`-r -N'
+</samp>
+. You can put Wget in the crontab file asking it to recheck a site each Sunday:
+<pre >
+crontab
+0 0 * * 0 wget --mirror ftp://ftp.xemacs.org/pub/xemacs/ -o /home/me/weeklog
+</pre>
+</li>
+<li >
+You may wish to do the same with someone's home page. But you do not want to download all those images--you're only interested in HTML.
+<pre >
+wget --mirror -A.html http://www.w3.org/
+</pre>
+</li>
+<li >
+But what about mirroring the hosts networkologically close to you? It seems so awfully slow because of all that DNS resolving. Just use
+<samp >
+`-D'
+</samp>
+(See section
+<a  href="wget.html#SEC17">
+Domain Acceptance
+</a>
+).
+<pre >
+wget -rN -Dsrce.hr http://www.srce.hr/
+</pre>
+Now Wget will correctly find out that
+<samp >
+`regoc.srce.hr'
+</samp>
+is the same as
+<samp >
+`www.srce.hr'
+</samp>
+, but will not even take into consideration the link to
+<samp >
+`www.mit.edu'
+</samp>
+.
+</li>
+<li >
+You have a presentation and would like the dumb absolute links to be converted to relative? Use
+<samp >
+`-k'
+</samp>
+:
+<pre >
+wget -k -r
+<var >
+URL
+</var>
+</pre>
+<a  name="IDX110"></a>
+</li>
+<li >
+You would like the output documents to go to standard output instead of to files? OK, but Wget will automatically shut up (turn on
+<samp >
+`--quiet'
+</samp>
+) to prevent mixing of Wget output and the retrieved documents.
+<pre >
+wget -O - http://jagor.srce.hr/ http://www.srce.hr/
+</pre>
+You can also combine the two options and make weird pipelines to retrieve the documents from remote hotlists:
+<pre >
+wget -O - http://cool.list.com/ | wget --force-html -i -
+</pre>
+</li>
+</ul>
+<h1 >
+<a  href="wget.html#TOC35" name="SEC35">
+Various
+</a>
+</h1>
+<p >
+<a  name="IDX111"></a>
+</p>
+<p >
+This chapter contains all the stuff that could not fit anywhere else.
+</p>
+<h2 >
+<a  href="wget.html#TOC36" name="SEC36">
+Proxies
+</a>
+</h2>
+<p >
+<a  name="IDX112"></a>
+</p>
+<p >
+<em >
+Proxies
+</em>
+are special-purpose HTTP servers designed to transfer data from remote servers to local clients. One typical use of proxies is lightening network load for users behind a slow connection. This is achieved by channeling all HTTP and FTP requests through the proxy which caches the transferred data. When a cached resource is requested again, proxy will return the data from cache. Another use for proxies is for companies that separate (for security reasons) their internal networks from the rest of Internet. In order to obtain information from the Web, their users connect and retrieve remote data using an authorized proxy.
+</p>
+<p >
+Wget supports proxies for both HTTP and FTP retrievals. The standard way to specify proxy location, which Wget recognizes, is using the following environment variables:
+</p>
+<dl  compact="compact">
+<dt >
+<code >
+http_proxy
+</code>
+</dt>
+<dd >
+This variable should contain the URL of the proxy for HTTP connections.
+</dd>
+<dt >
+<code >
+ftp_proxy
+</code>
+</dt>
+<dd >
+This variable should contain the URL of the proxy for HTTP connections. It is quite common that HTTP_PROXY and FTP_PROXY are set to the same URL.
+</dd>
+<dt >
+<code >
+no_proxy
+</code>
+</dt>
+<dd >
+This variable should contain a comma-separated list of domain extensions proxy should
+<em >
+not
+</em>
+be used for. For instance, if the value of
+<code >
+no_proxy
+</code>
+is
+<samp >
+`.mit.edu'
+</samp>
+, proxy will not be used to retrieve documents from MIT.
+</dd>
+</dl>
+<p >
+In addition to the environment variables, proxy location and settings may be specified from within Wget itself.
+</p>
+<dl  compact="compact">
+<dt >
+<samp >
+`-Y on/off'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`--proxy=on/off'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`proxy = on/off'
+</samp>
+</dt>
+<dd >
+This option may be used to turn the proxy support on or off. Proxy support is on by default, provided that the appropriate environment variables are set.
+</dd>
+<dt >
+<samp >
+`http_proxy =
+<var >
+URL
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`ftp_proxy =
+<var >
+URL
+</var>
+'
+</samp>
+</dt>
+<dd ></dd>
+<dt >
+<samp >
+`no_proxy =
+<var >
+string
+</var>
+'
+</samp>
+</dt>
+<dd >
+These startup file variables allow you to override the proxy settings specified by the environment.
+</dd>
+</dl>
+<p >
+Some proxy servers require authorization to enable you to use them. The authorization consists of
+<em >
+username
+</em>
+and
+<em >
+password
+</em>
+, which must be sent by Wget. As with HTTP authorization, several authentication schemes exist. For proxy authorization only the
+<code >
+Basic
+</code>
+authentication scheme is currently implemented.
+</p>
+<p >
+You may specify your username and password either through the proxy URL or through the command-line options. Assuming that the company's proxy is located at
+<samp >
+`proxy.srce.hr'
+</samp>
+at port 8001, a proxy URL location containing authorization data might look like this:
+</p>
+<pre >
+http://hniksic:mypassword@proxy.company.com:8001/
+</pre>
+<p >
+Alternatively, you may use the
+<samp >
+`proxy-user'
+</samp>
+and
+<samp >
+`proxy-password'
+</samp>
+options, and the equivalent
+<tt >
+`.wgetrc'
+</tt>
+settings
+<code >
+proxy_user
+</code>
+and
+<code >
+proxy_passwd
+</code>
+to set the proxy username and password.
+</p>
+<h2 >
+<a  href="wget.html#TOC37" name="SEC37">
+Distribution
+</a>
+</h2>
+<p >
+<a  name="IDX113"></a>
+</p>
+<p >
+Like all GNU utilities, the latest version of Wget can be found at the master GNU archive site prep.ai.mit.edu, and its mirrors. For example, Wget 1.5.3 can be found at
+<a  href="ftp://prep.ai.mit.edu/pub/gnu/wget-1.5.3.tar.gz">
+ftp://prep.ai.mit.edu/pub/gnu/wget-1.5.3.tar.gz
+</a>
+</p>
+<h2 >
+<a  href="wget.html#TOC38" name="SEC38">
+Mailing List
+</a>
+</h2>
+<p >
+<a  name="IDX114"></a>
+<a  name="IDX115"></a>
+</p>
+<p >
+Wget has its own mailing list at
+<a  href="mailto:wget@sunsite.auc.dk">
+wget@sunsite.auc.dk
+</a>
+, thanks to Karsten Thygesen. The mailing list is for discussion of Wget features and web, reporting Wget bugs (those that you think may be of interest to the public) and mailing announcements. You are welcome to subscribe. The more people on the list, the better!
+</p>
+<p >
+To subscribe, send mail to
+<a  href="mailto:wget-subscribe@sunsite.auc.dk">
+wget-subscribe@sunsite.auc.dk
+</a>
+. the magic word
+<samp >
+`subscribe'
+</samp>
+in the subject line. Unsubscribe by mailing to
+<a  href="mailto:wget-unsubscribe@sunsite.auc.dk">
+wget-unsubscribe@sunsite.auc.dk
+</a>
+.
+</p>
+<p >
+The mailing list is archived at
+<a  href="http://fly.cc.fer.hr/archive/wget">
+http://fly.cc.fer.hr/archive/wget
+</a>
+.
+</p>
+<h2 >
+<a  href="wget.html#TOC39" name="SEC39">
+Reporting Bugs
+</a>
+</h2>
+<p >
+<a  name="IDX116"></a>
+<a  name="IDX117"></a>
+<a  name="IDX118"></a>
+</p>
+<p >
+You are welcome to send bug reports about GNU Wget to
+<a  href="mailto:bug-wget@gnu.org">
+bug-wget@gnu.org
+</a>
+. The bugs that you think are of the interest to the public (i.e. more people should be informed about them) can be Cc-ed to the mailing list at
+<a  href="mailto:wget@sunsite.auc.dk">
+wget@sunsite.auc.dk
+</a>
+.
+</p>
+<p >
+Before actually submitting a bug report, please try to follow a few simple guidelines.
+</p>
+<ol >
+<li >
+Please try to ascertain that the behaviour you see really is a bug. If Wget crashes, it's a bug. If Wget does not behave as documented, it's a bug. If things work strange, but you are not sure about the way they are supposed to work, it might well be a bug.
+</li>
+<li >
+Try to repeat the bug in as simple circumstances as possible. E.g. if Wget crashes on
+<samp >
+`wget -rLl0 -t5 -Y0 http://yoyodyne.com -o /tmp/log'
+</samp>
+, you should try to see if it will crash with a simpler set of options. Also, while I will probably be interested to know the contents of your
+<tt >
+`.wgetrc'
+</tt>
+file, just dumping it into the debug message is probably a bad idea. Instead, you should first try to see if the bug repeats with
+<tt >
+`.wgetrc'
+</tt>
+moved out of the way. Only if it turns out that
+<tt >
+`.wgetrc'
+</tt>
+settings affect the bug, should you mail me the relevant parts of the file.
+</li>
+<li >
+Please start Wget with
+<samp >
+`-d'
+</samp>
+option and send the log (or the relevant parts of it). If Wget was compiled without debug support, recompile it. It is
+<em >
+much
+</em>
+easier to trace bugs with debug support on.
+</li>
+<li >
+If Wget has crashed, try to run it in a debugger, e.g.
+<code >
+gdb `which wget` core
+</code>
+and type
+<code >
+where
+</code>
+to get the backtrace.
+</li>
+<li >
+Find where the bug is, fix it and send me the patches. :-)
+</li>
+</ol>
+<h2 >
+<a  href="wget.html#TOC40" name="SEC40">
+Portability
+</a>
+</h2>
+<p >
+<a  name="IDX119"></a>
+<a  name="IDX120"></a>
+</p>
+<p >
+Since Wget uses GNU Autoconf for building and configuring, and avoids using "special" ultra--mega--cool features of any particular Unix, it should compile (and work) on all common Unix flavors.
+</p>
+<p >
+Various Wget versions have been compiled and tested under many kinds of Unix systems, including Solaris, Linux, SunOS, OSF (aka Digital Unix), Ultrix, *BSD, IRIX, and others; refer to the file
+<tt >
+`MACHINES'
+</tt>
+in the distribution directory for a comprehensive list. If you compile it on an architecture not listed there, please let me know so I can update it.
+</p>
+<p >
+Wget should also compile on the other Unix systems, not listed in
+<tt >
+`MACHINES'
+</tt>
+. If it doesn't, please let me know.
+</p>
+<p >
+Thanks to kind contributors, this version of Wget compiles and works on Microsoft Windows 95 and Windows NT platforms. It has been compiled successfully using MS Visual C++ 4.0, Watcom, and Borland C compilers, with Winsock as networking software. Naturally, it is crippled of some features available on Unix, but it should work as a substitute for people stuck with Windows. Note that the Windows port is
+<strong >
+neither tested nor maintained
+</strong>
+by me--all questions and problems should be reported to Wget mailing list at
+<a  href="mailto:wget@sunsite.auc.dk">
+wget@sunsite.auc.dk
+</a>
+where the maintainers will look at them.
+</p>
+<h2 >
+<a  href="wget.html#TOC41" name="SEC41">
+Signals
+</a>
+</h2>
+<p >
+<a  name="IDX121"></a>
+<a  name="IDX122"></a>
+</p>
+<p >
+Since the purpose of Wget is background work, it catches the hangup signal (
+<code >
+SIGHUP
+</code>
+) and ignores it. If the output was on standard output, it will be redirected to a file named
+<tt >
+`wget-log'
+</tt>
+. Otherwise,
+<code >
+SIGHUP
+</code>
+is ignored. This is convenient when you wish to redirect the output of Wget after having started it.
+</p>
+<pre >
+$ wget http://www.ifi.uio.no/~larsi/gnus.tar.gz &amp;
+$ kill -HUP %%     # Redirect the output to wget-log
+</pre>
+<p >
+Other than that, Wget will not try to interfere with signals in any way.
+<kbd >
+C-c
+</kbd>
+,
+<code >
+kill -TERM
+</code>
+and
+<code >
+kill -KILL
+</code>
+should kill it alike.
+</p>
+<h1 >
+<a  href="wget.html#TOC42" name="SEC42">
+Appendices
+</a>
+</h1>
+<p >
+This chapter contains some references I consider useful, like the Robots Exclusion Standard specification, as well as a list of contributors to GNU Wget.
+</p>
+<h2 >
+<a  href="wget.html#TOC43" name="SEC43">
+Robots
+</a>
+</h2>
+<p >
+<a  name="IDX123"></a>
+<a  name="IDX124"></a>
+<a  name="IDX125"></a>
+</p>
+<p >
+Since Wget is able to traverse the web, it counts as one of the Web
+<em >
+robots
+</em>
+. Thus Wget understands
+<em >
+Robots Exclusion Standard
+</em>
+(RES)---contents of
+<tt >
+`/robots.txt'
+</tt>
+, used by server administrators to shield parts of their systems from wanderings of Wget.
+</p>
+<p >
+Norobots support is turned on only when retrieving recursively, and
+<em >
+never
+</em>
+for the first page. Thus, you may issue:
+</p>
+<pre >
+wget -r http://fly.cc.fer.hr/
+</pre>
+<p >
+First the index of fly.cc.fer.hr will be downloaded. If Wget finds anything worth downloading on the same host, only
+<em >
+then
+</em>
+will it load the robots, and decide whether or not to load the links after all.
+<tt >
+`/robots.txt'
+</tt>
+is loaded only once per host. Wget does not support the robots
+<code >
+META
+</code>
+tag.
+</p>
+<p >
+The description of the norobots standard was written, and is maintained by Martijn Koster
+<a  href="mailto:m.koster@webcrawler.com">
+m.koster@webcrawler.com
+</a>
+. With his permission, I contribute a (slightly modified) texified version of the RES.
+</p>
+<h3 >
+<a  href="wget.html#TOC44" name="SEC44">
+Introduction to RES
+</a>
+</h3>
+<p >
+<a  name="IDX126"></a>
+</p>
+<p >
+<em >
+WWW Robots
+</em>
+(also called
+<em >
+wanderers
+</em>
+or
+<em >
+spiders
+</em>
+) are programs that traverse many pages in the World Wide Web by recursively retrieving linked pages. For more information see the robots page.
+</p>
+<p >
+In 1993 and 1994 there have been occasions where robots have visited WWW servers where they weren't welcome for various reasons. Sometimes these reasons were robot specific, e.g. certain robots swamped servers with rapid-fire requests, or retrieved the same files repeatedly. In other situations robots traversed parts of WWW servers that weren't suitable, e.g. very deep virtual trees, duplicated information, temporary information, or cgi-scripts with side-effects (such as voting).
+</p>
+<p >
+These incidents indicated the need for established mechanisms for WWW servers to indicate to robots which parts of their server should not be accessed. This standard addresses this need with an operational solution.
+</p>
+<p >
+This document represents a consensus on 30 June 1994 on the robots mailing list (
+<code >
+robots@webcrawler.com
+</code>
+), between the majority of robot authors and other people with an interest in robots. It has also been open for discussion on the Technical World Wide Web mailing list (
+<code >
+www-talk@info.cern.ch
+</code>
+). This document is based on a previous working draft under the same title.
+</p>
+<p >
+It is not an official standard backed by a standards body, or owned by any commercial organization. It is not enforced by anybody, and there no guarantee that all current and future robots will use it. Consider it a common facility the majority of robot authors offer the WWW community to protect WWW server against unwanted accesses by their robots.
+</p>
+<p >
+The latest version of this document can be found at
+<a  href="http://info.webcrawler.com/mak/projects/robots/norobots.html">
+http://info.webcrawler.com/mak/projects/robots/norobots.html
+</a>
+.
+</p>
+<h3 >
+<a  href="wget.html#TOC45" name="SEC45">
+RES Format
+</a>
+</h3>
+<p >
+<a  name="IDX127"></a>
+</p>
+<p >
+The format and semantics of the
+<tt >
+`/robots.txt'
+</tt>
+file are as follows:
+</p>
+<p >
+The file consists of one or more records separated by one or more blank lines (terminated by
+<code >
+CR
+</code>
+,
+<code >
+CR/NL
+</code>
+, or
+<code >
+NL
+</code>
+). Each record contains lines of the form:
+</p>
+<pre >
+&lt;field&gt;:&lt;optionalspace&gt;&lt;value&gt;&lt;optionalspace&gt;
+</pre>
+<p >
+The field name is case insensitive. Comments can be included in file using UNIX bourne shell conventions: the
+<samp >
+`#'
+</samp>
+character is used to indicate that preceding space (if any) and the remainder of the line up to the line termination is discarded. Lines containing only a comment are discarded completely, and therefore do not indicate a record boundary.
+</p>
+<p >
+The record starts with one or more User-agent lines, followed by one or more Disallow lines, as detailed below. Unrecognized headers are ignored.
+</p>
+<p >
+The presence of an empty
+<tt >
+`/robots.txt'
+</tt>
+file has no explicit associated semantics, it will be treated as if it was not present, i.e. all robots will consider themselves welcome.
+</p>
+<h3 >
+<a  href="wget.html#TOC46" name="SEC46">
+User-Agent Field
+</a>
+</h3>
+<p >
+<a  name="IDX128"></a>
+</p>
+<p >
+The value of this field is the name of the robot the record is describing access policy for.
+</p>
+<p >
+If more than one User-agent field is present the record describes an identical access policy for more than one robot. At least one field needs to be present per record.
+</p>
+<p >
+The robot should be liberal in interpreting this field. A case insensitive substring match of the name without version information is recommended.
+</p>
+<p >
+If the value is
+<samp >
+`*'
+</samp>
+, the record describes the default access policy for any robot that has not matched any of the other records. It is not allowed to have multiple such records in the
+<tt >
+`/robots.txt'
+</tt>
+file.
+</p>
+<h3 >
+<a  href="wget.html#TOC47" name="SEC47">
+Disallow Field
+</a>
+</h3>
+<p >
+<a  name="IDX129"></a>
+</p>
+<p >
+The value of this field specifies a partial URL that is not to be visited. This can be a full path, or a partial path; any URL that starts with this value will not be retrieved. For example,
+<samp >
+`Disallow: /help'
+</samp>
+disallows both
+<samp >
+`/help.html'
+</samp>
+and
+<samp >
+`/help/index.html'
+</samp>
+, whereas
+<samp >
+`Disallow: /help/'
+</samp>
+would disallow
+<samp >
+`/help/index.html'
+</samp>
+but allow
+<samp >
+`/help.html'
+</samp>
+.
+</p>
+<p >
+Any empty value, indicates that all URLs can be retrieved. At least one Disallow field needs to be present in a record.
+</p>
+<h3 >
+<a  href="wget.html#TOC48" name="SEC48">
+Norobots Examples
+</a>
+</h3>
+<p >
+<a  name="IDX130"></a>
+</p>
+<p >
+The following example
+<samp >
+`/robots.txt'
+</samp>
+file specifies that no robots should visit any URL starting with
+<samp >
+`/cyberworld/map/'
+</samp>
+or
+<samp >
+`/tmp/'
+</samp>
+:
+</p>
+<pre >
+# robots.txt for http://www.site.com/
+
+User-agent: *
+Disallow: /cyberworld/map/ # This is an infinite virtual URL space
+Disallow: /tmp/ # these will soon disappear
+</pre>
+<p >
+This example
+<samp >
+`/robots.txt'
+</samp>
+file specifies that no robots should visit any URL starting with
+<samp >
+`/cyberworld/map/'
+</samp>
+, except the robot called
+<samp >
+`cybermapper'
+</samp>
+:
+</p>
+<pre >
+# robots.txt for http://www.site.com/
+
+User-agent: *
+Disallow: /cyberworld/map/ # This is an infinite virtual URL space
+
+# Cybermapper knows where to go.
+User-agent: cybermapper
+Disallow:
+</pre>
+<p >
+This example indicates that no robots should visit this site further:
+</p>
+<pre >
+# go away
+User-agent: *
+Disallow: /
+</pre>
+<h2 >
+<a  href="wget.html#TOC49" name="SEC49">
+Security Considerations
+</a>
+</h2>
+<p >
+<a  name="IDX131"></a>
+</p>
+<p >
+When using Wget, you must be aware that it sends unencrypted passwords through the network, which may present a security problem. Here are the main issues, and some solutions.
+</p>
+<ol >
+<li >
+The passwords on the command line are visible using
+<code >
+ps
+</code>
+. If this is a problem, avoid putting passwords from the command line--e.g. you can use
+<tt >
+`.netrc'
+</tt>
+for this.
+</li>
+<li >
+Using the insecure
+<em >
+basic
+</em>
+authentication scheme, unencrypted passwords are transmitted through the network routers and gateways.
+</li>
+<li >
+The FTP passwords are also in no way encrypted. There is no good solution for this at the moment.
+</li>
+<li >
+Although the "normal" output of Wget tries to hide the passwords, debugging logs show them, in all forms. This problem is avoided by being careful when you send debug logs (yes, even when you send them to me).
+</li>
+</ol>
+<h2 >
+<a  href="wget.html#TOC50" name="SEC50">
+Contributors
+</a>
+</h2>
+<p >
+<a  name="IDX132"></a>
+</p>
+<p >
+GNU Wget was written by Hrvoje Nik@v{s}i'{c}
+<a  href="mailto:hniksic@srce.hr">
+hniksic@srce.hr
+</a>
+. However, its development could never have gone as far as it has, were it not for the help of many people, either with bug reports, feature proposals, patches, or letters saying "Thanks!".
+</p>
+<p >
+Special thanks goes to the following people (no particular order):
+</p>
+<ul >
+<li >
+Karsten Thygesen--donated the mailing list and the initial FTP space.
+</li>
+<li >
+Shawn McHorse--bug reports and patches.
+</li>
+<li >
+Kaveh R. Ghazi--on-the-fly
+<code >
+ansi2knr
+</code>
+-ization.
+</li>
+<li >
+Gordon Matzigkeit---
+<tt >
+`.netrc'
+</tt>
+support.
+</li>
+<li >
+Zlatko @v{C}alu@v{s}i'{c}, Tomislav Vujec and Dra@v{z}en Ka@v{c}ar--feature suggestions and "philosophical" discussions.
+</li>
+<li >
+Darko Budor--initial port to Windows.
+</li>
+<li >
+Antonio Rosella--help and suggestions, plust the Italian translation.
+</li>
+<li >
+Tomislav Petrovi'{c}, Mario Miko@v{c}evi'{c}---many bug reports and suggestions.
+</li>
+<li >
+Fran@,{c}ois Pinard--many thorough bug reports and discussions.
+</li>
+<li >
+Karl Eichwalder--lots of help with internationalization and other things.
+</li>
+<li >
+Junio Hamano--donated support for Opie and HTTP
+<code >
+Digest
+</code>
+authentication.
+</li>
+<li >
+Brian Gough--a generous donation.
+</li>
+</ul>
+<p >
+The following people have provided patches, bug/build reports, useful suggestions, beta testing services, fan mail and all the other things that make maintenance so much fun:
+</p>
+<p >
+Tim Adam, Martin Baehr, Dieter Baron, Roger Beeman and the Gurus at Cisco, Mark Boyns, John Burden, Wanderlei Cavassin, Gilles Cedoc, Tim Charron, Noel Cragg, Kristijan @v{C}onka@v{s}, Damir D@v{z}eko, Andrew Davison, Ulrich Drepper, Marc Duponcheel, Aleksandar Erkalovi'{c}, Andy Eskilsson, Masashi Fujita, Howard Gayle, Marcel Gerrits, Hans Grobler, Mathieu Guillaume, Karl Heuer, Gregor Hoffleit, Erik Magnus Hulthen, Richard Huveneers, Simon Josefsson, Mario Juri'{c}, Goran Kezunovi'{c}, Robert Kleine, Fila Kolodny, Alexander Kourakos, Martin Kraemer, Tage Stabell-Kulo, Hrvoje Lacko, Dave Love, Jordan Mendelson, Lin Zhe Min, Charlie Negyesi, Andrew Pollock, Steve Pothier, Marin Purgar, Jan Prikryl, Keith Refson, Tobias Ringstrom, Heinz Salzmann, Robert Schmidt, Toomas Soome, Sven Sternberger, Markus Strasser, Szakacsits Szabolcs, Mike Thomas, Russell Vincent, Douglas E. Wegscheid, Jasmin Zainul, Bojan @v{Z}drnja, Kristijan Zimmer.
+</p>
+<p >
+Apologies to all who I accidentally left out, and many thanks to all the subscribers of the Wget mailing list.
+</p>
+<h1 >
+<a  href="wget.html#TOC51" name="SEC51">
+GNU GENERAL PUBLIC LICENSE
+</a>
+</h1>
+<p >
+<a  name="IDX133"></a>
+<a  name="IDX134"></a>
+Version 2, June 1991
+</p>
+<pre >
+Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+675 Mass Ave, Cambridge, MA 02139, USA
+
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+</pre>
+<h2 >
+<a  href="wget.html#TOC52" name="SEC52">
+Preamble
+</a>
+</h2>
+<p >
+The licenses for most software are designed to take away your freedom to share and change it. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change free software--to make sure the software is free for all its users. This General Public License applies to most of the Free Software Foundation's software and to any other program whose authors commit to using it. (Some other Free Software Foundation software is covered by the GNU Library General Public License instead.) You can apply it to your programs, too.
+</p>
+<p >
+When we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for this service if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs; and that you know you can do these things.
+</p>
+<p >
+To protect your rights, we need to make restrictions that forbid anyone to deny you these rights or to ask you to surrender the rights. These restrictions translate to certain responsibilities for you if you distribute copies of the software, or if you modify it.
+</p>
+<p >
+For example, if you distribute copies of such a program, whether gratis or for a fee, you must give the recipients all the rights that you have. You must make sure that they, too, receive or can get the source code. And you must show them these terms so they know their rights.
+</p>
+<p >
+We protect your rights with two steps: (1) copyright the software, and (2) offer you this license which gives you legal permission to copy, distribute and/or modify the software.
+</p>
+<p >
+Also, for each author's protection and ours, we want to make certain that everyone understands that there is no warranty for this free software. If the software is modified by someone else and passed on, we want its recipients to know that what they have is not the original, so that any problems introduced by others will not reflect on the original authors' reputations.
+</p>
+<p >
+Finally, any free program is threatened constantly by software patents. We wish to avoid the danger that redistributors of a free program will individually obtain patent licenses, in effect making the program proprietary. To prevent this, we have made it clear that any patent must be licensed for everyone's free use or not licensed at all.
+</p>
+<p >
+The precise terms and conditions for copying, distribution and modification follow.
+</p>
+<h2 >
+<a  href="wget.html#TOC53" name="SEC53">
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+</a>
+</h2>
+<ol >
+<li >
+This License applies to any program or other work which contains a notice placed by the copyright holder saying it may be distributed under the terms of this General Public License. The "Program", below, refers to any such program or work, and a "work based on the Program" means either the Program or any derivative work under copyright law: that is to say, a work containing the Program or a portion of it, either verbatim or with modifications and/or translated into another language. (Hereinafter, translation is included without limitation in the term "modification".) Each licensee is addressed as "you". Activities other than copying, distribution and modification are not covered by this License; they are outside its scope. The act of running the Program is not restricted, and the output from the Program is covered only if its contents constitute a work based on the Program (independent of having been made by running the Program). Whether that is true depends on what the Program does.
+</li>
+<li >
+You may copy and distribute verbatim copies of the Program's source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program. You may charge a fee for the physical act of transferring a copy, and you may at your option offer warranty protection in exchange for a fee.
+</li>
+<li >
+You may modify your copy or copies of the Program or any portion of it, thus forming a work based on the Program, and copy and distribute such modifications or work under the terms of Section 1 above, provided that you also meet all of these conditions:
+<ol >
+<li >
+You must cause the modified files to carry prominent notices stating that you changed the files and the date of any change.
+</li>
+<li >
+You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.
+</li>
+<li >
+If the modified program normally reads commands interactively when run, you must cause it, when started running for such interactive use in the most ordinary way, to print or display an announcement including an appropriate copyright notice and a notice that there is no warranty (or else, saying that you provide a warranty) and that users may redistribute the program under these conditions, and telling the user how to view a copy of this License. (Exception: if the Program itself is interactive but does not normally print such an announcement, your work based on the Program is not required to print an announcement.)
+</li>
+</ol>
+These requirements apply to the modified work as a whole. If identifiable sections of that work are not derived from the Program, and can be reasonably considered independent and separate works in themselves, then this License, and its terms, do not apply to those sections when you distribute them as separate works. But when you distribute the same sections as part of a whole which is a work based on the Program, the distribution of the whole must be on the terms of this License, whose permissions for other licensees extend to the entire whole, and thus to each and every part regardless of who wrote it. Thus, it is not the intent of this section to claim rights or contest your rights to work written entirely by you; rather, the intent is to exercise the right to control the distribution of derivative or collective works based on the Program. In addition, mere aggregation of another work not based on the Program with the Program (or with a work based on the Program) on a volume of a storage or distribution medium does not bring the other work under the scope of this License.
+</li>
+<li >
+You may copy and distribute the Program (or a work based on it, under Section 2) in object code or executable form under the terms of Sections 1 and 2 above provided that you also do one of the following:
+<ol >
+<li >
+Accompany it with the complete corresponding machine-readable source code, which must be distributed under the terms of Sections 1 and 2 above on a medium customarily used for software interchange; or,
+</li>
+<li >
+Accompany it with a written offer, valid for at least three years, to give any third party, for a charge no more than your cost of physically performing source distribution, a complete machine-readable copy of the corresponding source code, to be distributed under the terms of Sections 1 and 2 above on a medium customarily used for software interchange; or,
+</li>
+<li >
+Accompany it with the information you received as to the offer to distribute corresponding source code. (This alternative is allowed only for noncommercial distribution and only if you received the program in object code or executable form with such an offer, in accord with Subsection b above.)
+</li>
+</ol>
+The source code for a work means the preferred form of the work for making modifications to it. For an executable work, complete source code means all the source code for all modules it contains, plus any associated interface definition files, plus the scripts used to control compilation and installation of the executable. However, as a special exception, the source code distributed need not include anything that is normally distributed (in either source or binary form) with the major components (compiler, kernel, and so on) of the operating system on which the executable runs, unless that component itself accompanies the executable. If distribution of executable or object code is made by offering access to copy from a designated place, then offering equivalent access to copy the source code from the same place counts as distribution of the source code, even though third parties are not compelled to copy the source along with the object code.
+</li>
+<li >
+You may not copy, modify, sublicense, or distribute the Program except as expressly provided under this License. Any attempt otherwise to copy, modify, sublicense or distribute the Program is void, and will automatically terminate your rights under this License. However, parties who have received copies, or rights, from you under this License will not have their licenses terminated so long as such parties remain in full compliance.
+</li>
+<li >
+You are not required to accept this License, since you have not signed it. However, nothing else grants you permission to modify or distribute the Program or its derivative works. These actions are prohibited by law if you do not accept this License. Therefore, by modifying or distributing the Program (or any work based on the Program), you indicate your acceptance of this License to do so, and all its terms and conditions for copying, distributing or modifying the Program or works based on it.
+</li>
+<li >
+Each time you redistribute the Program (or any work based on the Program), the recipient automatically receives a license from the original licensor to copy, distribute or modify the Program subject to these terms and conditions. You may not impose any further restrictions on the recipients' exercise of the rights granted herein. You are not responsible for enforcing compliance by third parties to this License.
+</li>
+<li >
+If, as a consequence of a court judgment or allegation of patent infringement or for any other reason (not limited to patent issues), conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot distribute so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not distribute the Program at all. For example, if a patent license would not permit royalty-free redistribution of the Program by all those who receive copies directly or indirectly through you, then the only way you could satisfy both it and this License would be to refrain entirely from distribution of the Program. If any portion of this section is held invalid or unenforceable under any particular circumstance, the balance of the section is intended to apply and the section as a whole is intended to apply in other circumstances. It is not the purpose of this section to induce you to infringe any patents or other property right claims or to contest validity of any such claims; this section has the sole purpose of protecting the integrity of the free software distribution system, which is implemented by public license practices. Many people have made generous contributions to the wide range of software distributed through that system in reliance on consistent application of that system; it is up to the author/donor to decide if he or she is willing to distribute software through any other system and a licensee cannot impose that choice. This section is intended to make thoroughly clear what is believed to be a consequence of the rest of this License.
+</li>
+<li >
+If the distribution and/or use of the Program is restricted in certain countries either by patents or by copyrighted interfaces, the original copyright holder who places the Program under this License may add an explicit geographical distribution limitation excluding those countries, so that distribution is permitted only in or among countries not thus excluded. In such case, this License incorporates the limitation as if written in the body of this License.
+</li>
+<li >
+The Free Software Foundation may publish revised and/or new versions of the General Public License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns. Each version is given a distinguishing version number. If the Program specifies a version number of this License which applies to it and "any later version", you have the option of following the terms and conditions either of that version or of any later version published by the Free Software Foundation. If the Program does not specify a version number of this License, you may choose any version ever published by the Free Software Foundation.
+</li>
+<li >
+If you wish to incorporate parts of the Program into other free programs whose distribution conditions are different, write to the author to ask for permission. For software which is copyrighted by the Free Software Foundation, write to the Free Software Foundation; we sometimes make exceptions for this. Our decision will be guided by the two goals of preserving the free status of all derivatives of our free software and of promoting the sharing and reuse of software generally.
+<p >
+<strong >
+NO WARRANTY
+</strong>
+</p>
+<a  name="IDX135"></a>
+</li>
+<li >
+BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+</li>
+<li >
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</li>
+</ol>
+<h2 >
+END OF TERMS AND CONDITIONS
+</h2>
+<h2 >
+<a  href="wget.html#TOC54" name="SEC54">
+How to Apply These Terms to Your New Programs
+</a>
+</h2>
+<p >
+If you develop a new program, and you want it to be of the greatest possible use to the public, the best way to achieve this is to make it free software which everyone can redistribute and change under these terms.
+</p>
+<p >
+To do so, attach the following notices to the program. It is safest to attach them to the start of each source file to most effectively convey the exclusion of warranty; and each file should have at least the "copyright" line and a pointer to where the full notice is found.
+</p>
+<pre >
+<var >
+one line to give the program's name and an idea of what it does.
+</var>
+Copyright (C) 19
+<var >
+yy
+</var>
+<var >
+name of author
+</var>
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+</pre>
+<p >
+Also add information on how to contact you by electronic and paper mail.
+</p>
+<p >
+If the program is interactive, make it output a short notice like this when it starts in an interactive mode:
+</p>
+<pre >
+Gnomovision version 69, Copyright (C) 19
+<var >
+yy
+</var>
+<var >
+name of author
+</var>
+Gnomovision comes with ABSOLUTELY NO WARRANTY; for details
+type `show w'.  This is free software, and you are welcome
+to redistribute it under certain conditions; type `show c' 
+for details.
+</pre>
+<p >
+The hypothetical commands
+<samp >
+`show w'
+</samp>
+and
+<samp >
+`show c'
+</samp>
+should show the appropriate parts of the General Public License. Of course, the commands you use may be called something other than
+<samp >
+`show w'
+</samp>
+and
+<samp >
+`show c'
+</samp>
+; they could even be mouse-clicks or menu items--whatever suits your program.
+</p>
+<p >
+You should also get your employer (if you work as a programmer) or your school, if any, to sign a "copyright disclaimer" for the program, if necessary. Here is a sample; alter the names:
+</p>
+<pre >
+Yoyodyne, Inc., hereby disclaims all copyright
+interest in the program `Gnomovision'
+(which makes passes at compilers) written 
+by James Hacker.
+<var >
+signature of Ty Coon
+</var>
+, 1 April 1989
+Ty Coon, President of Vice
+</pre>
+<p >
+This General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Library General Public License instead of this License.
+</p>
+<h1 >
+<a  href="wget.html#TOC55" name="SEC55">
+Concept Index
+</a>
+</h1>
+<p >
+Jump to:
+<a  href="#cindex_.">
+.
+</a>
+-
+<a  href="#cindex_a">
+a
+</a>
+-
+<a  href="#cindex_b">
+b
+</a>
+-
+<a  href="#cindex_c">
+c
+</a>
+-
+<a  href="#cindex_d">
+d
+</a>
+-
+<a  href="#cindex_e">
+e
+</a>
+-
+<a  href="#cindex_f">
+f
+</a>
+-
+<a  href="#cindex_g">
+g
+</a>
+-
+<a  href="#cindex_h">
+h
+</a>
+-
+<a  href="#cindex_i">
+i
+</a>
+-
+<a  href="#cindex_l">
+l
+</a>
+-
+<a  href="#cindex_m">
+m
+</a>
+-
+<a  href="#cindex_n">
+n
+</a>
+-
+<a  href="#cindex_o">
+o
+</a>
+-
+<a  href="#cindex_p">
+p
+</a>
+-
+<a  href="#cindex_q">
+q
+</a>
+-
+<a  href="#cindex_r">
+r
+</a>
+-
+<a  href="#cindex_s">
+s
+</a>
+-
+<a  href="#cindex_t">
+t
+</a>
+-
+<a  href="#cindex_u">
+u
+</a>
+-
+<a  href="#cindex_v">
+v
+</a>
+-
+<a  href="#cindex_w">
+w
+</a>
+</p>
+<p ></p>
+<h2 >
+<a  name="cindex_.">
+.
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX101">
+.netrc
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX99">
+.wgetrc
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_a">
+a
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX83">
+accept directories
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX72">
+accept suffixes
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX71">
+accept wildcards
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX68">
+all hosts
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX14">
+append to log
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX5">
+arguments
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX39">
+authentication
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_b">
+b
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX118">
+bug reports
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX116">
+bugs
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_c">
+c
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX41">
+cache
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX4">
+command line
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX42">
+Content-Length, ignore
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX24">
+continue retrieval
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX132">
+contributors
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX56">
+conversion of links
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX133">
+copying
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX35">
+cut directories
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_d">
+d
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX15">
+debug
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX54">
+delete after retrieval
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX79">
+directories
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX84">
+directories, exclude
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX81">
+directories, include
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX80">
+directory limits
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX36">
+directory prefix
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX65">
+DNS lookup
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX25">
+dot style
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_e">
+e
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX108">
+examples
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX85">
+exclude directories
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX11">
+execute wgetrc command
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_f">
+f
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX2">
+features
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX55">
+filling proxy cache
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX58">
+follow FTP links
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX88">
+following ftp links
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX63">
+following links
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX19">
+force html
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX96">
+ftp time-stamping
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_g">
+g
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX51">
+globbing, toggle
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX134">
+GPL
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_h">
+h
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX122">
+hangup
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX44">
+header, add
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX67">
+host checking
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX66">
+host lookup
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX38">
+http password
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX95">
+http time-stamping
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX37">
+http user
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_i">
+i
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX43">
+ignore length
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX82">
+include directories
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX92">
+incremental updating
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX18">
+input-file
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX3">
+invoking
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_l">
+l
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX113">
+latest version
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX62">
+links
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX57">
+links conversion
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX115">
+list
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX103">
+location of wgetrc
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX13">
+log file
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_m">
+m
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX114">
+mailing list
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX109">
+mirroring
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_n">
+n
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX87">
+no parent
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX135">
+no warranty
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX23">
+no-clobber
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX6">
+nohup
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX129">
+norobots disallow
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX130">
+norobots examples
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX127">
+norobots format
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX126">
+norobots introduction
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX128">
+norobots user-agent
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX22">
+number of retries
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_o">
+o
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX120">
+operating systems
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX9">
+option syntax
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX12">
+output file
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX1">
+overview
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_p">
+p
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX52">
+passive ftp
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX31">
+pause
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX119">
+portability
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX112">
+proxies
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX33">
+proxy
+</a>
+,
+<a  href="wget.html#IDX40">
+proxy
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX47">
+proxy authentication
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX53">
+proxy filling
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX46">
+proxy password
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX45">
+proxy user
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_q">
+q
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX16">
+quiet
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX34">
+quota
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_r">
+r
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX59">
+recursion
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX61">
+recursive retrieval
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX110">
+redirecting output
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX86">
+reject directories
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX76">
+reject suffixes
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX75">
+reject wildcards
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX64">
+relative links
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX117">
+reporting bugs
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX20">
+retries
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX26">
+retrieval tracing style
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX50">
+retrieve symbolic links
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX60">
+retrieving
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX123">
+robots
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX124">
+robots.txt
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_s">
+s
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX107">
+sample wgetrc
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX131">
+security
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX125">
+server maintenance
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX27">
+server response, print
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX48">
+server response, save
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX121">
+signal handling
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX69">
+span hosts
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX29">
+spider
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX100">
+startup
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX97">
+startup file
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX74">
+suffixes, accept
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX78">
+suffixes, reject
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX10">
+syntax of options
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX105">
+syntax of wgetrc
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_t">
+t
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX89">
+time-stamping
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX93">
+time-stamping usage
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX30">
+timeout
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX90">
+timestamping
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX21">
+tries
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX70">
+types of files
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_u">
+u
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX91">
+updating the archives
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX7">
+URL
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX8">
+URL syntax
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX94">
+usage, time-stamping
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX49">
+user-agent
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_v">
+v
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX111">
+various
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX17">
+verbose
+</a>
+</li>
+</dir>
+<h2 >
+<a  name="cindex_w">
+w
+</a>
+</h2>
+<dir >
+<li >
+<a  href="wget.html#IDX32">
+wait
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX28">
+Wget as spider
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX98">
+wgetrc
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX106">
+wgetrc commands
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX102">
+wgetrc location
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX104">
+wgetrc syntax
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX73">
+wildcards, accept
+</a>
+</li>
+<li >
+<a  href="wget.html#IDX77">
+wildcards, reject
+</a>
+</li>
+</dir>
+<p ></p>
+<hr ></hr>
+<p ></p>
+<h1 >
+Footnotes
+</h1>
+<h3 >
+<a  href="wget.html#DOCF1" name="FOOT1">
+(1)
+</a>
+</h3>
+<p >
+If you have a
+<tt >
+`.netrc'
+</tt>
+file in your home directory, password will also be searched for there.
+</p>
+<h3 >
+<a  href="wget.html#DOCF2" name="FOOT2">
+(2)
+</a>
+</h3>
+<p >
+As an additional check, Wget will look at the
+<code >
+Content-Length
+</code>
+header, and compare the sizes; if they are not the same, the remote file will be downloaded no matter what the time-stamp says.
+</p>
+<p ></p>
+<hr ></hr>
+<p >
+This document was generated on 7 November 1998 using the
+<a  href="http://wwwinfo.cern.ch/dis/texi2html/">
+texi2html
+</a>
+translator version 1.52.
+</p>
+</body>
+</html>

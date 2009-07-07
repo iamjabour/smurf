@@ -1,0 +1,1312 @@
+<html >
+<head >
+<title >
+Understanding Point &amp; Figure Charts -- Chart School
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<!-- Global Styles -->
+<style >
+A:hover {color: #CC3333; text-decoration: underline;} .nu {text-decoration: none;} .go {border-bottom:thin solid #333300;border-right:thin solid #333300;border-top:thin solid #CCCCCC;border-left:thin solid #CCCCCC;font-size:11px;font-family:Verdana;font-weight:bold;background-color:#CCCCCC;color:#000000;line-height:.85;padding-top:3px; text-transform: capitalize; cursor: hand}
+</style>
+<!-- End Global Styles -->
+<!-- Global Scripts -->
+<script >
+<!-- 
+function gosearch(f) {
+var s=f.elements[1].value; 
+if (s=="") return false;
+switch (f.actionDD.selectedIndex) {
+case 0: window.location="/def/servlet/SC.web?c="+s; break;
+case 1: window.location="/webcgi/PnF.asp?S="+s; break;
+case 2: window.location="/webcgi/wb.exe?CG.web+"+s; break;
+case 3: window.location="/webcgi/wb.exe?Perf.web+"+s; break;
+case 4: window.location="/webcgi/gall.exe?Gall.web+"+s; break;
+case 5: window.location="/webcgi/wb.exe?SymSearch.web+"+s; break;
+case 6: return true; break;
+}
+return false;
+}
+
+function gofind(form) {
+var s=document.find.value; 
+if (s=="") return false;
+}
+//-->
+</script>
+<!-- End Global Scripts -->
+</head>
+<body  alink="#CC3333" bgcolor="#ffffff" link="#333366" topmargin="0" vlink="#333366">
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<!-- Start header table -->
+<table  TABID="12067" bgcolor="#333366" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="3" height="5">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" rowspan="2" valign="middle">
+<a  href="/index.html">
+<img ></img>
+</a>
+</td>
+<td  align="center">
+<!-- Banner -->
+<script >
+<!-- 
+var u = Math.round(Math.random() * 1000000);
+document.writeln('&amp;amp;amp;lt;IFRAME SRC="http://connect.247media.ads.link4ads.com/serv/1/StockCharts_com/StockCharts_com/StockCharts_PopUps/43596;type=t;uniq='+u+'"');
+document.writeln('WIDTH=468 HEIGHT=60 MARGINWIDTH=0 MARGINHEIGHT=0 FRAMEBORDER=0 SCROLLING=no&amp;amp;amp;gt;&amp;amp;amp;lt;a href="http://connect.247media.ads.link4ads.com/click/1/StockCharts_com/StockCharts_com/StockCharts_PopUps/43596;uniq='+u+'"');
+document.writeln('target="_top"&amp;amp;amp;gt;&amp;amp;amp;lt;img src="http://connect.247media.ads.link4ads.com/serv/1/StockCharts_com/StockCharts_com/StockCharts_PopUps/43596;uniq='+u+'"');
+document.writeln('BORDER=0 HEIGHT="60" WIDTH="468"&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/IFRAME&amp;amp;amp;gt;');
+// -->
+</script>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<a  href="http://connect.247media.ads.link4ads.com/click/1/StockCharts_com/StockCharts_com/StockCharts_PopUps/43596;uniq=11278" target="_top">
+<img ></img>
+</a>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<!-- end Banner -->
+</td>
+<td  align="right">
+<form  gosearch="#DEFAULT" onsubmit="return" this="#DEFAULT">
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="1">
+<select >
+<option  selected="selected">
+SharpChart:
+</option>
+<option >
+P&amp;F Chart:
+</option>
+<option >
+CandleGlance:
+</option>
+<option >
+PerfChart:
+</option>
+<option >
+Gallery View:
+</option>
+<option >
+Symbol Lookup:
+</option>
+<option >
+Site Search:
+</option>
+</select>
+<input ></input>
+<input ></input>
+<input ></input>
+<br ></br>
+<a  style="color:#FFFFFF">
+Symbol Catalog
+</a>
+</font>
+</form>
+</td>
+</tr>
+<tr >
+<td  align="right" colspan="2" valign="bottom">
+<map  name="NavMap">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#8F8F9E">
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- End Header Table -->
+<!-- Body Table -->
+<table  TABID="12084" valign="top">
+<tr  bgcolor="White" valign="top">
+<td  bgcolor="#8F8F9E" width="140">
+<img ></img>
+</td>
+<td  bgcolor="White" valign="top" width="10">
+<img ></img>
+</td>
+<td  bgcolor="White" valign="top" width="100%">
+<img ></img>
+</td>
+<td  align="right" bgcolor="White" height="10" valign="top" width="10">
+<img ></img>
+</td>
+<td  bgcolor="#8F8F9E" valign="top" width="5">
+<img ></img>
+</td>
+</tr>
+<tr  valign="top">
+<!--Begin Left Nav-->
+<td  bgcolor="#CCCCCC" width="150">
+<table  TABID="12068" bgcolor="#8F8F9E" border="0" cellpadding="0" cellspacing="0" height="75">
+<tr >
+<td  valign="top">
+<form  gofind="#DEFAULT" onsubmit="return" this.form="#DEFAULT">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-2">
+<b >
+Search the Site:
+</b>
+</font>
+<input ></input>
+<br ></br>
+<img ></img>
+<br ></br>
+<input ></input>
+<input ></input>
+</form>
+</td>
+</tr>
+</table>
+<table  TABID="12072" bgcolor="#CCCCCC" border="0" cellpadding="0" cellspacing="0" width="150">
+<tr >
+<td  valign="top">
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2"></font>
+<table  TABID="12069">
+<tr >
+<td  bgcolor="#333366" height="10">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+<b >
+Chart School
+</b>
+</font>
+</td>
+</tr>
+</table>
+<br ></br>
+<font  arial="#DEFAULT" color="#333366" face="verdana," sans-serif="#DEFAULT">
+<a  href="/education/what/">
+<b >
+Technical Analysis
+</b>
+</a>
+<br ></br>
+</font>
+<a  class="nu">
+Overview
+</a>
+<br ></br>
+<a  class="nu">
+Chart Analysis
+</a>
+<br ></br>
+<a  class="nu">
+Indicator Analysis
+</a>
+<br ></br>
+<a  class="nu">
+Market Analysis
+</a>
+<br ></br>
+<a  class="nu">
+Trading Strategies
+</a>
+<br ></br>
+<br ></br>
+<font  arial="#DEFAULT" color="#333366" face="verdana," sans-serif="#DEFAULT">
+<a  href="/education/How/">
+<b >
+Analysis Tools
+</b>
+</a>
+<br ></br>
+</font>
+<a  class="nu">
+SharpCharts
+</a>
+<br ></br>
+<a  class="nu">
+PerfCharts
+</a>
+<br ></br>
+<a  class="nu">
+Point &amp; Figure Charts
+</a>
+<br ></br>
+<a  class="nu">
+Stock Scans
+</a>
+<br ></br>
+<a  class="nu">
+Market Carpet
+</a>
+<br ></br>
+<br ></br>
+<font  arial="#DEFAULT" color="#333366" face="verdana," sans-serif="#DEFAULT">
+<a  href="/education/Resources/">
+<b >
+Additional Resources
+</b>
+</a>
+<br ></br>
+</font>
+<a  class="nu">
+Bookstore
+</a>
+<br ></br>
+<a  class="nu">
+Glossary
+</a>
+<br ></br>
+<a  class="nu">
+Site Tour
+</a>
+<br ></br>
+<a  class="nu">
+Recommended Sites
+</a>
+<br ></br>
+<br ></br>
+<br ></br>
+<table  TABID="12070" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#333366" height="10">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+<b >
+StockCharts Extra!
+</b>
+</font>
+</td>
+</tr>
+</table>
+<center >
+Can't get enough of StockCharts?
+<a  href="/corp/extra.html">
+<img ></img>
+</a>
+Click to learn more.
+</center>
+<br ></br>
+<table  TABID="12071" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  valign="top">
+<td  bgcolor="#333366" height="10">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+<b >
+Our Bookstore
+</b>
+</font>
+</td>
+</tr>
+</table>
+<b >
+Books on:
+</b>
+<br ></br>
+<a  class="nu">
+Our Favorites
+</a>
+<br ></br>
+<a  class="nu">
+Technical Analysis
+</a>
+<br ></br>
+<a  class="nu">
+Books by John Murphy
+</a>
+<br ></br>
+<a  class="nu">
+P&amp;F Charting
+</a>
+<br ></br>
+<a  class="nu">
+General Investing
+</a>
+<br ></br>
+<br ></br>
+</td>
+</tr>
+</table>
+</td>
+<!--End Left Nav-->
+<td  bgcolor="#FFFFFF">
+<img ></img>
+</td>
+<!--Begin Content Pane-->
+<td  bgcolor="White" valign="top">
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="2">
+<!-- Yahoo nav -->
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="1">
+<img ></img>
+<br ></br>
+You are here:
+<b >
+<a  href="/education/">
+Chart School
+</a>
+&gt;
+<a  href="/education/How/">
+Analysis Tools
+</a>
+&gt;
+</b>
+<br ></br>
+</font>
+</font>
+<hr ></hr>
+<!-- End Yahoo nav -->
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<br ></br>
+<table  TABID="12073" align="right" border="0" cellpadding="0" cellspacing="5" width="200">
+<tr >
+<td  align="left" valign="top" width="242">
+<font  arial="#DEFAULT" color="Navy" face="verdana," sans-serif="#DEFAULT" size="-2">
+<b >
+<img ></img>
+<br ></br>
+<a  class="nu">
+History
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  class="nu">
+Creating P&amp;F Charts
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  class="nu">
+Constructing Charts by Hand
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  class="nu">
+StockCharts.com's Interactive P&amp;F Charts
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  class="nu">
+Learn More
+</a>
+<br ></br>
+<br ></br>
+<br ></br>
+</b>
+</font>
+</td>
+</tr>
+</table>
+<img ></img>
+<br ></br>
+<font  size="+1">
+<b >
+Understanding Point &amp; Figure Charts
+</b>
+</font>
+<br ></br>
+<br ></br>
+<img ></img>
+<a  href="/webcgi/PnF.asp?S=$INDU">
+Use this Tool
+</a>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<p >
+Point &amp; Figure charts consist of columns of X's and O's that represent
+<b >
+filtered
+</b>
+price movements over time. Their distinctive look may be alien at first to people who are more familiar with traditional price bar charts but once people learn the basics of P&amp;F charts they usually become hooked.
+</p>
+<p >
+There are several advantages to using P&amp;F charts instead of the more traditional bar or candlestick charts. P&amp;F charts automatically. . .
+</p>
+<ul >
+<li >
+eliminate the insignificant price movements that often make bar charts appear 'noisy.'
+</li>
+<li >
+remove the often misleading effects of time from the analysis process.
+</li>
+<li >
+make recognizing support/resistance levels
+<b >
+much
+</b>
+easier.
+</li>
+<li >
+make trendline recognition a 'no-brainer'.
+</li>
+<li >
+help you stay focused on the important long-term price developments.
+</li>
+</ul>
+<p >
+After briefly discussing the history of P&amp;F charting, we'll talk about how to construct a P&amp;F chart by hand. Then we'll discuss how to interpret the most common P&amp;F chart formations.
+</p>
+<table  TABID="12074" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tr >
+<td  bgcolor="#333366">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="2">
+<a  name="history">
+<b >
+History
+</b>
+</a>
+</font>
+</td>
+</tr>
+</table>
+<p >
+Point &amp; Figure chart analysis has been popular for a very long time. Part of its original appeal was that it was very simple for someone to maintain a large collection of P&amp;F charts back in the days before computers. In less than an hour, using just a pencil, a newspaper and some graph paper, P&amp;F chartists were able to update and analyze 50 or more charts every day. When computers arrived, they made it much easier to create bar charts and P&amp;F charts started to fade in popularity. Recently however, as investors look for better ways to select stocks, Point &amp; Figure charting has been 'rediscovered' and is once again growing in popularity.
+</p>
+<p >
+This classic paper and pencil-based method was largely put aside as technology made charting easier, and charts became flashier. Now StockCharts.com has reintroduced the Point &amp; Figure chart, adding a dynamic interface that gives you control of the variables.
+</p>
+<table  TABID="12075" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tr >
+<td  bgcolor="#333366">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="2">
+<a  name="creation">
+<b >
+Creating a P&amp;F Chart
+</b>
+</a>
+</font>
+</td>
+</tr>
+</table>
+<p >
+On a P&amp;F chart price movements are combined into either a rising column of X's or a falling column of O's. If you are familiar with standard chart analysis, you can think of each column as representing either an uptrend or a downtrend. Each X or O occupies what is called a
+<b >
+box
+</b>
+on the chart. Each chart has a setting called the
+<b >
+Box Size
+</b>
+that is the amount that a stock needs to move above the top of the current column of X's (or below the bottom of the current column of O's) before another X (or O) is added to that column. Each chart has a second setting called the
+<b >
+Reversal Amount
+</b>
+that determines the amount that a stock needs to move in the opposite direction (down if we are in a rising column of X's, up for a column of O's) before a
+<b >
+reversal
+</b>
+occurs. Whenever this reversal threshold is crossed, a new column is started right next to the previous one, only moving in the opposite direction.
+</p>
+<p >
+It sounds much more complex than it is, trust me!
+</p>
+<p >
+<b >
+In a nutshell
+</b>
+, as long as a stock is in an uptrend and it doesn't move down more than the 'reversal distance' (i.e., the box size multiplied by the reversal amount), the P&amp;F chart will show a growing column of X's. Similarly, a stock in a downtrend will cause a descending column of O's to appear. Only when the stock changes direction by more than the reversal distance will a new column be added to the chart.
+</p>
+<p >
+Traditionally, the box size is set to 1 and the reversal amount is 3 (however, see below for the gory details).
+</p>
+<table  TABID="12076" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tr >
+<td  bgcolor="#333366">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="2">
+<a  name="construction">
+<b >
+Constructing a P&amp;F Chart by Hand
+</b>
+</a>
+</font>
+</td>
+</tr>
+</table>
+<p >
+The best way to really understand P&amp;F charts is to create one by hand. All you need is a grid (graph paper is perfect), a pencil, and stock quotes. Only high and low prices are charted - the open and close are ignored. Here are the numbers we'll use for this example:
+</p>
+<table  TABID="12078" bgcolor="#99CCFF" border="0" cellpadding="4">
+<tr >
+<td >
+<table  TABID="12077" border="0" cellpadding="1" cellspacing="0" genuinetable="yes">
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-1"></font>
+</td>
+<td  align="center">
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+<b >
+High
+</b>
+</font>
+</td>
+<td  align="center">
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+<b >
+Low
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+Day 1
+<br ></br>
+Day 2
+<br ></br>
+Day 3
+<br ></br>
+Day 4
+<br ></br>
+Day 5
+</font>
+</td>
+<td  align="center">
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+15
+<br ></br>
+12
+<br ></br>
+12
+<br ></br>
+15
+<br ></br>
+15
+</font>
+</td>
+<td  align="center">
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+11
+<br ></br>
+11
+<br ></br>
+10
+<br ></br>
+11
+<br ></br>
+12
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br ></br>
+<p >
+<b >
+Key Points Before We Start:
+</b>
+<br ></br>
+1. Remember, X's represent increasing prices (AKA demand). O's represent decreasing prices (AKA supply).
+<br ></br>
+2. You can only have Xs or Os in any one column, not both.
+<br ></br>
+3. The reversal distance is equal to the box size (in this case, one) multiplied by the reversal amount (in this case, three). Therefore, for this example, the reversal distance is three.
+</p>
+<p >
+<b >
+Day 1: High-15 Low-11
+</b>
+<br ></br>
+To begin, chart the difference between the first day's high and low. Since prices are falling, we'll start with a column of Os.
+</p>
+<pre >
+<font  face="courier," serif="#DEFAULT">
+15 O
+14 O
+13 O
+12 O
+11 O
+10
+</font>
+</pre>
+<p >
+<b >
+Day 2: High-12 Low-11
+</b>
+<br ></br>
+Now watch look for one of two things to happen. First, if the low moves lower by at least the box amount (in this case, one) we mark another O in the same column. Since that didn't happen on Day 2, look to see if the high is higher than the bottom of the current column plus the reversal distance (11+3=14). That didn't happen either. So for Day 2, we do nothing(!).
+</p>
+<pre >
+<font  face="courier," serif="#DEFAULT">
+15 O
+14 O
+13 O
+12 O
+11 O
+10
+</font>
+</pre>
+<p >
+Note: Doing nothing is a totally acceptable (and common) action to take for a P&amp;F chart.
+</p>
+<p >
+<b >
+Day 3: High-12 Low-10
+</b>
+<br ></br>
+Again, we look to see if the low moves lower by at least the box amount. It does. So we add another O to the column. (If the low had moved down two points, we would mark two O's.)
+</p>
+<pre >
+<font  face="courier," serif="#DEFAULT">
+15 O
+14 O
+13 O
+12 O
+11 O
+10 O
+</font>
+</pre>
+<p >
+<b >
+Day 4: High-15 Low-11
+</b>
+<br ></br>
+Since we're still in a column of O's, we check the low first. It does not move past the previous low, so we do not add another O. Then we see if the high was greater than or equal to the bottom of the column plus the reversal distance (i.e., 10+3=13). Since the high was 15, that means that the chart
+<b >
+did
+</b>
+reverse and we add five X's starting one above the low of the previous column.
+</p>
+<pre >
+<font  face="courier," serif="#DEFAULT">
+15 O X
+14 O X
+13 O X
+12 O X
+11 O X
+10 O
+</font>
+</pre>
+<p >
+<b >
+Day 5: High-15 Low-12
+</b>
+<br ></br>
+Now we're in a column of X's, so we check the high first. It did not move up by a full box, so we next check the low. Since the low has moved down to the reversal threshold (i.e., the top of the column minus the reversal distance (15-3=12)), we reverse one more time and add three O's to the next column.
+</p>
+<pre >
+<font  face="courier," serif="#DEFAULT">
+15 O X
+14 O X O
+13 O X O
+12 O X O
+11 O X
+10 O
+</font>
+</pre>
+<p >
+Over time, our chart might look something like this:
+</p>
+<pre >
+<font  face="courier," serif="#DEFAULT">
+20
+19               
+18            X   X 
+17            X O X O
+16        X   X O X O
+15  O X   X O X O X O X
+14  O X O X O   O X O X O X
+13  O X O X     O   O X O X O
+12  O X O           O X O X O
+11  O X             O   O   O
+10  O
+</font>
+</pre>
+<p >
+Is it important to remember that
+<b >
+P&amp;F charts do not show time in a linear fashion
+</b>
+. Each column can represent one day, or many days, depending on the price movement. Because P&amp;F charts filter out the noise associated with more traditional charting methods, every mark on the chart is significant.
+</p>
+<table  TABID="12079" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tr >
+<td  bgcolor="#333366">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="2">
+<a  name="what">
+<b >
+Simple P&amp;F Chart Patterns
+</b>
+</a>
+</font>
+</td>
+</tr>
+</table>
+<p >
+At the most basic level, there are four things to look for:
+</p>
+<ul >
+<li >
+Support levels
+</li>
+<li >
+Resistance levels
+</li>
+<li >
+Upward trendlines
+</li>
+<li >
+Downward trendlines
+</li>
+</ul>
+<a  href="/education/Resources/Glossary/support.html">
+Support
+</a>
+and
+<a  href="/education/Resources/Glossary/resistance.html">
+resistance
+</a>
+are defined in more detail in our glossary. Because of the nature of P&amp;F charts, support and resistance levels are always horizontal lines and trendlines always appear at 45&amp;deg angles.
+<p >
+<b >
+Support Levels
+</b>
+<br ></br>
+Support levels indicate the price at which most investors feel that prices will move higher. There is sufficient demand for a stock to cause a halt in an downward trend and turn the trend up. You can spot support levels on P&amp;F charts by looking for a horizontal row of Os that each mark the bottom of their respective columns.
+</p>
+<pre >
+<font  face="courier," serif="#DEFAULT">
+20              
+19               
+18           X   X 
+17           X O X O 
+16       X   X O X O   
+15 O X   X O X O X O X   
+14 O X O X O   O X O X O   
+13 O X O X     O   O X O X O
+12 O X O           O X O X O
+11 O X             O   O   O
+10 O               + + + + + Support Level
+</font>
+</pre>
+<p >
+When a support level is penetrated (the price drops below the support level) it often becomes a resistance level; this is because investors want to limit their losses and will sell later, when prices approach the former level.
+</p>
+<p >
+<b >
+Resistance Levels
+</b>
+<br ></br>
+Like support levels, resistance levels are horizontal lines on P&amp;F charts. They mark the upper level for trading, or a price at which sellers typically outnumber buyers. Find them by looking for a row of Xs.
+</p>
+<pre >
+<font  face="courier," serif="#DEFAULT">
+20              
+19           + + + Resistance level  
+18           X   X 
+17           X O X O 
+16       X   X O X O   
+15 O X   X O X O X O X   
+14 O X O X O   O X O X O   
+13 O X O X     O   O X O X O
+12 O X O           O X O X O
+11 O X             O   O   O
+10 O
+</font>
+</pre>
+<p >
+When resistance levels are broken, the price moves above the resistance level, and often does so decisively.
+</p>
+<p >
+<b >
+Upward Trendlines
+</b>
+<br ></br>
+To plot an upward, or support, trendline, first put a + under the first column of Os.
+</p>
+<pre >
+<font  face="courier," serif="#DEFAULT">
+20
+19               
+18           X   X 
+17           X O X O
+16       X   X O X O
+15 O X   X O X O X O X
+14 O X O X O   O X O X O X
+13 O X O X     O   O X O X O
+12 O X O           O X O X O
+11 O X             O   O   O
+10 O                       
+ +
+</font>
+</pre>
+<p >
+Then move over one box and up one box and draw another +. Repeat this until you hit another column of Os followed by a row of Xs which does not continue the pattern.
+</p>
+<pre >
+<font  face="courier," serif="#DEFAULT">
+20
+19               
+18           X   X 
+17           X O X O
+16       X   X O X O
+15 O X   X O X O X O X
+14 O X O X O + O X O X O X
+13 O X O X +   O   O X O X O
+12 O X O +         O X O X O
+11 O X +           O   O   O
+10 O +                     
+ + Upward Trendline
+</font>
+</pre>
+<p >
+The upward trendline indicates the point where buyers start to outnumber sellers.
+</p>
+<p >
+<b >
+Downward Trendlines
+</b>
+<br ></br>
+Now our stock has turned a corner. Let's look for a downward trendline. Start at a wall of Xs, and use the same plotting technique as before, but at a downward angle. Remember, trendlines always appear at a 45&amp;deg angle.
+</p>
+<pre >
+<font  face="courier," serif="#DEFAULT">
+20              
+19               +
+18           X   X + Downward Trendline
+17           X O X O +
+16       X   X O X O   +
+15 O X   X O X O X O X   + 
+14 O X O X O   O X O X O   +
+13 O X O X     O   O X O X O
+12 O X O           O X O X O
+11 O X             O   O   O
+10 O
+</font>
+</pre>
+<p >
+<b >
+Confirmation
+</b>
+<br ></br>
+Both support levels and resistance levels should be confirmed by volume. If volume increases after a breakout, most people agree with the new direction.
+</p>
+<table  TABID="12080" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tr >
+<td  bgcolor="#333366">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="2">
+<a  name="interactive">
+<b >
+StockCharts.com's Interactive P&amp;F Charts
+</b>
+</a>
+</font>
+</td>
+</tr>
+</table>
+<p >
+Our Java-based P&amp;F charts let you move back and forth between traditional, logarithmic, and user-defined box scaling.
+</p>
+<ul >
+<li >
+<b >
+Traditional box scaling
+</b>
+preloads box sizes historically used for that particular price range. The reversal amount starts at 2, but can be adjusted dynamically. Here are the traditional box sizes used in our charts:
+<br ></br>
+<br ></br>
+<table  TABID="12082" bgcolor="#99CCFF" border="0" cellpadding="4">
+<tr >
+<td >
+<table  TABID="12081" border="0" cellpadding="1" genuinetable="yes">
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+<b >
+Price Range
+</b>
+</font>
+</td>
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+<b >
+Box Size
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+Under $0.25
+</font>
+</td>
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+.0625
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+.26 to 1.00
+</font>
+</td>
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+.125
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+1.01 to 5.00
+</font>
+</td>
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+.25
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+5.01 to 20.00
+</font>
+</td>
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+.50
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+20.01 to 100.00
+</font>
+</td>
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+1.00
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+100.01 to 200.00
+</font>
+</td>
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+2.00
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+200.01 to 500.00
+</font>
+</td>
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+4.00
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+500.01 to 1,000.00
+</font>
+</td>
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+5.00
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+1,000.01 to 25,000.00
+</font>
+</td>
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+50.00
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+25,000.01 and up
+</font>
+</td>
+<td >
+<font  arial="#DEFAULT" face="verdana," sans-serif="#DEFAULT" size="-2">
+500.00
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br ></br>
+</li>
+<li >
+<b >
+Logarithmic box scaling
+</b>
+increases the box size by a constant percentage (1%) everytime the price rises above the current box.
+</li>
+<li >
+<b >
+User-defined box scaling
+</b>
+allows you to control both the box size and the reversal amount. Making either variable larger filters out more data. The challenge, then, is to find a balance that shows enough detail without showing too much. For beginners, switching between the three modes will help you get a feel for how the variables affect the chart's appearance.
+</li>
+</ul>
+Remember, P&amp;F charts do not show time linearly, so the spacing between months, for example, will not be the same from month to month. Numbers and letters inside the chart itself indicate when a new month has begun. For instance, the number '2' shows where February started. The letters 'A', 'B', and 'C' are used to indicate October, November, and December.
+<p >
+For more information on how to use the applet itself, go to
+<a  class="nu">
+<b >
+How to Use the Site
+</b>
+</a>
+.
+</p>
+<table  TABID="12083" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tr >
+<td  bgcolor="#333366">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="2">
+<a  name="learn">
+<b >
+Learn More
+</b>
+</a>
+</font>
+</td>
+</tr>
+</table>
+<p >
+<a  href="/education/Resources/Reading/pointFigure.html">
+<img ></img>
+</a>
+<img ></img>
+<br ></br>
+If you'd like to learn more about using P&amp;F charts, there are several good books available - our favorite is
+<a  href="/education/Resources/Reading/pointFigure.html">
+Point &amp; Figure Charting
+</a>
+by Thomas J. Dorsey. Others are listed in the
+<a  class="nu">
+<b >
+Bookstore
+</b>
+</a>
+section of the site.
+</p>
+<p >
+There is also a good series of articles available online starting at
+<a  href="http://stocks.about.com/library/bl_pf_01.htm">
+Point &amp; Figure Charts Mechanics
+</a>
+.
+</p>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<p >
+<b >
+<a  href="/corp/feedback.html">
+Send us your Feedback!
+</a>
+</b>
+</p>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<div  align="center">
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<!--- Start FAT Banner Code ------->
+<a  href="http://www.adtrader.com/ads/adlink.asp?SN=2084" target="_top">
+<script >
+<!-- 
+var adslot = Math.round(Math.random() * 10000000000000000);
+document.writeln('&amp;amp;amp;lt;img src="http://www.adtrader.com/ads/adserve.asp?SN=2084&amp;amp;amp;amp;PN='+adslot+'&amp;amp;amp;amp;Desc=education/How" width="468" height="60" border=1 alt="The Financial Ad Trader"&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;br&amp;amp;amp;gt;');
+// -->
+</script>
+<font  face="arial," sans-serif="#DEFAULT" size="-2"></font>
+</a>
+<a >
+Financial Ad Trader
+</a>
+<br ></br>
+<br ></br>
+<!--- End FAT Banner Code ------->
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+</div>
+</td>
+<!--End Content Pane-->
+<td  bgcolor="#FFFFFF">
+<img ></img>
+</td>
+<td  bgcolor="#8F8F9E" width="5">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" height="5" width="140">
+<img ></img>
+</td>
+<td  bgcolor="#8F8F9E" colspan="4" height="5">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#333366" colspan="5" height="100">
+<div  align="center">
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<a  href="/index.html">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+Home
+</font>
+</a>
+<a  href="/charts/index.html">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+Tools &amp; Charts
+</font>
+</a>
+<a  href="/education/index.html">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+Chart School
+</font>
+</a>
+<a  href="/support/index.html">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+Help
+</font>
+</a>
+<a  href="/corp/subscribe.html">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+Subscribe
+</font>
+</a>
+<a  href="/corp/feedback.html">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+Feedback
+</font>
+</a>
+<a  href="/FAQ.html">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+FAQ
+</font>
+</a>
+<a  href="/education/Resources/Glossary/index.html">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+Glossary
+</font>
+</a>
+<br ></br>
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+©1999-2001 StockCharts.com All Rights Reserved
+<a  href="/corp/terms.html">
+<font  arial="#DEFAULT" color="#FFFFFF" face="verdana," sans-serif="#DEFAULT" size="-1">
+Terms of Use
+</font>
+</a>
+<br ></br>
+Data provided by
+<a  href="http://www.atfi.com" target="_blank">
+<img ></img>
+</a>
+<br ></br>
+All data is delayed by 15 minutes or more
+</font>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+</div>
+</td>
+</tr>
+</table>
+<!-- End Body Table -->
+</body>
+</html>

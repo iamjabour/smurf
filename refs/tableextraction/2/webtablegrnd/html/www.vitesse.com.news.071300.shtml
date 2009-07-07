@@ -1,0 +1,1368 @@
+<html >
+<!-- #BeginTemplate "/Templates/general.dwt" -->
+<head >
+<!-- #BeginEditable "doctitle" -->
+<title >
+Vitesse Reports Results for Third Quarter of Fiscal 2000
+</title>
+<!-- #EndEditable -->
+<link ></link>
+<script ></script>
+</head>
+<body  onload="MM_preloadImages(/images/rht_nav_arrow_on.gif,/images/rht_nav_arrow_on.gif,/images/top_nav_btn_products_on.gif,/images/top_nav_btn_careers_on.gif,/images/top_nav_btn_investors_on.gif,/images/top_nav_btn_sales_office_on.gif,/images/top_nav_btn_corp_info_on.gif,/images/top_nav_util_contacts_on.gif,/images/top_nav_util_news_on.gif,/images/top_nav_util_sitemap_on.gif,/images/top_nav_util_home_on.gif)">
+<script >
+<!--
+function redirect(url)
+{
+if (url!='') window.location.href="/products/"+url;
+}
+//-->
+</script>
+<table  TABID="13836" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  valign="top">
+<form  action="../searchresults.cfm" method="post" name="Header">
+<td  width="760">
+<table  TABID="13833" bgcolor="#99CCFF" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr  valign="top">
+<td  bgcolor="#99CCFF" width="212">
+<a  href="/index.shtml">
+<img ></img>
+</a>
+</td>
+<td  width="229">
+<table  TABID="13830" border="0" cellpadding="0" cellspacing="0" width="229">
+<tr  valign="top">
+<td  bgcolor="#99CCFF" width="18">
+<img ></img>
+</td>
+<td  bgcolor="#99CCFF" width="165">
+<table  TABID="13829" border="0" cellpadding="0" cellspacing="0" width="241">
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<select >
+<option  selected="selected" value="">
+Select a Topic
+</option>
+<option  value="">
+:::::::::::::::::
+</option>
+<option  value="families.cfm?family_id=1">
+Optoelectronic
+</option>
+<option  value="categories.cfm?family_id=1&category_id=1">
+-Laser Drivers
+</option>
+<option  value="categories.cfm?family_id=1&category_id=2">
+-Transimpedance
+</option>
+<option  value="categories.cfm?family_id=1&category_id=3">
+-Post Amplifier
+</option>
+<option  value="">
+----------------
+</option>
+<option  value="families.cfm?family_id=2">
+Physical Layer
+</option>
+<option  value="categories.cfm?family_id=2&category_id=4">
+-Crosspoint Swit
+</option>
+<option  value="categories.cfm?family_id=2&category_id=5">
+-Re-Timers
+</option>
+<option  value="categories.cfm?family_id=2&category_id=6">
+-Clock and Data
+</option>
+<option  value="categories.cfm?family_id=2&category_id=7">
+-155 Mb/s - 2.5G
+</option>
+<option  value="categories.cfm?family_id=2&category_id=8">
+-9.9 - 12.5G Phy
+</option>
+<option  value="categories.cfm?family_id=2&category_id=9">
+-Media Access Co
+</option>
+<option  value="">
+----------------
+</option>
+<option  value="families.cfm?family_id=3">
+Telecom Product
+</option>
+<option  value="categories.cfm?family_id=3&category_id=10">
+-Optical Network
+</option>
+<option  value="categories.cfm?family_id=3&category_id=11">
+-SONET/SDH
+</option>
+<option  value="">
+----------------
+</option>
+<option  value="families.cfm?family_id=4">
+Gigabit Etherne
+</option>
+<option  value="categories.cfm?family_id=4&category_id=12">
+-Gigabit Etherne
+</option>
+<option  value="categories.cfm?family_id=4&category_id=13">
+-Ten Gigabit Eth
+</option>
+<option  value="categories.cfm?family_id=4&category_id=14">
+-Transceivers
+</option>
+<option  value="">
+----------------
+</option>
+<option  value="families.cfm?family_id=5">
+Network Process
+</option>
+<option  value="categories.cfm?family_id=5&category_id=16">
+-IQ2000
+</option>
+<option  value="categories.cfm?family_id=5&category_id=17">
+-IQ2000 Developm
+</option>
+<option  value="">
+----------------
+</option>
+<option  value="families.cfm?family_id=6">
+Traffic Managem
+</option>
+<option  value="categories.cfm?family_id=6&category_id=18">
+-PaceMaker Produ
+</option>
+<option  value="categories.cfm?family_id=6&category_id=19">
+-Monitor Product
+</option>
+<option  value="">
+----------------
+</option>
+<option  value="families.cfm?family_id=7">
+Switch Fabrics
+</option>
+<option  value="categories.cfm?family_id=7&category_id=20">
+-GigaStream/Cros
+</option>
+<option  value="">
+----------------
+</option>
+<option  value="families.cfm?family_id=8">
+Serial Intercon
+</option>
+<option  value="categories.cfm?family_id=8&category_id=22">
+-Serial Backplan
+</option>
+<option  value="">
+----------------
+</option>
+<option  value="families.cfm?family_id=9">
+Storage Communi
+</option>
+<option  value="categories.cfm?family_id=9&category_id=23">
+-Enclosure Manag
+</option>
+<option  value="categories.cfm?family_id=9&category_id=24">
+-Fibre Channel S
+</option>
+<option  value="categories.cfm?family_id=9&category_id=25">
+-Fibre Channel P
+</option>
+<option  value="">
+----------------
+</option>
+<option  value="families.cfm?family_id=10">
+Broadcast Video
+</option>
+<option  value="categories.cfm?family_id=10&category_id=27">
+-Crosspoint Swit
+</option>
+<option  value="categories.cfm?family_id=10&category_id=28">
+-Reclockers
+</option>
+<option  value="categories.cfm?family_id=10&category_id=29">
+-Serializers/Des
+</option>
+<option  value="">
+----------------
+</option>
+<option  value="families.cfm?family_id=11">
+Test and Measur
+</option>
+<option  value="categories.cfm?family_id=11&category_id=30">
+-Test and Measur
+</option>
+<option  value="categories.cfm?family_id=11&category_id=31">
+-Timing and Logi
+</option>
+<option  value="">
+----------------
+</option>
+</select>
+<a  href="javascript:redirect(document.Header.quicklink.options[document.Header.quicklink.selectedIndex].value)">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="#99CCFF" width="3">
+<img ></img>
+</td>
+<td  width="166">
+<table  TABID="13831" border="0" cellpadding="0" cellspacing="0" width="181">
+<tr >
+<td  width="166">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<input ></input>
+<a  href="javascript:document.Header.submit()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td >
+<table  TABID="13832" border="0" cellpadding="0" cellspacing="0" width="104">
+<tr >
+<td  width="104">
+<div  align="right">
+<a  onmouseover="MM_swapImage(contactbtn,,/images/top_nav_util_contacts_on.gif,1)">
+<img ></img>
+</a>
+</div>
+</td>
+</tr>
+<tr >
+<td >
+<div  align="right">
+<a  onmouseover="MM_swapImage(newsbtn,,/images/top_nav_util_news_on.gif,1)">
+<img ></img>
+</a>
+</div>
+</td>
+</tr>
+<tr >
+<td >
+<div  align="right">
+<a  onmouseover="MM_swapImage(sitemapbtn,,/images/top_nav_util_sitemap_on.gif,1)">
+<img ></img>
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table  TABID="13834" background="/images/top_nav_btn_bg.gif">
+<tr >
+<td  width="18">
+<img ></img>
+</td>
+<td  width="85">
+<a  onmouseover="rollOn(1)">
+<img ></img>
+</a>
+</td>
+<td  width="33">
+<img ></img>
+</td>
+<td  width="14">
+<img ></img>
+</td>
+<td  width="14">
+<img ></img>
+</td>
+<td  width="67">
+<a  onmouseover="rollOn(2);MM_showHideLayers(document.layers[\careers\],document.all[\careers\],document.getElementById(\careers\),show)">
+<img ></img>
+</a>
+</td>
+<td  width="45">
+<img ></img>
+</td>
+<td  width="14">
+<img ></img>
+</td>
+<td  width="11">
+<img ></img>
+</td>
+<td  width="83">
+<a  onmouseover="rollOn(3);MM_showHideLayers(document.layers[\investors\],document.all[\investors\],document.getElementById(\investors\),show)">
+<img ></img>
+</a>
+</td>
+<td  width="32">
+<img ></img>
+</td>
+<td  width="14">
+<img ></img>
+</td>
+<td  width="15">
+<img ></img>
+</td>
+<td  width="104">
+<a  onmouseover="rollOn(4);MM_showHideLayers(document.layers[\sales\],document.all[\sales\],document.getElementById(\sales\),show)">
+<img ></img>
+</a>
+</td>
+<td  width="7">
+<img ></img>
+</td>
+<td  width="14">
+<img ></img>
+</td>
+<td  width="12">
+<img ></img>
+</td>
+<td  width="85">
+<a  onmouseover="rollOn(5);MM_showHideLayers(document.layers[\corpinfo\],document.all[\corpinfo\],document.getElementById(\corpinfo\),show)">
+<img ></img>
+</a>
+</td>
+<td  width="27">
+<img ></img>
+</td>
+<td  width="66">
+<a  onmouseover="MM_swapImage(homebtn,,/images/top_nav_util_home_on.gif,0)">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  width="100%">
+<table  TABID="13835" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  bgcolor="#99CCFF">
+<td  width="100%">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</form>
+</tr>
+</table>
+<table  TABID="13837" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="13847" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr >
+<td >
+<table  TABID="13846" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr  valign="top">
+<td  bgcolor="#003366" width="5">
+<img ></img>
+</td>
+<td >
+<!-- #BeginEditable "general_editable" -->
+<table  TABID="13845" border="0" cellpadding="0" cellspacing="0" width="755">
+<tr  valign="top">
+<td  colspan="2">
+<img ></img>
+</td>
+<td  width="168"></td>
+</tr>
+<tr  valign="top">
+<td  width="15">
+<img ></img>
+</td>
+<td  width="572">
+<div  class="bodysub">
+<b >
+Contacts:
+</b>
+<br ></br>
+</div>
+<div  class="content">
+<b >
+Eugene F. Hovanec
+</b>
+<br ></br>
+Vice President, Finance &amp; Chief Financial Officer
+<br ></br>
+Vitesse Semiconductor Corporation
+<br ></br>
+(805) 388-3700
+</div>
+<br ></br>
+<div  class="bodysubBg">
+Vitesse Reports Results for Third Quarter of Fiscal 2000
+<br ></br>
+<br ></br>
+</div>
+<div  class="content">
+Camarillo, CA - (July 13, 2000) - Vitesse Semiconductor Corporation (
+<a  href="http://quotes.nasdaq-amex.com/Quote.dll?page=multi&mode=stock&mode=Stock&symbol=vtss&symbol=&symbol=&symbol=&symbol=&symbol=&symbol=&symbol=&symbol=&symbol=&multi.x=42&multi.y=18">
+NASDAQ:VTSS
+</a>
+) ("Vitesse" or the "Company") today reported results for the third quarter of fiscal 2000 ended June 30, 2000. Revenues in the third quarter of fiscal 2000 were $114.1 million, an increase of 56% over the $73.3 million in the third quarter of fiscal 1999 and an increase of 14% over the $100.3 million in the second quarter of fiscal 2000. For the nine month period ended June 30, 2000, revenues were $303.7 million, a 51% increase over the $201.0 million for the nine month period ended June 30, 1999.
+<br ></br>
+<br ></br>
+Pro forma net income for the third quarter of fiscal 2000, which excludes the amortization of goodwill and certain acquisition related costs discussed below, was $32.1 million or $0.17 per share, compared to net income of $15.2 million or $0.08 per share in the third quarter of fiscal 1999 and net income of $24.4 million or $0.13 per share in the prior quarter.
+<br ></br>
+<br ></br>
+In the third quarter of fiscal 2000, the Company recorded amortization of goodwill and acquisition related costs relating principally to the recently completed Orologic, Inc. and SiTera, Inc. acquisitions, respectively, in the amount of $21.4 million.
+<br ></br>
+<br ></br>
+Including the above mentioned amortization of goodwill and acquisition related costs, the Company recorded net income of $13.3 million or $0.07 per share for the quarter ended June 30, 2000, compared to net income of $15.2 million or $0.08 per share in the third quarter of 1999 and a net loss of $16.9 million or $0.10 loss per share in the prior quarter. For the nine month period ended June 30, 2000, net income was $16.3 million or $0.09 per share which included the amortization of goodwill and certain acquisition related costs aggregating $69.7 million or $0.37 per share, compared to net income of $41.7 million or $0.23 per share in the nine month period ended June 30, 1999.
+<br ></br>
+<br ></br>
+Vitesse President and CEO, Lou Tomasetta, said "This was an exceptionally strong quarter for our OC48 and OC192 telecom products. We are seeing numerous products originally designed for OC48 network core transmission systems now also being designed into higher volume metro network and enterprise systems."
+<br ></br>
+<br ></br>
+</div>
+<div  class="bodysub">
+Vitesse Semiconductor Corporation Financial Summary
+</div>
+<div  class="content">
+Pro Forma Statement of Operations (in thousands except per share data)
+<br ></br>
+<br ></br>
+<table  TABID="13839" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  bgcolor="#99CCFF">
+<td >
+<table  TABID="13838" border="0" cellpadding="3" cellspacing="1" genuinetable="yes" tabletitle="Vitesse Semiconductor Corporation Financial Summary
+   Pro Forma Statement of Operations (in thousands except per share data) " width="100%">
+<tr  class="tableHeader">
+<td  bgcolor="#003366" rowspan="2" width="36%">
+<img ></img>
+<img ></img>
+</td>
+<td  class="tableHeader" colspan="3">
+<b >
+Three months ended
+</b>
+<br ></br>
+<b >
+(unaudited)
+</b>
+</td>
+<td  class="tableHeader" colspan="2">
+<b >
+Nine months ended
+</b>
+<br ></br>
+<b >
+(unaudited)
+</b>
+</td>
+</tr>
+<tr  class="tableHeader">
+<td  class="tableHeader" width="13%">
+Pro Forma June 30, 2000
+</td>
+<td  class="tableHeader" width="11%">
+June.30, 1999
+</td>
+<td  class="tableHeader" width="12%">
+March 31, 1999
+</td>
+<td  class="tableHeader" width="12%">
+June. 30, 2000
+</td>
+<td  class="tableHeader" width="16%">
+June. 30, 1999
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="36%">
+<div  align="left">
+Revenues
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="center">
+$114,090
+</div>
+</td>
+<td  align="left" class="content" width="11%">
+<div  align="center">
+$73,277
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="center">
+$100,310
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="center">
+$ 303,679
+</div>
+</td>
+<td  align="left" class="content" width="16%">
+<div  align="center">
+$ 200,982
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" valign="top" width="36%">
+<div  align="left">
+Cost and expenses:
+<br ></br>
+Cost of revenues
+<br ></br>
+Engineering &amp; development
+<br ></br>
+Selling, general &amp; administrative
+</div>
+</td>
+<td  align="left" class="content" valign="top" width="13%">
+<div  align="right">
+<br ></br>
+38,747
+<br ></br>
+21,617
+<br ></br>
+13,120
+<br ></br>
+</div>
+</td>
+<td  align="left" class="content" valign="top" width="11%">
+<div  align="right">
+<br ></br>
+27,343
+<br ></br>
+15,013
+<br ></br>
+11,149
+</div>
+</td>
+<td  align="left" class="content" valign="top" width="12%">
+<div  align="right">
+<br ></br>
+35,111
+<br ></br>
+20,733
+<br ></br>
+11,685
+</div>
+</td>
+<td  align="left" class="content" valign="top" width="12%">
+<div  align="right">
+<br ></br>
+105,697
+<br ></br>
+60,160
+<br ></br>
+36,762
+</div>
+</td>
+<td  align="left" class="content" valign="top" width="16%">
+<div  align="right">
+<br ></br>
+75,908
+<br ></br>
+42,057
+<br ></br>
+29,695
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="36%">
+<div  align="left">
+Income from operations
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+40,606
+</div>
+</td>
+<td  align="left" class="content" width="11%">
+<div  align="right">
+19,772
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+32,781
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+101,060
+</div>
+</td>
+<td  align="left" class="content" width="16%">
+<div  align="right">
+53,322
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="36%">
+<div  align="left">
+Other income
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+7,273
+</div>
+</td>
+<td  align="left" class="content" width="11%">
+<div  align="right">
+2,917
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+3,683
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+13,750
+</div>
+</td>
+<td  align="left" class="content" width="16%">
+<div  align="right">
+8,286
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="36%">
+<div  align="left">
+Income before income taxes
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+47,879
+</div>
+</td>
+<td  align="left" class="content" width="11%">
+<div  align="right">
+22,689
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+36,464
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+114,810
+</div>
+</td>
+<td  align="left" class="content" width="16%">
+<div  align="right">
+61,608
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="36%">
+<div  align="left">
+Income taxes
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+15,800
+</div>
+</td>
+<td  align="left" class="content" width="11%">
+<div  align="right">
+7,487
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+12,033
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+37,887
+</div>
+</td>
+<td  align="left" class="content" width="16%">
+<div  align="right">
+20,330
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="36%">
+<div  align="left">
+Net income
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+$32,079
+</div>
+</td>
+<td  align="left" class="content" width="11%">
+<div  align="right">
+$15,202
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+$24,431
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+$76,923
+</div>
+</td>
+<td  align="left" class="content" width="16%">
+<div  align="right">
+$41,278
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="36%">
+<div  align="left">
+Weighted average shares
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+192,567
+</div>
+</td>
+<td  align="left" class="content" width="11%">
+<div  align="right">
+191,161
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+187,906
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+188,589
+</div>
+</td>
+<td  align="left" class="content" width="16%">
+<div  align="right">
+176,151
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="36%">
+<div  align="left">
+Net income per share - diluted
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+$ 0.17
+</div>
+</td>
+<td  align="left" class="content" width="11%">
+<div  align="right">
+$ 0.08
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+$ 0.13
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+$ 0.41
+</div>
+</td>
+<td  align="left" class="content" width="16%">
+<div  align="right">
+$ 0.23
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br ></br>
+<div  class="content">
+The above pro forma amounts have been adjusted to eliminate the one-time charge for the write-off of purchased IPR&amp;D of $45.6 million included in the nine month period ended June 30, 2000, and goodwill amortization and other acquisition related costs of $21.4 million and $24.1 million for the three month and nine month periods ended June 30, 2000, respectively.
+</div>
+<br ></br>
+<div  class="content">
+<div  class="bodysub">
+<br ></br>
+Vitesse Semiconductor Corporation Financial Summary
+</div>
+Statement of Operations (in thousands except per share data)
+</div>
+<br ></br>
+<table  TABID="13841" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  bgcolor="#99CCFF">
+<td >
+<table  TABID="13840" border="0" cellpadding="3" cellspacing="1" genuinetable="yes" tabletitle="Vitesse Semiconductor Corporation Financial Summary
+   Statement of Operations (in thousands except per share data) " width="100%">
+<tr  class="tableHeader">
+<td  bgcolor="#003366" rowspan="2" width="37%">
+<img ></img>
+<img ></img>
+</td>
+<td  class="tableHeader" colspan="3">
+<b >
+Three months ended
+</b>
+<br ></br>
+<b >
+(unaudited)
+</b>
+</td>
+<td  class="tableHeader" colspan="2">
+<b >
+Nine months ended
+</b>
+<br ></br>
+<b >
+(unaudited)
+</b>
+</td>
+</tr>
+<tr  class="tableHeader">
+<td  class="tableHeader" width="12%">
+June 30, 2000
+</td>
+<td  class="tableHeader" width="12%">
+June 30, 1999
+</td>
+<td  class="tableHeader" width="13%">
+March 31, 2000
+</td>
+<td  class="tableHeader" width="13%">
+June 30, 2000
+</td>
+<td  class="tableHeader" width="13%">
+June 30, 1999
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="37%">
+<div  align="left">
+Revenues
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="center">
+$114,090
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="center">
+$73,277
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="center">
+$100,310
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="center">
+$303,679
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="center">
+$200,982
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" valign="top" width="37%">
+<div  align="left">
+Cost and expenses:
+<br ></br>
+Cost of revenues
+<br ></br>
+Engineering &amp; development
+<br ></br>
+Selling, general &amp; administrative
+<br ></br>
+Acquisition related costs
+</div>
+</td>
+<td  align="left" class="content" valign="top" width="12%">
+<div  align="right">
+<br ></br>
+38,747
+<br ></br>
+21,671
+<br ></br>
+13,120
+<br ></br>
+21,413
+<br ></br>
+</div>
+</td>
+<td  align="left" class="content" valign="top" width="12%">
+<div  align="right">
+<br ></br>
+27,343
+<br ></br>
+15,013
+<br ></br>
+10,789
+<br ></br>
+360
+</div>
+</td>
+<td  align="left" class="content" valign="top" width="13%">
+<div  align="right">
+<br ></br>
+35,111
+<br ></br>
+21,093
+<br ></br>
+11,685
+<br ></br>
+47,843
+</div>
+</td>
+<td  align="left" class="content" valign="top" width="13%">
+<div  align="right">
+<br ></br>
+105,697
+<br ></br>
+60,880
+<br ></br>
+36,762
+<br ></br>
+69,677
+</div>
+</td>
+<td  align="left" class="content" valign="top" width="13%">
+<div  align="right">
+<br ></br>
+75,908
+<br ></br>
+42,057
+<br ></br>
+28,843
+<br ></br>
+850
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="37%">
+<div  align="left">
+Income (loss) from operations
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+19,193
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+19,772
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+(15,422)
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+30,663
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+53,324
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="37%">
+<div  align="left">
+Other income
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+7,273
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+2,917
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+3,683
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+13,750
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+8,286
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="37%">
+<div  align="left">
+Income before income taxes
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+26,466
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+22,689
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+(11,739)
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+44,413
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+61,610
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="37%">
+<div  align="left">
+Income taxes
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+13,182
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+7,487
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+5,135
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+28,113
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+19,933
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="37%">
+<div  align="left">
+Net income (loss)
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+$13,284
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+$15,202
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+$(16,874)
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+$16,300
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+$41,677
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="37%">
+<div  align="left">
+Weighted average shares
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+192,567
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+181,423
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+174,152
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+188,589
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+179,692
+</div>
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content" width="37%">
+<div  align="left">
+Net income (loss) per share - diluted
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+$ 0.07
+</div>
+</td>
+<td  align="left" class="content" width="12%">
+<div  align="right">
+$ 0.08
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+($ 0.10)
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+$ 0.09
+</div>
+</td>
+<td  align="left" class="content" width="13%">
+<div  align="right">
+$ 0.23
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  class="content"></div>
+<br ></br>
+<table  TABID="13842" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  bgcolor="#FFCC00">
+<td >
+<img ></img>
+</td>
+</tr>
+</table>
+<br ></br>
+<table  TABID="13844" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  bgcolor="#99CCFF">
+<td >
+<table  TABID="13843" border="0" cellpadding="3" cellspacing="1" genuinetable="yes" width="100%">
+<tr  class="tableHeader">
+<td  class="tableHeader">
+Selected Balance Sheet Items
+</td>
+<td  align="center" class="tableHeader" width="38%">
+June 30, 2000
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content">
+<div  align="left">
+Cash and investments
+</div>
+</td>
+<td  align="center" class="content" width="38%">
+$ 967,397
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content">
+<div  align="left">
+Accounts receivable
+</div>
+</td>
+<td  align="center" class="content" width="38%">
+$ 100,535
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content">
+<div  align="left">
+Inventories
+</div>
+</td>
+<td  align="center" class="content" width="38%">
+$ 37,532
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content">
+<div  align="left">
+Total assets
+</div>
+</td>
+<td  align="center" class="content" width="38%">
+$ 1,843,172
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content">
+<div  align="left">
+Total liabilities
+</div>
+</td>
+<td  align="center" class="content" width="38%">
+$ 773,204
+</td>
+</tr>
+<tr  align="center" bgcolor="#FFFFFF">
+<td  class="content">
+<div  align="left">
+Total shareholders' equity
+</div>
+</td>
+<td  align="center" class="content" width="38%">
+$ 1,069,968
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br ></br>
+<div  class="contentsm">
+<b >
+Note:
+</b>
+All references to the number of common shares, weighted average number of common shares and per share data for all periods presented have been adjusted to reflect a 2 for 1 stock split of the common stock that was effected on October 20, 1999 and the issuance of shares in connection with the acquisition of SiTera, Inc. All periods presented have been retroactively restated to account for the acquisition of SiTera, Inc. which was completed in the third quarter of fiscal 2000 and has been accounted for under the pooling-of-interests method of accounting.
+<br ></br>
+<br ></br>
+</div>
+<div  class="content">
+<i >
+Vitesse Semiconductor Corporation is the leading designer and supplier of innovative, high performance semiconductors utilizing state-of-the-art processes for the manufacturers of next generation DWDM and optical networking communications equipment. Vitesse also develops storage area networking ICs and enclosure management products that monitor and communicate critical reliability and availability information. The Company's products address the needs of Core, Access, Optical and Enterprise network equipment manufacturers who demand a combination of high speed, high complexity and low power dissipation. Vitesse is headquartered in Camarillo, California, and operates two fabrication facilities in Camarillo and Colorado Springs.
+</i>
+</div>
+<br ></br>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<img ></img>
+<br ></br>
+<img ></img>
+<a  href="news.cfm?archiveflag=Y">
+<img ></img>
+</a>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+</td>
+<td  width="168">
+<a  href="news.cfm">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!-- #EndEditable -->
+</td>
+</tr>
+<tr  valign="top">
+<td  bgcolor="#003366" width="5"></td>
+<td >
+<div  align="center">
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+<cfinclude ></cfinclude>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<!-- #EndTemplate -->
+</html>

@@ -1,0 +1,426 @@
+<html >
+<head >
+<meta ></meta>
+<title >
+Approach to interpreting nonlinear regression results
+</title>
+<script >
+var TlxPgNm='questions';
+</script>
+<meta ></meta>
+<!-- MAP_LOCATION=( 90, 156) -->
+<style  type="text/css">
+<!--
+A.Left:link {color:#0000BF}
+A.Left:active {color:#80028F}
+A.Left:visited {color:#BF00BF}
+A.Bottom:link {color:#000000}
+A.Bottom:active {color:#800200}
+A.Bottom:visited {color:#000000}
+A:link {color:#0000BF}
+A:active {color:#80028F}
+A:visited {color:#BF00BF}
+-->
+</style>
+</head>
+<body  marginwidth="0">
+<table  TABID="00834" height="100%">
+<tr >
+<td  text="#080000">
+<div  margin-right="#DEFAULT" margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:10px;">
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" complete="#DEFAULT" guide="#DEFAULT" nonl="#DEFAULT" the="#DEFAULT" title="curvefit.com." to="#DEFAULT">
+<u >
+Table of contents
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  and="#DEFAULT" between="#DEFAULT" class="Left" difference="#DEFAULT" linear="#DEFAULT" nonlin="#DEFAULT" title="The">
+<u >
+Intro to regression
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" nonlinear="#DEFAULT" regression="#DEFAULT" title="Introduction" to="#DEFAULT">
+<u >
+Nonlinear regression
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" prism="#DEFAULT" regression="#DEFAULT" title="Nonlinear" with="#DEFAULT">
+<u >
+Curve fitting with Prism
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" interpreting="#DEFAULT" nonlinear="#DEFAULT" regre="#DEFAULT" title="Approach" to="#DEFAULT">
+<u >
+Interpreting the results
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<b >
+Questions
+</b>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" make="#DEFAULT" nonlinear="#DEFAULT" regression="#DEFAULT" results="#DEFAULT" the="#DEFAULT" title="Do">
+<u >
+Are results sensible?
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  are="#DEFAULT" bestfit="#DEFAULT" certain="#DEFAULT" class="Left" the="#DEFAULT" title="How" values="#DEFAULT">
+<u >
+SE and CI
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" fit="#DEFAULT" good="#DEFAULT" is="#DEFAULT" the="#DEFAULT" title="How">
+<u >
+Goodness of fit
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" curve="#DEFAULT" deviate="#DEFAULT" fr="#DEFAULT" systematically="#DEFAULT" the="#DEFAULT" title="Does">
+<u >
+Systematic deviation
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  a="#DEFAULT" be="#DEFAULT" class="Left" fit="#DEFAULT" local="#DEFAULT" minimum="#DEFAULT" the="#DEFAULT" title="Could">
+<u >
+Local minimum
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  an="#DEFAULT" assumption="#DEFAULT" class="Left" nonli="#DEFAULT" of="#DEFAULT" title="Have" violated="#DEFAULT" you="#DEFAULT">
+<u >
+Assumptions
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  a="#DEFAULT" class="Left" common="#DEFAULT" error="#DEFAULT" made="#DEFAULT" title="Have" using="#DEFAULT" when="#DEFAULT" you="#DEFAULT">
+<u >
+Common errors
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" fits="#DEFAULT" models="#DEFAULT" of="#DEFAULT" the="#DEFAULT" title="Comparing" two="#DEFAULT">
+<u >
+Comparing two curves
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  about="#DEFAULT" bestf="#DEFAULT" care="#DEFAULT" class="Left" distribution="#DEFAULT" of="#DEFAULT" the="#DEFAULT" title="Why">
+<u >
+Distributions of best-fit values
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  binding="#DEFAULT" class="Left" radioligand="#DEFAULT" title="Introduction" to="#DEFAULT">
+<u >
+Radioligand binding
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  binding="#DEFAULT" class="Left" exper="#DEFAULT" saturation="#DEFAULT" title="Introduction" to="#DEFAULT">
+<u >
+Saturation binding
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  a="#DEFAULT" binding="#DEFAULT" class="Left" competitive="#DEFAULT" curve="#DEFAULT" is="#DEFAULT" title="What">
+<u >
+Competitive binding
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" experiments="#DEFAULT" off="#DEFAULT" rate="#DEFAULT" title="Dissociation">
+<u >
+Kinetics of binding
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" curves="#DEFAULT" doseresponse="#DEFAULT" title="Introducing">
+<u >
+Dose-response curves
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" enzyme="#DEFAULT" kinetics="#DEFAULT" title="Introduction" to="#DEFAULT">
+<u >
+Enzyme kinetics
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" curves="#DEFAULT" standard="#DEFAULT" title="Introduction" to="#DEFAULT">
+<u >
+Standard curves
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" graphpad="#DEFAULT" prism="#DEFAULT" title="Introducing">
+<u >
+GraphPad Prism
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  analyzing="#DEFAULT" class="Left" data="#DEFAULT" graphpad="#DEFAULT" pr="#DEFAULT" title="Download" with="#DEFAULT">
+<u >
+More information
+</u>
+</a>
+</font>
+</div>
+<div  style="margin-top:3px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Left" curvefit.com="#DEFAULT" title="Search">
+<u >
+Search curvefit.com
+</u>
+</a>
+</font>
+</div>
+<br ></br>
+<div  style="margin-top:3px;">
+<font  face="Arial" narrow="#DEFAULT">
+<font  face="Symbol">
+ã
+</font>
+1999
+<a  class="Left" title="http://www.graphpad.com">
+<u >
+GraphPad Software
+</u>
+</a>
+Inc.
+<font  size="2"></font>
+</font>
+</div>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<noindex ></noindex>
+<br ></br>
+</div>
+<img ></img>
+</td>
+<td  text="#080000">
+<div  margin-right="#DEFAULT" margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:20px;">
+<font  face="Arial,Helvetica,sans-serif">
+<b >
+Approach to interpreting nonlinear regression results
+</b>
+</font>
+<br ></br>
+<div  margin-bottom="#DEFAULT" px="#DEFAULT" style="margin-top:11px;">
+<font  face="Times" new="#DEFAULT" roman="#DEFAULT">
+From
+<b >
+curvefit.com.
+</b>
+Copyright 1999 by GraphPad Software, Inc. All Rights Reserved.
+</font>
+</div>
+<br ></br>
+<div  style="margin-top:11px;">
+<font  face="Times" new="#DEFAULT" roman="#DEFAULT">
+When evaluating the results of nonlinear regression, ask yourself:
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  href="are_results_sensible_.htm" make="#DEFAULT" nonlinear="#DEFAULT" regression="#DEFAULT" results="#DEFAULT" target="_top" the="#DEFAULT" title="Do">
+<u >
+Do the nonlinear regression results make sense?
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  are="#DEFAULT" bestfit="#DEFAULT" certain="#DEFAULT" href="se_and_ci_.htm" target="_top" the="#DEFAULT" title="How" values="#DEFAULT">
+<u >
+How certain are the best-fit values?
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  fit="#DEFAULT" good="#DEFAULT" href="goodness_of_fit.htm" is="#DEFAULT" target="_top" the="#DEFAULT" title="How">
+<u >
+How good is the fit?
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  curve="#DEFAULT" deviate="#DEFAULT" fr="#DEFAULT" href="systematic_deviation.htm" systematically="#DEFAULT" target="_top" the="#DEFAULT" title="Does">
+<u >
+Does the curve systematically deviate from the data?
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  a="#DEFAULT" be="#DEFAULT" fit="#DEFAULT" href="local_minimum.htm" local="#DEFAULT" minimum="#DEFAULT" target="_top" the="#DEFAULT" title="Could">
+<u >
+Could the fit be a local minimum?
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  an="#DEFAULT" assumption="#DEFAULT" href="assumptions_.htm" nonli="#DEFAULT" of="#DEFAULT" target="_top" title="Have" violated="#DEFAULT" you="#DEFAULT">
+<u >
+Have you violated an assumption of nonlinear regression?
+</u>
+</a>
+</font>
+</div>
+<div  margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:24px;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  a="#DEFAULT" common="#DEFAULT" error="#DEFAULT" href="common_errors.htm" made="#DEFAULT" target="_top" title="Have" using="#DEFAULT" when="#DEFAULT" you="#DEFAULT">
+<u >
+Have you made a common error when using nonlinear regression?
+</u>
+</a>
+</font>
+</div>
+<br ></br>
+<div  style="margin-top:11px;">
+<font  face="Times" new="#DEFAULT" roman="#DEFAULT">
+You'll also want to interpret the data in the context of the experiment. For example, see the discussions on this web site for analyses of
+<a  binding="#DEFAULT" href="introduction9e.htm" radioligand="#DEFAULT" target="_top" title="Introduction" to="#DEFAULT">
+<u >
+radioligand binding
+</u>
+</a>
+,
+<a  enzyme="#DEFAULT" href="introduction63.htm" kinetics="#DEFAULT" target="_top" title="Introduction" to="#DEFAULT">
+<u >
+enzyme kinetics
+</u>
+</a>
+or
+<a  curves="#DEFAULT" doseresponse="#DEFAULT" href="introduction89.htm" target="_top" title="Introducing">
+<u >
+dose-response
+</u>
+</a>
+data.
+</font>
+</div>
+<br ></br>
+<br ></br>
+</div>
+<font  size="1"></font>
+</td>
+</tr>
+<tr >
+<td  text="#080000">
+<div  margin-right="#DEFAULT" margin-top="#DEFAULT" px="#DEFAULT" style="margin-left:8px;">
+<div  style="text-align:RIGHT;">
+<font  face="Arial,Helvetica,sans-serif">
+<a  class="Bottom" make="#DEFAULT" nonlinear="#DEFAULT" regression="#DEFAULT" results="#DEFAULT" the="#DEFAULT" title="Do">
+<u >
+<b >
+Do the nonlinear regression results make sense?
+</b>
+</u>
+</a>
+</font>
+</div>
+<br ></br>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

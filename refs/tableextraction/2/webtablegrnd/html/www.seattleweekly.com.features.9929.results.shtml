@@ -1,0 +1,1926 @@
+<html >
+<head >
+<title >
+Seattle Weekly - features: Best of Seattle 1999 Results
+</title>
+<link ></link>
+<meta ></meta>
+<meta ></meta>
+<script >
+<!--
+function MM_swapImgRestore() { //v2.0
+  if (document.MM_swapImgData != null)
+    for (var i=0; i&amp;amp;amp;lt;(document.MM_swapImgData.length-1); i+=2)
+      document.MM_swapImgData[i].src = document.MM_swapImgData[i+1];
+}
+
+function MM_preloadImages() { //v2.0
+  if (document.images) {
+    var imgFiles = MM_preloadImages.arguments;
+    if (document.preloadArray==null) document.preloadArray = new Array();
+    var i = document.preloadArray.length;
+    with (document) for (var j=0; j&amp;amp;amp;lt;imgFiles.length; j++) if (imgFiles[j].charAt(0)!="#"){
+      preloadArray[i] = new Image;
+      preloadArray[i++].src = imgFiles[j];
+  } }
+}
+
+function MM_swapImage() { //v2.0
+  var i,j=0,objStr,obj,swapArray=new Array,oldArray=document.MM_swapImgData;
+  for (i=0; i &amp;amp;amp;lt; (MM_swapImage.arguments.length-2); i+=3) {
+    objStr = MM_swapImage.arguments[(navigator.appName == 'Netscape')?i:i+1];
+    if ((objStr.indexOf('document.layers[')==0 &amp;amp;amp;amp;&amp;amp;amp;amp; document.layers==null) ||
+        (objStr.indexOf('document.all[')   ==0 &amp;amp;amp;amp;&amp;amp;amp;amp; document.all   ==null))
+      objStr = 'document'+objStr.substring(objStr.lastIndexOf('.'),objStr.length);
+    obj = eval(objStr);
+    if (obj != null) {
+      swapArray[j++] = obj;
+      swapArray[j++] = (oldArray==null || oldArray[j-1]!=obj)?obj.src:oldArray[j];
+      obj.src = MM_swapImage.arguments[i+2];
+  } }
+  document.MM_swapImgData = swapArray; //used for restore
+}
+//-->
+</script>
+</head>
+<body  onload="MM_preloadImages(graphics/nav/musicnav_ro.gif,#942114594020);MM_preloadImages(/graphics/nav/newsnav_ro.gif,#947215227450);MM_preloadImages(/graphics/nav/technav_ro.gif,#947215303630);MM_preloadImages(/graphics/nav/filmnav_ro.gif,#947215520530);MM_preloadImages(/graphics/nav/foodnav_ro.gif,#947215584850);MM_preloadImages(/graphics/nav/musicnav_ro.gif,#947215742270);MM_preloadImages(/graphics/nav/artsnav_ro.gif,#947215860360);MM_preloadImages(/graphics/nav/classifiedsnav_ro.gif,#947215959660);MM_preloadImages(/graphics/nav/personalsnav_ro.gif,#947216019370);MM_preloadImages(/graphics/nav/regularsnav_ro.gif,#947216083740);MM_preloadImages(/graphics/nav/contentsnav_ro.gif,#947219774400);MM_preloadImages(/graphics/nav/aboutnav_ro.gif,#947219870360);MM_preloadImages(/graphics/nav/searchnav_ro.gif,#947283774850);MM_preloadImages(/graphics/nav/contestsnav_ro.gif,#947283774999)">
+<!-- top table:  logo, banner and navigation -->
+<table  TABID="11673" align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+<!-- whitespace left, top, right -->
+<tr >
+<td  rowspan="6" width="10">
+<img ></img>
+</td>
+<td  colspan="2" height="10">
+<img ></img>
+</td>
+<td  rowspan="6" width="10">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" bgcolor="#FFFFFF" colspan="2" valign="top" width="100%">
+<!-- nested table for logo and image or banner -->
+<table  TABID="11671" align="center" border="0" vspace="0" width="100%">
+<tr >
+<td  align="left" bgcolor="#FFFFFF" height="70" valign="top" width="183">
+<a  href="/">
+<img ></img>
+</a>
+</td>
+<td  bgcolor="#E8B731" height="60" valign="top" width="100%">
+<script >
+<!-- -->
+<a  href="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/villagevoice.com/Features@Top,Right,Right1,Right2,Right3!Top?x">
+<img ></img>
+</a>
+</script>
+<script >
+<!--
+					_version=10; //-->
+</script>
+<script >
+<!--
+					_version=11; // -->
+</script>
+<script >
+<!--
+					if (navigator.appVersion.indexOf('MSIE 3') != -1){
+					document.write('&amp;amp;amp;lt;IFRAME WIDTH=468 HEIGHT=60 MARGINWIDTH=0 MARGINHEIGHT=0 BORDER=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR="#000000" SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_sx.ads/seattleweekly.com/Features@Top,Right,Right1,Right2,Right3!Top?x" BORDER=0 VSPACE=5 HSPACE=18&amp;amp;amp;gt;&amp;amp;amp;lt;/iframe&amp;amp;amp;gt;');
+					} else if (_version &amp;amp;amp;lt; 11) {
+					  document.write ('&amp;amp;amp;lt;A HREF="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/villagevoice.com/Features@Top,Right,Right1,Right2,Right3!Top?x"&amp;amp;amp;gt;&amp;amp;amp;lt;IMG SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_nx.ads/seattleweekly.com/Features@Top,Right,Right1,Right2,Right3!Top?x" width=468 height=60 ALIGN=CENTER BORDER=0 vspace=5 HSPACE=18&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;');
+					}
+					// -->
+</script>
+</td>
+</tr>
+</table>
+<!-- end nested table -->
+</td>
+</tr>
+<!-- horizontal whitespace -->
+<tr >
+<td  colspan="2" height="2">
+<img ></img>
+</td>
+</tr>
+<!-- top level navigation bar -->
+<tr >
+<td  align="center" bgcolor="#000000" valign="middle" width="100%">
+<!--nested table for top level navigation elements-->
+<table  TABID="11672" border="0" cellpadding="0" cellspacing="0" width="585">
+<tr  align="center" valign="middle">
+<td >
+<a  onmouseover="MM_swapImage(document.home,document.home,/graphics/nav/homenav_ro.gif,#947282795700)">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<a  onmouseover="MM_swapImage(document.news,document.news,/graphics/nav/newsnav_ro.gif,#947215227450)">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<a  onmouseover="MM_swapImage(document.tech,document.tech,/graphics/nav/technav_ro.gif,#947215303630)">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<a  onmouseover="MM_swapImage(document.film,document.film,/graphics/nav/filmnav_ro.gif,#947215520530)">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<a  onmouseover="MM_swapImage(document.food,document.food,/graphics/nav/foodnav_ro.gif,#947215584850)">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<a  onmouseover="MM_swapImage(document.music,document.music,/graphics/nav/musicnav_ro.gif,#947215742270)">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<a  onmouseover="MM_swapImage(document.arts,document.arts,/graphics/nav/artsnav_ro.gif,#947215860360)">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<a  onmouseover="MM_swapImage(document.classifieds,document.classifieds,/graphics/nav/classifiedsnav_ro.gif,#947215959660)">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<a  onmouseover="MM_swapImage(document.regulars,document.regulars,/graphics/nav/regularsnav_ro.gif,#947216083740)">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!--end nested table-->
+</td>
+<!-- right hand gray area -->
+<td  bgcolor="#000000" width="140">
+<img ></img>
+</td>
+</tr>
+<!-- white space -->
+<tr >
+<td  colspan="2" height="2">
+<img ></img>
+</td>
+</tr>
+<!-- sub level navigation bar -->
+<tr >
+<td  align="center" bgcolor="#000000" width="100%">
+<a  onmouseover="MM_swapImage(document.sitesrch,document.sitesrch,/graphics/nav/searchnav_ro.gif,#947283774850)">
+<img ></img>
+</a>
+<a  onmouseover="MM_swapImage(document.personals,document.personals,/graphics/nav/personalsnav_ro.gif,#947216019370)">
+<img ></img>
+</a>
+<a  onmouseover="MM_swapImage(document.contents,document.contents,/graphics/nav/contentsnav_ro.gif,#947219774400)">
+<img ></img>
+</a>
+<a  onmouseover="MM_swapImage(document.about,document.about,/graphics/nav/aboutnav_ro.gif,#947219870360)">
+<img ></img>
+</a>
+<a  onmouseover="MM_swapImage(document.contests,document.contests,/graphics/nav/contestsnav_ro.gif,#947283774999)">
+<img ></img>
+</a>
+</td>
+<td  bgcolor="#000000" width="140">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4" width="100%">
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- end top table -->
+<table  TABID="11680" align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+<tr >
+<td  align="left" width="10">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="100%">
+<div  align="right">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-2">
+Published July 22 - 28, 1999
+</font>
+</div>
+<font  face="arial,helvetica,sans-serif" size="-1"></font>
+<h3 >
+<b >
+Best of Seattle 1999 Results
+</b>
+</h3>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+BY
+<i >
+SEATTLE WEEKLY
+</i>
+READERS
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<p ></p>
+<p ></p>
+<table  TABID="11674">
+<tr >
+<td >
+<a  href="/supplements/bestof1999/">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+</table>
+<h3 >
+<a  href="/features/9929/bestcity.shtml">
+City Life
+</a>
+</h3>
+<table  TABID="11675" bgcolor="#FAFAF0" cellpadding="2" genuinetable="yes" tabletitle="Best of Seattle 1999 Results
+BY SEATTLE WEEKLY READERS 
+City Life" width="90%">
+<tr >
+<td  align="right">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+1.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best public official
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Governor Gary Locke
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+2.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best activist/hellraiser
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Charlie Chong
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+3.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best scandal of last year
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Mariners' cost overruns
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+4.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best city event
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Bumbershoot
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+5.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best city park
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Discovery Park
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+6.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best public art
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Hammering Man
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+7.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best Sonic
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Gary Payton
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+8.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best Mariner
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Ken Griffey, Jr.
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+9.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best Seahawk
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Joey Galloway
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+10.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best sports coach
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Lou Piniella
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+11.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best bus route
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+No. 7
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+12.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best new building
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Benaroya Hall
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+13.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best place to park for free
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Beneath Highway 99
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<b >
+14.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best Y2K hideout
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+<i >
+See
+</i>
+<a  href="/features/9929/bestofmillennium.shtml">
+best of the millennium
+</a>
+.
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+<h3 >
+<a  href="/features/9929/bestarts.shtml">
+Arts &amp; Entertainment
+</a>
+</h3>
+<table  TABID="11676" bgcolor="#FAFAF0" cellpadding="2" genuinetable="yes" tabletitle="Best of Seattle 1999 Results
+BY SEATTLE WEEKLY READERS 
+Arts & Entertainment" width="90%">
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+15.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best movie theater
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Cinerama
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+16.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best place to buy CDs
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Tower Records
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+17.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best place to buy vinyl records
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Cellophane Square
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+18.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best nightclub
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+ARO.space
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+19.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best radio DJ
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Pat Cashman
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+20.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best club DJ
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+DJ Riz
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+21.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best local music act
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Swamp Mama Johnson
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+22.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best local TV show
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+<i >
+Almost Live
+</i>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+23.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best local TV personality
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+John Curley
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+24.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best mainstage theater
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+A Contemporary Theater (ACT)
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+25.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best fringe theater
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Theater Schmeater
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+26.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best theatrical performance
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Teatro Zinzanni
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+27.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best art gallery
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Greg Kucera Gallery
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+28.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best choreographer
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Mark Morris
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+29.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best used book store
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Twice Sold Tales
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+30.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best place to spend New Year's Eve
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+<i >
+See
+</i>
+<a  href="/features/9929/bestofmillennium.shtml">
+best of the millennium
+</a>
+.
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+<h3 >
+<a  href="/features/9929/bestfood.shtml">
+Food &amp; restaurants
+</a>
+</h3>
+<table  TABID="11677" bgcolor="#FAFAF0" cellpadding="2" genuinetable="yes" tabletitle="Best of Seattle 1999 Results
+BY SEATTLE WEEKLY READERS 
+Food & restaurants" width="90%">
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+31.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best new restaurant
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Brasa
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+32.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best brunch
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Salty's on Alki
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+33.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best waitstaff
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Buca di Beppo
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+34.a)
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best restaurant for appetizers
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Wild Ginger
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+34.b)
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best food for an appetizer
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Crab
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+35.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best french fries
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Dick's
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+36.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best burger
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Red Mill
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+37.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best dessert
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Dilettante Chocolates
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+38.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best happy-hour eats
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+McCormick &amp; Schmick's
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+39.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best sushi
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+I Love Sushi
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+40.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best vegetarian restaurant
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Café Flora
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+41.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best pizza
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Pagliacci
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+42.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best grocery store
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Matthew's Red Apple Market
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+43.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best bakery
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Macrina
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+44.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best Eastside eatery
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Yarow Bay Grill
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+45.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best place to have your last meal... ever
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+<i >
+See
+</i>
+<a  href="/features/9929/bestofmillennium.shtml">
+best of the millennium
+</a>
+.
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+<h3 >
+<a  href="/features/9929/beststores.shtml">
+Stores &amp; services
+</a>
+</h3>
+<table  TABID="11678" bgcolor="#FAFAF0" cellpadding="2" genuinetable="yes" tabletitle="Best of Seattle 1999 Results
+BY SEATTLE WEEKLY READERS 
+Stores & services" width="90%">
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+46.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best mall
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Bellevue Square
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+47.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best beauty products
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Vain
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+48.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best car wash
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Elephant Car Wash
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+49.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best thrift/consignment store
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Value Village
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+50.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best video store
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Scarecrow Video
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+51.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best gym
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Sound Mind &amp; Body
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+52.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best florist
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Ballard Blossom
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+53.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best shoe store
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Nordstrom
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+54.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best cell-phone service provider
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+AT&amp;T
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+55.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best bank
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Washington Mutual
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+56.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best place to buy cheap computers
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Computer Renaissance
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+57.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best kitchen supplies
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Sur La Table
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+58.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best toy store
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+FAO Schwarz
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+59.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best nursery
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+Molbak's
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+60.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best place to buy Y2K rations
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+<i >
+See
+</i>
+<a  href="/features/9929/bestofmillennium.shtml">
+best of the millennium
+</a>
+.
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial,helvetica" size="-1">
+<b >
+61.
+</b>
+</font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Best reason to welcome the new millennium
+</b>
+</font>
+</td>
+<td >
+<font  face="arial,helvetica" size="-1">
+<i >
+See
+</i>
+<a  href="/features/9929/bestofmillennium.shtml">
+best of the millennium
+</a>
+.
+</font>
+</td>
+</tr>
+</table>
+<p >
+Go back to the
+<a  href="/supplements/bestof1999/">
+<b >
+1999 Best of Seattle main page.
+</b>
+</a>
+.
+</p>
+<p ></p>
+<table  TABID="11679" width="100%">
+<tr >
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+Send a
+<a  href="mailto:letters@seattleweekly.com">
+Letter to the Editor
+</a>
+about this story.
+</b>
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-1">
+<b >
+<a  href="/features/sendmail.php3?eid=10505">
+E-mail
+</a>
+this story to a friend.
+</b>
+</font>
+</td>
+</tr>
+</table>
+<br ></br>
+<br ></br>
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td  align="left" bgcolor="#CCCCCC" valign="top" width="140">
+<br ></br>
+<p  align="center">
+<!---AD TILE 1-->
+<script >
+<!-- -->
+<a  href="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/seattleweekly.com/Features@Right,Top,Right1,Right2,Right3!Right?x">
+<img ></img>
+</a>
+</script>
+<script >
+<!--
+		_version=10; //-->
+</script>
+<script >
+<!--
+		_version=11; // -->
+</script>
+<script >
+<!--
+		if (navigator.appVersion.indexOf('MSIE 3') != -1){
+		document.write('&amp;amp;amp;lt;IFRAME WIDTH=120 HEIGHT=90 MARGINWIDTH=0 MARGINHEIGHT=0 BORDER=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR="#000000" SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_sx.ads/seattleweekly.com/Features@Right,Top,Right1,Right2,Right3!Right?x"&amp;amp;amp;gt;&amp;amp;amp;lt;/iframe&amp;amp;amp;gt;');
+		} else if (_version &amp;amp;amp;lt; 11) {
+		document.write ('&amp;amp;amp;lt;A HREF="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/seattleweekly.com/Features@Right,Top,Right1,Right2,Right3!Right?x"&amp;amp;amp;gt;&amp;amp;amp;lt;IMG SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_nx.ads/seattleweekly.com/Features@Right,Top,Right1,Right2,Right3!Right?x" BORDER=0&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;');
+		}
+		// -->
+</script>
+</p>
+<p  align="center">
+<!---AD TILE 2-->
+<script >
+<!-- -->
+<a  href="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/seattleweekly.com/Features@Right1,Top,Right,Right2,Right3!Right1?x">
+<img ></img>
+</a>
+</script>
+<script >
+<!--
+		_version=10; //-->
+</script>
+<script >
+<!--
+		_version=11; // -->
+</script>
+<script >
+<!--
+		if (navigator.appVersion.indexOf('MSIE 3') != -1){
+		document.write('&amp;amp;amp;lt;IFRAME WIDTH=120 HEIGHT=90 MARGINWIDTH=0 MARGINHEIGHT=0 BORDER=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR="#000000" SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_sx.ads/seattleweekly.com/Features@Right1,Top,Right,Right2,Right3!Right1?x"&amp;amp;amp;gt;&amp;amp;amp;lt;/iframe&amp;amp;amp;gt;');
+		} else if (_version &amp;amp;amp;lt; 11) {
+		document.write ('&amp;amp;amp;lt;A HREF="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/seattleweekly.com/Features@Right1,Top,Right,Right2,Right3!Right1?x"&amp;amp;amp;gt;&amp;amp;amp;lt;IMG SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_nx.ads/seattleweekly.com/Features@Right1,Top,Right,Right2,Right3!Right1?x" BORDER=0&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;');
+		}
+		// -->
+</script>
+</p>
+<p  align="center">
+<!---AD TILE 3-->
+<script >
+<!-- -->
+<a  href="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/seattleweekly.com/Features@Right2,Top,Right,Right1,Right3!Right2?x">
+<img ></img>
+</a>
+</script>
+<script >
+<!--
+		_version=10; //-->
+</script>
+<script >
+<!--
+		_version=11; // -->
+</script>
+<script >
+<!--
+		if (navigator.appVersion.indexOf('MSIE 3') != -1){
+		document.write('&amp;amp;amp;lt;IFRAME WIDTH=120 HEIGHT=90 MARGINWIDTH=0 MARGINHEIGHT=0 BORDER=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR="#000000" SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_sx.ads/seattleweekly.com/Features@Right2,Top,Right,Right1,Right3!Right2?x"&amp;amp;amp;gt;&amp;amp;amp;lt;/iframe&amp;amp;amp;gt;');
+		} else if (_version &amp;amp;amp;lt; 11) {
+		document.write ('&amp;amp;amp;lt;A HREF="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/seattleweekly.com/Features@Right2,Top,Right,Right1,Right3!Right2?x"&amp;amp;amp;gt;&amp;amp;amp;lt;IMG SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_nx.ads/seattleweekly.com/Features@Right2,Top,Right,Right1,Right3!Right2?x" BORDER=0&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;');
+		}
+		// -->
+</script>
+<br ></br>
+<img ></img>
+</p>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- bottom table - links and copyright info -->
+<table  TABID="11681" align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+<tr >
+<td  colspan="6" width="100%">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="4" width="10">
+<img ></img>
+</td>
+<td  align="center" bgcolor="#000000" colspan="2" width="100%">
+<font  color="#FFFFFF" face="arial,helvetica,sans-serif" size="-2">
+<a  href="#top">
+<font  color="#99CCFF">
+top
+</font>
+</a>
+|
+<a  href="/">
+<font  color="#99CCFF">
+home
+</font>
+</a>
+|
+<a  href="/news/">
+<font  color="#99CCFF">
+news &amp; opinion
+</font>
+</a>
+|
+<a  href="/tech/">
+<font  color="#99CCFF">
+tech
+</font>
+</a>
+|
+<a  href="/film/">
+<font  color="#99CCFF">
+film
+</font>
+</a>
+|
+<a  href="/food/">
+<font  color="#99CCFF">
+food
+</font>
+</a>
+|
+<a  href="/music/">
+<font  color="#99CCFF">
+music
+</font>
+</a>
+|
+<a  href="/arts/">
+<font  color="#99CCFF">
+arts &amp; culture
+</font>
+</a>
+|
+<a  href="/classifieds/">
+<font  color="#99CCFF">
+classifieds
+</font>
+</a>
+|
+<a  href="/personals/">
+<font  color="#99CCFF">
+personals
+</font>
+</a>
+|
+<a  href="/regulars/">
+<font  color="#99CCFF">
+regulars
+</font>
+</a>
+|
+<a  href="/search/">
+<font  color="#99CCFF">
+search
+</font>
+</a>
+|
+<a  href="/contents/">
+<font  color="#99CCFF">
+contents
+</font>
+</a>
+|
+<a  href="/about/">
+<font  color="#99CCFF">
+about us
+</font>
+</a>
+|
+<a  href="/contests/">
+<font  color="#99CCFF">
+contests
+</font>
+</a>
+</font>
+</td>
+<td  bgcolor="#000000" colspan="2" width="140">
+<img ></img>
+</td>
+<td  rowspan="4" width="10">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#000000" height="15" width="100%">
+<img ></img>
+<br ></br>
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="-2">
+© 1998-2001 Seattle Weekly
+<a  href="mailto:webmaster@seattleweekly.com">
+<font  color="#99CCFF">
+Comments
+</font>
+</a>
+about the Site?
+</font>
+</td>
+<td  align="right" bgcolor="#000000" colspan="3" valign="bottom" width="140">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="10">
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- end bottom table -->
+</body>
+</html>

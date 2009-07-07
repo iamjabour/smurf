@@ -1,0 +1,690 @@
+<html >
+<head >
+<script >
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&amp;amp;amp;amp;&amp;amp;amp;amp;i&amp;amp;amp;lt;a.length&amp;amp;amp;amp;&amp;amp;amp;amp;(x=a[i])&amp;amp;amp;amp;&amp;amp;amp;amp;x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i&amp;amp;amp;lt;a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))&amp;amp;amp;gt;0&amp;amp;amp;amp;&amp;amp;amp;amp;parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&amp;amp;amp;amp;&amp;amp;amp;amp;d.all) x=d.all[n]; for (i=0;!x&amp;amp;amp;amp;&amp;amp;amp;amp;i&amp;amp;amp;lt;d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&amp;amp;amp;amp;&amp;amp;amp;amp;d.layers&amp;amp;amp;amp;&amp;amp;amp;amp;i&amp;amp;amp;lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i&amp;amp;amp;lt;(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<title >
+WaveWarp Component Library-- Dynamic Range Controllers-- Mean-Square Value
+</title>
+<meta ></meta>
+<meta ></meta>
+</head>
+<body  onload="MM_preloadImages(graphics/subpage/nav/rollover/home.gif,graphics/subpage/nav/rollover/news.gif,graphics/subpage/nav/rollover/store.gif,graphics/subpage/nav/rollover/support.gif,graphics/subpage/nav/rollover/sitemap.gif,graphics/subpage/nav/rollover/company-info.gif)">
+<a  name="TopOfPage"></a>
+<center >
+<table  TABID="11856" border="0" cellpadding="0" cellspacing="0" width="548">
+<tr >
+<form  action="/cgi-bin/excite/AT-soundslogical_comsearch.cgi" method="post">
+<td  valign="middle">
+<input ></input>
+</td>
+<td  valign="middle">
+<input ></input>
+</td>
+<td  align="right" valign="middle">
+<font  face="verdana,geneva,arial,helvetica" size="2">
+<a  href="/excite/AT-queryhelp.html">
+<b >
+Search Tips
+</b>
+</a>
+</font>
+</td>
+<td  name="sp" type="hidden" value="sp">
+<input ></input>
+</td>
+</form>
+</tr>
+</table>
+<table  TABID="11858" border="0" cellpadding="0" cellspacing="0" width="548">
+<tr >
+<td  valign="top">
+<a  href="../../../../../index.html">
+<img ></img>
+</a>
+</td>
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4">
+<table  TABID="11857" border="0" cellpadding="0" cellspacing="0" width="548">
+<tr >
+<td >
+<a  guide="#DEFAULT" onmouseover="MM_swapImage(User">
+images
+</a>
+w100h17_white_users_guide.GIF',1) &gt;
+<img ></img>
+</td>
+<td >
+<a  onmouseover="MM_swapImage(FAQ,,../images/w041h17_white_FAQ.GIF,1)">
+<img ></img>
+</a>
+</td>
+<td >
+<a  href="componentindex.html">
+<img ></img>
+</a>
+</td>
+<td >
+<a  drawingboards="#DEFAULT" onmouseover="MM_swapImage(Example">
+images
+</a>
+w175h17_white_example_drawingboard.GIF',1) &gt;
+<img ></img>
+</td>
+<td >
+<a  onmouseover="MM_swapImage(References,,../images/w098h17_white_references.GIF,1)">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table  TABID="11862" border="1" cellpadding="5" cellspacing="0" width="601">
+<tr  bgcolor="white" valign="top" width="601">
+<td >
+<a  name="top">
+<h4 >
+WaveWarp WaveWarp 2.0 Component
+</h4>
+</a>
+<p  align="left">
+<a  href="componentindex.html" target="_top">
+<img ></img>
+</a>
+<a  href="Dynamic_Range_Controllers.html" target="_top">
+<img ></img>
+</a>
+<a  href="Distortion.html" target="_top">
+<img ></img>
+</a>
+<a  href="Equalisers.html" target="_top">
+<img ></img>
+</a>
+<a  href="Limiter_Threshold.html" target="_top">
+<img ></img>
+</a>
+<a  href="Noise_Gate_Threshold.html" target="_top">
+<img ></img>
+</a>
+<a  href="#bottom" target="_top">
+<img ></img>
+</a>
+</p>
+<p  align="left">
+<img ></img>
+</p>
+<table  TABID="11859" align="center" border="0" cellpadding="5" cellspacing="0">
+<tr >
+<td >
+<font  color="#0000ff" size="2">
+<a  href="#Functionaldescription">
+Functional Description |
+</a>
+<a  href="#Algorithm">
+Algorithm |
+</a>
+<a  href="#SignalImplementations">
+Signal Implementations |
+</a>
+<a  href="#RelatedComponents">
+Related Components |
+</a>
+<a  href="#ExampleDrawingBoards">
+Example DWBs usage
+</a>
+</font>
+</td>
+</tr>
+</table>
+<br ></br>
+<h4 >
+Dynamic Range Controllers:
+</h4>
+<table  TABID="11860" align="bottom">
+<tr >
+<td >
+<h3 >
+Mean-Square Value
+</h3>
+</td>
+</tr>
+</table>
+<br ></br>
+<a  name="Functionaldescription">
+<h5 >
+Functional Description
+</h5>
+</a>
+Audio mean-square level measurement. The output control signal is equal to the mean-square amplitude of the input audio signal, with built-in time-averaging (adjustable via the Parameter Window).
+<a  name="Algorithm">
+<h5 >
+Algorithm
+</h5>
+</a>
+See
+<font  size="-1">
+<a  href="references.html#Zo">
+[Zo]
+</a>
+<font >
+section 7.2.1 for information on audio level measurement algorithms. The time-averaging is performed with first-order low-pass filtering.
+<a  name="SignalImplementations">
+<h5 >
+Signal Implementations
+</h5>
+</a>
+</font>
+</font>
+<table  TABID="11861" genuinetable="yes" tabletitle="Signal Implementations">
+<tr  bgcolor="#CCCCCC">
+<th  align="left" width="20%">
+<font  size="-1">
+Audio signals
+</font>
+</th>
+<th  align="left" width="20%">
+<font  size="-1">
+Control signals
+</font>
+</th>
+<th  align="left" width="60%">
+<font  size="-1">
+Description
+</font>
+</th>
+</tr>
+<tr  bgcolor="#F2F2F2">
+<td >
+<font  size="-1">
+Single input mono
+</font>
+</td>
+<td >
+<font  size="-1">
+single output
+</font>
+</td>
+<td >
+<font  size="-1">
+Control output equals mean-square value of mono audio input, with time-averaging
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  size="-1">
+Single input stereo
+</font>
+</td>
+<td >
+<font  size="-1">
+single output
+</font>
+</td>
+<td >
+<font  size="-1">
+Control output equals mean-square value of the average of the left and right audio input channels, with time-averaging
+</font>
+</td>
+</tr>
+</table>
+<a  name="RelatedComponents">
+<h5 >
+Related components:
+</h5>
+</a>
+<ul >
+<li >
+<font  size="-1">
+<a  href="Absolute_Value.html">
+Absolute Value
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Audio_Clipper.html">
+Audio Clipper
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Audio_Limiter.html">
+Audio Limiter
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Audio_Look_ahead_Compressor.html">
+Audio Look-ahead Compressor
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Audio_Look_ahead_Expander.html">
+Audio Look-ahead Expander
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Audio_Look_ahead_Limiter.html">
+Audio Look-ahead Limiter
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Audio_noise_gate.html">
+Audio noise gate
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Audio_Normaliser.html">
+Audio Normaliser
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Audio_Threshold.html">
+Audio Threshold
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Average_Value.html">
+Average Value
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Compressor_Threshold.html">
+Compressor Threshold
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Control_Clipper.html">
+Control Clipper
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Control_Smoother.html">
+Control Smoother
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Control_Smoother_with_AT_RT.html">
+Control Smoother with AT-RT
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Expander_Threshold.html">
+Expander Threshold
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Limiter_Threshold.html">
+Limiter Threshold
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Noise_Gate_Threshold.html">
+Noise-Gate Threshold
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="Peak_Value.html">
+Peak Value
+</a>
+</font>
+</li>
+</ul>
+<a  name="ExampleDrawingBoards">
+<h5 >
+Example DrawingBoards illustrating usage:
+</h5>
+</a>
+<ul >
+<li >
+<font  size="-1">
+<a  href="CompressorBuiltFromScratch.html">
+CompressorBuiltFromScratch
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="CompressorWithDownsamplingBuiltFromScratch.html">
+CompressorWithDownsamplingBuiltFromScratch
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="ExpanderBuiltFromScratch.html">
+ExpanderBuiltFromScratch
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="ExpanderWithDownsamplingBuiltFromScratch.html">
+ExpanderWithDownsamplingBuiltFromScratch
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="NoiseGateBuiltFromScratch.html">
+NoiseGateBuiltFromScratch
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="NoiseGateWithDownsamplingBuiltFromScratch.html">
+NoiseGateWithDownsamplingBuiltFromScratch
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="AutoFeedbackFlanger.html">
+AutoFeedbackFlanger
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="CrossFeedbackFlanger.html">
+CrossFeedbackFlanger
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="LiveGuitarAutoFeedbackFlanger.html">
+LiveGuitarAutoFeedbackFlanger
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="CompressorBuiltFromScratch_2.html">
+CompressorBuiltFromScratch_2
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="CompressorWithDownsamplingBuiltFromScratch_2.html">
+CompressorWithDownsamplingBuiltFromScratch_2
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="ExpanderBuiltFromScratch_2.html">
+ExpanderBuiltFromScratch_2
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="ExpanderWithDownsamplingBuiltFromScratch_2.html">
+ExpanderWithDownsamplingBuiltFromScratch_2
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="NoiseGateBuiltFromScratch_2.html">
+NoiseGateBuiltFromScratch_2
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="NoiseGateWithDownsamplingBuiltFromScratch_2.html">
+NoiseGateWithDownsamplingBuiltFromScratch_2
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="LiveGuitarAutoFeedbackFlanger_2.html">
+LiveGuitarAutoFeedbackFlanger_2
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="CompressorWithDownsamplingBuiltFromScratch_3.html">
+CompressorWithDownsamplingBuiltFromScratch_3
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="ExpanderWithDownsamplingBuiltFromScratch_3.html">
+ExpanderWithDownsamplingBuiltFromScratch_3
+</a>
+</font>
+</li>
+<li >
+<font  size="-1">
+<a  href="NoiseGateWithDownsamplingBuiltFromScratch_3.html">
+NoiseGateWithDownsamplingBuiltFromScratch_3
+</a>
+</font>
+</li>
+</ul>
+<a  name="bottom"></a>
+<p >
+<img ></img>
+</p>
+<p  align="left">
+<a  href="componentindex.html" target="_top">
+<img ></img>
+</a>
+<a  href="Dynamic_Range_Controllers.html" target="_top">
+<img ></img>
+</a>
+<a  href="Distortion.html" target="_top">
+<img ></img>
+</a>
+<a  href="Equalisers.html" target="_top">
+<img ></img>
+</a>
+<a  href="Limiter_Threshold.html" target="_top">
+<img ></img>
+</a>
+<a  href="Noise_Gate_Threshold.html" target="_top">
+<img ></img>
+</a>
+<a  href="#top" target="_top">
+<img ></img>
+</a>
+</p>
+</td>
+</tr>
+</table>
+<table  TABID="11871" border="0" cellpadding="0" cellspacing="0" width="549">
+<tr >
+<td  colspan="2" height="30">
+<table  TABID="11863" height="30">
+<tr >
+<td  height="30"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  align="center" colspan="2">
+<font  color="white" face="verdana,geneva,arial,helvetica" size="2">
+<a  href="../../../../../index.html">
+home
+</a>
+-
+<a  href="../../../../../news.html">
+news
+</a>
+-
+<a  href="../../../../../products.html">
+products
+</a>
+-
+<a  href="../../../../../store.html">
+store
+</a>
+-
+<a  href="../../../../../support.html">
+support
+</a>
+-
+<a  href="../../../../../sitemap.html">
+site map
+</a>
+-
+<a  href="../../../../../company.html">
+company info
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" height="20">
+<table  TABID="11864" height="20">
+<tr >
+<td  height="20"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  align="center" colspan="2">
+<table  TABID="11868" border="0" cellpadding="0" cellspacing="0" width="548">
+<tr >
+<td  width="60">
+<table  TABID="11865" border="0" cellpadding="0" cellspacing="0" width="60">
+<tr >
+<td  nowrap="nowrap" width="60"></td>
+</tr>
+</table>
+</td>
+<td  align="right">
+<font  color="white" face="verdana,geneva,arial,helvetica" size="2">
+© 2000 Sounds Logical. All rights reserved.
+</font>
+</td>
+<td  width="10">
+<table  TABID="11866" border="0" cellpadding="0" cellspacing="0" width="10">
+<tr >
+<td  width="10"></td>
+</tr>
+</table>
+</td>
+<td >
+<a  href="../../../../../index.html">
+<img ></img>
+</a>
+</td>
+<td  width="60">
+<table  TABID="11867" border="0" cellpadding="0" cellspacing="0" width="60">
+<tr >
+<td  nowrap="nowrap" width="60"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  colspan="2" height="20">
+<table  TABID="11869" height="20">
+<tr >
+<td  height="20"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  align="center" colspan="2">
+<table  TABID="11870" border="0" cellpadding="0" cellspacing="0" width="548">
+<tr >
+<td  align="center">
+<font  color="white" face="verdana,geneva,arial,helvetica" size="2">
+<a  href="../../../../../legal.html">
+legal notice
+</a>
+-
+<a  href="../../../../../privacy.html">
+privacy statement
+</a>
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

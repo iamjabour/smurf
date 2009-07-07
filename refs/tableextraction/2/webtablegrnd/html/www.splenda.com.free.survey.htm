@@ -1,0 +1,856 @@
+<html >
+<head >
+<title >
+Splenda
+</title>
+<meta ></meta>
+<meta ></meta>
+<script >
+<!--
+
+        if (document.images) {            // Active Images
+
+            img1on = new Image();      
+
+            img1on.src = "../images/intro_on.gif"; 
+
+		    img2on = new Image();      
+
+            img2on.src = "../images/recipes_on.gif";
+
+			img3on = new Image();      
+
+            img3on.src = "../images/info_on.gif";
+
+			img4on = new Image();      
+
+            img4on.src = "../images/living_on.gif";
+
+			img5on = new Image();      
+
+            img5on.src = "../images/diabetes_on.gif";
+
+			img6on = new Image();      
+
+            img6on.src = "../images/professional_on.gif";
+
+			img7on = new Image();      
+
+            img7on.src = "../images/buy_on.gif"; 
+
+		           
+
+			
+
+			
+
+            img1off = new Image();      
+
+            img1off.src = "../images/intro_off.gif"; 
+
+		    img2off = new Image();      
+
+            img2off.src = "../images/recipes_off.gif";
+
+			img3off = new Image();      
+
+            img3off.src = "../images/info_off.gif";
+
+			img4off = new Image();      
+
+            img4off.src = "../images/living_off.gif";
+
+			img5off = new Image();      
+
+            img5off.src = "../images/diabetes_off.gif";
+
+			img6off = new Image();      
+
+            img6off.src = "../images/professional_off.gif";
+
+			img7off = new Image();      
+
+            img7off.src = "../images/buy_off.gif"; 
+
+		           
+
+		
+
+	}
+
+
+
+// Function to 'activate' images.
+
+function imgOn(imgName) {
+
+        if (document.images) {
+
+            document[imgName].src = eval(imgName + "on.src");
+
+        }
+
+}
+
+
+
+// Function to 'deactivate' images.
+
+function imgOff(imgName) {
+
+        if (document.images) {
+
+            document[imgName].src = eval(imgName + "off.src");
+
+        }
+
+}
+
+
+
+// -->
+</script>
+<script >
+function clickOther1(radioObject) { var value = null //alert("clicked") for (var i=0; i
+<form.q3.length ></form.q3.length>
+<form.q3.length ></form.q3.length>
+<form.q3.length ></form.q3.length>
+<form.q3.length ></form.q3.length>
+3 ;i++) { form.q3[i].checked=false; } return false; } return true; } function checkValidQ4() { var form = document.forms[0]; if ( form.q4[1].checked ) { alert("You have indicated that you have not used a low calorie sweetner in question #4. Please skip questions #5, #6, #7!"); for(var i=0;i4 ;i++) { form.q5[i].checked=false; } if ( form.q6a.checked || form.q6b.checked || form.q6c.checked || form.q6d.checked || form.q6e.checked || form.q6f.checked || form.q6g.value != "" ) { form.q6g.value = ""; form.q6a.checked = false; form.q6b.checked = false; form.q6c.checked = false; form.q6d.checked = false; form.q6e.checked = false; form.q6f.checked = false; } if ( form.q7a.checked || form.q7b.checked || form.q7c.checked ) { form.q7a.checked = false; form.q7b.checked = false; form.q7c.checked = false; } return false; } return true; } function checkQ4 ( ) { if ( document.forms[0].q4[1].checked == true ) {checkValidQ4();} return true; } function clickotherq6g ( textObject ) { document.forms[0].q6g.value = ""; } function clickOther(radioObject) { var value = null //alert("clicked") var form = document.forms[0]; if(form.q2[0].checked) { alert("You have indicated you are a Consumer. Please skip question #3!"); //form.q2.value=""; return false; } for (var i=0; i
+<form.q3.length ></form.q3.length>
+<form.q3.length ></form.q3.length>
+<form.q3.length ></form.q3.length>
+<form.q3.length ></form.q3.length>
+form.zip.value.length; i++) { var ch = form.zip.value.substring(i,i+1) if (ch "0" || "9" ch) { alert("Please enter a valid zip code."); form.zip.focus(); return false; } } if((form.state.value == "") || (form.state.value == null)) { alert("Please enter state."); form.state.focus(); return false; } if((form.country.value == "") || (form.country.value == null)) { alert("Please enter country."); form.country.focus(); return false; } if((form.email.value == "") || (form.email.value == null)) { alert("Please enter email address."); form.email.focus(); return false; } //if (form.age[0].selected==true) { // alert("Please select age."); // return false; //} if (form.gender[0].selected==true) { alert("Please select gender."); return false; } if(form.q2[1].checked) { var v=false for (var i=0; i
+<form.q3.length ></form.q3.length>
+<form.q3.length ></form.q3.length>
+<form.q3.length ></form.q3.length>
+<form.q3.length ></form.q3.length>
+</script>
+</head>
+<body  alink="#000066" bgcolor="#ffffff" bottommargin="0" leftmargin="0" link="#000066" marginheight="0" marginwidth="0" rightmargin="0" topmargin="0" vlink="#000066">
+<div  align="center">
+<table  TABID="11921" border="0" cellpadding="0" cellspacing="0" width="752">
+<tr >
+<!--nav starts here-->
+<td  align="left" background="../images/side_nav_back.gif" valign="top" width="143">
+<table  TABID="11913" background="../images/side_nav_back.gif" border="0" cellpadding="0" cellspacing="0" width="143">
+<tr >
+<td  align="left" valign="top">
+<a  href="../main.html" target="main">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<a  href="../intro/main.html" onmouseout="imgOff('img1')" onmouseover="imgOn('img1')" target="main">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<a  href="../recipes/main.html" onmouseout="imgOff('img2')" onmouseover="imgOn('img2')" target="main">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<a  href="../info/main.html" onmouseout="imgOff('img3')" onmouseover="imgOn('img3')" target="main">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<a  href="../living/main.html" onmouseout="imgOff('img4')" onmouseover="imgOn('img4')" target="main">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<a  href="../diabetes/main.html" onmouseout="imgOff('img5')" onmouseover="imgOn('img5')" target="main">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<a  href="../professional/main.html" onmouseout="imgOff('img6')" onmouseover="imgOn('img6')" target="main">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<a  href="../buy/main.html" onmouseout="imgOff('img7')" onmouseover="imgOn('img7')" target="main">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<!--nav ends here-->
+<!--main content area - center-->
+<td  align="left" valign="top" width="465">
+<table  TABID="11919" background="../images/center_back.gif" border="0" cellpadding="0" cellspacing="0" width="465">
+<tr >
+<td  align="left" colspan="3" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="3" valign="top">
+<form  action="ramasample.jsp" method="post" onsubmit="return ValidateForm(this);" target="_self">
+<table  TABID="11914" border="0" cellpadding="0" cellspacing="0" hspace="0" vspace="0" width="400">
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<font  face="verdana,helvetica" size="2">
+<b >
+Splenda Value Book Offer Form
+</b>
+</font>
+<p >
+<font  face="verdana,helvetica" size="1">
+<b >
+Splenda would like to help you make 2001 a sugar-free year! So we're offering you a $5 Value Book with great savings on some of your favorite products. All you have to do is complete the form below and submit...
+</b>
+<br ></br>
+<br ></br>
+We are happy to take your request. We may send you information in which we think you might be interested if you check that preference box. By submitting your information, you agree that it will be governed by our
+<a  href="#" onclick="window.open('../privacy.html','legal','TOOLBAR=0,STATUS=NO,MENUBAR=1,WIDTH=360,HEIGHT=300,RESIZABLE=yes,SCROLLBARS=yes');">
+Privacy Policy
+</a>
+.
+<br ></br>
+<br ></br>
+This site is not intended for children under the age of 13. We will not knowingly collect information from site visitors in this age group. We encourage parents to talk to their children about their use of the Internet and the information they disclose to Web sites.
+<br ></br>
+<br ></br>
+</font>
+<font  color="#ff0000" face="verdana,helvetica" size="1">
+* Required Fields
+</font>
+<br ></br>
+<br ></br>
+</p>
+</td>
+</tr>
+</table>
+<table  TABID="11915" border="0" cellpadding="0" cellspacing="0" width="460">
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="right" valign="top" width="150">
+<font  face="verdana,helvetica" size="1">
+First Name
+</font>
+<font  color="#ff0000" face="verdana,helvetica" size="1">
+*
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+<td  align="right" valign="top" width="85">
+<font  face="verdana,helvetica" size="1">
+Last Name
+</font>
+<font  color="#ff0000" face="verdana,helvetica" size="1">
+*
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="right" valign="top" width="150">
+<font  face="verdana,helvetica" size="1">
+Address
+</font>
+<font  color="#ff0000" face="verdana,helvetica" size="1">
+*
+</font>
+</td>
+<td  align="left" colspan="3" valign="top">
+<font  face="verdana,helvetica" size="3">
+<input ></input>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="right" valign="top" width="150">
+<font  face="verdana,helvetica" size="1">
+(we cannot ship
+<br ></br>
+to a PO Box)
+</font>
+</td>
+<td  align="left" colspan="3" valign="top">
+<font  face="verdana,helvetica" size="3">
+<input ></input>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="right" valign="top" width="150">
+<font  face="verdana,helvetica" size="1">
+City or Town
+</font>
+<font  color="#ff0000" face="verdana,helvetica" size="1">
+*
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+<td  align="right" valign="top" width="80">
+<font  face="verdana,helvetica" size="1">
+State
+</font>
+<font  color="#ff0000" face="verdana,helvetica" size="1">
+*
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="right" width="150">
+<font  face="verdana,helvetica" size="1">
+Zip Code
+</font>
+<font  color="#ff0000" face="verdana,helvetica" size="1">
+*
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+<td  align="right" valign="top" width="75">
+<font  face="verdana,helvetica" size="1">
+Country
+</font>
+<font  color="#ff0000" face="verdana,helvetica" size="1">
+*
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="right" valign="top" width="150">
+<font  face="verdana,helvetica" size="1">
+Phone Number
+</font>
+</td>
+<td  align="left" colspan="3" valign="top">
+<font  face="verdana,helvetica" size="3">
+<input ></input>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="right" valign="top" width="150">
+<font  face="verdana,helvetica" size="1">
+E-mail
+</font>
+<font  color="#ff0000" face="verdana,helvetica" size="1">
+*
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+<td  align="right" valign="top" width="75">
+<font  face="verdana,helvetica" size="1">
+Gender
+</font>
+<font  color="#ff0000" face="verdana,helvetica" size="1">
+*
+</font>
+</td>
+<td >
+<select >
+<option  selected="selected" value="2">
+select
+</option>
+<option  value="1">
+male
+</option>
+<option  value="0">
+female
+</option>
+</select>
+<!--&amp;amp;lt;INPUT TYPE="text" name="gender" size="3" maxlength="15"&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;-->
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" colspan="4" valign="top">
+<font  face="verdana,helvetica" size="1">
+<br ></br>
+<br ></br>
+All information you provide below is optional. [We may also send you information in which we think you might be interested if you check that preference box.] By submitting your information, you agree that it will be governed by our
+<a  href="#" onclick="window.open('../privacy.html','legal','TOOLBAR=0,STATUS=NO,MENUBAR=1,WIDTH=360,HEIGHT=300,RESIZABLE=yes,SCROLLBARS=yes');">
+Privacy Policy
+</a>
+.
+<br ></br>
+</font>
+</td>
+</tr>
+</table>
+<table  TABID="11916" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<font  face="verdana,helvetica" size="1">
+<br ></br>
+<br ></br>
+1. How did you hear about us?
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Advertisement
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+News/Editorial
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Mail
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Internet
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Friend/Relative
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Other (specify)
+</font>
+<input ></input>
+<br ></br>
+<br ></br>
+</td>
+</tr>
+</table>
+<table  TABID="11917" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<font  face="verdana,helvetica" size="1">
+2. Are you a consumer or a Health Care Professional?
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Consumer
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Health Care Professional
+</font>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<font  face="verdana,helvetica" size="1">
+3. If you are a Health Care Professional, which of the following best describes you?
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Physician
+</font>
+<br ></br>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Dietitian
+</font>
+<br ></br>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Other (specify)
+</font>
+<input ></input>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<font  face="verdana,helvetica" size="1">
+4. Have you ever used a low calorie sweetener?
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Yes
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+No
+</font>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<font  face="verdana,helvetica" size="1">
+<br ></br>
+<br ></br>
+5. On average, how often do you use a low calorie sweetener?
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+2-3 times per day
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+once per day
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+once per week
+</font>
+<br ></br>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+once a month
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+less than once a month.
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<font  face="verdana,helvetica" size="1">
+6. Which sweetener do you usually use most often? (Check all that apply)
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Splenda®
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Equal®
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Sweet N'Low®
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Nutrasweet®
+</font>
+<br ></br>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+NatraTaste®
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+Other (specify)
+<input ></input>
+</font>
+<br ></br>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<font  face="verdana,helvetica" size="1">
+7. How do you use a low calorie sweetener? (Check all that apply)
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+coffee/tea
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+on cereal or fruit
+</font>
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+for cooking/baking
+</font>
+<br ></br>
+<br ></br>
+</td>
+</tr>
+<tr ></tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<input ></input>
+<font  face="verdana,helvetica" size="1">
+I would like to be contacted about future product information, valuable savings, and offers.
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="middle" valign="top">
+<input ></input>
+<br ></br>
+<font  face="verdana,helvetica" size="-3">
+Limit one offer per e-mail address.
+<br ></br>
+Maximum 2 offers per household.
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top"></td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<font  face="verdana,helvetica" size="1">
+1-800-7SPLENDA
+<br ></br>
+1-800-777-5363
+<br ></br>
+<a  href="mailto:Customer_Service@mspus.jnj.com">
+Customer_Service@mspus.jnj.com
+</a>
+</font>
+<br ></br>
+</td>
+</tr>
+</table>
+</form>
+</td>
+</tr>
+<tr >
+<td  align="middle" colspan="3" valign="top">
+<table  TABID="11918" border="0" cellpadding="20" cellspacing="0">
+<tr >
+<td  align="middle" valign="top">
+<font  color="#000066" face="verdana,helvetica" size="-1">
+© 2000 McNeil Specialty Products Company, New Brunswick, NJ USA. All rights reserved. This site and its contents are intended for USA audiences only.
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<!--main content area - center ends-->
+<!--main content area - right-->
+<td  align="left" background="../images/right_back.gif" valign="top">
+<form  action="../recipes/recipe_cards/search_action.jsp" id="form1" method="post" name="form1" target="main">
+<table  TABID="11920" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  align="left" colspan="3" valign="top">
+<img ></img>
+<br ></br>
+<input ></input>
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  align="middle" background="../images/right_back2.gif" colspan="3" valign="top">
+<br ></br>
+<br ></br>
+</td>
+</tr>
+</table>
+</form>
+</td>
+<!--main content area - right ends-->
+</tr>
+<tr >
+<td  align="left" colspan="3" valign="top">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

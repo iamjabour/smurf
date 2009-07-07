@@ -1,0 +1,1967 @@
+<!--- Generic Cold Fusion Template ------>
+<!----------------------------------------------------------------Generic Cold Fusion Template file:This file will be access by another template filewhich will populate the appropriate areas withthe corresponding content.-------------------------------------------------------------------->
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<script >
+<!--
+
+var banner = 1; 
+function banner_link() {
+   if (banner==1) window.location.href="/news/press.cfm";
+   if (banner==2) window.location.href="/sourmarker/";
+   if (banner==3) window.location.href="/news/pr_detail.cfm?id=219";
+   if (banner==4) window.location.href="/enymex/";                                     
+        }       
+
+
+function rotate_banner() {
+  if (document.images) {
+   if (++banner &amp;amp;gt; 4)  banner = 1;
+   document.banner.src = "/images/ad00" + banner + ".gif";
+   window.setTimeout('rotate_banner();',6000);
+  }
+}
+// -->
+// this script determines whether the user's browser // is IE3, IE4, or Netscape 4, and loads a different // style sheet for each; for other browsers, // it does nothing
+<!--
+var browser=navigator.appName;
+var version=navigator.appVersion
+var ver1=version.substring(0,1)
+var ver2=version.lastIndexOf("MSIE")
+var ver3=version.substring(ver2+5,ver2+6)
+
+function itsNetscape() {
+// document.write('&amp;amp;lt;LINK REL=StyleSheet HREF="styles/nn4.css" TYPE="text/css"&amp;amp;gt;')
+}
+
+function itsMsie() {
+ if (browser == "Microsoft Internet Explorer")
+ ieVersion()
+}
+function ieVersion(){	  if (ver1 &amp;amp;gt;= 4)
+ document.write('&amp;amp;lt;LINK REL=StyleSheet HREF="styles/ie4.css" TYPE="text/css"&amp;amp;gt;')
+if (ver3 == 3)
+ document.write('&amp;amp;lt;LINK REL=StyleSheet HREF="styles/ie33.css" TYPE="text/css"&amp;amp;gt;')
+}
+if ((browser == "Netscape") &amp;amp;amp;&amp;amp;amp; (ver1 &amp;amp;gt;= 4)){
+ itsNetscape()
+}
+else{
+itsMsie()
+}
+// -->
+</script>
+<title >
+PJM Futures Termination Schedule
+</title>
+</head>
+<body  alink="red" bgcolor="white" link="navy" onload="window.setTimeout('rotate_banner();',8000);" text="black">
+<table  TABID="00024" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<!--- Begin page header ------>
+<td  bgcolor="white">
+<table  TABID="00023" border="0" cellpadding="0" cellspacing="0" width="620">
+<tr >
+<td  rowspan="2" width="250">
+<a  href="../home.htm">
+<img ></img>
+</a>
+</td>
+<td  align="middle" width="400">
+<a  href="javascript:banner_link();">
+<img ></img>
+</a>
+</td>
+<td  rowspan="2"></td>
+</tr>
+<tr >
+<td  align="middle" valign="bottom" width="400">
+<!--webbot bot="ImageMap"
+        rectangle="(244,8) (342, 31)  ../sitemap/search.cfm"
+        rectangle="(132,8) (227, 31)  ../markets/quotes.cfm"
+        rectangle="(21,8) (119, 31)  ../home.htm" src="../images/toptab.gif" border="0"
+        alt="top_nav_bar" ismap startspan -->
+<map  name="FrontPageMap">
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<a  href="../_vti_bin/shtml.dll/pjm2/pjmterm.html/map">
+<img ></img>
+</a>
+<!--webbot bot="ImageMap" endspan i-checksum="56437" -->
+</td>
+</tr>
+</table>
+</td>
+<!--- End page header ------>
+</tr>
+<tr >
+<td  bgcolor="#cc9966">
+<a  name="body">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<table  TABID="00033" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  bgcolor="white" valign="top">
+<img ></img>
+<br ></br>
+<!--- Begin left navbar ------>
+<table  TABID="00025" border="0" cellpadding="2" cellspacing="2" width="120">
+<tr >
+<td >
+<font  face="Arial,Helvetica,sans-serif" size="1">
+<!-- begin welcome section -->
+<nobr >
+<font  size="2">
+<strong >
+<a  href="../welcome/index.htm">
+WELCOME
+</a>
+</strong>
+</font>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../welcome/index.htm">
+About
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../welcome/index.htm#calendar">
+Calendar
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../welcome/index.htm#links">
+Links
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<font  size="2">
+<strong >
+<a  href="../news/index.htm">
+HOT NEWS
+</a>
+</strong>
+</font>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../news/press.cfm">
+Press Releases
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../news/index.htm#speeches">
+Recent Speeches
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../news/index.htm#articles">
+Recent Articles
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../news/ein00.htm">
+Energy in
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../news/ein00.htm">
+the News
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../news/min00.htm">
+Metals in
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../news/min00.htm">
+the News
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../news/ce_index.htm">
+Cinergy&amp;Entergy
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../news/ce_index.htm">
+Futures Launch
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<font  size="2">
+<strong >
+<font  color="red">
+[
+</font>
+<a  href="../markets/index.htm">
+MARKETS
+</a>
+<font  color="red">
+]
+</font>
+</strong>
+</font>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="quotes.cfm">
+Quotes
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="chart.cfm">
+Charts
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="settle0.htm">
+Settlement Data
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="contract.cfm">
+Futures and Options
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="archive0.htm">
+Historical Data
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<font  size="2">
+<strong >
+<a  href="../visitors/index.htm">
+VISITORS
+</a>
+</strong>
+</font>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../visitors/sights.htm">
+Sights and Sounds
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../visitors/scr.htm">
+ScreenSaver
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../visitors/museum.htm">
+Museum Info
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../visitors/getting.htm">
+Getting Here
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../visitors/commsvc.htm">
+Community Service
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../visitors/onenorth.htm">
+One North End Ave
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<font  size="2">
+<strong >
+<a  href="../whoswho/index.htm">
+WHO'S WHO
+</a>
+</strong>
+</font>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../whoswho/contacts.htm">
+Contact Info
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../whoswho/index.htm#members">
+Member Firms
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../whoswho/form_bro.htm">
+Broker Associations
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../whoswho/index.htm#bios">
+Biographies
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<font  size="2">
+<strong >
+<a  href="../refernce/index.htm">
+REFERENCE
+</a>
+</strong>
+</font>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../refernce/codes.htm">
+Commodity Codes
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../refernce/com_01.htm">
+Safeguards &amp; Std.
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../refernce/fastfact.htm">
+Fast Facts
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../refernce/glossary.htm">
+Glossary
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../refernce/speech00.htm">
+Articles &amp; Speeches
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../refernce/seats.htm">
+Seat Sales
+</a>
+</nobr>
+<br ></br>
+<nobr >
+<a  href="../refernce/fees.htm">
+Fee Sched
+</a>
+</nobr>
+<br ></br>
+</font>
+<!--- End left navbar ------>
+</td>
+</tr>
+</table>
+</td>
+<!--- Insert verticle beige border ------>
+<td  bgcolor="#cc9966" width="3">
+<img ></img>
+</td>
+<td  valign="top">
+<!--- Begin page content (Leave it up to browser to determine cell width) ------>
+<table  TABID="00032" border="0" cellpadding="3" cellspacing="6" width="100%">
+<tr >
+<td >
+<img ></img>
+<br ></br>
+<font  face="Arial,Helvetica,sans-serif"></font>
+<blockquote >
+<div  align="center">
+<center >
+<table  TABID="00031" border="0">
+<tr >
+<td  align="middle" width="33%">
+<div  align="center">
+<center >
+<table  TABID="00026" border="1" height="72">
+<tr >
+<td  align="center" height="66">
+<img ></img>
+</td>
+<td  align="center" height="66">
+<font  color="#000000" face="Arial" size="2">
+|
+<a  href="../markets/contract.cfm">
+Futures and Options Home
+</a>
+|
+</font>
+<font  face="Arial,Helvetica,sans-serif">
+<font  face="Arial" size="2">
+<font  color="#008000">
+<a  href="index.html">
+description
+</a>
+</font>
+<font  color="#000000">
+|
+</font>
+<font  color="#808080">
+<a  href="pjmspec.html">
+contract specifications
+</a>
+</font>
+<font  color="#000000">
+|
+</font>
+<font  color="#008000">
+<br ></br>
+</font>
+<font  color="#000000">
+|
+</font>
+<font  color="#808080">
+futures termination schedule
+</font>
+<font  color="#000000"></font>
+|
+<a  href="pjmmarg.htm">
+margins
+</a>
+</font>
+|
+<font  face="Arial" size="2">
+<a  href="pjmrequ.html">
+request information
+</a>
+</font>
+|
+</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<blockquote >
+<p  align="center">
+<font  face="Arial" size="3">
+<b >
+PJM Electricity Futures Contracts
+</b>
+<br ></br>
+Termination of Trading and Delivery Dates
+<br ></br>
+</font>
+<font  face="Arial,Helvetica,sans-serif"></font>
+</p>
+<hr ></hr>
+<div  align="center">
+<center >
+<table  TABID="00027" border="0" width="80%">
+<tr >
+<td >
+<b >
+<font  face="Arial">
+Jump to year
+</font>
+:
+</b>
+</td>
+<td >
+<a  href="#2001">
+<font  face="Arial">
+2001
+</font>
+</a>
+</td>
+<td >
+<a  href="#2002">
+<font  face="Arial">
+2002
+</font>
+</a>
+</td>
+<td >
+<a  href="#2003">
+<font  face="Arial">
+2003
+</font>
+</a>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<hr ></hr>
+<div  align="center">
+<div  align="center">
+<center >
+<table  TABID="00028" genuinetable="yes" border="0" cellpadding="2" cellspacing="0" width="500">
+<tr >
+<td  align="center" bgcolor="#FFFFFF" height="60" width="73">
+<font  color="#000000" face="Arial" size="2">
+<a  href="#TOP">
+Back to Top
+</a>
+</font>
+</td>
+<td  align="center" bgcolor="#FFFFFF" colspan="4" height="60" width="340">
+<font  face="Arial">
+<a  name="2001"></a>
+<b >
+2001
+</b>
+*
+</font>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="60" width="75">
+<font  face="Arial" size="2">
+<a  href="contract.cfm">
+Homepage
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#CC9966" width="73">
+<font  face="Impact" size="3">
+Delivery
+<br ></br>
+Month
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" width="107">
+<font  face="Impact" size="3">
+Termination
+<br ></br>
+of Trading
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" width="100">
+<font  face="Impact" size="3">
+Allocation
+<br ></br>
+of Deliveries
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" width="56">
+<font  face="Impact" size="3">
+Notice
+<br ></br>
+Day
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" width="65">
+<font  face="Impact" size="3">
+On-Peak
+<br ></br>
+Days
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" width="75">
+<font  face="Impact" size="3">
+Delivery
+<br ></br>
+Unit
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Jan
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Dec 26, 2000
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Dec
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+27
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Feb
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+Jan 26
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+Jan
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+29
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+20
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+640
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Mar
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Feb 23
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Feb
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Apr
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+Mar 27
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+Mar
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+28
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+21
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+672
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+May
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Apr 25
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Apr
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Jun
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+May 25
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+May
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+29
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+21
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+672
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Jul
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Jun 26
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Jun
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+27
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+21
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+672
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Aug
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+Jul 26
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+Jul
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+27
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+23
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+736
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Sep
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Aug 28
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Aug
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+29
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+19
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+608
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Oct
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+Sep 25
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+Sep
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+23
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+736
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Nov
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Oct 26
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Oct
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+29
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+21
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+672
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Dec
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+Nov 27
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+Nov
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+28
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+20
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+640
+</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<div  align="center">
+<center >
+<table  TABID="00029" genuinetable="yes" border="0" cellpadding="2" cellspacing="0" width="500">
+<tr >
+<td  align="center" bgcolor="#FFFFFF" height="60" width="73">
+<font  color="#000000" face="Arial" size="2">
+<a  href="#TOP">
+Back to Top
+</a>
+</font>
+</td>
+<td  align="center" bgcolor="#FFFFFF" colspan="4" height="60" width="340">
+<font  face="Arial">
+<a  name="2002"></a>
+<b >
+2002
+</b>
+*
+</font>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="60" width="75">
+<font  face="Arial" size="2">
+<a  href="contract.cfm">
+Homepage
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#CC9966" valign="top" width="73">
+<font  face="Impact" size="3">
+Delivery
+<br ></br>
+Month
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" valign="top" width="107">
+<font  face="Impact" size="3">
+Termination
+<br ></br>
+of Trading
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" valign="top" width="100">
+<font  face="Impact" size="3">
+Allocation
+<br ></br>
+of Deliveries
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" valign="top" width="56">
+<font  face="Impact" size="3">
+Notice
+<br ></br>
+Day
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" valign="top" width="65">
+<font  face="Impact" size="3">
+On-Peak
+<br ></br>
+Days
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" valign="top" width="75">
+<font  face="Impact" size="3">
+Delivery
+<br ></br>
+Unit
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Jan
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Dec 26, 2001
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Dec
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+27
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Feb
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+Jan 28
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+Jan
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+29
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+20
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+640
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Mar
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Feb 25
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Feb
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+21
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+672
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Apr
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+Mar 25
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+Mar
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+May
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Apr 25
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Apr
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Jun
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+May 28
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+May
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+29
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+20
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+640
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Jul
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Jun 25
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Jun
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Aug
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+Jul 26
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+Jul
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+29
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Sep
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Aug 27
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Aug
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+28
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+20
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+640
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Oct
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+Sep 25
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+Sep
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+23
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+736
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Nov
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Oct 28
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Oct
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+29
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+20
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+640
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="73">
+<font  face="Arial">
+Dec
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="107">
+<font  face="Arial">
+Nov 25
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="100">
+<font  face="Arial">
+Nov
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="65">
+<font  face="Arial">
+21
+</font>
+</td>
+<td  align="center" bgcolor="#C0C0C0" valign="top" width="75">
+<font  face="Arial">
+672
+</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<div  align="center">
+<center >
+<table  TABID="00030" genuinetable="yes" border="0" cellpadding="2" cellspacing="0" width="500">
+<tr >
+<td  align="center" bgcolor="#FFFFFF" height="60" width="73">
+<font  color="#000000" face="Arial" size="2">
+<a  href="#TOP">
+Back to Top
+</a>
+</font>
+</td>
+<td  align="center" bgcolor="#FFFFFF" colspan="4" height="60" width="340">
+<font  face="Arial">
+<a  name="2003"></a>
+<b >
+2003
+</b>
+*
+</font>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="60" width="75">
+<font  face="Arial" size="2">
+<a  href="contract.cfm">
+Homepage
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#CC9966" valign="top" width="73">
+<font  face="Impact" size="3">
+Delivery
+<br ></br>
+Month
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" valign="top" width="107">
+<font  face="Impact" size="3">
+Termination
+<br ></br>
+of Trading
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" valign="top" width="100">
+<font  face="Impact" size="3">
+Allocation
+<br ></br>
+of Deliveries
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" valign="top" width="56">
+<font  face="Impact" size="3">
+Notice
+<br ></br>
+Day
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" valign="top" width="65">
+<font  face="Impact" size="3">
+On-Peak
+<br ></br>
+Days
+</font>
+</td>
+<td  align="center" bgcolor="#CC9966" valign="top" width="75">
+<font  face="Impact" size="3">
+Delivery
+<br ></br>
+Unit
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Jan
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Dec 26, 2002
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Dec
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+27
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="73">
+<font  face="Arial">
+Feb
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="107">
+<font  face="Arial">
+Jan 28
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="100">
+<font  face="Arial">
+Jan
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="56">
+<font  face="Arial">
+29
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="65">
+<font  face="Arial">
+20
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="75">
+<font  face="Arial">
+640
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Mar
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Feb 25
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Feb
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+21
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+672
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="73">
+<font  face="Arial">
+Apr
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="107">
+<font  face="Arial">
+Mar 26
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="100">
+<font  face="Arial">
+Mar
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="56">
+<font  face="Arial">
+27
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+May
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Apr 25
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Apr
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+28
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+21
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+672
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="73">
+<font  face="Arial">
+Jun
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="107">
+<font  face="Arial">
+May 27
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="100">
+<font  face="Arial">
+May
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="56">
+<font  face="Arial">
+28
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="65">
+<font  face="Arial">
+21
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="75">
+<font  face="Arial">
+672
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Jul
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Jun 25
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Jun
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="73">
+<font  face="Arial">
+Aug
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="107">
+<font  face="Arial">
+Jul 28
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="100">
+<font  face="Arial">
+Jul
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="56">
+<font  face="Arial">
+29
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="65">
+<font  face="Arial">
+21
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="75">
+<font  face="Arial">
+672
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Sep
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Aug 26
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Aug
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+27
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+21
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+672
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="73">
+<font  face="Arial">
+Oct
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="107">
+<font  face="Arial">
+Sep 25
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="100">
+<font  face="Arial">
+Sep
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="56">
+<font  face="Arial">
+26
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="65">
+<font  face="Arial">
+23
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="75">
+<font  face="Arial">
+736
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="73">
+<font  face="Arial">
+Nov
+</font>
+</td>
+<td  align="center" valign="top" width="107">
+<font  face="Arial">
+Oct 28
+</font>
+</td>
+<td  align="center" valign="top" width="100">
+<font  face="Arial">
+Oct
+</font>
+</td>
+<td  align="center" valign="top" width="56">
+<font  face="Arial">
+29
+</font>
+</td>
+<td  align="center" valign="top" width="65">
+<font  face="Arial">
+19
+</font>
+</td>
+<td  align="center" valign="top" width="75">
+<font  face="Arial">
+608
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="73">
+<font  face="Arial">
+Dec
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="107">
+<font  face="Arial">
+Nov 24
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="100">
+<font  face="Arial">
+Nov
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="56">
+<font  face="Arial">
+25
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="65">
+<font  face="Arial">
+22
+</font>
+</td>
+<td  align="center" bgcolor="#c0c0c0" valign="top" width="75">
+<font  face="Arial">
+704
+</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<p  align="center">
+<font  face="Arial">
+Important- Consult rules for exact delivery procedures
+<br ></br>
+* Subject to change
+<br ></br>
+(r) Revised
+</font>
+</p>
+</div>
+</blockquote>
+<font  face="Impact">
+<p >
+<font  face="Impact">
+<br ></br>
+<br ></br>
+</font>
+</p>
+</font>
+</td>
+</tr>
+<!--- End page content ------>
+</table>
+</center>
+</div>
+</blockquote>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table  TABID="00035" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td >
+<!--- Begin page footer ------>
+<table  TABID="00034" border="0" cellpadding="0" cellspacing="0" width="620">
+<tr >
+<td  align="middle">
+<br ></br>
+<br ></br>
+<a  href="../disclaim.htm">
+<font  face="Arial,Helvetica,sans-serif" size="1">
+©1998 New York Mercantile Exchange, All Rights Reserved. Legal &amp; Privacy Notice
+</font>
+</a>
+<br ></br>
+<br ></br>
+<font  face="Arial,Helvetica,sans-serif" size="1">
+If you have any questions, please inquire at
+<a  href="mailto:exchangeinfo@nymex.com">
+exchangeinfo@nymex.com
+</a>
+</font>
+<br ></br>
+</td>
+</tr>
+</table>
+</td>
+<!--- End page footer ------>
+</tr>
+</table>
+</body>
+</html>

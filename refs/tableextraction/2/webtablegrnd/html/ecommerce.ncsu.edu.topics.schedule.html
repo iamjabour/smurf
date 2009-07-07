@@ -1,0 +1,946 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<title >
+Managing the Digital Enterprise | Class Schedule
+</title>
+<meta ></meta>
+<meta ></meta>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<script >
+<!--
+CSStopExecution = false;
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i&amp;amp;amp;amp;lt;array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if (actArray == null) return false;
+		var tempArray = new Array;
+		for(var j=1;j&amp;amp;amp;amp;lt;actArray.length;j++) {
+			if((actArray[j] != null) &amp;amp;amp;amp;amp;&amp;amp;amp;amp;amp; (typeof(actArray[j]) == "object") &amp;amp;amp;amp;amp;&amp;amp;amp;amp;amp; (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+function CSSetStatus(action) { self.status = action[1]; }
+
+// -->
+</script>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<script >
+<!--
+CSAct[/*CMP*/ 'B646016733'] = new Array(CSSetStatus,'Visit the Forum');
+CSAct[/*CMP*/ 'B646016735'] = new Array(CSSetStatus,'Send a Message');
+CSAct[/*CMP*/ 'B646016737'] = new Array(CSSetStatus,'Search the Site');
+CSAct[/*CMP*/ 'B646016739'] = new Array(CSSetStatus,'Home Page');
+
+// -->
+</script>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+<csactiondict ></csactiondict>
+</head>
+<body  alink="666666" background="images/tile.gif" bgcolor="#cccc99" link="#660033" marginheight="0" text="#660033">
+<form  action="http://digitalenterprise.org.master.com/texis/master/search/?s=SS&cmd=Options">
+<center >
+<table  TABID="05205" border="1" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="#333333" width="780">
+<center >
+<table  TABID="05204" border="0" cellpadding="0" cellspacing="0" width="780">
+<tr  height="25">
+<td  bgcolor="#cccc99" height="25" width="150">
+<font  color="#cccc99">
+....
+</font>
+<font  color="#cccc99" size="1">
+.
+</font>
+<font  face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">
+<a  href="schedule_text.html">
+Text version
+</a>
+</font>
+</td>
+<td  bgcolor="#cccc99" colspan="2" height="25">
+<div  align="right">
+<font  face="Arial,Arial,Helvetica">
+Monday, 14-May-2001 00:01:28 EDT
+</font>
+<font  color="#cccc99" size="1">
+..
+</font>
+<a  csover="B646016733">
+<font  color="#cccc99" size="1">
+<img ></img>
+</font>
+</a>
+<a  csover="B646016735">
+<font  color="#cccc99" size="1">
+<img ></img>
+</font>
+</a>
+<a  csover="B646016737">
+<font  face="Arial">
+<img ></img>
+</font>
+</a>
+<a  csover="B646016739">
+<font  face="Arial">
+<img ></img>
+</font>
+</a>
+<font  color="#cccc99" size="1">
+......
+</font>
+</div>
+</td>
+</tr>
+<tr >
+<td  align="right" bgcolor="white" valign="top" width="150">
+<img ></img>
+</td>
+<td  bgcolor="white" colspan="2" valign="top">
+<img ></img>
+<br ></br>
+<a  href="index.html">
+<font  face="Verdana,Arial,Helvetica">
+<b >
+MANAGING THE DIGITAL ENTERPRISE
+</b>
+</font>
+</a>
+<font  face="Verdana,Arial,Helvetica">
+<b >
+?
+<a  href="mrappa.html">
+PROFESSOR MICHAEL RAPPA
+</a>
+</b>
+</font>
+<p >
+<font  helvetica="#DEFAULT">
+<b >
+Campus Class Meeting Schedule
+</b>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  bgcolor="white" valign="top" width="150">
+<center >
+<img ></img>
+<p >
+<font  face="Verdana,Arial,Helvetica">
+<img ></img>
+</font>
+</p>
+<p >
+<font  face="Verdana,Arial,Helvetica">
+<b >
+Course information:
+</b>
+</font>
+</p>
+<p >
+<font  face="Verdana,Arial,Helvetica">
+<a  href="about.html">
+About the course
+</a>
+</font>
+</p>
+<p >
+<a  href="mrappa.html">
+<font  face="Verdana,Arial,Helvetica">
+Instructor
+</font>
+</a>
+</p>
+<p >
+<a  href="schedule.html">
+<font  face="Verdana,Arial">
+Schedule
+</font>
+</a>
+</p>
+<p >
+<a  href="http://alex.ncsu.edu/cgi-bin/bulletin/Ultimate.cgi?action=intro&category=1&BypassCookie=true">
+<font  face="Verdana,Arial,Helvetica">
+Forum
+</font>
+</a>
+</p>
+<p >
+<a  href="students.html">
+<font  face="Verdana,Arial">
+Students
+</font>
+</a>
+</p>
+<p >
+<a  href="study_tips.html">
+<font  face="Verdana,Arial">
+Study Tips
+</font>
+</a>
+</p>
+<p >
+<a  href="administrivia.html">
+<font  face="Verdana,Arial">
+Administrivia
+</font>
+</a>
+</p>
+<p >
+<a  href="office.html">
+<font  face="Verdana,Arial">
+Office Hours
+</font>
+</a>
+</p>
+<p >
+<a  href="faq.html">
+<font  face="Verdana,Arial">
+FAQ
+</font>
+</a>
+</p>
+<p >
+<a  href="mailto:mrappa@digitalenterprise.org">
+<font  face="Verdana,Arial">
+Contact
+</font>
+</a>
+</p>
+<p >
+<a  href="registration.html">
+<font  face="Verdana,Arial">
+User Registration
+</font>
+</a>
+</p>
+<p >
+<font  face="Verdana,Arial,Helvetica">
+<img ></img>
+</font>
+</p>
+<p >
+<a  href="http://ecommerce.ncsu.edu/">
+<font  face="Verdana,Arial">
+<b >
+E-Commerce Learning
+<br ></br>
+Center @ NC State
+</b>
+</font>
+</a>
+</p>
+<table  TABID="05200" border="0" cellpadding="0" cellspacing="6" width="120">
+<tr  height="60">
+<td  align="center" colspan="2" height="60" valign="bottom">
+<h4 >
+<input ></input>
+<br ></br>
+<font  size="2">
+<input ></input>
+</font>
+<input ></input>
+</h4>
+</td>
+</tr>
+</table>
+</center>
+</td>
+<td  align="center" bgcolor="white" valign="top">
+<h4 >
+<img ></img>
+</h4>
+<table  TABID="05202">
+<tr >
+<td  align="center" bgcolor="#999900" width="480">
+<table  TABID="05201" border="0" cellpadding="2" cellspacing="1" genuinetable="yes" tabletitle="Campus Class Meeting Schedule 
+" width="478">
+<tr  height="25">
+<td  align="center" bgcolor="#660033" height="25" width="20%">
+<font  face="Verdana,Arial">
+<b >
+Date
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#660033" height="25" width="20%">
+<font  face="Verdana,Arial">
+<b >
+Class
+</b>
+</font>
+</td>
+<td  bgcolor="#660033" height="25" width="60%">
+<font  face="Verdana,Arial"></font>
+<font  face="Verdana,Arial">
+<b >
+Discussion Topic
+</b>
+</font>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+before 08.20
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+0
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="about.html">
+<font  face="Verdana,Arial">
+About the Course
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+08.20
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+1
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="introduction/intro.html">
+<font  face="Verdana,Arial">
+Introduction
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+08.28
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+2
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="navigation/nav.html">
+<font  face="Verdana,Arial">
+Navigating the Web
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+09.04
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+3
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="design/design.html">
+<font  face="Verdana,Arial">
+Digital Design
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+09.11
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+4
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="metrics/metrics.html">
+<font  face="Verdana,Arial">
+Web Metrics
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+09.18
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+5
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="models/models.html">
+<font  face="Verdana,Arial">
+Business Models on the Web
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+09.25
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+6
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="markets/markets.html">
+<font  face="Verdana,Arial">
+Digital Markets
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+10.02
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+7
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="agents/agents.html">
+<font  face="Verdana,Arial">
+Intelligent Agents
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+10.09
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+8
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="auctions/auctions.html">
+<font  face="Verdana,Arial">
+Auctions and Dynamic Pricing
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+10.16
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+--
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<font  face="Verdana,Arial">
+Fall Break
+</font>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+10.23
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+9
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="channels/channel.html">
+<font  face="Verdana,Arial">
+Channel Conflict
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+10.30
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+10
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="trust/trust.html">
+<font  face="Verdana,Arial">
+Trust in Cyberspace
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+11.06
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+11
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="security/security.html">
+<font  face="Verdana,Arial">
+Security and Encryption
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+11.13
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+12
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="privacy/privacy.html">
+<font  face="Verdana,Arial">
+Internet Privacy
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+11.20
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+13
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="ip/ip.html">
+<font  face="Verdana,Arial">
+Intellectual Property on the Web
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+11.27
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+14
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="governance/gov.html">
+<font  face="Verdana,Arial">
+Internet Governance
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+12.04
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+15
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<a  href="ethics/ethics.html">
+<font  face="Verdana,Arial">
+Web Ethics
+</font>
+</a>
+</td>
+</tr>
+<tr  height="20">
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+12.11
+</font>
+</td>
+<td  align="center" bgcolor="#ffffcc" height="20" width="20%">
+<font  face="Verdana,Arial">
+--
+</font>
+</td>
+<td  bgcolor="#ffffcc" height="20" width="60%">
+<font  face="Verdana,Arial"></font>
+<font  face="Verdana,Arial">
+FINAL EXAM
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  align="center" bgcolor="white" valign="middle" width="150">
+<a  href="http://digitalenterprise.org.master.com/texis/master/search/whatday.html">
+<img ></img>
+</a>
+<p ></p>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccc99" width="150">
+<img ></img>
+</td>
+<td  align="center" bgcolor="#cccc99">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#cccc99" width="150">
+<img ></img>
+</td>
+</tr>
+<tr  height="30">
+<td  bgcolor="#cccc99" height="30" width="150">
+<font  face="Verdana,Arial,Helvetica" size="1">
+....
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+<a  href="legal.html">
+© 2001 Michael Rappa
+</a>
+</font>
+<a  href="mrappa.html"></a>
+</td>
+<td  align="center" bgcolor="#cccc99" height="30">
+<h4 ></h4>
+<table  TABID="05203">
+<tr >
+<td  align="center" width="100%">
+<font  face="Verdana,Arial,Helvetica">
+<a  href="about.html">
+About
+</a>
+|
+<a  href="introduction/intro.html">
+Introduction
+</a>
+|
+<a  href="navigation/nav.html">
+Navigation
+</a>
+|
+<a  href="design/design.html">
+Design
+</a>
+|
+<a  href="metrics/metrics.html">
+Metrics
+</a>
+|
+<a  href="models/models.html">
+Models
+</a>
+|
+<a  href="markets/markets.html">
+Markets
+</a>
+|
+<a  href="agents/agents.html">
+Agents
+</a>
+|
+<a  href="auctions/auctions.html">
+Auctions
+</a>
+|
+<a  href="channels/channel.html">
+Channels
+</a>
+|
+<a  href="trust/trust.html">
+Trust
+</a>
+|
+<a  href="security/security.html">
+Security
+</a>
+|
+<a  href="privacy/privacy.html">
+Privacy
+</a>
+|
+<a  href="ip/ip.html">
+IP
+</a>
+|
+<a  href="governance/gov.html">
+Governance
+</a>
+|
+<a  href="ethics/ethics.html">
+Ethics
+</a>
+</font>
+</td>
+</tr>
+</table>
+</td>
+<td  align="right" bgcolor="#cccc99" height="30" width="150">
+<center >
+<a  href="index.html" title="Home">
+<img ></img>
+</a>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</td>
+</tr>
+</table>
+</center>
+<p ></p>
+</form>
+</body>
+</html>

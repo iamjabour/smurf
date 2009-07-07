@@ -1,0 +1,2264 @@
+<!-- Vignette StoryServer 5.0 Wed May 16 14:26:19 2001 -->
+<html >
+<head >
+<script >
+<!--
+
+function cartoonOpen(whichCartoon){
+
+newWindow = window.open('http://www.time.com/time/campaign2000/cartoons/' + whichCartoon,'cartoon','width=570,height=515')
+newWindow.focus()
+}
+//-->
+</script>
+</head>
+<body >
+<title >
+Welcome to TIME.com
+</title>
+<!-- Vignette StoryServer 5.0 Sun Feb 18 15:21:46 2001 -->
+<!-- The following seven lines are the error catching routine and should only be necessary on flat pages.  When used, the body tag
+ should address P_checkUnload rather than P_closeDown -->
+<script >
+<!--
+var P_isLoaded = false;
+function P_checkUnload() {
+        if(P_isLoaded &amp;amp;amp;&amp;amp;amp; (document.layers||document.all))P_closeDown();
+}
+// -->
+</script>
+<!-- Vignette StoryServer 5.0 Wed Feb 28 12:38:20 2001 -->
+<!-- the following is the main script, to be placed in the includes.  If it is divided into three segments as listed below, it will be more flexible in the future, but it is not necessary-->
+<!-- section 1: initialize -->
+<script >
+<!--
+if(!document.cookie) { 
+	document.cookie = "PopUpCalls=0;path=/;";
+}
+if ((document.layers || document.all) &amp;amp;amp;&amp;amp;amp; document.cookie) { 
+	var P_showPop=true;
+} else {
+	var P_showPop=false; 
+}
+
+if (P_showPop) {
+	P_Rules = new Array();
+// section 2: magazine rules
+	P_Mag="Time";
+	P_Rules[0] = "~time.com/"; // rules array contains definitions of internal links (links that will not get a popup).  "~" means contains and "!" means does not contain.  Rules can be combined with logical "and" using "&amp;amp;amp;&amp;amp;amp;": ~time.com/&amp;amp;amp;&amp;amp;amp;!/digital/ is one way of combining these tools.
+	P_Rules[1] = "~pathfinder.com/time/"; // each rule in the rule array is a logical "or"
+	P_Rules[2] = "~pathfinder.com:8080/time/";
+	P_Rules[3] = "~magsubs/cc/sub";
+	P_Rules[4] = "~secure.customersvc.com";
+	P_Rules[5] = "~doubleclick.net";
+    P_Rules[6] = "~pathfinder.com/cgi-bin/time/";
+  		
+	P_Hours = 24; // number of hours till next popup
+	P_Source = "http://www.pathfinder.com/time/interstitials/inter.html"; // URL of popup
+	P_Height = 240; // height of popup window
+	P_Width = 350; // width of popup window
+	P_cookieDomain = false; // if you want to specify a domain for this cookie, add it here, e.g. ".pathfinder.com";
+// section 3: program. minimal comments follow
+	P_today = new Date();
+	P_todayNum = P_today.valueOf();
+	var P_LeftChip="";
+	var P_RightChip="";
+	var P_Chip="";
+	var P_DocCookie = unescape(document.cookie);
+	if(P_DocCookie.length&amp;amp;gt;0) {
+		P_begin=P_DocCookie.indexOf("PopUpCalls=");
+		if(P_begin != -1) {
+			P_begin += 11; // 11 is length of string "PopUpCalls="
+			P_end=P_DocCookie.indexOf(";", P_begin);
+			if (P_end==-1) P_end=P_DocCookie.length;
+			P_Cookie=P_DocCookie.substring(P_begin, P_end);
+			P_ChipStart=P_Cookie.indexOf(P_Mag+"=");
+			if(P_ChipStart&amp;amp;gt;-1) {
+				P_LeftChip=P_Cookie.substring(0,P_ChipStart);
+				P_ChipStart+=1+P_Mag.length
+				P_ChipEnd=P_Cookie.indexOf("|",P_ChipStart);
+				if(P_ChipEnd==-1) P_ChipEnd = P_Cookie.length;
+				P_Chip=P_Cookie.substring(P_ChipStart,P_ChipEnd);
+				P_RightChip=P_Cookie.substring(P_ChipEnd);
+				if(P_todayNum &amp;amp;lt; parseInt(P_Chip)) P_showPop = false;
+			} else {
+				P_LeftChip=P_Cookie;
+				P_RightChip="";
+			}
+		}
+	}
+}
+function P_checkClick(ev) { // onClick function
+	if(P_showPop) {
+		P_Link="";
+		if(document.layers) {
+                        P_Test=ev.target.toString().toLowerCase();
+
+                        if(P_Test.substring(0,6)=="&amp;amp;lt;input") {
+                                P_showPop = false;
+                        } else {
+                                P_Link=P_Test;
+                        }
+                } else if (document.all) {
+						P_myElement = window.event.srcElement;
+						while(P_myElement.tagName.toLowerCase()!="a" &amp;amp;amp;&amp;amp;amp;
+						  P_myElement.tagName.toLowerCase()!="body" &amp;amp;amp;&amp;amp;amp;
+						  P_myElement.tagName.toLowerCase()!="input" &amp;amp;amp;&amp;amp;amp;
+						  P_myElement.tagName.toLowerCase()!="area" ) {
+							P_myElement = P_myElement.parentElement;
+	  					}
+                        P_tag = P_myElement.tagName.toLowerCase();
+                        if (P_tag=="a" || P_tag=="area") {
+                                P_Link=P_myElement.href;
+                        } else if(P_tag=="input") {
+                                P_showPop=false;
+                        }
+
+                }
+		P_Link=P_Link.toLowerCase();
+
+        var P_ToReplace = /\x2F/g;
+        P_URL = self.location.pathname;
+        P_URL = P_URL.replace(P_ToReplace, "\[\/\]"); 
+        var P_ToMatch = new RegExp(P_URL + "[/]{0,1}(index.|default.){0,1}[^.]*#", "i");
+		var P_RV = P_Link.search(P_ToMatch);
+
+		if(P_Link!="" &amp;amp;amp;&amp;amp;amp; (P_RV==-1) &amp;amp;amp;&amp;amp;amp; (P_Link.substring(0,4)=="http")) {
+			if(P_isInternal(P_Link)) {
+				P_showPop=false;
+			}
+		}
+		if(document.layers) {
+			routeEvent(ev);
+			return true;
+		}
+	}
+}
+function P_isInternal(P_URL) { // function to evaluate whether a URL is internal (should not get a popup)
+	for (i=0;i &amp;amp;lt; P_Rules.length;i++) {
+		P_Parts = P_Rules[i].split("&amp;amp;amp;&amp;amp;amp;");
+		P_Result = true;
+		for (j=0;j &amp;amp;lt; P_Parts.length;j++) {
+			P_Search = P_URL.indexOf(P_Parts[j].substring(1));
+			P_Call = P_Parts[j].charAt(0);
+			if ((P_Search==-1 &amp;amp;amp;&amp;amp;amp; P_Call=="~") || (P_Search&amp;amp;gt;-1 &amp;amp;amp;&amp;amp;amp; P_Call=="!")) {
+				P_Result = false;
+				break;
+			}
+		}
+		if(P_Result) return true; 
+	}
+	return false; 
+}
+function P_closeDown() { // onunload function
+	if(P_showPop) { 
+		popupWin = window.open(P_Source, "POPUP", "height=" + P_Height + ",width=" + P_Width + ","); 
+		P_Chip = P_todayNum + (P_Hours * 60 * 60 * 1000);
+		P_today.setTime(P_today.getTime() + (31 * 24 * 60 * 60 * 1000));
+		document.cookie = "PopUpCalls=" + escape(P_LeftChip + P_Mag + "=" + P_Chip + (P_RightChip.charAt(0)=="|"?"":"|") + P_RightChip) + ";path=/; expires=" + P_today.toGMTString()+(P_cookieDomain?";domain="+P_cookieDomain:"")+";";  //
+	}
+} 
+
+function P_popupoff() { // added by JQ 3/27/00 to disable popup
+    P_showPop = false;
+}
+
+function P_NSform (ev) { // Netscape 4.x form submit capture
+ P_showPop = false;
+    routeEvent(ev);
+    return true;
+}
+ 
+if (P_showPop) { // setting up click capture
+  if(document.layers) { 
+    window.captureEvents(Event.CLICK | Event.SUBMIT);
+    window.onClick=P_checkClick;
+    window.onSubmit=P_NSform;
+  }
+  if(document.all) {
+    document.onclick=P_checkClick;
+  }
+ }
+
+// code (vanity plate): Gary Poster, with essential assists from Galyn Norwood, Phiroon Phihakendr, Jose Quijada, Pavandeep Kalra. Copyright 2000 Time Inc.
+// note: we tried to eliminate the need for all body tag event handlers but onunload proved to be necessary because otherwise Netscape produces security errors when the cookie is set (even when the unload event is captured).
+// -->
+P_isLoaded=true;
+</script>
+<!--BEGIN STYLESHEET-->
+<!--
+
+	 /*red style for page links */
+	a { color: #990000 }
+
+	/*red style for rollover page links only in IE*/
+	a:hover { color: #003399 }
+	
+	/*style for Middle Red Photo Captions */
+	.midcap { color: #CCCCCC; font-size: 11px; font-family: Georgia, Times }
+
+	
+/*style for paragraph text */
+p { font-family: Georgia, Times }
+
+/*style for lists */
+li { font-family: Georgia, Times }
+
+/*style for text in black bar */
+.blackbar { color: #FFFFFF; font-size: 10px; font-family: Arial, Helvetica; }
+
+/*style for search area text and links at top */
+.searcharea  { color: #999999; font-weight: bold; font-size: 10px; font-family: Verdana, Arial }
+
+/*style for search area text and links at top */
+.input  { font-size: 10px; font-family: Verdana, Arial }
+
+/*style for headline on News Story Page top */
+.headline  { color: #000000; font-weight: bold; font-size: 160%; font-family: Georgia, Times }
+
+.dropdown { font-size: 10px; font-family: Arial, Helvetica }
+
+/*style for main story links at top */
+.storylinks  { font-size: 75%; font-family: Georgia, Times }
+
+/*style for Photo Captions */
+.photocap { color: #000000; font-size: 11px; font-family: Arial, Helvetica }
+
+/*style for Photo Credits */
+.photocredit { color: #999999; font-size: 10px; font-family: Arial, Helvetica; text-align: right }
+
+/*style for middle section related Stories head */
+.sectionheads { color: #333333; font-weight: bold; font-size: 10px; font-family: Verdana, Arial; text-decoration: none }
+
+/*style for text and links in the Partner, Sponsorship area */
+.partnerarea { font-size: 11px; font-family: Arial, Helvetica }
+				
+/*style for rightside text heads on Homepage such as Society, Photo essay, Cinema */
+.rightsideheads { font-weight: bold; font-size: 11px; font-family: Georgia, Times }
+
+/*style for rightside links in right column */
+.rightsidelinks { font-size: 12px; font-family: Arial, Helvetica }
+
+/*style for rightside text in right column */
+.rightsidetext { font-size: 11px; line-height: 12px; font-family: Arial, Helvetica }
+
+
+
+
+
+/*style for main story intro paragraph at top */
+.storyintro { font-family: Georgia, Times }
+
+/*style for main story links at top */
+.storylinks  { font-size: 75%; font-family: Georgia, Times }
+
+/*style for smaller secondary stories at top of page below main */
+.secondarystorieslink { font-size: 12px; font-family: Georgia, Times }
+
+/*style for smaller secondary stories at top of page below main */
+.secondarystories { font-size: 75%; font-family: Georgia, Times }
+
+/*style for middle section related story paragraphs */
+.sectionblurbs { font-family: Georgia, Times }
+
+
+
+	
+		
+			
+				  /*style for gadget area text and links for Poll, Digital, Column, Meter */
+					.middlesection { font-size: 11px; font-family: Georgia, Times }
+
+
+
+				   -->
+<!--END STYLESHEET-->
+<!--TIME.com POPUP code-->
+<script >
+function newWindow(name, width, height) { var isNet = navigator.appName.indexOf("Netscape") != -1; var isVer2 = navigator.appVersion.indexOf("2.") != -1; open(name, 'comments','toolbar=no,location=no,directories=no,status=no,scrollbars=yes,menubar=no,width=' + width + ',height=' + height); if (isNet &amp;&amp; isVer2) // fix Netscape 2 peculiarity open(name, 'comments', ''); }
+</script>
+<!--AOL PF TARGET-->
+<div  style="position: absolute; height:0px; width:0px; top:0px; left:0px; z-index:1">
+<img ></img>
+</div>
+<table  TABID="13116" border="0" cellpadding="0" cellspacing="0" width="763">
+<tr >
+<td >
+<script >
+oldhatvalue = ("
+<table  TABID="13114" border="\0\">
+<tr >
+<td  align="\left\">
+\n" + "
+<font  color="#FFFFFF" face="\Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="1">
+Welcome!
+</font>
+</td>
+<td >
+\n" + "
+</td>
+<td  width="\373\">
+<a  target="\_top\">
+\n" + "
+<img ></img>
+\n" + "
+</a>
+</td>
+</tr>
+</table>
+\n");
+</script>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<script >
+<!--
+document.write(oldhatvalue);
+//-->
+</script>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<!-- -->
+<table  TABID="13115" border="0" cellpadding="0" cellspacing="0" height="24" hspace="0" vspace="0" width="100%">
+<tr >
+<td  align="left" bgcolor="006699">
+<!-- -->
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="1">
+Welcome!
+</font>
+</td>
+<!-- -->
+<td  align="right" bgcolor="#006699" width="374">
+<a  href="http://toolbar.netscape.com/nojs.twhat" target="_top">
+<img ></img>
+<!-- -->
+</a>
+</td>
+</tr>
+</table>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+</table>
+<!--AOL PF TARGET-->
+<!-- Vignette StoryServer 5.0 Fri May 04 18:13:20 2001 -->
+<table  TABID="13117" border="0" cellpadding="1" cellspacing="0" height="60" width="622">
+<tr  valign="top">
+<td  align="left" valign="top">
+<!--DoubleClick Code Start-->
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="http://ad.doubleclick.net/jump/timeinc.com/homepage;cat=news;ord=2001.05.16.14.41.18?" target="_top">
+<img ></img>
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</td>
+<!--Media Kit and Right Tout Start-->
+<td  align="left" valign="top">
+<!--media kit 1-->
+<!-- NoPfinclude -->
+<a  href="http://www.time-planner.com/planner2001/timecom/index.html" target="_blank">
+<img ></img>
+</a>
+</td>
+<!--Media Kit and Right Tout End-->
+<!--BEGIN BUTTON-->
+<td  valign="top" width="144">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<script ></script>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="http://adremote.pathfinder.com/click.ng/spacedesc=cmtime144x60&pagepos=12" target="new">
+<img ></img>
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</td>
+<!--END BUTTON-->
+<!--BEGIN TOUT-->
+<td  valign="top" width="135">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<script ></script>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="http://adremote.pathfinder.com/click.ng/spacedesc=cmtimeedit135x60&pagepos=12" target="new">
+<img ></img>
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</td>
+<!--END TOUT-->
+</tr>
+</table>
+<!--BEGIN MAIN TABLE-->
+<table  TABID="13147" border="0" cellpadding="0" cellspacing="0" width="763">
+<tr >
+<td  bgcolor="#990000" colspan="3">
+<table  TABID="13119" border="0" cellpadding="10" cellspacing="0">
+<tr >
+<td  valign="top">
+<a  href="/time">
+<img ></img>
+</a>
+</td>
+<td  valign="top">
+<!--BEGIN SEARCH BOX-->
+<table  TABID="13118" border="0" cellpadding="0" cellspacing="0">
+<form  action="/time/searchresults" method="get" onsubmit="P_popupoff()">
+<tr >
+<td  colspan="2">
+<font  color="#CCCCCC">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+SEARCH TIME:
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<input ></input>
+<input ></input>
+<input ></input>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<input ></input>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<a  href="/time/advanced/search/">
+<font  color="#CCCCCC">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+ADVANCED SEARCH
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</font>
+</a>
+</td>
+</tr>
+</form>
+</table>
+<!--END SEARCH BOX-->
+</td>
+<td  valign="top">
+<a  href="/time/americasbest">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<!--BEGIN DATE STAMP-->
+<td  bgcolor="#000000" colspan="3">
+<!-- Vignette StoryServer 5.0 Thu May 03 16:43:39 2001 -->
+<table  TABID="13120" bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" height="18" width="100%">
+<tr >
+<td  align="left" class="blackbar">
+<!-- Vignette StoryServer 5.0 Wed May 16 12:16:03 2001 -->
+Wednesday, May 16, 2001
+</td>
+<td  align="right" class="blackbar">
+Top Searches
+<img ></img>
+<a  href="/time/magazine/archive/">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+Covers
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</a>
+<img ></img>
+<a  href="http://www.time.com/time/photoessays/yoga/">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+Yoga
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</a>
+<img ></img>
+<a  href="http://www.time.com/time/searchresults?venue=time&summaries=yes&search_type=simple&query=mideast">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+Mideast
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</a>
+<img ></img>
+<a  href="http://www.time.com/time/survivor2/">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+Survivor
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</a>
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<!--END DATE STAMP-->
+</tr>
+<tr >
+<!--BEGIN LEFT HAND GLOBAL NAVIGATION AREA-->
+<td  bgcolor="#990000" valign="top" width="91">
+<!-- Vignette StoryServer 5.0 Fri May 04 14:53:56 2001 -->
+<img ></img>
+<br ></br>
+<a  href="/time/nation/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/world/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/business/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/sampler/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/health/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/education/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/photoessays/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/magazine/current/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/magazine/archive/">
+<img ></img>
+</a>
+<br ></br>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="/time/magazine/article/0,9171,105601,00.html">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/columnist/karon/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/columnist/morrow/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/columnist/poniewozik/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/columnist/stengel/">
+<img ></img>
+</a>
+<br ></br>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="/time/americasbest/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/pow/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/poy2000/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/zodiac/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/global/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/photoessays/yoga/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/covers/1101010507/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/2001/jerusalem/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/2001/aidsinafrica/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/innovators_v2/index.html">
+<img ></img>
+</a>
+<br ></br>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+<!--&amp;amp;lt;A href="http://www.timedigital.com"&amp;amp;gt;&amp;amp;lt;IMG src="http://a740.g.akamai.net/f/740/606/1d/image.pathfinder.com/time/images/leftnav/nav_timedigital.gif" width="91" height="12" border="0"&amp;amp;gt;&amp;amp;lt;/A&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;-->
+<a  href="http://www.time.com/time/asia">
+<img ></img>
+</a>
+<br ></br>
+<a  href="http://www.time.com/time/europe">
+<img ></img>
+</a>
+<br ></br>
+<a  href="http://www.time.com/time/pacific">
+<img ></img>
+</a>
+<br ></br>
+<a  href="http://www.timeforkids.com/TFK/">
+<img ></img>
+</a>
+<br ></br>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="http://www.cnn.com" target="NEW">
+<img ></img>
+</a>
+<br ></br>
+<a  href="http://my.aol.com" target="NEW">
+<img ></img>
+</a>
+<br ></br>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="/time/sitemap/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/faq/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/contactus/">
+<img ></img>
+</a>
+<br ></br>
+<a  href="/time/searchtips/">
+<img ></img>
+</a>
+<br ></br>
+<div  style="position: absolute; height:0px; width:0px; top:0px; left:0px; z-index:1">
+<img ></img>
+</div>
+<a  href="http://www.pathfinder.com/r0/timesubs/nav_left/out?https://cgi.pathfinder.com/cgi-bin/magsubs/cc/subs/td_half?EFFORTKEY=TDDJV24">
+<img ></img>
+</a>
+<br ></br>
+<a  href="https://secure.customersvc.com/servlet/Show?WESPAGE=td/home.html&MSRSMAG=TD">
+<img ></img>
+</a>
+</td>
+<!--END LEFT HAND GLOBAL NAVIGATION AREA-->
+<td  valign="top" width="502">
+<!--BEGIN TOP STORY AREA-->
+<table  TABID="13126" border="0" cellpadding="0" cellspacing="0" width="502">
+<tr >
+<td  width="15">
+<img ></img>
+</td>
+<!--BEGIN MAIN BANNER AND HEADLINE GIF-->
+<td  valign="top" width="487">
+<img ></img>
+<br ></br>
+<!--END MAIN BANNER AND HEADLINE GIF-->
+<!--BEGIN MAIN PHOTO AND TOP STORY INTRO-->
+<table  TABID="13122" border="0" cellpadding="5" cellspacing="0">
+<tr  valign="top">
+<td  colspan="2">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+It's Gas Prices, Stupid (or Why Dems Are Bashing Bush on Energy)
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+</td>
+</tr>
+<tr  valign="top">
+<td  width="300">
+<img ></img>
+<br ></br>
+<!--BEGIN PHOTO CAPS/CREDIT-->
+<div  class="photocredit">
+SHAWN THEW/AFP
+</div>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+Fill it up: Democratic leader Richard Gephardt touts his party's energy plan
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+<!--END PHOTO CAPS/CREDIT-->
+</td>
+<td >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+The two sides' long-term visions aren't as different as you might think. But the Democrats know political hay when they see it
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="/time/business/article/0,8599,109983,00.html">
+the whole story &gt;&gt;
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+<p >
+<!--BEGIN TOP STORY LINKS TABLE-->
+</p>
+<table  TABID="13121" border="0" cellpadding="2" cellspacing="0" width="130">
+<tr  valign="top">
+<td  width="14">
+<img ></img>
+</td>
+<td >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+CNN.com :
+<a  href="http://www.cnn.com/2001/ALLPOLITICS/05/15/energy.wrap/index.html" target="_new">
+Democrats Ready To Battle Bush On Energy
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+</td>
+</tr>
+<tr  valign="top">
+<td  width="14">
+<img ></img>
+</td>
+<td >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+CNN.com :
+<a  href="www.cnn.com/interactive/specials/0003/oil.calculator/frameset.exclude.html" target="_new">
+Gas Price Calculator
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+</td>
+</tr>
+<tr  valign="top">
+<td  width="14">
+<img ></img>
+</td>
+<td >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+TIME :
+<a  href="/time/business/article/0,8599,109708,00.html" target="_self">
+Are We Getting Gouged?
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+</td>
+</tr>
+</table>
+<!--END TOP STORY LINKS TABLE-->
+</td>
+</tr>
+</table>
+<!--END MAIN PHOTO AND TOP STORY INTRO-->
+<!--BEGIN LITTLE PHOTOS AND SECONDARY STORY INTROS-->
+<table  TABID="13125" border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr  valign="top">
+<td >
+<table  TABID="13123" bgcolor="#000000" border="0" cellpadding="1" cellspacing="0">
+<tr >
+<td >
+<a  href="/time/asia/news/daily/0,9754,109996,00.html">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td >
+<div  class="secondarystories">
+<a  href="/time/asia/news/daily/0,9754,109996,00.html">
+Japan Awaits the Pitter-Patter of Little (Imperial) Feet
+</a>
+Tokyo makes it official: Princess Masako is expecting
+</div>
+</td>
+<td  width="7">
+<img ></img>
+</td>
+<td >
+<table  TABID="13124" bgcolor="#000000" border="0" cellpadding="1" cellspacing="0">
+<tr >
+<td >
+<a  href="/time/sampler/article/0,8599,110021,00.html">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top">
+<div  class="secondarystories">
+<a  href="/time/sampler/article/0,8599,110021,00.html">
+The Upfronts: Of Regis-cide and the Prodigal Buffy
+</a>
+TIME's James Poniewozik on the humbling of the "Millionaire" king
+</div>
+</td>
+</tr>
+</table>
+<!--END LITTLE PHOTOS AND SECONDARY STORY INTROS-->
+<!-- Vignette StoryServer 5.0 Mon Feb 19 21:36:57 2001 -->
+<img ></img>
+<!--DoubleClick Superstitial Code BEGIN-->
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="http://ad.doubleclick.net/jump/timeincss.com/;sz=1x1;ord=2001.05.16.14.41.18?" target="_top">
+<img ></img>
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<!--DoubleClick Superstitial Code END-->
+</td>
+</tr>
+</table>
+<!--END TOP STORY AREA -->
+<!--BEGIN MIDDLE GADGETS AREA-->
+<!-- Vignette StoryServer 5.0 Wed May 16 10:16:06 2001 -->
+<table  TABID="13131" border="0" cellpadding="0" cellspacing="0" width="500">
+<tr  height="20">
+<td  height="20" valign="top" width="5">
+<img ></img>
+</td>
+<td  height="20" valign="top" width="120">
+<a  href="/time/poll/archive/">
+<img ></img>
+</a>
+</td>
+<td  height="20" width="5"></td>
+<td  height="20" valign="top" width="120">
+<img ></img>
+</td>
+<td  height="20" valign="top" width="5"></td>
+<td  height="20" valign="top" width="120">
+<img ></img>
+</td>
+<td  height="20" width="5"></td>
+<td  height="20" valign="top" width="120">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="5">
+<img ></img>
+</td>
+<!--BEGIN TODAY'S POLL-->
+<td  valign="top" width="120">
+<table  TABID="13127" border="0" cellpadding="4" cellspacing="0" width="120">
+<tr >
+<td  class="middlesection" valign="top">
+The 2001 U.S. census says more and more unmarried people are living together. What do you think of this trend?
+<br ></br>
+<!--THE FORM ACTION TAG-->
+<form  action="http://cgi.pathfinder.com/cgi-bin/time/osform/gdml3" method="post" onsubmit="javascript: window.open('','pollwindow','width=550,height=450')" target="pollwindow">
+<!--THE QUESTION INPUT FIELDS-->
+<font  class="middlesection">
+<input ></input>
+<font  class="middlesection">
+It's a good thing
+<br ></br>
+</font>
+<input ></input>
+<font  class="middlesection">
+I'm indifferent
+<br ></br>
+</font>
+<input ></input>
+<font  class="middlesection">
+It's disgusting
+<br ></br>
+</font>
+<input ></input>
+<font  class="middlesection">
+Not sure
+<br ></br>
+</font>
+<br ></br>
+<!--THE TALLY BUTTON-->
+<input ></input>
+<img ></img>
+<input ></input>
+<br ></br>
+<a  href="/time/poll/archive/">
+More polls
+</a>
+<!--THE .OFT FILE CALL-->
+<input ></input>
+<!--THE GAME ID CALL-->
+<input ></input>
+<input ></input>
+</font>
+</form>
+<p ></p>
+</td>
+</tr>
+</table>
+</td>
+<!--END TODAY'S POLL-->
+<td  valign="top" width="5">
+<img ></img>
+</td>
+<!--BEGIN ZODIAC-->
+<td  align="center" valign="top" width="120">
+<table  TABID="13128" border="0" cellpadding="4" cellspacing="0" width="120">
+<tr >
+<td  class="middlesection" valign="top">
+<a  href="/time/zodiac/">
+<img ></img>
+</a>
+<br ></br>
+Today's Newsmaker:
+<br ></br>
+<a  href="/time/zodiac/">
+Darryl Strawberry (Troubled Yankee)
+</a>
+</td>
+</tr>
+</table>
+</td>
+<!--END ZODIAC-->
+<td  valign="top" width="5">
+<img ></img>
+</td>
+<!--BEGIN TODAY'S COLUMN-->
+<td  align="center" valign="top" width="120">
+<table  TABID="13129" border="0" cellpadding="4" cellspacing="0" width="120">
+<tr  align="left" valign="top">
+<td  class="middlesection">
+<a  href="/time/columnist/karon/article/0,9565,109907,00.html">
+<img ></img>
+</a>
+<a  href="/time/columnist/karon/article/0,9565,109907,00.html">
+Why Bush's $200-Million AIDS Donation May Mean Nothing
+</a>
+</td>
+</tr>
+</table>
+</td>
+<!--END TODAY'S COLUMN-->
+<td  valign="top" width="5">
+<img ></img>
+</td>
+<!--BEGIN CARTOON-->
+<td  align="center" valign="top" width="120">
+<table  TABID="13130" border="0" cellpadding="4" cellspacing="0" width="120">
+<tr  align="center" valign="top">
+<td  class="middlesection">
+<a  href="javascript:cartoonOpen('010515.html')">
+<img ></img>
+</a>
+<br ></br>
+<a  href="javascript:cartoonOpen('010515.html')">
+McVeigh's Stay of Execution
+</a>
+<br ></br>
+</td>
+</tr>
+</table>
+</td>
+<!--END CARTOON-->
+</tr>
+</table>
+<!--END MIDDLE GADGETS AREA-->
+<br ></br>
+<!--BEGIN SECTIONS STORIES AREA-->
+<table  TABID="13132" border="0" cellpadding="0" cellspacing="0" width="498">
+<tr >
+<td  valign="top" width="15">
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/time/nation">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+N A T I O N
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/business/article/0,8599,109917,00.html">
+Rate Cut a Sign That Mr. Greenback Is Still Very Worried
+</a>
+<br ></br>
+A half percent cut means that it ain't over yet
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/nation/article/0,8599,109947,00.html">
+In the End, It'll Be McVeigh's Call Whether to Fight On
+</a>
+<br ></br>
+Will he or won't he make the government pay for its mistakes?
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/nation/article/0,8599,109777,00.html">
+Has Medical Marijuana Gone Up in Smoke?
+</a>
+<br ></br>
+Maybe. A Supreme Court ruling reignites the debate
+</div>
+<br ></br>
+<a  href="/time/nation">
+<b >
+more nation stories &gt;&gt;
+</b>
+</a>
+<p >
+<a  href="/time/world">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+W O R L D
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+</p>
+<div  class="sectionblurbs">
+<a  href="/time/world/article/0,8599,110048,00.html">
+In Macedonia, a Day of Reckoning Looms Large
+</a>
+<br ></br>
+Cell Phone from Skopje: TIME's Dejan Anastasijevic
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/world/article/0,8599,110035,00.html">
+'Rage Over Slain Policemen Led Palestinians to Defy Arafat'
+</a>
+<br ></br>
+Cell Phone from Bethlehem: TIME West Bank correspondent Jamil Hamad
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/world/article/0,8599,109932,00.html">
+Why Beijing Is Still the Olympic Front Runner
+</a>
+<br ></br>
+Politics is unlikely to impinge on deciding the 2008 host city
+</div>
+<br ></br>
+<a  href="/time/world">
+<b >
+more world stories &gt;&gt;
+</b>
+</a>
+<p >
+<a  href="/time/business">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+B U S I N E S S
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+</p>
+<div  class="sectionblurbs">
+<a  href="/time/business/article/0,8599,109714,00.html">
+Power Struggle
+</a>
+<br ></br>
+Bush takes the heat for an energy policy that's warm to oil and cool to conservation
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/business/article/0,8599,109917,00.html">
+Rate Cut a Sign That Mr. Greenback Is Still Very Worried
+</a>
+<br ></br>
+A half percent cut means that it ain't over yet
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/columnist/taylor/article/0,9565,110034,00.html">
+At the Gates of Gaming's Babylon
+</a>
+<br ></br>
+Silicon Valley Days: Our columnist heads south to La-La-Land to check out the videogamer's hypefest: E3
+</div>
+<br ></br>
+<a  href="/time/business">
+<b >
+more business stories &gt;&gt;
+</b>
+</a>
+<p >
+<a  href="/time/sampler">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+S A M P L E R
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+</p>
+<div  class="sectionblurbs">
+<a  href="/time/sampler/article/0,8599,109715,00.html">
+Michael Stipe and the Ageless Boys of R.E.M.
+</a>
+<br ></br>
+The group's gone electronic. The singer's gone Hollywood. Is this the band's end? Nah, it's a new beginning
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/sampler/article/0,8599,110026,00.html">
+Galley Girl: The Italian Cooking Edition
+</a>
+<br ></br>
+News and notes on the book business from Andrea Sachs
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/sampler/article/0,8599,109415,00.html">
+That Old Feeling: Fatty and Buster
+</a>
+<br ></br>
+Richard Corliss looks at the historic Arbuckle-Keaton shorts from the dawn of movies
+</div>
+<br ></br>
+<a  href="/time/sampler">
+<b >
+more sampler stories &gt;&gt;
+</b>
+</a>
+<p >
+<a  href="/time/education">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+E D U C A T I O N
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+</p>
+<div  class="sectionblurbs">
+<a  href="/time/education/article/0,8599,109175,00.html">
+A Study Sends President a Mixed Message Over Literacy Emphasis
+</a>
+<br ></br>
+Reading skills are important, says report, but parental involvement is key
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/education/article/0,8599,107941,00.html">
+How Med Students Put Abortion Back In The Classroom
+</a>
+<br ></br>
+After years of being ignored, the procedure is being taught again to aspiring doctors
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/education/article/0,8599,107265,00.html">
+The Quest For A Superkid
+</a>
+<br ></br>
+Geniuses are made, not born — or so parents are told. But can we really train baby brains, and should we try?
+</div>
+<br ></br>
+<a  href="/time/education">
+<b >
+more education stories &gt;&gt;
+</b>
+</a>
+<p >
+<a  href="/time/health">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+H E A L T H
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+</p>
+<div  class="sectionblurbs">
+<a  href="/time/health/article/0,8599,108789,00.html">
+The Nun Study
+</a>
+<br ></br>
+How one scientist and 678 sisters are helping unlock the secrets of Alzheimer's
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/health/article/0,8599,108431,00.html">
+Women + Fat = Diabetes
+</a>
+<br ></br>
+TIME.com Q&amp;A: Diabetes expert Dr. James Anderson
+</div>
+<br ></br>
+<div  class="sectionblurbs">
+<a  href="/time/health/article/0,8599,108361,00.html">
+New Focus on the Morning-After Pill Adds Fuel to Abortion Debate
+</a>
+<br ></br>
+Questions over just when life begins
+</div>
+<br ></br>
+<a  href="/time/health">
+<b >
+more health stories &gt;&gt;
+</b>
+</a>
+<p ></p>
+</td>
+</tr>
+</table>
+<!--END SECTIONS STORIES AREA-->
+<br ></br>
+<!--BEGIN PARTNERS AND COPYRIGHT AREA-->
+<!-- Vignette StoryServer 5.0 Sun Feb 18 15:21:47 2001 -->
+<table  TABID="13136" bgcolor="#e8e6e6" border="0" cellpadding="0" cellspacing="0" width="502">
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  align="center" valign="top" width="487">
+<!--BEGIN MILESTONES, OPPORTUNITIES, BOOK SELECTION TABLE -->
+<!-- Vignette StoryServer 5.0 Thu Apr 19 17:53:56 2001 -->
+<table  TABID="13133" border="0" cellpadding="0" cellspacing="0" width="478">
+<tr >
+<td  valign="top" width="125">
+<div  class="partnerarea">
+<font  color="#990000">
+<b >
+Milestones
+</b>
+</font>
+<br ></br>
+Time's roundup of defining moments in the lives of the world's newsmakers
+<br ></br>
+<a  href="/time/milestones/">
+<font  color="#003399">
+GO TO PAGE &gt;&gt;
+</font>
+</a>
+<br ></br>
+<br ></br>
+</div>
+</td>
+<td  valign="top" width="1">
+<img ></img>
+</td>
+<td  valign="top" width="125">
+<div  class="partnerarea">
+<font  color="#990000">
+<b >
+Opportunities
+</b>
+</font>
+<br ></br>
+<a  href="http://affiliate.timeincmags.com/affiliate/time/homepage/index.html">
+<font  color="#003399">
+Join TIME's Affiliate Program
+</font>
+</a>
+<br ></br>
+<br ></br>
+<a  href="http://www.time.com/time/freeinfo">
+<font  color="#003399">
+Free Product Info
+</font>
+</a>
+<br ></br>
+<br ></br>
+<a  href="http://www.time-planner.com/planner2001/timecom/index.html">
+<font  color="#003399">
+Media Kit
+</font>
+</a>
+<br ></br>
+<br ></br>
+</div>
+</td>
+<td  valign="top" width="1">
+<img ></img>
+</td>
+<td  valign="top" width="155">
+<div  class="partnerarea">
+<font  color="#990000">
+<b >
+TIME book selections
+</b>
+</font>
+<br ></br>
+<a  href="http://service.bfast.com/bfast/click?bfmid=2181&sourceid=37763144&bfpid=192904920X&bfmtype=book" target="new">
+<font  color="#003399">
+TIME Year in Review
+</font>
+</a>
+<br ></br>
+<a  href="http://service.bfast.com/bfast/click?bfmid=2181&sourceid=37763144&bfpid=1929049110&bfmtype=book" target="new">
+<font  color="#003399">
+TIME Almanac 2001
+</font>
+</a>
+<br ></br>
+<a  href="http://service.bfast.com/bfast/click?bfmid=2181&sourceid=37763144&bfpid=0821224980&bfmtype=book" target="new">
+<font  color="#003399">
+Faces of TIME
+</font>
+</a>
+<br ></br>
+<a  href="http://service.bfast.com/bfast/click?bfmid=2181&sourceid=37763144&bfpid=1883013496&bfmtype=book" target="new">
+<font  color="#003399">
+TIME 100: Leaders and Revolutionaries
+</font>
+</a>
+<br ></br>
+<a  href="http://service.bfast.com/bfast/click?bfmid=2181&sourceid=37763144&bfpid=1883013623&bfmtype=book" target="new">
+<font  color="#003399">
+TIME 100: Builders and Titans, Scientist and Thinkers
+</font>
+</a>
+<br ></br>
+</div>
+</td>
+</tr>
+</table>
+<!--END MILESTONES, OPPORTUNITIES, BOOK SELECTION TABLE -->
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<!-- BEGIN TIME PARTNERS TABLE -->
+<!-- Vignette StoryServer 5.0 Sun Feb 18 15:21:47 2001 -->
+<table  TABID="13134" border="0" cellpadding="0" cellspacing="0">
+<tr  valign="top">
+<td >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<font  color="#990000">
+<b >
+TIME partners
+</b>
+</font>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</td>
+<!-- FIRST PARTNERS CELL -->
+<td >
+<a  href="http://www.mtv.com/nav/intro_chooseorlose.html">
+<img ></img>
+</a>
+</td>
+<td  bgcolor="#000000" valign="top" width="1">
+<img ></img>
+</td>
+<!-- END FIRST PARTNERS CELL -->
+<!-- THRID PARTNERS CELL -->
+<td >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<script ></script>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="http://adremote.pathfinder.com/click.ng/spacedesc=cmaolmrktplcebut&pagepos=12" target="new">
+<img ></img>
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</td>
+<!-- END THRID PARTNERS CELL -->
+</tr>
+</table>
+<!-- END TIME PARTNERS TABLE -->
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<table  TABID="13135" border="0" cellpadding="0" cellspacing="0" width="481">
+<tr >
+<td  align="center" valign="top">
+<!--BEGIN BOILER PLATE-->
+<!-- Vignette StoryServer 5.0 Thu Mar 22 11:40:32 2001 -->
+<div  class="partnerarea">
+Copyright © 2001 Time Inc. All rights reserved.
+<br ></br>
+Reproduction in whole or in part without permission is prohibited.
+<br ></br>
+<br ></br>
+<a  href="/time/faq/">
+<font  color="#003399">
+FAQ
+</font>
+</a>
+|
+<a  href="/time/sitemap/">
+<font  color="#003399">
+Site Map
+</font>
+</a>
+|
+<a  href="/time/advanced/search/">
+<font  color="#003399">
+Search
+</font>
+</a>
+|
+<a  href="/time/contactus/">
+<font  color="#003399">
+Contact Us
+</font>
+</a>
+<br ></br>
+<a  href="/time/documents/privacy/">
+<font  color="#003399">
+Privacy Policy
+</font>
+</a>
+|
+<a  href="http://www.pathfinder.com/help/hmember/agreement.html">
+<font  color="#003399">
+Terms of Use
+</font>
+</a>
+|
+<a  href="https://secure.customersvc.com/servlet/Show;$sessionid$NEQ2XRYAAACRPLAQZ2BQAUADAAB50?WESPAGE=td/Services/Permissions/permissions.html&MSRSMAG=TD">
+<font  color="#003399">
+Reprints &amp; Permissions
+</font>
+</a>
+|
+<a  href="/time/pr">
+<font  color="#003399">
+Press Releases
+</font>
+</a>
+</div>
+<!--END BOILER PLATE-->
+<br ></br>
+<br ></br>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--END PARTNERS AND COPYRIGHT AREA-->
+</td>
+<!--BEGIN RIGHT HAND COLOUMN-->
+<td  bgcolor="#CCCCCC" valign="top" width="170">
+<!--BEGIN FROM TIME MAGAZINE-->
+<!-- Vignette StoryServer 5.0 Wed May 16 12:16:12 2001 -->
+<!--START PREVIEW-->
+<!--END PREVIEW CODE-->
+<map  name="mag_cover">
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<img ></img>
+<br ></br>
+<table  TABID="13137" border="0" cellpadding="6" cellspacing="0" width="158">
+<tr >
+<td >
+<center >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="http://www.pathfinder.com/r0/timesubs/nav_right/out?https://cgi.pathfinder.com/cgi-bin/magsubs/cc/subs/td_half?EFFORTKEY=TDDJU58">
+Subscribe to TIME
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</center>
+<img ></img>
+<br ></br>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+E d u c a t i o n
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="/time/covers/1101010521/index.html" target="_self">
+TIME Picks the Best Schools in America
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<p >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+E n e r g y
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="/time/business/article/0,8599,109708,00.html" target="_self">
+Are We Being Gouged Over Gasoline Prices?
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</p>
+<p >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+B e h a v i o r
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="/time/magazine/article/0,9171,1101010521-109593,00.html" target="_self">
+Can Gays Go Straight and Should They Try?
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</p>
+<p >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+C o l u m n
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="/time/magazine/article/0,9171,1101010521-109606,00.html" target="_self">
+Joel Stein Spends a Day With the Stanley Cup
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</p>
+<p >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+L e t t e r s
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="/time/magazine/article/0,9171,1101010521-109629,00.html" target="_self">
+Readers React to Our Quest for a Superkid Cover Story
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</p>
+<p ></p>
+<center >
+<a  href="/time/magazine/current/">
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+More From the Magazine
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</center>
+</td>
+</tr>
+</table>
+<!--END FROM TIME MAGAZINE-->
+<center >
+<div  style="position: absolute; height:0px; width:0px; top:0px; left:0px; z-index:1">
+<img ></img>
+</div>
+<table  TABID="13140" bgcolor="#000000" border="0" cellpadding="1" cellspacing="0" width="155">
+<tr >
+<td >
+<table  TABID="13139" bgcolor="#FFFFFF" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td >
+<img ></img>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<script ></script>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="http://adremote.pathfinder.com/click.ng/spacedesc=cmtimemktplbut&pagepos=16" target="new">
+<img ></img>
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<table  TABID="13138" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="10">
+<tr >
+<td >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  class="rightsidelinks" href="http://www.pathfinder.com/r0/timesubs/mktplc_sub/out?http://cgi.timeinc.net/cgi-bin/magsubs/cc/subscribe/timeab2?EFFORTKEY=4">
+<b >
+Subscribe
+</b>
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+<a  class="rightsidelinks" href="http://www.pathfinder.com/r0/timesubs/mktplc_time/out?http://cgi.timeinc.net/cgi-bin/magsubs/cc/subscribe/timeab2?EFFORTKEY=5" target="_new">
+TIME
+</a>
+<br ></br>
+<a  class="rightsidelinks" href="http://www.pathfinder.com/subs/time/land/tfk_land.html" target="_new">
+TIME for Kids
+</a>
+<br ></br>
+<a  class="rightsidelinks" href="https://cgi.timeinc.net/cgi-bin/magsubs/cc/subscribe/onab?EFFORTKEY=20" target="_new">
+ON Magazine
+</a>
+<img ></img>
+<br ></br>
+<a  class="rightsidelinks" href="http://www.pathfinder.com/subs/time/land/int_land.html" target="_new">
+Non-U.S. Editions
+</a>
+<br ></br>
+<br ></br>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="http://www.pathfinder.com/subs/time/land/gift_land.html">
+<b >
+Gift Subscriptions
+</b>
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+<br ></br>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="https://secure.customersvc.com/servlet/Show?WESPAGE=td/home.html&MSRSMAG=TD">
+<b >
+Subscriber Services
+</b>
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<br ></br>
+<a  class="rightsidelinks" href="https://secure.customersvc.com/servlet/Show;$sessionid$U2L1VJQAABR35LAQZ2BQAAA?WESPAGE=td/Transactions/Renewal/special1.html&MSRSMAG=TD&nocache=true" target="_blank">
+Renew
+</a>
+<br ></br>
+<a  class="rightsidelinks" href="https://secure.customersvc.com/servlet/Show?WESPAGE=td/Transactions/Find_Acnt/find_acnt.html&MSRSMAG=TD&TRANSTYPE=manageca" target="_blank">
+Change Address
+</a>
+<br ></br>
+<a  class="rightsidelinks" href="https://secure.customersvc.com/servlet/Show?WESPAGE=td/Transactions/Tcc/tccgift.html&MSRSMAG=TD&TRANSTYPE=tcc" target="_blank">
+Pay your bill
+</a>
+<br ></br>
+<a  class="rightsidelinks" href="https://secure.customersvc.com/servlet/Show?WESPAGE=td/home.html&MSRSMAG=TD" target="_new">
+And more...
+</a>
+<a  class="rightsidelinks" href="https://secure.customersvc.com/servlet/Show?WESPAGE=td/home.html&MSRSMAG=TD" target="_new"></a>
+<br ></br>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- END SUBSCRIPTION BOX -->
+</center>
+<!--BEGIN WEB FEATURES-->
+<!-- Vignette StoryServer 5.0 Fri May 11 15:16:29 2001 -->
+<!--BEGIN RIGHT HAND COLUMN-->
+<br ></br>
+<!--BEGIN WEB FEATURES-->
+<img ></img>
+<br ></br>
+<!--BEGIN PERSON OF THE WEEK TABLE-->
+<table  TABID="13141" border="0" cellpadding="0" cellspacing="7" width="170">
+<tr >
+<td >
+<a  href="/time/pow/">
+<img ></img>
+</a>
+<br ></br>
+<div  align="left" class="rightsidetext">
+<b >
+This Week:
+</b>
+<a  href="/time/pow/">
+Donald Rumsfeld
+</a>
+</div>
+</td>
+</tr>
+</table>
+<!--END PERSON OF THE WEEK TABLE-->
+<!--BEGIN AIDS TABLE-->
+<!--&amp;amp;lt;table border="0" cellpadding="0" cellspacing="7" width="170"&amp;amp;gt;
+&amp;amp;lt;tr&amp;amp;gt;
+&amp;amp;lt;td&amp;amp;gt; 
+&amp;amp;lt;a href="/time/2001/aidsinafrica/"&amp;amp;gt;&amp;amp;lt;img src="http://a740.g.akamai.net/f/740/606/1d/image.pathfinder.com/time/images/rightnav/tout_aids.gif" width="155" height="115" border="0"&amp;amp;gt;&amp;amp;lt;/a&amp;amp;gt;
+&amp;amp;lt;/td&amp;amp;gt;
+&amp;amp;lt;/tr&amp;amp;gt;
+&amp;amp;lt;/table&amp;amp;gt;-->
+<!--END AIDS TABLE-->
+<!--BEGIN GB-->
+<table  TABID="13142" border="0" cellpadding="0" cellspacing="7" width="170">
+<tr >
+<td >
+<a  href="/time/global/">
+<img ></img>
+</a>
+<br ></br>
+<div  class="rightsidetext">
+<b >
+Cover Story:
+</b>
+<a  href="/time/global/may/cover.html">
+Air War
+</a>
+<br ></br>
+<b >
+Departments:
+</b>
+<br ></br>
+<a  href="/time/global/may/briefing.html">
+Global Briefing
+</a>
+|
+<a  href="/time/global/may/beaters.html">
+World Beaters
+</a>
+|
+<a  href="/time/global/may/travel.html">
+Business Travel
+</a>
+|
+<a  href="/time/global/may/agenda.html">
+Global Agenda
+</a>
+</div>
+</td>
+</tr>
+</table>
+<!--END GB-->
+<!--BEGIN INNOVATORS TABLE-->
+<table  TABID="13143" border="0" cellpadding="0" cellspacing="7" width="170">
+<tr >
+<td >
+<a  href="/time/innovators_v2/">
+<img ></img>
+</a>
+<br ></br>
+<div  class="rightsidetext">
+<b >
+This Month:
+</b>
+<a  href="/time/innovators_v2/alt_medicine/index.html">
+Alt. Medicine
+</a>
+<br ></br>
+<b >
+Previous:
+</b>
+<a  href="/time/innovators/design/index.html">
+Design
+</a>
+|
+<a  href="/time/innovators/science/index.html">
+Science
+</a>
+<a  href="/time/innovators/web/index.html">
+Web
+</a>
+|
+<a  href="/time/innovators/business/index.html">
+Finance
+</a>
+|
+<a  href="/time/innovators/culinary/index.html">
+Culinary Arts
+</a>
+|
+<a  href="/time/innovators/spirituality/index.html">
+Spirituality
+</a>
+|
+<a  href="/time/innovators_v2/travel/index.html">
+Travel
+</a>
+|
+<a  href="/time/innovators_v2/storytellers/index.html">
+Storytellers
+</a>
+|
+<a  href="/time/innovators_v2/crime/index.html">
+Justice
+</a>
+</div>
+</td>
+</tr>
+</table>
+<!--END INNOVATORS TABLE-->
+<!--END WEB FEATURES-->
+<br ></br>
+<!--END RIGHT HAND COLUMN-->
+<!--END WEB FEATURES-->
+<!--BEGIN PHOTO ESSAY-->
+<!-- Vignette StoryServer 5.0 Wed May 16 12:16:03 2001 -->
+<a  href="/time/photoessays/">
+<img ></img>
+</a>
+<br ></br>
+<table  TABID="13144" border="0" cellpadding="6" cellspacing="0" width="164">
+<tr >
+<td  valign="top">
+<a  href="/time/photoessays/memorial/">
+<img ></img>
+</a>
+<div  class="rightsidetext">
+<a  href="/time/photoessays/memorial/">
+In Memoriam
+</a>
+<br ></br>
+On assignment for TIME, photographer David Leeson visited the Oklahoma City National Memorial days before Timothy McVeigh was scheduled to be executed. 05/01
+</div>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<a  href="/time/covers/1101010514/">
+<img ></img>
+</a>
+<div  class="rightsidetext">
+<a  href="/time/covers/1101010514/">
+The Nun Study
+</a>
+<br ></br>
+How one scientist and 678 sisters are uncovering the secrets of Alzheimer's. Photographs for TIME by Steve Liss. 05/01
+</div>
+</td>
+</tr>
+</table>
+<!--END PHOTO ESSAY-->
+<!--Begin Advertiser Section-->
+<!-- Vignette StoryServer 5.0 Mon May 07 14:19:32 2001 -->
+<img ></img>
+<br ></br>
+<table  TABID="13145" bgcolor="#999999" border="0" cellpadding="6" cellspacing="0" width="170">
+<tr >
+<td  width="158">
+<center >
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<script ></script>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<a  href="http://adremote.pathfinder.com/click.ng/spacedesc=time125x125but&pagepos=29" target="new">
+<img ></img>
+</a>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+</center>
+</td>
+</tr>
+<tr >
+<td  width="158">
+<center >
+<a  href="http://cgi.pathfinder.com/cgi-bin/magsubs/cc/subscribe/realsimpleweb?EFFORTKEY=5">
+<img ></img>
+</a>
+</center>
+</td>
+</tr>
+</table>
+<!--End Advertiser Section-->
+<center >
+<img ></img>
+<form  action="http://service.bfast.com/bfast/click">
+<input ></input>
+<input ></input>
+<input ></input>
+<table  TABID="13146" border="0" cellpadding="0" cellspacing="0" width="120">
+<tr >
+<td  align="right" bgcolor="#3366cc" colspan="2">
+<a  href="http://service.bfast.com/bfast/click?bfmid=2181&sourceid=37763144&categoryid=homepage">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  face="ARIAL, HELVETICA" size="-2">
+<font ></font>
+</td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#3366cc" height="30" valign="middle">
+<font  face="helvetica, arial, ms sans serif, sans-serif" size="-2">
+<select >
+<option  value="keywordsearch">
+Keyword
+</option>
+<option  value="titlesearch">
+Title
+</option>
+<option  value="authorsearch">
+Author
+</option>
+</select>
+</font>
+</td>
+<td  align="center" bgcolor="#3366cc" height="30" valign="middle">
+<input ></input>
+</td>
+</tr>
+</table>
+</form>
+</center>
+</td>
+<!--END RIGHT HAND COLOUMN-->
+</tr>
+</table>
+<!--END MAIN TABLE-->
+<!-- Vignette StoryServer 5.0 Tue Mar 27 13:06:09 2001 -->
+<!--DoubleClick Superstitial Code BEGIN-->
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<!--DoubleClick Superstitial Code END-->
+<!--DoubleClick Ad BEGIN-->
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<!--DoubleClick Ad END-->
+<!-- END ONE-CELL DOUBLECLICK MASTER TABLE -->
+<p ></p>
+<p ></p>
+</body>
+</html>

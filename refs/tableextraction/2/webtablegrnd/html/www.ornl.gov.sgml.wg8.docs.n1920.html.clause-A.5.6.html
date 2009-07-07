@@ -1,0 +1,377 @@
+<html >
+<head >
+<title >
+ISO/IEC 10744 - A.5.6 Default value list
+</title>
+</head>
+<body  bgcolor="#FFFFFF">
+<div >
+<a  name="en-6626"></a>
+<a ></a>
+<table  TABID="10530">
+<tr >
+<td  valign="top" width="25%">
+<img ></img>
+</td>
+<td  align="center" colspan="2" colstart="2" valign="top" width="50%">
+<a  href="http://www.iso.ch">
+<img ></img>
+</a>
+</td>
+<td  align="left" colspan="2" colstart="2">
+Copyright © 1992, 1997 International Organization for Standardization. All rights reserved.
+<p >
+<font  size="-2">
+This electronic document is for use during development and review of International Standards. Official printed copies of International Standards can be purchased from the ISO and the national standards organization of your country.
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFF80" nowrap="nowrap" width="25%">
+<font  face="Helvetica" size="-1">
+<b >
+<a  href="clause-A.5.7.html">
+Next Clause
+</a>
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#FFFF80" nowrap="nowrap" width="25%">
+<font  face="Helvetica" size="-1">
+<b >
+<a  href="clause-A.5.5.html">
+Previous Clause
+</a>
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#FFFF80" nowrap="nowrap" width="25%"></td>
+<td  align="center" bgcolor="#FFFF80" nowrap="nowrap" width="25%"></td>
+</tr>
+</table>
+<p >
+<map  name="clause-nav">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</p>
+</div>
+<div >
+<hr ></hr>
+<p >
+<a  href="clause-A.5.html">
+<h1 >
+A.5 General Architecture
+</h1>
+</a>
+</p>
+<h2 >
+A.5.6 Default value list
+</h2>
+<div >
+<div >
+<h3 >
+Subclauses:
+</h3>
+<ul >
+<li >
+<a  href="clause-A.5.6.html#clause-A.5.6.1">
+A.5.6.1 Default value list attributes
+</a>
+<ul ></ul>
+</li>
+<li >
+<a  href="clause-A.5.6.html#clause-A.5.6.2">
+A.5.6.2 Default value list element
+</a>
+<ul ></ul>
+</li>
+</ul>
+<hr ></hr>
+</div>
+</div>
+<p >
+A "default value list" is a means by which an application designer can control the assignment of attribute values in a manner that reflects the element structure of the document.
+</p>
+<div >
+<a  name="en-6630"></a>
+<a >
+<h3 >
+A.5.6.1 Default value list attributes
+</h3>
+</a>
+<p >
+The attribute form
+<i >
+dvlatt
+</i>
+allows default attribute values to be associated with an element.
+</p>
+<p >
+The attribute
+<b >
+subelement default value list
+</b>
+(
+<i >
+subdvl
+</i>
+) specifies default values for impliable attributes that will apply for subelements of the element for which the attribute is specified. The attribute is recursive (that is, default values can be specified for subdvl itself). The attribute value is a list of IDs of default value list elements.
+</p>
+<p >
+The attribute
+<b >
+sibling default value list
+</b>
+(
+<i >
+sibdvl
+</i>
+) specifies default values for impliable attributes that will apply in the document instance for younger siblings of the element for which the attribute is specified. The attribute is recursive (that is, default values can be specified for sibdvl itself). The attribute value is a list of IDs of default value list elements.
+</p>
+<p >
+The attribute
+<b >
+self default value list
+</b>
+(
+<i >
+selfdvl
+</i>
+) specifies default values for impliable attributes that will apply in the document instance for the element for which the attribute is specified. The attribute value is a list of IDs of default value list elements.
+</p>
+<p >
+<font  face="Helvetica" size="-1">
+NOTE 477 The same default value list can be applied to an element, its subelements, and/or its siblings by naming it as the self default value list, the subelement default value list, and/or the sibling default value list.
+</font>
+</p>
+<p >
+Default values specified later in the element structure override earlier ones. Specifically, a subdvl will override the subdvl of an ancestor. A sibdvl will override a subdvl, and will also override a sibdvl of an older sibling.
+</p>
+<p >
+<font  face="Helvetica" size="-1">
+NOTE 478 In other words, at the end of the elder sibling that specifies a sibdvl, the sibdvl is effectively treated as the subdvl of its parent. That is, there is no stacking of sibdvl's over one another, or over the parent subdvl (if any); the parent subdvl is simply replaced by the latest sibdvl at the point where it takes effect.
+</font>
+</p>
+<p >
+In addition, if a default value defined in a default value list is defined as a default-setting attribute then the default value will be reset to the value specified on the nearest element of the type controlled by the default value list (ancestors for subelement default value lists, siblings for sibling default value lists).
+</p>
+<pre >
+<font  face="Courier">
+&lt;!-- Default Value List Attributes --&gt;
+&lt;![ %dvlist; [
+&lt;!attlist
+-- dvlatt --      -- Default value list attributes --
+                  -- Clause: A.5.6.1 --
+   #ALL
+
+   subdvl         -- Subelement impliable attribute value defaults --
+      IDREFS      -- Reference --
+                  -- Reftype: dvlist+ --
+                  -- Note: Cannot be indirect --
+      #IMPLIED    -- Default: none --
+
+   sibdvl         -- Sibling impliable attribute value defaults --
+      IDREFS      -- Reference --
+                  -- Reftype: dvlist+ --
+                  -- Note: Cannot be indirect --
+      #IMPLIED    -- Default: none --
+
+   selfdvl        -- Self impliable attribute value defaults --
+      IDREFS      -- Reference --
+                  -- Reftype: dvlist+ --
+                  -- Note: Cannot be indirect --
+      #IMPLIED    -- Default: none --
+&gt;
+]]&gt;&lt;!-- dvlist --&gt;
+</font>
+</pre>
+</div>
+<div >
+<a  name="en-6650"></a>
+<a >
+<h3 >
+A.5.6.2 Default value list element
+</h3>
+</a>
+<p >
+The element form
+<b >
+default value list
+</b>
+(
+<i >
+dvlist
+</i>
+) contains an attribute specification list. The attribute values are evaluated only when actually used as a default.
+</p>
+<p >
+The attribute
+<b >
+default value element types
+</b>
+(
+<i >
+dvgi
+</i>
+) specifies the generic identifiers of the element types whose default values are being defined. If not specified, the default value list is applied to all elements within the scope of the default value list. If the keyword "#ALL" is specified, the default value list applies globally to all elements in the document (if no GIs are specified) or to all elements of the types specified.
+</p>
+<p >
+<font  face="Helvetica" size="-1">
+NOTE 479 Default value lists for which "#ALL" is specified are always processed, whether or not they are referenced by dvlatt attributes.
+</font>
+</p>
+<p >
+<font  face="Helvetica" size="-1">
+NOTE 480 Global default value lists can be used as a means of establishing an initial set of default values for all impliable attributes.
+</font>
+</p>
+<p >
+The attribute
+<b >
+preempted attributes
+</b>
+(
+<i >
+preatts
+</i>
+) identifies attributes whose values are to be preempted. An attempt to specify such an attribute while the preempted value is in effect is
+<i >
+not
+</i>
+a reportable architectural error, but it has no effect.
+</p>
+<p >
+<font  face="Helvetica" size="-1">
+NOTE 481 This rule applies to attempts to preempt an already preempted attribute.
+</font>
+</p>
+<p >
+<font  face="Helvetica" size="-1">
+NOTE 482 A preempted attribute is similar to an SGML fixed attribute in that no other value can be specified for it. However, it is an error to attempt to respecify a fixed attribute, while it is not an error to attempt to respecify a preempted attribute.
+</font>
+</p>
+<p >
+<font  face="Helvetica" size="-1">
+NOTE 483 By preempting the subdvl, sibdvl, and selfdvl attributes, an application designer can prevent the defaults from being changed.
+</font>
+</p>
+<p >
+The attribute
+<b >
+default-setting attributes
+</b>
+(
+<i >
+defatts
+</i>
+) names those attributes in the default value list whose values are to become the new default if specified for elements within the scope of the active default value list. In this case, "specified" also means specified for a selfdvl. Default-setting attributes used for subelement default values lists only propagate down the element hierarchy, they do not propagate from elder sibling to younger sibling (unless the same or equivalent default value list is also used as a sibling default value list).
+</p>
+<p >
+<font  face="Helvetica" size="-1">
+NOTE 484 Application designers can define fixed default value lists by mapping the dvlist-form element's content to an attribute and requiring the element in context.
+</font>
+</p>
+<pre >
+<font  face="Courier">
+&lt;!-- Default Value List --&gt;
+&lt;![ %dvlist; [
+&lt;!element
+   dvlist         -- Default value list --
+                  -- Clause: A.5.6.2 --
+   - O
+   (#PCDATA)      -- Ulextype: attspecs --
+
+-- Attributes: dvlist --
+-- CommonAttributes: dafe, dvlist, etfullnm, id, ireftype,
+   lextype, opacity --
+-- Referrers: dvlatt:selfdvl, dvlatt:sibdvl, dvlatt:subdvl --
+&gt;
+&lt;!attlist
+   dvlist         -- Default value list --
+                  -- Clause: A.5.6.2 --
+
+   id             -- Unique identifier --
+      ID
+      #REQUIRED
+
+   dvgi           -- Default value element types --
+                  -- Applies to all elements if omitted --
+      CDATA       -- Lextype: (GI+|(#ALL,GI*)) --
+      #IMPLIED    -- Default: all elements --
+
+   preatts        -- Attributes whose values are to be preempted --
+      NAMES       -- Constraint: must be in dvlist content --
+      #IMPLIED    -- Default: none --
+
+   defatts        -- Attributes whose values become the default value
+                     when specified --
+      NAMES       -- Constraint: must be in dvlist content --
+      #IMPLIED    -- Default: no replaceable defaults --
+&gt;
+]]&gt;&lt;!-- dvlist --&gt;
+</font>
+</pre>
+</div>
+</div>
+<div >
+<table  TABID="10531" width="100%">
+<tr >
+<td  align="center" bgcolor="#FFFF80" nowrap="nowrap" width="25%">
+<font  face="Helvetica" size="-1">
+<b >
+<a  href="clause-A.5.7.html">
+Next Clause
+</a>
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#FFFF80" nowrap="nowrap" width="25%">
+<font  face="Helvetica" size="-1">
+<b >
+<a  href="clause-A.5.5.html">
+Previous Clause
+</a>
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#FFFF80" nowrap="nowrap" width="25%"></td>
+<td  align="center" bgcolor="#FFFF80" nowrap="nowrap" width="25%"></td>
+</tr>
+</table>
+<hr ></hr>
+<table  TABID="10532" border="0" width="80%">
+<tr >
+<td  align="center" colspan="2" colstart="1" nowrap="nowrap" rowspan="2" width="70%">
+<a  href="http://www.iso.ch">
+<img ></img>
+</a>
+</td>
+<td  align="left" colstart="2" rowspan="2">
+Copyright © 1992, 1997 International Organization for Standardization. All rights reserved.
+<p >
+<font  size="-2">
+This electronic document is for use during development and review of International Standards. Official printed copies of International Standards can be purchased from the ISO and the national standards organization of your country.
+</font>
+</p>
+</td>
+</tr>
+</table>
+<hr ></hr>
+<p >
+<font  size="-2">
+HTML generated from the original SGML source using a DSSSL style specification and the SGML output back-end of the
+<a  href="http://www.jclark.com/jade">
+JADE DSSSL engine
+</a>
+.
+</font>
+</p>
+</div>
+</body>
+</html>

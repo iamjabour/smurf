@@ -1,0 +1,3367 @@
+<!-- Vignette StoryServer 5.0 Wed May 16 09:03:21 2001 -->
+<html >
+<head >
+<title >
+Morningstar.com - Unbiased stock opinions and analysis
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<style >
+<!--   
+body {background-color:#ffffff; color:#000000; font-family:trebuchet ms,arial,helvetica; font-size:13px;}
+td {font-family:trebuchet ms,arial,helvetica; font-size:13px; color:#000000;}
+a {font-family:trebuchet ms,arial,helvetica; text-decoration:underline; color:#663300;} 
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+a.featureTitle {font-size:20px;}
+a.minus2 {font-size:10px; color:#000000;}
+a.rcolumn {color:#006666; font-weight:bold; text-decoration:underline;}
+.lstCaption {font-weight:bold; line-height:11px; font-size:10px; color:#000000;}
+.titlered {font-weight:bold; font-size:10px; color:#990000;}
+.name {font-weight:bold; text-decoration:underline;}
+.numberg {color:#006600;}
+.numberr {color:#ff0000;}
+.trailerg {color:#666666; font-size:10px;}
+.txtw {color:#ffffff;}
+.minus2 {font-size:10px;}
+.dateb {color:#006666; font-size:10px;}
+.blackBkgrnd {font-family:trebuchet ms,arial,helvetica; font-size:13px; color:#FFFFFF;}
+.sideNav {COLOR: #000000; TEXT-DECORATION: underline}
+.sideNav:visited{COLOR: #000000} 
+.sideNav:active{COLOR: #000000}
+.sideNav:hover{COLOR: #CC3300}
+.rightNav:link{COLOR: #006666; TEXT-DECORATION: underline}
+.rightNav:visited{COLOR: #006666}
+.rightNav:active{COLOR: #006666}
+-->
+</style>
+<script >
+<!--
+
+function goAnalysisQuickTake(form) {
+   url = "http://quicktake.morningstar.com/StockP/Analysis/_" + form.analysisTicker.value + ".html";
+   form.action = url;
+   form.submit();   
+}
+
+function goQuickTake(form) {
+   if (form.ticker.value == "" || form.pageSelect.selectedIndex == 0){
+      if (form.ticker.value == "") alert("Please enter a ticker.");
+      if (form.pageSelect.selectedIndex == 0) alert("Please select a Quicktake page.");
+   } else {
+      url = form.pageSelect[form.pageSelect.selectedIndex].value + form.ticker.value + ".html";
+      form.action = url;
+      form.submit();   
+   }   
+}
+
+function ChangeArchive(preselection) {
+	var v_index = document.goform1.dept.value;
+	if (v_index != "")
+	{	document.goform1.action = "/doc/article/article_archive";	//"/CoverPages/article_Archive";
+		document.goform1.submit();
+	}
+	else              
+	{ return false;	}	
+}
+
+function oldcheckSelection(form1) {
+	index = form1.preset.selectedIndex;
+	if(index==-1) {
+		url = "http://search.morningstar.com/se/s97is.dll?dept=Stock+Analyst+Picks&amp;amp;amp;amp;Action=FilterSearch&amp;amp;amp;amp;Filter=Archive.filt";
+		form1.action = url;
+        form1.submit();
+    } else {
+		url = "http://screen.morningstar.com/StockResults.html";	
+		form1.action = url;		
+        form1.submit();
+	}
+}
+
+function checkSelection() {
+		if(document.forms[1].preset.options[document.forms[1].preset.selectedIndex].value==0)
+	;
+     else {
+		window.location = document.forms[1].preset.options[document.forms[1].preset.selectedIndex].value;
+	}
+}
+
+function open_Win(url) {
+	var winargs = "toolbar=no,directories=no,menubar=no,status=no,resizable=yes,scrollbars=no,width=503,height=551,screenX=200,screenY=100,left=100,top=25";
+		var childWin=window.open(url,'StockTour',winargs);
+}
+
+function openPlayerSelection(windowURL) {  
+    playerSelectWin = window.open(windowURL,'playerSelectWin','toolbar=no,titlebar=no,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=0,width=312,height=480,top=20,left=10');   
+}
+ 
+function submitArchive(preselection) {
+
+	index = preselection.selectedIndex;
+	//alert(index);
+	if(index==1) {
+		document.goform1.ssection.value = "archiveAskTheAnalyst";
+	} else if(index==2) {
+		document.goform1.ssection.value = "archiveAskTheExpert";
+	} else if(index==3) {
+		document.goform1.ssection.value = "archiveBuybackUpdate";
+	} else if(index==4) {
+		document.goform1.ssection.value = "archiveCommentary";
+	} else if(index==5) {
+		document.goform1.ssection.value = "archiveImprovingYourPortfolio";
+	} else if(index==6) {
+		document.goform1.ssection.value = "archiveSpecialReports";
+	} else if(index==7) {
+		document.goform1.ssection.value = "archiveStockAnalystPicks";
+	} else if(index==8) {
+		document.goform1.ssection.value = "archiveTechnologyBytes";
+	} 
+	document.goform1.submit();
+} 
+
+function submitColumnist(preselection) {
+
+	index = preselection.selectedIndex;
+	//alert(index);
+	if(index==1) {
+		document.goform0.ssection.value = "columnistPatDorsey";
+	} else if(index==2) {
+		document.goform0.ssection.value = "columnistRussKinnel";
+	} else if(index==3) {
+		document.goform0.ssection.value = "columnistToddPorter";
+	} else if(index==4) {
+		document.goform0.ssection.value = "columnistJohnRekenthaler";
+	} else if(index==5) {
+		document.goform1.ssection.value = "columnistPeterDiTeresa";
+	} 
+	document.goform0.submit();
+} 
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF">
+<!--
+.bkcolor { color: #CCCCCC ; text-decoration: none}
+-->
+<!--
+.gabCSS {font-family:"Trebuchet MS",Arial,Helvetica;}
+TD {font-family:"Trebuchet MS",Arial,Helvetica;}
+BODY {font-family:"Trebuchet MS",Arial,Helvetica;}
+-->
+<!--
+.botNav{COLOR: #000000; FONT-FAMILY: Trebuchet MS,Arial,Helvetica} 
+.botNav:visited{COLOR: #000000}
+.botNav:active{COLOR: #000000}
+.botNav:hover{COLOR: #CC3300}
+.botNav:link{COLOR: #000000}
+-->
+<table  TABID="09558" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  valign="top">
+<td  align="left">
+<a  href="http://www.morningstar.com/" target="_top">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+<td  align="right" valign="bottom">
+<img ></img>
+<map  name="NavBarMap1">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</td>
+</tr>
+<tr  valign="top">
+<td  align="left" bgcolor="#FF0000" height="5">
+<img ></img>
+</td>
+<td  bgcolor="#FF0000">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#FF0000">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="09559" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="center" bgcolor="#666666" height="1" valign="top">
+<img ></img>
+</td>
+<td  align="center" bgcolor="#666666" height="1" valign="top">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#666666" valign="top">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#666666" valign="top">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#666666" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#333333" height="5" valign="top">
+<img ></img>
+</td>
+<td  align="center" bgcolor="#333333" height="5" valign="top">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#333333" valign="top">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#333333" valign="top">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#333333" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#333333" valign="top">
+<img ></img>
+</td>
+<td  align="center" bgcolor="#333333" valign="top">
+<a  href="/event.ng/Type=click&ProfileID=674&RunID=4208&AdID=2852&GroupID=34&FamilyID=1&TagValues=120.1520&Redirect=http:%2F%2Fclick.iballs.a1.avenuea.com%2Fiballs%2Fgo%2Fmorningstar_street_041101da_01%2Fdirect;hi.60;wi.468%2F01" target="_top">
+<img ></img>
+</a>
+<!-- /AdSpace -->
+</td>
+<td  align="right" bgcolor="#333333" valign="top">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#333333" valign="top">
+<a  href="/event.ng/Type=click&ProfileID=361&RunID=4305&AdID=2840&GroupID=13&FamilyID=1&TagValues=1151&Redirect=http:%2F%2Fwww.morningstar.com%2Fcenters%2Fwealthmgmt.html" target="_top">
+<img ></img>
+</a>
+<!-- /AdSpace -->
+</td>
+<td  align="right" bgcolor="#333333" valign="top" width="7">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#333333" height="5" valign="top">
+<img ></img>
+</td>
+<td  align="center" bgcolor="#333333" height="5" valign="top">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#333333" valign="top">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#333333" valign="top">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#333333" valign="top">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="09560" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#CCCCCC" height="1" width="696">
+<img ></img>
+</td>
+<td  bgcolor="#CCCCCC" height="1" width="65">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#333333" valign="center">
+<td  height="24">
+<b >
+<font  arial="#DEFAULT" color="#CCCCCC" face="Trebuchet" helvetica="#DEFAULT" ms="#DEFAULT" size="-1">
+<a  class="bkcolor">
+Home
+</a>
+|
+<a  class="bkcolor">
+Portfolio
+</a>
+|
+<a  class="bkcolor">
+Stocks
+</a>
+|
+<a  class="bkcolor">
+Funds
+</a>
+|
+<a  class="bkcolor">
+ETFs
+</a>
+|
+<a  class="bkcolor">
+News
+</a>
+|
+<a  class="bkcolor">
+University
+</a>
+|
+<a  class="bkcolor">
+Conversations
+</a>
+|
+<a  class="bkcolor">
+Retirement
+</a>
+</font>
+</b>
+</td>
+<td  align="right" height="24">
+<a  href="http://members.morningstar.com/Login.html">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#666666">
+<td  height="1">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<img ></img>
+</td>
+<td  height="1">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="09568" border="0" cellpadding="0" cellspacing="0" width="624">
+<tr  valign="top">
+<td  bgcolor="#CCCCCC" height="100%" rowspan="100" width="137">
+<table  TABID="09561" border="0" cellpadding="0" cellspacing="0" width="137">
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  height="20">
+<font  size="-2">
+<b >
+Quicktake® Reports
+</b>
+</font>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  size="-2">
+For Quotes &amp; Morningstar Analyst Reports
+</font>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  size="-2">
+Enter Ticker or name:
+</font>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td ></td>
+<td  height="45">
+<form  action="http://quote.morningstar.com/switch.html" method="get" name="quicktake">
+<input ></input>
+<input ></input>
+</form>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#CCCCCC" colspan="3">
+<a  href="http://www.money.net/pages/teasers/L1041024M.html">
+<img ></img>
+</a>
+<!-- /AdSpace -->
+</td>
+</tr>
+</table>
+<script >
+function setCookie(name, value, expire) { document.cookie = name + "=" + escape(value) + ((expire == null) ? "" : ("; expires=" + expire.toGMTString())) }
+</script>
+<script >
+FlashMode = 0; if (navigator.plugins &amp;&amp; navigator.plugins.length &gt; 0) { if (navigator.plugins["Shockwave Flash"]) { var plugin_version = 0; var words = navigator.plugins["Shockwave Flash"].description.split(" "); for (var a = 0; a words.length; ++a) { if (isNaN(parseInt(words[a]))) continue; plugin_version = words[a]; } if (plugin_version &gt;= 3) { var plugin = navigator.plugins["Shockwave Flash"]; var numTypes = plugin.length; for (j = 0; j numTypes; j++) { mimetype = plugin[j]; if (mimetype) { if (mimetype.enabledPlugin &amp;&amp; (mimetype.suffixes.indexOf("swf") != -1)) FlashMode = 1; // Mac wierdness if (navigator.mimeTypes["application/x-shockwave-flash"] == null) FlashMode = 0; } } } } } if (FlashMode == 1) { var today = new Date() var expires = new Date() expires.setTime(today.getTime() + 1000*60*60*24*365) setCookie("FlashFlag_MS", "Y", expires); } else { var today = new Date() var expires = new Date() expires.setTime(today.getTime() + 1000*60*60*24*365) setCookie("FlashFlag_MS", "N", expires); }
+</script>
+<!-- Vignette StoryServer 5.0 Wed May 16 13:42:47 2001 -->
+<table  TABID="09562" bgcolor="#CCCCCC" border="0" cellpadding="0" cellspacing="0" width="137">
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#999999">
+<td  height="20"></td>
+<td ></td>
+<td >
+<a  class="link1">
+<font  color="#FFFFFF" size="-1">
+Portfolio
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td ></td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Create a Portfolio
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td ></td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Edit a Portfolio
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Portfolio Tracking
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Goal Planner
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Portfolio X-Rays
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Instant X-Ray
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Portfolio Allocator
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Alerts &amp; Updates
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top"></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#999999">
+<td  height="20"></td>
+<td ></td>
+<td >
+<a  class="link1">
+<font  color="#FFFFFF" size="-1">
+Stocks
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Analyst Research
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Industry Reports
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Tech Bytes
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Analyst Picks
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Stock Compare
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Stock Quickrank
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Stock Selector
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top"></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#999999">
+<td  height="20"></td>
+<td ></td>
+<td >
+<a  class="link1">
+<font  color="#FFFFFF" size="-1">
+Funds
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Analyst Research
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Fund Spy
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Analyst Picks
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Fund Manager Picks
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Fund Compare
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Fund Quickrank
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Fund Selector
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top"></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#999999">
+<td  height="20"></td>
+<td ></td>
+<td >
+<a  class="link1">
+<font  color="#FFFFFF" size="-1">
+ETFs
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Most Popular ETFs
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+All ETFs
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+ETF News
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Cost Analyzer
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top"></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#999999">
+<td  height="20"></td>
+<td ></td>
+<td >
+<a  class="link1">
+<font  color="#FFFFFF" size="-1">
+News
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Analyst Updates
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Investment Radar
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Video Reports
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Market Calendar
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Dow Jones News
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top"></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#999999">
+<td  height="20"></td>
+<td ></td>
+<td >
+<a  class="link1">
+<font  color="#FFFFFF" size="-1">
+University
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Investing Classroom
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Ask the Professor
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Improving Your Portfolio
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top"></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#999999">
+<td  height="20"></td>
+<td ></td>
+<td >
+<a  href="http://socialize.morningstar.com/newsocialize/asp/coverpage.asp?hnav=convCvr">
+<font  color="#FFFFFF" size="-1">
+Conversations
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Topic Forums
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Stock Forums
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Fund Forums
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top"></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#999999">
+<td  height="20"></td>
+<td ></td>
+<td >
+<a  href="http://www.morningstar.com/Cover/Retirement.html?hnav=RetCvr">
+<font  color="#FFFFFF" size="-1">
+Retirement Center
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+401(K) Advice
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+SmartInvestor
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Improve Your Retirement
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Tactics for Savers
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Strategies for Retirees
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top">
+&gt;
+</td>
+<td >
+<a  class="link1">
+<font  size="-1">
+Find a Planner
+</font>
+</a>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  size="-1"></font>
+</td>
+<td  valign="top"></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="5">
+<img ></img>
+</td>
+</tr>
+<tr  valign="bottom">
+<td  rowspan="3"></td>
+<td  class="dateb" rowspan="3">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#99cccc" class="dateb" colspan="3" height="25">
+Wednesday, May 16, 2001
+</td>
+</tr>
+<tr >
+<td  bgcolor="#006666" colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccccc" colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="5">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr  valign="top">
+<td  rowspan="7"></td>
+<td  colspan="2">
+<table  TABID="09565" border="0" cellpadding="0" cellspacing="0" width="449">
+<tr >
+<td >
+<!-- Vignette StoryServer 5.0 Wed May 16 13:03:30 2001 -->
+<table  TABID="09563" border="0" cellpadding="0" cellspacing="0" width="449">
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="5">
+<img ></img>
+</td>
+</tr>
+<tr  valign="top">
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  rowspan="4"></td>
+<td  class="line" rowspan="4">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<b >
+Technology Bytes
+</b>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<a  href="http://news.morningstar.com/doc/article/0,1,4668,00.html">
+<b >
+What Works in
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+E-Commerce
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</b>
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+by David Kathman | 05-16-01
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+Click on a tab to view performance.
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  rowspan="12">
+<applet >
+<param ></param>
+<param ></param>
+<param ></param>
+<param ></param>
+<param ></param>
+<param ></param>
+<param ></param>
+<param ></param>
+<param ></param>
+</applet>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<form  name="StockCriteria">
+<tr  valign="top">
+<td  colspan="3">
+Use Morningstar's preset stock screens to home in on a shortlist of stocks:
+<br ></br>
+<img ></img>
+<br ></br>
+<select >
+<option  value="selected=selected">
+Preset Criteria
+</option>
+<option  value="http://screen.morningstar.com/StockResults.html?preset=LowGrowth&ssection=PresetLowGrowth">
+Low-Priced Growth Stocks
+</option>
+<option  value="http://screen.morningstar.com/StockResults.html?preset=HighYield&ssection=PresetHighYield">
+High Dividend Yields
+</option>
+<option  value="http://screen.morningstar.com/StockResults.html?preset=Unloved&ssection=PresetUnloved">
+Profitable, but Unloved
+</option>
+<option  value="http://screen.morningstar.com/StockResults.html?preset=BarginSmall&ssection=PresetBargainSmall">
+Cheap Small Caps
+</option>
+<option  value="http://screen.morningstar.com/StockResults.html?preset=TechTitan&ssection=PresetTechTitan">
+Tech Titans
+</option>
+<option  value="http://screen.morningstar.com/StockResults.html?preset=AggGrowth&ssection=PresetAggGrowth">
+Aggressive Growth
+</option>
+<option  value="http://screen.morningstar.com/StockResults.html?preset=BlueChip&ssection=PresetBlueChip">
+Blue-Blood Blue Chips
+</option>
+</select>
+</td>
+</tr>
+</form>
+<tr >
+<td  colspan="5">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td >
+<!-- Vignette StoryServer 5.0 Wed May 16 09:03:21 2001 -->
+<table  TABID="09564" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" width="449">
+<tr >
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#ffffcc">
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#ffffcc" valign="top">
+<td  class="titlered" colspan="3">
+Today's free analysis
+</td>
+<td  class="lstcaption">
+Industry
+</td>
+<td ></td>
+<td  class="lstcaption">
+Market Cap
+<br ></br>
+($Mil)
+</td>
+<td ></td>
+<td  class="lstcaption">
+Revenue
+<br ></br>
+($Mil)
+</td>
+<td  align="right" class="lstcaption">
+Trailing
+<br ></br>
+12 Month
+<br ></br>
+Returns
+</td>
+</tr>
+<tr  bgcolor="#ffffcc">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#ffffcc">
+<td  colspan="3">
+<b >
+<a  href="http://quicktake.morningstar.com/free/stock.html?ssection=freeReport">
+J.C. Penney
+</a>
+</b>
+</td>
+<td >
+Department Stores
+</td>
+<td ></td>
+<td >
+5,295
+</td>
+<td ></td>
+<td >
+32,649
+</td>
+<td  align="right">
+<img ></img>
+15.11
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr  bgcolor="#ffffcc">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#ffffcc">
+<td  colspan="9">
+It's not too late to climb aboard.
+<a  class="link">
+Continue
+</a>
+</td>
+</tr>
+<tr  bgcolor="#ffffcc">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#cccccc">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="9">
+<a  href="http://www.morningstar.com/ups/?referid=A1099">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="9">
+<img ></img>
+Buy a Morningstar
+<a  href="http://www.morningstar.com/stockanalysis/QPassSA?ssection=QPassReport">
+Stock Analysis
+</a>
+of your choice
+<br ></br>
+<br ></br>
+</td>
+</tr>
+<!-- Vignette StoryServer 5.0 Wed May 16 13:41:16 2001 -->
+<tr >
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  valign="top">
+<td  class="lstcaption" colspan="3">
+<b >
+Most Recent
+<br ></br>
+Premium Analysis
+</b>
+</td>
+<td  class="lstcaption">
+<b >
+Industry
+</b>
+</td>
+<td ></td>
+<td  class="lstcaption">
+<b >
+Market Cap
+<br ></br>
+($Mil)
+</b>
+</td>
+<td ></td>
+<td  class="lstcaption">
+<b >
+Revenue
+<br ></br>
+($Mil)
+</b>
+</td>
+<td  align="right" class="lstcaption">
+<b >
+Trailing
+<br ></br>
+12 Month
+<br ></br>
+Returns
+</b>
+</td>
+</tr>
+<tr >
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#ffffcc">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC" valign="top">
+<td  align="center">
+<img ></img>
+<br ></br>
+<img ></img>
+</td>
+<td >
+<b >
+<a  href="http://quicktake.morningstar.com/StockP/Analysis/_SONS.html?ssection=PremReport">
+Sonus Networks
+</a>
+</b>
+</td>
+<td ></td>
+<td >
+Phone/Network Equipment
+</td>
+<td ></td>
+<td >
+5,059
+</td>
+<td ></td>
+<td >
+52
+</td>
+<td  align="right" class="numberg">
+<img ></img>
+13.52
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="3"></td>
+<td  class="trailerg">
+Sonus' huge potential comes at a sky-high price.
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6" valign="top">
+<td  align="center">
+<img ></img>
+<br ></br>
+<img ></img>
+</td>
+<td >
+<b >
+<a  href="http://quicktake.morningstar.com/StockP/Analysis/_JNPR.html?ssection=PremReport">
+Juniper Networks
+</a>
+</b>
+</td>
+<td ></td>
+<td >
+Phone/Network Equipment
+</td>
+<td ></td>
+<td >
+16,881
+</td>
+<td ></td>
+<td >
+674
+</td>
+<td  align="right" class="numberg">
+<img ></img>
+-39.27
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="3"></td>
+<td  class="trailerg">
+Juniper is weathering the telecom capital-spending slowdown better than most.
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC" valign="top">
+<td  align="center">
+<img ></img>
+<br ></br>
+<img ></img>
+</td>
+<td >
+<b >
+<a  href="http://quicktake.morningstar.com/StockP/Analysis/_HOT.html?ssection=PremReport">
+Starwood Hotels &amp; Resorts Worldwide
+</a>
+</b>
+</td>
+<td ></td>
+<td >
+Hotel Casinos
+</td>
+<td ></td>
+<td >
+7,720
+</td>
+<td ></td>
+<td >
+4,345
+</td>
+<td  align="right" class="numberg">
+<img ></img>
+41.23
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="3"></td>
+<td  class="trailerg">
+Strong brands and a relatively cheap stock make Starwood an attractive pick.
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6" valign="top">
+<td  align="center">
+<img ></img>
+<br ></br>
+<img ></img>
+</td>
+<td >
+<b >
+<a  href="http://quicktake.morningstar.com/StockP/Analysis/_TPCS.html?ssection=PremReport">
+Triton PCS Holdings
+</a>
+</b>
+</td>
+<td ></td>
+<td >
+Wireless Communications
+</td>
+<td ></td>
+<td >
+2,094
+</td>
+<td ></td>
+<td >
+299
+</td>
+<td  align="right" class="numberg">
+<img ></img>
+-31.63
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="3"></td>
+<td  class="trailerg">
+Triton PCS is growing smartly and has lots of funding, but the stock is comparatively expensive.
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC" valign="top">
+<td  align="center">
+<img ></img>
+<br ></br>
+<img ></img>
+</td>
+<td >
+<b >
+<a  href="http://quicktake.morningstar.com/StockP/Analysis/_DA.html?ssection=PremReport">
+Groupe Danone ADR
+</a>
+</b>
+</td>
+<td ></td>
+<td >
+Food Manufacturing
+</td>
+<td ></td>
+<td >
+17,486
+</td>
+<td ></td>
+<td >
+14,228
+</td>
+<td  align="right" class="numberg">
+<img ></img>
+11.50
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="3"></td>
+<td  class="trailerg">
+A streamlined Danone should grow faster than its peers.
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6" valign="top">
+<td  align="center">
+<img ></img>
+<br ></br>
+<img ></img>
+</td>
+<td >
+<b >
+<a  href="http://quicktake.morningstar.com/StockP/Analysis/_CKFR.html?ssection=PremReport">
+Checkfree
+</a>
+</b>
+</td>
+<td ></td>
+<td >
+Online Information
+</td>
+<td ></td>
+<td >
+3,123
+</td>
+<td ></td>
+<td >
+400
+</td>
+<td  align="right" class="numberg">
+<img ></img>
+-25.67
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="3"></td>
+<td  class="trailerg">
+Intensifying competition and a lack of consumer interest make Checkfree too speculative to buy.
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC" valign="top">
+<td  align="center">
+<img ></img>
+<br ></br>
+<img ></img>
+</td>
+<td >
+<b >
+<a  href="http://quicktake.morningstar.com/StockP/Analysis/_INFY.html?ssection=PremReport">
+Infosys Technologies ADR
+</a>
+</b>
+</td>
+<td ></td>
+<td >
+Software
+</td>
+<td ></td>
+<td >
+9,722
+</td>
+<td ></td>
+<td >
+121
+</td>
+<td  align="right" class="numberg">
+<img ></img>
+-61.22
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="3"></td>
+<td  class="trailerg">
+Infosys is quite profitable, thanks to low labor costs, but the stock is anything but cheap.
+</td>
+</tr>
+<tr  bgcolor="#FFFFCC">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6" valign="top">
+<td  align="center">
+<img ></img>
+<br ></br>
+<img ></img>
+</td>
+<td >
+<b >
+<a  href="http://quicktake.morningstar.com/StockP/Analysis/_NVS.html?ssection=PremReport">
+Novartis AG ADR
+</a>
+</b>
+</td>
+<td ></td>
+<td >
+Pharmaceuticals
+</td>
+<td ></td>
+<td >
+116,908
+</td>
+<td ></td>
+<td >
+21,747
+</td>
+<td  align="right" class="numberg">
+<img ></img>
+16.41
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="3"></td>
+<td  class="trailerg">
+Novartis is showing better top-line growth, but it's not out of the woods yet.
+</td>
+</tr>
+<tr  bgcolor="#FFFFA6">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<form  goanalysisquicktake="#DEFAULT" onsubmit="return" this="#DEFAULT">
+<tr  bgcolor="#666666">
+<td  class="txtw" valign="bottom">
+<img ></img>
+For analyses enter ticker:
+<input ></input>
+<input ></input>
+</td>
+</tr>
+<tr  name="ssection" type="hidden" value="SearchReport">
+<td >
+<input ></input>
+</td>
+</tr>
+</form>
+</table>
+</td>
+</tr>
+<tr  bgcolor="#666666">
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="9">
+<img ></img>
+<img ></img>
+<a  class="link1">
+<font  size="-1">
+<b >
+Buy an Industry Report
+</b>
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="9">
+<font  size="-1">
+Morningstar's stock analysts help you understand what drives key industries and give insight into their industry favorites. Reports are available now for Telecom, B2B, Semiconductors, and more.
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="9">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<!-- Vignette StoryServer 5.0 Wed May 16 13:03:30 2001 -->
+<table  TABID="09566" border="0" cellpadding="0" cellspacing="0" width="449">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="left">
+<img ></img>
+</td>
+<td  rowspan="4"></td>
+<td >
+<font  size="-2">
+<b >
+Technology Bytes
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="http://news.morningstar.com/doc/article/0,1,4656,00.html">
+<b >
+Dorsey's Best and Worst Stock Picks
+</b>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+Getting things wrong, getting things right.
+</td>
+</tr>
+<tr >
+<td  class="trailerg">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+by Pat Dorsey | 05-11-01
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+<br ></br>
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  class="trailerg" colspan="2">
+<b >
+Article Archive
+</b>
+</td>
+</tr>
+<tr >
+<td  align="left">
+<form  name="goform1">
+<select >
+<option  value="">
+Select an Article
+</option>
+<option  reports-35="#DEFAULT" value="Special">
+Special Reports
+</option>
+<option  analyst="#DEFAULT" picks-14="#DEFAULT" value="Stock">
+Stock Analyst Picks
+</option>
+<option  bytes-3="#DEFAULT" value="Technology">
+Technology Bytes
+</option>
+</select>
+</form>
+</td>
+</tr>
+<tr >
+<td >
+<!-- Vignette StoryServer 5.0 Wed May 16 12:38:34 2001 -->
+<table  TABID="09567" border="0" cellpadding="0" cellspacing="0" height="100%" width="449">
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<a  href="http://news.morningstar.com/news/Wire/0,1230,5429,00.html?ssection=analystupdates">
+<b >
+Stocks on the Move: Stay Away from the Doughnuts
+</b>
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Elizabeth S. Armbuster | 05-16-01 | 12:34 PM
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<font  size="-2">
+<br ></br>
+<br ></br>
+</font>
+<a  href="http://news.morningstar.com/news/Wire/0,1230,5426,00.html?ssection=analystupdates">
+<b >
+Stocks on the Move: High Price Tag for BEA Systems
+</b>
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Elizabeth S. Armbuster | 05-16-01 | 10:18 AM
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td ></td>
+<td >
+<a  href="http://news.morningstar.com/news/Wire/0,1230,5424,00.html?ssection=analystupdates">
+<b >
+Stock Analyst Notes: 05/16/01
+</b>
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Morningstar Analysts | 05-16-01 | 09:14 AM
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<font  size="-2">
+<br ></br>
+<br ></br>
+</font>
+<a  href="http://news.morningstar.com/news/Wire/0,1230,5418,00.html?ssection=analystupdates">
+<b >
+Stocks on the Move: Fed's Worries Put Lid on Stocks
+</b>
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Elizabeth S. Armbuster | 05-15-01 | 04:21 PM
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+<a  href="/news/Wire/Main/0,1228,stck,00.html?ssection=allUpdates">
+<b >
+All Stocks Newswire
+</b>
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<td ></td>
+<td >
+<table  TABID="09570" class="rcolumn">
+<!-- Vignette StoryServer 5.0 Wed May 16 09:10:55 2001 -->
+<tr >
+<td  colspan="2">
+<font  size="-2">
+<img ></img>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<font  size="-1">
+<img ></img>
+<a  class="link1">
+<b >
+Applied Materials Close to Hitting Bottom
+</b>
+</a>
+</font>
+<br ></br>
+<font  size="-1">
+Analyst Jeremy Lopez discusses chip-equipment makers poor quarterly results.
+</font>
+<font  color="666666" size="-2">
+<br ></br>
+09:12 AM CT | 05-16-01
+<br ></br>
+<a  class="link1">
+View other reports
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  class="lstcaption">
+Tour
+</td>
+</tr>
+<tr  valign="top">
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Morningstar Stock Tour
+</a>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+See all Morningstar has to offer about stocks.
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  class="lstcaption">
+<b >
+Stock Selector
+</b>
+</td>
+</tr>
+<tr >
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Stock Quickrank
+</a>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+Find standout companies in a variety of categories.
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Stock Selector
+</a>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+Find the kind of stocks you want, fast.
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+?
+</td>
+<td >
+<img ></img>
+<a  class="rcolumn">
+Premium Stock Selector
+</a>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+Premium Users: Use our entire database to screen for stocks.
+</td>
+</tr>
+<tr  valign="top">
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Stock Compare
+</a>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+Instantly see how stocks you like compare with each other.
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  class="lstcaption">
+<b >
+Stock Lists
+</b>
+</td>
+</tr>
+<tr >
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Biggest Gainers
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Biggest Losers
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Most Active Shares
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Highs and Lows
+</a>
+</td>
+</tr>
+<tr  align="top">
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Industry Performance
+</a>
+</td>
+</tr>
+<tr  align="top">
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Sector Performance
+</a>
+</td>
+</tr>
+<tr  align="top">
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Stock Type Performance
+</a>
+</td>
+</tr>
+<tr  align="top">
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Stock Style Performance
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Most Popular
+<br ></br>
+Quicktake® Reports
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  class="lstcaption">
+<b >
+IPOs
+</b>
+</td>
+</tr>
+<tr >
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Upcoming IPOs
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Recent IPO News
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Morningstar IPO Editorial
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+Calendar
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?
+</td>
+<td >
+<a  class="rcolumn">
+IPO FAQs
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2" height="10" width="1"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  colspan="2" height="7"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<a  class="rcolumn">
+First Quarter 2001 in Review
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" height="9" width="1"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  colspan="2" height="7"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<a  class="rcolumn">
+Conference Calls
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" height="9" width="1"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  colspan="2" height="7"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<a  class="rcolumn">
+Earnings Central
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" height="9" width="1"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  colspan="2" height="7"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<a  class="rcolumn">
+Market Calendar
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr  colspan="2">
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<table  TABID="09569" border="0" cellpadding="0" cellspacing="0" width="137">
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  colspan="3">
+<a  href="/event.ng/Type=click&ProfileID=362&RunID=4366&AdID=2922&GroupID=13&FamilyID=1&TagValues=1152&Redirect=http:%2F%2Fwww.morningstar.com%2FCover%2FRetirement.html" target="_top">
+<img ></img>
+</a>
+<!-- /AdSpace -->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+<tr  align="left" valign="top">
+<td >
+<font  size="-2">
+?
+</font>
+</td>
+<td >
+<font  size="-1">
+<a  class="rcolumn">
+<b >
+Stock Picks
+</b>
+</a>
+</font>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td >
+<font  size="-2">
+?
+</font>
+</td>
+<td >
+<font  size="-1">
+<a  class="rcolumn">
+<b >
+Consumer Essentials
+</b>
+</a>
+</font>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td >
+<font  size="-2">
+?
+</font>
+</td>
+<td >
+<font  size="-1">
+<a  class="rcolumn">
+<b >
+Telecom
+</b>
+</a>
+</font>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td >
+<font  size="-2">
+?
+</font>
+</td>
+<td >
+<font  size="-1">
+<a  class="rcolumn">
+<b >
+Financial Services
+</b>
+</a>
+</font>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td >
+<font  size="-2">
+?
+</font>
+</td>
+<td >
+<font  size="-1">
+<a  class="rcolumn">
+<b >
+Consumer Cyclicals
+</b>
+</a>
+</font>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td >
+<font  size="-2">
+?
+</font>
+</td>
+<td >
+<font  size="-1">
+<a  class="rcolumn">
+<b >
+Drugs &amp; Biotech
+</b>
+</a>
+</font>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td >
+<font  size="-2">
+?
+</font>
+</td>
+<td >
+<font  size="-1">
+<a  class="rcolumn">
+<b >
+Energy
+</b>
+</a>
+</font>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td >
+<font  size="-2">
+?
+</font>
+</td>
+<td >
+<font  size="-1">
+<a  class="rcolumn">
+<b >
+Computers &amp; Semiconductors
+</b>
+</a>
+</font>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td >
+<font  size="-2">
+?
+</font>
+</td>
+<td >
+<font  size="-1">
+<a  class="rcolumn">
+<b >
+Software &amp; Internet
+</b>
+</a>
+</font>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td >
+<font  size="-2">
+?
+</font>
+</td>
+<td >
+<font  size="-1">
+<a  class="rcolumn">
+<b >
+Industrial Cyclicals
+</b>
+</a>
+</font>
+</td>
+</tr>
+</table>
+</td>
+<!--
+.txt10gy6 {color:#666666;}
+.minus2 {font-size:10px;}
+-->
+<script >
+<!--
+function footeropenwin(windowName,width,height) {
+    newWindow = window.open(windowName, 'newWindow','toolbar=no,location=no,menubar=no,width='+width+',height='+height+',scrollbars=yes,resizable=no');
+}
+function switchActionSearch(selected) {
+   if (selected.selectedIndex == 4) {
+      selected.form.action = "http://search.morningstar.com/se/s97is.dll";
+   }
+   else {
+      selected.form.action = "http://search.morningstar.com/se/s97is.dll";
+   }
+}
+//-->
+</script>
+<table  TABID="09572" border="0" cellpadding="0" cellspacing="0" width="100%">
+<form  target="_top">
+<tr  bgcolor="#666666">
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr  align="center">
+<td >
+<table  TABID="09571" border="0" cellpadding="0" cellspacing="0" width="605">
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  size="-2">
+<b >
+Search
+</b>
+</font>
+</td>
+<td >
+<font  size="-1">
+<select >
+<option  selected="selected" value="ALL">
+All of Morningstar.com
+</option>
+<option >
+..........................................
+</option>
+<option  value="Feature">
+Feature articles
+</option>
+<option  value="News">
+News stories
+</option>
+<option  value="Press">
+Press releases
+</option>
+<option  value="InfoDesk">
+Glossary terms
+</option>
+</select>
+</font>
+</td>
+<td >
+<font  size="-2">
+<b >
+For
+</b>
+</font>
+</td>
+<td >
+<font  size="-1">
+<input ></input>
+</font>
+<input ></input>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<img ></img>
+<a  href="/event.ng/Type=click&ProfileID=575&RunID=4257&AdID=2760&GroupID=30&FamilyID=1&TagValues=1403&Redirect=http:%2F%2Fclick.iballs.a1.avenuea.com%2Fiballs%2Fgo%2Fmorningstar_street_041101da_03%2Fdirect%2F01" target="_top">
+<img ></img>
+</a>
+<!-- /AdSpace -->
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr  align="center">
+<td >
+<font  size="-2">
+Visit our international sites:
+</font>
+<a  class="botNav">
+<font  size="-2">
+Australia
+</font>
+</a>
+<font  color="#999999">
+|
+</font>
+<a  class="botNav">
+<font  size="-2">
+Canada
+</font>
+</a>
+<font  color="#999999">
+|
+</font>
+<a  class="botNav">
+<font  size="-2">
+Europe
+</font>
+</a>
+<font  color="#999999">
+|
+</font>
+<a  class="botNav">
+<font  size="-2">
+Finland
+</font>
+</a>
+<font  color="#999999">
+|
+</font>
+<a  class="botNav">
+<font  size="-2">
+Hong Kong
+</font>
+</a>
+<font  color="#999999">
+|
+</font>
+<a  class="botNav">
+<font  size="-2">
+Japan
+</font>
+</a>
+<font  color="#999999">
+|
+</font>
+<a  class="botNav">
+<font  size="-2">
+Korea
+</font>
+</a>
+<font  color="#999999">
+|
+</font>
+<a  class="botNav">
+<font  size="-2">
+Netherlands
+</font>
+</a>
+<font  color="#999999">
+|
+</font>
+<a  class="botNav">
+<font  size="-2">
+New Zealand
+</font>
+</a>
+<font  color="#999999">
+|
+</font>
+<a  class="botNav">
+<font  size="-2">
+Norway
+</font>
+</a>
+<font  color="#999999">
+|
+</font>
+<a  class="botNav">
+<font  size="-2">
+Sweden
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr  align="center">
+<td >
+<a  class="botNav">
+<font  size="-2">
+© Copyright 2001 Morningstar, Inc.
+</font>
+</a>
+<font  size="-2">
+All rights reserved. Please read our
+</font>
+<a  class="botNav">
+<font  size="-2">
+Terms of Use
+</font>
+</a>
+<font  size="-2">
+and
+</font>
+<a  class="botNav">
+<font  size="-2">
+Privacy Policy
+</font>
+</a>
+.
+<br ></br>
+<font  size="-2">
+If you have questions or comments please
+</font>
+<a  class="botNav">
+<font  size="-2">
+contact Morningstar
+</font>
+</a>
+.
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/event.ng/Type=click&ProfileID=554&RunID=4234&AdID=2759&GroupID=30&FamilyID=1&TagValues=1381&Redirect=http:%2F%2Fclick.iballs.a1.avenuea.com%2Fiballs%2Fgo%2Fmorningstar_street_041101da_01%2Fdirect;hi.60;wi.468%2F01" target="_top">
+<img ></img>
+</a>
+<!-- /AdSpace -->
+</td>
+</tr>
+</form>
+</table>
+<script >
+var playURL= ""; var clickURL= ""; var adURL= "/jojo/imod/RunId_4534_SiteId_751_ProfileId_742_AdId_12906.txt"; var fqCap= "2"; var playOn="entry"; var timeBetweenAds= "600";
+</script>
+<script ></script>
+<!-- /AdSpace -->
+</body>
+</html>

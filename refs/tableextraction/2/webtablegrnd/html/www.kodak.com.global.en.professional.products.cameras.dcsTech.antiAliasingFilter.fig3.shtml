@@ -1,0 +1,66 @@
+<html >
+<head >
+<title >
+KODAK PROFESSIONAL Anti-Aliasing Filter: Figure 3
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<script >
+var name = navigator.appName.toLowerCase(); var ver = navigator.appVersion.toLowerCase(); if (name == "microsoft internet explorer" &amp;&amp; ver &gt;="3") { // browser is IE, version 3 or greater if (ver.indexOf("mac") != -1) { // platform is Macintosh document.write('
+</script>
+<link ></link>
+</head>
+<body >
+'); } else { // platform is something else, probably Windows document.write('
+<link ></link>
+'); } } else if (name == "netscape" &amp;&amp; ver &gt;="3") { // browser is Navigator, version 3 or greater if(ver.indexOf("mac") != -1) { // platform is Macintosh document.write('
+<link ></link>
+'); } else { // platform is something else, probably Windows document.write('
+<link ></link>
+'); } } else { // default style sheet document.write('
+<link ></link>
+'); }
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<link ></link>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<center >
+<table  TABID="09320" cellpadding="4" cellspacing="0">
+<tr >
+<td  align="center" valign="middle">
+<a  href="#" onclick="window.close()">
+<img ></img>
+</a>
+<br ></br>
+Anti-aliasing filter removed
+<br ></br>
+<br ></br>
+<a  href="#" onclick="window.close()">
+<img ></img>
+</a>
+<br ></br>
+Anti-aliasing filter installed
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="bottom">
+<small  class="white">
+Click on an image to close window.
+</small>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

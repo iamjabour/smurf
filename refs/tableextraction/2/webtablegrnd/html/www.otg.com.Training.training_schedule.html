@@ -1,0 +1,1075 @@
+<html >
+<head >
+<title >
+Training - Schedule of Classes
+</title>
+<meta ></meta>
+<meta ></meta>
+<link ></link>
+<meta ></meta>
+<meta ></meta>
+<style >
+<!--  
+	a            { text-decoration: none; color: #000080 }
+	a:hover      { text-decoration: underline; background-color: #99CCFF }
+-->
+</style>
+<script >
+<!--
+function PrintDate() {
+	var days=new Array(7);
+	days[1]="Monday";days[2]="Tuesday";days[3]="Wednesday";days[4]="Thursday";days[5]="Friday";days[6]="Saturday";days[0]="Sunday";
+	var months=new Array(13);
+	months[1]="January";months[2]="February";months[3]="March";months[4]="April";months[5]="May";months[6]="June";
+	months[7]="July";months[8]="August";months[9]="September";months[10]="October";months[11]="November";months[12]="December";
+	var time=new Date();
+	var lmonth=months[time.getMonth() + 1];
+	var lday=days[time.getDay()];
+	var date=time.getDate();
+	var year=time.getYear();
+	
+	if (year&amp;amp;amp;lt;1900) year=1900 + time.getYear();
+	else year=time.getYear();
+	document.write(lday + ", " + lmonth + " " + date + ", " + year + "&amp;amp;amp;lt;br&amp;amp;amp;gt;");
+}
+//-->
+</script>
+<script >
+<!--
+var loaded = 1;
+var currentDown = null;
+
+if (document.images)
+{
+  var the_images = new Array(
+	  '/images/menu/mnu_company_on.gif',
+	  '/images/menu/mnu_products_on.gif',
+	  '/images/menu/mnu_pressroom_on.gif',
+	  '/images/menu/mnu_support_on.gif',
+	  '/images/menu/mnu_partners_on.gif'
+	  );
+  preloadImages(the_images);
+}
+
+ function preloadImages(the_images_array)
+ {
+   if (document.preloadArray==null) {
+ 	document.preloadArray = new Array();
+   }
+ 
+   var i = document.preloadArray.length;
+ 
+   for(var loop = 0; loop &amp;amp;amp;lt; the_images_array.length; loop++)
+   {
+       document.preloadArray[i] = new Image;
+       document.preloadArray[i++].src = the_images_array[loop];
+   }
+ }
+
+function imageOver (el)
+{
+  if (loaded)
+  {
+    if (!currentDown || el.name != currentDown.name)
+    {
+      var str_switch = "on";
+      chr = el.src.lastIndexOf("_") + 1;
+      period = el.src.lastIndexOf(".");
+		
+      el.src = "" + el.src.substring(0, chr) + str_switch + el.src.substring(period, el.src.length);
+      return true;
+    }
+
+  }
+}
+
+function imageOff (el, override)
+{
+  if (loaded)
+  {
+    if (!currentDown || override || el.name != currentDown.name)
+    {
+      var str_switch = "off";
+      chr = el.src.lastIndexOf("_") + 1;
+      period = el.src.lastIndexOf(".");
+		
+      el.src = "" + el.src.substring(0, chr) + str_switch + el.src.substring(period, el.src.length);
+      return true;
+    }
+  }
+}
+//-->
+</script>
+<script >
+<!--
+NS4 = (document.layers);
+IE4 = (document.all);
+ver4 = (NS4 || IE4);   
+isMac = (navigator.appVersion.indexOf("Mac") != -1);
+		//isMenu = (NS4 || (IE4 &amp;amp;amp;amp;&amp;amp;amp;amp; !isMac));
+isMenu = (IE4 &amp;amp;amp;amp;&amp;amp;amp;amp; !isMac);
+
+function popUp(){return};
+function popDown(){return};
+
+if (!ver4) event = null;
+//-->
+</script>
+<script >
+<!--
+if (isMenu) {
+    menuVersion = 3;
+    
+    menuWidth = 100;
+    childOverlap = -3;
+    childOffset = 0;
+    perCentOver = 10;
+    secondsVisible = 0;
+    
+    fntCol = "#ffffff";
+    fntSiz = "7";
+    fntBold = false;
+    fntItal = false;
+    fntFam = "verdana";
+    
+    backCol = "#3683BA";
+    overCol = "#6699cc";
+    overFnt = "ffffff";
+    
+    borWid = 1;
+    borCol = "black";
+    borSty = "solid";
+    itemPad = 3;
+    
+    imgSrc = "/images/menu/tri.gif";
+    imgSiz = 10;
+    
+    separator = 1;
+    separatorCol = "#000000";
+    
+    isFrames = false;      // &amp;amp;amp;lt;-- IMPORTANT for full window
+    navFrLoc = "left";     // &amp;amp;amp;lt;-- display. see below
+    
+    keepHilite = true; 
+    NSfontOver = true;
+    clickStart = false;
+    clickKill = false;
+}
+//-->
+</script>
+<script >
+<!--
+if (isMenu) {
+document.write("&amp;amp;amp;lt;SCRIPT LANGUAGE='JavaScript1.2' SRC='/_ScriptLibrary/hierArrays.js'&amp;amp;amp;gt;&amp;amp;amp;lt;\/SCRIPT&amp;amp;amp;gt;");
+document.write("&amp;amp;amp;lt;SCRIPT LANGUAGE='JavaScript1.2' SRC='/_ScriptLibrary/hierMenus.js'&amp;amp;amp;gt;&amp;amp;amp;lt;\/SCRIPT&amp;amp;amp;gt;");
+}
+//-->
+</script>
+<link ></link>
+<meta ></meta>
+</head>
+<body  alink="#FF8000" link="#000080" text="#333333" vlink="#008080">
+<!--msnavigation-->
+<table  TABID="10546" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td >
+<table  TABID="10545" height="61">
+<tr >
+<td  height="45" valign="middle">
+<a  href="/default.htm">
+<img ></img>
+</a>
+</td>
+<td  height="45" valign="middle">
+<img ></img>
+</td>
+<td  height="40" rowspan="2" valign="bottom">
+<font  color="#808080" face="arial,helvetica" size="1">
+<p  align="right">
+<script >
+PrintDate();
+</script>
+<img ></img>
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" height="1" valign="bottom">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="bottom">
+<p  align="right">
+<a  onmouseover="imageOver(home);">
+<img ></img>
+</a>
+<img ></img>
+<a  onmouseover="imageOver(company);popUp(elMenu1,event)">
+<img ></img>
+</a>
+<img ></img>
+<a  onmouseover="imageOver(products);popUp(elMenu2,event)">
+<img ></img>
+</a>
+<a  onmouseover="imageOver(pressroom);popUp(elMenu3,event)">
+<img ></img>
+<img ></img>
+<img ></img>
+</a>
+<a  onmouseover="imageOver(careers);popUp(elMenu4,event)">
+<img ></img>
+</a>
+<img ></img>
+<a  onmouseover="imageOver(support);popUp(elMenu5,event)">
+<img ></img>
+<img ></img>
+</a>
+<a  onmouseover="imageOver(partners);popUp(elMenu6,event)">
+<img ></img>
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="21" valign="bottom"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--msnavigation-->
+</table>
+<!--msnavigation-->
+<table  TABID="10551" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<!--msnavigation-->
+<td  valign="top">
+<table  TABID="10550" border="0" cellpadding="0" cellspacing="0" width="712">
+<tr >
+<td  valign="top" width="141">
+<!--webbot bot="Include" U-Include="nav_training.htm" TAG="BODY" startspan -->
+<table  TABID="10547" border="0" cellpadding="0" width="135">
+<tr >
+<td  bgcolor="#FFCC00" colspan="2" height="17" width="140">
+<b >
+<font  face="Arial"></font>
+<font  face="Arial">
+Training
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  align="center" width="14">
+<p  align="center">
+<font  face="Arial">
+?
+</font>
+</p>
+</td>
+<td  height="17" width="124">
+<a  href="../training.html">
+<font  face="Arial">
+Overview
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" width="14">
+<p  align="center">
+<font  face="Arial">
+?
+</font>
+</p>
+</td>
+<td  height="17" width="124">
+<a  href="training_schedule.html">
+<font  face="Arial">
+Schedule
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" width="14">
+<p  align="center">
+<font  face="Arial">
+?
+</font>
+</p>
+</td>
+<td  height="17" width="124">
+<a  href="training_signup.html">
+<font  face="Arial">
+Register
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" height="21" width="140"></td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC00" colspan="2" height="17" width="140">
+<b >
+<font  face="Arial"></font>
+<font  face="Arial">
+Web Seminars
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  align="center" width="14">
+<p  align="center">
+<font  face="Arial">
+?
+</font>
+</p>
+</td>
+<td  height="17" width="124">
+<a  href="WebCasts/default.html">
+<font  face="Arial">
+Overview
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" width="14">
+<p  align="center">
+<font  face="Arial">
+?
+</font>
+</p>
+</td>
+<td  height="17" width="124">
+<a  href="WebCasts/schedule.html">
+<font  face="Arial">
+Schedule
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" width="14">
+<p  align="center">
+<font  face="Arial">
+?
+</font>
+</p>
+</td>
+<td  height="17" width="124">
+<a  href="WebCasts/register.html">
+<font  face="Arial">
+Register
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" height="21" width="140"></td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC00" colspan="2" height="17" width="140">
+<b >
+<font  face="Arial"></font>
+<font  face="Arial">
+Contact Info
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="14">
+<p  align="center">
+<font  face="Arial">
+?
+</font>
+</p>
+</td>
+<td  height="17" width="124">
+<font  face="Arial" size="1">
+6701 Democracy Blvd
+<br ></br>
+Bethesda, MD 20817
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="14">
+<p  align="center">
+<font  face="Arial">
+?
+</font>
+</p>
+</td>
+<td  height="17" width="124">
+<font  face="Arial" size="1">
+800.324.4222 p
+<br ></br>
+301.897.3294 f
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" width="14">
+<p  align="center">
+<font  face="Arial">
+?
+</font>
+</p>
+</td>
+<td  height="17" width="124">
+<a  href="mailto:training@otg.com">
+<font  face="Arial" size="2">
+training@otg.com
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" height="21" width="140"></td>
+</tr>
+<tr >
+<td  bgcolor="#808080" colspan="2" height="17" width="140">
+<b >
+<font  face="Arial">
+Support
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  align="center" width="14">
+<p  align="center">
+<font  face="Arial">
+?
+</font>
+</p>
+</td>
+<td  height="17" width="124">
+<a  href="../tech-support.html">
+<font  face="Arial">
+Tech Support
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top" width="14">
+<p  align="center">
+<font  face="Arial">
+?
+</font>
+</p>
+</td>
+<td  height="17" width="124">
+<a  href="../prof_services.html">
+<font  face="Arial">
+Professional Services
+</font>
+</a>
+</td>
+</tr>
+</table>
+<!--webbot bot="Include" endspan i-checksum="259" -->
+<p >
+<font  size="2">
+<a  href="http://">
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+</a>
+</font>
+</p>
+</td>
+<td  valign="top" width="534">
+<p  align="right">
+<font  color="#808080" size="4">
+Training
+</font>
+<font  color="#008080" size="4">
+<br ></br>
+</font>
+<font  color="#2184BD" size="6">
+Schedule of Classes
+</font>
+</p>
+<blockquote >
+<table  TABID="10548" bordercolor="#FFE88C" genuinetable="yes" tabletitle="Schedule of Classes
+May 2001 ">
+<tr >
+<td  bgcolor="#FFFFE8" colspan="2" width="425">
+<font  face="Arial" size="4">
+May 2001
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" width="31">
+<font  face="Arial" size="2">
+02
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_wxtech.html">
+WebXtender 4.2 Technical Training
+</a>
+(1 Day)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" width="31">
+<font  face="Arial" size="2">
+02
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_ermxtech.html">
+ERMXtender 2.1 Technical Training
+</a>
+(3 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" width="31">
+<font  face="Arial" size="2">
+07
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<font  face="Arial" size="2">
+<a  href="training_CDIAprep.html">
+CDIA Test Preparation
+</a>
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" width="31">
+<font  face="Arial" size="2">
+07
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<font  face="Arial" size="2">
+<a  href="training_extech.html">
+EmailXtender 4.1 Technical Training
+</a>
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" width="31">
+<font  face="Arial" size="2">
+09
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<font  face="Arial" size="2">
+<a  href="training_dx2ktech.html">
+DiskXtender 2000 Technical Training
+</a>
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" width="31">
+<font  face="Arial" size="2">
+09
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<a  href="training_dxtech.html">
+<font  face="Arial">
+DiskXtender 4.2 Technical Training
+</font>
+</a>
+<font  face="Arial">
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+15
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_axtech.html">
+ApplicationXtender 4.2 Technical Training
+</a>
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+17
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_wxtech.html">
+WebXtender 4.2 Technical Training
+</a>
+(1 Day)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+17
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_cxtech.html">
+COLDXtender 4.2 Technical Training
+</a>
+(1 Day)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+22
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<font  face="Arial" size="2">
+<a  href="training_ermxtech.html">
+ERMXtender 2.1 Technical Training
+</a>
+(3 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+31
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+Advanced Troubleshooting Technical Training (2 Days)
+</font>
+</td>
+</tr>
+</table>
+<hr ></hr>
+<table  TABID="10549" bordercolor="#FFE88C" genuinetable="yes" tabletitle="Schedule of Classes
+June 2001 ">
+<tr >
+<td  bgcolor="#FFFFE8" colspan="2" width="425">
+<font  face="Arial" size="4">
+June 2001
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" width="31">
+<font  face="Arial" size="2">
+04
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_WFXProcessBuilder.html">
+WorkflowXtender Process Builder 4.2 Training
+</a>
+(5 days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" width="31">
+<font  face="Arial" size="2">
+04
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_extech.html">
+EmailXtender 4.1 Technical Training
+</a>
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" width="31">
+<font  face="Arial" size="2">
+06
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<font  face="Arial" size="2">
+<a  href="training_axtech.html">
+ApplicationXtender 4.2 Technical Training
+</a>
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+08
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<font  face="Arial" size="2">
+<a  href="training_wxtech.html">
+WebXtender 4.2 Technical Training
+</a>
+(1 Day)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+08
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<font  face="Arial" size="2">
+<a  href="training_cxtech.html">
+COLDXtender 4.2 Technical Training
+</a>
+(1 Day)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" width="31">
+<font  face="Arial" size="2">
+11
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<font  face="Arial" size="2">
+<a  href="training_ermxtech.html">
+ERMXtender 2.1 Technical Training
+</a>
+(3 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+14
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_CDIAprep.html">
+CDIA Test Preparation
+</a>
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+18
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_dx2ktech.html">
+DiskXtender 2000 Technical Training
+</a>
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+18
+</font>
+</td>
+<td  width="388">
+<a  href="training_dxtech.html">
+<font  face="Arial">
+DiskXtender 4.2 Technical Training
+</font>
+</a>
+<font  face="Arial" size="2">
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+20
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<font  face="Arial" size="2">
+<a  href="training_axtech.html">
+ApplicationXtender 4.2 Technical Training
+</a>
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+22
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<font  face="Arial" size="2">
+<a  href="training_wxtech.html">
+WebXtender 4.2 Technical Training
+</a>
+(1 Day)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+22
+</font>
+</td>
+<td  bgcolor="#FFFFE8" width="388">
+<a  href="training_WFXSales.html">
+<font  face="Arial">
+WorkflowXtender Product &amp; Sales Training
+</font>
+</a>
+<font  face="Arial">
+(Webcast Delivery)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+25
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_ermxtech.html">
+ERMXtender 2.1 Technical Training
+</a>
+(3 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+26
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_extech.html">
+EmailXtender 4.1 Technical Training
+</a>
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+28
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+<a  href="training_dx2ktech.html">
+DiskXtender 2000 Technical Training
+</a>
+(2 Days)
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#ffffff" width="31">
+<font  face="Arial" size="2">
+28
+</font>
+</td>
+<td  width="388">
+<font  face="Arial" size="2">
+Ascent Capture for OTG Technical Training (2 Days)
+</font>
+</td>
+</tr>
+</table>
+</blockquote>
+<p >
+<font  face="Arial" size="2">
+[
+<a  href="http://www.otg.com/training.html">
+back to training
+</a>
+] [
+<a  href="http://www.otg.com/Training/training_signup.html">
+register for classes
+</a>
+]
+</font>
+</p>
+</td>
+<td  background="../../images/misc/left_bar.gif">
+<img ></img>
+</td>
+</tr>
+</table>
+<p >
+<!-- &amp;amp;amp;lt;img src="http://cgi3.fxweb.com/v2-trackrun.cgi?userid=m06592&amp;amp;amp;amp;amp;ignore=10.*.*.*&amp;amp;amp;amp;amp;quiet=true" height="0" width="0"&amp;amp;amp;gt;-->
+<!--msnavigation-->
+</p>
+</td>
+</tr>
+<!--msnavigation-->
+</table>
+<!--msnavigation-->
+<table  TABID="10553" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td >
+<table  TABID="10552" border="0" cellspacing="0" width="710">
+<tr >
+<td  bgcolor="#2184BD" height="20" valign="middle" width="510">
+<p >
+<font  face="Arial">
+<font  color="#FFFFFF" size="2"></font>
+<a  href="../default.htm">
+<font  color="#FFFFFF" size="2">
+home
+</font>
+</a>
+<font  color="#FFFFFF" size="2">
+|
+</font>
+<a  href="/company/about.htm">
+<font  color="#FFFFFF" size="2">
+company
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="/products">
+<font  color="#FFFFFF" size="2">
+products
+</font>
+</a>
+<font  color="#FFFFFF" size="2">
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="../news.html">
+<font  color="#FFFFFF" size="2">
+press room
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="../employment.html">
+<font  color="#FFFFFF" size="2">
+careers
+</font>
+</a>
+|
+<a  href="../tech-support.html">
+<font  color="#FFFFFF" size="2">
+support
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="/partner_program.html">
+<font  color="#FFFFFF" size="2">
+partners
+</font>
+</a>
+</font>
+</font>
+</p>
+</td>
+<td  bgcolor="#2184BD" height="20" valign="middle" width="207">
+<p  align="right">
+<a  href="../sitemap.html">
+<font  color="#FFFF00" face="Arial">
+sitemap
+</font>
+</a>
+<font  face="Arial"></font>
+<font  color="#FFFFFF" face="Arial">
+|
+</font>
+<font  face="Arial"></font>
+<a  href="../search.html">
+<font  color="#FFFF00" face="Arial">
+search
+</font>
+</a>
+<font  face="Arial"></font>
+<font  color="#FFFFFF" face="Arial">
+|
+</font>
+<font  face="Arial"></font>
+<a  href="../contact.htm">
+<font  color="#FFFF00" face="Arial">
+contact
+</font>
+</a>
+<font  color="#FFFF00" face="Arial"></font>
+</p>
+</td>
+</tr>
+<tr >
+<td  colspan="2" height="20" valign="middle" width="721">
+<font  face="Arial">
+<font  size="1">
+© Copyright 2001 OTG Software, Inc. ? 6701 Democracy Blvd ? Bethesda, Maryland 20817 ? 800.324.4222 ?
+</font>
+<a  href="mailto:info@otg.com">
+<font  size="1">
+info@otg.com
+</font>
+</a>
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+</td>
+</tr>
+<!--msnavigation-->
+</table>
+</body>
+</html>

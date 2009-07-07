@@ -1,0 +1,3436 @@
+<html >
+<head >
+<title >
+Toward a table-top quantum computer
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+</head>
+<body >
+<p >
+<!-- -------------------------------------------------------------------- -->
+</p>
+<table  TABID="11317" width="600">
+<tr >
+<td >
+<img ></img>
+<p >
+<i >
+Vol. 39, Nos. 3 &amp; 4 - MIT Media Laboratory
+</i>
+</p>
+<p >
+<!-- --------------------------------------------------------------- -->
+<b >
+[ Table of contents:
+<a  href="/journal/sj39-34.html">
+HTML
+</a>
+,
+<a  href="/journal/sj/393/toctxt.html">
+ASCII
+</a>
+,
+<a  href="/journal/sj/393/tocpdf.html">
+PDF
+</a>
+]
+<p >
+[ This article: HTML,
+<a  href="maguire.txt">
+ASCII
+</a>
+,
+<a  href="maguire.pdf">
+PDF
+</a>
+]
+</p>
+</b>
+</p>
+<p >
+<!-- -------------------------------------------------------------------- -->
+<img ></img>
+</p>
+<center >
+<font  size="2">
+<a  href="/journal/sjcopy2000.html">
+0018-8670/2000/$5.00 © 2000 IBM
+</a>
+<br ></br>
+DOI: 10.1147/sj.393.0823
+</font>
+</center>
+<p >
+<img ></img>
+</p>
+<p >
+<!-- -------------------------------------------------------------------- -->
+</p>
+<p ></p>
+<h2 >
+Toward a table-top quantum computer
+</h2>
+<p >
+by Y.
+<a  href="maguiaut.html#maguire">
+Maguire
+</a>
+, E.
+<a  href="maguiaut.html#boyden">
+Boyden
+</a>
+, and N.
+<a  href="maguiaut.html#gershenfeld">
+Gershenfeld
+</a>
+</p>
+<p >
+<b >
+To investigate the scaling issues for quantum computation using thermalized ensembles of spins, we are building a rudimentary quantum computer using nuclear magnetic resonance (NMR). We discuss the experimental issues facing the scalability of this technique including the number of qubits, issues of classical versus quantum behavior, and polarization. Due to the weak signals measured in NMR, the most significant challenge to practical devices is polarization enhancement. We present the architecture for a simple NMR spectrometer that is table-top, low-cost, and software-radio driven using commodity electronics and unconventional permanent magnet designs. Optimizations specific to using this machine as a computational device, such as probe design, compilation, and on-line control, are discussed.
+</b>
+</p>
+<p >
+With the quest for faster microcomputer chips in the semiconductor industry, exponential increases in speed must come at the exponentially increasing cost of some other resource. Advances in the semiconductor industry have capitalized on two resources: space, by shrinking the size of integrated circuitry in semiconductor fabrication; and money, by the ever increasing investment in fabrication plants. It is likely that we will, in the not too distant future, reach fundamental physical limits: transistors will be atomic in scale and memory will consist of only a handful of electrons. Time does not offer much help as a resource, because light takes 100 picoseconds (ps) to travel the 3 centimeters (cm) of a typical chip. Exponentially large physical space or energy are not realistically available resources. People have proposed
+<code >
+DNA
+</code>
+computers
+<sup >
+<a  href="maguiref.html#ref1">
+1
+</a>
+</sup>
+as a type of massive parallelism to solve computational problems. This solution does not scale either, because a computationally hard problem requires exponential amounts of
+<code >
+DNA
+</code>
+, which can quickly require samples more massive than the earth itself.
+<sup >
+<a  href="maguiref.html#ref1">
+1
+</a>
+</sup>
+The dream of quantum computing is that quantum mechanics provides an untapped, scalable exponential resource. Quantum computers can, in theory, factor numbers in exponentially fewer steps than classical computers (thus cracking modern cryptographic protocols), simulate quantum systems with exponentially fewer resources than now possible, and search databases in
+<img ></img>
+(
+<img ></img>
+<i >
+N
+</i>
+) queries rather than
+<img ></img>
+(
+<i >
+N
+</i>
+) on an ordinary machine.
+</p>
+<p >
+The power of quantum computing begins with a profound observation. Whereas a classical bit can be in one of two states, 0 or 1, a quantum bit, or “qubit” (e.g., a spin-1/2 particle) can be in a weighted superposition of both states. For example,
+</p>
+<p >
+<i >
+a
+</i>
+|0&gt; +
+<i >
+b
+</i>
+|1&gt;
+</p>
+<p >
+where
+<i >
+a
+</i>
+and
+<i >
+b
+</i>
+are complex numbers, and |
+<i >
+a
+</i>
+|
+<sup >
+2
+</sup>
++ |
+<i >
+b
+</i>
+|
+<sup >
+2
+</sup>
+= 1. When measured with a readout operator, the qubit appears to collapse to state |0&gt; with probability |
+<i >
+a
+</i>
+|
+<sup >
+2
+</sup>
+, and to state |1&gt; with probability |
+<i >
+b
+</i>
+|
+<sup >
+2
+</sup>
+. The state of two qubits can be written as
+</p>
+<p ></p>
+<table  TABID="11305">
+<tr >
+<td  rowspan="3">
+|
+<img ></img>
+&gt; =
+</td>
+<td ></td>
+<td  rowspan="3">
+<i >
+c
+<sub >
+i
+</sub>
+|i&gt; = a
+</i>
+|00&gt; +
+<i >
+b
+</i>
+|01&gt; +
+<i >
+c
+</i>
+|10&gt; +
+<i >
+d
+</i>
+|11&gt;
+</td>
+</tr>
+<tr >
+<td  align="center">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<sup >
+<i >
+i
+</i>
+</sup>
+</td>
+</tr>
+</table>
+<p >
+where |
+<i >
+a
+</i>
+|
+<sup >
+2
+</sup>
++ |
+<i >
+b
+</i>
+|
+<sup >
+2
+</sup>
++ |
+<i >
+c
+</i>
+|
+<sup >
+2
+</sup>
++ |
+<i >
+d
+</i>
+|
+<sup >
+2
+</sup>
+= 1, and the probability of measuring the amplitude of each state is given by the magnitude of its squared coefficient. In general, the state of
+<i >
+n
+</i>
+qubits is specified by 2
+<sup >
+<i >
+n
+</i>
++1
+</sup>
+- 1 real numbers—an exponential amount of information, relative to the number of physical particles required. Most of these states are entangled—to create them requires some kind of interaction between the qubits, and the qubits cannot be treated entirely independently from one another.
+</p>
+<p >
+Designing quantum algorithms is made difficult by the fact that it is impossible to extract the entire exponential amount of information encoded in the state of a quantum system: only a polynomial amount of information can be read out, since a measurement collapses the exponential enormity of the state into a handful of classical values, with probabilities of occurrence given by the amplitudes as described in the previous paragraph. Furthermore, the only computational primitives allowed are unitary operators (which evolve the state of a system under Hamiltonian dynamics) that are reversible and therefore conserve probability. Nevertheless, a collection of wonderful algorithms have been discovered. In 1994, Peter Shor
+<sup >
+<a  href="maguiref.html#ref2">
+2
+</a>
+</sup>
+showed quantum computers could factor large numbers into prime factors in polynomial steps, compared to exponential steps
+<sup >
+<a  href="maguiref.html#ref3">
+3
+</a>
+</sup>
+on classical computers. Prime factorization is an essential part of modern public key cryptographic protocols, paramount to privacy in the electronic world. In 1997, Lov Grover
+<sup >
+<a  href="maguiref.html#ref4">
+4
+</a>
+</sup>
+demonstrated a search algorithm that could search an unsorted list for a single element quadratically faster on a quantum computer than on a classical computer.
+</p>
+<p ></p>
+<h3 >
+Introduction to NMR
+</h3>
+Liquid state nuclear magnetic resonance (
+<code >
+NMR
+</code>
+) is the manipulation of bulk degrees of freedom to obtain information about the underlying nuclear spins in an applied magnetic field. In order to understand how to build a quantum computer using
+<code >
+NMR
+</code>
+, we begin with the general requirements for a quantum computer.
+<sup >
+<a  href="maguiref.html#ref5">
+5
+</a>
+</sup>
+<p ></p>
+<ol >
+<li  value="1">
+It starts in a known state (a pure state such as the ground state).
+</li>
+<li  value="2">
+It is able to efficiently represent any unitary mapping from one state to another from a basic set of elementary unitary mappings.
+</li>
+<li  value="3">
+It is able to concatenate these mappings to form a circuit, that is maintain quantum states long enough to represent any unitary mapping.
+</li>
+<li  value="4">
+It performs projective measurement in order to read out the computation results.
+</li>
+</ol>
+To implement any of the above requires that we understand the dynamics of nuclear spins when they act as an ensemble. Quantum statistical mechanics allows us to compute the equilibrium thermal state of the liquid. Moreover, if we know the dynamics of a single molecule, we can easily calculate the dynamics of the entire liquid. To begin, the dynamics of quantum systems are described by operators that map one quantum state to another, |
+<img ></img>
+&gt;
+<img ></img>
+|
+<img ></img>
+&gt;. For the nuclear spins of our quantum computer, operators are finite dimensional matrices. The Hamiltonian
+<img ></img>
+is a special operator that describes the complete dynamics of a molecule under time evolution and also determines the energy eigenstates of the system. The Hamiltonian of a rapidly tumbling molecule in a liquid containing
+<i >
+n
+</i>
+spin-1/2 nuclei with a strong magnetic flux density
+<i >
+<img ></img>
+= B
+</i>
+<sub >
+0
+</sub>
+<img ></img>
+is given by
+<p ></p>
+<table  TABID="11306">
+<tr >
+<td  rowspan="3">
+<img ></img>
+=
+</td>
+<td  align="center">
+<sub >
+<i >
+n
+</i>
+</sub>
+</td>
+<td  rowspan="3">
+<img ></img>
+<img ></img>
+<sub >
+<i >
+i
+</i>
+</sub>
+(
+<i >
+B
+</i>
+<sub >
+0
+</sub>
++
+<img ></img>
+<i >
+B
+<sub >
+i
+</sub>
+</i>
+)
+<i >
+I
+<sub >
+iz
+</sub>
+</i>
++
+</td>
+<td  align="center"></td>
+<td  rowspan="3">
+2
+<img ></img>
+<img ></img>
+<i >
+J
+<sub >
+ij
+</sub>
+I
+<sub >
+iz
+</sub>
+I
+<sub >
+jz
+</sub>
+</i>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<img ></img>
+</td>
+<td  align="center">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<sup >
+<i >
+i
+</i>
+= 1
+</sup>
+</td>
+<td  align="center">
+<sup >
+<i >
+i &lt; j
+</i>
+</sup>
+</td>
+</tr>
+</table>
+<p >
+where
+<i >
+I
+<sub >
+iz
+</sub>
+</i>
+represents the
+<i >
+z
+</i>
+-axis spin operator for nuclei
+<i >
+i,
+<img ></img>
+<sub >
+i
+</sub>
+</i>
+is the gyromagnetic ratio of spin
+<i >
+i,
+<img ></img>
+B
+<sub >
+i
+</sub>
+</i>
+describes a local magnetic flux density adjustment for each spin
+<i >
+i
+</i>
+due to the local chemical environment, and
+<i >
+J
+<sub >
+ij
+</sub>
+</i>
+describes the coupling, in Hertz, between spins
+<i >
+i
+</i>
+and
+<i >
+j
+</i>
+. We assume for the discussion of the dynamics below that we are in the weak coupling limit where
+<i >
+|
+<img ></img>
+<sub >
+i
+</sub>
+<img ></img>
+B
+<sub >
+i
+</sub>
+-
+<img ></img>
+<sub >
+j
+</sub>
+<img ></img>
+B
+<sub >
+j
+</sub>
+|
+<img ></img>
+J
+<sub >
+ij
+</sub>
+</i>
+. In equilibrium, the Hamiltonian dictates that spin
+<i >
+i
+</i>
+precesses quickly about the
+<i >
+z
+</i>
+-axis at a frequency
+<i >
+<img ></img>
+<sub >
+i
+</sub>
+B
+<sub >
+0
+</sub>
+</i>
+/2
+<img ></img>
+adjusted by the local term,
+<i >
+<img ></img>
+<img ></img>
+B
+<sub >
+i
+</sub>
+</i>
+/2
+<img ></img>
+, the so-called chemical shift. This precession frequency is called the Larmor frequency. This fast oscillation (usually at several MHz) is slowly modulated by the J-coupling (which usually proceeds at a few Hz). These precession states are the equilibrium states of the system, called the eigenstates. With the energy eigenstates, we are now ready to begin to understand the spin dynamics. Given a (2
+<sup >
+<i >
+n
+</i>
+</sup>
+-1)-dimensional basis
+<i >
+| a &gt;
+</i>
+of single-molecule eigenstates, we can write the state of a thermal liquid ensemble of molecules as a density matrix
+<img ></img>
+, where the matrix element
+<i >
+<img ></img>
+<sub >
+ab
+</sub>
+</i>
+is given by
+</p>
+<p ></p>
+<table  TABID="11307">
+<tr >
+<td ></td>
+<td  valign="bottom">
+<sub ></sub>
+<hr ></hr>
+</td>
+</tr>
+<tr >
+<td >
+<i >
+<img ></img>
+<sub >
+ab
+</sub>
+</i>
+=
+</td>
+<td >
+<i >
+c
+<sub >
+a
+</sub>
+c
+<sup >
+*
+</sup>
+<sub >
+b
+</sub>
+</i>
+</td>
+</tr>
+</table>
+<p >
+where the average is taken over the thermal ensemble, and
+<i >
+c
+<sub >
+a
+</sub>
+c
+<sup >
+*
+</sup>
+<sub >
+a
+</sub>
+</i>
+is the probability of being in the state
+<i >
+| a &gt;
+</i>
+. Given a time-evolution operator
+</p>
+<p >
+<i >
+U
+</i>
+(
+<i >
+t
+</i>
+<sub >
+1
+</sub>
+,
+<i >
+t
+</i>
+<sub >
+0
+</sub>
+) =
+<i >
+e
+</i>
+<sup >
+(
+<i >
+i
+</i>
+<img ></img>
+(
+<i >
+t
+</i>
+<sub >
+1
+</sub>
+-
+<i >
+t
+</i>
+<sub >
+0
+</sub>
+))/
+<img ></img>
+</sup>
+</p>
+<p >
+where
+<img ></img>
+is the Hamiltonian of the quantum system during the period from time
+<i >
+t
+</i>
+<sub >
+0
+</sub>
+to time
+<i >
+t
+</i>
+<sub >
+1
+</sub>
+, the density matrix evolves as
+</p>
+<p >
+<img ></img>
+(
+<i >
+t
+</i>
+<sub >
+1
+</sub>
+) =
+<i >
+U
+</i>
+<img ></img>
+(
+<i >
+t
+</i>
+<sub >
+0
+</sub>
+)
+<i >
+U
+</i>
+<sup >
+- 1
+</sup>
+</p>
+<p >
+To know the dynamics of the system for all future times, we just need to know the initial state of the system. Quantum statistical mechanics provides the answer with the thermalized (maximum entropy) density matrix
+</p>
+<p ></p>
+<table  TABID="11308">
+<tr >
+<td  rowspan="3">
+<img ></img>
+(0) =
+<i >
+e
+</i>
+<sup >
+-
+<img ></img>
+/
+<i >
+k
+<sub >
+B
+</sub>
+T
+</i>
+</sup>
+/
+<img ></img>
+=
+</td>
+<td  align="center">
+1
+</td>
+<td  align="center" rowspan="3">
+<img ></img>
+</td>
+<td  rowspan="3">
+<b >
+1
+</b>
++
+</td>
+<td  align="center">
+<sub >
+<i >
+n
+</i>
+</sub>
+</td>
+<td  align="center">
+<img ></img>
+<img ></img>
+<i >
+<sub >
+i
+</sub>
+B
+</i>
+</td>
+<td  rowspan="3">
+<i >
+I
+<sub >
+iz
+</sub>
+</i>
++ . . .
+</td>
+<td  align="center" rowspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<hr ></hr>
+</td>
+<td  align="center">
+<img ></img>
+</td>
+<td >
+<hr ></hr>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<img ></img>
+</td>
+<td  align="center">
+<sup >
+<i >
+i
+</i>
+= 1
+</sup>
+</td>
+<td  align="center">
+<i >
+kT
+</i>
+</td>
+</tr>
+</table>
+<p >
+The partition function
+<img ></img>
+is the normalization factor such that
+<i >
+tr
+</i>
+(
+<img ></img>
+(0)) = 1. Because the Zeeman energies
+<i >
+<img ></img>
+<sub >
+i
+</sub>
+B
+</i>
+<sub >
+0
+</sub>
+are usually about 10
+<sup >
+-5
+</sup>
+times smaller compared to
+<i >
+k
+<sub >
+B
+</sub>
+T
+</i>
+, the first two terms of the Taylor expansion of the exponential serve as a very good approximation, with the second term being about 10
+<sup >
+-5
+</sup>
+times the magnitude of the first, constant term. If our measurement apparatus is a coil wrapped around the sample detecting the classical magnetization signal, it turns out that the constant term is not observable, so we ignore it and concentrate on the remainder (called the deviation density matrix). The only time-evolution operators of interest in this simple model of
+<code >
+NMR
+</code>
+(where we neglect relaxation mechanisms and higher order spin-spin interactions), will be the single-qubit rotations (
+<img ></img>
+=
+<img ></img>
+<i >
+<sub >
+i
+</sub>
+B
+</i>
+<sub >
+1
+</sub>
+<i >
+t
+</i>
+),
+</p>
+<p >
+<i >
+X
+<sub >
+i
+</sub>
+</i>
+(
+<img ></img>
+) =
+<i >
+e
+<sup >
+i
+<img ></img>
+I
+<sub >
+ix
+</sub>
+</sup>
+</i>
+</p>
+<p >
+which corresponds to a magnetic flux density
+<img ></img>
+<sub >
+1
+</sub>
+= 2
+<i >
+B
+</i>
+<sub >
+1
+</sub>
+cos(
+<img ></img>
+<sub >
+<i >
+i
+</i>
+</sub>
+(
+<i >
+B
+</i>
+<sub >
+0
+</sub>
++
+<img ></img>
+<i >
+B
+<sub >
+i
+</sub>
+</i>
+)
+<i >
+t
+</i>
+)
+<img ></img>
+, resonant with spin
+<i >
+i
+</i>
+, for a time
+<i >
+t
+</i>
+. If we think of the spin dynamics in the frame rotating about the z-axis at its Larmor frequency, we can decompose this linearly polarized field into two counter-rotating circularly polarized fields, one of which rotates with this “rotating” frame, while the other rotates oppositely at 2
+<img ></img>
+<sub >
+<i >
+i
+</i>
+</sub>
+(
+<i >
+B
+</i>
+<sub >
+0
+</sub>
++
+<img ></img>
+<i >
+B
+<sub >
+i
+</sub>
+</i>
+) relative to the nuclear magnetization. We can ignore the latter term and concentrate on the former. Then
+<i >
+B
+</i>
+<sub >
+1
+</sub>
+becomes a static field and
+<i >
+B
+</i>
+<sub >
+0
+</sub>
+becomes zero, a much easier system to analyze. The
+<img ></img>
+<sub >
+1
+</sub>
+field simply rotates the spin in the
+<i >
+Y-Z
+</i>
+plane in this rotating frame. We can create this field with the same measurement coil and just control the amplitude, phase, and time duration of our radio-frequency (
+<code >
+RF
+</code>
+) field. If we time the pulse such that
+<img ></img>
+<i >
+<sub >
+i
+</sub>
+B
+</i>
+<sub >
+1
+</sub>
+<i >
+t
+</i>
+=
+<img ></img>
+/2 for the
+<code >
+RF
+</code>
+field, this is known in
+<code >
+NMR
+</code>
+literature as a (
+<img ></img>
+/2)
+<sub >
+<i >
+x
+</i>
+</sub>
+pulse. Similarly,
+</p>
+<p >
+<i >
+Y
+<sub >
+i
+</sub>
+</i>
+(
+<img ></img>
+) =
+<i >
+e
+<sup >
+i
+<img ></img>
+I
+<sub >
+iy
+</sub>
+</sup>
+</i>
+</p>
+<p >
+correspond to performing similar operations along the
+<i >
+y
+</i>
+-axis. The double-qubit rotation
+</p>
+<p >
+<i >
+ZZ
+<sub >
+ij
+</sub>
+</i>
+(
+<img ></img>
+) =
+<i >
+e
+<sup >
+-i
+<img ></img>
+JtI
+<sub >
+iz
+</sub>
+I
+<sub >
+jz
+</sub>
+</sup>
+</i>
+</p>
+<p >
+corresponds to evolving a pair of J-coupled spins for a time
+<i >
+t
+</i>
+.
+</p>
+<p >
+It turns out the
+<i >
+X
+<sub >
+i
+</sub>
+, Y
+<sub >
+i
+</sub>
+</i>
+, and
+<i >
+ZZ
+<sub >
+ij
+</sub>
+</i>
+time-evolution operators are computationally complete, in that together they can approximate any unitary operator with any desired accuracy. Using our coil and an arbitrary waveform
+<code >
+RF
+</code>
+generator, we can satisfy the second of the quantum computing requirements. This coil actually allows us to satisfy the last requirement as well since we use it to perform projective measurement. One subtle point is that some quantum algorithms have been designed to give out probabilistic results from single quantum systems. Fortunately, it has been shown
+<sup >
+<a  href="maguiref.html#ref6">
+6
+</a>
+</sup>
+that they can be modified to give deterministic results for ensemble systems.
+</p>
+<p >
+Decoherence is the process by which a quantum system loses quantum coherence to its environment and becomes classical. In
+<code >
+NMR
+</code>
+, decoherence is measured by how long a spin on one molecule stays in phase coherence with another molecule. This interval is called the spin-spin relaxation time,
+<i >
+T
+</i>
+<sub >
+2
+</sub>
+. The beauty of
+<code >
+NMR
+</code>
+for quantum computing is that
+<i >
+T
+</i>
+<sub >
+2
+</sub>
+is much larger than the gate speed. This allows hundreds, even thousands of quantum gates to be implemented, allowing the third quantum computing requirement to be satisfied. One can see why this is possible: the nucleus is a perfect, frictionless trap, surrounded by a cloud of electrons that shield most external decoherence mechanisms; we are spreading relatively few degrees of freedom over the
+<img ></img>
+(2
+<sup >
+10
+<sup >
+23
+</sup>
+</sup>
+)-sized Hilbert space of a typical liquid. No other system to date has shown such long coherence times and, paradoxically, the ability to control the nuclear states on fast time scales. Quantum error correction is a wonderful theory that has shown that one can compute indefinitely if the decoherence rate per gate is less than a threshold,
+<sup >
+<a  href="maguiref.html#ref7">
+7-10
+</a>
+</sup>
+which has been estimated to be between
+<img ></img>
+(10
+<sup >
+-4
+</sup>
+) to
+<img ></img>
+(10
+<sup >
+-6
+</sup>
+) per gate.
+<sup >
+<a  href="maguiref.html#ref11">
+11
+</a>
+</sup>
+At the cost of many more ancilla spins,
+<code >
+NMR
+</code>
+is the closest demonstrated technology (
+<img ></img>
+(10
+<sup >
+-3
+</sup>
+)) to reaching this threshold. By modifying the chemistry of the liquids, researchers at
+<code >
+IBM
+</code>
+<sup >
+<a  href="maguiref.html#ref12">
+12
+</a>
+</sup>
+are improving this threshold for
+<code >
+NMR
+</code>
+.
+</p>
+<p >
+We have not satisfied the first quantum computing requirement, the creation of a pure state. A thermalized liquid only gives us the mixed state provided by the almost maximum entropy mixed state. One might think this is impossible, since to go from a high entropy state to a zero entropy state requires nonunitary operators. The key insight from a couple of groups is that there are degrees of freedom for rejecting this entropy.
+<sup >
+<a  href="maguiref.html#ref6">
+6
+</a>
+,
+<a  href="maguiref.html#ref13">
+13
+</a>
+,
+<a  href="maguiref.html#ref14">
+14
+</a>
+</sup>
+Logical labeling uses extra spins to label the remaining spins as ground state spins; spatial labeling uses external gradient fields to erase terms in the density matrix by creating a spatial superposition of quantum computers and then mixing them together; temporal labeling creates a series of experiments that are temporally averaged to give an initial ground state and the corresponding evolution. For prototyping our quantum computer, we use an inefficient but conceptually simple method, exhaustive averaging. For two qubits, one might run three experiments, for example, using preparatory gates to create deviation density matrices
+</p>
+<p ></p>
+<table  TABID="11309" width="600">
+<tr >
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  align="center">
+1
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  rowspan="4">
+,
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  align="center">
+1
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  rowspan="4">
+,
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  align="center">
+1
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center">
+0
+</td>
+<td  align="center">
+0.6
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+-0.6
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+-1
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+</tr>
+<tr >
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+-0.6
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+-1
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0.6
+</td>
+<td  align="center">
+0
+</td>
+</tr>
+<tr >
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+-1
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0.6
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+-0.6
+</td>
+</tr>
+</table>
+<p >
+performing the desired computation on each, then averaging the three experimental results—which gives the same result as if one had performed the computation on a state equal to the average of the three initial density matrices,
+</p>
+<p ></p>
+<table  TABID="11310" width="450">
+<tr >
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  align="center">
+1.33
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  rowspan="4">
++
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  align="center">
+-0.33
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+-0.33
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+</tr>
+<tr >
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+-0.33
+</td>
+<td  align="center">
+0
+</td>
+</tr>
+<tr >
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+0
+</td>
+<td  align="center">
+-0.33
+</td>
+</tr>
+</table>
+<p ></p>
+<p >
+The second term is unobservable and the first term is a pure state. This works because quantum mechanics is linear, and just as a Cartesian vector can be resolved into
+<i >
+x, y
+</i>
+, and
+<i >
+z
+</i>
+terms, we can resolve our density matrix into more easily manipulated components.
+<sup >
+<a  href="maguiref.html#ref14">
+14
+</a>
+</sup>
+</p>
+<p ></p>
+<h3 >
+Issues for thermal nuclear resonance
+</h3>
+In this section we discuss issues facing the scaling of liquid nuclear resonance to nontrivial computational complexity. We begin with spin polarization and its essential role in the scalability of quantum computers, then address the both quantum and classical nature of
+<code >
+NMR
+</code>
+in thermal liquids, and finally discuss how to increase the number of qubits in the system.
+<p >
+<b >
+Polarization.
+</b>
+It seems counterintuitive to be able to make the observable term of the thermalized density matrix behave exactly as if it were in the ground state of the system. Delving deeper, consider the largest signal that can be observed by logical labeling to be the difference between the most probable and least probable terms of the density matrix:
+<sup >
+<a  href="maguiref.html#ref15">
+15
+</a>
+,
+<a  href="maguiref.html#ref6">
+6
+</a>
+</sup>
+</p>
+<p >
+<i >
+S
+</i>
+= ((
+<img ></img>
+<i >
+<sub >
+eq
+</sub>
+</i>
+)
+<i >
+<sub >
+max
+</sub>
+</i>
+- (
+<img ></img>
+<sub >
+<i >
+eq
+</i>
+</sub>
+)
+<sub >
+<i >
+min
+</i>
+</sub>
+)
+<img ></img>
+<img ></img>
+(
+<i >
+I
+<sub >
+z
+</sub>
+</i>
+)
+<i >
+<sub >
+max
+</sub>
+</i>
+</p>
+<p >
+Solving this using the equation for the thermalized density matrix
+<img ></img>
+(0) given earlier in this section yields
+</p>
+<p ></p>
+<table  TABID="11311">
+<tr >
+<td  rowspan="3">
+<i >
+S =
+</i>
+</td>
+<td  align="center">
+<i >
+N
+</i>
+</td>
+<td  rowspan="3">
+<img ></img>
+<img ></img>
+</td>
+<td  align="center">
+sinh (
+<i >
+Nß
+<img ></img>
+<img ></img>
+B
+</i>
+<sub >
+0
+</sub>
+/2)
+</td>
+</tr>
+<tr >
+<td >
+<hr ></hr>
+</td>
+<td >
+<hr ></hr>
+</td>
+</tr>
+<tr >
+<td  align="center">
+2
+<sup >
+<i >
+N
+</i>
+</sup>
+</td>
+<td  align="center">
+(cosh (
+<i >
+ß
+<img ></img>
+<img ></img>
+B
+</i>
+<sub >
+0
+</sub>
+/2))
+<sup >
+<i >
+N
+</i>
+</sup>
+</td>
+</tr>
+</table>
+<p >
+The plot of this function is shown in
+<b >
+<a  href="magui1.gif">
+Figure 1
+</a>
+</b>
+A, with a baseline set as spin noise, where quantum information is lost to the environment via stimulated emission with the coil.
+<sup >
+<a  href="maguiref.html#ref16">
+16
+</a>
+</sup>
+It is apparent that between 20 and 50 qubits, no current technique can measure the quantum computing signal. Looking at the problem in the domain of polarization,
+<a  href="magui1.gif">
+Figure 1
+</a>
+B shows the polarization needed to extract a specific number of qubits with a signal-to-noise ratio of 3 decibels (dB) relative to spin noise. This plot shows the spin polarization must approach unity to make the system perform better than classical systems. Both plots show that the Boltzmann limit is not scalable for quantum computation.
+</p>
+<p >
+<a  href="magui1.gif">
+<img ></img>
+Figure 1
+</a>
+</p>
+<p >
+It would be nice to dramatically increase the spin polarization but keep rotational and translational degrees of freedom thermalized. Optical pumping
+<sup >
+<a  href="maguiref.html#ref17">
+17
+</a>
+</sup>
+is a technique potentially able to accomplish this. Each quantum of circularly polarized light carries one unit of angular momentum that can put an atom into a highly polarized electronic state. The electronic polarization can then polarize the nuclear spins through relaxation mechanisms. In noble gases that do not interact and have simple electronic orbitals, close to 50 percent polarizations have been obtained. Happer et al.
+<sup >
+<a  href="maguiref.html#ref18">
+18
+</a>
+</sup>
+did pioneering work on optical pumping of rubidium gases that transfer polarization to either xenon-129 or helium-3. Transferring this polarization to nuclear states efficiently is an open, difficult question, but one that needs to be addressed. Another reason to have optical photons interact with nuclear spins is for quantum error correction. To implement any error correction algorithm, one needs a way to reject errors in the calculation in a way that does not influence the other spins that carry valuable information. A photon channel could be a means to do this—if a spin is polarized by optical pumping its previous state is erased. In summary, polarization is the most serious challenge facing practical quantum computation using ensembles of thermalized nuclear systems. If it can be done, remaining challenges should be surmountable, as will be shown below.
+</p>
+<p >
+<b >
+Is it really quantum?
+</b>
+Even before we begin to address issues of polarization, it is paramount to determine if a mixed state system, in which the quantum system is represented by an ensemble of quantum systems, actually has the requirements to perform quantum computing. This was a question in the original paper by Gershenfeld and Chuang.
+<sup >
+<a  href="maguiref.html#ref6">
+6
+</a>
+</sup>
+The paper showed how to do state preparation, algorithms, and readout on an
+<code >
+NMR
+</code>
+system, but it was not clear that quantum information processing was actually being carried out in the system. Shack and Caves
+<sup >
+<a  href="maguiref.html#ref19">
+19
+</a>
+</sup>
+have almost answered this question. They show that for a number of qubits less than 16, at a modest spin polarization of
+<img ></img>
+= 2 × 10
+<sup >
+-6
+</sup>
+, the density matrix during the entire experiment is fully separable. Being separable means that the statistics of any measurement of the density matrix can be fully described by classical probabilities. In the high temperature limit the quantum computing signal can be simplified to
+</p>
+<p ></p>
+<table  TABID="11312">
+<tr >
+<td  rowspan="3">
+<i >
+S =
+</i>
+</td>
+<td  align="center">
+<i >
+N
+</i>
+</td>
+<td  align="center">
+<img ></img>
+<img ></img>
+<i >
+B
+</i>
+<sub >
+0
+</sub>
+</td>
+<td  rowspan="3">
+=
+</td>
+<td  align="center">
+<i >
+N
+</i>
+</td>
+<td  rowspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<hr ></hr>
+</td>
+<td >
+<hr ></hr>
+</td>
+<td >
+<hr ></hr>
+</td>
+</tr>
+<tr >
+<td  align="center">
+2
+<sup >
+<i >
+N
+</i>
+</sup>
+</td>
+<td  align="center">
+2
+<i >
+k
+<sub >
+B
+</sub>
+T
+</i>
+</td>
+<td  align="center">
+2
+<sup >
+<i >
+N
+</i>
++ 1
+</sup>
+</td>
+</tr>
+</table>
+<p >
+The density matrix of the spins in
+<code >
+NMR
+</code>
+can be described classically
+<sup >
+<a  href="maguiref.html#ref19">
+19
+</a>
+</sup>
+if
+</p>
+<p ></p>
+<table  TABID="11313">
+<tr >
+<td  rowspan="3">
+<i >
+S
+</i>
+<img ></img>
+<img ></img>
+<img ></img>
+</td>
+<td  align="center">
+1
+</td>
+</tr>
+<tr >
+<td >
+<hr ></hr>
+</td>
+</tr>
+<tr >
+<td  align="center">
+1 + 2
+<sup >
+2
+<i >
+N
+</i>
+- 1
+</sup>
+</td>
+</tr>
+</table>
+<p >
+This means that for
+<i >
+N
+</i>
+smaller than a certain number, entanglement cannot exist. One could rephrase the calculations and ask “What is the minimum polarization needed so that a bulk
+<code >
+NMR
+</code>
+system with a number of qubits greater than one has a density matrix that is not separable?” The minimum polarization is 44.4 percent. Fortunately, this is not the end of the story: quantum computing is not just about the density matrix, it is also about unitary evolution. Shack and Caves
+<sup >
+<a  href="maguiref.html#ref19">
+19
+</a>
+</sup>
+show that if a unitary transform can be written as an outer product of matrices
+</p>
+<p >
+<i >
+V = V
+</i>
+<sub >
+1
+</sub>
+<img ></img>
+<i >
+V
+</i>
+<sub >
+2
+</sub>
+. . .
+<img ></img>
+<i >
+V
+<sub >
+N
+</sub>
+</i>
+</p>
+<p >
+then a classical description with positive transition probabilities also can fully describe the system.
+</p>
+<p >
+However, when they tried to include entangling unitaries, operators that cannot be written as in the equation above, they found a classical system could describe the system with classical transition probabilities only at the expense of an exponential decrease
+<img ></img>
+in signal-to-noise ratio for each step. They further showed that an exponential signal decrease per step can be avoided for
+<i >
+K
+</i>
+entangling unitaries by adding
+<i >
+N
+</i>
+ancillary qubits.
+<i >
+K
+</i>
+is the largest integer such that
+</p>
+<p >
+<img ></img>
+<img ></img>
+<img ></img>
+<sup >
+<i >
+K
+</i>
++1
+</sup>
+</p>
+<p >
+For the classical system to be able to use a single entangling unitary with no signal reduction at a polarization of 2 × 10
+<sup >
+-6
+</sup>
+, this corresponds to
+<i >
+K =
+</i>
+6 qubits. One could pose the question, “What is the minimum polarization such that for
+<i >
+N
+<img ></img>
+</i>
+2, no entangling unitaries can be simulated by the classical system without exponential signal decrease?” For 2 qubits, this corresponds to 3.9 × 10
+<sup >
+-3
+</sup>
+, above the range of current spectrometers, but within the realm of possibility of even conventional polarization enhancement techniques such as the Nuclear Overhauser Effect
+<sup >
+<a  href="maguiref.html#ref20">
+20
+</a>
+</sup>
+—dynamic nuclear polarization with electrons. The model used by the authors for avoiding exponential signal decrease is only one of many possibilities: for a system to perform genuine information processing, all possible classical models cannot account for the entangling unitary evolutions without an exponential cost. Most believe that although the initial state of thermal
+<code >
+NMR
+</code>
+is separable, the dynamics will not be.
+</p>
+<p >
+The question of whether
+<code >
+NMR
+</code>
+is quantum or not is an academic question—unity polarization, as addressed in the previous section, is paramount for scalable quantum computation. With unity polarization both the initial states and the dynamics will surely be quantum mechanical.
+</p>
+<p >
+<b >
+Number of qubits.
+</b>
+The last major barrier for thermal
+<code >
+NMR
+</code>
+quantum computing is the number of qubits. To be able to implement error correction on a quantum computer may require somewhere between 10 and 100 qubits to describe a single qubit.
+<sup >
+<a  href="maguiref.html#ref10">
+10
+</a>
+</sup>
+To represent thousands of fully coupled qubits with separate resonances is impossible with current techniques. Fortunately, Seth Lloyd
+<sup >
+<a  href="maguiref.html#ref21">
+21
+</a>
+</sup>
+provided a solution. If one has a polymer chain of the type
+<i >
+D-A-B-C-A-B-C …
+</i>
+, where each letter corresponds to a unique resonance of a nuclear species, then this system is capable of performing any quantum computation. This architecture suffers a slight slowdown to pass information up and down the chain, but the huge gains that quantum algorithms offer are still preserved. This architecture is called a Single Instruction Multiple Data (
+<code >
+SIMD
+</code>
+) cellular automata. Recently, it has been shown
+<sup >
+<a  href="maguiref.html#ref22">
+22
+</a>
+</sup>
+that only
+<i >
+… A-B-A-B …
+</i>
+is necessary, which will make molecular synthesis considerably easier.
+</p>
+<p ></p>
+<h3 >
+Hardware for the table-top quantum computer
+</h3>
+We have begun the development of instrumentation to address the issues raised in the previous section. An
+<code >
+NMR
+</code>
+quantum computer starts with a collection of molecules in a liquid, where each molecule is a redundant quantum computer. In the presence of our homogeneous magnet field, a small percentage of these spins align with the magnetic field and begin to precess. By applying amplitude, frequency, phase and time controlled magnetic energy, we can rotate the spins around an arbitrary axis in the Hilbert space. To do this, we wrap a coil around the liquid sample, and add reactive elements to make it resonant at several frequencies. We use a digitally controlled transmitter that generates these waveforms. With sensitive electronics and a switch, we can detect the magnetization of the liquid and perform a measurement of the quantum state. A general system diagram is shown in
+<b >
+<a  href="magui2.gif">
+Figure 2
+</a>
+</b>
+.
+<p >
+<a  href="magui2.gif">
+<img ></img>
+Figure 2
+</a>
+</p>
+<p >
+<b >
+Computational optimizations.
+</b>
+Current commercial
+<code >
+NMR
+</code>
+spectrometers are incredible machines capable of doing a range of tasks, such as imaging and quantitative chemical structure determination. With the instrumentation outlined below, we hope to match current spectrometers in performance but end up with a device that can be treated more as a computer. Since we are trying to make a computer, there are optimizations that we can do to improve our system performance and size over commercial
+<code >
+NMR
+</code>
+spectrometers. The first has to do with the sample—commercial systems need to routinely analyze a number of samples. As a result, these systems are engineered for cylindrical symmetry for easy access. The ends contribute an inhomogeneity in the
+<code >
+RF
+</code>
+field, leading to errors in the computational gates. The major constraint for this configuration is that the active region of a sample cannot be larger than about 1.5 cm in length and 1 cm in diameter. For our computer, we need only a single sample and can engineer our system for spherical symmetry with no end effects. A spherical probe would have higher
+<code >
+RF
+</code>
+homogeneity and allow much smaller magnet designs.
+</p>
+<p >
+Since we are interested in a computational result rather than a chemical spectrum, we can use a single qubit to serially produce an answer. This poses an enormous advantage since we can make a very high
+<i >
+Q
+</i>
+electrical,
+<sup >
+<a  href="maguiref.html#ref23">
+23
+</a>
+</sup>
+optical,
+<sup >
+<a  href="maguiref.html#ref24">
+24
+</a>
+</sup>
+or mechanical readout system (decoupled from the transmitter in the last two cases) that could dramatically improve our sensitivity. Another technique is to use an electron channel to measure an answer. This is an old technique
+<sup >
+<a  href="maguiref.html#ref20">
+20
+</a>
+</sup>
+called
+<code >
+ENDOR
+</code>
+, or Electron-Nuclear Double Resonance. Going through the electron channel will optimistically give a gyromagnetic ratio of improvement. The gyromagnetic ratio is inversely proportional to rest mass, and thus approximately three orders of magnitude improvement in signal can be obtained. Species-dependent relaxation mechanisms may make this approach insubstantial, but is worth investigating further for candidate quantum computing molecules.
+</p>
+<p >
+<b >
+Magnet design.
+</b>
+To make a table-top system, one needs a compact, homogeneous magnetic field. We are investigating permanent magnet structures to solve this problem. There are a number of constraints for the system: small enough to fit on a table-top; as high a magnetic flux density as possible; a homogeneity of the flux density across the sample of about one part per billion. The latter two points require some justification. The basic signal-to-noise ratio for a coil is proportional to
+<i >
+B
+</i>
+<sub >
+0
+</sub>
+<sup >
+7/4
+</sup>
+.
+<sup >
+<a  href="maguiref.html#ref25">
+25
+</a>
+</sup>
+Given
+<code >
+NMR
+</code>
+signals are extremely small, it is important to maximize this signal-to-noise ratio. If there are spatial field variations, there will be spins in the sample that will resonate slightly faster or slower than others. With the spins out of phase, this is an artificial means of introducing coherence that shortens the maximum possible coherence time of the liquid. Empirically, it has been found that for a homogeneity of one part per billion, all experimentally induced decoherence will be smaller than the natural decoherence processes. Due to manufacturing tolerances, this lofty goal cannot be reached in practice solely from the magnet alone. The field must be corrected in a controlled manner with slight perturbations, a process called shimming. With shimming, the magnet tolerance required is about 1 to 10 parts per million (ppm). This will be explained in more depth in the next section.
+</p>
+<p >
+We have done finite element modeling of two basic magnet geometries. The first is based on an arrayed magnet geometry invented by Klaus Halbach.
+<sup >
+<a  href="maguiref.html#ref26">
+26
+</a>
+</sup>
+It can be shown
+<sup >
+<a  href="maguiref.html#ref27">
+27
+</a>
+</sup>
+that for a magnetization distribution within a cylindrical volume as shown in
+<b >
+<a  href="magui3.gif">
+Figure 3
+</a>
+</b>
+, one can obtain a perfectly homogeneous solution within the volume of field strength
+</p>
+<p >
+<a  href="magui3.gif">
+<img ></img>
+Figure 3
+</a>
+</p>
+<p >
+<i >
+|B| = B
+<sub >
+r
+</sub>
+</i>
+ln(
+<i >
+r
+</i>
+<sub >
+2
+</sub>
+/
+<i >
+r
+</i>
+<sub >
+1
+</sub>
+)
+</p>
+<p >
+<i >
+B
+<sub >
+r
+</sub>
+</i>
+is the remanent flux density, that is the flux density output in a zero magnetic field. This is quite surprising since one is able to obtain flux densities inside the volume that are much larger than this remanence. To construct this magnet, Halbach developed an approximation using segments of magnets that achieve a high order approximation to this field. The finite element model is shown in
+<b >
+<a  href="magui4.gif">
+Figure 4
+</a>
+</b>
+. The design goal was to achieve 1 ppm homogeneity over a 1 cm diameter sphere in the middle of the magnet. This was accomplished with
+<i >
+r
+</i>
+<sub >
+1
+</sub>
+= 2 cm,
+<i >
+r
+</i>
+<sub >
+2
+</sub>
+= 6.5 cm, |
+<img ></img>
+| = 1.513 T.
+</p>
+<p >
+<a  href="magui4.gif">
+<img ></img>
+Figure 4
+</a>
+</p>
+<p >
+This is very encouraging, but from a practical point of view has a couple of limitations. Manufacturing tolerances on modern rare earth magnets, usually made by sintering, pressure bonding, or extruding are about 1 to 10 thousandths of an inch and the error on the magnetization angle can approach two degrees. These two facts make the best possible homogeneity on the order of one part per million. Two insights lead to alternatives. The first is to construct the magnet out of many tiny magnets. With enough magnets, the statistics of the distribution of errors for the ensemble of magnets average out high spatial frequencies in the magnetic field. The second method is more practical and simply requires judicious placement of high permeability materials. From Laplace's equation, taking the Fourier transform in space yields
+</p>
+<p ></p>
+<table  TABID="11314">
+<tr >
+<td  rowspan="3">
+<img ></img>
+(
+<i >
+<b >
+k
+</b>
+<i >
+) =
+</i>
+</i>
+</td>
+<td  align="center">
+1
+<i >
+F
+</i>
+(
+<i >
+<b >
+k
+</b>
+</i>
+)
+</td>
+</tr>
+<tr >
+<td >
+<hr ></hr>
+</td>
+</tr>
+<tr >
+<td  align="center">
+(
+<i >
+<b >
+k
+</b>
+•
+<b >
+k
+</b>
+</i>
+)
+<i >
+µ
+</i>
+</td>
+</tr>
+</table>
+<p >
+where
+<i >
+F
+</i>
+(
+<i >
+<b >
+k
+</b>
+</i>
+) is the spatial Fourier transform of
+<img ></img>
+•
+<i >
+M
+</i>
+, the magnetization. The frequency component
+<i >
+F
+</i>
+(
+<b >
+<i >
+k
+</i>
+</b>
+)
+<i >
+d
+<b >
+k
+</b>
+</i>
+will be attenuated by a factor of (
+<i >
+<b >
+k
+</b>
+</i>
+•
+<i >
+<b >
+k
+</b>
+</i>
+)
+<i >
+µ
+</i>
+. For ferromagnetic materials with
+<i >
+µ
+<sub >
+r
+</sub>
+</i>
+approaching 100000, the high permeability enhances the filtering of Laplace's equation by a factor
+<i >
+µ
+<sub >
+r
+</sub>
+</i>
+over using permanent magnet materials alone. Fermilab
+<sup >
+<a  href="maguiref.html#ref28">
+28
+</a>
+</sup>
+took advantage of this point in the design of their antiproton recycler ring, where they required small, homogeneous magnets. They iteratively shaped the pole pieces of a traditional H-loop design.
+</p>
+<p >
+<b >
+Shimming.
+</b>
+Shimming, or the modification of the bias magnetic field by precisely controlled electromagnets (or, in some cases, permanent magnets, µ-metal, and chunks of steel), can increase the homogeneity of the bias magnetic field by several orders of magnitude. This is essential for
+<code >
+NMR
+</code>
+due to the fact that nonidealities in the magnetic field can greatly reduce the lifetime of quantum coherences and blur features in the
+<code >
+NMR
+</code>
+spectrum. The observed signal will be a sum of the signals of many different isochromats, or collections of spins at the same frequency. A broadening of a waveform in the frequency-domain is associated with a shrinking of the length of the signal in the time-domain, since as the signal components at various frequencies dephase and become random with respect to one another, their sum tends toward zero. To perform a quantum computation, the signal must not decay below the noise level until the computation is complete. Thus we require that the homogeneity of our magnetic field be within one part in 10
+<sup >
+9
+</sup>
+.
+</p>
+<p >
+In a region without currents, a magnetic field obeys Laplace's equation,
+<img ></img>
+<sup >
+2
+</sup>
+<img ></img>
+~
+<img ></img>
+<sup >
+2
+</sup>
+<i >
+B
+</i>
+= 0, which can be solved in terms of spherical harmonics. (We set the
+<i >
+x
+</i>
+- and
+<i >
+y
+</i>
+-components of the magnetic field to zero, and consider only the
+<i >
+z
+</i>
+-component, which we refer to as
+<i >
+B
+</i>
+, in the following discussion.) Spherical harmonics are enumerated by indices (
+<i >
+l, m
+</i>
+), which are called the
+<i >
+order
+</i>
+and the
+<i >
+degree
+</i>
+, respectively. For
+<i >
+m =
+</i>
+0, the
+<i >
+zonal
+</i>
+harmonics, one has cylindrical symmetry (i.e., the polar coordinate
+<img ></img>
+is irrelevant), which is appropriate for many magnets, where the dominant inhomogeneity is due to cylindrical end effects. The equation for
+<i >
+B
+</i>
+at the point (
+<i >
+r,
+<img ></img>
+,
+<img ></img>
+</i>
+) is then of the form
+</p>
+<p >
+<i >
+B
+</i>
+(
+<i >
+r
+</i>
+,
+<img ></img>
+) =
+<img ></img>
+<i >
+C
+<sub >
+n
+</sub>
+</i>
+(
+<i >
+r/a
+</i>
+)
+<i >
+<sup >
+n
+</sup>
+P
+<sub >
+n
+</sub>
+</i>
+(cos
+<img ></img>
+)
+</p>
+<p >
+where
+<i >
+P
+<sub >
+n
+</sub>
+</i>
+is the
+<i >
+n
+</i>
+th Legendre polynomial, and
+<i >
+C
+<sub >
+n
+</sub>
+</i>
+and
+<i >
+a
+</i>
+are parameters. In general, the complete solution for all (
+<i >
+l, m
+</i>
+) (including the
+<i >
+tesseral
+</i>
+terms, for which
+<i >
+m
+<img ></img>
+0
+</i>
+) is, for the point (
+<i >
+r,
+<img ></img>
+,
+<img ></img>
+</i>
+),
+</p>
+<p ></p>
+<table  TABID="11315">
+<tr >
+<td  rowspan="3">
+<i >
+B =
+</i>
+</td>
+<td  align="center" valign="bottom">
+<sub >
+<img ></img>
+</sub>
+</td>
+<td  align="center">
+<sub >
+l
+</sub>
+</td>
+<td  rowspan="3">
+<i >
+C
+<sub >
+n
+</sub>
+</i>
+(
+<i >
+r/a
+</i>
+)
+<i >
+<sup >
+l
+</sup>
+P
+<sub >
+lm
+</sub>
+</i>
+(cos
+<img ></img>
+)cos(
+<i >
+m
+</i>
+(
+<img ></img>
+-
+<img ></img>
+<i >
+<sub >
+lm
+</sub>
+</i>
+))
+</td>
+</tr>
+<tr >
+<td  align="center">
+<img ></img>
+</td>
+<td  align="center">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<sup >
+<i >
+l
+</i>
+=0
+</sup>
+</td>
+<td  align="center">
+<sup >
+<i >
+m
+</i>
+=0
+</sup>
+</td>
+</tr>
+</table>
+<p >
+where
+<i >
+P
+<sub >
+lm
+</sub>
+</i>
+is called the
+<i >
+associated Legendre polynomial
+</i>
+, and the last
+<img ></img>
+dependent cosine term sinusoidally modulates the magnetic field as one traces a circle in the
+<i >
+xy
+</i>
+plane. All the harmonics except for
+<i >
+l = m =
+</i>
+0 contribute to the inhomogeneities, since a homogeneous field, by definition, has a magnitude which does not depend on any coordinates. Since the higher-order terms rapidly decrease in amplitude for most realistic solutions of Laplace's equation, adjusting a few terms should suffice to remove most inhomogeneities: this is the motivation for including between 10 and 30 shim coils with every modern
+<code >
+NMR
+</code>
+spectrometer.
+</p>
+<p >
+Spherical harmonics are orthogonal, so in theory one should be able to tune each coil just once. In reality they are not precisely orthogonal, since a small translation of one coil with respect to another leads to high-order interferences between the various orders. Thus shimming with orthogonal coils is a slightly nonlinear problem, and for a spectrometer with
+<i >
+n
+</i>
+shim coils, one must conduct a search over an
+<i >
+n
+</i>
+-dimensional space of coil currents, trying to maximize the height and narrowness of the peaks in the spectrum. Many cumulative weeks of human effort are usually required for the shimming operation for the lifetime of a spectrometer, but small corrections are usually automatable. We are very interested in making shimming an on-line process, where a classical computer is continuously correcting the shim currents for maximum resolution with no human intervention. The purpose is to begin to abstract away the spectrometer aspect of the machine and focus on the computational aspects. To do so will require modern nonlinear search methods, as will be described in the software section.
+</p>
+<p >
+For a 1 tesla (T) magnetic flux density with part-per-100000 homogeneity, in order to get part-per-billion homogeneity, the error in these small fields must be on the order of 10
+<sup >
+-5
+</sup>
+Gauss, roughly 10000 times smaller than the Earth's magnetic field. The physical coils we developed are planar, as shown in
+<b >
+<a  href="magui5.jpg">
+Figure 5
+</a>
+</b>
+. They are simply designed and fabricated using normal techniques for printed circuit boards. This is an old technique, as planar, orthogonal shimming was developed
+<sup >
+<a  href="maguiref.html#ref29">
+29
+</a>
+</sup>
+in the 1950s to shim electromagnets, but fell out of favor when superconducting magnets became adopted. We have built electronics to address any number of coils: each coil has a bipolar 16-bit digital-to-analog converter (
+<code >
+DAC
+</code>
+) capable of outputting between -100 and 100 milliampere (mA) of current, so that the least significant bit corresponds to 305 µ A of current. For a 25-turn coil of diameter 5 cm, this creates a magnetic field with magnitude ~1 gauss (G) (1 cm away from the coil center), so that the least significant bit corresponds to about 10
+<sup >
+-5
+</sup>
+G. Thus the specified hardware is, at least in theory, capable of creating the necessary fields. The actual performance depends on many things, including the stability of the shimming system's power supply, the susceptibility of the electronics to external noise, and unavoidable noise imposed by the laws of thermodynamics.
+</p>
+<p >
+<a  href="magui5.jpg">
+<img ></img>
+Figure 5
+</a>
+</p>
+<p >
+<b >
+Transmitter.
+</b>
+To generate arbitrary time series
+<code >
+RF
+</code>
+signals without prohibitive amounts of analog hardware, we have investigated minimal software radio approaches. With permanent magnet systems, resonance frequencies will reach only about 80 megahertz (MHz). This is well within the domain of the best digital-to-analog converters. In making a robust transmitter for
+<code >
+NMR
+</code>
+, one must be very careful with transmitter noise, phase noise of the oscillator, and long-term stability. To begin development, we began with a
+<code >
+VXI
+</code>
+-based, 40 million sample per second
+<code >
+DAC
+</code>
+made by Hewlett-Packard. The
+<code >
+HPE1445
+</code>
+has 13 bits of digital resolution and generates arbitrary waveforms of any duration, and the clock is derived from a very stable oven-controlled crystal oscillator (
+<code >
+OCXO
+</code>
+). Initially, we have been interested in creating a system that can address two heteronuclear species such as protons and carbon-13 (many more qubits can exist in each heteronuclear subspace). We constructed a small analog board that takes the
+<code >
+DAC
+</code>
+output and, with filtering, creates simultaneous arbitrary waveforms for both species. A photograph of the board is shown in
+<b >
+<a  href="magui6.jpg">
+Figure 6
+</a>
+</b>
+. The signal from the
+<code >
+DAC
+</code>
+is split into two paths and is filtered, then converted by an
+<code >
+RF
+</code>
+mixer to each respective Larmor frequency. The local oscillators, also made by Hewlett-Packard, are switched between transmit and receive mode by gallium arsenide switches made by Microwave Associates (
+<code >
+M/A-COM
+</code>
+). These switches were chosen for their unusually high isolation of about 70 dB between channels and fast switching speed. High isolation is important because any unnecessary noise leakage to the receiver will degrade receiver performance and allow high power transmit pulses to be demodulated in the receiver. Control of the transmitter switches and other functions on this board and the receiver was accomplished with a Hitachi 32-bit processor.
+</p>
+<p >
+<a  href="magui6.jpg">
+<img ></img>
+Figure 6
+</a>
+</p>
+<p >
+<b >
+Receiver.
+</b>
+The signal magnitude produced by a coil interacting with the spin magnetization after a (
+<img ></img>
+/2) pulse is given
+<sup >
+<a  href="maguiref.html#ref30">
+30
+</a>
+</sup>
+by
+</p>
+<p >
+<i >
+S
+<img ></img>
+N
+<sub >
+s
+</sub>
+ß(
+<img ></img>
+B
+</i>
+<sub >
+0
+</sub>
+)
+<sup >
+2
+</sup>
+(
+<i >
+LV
+<sub >
+s
+</sub>
+</i>
+<img ></img>
+)
+<sup >
+½
+</sup>
+,
+</p>
+<p >
+where
+<i >
+N
+<sub >
+s
+</sub>
+</i>
+is the number of spins, ß is a parameter to indicate the inhomogeneity of the field
+<i >
+B
+</i>
+<sub >
+1
+</sub>
+,
+<i >
+L
+</i>
+is the coil inductance,
+<i >
+V
+<sub >
+s
+</sub>
+</i>
+is the sample volume, and
+<img ></img>
+is the ratio of the volume of the active sample region to the coil. The noise term, due to fluctuation-dissipation, is the traditional Johnson type (ignoring equipartition and spin-noise
+<sup >
+<a  href="maguiref.html#ref16">
+16
+</a>
+</sup>
+):
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+where
+<i >
+F
+</i>
+is the noise figure of the receiver,
+<i >
+k
+<sub >
+B
+</sub>
+T
+</i>
+is Boltzmann's constant times the temperature,
+<i >
+R
+</i>
+is the resistance of the coil, and
+<i >
+<img ></img>
+f
+</i>
+is the input receiver bandwidth. For designing a receiver, we see it is important to minimize both the input bandwidth and the noise figure. Since signals in
+<code >
+NMR
+</code>
+are on the order of -150 to -130 dBm (dB relative to 1 mW), careful attention to these details is paramount for detecting signals. For the receiver, we started with a
+<code >
+VXI
+</code>
+-based, 20-million sample per second analog-to-digital converter (
+<code >
+ADC
+</code>
+) made by Hewlett-Packard. The
+<code >
+HPE1437
+</code>
+is an amazing device capable of representing 23 bits of noise-free digital resolution. The maximum dynamic range of an
+<code >
+ADC
+</code>
+without processing gain is 1.76 + 6.02N dB, where N is the nominal bit resolution. Thus, the theoretical dynamic range of this device is 140.22 dB. However, since we routinely detect signals that are -130 dBm, analog electronics are still required to get the maximum digital resolution. With this, we developed a minimal receiver that performed some basic amplification and filtering. The signals from the protons and carbon-13 are amplified by an Avantek 105 amplifier, a 1.6 dB noise figure amplifier with 27 dB of gain. After a wide, bandpass filter, the signal is downconverted, filtered, and then amplified with an integrated device, the
+<code >
+RF2612
+</code>
+made by
+<code >
+RF
+</code>
+Micro Devices. The signal is then buffered with an op amp and then combined for the
+<code >
+HPE1437
+</code>
+. The overall
+<code >
+RF
+</code>
+specifications for the board are a 1.7 dB
+<code >
+NF
+</code>
+, with 60-104 dB of gain. A photograph of the board is shown in
+<b >
+<a  href="magui7.jpg">
+Figure 7
+</a>
+</b>
+. The
+<code >
+ADC
+</code>
+digitally downsamples the signal to obtain the amplitude and phase of the signal and then applies digital filtering and downsampling to reduce the output data rate. What we hope we have shown is not that this system is superior to commercial systems, but is a simple, inexpensive, and software-driven one.
+</p>
+<p >
+<a  href="magui7.jpg">
+<img ></img>
+Figure 7
+</a>
+</p>
+<p >
+<b >
+FPGA version.
+</b>
+The system that we have developed should be capable of doing all the tasks necessary to implement a quantum computer, but it is hardly table-top in size or function. With so many
+<code >
+VXI
+</code>
+modules and separate pieces, we sought a minimal implementation of all these functions. Field Programmable Gate Arrays (
+<code >
+FPGAs
+</code>
+) are software programmable devices that give one the ability to develop small microprocessors, memory controllers, waveform generators, and timers usually implemented in application-specific integrated circuits (
+<code >
+ASICs
+</code>
+). We are developing a couple of boards around these devices that we expect will be able to amply do all the required tasks of our current system. The design that is currently being implemented is shown in
+<b >
+<a  href="magui8.gif">
+Figure 8
+</a>
+</b>
+. Control of the board is implemented using the Internet Protocol (
+<code >
+IP
+</code>
+) over Ethernet. An
+<code >
+FPGA
+</code>
+serves as a controller that interfaces to a small Ethernet physical interface and Memory Access Controller (
+<code >
+MAC
+</code>
+) using the User Datagram Protocol (
+<code >
+UDP
+</code>
+) over
+<code >
+IP
+</code>
+. A three-wire serial bus is optoisolated and carries data over a bus to the transmitter and receiver cards. The transmitter card has an
+<code >
+FPGA
+</code>
+controlling 512 kilobytes (kB) of static
+<code >
+RAM
+</code>
+and an Analog Devices
+<code >
+AD9856
+</code>
+, a 200 MHz complementary metal oxide semiconductor (
+<code >
+CMOS
+</code>
+) digital upconverter. Over Ethernet, one supplies the frequency, amplitude, and phase of a signal digitally and this 3" × 2" card creates the waveform with submicrosecond time resolution. The same analog receiver design described in the previous section is implemented here except that the signal is mixed down to a standard intermediate frequency of 455 kHz. A third board containing an
+<code >
+FPGA
+</code>
+with 512 kB of
+<code >
+SRAM
+</code>
+and the
+<code >
+AD9260
+</code>
+samples the signal at 10
+<code >
+MSPS
+</code>
+(mega samples per second) and 16-bit resolution. On the
+<code >
+FPGA
+</code>
+, digital filters and downsamplers are applied and the signal is digitally downconverted with a quadrature local oscillator to recover amplitude and phase. Over the three-wire serial bus, the data are transmitted to the
+<code >
+FPGA
+</code>
+Ethernet controller and can be sent to any device on our network to be visualized and processed. Timing control for this whole system is controlled by a small oven-controlled crystal oscillator, which has excellent phase noise characteristics and temperature/time stability. To add other spins, one simply needs to add a stack of the three aforementioned boards, a high power switch, and
+<code >
+RF
+</code>
+amplifier.
+</p>
+<p >
+<a  href="magui8.gif">
+<img ></img>
+Figure 8
+</a>
+</p>
+<p ></p>
+<h3 >
+Software
+</h3>
+In this section we discuss the pieces of software needed to run on our quantum computer, including low-level programming to address our hardware and optimization software for shimming.
+<p >
+<b >
+Pulse language and system design.
+</b>
+We designed a programming language,
+<sup >
+<a  href="maguiref.html#ref31">
+31
+</a>
+</sup>
+<i >
+q
+</i>
+, to control the hardware presented in the last section. A
+<i >
+q
+</i>
+program is parsed by an interpreter,
+<code >
+QOS
+</code>
+(or Quantum Operating System), which runs on a
+<code >
+PC
+</code>
+. The job of
+<code >
+QOS
+</code>
+is to coordinate the timing and configuration of the hardware, compile pulse sequences into waveforms for broadcast, and process the signals that return. It is the digital core of the software-radio architecture of this
+<code >
+NMR
+</code>
+system. A
+<i >
+q
+</i>
+program is essentially assembly microcode of the basic operations for an
+<code >
+NMR
+</code>
+quantum computer. A sample
+<i >
+q
+</i>
+program that performs one of the three pulse sequences required for executing Grover's algorithm, which performs a search on
+<i >
+N
+</i>
+unsorted items with only
+<img ></img>
+(
+<img ></img>
+<i >
+N
+</i>
+) database accesses, is briefly explained in the accompanying sidebar.
+</p>
+<p ></p>
+<center >
+<table  TABID="11316" bgcolor="CCCCCC" border="#DEFAULT" cellpadding="15" width="600">
+<tr >
+<td >
+<b >
+Declare the program type
+</b>
+<br ></br>
+<code >
+% This is a comment
+<br ></br>
+% A name for this program — Grover's algorithm to discover the
+<br ></br>
+% |&gt;11 state
+<br ></br>
+Qname('grover|11&gt;')
+<br ></br>
+Qsample('13CHC13') % Molecule — chloroform
+<br ></br>
+Qversion('1.0 esb') % Program version
+<br ></br>
+Qdecouplingstyle('minimal') % Whether decoupling is on/off
+</code>
+<p >
+<b >
+Declare the molecular parameters
+</b>
+<br ></br>
+<code >
+Qnumqbs(2) % number of qubits
+<br ></br>
+% Proton(H) on chloroform is first qubit — give NMR specific information
+<br ></br>
+% for qubit
+<br ></br>
+Qspecies(1,'1H', 26.7510e7, 42574931.880108, 35000000, 1, 0.001, 5)
+<br ></br>
+% Carbon(13C) is 2nd qubit
+<br ></br>
+Qspecies(2,'13C', 6.7263e7, 10705040.871934, 8000000, 0.0159, 0.001, 5)
+</code>
+</p>
+<p >
+<b >
+Prepare the state (for temporal averaging purposes)
+</b>
+<br ></br>
+<code >
+% A square (hard) pulse (as opposed to a soft gradient or sinc pulse)
+<br ></br>
+% applied about the y-axis for 90 degrees
+<br ></br>
+Qy(1,90,square)
+<br ></br>
+% wait for a specified time in decimal units
+<br ></br>
+Qwait(0.002325581395349, dec, 0)
+<br ></br>
+Qy(2, 90, square)
+<br ></br>
+% An xpulse
+<br ></br>
+Qx(2, -90, square)
+<br ></br>
+Qy(2, 90, square)
+<br ></br>
+Qy(1,-90, square)
+<br ></br>
+Qx(1,-90, square)
+<br ></br>
+Qy(2,90, square)
+<br ></br>
+Qwait(0.002325581395349, dec, 0)
+<br ></br>
+Qy(1,-90,square)
+<br ></br>
+Qx(1,-90,square)
+<br ></br>
+Qy(1,90,square)
+<br ></br>
+Qy(2,-90,square)
+<br ></br>
+Qx(2,-90,square)
+</code>
+</p>
+<p >
+<b >
+Perform Grover's algorithm including readout
+</b>
+<br ></br>
+<code >
+Qx(1,180,square)
+<br ></br>
+Qy(1,90,square)
+<br ></br>
+Qx(2,180,square)
+<br ></br>
+Qy(2,90,square)
+<br ></br>
+Qwait(0.002325581395349, dec, 0)
+<br ></br>
+Qy(2,-90,square)
+<br ></br>
+Qx(2,90,square)
+<br ></br>
+Qy(1,-90,square)
+<br ></br>
+Qx(1,90,square)
+<br ></br>
+Qwait(0.002325581395349, dec, 0)
+<br ></br>
+Qy(2,-90,square)
+<br ></br>
+Qx(2,-90,square)
+<br ></br>
+Qy(1,-90,square)
+<br ></br>
+Qx(1,-90,square)
+</code>
+</p>
+</td>
+</tr>
+</table>
+</center>
+<p >
+<b >
+Optimization for shimming.
+</b>
+We built a machine-learning environment for
+<code >
+QOS
+</code>
+. Our initial priority was to continuously automate the tedious shimming process, but it quickly became apparent that with appropriate control software, the
+<code >
+NMR
+</code>
+spectrometer could automatically perform very complicated tasks. For example, one might then run a multidimensional
+<code >
+NMR
+</code>
+experiment like
+<code >
+COSY
+</code>
+(COrrelated SpectroscopY), extracting the various
+<i >
+J
+</i>
+-couplings between spins, as well as any other interactions that might be apparent. This is a very difficult task, requiring excellent hardware and software, since most real molecules in natural environments are difficult to differentiate from their surroundings.
+</p>
+<p >
+All nonlinear search optimization techniques require a function to be optimized. Usually evaluating this function is an expensive thing to do—in our case, requiring many seconds per execution. Since we want to maximize the dephasing time (thus improving the homogeneity of the magnetic field), a suitable function is the sharpness of a peak in the
+<code >
+1-D NMR
+</code>
+spectrum. Thus a simple protocol for calculating this sharpness is: run a
+<img ></img>
+/2 pulse program with specific values for the parameters being optimized, and collect the data from the
+<code >
+NMR
+</code>
+spectrometer. Then compute the power spectrum of the signal, and fit a Lorentzian (as described earlier) to the lineshape, extracting the sharpness
+<img ></img>
+<sub >
+0
+</sub>
+/
+<i >
+a
+</i>
+. The sharpness can be maximized using any of a number of methods—the Nelder-Mead downhill simplex method, Powell's direction set method, or the conjugate gradient method (using finite differences to calculate the gradient).
+</p>
+<p ></p>
+<h3 >
+Results
+</h3>
+Our results are preliminary but indicative of things to come. The plots outlined below are relatively trivial on commercial spectrometers, but our results come from a machine that is significantly less in cost and complexity. The plot in
+<b >
+<a  href="magui9.gif">
+Figure 9
+</a>
+</b>
+shows the intrinsic sensitivity of our spectrometer on a 0.5
+<i >
+cm
+</i>
+<sup >
+3
+</sup>
+50 percent glycerine in water sample. The sample was prepared in a 5 millimeter
+<code >
+NMR
+</code>
+tube and the data were collected for 3.28 milliseconds. This is short compared to the intrinsic coherence time of the protons in the liquid, but the sample has been inhomogeneously broadened by our low homogeneity test electromagnet. With over 50 dB of signal to noise over a bandwidth of approximately 1 kHz, our system is competitive with commercial systems, and with computational optimizations we are pursuing, we hope to develop our system beyond what is done commercially.
+<p >
+<a  href="magui9.gif">
+<img ></img>
+Figure 9
+</a>
+</p>
+<p >
+The next plot is much more important. It is a correlation spectroscopy plot of the correlation of one spin to another. In this case, we are showing the correlation of a carbon atom and a hydrogen atom, proof that we can in principle create logical gates with our system. Richard Ernst
+<sup >
+<a  href="maguiref.html#ref32">
+32
+</a>
+</sup>
+invented this technique as a means to show coupling patterns between spins, that is to identify
+<i >
+<img ></img>
+J
+<sub >
+ij
+</sub>
+I
+<sub >
+zi
+</sub>
+I
+<sub >
+zj
+</sub>
+</i>
+terms of the Hamiltonian from
+<i >
+<img ></img>
+I
+<sub >
+i
+</sub>
+</i>
+, terms that were ambiguous in previous efforts. Without delving into the details of the rich subject of
+<code >
+2-D
+</code>
+correlation spectroscopy, we have demonstrated an experiment that isolates the coupling term to show that the nonlinear term of the Hamiltonian is present. The experiment goes as follows: we apply a
+<img ></img>
+/2 pulse on the hydrogen spin that creates a (1/
+<img ></img>
+2)(|1&gt; + |0&gt;) state, then we let the system evolve for a variable time
+<img ></img>
+<sub >
+1
+</sub>
+that is changed from experiment to experiment. During this time, the |0&gt; state of the hydrogen spin will interact with the |0&gt; state of the carbon spin to make this state resonate slightly faster during this time. The other |1&gt; state of the hydrogen spin will interact with the |0&gt; state of the carbon spins to resonate slightly slower. The difference in resonance frequency is the
+<i >
+J
+</i>
+coupling frequency. Our sample was 1 milliliter (mL) of
+<i >
+C
+</i>
+<sup >
+13
+</sup>
+labeled chloroform with a coupling frequency of 215 Hz. A plot is shown in
+<b >
+<a  href="magui10.jpg">
+Figure 10
+</a>
+</b>
+, highlighting a splitting of the hydrogen resonance by 215 Hz. This is direct evidence of the coupling between spins, which with shimming will be used to implement gates. We could not go further because of the inhomogeneity of our magnet. With our shimming system, we should be able to implement a simple quantum algorithm.
+</p>
+<p >
+<a  href="magui10.jpg">
+<img ></img>
+Figure 10
+</a>
+</p>
+<p ></p>
+<h3 >
+Conclusions
+</h3>
+We have demonstrated the feasibility of a table-top
+<code >
+NMR
+</code>
+apparatus performing quantum computations, approaching the relevant performance of commercial spectrometers, and potentially scaling to nontrivial sizes through optimizations for computation rather than spectroscopy. Success beyond engineering diligence almost wholly depends on the success of unity polarization enhancement for thermal ensembles of nuclear spins. Optical pumping techniques show promise but still fall short of what is required for this technique to be useful. However, if this major obstacle can be overcome, we will have a machine that will have unprecedented computational degrees of freedom. This could potentially be very important not only for implementing quantum algorithms but also for controlling and manipulating large coherent quantum systems. Such a system could one day lend itself to simulating problems that physicists and semiconductor engineers only dream of. The important realization is that nature itself is a very powerful computational architecture. We just needed to figure out how to talk to it.
+<p ></p>
+<h3 >
+Acknowledgments
+</h3>
+We gratefully acknowledge the
+<code >
+MIT
+</code>
+Media Lab's Things That Think consortium and the support of the Defense Advanced Research Projects Agency (
+<code >
+DARPA
+</code>
+) under the Nuclear Magnetic Resonance Quantum Computer (
+<code >
+NMRQC
+</code>
+) initiative. We thank our collaborators at Stanford, Berkeley,
+<code >
+MIT
+</code>
+, and
+<code >
+IBM
+</code>
+. Yael Maguire acknowledges financial support from
+<code >
+IBM
+</code>
+and the National Science Research Council of Canada (
+<code >
+NSERC
+</code>
+).
+<p >
+<a  href="maguiref.html">
+<h3 >
+Cited references and note
+</h3>
+</a>
+<i >
+Accepted for publication July 5, 2000.
+</i>
+</p>
+<p >
+<!-- --------------------------------------------------------------- -->
+</p>
+<p ></p>
+<hr ></hr>
+<center >
+[
+<a  href="/journal/">
+Journals home page
+</a>
+|
+<a  href="/journal/sjsubscr.html">
+Subscribe/order
+</a>
+|
+<a  href="/journal/sjcurr.html">
+Current issue
+</a>
+|
+<a  href="/journal/sjimg.html">
+Recent issues
+</a>
+|
+<a  href="/journal/sjdescr.html">
+Description
+</a>
+]
+</center>
+<p >
+<nobr >
+<font  size="2">
+<b >
+<a  href="http://www.ibm.com/">
+<img ></img>
+</a>
+<a  href="http://www.ibm.com/Shop/">
+<img ></img>
+</a>
+<a  href="http://www.ibm.com/Contact/">
+<img ></img>
+</a>
+<a  href="http://www.ibm.com/Search/">
+<img ></img>
+</a>
+<a  href="http://www.ibm.com/Privacy/">
+<img ></img>
+</a>
+<a  href="http://www.ibm.com/Legal/">
+<img ></img>
+</a>
+</b>
+</font>
+</nobr>
+<br ></br>
+<font  size="1">
+©2000 IBM Corporation
+</font>
+</p>
+</td>
+</tr>
+</table>
+<!-- -------------------------------------------------------------------- -->
+</body>
+</html>

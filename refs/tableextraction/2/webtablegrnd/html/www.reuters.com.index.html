@@ -1,0 +1,1418 @@
+<!-- string to hold trade date and time -->
+<!-- Set Session Variable Up For Home Area -->
+<!-- Include The Top Navigation -->
+<html >
+<head >
+<script ></script>
+<style  type="text/css">
+.navlink { text-decoration:none; color : #3636A9; font-family : "Trebuchet MS"; font-size : 8pt; font-weight : bold;} .navlink:hover { color : FF6600 } .navdefault {text-decoration:none; color : white; font-family : "Trebuchet MS"; font-size : 8pt; font-weight : bold;} .navdefault:hover { color : FF6600 } .navcountrytext { text-decoration:none; color : #333399; font-family : "Trebuchet MS"; font-size : 8pt; font-weight : bold;} .navcountrytext:hover { color : FF6600 }
+</style>
+<!-- Top Header KB 01/26/01 -->
+</head>
+<body >
+<script >
+function setFocus() { document.topQuoteForm.ticker.focus(); }
+</script>
+<title >
+Reuters | The World's Leading Provider of Financial Information and News
+</title>
+<script >
+var noTibco var bonds_id = "Bonds" var forex_id = "Forex" var browser = getBrowserType(); var ie4 = false; var ns4 = false; var ns6 = false; switch(browser){ case "IE55": ie4 = true break case "IE50": ie4 = true break case "Netscape4": ns4 = true break case "Netscape6": ns6 = true break } function TopXZCoord(ime){ if (ns4){ for (i=0; i
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+broj){ broj=brojx } eval(ime).zIndex = broj+1 } } if (ie4){ var IEbroj=0 var allDIV = document.all.tags("div") for (var i=0; i
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+IEbroj){ IEbroj=IEbrojx } eval("ime=ime.replace(/.layers/gi, '.all')") eval(ime +".style.zIndex = IEbroj+1") } } if (ns6){ var largest = 0; var forexZOrder = document.getElementById(forex_id).style.zIndex; var bondsZOrder = document.getElementById(bonds_id).style.zIndex; if (forexZOrder &gt; bondsZOrder) { largest = forexZOrder; } else { largest = bondsZOrder } var search = ime.search(/bonds_id/); if (search == "-1") { document.getElementById(forex_id).style.zIndex = eval(largest) + 1; } else { document.getElementById(bonds_id).style.zIndex = eval(largest) + 1; } } }
+</script>
+<script >
+var NS4 = (document.layers) ? true : false var strmyimage = "myImage" var holdingImage = document.images[strmyimage] var origWidth, origHeight function getImageXfromLeft(imgID) { if (NS4) return eval(imgID).x else return getRealLeft(imgID) } function getImageYfromTop(imgID) { if (NS4) return eval(imgID).y else return getRealTop(imgID) } function getRealLeft(imgElem) { xPos = eval(imgElem).offsetLeft tempEl = eval(imgElem).offsetParent while (tempEl != null) { xPos += tempEl.offsetLeft tempEl = tempEl.offsetParent } return xPos } function getRealTop(imgElem) { yPos = eval(imgElem).offsetTop tempEl = eval(imgElem).offsetParent while (tempEl != null) { yPos += tempEl.offsetTop tempEl = tempEl.offsetParent } return yPos } function getCoordinateX(){ if(ns4){ theXpos=0 } theXpos=getImageXfromLeft(document.images[strmyimage]) return theXpos } function getCoordinateY(){ if(ns4){ theYpos=0 } theYpos=getImageYfromTop(document.images[strmyimage]) return theYpos } var Browser = getBrowserType(); var IE4 = false; var Nav4 = false; var Nav6 = false; switch(Browser){ case "IE55": IE4 = true break case "IE50": IE4 = true break case "Netscape4": Nav4 = true break case "Netscape6": Nav6 = true break } if (Nav4) { var origWidth = window.innerWidth var origHeight = window.innerHeight } function restorePage() { if (Nav4) { if (origWidth != window.innerWidth || origHeight != window.innerHeight) { history.go(0) } } if (IE4) { location.reload() } if (Nav6) { location.reload() } } function doOnLoad() { if (noTibco == "false") { TopXZCoord('document.layers[bonds_id]') } } function encode() { form.item.value = escape(form.item.value); }
+</script>
+<link ></link>
+<div  align="center">
+<!--Global Stock Lookup------->
+<table  TABID="11320" border="0" cellpadding="0" cellspacing="0" width="753">
+<!-- &amp;amp;amp;lt;droplet src="quoteform_top_incl.jhtml"&amp;amp;amp;gt;&amp;amp;amp;lt;/droplet&amp;amp;amp;gt; -->
+<!-- Quote Form Goes Here -->
+<form  target="_top">
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#333399" valign="top">
+<a  href="/home.jhtml;$sessionid$TY5U0IAAAA0DGCRBADLSFEYKEEANMIV2" target="_top">
+<img ></img>
+</a>
+</td>
+<td  bgcolor="#333399" valign="top">
+<img ></img>
+</td>
+<td  bgcolor="#333399" valign="bottom">
+<table  TABID="11319" bgcolor="#333399" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  valign="top">
+<table  TABID="11318" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  colspan="4">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Global Stock Lookup
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<input ></input>
+<input ></input>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Symbol
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<input ></input>
+<input ></input>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Name
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+</table>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<input ></input>
+<input ></input>
+<script >
+setFocus();
+</script>
+</td>
+<td  align="left" valign="top">
+<input ></input>
+<input ></input>
+<input ></input>
+</td>
+</tr>
+</table>
+</td>
+<td  align="right" bgcolor="#333399" valign="top" width="8">
+<img ></img>
+</td>
+</tr>
+<tr  name="/rtr/com/rpf/data/quotes/QuotesForm.exchange" type="hidden" value="all">
+<td >
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+</td>
+</tr>
+</form>
+<!--End of Global Stock Lookup-->
+<!--Insert Banner Ads Here (Top)-->
+<!--End of Banner Ads (Top)-->
+<!-- End Of Quote Form -->
+</table>
+<table  TABID="11323" border="0" cellpadding="0" cellspacing="0" width="753">
+<tr >
+<td  align="left" valign="top" width="753">
+<table  TABID="11322" border="0" cellpadding="0" cellspacing="0" width="753">
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<!-- End Of Top Header -->
+<table  TABID="11321" bordercolor="">
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td  width="93">
+<img ></img>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td  width="85">
+<img ></img>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td  width="85">
+<img ></img>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td  width="186">
+<img ></img>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td  width="168">
+<img ></img>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td  width="132">
+<img ></img>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td  align="center" bgcolor="#3636A9" width="87">
+<a  class="navdefault">
+HOME
+</a>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td  align="center" width="87">
+<a  class="navlink">
+NEWS
+</a>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td  align="center" width="87">
+<a  class="navlink">
+QUOTES
+</a>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td  align="center" width="186"></td>
+<td  width="1">
+<img ></img>
+</td>
+<script >
+//Cheezy Netscape 6 Support if (document.layers || document.all) { document.write('
+</script>
+<td >
+<a  onmouseout="setTimer();">
+COUNTRIES
+<img ></img>
+</a>
+</td>
+<td >
+'); } else { document.write('
+<form ></form>
+</td>
+<td  align="center" width="168">
+<select >
+<option  class="navcountrytext" selected="selected">
+COUNTRIES
+</option>
+<option  class="navcountrytext">
+Germany
+</option>
+<option  class="navcountrytext">
+United Kingdom
+</option>
+</select>
+</td>
+<td >
+'); } document.write('
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  align="center" width="132">
+<a  class="navlink">
+ABOUT REUTERS
+</a>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td >
+'); document.write(''); document.write('
+</td>
+</tr>
+<tr >
+<td >
+'); document.write('
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="93">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="85">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="85">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="186">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="168">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="132">
+<img ></img>
+</td>
+<td >
+'); document.write('
+</td>
+<td  width="1">
+<img ></img>
+</td>
+<td >
+'); document.write(''); document.write('
+</td>
+</tr>
+</table>
+');
+<!-- Close Tables KB 01/26/01 -->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<script >
+SubCountriesLayer(".com");
+</script>
+<!-- News Section -->
+<table  TABID="11331" border="0" cellpadding="0" cellspacing="0" width="753">
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<script >
+function openMPwin(url,width,height) { var n=window.open(url,'bigopen','width=' + width + ',height=' + height + ',menubar=no,scrollable=no,resizable=no'); }
+</script>
+<table  TABID="11324" border="0" cellpadding="0" cellspacing="0">
+<tr  valign="bottom">
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr  valign="bottom">
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="21">
+<img ></img>
+</td>
+<td  valign="middle">
+<a  class="orangeNavLink">
+Top News
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="21">
+<img ></img>
+</td>
+<td  valign="middle">
+<a  class="orangeNavLink">
+World
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="21">
+<img ></img>
+</td>
+<td  valign="middle">
+<a  class="orangeNavLink">
+Business
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="21">
+<img ></img>
+</td>
+<td  valign="middle">
+<a  class="orangeNavLink">
+Internet
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="21">
+<img ></img>
+</td>
+<td  valign="middle">
+<a  class="orangeNavLink">
+Technology
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="21">
+<img ></img>
+</td>
+<td  valign="middle">
+<a  class="orangeNavLink">
+Science
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="21">
+<img ></img>
+</td>
+<td  valign="middle">
+<a  class="orangeNavLink">
+Sports
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="21">
+<img ></img>
+</td>
+<td  valign="middle">
+<a  class="orangeNavLink">
+Entertainment
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="21">
+<img ></img>
+</td>
+<td  valign="middle">
+<a  class="orangeNavLink">
+Human Interest
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="middle">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="21">
+<img ></img>
+</td>
+<td  valign="middle">
+<a  class="orangeNavLink">
+U.S. Politics
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="middle">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<a  href="javascript:openMPwin(http://about.reuters.com/graphics/history/history.htm,640,480)">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<!-- Inner Table ------------------------------------------------------------------------------------------------------>
+<table  TABID="11326" border="0" cellpadding="0" cellspacing="0" width="358">
+<tr >
+<td  height="17" width="177">
+<img ></img>
+</td>
+<td >
+<img ></img>
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top">
+<br ></br>
+<a  class="bigNewslink">
+Bush Accepts Yale Honor, Makes Light of His Grades
+</a>
+<br ></br>
+<!-- 03/26/01 TMC change IDS times to EST
+	&amp;amp;amp;lt;span class="timeStamp"&amp;amp;amp;gt;&amp;amp;amp;lt;valueof param="element.dateline"&amp;amp;amp;gt;&amp;amp;amp;lt;/valueof&amp;amp;amp;gt;&amp;amp;amp;lt;/span&amp;amp;amp;gt;&amp;amp;amp;lt;br&amp;amp;amp;gt;&amp;amp;amp;lt;br&amp;amp;amp;gt;-->
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+May 21, 2001 02:08 PM ET
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<br ></br>
+<!-- end TMC update -->
+<table  TABID="11325" align="right" cellpadding="3" height="150">
+<tr >
+<td  align="right" valign="top">
+<a  onclick="javascript:window.open(photo.jhtml?type=&Repository=USTOPNEWS_REP&RepositoryStoryID=/news/IDS/UsTopNews/NEWS-BUSH-LEADALL-DC_NEW.XML,largeImage,toolbar=no,menubar=no,width=550,height=525,scrollbars=yes,resizable=yes,top=0,left=0)">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  class="reutersPhoto">
+Reuters Photo
+</td>
+</tr>
+</table>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+By Arshad Mohammed
+<br ></br>
+<br ></br>
+NEW HAVEN, Conn. (Reuters) - President Bush made light of his mediocre grades and his reputation for partying when he returned to his alma mater Yale University on Monday to accept an honorary degree to a blend of applause and boos.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="newsCallout">
+More...
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td ></td>
+<td  valign="top">
+<table  TABID="11330" border="0" cellpadding="0" cellspacing="0" width="199">
+<tr >
+<td  colspan="2" height="17" width="199">
+<img ></img>
+<img ></img>
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  background="images/dot_ltblue.gif" width="1">
+<img ></img>
+</td>
+<td  width="198">
+<table  TABID="11327" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr >
+<td ></td>
+<td >
+<a  class="newsLink">
+Firestone Ends 100-Year Tire Pact with Ford
+</a>
+<br ></br>
+<br ></br>
+</td>
+</tr>
+</table>
+<table  TABID="11328" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr >
+<td ></td>
+<td >
+<a  class="newsLink">
+U.S. Names 'Special Assistant' for Mideast Peace
+</a>
+<br ></br>
+<br ></br>
+</td>
+</tr>
+</table>
+<table  TABID="11329" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr >
+<td ></td>
+<td >
+<a  class="newsLink">
+High Court to Decide Internet Pornography Law
+</a>
+<br ></br>
+<br ></br>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br ></br>
+<!--150 Year Banner Stuff-->
+<!--&amp;amp;amp;lt;a href="#" onClick="javascript:window.open('http://about.reuters.com/150','150','toolbar=no,menubar=no,location=no,status=yes,width=785,height=405,scrollbars=yes,resizable=no,top=0,left=0')"&amp;amp;amp;gt;&amp;amp;amp;lt;img src="images/150_year_199px.gif" width="199" height="40" border="0" alt="Our 150th Year"&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;-->
+<!--End of 150 Year Banner Stuff-->
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+</table>
+<br ></br>
+<!-- START OF GREEN SECTION -->
+<!-- NEW SECTION DESIGN -->
+<table  TABID="11332" valign="top">
+<tr >
+<td  colspan="2" width="753">
+<img ></img>
+<img ></img>
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr  valign="middle">
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Nasdaq Market View
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="right" valign="bottom">
+<!--&amp;amp;amp;lt;form action="quote.jhtml" method="POST" name="bodyQuoteForm" target="_top"&amp;amp;amp;gt;
+&amp;amp;amp;lt;img src = "images/vertline.gif" align="left" height="26" width="1"&amp;amp;amp;gt;
+&amp;amp;amp;lt;span class="marketHeader"&amp;amp;amp;gt;Global Stock Lookup:&amp;amp;amp;amp;nbsp;&amp;amp;amp;amp;nbsp;
+&amp;amp;amp;lt;input type="radio" name="lookupMethod" value="bySymbol" bean="QuotesForm.lookupMethod" align="bottom" checked&amp;amp;amp;gt;Symbol
+&amp;amp;amp;lt;input type="radio" name="lookupMethod" value="byCompanyName" bean="QuotesForm.lookupMethod" align="bottom"&amp;amp;amp;gt;Name
+&amp;amp;amp;lt;/span&amp;amp;amp;gt;
+
+&amp;amp;amp;lt;input type="text" name="ticker" size="15" bean="QuotesForm.lookupParam" value="" required&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type="hidden" value=" " bean="QuotesForm.lookup" priority="-10"&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type="image" name="go" src="images/submit_but2.gif" width="30" height="24" border="0" align="absmiddle"&amp;amp;amp;gt;-->
+</td>
+</tr>
+<!--&amp;amp;amp;lt;input type="hidden" value="all" bean="QuotesForm.exchange"&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type="hidden" name="fromForm" value="true" bean="QuotesForm.fromForm"&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type="hidden" value="false" bean="QuotesForm.settingDefaultExchange"&amp;amp;amp;gt; 
+&amp;amp;amp;lt;input type="hidden" value="quote.jhtml" bean="QuotesForm.quoteDetailsURL"&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type="hidden" value="quote_companylist.jhtml" bean="QuotesForm.companyListURL"&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type="hidden" value="quote_lookup.jhtml" bean="QuotesForm.formErrorURL"&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type="hidden" value="quote_error.jhtml?code=no_service" bean="QuotesForm.failureURL"&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type="hidden" value="quote_error.jhtml?code=no_info" bean="QuotesForm.noMatchURL"&amp;amp;amp;gt;-->
+<!--&amp;amp;amp;lt;/form&amp;amp;amp;gt;-->
+<form  name="homeForm">
+<tr >
+<td  height="1" width="310">
+<!--&amp;amp;amp;lt;img src="images/clear.gif" width="1" height="2" align="right" valign="bottom"&amp;amp;amp;gt;-->
+</td>
+<td  height="1" valign="top">
+<!--&amp;amp;amp;lt;img src="images/chart_boxcurve_left.gif" width="483" height="11" align="left"&amp;amp;amp;gt;-->
+</td>
+</tr>
+</form>
+</table>
+<!-- Begin Headers -->
+<table  TABID="11336" valign="top">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  class="marketHeader" width="276">
+Performance at Market Close
+<br ></br>
+</td>
+<td  class="marketHeader" width="276">
+RiskGrade?:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+244
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  onclick="javascript:window.open(risk_grade.html,riskGrade,toolbar=no,menubar=no,width=550,height=500,scrollbars=yes,resizable=yes)">
+About RiskGrade
+</a>
+<br ></br>
+</td>
+<td  class="marketHeader" width="201">
+Market Data
+<br ></br>
+</td>
+</tr>
+<!-- End Headers -->
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<img ></img>
+</td>
+<td  class="marketHeader" rowspan="2">
+<table  TABID="11333" border="0" cellpadding="3" cellspacing="0" genuinetable="yes" tabletitle="Market Data" width="201">
+<!---------------------------------------------------------------------------------------------------------->
+<!--Interest Rates Table -->
+<tr >
+<td  class="marketHeader" colspan="3">
+Interest Rates
+</td>
+</tr>
+<tr >
+<td  class="marketHeader"></td>
+<td  align="right" class="marketHeader">
+Last
+</td>
+<td  align="right" class="marketHeader">
+Yield
+</td>
+</tr>
+<tr >
+<td  class="marketData">
+UST 3M
+</td>
+<td  align="right" class="marketData">
+3.560
+</td>
+<td  align="right" class="marketData">
+3.64
+</td>
+</tr>
+<tr >
+<td  class="marketData">
+UST 1Y
+</td>
+<td  align="right" class="marketData">
+3.650
+</td>
+<td  align="right" class="marketData">
+3.78
+</td>
+</tr>
+<tr >
+<td  class="marketData">
+UST 5Y
+</td>
+<td  align="right" class="marketData">
+98.438
+</td>
+<td  align="right" class="marketData">
+4.98
+</td>
+</tr>
+<tr >
+<td  class="marketData">
+UST 10Y
+</td>
+<td  align="right" class="marketData">
+97.078
+</td>
+<td  align="right" class="marketData">
+5.39
+</td>
+</tr>
+<tr >
+<td  class="marketData">
+UST 30Y
+</td>
+<td  align="right" class="marketData">
+94.641
+</td>
+<td  align="right" class="marketData">
+5.75
+</td>
+</tr>
+<!--End of Interest Rates Table ------------------------------------------------------------------------------------------------>
+<!--Foreign Exchange Table-->
+<tr >
+<td  class="marketHeader" colspan="3">
+<br ></br>
+Foreign Exchange
+</td>
+</tr>
+<tr >
+<td  class="marketHeader" colspan="2"></td>
+<td  align="right" class="marketHeader">
+Rate
+</td>
+</tr>
+<tr >
+<td  class="marketData" colspan="2">
+GBP-USD
+</td>
+<td  align="right" class="marketData">
+1.4398
+</td>
+</tr>
+<tr >
+<td  class="marketData" colspan="2">
+EUR-USD
+</td>
+<td  align="right" class="marketData">
+0.8770
+</td>
+</tr>
+<tr >
+<td  class="marketData" colspan="2">
+USD-DEM
+</td>
+<td  align="right" class="marketData">
+2.2289
+</td>
+</tr>
+<tr >
+<td  class="marketData" colspan="2">
+EUR-GBP
+</td>
+<td  align="right" class="marketData">
+0.6086
+</td>
+</tr>
+<tr >
+<td  class="marketData" colspan="2">
+USD-JPY
+</td>
+<td  align="right" class="marketData">
+122.71
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" colspan="3">
+<a  class="smallNewslink">
+More Market Data
+</a>
+</td>
+</tr>
+</table>
+<!-- ********************************************************************* -->
+</td>
+</tr>
+<tr >
+<td >
+<table  TABID="11334" genuinetable="yes" tabletitle="May 21, 2001" valign="top">
+<!-- 03/16/2001 TMC restore original 
+&amp;amp;amp;lt;tr&amp;amp;amp;gt;
+&amp;amp;amp;lt;td colspan="2" class="marketHeader"&amp;amp;amp;gt;&amp;amp;amp;lt;br&amp;amp;amp;gt;&amp;amp;amp;lt;valueof param="element.tradeDate" valueishtml&amp;amp;amp;gt;&amp;amp;amp;lt;/valueof&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt;
+&amp;amp;amp;lt;/tr&amp;amp;amp;gt;
+-->
+<tr >
+<td  class="marketHeader">
+<br ></br>
+May 21, 2001
+</td>
+</tr>
+<tr >
+<td  class="marketData">
+LAST:
+</td>
+<td  class="marketData">
+2305.55
+</td>
+</tr>
+<tr >
+<td  class="marketData">
+CHANGE:
+</td>
+<td  class="marketData">
+<font  color="green">
+<b >
++106.67
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  class="marketData">
+TODAY'S HIGH:
+</td>
+<td  class="marketData">
+2305.73
+</td>
+</tr>
+<tr >
+<td  class="marketData">
+TODAY'S LOW:
+</td>
+<td  class="marketData">
+2198.14
+</td>
+</tr>
+</table>
+</td>
+<!-- ********************************************************************************************* -->
+<td >
+<table  TABID="11335" valign="top">
+<tr >
+<td >
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  class="marketHeader">
+Change Market View
+</td>
+</tr>
+<tr >
+<td  bgcolor="#D4E899">
+<select >
+<option  value="DJIA">
+DJIA
+</option>
+<option  selected="selected" value="NASDAQ">
+NASDAQ
+</option>
+<option  value="FTSE">
+FTSE
+</option>
+<option  value="NIKKEI">
+NIKKEI
+</option>
+</select>
+</td>
+</tr>
+<tr >
+<td  class="marketHeader"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of Green Section ********************************************************************************************* -->
+<br ></br>
+<!-- About Reuters Section -->
+<table  TABID="11337" border="0" cellpadding="0" cellspacing="0" width="753">
+<tr >
+<td  width="177">
+<img ></img>
+</td>
+<td  colspan="6" width="576">
+<img ></img>
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="11340" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+<td ></td>
+<td  colspan="3">
+<img ></img>
+</td>
+<td ></td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  background="images/dot_ltblue.gif" width="1">
+<img ></img>
+</td>
+<td  valign="top" width="253">
+<table  TABID="11338" border="0" cellpadding="5" cellspacing="0">
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  class="smallText">
+Visit our corporate site to learn
+<br ></br>
+more
+<a  class="newsLink">
+About Reuters:
+</a>
+<br ></br>
+<ul >
+<li >
+Review our
+<a  class="newsLink">
+products
+</a>
+</li>
+<li >
+Explore
+<a  class="newsLink">
+career opportunities
+</a>
+</li>
+<li >
+Find information for
+<a  class="newsLink">
+investors
+</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</td>
+<td  background="images/dot_ltblue.gif" width="1">
+<img ></img>
+</td>
+<td ></td>
+<td  background="images/dot_ltblue.gif" width="1">
+<img ></img>
+</td>
+<td  valign="top" width="313">
+<table  TABID="11339" border="0" cellpadding="5" cellspacing="0">
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  class="smallText">
+<ul >
+<li >
+<a  onclick="javascript:window.open(http://www.factiva.com/,main)">
+Factiva
+</a>
+(business information)
+</li>
+<li >
+<a  onclick="javascript:window.open(http://www.instinet.com/,main)">
+Instinet
+</a>
+(brokerage services)
+</li>
+<li >
+<a  onclick="javascript:window.open(http://www.radianz.com/,main)">
+Radianz
+</a>
+(IP connectivity)
+</li>
+<li >
+<a  onclick="javascript:window.open(http://www.tibco.com/,main)">
+TIBCO
+</a>
+(e-business software)
+</li>
+</ul>
+</td>
+</tr>
+<tr >
+<form  action="about_reuters_incl.html;$sessionid$TY5U0IAAAA0DGCRBADLSFEYKEEANMIV2" method="goto">
+<td  valign="top">
+<select >
+<option  selected="selected" value="-1">
+Other Subsidiaries and Joint Ventures:
+</option>
+<option  value="http://www.advalue.com/">
+AdValue Media Technologies
+</option>
+<option  value="http://www.reuters.fr/apm/">
+APM - Agence de Presse Medicale
+</option>
+<option  value="http://www.effix.fr/index-en.htm">
+Effix
+</option>
+<option  value="http://www.equis.com/">
+Equis International
+</option>
+<option  value="http://www.equitysystems.com.au/">
+Equity Systems
+</option>
+<option  value="http://www.lipperweb.com/">
+Lipper Inc.
+</option>
+<option  value="http://www.moneynet.com/home/MONEYNET/homepage/homepage.asp">
+Moneynet
+</option>
+<option  value="http://www.multexinvestor.co.uk/">
+Multex Investor Europe
+</option>
+<option  value="http://www.realityonline.com/">
+Reality Online
+</option>
+<option  value="http://www.reutershealth.com/">
+Health Information (US)
+</option>
+</select>
+</td>
+</form>
+</tr>
+</table>
+</td>
+<td  background="images/dot_ltblue.gif" width="1">
+<img ></img>
+</td>
+<td ></td>
+<td  valign="top">
+<a  onclick="javascript:window.open(http://newsshowcase.rtrlondon.co.uk,NewsML,toolbar=yes,menubar=yes,location=yes,status=yes,width=785,height=405,scrollbars=yes,resizable=yes,top=0,left=0)">
+<img ></img>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  onclick="javascript:window.open(http://credit.reuters.com,Credit)">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top">
+<img ></img>
+</td>
+<td ></td>
+<td  colspan="3" valign="top">
+<img ></img>
+</td>
+<td ></td>
+<td ></td>
+</tr>
+</table>
+<table  TABID="11341" align="center" border="0" cellpadding="0" cellspacing="0" width="753">
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="smallNewslink">
+Disclaimer
+</a>
+|
+<a  class="smallNewslink">
+Copyright
+</a>
+|
+<a  class="smallNewslink">
+Privacy
+</a>
+|
+<a  class="smallNewslink">
+Contact Us
+</a>
+</td>
+<td  align="right">
+<a  href="home.jhtml;$sessionid$TY5U0IAAAA0DGCRBADLSFEYKEEANMIV2">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

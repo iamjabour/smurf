@@ -1,0 +1,1571 @@
+<html >
+<head >
+<title >
+TI Reports 4Q00 and 2000 Financial Results
+</title>
+<!--TI-NEW ADDDATE=010122 BUSINESS=corp TOPICS="tibus,investor,wireless" -->
+<script >
+<!--
+
+function buildArray() {
+  var a = buildArray.arguments;
+  for (i=0; i&amp;amp;lt;a.length; i++) {
+    this[i] = a[i];
+  }
+  this.length = a.length;
+}
+
+var urls2 = new buildArray("/corp/docs/investor/index.htm",
+"/corp/docs/investor/index.htm",
+"/corp/docs/press/index.htm",
+"/corp/docs/investor/saying.shtml",
+"/corp/docs/investor/speeches.shtml",
+"/corp/docs/investor/speeches.shtml",
+"/corp/docs/investor/analyst/index.shtml",
+"/corp/docs/investor/analyst/index.shtml",
+"/corp/docs/investor/audionet.htm",
+"/corp/docs/investor/audionet.htm",
+"/corp/docs/investor/quarterly.shtml",
+"/corp/docs/investor/quarterly.shtml",
+"/corp/docs/investor/calendar.shtml",
+"/corp/docs/investor/calendar.shtml",
+"/corp/docs/investor/index.htm");
+
+var urls3 = new buildArray("/corp/docs/investor/index.htm",
+"/corp/docs/investor/index.htm",
+"/corp/docs/investor/fin/qfindata.shtml",
+"/corp/docs/investor/fin/qfindata.shtml",
+"/corp/docs/investor/fin/amortization.shtml",
+"/corp/docs/investor/fin/proforma.shtml",
+"/corp/docs/investor/fin/schist.shtml",
+"/corp/docs/investor/fin/schist.shtml",
+"/corp/docs/investor/fin/busseg.shtml",
+"/corp/docs/investor/fin/busseg.shtml",
+"/corp/docs/investor/fin/sbalance.shtml",
+"/corp/docs/investor/fin/sbalance.shtml",
+"/corp/docs/investor/fin/income.shtml",
+"/corp/docs/investor/fin/income.shtml",
+"/corp/docs/investor/fin/income.shtml",
+"/corp/docs/investor/fin/cbalance.shtml",
+"/corp/docs/investor/fin/cbalance.shtml",
+"/corp/docs/investor/3year.shtml",
+"/corp/docs/investor/3year.shtml",
+"/corp/docs/investor/scharts.htm",
+"/corp/docs/investor/whatif/calculator.shtml",
+"/corp/docs/investor/split.shtml",
+"/corp/docs/investor/dividend.shtml",
+"/corp/docs/investor/index.htm");
+
+var urls4 = new buildArray("/corp/docs/investor/index.htm",
+"/corp/docs/investor/index.htm",
+"/corp/docs/investor/faqs.shtml",
+"/corp/docs/investor/contacts.shtml",
+"/corp/docs/investor/contacts.shtml",
+"/sc/docs/general/dsp/momentum/index.htm",
+"/corp/docs/investor/dsp/index.htm",
+"/corp/docs/investor/index.htm");
+
+var urls5 = new buildArray("/corp/docs/investor/index.htm",
+"/corp/docs/investor/index.htm",
+"http://www.sec.gov/cgi-bin/srch-edgar?texas+ADJ+instruments",
+"/corp/docs/investor/industry.shtml",
+"http://www.tradingday.com/cgi-bin/ticker.cgi?ticker=txn&amp;amp;amp;t=s",
+"/corp/docs/investor/index.htm");
+
+function go(which, num, win) {
+  n = which.selectedIndex;
+  if (n != 0) {
+    var url = eval("urls" + num + "[n]")
+    if (win) {
+      openWindow(url);
+    } else {
+      location.href = url;
+    }
+  }
+}
+
+// -->
+</script>
+</head>
+<!-- TI HEADER START -->
+<body  alink="#000066" bgcolor="#ffffff" link="#000066" text="#000000" vlink="#003366">
+<table  TABID="13085" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#000000" width="1%">
+<a  href="http://www.ti.com">
+<img ></img>
+</a>
+</td>
+<td  bgcolor="#FF0000">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#999999" rowspan="4" valign="middle">
+<!-- SELECTS -->
+<table  TABID="13083" border="0" cellpadding="4" cellspacing="0">
+<tr >
+<form  action="http://www.ti.com/cgi-bin/sc/sc_redirect.cgi">
+<td >
+<select >
+<option  selected="selected" value="11">
+Semiconductor Products
+</option>
+<option  value="11"></option>
+<option  value="12">
+Digital Signal Processors
+</option>
+<option  value="13">
+Analog and Mixed-Signal
+</option>
+<option  value="14">
+Digital Logic
+</option>
+<option  value="15">
+ASIC
+</option>
+<option  value="16">
+Microcontrollers
+</option>
+<option  value="17">
+Speech and Graphics
+</option>
+<option  value="18">
+Programmable Logic
+</option>
+<option  value="19">
+Military
+</option>
+<option  value="20">
+FIFOs
+</option>
+</select>
+</td>
+<td >
+<input ></input>
+</td>
+</form>
+</tr>
+<tr >
+<form  action="http://www.ti.com/cgi-bin/sc/sc_redirect.cgi">
+<td >
+<select >
+<option  selected="selected" value="21">
+Find Development Tools
+</option>
+<option  value="21"></option>
+<option  value="22">
+Digital Signal Processors
+</option>
+<option  value="23">
+Analog and Mixed-Signal
+</option>
+<option  value="24">
+Digital Logic
+</option>
+<option  value="25">
+ASIC
+</option>
+<option  value="26">
+Microcontrollers
+</option>
+<option  value="27">
+Wireless/Telecom
+</option>
+</select>
+</td>
+<td >
+<input ></input>
+</td>
+</form>
+</tr>
+<tr >
+<form  action="http://www.ti.com/cgi-bin/sc/sc_redirect.cgi">
+<td >
+<select >
+<option  selected="selected" value="31">
+Find Applications
+</option>
+<option  value="31"></option>
+<option  value="32">
+Digital Innovations
+</option>
+<option  value="33">
+Audio
+</option>
+<option  value="34">
+Automotive
+</option>
+<option  value="35">
+Computing
+</option>
+<option  value="36">
+Control Systems
+</option>
+<option  value="37">
+Digital Motor Control
+</option>
+<option  value="38">
+Home Automation
+</option>
+<option  value="39">
+Imaging/Video
+</option>
+<option  value="40">
+Industrial
+</option>
+<option  value="41">
+Medical
+</option>
+<option  value="42">
+Military
+</option>
+<option  value="43">
+Networking
+</option>
+<option  value="44">
+Telecommunications
+</option>
+<option  value="45">
+Wireless
+</option>
+<option  value="31"></option>
+<option  value="46">
+Digital Signal Processors
+</option>
+<option  value="47">
+Analog
+</option>
+<option  value="48">
+Digital Logic
+</option>
+<option  value="49">
+Broadband
+</option>
+<option  value="50">
+Microcontrollers
+</option>
+<option  value="31">
+____________________
+</option>
+</select>
+</td>
+<td >
+<input ></input>
+</td>
+</form>
+</tr>
+</table>
+<!-- END SELECTS -->
+</td>
+<td  align="left" bgcolor="#FFFFCC">
+<table  TABID="13084" border="0" cellpadding="0" cellspacing="0" width="100%">
+<form  action="http://www-search.ti.com/search97cgi/s97_cgi">
+<tr >
+<td  width="1%">
+<img ></img>
+</td>
+<td  valign="middle" width="1%">
+<input ></input>
+</td>
+<td >
+<img ></img>
+</td>
+<td  valign="middle" width="2%">
+<input ></input>
+<input ></input>
+<input ></input>
+<select >
+<option  value="semiconductors">
+Specify an area
+</option>
+<option  value="semiconductors">
+All Semiconductors
+</option>
+<option  value="sc product folders">
+Products
+</option>
+<option  value="sc tool folders">
+Development Tools
+</option>
+<option  value="sc apps">
+Applications
+</option>
+<option  value="sc tech docs">
+Technical Documents
+</option>
+<option  value="sc app note abstracts">
+App Note Abstracts
+</option>
+<option  value="">
+All TI
+</option>
+</select>
+</td>
+<td  valign="middle">
+<input ></input>
+<a  href="http://www.ti.com/cgi-bin/sc/search.cgi">
+<img ></img>
+</a>
+</td>
+</tr>
+</form>
+</table>
+</td>
+</tr>
+<tr >
+<td  bgcolor="Black">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="http://www-k.ext.ti.com/sc/technical_support/index.htm">
+<img ></img>
+</a>
+<a  href="http://www-k.ext.ti.com/sc/technical_support/knowledgebase.asp">
+<img ></img>
+</a>
+<a  href="https://focus.ti.com/docs/shared/workspace/myworkspace.jhtml">
+<img ></img>
+</a>
+<a  href="https://www-a.ti.com/apps/ti_me/ti_me.asp">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#666666">
+<a  href="http://www.ti.com">
+<img ></img>
+</a>
+<a  href="/corp/docs/company/index.htm">
+<img ></img>
+</a>
+<a  href="/recruit/index.htm">
+<img ></img>
+</a>
+<a  href="/corp/docs/internat.htm">
+<img ></img>
+</a>
+<a  href="/corp/docs/feedback.htm">
+<img ></img>
+</a>
+<a  href="/pub/docs/corpmap.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!-- TI HEADER END -->
+<p >
+<nobr >
+<font  face="Arial,Helvetica,sans-serif">
+<b >
+<font  color="#FF9900" size="-1">
+&gt;&gt;
+</font>
+</b>
+<font  size="-2">
+<a  href="/corp/docs/home.htm">
+TI Home
+</a>
+</font>
+<b >
+<font  color="#FF9900" size="-1">
+&gt;
+</font>
+</b>
+<font  size="-2">
+<a  href="/corp/docs/investor/index.htm">
+Investor Info
+</a>
+</font>
+<b >
+<font  color="#FF9900" size="-1">
+&gt;
+</font>
+</b>
+<font  size="-2">
+<a  href="/corp/docs/investor/quarterly.shtml">
+Quarterly Results
+</a>
+</font>
+<b >
+<font  color="#FF9900" size="-1">
+&gt;
+</font>
+</b>
+</font>
+</nobr>
+</p>
+<p >
+<img ></img>
+</p>
+<p ></p>
+<table  TABID="13087" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  align="left" valign="top" width="200">
+<!-- Quick Links -->
+<form  name="form1">
+<table  TABID="13086" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  align="left" rowspan="2" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<font  size="-2">
+<br ></br>
+</font>
+<font  face="Arial, helvetica, san-serif" size="-1">
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/ar00/index.htm">
+2000 Summary Annual
+</a>
+<br ></br>
+<a  href="/corp/docs/investor/ar00/index.htm">
+Report
+</a>
+<br ></br>
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/quarterly/1q01.shtml">
+Latest Quarterly Results
+</a>
+<br ></br>
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/quarterly.shtml">
+Historical Financial Reports
+</a>
+<br ></br>
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/speeches.shtml">
+Executive Presentations
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="3" valign="top">
+<img ></img>
+</td>
+</tr>
+</table>
+<p >
+<!-- Investor News -->
+<img ></img>
+<br ></br>
+<select >
+<option >
+Select a Destination
+</option>
+<option ></option>
+<option >
+TI News Releases
+</option>
+<option >
+TI in the News
+</option>
+<option >
+Executive
+</option>
+<option >
+Presentations
+</option>
+<option >
+2001 TI Analyst
+</option>
+<option >
+Meeting
+</option>
+<option >
+2001 TI Stockholders
+</option>
+<option >
+Meeting Webcast
+</option>
+<option >
+Annual Reports
+</option>
+<option >
+Quarterly Results
+</option>
+<option >
+Calendar of Investor
+</option>
+<option >
+Events
+</option>
+<option >
+................................
+</option>
+</select>
+</p>
+<p >
+<!-- Financial Tables -->
+<img ></img>
+<br ></br>
+<select >
+<option >
+Select a Destination
+</option>
+<option ></option>
+<option >
+Quarterly Financial
+</option>
+<option >
+Data
+</option>
+<option >
+Amortization
+</option>
+<option >
+Pro Forma
+</option>
+<option >
+Semiconductor
+</option>
+<option >
+History
+</option>
+<option >
+Business Segment
+</option>
+<option >
+Review
+</option>
+<option >
+Selected Balance
+</option>
+<option >
+Sheet Items
+</option>
+<option >
+Consolidated
+</option>
+<option >
+Statement of
+</option>
+<option >
+Income
+</option>
+<option >
+Consolidated
+</option>
+<option >
+Balance Sheet
+</option>
+<option >
+3-Year Historical
+</option>
+<option >
+Graphs
+</option>
+<option >
+Stock Charts
+</option>
+<option >
+What-If Calculator
+</option>
+<option >
+Stock Split History
+</option>
+<option >
+Dividend History
+</option>
+<option >
+................................
+</option>
+</select>
+</p>
+<p >
+<!-- Investor Info -->
+<img ></img>
+<br ></br>
+<select >
+<option >
+Select a Destination
+</option>
+<option ></option>
+<option >
+FAQs
+</option>
+<option >
+Investor Contact
+</option>
+<option >
+Information
+</option>
+<option >
+Digital World
+</option>
+<option >
+What is DSP+Analog?
+</option>
+<option >
+................................
+</option>
+</select>
+</p>
+<p >
+<!-- Other TXN Financial Resources -->
+<img ></img>
+<br ></br>
+<select >
+<option >
+Select a Destination
+</option>
+<option ></option>
+<option >
+SEC Filings
+</option>
+<option >
+Industry Resources
+</option>
+<option >
+TXN on the Internet
+</option>
+<option >
+................................
+</option>
+</select>
+</p>
+</form>
+</td>
+<td  align="left" valign="top" width="400">
+<img ></img>
+<p >
+<b >
+<font  size="+1">
+TI Reports 4Q00 and 2000 Financial Results
+</font>
+</b>
+</p>
+<p >
+<b >
+<ul >
+<li >
+Record Annual Pro Forma Revenue and Profits
+</li>
+<li >
+Fourth-Quarter Pro Forma EPS of $0.31
+</li>
+<li >
+Fourth-Quarter Semiconductor Revenue Up 18% over Year-Ago Period and Even with 3Q
+</li>
+<li >
+Sequential Analog Revenue Grew 6%, Broadband Revenue Doubled, Wireless Revenue Declined 15%
+</li>
+<li >
+TI Revenue Expected to Decline in 1Q01
+</li>
+</ul>
+</b>
+</p>
+<p >
+<font  size="-1">
+<p >
+<font  face="Arial, helvetica, san-serif" size="-1">
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/quarterly/ti4q00.xls">
+Download Financials in MS Excel Format
+</a>
+(53KB)
+<br ></br>
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/fin/proforma.shtml">
+2000 TI Pro Forma Income Information
+</a>
+<br ></br>
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/fin/pfrevenue.shtml">
+2000 Business Segment Net Revenues
+</a>
+<br ></br>
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/fin/pfprofitfoper.shtml">
+2000 Business Segment Profit (Loss)
+</a>
+<br ></br>
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/confcall">
+4Q and Year-End Conference Call begins at 4:30 p.m. Central Time
+</a>
+<br ></br>
+</font>
+</p>
+<p >
+<i >
+<b >
+Note on Change in Accounting Practice:
+</b>
+<p >
+Financial results in this report reflect the Securities and Exchange Commission's Staff Accounting Bulletin (SAB) No. 101 on revenue recognition.
+</p>
+<p >
+In accordance with SAB No. 101, for the year 2000 and ongoing the company delays recognition of revenue for certain shipments until they physically reach the customer. The only shipments affected are those whose terms call for title to pass at point of delivery. All other shipments continue to be recognized under TI's historical accounting practice, which is recognition upon shipment.
+</p>
+<p >
+The result of this change in accounting practice is that fourth-quarter revenue was $33 million, or 1.1 percent, less than would have been recognized under the prior accounting method and fourth-quarter pro forma income was $11 million, or $0.006 per share, less. For the year, pro forma revenue was $41 million, or 0.3 percent, less and pro forma income was $14 million, or $0.008 per share, less.
+</p>
+<p >
+Quarterly income statement information for 2000 inclusive of this accounting change is available on the company's web site at:
+<a  href="http://www.ti.com/corp/docs/investor/fin/proforma.shtml">
+http://www.ti.com/corp/docs/investor/fin/proforma.shtml
+</a>
+<br ></br>
+<br ></br>
+</p>
+</i>
+</p>
+</font>
+</p>
+</td>
+</tr>
+</table>
+<table  TABID="13088" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  align="left" valign="top" width="600">
+<p >
+<!--TI-ABSTRACT-->
+DALLAS, Jan. 22 -- Texas Instruments Incorporated (NYSE: TXN) today reported record pro forma annual revenue and profits for the year 2000. Revenue was $11,861 million, up 22 percent from 1999's $9759 million. Earnings per share were $1.22, up 36 percent from $0.90 in 1999.
+</p>
+<p >
+In the fourth quarter of 2000, TI's semiconductor revenue grew 18 percent over the year-ago quarter, and was even with semiconductor revenue in the third quarter.
+<!--/TI-ABSTRACT-->
+Semiconductor revenue growth in the fourth quarter was affected by a combination of higher inventories at customers and lower consumption rates of electronic end-equipment. As weakening in their own business environments became evident, customers responded by adjusting their demand, which significantly impacted TI's semiconductor revenue and orders late in the quarter.
+</p>
+<p >
+``In 2000, TI delivered some of the best financial results in its history, including record pro forma revenue and profit, and a strong cash position,'' said Tom Engibous, TI chairman, president and CEO. ``The year also was a milestone in strengthening our strategic position in DSP and Analog. Most notable was TI's acquisition of Burr-Brown, which made TI one of the premier players in high-performance Analog. Additionally, TI emerged as one of the fastest-growing providers of DSL and cable modem chipsets, and catalog products became one of the most important contributors to TI's revenue growth by increasing half a billion dollars, or 47 percent.
+</p>
+<p >
+``DSP and Analog continue to be the core semiconductor drivers of Internet-age electronics, despite a weaker economic environment that is resulting in slower near-term demand for our customers' products and, therefore, for our own,'' Engibous said. ``We will maintain our strategic R&amp;D investments to further build our leadership in DSP and Analog -- both in the broad market for our catalog products as well as in a variety of high-volume end-equipment markets. At the same time, we will continue tight control of operating and overhead expenses. As excess inventories are absorbed and we return to a stronger growth environment, TI will be able to quickly capitalize on opportunities.''
+</p>
+<p >
+Note: TI's financial results reflect the completed pooling of interests acquisition of Burr-Brown Corporation and the inclusion of its results in the semiconductor segment. Historical results have been restated to reflect Burr-Brown's operations. Pro forma information excludes certain costs, charges and gains. For more information, see financial statements.
+</p>
+<p >
+<font  size="+1">
+<b >
+Summary of Financial Results
+</b>
+</font>
+</p>
+<ul >
+<li >
+Pro forma revenue for TI was $3033 million, up 15 percent from $2638 million in the year-ago quarter due to strength in semiconductor, and down 3 percent sequentially due to seasonally lower revenue in Educational and Productivity Solutions (E&amp;PS). Semiconductor revenue was $2695 million, up 18 percent from $2285 million in the same quarter of 1999, and even with $2692 million in the third quarter of 2000 as a decline in DSP revenue from wireless and catalog offset growth in Analog and other DSP products.
+</li>
+<li >
+Pro forma operating profit was $683 million, an increase of 17 percent from $584 million in the year-ago quarter due to increased product shipments in semiconductor. Pro forma operating profit declined 8 percent from the third quarter of 2000, due to seasonal declines in E&amp;PS.
+</li>
+<li >
+Pro forma operating margin was 22.5 percent, up 0.4 percentage points from the year-ago quarter as lower selling, general &amp; administrative (SG&amp;A) expenses more than offset increased research &amp; development (R&amp;D) investments in DSP and Analog. Pro forma operating margin declined 1.2 percentage points from the third quarter of 2000 due to seasonal declines in E&amp;PS.
+</li>
+<li >
+Pro forma income for the quarter increased 22 percent to $549 million, compared with $448 million in the year-ago quarter, as higher interest income extended the gains from operating activities. Pro forma income declined 7 percent from the third quarter of 2000.
+</li>
+<li >
+Pro forma earnings per share (EPS) increased to $0.31 from $0.25 in the fourth quarter of 1999, and declined $0.02 from the third quarter of 2000.
+</li>
+<li >
+Orders in the fourth quarter were $2772 million, down 2 percent from the year-ago quarter. Sequentially, orders were down 16 percent due to semiconductor.
+</li>
+<li >
+According to generally accepted accounting principles, for the fourth quarter of 2000: revenue was $3033 million, compared with $2638 million in the year-ago quarter; operating profit was $615 million, compared with $503 million; operating margin was 20.3 percent, compared with 19.0 percent; net income was $665 million, compared with $445 million; and diluted earnings per share were $0.37, compared with $0.25.
+</li>
+</ul>
+<p >
+<font  size="+1">
+<b >
+Summary of 2000 Financial Results
+</b>
+</font>
+</p>
+<ul >
+<li >
+Pro forma revenue was $11,861 million, up 22 percent from $9759 million in 1999 due to growth in semiconductor. Semiconductor revenue was $10,284 million, up 25 percent from $8231 million in 1999 due to gains in Analog and DSP.
+</li>
+<li >
+Pro forma operating profit was $2702 million, an increase of 36 percent from $1986 million in 1999 due to higher semiconductor profits.
+</li>
+<li >
+Pro forma operating margin was 22.8 percent, up 2.4 percentage points from 1999 as revenue growth outpaced increases in cost of goods sold and SG&amp;A expenses.
+</li>
+<li >
+Pro forma income for the year increased 38 percent to $2174 million, compared with $1581 million in 1999.
+</li>
+<li >
+Pro forma EPS increased to $1.22, compared with $0.90 in 1999.
+</li>
+<li >
+Orders in 2000 were $12,405 million, up 20 percent from the year earlier due to gains in semiconductor.
+</li>
+<li >
+According to generally accepted accounting principles, for 2000: revenue was $11,875 million, compared with $9759 million in the prior year; operating profit was $2339 million, compared with $1755 million; operating margin was 19.7 percent, compared with 18.0 percent; net income was $3058 million, compared with $1451 million; and diluted earnings per share were $1.71, compared with $0.83.
+</li>
+</ul>
+<p >
+<font  size="+1">
+Outlook
+</font>
+</p>
+<p >
+TI expects its revenue to decline about 10 percent sequentially in the first quarter as semiconductor customers continue to work through excess inventory during this seasonally slower period. The weakening world economy limits visibility into market conditions for the remainder of the year.
+</p>
+<p >
+Specifically, TI expects the following for the first quarter:
+</p>
+<ul >
+<li >
+Revenue from wireless will decline sequentially as certain handset customers continue to absorb semiconductor inventory.
+</li>
+<li >
+Revenue from catalog DSP and Analog products is expected to be about even with fourth quarter.
+</li>
+<li >
+Revenue from broadband communications should continue to grow, reflecting strong market acceptance of TI's products.
+</li>
+<li >
+Revenue from TI's non-semiconductor activities, including Sensors &amp; Controls (formerly Materials &amp; Controls) and E&amp;PS, is expected to be about even with fourth quarter.
+</li>
+<li >
+Pro forma operating margin is expected to decline five to six points as a result of lower revenue.
+</li>
+<li >
+Pro forma non-operating income is expected to decline to about $70 million primarily due to lower interest and investment income.
+<p >
+For 2001:
+</p>
+</li>
+<li >
+R&amp;D is expected to be $1.7 billion pro forma, compared with $1.6 billion in 2000.
+</li>
+<li >
+Capital expenditures are expected to be $2.3 billion, compared with $2.8 billion in 2000, for manufacturing equipment for TI's DSP and Analog products, including equipment for TI's initial 300-millimeter wafer fabrication facility in Dallas.
+</li>
+<li >
+Depreciation is expected to increase to $1.5 billion, compared with $1.2 billion in 2000.
+</li>
+<li >
+The pro forma tax rate is expected to be 31 percent, the same as 2000.
+</li>
+</ul>
+<p ></p>
+<p ></p>
+<pre >
+PRO FORMA INCOME INFORMATION
+		(In millions of dollars, except per-share amounts.)
+
+Pro forma supplemental income information, which is not prepared in
+accordance with generally accepted accounting principles, excludes
+amortization of acquisition-related costs (goodwill, other intangibles and
+deferred compensation), pooling of interests transaction costs, purchased in-
+process research and development costs, and special charges and gains.
+See notes to the following tables for details. The effect of these amounts is 
+partially offset, as appropriate, by their allocated profit sharing and income 
+tax effects. Financial information has been restated to reflect the acquisition 
+of Burr-Brown Corporation in August 2000, which was accounted for as a pooling of
+interests. Financial information for 2000 reflects compliance with SEC Staff 
+Accounting Bulletin No. 101 (revenue recognition).
+
+				   For Three Months Ended    For Years Ended
+                                      Dec. 31   Dec. 31      Dec. 31  Dec. 31
+                                         2000     1999          2000    1999
+
+    Net revenues                       $ 3033   $ 2638        $11861  $ 9759
+
+    Cost of revenues                     1558     1347          6008    5036
+    Research and development              424      334          1599    1299
+    Selling, general and administrative   368      373          1552    1438
+
+    Profit from operations                683      584          2702    1986
+
+    Other income/interest                 113       69           447     328
+
+    Income before provision for income
+     taxes                                796      653          3149    2314
+
+    Provision for income taxes            247      205           975     733
+
+    Pro forma income                     $549     $448        $ 2174  $ 1581
+
+    Pro forma earnings per common share:
+      Diluted                            $.31     $.25         $1.22    $.90
+
+      Basic                              $.32     $.26         $1.27    $.94
+
+
+               TEXAS INSTRUMENTS INCORPORATED AND SUBSIDIARIES
+                        Consolidated Income Statement
+             (In millions of dollars, except per-share amounts.)
+
+                                                       For Three Months Ended
+                                                        Dec. 31      Dec. 31
+                                                          2000        1999
+
+    Net revenues                                         $3033        $2638
+    Operating costs and expenses:
+      Cost of revenues                                    1576         1343
+      Research and development                             441          333
+      Selling, general and administrative                  401          459
+
+        Total costs of operations                         2418         2135
+
+    Profit from operations                                 615          503
+    Other income (expense) net                             274           89
+    Interest on loans                                       18           21
+
+    Income before provision for income taxes               871          571
+    Provision for income taxes                             206          126
+
+    Net income**                                         $ 665         $445
+
+    Diluted earnings per common share*                    $.37         $.25
+
+    Basic earnings per common share                       $.38         $.26
+
+    Cash dividends declared per share of common stock   $ .021       $ .021
+
+    *  Diluted earnings per common share are based on average common and
+       dilutive potential common shares outstanding (1794.7 million shares and
+       1771.5 million shares for the fourth quarters of 2000 and 1999).
+       Financial information has been restated to reflect the acquisition of
+       Burr-Brown Corporation in August 2000, which was accounted for as a
+       pooling of interests.  Financial information for 2000 reflects
+       compliance with SEC Staff Accounting Bulletin (SAB) No. 101 (revenue
+       recognition).
+
+    ** Income for the fourth quarter of 2000 includes, in millions of dollars,
+       a gain, net of transaction and other costs, of $88 from the sale of the
+       memory business.  Gain recognition had been previously deferred pending
+       repayment of the remaining TI-provided financing for the 1998
+       transaction, which occurred in the fourth quarter of 2000.  The
+       quarter also includes, in millions of dollars, a gain of $56 from the
+       sale of the materials portion of Sensors &amp; Controls; a credit to the
+       income tax provision of $69 for deferred tax valuation allowance
+       reductions, primarily in Japan; a charge of $3, included in selling,
+       general and administrative expense, for a severance action by
+       Educational &amp; Productivity Solutions; and a charge of $9 for additional
+       pooling of interests transaction costs from the Burr-Brown acquisition
+       ($5 included in selling, general and administrative expense and $4 in
+       cost of revenues).
+   
+Income for the fourth quarter of 1999 includes, in millions of dollars, a
+pooling of interests transaction charge of $86 from the Unitrode Corporation
+acquisition ($83 included in selling, general and administrative expense,
+$2 in cost of revenues and $1 in other income (expense) net) and a
+$67 reduction in the income tax provision primarily for research and
+experimental tax credit items.
+	   
+Income includes, in millions of dollars, acquisition-related amortization
+of $68 and $26 for the fourth quarters of 2000 and 1999.
+
+
+            TEXAS INSTRUMENTS INCORPORATED AND SUBSIDIARIES
+                        Consolidated Income Statement
+             (In millions of dollars, except per-share amounts.)
+
+                                                           For Years Ended
+                                                       Dec. 31      Dec. 31
+                                                         2000         1999
+
+    Net revenues                                       $11875        $ 9759
+    Operating costs and expenses:
+      Cost of revenues                                   6120          5069
+      Research and development                           1747          1379
+      Selling, general and administrative                1669          1556
+
+        Total costs of operations                        9536          8004
+
+    Profit from operations                               2339          1755
+    Other income (expense) net                           2314           403
+    Interest on loans                                      75            76
+
+    Income before provision for income taxes
+     and cumulative effect of an accounting change       4578          2082
+    Provision for income taxes                           1491           631
+
+    Income before cumulative effect of
+     an accounting change                                3087          1451
+    Cumulative effect of an accounting change             (29)          ---
+
+    Net income**                                        $3058        $ 1451
+
+    Diluted earnings per common share*:
+      Income before cumulative effect of
+       an accounting change                             $1.73          $.83
+      Cumulative effect of an accounting change         ( .02)          ---
+
+      Net income                                        $1.71          $.83
+
+    Basic earnings per common share:
+      Income before cumulative effect of
+       an accounting change                             $1.80          $.86
+      Cumulative effect of an accounting change         ( .02)          ---
+
+      Net income                                        $1.78          $.86
+
+    Cash dividends declared per share of common stock   $.085         $.085
+
+    *  Diluted earnings per common share are based on average common and
+       dilutive potential common shares outstanding (1791.6 million shares and
+       1749.7 million shares for the years ended December 31, 2000 and 1999).
+       Financial information has been restated to reflect the acquisition of
+       Burr-Brown Corporation in August 2000, which was accounted for as a
+       pooling of interests.  Financial information for 2000 reflects
+       compliance with SEC SAB No. 101 (revenue recognition), including
+       recognition of a $29 million charge to net income for the cumulative
+       effect of an accounting change as of January 1, 2000.
+
+    ** Income for the fourth quarter of 2000 includes, in millions of dollars,
+       a gain, net of transaction and other costs, of $88 from the sale of the
+       memory business; a gain of $56 from the sale of the materials portion
+       of Sensors &amp; Controls; a credit to the income tax provision of $69 for
+       deferred tax valuation allowance reductions; a charge of $3 for a
+       severance action by Educational &amp; Productivity Solutions; and a charge
+       of $9 for additional pooling of interests transaction costs from the
+       Burr-Brown acquisition.  Income for the third quarter of 2000 includes,
+       in millions of dollars, investment gains of $425, included in other
+       income, from the sale of 5.6 million shares of Micron Technology, Inc.
+       (Micron) common stock, and special charges of $163, of which $112 is
+       for purchased in-process R&amp;D costs from the Dot Wireless, Inc. and
+       Alantro Communications, Inc. acquisitions, $41 for pooling of interests
+       transaction costs from the Burr-Brown acquisition, and $10, net, for
+       several Semiconductor and Sensors &amp; Controls restructuring and other
+       actions in the U.S., Japan and Europe.  Of the $163, $112 is an
+       increase in research and development expense, $46 in selling, general
+       and administrative expense, $31 in cost of revenues, $15 in net
+       revenues, and $11 in other income.  Income for the second quarter of
+       2000 includes an investment gain of $1211 million, included in other
+       income, from the sale of 20 million shares of Micron common stock.
+       Income for the first quarter of 2000 includes, in millions of dollars,
+       special charges of $29, associated with actions including the closing
+       of the Sensors &amp; Controls manufacturing facility in Versailles,
+       Kentucky, and TI's acquisition of Toccata Technology ApS.  Of the $29,
+       $20 is included in cost of revenues, $6 in selling, general and
+       administrative expense, and $3 in research and development expense.
+
+Income for the fourth quarter of 1999 includes, in millions of dollars,
+a pooling of interests transaction charge of $86 from the Unitrode 
+Corporation acquisition and a $67 reduction in the income tax provision 
+primarily for research and experimental tax credit items.	
+
+Income for the third quarter of 1999 includes, in millions of dollars, 
+special charges of $54, of which $16 is for purchased in-process R&amp;D
+costs from the Integrated Sensor Solutions, Inc. acquisition, $15 for 
+pooling of interests transaction costs from the Telogy Networks Inc. 
+acquisition, and $23 for two Semiconductor restructuring actions in the U.S.
+and Japan. Of the $54, $21 is included in selling, general and administrative
+expense, $17 in cost of revenues and $16 in research and development expense. 
+Income for the second quarter of 1999 includes, in millions of dollars,
+a special charge of $52 for purchased in-process R&amp;D costs from the
+Libit Signal Processing Ltd. acquisition. Income for the first quarter of 
+1999 includes, in millions of dollars, special charges of $25, primarily for
+a consolidation of semiconductor manufacturing operations in Japan. Of the $25,
+$12 is included in cost of revenues, $10 in research and development expense, 
+and $3 in selling, general and administrative expense.
+
+Income includes, in millions of dollars, acquisition-related amortization 
+of $160 and $69 in 2000 and 1999.
+
+
+             TEXAS INSTRUMENTS INCORPORATED AND SUBSIDIARIES
+                          Consolidated Balance Sheet
+             (In millions of dollars, except per-share amounts.)
+
+                                                         Dec. 31     Dec. 31
+                                                           2000       1999
+    Assets
+    Current assets:
+      Cash and cash equivalents                            $745        $781
+      Short-term investments                               3258        2045
+      Accounts receivable, less allowance for losses of
+       $54 million in 2000 and $67 million in 1999         2204        1909
+      Inventories:
+        Raw materials                                       245         167
+        Work in process                                     681         501
+        Finished goods                                      307         226
+
+          Inventories                                      1233         894
+
+      Prepaid expenses                                       80         109
+      Deferred income taxes                                 595         615
+
+        Total current assets                               8115        6353
+
+    Property, plant and equipment                          9099        7338
+      Less accumulated depreciation                       (3652)      (3405)
+
+        Property, plant and equipment (net)                5447        3933
+
+    Investments                                            2400        4205
+    Goodwill and other acquisition-related intangibles      961         502
+    Deferred income taxes                                   106          41
+    Other assets                                            691         393
+
+    Total assets                                         $17720      $15427
+
+    Liabilities and Stockholders' Equity
+    Current liabilities:
+      Loans payable and current portion long-term debt     $148        $331
+      Accounts payable                                      997         687
+      Accrued and other current liabilities                1668        1679
+
+        Total current liabilities                          2813        2697
+
+    Long-term debt                                         1216        1099
+    Accrued retirement costs                                378         797
+    Deferred income taxes                                   469         998
+    Deferred credits and other liabilities                  256         258
+    Stockholders' equity:
+      Preferred stock, $25 par value.  Authorized -
+       10,000,000 shares.  Participating cumulative
+       preferred.  None issued                              ---         ---
+      Common stock, $1 par value.  Authorized -
+       2,400,000,000 shares.  Shares issued: 2000 -
+       1,733,237,248; 1999 - 851,448,197                   1733         851
+      Paid-in capital                                      1185         877
+      Retained earnings                                    9323        6406
+      Less treasury common stock at cost:
+        Shares:  2000 - 1,184,880; 1999 - 1,034,757         (93)       (109)
+      Accumulated other comprehensive income                574        1553
+      Deferred compensation                                (134)        ---
+
+        Total stockholders' equity                        12588        9578
+
+    Total liabilities and stockholders' equity           $17720      $15427
+
+
+               TEXAS INSTRUMENTS INCORPORATED AND SUBSIDIARIES
+                           Statement of Cash Flows
+                           (In millions of dollars)
+
+                                                           For Years Ended
+                                                           Dec. 31   Dec. 31
+                                                             2000     1999
+    Continuing operations:
+      Cash flows from operating activities:
+        Income before cumulative effect of an
+         accounting change                                 $ 3087    $ 1451
+        Depreciation                                         1216      1005
+        Amortization of goodwill and other
+         acquisition-related intangibles                      160        69
+        Purchased in-process research and development         112        79
+        Adjustment to conform fiscal year end of
+         pooled acquisition                                   ---        (9)
+        Deferred income taxes                                   1       (11)
+        Net currency exchange losses                           11         9
+        (Increase) decrease in working capital (excluding
+         cash and cash equivalents, short-term investments,
+         deferred income taxes, and loans payable and
+         current portion long-term debt):
+          Accounts receivable                                (348)     (444)
+          Inventories                                        (372)     (207)
+          Prepaid expenses                                     27       (20)
+          Accounts payable and accrued expenses               246        96
+          Income taxes payable                                (55)       64
+          Accrued retirement and profit sharing
+           contributions                                       51       244
+        Gains on sale of Micron stock                       (1636)      ---
+        Increase (decrease) in noncurrent accrued
+          retirement costs                                   (369)       11
+        Other                                                  54        20
+
+      Net cash provided by operating activities              2185      2357
+      Cash flows from investing activities:
+        Additions to property, plant and equipment          (2762)    (1398)
+        Purchases of short-term investments                 (5409)    (2529)
+        Sales and maturities of short-term investments       4178      2237
+        Purchases of noncurrent investments                  (133)      (87)
+        Sales of noncurrent investments                      2198       272
+        Acquisition of businesses, net of cash acquired        (3)     (469)
+        Proceeds from sale of businesses                      107       ---
+
+      Net cash used in investing activities                 (1824)    (1974)
+      Cash flows from financing activities:
+        Additions to loans payable                             23        11
+        Payments on loans payable                             (19)      (13)
+        Additions to long-term debt                           250       400
+        Payments on long-term debt                           (307)     (262)
+        Dividends paid on common stock                       (141)     (134)
+        Sales and other common stock transactions             242       225
+        Common stock repurchase program                      (155)     (473)
+        Increase in noncurrent assets for restricted cash    (261)      ---
+
+      Net cash used in financing activities                  (368)     (246)
+
+      Effect of exchange rate changes on cash                 (29)      (61)
+
+    Net increase (decrease) in cash and cash equivalents      (36)       76
+    Cash and cash equivalents, at beginning of year           781       705
+
+    Cash and cash equivalents, at end of year                $745      $781
+
+
+                                          BUSINESS SEGMENT NET REVENUES
+                                              (Millions of dollars)
+
+                                For Three Months Ended     For Years Ended
+                                  Dec. 31    Dec. 31       Dec. 31   Dec. 31
+                                   2000        1999         2000      1999
+    Semiconductor
+      Trade                      $ 2690      $ 2280       $10267     $ 8215
+      Intersegment                    5           5           17         16
+
+                                   2695        2285        10284       8231
+
+    Sensors &amp; Controls
+      Trade                         250         230         1029        911
+      Intersegment                  ---         ---            1          1
+
+                                    250         230         1030        912
+
+    Educational &amp; Productivity
+     Solutions
+      Trade                          66          90          446        484
+
+    Corporate activities             (4)          3            3         (8)
+    Divested activities              26          30          112        140
+
+    Total net revenues           $ 3033      $ 2638       $11875     $ 9759
+
+    Note:  Beginning in 2000, management decided to assess profit performance
+           of its business segments excluding the effect of acquisition-
+           related amortization.  Accordingly, 2000 business segment profit
+           amounts exclude this amortization ($68 million for the fourth
+           quarter and $160 million for the year).  Business segment profit
+           amounts for 1999 include this amortization ($26 million for the
+           fourth quarter and $69 million for the year).
+
+
+                                         BUSINESS SEGMENT PROFIT (LOSS)
+                                              (Millions of dollars)
+
+                                   For Three Months Ended   For Years Ended
+
+                                      Dec. 31  Dec. 31     Dec. 31   Dec. 31
+                                       2000      1999        2000     1999
+
+    Semiconductor                      $679      $577       $2607     $1894
+    Sensors &amp; Controls                   42        37         191       151
+    Educational &amp; Productivity
+     Solutions                            6         6         111       106
+    Corporate activities                (54)      (74)       (234)     (285)
+    Special charges/gains, and
+     acquisition-related amortization,
+     net of applicable profit sharing    76       (56)       1429      (163)
+    Interest on loans/other income
+     (expense), excluding fourth-quarter
+     2000 gains of $144 million, a third-
+     quarter 2000 gain of $436 million,
+     a second-quarter 2000 gain of
+     $1211 million, and a fourth-quarter
+     1999 loss of $1 million included
+     above in special charges/gains and
+     acquisition-related amortization   113        69         447       328
+    Divested activities                   9        12          27        51
+
+    Income before income taxes         $871      $571       $4578     $2082
+</pre>
+<font  size="+1">
+<b >
+Semiconductor
+</b>
+</font>
+<p ></p>
+<ul >
+<li >
+Semiconductor revenue in the fourth quarter was $2695 million, up 18 percent from the same period in 1999 due to growth in Analog product revenue, and even with the third quarter. For the year, semiconductor revenue was $10,284 million, up 25 percent from 1999 due to growth in Analog and DSP products.
+</li>
+<li >
+Semiconductor operating profit for the fourth quarter was $679 million, or 25.2 percent of revenue, compared with $577 million in the year-ago period and $681 million in the third quarter. For the year, operating profit grew 38 percent to $2607 million.
+</li>
+<li >
+Fourth-quarter Analog revenue grew 29 percent, compared with the year-ago period and 6 percent sequentially. For the year, Analog revenue increased 28 percent. DSP revenue in the fourth quarter decreased 4 percent from the same quarter a year ago and 13 percent sequentially. For the year, DSP revenue grew 29 percent. For the year, Analog and DSP comprised about 65 percent of TI's semiconductor revenue.
+</li>
+<li >
+TI's remaining semiconductor revenue increased in the fourth quarter from the year-ago quarter and was about even with the third quarter of 2000. Revenue also increased for the year.
+</li>
+<li >
+TI's semiconductor revenue in key markets was as follows:
+<ul >
+<li >
+Wireless revenue declined 7 percent in the fourth quarter versus the year-ago period and 15 percent sequentially. For the year, wireless revenue increased more than $500 million, or 28 percent, to $2.3 billion.
+</li>
+<li >
+Revenue from TI's catalog DSP and Analog products grew 34 percent in the fourth quarter versus the year-ago period and declined 6 percent sequentially. For the year, catalog revenue increased more than $500 million, or 47 percent, to $1.6 billion.
+</li>
+<li >
+Growth in broadband communications, including DSL and cable modems, continued to accelerate in the fourth quarter with revenue doubling sequentially. For the year, broadband revenue grew to about $150 million from a negligible amount in 1999.
+</li>
+</ul>
+</li>
+<li >
+Fourth-quarter semiconductor orders were even with the year-ago quarter, and declined 15 percent sequentially primarily due to declines in wireless and catalog products. For the year, orders increased 23 percent.
+</li>
+</ul>
+<p >
+<font  size="+1">
+<b >
+Semiconductor Highlights for the Year
+</b>
+</font>
+</p>
+<p ></p>
+<ul >
+<li >
+TI announced two new DSP cores that further extend its technology leadership. The TMS320C64x™ core will have 10 times better performance than the previous leader, TI's TMS320C62x™ core. The C64x targets broadband infrastructure applications. The TMS320C55x™ core targets portable electronic devices such as wireless phones. The first DSP device powered by the C55x core (TMS320C5510™) was delivered in June.
+</li>
+<li >
+During the year, TI announced four strategic acquisitions strengthening its position in DSP and Analog:
+<ul >
+<li >
+Burr-Brown extends TI's Analog position into new high-performance data converters and amplifiers, and increases TI's ability to offer its DSP customers essentially all of the Analog components that attach to a DSP.
+</li>
+<li >
+Dot Wireless' technology leadership in CDMA for the emerging IS-2000 third-generation (3G) cellular standard will enable TI to establish strong product positions across the full spectrum of 3G standards.
+</li>
+<li >
+Alantro Communications specializes in wireless local area networking technology using the emerging IEEE 802.11 standard that will distribute broadband information throughout the home, including video, data and voice.
+</li>
+<li >
+Toccata Technology provides TI with digital audio amplifier technology, a critical component in TI's December introduction of an all-digital audio solution with concert-hall quality.
+</li>
+</ul>
+</li>
+<li >
+TI's Open Multimedia Application Platform (OMAP™) software platform already has gained significant momentum by becoming the platform of choice by major OEMs, including Nokia, Ericsson, Sony and Handspring, for their next-generation wireless data products. Wireless data will be used for a host of information and entertainment applications, including Internet audio (MP3), mobile-commerce and streaming video. By working with Microsoft, Symbian and Sun, TI has opened the OMAP platform to innovative application development by the WinCE, EPOC and Java software developer communities.
+</li>
+<li >
+TI's DSL chipset solutions enabled more than 3 million ports in 2000. An additional 8 million ports included TI's DSL Analog technology. Three out of the top four central office manufacturers and four out of the top six personal computer makers are engaged with TI. Through Actiontec Electronics, TI DSL technology now is being deployed in the retail channel, making TI the first silicon provider to help make DSL modems available through nationwide retail outlets.
+</li>
+<li >
+After less than a year and a half in the cable modem business, TI believes it has garnered about 30 percent of the market for data over cable service interface specification (DOCSIS) chips, delivering 3 million of the nearly 10 million total units estimated to have shipped in 2000.
+</li>
+<li >
+TI introduced more than 350 new catalog analog products in 2000. TI had more than 15,000 design-ins for its catalog analog products, almost four times the number of design-ins from last year. Catalog DSP design-ins almost doubled over 1999 and the sale of tools required to write software for TI DSPs increased almost 150 percent during the year.
+</li>
+</ul>
+<p >
+<font  size="+1">
+<b >
+Sensors &amp; Controls
+</b>
+</font>
+</p>
+<p >
+<i >
+The name and financial results of TI's Materials &amp; Controls segment have been adjusted to reflect the sale of its specialty-clad metals and electrical contacts (or "materials") operation. The sale closed on November 13, 2000, and resulted in a gain. Financial results for the divested operation have been excluded from Sensors &amp; Controls and included in "Divested Activities".
+</i>
+</p>
+<ul >
+<li >
+Revenue in the fourth quarter was $250 million, up 9 percent from the year-ago quarter, primarily due to gains in sensor products. Sequentially, fourth-quarter revenue was up 2 percent. For the year, revenue increased 13 percent to $1030 million, primarily due to gains in sensor product revenue, including the effect of a third-quarter 1999 acquisition.
+</li>
+<li >
+Operating profit in the fourth quarter was $42 million, or 16.9 percent of revenue, compared with $37 million in the year-ago period and $43 million in the third quarter. For the year, operating profit grew 26 percent to $191 million.
+</li>
+</ul>
+<font  size="+1">
+<b >
+Educational &amp; Productivity Solutions (E&amp;PS)
+</b>
+</font>
+<p ></p>
+<ul >
+<li >
+Revenue for E&amp;PS in the fourth quarter of 2000 was $66 million, down 27 percent from $90 million in the year-ago quarter due to weak retail demand. Sequentially, revenue declined 62 percent primarily due to seasonality. For the year, revenue declined 8 percent to $446 million from $484 million due to the weak retail environment.
+</li>
+<li >
+Operating profit for the quarter was $6 million, the same as the year-ago quarter, and down from $64 million in the third quarter primarily due to seasonality. Operating margin was 9.6 percent, compared with 6.8 percent in the year-ago quarter, and 36.3 percent in the third quarter of 2000. For the year, operating profit was $111 million, or 24.9 percent of revenue, compared with $106 million in 1999.
+</li>
+</ul>
+<p >
+<font  size="+1">
+<b >
+Additional Financial Information
+</b>
+</font>
+</p>
+<p ></p>
+<ul >
+<li >
+For 2000, cash and cash equivalents plus short-term investments increased by $1177 million to $4003 million, primarily due to the sale of Micron Technology, Inc. common stock.
+</li>
+<li >
+In the fourth quarter of 2000, TI used $313 million of cash to prefund a portion of TI's post-retirement health-care liability. This action will reduce the amount of retiree medical expenses that would otherwise have been incurred in future periods.
+</li>
+<li >
+Also in the fourth quarter of 2000, TI obtained letters of credit that guarantee TI's payment obligation to holders of TI-Tucson's (formerly Burr-Brown) $250 million, 4.25 percent Convertible Subordinated Notes due 2007. In connection with the issuance of these letters of credit, TI agreed to maintain cash deposits with the issuing banks equal to the Notes' outstanding principal, plus one year's interest, for the term of the banks' guarantees. TI has accordingly classified the deposit, $261 million at year-end 2000, as a noncurrent asset.
+</li>
+<li >
+Cash flow from operating activities was $2185 million for the year.
+</li>
+<li >
+Capital expenditures totaled $2762 million in 2000, compared with $1398 million in 1999. Capital expenditures totaled $972 million in the fourth quarter of 2000 versus $512 million in the year-ago quarter.
+</li>
+<li >
+Depreciation for 2000 was $1216 million, compared with $1005 million in 1999. Depreciation for the fourth quarter of 2000 was $347 million, versus $270 million in the year-ago quarter.
+</li>
+<li >
+At the end of 2000, the debt-to-total-capital ratio was 0.10 versus 0.13 at the end of 1999.
+</li>
+</ul>
+<p >
+<font  size="-1">
+``Safe Harbor'' Statement under the Private Securities Litigation Reform Act of 1995: This release includes ``forward-looking statements'' intended to qualify for the safe harbor from liability established by the Private Securities Litigation Reform Act of 1995. These forward-looking statements generally can be identified by phrases such as TI or its management ``believes,'' ``expects,'' ``anticipates,'' ``foresees,'' ``forecasts,'' ``estimates'' or other words or phrases of similar import. Similarly, such statements herein that describe the company's business strategy, outlook, objectives, plans, intentions or goals also are forward-looking statements. All such forward-looking statements are subject to certain risks and uncertainties that could cause actual results to differ materially from those in forward-looking statements.
+<p >
+We urge you to carefully consider the following important factors that could cause actual results to differ materially from the expectations of the company or its management:
+</p>
+<ul >
+<li >
+Market demand for semiconductors, particularly for digital signal processors and analog chips in key markets, such as telecommunications and computers;
+</li>
+<li >
+TI's ability to develop, manufacture and market innovative products in a rapidly changing technological environment;
+</li>
+<li >
+TI's ability to compete in products and prices in an intensely competitive industry;
+</li>
+<li >
+TI's ability to maintain and enforce a strong intellectual property portfolio and obtain needed licenses from third parties;
+</li>
+<li >
+Timely completion and successful integration of announced acquisitions;
+</li>
+<li >
+Global economic, social and political conditions in the countries in which TI and its customers and suppliers operate, including fluctuations in foreign currency exchange rates;
+</li>
+<li >
+Losses or curtailments of purchases from key customers;
+</li>
+<li >
+TI's ability to recruit and retain skilled personnel; and
+</li>
+<li >
+Availability of raw materials and critical manufacturing equipment.
+</li>
+</ul>
+<p >
+For a more detailed discussion of these factors, see the text under the heading ``Cautionary Statements Regarding Future Results of Operations'' in Item 1 of the company's most recent Form 10-K. The forward-looking statements included in this release are made only as of the date of this release and the company undertakes no obligation to update the forward-looking statements to reflect subsequent events or circumstances.
+</p>
+<p >
+Texas Instruments Incorporated is the world leader in digital signal processing and analog technologies, the semiconductor engines of the Internet age. The company's businesses also include sensors and controls, and educational and productivity solutions. TI is headquartered in Dallas, Texas, and has manufacturing or sales operations in more than 25 countries.
+</p>
+<p >
+Texas Instruments is traded on the New York Stock Exchange under the symbol TXN. The company's web site is
+<a  href="http://www.ti.com">
+www.ti.com
+</a>
+.
+</p>
+</font>
+</p>
+<pre >
+TI Trademarks:  OMAP
+                     TMS320C64x
+                     TMS320C62x
+                     TMS320C55x
+                     TMS320C5510
+</pre>
+<!-- TextEnd -->
+<p ></p>
+</td>
+</tr>
+</table>
+<!-- TI FOOTER START -->
+<p ></p>
+<table  TABID="13090" bgcolor="#cccccc" border="1" bordercolor="#000000" cellpadding="1" cellspacing="0" width="100%">
+<tr >
+<td >
+<img ></img>
+<br ></br>
+<!-- begin embedded table for copyright -->
+<table  TABID="13089" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td >
+<font  face="arial, helvetica" size="1">
+©
+<a  href="/corp/docs/copyright.htm">
+Copyright 2001
+</a>
+Texas Instruments Incorporated. All rights reserved.
+<a  href="/corp/docs/trademrk.htm">
+Trademarks
+</a>
+|
+<a  href="/pub/docs/privacy.htm">
+Privacy Policy
+</a>
+|
+<a  href="/corp/docs/investor/harbor.shtml">
+Safe Harbor
+</a>
+</font>
+</td>
+<td  align="right">
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- end embedded table for copyright -->
+</td>
+</tr>
+</table>
+<p >
+<font  face="Arial,Helvetica,sans-serif" size="-2">
+This website is posted solely for information purposes and is not to be construed either as an offer to sell or the solicitation of an offer to buy any security.
+<br ></br>
+<a  href="/corp/docs/investor/harbor.shtml">
+Safe Harbor Statement
+</a>
+<p >
+<!-- TI FOOTER END -->
+</p>
+</font>
+</p>
+</body>
+</html>

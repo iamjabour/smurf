@@ -1,0 +1,465 @@
+<html >
+<head >
+<title >
+PCx Results using WSSMP
+</title>
+<meta ></meta>
+<meta ></meta>
+</head>
+<body  bgcolor="#ffffff" link="DarkGreen" vlink="Red">
+<p >
+<img ></img>
+</p>
+<h3 >
+Results for PCx using IBM's WSSMP sparse Cholesky package
+</h3>
+<p >
+PCx's version 1.1 allows the user to hook up different sparse system solvers quickly and easily. As an example of how an interface to a solver could be implemented, we now provide code to hook up IBMs WSSMP sparse Cholesky solver. WSSMP was implemented by
+<a  href="http://www.research.ibm.com/mathsci/ams/ams_WSSMP.htm">
+Gupta, et al.
+</a>
+and uses a nested dissection ordering. As a consequence the timing results for some problems are quite different from what we get using the default solver that is provided with PCx. Overall, WSSMP never performs significantly worse, while for some larger problems it outperforms the Ng-Peyton sparse Cholesky solver by as much as an order of magnitude. To illustrate this, we provide some timing results for problems, where the differences are most striking (the runs were performed on Argonne's
+<a  href="http://www.mcs.anl.gov/ccst/">
+IBM quad
+</a>
+):
+</p>
+<table  TABID="08992" align="center" border="1" cellpadding="3" genuinetable="yes" tabletitle="Illustrative Computational Results for Feasible Problems on an IBM quad ">
+<caption >
+Illustrative Computational Results for Feasible Problems on an IBM quad
+<a  name="ta:part1"></a>
+</caption>
+<tr  nosave="#DEFAULT">
+<td  align="left" nowrap="nowrap"></td>
+<td  nosave="#DEFAULT">
+Before
+</td>
+<td  nosave="#DEFAULT">
+After
+</td>
+<td  nosave="#DEFAULT">
+Ng-Peyton
+</td>
+<td  nosave="#DEFAULT">
+WSSMP
+</td>
+<td  nosave="#DEFAULT">
+Ng-Peyton
+</td>
+<td  nosave="#DEFAULT">
+WSSMP
+</td>
+</tr>
+<tr  nosave="#DEFAULT">
+<td  align="left" nowrap="nowrap"></td>
+<td  nosave="#DEFAULT">
+Preprocessing
+</td>
+<td  nosave="#DEFAULT">
+Preprocessing
+</td>
+<td  align="center" nowrap="nowrap">
+Relative
+</td>
+<td  nosave="#DEFAULT">
+Relative
+</td>
+<td  nosave="#DEFAULT">
+Primal
+</td>
+<td  align="center" nowrap="nowrap">
+Relative
+</td>
+<td  nosave="#DEFAULT">
+Relative
+</td>
+<td  nosave="#DEFAULT">
+Primal
+</td>
+<td  align="center" nowrap="nowrap"></td>
+<td  align="center" nowrap="nowrap">
+time
+</td>
+<td  align="center" nowrap="nowrap"></td>
+<td  align="center" nowrap="nowrap">
+time
+</td>
+</tr>
+<tr  nosave="#DEFAULT">
+<td  nosave="#DEFAULT">
+Name
+</td>
+<td  align="center" nowrap="nowrap">
+Rows
+</td>
+<td  align="center" nowrap="nowrap">
+Cols
+</td>
+<td  align="center" nowrap="nowrap">
+Rows
+</td>
+<td  align="center" nowrap="nowrap">
+Cols
+</td>
+<td  align="center" nowrap="nowrap">
+Infeas.
+</td>
+<td  align="center" nowrap="nowrap">
+Comp.
+</td>
+<td  nosave="#DEFAULT">
+Objective
+</td>
+<td  align="right" nowrap="nowrap">
+Infeas.
+</td>
+<td  align="right" nowrap="nowrap">
+Comp.
+</td>
+<td  nosave="#DEFAULT">
+Objective
+</td>
+<td  nosave="#DEFAULT">
+Iters
+</td>
+<td  align="right" nowrap="nowrap">
+(secs)
+</td>
+<td  nosave="#DEFAULT">
+Iters
+</td>
+<td  align="right" nowrap="nowrap">
+(secs)
+</td>
+</tr>
+<tr  valign="top">
+<td  align="left" nowrap="nowrap">
+dfl001
+</td>
+<td  align="right" nowrap="nowrap">
+6071
+</td>
+<td  align="right" nowrap="nowrap">
+12230
+</td>
+<td  align="right" nowrap="nowrap">
+5984
+</td>
+<td  align="right" nowrap="nowrap">
+12143
+</td>
+<td  align="right" nowrap="nowrap">
+3.9e-10
+</td>
+<td  align="right" nowrap="nowrap">
+4.1e-08
+</td>
+<td  align="right" nowrap="nowrap">
+1.126640e+07
+</td>
+<td  align="right" nowrap="nowrap">
+1.6e-11
+</td>
+<td  align="right" nowrap="nowrap">
+3.0e-07
+</td>
+<td  align="right" nowrap="nowrap">
+1.126640e+07
+</td>
+<td  align="right" nowrap="nowrap">
+49
+</td>
+<td  align="right" nowrap="nowrap">
+851
+</td>
+<td  align="right" nowrap="nowrap">
+39
+</td>
+<td  align="right" nowrap="nowrap">
+224
+</td>
+</tr>
+<tr  valign="top">
+<td  align="left" nowrap="nowrap">
+NEMSwrld
+</td>
+<td  align="right" nowrap="nowrap">
+7138
+</td>
+<td  align="right" nowrap="nowrap">
+28550
+</td>
+<td  align="right" nowrap="nowrap">
+5621
+</td>
+<td  align="right" nowrap="nowrap">
+23706
+</td>
+<td  align="right" nowrap="nowrap">
+1.5e-13
+</td>
+<td  align="right" nowrap="nowrap">
+1.7e-06
+</td>
+<td  align="right" nowrap="nowrap">
+-2.603094e+02
+</td>
+<td  align="right" nowrap="nowrap">
+1.1e-13
+</td>
+<td  align="right" nowrap="nowrap">
+7.0e-07
+</td>
+<td  align="right" nowrap="nowrap">
+-2.603091e+02
+</td>
+<td  align="right" nowrap="nowrap">
+43
+</td>
+<td  align="right" nowrap="nowrap">
+198
+</td>
+<td  align="right" nowrap="nowrap">
+52
+</td>
+<td  align="right" nowrap="nowrap">
+74
+</td>
+</tr>
+<tr  valign="top">
+<td  align="left" nowrap="nowrap">
+pds-10
+</td>
+<td  align="right" nowrap="nowrap">
+16558
+</td>
+<td  align="right" nowrap="nowrap">
+49932
+</td>
+<td  align="right" nowrap="nowrap">
+15648
+</td>
+<td  align="right" nowrap="nowrap">
+48780
+</td>
+<td  align="right" nowrap="nowrap">
+2.6e-10
+</td>
+<td  align="right" nowrap="nowrap">
+3.5e-06
+</td>
+<td  align="right" nowrap="nowrap">
+2.672717e+10
+</td>
+<td  align="right" nowrap="nowrap">
+3.0e-10
+</td>
+<td  align="right" nowrap="nowrap">
+3.8e-06
+</td>
+<td  align="right" nowrap="nowrap">
+2.672717e+10
+</td>
+<td  align="right" nowrap="nowrap">
+35
+</td>
+<td  align="right" nowrap="nowrap">
+618
+</td>
+<td  align="right" nowrap="nowrap">
+36
+</td>
+<td  align="right" nowrap="nowrap">
+187
+</td>
+</tr>
+<tr  valign="top">
+<td  align="left" nowrap="nowrap">
+baxter
+</td>
+<td  align="right" nowrap="nowrap">
+27441
+</td>
+<td  align="right" nowrap="nowrap">
+30733
+</td>
+<td  align="right" nowrap="nowrap">
+23871
+</td>
+<td  align="right" nowrap="nowrap">
+30122
+</td>
+<td  align="right" nowrap="nowrap">
+1.3e-10
+</td>
+<td  align="right" nowrap="nowrap">
+1.6e-09
+</td>
+<td  align="right" nowrap="nowrap">
+5.600726e+07
+</td>
+<td  align="right" nowrap="nowrap">
+2.5e-09
+</td>
+<td  align="right" nowrap="nowrap">
+2.7e-07
+</td>
+<td  align="right" nowrap="nowrap">
+5.600727e+07
+</td>
+<td  align="right" nowrap="nowrap">
+28
+</td>
+<td  align="right" nowrap="nowrap">
+1146
+</td>
+<td  align="right" nowrap="nowrap">
+29
+</td>
+<td  align="right" nowrap="nowrap">
+466
+</td>
+</tr>
+<tr  valign="top">
+<td  align="left" nowrap="nowrap">
+pds-20
+</td>
+<td  align="right" nowrap="nowrap">
+33874
+</td>
+<td  align="right" nowrap="nowrap">
+108175
+</td>
+<td  align="right" nowrap="nowrap">
+32287
+</td>
+<td  align="right" nowrap="nowrap">
+106180
+</td>
+<td  align="right" nowrap="nowrap">
+4.3e-10
+</td>
+<td  align="right" nowrap="nowrap">
+7.5e-06
+</td>
+<td  align="right" nowrap="nowrap">
+2.382181e+10
+</td>
+<td  align="right" nowrap="nowrap">
+2.7e-10
+</td>
+<td  align="right" nowrap="nowrap">
+9.0e-06
+</td>
+<td  align="right" nowrap="nowrap">
+2.382185e+10
+</td>
+<td  align="right" nowrap="nowrap">
+48
+</td>
+<td  align="right" nowrap="nowrap">
+6891
+</td>
+<td  align="right" nowrap="nowrap">
+53
+</td>
+<td  align="right" nowrap="nowrap">
+815
+</td>
+</tr>
+<tr  valign="top">
+<td  align="left" nowrap="nowrap">
+seymour_lp
+</td>
+<td  align="right" nowrap="nowrap">
+4944
+</td>
+<td  align="right" nowrap="nowrap">
+6316
+</td>
+<td  align="right" nowrap="nowrap">
+4827
+</td>
+<td  align="right" nowrap="nowrap">
+6082
+</td>
+<td  align="right" nowrap="nowrap">
+5.9e-09
+</td>
+<td  align="right" nowrap="nowrap">
+2.0e-07
+</td>
+<td  align="right" nowrap="nowrap">
+4.038465e+02
+</td>
+<td  align="right" nowrap="nowrap">
+1.3e-12
+</td>
+<td  align="right" nowrap="nowrap">
+1.2e-07
+</td>
+<td  align="right" nowrap="nowrap">
+4.038465e+02
+</td>
+<td  align="right" nowrap="nowrap">
+15
+</td>
+<td  align="right" nowrap="nowrap">
+969
+</td>
+<td  align="right" nowrap="nowrap">
+17
+</td>
+<td  align="right" nowrap="nowrap">
+336
+</td>
+</tr>
+</table>
+<p >
+And here [
+<a  href="wssmpres">
+html
+</a>
+|
+<a  href="wssmp.ps">
+PostScript
+</a>
+] is a complete table of results for the WSSMP solver, here [
+<a  href="NgPeytonres">
+html
+</a>
+|
+<a  href="../../../Tools/PCx/wssmp/NgPeyton.ps">
+PostScript
+</a>
+] are the results for the Ng-Peyton solver. For all of these runs we used a single node of Argonne's
+<a  href="http://www.mcs.anl.gov/ccst/">
+IBM quad
+</a>
+.
+</p>
+<p  align="center">
+[
+<a  href="../index.html">
+PCx Home Page
+</a>
+|
+<a  href="../../../index.html">
+OTC Home Page
+</a>
+|
+<a  href="http://www-neos.mcs.anl.gov/">
+NEOS Server
+</a>
+|
+<a  href="http://www-fp.mcs.anl.gov/otc/Guide/">
+NEOS Guide
+</a>
+|
+<a  href="../../index.html">
+NEOS Library
+</a>
+]
+</p>
+</body>
+</html>

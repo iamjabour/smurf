@@ -1,0 +1,1240 @@
+<!--Converted with LaTeX2HTML 98.2 beta6 (August 14th, 1998)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html >
+<head >
+<title >
+Singular Value Decomposition
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<link ></link>
+<link ></link>
+<link ></link>
+<link ></link>
+<link ></link>
+</head>
+<body >
+<!--Navigation Panel-->
+<a  href="node54.html" name="tex2html4891">
+<img ></img>
+</a>
+<a  href="node37.html" name="tex2html4885">
+<img ></img>
+</a>
+<a  href="node52.html" name="tex2html4879">
+<img ></img>
+</a>
+<a  href="node1.html" name="tex2html4887">
+<img ></img>
+</a>
+<a  href="node152.html" name="tex2html4889">
+<img ></img>
+</a>
+<br ></br>
+<b >
+Next:
+</b>
+<a  href="node54.html" name="tex2html4892">
+Generalized Symmetric Definite Eigenproblems
+</a>
+<b >
+Up:
+</b>
+<a  href="node37.html" name="tex2html4886">
+Computational Routines
+</a>
+<b >
+Previous:
+</b>
+<a  href="node52.html" name="tex2html4880">
+Invariant Subspaces and Condition
+</a>
+<b >
+<a  href="node1.html" name="tex2html4888">
+Contents
+</a>
+</b>
+<b >
+<a  href="node152.html" name="tex2html4890">
+Index
+</a>
+</b>
+<br ></br>
+<br ></br>
+<!--End of Navigation Panel-->
+<h2 >
+<a  name="SECTION03246000000000000000"></a>
+<a  name="subseccompsvd"></a>
+<br ></br>
+Singular Value Decomposition
+</h2>
+<p >
+Let
+<b >
+<i >
+A
+</i>
+</b>
+be a general real
+<b >
+<i >
+m
+</i>
+</b>
+-by-
+<b >
+<i >
+n
+</i>
+</b>
+matrix. The
+<b >
+singular value decomposition (SVD)
+</b>
+of
+<b >
+<i >
+A
+</i>
+</b>
+is the factorization
+<a  name="3410"></a>
+<!-- MATH
+ $A=U \Sigma V^T$
+ -->
+<img ></img>
+, where
+<b >
+<i >
+U
+</i>
+</b>
+and
+<b >
+<i >
+V
+</i>
+</b>
+are orthogonal, and
+<!-- MATH
+ $\Sigma = {\mbox {\rm diag}}( \sigma_1 , \ldots , \sigma_r )$
+ -->
+<img ></img>
+,
+<!-- MATH
+ $r = \min (m,n)$
+ -->
+<img ></img>
+, with
+<!-- MATH
+ $\sigma_1 \geq \cdots \geq \sigma_r \geq 0$
+ -->
+<img ></img>
+. If
+<b >
+<i >
+A
+</i>
+</b>
+is complex, then its SVD is
+<!-- MATH
+ $A=U \Sigma V^H$
+ -->
+<img ></img>
+where
+<b >
+<i >
+U
+</i>
+</b>
+and
+<b >
+<i >
+V
+</i>
+</b>
+are unitary, and
+<img ></img>
+is as before with real diagonal elements. The
+<img ></img>
+are called the
+<b >
+singular values
+</b>
+<a  name="3412"></a>
+, the first
+<b >
+<i >
+r
+</i>
+</b>
+columns of
+<b >
+<i >
+V
+</i>
+</b>
+the
+<b >
+right singular vectors
+</b>
+<a  name="3414"></a>
+and the first
+<b >
+<i >
+r
+</i>
+</b>
+columns of
+<b >
+<i >
+U
+</i>
+</b>
+the
+<b >
+left singular vectors
+</b>
+<a  name="3416"></a>
+.
+</p>
+<p >
+The routines described in this section, and listed in Table
+<a  href="node53.html#tabcompsvd">
+2.12
+</a>
+, are used to compute this decomposition. The computation proceeds in the following stages:
+</p>
+<p ></p>
+<dl  compact="compact">
+<dt >
+1.
+</dt>
+<dd >
+The matrix
+<b >
+<i >
+A
+</i>
+</b>
+is reduced to bidiagonal
+<a  name="3419"></a>
+form:
+<b >
+<i >
+A
+</i>
+=
+<i >
+U
+</i>
+<sub >
+1
+</sub>
+<i >
+B V
+</i>
+<sub >
+1
+</sub>
+<sup >
+<i >
+T
+</i>
+</sup>
+</b>
+if
+<b >
+<i >
+A
+</i>
+</b>
+is real (
+<b >
+<i >
+A
+</i>
+=
+<i >
+U
+</i>
+<sub >
+1
+</sub>
+<i >
+B V
+</i>
+<sub >
+1
+</sub>
+<sup >
+<i >
+H
+</i>
+</sup>
+</b>
+if
+<b >
+<i >
+A
+</i>
+</b>
+is complex), where
+<b >
+<i >
+U
+</i>
+<sub >
+1
+</sub>
+</b>
+and
+<b >
+<i >
+V
+</i>
+<sub >
+1
+</sub>
+</b>
+are orthogonal (unitary if
+<b >
+<i >
+A
+</i>
+</b>
+is complex), and
+<b >
+<i >
+B
+</i>
+</b>
+is real and upper-bidiagonal when
+<img ></img>
+and lower bidiagonal when
+<b >
+<i >
+m
+</i>
+&lt;
+<i >
+n
+</i>
+</b>
+, so that
+<b >
+<i >
+B
+</i>
+</b>
+is nonzero only on the main diagonal and either on the first superdiagonal (if
+<img ></img>
+) or the first subdiagonal (if
+<b >
+<i >
+m
+</i>
+&lt;
+<i >
+n
+</i>
+</b>
+).
+<p ></p>
+</dd>
+<dt >
+2.
+</dt>
+<dd >
+The SVD of the bidiagonal matrix
+<b >
+<i >
+B
+</i>
+</b>
+is computed:
+<!-- MATH
+ $B=U_2 \Sigma V_2^T$
+ -->
+<img ></img>
+, where
+<b >
+<i >
+U
+</i>
+<sub >
+2
+</sub>
+</b>
+and
+<b >
+<i >
+V
+</i>
+<sub >
+2
+</sub>
+</b>
+are orthogonal and
+<img ></img>
+is diagonal as described above. The singular vectors of
+<b >
+<i >
+A
+</i>
+</b>
+are then
+<b >
+<i >
+U
+</i>
+=
+<i >
+U
+</i>
+<sub >
+1
+</sub>
+<i >
+U
+</i>
+<sub >
+2
+</sub>
+</b>
+and
+<b >
+<i >
+V
+</i>
+=
+<i >
+V
+</i>
+<sub >
+1
+</sub>
+<i >
+V
+</i>
+<sub >
+2
+</sub>
+</b>
+.
+</dd>
+</dl>
+<p >
+The reduction to bidiagonal form is performed by the subroutine xGEBRD,
+<a  name="3421"></a>
+<a  name="3422"></a>
+<a  name="3423"></a>
+<a  name="3424"></a>
+<a  name="3425"></a>
+or by xGBBRD
+<a  name="3426"></a>
+<a  name="3427"></a>
+<a  name="3428"></a>
+<a  name="3429"></a>
+for a band matrix.
+</p>
+<p >
+The routine xGEBRD represents
+<b >
+<i >
+U
+</i>
+<sub >
+1
+</sub>
+</b>
+and
+<b >
+<i >
+V
+</i>
+<sub >
+1
+</sub>
+</b>
+in factored form as products of elementary reflectors,
+<a  name="3430"></a>
+<a  name="3431"></a>
+as described in section
+<a  href="node128.html#secorthog">
+5.4
+</a>
+. If
+<b >
+<i >
+A
+</i>
+</b>
+is real, the matrices
+<b >
+<i >
+U
+</i>
+<sub >
+1
+</sub>
+</b>
+and
+<b >
+<i >
+V
+</i>
+<sub >
+1
+</sub>
+</b>
+may be computed explicitly using routine xORGBR,
+<a  name="3433"></a>
+<a  name="3434"></a>
+or multiplied by other matrices without forming
+<b >
+<i >
+U
+</i>
+<sub >
+1
+</sub>
+</b>
+and
+<b >
+<i >
+V
+</i>
+<sub >
+1
+</sub>
+</b>
+using routine xORMBR
+<a  name="3435"></a>
+<a  name="3436"></a>
+. If
+<b >
+<i >
+A
+</i>
+</b>
+is complex, one instead uses xUNGBR
+<a  name="3437"></a>
+<a  name="3438"></a>
+and xUNMBR
+<a  name="3439"></a>
+<a  name="3440"></a>
+, respectively.
+</p>
+<p >
+If
+<b >
+<i >
+A
+</i>
+</b>
+is banded and xGBBRD is used to reduce it to bidiagonal form,
+<b >
+<i >
+U
+</i>
+<sub >
+1
+</sub>
+</b>
+and
+<b >
+<i >
+V
+</i>
+<sub >
+1
+</sub>
+</b>
+are determined as products of Givens rotations
+<a  name="3441"></a>
+, rather than as products of elementary reflectors. If
+<b >
+<i >
+U
+</i>
+<sub >
+1
+</sub>
+</b>
+or
+<b >
+<i >
+V
+</i>
+<sub >
+1
+</sub>
+</b>
+is required, it must be formed explicitly by xGBBRD. xGBBRD uses a vectorizable algorithm, similar to that used by xSBTRD (see Kaufman [
+<a  href="node151.html#vbandr">
+77
+</a>
+]). xGBBRD may be much faster than xGEBRD when the bandwidth is narrow.
+</p>
+<p >
+The SVD of the bidiagonal matrix is computed either by subroutine xBDSQR
+<a  name="3443"></a>
+<a  name="3444"></a>
+<a  name="3445"></a>
+<a  name="3446"></a>
+or by subroutine xBDSDC
+<a  name="3447"></a>
+<a  name="3448"></a>
+. xBDSQR uses QR iteration when singular vectors are desired [
+<a  href="node151.html#demmelkahan">
+32
+</a>
+,
+<a  href="node151.html#deiftdemmellitomei">
+23
+</a>
+], and otherwise uses the dqds algorithm [
+<a  href="node151.html#fernandoparlett">
+51
+</a>
+]. xBDSQR is more accurate than its counterparts in LINPACK and EISPACK: barring underflow and overflow, it computes all the singular values of
+<b >
+<i >
+B
+</i>
+</b>
+to nearly full relative precision, independent of their magnitudes. It also computes the singular vectors much more accurately. See section
+<a  href="node96.html#secsvd">
+4.9
+</a>
+and [
+<a  href="node151.html#demmelkahan">
+32
+</a>
+,
+<a  href="node151.html#deiftdemmellitomei">
+23
+</a>
+,
+<a  href="node151.html#fernandoparlett">
+51
+</a>
+] for details.
+</p>
+<p >
+xBDSDC uses a variation of Cuppen's divide and conquer algorithm to find singular values and singular vectors [
+<a  href="node151.html#jessupsorensen">
+69
+</a>
+,
+<a  href="node151.html#gueisenstat3">
+58
+</a>
+]. It is much faster than xBDSQR if singular vectors of large matrices are desired. When singular values only are desired, it uses the same dqds algorithm as xBDSQR [
+<a  href="node151.html#fernandoparlett">
+51
+</a>
+]. Divide-and-conquer is not guaranteed to compute singular values to nearly full relative precision, but in practice xBDSDC is often at least as accurate as xBDSQR. xBDSDC represents the singular vector matrices
+<b >
+<i >
+U
+</i>
+<sub >
+2
+</sub>
+</b>
+and
+<b >
+<i >
+V
+</i>
+<sub >
+2
+</sub>
+</b>
+in a compressed format requiring only
+<img ></img>
+space instead of
+<b >
+<i >
+n
+</i>
+<sup >
+2
+</sup>
+</b>
+.
+<b >
+<i >
+U
+</i>
+<sub >
+2
+</sub>
+</b>
+and
+<b >
+<i >
+V
+</i>
+<sub >
+2
+</sub>
+</b>
+may subsequently be generated explicitly using routine xLASDQ, or multiplied by vectors without forming them explicitly using routine xLASD0.
+</p>
+<p >
+If
+<img ></img>
+, it may be more efficient to first perform a
+<b >
+<i >
+QR
+</i>
+</b>
+factorization of
+<b >
+<i >
+A
+</i>
+</b>
+, using the routine xGEQRF
+<a  name="3455"></a>
+<a  name="3456"></a>
+<a  name="3457"></a>
+<a  name="3458"></a>
+, and then to compute the SVD of the
+<b >
+<i >
+n
+</i>
+</b>
+-by-
+<b >
+<i >
+n
+</i>
+</b>
+matrix
+<b >
+<i >
+R
+</i>
+</b>
+, since if
+<b >
+<i >
+A
+</i>
+=
+<i >
+QR
+</i>
+</b>
+and
+<!-- MATH
+ $R = U \Sigma V^T$
+ -->
+<img ></img>
+, then the SVD of
+<b >
+<i >
+A
+</i>
+</b>
+is given by
+<!-- MATH
+ $A = (QU) \Sigma V^T$
+ -->
+<img ></img>
+. Similarly, if
+<img ></img>
+, it may be more efficient to first perform an
+<b >
+<i >
+LQ
+</i>
+</b>
+factorization of
+<b >
+<i >
+A
+</i>
+</b>
+, using xGELQF. These preliminary
+<b >
+<i >
+QR
+</i>
+</b>
+and
+<b >
+<i >
+LQ
+</i>
+</b>
+<a  name="3459"></a>
+<a  name="3460"></a>
+<a  name="3461"></a>
+<a  name="3462"></a>
+factorizations are performed by the drivers xGESVD
+<a  name="3463"></a>
+<a  name="3464"></a>
+<a  name="3465"></a>
+<a  name="3466"></a>
+and xGESDD.
+<a  name="3467"></a>
+<a  name="3468"></a>
+<a  name="3469"></a>
+<a  name="3470"></a>
+</p>
+<p >
+The SVD may be used to find a minimum norm solution
+<a  name="3471"></a>
+to a (possibly) rank-deficient linear least squares
+<a  name="3472"></a>
+problem (
+<a  href="node27.html#llsq">
+2.1
+</a>
+). The effective rank,
+<b >
+<i >
+k
+</i>
+</b>
+, of
+<b >
+<i >
+A
+</i>
+</b>
+can be determined as the number of singular values which exceed a suitable threshold. Let
+<img ></img>
+be the leading
+<b >
+<i >
+k
+</i>
+</b>
+-by-
+<b >
+<i >
+k
+</i>
+</b>
+submatrix of
+<img ></img>
+, and
+<img ></img>
+be the matrix consisting of the first
+<b >
+<i >
+k
+</i>
+</b>
+columns of
+<b >
+<i >
+V
+</i>
+</b>
+. Then the solution is given by:
+<br ></br>
+</p>
+<p ></p>
+<div  align="center">
+<!-- MATH
+ \begin{displaymath}
+x = \hat{V} \hat{\Sigma}^{-1} \hat{c}_1
+\end{displaymath}
+ -->
+<img ></img>
+</div>
+<br ></br>
+<p ></p>
+where
+<img ></img>
+consists of the first
+<b >
+<i >
+k
+</i>
+</b>
+elements of
+<!-- MATH
+ $c = U^T b =
+U_{2}^T U_{1}^T b$
+ -->
+<b >
+<i >
+c
+</i>
+=
+<i >
+U
+</i>
+<sup >
+<i >
+T
+</i>
+</sup>
+<i >
+b
+</i>
+=
+<i >
+U
+</i>
+<sub >
+2
+</sub>
+<sup >
+<i >
+T
+</i>
+</sup>
+<i >
+U
+</i>
+<sub >
+1
+</sub>
+<sup >
+<i >
+T
+</i>
+</sup>
+<i >
+b
+</i>
+</b>
+.
+<b >
+<i >
+U
+</i>
+<sub >
+1
+</sub>
+<sup >
+<i >
+T
+</i>
+</sup>
+<i >
+b
+</i>
+</b>
+can be computed using xORMBR, and
+<a  name="3484"></a>
+<a  name="3485"></a>
+xBDSQR has an option to multiply a vector by
+<b >
+<i >
+U
+</i>
+<sub >
+2
+</sub>
+<sup >
+<i >
+T
+</i>
+</sup>
+</b>
+.
+<a  name="3487"></a>
+<a  name="3488"></a>
+<a  name="3489"></a>
+<a  name="3490"></a>
+<p >
+<br ></br>
+</p>
+<div  align="center">
+<a  name="tabcompsvd"></a>
+<div  align="center">
+<a  name="3492"></a>
+<table  TABID="09905" border="1" cellpadding="3" genuinetable="yes" tabletitle="Table 2.12: Computational routines for the singular value decomposition">
+<caption >
+<strong >
+Table 2.12:
+</strong>
+Computational routines for the singular value decomposition
+</caption>
+<tr >
+<td  align="left">
+Type of matrix
+</td>
+<td  align="left">
+Operation
+</td>
+<td  align="center" colspan="2">
+Single precision
+</td>
+<td  align="center" colspan="2">
+Double precision
+</td>
+</tr>
+<tr >
+<td  align="left">
+and storage scheme
+</td>
+<td  align="left"></td>
+<td  align="left">
+real
+</td>
+<td  align="left">
+complex
+</td>
+<td  align="left">
+real
+</td>
+<td  align="left">
+complex
+</td>
+</tr>
+<tr >
+<td  align="left">
+general
+</td>
+<td  align="left">
+bidiagonal reduction
+</td>
+<td  align="left">
+SGEBRD
+<a  name="3504"></a>
+</td>
+<td  align="left">
+CGEBRD
+<a  name="3505"></a>
+</td>
+<td  align="left">
+DGEBRD
+<a  name="3506"></a>
+</td>
+<td  align="left">
+ZGEBRD
+<a  name="3507"></a>
+</td>
+</tr>
+<tr >
+<td  align="left">
+general band
+</td>
+<td  align="left">
+bidiagonal reduction
+</td>
+<td  align="left">
+SGBBRD
+<a  name="3508"></a>
+</td>
+<td  align="left">
+CGBBRD
+<a  name="3509"></a>
+</td>
+<td  align="left">
+DGBBRD
+<a  name="3510"></a>
+</td>
+<td  align="left">
+ZGBBRD
+<a  name="3511"></a>
+</td>
+</tr>
+<tr >
+<td  align="left">
+orthogonal/unitary
+</td>
+<td  align="left">
+generate matrix after
+</td>
+<td  align="left">
+SORGBR
+<a  name="3512"></a>
+</td>
+<td  align="left">
+CUNGBR
+<a  name="3513"></a>
+</td>
+<td  align="left">
+DORGBR
+<a  name="3514"></a>
+</td>
+<td  align="left">
+ZUNGBR
+<a  name="3515"></a>
+</td>
+</tr>
+<tr >
+<td  align="left"></td>
+<td  align="left">
+bidiagonal reduction
+</td>
+<td  align="left"></td>
+<td  align="left"></td>
+<td  align="left"></td>
+<td  align="left"></td>
+</tr>
+<tr >
+<td  align="left"></td>
+<td  align="left">
+multiply matrix after
+</td>
+<td  align="left">
+SORMBR
+<a  name="3516"></a>
+</td>
+<td  align="left">
+CUNMBR
+<a  name="3517"></a>
+</td>
+<td  align="left">
+DORMBR
+<a  name="3518"></a>
+</td>
+<td  align="left">
+ZUNMBR
+<a  name="3519"></a>
+</td>
+</tr>
+<tr >
+<td  align="left"></td>
+<td  align="left">
+bidiagonal reduction
+</td>
+<td  align="left"></td>
+<td  align="left"></td>
+<td  align="left"></td>
+<td  align="left"></td>
+</tr>
+<tr >
+<td  align="left">
+bidiagonal
+</td>
+<td  align="left">
+SVD using
+</td>
+<td  align="left">
+SBDSQR
+<a  name="3520"></a>
+</td>
+<td  align="left">
+CBDSQR
+<a  name="3521"></a>
+</td>
+<td  align="left">
+DBDSQR
+<a  name="3522"></a>
+</td>
+<td  align="left">
+ZBDSQR
+<a  name="3523"></a>
+</td>
+</tr>
+<tr >
+<td  align="left"></td>
+<td  align="left">
+QR or dqds
+</td>
+<td  align="left"></td>
+<td  align="left"></td>
+<td  align="left"></td>
+<td  align="left"></td>
+</tr>
+<tr >
+<td  align="left"></td>
+<td  align="left">
+SVD using
+</td>
+<td  align="left">
+SBDSDC
+<a  name="3524"></a>
+</td>
+<td  align="left"></td>
+<td  align="left">
+DBDSDC
+<a  name="3525"></a>
+</td>
+<td  align="left"></td>
+</tr>
+<tr >
+<td  align="left"></td>
+<td  align="left">
+divide-and-conquer
+</td>
+<td  align="left"></td>
+<td  align="left"></td>
+<td  align="left"></td>
+<td  align="left"></td>
+</tr>
+</table>
+</div>
+</div>
+<br ></br>
+<p ></p>
+<hr ></hr>
+<!--Navigation Panel-->
+<a  href="node54.html" name="tex2html4891">
+<img ></img>
+</a>
+<a  href="node37.html" name="tex2html4885">
+<img ></img>
+</a>
+<a  href="node52.html" name="tex2html4879">
+<img ></img>
+</a>
+<a  href="node1.html" name="tex2html4887">
+<img ></img>
+</a>
+<a  href="node152.html" name="tex2html4889">
+<img ></img>
+</a>
+<br ></br>
+<b >
+Next:
+</b>
+<a  href="node54.html" name="tex2html4892">
+Generalized Symmetric Definite Eigenproblems
+</a>
+<b >
+Up:
+</b>
+<a  href="node37.html" name="tex2html4886">
+Computational Routines
+</a>
+<b >
+Previous:
+</b>
+<a  href="node52.html" name="tex2html4880">
+Invariant Subspaces and Condition
+</a>
+<b >
+<a  href="node1.html" name="tex2html4888">
+Contents
+</a>
+</b>
+<b >
+<a  href="node152.html" name="tex2html4890">
+Index
+</a>
+</b>
+<!--End of Navigation Panel-->
+<address >
+<i >
+Susan Blackford
+</i>
+<br ></br>
+<i >
+1999-10-01
+</i>
+</address>
+</body>
+</html>

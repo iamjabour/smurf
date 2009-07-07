@@ -1,0 +1,544 @@
+<html >
+<head >
+<title >
+PSK31 Contest Scores
+</title>
+<meta ></meta>
+<meta ></meta>
+</head>
+<body  link="#0000FF" onload="this.document.Score.Call_Sign.focus();" text="#000000" vlink="#0000FF">
+<script >
+<!--
+function swl()
+	{	
+	if (Score.catagory.value=="SWL") 
+		{
+		Score.score.value = Score.worked.value;
+		Score.Soap.focus();	
+		}	
+	if (Score.catagory.value !="SWL")
+		{
+		Score.W_mults_80.focus()
+		}
+	}
+function call()
+	{
+	if (Score.Call_Sign.value=="")
+		{
+		alert("Your Callsign is required. Pleased enter it!");
+		Score.Call_Sign.focus();	
+		}
+	}	
+function nam()
+	{
+	if (Score.Name.value=="")
+		{
+		alert("Pleased enter your Name. It is required.");
+		Score.Name.focus();	
+		}
+	}	
+function mail()
+	{
+	if (Score.address.value=="")
+		{
+		alert("Pleased enter your e-mail address. It is required.");
+		Score.address.focus();	
+		}
+	}
+
+function qso()
+	{
+	if (Score.worked.value=="")
+		{
+		alert("You must have worked at least one QSO. Please enter # worked");
+		Score.worked.focus();	
+		}
+	}	
+
+function rum(x)
+	{
+	if (x.value=="")
+		{
+		x.value=0;	
+		}
+	if (x.value&amp;amp;lt;0 || x.value&amp;amp;gt;10)
+		{
+		alert("To many multipliers entered. 10 Maximum per band!");
+		x.focus();
+		x.value="";							
+		}
+	}
+
+function dx(x)
+	{
+	if (x.value=="")
+		{
+		x.value=0;	
+		}	
+	}
+
+function ve(x)
+	{
+	if (x.value=="")
+		{
+		x.value=0;	
+		}
+	if (x.value&amp;amp;lt;0 || x.value&amp;amp;gt;15)
+		{
+		alert("To many multipliers entered. 15 Maximum per band!");
+		x.focus();
+		x.value="";							
+		}
+	}
+
+function date_stamp()
+	{
+		var today = new Date();	
+		Score.date.value=today.toGMTString();
+	}
+
+function W_total()
+	{						
+	Score.W_mults_total.value = parseInt(Score.W_mults_80.value) + parseInt(Score.W_mults_40.value) + parseInt(Score.W_mults_20.value) + parseInt(Score.W_mults_15.value) + parseInt(Score.W_mults_10.value) + parseInt(Score.W_mults_06.value);
+	}
+function VE_total()
+	{	
+	Score.VE_mults_total.value = parseInt(Score.VE_mults_80.value) + parseInt(Score.VE_mults_40.value) + parseInt(Score.VE_mults_20.value) + parseInt(Score.VE_mults_15.value) + parseInt(Score.VE_mults_10.value) + parseInt(Score.VE_mults_06.value);
+	}
+function JA_total()
+	{						
+	Score.JA_mults_total.value = parseInt(Score.JA_mults_80.value) + parseInt(Score.JA_mults_40.value) + parseInt(Score.JA_mults_20.value) + parseInt(Score.JA_mults_15.value) + parseInt(Score.JA_mults_10.value) + parseInt(Score.JA_mults_06.value);
+	}
+function VK_total()
+	{	
+	Score.VK_mults_total.value = parseInt(Score.VK_mults_80.value) + parseInt(Score.VK_mults_40.value) + parseInt(Score.VK_mults_20.value) + parseInt(Score.VK_mults_15.value) + parseInt(Score.VK_mults_10.value) + parseInt(Score.VK_mults_06.value);
+	}
+function DX_total()
+	{	
+	Score.DX_mults_total.value = parseInt(Score.DX_mults_80.value) + parseInt(Score.DX_mults_40.value) + parseInt(Score.DX_mults_20.value) + parseInt(Score.DX_mults_15.value) + parseInt(Score.DX_mults_10.value) + parseInt(Score.DX_mults_06.value);
+	}
+
+function TotalScore()	
+	{	
+		Score.score.value  = parseInt(Score.worked.value) * (parseInt(Score.DX_mults_total.value) + parseInt(Score.W_mults_total.value) + parseInt(Score.VE_mults_total.value) + parseInt(Score.JA_mults_total.value) + parseInt(Score.VK_mults_total.value));				
+	}
+
+// -->
+</script>
+<center >
+<font  color="ff6600" size="6">
+<b >
+PSK31
+</b>
+</font>
+<font  size="5">
+<b >
+Contest Score Submission Form
+</b>
+</font>
+</center>
+<p  align="justify">
+<!--  xxxxxxxxxxxx Score Submission Code xxxxxxxxxxxxx -->
+</p>
+<center >
+<font  color="#0000aa">
+<b >
+<i >
+Please tab through ALL sections, in turn, to ensure your score is calculated correctly. You do not need to enter Zero's as the tab will fill these spaces automatically. Thanks you!
+</i>
+</b>
+</font>
+</center>
+<form  action="/cgi-bin/FormMail.pl" method="post" name="Score">
+<input ></input>
+<table  TABID="11070" align="center">
+<tr >
+<td >
+Enter your
+<b >
+Call Sign / SWL#
+</b>
+:
+</td>
+<td >
+<input ></input>
+<i >
+<font  color="#990000" size="2">
+<b >
+(hit TAB.)
+</b>
+</font>
+</i>
+</td>
+</tr>
+<tr >
+<td >
+Enter your
+<b >
+Name
+</b>
+:
+</td>
+<td >
+<input ></input>
+<i >
+<font  color="#990000" size="2">
+<b >
+(hit TAB.)
+</b>
+</font>
+</i>
+</td>
+</tr>
+<tr >
+<td >
+Enter your
+<b >
+e-mail address
+</b>
+:
+</td>
+<td >
+<input ></input>
+<i >
+<font  color="#990000" size="2">
+<b >
+(hit TAB.)
+</b>
+</font>
+</i>
+</td>
+</tr>
+</table>
+<center >
+<font  size="2">
+<i >
+(e-mail address will be used to contact you for shipping instructions if you win. Please make sure it is correct)
+</i>
+</font>
+<p ></p>
+<table  TABID="11071">
+<tr >
+<td >
+Select
+<b >
+Operating Catagory
+</b>
+</td>
+<td >
+<select >
+<option  value="The Club Challenge">
+The Club Challenge (100 watt max.)
+</option>
+<option  value="Normal">
+Normal (100 watt max.)
+</option>
+<option  value="Great">
+Great (20 watt max.)
+</option>
+<option  value="Super">
+Super (5 watt max.)
+</option>
+<option  value="Novice">
+Novice (any power)
+</option>
+<option  value="SWL">
+SWL
+</option>
+</select>
+</td>
+</tr>
+<tr >
+<td >
+Enter total number of
+<b >
+QSO's worked / heard
+</b>
+</td>
+<td >
+<input ></input>
+<i >
+<font  color="#990000" size="2">
+<b >
+(hit TAB.)
+</b>
+</font>
+</i>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="11072" align="center" border="0">
+<tr >
+<td  align="center" valign="center">
+<br ></br>
+</td>
+<td  align="center" valign="center">
+80m
+</td>
+<td  align="center" valign="center">
+40m
+</td>
+<td  align="center" valign="center">
+20m
+</td>
+<td  align="center" valign="center">
+15m
+</td>
+<td  align="center" valign="center">
+10m
+</td>
+<td  align="center" valign="center">
+06m
+</td>
+<td  align="center" valign="center">
+Totals
+</td>
+</tr>
+<tr >
+<td >
+<font  size="2">
+<b >
+W multipliers
+</b>
+10 max/band.
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<font  size="2">
+W0 through W9. No States
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  size="2">
+<b >
+VE multipliers
+</b>
+15 max/band.
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<font  size="2">
+VE0 - VE9, VY0 - VY2, VO1, VO2
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  size="2">
+<b >
+JA multipliers
+</b>
+10 max/band.
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<font  size="2">
+JA0 through JA9.
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  size="2">
+<b >
+VK multipliers
+</b>
+10 max/band.
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<font  size="2">
+VK0 through VK9.
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  size="2">
+<b >
+DX multipliers
+</b>
+per band.
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+<td >
+<font  size="2">
+DXCC countries. Include urs!
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+<center >
+<font  color="#0000aa" size="3">
+<b >
+<i >
+Soap Box
+</i>
+</b>
+</font>
+<br ></br>
+<font  size="2">
+<i >
+Club Challenge? tell us about your Station configuration.
+</i>
+</font>
+<textarea ></textarea>
+<br ></br>
+<table  TABID="11073">
+<tr >
+<td >
+<center >
+Your
+<b >
+Claimed Score
+</b>
+is
+</center>
+</td>
+<td >
+<font  color="#0000aa" size="3"></font>
+<center >
+<input ></input>
+</center>
+</td>
+</tr>
+</table>
+<table  TABID="11074" align="center" border="0" width="60%">
+<tr >
+<td  align="center">
+<p  align="justify">
+<font  color="#0000aa" size="2">
+<b >
+<i >
+I have observed all competition rules as well as all regulations established for amateur radio in my country. My report is correct and true to the best of my knowledge. I agree to be bound by the decisions of the awards committee.
+</i>
+</b>
+</font>
+</p>
+</td>
+</tr>
+</table>
+<table  TABID="11075" align="center" border="0" width="40%">
+<tr >
+<td  align="center">
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+</td>
+</tr>
+</table>
+</center>
+</center>
+</form>
+</body>
+</html>

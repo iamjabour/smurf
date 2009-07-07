@@ -1,0 +1,292 @@
+<html >
+<head >
+<meta ></meta>
+<title >
+Economic Value Concept Map
+</title>
+<meta ></meta>
+<script >
+<!--
+// PopUp --
+//    by Morgan S. Hollinger
+//  ver 1.0 - Aug 23, 1999
+
+
+NS = (document.layers) ? 1 : 0;
+IE = (document.all) ? 1 : 0;
+IE4PC = 0;
+if (IE) {
+  OS = navigator.platform;
+  VER = new String(navigator.appVersion);
+  VER = VER.substr (0, VER.indexOf (" "));
+  if ((VER &amp;amp;lt; 4.8) &amp;amp;amp;&amp;amp;amp; (OS == "Win32")) {
+    IE4PC = 1;
+  }
+}
+var openpopups = new Array();
+var resourcewindows = ((window.opener) &amp;amp;amp;&amp;amp;amp; (window.opener.resourcewindows)) ? window.opener.resourcewindows : new Array() ;
+
+
+
+function handleResize() {
+  location.reload();
+  return false;
+}
+
+if ((NS) &amp;amp;amp;&amp;amp;amp; (navigator.platform == "MacPPC")) {
+  window.captureEvents (Event.RESIZE);
+  window.onresize = handleResize;
+}
+
+function openResource (event, resourceType, iWidth, iHeight) {
+  var newwindow;
+  var size;
+
+  // Resource types are enumerated as follows:
+  // cMap     = 0
+  // text     = 1
+  // external = 2
+  // URL      = 3
+  // image    = 4 (sized!)
+  // MooV     = 5 (sized!)
+  // image    = 6 (no size!)
+  // MooV     = 7 (no size!)
+  if (NS) {
+      resourcePath = event.target;
+  }
+  else {
+      resourcePath = window.event.srcElement;
+  }
+  popDown();
+  if ( ((resourcewindows[resourcePath])) &amp;amp;amp;&amp;amp;amp; (resourcewindows[resourcePath].closed == false)) {
+    if ((IE4PC) &amp;amp;amp;&amp;amp;amp; (resourceType == 3)) {
+      return;
+    }
+    resourcewindows[resourcePath].focus();
+    return;
+  }
+  if(iWidth != 0 &amp;amp;amp;&amp;amp;amp; iHeight != 0) {
+    size = ",width=" + iWidth + ",height=" + iHeight;
+  }
+  else {
+    size = "";
+  }
+  switch (resourceType) {
+    case 0:
+            newwindow = window.open (resourcePath, "_blank", "toolbar=yes,location=yes,directories=no,menubar=yes,scrollbars=yes,status=no,resizable=yes" + size);
+            break;
+    case 1: 
+            newwindow = window.open (resourcePath, "_blank", "toolbar=no,location=yes,directories=no,menubar=no,scrollbars=yes,status=no,resizable=yes" + size);
+            break;
+    case 2:
+            newwindow = window.open (resourcePath, "_blank", "toolbar=no,location=yes,directories=no,menubar=yes,scrollbars=yes,status=no,resizable=yes" + size);
+            break;
+    case 3:
+            newwindow = window.open (resourcePath, "_blank", "toolbar=yes,location=yes,directories=yes,menubar=yes,scrollbars=yes,status=no,resizable=yes" + size);
+            break;
+    case 4:
+            newwindow = window.open(resourcePath, "_blank", "toolbar=no,location=yes,directories=no,menubar=no,scrollbars=yes,status=no,resizable=yes" + size);
+            break;
+    case 5:
+            newwindow = window.open(resourcePath, "_blank", "toolbar=no,location=yes,directories=no,menubar=no,scrollbars=yes,status=no,resizable=yes" + size);
+            break;
+    case 6:
+            newwindow = window.open(resourcePath, "_blank", "toolbar=no,location=yes,directories=no,menubar=no,scrollbars=yes,status=no,resizable=yes" + size);
+            break;
+    case 7:
+            newwindow = window.open(resourcePath, "_blank", "toolbar=no,location=yes,directories=no,menubar=no,scrollbars=yes,status=no,resizable=yes");
+            break;
+  }  
+  resourcewindows[resourcePath] = newwindow;
+  return;
+}
+
+
+
+
+function popUpEvt (event) {
+  var target;
+  var popupname;
+  var index;
+
+  popDown();
+  if (NS) {
+      target = new String (event.target);
+  }
+  else {
+      target = new String (window.event.srcElement);
+      window.event.cancelBubble = true;
+  }
+  index = target.indexOf ("#");
+  popupname = new String (target.substr (index + 1));
+  if (popupname.toString() == "#null#") {
+    return false;
+  }
+  if (NS) {
+    document.layers[popupname].moveTo (event.pageX, event.pageY);
+    document.layers[popupname].bgColor = "#B3B3B3";
+    document.layers[popupname].visibility = "show";
+    openpopups.push(popupname);
+  }
+  else {
+    if ( ! IE4PC) {
+      document.all[popupname].style.backgroundColor = "#B3B3B3";
+    }
+    document.all[popupname].style.left = window.event.clientX + document.body.scrollLeft;
+    document.all[popupname].style.top = window.event.clientY + document.body.scrollTop;
+    document.all[popupname].style.visibility = "visible";
+    openpopups[openpopups.length] = popupname;
+  }
+  return false;
+}
+
+
+
+
+function popDown () {
+  var popupname;
+
+  for (var i = 0; i &amp;amp;lt; openpopups.length; i++) {
+    popupname = new String (openpopups[i]);
+    if (NS) {
+      document.layers[popupname].visibility = "hide";
+    }
+    else {
+      document.all[popupname].style.visibility = "hidden";
+    }
+  }
+  openpopups = new Array();
+  return;
+}
+
+//-->
+</script>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+</head>
+<body  cellpadding="10" width="90%">
+<table  TABID="00737">
+<tr >
+<td  bgcolor="ff4444">
+<font  color="000000" face="helvetica" size="+1"></font>
+<h1 >
+Warning:
+</h1>
+<b >
+JavaScript is turned OFF. None of the links on this page will work until it is reactivated.
+<p >
+<a  href="http://cmap.coginst.uwf.edu/docs/EnablingJavaScript.html">
+If you need help turning JavaScript on click here.
+</a>
+</p>
+</b>
+</td>
+</tr>
+</table>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<map  name="EconomicIValue">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<center >
+<img ></img>
+</center>
+</body>
+</html>
+<html  id="EconomicIValueIEconomicIValueIofISpaceIExplorationIurl" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+<head ></head>
+<body >
+<div >
+<table  TABID="00738" bgcolor="#D3D3D3" border="2" cellpadding="5" cellspacing="0">
+<tr >
+<td  nowrap="nowrap">
+<font  face="Helvetica,Arial" size="3">
+<a  href="links/ConsiderationsRation.html" onclick="openResource (event, 3, 0, 0); return false;">
+Considerations/Rationale -- USC
+</a>
+</font>
+</td>
+</tr>
+</table>
+</div>
+<div  id="EconomicIValueIEconomicIValueIofISpaceIExplorationItext" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+<table  TABID="00739" bgcolor="#D3D3D3" border="2" cellpadding="5" cellspacing="0">
+<tr >
+<td  nowrap="nowrap">
+<font  face="Helvetica,Arial" size="3">
+<a  href="links/Symposium%20%20Economic2.html" onclick="openResource (event, 3, 0, 0); return false;">
+Symposium -- Economic Value Part 1
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  nowrap="nowrap">
+<font  face="Helvetica,Arial" size="3">
+<a  href="links/Symposium%20%20Economic.html" onclick="openResource (event, 3, 0, 0); return false;">
+Symposium -- Economic Value Part 2
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  nowrap="nowrap">
+<font  face="Helvetica,Arial" size="3">
+<a  href="links/Symposium%20Closing%20Rem.html" onclick="openResource (event, 3, 0, 0); return false;">
+Symposium Closing Remarks -- Daniel Goldin
+</a>
+</font>
+</td>
+</tr>
+</table>
+</div>
+<div  id="EconomicIValueIIncreasedIScienceILiteracyItext" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+<table  TABID="00740" bgcolor="#D3D3D3" border="2" cellpadding="5" cellspacing="0">
+<tr >
+<td  nowrap="nowrap">
+<font  face="Helvetica,Arial" size="3">
+<a  href="links/Symposium%20%20Educatio.html" onclick="openResource (event, 3, 0, 0); return false;">
+Symposium -- Education &amp; Science Literacy
+</a>
+</font>
+</td>
+</tr>
+</table>
+</div>
+<div  id="EconomicIValueINewIKnowledgeItext" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+<table  TABID="00741" bgcolor="#D3D3D3" border="2" cellpadding="5" cellspacing="0">
+<tr >
+<td  nowrap="nowrap">
+<font  face="Helvetica,Arial" size="3">
+<a  href="links/Symposium%20%20Science2.html" onclick="openResource (event, 3, 0, 0); return false;">
+Symposium -- Science &amp; Cultural Value
+</a>
+</font>
+</td>
+</tr>
+</table>
+</div>
+<div  id="EconomicIValueIReferenceIIINASAISymposiumI1994Itext" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+<table  TABID="00742" bgcolor="#D3D3D3" border="2" cellpadding="5" cellspacing="0">
+<tr >
+<td  nowrap="nowrap">
+<font  face="Helvetica,Arial" size="3">
+<a  href="links/Symposium%20%20PDF%20file.html" onclick="openResource (event, 3, 0, 0); return false;">
+Symposium -- PDF file
+</a>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

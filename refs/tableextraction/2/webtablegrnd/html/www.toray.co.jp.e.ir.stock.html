@@ -1,0 +1,975 @@
+<html >
+<!-- #BeginTemplate "/Templates/temp_ir_e.dwt" -->
+<head >
+<!-- #BeginEditable "doctitle" -->
+<title >
+Stock Information
+</title>
+<meta ></meta>
+<meta ></meta>
+<!-- #EndEditable -->
+<style  type="text/css">
+<!--
+a:link { text-decoration: none;}
+a:visited { text-decoration: none;}
+a:hover { text-decoration: underline;}
+-->
+</style>
+<script >
+<!--
+mac=(navigator.appVersion.indexOf('Mac')!=-1)?true:false;
+ie=(navigator.appName.charAt(0) == "M")?true:false;
+
+document.write("&amp;amp;amp;lt;STYLE TYPE='text/css'&amp;amp;amp;gt;&amp;amp;amp;lt;!--")
+if(mac){
+       //FOR MACINTOSH IE NS
+	   document.write(".sm1{font-size:10px; line-height:15px; color:#0066FF}")
+	   document.write(".sm2{font-size:10px; line-height:15px; color:#000099}")
+	   document.write(".sm3{font-size:10px; line-height:15px; color:#660066}")
+	   document.write(".sm4{font-size:10px; line-height:15px; color:#990000}")
+	   document.write(".sm5{font-size:10px; line-height:15px; color:#FF3300}")
+	   document.write(".sm6{font-size:10px; line-height:15px; color:#333333}")
+	   document.write(".sm7{font-size:10px; line-height:15px; color:#006633}")
+	   document.write(".e10{font-size:10px}")
+	   document.write(".e12{font-size:12px}")
+	   document.write(".e14{font-size:14px}")
+}
+else{
+       if(ie){
+	   //FOR WINDOWS IE
+	   document.write(".sm1{font-size:11px; line-height:15px; color:#0066FF}")
+	   document.write(".sm2{font-size:11px; line-height:12px; color:#000099}")
+	   document.write(".sm3{font-size:11px; line-height:15px; color:#660066}")
+	   document.write(".sm4{font-size:11px; line-height:15px; color:#990000}")
+	   document.write(".sm5{font-size:11px; line-height:15px; color:#FF3300}")
+	   document.write(".sm6{font-size:11px; line-height:15px; color:#333333}")
+	   document.write(".sm7{font-size:11px; line-height:12px; color:#006633}")
+	   document.write(".e10{font-size:10px; line-height:12px}")
+	   document.write(".e12{font-size:12px; line-height:15px}")
+	   document.write(".e14{font-size:14px}")
+	   }
+	   else{
+	   //FOR WINDOWS NETSCAPE
+	   document.write(".sm1{font-size:12px; line-height:16px; color:#0066FF}")
+	   document.write(".sm2{font-size:12px; line-height:16px; color:#000099}")
+	   document.write(".sm3{font-size:12px; line-height:16px; color:#660066}")
+	   document.write(".sm4{font-size:12px; line-height:16px; color:#990000}")
+	   document.write(".sm5{font-size:12px; line-height:16px; color:#FF3300}")
+	   document.write(".sm6{font-size:12px; line-height:16px; color:#333333}")
+	   document.write(".sm7{font-size:12px; line-height:16px; color:#006633}")
+	   document.write(".e10{font-size:12px; line-height:11px}")
+	   document.write(".e12{font-size:14px}")
+	   document.write(".e14{font-size:16px}")
+	   }
+}
+document.write("-->
+"); //--&gt;
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&amp;amp;amp;amp;&amp;amp;amp;amp;(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i&amp;amp;amp;lt;a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&amp;amp;amp;amp;&amp;amp;amp;amp;i&amp;amp;amp;lt;a.length&amp;amp;amp;amp;&amp;amp;amp;amp;(x=a[i])&amp;amp;amp;amp;&amp;amp;amp;amp;x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))&amp;amp;amp;gt;0&amp;amp;amp;amp;&amp;amp;amp;amp;parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&amp;amp;amp;amp;&amp;amp;amp;amp;d.all) x=d.all[n]; for (i=0;!x&amp;amp;amp;amp;&amp;amp;amp;amp;i&amp;amp;amp;lt;d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&amp;amp;amp;amp;&amp;amp;amp;amp;d.layers&amp;amp;amp;amp;&amp;amp;amp;amp;i&amp;amp;amp;lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i&amp;amp;amp;lt;(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i&amp;amp;amp;lt;(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+<!--hide this script from non-javascript-enabled browsers
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))&amp;amp;amp;gt;0&amp;amp;amp;amp;&amp;amp;amp;amp;parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&amp;amp;amp;amp;&amp;amp;amp;amp;d.all) x=d.all[n]; for (i=0;!x&amp;amp;amp;amp;&amp;amp;amp;amp;i&amp;amp;amp;lt;d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&amp;amp;amp;amp;&amp;amp;amp;amp;d.layers&amp;amp;amp;amp;&amp;amp;amp;amp;i&amp;amp;amp;lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+/* Functions that swaps images. */
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i&amp;amp;amp;lt;(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&amp;amp;amp;amp;&amp;amp;amp;amp;i&amp;amp;amp;lt;a.length&amp;amp;amp;amp;&amp;amp;amp;amp;(x=a[i])&amp;amp;amp;amp;&amp;amp;amp;amp;x.oSrc;i++) x.src=x.oSrc;
+}
+
+/* Functions that handle preload. */
+function MM_preloadImages() { //v3.0
+ var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+   var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i&amp;amp;amp;lt;a.length; i++)
+   if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+// stop hiding -->
+</script>
+</head>
+<body  background="img/ir_bg.gif" link="#000099" marginheight="0" text="#333333" vlink="#660066">
+<table  TABID="13214" border="0" cellpadding="0" cellspacing="0" width="631">
+<tr >
+<td  align="left" colspan="3" valign="top">
+<img ></img>
+<!-- #BeginEditable "header" -->
+<map  name="MapMap">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<!-- #EndEditable -->
+</td>
+<td  align="left" valign="top">
+<!-- #BeginEditable "japanese" -->
+<a  href="../../ir/stock.html">
+<img ></img>
+</a>
+<!-- #EndEditable -->
+</td>
+</tr>
+</table>
+<table  TABID="13217" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr >
+<td >
+<div  align="center">
+<p >
+?@
+</p>
+<!-- #BeginEditable "1" -->
+<p >
+<img ></img>
+</p>
+<!-- #EndEditable -->
+<!-- #BeginEditable "2" -->
+<table  TABID="13216" border="0" cellpadding="2" cellspacing="1" width="550">
+<tr >
+<td  valign="middle">
+<img ></img>
+</td>
+<td  class="e12">
+Common Stock Issued
+<b >
+:
+</b>
+1,401,481,403 shares
+</td>
+</tr>
+<tr >
+<td  valign="middle">
+<img ></img>
+</td>
+<td  class="e12">
+Number of Stockholders
+<b >
+:
+</b>
+167,222
+</td>
+</tr>
+<tr >
+<td  valign="middle">
+<img ></img>
+</td>
+<td  class="e12">
+Principal Stockholders
+</td>
+</tr>
+<tr >
+<td  valign="middle"></td>
+<td  class="e12">
+<div  align="center">
+<center >
+<table  TABID="13215" border="1" cellspacing="0" genuinetable="yes">
+<tr >
+<td  align="center">
+?@
+</td>
+<td  class="e10">
+<b >
+Number of shares held
+<br ></br>
+(Thousands)
+</b>
+</td>
+<td  class="e10">
+<b >
+Percent of total shares
+</b>
+</td>
+</tr>
+<tr >
+<td  class="e10">
+Nippon Life Insurance Company
+</td>
+<td  class="e10">
+71,212
+</td>
+<td  class="e10">
+5.08%
+</td>
+</tr>
+<tr >
+<td  class="e10">
+The Sakura Bank, Ltd.
+</td>
+<td  class="e10">
+65,488
+</td>
+<td  class="e10">
+4.67%
+</td>
+</tr>
+<tr >
+<td  class="e10">
+The Dai-ichi Mutual Life Insurance Company
+</td>
+<td  class="e10">
+54,055
+</td>
+<td  class="e10">
+3.85%
+</td>
+</tr>
+<tr >
+<td  class="e10">
+Mitsui Mutual Life Insurance Company
+</td>
+<td  class="e10">
+47,948
+</td>
+<td  class="e10">
+3.42%
+</td>
+</tr>
+<tr >
+<td  class="e10">
+The Sumitomo Trust &amp; Banking Co., Ltd.
+</td>
+<td  class="e10">
+32,328
+</td>
+<td  class="e10">
+2.30%
+</td>
+</tr>
+<tr >
+<td  class="e10">
+The Chuo Mitsui Trust and Banking Co., Ltd.
+</td>
+<td  class="e10">
+30,359
+</td>
+<td  class="e10">
+2.16%
+</td>
+</tr>
+<tr >
+<td  class="e10">
+Shinsei Bank, Ltd.
+</td>
+<td  class="e10">
+27,332
+</td>
+<td  class="e10">
+1.95%
+</td>
+</tr>
+<tr >
+<td  class="e10">
+Morgan Guranty Brussels
+</td>
+<td  class="e10">
+24,814
+</td>
+<td  class="e10">
+1.77%
+</td>
+</tr>
+<tr >
+<td  class="e10">
+Mitsui Marine &amp; Fine Insurance Co., Ltd.
+</td>
+<td  class="e10">
+20,002
+</td>
+<td  class="e10">
+1.42%
+</td>
+</tr>
+<tr >
+<td  class="e10">
+European Bank for Reconstruction &amp; Development
+</td>
+<td  class="e10">
+19,484
+</td>
+<td  class="e10">
+1.39%
+</td>
+</tr>
+</table>
+</center>
+</div>
+</td>
+</tr>
+<tr >
+<td  valign="middle">
+<img ></img>
+</td>
+<td  class="e12">
+Composition of Stochkholders (Thousands of Shares)
+</td>
+</tr>
+<tr >
+<td  valign="middle"></td>
+<td  align="left" valign="top">
+<div  align="center">
+<img ></img>
+</div>
+</td>
+</tr>
+<tr >
+<td  valign="middle">
+<img ></img>
+</td>
+<td  class="e12">
+Stockholder Information
+</td>
+</tr>
+<tr >
+<td  valign="middle"></td>
+<td  align="left" valign="top">
+<ul  class="e12">
+<li >
+Account Closing Date: March 31
+<br ></br>
+Year-end cash dividends will be paid to stockholders of record as of March 31 of each year, and interim cash dividends will be paid to stockholders of record as of September 30 of each year.
+</li>
+<li >
+Transfer Agent:
+<br ></br>
+The Chuo Mitsui Trust and Banking Co., Ltd. 3-33-1 Shiba, Minato-ku, Tokyo 105-0014 Japan
+</li>
+<li >
+Transfer Office:
+<br ></br>
+Stock Transfer Agency Department
+<br ></br>
+The Chuo Mitsui Trust and Banking Co., Ltd.
+<br ></br>
+6-1-21 Shimo-Meguro, Meguro-ku, Tokyo 153-8602 Japan
+<br ></br>
+Tel: +81(0)3 3714-2211
+</li>
+<li >
+Intermediating Transfer Offices:
+<br ></br>
+Branch Offices of The Chuo Mitsui Trust and Banking Co., Ltd.
+</li>
+<li >
+Designated Newspaper for Public Notice:
+<br ></br>
+<i >
+Nihon Keizai Shimbun
+</i>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<p >
+?@
+</p>
+<!-- #EndEditable -->
+<hr ></hr>
+<p  class="e12">
+<b >
+<font  color="#000000">
+Copyright(c) 2001 Toray Industries, Inc.
+</font>
+</b>
+</p>
+</div>
+</td>
+</tr>
+</table>
+<div  align="left" height="#DEFAULT" hidden="#DEFAULT" overflow="#DEFAULT" px="#DEFAULT" style="position:absolute;" top="#DEFAULT" visibility="#DEFAULT" visible="#DEFAULT" width="#DEFAULT" z-index="#DEFAULT">
+<table  TABID="13218" bgcolor="#CCCCFF" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr >
+<td >
+?@
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+?@
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="MM_showHideLayers(layeraboutus,,hide)">
+<img ></img>
+</a>
+</td>
+<td  valign="top">
+<a  class="sm2">
+<b >
+About Us Top
+</b>
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+---------
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+?@
+<a  class="sm2">
+Greetings
+</a>
+<br ></br>
+?@
+<a  class="sm2">
+Corporate Philosophy
+</a>
+<br ></br>
+?@
+<a  class="sm2">
+Corporate Outline
+</a>
+<br ></br>
+?@
+<a  class="sm2">
+Organization
+</a>
+<br ></br>
+?@
+<a  class="sm2">
+Long-Term Corporate Vision : New AP-G2000
+</a>
+<br ></br>
+?@
+<a  class="sm2">
+R&amp;D
+</a>
+<br ></br>
+?@
+<a  class="sm2">
+Overseas Business
+</a>
+<br ></br>
+?@
+<a  class="sm2">
+History
+</a>
+<br ></br>
+?@
+<a  class="sm2">
+TORAY Science Foundation
+</a>
+<br ></br>
+?@
+<a  class="sm2">
+Principal Subsidiaries and Affiliated Companies
+</a>
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layeraboutus,,hide)">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?@
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layeraboutus,,hide)">
+<img ></img>
+</a>
+</td>
+<td >
+?@
+</td>
+</tr>
+</table>
+</div>
+<div  align="left" height="#DEFAULT" hidden="#DEFAULT" overflow="#DEFAULT" px="#DEFAULT" style="position:absolute;" top="#DEFAULT" visibility="#DEFAULT" visible="#DEFAULT" width="#DEFAULT" z-index="#DEFAULT">
+<table  TABID="13219" bgcolor="#CCFFFF" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr >
+<td >
+?@
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+?@
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="MM_showHideLayers(layerrelease,,hide)">
+<img ></img>
+</a>
+</td>
+<td  valign="top">
+<a  href="../release/index.html">
+<b  class="sm1">
+Press Release
+</b>
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+---------
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+?@
+<a  class="sm1">
+Back Number
+</a>
+?@?@?@
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layerrelease,,hide)">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?@
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layerrelease,,hide)">
+<img ></img>
+</a>
+</td>
+<td >
+?@
+</td>
+</tr>
+</table>
+</div>
+<div  align="left" height="#DEFAULT" hidden="#DEFAULT" overflow="#DEFAULT" px="#DEFAULT" style="position:absolute;" top="#DEFAULT" visibility="#DEFAULT" visible="#DEFAULT" width="#DEFAULT" z-index="#DEFAULT">
+<table  TABID="13220" bgcolor="#CCCCCC" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr >
+<td >
+?@
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+?@
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="MM_showHideLayers(layerir,,hide)">
+<img ></img>
+</a>
+</td>
+<td >
+<a  class="sm6">
+<b >
+Investor Relations Top
+</b>
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+---------
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+?@
+<a  class="sm6">
+Financial Highlights
+</a>
+<br ></br>
+?@
+<a  class="sm6">
+Announcements of Business Results
+</a>
+<br ></br>
+?@
+<a  class="sm6">
+Annual Reports
+</a>
+<br ></br>
+?@
+<a  class="sm6">
+Stock Information
+</a>
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layerir,,hide)">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?@
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layerir,,hide)">
+<img ></img>
+</a>
+</td>
+<td >
+?@
+</td>
+</tr>
+</table>
+</div>
+<div  align="left" height="#DEFAULT" hidden="#DEFAULT" overflow="#DEFAULT" px="#DEFAULT" style="position:absolute;" top="#DEFAULT" visibility="#DEFAULT" visible="#DEFAULT" width="#DEFAULT" z-index="#DEFAULT">
+<table  TABID="13221" bgcolor="#CCFFCC" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr >
+<td >
+?@
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+?@
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="MM_showHideLayers(layerenvi,,hide)">
+<img ></img>
+</a>
+</td>
+<td  valign="top">
+<a  class="sm7">
+<b >
+Environmental Activities Top
+</b>
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+---------
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+?@
+<a  class="sm7">
+President's Message
+</a>
+<br ></br>
+?@
+<a  class="sm7">
+10 Environmental Basic Rules
+</a>
+<br ></br>
+?@
+<a  class="sm7">
+The Toray Group's Environment Management System
+</a>
+<br ></br>
+?@
+<a  class="sm7">
+Reducing Environmental Loads Generated by Business Activities
+</a>
+<br ></br>
+?@
+<a  class="sm7">
+Transportation Safety
+</a>
+<br ></br>
+?@
+<a  class="sm7">
+Measures to Promote Product Safety
+</a>
+<br ></br>
+?@
+<a  class="sm7">
+Measures to Promote Industrial Safety
+</a>
+<br ></br>
+?@
+<a  class="sm7">
+Accident Prevention Activities
+</a>
+<br ></br>
+?@
+<a  class="sm7">
+Environmental Accounting
+</a>
+<br ></br>
+?@
+<a  class="sm7">
+Recycling Activities
+</a>
+<br ></br>
+?@
+<a  class="sm7">
+Activities as a Good Corporate Citizen
+</a>
+<br ></br>
+?@
+<a  class="sm7">
+Activities to Improve the Global Environment
+</a>
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layerenvi,,hide)">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?@
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layerenvi,,hide)">
+<img ></img>
+</a>
+</td>
+<td >
+?@
+</td>
+</tr>
+</table>
+</div>
+<div  align="left" height="#DEFAULT" hidden="#DEFAULT" overflow="#DEFAULT" px="#DEFAULT" style="position:absolute;" top="#DEFAULT" visibility="#DEFAULT" visible="#DEFAULT" width="#DEFAULT" z-index="#DEFAULT">
+<table  TABID="13222" bgcolor="#FFCCFF" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr >
+<td >
+?@
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+?@
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="MM_showHideLayers(layerproducts,,hide)">
+<img ></img>
+</a>
+</td>
+<td  valign="top">
+<a  class="sm3">
+<b >
+Products &amp; Services Top
+</b>
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+---------
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layerproducts,,hide)">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?@
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layerproducts,,hide)">
+<img ></img>
+</a>
+</td>
+<td >
+?@
+</td>
+</tr>
+</table>
+</div>
+<div  align="left" height="#DEFAULT" hidden="#DEFAULT" overflow="#DEFAULT" px="#DEFAULT" style="position:absolute;" top="#DEFAULT" visibility="#DEFAULT" visible="#DEFAULT" width="#DEFAULT" z-index="#DEFAULT">
+<table  TABID="13223" bgcolor="#FFCC99" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr >
+<td >
+?@
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+?@
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="MM_showHideLayers(layersquare,,hide)">
+<img ></img>
+</a>
+</td>
+<td  valign="top">
+<a  class="sm5">
+<b >
+TORAY Square Top
+</b>
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+---------
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+?@
+<a  class="sm5">
+Toray Pan Pacific Open Tennis
+</a>
+<br ></br>
+?@
+<a  class="sm5">
+Swim Wear Collection (Japanese Only)
+</a>
+<br ></br>
+?@
+<a  class="sm5" target="_blank">
+Art Space
+</a>
+<br ></br>
+?@
+<a  class="sm5">
+Communication Magazine
+</a>
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layersquare,,hide)">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+?@
+</td>
+<td >
+<a  onmouseover="MM_showHideLayers(layersquare,,hide)">
+<img ></img>
+</a>
+</td>
+<td >
+?@
+</td>
+</tr>
+</table>
+</div>
+</body>
+<!-- #EndTemplate -->
+</html>

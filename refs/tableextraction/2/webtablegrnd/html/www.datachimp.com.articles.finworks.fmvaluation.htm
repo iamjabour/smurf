@@ -1,0 +1,534 @@
+<!-- (c) Copyright 1997 - 2001 DataChimp -->
+<html >
+<head >
+<title >
+Stock Valuation and Earnings
+</title>
+<meta ></meta>
+<script ></script>
+<style >
+<!--
+	BODY, TD, P, BLOCKQUOTE	{font-family: arial; font-size: 10pt;}
+	.smallfont {font-size: 8pt;}
+	H3		{font-size: 12pt; color: "009966";}
+	.menuitem {font-family: arial; color: "009966"; text-decoration: none; font-size: 9pt;}
+	.menuitem:hover {color: cc3300; text-decoration: underline;}
+-->
+</style>
+</head>
+<body  onload="initForm()">
+<!-- main menu -->
+<table  TABID="08627" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  valign="bottom">
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  nowrap="nowrap">
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+<img ></img>
+</a>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+<img ></img>
+</a>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+<img ></img>
+</a>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+<img ></img>
+</a>
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- end main menu -->
+<p ></p>
+<table  TABID="08631" border="0" cellpadding="0" cellspacing="0" width="762">
+<tr >
+<td  valign="top">
+<table  TABID="08628" width="600">
+<tr >
+<td  valign="top">
+<h3 >
+Stock Valuation based on Earnings
+</h3>
+Stock valuation based on earnings starts out with one giant logical leap: you assume that each dollar of earnings per share of a company is really worth one actual dollar of income
+<i >
+to you
+</i>
+as a stockholder. This is theoretically because you expect the company to use that dollar in a beneficial way: for example, they could use it to pay you a dividend; or they could invest it in their own growth, which would cause future earnings to be even greater.
+<p >
+You also generally assume that the company will go through several distinct phases, starting with a "growth" phase where earnings are increasing at a predictable rate, followed by a "mature" phase where earnings level off to a constant level.
+</p>
+<p >
+To find the value of a stock, you need to calculate all of these future earnings (out to infinity!), and then use your own desired rate of return as a discount rate to find their present value. The infinite sum of these present values is the fair market value of the stock; or more accurately, it's the price you should be willing to pay.
+</p>
+<p ></p>
+</td>
+</tr>
+</table>
+</td>
+<td  align="right" valign="top">
+<!-- article menu ------->
+<table  TABID="08630" bgcolor="#009966" border="0" cellpadding="1" cellspacing="0">
+<tr >
+<td  align="center">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<table  TABID="08629" bgcolor="#FFFFFF" border="0" cellpadding="4" cellspacing="0" width="150">
+<tr >
+<td >
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+Introduction
+</a>
+<br ></br>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+Compound Interest
+</a>
+<br ></br>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+Present Value
+</a>
+<br ></br>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+Composite Investments
+</a>
+<br ></br>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+Bond Yield
+</a>
+<br ></br>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+Geometric Series
+</a>
+<br ></br>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+Basic Investment
+</a>
+<br ></br>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+Annuitized Payout
+</a>
+<br ></br>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+Mortgage
+</a>
+<br ></br>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+Stock Valuation
+</a>
+<br ></br>
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+More Compounding
+</a>
+<br ></br>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- end article menu -->
+</td>
+</tr>
+</table>
+<table  TABID="08632" width="600">
+<tr >
+<td  valign="top">
+<form  action="javascript:drawGraph" method="post" name="mainform">
+EPS:
+<br ></br>
+$
+<input ></input>
+<p >
+Earnings Growth Rate:
+<br ></br>
+<input ></input>
+%
+</p>
+<p >
+Years to Grow:
+<br ></br>
+<input ></input>
+</p>
+<p >
+Desired Rate of Return:
+<br ></br>
+<input ></input>
+</p>
+</form>
+%
+</td>
+<td  valign="top">
+<applet ></applet>
+Annual Earnings per Share
+<br ></br>
+<applet ></applet>
+Present Value of Earnings per Share
+<p >
+Current Fair Market Value
+<br ></br>
+(= sum of all present values):
+<applet >
+<param ></param>
+</applet>
+<br ></br>
+Current Fair P/E Ratio:
+<applet ></applet>
+<br ></br>
+<applet ></applet>
+</p>
+<p  align="center">
+Earnings per Share, by Year
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<p ></p>
+<table  TABID="08635" width="600">
+<tr >
+<td >
+<p >
+To get the formula, we'll define some variables:
+</p>
+<blockquote >
+E = this year's Earnings per Share
+<br ></br>
+G = growth rate of earnings (written as a decimal)
+<br ></br>
+N = number of years earnings will grow
+</blockquote>
+<p >
+We're assuming that earnings will start to grow for N years, and then level off:
+</p>
+<p ></p>
+<center >
+<table  TABID="08633" border="0" cellspacing="1" genuinetable="yes" width="300">
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+<b >
+Year
+</b>
+</td>
+<td  bgcolor="#FFFFCC">
+<b >
+Earnings
+</b>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+1
+</td>
+<td  bgcolor="#FFFFCC">
+E(1 + G)
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+2
+</td>
+<td  bgcolor="#FFFFCC">
+E(1 + G)
+<sup >
+2
+</sup>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+N
+</td>
+<td  bgcolor="#FFFFCC">
+E(1 + G)
+<sup >
+N
+</sup>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+N + 1
+</td>
+<td  bgcolor="#FFFFCC">
+E(1 + G)
+<sup >
+N
+</sup>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+N + 2
+</td>
+<td  bgcolor="#FFFFCC">
+E(1 + G)
+<sup >
+N
+</sup>
+</td>
+</tr>
+</table>
+</center>
+<p >
+Now we'll write R for our desired rate of return, and use it to find the present values of all of these earnings:
+</p>
+<p ></p>
+<center >
+<table  TABID="08634" border="0" cellspacing="1" genuinetable="yes" width="300">
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+<b >
+Year
+</b>
+</td>
+<td  bgcolor="#FFFFCC">
+<b >
+Present Value of Earnings
+</b>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+1
+</td>
+<td  bgcolor="#FFFFCC">
+E(1 + G)/(1 + R)
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+2
+</td>
+<td  bgcolor="#FFFFCC">
+E(1 + G)
+<sup >
+2
+</sup>
+/(1 + R)
+<sup >
+2
+</sup>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+N
+</td>
+<td  bgcolor="#FFFFCC">
+E(1 + G)
+<sup >
+N
+</sup>
+/(1 + R)
+<sup >
+N
+</sup>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+N + 1
+</td>
+<td  bgcolor="#FFFFCC">
+E(1 + G)
+<sup >
+N
+</sup>
+/(1 + R)
+<sup >
+N+1
+</sup>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFCC">
+N + 2
+</td>
+<td  bgcolor="#FFFFCC">
+E(1 + G)
+<sup >
+N
+</sup>
+/(1 + R)
+<sup >
+N+2
+</sup>
+</td>
+</tr>
+</table>
+</center>
+<p >
+What we've got here is two
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+geometric series
+</a>
+; one going from 1 to N, and the other going from N + 1 to infinity. The result is basically too ugly to bother writing out; it's more sensible just to use the formula for the geometric series in a spreadsheet or computer program.
+</p>
+<p >
+One special case is actually interesting to write out though. If you assume that the stock is already in the "mature", zero-growth years -- ie, that N is zero -- the geometric series formula will simplify to:
+</p>
+<p ></p>
+<blockquote >
+P = E / R
+</blockquote>
+<p >
+or, equivalently,
+</p>
+<p ></p>
+<blockquote >
+P / E = 1 / R
+</blockquote>
+<p >
+So if you take a desired return of 11%, you find that the theoretical "fair" P/E ratio of the zero-growth stock is 1/.11 = 9, which sounds reasonable.
+</p>
+<p >
+Incidentally, even retained earnings will eventually turn into dividends, in theory. That's because once a company reaches its "mature" stage it won't need to reinvest in its growth, so management can begin distributing cash to the shareholders. (Plan "B" would be for the CEO to pursue some insane acquisition, just to gratify his bloated ego). That's the logic behind John Burr Williams' classic advice, to value "a stock, by heck, for her dividends":
+</p>
+<blockquote >
+If earnings not paid out in dividends are all successfully reinvested... then these earnings should produce dividends later; if not, then they are money lost.... In short, a stock is worth only
+<i >
+what you can get out of it
+</i>
+.
+</blockquote>
+<p >
+(Also see the article on
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+investment valuation
+</a>
+for some simple calculators and rules of thumb).
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="08636" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  align="right" bgcolor="#009966">
+<a  onmouseout="window.status=;return" true="#DEFAULT">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<p >
+<script >
+<!--
+function initForm()
+{
+	if (numval == null || document.MoneyChart == null)
+	{
+		errMsg();
+		return;
+	}
+	initGraph();
+	drawGraph();
+}	
+
+var graphInitialized = false;
+function initGraph()
+{
+	document.MoneyChart.setOrientation("V");
+	document.MoneyChart.setDimensions(1,1,2);
+	document.MoneyChart.setBarColor(0, 0, "006633");
+	document.pvKey.setColor("006633");
+	document.MoneyChart.setBarColor(0, 1, "6699FF");
+	document.epsKey.setColor("6699FF");
+	document.MoneyChart.showDataVals(false);
+	document.MoneyChart.showAxis(true);   
+	document.MoneyChart.setAxisLabelPrefix("$");
+	document.MoneyChart.setMarginSize("W", 80);
+	document.MoneyChart.setMarginSize("E", 20);
+		
+	graphInitialized = true;
+}
+
+function drawGraph()
+{
+	if (!graphInitialized) initGraph();
+	if (!graphInitialized) return;
+
+	var E = parseFloat(document.mainform.earnings.value);
+	var R = parseFloat(document.mainform.desiredYield.value)/100.0;
+	var G = parseFloat(document.mainform.growth.value)/100.0;
+	var N = parseFloat(document.mainform.yGrowth.value);
+	var yMax = 40;
+
+	var pVal, y, iGraph;
+	var Ey = E;
+
+	document.MoneyChart.setDimensions(yMax,1,2);
+	document.MoneyChart.setBarShadowWidth(1);
+		
+	for (y = 1,iGraph=0; y &amp;amp;amp;lt;= yMax; y++,iGraph++)
+	{
+		if (y == N)
+			document.MoneyChart.setLabel(iGraph, "" + y);
+		else
+			document.MoneyChart.setLabel(iGraph, "");
+ 
+		if (y &amp;amp;amp;lt;= N) Ey *= (1 + G);
+
+		pVal = presentValue(Ey,R,y);
+		document.MoneyChart.setDataVal(iGraph, 0, 0, Math.round(pVal));
+		document.MoneyChart.setDataVal(iGraph, 0, 1, Math.round(Ey) - Math.round(pVal));
+	}
+	
+   var axisScale = 10;
+   if (Ey &amp;amp;amp;gt; 0)
+      axisScale = Math.pow(10, (Math.floor(Math.LOG10E*Math.log(Ey))));
+
+   if (Ey/axisScale &amp;amp;amp;lt; 2) axisScale /= 2;
+
+   document.MoneyChart.setAxisScale(axisScale);
+   document.MoneyChart.forceRepaint();
+
+	var pv;
+	if (N == 0)
+		pv = E/R;
+	else
+		pv =  E*(geomSeries((1 + G)/(1 + R), 1, N))
+		+  E*Math.pow((1 + G)/(1 + R),N)*(1/R);
+
+	document.currentValue.setValue("" + Math.round(pv));
+	var PE = (E &amp;amp;amp;gt; 0 ? pv / E : "NA");
+	document.currentPE.setText(numval(PE,1));
+}
+//-->
+</script>
+<!-- BEGIN LINKEXCHANGE CODE -->
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<a  href="http://leader.linkexchange.com/19/X483701/clickle" target="_top">
+<img ></img>
+</a>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<br ></br>
+<a  href="http://leader.linkexchange.com/19/X483701/clicklogo" target="_top">
+<img ></img>
+</a>
+<!-- END LINKEXCHANGE CODE -->
+</p>
+</body>
+</html>

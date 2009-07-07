@@ -1,0 +1,5423 @@
+<html >
+<head >
+<title >
+ARDNOC -- Schedule
+</title>
+<script >
+<!--
+img1on = createImage(143,29, "../../images/s_1000_1on.gif");
+img2on = createImage(143,28, "../../images/s_1000_2on.gif");
+img3on = createImage(143,29, "../../images/s_1000_3on.gif");
+img4on = createImage(143,30, "../../images/s_1000_4on.gif");
+img5on = createImage(143,29, "../../images/s_1000_5on.gif");
+img6on = createImage(143,41, "../../images/s_1000_6on.gif");
+img7on = createImage(143,40, "../../images/s_1000_7on.gif");
+
+img1off = createImage(143,29, "../../images/s_1000_1.gif");
+img2off = createImage(143,28, "../../images/s_1000_2.gif");
+img3off = createImage(143,29, "../../images/s_1000_3.gif");
+img4off = createImage(143,30, "../../images/s_1000_4.gif");
+img5off = createImage(143,29, "../../images/s_1000_5.gif");
+img6off = createImage(143,41, "../../images/s_1000_6.gif");
+img7off = createImage(143,40, "../../images/s_1000_7.gif");
+
+function createImage(w, h, file) {
+        new_img = new Image(w,h);
+        new_img.src = file;
+        return new_img;
+}
+
+function img_act(imgName) {
+                imgOn = eval(imgName + "on.src");
+                document [imgName].src = imgOn;
+}
+
+function img_inact(imgName) {
+                imgOff = eval(imgName + "off.src");
+                document [imgName].src = imgOff;
+}
+
+// End hiding -->
+</script>
+<script >
+<!-- 
+function MakeArray(n) {this.length = n; return this;}
+
+var Months = new MakeArray(12);
+
+		Months[1]="01"; Months[2]="02"; Months[3]="03"; Months[4]="04"; 
+		Months[5]="05"; Months[6]="06"; Months[7]="07"; Months[8]="08"; 
+		Months[9]="09"; Months[10]="10"; Months[11]="11"; Months[12]="12";
+
+when = new Date();
+day = when.getDate();
+year = when.getYear();
+
+if (year &amp;amp;amp;lt; 2000)    
+year = year + 1900; 
+
+function getNiceDate(theDate) {
+	return theDate.getDate() + "/" + 
+	Months[theDate.getMonth()+1] + "/" + year; 
+}
+//   -->
+</script>
+</head>
+<body  topmargin="0">
+<link ></link>
+<table  TABID="07015" height="100%">
+<tr >
+<td  align="left" colspan="2" valign="top">
+<table  TABID="07012" height="164">
+<tr >
+<td  align="left" height="164" valign="top" width="203">
+<a  href="../../about/about.html">
+<img ></img>
+</a>
+<br ></br>
+<img ></img>
+</td>
+<td  align="left" height="105" valign="top" width="235">
+<a  href="../../optical/optical.html">
+<img ></img>
+</a>
+<br ></br>
+<a  href="../../connected/connected.html">
+<img ></img>
+</a>
+<br ></br>
+<a  href="../../gigabit/gigabit.html">
+<img ></img>
+</a>
+<br ></br>
+<a  href="../../events/events.html">
+<img ></img>
+</a>
+<br ></br>
+<img ></img>
+</td>
+<td  align="left" height="105" valign="top" width="141">
+<a  href="../../stats/stats.html">
+<img ></img>
+</a>
+<br ></br>
+<a  href="../../problems/primes.html">
+<img ></img>
+</a>
+<br ></br>
+<a  href="../../news/news.html">
+<img ></img>
+</a>
+<br ></br>
+<a  href="../../library/papers.html">
+<img ></img>
+</a>
+<br ></br>
+<img ></img>
+</td>
+<td  align="left" height="105" valign="top" width="102">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  background="../../images/bg.gif">
+<img ></img>
+<br ></br>
+<!-- LEFT HAND SIDE MENU BEGINS-->
+<a  onmouseout="img_inact(img1)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="img_inact(img2)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="img_inact(img3)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="img_inact(img4)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="img_inact(img5)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="img_inact(img6)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="img_inact(img7)">
+<img ></img>
+</a>
+<!-- LEFT HAND SIDE MENU ENDS -->
+</td>
+<td  class="content">
+<p  class="indent">
+<img ></img>
+<br ></br>
+<br ></br>
+<!-- PUT TEXT HERE! -->
+</p>
+<p  class="content"></p>
+<table  TABID="07013" border="1" cellpadding="6" genuinetable="yes" tabletitle="Schedule" width="500">
+<tr  bgcolor="#008080">
+<th >
+ID
+</th>
+<th >
+Task_Name
+</th>
+<th >
+Duration
+</th>
+<th >
+Start_Date
+</th>
+<th >
+Finish_Date
+</th>
+<th >
+Predecessors
+</th>
+<th >
+Resource_Names
+</th>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+1
+</td>
+<td >
+<b >
+CANet III Project
+</b>
+</td>
+<td >
+221 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Tue 99-07-20
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+2
+</td>
+<td >
+<b >
+Contract - J. Mcnamee, Emergis
+</b>
+</td>
+<td >
+24 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Fri 98-10-16
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+3
+</td>
+<td >
+Sign MOU - T. Anderson
+</td>
+<td >
+4 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Fri 98-09-18
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+4
+</td>
+<td >
+<b >
+Contract Negotiation
+</b>
+</td>
+<td >
+8 days
+</td>
+<td >
+Mon 98-09-21
+</td>
+<td >
+Wed 98-09-30
+</td>
+<td >
+3
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+5
+</td>
+<td >
+SLA's - L. Moore/T. Faccia
+</td>
+<td >
+8 days
+</td>
+<td >
+Mon 98-09-21
+</td>
+<td >
+Wed 98-09-30
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+6
+</td>
+<td >
+Pricing - B. Toonders
+</td>
+<td >
+8 days
+</td>
+<td >
+Mon 98-09-21
+</td>
+<td >
+Wed 98-09-30
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+7
+</td>
+<td >
+Approval - T. Anderson/B. St. Arnaud
+</td>
+<td >
+4 days
+</td>
+<td >
+Thu 98-10-01
+</td>
+<td >
+Tue 98-10-06
+</td>
+<td >
+6
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+8
+</td>
+<td >
+Due Diligence
+</td>
+<td >
+8 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Fri 98-10-16
+</td>
+<td >
+7
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+9
+</td>
+<td >
+<b >
+Develop Business Model
+</b>
+</td>
+<td >
+135 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 99-03-22
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+10
+</td>
+<td >
+<b >
+Contract Evolution- D. Kerr
+</b>
+</td>
+<td >
+134 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Fri 99-03-19
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+11
+</td>
+<td >
+Determine Contract Evolution
+</td>
+<td >
+14 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Fri 98-10-02
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+12
+</td>
+<td >
+Assign Contract
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 99-03-01
+</td>
+<td >
+Fri 99-03-19
+</td>
+<td >
+11
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+13
+</td>
+<td >
+<b >
+Determine Network Acquisition Plan in Eastern Telcos, L. Carlson
+</b>
+</td>
+<td >
+65 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-12-14
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+14
+</td>
+<td >
+Finalize Acquisition Negotiations
+</td>
+<td >
+45 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+15
+</td>
+<td >
+Initial Implementation Planning
+</td>
+<td >
+10 days
+</td>
+<td >
+Tue 98-11-17
+</td>
+<td >
+Mon 98-11-30
+</td>
+<td >
+14
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+16
+</td>
+<td >
+Accountability Assignment &amp; Project Planning
+</td>
+<td >
+10 days
+</td>
+<td >
+Tue 98-12-01
+</td>
+<td >
+Mon 98-12-14
+</td>
+<td >
+15
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+17
+</td>
+<td >
+<b >
+Determine Network Acquisition Plan within Bell Territory, C. Condon
+</b>
+</td>
+<td >
+121 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Mon 99-03-22
+</td>
+<td >
+11
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+18
+</td>
+<td >
+Transition Plan from Technical Trial
+</td>
+<td >
+86 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Mon 99-02-01
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+19
+</td>
+<td >
+Finalize &amp; Terminate Technical Trial
+</td>
+<td >
+20 days
+</td>
+<td >
+Tue 99-02-02
+</td>
+<td >
+Mon 99-03-01
+</td>
+<td >
+18
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+20
+</td>
+<td >
+Natco Procure Facilities from Bell
+</td>
+<td >
+15 days
+</td>
+<td >
+Tue 99-03-02
+</td>
+<td >
+Mon 99-03-22
+</td>
+<td >
+19
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+21
+</td>
+<td >
+<b >
+Determine Funding Model
+</b>
+</td>
+<td >
+71 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Mon 99-01-11
+</td>
+<td >
+11
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+22
+</td>
+<td >
+<b >
+IP Equip. Procurement
+</b>
+</td>
+<td >
+20 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Fri 98-10-30
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+23
+</td>
+<td >
+Natco Network
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+24
+</td>
+<td >
+Eastern Telcos
+</td>
+<td >
+20 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Fri 98-10-30
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+25
+</td>
+<td >
+<b >
+Operations Requirements
+</b>
+</td>
+<td >
+71 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Mon 99-01-11
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+26
+</td>
+<td >
+Bell Territory
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Fri 98-11-27
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+27
+</td>
+<td >
+Natco
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Fri 98-11-27
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+28
+</td>
+<td >
+Eastern telcos
+</td>
+<td >
+20 days
+</td>
+<td >
+Tue 98-12-15
+</td>
+<td >
+Mon 99-01-11
+</td>
+<td >
+13
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+29
+</td>
+<td >
+<b >
+Transport Network
+</b>
+</td>
+<td >
+71 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Mon 99-01-11
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+30
+</td>
+<td >
+West
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Fri 98-10-16
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+31
+</td>
+<td >
+Bell
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Fri 98-10-16
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+32
+</td>
+<td >
+Eastern Telcos
+</td>
+<td >
+20 days
+</td>
+<td >
+Tue 98-12-15
+</td>
+<td >
+Mon 99-01-11
+</td>
+<td >
+13
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+33
+</td>
+<td >
+<b >
+Consortium Formalization Negotiations,J. McNamee/L. Moore
+</b>
+</td>
+<td >
+45 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Fri 98-12-04
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+34
+</td>
+<td >
+Develop Negotiating Plan
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+35
+</td>
+<td >
+Nortel/Cisco Negotiations
+</td>
+<td >
+20 days
+</td>
+<td >
+Mon 98-10-26
+</td>
+<td >
+Fri 98-11-20
+</td>
+<td >
+34
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+36
+</td>
+<td >
+Finalize Stmt. Of Understanding
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 98-11-23
+</td>
+<td >
+Fri 98-12-04
+</td>
+<td >
+35
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+37
+</td>
+<td >
+<b >
+Project Management - G. Owen, Bell
+</b>
+</td>
+<td >
+28 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Fri 98-11-13
+</td>
+<td >
+7
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+38
+</td>
+<td >
+<b >
+Determine Project Organization
+</b>
+</td>
+<td >
+6 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Wed 98-10-14
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+39
+</td>
+<td >
+Sponsor
+</td>
+<td >
+1 day
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+40
+</td>
+<td >
+Executive Committee
+</td>
+<td >
+5 days
+</td>
+<td >
+Thu 98-10-08
+</td>
+<td >
+Wed 98-10-14
+</td>
+<td >
+39
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+41
+</td>
+<td >
+Executive Accountabilities
+</td>
+<td >
+5 days
+</td>
+<td >
+Thu 98-10-08
+</td>
+<td >
+Wed 98-10-14
+</td>
+<td >
+39
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+42
+</td>
+<td >
+<b >
+Draft Project Plan
+</b>
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td >
+41
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+43
+</td>
+<td >
+Project Charter
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+44
+</td>
+<td >
+Detailed Scope
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+45
+</td>
+<td >
+WBS
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+46
+</td>
+<td >
+Resource Assignment
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+47
+</td>
+<td >
+Schedule
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+48
+</td>
+<td >
+Communication Mgmt. Plan
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+49
+</td>
+<td >
+Time Mgmt. Plan
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+50
+</td>
+<td >
+Cost Mgmt. Plan
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+51
+</td>
+<td >
+Procurement Mgmt. Plan
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+52
+</td>
+<td >
+Risk Mgmt. Plan
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+53
+</td>
+<td >
+H.R. Mgmt. Plan
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+54
+</td>
+<td >
+Quality Mgmt. Plan
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+55
+</td>
+<td >
+<b >
+Define Project Team
+</b>
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td >
+41
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+56
+</td>
+<td >
+Design
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+57
+</td>
+<td >
+Implementation
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+58
+</td>
+<td >
+Operations
+</td>
+<td >
+7 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Fri 98-10-23
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+59
+</td>
+<td >
+<b >
+Finalize Project Plan
+</b>
+</td>
+<td >
+4 days
+</td>
+<td >
+Mon 98-10-26
+</td>
+<td >
+Thu 98-10-29
+</td>
+<td >
+42
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+60
+</td>
+<td >
+Core Team Meeting
+</td>
+<td >
+1 day
+</td>
+<td >
+Mon 98-10-26
+</td>
+<td >
+Mon 98-10-26
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+61
+</td>
+<td >
+Build Detailed WBS
+</td>
+<td >
+3 days
+</td>
+<td >
+Tue 98-10-27
+</td>
+<td >
+Thu 98-10-29
+</td>
+<td >
+60
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+62
+</td>
+<td >
+Build Schedule
+</td>
+<td >
+3 days
+</td>
+<td >
+Tue 98-10-27
+</td>
+<td >
+Thu 98-10-29
+</td>
+<td >
+60
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+63
+</td>
+<td >
+Project Executive Kick-off Meeting
+</td>
+<td >
+1 day
+</td>
+<td >
+Fri 98-10-30
+</td>
+<td >
+Fri 98-10-30
+</td>
+<td >
+62
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+64
+</td>
+<td >
+Team Project Plan Review Meetings
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 98-11-02
+</td>
+<td >
+Fri 98-11-13
+</td>
+<td >
+63
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+65
+</td>
+<td >
+<b >
+Network Design
+</b>
+</td>
+<td >
+85 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 99-01-11
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+66
+</td>
+<td >
+<b >
+IP Network - J. Coulter, TW Chung
+</b>
+</td>
+<td >
+75 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-12-28
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+67
+</td>
+<td >
+<b >
+Design Phase II, National
+</b>
+</td>
+<td >
+35 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Tue 98-11-24
+</td>
+<td >
+7
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+68
+</td>
+<td >
+East
+</td>
+<td >
+15 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Tue 98-10-27
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+69
+</td>
+<td >
+West
+</td>
+<td >
+15 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Tue 98-10-27
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+70
+</td>
+<td >
+IP Test Plan
+</td>
+<td >
+20 days
+</td>
+<td >
+Wed 98-10-28
+</td>
+<td >
+Tue 98-11-24
+</td>
+<td >
+69
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+71
+</td>
+<td >
+<b >
+Design ATM Facilities
+</b>
+</td>
+<td >
+75 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-12-28
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+72
+</td>
+<td >
+OC-3 to CANet II, Toronto
+</td>
+<td >
+5 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-09-21
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+73
+</td>
+<td >
+OC-3 to ARDNOC
+</td>
+<td >
+5 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-09-21
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+74
+</td>
+<td >
+Charlottetown
+</td>
+<td >
+10 days
+</td>
+<td >
+Tue 98-12-15
+</td>
+<td >
+Mon 98-12-28
+</td>
+<td >
+24,68,13
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+75
+</td>
+<td >
+St. Johns, Nfld.
+</td>
+<td >
+10 days
+</td>
+<td >
+Tue 98-12-15
+</td>
+<td >
+Mon 98-12-28
+</td>
+<td >
+24,68,13
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+76
+</td>
+<td >
+<b >
+WDM Transport Network - D. Varey, F. Houde, Bell Trans. Net. Impl.
+</b>
+</td>
+<td >
+85 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 99-01-11
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+77
+</td>
+<td >
+<b >
+Phase I - Bell Territory
+</b>
+</td>
+<td >
+1 day
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+78
+</td>
+<td >
+Ontario
+</td>
+<td >
+1 day
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+79
+</td>
+<td >
+Quebec
+</td>
+<td >
+1 day
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+80
+</td>
+<td >
+<b >
+Phase II - National
+</b>
+</td>
+<td >
+85 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 99-01-11
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+81
+</td>
+<td >
+<b >
+West
+</b>
+</td>
+<td >
+34 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Fri 98-10-30
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+82
+</td>
+<td >
+Bell Territory, A. Vurma
+</td>
+<td >
+34 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Fri 98-10-30
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+83
+</td>
+<td >
+Natco, A. Vurma
+</td>
+<td >
+34 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Fri 98-10-30
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+84
+</td>
+<td >
+<b >
+East
+</b>
+</td>
+<td >
+85 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 99-01-11
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+85
+</td>
+<td >
+Bell Territory, G. Beauschene
+</td>
+<td >
+80 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 99-01-04
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+86
+</td>
+<td >
+Eastern Telcos, Prime TBD
+</td>
+<td >
+20 days
+</td>
+<td >
+Tue 98-12-15
+</td>
+<td >
+Mon 99-01-11
+</td>
+<td >
+13,16
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+87
+</td>
+<td >
+<b >
+Network Implementation
+</b>
+</td>
+<td >
+221 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Tue 99-07-20
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+88
+</td>
+<td >
+<b >
+Phase I - Bell Territory
+</b>
+</td>
+<td >
+19 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Fri 98-10-09
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+89
+</td>
+<td >
+<b >
+WDM/Transport Network, W. Whynott, Trans. Net. Prov.
+</b>
+</td>
+<td >
+15 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+90
+</td>
+<td >
+Toronto to Ottawa
+</td>
+<td >
+15 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+91
+</td>
+<td >
+Ottawa to Montreal
+</td>
+<td >
+15 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+92
+</td>
+<td >
+<b >
+Access Nodes
+</b>
+</td>
+<td >
+15 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+93
+</td>
+<td >
+Order/Procure Equipment
+</td>
+<td >
+1 day
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+94
+</td>
+<td >
+Order Power &amp; Space
+</td>
+<td >
+1 day
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+95
+</td>
+<td >
+Contract Installation
+</td>
+<td >
+15 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+96
+</td>
+<td >
+<b >
+ATM Facilities
+</b>
+</td>
+<td >
+16 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Tue 98-10-06
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+97
+</td>
+<td >
+Initiate BAC orders to CSG
+</td>
+<td >
+1 day
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+98
+</td>
+<td >
+<b >
+Install Facilities
+</b>
+</td>
+<td >
+15 days
+</td>
+<td >
+Wed 98-09-16
+</td>
+<td >
+Tue 98-10-06
+</td>
+<td >
+97
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+99
+</td>
+<td >
+OC-48 Facilities
+</td>
+<td >
+10 days
+</td>
+<td >
+Wed 98-09-16
+</td>
+<td >
+Tue 98-09-29
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+100
+</td>
+<td >
+OC-3 Facilities
+</td>
+<td >
+10 days
+</td>
+<td >
+Wed 98-09-16
+</td>
+<td >
+Tue 98-09-29
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+101
+</td>
+<td >
+Demo to Congress Centre
+</td>
+<td >
+15 days
+</td>
+<td >
+Wed 98-09-16
+</td>
+<td >
+Tue 98-10-06
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+102
+</td>
+<td >
+Frame Relay Mgmt. Circuits
+</td>
+<td >
+15 days
+</td>
+<td >
+Tue 98-09-15
+</td>
+<td >
+Mon 98-10-05
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+103
+</td>
+<td >
+<b >
+Network Testing
+</b>
+</td>
+<td >
+4 days
+</td>
+<td >
+Tue 98-10-06
+</td>
+<td >
+Fri 98-10-09
+</td>
+<td >
+89
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+104
+</td>
+<td >
+WDM/Transport
+</td>
+<td >
+3 days
+</td>
+<td >
+Tue 98-10-06
+</td>
+<td >
+Thu 98-10-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+105
+</td>
+<td >
+IP Routing
+</td>
+<td >
+3 days
+</td>
+<td >
+Tue 98-10-06
+</td>
+<td >
+Thu 98-10-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+106
+</td>
+<td >
+Operations
+</td>
+<td >
+4 days
+</td>
+<td >
+Tue 98-10-06
+</td>
+<td >
+Fri 98-10-09
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+107
+</td>
+<td >
+<b >
+Phase II - National
+</b>
+</td>
+<td >
+196 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Thu 99-07-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+108
+</td>
+<td >
+<b >
+WDM/Transport Network
+</b>
+</td>
+<td >
+184 days
+</td>
+<td >
+Mon 98-11-02
+</td>
+<td >
+Thu 99-07-15
+</td>
+<td >
+81
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+109
+</td>
+<td >
+<b >
+West, R. Hinrichs
+</b>
+</td>
+<td >
+148 days
+</td>
+<td >
+Fri 98-11-13
+</td>
+<td >
+Tue 99-06-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+110
+</td>
+<td >
+<b >
+Natco Ring Turn-Up, P. Brown
+</b>
+</td>
+<td >
+45 days
+</td>
+<td >
+Mon 99-03-01
+</td>
+<td >
+Fri 99-04-30
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+111
+</td>
+<td >
+Toronto to Winnipeg
+</td>
+<td >
+1 day
+</td>
+<td >
+Mon 99-03-01
+</td>
+<td >
+Mon 99-03-01
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+112
+</td>
+<td >
+Winnipeg to Calgary
+</td>
+<td >
+1 day
+</td>
+<td >
+Wed 99-03-31
+</td>
+<td >
+Wed 99-03-31
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+113
+</td>
+<td >
+Calgary to Vancouver
+</td>
+<td >
+1 day
+</td>
+<td >
+Fri 99-04-30
+</td>
+<td >
+Fri 99-04-30
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+114
+</td>
+<td >
+<b >
+Transport Network Installations, R. Hinrichs
+</b>
+</td>
+<td >
+148 days
+</td>
+<td >
+Fri 98-11-13
+</td>
+<td >
+Tue 99-06-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+115
+</td>
+<td >
+Issue Request For Work
+</td>
+<td >
+0 days
+</td>
+<td >
+Fri 98-11-13
+</td>
+<td >
+Fri 98-11-13
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+116
+</td>
+<td >
+Nortel Engineering
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 98-11-27
+</td>
+<td >
+115
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+117
+</td>
+<td >
+Early Job Conference One
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 98-11-30
+</td>
+<td >
+Fri 98-12-04
+</td>
+<td >
+116
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+118
+</td>
+<td >
+Nortel Detailed Spec (TPS)
+</td>
+<td >
+35 days
+</td>
+<td >
+Mon 98-12-07
+</td>
+<td >
+Fri 99-01-22
+</td>
+<td >
+117
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+119
+</td>
+<td >
+Develop Installation Accountabilities Doc.
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 99-01-04
+</td>
+<td >
+Fri 99-01-22
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+120
+</td>
+<td >
+Develop Turn-up &amp;Testing MOP Doc.
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 99-01-25
+</td>
+<td >
+Fri 99-02-12
+</td>
+<td >
+119
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+121
+</td>
+<td >
+Early Job Conference Two
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-01-25
+</td>
+<td >
+Fri 99-01-29
+</td>
+<td >
+118
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+122
+</td>
+<td >
+Nortel Firm Price Quote
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-02-01
+</td>
+<td >
+Fri 99-02-05
+</td>
+<td >
+121
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+123
+</td>
+<td >
+Customer (Bell) Acceptance
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-02-08
+</td>
+<td >
+Fri 99-02-12
+</td>
+<td >
+122
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+124
+</td>
+<td >
+Issue Bell Estimate
+</td>
+<td >
+0 days
+</td>
+<td >
+Fri 99-02-12
+</td>
+<td >
+Fri 99-02-12
+</td>
+<td >
+123
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+125
+</td>
+<td >
+Issue Detailed Design/Corrected Spec to Operations
+</td>
+<td >
+1 day
+</td>
+<td >
+Mon 99-02-15
+</td>
+<td >
+Mon 99-02-15
+</td>
+<td >
+124
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+126
+</td>
+<td >
+Order Equipment/Determine Ship Date
+</td>
+<td >
+1 day
+</td>
+<td >
+Tue 99-02-16
+</td>
+<td >
+Tue 99-02-16
+</td>
+<td >
+125
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+127
+</td>
+<td >
+Nortel Resources Freed From Natco Installs, P. Brown
+</td>
+<td >
+0 days
+</td>
+<td >
+Mon 99-03-15
+</td>
+<td >
+Mon 99-03-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+128
+</td>
+<td >
+<b >
+Installation
+</b>
+</td>
+<td >
+46 days
+</td>
+<td >
+Fri 99-03-26
+</td>
+<td >
+Fri 99-05-28
+</td>
+<td >
+127
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+129
+</td>
+<td >
+Ship &amp; Receive All Equipment
+</td>
+<td >
+1 day
+</td>
+<td >
+Fri 99-03-26
+</td>
+<td >
+Fri 99-03-26
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+130
+</td>
+<td >
+Install - Toronto to Chicago
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 99-03-29
+</td>
+<td >
+Fri 99-04-09
+</td>
+<td >
+111,129
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+131
+</td>
+<td >
+K Date for System
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-04-12
+</td>
+<td >
+Fri 99-04-16
+</td>
+<td >
+130
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+132
+</td>
+<td >
+SLAT Test System
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-04-26
+</td>
+<td >
+Fri 99-04-30
+</td>
+<td >
+131
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+133
+</td>
+<td >
+Install Chicago to Winnipeg
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 99-04-05
+</td>
+<td >
+Fri 99-04-16
+</td>
+<td >
+111
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+134
+</td>
+<td >
+K Date for System
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-04-19
+</td>
+<td >
+Fri 99-04-23
+</td>
+<td >
+133
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+135
+</td>
+<td >
+SLAT Test System
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-05-03
+</td>
+<td >
+Fri 99-05-07
+</td>
+<td >
+134,132
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+136
+</td>
+<td >
+Install - Winnipeg to Calgary
+</td>
+<td >
+12 days
+</td>
+<td >
+Thu 99-04-01
+</td>
+<td >
+Fri 99-04-16
+</td>
+<td >
+112
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+137
+</td>
+<td >
+K Date for System
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 99-04-19
+</td>
+<td >
+Fri 99-05-07
+</td>
+<td >
+136
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+138
+</td>
+<td >
+SLAT Test System
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 99-05-10
+</td>
+<td >
+Fri 99-05-21
+</td>
+<td >
+137
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+139
+</td>
+<td >
+Install - Calgary to Vancouver
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 99-04-12
+</td>
+<td >
+Fri 99-04-30
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+140
+</td>
+<td >
+K Date for System
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-05-03
+</td>
+<td >
+Fri 99-05-07
+</td>
+<td >
+139
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+141
+</td>
+<td >
+Slat - Calgary to Vancouver
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 99-05-17
+</td>
+<td >
+Fri 99-05-28
+</td>
+<td >
+140
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+142
+</td>
+<td >
+End to End Testing
+</td>
+<td >
+2 days
+</td>
+<td >
+Mon 99-05-31
+</td>
+<td >
+Tue 99-06-01
+</td>
+<td >
+138,141,135,132
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+143
+</td>
+<td >
+Project Acceptance
+</td>
+<td >
+5 days
+</td>
+<td >
+Wed 99-06-02
+</td>
+<td >
+Tue 99-06-08
+</td>
+<td >
+142
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+144
+</td>
+<td >
+<b >
+East (To Be Detailed Further)
+</b>
+</td>
+<td >
+174 days
+</td>
+<td >
+Mon 98-11-02
+</td>
+<td >
+Thu 99-07-01
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+145
+</td>
+<td >
+<b >
+Bell Territory, A. Menard
+</b>
+</td>
+<td >
+160 days
+</td>
+<td >
+Mon 98-11-02
+</td>
+<td >
+Fri 99-06-11
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+146
+</td>
+<td >
+<b >
+Montreal to Rimouski
+</b>
+</td>
+<td >
+150 days
+</td>
+<td >
+Mon 98-11-02
+</td>
+<td >
+Fri 99-05-28
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+147
+</td>
+<td >
+Fibre Cable Installation-Quebec to Rimouski
+</td>
+<td >
+45 days
+</td>
+<td >
+Mon 98-11-02
+</td>
+<td >
+Fri 99-01-01
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+148
+</td>
+<td >
+Fibre Huts-Quebec to Rimouski
+</td>
+<td >
+25 days
+</td>
+<td >
+Mon 98-11-02
+</td>
+<td >
+Fri 98-12-04
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+149
+</td>
+<td >
+Request for Work-Transport System Upgrade
+</td>
+<td >
+1 day
+</td>
+<td >
+Mon 99-01-04
+</td>
+<td >
+Mon 99-01-04
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+150
+</td>
+<td >
+Purchase Order for Equipment
+</td>
+<td >
+1 day
+</td>
+<td >
+Fri 99-02-05
+</td>
+<td >
+Fri 99-02-05
+</td>
+<td >
+149
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+151
+</td>
+<td >
+Equipment Receipt
+</td>
+<td >
+1 day
+</td>
+<td >
+Fri 99-03-26
+</td>
+<td >
+Fri 99-03-26
+</td>
+<td >
+150
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+152
+</td>
+<td >
+Equipment Installation-Mtl to Rimouski
+</td>
+<td >
+20 days
+</td>
+<td >
+Mon 99-04-12
+</td>
+<td >
+Fri 99-05-07
+</td>
+<td >
+151
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+153
+</td>
+<td >
+SLAT Testing-Mtl to Rimouski
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-05-10
+</td>
+<td >
+Fri 99-05-14
+</td>
+<td >
+152
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+154
+</td>
+<td >
+Fibre Ring Upgrade-Charny to Quebec
+</td>
+<td >
+21 days
+</td>
+<td >
+Fri 99-04-30
+</td>
+<td >
+Fri 99-05-28
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+155
+</td>
+<td >
+<b >
+Rimouski to Campbellton
+</b>
+</td>
+<td >
+47 days
+</td>
+<td >
+Thu 99-04-01
+</td>
+<td >
+Fri 99-06-04
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+156
+</td>
+<td >
+Fibre Hut Installation-Rimouski to Campbellton
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 99-04-05
+</td>
+<td >
+Fri 99-05-28
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+157
+</td>
+<td >
+Fibre Cable Installation-Rimouski to Campbellton
+</td>
+<td >
+42 days
+</td>
+<td >
+Thu 99-04-01
+</td>
+<td >
+Fri 99-05-28
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+158
+</td>
+<td >
+Install Transport Equipment-Rimouski to Cambellton
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 99-05-10
+</td>
+<td >
+Fri 99-05-21
+</td>
+<td >
+151
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+159
+</td>
+<td >
+Sectional SLAT Testing
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-05-31
+</td>
+<td >
+Fri 99-06-04
+</td>
+<td >
+158,157,156
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+160
+</td>
+<td >
+End to End Testing
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-06-07
+</td>
+<td >
+Fri 99-06-11
+</td>
+<td >
+159,154,153
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+161
+</td>
+<td >
+Project Acceptance
+</td>
+<td >
+0 days
+</td>
+<td >
+Fri 99-06-11
+</td>
+<td >
+Fri 99-06-11
+</td>
+<td >
+160
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+162
+</td>
+<td >
+<b >
+Eastern Telcos
+</b>
+</td>
+<td >
+114 days
+</td>
+<td >
+Mon 99-01-18
+</td>
+<td >
+Thu 99-06-24
+</td>
+<td >
+86
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+163
+</td>
+<td >
+MOR Upgrade - St. John to Campb.
+</td>
+<td >
+114 days
+</td>
+<td >
+Mon 99-01-18
+</td>
+<td >
+Thu 99-06-24
+</td>
+<td >
+13
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+164
+</td>
+<td >
+MOR Upgrade - St. John to Halifax
+</td>
+<td >
+114 days
+</td>
+<td >
+Mon 99-01-18
+</td>
+<td >
+Thu 99-06-24
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+165
+</td>
+<td >
+End to End Testing
+</td>
+<td >
+5 days
+</td>
+<td >
+Fri 99-06-25
+</td>
+<td >
+Thu 99-07-01
+</td>
+<td >
+145,162
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+166
+</td>
+<td >
+Bell to Eastern Telco End to End Testing
+</td>
+<td >
+10 days
+</td>
+<td >
+Fri 99-07-02
+</td>
+<td >
+Thu 99-07-15
+</td>
+<td >
+165,145
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+167
+</td>
+<td >
+<b >
+Access Nodes
+</b>
+</td>
+<td >
+196 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Thu 99-07-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+168
+</td>
+<td >
+<b >
+West, L. Benedet
+</b>
+</td>
+<td >
+106 days
+</td>
+<td >
+Fri 98-11-13
+</td>
+<td >
+Fri 99-04-09
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+169
+</td>
+<td >
+Acquire Natco Installation Schedule
+</td>
+<td >
+1 day
+</td>
+<td >
+Fri 98-11-13
+</td>
+<td >
+Fri 98-11-13
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+170
+</td>
+<td >
+Plan/Integrate CA*net3 Installs into Natco Deployment
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 98-11-20
+</td>
+<td >
+169
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+171
+</td>
+<td >
+Initiate SPA
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 98-11-23
+</td>
+<td >
+Fri 98-11-27
+</td>
+<td >
+170
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+172
+</td>
+<td >
+Write Estimate
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 98-11-30
+</td>
+<td >
+Fri 98-12-11
+</td>
+<td >
+171
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+173
+</td>
+<td >
+Engineer Job
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 98-12-14
+</td>
+<td >
+Fri 99-01-01
+</td>
+<td >
+172
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+174
+</td>
+<td >
+Develop Installation Accountabilities Doc.
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 99-01-04
+</td>
+<td >
+Fri 99-01-22
+</td>
+<td >
+173
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+175
+</td>
+<td >
+Develop Turn-up &amp; Testing MOP Doc
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 99-01-25
+</td>
+<td >
+Fri 99-02-12
+</td>
+<td >
+174
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+176
+</td>
+<td >
+Issue Spec &amp; Design
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-01-04
+</td>
+<td >
+Fri 99-01-08
+</td>
+<td >
+173
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+177
+</td>
+<td >
+Procure Equipment
+</td>
+<td >
+25 days
+</td>
+<td >
+Mon 98-12-14
+</td>
+<td >
+Fri 99-01-15
+</td>
+<td >
+172
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+178
+</td>
+<td >
+Inventory Equipment
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-01-18
+</td>
+<td >
+Fri 99-01-22
+</td>
+<td >
+177
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+179
+</td>
+<td >
+Ship Equipment
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-01-25
+</td>
+<td >
+Fri 99-01-29
+</td>
+<td >
+178
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+180
+</td>
+<td >
+Installations
+</td>
+<td >
+45 days
+</td>
+<td >
+Mon 99-02-01
+</td>
+<td >
+Fri 99-04-02
+</td>
+<td >
+179
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+181
+</td>
+<td >
+Quality Assurance/Acceptance Testing
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 99-02-15
+</td>
+<td >
+Fri 99-04-09
+</td>
+<td >
+175
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+182
+</td>
+<td >
+<b >
+Out of Band Management Circuits, G. Owen
+</b>
+</td>
+<td >
+100 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Wed 99-03-03
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+183
+</td>
+<td >
+Determine Natco Acquisition/Order Method, L. Moore
+</td>
+<td >
+60 days
+</td>
+<td >
+Thu 98-10-15
+</td>
+<td >
+Wed 99-01-06
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+184
+</td>
+<td >
+Initiate Orders
+</td>
+<td >
+10 days
+</td>
+<td >
+Thu 99-01-07
+</td>
+<td >
+Wed 99-01-20
+</td>
+<td >
+183
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+185
+</td>
+<td >
+Install Circuits
+</td>
+<td >
+30 days
+</td>
+<td >
+Thu 99-01-21
+</td>
+<td >
+Wed 99-03-03
+</td>
+<td >
+184
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+186
+</td>
+<td >
+Site IP Testing/Router Configuring
+</td>
+<td >
+45 days
+</td>
+<td >
+Mon 99-02-15
+</td>
+<td >
+Fri 99-04-16
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+187
+</td>
+<td >
+Network IP Testing
+</td>
+<td >
+16 days
+</td>
+<td >
+Mon 99-05-10
+</td>
+<td >
+Mon 99-05-31
+</td>
+<td >
+135
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+188
+</td>
+<td >
+<b >
+East (To Be Detailed Further)
+</b>
+</td>
+<td >
+153 days
+</td>
+<td >
+Tue 98-12-15
+</td>
+<td >
+Thu 99-07-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+189
+</td>
+<td >
+Procure Equipment
+</td>
+<td >
+40 days
+</td>
+<td >
+Tue 98-12-15
+</td>
+<td >
+Mon 99-02-08
+</td>
+<td >
+16
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+190
+</td>
+<td >
+Installations
+</td>
+<td >
+40 days
+</td>
+<td >
+Tue 99-02-09
+</td>
+<td >
+Mon 99-04-05
+</td>
+<td >
+189
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+191
+</td>
+<td >
+Out of Band Management Circuits
+</td>
+<td >
+30 days
+</td>
+<td >
+Tue 99-02-09
+</td>
+<td >
+Mon 99-03-22
+</td>
+<td >
+189
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+192
+</td>
+<td >
+IP Testing
+</td>
+<td >
+10 days
+</td>
+<td >
+Fri 99-07-02
+</td>
+<td >
+Thu 99-07-15
+</td>
+<td >
+144,190,191
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+193
+</td>
+<td >
+<b >
+ATM Facilities, G. Owen
+</b>
+</td>
+<td >
+148 days
+</td>
+<td >
+Tue 98-12-15
+</td>
+<td >
+Thu 99-07-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+194
+</td>
+<td >
+Determine Facility Acquisition Process, L. Moore
+</td>
+<td >
+35 days
+</td>
+<td >
+Tue 98-12-15
+</td>
+<td >
+Mon 99-02-01
+</td>
+<td >
+16
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+195
+</td>
+<td >
+<b >
+Initiate Orders
+</b>
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-04-05
+</td>
+<td >
+Fri 99-04-09
+</td>
+<td >
+194
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+196
+</td>
+<td >
+Charlottetown
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-04-05
+</td>
+<td >
+Fri 99-04-09
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+197
+</td>
+<td >
+St. John's
+</td>
+<td >
+5 days
+</td>
+<td >
+Mon 99-04-05
+</td>
+<td >
+Fri 99-04-09
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+198
+</td>
+<td >
+Install Facilities
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 99-05-03
+</td>
+<td >
+Fri 99-06-25
+</td>
+<td >
+190,195,196,197
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+199
+</td>
+<td >
+Test
+</td>
+<td >
+5 days
+</td>
+<td >
+Fri 99-07-02
+</td>
+<td >
+Thu 99-07-08
+</td>
+<td >
+165,198
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+200
+</td>
+<td >
+<b >
+Chicago STARTAP Connection
+</b>
+</td>
+<td >
+187 days
+</td>
+<td >
+Mon 98-11-02
+</td>
+<td >
+Tue 99-07-20
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+201
+</td>
+<td >
+Determine Requirements/Pricing, D. Ellsworth, G. Owen
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 98-11-02
+</td>
+<td >
+Fri 98-11-20
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+202
+</td>
+<td >
+Determine Acquisition Method, L. Moore
+</td>
+<td >
+15 days
+</td>
+<td >
+Mon 98-11-23
+</td>
+<td >
+Fri 98-12-11
+</td>
+<td >
+201
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+203
+</td>
+<td >
+Contract Installations, L. Moore/Natco TBD
+</td>
+<td >
+30 days
+</td>
+<td >
+Mon 98-12-14
+</td>
+<td >
+Fri 99-01-22
+</td>
+<td >
+202
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+204
+</td>
+<td >
+Installation
+</td>
+<td >
+30 days
+</td>
+<td >
+Wed 99-06-09
+</td>
+<td >
+Tue 99-07-20
+</td>
+<td >
+143,203
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+205
+</td>
+<td >
+<b >
+Operations/Maintenance Support
+</b>
+</td>
+<td >
+204 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Mon 99-07-19
+</td>
+<td >
+7
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+206
+</td>
+<td >
+<b >
+ARDNOC Staffing, T. Faccia
+</b>
+</td>
+<td >
+60 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Tue 98-12-29
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+207
+</td>
+<td >
+Sr. Network Engineer
+</td>
+<td >
+30 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Tue 98-11-17
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+208
+</td>
+<td >
+Network Engineer
+</td>
+<td >
+30 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Tue 98-11-17
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+209
+</td>
+<td >
+Others
+</td>
+<td >
+60 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Tue 98-12-29
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+210
+</td>
+<td >
+<b >
+WDM/Transport West, S. Webster
+</b>
+</td>
+<td >
+161 days
+</td>
+<td >
+Mon 98-12-07
+</td>
+<td >
+Mon 99-07-19
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+211
+</td>
+<td >
+<b >
+Network Surveillance
+</b>
+</td>
+<td >
+81 days
+</td>
+<td >
+Mon 99-02-15
+</td>
+<td >
+Mon 99-06-07
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+212
+</td>
+<td >
+Net. Operations Receive Corrected Spec.
+</td>
+<td >
+1 day
+</td>
+<td >
+Mon 99-02-15
+</td>
+<td >
+Mon 99-02-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+213
+</td>
+<td >
+Issue 4141's, A. Vurma
+</td>
+<td >
+10 days
+</td>
+<td >
+Tue 99-02-16
+</td>
+<td >
+Mon 99-03-01
+</td>
+<td >
+212
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+214
+</td>
+<td >
+Install Netman Facilities
+</td>
+<td >
+45 days
+</td>
+<td >
+Tue 99-03-02
+</td>
+<td >
+Mon 99-05-03
+</td>
+<td >
+213
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+215
+</td>
+<td >
+Configure Transport Alarms etc.
+</td>
+<td >
+20 days
+</td>
+<td >
+Tue 99-05-04
+</td>
+<td >
+Mon 99-05-31
+</td>
+<td >
+214
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+216
+</td>
+<td >
+Acceptance Letter to Trans. Prov.
+</td>
+<td >
+5 days
+</td>
+<td >
+Tue 99-06-01
+</td>
+<td >
+Mon 99-06-07
+</td>
+<td >
+215
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+217
+</td>
+<td >
+<b >
+Network Maint. Support
+</b>
+</td>
+<td >
+60 days
+</td>
+<td >
+Mon 98-12-07
+</td>
+<td >
+Fri 99-02-26
+</td>
+<td >
+33
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+218
+</td>
+<td >
+Determine Sparing/Support Requirements
+</td>
+<td >
+20 days
+</td>
+<td >
+Mon 98-12-07
+</td>
+<td >
+Fri 99-01-01
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+219
+</td>
+<td >
+Contract Maint. Support
+</td>
+<td >
+20 days
+</td>
+<td >
+Mon 99-01-04
+</td>
+<td >
+Fri 99-01-29
+</td>
+<td >
+218
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+220
+</td>
+<td >
+Develop Interface &amp; Call-out Procedures
+</td>
+<td >
+20 days
+</td>
+<td >
+Mon 99-01-04
+</td>
+<td >
+Fri 99-01-29
+</td>
+<td >
+218
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+221
+</td>
+<td >
+Develop CA*net3 Transport Support Procedures Doc.
+</td>
+<td >
+20 days
+</td>
+<td >
+Mon 99-02-01
+</td>
+<td >
+Fri 99-02-26
+</td>
+<td >
+220
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+222
+</td>
+<td >
+<b >
+ARDNOC Transport Network View
+</b>
+</td>
+<td >
+110 days
+</td>
+<td >
+Tue 99-02-16
+</td>
+<td >
+Mon 99-07-19
+</td>
+<td >
+212
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+223
+</td>
+<td >
+Determine Requirements
+</td>
+<td >
+20 days
+</td>
+<td >
+Tue 99-02-16
+</td>
+<td >
+Mon 99-03-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+224
+</td>
+<td >
+Engineer
+</td>
+<td >
+30 days
+</td>
+<td >
+Tue 99-03-16
+</td>
+<td >
+Mon 99-04-26
+</td>
+<td >
+223
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+225
+</td>
+<td >
+Provision Req'd Facilities
+</td>
+<td >
+50 days
+</td>
+<td >
+Tue 99-04-27
+</td>
+<td >
+Mon 99-07-05
+</td>
+<td >
+224
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+226
+</td>
+<td >
+Test
+</td>
+<td >
+10 days
+</td>
+<td >
+Tue 99-07-06
+</td>
+<td >
+Mon 99-07-19
+</td>
+<td >
+225
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+227
+</td>
+<td >
+<b >
+WDM/Transport East, C. Roy (To Be Detailed Further)
+</b>
+</td>
+<td >
+116 days
+</td>
+<td >
+Tue 99-01-05
+</td>
+<td >
+Tue 99-06-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+228
+</td>
+<td >
+<b >
+Network Surveillance
+</b>
+</td>
+<td >
+116 days
+</td>
+<td >
+Tue 99-01-05
+</td>
+<td >
+Tue 99-06-15
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+229
+</td>
+<td >
+Net. Operations Receive Corrected Spec.
+</td>
+<td >
+1 day
+</td>
+<td >
+Tue 99-01-05
+</td>
+<td >
+Tue 99-01-05
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+230
+</td>
+<td >
+Issue 4141's
+</td>
+<td >
+10 days
+</td>
+<td >
+Wed 99-01-06
+</td>
+<td >
+Tue 99-01-19
+</td>
+<td >
+229
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+231
+</td>
+<td >
+Install Netman Facilities
+</td>
+<td >
+80 days
+</td>
+<td >
+Wed 99-01-20
+</td>
+<td >
+Tue 99-05-11
+</td>
+<td >
+230
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+232
+</td>
+<td >
+Configure Transport Alarms etc.
+</td>
+<td >
+20 days
+</td>
+<td >
+Wed 99-05-12
+</td>
+<td >
+Tue 99-06-08
+</td>
+<td >
+231
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+233
+</td>
+<td >
+Acceptance Letter to Trans. Prov.
+</td>
+<td >
+5 days
+</td>
+<td >
+Wed 99-06-09
+</td>
+<td >
+Tue 99-06-15
+</td>
+<td >
+232
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+234
+</td>
+<td >
+<b >
+Bell Maint. Methods/Procedures, C. Blouin, Bell IS/IT
+</b>
+</td>
+<td >
+80 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Tue 99-01-26
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+235
+</td>
+<td >
+Initiate OE Process
+</td>
+<td >
+20 days
+</td>
+<td >
+Wed 98-10-07
+</td>
+<td >
+Tue 98-11-03
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+236
+</td>
+<td >
+<b >
+Bell Prov. Process Development, P. Mitchell, Bell IS/IT
+</b>
+</td>
+<td >
+60 days
+</td>
+<td >
+Wed 98-11-04
+</td>
+<td >
+Tue 99-01-26
+</td>
+<td >
+235
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+237
+</td>
+<td >
+TARS
+</td>
+<td >
+60 days
+</td>
+<td >
+Wed 98-11-04
+</td>
+<td >
+Tue 99-01-26
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+238
+</td>
+<td >
+TABS
+</td>
+<td >
+60 days
+</td>
+<td >
+Wed 98-11-04
+</td>
+<td >
+Tue 99-01-26
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+239
+</td>
+<td >
+<b >
+IP Network, S. Charikar, BSO
+</b>
+</td>
+<td >
+120 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 99-04-30
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+240
+</td>
+<td >
+<b >
+Define Requirements
+</b>
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 99-01-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+241
+</td>
+<td >
+Fault Management
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 99-01-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+242
+</td>
+<td >
+Change Management
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 99-01-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+243
+</td>
+<td >
+Provisioning
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 99-01-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+244
+</td>
+<td >
+Tool Development
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 99-01-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+245
+</td>
+<td >
+Service Management
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 99-01-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+246
+</td>
+<td >
+Performance Management
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 99-01-08
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+247
+</td>
+<td >
+Develop All Processes/Contracts etc.
+</td>
+<td >
+20 days
+</td>
+<td >
+Mon 99-01-11
+</td>
+<td >
+Fri 99-02-05
+</td>
+<td >
+240
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+248
+</td>
+<td >
+Train
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 99-02-08
+</td>
+<td >
+Fri 99-02-19
+</td>
+<td >
+247
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+249
+</td>
+<td >
+Update Databases
+</td>
+<td >
+10 days
+</td>
+<td >
+Mon 99-02-22
+</td>
+<td >
+Fri 99-03-05
+</td>
+<td >
+248
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+250
+</td>
+<td >
+Develop All Documentation
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 99-03-08
+</td>
+<td >
+Fri 99-04-30
+</td>
+<td >
+249
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+251
+</td>
+<td >
+<b >
+Future Development Initiatives/Service Development, T. Faccia
+</b>
+</td>
+<td >
+100 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 99-04-02
+</td>
+<td >
+37
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+252
+</td>
+<td >
+Assign Primeship
+</td>
+<td >
+20 days
+</td>
+<td >
+Mon 98-11-16
+</td>
+<td >
+Fri 98-12-11
+</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+253
+</td>
+<td >
+Develop Team
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 98-12-14
+</td>
+<td >
+Fri 99-02-05
+</td>
+<td >
+252
+</td>
+<td ></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  align="center">
+254
+</td>
+<td >
+Develop Plan
+</td>
+<td >
+40 days
+</td>
+<td >
+Mon 99-02-08
+</td>
+<td >
+Fri 99-04-02
+</td>
+<td >
+253
+</td>
+<td ></td>
+</tr>
+</table>
+<br ></br>
+<br ></br>
+<br ></br>
+<!-- TEXT ENDS HERE! -->
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="2" valign="top">
+<table  TABID="07014" border="0" cellpadding="0" cellspacing="0" width="640">
+<tr >
+<td  class="footer">
+Last modified -
+<script >
+<!--
+		var lastMod = new Date();
+		lastMod.setTime(Date.parse(document.lastModified));
+		document.writeln(getNiceDate(lastMod));
+	// -->
+</script>
+<br ></br>
+Copyright© CANARIE 2000
+</td>
+<td  class="content">
+General inquiries :
+<a  href="mailto:info@canarie.ca">
+info@canarie.ca
+</a>
+<br ></br>
+Technical inquiries :
+<a  href="mailto:webmaster@canarie.ca">
+webmaster@canarie.ca
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

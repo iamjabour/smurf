@@ -1,0 +1,167 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<title >
+Adding chapter numbers to figure numbers
+</title>
+</head>
+<body >
+<table  TABID="11210" genuinetable="yes">
+<caption >
+Document ID: 2872
+</caption>
+<tr >
+<td ></td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TITLE:
+</b>
+</td>
+<td >
+Adding chapter numbers to figure numbers
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+PRODUCT:
+</b>
+</td>
+<td >
+SoDA/Frame
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+OS:
+</b>
+</td>
+<td >
+UNIX, Windows95,NT
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+DEFECT #:
+</b>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+PATCH #:
+</b>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+REFERENCES:
+</b>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CREATED:
+</b>
+</td>
+<td >
+14-Jan-1994
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+REVISED:
+</b>
+</td>
+<td >
+01-Dec-1998, 10-Feb-1999, 19-May-1999
+</td>
+</tr>
+</table>
+<hr ></hr>
+<dl  compact="compact">
+<dt >
+<b >
+QUESTION:
+</b>
+</dt>
+</dl>
+<pre >
+Is there any support for 2-part figure and table numbers in Frame?
+ 
+SCENARIO:
+The figures in the technical document need to pick up the current 
+heading value and append a figure number on the end.
+ 
+For example, the third figure in chapter 2 needs to be labeled:
+ 		Figure 2.3:
+ 
+The first figure in chapter 4 should be labeled:
+  		Figure 4.1:
+ 
+The Frame hotline could not come up with any good ideas other than to 
+create a Figure paragraph marker for each chapter in the document. 
+This doesn't work well for a document that will be written in 
+chapters and pulled together with the book utility.
+ 
+Is there any way to reference the current value of a different 
+counter?  The variable definition &lt;$paranum[1Heading]&gt; did not work 
+as well.
+</pre>
+<b >
+ANSWER:
+</b>
+<pre >
+The workaround is not documented, nor is it wasy to describe.  The 
+best way to describe the workaround is by example.
+ 
+In the example below, there are five paragraph formats that require 
+the chapter number as part of their numbering. Here are the formats 
+with their numbering spec:
+ 
+NAME		EXAMPLE		NUMBERING SPEC
+Chapter		Chapter 1&lt;tab&gt;		C:&lt;n+&gt;&lt; =0&gt;&lt; =0&gt;&lt; =0&gt;&lt; =0&gt;\t
+Section		Section 1.1&lt;tab&gt;		C:&lt;n&gt;.&lt;n+&gt;&lt; =0&gt;&lt; &gt;&lt; &gt;\t
+Section2		Section 1.1.1&lt;tab&gt;		C:&lt;n&gt;.&lt;n&gt;.&lt;n+&gt;&lt; &gt;&lt; &gt;\t
+Figure		Figure 1-1&lt;tab&gt;		C:&lt;n&gt;-&lt; &gt;&lt; &gt;&lt;n+&gt;&lt; &gt;\t
+Table		Table 1-1&lt;tab&gt;		C:&lt;n&gt;-&lt; &gt;&lt; &gt;&lt; &gt;&lt;n+&gt;\t
+ 
+Notice that all the formats have the same series label (C:), and that 
+the series contains five counters. The first counter is used to keep 
+track of the chapter, the second to keep track of the section, the 
+third to keep track of the section2, the fourth to keep track of the 
+figure, and the fifth to keep track of the table.
+ 
+Chapter numbering spec increments the chapter number (&lt;n+&gt;) (which 
+assumes that the chapter is part of a book), and resets all the other 
+counters to zero (&lt; =0&gt; -- note the space before the equals sign). 
+The Section numbering spec increments the section counter (&lt;n+&gt;), 
+resets the section2 counter (&lt; =0&gt;), and does nothing with the figure 
+and table counters (&lt; &gt;&lt; &gt; -- notice the space within the angle 
+brackets).  Section2 is similar to Section, except it increments the 
+Section2 counter.  The Figure numbering spec leaves the Section, 
+Section2, and Table counters alone, and increments the Figure 
+counter.  Table is similar to Figure, except it increments the Table 
+counter.
+ 
+Notice that &lt; &gt; and &lt; =0&gt; do not display anything on the page.
+ 
+For more information, contact Rational Software Technical Support.
+</pre>
+</body>
+</html>

@@ -1,0 +1,2274 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<title >
+Taking Stock
+</title>
+<script ></script>
+<script ></script>
+<script ></script>
+<meta ></meta>
+<link ></link>
+<script ></script>
+<meta ></meta>
+</head>
+<body >
+<script >
+<!--
+     NS4 = (document.layers);
+     IE4 = (document.all);
+    ver4 = (NS4 || IE4);
+	 IE5 = (IE4 &amp;amp;amp;&amp;amp;amp; navigator.appVersion.indexOf("5.")!=-1);
+   isMac = (navigator.appVersion.indexOf("Mac") != -1);
+  isMenu = (NS4 || (IE4 &amp;amp;amp;&amp;amp;amp; !isMac) || (IE5 &amp;amp;amp;&amp;amp;amp; isMac));
+function popUp(){return};
+function popDown(){return};
+if (!ver4) event=null;
+//-->
+</script>
+<script >
+<!--
+if (isMenu) {
+menuVersion = 3;
+menuWidth = 118;
+childOverlap = null;
+childOffset = 3;
+perCentOver = 5;
+secondsVisible = .5;
+fntCol = "blue";
+fntSiz = "8";
+fntBold = false;
+fntItal = false;
+fntFam = "verdana, arial, helvetica";
+backCol = "#DDDDDD";
+overCol = "#FFCCCC";
+overFnt = "purple";
+borWid = 1;
+borCol = "black";
+borSty = "solid";
+itemPad = 3;
+imgSrc = "../../../scripts/tri.gif";
+imgSiz = 10;
+separator = 1;
+separatorCol = "black";
+isFrames = false;
+navFrLoc = "left"
+keepHilite = true; 
+clickStart = false;
+clickKill = true;
+}
+//-->
+</script>
+<script >
+<!--
+if (isMenu) {
+if (br=="n4"){
+document.write("&amp;amp;lt;SCRIPT LANGUAGE='JavaScript1.2' SRC='../../../scripts/final3.js' TYPE='text/javascript'&amp;amp;gt;&amp;amp;lt;\/SCRIPT&amp;amp;gt;");
+}
+else {
+document.write("&amp;amp;lt;SCRIPT LANGUAGE='JavaScript1.2' SRC='../../../scripts/Nfinal3.js' TYPE='text/javascript'&amp;amp;gt;&amp;amp;lt;\/SCRIPT&amp;amp;gt;");
+}
+}
+//-->
+</script>
+<script >
+<!--
+if (isMenu) {
+document.write("&amp;amp;lt;SCRIPT LANGUAGE='JavaScript1.2' SRC='../../../scripts/hierMenus.js' TYPE='text/javascript'&amp;amp;gt;&amp;amp;lt;\/SCRIPT&amp;amp;gt;");
+}
+
+document.write("&amp;amp;lt;SCRIPT LANGUAGE='JavaScript1.2' SRC='../../../scripts/Searching.js' TYPE='text/javascript'&amp;amp;gt;&amp;amp;lt;\/SCRIPT&amp;amp;gt;");
+
+//-->
+</script>
+<a  name="top"></a>
+<table  TABID="12925" border="0" cellpadding="0" cellspacing="0" hspace="0" vspace="0" width="600">
+<tr  valign="bottom">
+<td  align="right">
+<img ></img>
+<map  name="FPMap0">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</td>
+</tr>
+</table>
+<table  TABID="12927" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  align="left" height="60" width="37">
+<img ></img>
+</td>
+<td  align="left" bgcolor="#CC0000" height="60" width="281">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#CC0000" height="60" valign="bottom" width="282">
+<form  action="index.htm" method="post" name="searchForm" onsubmit="return (Searching(this.form));">
+<table  TABID="12926" align="right" border="0" cellpadding="0" cellspacing="0" height="25">
+<tr >
+<td  align="right" valign="top">
+<input ></input>
+</td>
+<td  align="right" valign="bottom">
+<input ></input>
+</td>
+</tr>
+</table>
+</form>
+</td>
+</tr>
+</table>
+<table  TABID="12969" bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="600">
+<tr >
+<td >
+<center ></center>
+</td>
+<td >
+<p  align="center">
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/communities/hotspots/index.shtml">
+<img ></img>
+</a>
+</p>
+<p  align="center">
+<a  href="http://www.theglobalist.com/nor/communities/titans/index.shtml">
+<img ></img>
+</a>
+</p>
+<p  align="center">
+<a  href="http://www.theglobalist.com/nor/communities/stock/index.shtml">
+<img ></img>
+</a>
+</p>
+<p  align="center">
+<a  href="http://www.theglobalist.com/nor/communities/moneymatters/index.shtml">
+<img ></img>
+</a>
+</p>
+<p  align="center">
+<a  href="http://www.theglobalist.com/nor/communities/updown/index.shtml">
+<img ></img>
+</a>
+</p>
+<p  align="center">
+<a  href="http://www.theglobalist.com/nor/communities/camp2000/index.shtml">
+<img ></img>
+</a>
+<img ></img>
+</p>
+</td>
+<td  align="center" valign="top">
+<center ></center>
+<table  TABID="12929" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+Taking Stock
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p  align="left">
+<br ></br>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<img ></img>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+In "Taking Stock," we look at the world's corporations and examine how they are driving — and being driven by — the forces of globalization. All the while, we remain true to our commitment to provide a "stock-pushing free zone." In other words, you won't find any "big" recommendations here to expand your portfolio.
+</font>
+</p>
+<p  align="left"></p>
+<table  TABID="12928" align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+<tr >
+<td  width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#allianz">
+Allianz
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#hallmark">
+Hallmark
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#amazon">
+Amazon
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<b >
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#ibm">
+IBM
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#aol">
+AOL-Time Warner
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#lm">
+Lockheed Martin
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#att">
+AT&amp;T
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#lufthansa">
+Lufthansa
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="15" width="51%">
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<b >
+<font  color="#000099">
+<a  href="#bony">
+Bank of New York
+</a>
+</font>
+</b>
+</font>
+</td>
+<td  width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#mcd">
+McDonald's
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="15" width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#bk">
+Burger King
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#world">
+MCI-WorldCom
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="15" width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#citi">
+Citigroup
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#mckinsey">
+McKinsey
+</a>
+</font>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<b >
+<a  href="#coke">
+Coca Cola
+</a>
+</b>
+</font>
+</td>
+<td  height="15" width="49%">
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#micro">
+Microsoft
+</a>
+</font>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#cvs">
+<b >
+CVS
+</b>
+</a>
+</font>
+</td>
+<td  height="15" width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#tata">
+Tata Enterprises
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<b >
+<a  href="#DCX">
+DaimlerChrysler
+</a>
+</b>
+</font>
+</td>
+<td  height="15" width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#toyota">
+Toyota
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#dt">
+Deutsche Telekom
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#ual">
+United Airlines
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#etrade">
+E*Trade
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<b >
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#vw">
+Volkswagen
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#ford">
+Ford
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#walmart">
+Wal-Mar
+</a>
+<a  href="#walmart">
+t
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#ge">
+General Electric
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#disney">
+Walt Disney
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#gmc">
+General Motors
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#whirl">
+Whirlpool
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="51%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#gs">
+Goldman Sachs
+</a>
+</font>
+</b>
+</td>
+<td  width="49%">
+<b >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="#yahoo">
+Yahoo!
+</a>
+</font>
+</b>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12930" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="allianz">
+Allianz
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+On the Richter Scale
+</font>
+<br ></br>
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2000/05-08-00.shtml">
+<b >
+Allianz — Another Ad Adventure?
+</b>
+</a>
+<br ></br>
+Does the German insurer's global ad cam
+<font  face="Verdana, Arial, Helvetica, sans-serif">
+paign ref
+</font>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+lect larger problems in adapting to the U.S. market?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12931" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="amazon">
+Amazon
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+The G-Diaries
+</font>
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/gdiary/2000/06-12-00.shtml">
+<b >
+Fighting Amazon Addiction
+</b>
+</a>
+<br ></br>
+Can you rationalize excessive book orders from Amazon.com?
+</font>
+</p>
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+The G-Diaries
+</font>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/gdiary/2001/01-22-01.shtml">
+<b >
+<font  color="#000099">
+<br ></br>
+Will Bush Get Amazoned?
+</font>
+</b>
+</a>
+<br ></br>
+Can a nomination as "Person of the Year" turn into a curse for the new U.S. President?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12932" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="aol">
+AOL-Time Warner
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+Read My Lips
+</font>
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/richter/2000/05-15-00.shtml">
+<b >
+Greenspan's Masters
+<br ></br>
+</b>
+</a>
+How AOL CEO Steve Case has succeeded in making Alan Greenspan's job easie
+<font  color="#000099">
+r.
+</font>
+</font>
+</p>
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+The G-Diaries
+<br ></br>
+</font>
+</font>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/gdiary/2001/01-22-01.shtml">
+<b >
+<font  color="#000099">
+Will Bush Get Amazoned?
+</font>
+</b>
+</a>
+<br ></br>
+Can a nomination as "Person of the Year" turn into a curse for the new U.S. President?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12933" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="att">
+AT&amp;T
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+On the Richter Scale
+</font>
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/richter/2000/08-04-00.shtml">
+<b >
+AT&amp;T and the Saga of the Four Armstrongs
+<br ></br>
+</b>
+</a>
+What do Louis, Neil, Mike and Lance Armstrong have in common?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12934" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="bony">
+Bank of New York
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<br ></br>
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<br ></br>
+<b >
+<a  href="http://www.theglobalist.com/nor/richter/2000/10-24-00.shtml">
+BoNY and Clyde — A Tale of Two Bank Robbers
+</a>
+</b>
+<br ></br>
+Who were the real winners and losers of the Bank of New York/Russian money-laundering scandal?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12935" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="bk">
+Burger King
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+On the Richter Scale
+</font>
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/richter/2000/10-30-00.shtml">
+<b >
+How Burger King Can Help U.S. Politics
+<br ></br>
+</b>
+</a>
+Are foreign-owned corporations the solution to U.S. campaign finance reform?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12936" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="citi">
+Citigroup
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+On the Richter Scale
+</font>
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/richter/2000/07-06-00.shtml">
+<b >
+Banking Transparency Gone Amok!
+<br ></br>
+</b>
+</a>
+Did Citibank — the world's leading consumer bank — start a trend that has gone too far?
+</font>
+</p>
+<p >
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+On the Richter Scale
+<br ></br>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<b >
+<a  href="http://www.theglobalist.com/nor/richter/2001/03-15-01.shtml">
+Citibank's Marketing Metamorphosis
+</a>
+</b>
+<br ></br>
+How does Citibank aspire to be fashionably on top of marketing?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12937" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="coke">
+Coca Cola
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<br ></br>
+<font  color="#000099" face="verdana, arial, helvetica" size="2">
+Globalist Factsheet
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<b >
+<a  href="http://www.theglobalist.com/nor/factsheets/2001/04-04-01.shtml">
+Coke — Globalization's Real Thing
+</a>
+</b>
+</font>
+<br ></br>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+What does it take to become a global icon?
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12938" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="cvs">
+CVS
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<br ></br>
+<font  color="#000099" face="verdana, arial, helvetica" size="2">
+The G-Diaries
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<font  color="#000000">
+<a  href="http://www.theglobalist.com/nor/gdiary/2001/05-14-01.shtml">
+<b >
+The Drug Capital of the World
+</b>
+</a>
+</font>
+</font>
+<font  color="#000000">
+<a  href="http://www.theglobalist.com/nor/gdiary/2001/05-14-01.shtml"></a>
+<br ></br>
+How do the pharmacy giants turn into major contestants in the new NYC drug war?
+</font>
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12941" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="DCX">
+DaimlerChrysler
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<br ></br>
+<table  TABID="12939" align="right" border="0" cellpadding="0" cellspacing="0" width="166">
+<tr >
+<td  bgcolor="#006699" width="161">
+<b >
+<img ></img>
+</b>
+<b >
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+Media Features
+</font>
+</b>
+</td>
+</tr>
+</table>
+<p >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<font  color="#000099">
+<br ></br>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<font  color="#000099">
+Chief Executive Magazine
+<br ></br>
+<b >
+<a  href="http://www.theglobalist.com/nor/news/2001/02-23-01.shtml">
+It's Always the Other Guy's Fault
+</a>
+</b>
+<br ></br>
+<font  color="#000000">
+Our February 2001 commentary on how shareholders pay the price for a mismanaged merger.
+</font>
+</font>
+</font>
+<font  color="#000099"></font>
+</font>
+</p>
+<p >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<font  color="#000099">
+New York Times
+</font>
+<br ></br>
+<a  href="http://www.transatlanticfutures.com/news/tafnews/1998/sr9-18-98.htm">
+<b >
+Why Daimler Would Love New York (pdf file)
+</b>
+</a>
+<br ></br>
+Our May 1998 Op-Ed on why Daimler might choose to relocate from Germany to the Big Apple.
+</font>
+</p>
+<p >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<font  color="#000099">
+NPR Marketplace
+</font>
+<br ></br>
+<a  href="http://www.transatlanticfutures.com/news/tafnews/1998/sr9-18-98.htm">
+<b >
+The True Challenge in the DaimlerChrysler Merger
+</b>
+</a>
+<br ></br>
+Our September 1998 commentary on whether this is a merger "among equals."
+</font>
+</p>
+<p >
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Time Magazine
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<br ></br>
+<b >
+<a  href="http://www.transatlanticfutures.com/news/tafnews/1999/sr5-24-99.htm">
+Boards Without Borders
+</a>
+</b>
+<a  href="http://www.transatlanticfutures.com/news/tafnews/1999/sr5-24-99.htm"></a>
+<br ></br>
+Our May 1999 perspective on how German firms are trying to shape the global economy.
+</font>
+</p>
+<p >
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Time Magazine
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<br ></br>
+<a  href="http://www.transatlanticfutures.com/news/tafnews/1998/sr9-28-98.htm">
+<b >
+Chrysler Exports Itself
+</b>
+</a>
+<br ></br>
+Our September 1998 view on the benefits for Daimler of relocating to the United States.
+</font>
+</p>
+<p ></p>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<table  TABID="12940" align="right" border="0" cellpadding="0" cellspacing="0" width="164">
+<tr >
+<td  bgcolor="#CC0000" width="164">
+<b >
+<font  color="#FFFFFF" face="verdana, arial, helvetica" size="1">
+<img ></img>
+</font>
+</b>
+<b >
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+Web Features
+</font>
+</b>
+</td>
+</tr>
+</table>
+<p >
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<br ></br>
+Read My Lips
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<a  href="http://www.theglobalist.com/nor/readlips/2000/12-06-00.shtml">
+<b >
+<br ></br>
+A DaimlerChrysler Retrospective
+</b>
+</a>
+<br ></br>
+Was the merger of Daimler and Chrysler really a merger of equals?
+</font>
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2"></font>
+</p>
+<p >
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+On the Richter Scale
+<br ></br>
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2001/02-02-01.shtml">
+<b >
+DaimlerChrysler: Bringing the Americas Together
+</b>
+</a>
+</font>
+<font  color="#000099" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<br ></br>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+How the company's planned cutbacks are vindicating NAFTA and strengthening regionalism in the Americas.
+</font>
+</p>
+<p >
+<font  color="#000099" face="verdana, arial, helvetica" size="2">
+On the Richter Scale
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2000/11-24-00.shtml">
+<b >
+Europe and the "Big Three"
+</b>
+</a>
+<br ></br>
+The German, French and British approaches to adapting to the global economy resemble those of the "Big Three" U.S. carmakers.
+</font>
+</p>
+<p >
+<font  color="#000099" face="verdana, arial, helvetica" size="2">
+The G-Diaries
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<b >
+<a  href="http://www.theglobalist.com/nor/gdiary/2000/07-04-00.shtml">
+Peace Moving Upscale
+</a>
+</b>
+<a  href="http://www.theglobalist.com/nor/gdiary/2000/07-04-00.shtml"></a>
+<br ></br>
+How Daimler's corporate logo made it all the way to the July 4th fireworks in the United States.
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12944" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="dt">
+Deutsche Telekom
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<br ></br>
+<table  TABID="12942" align="right" border="0" cellpadding="0" cellspacing="0" width="166">
+<tr >
+<td  bgcolor="#006699" width="161">
+<b >
+<img ></img>
+</b>
+<b >
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+Media Features
+</font>
+</b>
+</td>
+</tr>
+</table>
+<p >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<font  color="#000099">
+<br ></br>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<font  color="#000099">
+Chief Executive Magazine
+<br ></br>
+<b >
+<a  href="http://www.chiefexecutive.net/depts/mkthoriz/162.htm">
+Quo Vadis, Deutsche Telekom?
+</a>
+</b>
+<br ></br>
+<font  color="#000000">
+Our December 2000 column on why CEO Ron Sommers may be feeling a bit overwhelmed right now.
+</font>
+</font>
+</font>
+<font  color="#000099"></font>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<br ></br>
+<table  TABID="12943" align="right" border="0" cellpadding="0" cellspacing="0" width="164">
+<tr >
+<td  bgcolor="#CC0000" width="164">
+<b >
+<font  color="#FFFFFF" face="verdana, arial, helvetica" size="1">
+<img ></img>
+</font>
+</b>
+<b >
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+Web Features
+</font>
+</b>
+</td>
+</tr>
+</table>
+<p >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<br ></br>
+</font>
+</p>
+<p >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2000/07-13-00.shtml">
+<b >
+Deutsche Telekom and the Tour de France
+</b>
+</a>
+<br ></br>
+What does the performance of Deutsche Telekom's cycling team say about the company?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12945" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="etrade">
+E*Trade
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+On the Richter Scale
+</font>
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/richter/2000/09-11-00.shtml">
+<b >
+Une Affaire de Coeur
+</b>
+</a>
+<br ></br>
+How does a French politician win a population over to a new currency?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12946" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="ford">
+Ford
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+On the Richter Scale
+</font>
+<br ></br>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2000/11-24-00.shtml">
+<b >
+Europe and the Big Three
+</b>
+</a>
+<br ></br>
+What can France, Germany and the UK learn from U.S. motor companies?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12947" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="ge">
+General Electric
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<a  href="../../../nor/richter/2000/03-21-00.shtml">
+<br ></br>
+</a>
+<font  color="#000099">
+Read My Lips
+</font>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/readlips/2000/08-30-00.shtml">
+<b >
+<br ></br>
+The Welch Way
+</b>
+</a>
+<br ></br>
+The CEO gives his thoughts on the global economy, the Internet and GE's future.
+</font>
+</p>
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+<a  href="../../../nor/richter/2000/03-21-00.shtml">
+<br ></br>
+</a>
+<b >
+<a  href="http://www.theglobalist.com/nor/richter/2000/05-11-00.shtml">
+GE and the Gladiators
+</a>
+</b>
+<br ></br>
+Is the proposed "Extreme Football League" final proof that the United States is turning into ancient Rome?
+</font>
+</p>
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+<a  href="http://www.theglobalist.com/nor/richter/2000/06-23-00.shtml">
+<b >
+<br ></br>
+Does GE Stand for Global Economy?
+</b>
+</a>
+<br ></br>
+As global in its operations as this industrial giant has become, does "GE" really stand for General Electric?
+</font>
+</p>
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+GloboQuiz
+</font>
+<a  href="http://www.theglobalist.com/nor/quiz/2000/07-31-00.shtml">
+<b >
+<br ></br>
+Pope Jack the First?
+<br ></br>
+</b>
+</a>
+How does the longevity of GE CEO's compare to that of popes of the Roman Catholic church?
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<a  href="../../../nor/richter/2000/01-19-00.shtml">
+<b ></b>
+</a>
+</font>
+</p>
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<b >
+<a  href="http://www.theglobalist.com/nor/richter/2001/01-31-01.shtml">
+<br ></br>
+Jack Welch for Roman Emperor?
+</a>
+</b>
+<br ></br>
+Will the launch of the XFL make Jack Welch a new Roman Emperor?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12948" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="gmc">
+General Motors
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+The G-Diaries
+</font>
+<br ></br>
+<b >
+<a  href="http://www.theglobalist.com/nor/gdiary/2000/09-07-00.shtml">
+Foreigners Out?
+</a>
+<br ></br>
+</b>
+How is GM's German subsidiary helping to promote the interests of immigrants in the country?
+</font>
+</p>
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2000/11-24-00.shtml">
+<b >
+<br ></br>
+Europe and the Big Three
+</b>
+</a>
+<br ></br>
+What can France, Germany and the UK learn from U.S. motor companies?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12949" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="gs">
+Goldman Sachs
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+GloboQuiz
+</font>
+<br ></br>
+<b >
+<a  href="http://www.theglobalist.com/nor/quiz/2000/01-04-00.shtml">
+Golddiggers at Goldman
+</a>
+<br ></br>
+</b>
+Do you know what the average salary at U.S. investment bank Goldman Sachs is?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12950" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="hallmark">
+Hallmark
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+The G-Diaries
+</font>
+<br ></br>
+<b ></b>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/gdiary/2001/02-14-01.shtml">
+<b >
+Hallmark's Asian Valentine
+</b>
+</a>
+<br ></br>
+Is market research important when dealing with feelings?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12951" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="ibm">
+IBM
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+On the Richter Scale
+</font>
+<br ></br>
+<b >
+<a  href="http://www.theglobalist.com/nor/richter/2000/12-01-00.shtml">
+A German Conspiracy?
+</a>
+<br ></br>
+</b>
+Is the Florida election debacle the result of a long-term German conspiracy?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12952" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="lm">
+Lockheed Martin
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/gdiary/2000/03-08-00.shtml">
+<br ></br>
+</a>
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+The G-Diaries
+</font>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/gdiary/2000/03-08-00.shtml">
+<br ></br>
+<b >
+Paying Back the Americans
+</b>
+</a>
+<br ></br>
+How could a rise in the price of oil deliver Lockheed Martin an unexpected benefit?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12953" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="lufthansa">
+Lufthansa
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2000/04-06-00.shtml">
+<br ></br>
+</a>
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2000/04-06-00.shtml">
+<br ></br>
+</a>
+<a  href="http://www.theglobalist.com/nor/richter/2000/09-28-00.shtml">
+<b >
+What Next, the Euro at 50 Cents?
+</b>
+</a>
+<br ></br>
+Does Lufthansa's ticket pricing policy reveal something about the future course of the euro?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12954" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="mcd">
+McDonald's
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<br ></br>
+</font>
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+The G-Diaries
+</font>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/gdiary/2000/01-07-00.shtml">
+<b >
+McDonald's as Development Aid
+<br ></br>
+</b>
+</a>
+Is McDonald's teaching its overseas employees just to flip burgers — or to manage the entire food industry?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12955" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="world">
+MCI-WorldCom
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+On the Richter Scale
+</font>
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/richter/2000/06-28-00.shtml">
+<b >
+WorldCom's Phony Business Practices
+<br ></br>
+</b>
+</a>
+Is MCI-WorldCom abusing the deregulated U.S. marketplace by sticking it to its customers?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12956" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="mckinsey">
+McKinsey
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+On the Richter Scale
+</font>
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/richter/2000/05-17-00.shtml">
+<b >
+McKinsey's Medieval Recruiting Practices
+</b>
+</a>
+<br ></br>
+Can a monastery help the recruiting efforts of one of the world's oldest management consultancies?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12957" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="micro">
+Microsoft
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+On the Richter Scale
+</font>
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/richter/2000/07-26-00.shtml">
+<b >
+Silicon Valley Oligarchs
+<br ></br>
+</b>
+</a>
+What do Silicon Valley technoglogy firms have in common with Russian oligarchs?
+</font>
+</p>
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+<a  href="http://www.theglobalist.com/nor/richter/2000/01-10-00.shtml">
+<b >
+<br ></br>
+Putting Their Money Where Their Mouths Are
+</b>
+</a>
+<br ></br>
+Is Microsoft's president serious when he says his company's stock is overvalued?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12959" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="tata">
+Tata
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<br ></br>
+<table  TABID="12958" align="right" border="0" cellpadding="0" cellspacing="0" width="166">
+<tr >
+<td  bgcolor="#006699" width="161">
+<b >
+<img ></img>
+</b>
+<b >
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+Media Features
+</font>
+</b>
+</td>
+</tr>
+</table>
+<p >
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<br ></br>
+<font  color="#000099">
+Strategy and Business
+</font>
+</font>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/news/2000/08-18-00.shtml">
+<b >
+<br ></br>
+The Third World Goes to the Market
+</b>
+</a>
+<br ></br>
+How did the purchase of U.K.-based Tetley tea by India's Tata company turn back time?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12960" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="toyota">
+Toyota
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<br ></br>
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+</font>
+<br ></br>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2000/09-25-00.shtml">
+<b >
+Toyota — The Euro's Biggest Fan
+</b>
+</a>
+<br ></br>
+Is the euro getting help from this unlikely source — by forcing Great Britain into monetary union?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12961" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="ual">
+United Airlines
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<a  href="http://www.theglobalist.com/nor/richter/2000/09-28-00.shtml">
+<br ></br>
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+</font>
+<br ></br>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<b >
+What Next, the Euro at 50 Cents?
+</b>
+</font>
+</a>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<br ></br>
+What United Airlines' pricing policy reveals about the future course of the European currency.
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12962" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="vw">
+Volkswagen
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<br ></br>
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+</font>
+<br ></br>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2000/11-24-00.shtml">
+<b >
+Europe and the Big Three
+</b>
+</a>
+<br ></br>
+What can France, Germany and the UK learn from U.S. motor companies?
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12963" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="walmart">
+Wal-Mart
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<br ></br>
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+</font>
+<br ></br>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2000/09-25-00.shtml">
+<b >
+The State of U.S. Democracy: Wal-Mart to the Rescue!
+</b>
+</a>
+<br ></br>
+How can Wal-Mart help in raising U.S. voter turnout?
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12964" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="disney">
+Walt Disney
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<br ></br>
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+</font>
+<br ></br>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/gdiary/2000/01-17-00.shtml">
+<b >
+Fidel Goes Head to Head With the Mouse
+</b>
+</a>
+<br ></br>
+Why are Fidel Castro and Disneyland suddenly in direct competition?
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12965" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="whirl">
+Whirlpool
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+<font  face="verdana, arial, helvetica" size="2">
+<br ></br>
+<font  color="#000099">
+On the Richter Scale
+</font>
+<br ></br>
+<a  href="http://www.theglobalist.com/nor/richter/2000/02-17-00.shtml">
+<b >
+Whirlpool Learns About Laundering
+<br ></br>
+</b>
+</a>
+Would you have guessed that Whirlpool has been drawn into money laundering?
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="12966" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr >
+<td  align="left" bgcolor="#CC0000" valign="top">
+<img ></img>
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="3">
+<b >
+<a  name="yahoo">
+Yahoo!
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<br ></br>
+<font  face="verdana, arial, helvetica" size="2">
+<font  color="#000099">
+On the Richter Scale
+</font>
+</font>
+<br ></br>
+<font  face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a  href="http://www.theglobalist.com/nor/richter/2000/02-25-00.shtml">
+<b >
+Buying and Selling Japan.com
+</b>
+</a>
+<br ></br>
+Is any single stock worth $1 million dollars?
+</font>
+</td>
+</tr>
+</table>
+<p ></p>
+</td>
+<td  align="center" bgcolor="#0C7594" valign="top" width="120">
+<script >
+<!--
+function openBrWindow(theURL) {
+  pop = window.open(theURL,"pop",'scrollbars=yes,width=640,height=440');
+}
+//-->
+</script>
+<br ></br>
+<table  TABID="12967" border="0" cellpadding="0" cellspacing="1" width="100%">
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tr  class="NavItem" onmousedown="NavMDown(this)" onmouseout="NavMOut(this)" onmouseover="NavMOver(this)" onmouseup="NavMUp(this)">
+<td  class="NavItemSubSelected" colspan="2">
+<a  class="NavLink" href="http://www.theglobalist.com/nor/about/index.shtml">
+About Us
+</a>
+</td>
+</tr>
+<tr  class="NavItem" onmousedown="NavMDown(this)" onmouseout="NavMOut(this)" onmouseover="NavMOver(this)" onmouseup="NavMUp(this)">
+<td  class="NavItemSelected" colspan="2">
+<div  align="left">
+<a  class="NavLink" href="http://www.theglobalist.com/nor/news/archive/media_1.shtml">
+In the Media
+</a>
+</div>
+</td>
+</tr>
+<tr  class="NavItem" onmousedown="NavMDown(this)" onmouseout="NavMOut(this)" onmouseover="NavMOver(this)" onmouseup="NavMUp(this)">
+<td  class="NavItemSelected" colspan="2">
+<div  align="left">
+<a  class="NavLink" href="http://www.theglobalist.com/nor/about/blue/mission.shtml">
+Think Tank
+</a>
+</div>
+</td>
+</tr>
+<tr  class="NavItem" onmousedown="NavMDown(this)" onmouseout="NavMOut(this)" onmouseover="NavMOver(this)" onmouseup="NavMUp(this)">
+<td  class="NavItemSelected" colspan="2">
+<div  align="left">
+<a  class="NavLink" href="http://www.theglobalist.com/nor/about/kitchen.shtml">
+Kitchen Cabinet
+</a>
+</div>
+</td>
+</tr>
+<tr  class="NavItem" onmousedown="NavMDown(this)" onmouseout="NavMOut(this)" onmouseover="NavMOver(this)" onmouseup="NavMUp(this)">
+<td  class="NavItemSelected" colspan="2">
+<div  align="left">
+<a  class="NavLink" href="http://www.theglobalist.com/nor/about/contact.shtml" target="_parent">
+Contact Us
+</a>
+</div>
+</td>
+</tr>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+</table>
+<br ></br>
+<table  TABID="12968" border="0" cellpadding="0" cellspacing="1" width="100%">
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tr >
+<td  colspan="2">
+<font  color="#CC0000" face="Verdana, Arial, Helvetica, sans-serif" size="1">
+<b >
+Inside The Globalist:
+</b>
+</font>
+</td>
+</tr>
+<tr  class="NavItem" onmousedown="NavMDown(this)" onmouseout="NavMOut(this)" onmouseover="NavMOver(this)" onmouseup="NavMUp(this)">
+<td  class="NavItemSubSelected" colspan="2">
+<a  class="NavLink" href="http://www.theglobalist.com/nor/richter/archive/index.shtml">
+Richter Scale
+</a>
+</td>
+</tr>
+<tr  class="NavItem" onmousedown="NavMDown(this)" onmouseout="NavMOut(this)" onmouseover="NavMOver(this)" onmouseup="NavMUp(this)">
+<td  class="NavItemSelected" colspan="2">
+<div  align="left">
+<a  class="NavLink" href="http://www.theglobalist.com/nor/gdiary/archive/index.shtml">
+G-Diaries
+</a>
+</div>
+</td>
+</tr>
+<tr  class="NavItem" onmousedown="NavMDown(this)" onmouseout="NavMOut(this)" onmouseover="NavMOver(this)" onmouseup="NavMUp(this)">
+<td  class="NavItemSelected" colspan="2">
+<div  align="left">
+<a  class="NavLink" href="http://www.theglobalist.com/nor/quiz/archive/index.shtml" target="_parent">
+GloboQuiz
+</a>
+</div>
+</td>
+</tr>
+<tr  class="NavItem" onmousedown="NavMDown(this)" onmouseout="NavMOut(this)" onmouseover="NavMOver(this)" onmouseup="NavMUp(this)">
+<td  class="NavItemSelected" colspan="2">
+<div  align="left">
+<a  class="NavLink" href="http://www.theglobalist.com/nor/readlips/archive/index.shtml" target="_parent">
+Read My Lips
+</a>
+</div>
+</td>
+</tr>
+<tr  class="NavItem" onmousedown="NavMDown(this)" onmouseout="NavMOut(this)" onmouseover="NavMOver(this)" onmouseup="NavMUp(this)">
+<td  class="NavItemSelected" colspan="2">
+<div  align="left">
+<a  class="NavLink" href="http://www.theglobalist.com/nor/factsheets/archive/index.shtml" target="_parent">
+Factsheet
+</a>
+</div>
+</td>
+</tr>
+<tr  class="NavItem" onmousedown="NavMDown(this)" onmouseout="NavMOut(this)" onmouseover="NavMOver(this)" onmouseup="NavMUp(this)">
+<td  class="NavItemSelected" colspan="2">
+<a  class="NavLink" href="http://www.theglobalist.com/nor/gbs/archive/index.shtml">
+Bookshelf
+</a>
+</td>
+</tr>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+</table>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="border" valign="top" width="80"></td>
+<td  align="center" valign="top">
+<hr ></hr>
+<p  align="center">
+<img ></img>
+</p>
+<p  align="center">
+<font  color="#0C7594" face="verdana, arial, helvetica" size="1">
+All contents
+<a  href="http://www.theglobalist.com/nor/legal/copyright.shtml">
+copyright
+</a>
+© 1999, 2001 by
+<a  href="http://www.TransAtlanticFutures.com">
+TransAtlantic Futures, Inc.
+</a>
+<br ></br>
+All rights reserved.
+<a  href="http://www.theglobalist.com/nor/legal/terms.shtml">
+Terms of Use
+</a>
+<a  href="http://www.theglobalist.com/nor/legal/privacy.shtml">
+Privacy Statement
+</a>
+</font>
+</p>
+<p ></p>
+</td>
+<td  bgcolor="#0C7594" class="border" valign="top" width="120">
+<p  align="center"></p>
+</td>
+</tr>
+</table>
+</body>
+</html>

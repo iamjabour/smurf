@@ -1,0 +1,352 @@
+<html >
+<head >
+<title >
+Expected Value - The Temperature of a Point on a 2-D Plate
+</title>
+</head>
+<body  bgcolor="#7DD4BD">
+<h1 ></h1>
+<p >
+Expected Value
+</p>
+<h3 >
+<center >
+The Temperature of a Point on a Two Dimensional Plate
+</center>
+</h3>
+<hr ></hr>
+<h5 >
+<blink >
+Note:
+</blink>
+To do this lesson you need to read the
+<!-- Link Tag -->
+<a  href="INSTRUCT.html">
+instructions page
+</a>
+for the necessary materials for the lesson.
+</h5>
+<hr ></hr>
+A problem that arises often in physics and engineering is to find the temperature at any point on a two-dimensional object which is held at a constant temperature at each edge. The following figure illustrates this problem.
+<p ></p>
+<center >
+<!-- Graphic Tag -->
+<img ></img>
+</center>
+<p >
+In the problem we are assuming the object to be a plate with length (L) and width (W). Also, we are assuming we know the temperatures (T1,T2,T3 and T4) of the edges. The goal is to be able to find the temperature of any point (x,y) within the plate.
+</p>
+<p >
+This problem can be solved in many different ways. However, most ways to solve this problem are taught in upper level college math or engineering courses such as differential equations or a finite element class.
+</p>
+<p >
+There is one method that can give us an excellent approximation and incorporates a basic statistical idea. This idea is that of random walks or more generally,
+<b >
+expected value
+</b>
+.
+</p>
+<p >
+First consider this problem. Let the following picture be a street map.
+</p>
+<p ></p>
+<center >
+<!-- Graphic Tag -->
+<img ></img>
+<p ></p>
+</center>
+A person decides to take a walk, starting at point (6,3). This person decides to walk each block randomly therefore he can walk either north, south, east or west. To decide, he tosses
+<b >
+two coins
+</b>
+and uses this rule to tell him which way to walk.
+<p >
+<!-- List Tag -->
+</p>
+<ul >
+<li >
+HH -&gt; (one block north)
+</li>
+<li >
+HT -&gt; (one block east)
+</li>
+<li >
+TH -&gt; (one block west)
+</li>
+<li >
+TT -&gt; (one block south)
+</li>
+</ul>
+Toss your two coins, four times.
+<p >
+<!-- List Tag -->
+</p>
+<ul >
+<li >
+Where does this person end up?
+</li>
+<li >
+At what edge(s) is the person most likely to arrive at?
+</li>
+<li >
+What edge(s) is the person least likely to arrive at?
+</li>
+</ul>
+<p >
+We can do a similar method of finding the temperature of the point problem mentioned earlier. Consider this situation.
+</p>
+<p ></p>
+<center >
+<!-- Graphic Tag -->
+<img ></img>
+</center>
+<p >
+We want to find the temperature at the point (6, 3).
+</p>
+<p >
+This problem can be solved by taking a two dimensional random walk. We will do a random walk starting at the point of interest until one of the edges is reached and consider that to be one trial. Then the walk is repeated at the same initial point. After sufficient trials have been completed, the average of all the temperatures obtained is taken to be an estimate of the temperature at that point.
+</p>
+<p >
+For example, a computer performed the above problem for 50 trials. The results were
+</p>
+<p >
+<!-- Table Tag -->
+</p>
+<table  TABID="09695" genuinetable="yes">
+<tr >
+<th >
+Temperature
+</th>
+<th >
+No. of Walks
+</th>
+<th >
+Total Temp.
+</th>
+<td ></td>
+</tr>
+<tr >
+<td >
+<center >
+3
+</center>
+</td>
+<td >
+<center >
+1
+</center>
+</td>
+<td >
+<center >
+= 3
+</center>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<center >
+30
+</center>
+</td>
+<td >
+<center >
+4
+</center>
+</td>
+<td >
+<center >
+= 120
+</center>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<center >
+40
+</center>
+</td>
+<td >
+<center >
+12
+</center>
+</td>
+<td >
+<center >
+= 480
+</center>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<center >
+15
+</center>
+</td>
+<td >
+<center >
+33
+</center>
+</td>
+<td >
+<center >
+= 495
+</center>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td  nowrap="nowrap">
+<center >
+---------
+</center>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td >
+<center >
+1098
+</center>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<center >
+1098/50 =
+</center>
+</td>
+<td >
+<center >
+21.96
+</center>
+</td>
+<td ></td>
+<td ></td>
+</tr>
+</table>
+<hr ></hr>
+<h2 >
+EXERCISES:
+</h2>
+<p >
+Consider a person located at point (3,2) on this street map.
+</p>
+<p ></p>
+<center >
+<!-- Graphic Tag -->
+<img ></img>
+</center>
+<p >
+Use twenty tosses of two coins to answer the following.
+</p>
+<p >
+<!-- List Tag -->
+</p>
+<ol >
+<li >
+Create a correspondence rule for the coin tosses to determine what direction the person will go.
+</li>
+<li >
+At what point did the person arrive after your trial?
+</li>
+<li >
+How many times would you
+<b >
+expect
+</b>
+each direction to be tossed?
+</li>
+<li >
+Based on your answer to number 3, at what point should the person finish their random walk?
+</li>
+</ol>
+<!-- Horizontal Line Tag -->
+<hr ></hr>
+Use the Resampling Stats program or the 2-D Plate application for the following questions.
+<p >
+Consider this plate.
+</p>
+<p >
+<!-- Graphic Tag -->
+</p>
+<center >
+<img ></img>
+<p ></p>
+</center>
+<!-- List Tag -->
+<ol >
+<li >
+Based on twenty random walks, find the temperature of the plate at point (6,3).
+</li>
+<li >
+Repeat the trials for a total of five times and find the average temperature for this point.
+</li>
+<li >
+Now, increase the random walks to fifty and perform five trials and find the average temperature at that point.
+</li>
+<li >
+Was there a significant difference between the fifty and twenty random walks? If so, which would you consider to be more accurate?
+</li>
+</ol>
+<hr ></hr>
+Use the parameters for this plate to answer the following questions.
+<p >
+<!-- Graphic Tag -->
+</p>
+<center >
+<img ></img>
+<p ></p>
+</center>
+<!-- List Tag -->
+<ol >
+<li >
+Perform thirty random walks, five times and find the average temperature at the point (4,2).
+</li>
+<li >
+Now, do fifty random walks, five times and find the average temperature for this point.
+<p >
+An analytical solution to this problem found a temperature of 17.02 degrees at the point (4,2).
+</p>
+<p ></p>
+</li>
+<li >
+Would either of the above trials be adequate if you needed accuracy within 0.1 of a degree? How about 1 degree?
+</li>
+</ol>
+<hr ></hr>
+<h3 >
+ANY COMMENTS OR QUESTIONS CAN BE MAILED TO
+<!-- MailTo Tag -->
+<a  href="MAILTO:malczews@students.uiuc.edu">
+ED MALCZEWSKI
+</a>
+. THEY ARE GREATLY APPRECIATED.
+</h3>
+<p >
+<!-- Link Tag -->
+<a  href="http://www.uiuc.edu/ph/www/malczews">
+http://www.uiuc.edu/ph/www/malczews
+</a>
+</p>
+<hr ></hr>
+For other math and statistics lessons, check out the
+<!-- Link Tag -->
+<a  href="http://www.mste.uiuc.edu/mathed/queryform.html">
+MSTE Mathematics Lessons Database.
+</a>
+<p ></p>
+<hr ></hr>
+<!-- http://ne43.ne.uiuc.edu/~amunter/counter.html -->
+This page has been accessed
+<img ></img>
+times since 6/28/96.
+</body>
+</html>

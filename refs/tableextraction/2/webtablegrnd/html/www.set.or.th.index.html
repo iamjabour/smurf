@@ -1,0 +1,837 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<title >
+The Stock Exchange of Thailand
+</title>
+</head>
+<!--
+&amp;amp;amp;lt;body text="#FFFFFF" bgcolor="#000000" link="#FF8000" vlink="#FF8000" onload="startclock()"&amp;amp;amp;gt;
+-->
+<body  bgcolor="#000000" link="#FF8000" text="#FFFFFF" vlink="#FF8000">
+<script >
+<!-- Begin hiding
+
+var timerID = null
+var timerRunning = false
+
+function stopclock(){
+    if(timerRunning) {
+                clearTimeout(timerID)
+        timerRunning = false
+        }       
+}
+
+function startclock(){
+     // Make sure the clock is stopped
+    stopclock()
+    showtime()
+}
+
+function showtime(){
+var now = new Date()
+var date = now.getDate()
+var month = now.getMonth()
+var year = now.getYear() + 1900
+var hours = now.getHours()
+var minutes = now.getMinutes()
+var seconds = now.getSeconds()
+
+var y2k = new Date(1999,12,01,0,00,00)
+var y2k_date = y2k.getDate()
+var y2k_month = y2k.getMonth()
+var y2k_year = y2k.getYear()
+var y2k_hours = y2k.getHours()
+var y2k_minutes = y2k.getMinutes()
+var y2k_seconds = y2k.getSeconds()
+
+var y2k_time = "" + ((y2k_date &amp;amp;amp;lt; 10) ? "0" + y2k_date : y2k_date)
+        y2k_time += ((y2k_month &amp;amp;amp;lt; 10) ? "/0" : "/") + (y2k_month+1)
+        y2k_time += "/" + y2k_year
+        y2k_time += "; " + y2k_hours
+        y2k_time  += ((y2k_minutes &amp;amp;amp;lt; 10) ? ":0" : ":") + y2k_minutes
+        y2k_time  += ((y2k_seconds &amp;amp;amp;lt; 10) ? ":0" : ":") + y2k_seconds
+
+var countDown = (y2k_hours + 23) - hours + ":"
+        countDownMin = (y2k_minutes + 59) - minutes 
+        countDown += ((countDownMin &amp;amp;amp;lt; 10) ? "0" : "") + countDownMin
+        countDownSec = (y2k_seconds + 60) - seconds
+        countDownSecs = ((countDownSec == 60) ? "0" : countDownSec)
+        countDown += ((countDownSecs &amp;amp;amp;lt; 10) ? ":0" : ":") + countDownSecs
+
+var result = y2k - now          // Show result in msec.
+        days_sec = result / 1000
+        days_min = days_sec / 60
+        days_hour = days_min / 60
+        days = days_hour / 24
+        document.clock.face3.value = "  " + parseInt(days) + " Days" + " ; " + countDown
+
+        timerID = setTimeout("showtime()",1000)
+        timerRunning = true
+}
+
+// end hide -->
+</script>
+<table  TABID="11687" border="0" width="100%">
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  align="left">
+<img ></img>
+</td>
+</tr>
+</table>
+<br ></br>
+<br ></br>
+<table  TABID="11690" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td ></td>
+<td  align="right" valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<img ></img>
+<table  TABID="11689" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="center" valign="top">
+<br ></br>
+<img ></img>
+<!--SET INDEX-->
+<table  TABID="11688" border="0" genuinetable="yes" width="100%">
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  face="Verdana">
+Date
+</font>
+</td>
+<td >
+<font  face="Verdana">
+:
+</font>
+</td>
+<td >
+<font  face="Verdana">
+16 May 2001
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="Verdana">
+Time
+</font>
+</td>
+<td >
+<font  face="Verdana">
+:
+</font>
+</td>
+<td >
+<font  face="Verdana">
+17:01:02
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  face="Verdana">
+SET Index
+</font>
+</td>
+<td >
+<font  face="Verdana">
+:
+</font>
+</td>
+<td >
+<font  face="Verdana">
+300.25
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="Verdana">
+Change
+</font>
+</td>
+<td >
+<font  face="Verdana">
+:
+</font>
+</td>
+<td >
+<font  face="Verdana">
+-7.22
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  face="Verdana">
+Volume (1,000 shares)
+</font>
+</td>
+<td >
+<font  face="Verdana">
+:
+</font>
+</td>
+<td >
+<font  face="Verdana">
+360079
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="Verdana">
+Value (million baht)
+</font>
+</td>
+<td >
+<font  face="Verdana">
+:
+</font>
+</td>
+<td >
+<font  face="Verdana">
+3810.62
+</font>
+</td>
+</tr>
+</table>
+<!-- END SET INDEX -->
+<br ></br>
+<br ></br>
+<br ></br>
+</td>
+<td  align="center" valign="top">
+<br ></br>
+<!--webbot bot="ImageMap" startspan rectangle="(123,18) (247,37) aboutset.htm"
+        rectangle="(99,54) (247,73) newsdesk.htm" rectangle="(76,89) (247,110) marketinfo.htm"
+        rectangle="(71,125) (246,146) prodserv.htm" rectangle="(132,161) (245,181) sitemap.htm"
+        rectangle="(95,197) (246,218) finlink.htm" rectangle="(156,233) (246,254) faq.htm"
+        rectangle="(139,269) (246,290) contact.htm" rectangle="(134,305) (247,326) glossary.htm"
+        src="menu1.gif" border="0" width="255" height="352" -->
+<map  name="FrontPageMap0">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<img ></img>
+<!--webbot bot="ImageMap"
+        i-checksum="11" endspan -->
+<center >
+<p >
+<font  face="Verdana">
+<font  size="-1">
+Visitor(s) :
+</font>
+</font>
+<img ></img>
+<br ></br>
+<font  face="Verdana">
+<font  size="-1">
+since Mar 5, 1996
+</font>
+</font>
+</p>
+<p >
+<!--&amp;amp;amp;lt;img src="feani.gif"&amp;amp;amp;gt;-->
+</p>
+<p ></p>
+</center>
+</td>
+</tr>
+<tr >
+<!--
+&amp;amp;amp;lt;td ALIGN=RIGHT&amp;amp;amp;gt;&amp;amp;amp;lt;img SRC="vision.gif" BORDER=0 height=57 width=425 align=LEFT&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt;
+-->
+</tr>
+</table>
+</td>
+<td ></td>
+</tr>
+</table>
+<hr ></hr>
+<table  TABID="11691" border="0" width="100%">
+<tr >
+<td  align="center" valign="top">
+<strong >
+<small >
+<small >
+<font  face="Verdana">
+<u >
+SHORTCUTS
+</u>
+</font>
+</small>
+</small>
+</strong>
+</td>
+<td ></td>
+<td  align="center" valign="top">
+<font  face="Verdana">
+<strong >
+<u >
+<small >
+<small >
+QUICK LAUNCH
+</small>
+</small>
+</u>
+</strong>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<p  align="center">
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/cgi-bin/hsimspro.ksh?FUNC=1100">
+Profiles
+</a>
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/cgi-bin/hsimstrade.ksh?FUNC=1200">
+Trading
+</a>
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/cgi-bin/hsimshi.ksh?FUNC=1300">
+Highlights
+</a>
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/cgi-bin/hsimsfin.ksh?FUNC=1400">
+Fin. Statement
+</a>
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/cgi-bin/hsimsdir.ksh?FUNC=1500">
+Directors
+</a>
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/cgi-bin/hsimsnews.ksh?FUNC=1600">
+News
+</a>
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/cgi-bin/hsimscom.ksh?FUNC=1000&COMPANY=A">
+Search Companies
+</a>
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/quo.htm">
+Quotation
+</a>
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/cgi-bin/rtindex.ksh?FUNC=2100">
+Total Market
+</a>
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/cgi-bin/rtindex.ksh?FUNC=2200">
+Sectoral Indices
+</a>
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/cgi-bin/hsimsnews.ksh?FUNC=1700">
+Today News
+</a>
+|
+</font>
+<font  face="MS" sans="#DEFAULT" serif="#DEFAULT">
+<a  href="http://www.set.or.th/calendar.htm">
+Calendar
+</a>
+|
+</font>
+</p>
+<p  align="center">
+<a  href="http://www.set.or.th/nvdr">
+<img ></img>
+</a>
+</p>
+<p  align="center">
+<a  href="http://www.settrade.com">
+<img ></img>
+</a>
+</p>
+<p  align="center">
+<a  href="mai_listing.htm">
+<img ></img>
+</a>
+</p>
+<!--
+    &amp;amp;amp;lt;p align="center"&amp;amp;amp;gt;&amp;amp;amp;lt;a href="http://www.set.or.th/download.html"&amp;amp;amp;gt;&amp;amp;amp;lt;img src="banner.gif" BORDER = 0 width="300" height="60" alt="banner.gif"&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;
+    &amp;amp;amp;lt;p align="center"&amp;amp;amp;gt;&amp;amp;amp;lt;a href="http://www.set.or.th/event.htm"&amp;amp;amp;gt;&amp;amp;amp;lt;img src="seminar.gif" BORDER = 0 width = "150" height="30" alt seminar.gif"&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;
+-->
+</td>
+<td  bgcolor="#c0c0c0" width="1"></td>
+<td  width="50%">
+<blockquote >
+<p >
+<font  face="Verdana">
+-
+</font>
+<font  face="Verdana">
+<a  href="http://www.set.or.th/SETDAILY_ANNOUNCEMENT.htm">
+SET Daily Page
+</a>
+</font>
+<font  face="Verdana">
+<br ></br>
+-
+<font  face="Verdana">
+<img ></img>
+LISTED COMPANY INFO 2000 (Q3-Q4) CD-ROM (The Latest Volume)
+<a  href="http://www.set.or.th/cd2000.htm">
+Click here to get our special offers
+</a>
+</font>
+<br ></br>
+<font  face="Verdana">
+-
+<a  href="job.htm">
+Job Opportunities
+</a>
+</font>
+<br ></br>
+<font  face="Verdana">
+-
+<a  href="http://www.set.or.th/prs">
+Download
+</a>
+PRS Source Code
+<br ></br>
+-
+<a  href="himar.zip">
+Download Free!
+</a>
+SET Statistical Highlights (as of Mar. 2001)
+</font>
+<br ></br>
+<font  face="Verdana">
+<a  href="tsi/executive.html">
+Seminar on Executive Development Program
+</a>
+</font>
+<br ></br>
+<font  face="Verdana">
+-
+<a  href="http://www.set.or.th/download.html">
+SET Annual Report (1999)
+</a>
+<br ></br>
+<font  face="Verdana">
+-
+<a  href="http://www.set.or.th/tsi/calendar/march.html">
+Free Seminar
+</a>
+<br ></br>
+<font  face="Verdana">
+Update SET Telephone no.
+<a  href="tel_eng.htm">
+English Version /
+</a>
+<a  href="tel_thai.htm">
+Thai Version
+</a>
+</font>
+<br ></br>
+<p  align="center">
+<a  href="http://www.set.or.th/new_list.htm">
+<img ></img>
+</a>
+</p>
+</font>
+</font>
+</font>
+</p>
+</blockquote>
+</td>
+</tr>
+</table>
+<hr ></hr>
+<table  TABID="11692" border="0" cellspacing="4" width="761">
+<tr >
+<td  valign="top" width="15">
+<strong >
+<font  face="Verdana">
+<img ></img>
+</font>
+</strong>
+</td>
+<td  valign="top" width="152">
+<strong >
+<font  face="Verdana">
+<b >
+<font  color="#FFFFFF">
+<a  href="http://www.settrade.com">
+www.settrade.com
+</a>
+</font>
+</b>
+</font>
+</strong>
+</td>
+<td  valign="top" width="15">
+<strong >
+<font  face="Verdana">
+<img ></img>
+</font>
+</strong>
+</td>
+<td  width="563">
+<font  color="#FFFFFF" face="Verdana">
+<strong >
+Online Trading
+</strong>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="15">
+<strong >
+<font  face="Verdana">
+<img ></img>
+</font>
+</strong>
+</td>
+<td  valign="top" width="152">
+<strong >
+<font  face="Verdana">
+<a  href="http://www.set.or.th/mai">
+www.set.or.th/mai
+</a>
+</font>
+</strong>
+</td>
+<td  valign="top" width="15">
+<strong >
+<font  face="Verdana">
+<img ></img>
+</font>
+</strong>
+</td>
+<td  width="563">
+<p  align="left">
+<font  face="Verdana">
+<strong >
+Launch of New Market :
+</strong>
+<font  color="#FFFF00">
+<strong >
+<em >
+MAI - The Market for Alternative Investment
+</em>
+</strong>
+</font>
+New Funding Venue of SMEs
+<br ></br>
+<a  href="pr-01.htm">
+Details
+</a>
+or visit web site
+<strong >
+http://www.set.or.th/mai
+</strong>
+(in Thai Version)
+<br ></br>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="15">
+<strong >
+<font  face="Verdana">
+<img ></img>
+</font>
+</strong>
+</td>
+<td  valign="top" width="152">
+<strong >
+<font  face="Verdana">
+<a  href="http://www.set.or.th/tsd">
+www.set.or.th/tsd
+</a>
+</font>
+</strong>
+</td>
+<td  valign="top" width="15">
+<strong >
+<font  face="Verdana">
+<img ></img>
+</font>
+</strong>
+</td>
+<td  width="563">
+<p  align="left">
+<font  face="Verdana">
+<strong >
+<font  color="#0080FF">
+Visit TSD :
+</font>
+<font  color="#FFFF00">
+TSD - Thailand Securities Depository Co., Ltd.
+</font>
+</strong>
+<br ></br>
+<font  color="#FFFFFF">
+Thailand's securities
+<br ></br>
+Clearing house, depository and registrar
+</font>
+<br ></br>
+(in English Version)
+</font>
+</p>
+</td>
+</tr>
+<tr  valign="top" width="15">
+<td >
+<strong >
+<font  face="Verdana">
+<img ></img>
+</font>
+</strong>
+</td>
+<td  valign="top" width="152">
+<strong >
+<font  face="Verdana">
+<a  href="http://www.set.or.th/tsi">
+www.set.or.th/tsi
+</a>
+</font>
+</strong>
+</td>
+<td  valign="top" width="15">
+<strong >
+<font  face="Verdana">
+<img ></img>
+</font>
+</strong>
+</td>
+<td  width="563">
+<font  color="#0080FF" face="Verdana">
+<strong >
+TSI : Thailand Securities Institute
+</strong>
+<br ></br>
+<a  href="http://www.set.or.th/tsi/set-jat">
+SET-JAT : SET Junior Acheivement Thailand
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="15">
+<strong >
+<font  face="Verdana">
+<img ></img>
+</font>
+</strong>
+</td>
+<td  valign="top" width="152">
+<strong >
+<font  face="Verdana">
+<b >
+<font  color="#FFFFFF">
+<a  href="http://www.amaret.com">
+www.amaret.com
+</a>
+</font>
+</b>
+</font>
+</strong>
+</td>
+<td  valign="top" width="15">
+<strong >
+<font  face="Verdana">
+<img ></img>
+</font>
+</strong>
+</td>
+<td  width="563">
+<font  color="#FFFFFF" face="Verdana">
+Speeches given on different occasions by khun Amaret Sila-on are now posted in www.amaret.com
+</font>
+</td>
+</tr>
+</table>
+<hr ></hr>
+<br ></br>
+<table  TABID="11695" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td ></td>
+<td  align="center">
+<p  align="center">
+<font  face="Verdana">
+<font  size="1">
+<font  color="#FF0000">
+<i >
+Disclaimer:
+</i>
+</font>
+</font>
+<small >
+<small >
+<small >
+All data contained in these pages are provided by The Stock Exchange of Thailand. The Stock Exchange of Thailand bears no responsibility for any inaccuracies. Reselling any of the data without permission of The Stock Exchange of Thailand is not allowed.
+</small>
+</small>
+</small>
+</font>
+</p>
+<div  align="center">
+<center >
+<table  TABID="11693" border="3" cellpadding="0" cellspacing="0">
+<tr >
+<td  align="center" bgcolor="#FFFFC8" width="50%">
+<b >
+<font  face="Verdana">
+The Stock Exchange of Thailand (SET)
+</font>
+</b>
+<p >
+<font  face="Verdana">
+The Stock Exchange of Thailand Building
+</font>
+<br ></br>
+<font  face="Verdana">
+62 Ratchadapisek Road, Klongtoey,
+</font>
+<br ></br>
+<font  face="Verdana">
+Bangkok 10110 THAILAND
+</font>
+<br ></br>
+<font  face="Verdana">
+Tel. (662) 229-2000 or 654-5656 Fax.654-5649
+</font>
+</p>
+</td>
+<td  align="center" bgcolor="#FFFFC8" valign="top" width="50%">
+<font  face="Verdana">
+<b >
+<a  href="http://www.set.or.th/tsd">
+The Thailand Securities Depository Co.,Ltd. (TSD)
+</a>
+</b>
+</font>
+<br ></br>
+<font  face="Verdana">
+4th, 6-7th Floor The Stock Exchange of Thailand Building
+</font>
+<br ></br>
+<font  face="Verdana">
+62 Ratchadapisek Road, Klongtoey,
+</font>
+<br ></br>
+<font  face="Verdana">
+Bangkok 10110 THAILAND
+</font>
+<br ></br>
+<font  face="Verdana">
+Tel. (662) 359-1200-01
+</font>
+<br ></br>
+<font  face="Verdana">
+Fax (662) 359-1259
+</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<p  align="center"></p>
+<div  align="center">
+<center >
+<table  TABID="11694" border="0">
+<tr >
+<td >
+<font  face="Verdana">
+Our Internet Hosts are the courtesy of
+</font>
+<font  face="Verdana">
+<a  href="http://www.ibm.com">
+IBM
+</a>
+(Thailand)
+</font>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<font  face="Verdana">
+and
+</font>
+<font  face="Verdana">
+<a  href="http://www.hp.com">
+HP
+</a>
+(Thailand)
+</font>
+</td>
+<td  align="center">
+<img ></img>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<p  align="center">
+<font  face="Verdana">
+Copyright © 1998 by The Stock Exchange of Thailand
+</font>
+</p>
+</td>
+<td ></td>
+</tr>
+</table>
+</body>
+</html>

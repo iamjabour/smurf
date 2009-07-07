@@ -1,0 +1,282 @@
+<html >
+<head >
+<title >
+Wadler: Call-by-need and call-by-value
+</title>
+<!-- Changed by: Philip Wadler,  7-May-1996 -->
+</head>
+<body >
+<h1 >
+Call-by-need and call-by-value
+</h1>
+<h2 >
+Philip Wadler
+</h2>
+<hr ></hr>
+<a  name="need-journal">
+<h3 >
+A call-by-need lambda calculus
+</h3>
+</a>
+<a >
+John Maraist, Martin Odersky, and Philip Wadler.
+<em >
+Journal of Functional Programming
+</em>
+8(3):275-317 (May 1998). (There is also a
+</a>
+<a >
+conference version
+</a>
+.)
+<p >
+We present a calculus that captures the operational semantics of call-by-need. The call-by-need lambda calculus is confluent, has a notion of standard reduction, and entails the same observational equivalence relation as the call-by-name calculus. The system can be formulated with or without explicit
+<tt >
+let
+</tt>
+bindings, admits useful notions of marking and developments, and has a straightforward operational interpretation.
+</p>
+<p ></p>
+<h4 >
+Available in:
+<a  href="../papers/need-journal/need-journal.dvi">
+dvi
+</a>
+,
+<a  href="../papers/need-journal/need-journal.ps">
+ps
+</a>
+,
+<a  href="../papers/need-journal/need-journal.dvi.gz">
+dvi.gz
+</a>
+,
+<a  href="../papers/need-journal/need-journal.ps.gz">
+ps.gz
+</a>
+.
+</h4>
+<hr ></hr>
+<a  name="reflection-journal">
+<h3 >
+A reflection on call-by-value
+</h3>
+</a>
+Amr Sabry and Philip Wadler.
+<em >
+ACM Transactions on Programming Langaguage
+</em>
+, 19(6):916-941, November 1997. (There is also a
+<a  href="../topics/call-by-need.html#reflection">
+conference version
+</a>
+.)
+<p >
+One way to model a sound and complete translation from a source into a target calculus is with an
+<em >
+adjoint
+</em>
+or a
+<em >
+Galois connection
+</em>
+. In the special case of a
+<em >
+reflection
+</em>
+, one also has that the target calculus is isomorphic to a subset of the source. We show that three widely-studied translations form reflections. We use as our source language Moggi's computational lambda calculus
+<em >
+lambda-c
+</em>
+, which is an extension of Plotkin's call-by-value calculus
+<em >
+lambda-v
+</em>
+. We show that Plotkin's CPS translation, Moggi's monad translation, and Girard's translation to linear logic can all be regarded as reflections from this source language, and we put forward
+<em >
+lambda-c
+</em>
+as a model of call-by-value computation that improves on
+<em >
+lambda-v
+</em>
+. Our work strengthens Plotkin's and Moggi's original results, and improves on recent work based on
+<em >
+equational correspondence
+</em>
+, which uses equations rather than reductions.
+</p>
+<p ></p>
+<h4 >
+Available in:
+<a  href="../papers/reflection-journal/reflection-journal.ps">
+ps
+</a>
+,
+<a  href="../papers/reflection-journal/reflection-journal.ps.gz">
+ps.gz
+</a>
+.
+</h4>
+<hr ></hr>
+<a  name="lazyvsstrict">
+<h3 >
+Lazy
+<em >
+vs.
+</em>
+strict
+</h3>
+</a>
+Philip Wadler.
+<em >
+ACM Computing Surveys
+</em>
+, June 1996.
+<p >
+Lazy, or call-by-need, languages schedule work dynamically by building closures, and shun side effects; strict, or call-by-value languages avoid the overhead of closures and may exploit side effects. Each style has complementary advantages and complimentary adherents.
+</p>
+<p >
+The gap between the lazy and strict camps has two dimensions, which we shall name
+<em >
+style
+</em>
+and
+<em >
+models
+</em>
+. Recent developments suggest that along both dimensions the gap is shrinking. We list some commercial applications of each kind of language, and examine each dimension of difference in turn.
+</p>
+<p ></p>
+<h4 >
+Available in:
+<a  href="../papers/lazyvsstrict/lazyvsstrict.dvi">
+dvi
+</a>
+,
+<a  href="../papers/lazyvsstrict/lazyvsstrict.ps">
+ps
+</a>
+,
+<a  href="../papers/lazyvsstrict/lazyvsstrict.dvi.gz">
+dvi.gz
+</a>
+,
+<a  href="../papers/lazyvsstrict/lazyvsstrict.ps.gz">
+ps.gz
+</a>
+.
+</h4>
+<hr ></hr>
+<a  name="reflection">
+<h3 >
+A reflection on call-by-value
+</h3>
+</a>
+Amr Sabry and Philip Wadler.
+<em >
+International Conference on Functional Programming
+</em>
+, ACM Press, Philadelphia, May 1996. (There is also a
+<a  href="../topics/call-by-need.html#reflection-journal">
+journal version
+</a>
+.)
+<p >
+A number of compilers exploit the following strategy: translate a term to continuation-passing style (CPS) and optimise the resulting term. Recent work suggests that an alternative strategy is superior: optimise directly in an extended source calculus. We suggest that the appropriate relation between the source and target calculus may be captured by a special case of a
+<em >
+Galois connection
+</em>
+known as a
+<em >
+reflection
+</em>
+. Previous work has focussed on the weaker notion of an
+<em >
+equational correspondence
+</em>
+, which is based on equality rather than reduction. We show that Moggi's monad translation and that Plotkin's CPS translation can both be regarded as reflections, and thereby strengthen a number of results in the literature.
+</p>
+<p ></p>
+<h4 >
+Available in:
+<a  href="../papers/reflection/reflection.ps">
+ps
+</a>
+,
+<a  href="../papers/reflection/reflection.ps.gz">
+ps.gz
+</a>
+.
+</h4>
+<hr ></hr>
+<a  name="need">
+<h3 >
+A call-by-need lambda calculus
+</h3>
+</a>
+<a >
+Zena Ariola, Matthias Felleisen, John Maraist, Martin Odersky, and Philip Wadler.
+<em >
+22'nd Symposium on Principles of Programming Languages
+</em>
+, ACM Press, San Francisco, California, January 1995. (There is also a
+</a>
+<a >
+journal version
+</a>
+.)
+<p >
+The mismatch between the operational semantics of the lambda calculus and the actual behavior of implementations is a major obstacle for compiler writers. They cannot explain the behavior of their evaluator in terms of source level syntax, and they cannot easily compare distinct implementations of different lazy strategies. In this paper we derive an equational characterization of call-by-need and prove it correct with respect to the original lambda calculus. The theory is a strictly smaller theory than the lambda calculus. Immediate applications of the theory concern the correctness proofs of a number of implementation strategies,
+<em >
+e.g.
+</em>
+, the call-by-need continuation passing transformation and the realization of sharing via assignments.
+</p>
+<h4 >
+Available in:
+<a  href="../papers/need/need.ps">
+ps
+</a>
+,
+<a  href="../papers/need/need.ps.gz">
+ps.gz
+</a>
+</h4>
+.
+<hr ></hr>
+<h2 >
+See also
+</h2>
+<ul >
+<li >
+<a  href="linear-logic.html#linearmonad">
+Linear logic, monads, and the lambda calculus
+</a>
+. Nick Benton, Philip Wadler.
+<em >
+11'th IEEE Symposium on Logic in Computer Science
+</em>
+, New Brunswick, New Jersey, July 1996.
+</li>
+<li >
+<a  href="linear-logic.html#linearcall">
+Call-by-name, call-by-value, call-by-need, and the linear lambda calculus
+</a>
+. John Maraist, Martin Odersky, David Turner, and Philip Wadler.
+<em >
+11'th International Conference on the Mathematical Foundations of Programming Semantics
+</em>
+, New Orleans, Lousiana, April 1995.
+</li>
+</ul>
+<hr ></hr>
+<p ></p>
+<address >
+<a  href="http://cm.bell-labs.com/cm/cs/who/wadler/">
+Philip Wadler
+</a>
+, wadler@research.bell-labs.com
+</address>
+</body>
+</html>

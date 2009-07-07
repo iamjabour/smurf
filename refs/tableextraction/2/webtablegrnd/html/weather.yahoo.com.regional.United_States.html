@@ -1,0 +1,938 @@
+<html >
+<head >
+<script >
+var remote = null; function rs(n,u,w,h) { remote = window.open(u, n, 'width=' + w + ',height=' + h +',resizable=yes,scrollbars=no'); if (remote != null) { if (remote.opener == null) remote.opener = self; window.name = 'yahooWeatherRoot'; remote.location.href = u;}}
+</script>
+<title >
+Yahoo! Weather - United States
+</title>
+</head>
+<body  bgcolor="#ffffff">
+<!--code: regional-->
+<center >
+<!--MASTHEAD -->
+<table  TABID="06125" border="0" cellpadding="2" cellspacing="0" width="750">
+<tr >
+<td  valign="middle" width="290">
+<a  href="http://weather.yahoo.com">
+<img ></img>
+</a>
+</td>
+<td  valign="bottom" width="318">
+<table  TABID="06124" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="right">
+<font  face="arial,helvetica" size="-1">
+<a  href="http://www.yahoo.com">
+Yahoo!
+</a>
+-
+<a  href="http://my.yahoo.com">
+My Yahoo!
+</a>
+-
+<a  href="http://help.yahoo.com/help/weather">
+Help
+</a>
+</font>
+</td>
+</tr>
+</table>
+<hr ></hr>
+</td>
+<td  align="right" valign="bottom" width="142">
+<a  href="http://us.weathernews.com/sales/">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!-- ENDMASTHEAD -->
+<p ></p>
+<table  TABID="06126" border="0" cellpadding="2" cellspacing="0" width="750">
+<tr >
+<td  valign="middle">
+<!--#exec cmd="/home/wni/docs/cgi/advert_static ad-location:NW"-->
+<!-- SpaceID=0 robot -->
+</td>
+<td  align="center">
+<!--#exec cmd="/home/wni/docs/cgi/advert_static"-->
+<!-- SpaceID=0 robot -->
+</td>
+</tr>
+</table>
+<p >
+<!-- HEADER -->
+</p>
+<table  TABID="06127" bgcolor="dcdcdc" border="0" cellpadding="2" cellspacing="0" width="750">
+<tr >
+<td  align="left">
+<font  face="arial">
+<b >
+Hello,
+<!--#print_user -->
+Guest
+</b>
+</font>
+</td>
+<td  align="right">
+<font  face="Arial" size="-1">
+<!--#user_links cmd="yw,http://weather.yahoo.com/"-->
+<a  href="http://edit.yahoo.com/config/login?.src=yw&.done=http://weather.yahoo.com/">
+Sign In
+</a>
+</font>
+</td>
+</tr>
+</table>
+<table  TABID="06129" border="0" cellpadding="3" cellspacing="0" width="750">
+<tr >
+<td  bgcolor="#9999cc" valign="top">
+<font  face="arial" size="+1">
+<b >
+Yahoo! Weather
+</b>
+</font>
+</td>
+<td  align="right" bgcolor="#9999cc" valign="middle">
+<table  TABID="06128" border="0" cellpadding="3" cellspacing="0">
+<tr  bgcolor="#ccccff">
+<td  align="center" valign="middle">
+<font  face="arial" size="-1">
+<a  href="http://weather.yahoo.com/">
+Weather Home
+</a>
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- ENDHEADER -->
+<!--BROWSE: ADD BREADCRUMBS-->
+<table  TABID="06130" border="0" cellpadding="3" cellspacing="0" width="750">
+<tr  valign="middle">
+<td  width="100%">
+<font  face="Arial" size="2">
+<b >
+<a  href="http://weather.yahoo.com/">
+Weather
+</a>
+&gt; United States
+</b>
+</font>
+</td>
+</tr>
+</table>
+<!--ENDBREADCRUMBS-->
+<!--MAIN TABLE-->
+<table  TABID="06144" border="0" cellpadding="3" cellspacing="0" width="750">
+<tr >
+<td  colspan="2" height="5" valign="top"></td>
+</tr>
+<tr  valign="top">
+<!--LEFT COLUMN-->
+<td  bgcolor="eeeeee" valign="top" width="180">
+<!--BROWSE: ADD MAP-->
+<table  TABID="06131" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr  bgcolor="#ccccff">
+<td >
+<font  face="arial">
+<b >
+Maps
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://weather.yahoo.com/graphics/satellite/US.html">
+<img ></img>
+<br ></br>
+<font  size="2">
+U.S. Satellite
+</font>
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="arial" size="-1">
+<a  href="http://weather.yahoo.com/mapindex.html">
+<b >
+More Maps...
+</b>
+</a>
+</font>
+</td>
+</tr>
+</table>
+<!--ENDMAP-->
+<br ></br>
+<!--VIDEO-->
+<table  TABID="06133" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr  bgcolor="#ccccff">
+<td >
+<font  face="arial">
+<b >
+Weather Video
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<table  TABID="06132" border="0" cellpadding="2" cellspacing="0" width="100%">
+<!--#include2 virtual="/breakingfront/index.html" -->
+<tr >
+<td  valign="top" width="1%">
+<img ></img>
+</td>
+<td  width="99%">
+<font  face="arial" size="2">
+<a  href="javascript:rs(" http="http" yahooweatherplayer="#DEFAULT"></a>
+mediaframe.yahoo.com/launch?&amp;p=weather&amp;l=SAM&amp;a=15&amp;lid=wmv-56-p.860846,wmv-100-p.860847,wmv-300-p.860848&amp;f=37144581&amp;.wc=generic2.html&amp;.title=Breaking%20Weather%20Video%20-&amp;d=5",670,425);"&gt; The Worst Weather for Thursday - (5/24/01 7:39 PM)
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="1%">
+<img ></img>
+</td>
+<td  width="99%">
+<font  face="arial" size="2">
+<a  href="javascript:rs(" http="http" yahooweatherplayer="#DEFAULT"></a>
+mediaframe.yahoo.com/launch?&amp;p=weather&amp;l=SAM&amp;a=15&amp;lid=wmv-56-p.860843,wmv-100-p.860844,wmv-300-p.860845&amp;f=37144581&amp;.wc=generic2.html&amp;.title=Breaking%20Weather%20Video%20-&amp;d=5",670,425);"&gt; Severe Weather Outlook for Thursday - (5/24/01 4:09 PM)
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="1%">
+<img ></img>
+</td>
+<td  width="99%">
+<font  face="arial" size="2">
+<a  href="javascript:rs(" http="http" yahooweatherplayer="#DEFAULT"></a>
+mediaframe.yahoo.com/launch?&amp;p=weather&amp;l=SAM&amp;a=15&amp;lid=wmv-56-p.763119,wmv-100-p.763118,wmv-300-p.763117&amp;f=37144581&amp;.wc=generic2.html&amp;.title=U.S.%2024%20Hour&amp;d=5",670,425);"&gt; U.S. 24 Hour Forecast
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="1%">
+<img ></img>
+</td>
+<td  width="99%">
+<font  face="arial" size="2">
+<a  href="javascript:rs(" http="http" yahooweatherplayer="#DEFAULT"></a>
+mediaframe.yahoo.com/launch?&amp;p=weather&amp;l=SAM&amp;a=15&amp;lid=wmv-56-p.847572,wmv-100-p.847571,wmv-300-p.847570&amp;f=37144581&amp;.wc=generic2.html&amp;.title=World&amp;d=5",670,425);"&gt; World Forecast
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="1%">
+<img ></img>
+</td>
+<td  width="99%">
+<font  face="arial" size="2">
+<a  href="javascript:rs(" http="http" yahooweatherplayer="#DEFAULT"></a>
+mediaframe.yahoo.com/launch?&amp;p=weather&amp;l=SAM&amp;a=15&amp;lid=wmv-56-p.763082,wmv-100-p.763081,wmv-300-p.763080&amp;f=37144581&amp;.wc=generic2.html&amp;.title=Sports&amp;d=5",670,425);"&gt; Sports Forecast
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="1%">
+<img ></img>
+</td>
+<td  width="99%">
+<font  face="arial" size="2">
+<a  href="javascript:rs(" http="http" yahooweatherplayer="#DEFAULT"></a>
+mediaframe.yahoo.com/launch?&amp;p=weather&amp;l=SAM&amp;a=15&amp;lid=wmv-56-p.762849,wmv-100-p.762848,wmv-300-p.762847&amp;f=37144581&amp;.wc=generic2.html&amp;.title=PointCounterpoint&amp;d=5",670,425);"&gt; Point/Counterpoint
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right" colspan="2">
+<b >
+<font  face="arial" size="-1">
+<a  href="http://weather.yahoo.com/streams/index.html">
+More Video...
+</a>
+</font>
+</b>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--ENDVIDEO-->
+<br ></br>
+<!--#ymod cmd="weather#moduleweather"-->
+<table  TABID="06135" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="center">
+<table  TABID="06134" genuinetable="yes" bgcolor="#eeeeee" border="0" cellpadding="4" cellspacing="0" class="narrow" width="100%">
+<tr  bgcolor="#ccccff">
+<td  colspan="3" width="100%">
+<a  href="http://edit.yahoo.com/config/login?partner=&.intl=us&.src=my&set_wni?.src=yw&.page=p1&.done=http://weather.yahoo.com/">
+<img ></img>
+</a>
+<b >
+<img ></img>
+<font  face="arial,helvetica">
+Weather
+<font ></font>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="http://weather.yahoo.com/forecast/New_York_NY_US_f.html">
+<small >
+New York, NY
+</small>
+</a>
+</td>
+<td  align="right">
+<small >
+55...63 F
+</small>
+</td>
+<td  align="right">
+<small >
+<img ></img>
+</small>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="http://weather.yahoo.com/forecast/London_UK_f.html">
+<small >
+London, UK
+</small>
+</a>
+</td>
+<td  align="right">
+<small >
+50...70 F
+</small>
+</td>
+<td  align="right">
+<small >
+<img ></img>
+</small>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="http://weather.yahoo.com/forecast/San_Francisco_CA_US_f.html">
+<small >
+San Francisco, CA
+</small>
+</a>
+</td>
+<td  align="right">
+<small >
+52...68 F
+</small>
+</td>
+<td  align="right">
+<small >
+<img ></img>
+</small>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table  TABID="06136" width="100%">
+<tr >
+<td  align="right">
+<font  face="arial" size="-1">
+<a  href="http://rd.yahoo.com/addtomy/*http://my.yahoo.com/promo/weather.html">
+<img ></img>
+Add to My Yahoo!
+</a>
+</font>
+</td>
+</tr>
+</table>
+<br ></br>
+<!--INSIDE-->
+<table  TABID="06137" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#ccccff" valign="middle">
+<font  face="arial">
+<b >
+Inside Weather
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="Arial,Helvetica" size="2">
+<a  href="http://weather.yahoo.com/mapindex.html">
+<b >
+Maps and Images
+</b>
+</a>
+<br ></br>
+<a  href="http://weather.yahoo.com/mapindex.html">
+U.S. National
+</a>
+,
+<a  href="http://weather.yahoo.com/mapsuslocal.html">
+U.S. Local
+</a>
+,
+<a  href="http://weather.yahoo.com/mapsworld.html">
+World
+</a>
+,
+<a  href="http://weather.yahoo.com/moon.html">
+Moon Phases
+</a>
+<p >
+<a  href="http://weather.yahoo.com/Storm_Center.html">
+<b >
+Storm Center
+</b>
+</a>
+</p>
+<p >
+<a  href="http://weather.yahoo.com/almanacbrowse/">
+<b >
+Records &amp; Averages
+</b>
+</a>
+<br ></br>
+</p>
+<p >
+<a  href="http://dailynews.yahoo.com/headlines/weather/">
+<b >
+Weather News
+</b>
+</a>
+</p>
+</font>
+</td>
+</tr>
+</table>
+<!--ENDINSIDE-->
+<br ></br>
+<!--RESOURCES-->
+<table  TABID="06138" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#ccccff" valign="middle">
+<font  face="arial">
+<b >
+Yahoo! Resources
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="Arial,Helvetica" size="2">
+<a  href="http://alerts.yahoo.com/config/edit_notification?.t=w&.mcb=&.done=http%3a//mobile.yahoo.com/wireless/alert%3f.mcb=">
+Mobile Weather Alerts
+</a>
+<br ></br>
+<a  href="http://sports.yahoo.com/snow/">
+Ski Report
+</a>
+<br ></br>
+<a  href="http://alerts.yahoo.com/config/edit_notification?.t=x&.s=s&.mcb=&.done=http%3a//mobile.yahoo.com/wireless/alert%3f.mcb=">
+Snowfall Alerts
+</a>
+<br ></br>
+<a  href="http://rd.yahoo.com/weather/trv/*http://travel.yahoo.com">
+Yahoo! Travel
+</a>
+</font>
+</td>
+</tr>
+</table>
+<!--ENDRESOURCES-->
+<!--ENDLEFTCOLUMN-->
+</td>
+<!--RIGHTCOLUMN-->
+<td  valign="top" width="570">
+<!--SEARCH-->
+<table  TABID="06140" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="dcdcdc" valign="middle">
+<font  face="arial,helvetica">
+<b >
+Find Weather
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<table  TABID="06139" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td  nowrap="nowrap" valign="top" width="60%">
+<form  action="http://search.weather.yahoo.com/weather/query.cgi" method="get" name="form1">
+<font  face="arial" size="-1">
+<b >
+Enter zip code or city:
+</b>
+</font>
+<br ></br>
+<input ></input>
+<input ></input>
+<br ></br>
+<font  size="2">
+(e.g. 95135
+<b >
+or
+</b>
+San Francisco
+<b >
+or
+</b>
+San Francisco, CA)
+</font>
+</form>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--ENDSEARCH-->
+<!--BROWSE: CUSTOMBROWSE-->
+<table  TABID="06143" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="dcdcdc" valign="middle">
+<font  face="arial,helvetica">
+<b >
+Browse for a Location
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<br ></br>
+<table  TABID="06142" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr  valign="top">
+<td  width="99%">
+<!--#include2 virtual="/regional/browse/United_States.html" -->
+<table  TABID="06141" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr >
+<td  valign="top" width="50%">
+<font  face="arial,helvetica" size="2">
+<ul >
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Alabama.html">
+<b >
+Alabama
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Alaska.html">
+<b >
+Alaska
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Arizona.html">
+<b >
+Arizona
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Arkansas.html">
+<b >
+Arkansas
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/California.html">
+<b >
+California
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Colorado.html">
+<b >
+Colorado
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Connecticut.html">
+<b >
+Connecticut
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Delaware.html">
+<b >
+Delaware
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/District_of_Columbia.html">
+<b >
+District of Columbia
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Florida.html">
+<b >
+Florida
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Georgia.html">
+<b >
+Georgia
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Hawaii.html">
+<b >
+Hawaii
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Idaho.html">
+<b >
+Idaho
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Illinois.html">
+<b >
+Illinois
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Indiana.html">
+<b >
+Indiana
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Iowa.html">
+<b >
+Iowa
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Kansas.html">
+<b >
+Kansas
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Kentucky.html">
+<b >
+Kentucky
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Louisiana.html">
+<b >
+Louisiana
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Maine.html">
+<b >
+Maine
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Maryland.html">
+<b >
+Maryland
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Massachusetts.html">
+<b >
+Massachusetts
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Michigan.html">
+<b >
+Michigan
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Minnesota.html">
+<b >
+Minnesota
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Mississippi.html">
+<b >
+Mississippi
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Missouri.html">
+<b >
+Missouri
+</b>
+</a>
+</li>
+</ul>
+</font>
+</td>
+<td  valign="top" width="50%">
+<font  face="arial,helvetica" size="2">
+<ul >
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Montana.html">
+<b >
+Montana
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Nebraska.html">
+<b >
+Nebraska
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Nevada.html">
+<b >
+Nevada
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/New_Hampshire.html">
+<b >
+New Hampshire
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/New_Jersey.html">
+<b >
+New Jersey
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/New_Mexico.html">
+<b >
+New Mexico
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/New_York.html">
+<b >
+New York
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/North_Carolina.html">
+<b >
+North Carolina
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/North_Dakota.html">
+<b >
+North Dakota
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Ohio.html">
+<b >
+Ohio
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Oklahoma.html">
+<b >
+Oklahoma
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Oregon.html">
+<b >
+Oregon
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Pennsylvania.html">
+<b >
+Pennsylvania
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Rhode_Island.html">
+<b >
+Rhode Island
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/South_Carolina.html">
+<b >
+South Carolina
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/South_Dakota.html">
+<b >
+South Dakota
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Tennessee.html">
+<b >
+Tennessee
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Texas.html">
+<b >
+Texas
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Utah.html">
+<b >
+Utah
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Vermont.html">
+<b >
+Vermont
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Virginia.html">
+<b >
+Virginia
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Washington.html">
+<b >
+Washington
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/West_Virginia.html">
+<b >
+West Virginia
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Wisconsin.html">
+<b >
+Wisconsin
+</b>
+</a>
+</li>
+<li >
+<a  href="http://weather.yahoo.com/regional/United_States/Wyoming.html">
+<b >
+Wyoming
+</b>
+</a>
+</li>
+</ul>
+</font>
+</td>
+</tr>
+</table>
+</td>
+<td  width="1%">
+<!--#exec cmd="/home/wni/docs/cgi/advert_static ad-location:SKY"-->
+<!-- SpaceID=0 robot -->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--BROWSE: CUSTOMBROWSE-->
+</td>
+</tr>
+</table>
+<!--END MAINTABLE-->
+<!--FOOTER-ADDING PRIVACY INFO-->
+<hr ></hr>
+<small >
+Copyright © 2001 Yahoo! Inc. All Rights Reserved.
+<br ></br>
+<a  href="http://help.yahoo.com/help/weather/">
+Help
+</a>
+-
+<a  href="http://privacy.yahoo.com/privacy/us/weather/details.html">
+Privacy Policy
+</a>
+-
+<a  href="http://docs.yahoo.com/info/terms/">
+Terms of Service
+</a>
+</small>
+</center>
+</body>
+</html>
+<html ></html>

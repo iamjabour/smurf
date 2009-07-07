@@ -1,0 +1,3960 @@
+<html >
+<head >
+<title >
+CNN.com - World Time
+</title>
+<!--CSSDATA:954203062-->
+<script ></script>
+<link ></link>
+<link ></link>
+<script >
+<!--//
+		if ((navigator.platform=='MacPPC')&amp;amp;amp;amp;&amp;amp;amp;amp;(navigator.appVersion.substr(17,8) != "MSIE 5.0")) {document.write('&amp;amp;amp;lt;LINK rel="stylesheet" href="/virtual/2000/style/mainMac.new.css" type="text/css"&amp;amp;amp;gt;')}
+		if (screen.width &amp;amp;amp;gt; 1200)	{document.write('&amp;amp;amp;lt;LINK rel="stylesheet" href="/virtual/2000/style/mainX.css" type="text/css"&amp;amp;amp;gt;')}		
+		//-->
+</script>
+<!--/CSSDATA-->
+<script ></script>
+<script >
+function convert() { day = ', same day'; var baseCityTime = 30 * parseInt( document.city2city.timeChoice.options[document.city2city.timeChoice.selectedIndex].value ); var offset = parseInt(document.city2city.firstCity.options[document.city2city.firstCity.selectedIndex].value ) - parseInt(document.city2city.secondCity.options[document.city2city.secondCity.selectedIndex].value ); // if positive, first city is ahead var selectedCityTime = baseCityTime - offset; selectedCityTime = (selectedCityTime / 30); var targetTime = parseInt( document.city2city.timeChoice.options[document.city2city.timeChoice.selectedIndex].value ) + selectedCityTime; if( selectedCityTime 0 ) { selectedCityTime = 48 + selectedCityTime; day = ', previous day'; } else if( selectedCityTime &gt; 47 ) { selectedCityTime = selectedCityTime - 48; day = ', next day'; } if(selectedCityTime0) { selectedCityTime=selectedCityTime*-1; } document.city2city.time.value = times[selectedCityTime*2] + day; showInternetTime( baseCityTime ); } var times = new Array( 96 ); times[0] = "12:00 A.M."; times[1] = "12:15 A.M."; times[2] = "12:30 A.M."; times[3] = "12:45 A.M."; times[4] = "1:00 A.M."; times[5] = "1:15 A.M."; times[6] = "1:30 A.M."; times[7] = "1:45 A.M."; times[8] = "2:00 A.M."; times[9] = "2:15 A.M."; times[10] = "2:30 A.M."; times[11] = "2:45 A.M."; times[12] = "3:00 A.M."; times[13] = "3:15 A.M."; times[14] = "3:30 A.M."; times[15] = "3:45 A.M."; times[16] = "4:00 A.M."; times[17] = "4:15 A.M."; times[18] = "4:30 A.M."; times[19] = "4:45 A.M."; times[20] = "5:00 A.M."; times[21] = "5:15 A.M."; times[22] = "5:30 A.M."; times[23] = "5:45 A.M."; times[24] = "6:00 A.M."; times[25] = "6:15 A.M."; times[26] = "6:30 A.M."; times[27] = "6:45 A.M."; times[28] = "7:00 A.M."; times[29] = "7:15 A.M."; times[30] = "7:30 A.M."; times[31] = "7:45 A.M."; times[32] = "8:00 A.M."; times[33] = "8:15 A.M."; times[34] = "8:30 A.M."; times[35] = "8:45 A.M."; times[36] = "9:00 A.M."; times[37] = "9:15 A.M."; times[38] = "9:30 A.M."; times[39] = "9:45 A.M."; times[40] = "10:00 A.M."; times[41] = "10:15 A.M."; times[42] = "10:30 A.M."; times[43] = "10:45 A.M."; times[44] = "11:00 A.M."; times[45] = "11:15 A.M."; times[46] = "11:30 A.M."; times[47] = "11:45 A.M."; times[48] = "12:00 P.M."; times[49] = "12:15 P.M."; times[50] = "12:30 P.M."; times[51] = "12:45 P.M."; times[52] = "1:00 P.M."; times[53] = "1:15 P.M."; times[54] = "1:30 P.M."; times[55] = "1:45 P.M."; times[56] = "2:00 P.M."; times[57] = "2:15 P.M."; times[58] = "2:30 P.M."; times[59] = "2:45 P.M."; times[60] = "3:00 P.M."; times[61] = "3:15 P.M."; times[62] = "3:30 P.M."; times[63] = "3:45 P.M."; times[64] = "4:00 P.M."; times[65] = "4:15 P.M."; times[66] = "4:30 P.M."; times[67] = "4:45 P.M."; times[68] = "5:00 P.M."; times[69] = "5:15 P.M."; times[70] = "5:30 P.M."; times[71] = "5:45 P.M."; times[72] = "6:00 P.M."; times[73] = "6:15 P.M."; times[74] = "6:30 P.M."; times[75] = "6:45 P.M."; times[76] = "7:00 P.M."; times[77] = "7:15 P.M."; times[78] = "7:30 P.M."; times[79] = "7:45 P.M."; times[80] = "8:00 P.M."; times[81] = "8:15 P.M."; times[82] = "8:30 P.M."; times[83] = "8:45 P.M."; times[84] = "9:00 P.M."; times[85] = "9:15 P.M."; times[86] = "9:30 P.M."; times[87] = "9:45 P.M."; times[88] = "10:00 P.M."; times[89] = "10:15 P.M."; times[90] = "10:30 P.M."; times[91] = "10:45 P.M."; times[92] = "11:00 P.M."; times[93] = "11:15 P.M."; times[94] = "11:30 P.M."; times[95] = "11:45 P.M."; times[96] = "12:00 A.M."; function showInternetTime( s ) { var bielTime = s - (parseInt(document.city2city.firstCity.options[document.city2city.firstCity.selectedIndex].value) - 60 ); internetTime = Math.ceil((bielTime * 60)/ 86.4) ; if( internetTime &gt; 999 ) { internetTime -= 1000; } if( internetTime 0 ) { internetTime += 1000; } if( internetTime 0 ) { internetTime += 1000; } document.city2city.internetTime.value = '@'; if( internetTime 10) { document.city2city.internetTime.value += '00'; } else if( internetTime 100) { document.city2city.internetTime.value += '0'; } document.city2city.internetTime.value += internetTime; } function calculate() { var bielTime = parseInt( document.console.iTime.value ) * 86.4; if( isNaN( bielTime ) || ( (parseInt( document.console.iTime.value ) 0) || (parseInt( document.console.iTime.value ) &gt; 999)) ) { alert( 'You must enter a number between 0 and 999' ); return; } var offset = (parseInt( document.console.city.options[document.console.city.selectedIndex].value ) - 60) * 60; var midnight = new Date(); midnight.setHours( 0 ); midnight.setMinutes( 0 ); midnight.setSeconds( 0 ); var localTime = new Date( midnight.getTime() + ((bielTime + offset) * 1000) ); var hours = localTime.getHours(); var minutes = localTime.getMinutes(); var seconds = localTime.getSeconds(); var postfix = ' A.M.'; if( hours &gt; 12 ) { hours -= 12; postfix = ' P.M.'; } if( hours == 12 ) { postfix = ' P.M.'; } if( hours == 0 ) { hours = 12; } if( minutes 10 ) { minutes = '0' + minutes; } if( seconds 10 ) { seconds = '0' + seconds; } document.console.output.value = hours + ':' + minutes + ':' + seconds + postfix; }
+</script>
+</head>
+<body  bgcolor="#FFFFFF">
+<a  name="top"></a>
+<table  TABID="07855" border="0" cellpadding="0" cellspacing="0" width="770">
+<tr >
+<td  colspan="3" valign="top" width="600">
+<!-- ================== promo &amp;amp;amp;amp; ad ================== -->
+<table  TABID="07821" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr  valign="top">
+<td  width="120">
+<!-- ProfileID=66&amp;amp;amp;amp;RunID=9989&amp;amp;amp;amp;AdID=5007&amp;amp;amp;amp;GroupID=341&amp;amp;amp;amp;FamilyID=1&amp;amp;amp;amp;TagValues=4.8.435.606.644.645.3654 -->
+</td>
+<td  align="right" width="12">
+<a  href="/ads/e.market/">
+<img ></img>
+</a>
+</td>
+<td  width="468">
+<!-- ProfileID=66&amp;amp;amp;amp;RunID=9989&amp;amp;amp;amp;AdID=5007&amp;amp;amp;amp;GroupID=341&amp;amp;amp;amp;FamilyID=1&amp;amp;amp;amp;TagValues=4.8.307.435.594.3654 -->
+</td>
+</tr>
+</table>
+<hr ></hr>
+<!-- ================== /promo &amp;amp;amp;amp; ad ================== -->
+</td>
+<td  rowspan="4" width="5">
+<img ></img>
+</td>
+<td  bgcolor="#DDDDDD" colspan="3" rowspan="2" valign="top" width="165">
+<!-- ================== organizer ================== -->
+<!-- BEGIN CNN SHOP INCLUDE -->
+<table  TABID="07822" border="0" cellpadding="0" cellspacing="0" width="165">
+<tr >
+<td  align="center">
+<a  href="/event.ng/Type=click&RunID=35886&ProfileID=4195&AdID=29170&GroupID=1024&FamilyID=7268&TagValues=4.8.435.3654.4700.4701&Redirect=http:%2F%2Fwww.aol.com%2Fshopping">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!-- END CNN SHOP INCLUDE  -->
+<!-- ================== /organizer ================== -->
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="bottom" width="600">
+<!-- ================== banner ================== -->
+<table  TABID="07823" vspace="0">
+<tr >
+<td  align="left" valign="bottom" width="170">
+<a  href="/">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="bottom" width="430">
+<a  href="/WEATHER/">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+weather &gt;
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+world time
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+</table>
+<!-- ================== /banner ================== -->
+</td>
+</tr>
+<tr >
+<form >
+<td  align="left" bgcolor="#666699" valign="top" width="125">
+<!-- ================== CNN Sites ================== -->
+<!-- ||||| CNN Sites ||||| -->
+<!-- &amp;amp;amp;lt;FONT face="verdana" size="1"&amp;amp;amp;gt;
+&amp;amp;amp;lt;SELECT class="FormLt1" valign="middle" onChange="location=this.options[this.selectedIndex].value;"&amp;amp;amp;gt;
+&amp;amp;amp;lt;OPTION&amp;amp;amp;gt;CNN Sites&amp;amp;amp;lt;/OPTION&amp;amp;amp;gt;
+&amp;amp;amp;lt;OPTION value="http://cnn.com"&amp;amp;amp;gt;CNN&amp;amp;amp;lt;/OPTION&amp;amp;amp;gt;
+&amp;amp;amp;lt;OPTION value="http://europe.cnn.com"&amp;amp;amp;gt;CNN Europe&amp;amp;amp;lt;/OPTION&amp;amp;amp;gt;
+&amp;amp;amp;lt;OPTION value="http://cnnfn.com"&amp;amp;amp;gt;CNNfn&amp;amp;amp;lt;/OPTION&amp;amp;amp;gt;
+&amp;amp;amp;lt;OPTION value="http://cnnsi.com"&amp;amp;amp;gt;CNNSI&amp;amp;amp;lt;/OPTION&amp;amp;amp;gt;
+&amp;amp;amp;lt;OPTION value="http://mycnn.com"&amp;amp;amp;gt;myCNN&amp;amp;amp;lt;/OPTION&amp;amp;amp;gt;
+&amp;amp;amp;lt;OPTION value="http://cnnfyi.com"&amp;amp;amp;gt;Education&amp;amp;amp;lt;/OPTION&amp;amp;amp;gt;
+&amp;amp;amp;lt;OPTION value="http://cnn.com/allpolitics"&amp;amp;amp;gt;AllPolitics&amp;amp;amp;lt;/OPTION&amp;amp;amp;gt;
+&amp;amp;amp;lt;OPTION value="http://cnn.com/INDEX/languages/"&amp;amp;amp;gt;Languages&amp;amp;amp;lt;/OPTION&amp;amp;amp;gt;
+&amp;amp;amp;lt;/SELECT&amp;amp;amp;gt;
+&amp;amp;amp;lt;/FONT&amp;amp;amp;gt; -->
+<!-- ||||| CNN Sites ||||| -->
+<!-- ================== CNN Sites ================== -->
+</td>
+</form>
+<td  bgcolor="#666699" valign="top" width="15">
+<img ></img>
+</td>
+<td  align="left" bgcolor="#666699" valign="bottom" width="460">
+<!-- ================== blue bar ================== -->
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="RfMain">
+Editions
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+|
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="RfStory">
+myCNN
+</a>
+|
+<a  class="RfStory">
+Video
+</a>
+|
+<a  class="RfStory">
+Audio
+</a>
+|
+<a  class="RfStory">
+Headline News Brief
+</a>
+|
+<a  class="RfStory">
+Free E-mail
+</a>
+|
+<a  class="RfStory">
+Feedback
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<!-- ================== /blue bar ================== -->
+</td>
+<td  bgcolor="#666666" rowspan="2" width="1">
+<img ></img>
+</td>
+<td  bgcolor="#FFFFFF" rowspan="2" valign="top" width="163">
+<!-- ================== newsnet ================== -->
+<table  TABID="07848" border="0" cellpadding="0" cellspacing="0" width="163">
+<tr >
+<td  bgcolor="#FFFFFF" width="163">
+<table  TABID="07826" align="top" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<form >
+<td  bgcolor="#666666">
+<img ></img>
+<br ></br>
+<!-- ||||| CNN Sites ||||| -->
+<!--class="FormLt1"-->
+<select >
+<option >
+CNN Sites
+</option>
+<option  value="http://cnn.com">
+CNN
+</option>
+<option  value="http://europe.cnn.com">
+CNN Europe
+</option>
+<option  value="http://cnnfn.com">
+CNNfn
+</option>
+<option  value="http://cnnsi.com">
+CNNSI
+</option>
+<option  value="http://mycnn.com">
+myCNN
+</option>
+<option  value="http://cnnfyi.com">
+CNNfyi
+</option>
+<option  value="http://cnn.com/allpolitics">
+AllPolitics
+</option>
+<option  value="http://cnn.com/INDEX/languages/">
+Languages
+</option>
+</select>
+<!-- ||||| CNN Sites ||||| -->
+<!--&amp;amp;amp;lt;span class="NNTxt"&amp;amp;amp;gt;
+&amp;amp;amp;lt;br&amp;amp;amp;gt;&amp;amp;amp;lt;br&amp;amp;amp;gt;
+&amp;amp;amp;lt;/span&amp;amp;amp;gt;-->
+</td>
+</form>
+</tr>
+<tr >
+<form  onsubmit="return" this="#DEFAULT" validate="#DEFAULT">
+<td  bgcolor="#666666">
+<!-- ||||| CNN Search ||||| -->
+<!-- class="FormLt1" -->
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+Search
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<select >
+<option  value="CNN">
+CNN.com
+</option>
+<option  value="CNNSI">
+CNNSI.com
+</option>
+<option  value="CNNfn">
+CNNfn.com
+</option>
+<!-- &amp;amp;amp;lt;OPTION value="TIME"&amp;amp;amp;gt;TIME.com&amp;amp;amp;lt;/OPTION&amp;amp;amp;gt; -->
+<option  value="Internet">
+The Web
+</option>
+</select>
+<br ></br>
+<!-- class="FormLt1" -->
+<input ></input>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<!-- class="FormLt1" -->
+<input ></input>
+<br ></br>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<!-- ||||| CNN Search ||||| -->
+</td>
+</form>
+</tr>
+<tr >
+<td >
+<a  href="/">
+<img ></img>
+<br ></br>
+</a>
+<table  TABID="07825" border="0" cellpadding="2" cellspacing="0" width="155">
+<tr >
+<td >
+<table  TABID="07824" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="2">
+<img ></img>
+</td>
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+TOP STORIES
+<br ></br>
+<br ></br>
+<a  href="/2001/ALLPOLITICS/stories/01/29/bush.faithbased.01/index.html">
+Bush signs order opening 'faith-based' charity office for business
+</a>
+<br ></br>
+<br ></br>
+<a  href="/2001/WORLD/asiapcf/south/01/29/india.quake.03/index.html">
+Rescues continue 4 days after devastating India earthquake
+</a>
+<br ></br>
+<br ></br>
+<a  href="/cnnfn/2001/01/29/companies/layoffs/">
+DaimlerChrysler employees join rapidly swelling ranks of laid-off U.S. workers
+</a>
+<br ></br>
+<br ></br>
+<a  href="/cnnfn/2001/01/29/technology/disney_go/">
+Disney's GO.com is a goner
+</a>
+<br ></br>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+(
+<a  href="/">
+MORE
+</a>
+)
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF">
+<div  px="#DEFAULT" style="padding:">
+<a  href="/cnnfn/">
+<img ></img>
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  c00="#DEFAULT" style="color:">
+BUSINESS
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<a  href="/cnnfn/2001/05/23/markets/markets_newyork/">
+Nasdaq ends winning ways
+</a>
+<br ></br>
+<br ></br>
+<a  href="/cnnfn/2001/05/23/news/cyberfraud/">
+FBI nabs Web fraud suspects
+</a>
+<br ></br>
+<br ></br>
+<a  href="/cnnfn/2001/05/23/deals/wachovia/">
+SunTrust urged to drop bid
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNMore">
+(
+<a  href="/cnnfn/">
+MORE
+</a>
+)
+</div>
+</div>
+<br ></br>
+<table  TABID="07827" align="center" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" width="155">
+<tr >
+<td  colspan="2">
+<div  class="FSnPSmDk">
+MARKETS
+</div>
+</td>
+<td  align="right" colspan="2">
+<div  class="FSnPSmDk">
+4:01pm ET, 5/23
+</div>
+</td>
+</tr>
+<tr >
+<td  width="15">
+<div  class="FSnPSmDk">
+<a  href="/cnnfn/markets/dow.html">
+DJIA
+</a>
+</div>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  align="left" width="20">
+<div  class="FSnPSmDk">
+151.70
+</div>
+</td>
+<td  align="right" width="110">
+<div  class="FSnPSmDk">
+11105.50
+</div>
+</td>
+</tr>
+<tr >
+<td  width="15">
+<div  class="FSnPSmDk">
+<a  href="/cnnfn/markets/nasdaq.html">
+NAS
+</a>
+</div>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  align="left" width="20">
+<div  class="FSnPSmDk">
+67.80
+</div>
+</td>
+<td  align="right" width="110">
+<div  class="FSnPSmDk">
+2246.05
+</div>
+</td>
+</tr>
+<tr >
+<td  width="15">
+<div  class="FSnPSmDk">
+<a  href="/cnnfn/markets/sandp.html">
+S&amp;P
+</a>
+</div>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  align="left" width="20">
+<div  class="FSnPSmDk">
+19.99
+</div>
+</td>
+<td  align="right" width="110">
+<div  class="FSnPSmDk">
+1289.39
+</div>
+</td>
+</tr>
+</table>
+<form  margin-bottom="#DEFAULT" px="#DEFAULT" style="margin-top:">
+<input ></input>
+<input ></input>
+<input ></input>
+</form>
+<hr ></hr>
+<div  px="#DEFAULT" style="padding:">
+<a  href="/cnnsi/">
+<img ></img>
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  c00="#DEFAULT" style="color:">
+SPORTS
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<a  href="/cnnsi/inside_game/deford/news/2001/05/23/deford_insider">
+SI's Frank Deford: Hard not to root for Mariners
+</a>
+<br ></br>
+<br ></br>
+<a  href="/cnnsi/baseball/mlb/news/2001/05/23/wells_trade_ap">
+Report: White Sox actively shopping Wells
+</a>
+<br ></br>
+<br ></br>
+<a  href="/cnnsi/basketball/nba/2001/playoffs/news/2001/05/23/spurs_anderson_ap">
+Spurs' Anderson could return for Game 3
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNMore">
+(
+<a  href="/cnnsi/">
+MORE
+</a>
+)
+</div>
+<br ></br>
+<img ></img>
+<a  href="/cnnsi/scoreboards/">
+All Scoreboards
+</a>
+</div>
+<hr ></hr>
+<form  margin-top="#DEFAULT" px="#DEFAULT" style="margin-bottom:">
+<div  px="#DEFAULT" style="padding:">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  c00="#DEFAULT" style="color:">
+WEATHER
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<input ></input>
+<input ></input>
+<a  href="/WEATHER/browse.html">
+All cities
+</a>
+</div>
+</form>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF">
+<table  TABID="07829" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td >
+<table  TABID="07828" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td >
+<a  style="color:#000000">
+WORLD
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNTxt">
+<a  href="/2001/WORLD/asiapcf/south/01/29/india.quake.02/index.html">
+Quake help not fast enough, says Indian PM
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="07831" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td >
+<table  TABID="07830" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td >
+<a  style="color:#000000">
+U.S.
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNTxt">
+<a  href="/2001/US/01/29/power.woes.02/index.html">
+Bush: No help from Washington for California power crunch
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="07833" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td >
+<table  TABID="07832" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td >
+<a  style="color:#000000">
+POLITICS
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNTxt">
+<a  href="/2001/ALLPOLITICS/stories/01/29/bush.faithbased.01/index.html">
+Bush signs order opening 'faith-based' charity office for business
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="07835" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td >
+<table  TABID="07834" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td >
+<a  style="color:#000000">
+LAW
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNTxt">
+<a  href="/2001/LAW/01/29/combs.trial.02/index.html">
+Prosecutor says witnesses saw rap star shoot gun in club
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="07837" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td >
+<table  TABID="07836" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td >
+<a  style="color:#000000">
+TECHNOLOGY
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNTxt">
+<a  href="/2001/TECH/computing/01/29/fee.based.napster.idg/index.html">
+Napster to launch fee-based service
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="07839" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td >
+<table  TABID="07838" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td >
+<a  style="color:#000000">
+ENTERTAINMENT
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNTxt">
+<a  href="/2001/SHOWBIZ/TV/01/29/tv.survivor.ap/index.html">
+Can the second 'Survivor' live up to the first?
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="07841" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td >
+<table  TABID="07840" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td >
+<a  style="color:#000000">
+HEALTH
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNTxt">
+<a  href="/2001/HEALTH/01/27/super.aspirin.ap/">
+Heart doctors debate ethics of testing super-aspirin
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="07843" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td >
+<table  TABID="07842" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td >
+<a  style="color:#000000">
+TRAVEL
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNTxt">
+<a  href="/2001/TRAVEL/NEWS/01/29/sky.nurses/index.html">
+Nurses to aid ailing airline passengers
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="07845" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td >
+<table  TABID="07844" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td >
+<a  class="NNTxt">
+FOOD
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNTxt">
+<a  href="/2001/HEALTH/01/26/us.madcow.ap/index.html">
+Texas cattle quarantined after violation of mad-cow feed ban
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="07847" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="1">
+<img ></img>
+</td>
+<td >
+<table  TABID="07846" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td >
+<a  style="color:#000000">
+ARTS &amp; STYLE
+</a>
+<br ></br>
+<br ></br>
+<div  class="NNTxt">
+<a  href="/2001/STYLE/design/01/25/jonathan.adler/index.html">
+Ceramist Adler adds furniture to his creations
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td  width="1">
+<img ></img>
+</td>
+</tr>
+</table>
+<br ></br>
+<hr ></hr>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<img ></img>
+(
+<a  href="javascript:openWindow(/desktop/frameset.exclude.html,desktopnews,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=380)">
+MORE HEADLINES
+</a>
+)
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+</table>
+<!-- ================== /newsnet ================== -->
+</td>
+<td  bgcolor="#666666" rowspan="2" width="1">
+<img ></img>
+</td>
+</tr>
+<tr  valign="top">
+<td  width="125">
+<!-- ================== nav ================== -->
+<table  TABID="07849" border="0" cellpadding="0" cellspacing="0" width="125">
+<tr >
+<td  bgcolor="#CCCCFF" colspan="2" valign="top" width="125">
+<div  class="Navthreespaceindent">
+<a  class="NvSmBDk">
+MAINPAGE
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+WORLD
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+U.S.
+</a>
+<br ></br>
+</div>
+</td>
+</tr>
+<tr  bgcolor="#CC0000">
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#CC0000">
+<td  width="115">
+<div  class="Threespaceindent">
+<a  class="NvSmBLt">
+WEATHER
+</a>
+</div>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#CC0000">
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF">
+<div  class="Threespaceindent">
+<a  class="NvSmBDk">
+weather maps
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+hurricanes
+</a>
+<br ></br>
+<!--[[a href="/WEATHER/allergy/" class="NvSmBDk"]]allergy report[[/a]][[br]]-->
+<a  class="NvSmBDk">
+biz traveler
+</a>
+<br ></br>
+</div>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#ccccff" colspan="2" valign="top" width="125">
+<div  class="Navthreespaceindent">
+<a  class="NvSmBDk">
+BUSINESS
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+SPORTS
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+TECHNOLOGY
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+SPACE
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+HEALTH
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+ENTERTAINMENT
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+POLITICS
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+LAW
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+CAREER
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+TRAVEL
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+FOOD
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+ARTS &amp; STYLE
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+BOOKS
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+NATURE
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+IN-DEPTH
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+ANALYSIS
+</a>
+<br ></br>
+<a  class="NvSmBDk">
+LOCAL
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+</td>
+</tr>
+<tr  bgcolor="#666699">
+<td  colspan="2">
+<div  class="Navthreespaceindent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+EDITIONS:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCFF" colspan="2">
+<div  class="Navthreespaceindent">
+<a  class="NvSmPDk">
+CNN.com Europe
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="NvSmPDk">
+change default edition
+</a>
+<br ></br>
+<br ></br>
+</div>
+</td>
+</tr>
+<tr  bgcolor="#666699">
+<td  colspan="2">
+<div  class="Navthreespaceindent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+MULTIMEDIA:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCFF" colspan="2">
+<div  class="Navthreespaceindent">
+<a  class="NvSmPDk">
+video
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+video archive
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+audio
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+multimedia showcase
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+more services
+</a>
+<br ></br>
+<br ></br>
+</div>
+</td>
+</tr>
+</table>
+<table  TABID="07850" bgcolor="#ccccff" border="0" cellpadding="0" cellspacing="0" width="125">
+<tr >
+<td >
+function email() { address=document.emailform.emailinput.value; location='http://www.cnn.com/EMAIL/index.html?'+address; }
+</td>
+</tr>
+<tr  bgcolor="#666699">
+<td >
+<div  class="Navthreespaceindent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+E-MAIL:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+</td>
+</tr>
+<tr >
+<td >
+<div  class="Navthreespaceindent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Subscribe to one of our
+<a  class="NvSmPDk">
+news e-mail lists
+</a>
+.
+<br ></br>
+Enter your address:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+</td>
+</tr>
+<tr >
+<td >
+<form  false="#DEFAULT" onsubmit="email();return">
+<input ></input>
+<input ></input>
+</form>
+</td>
+</tr>
+<tr  bgcolor="#666699">
+<td  width="125">
+<div  class="Navthreespaceindent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+DISCUSSION:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+</td>
+</tr>
+<tr >
+<td >
+<div  class="Navthreespaceindent">
+<a  class="NvSmPDk">
+message boards
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+chat
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+feedback
+</a>
+<br ></br>
+<br ></br>
+</div>
+</td>
+</tr>
+<!--- CNN WEB SITES NAV ------->
+<tr  bgcolor="#666699">
+<td  width="125">
+<div  class="Navthreespaceindent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+CNN WEB SITES:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#ccccff">
+<map  name="sites">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td >
+<div  class="Navthreespaceindent">
+<a  class="NvSmPDk">
+CNNfyi.com
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+CNN.com Europe
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+AsiaNow
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+Spanish
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+Portuguese
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+German
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+Italian
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+Swedish
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+Norwegian
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+Danish
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+Japanese
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+Chinese Headlines
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+Korean Headlines
+</a>
+<br ></br>
+<br ></br>
+</div>
+</td>
+</tr>
+<!--- /CNN WEB SITES NAV ------->
+<!--TIME NAV -->
+<tr  bgcolor="#666699">
+<td  width="125">
+<div  class="Navthreespaceindent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+TIME INC. SITES:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<form  name="pathfinder">
+<select >
+<option  value="">
+Go To ...
+</option>
+<option  value="http://www.pathfinder.com/time/">
+Time.com
+</option>
+<option  value="http://www.pathfinder.com/people/">
+People
+</option>
+<option  value="http://www.money.com/">
+Money
+</option>
+<option  value="http://www.pathfinder.com/fortune/">
+Fortune
+</option>
+<option  value="http://cgi.pathfinder.com/ew/">
+EW
+</option>
+</select>
+</form>
+</td>
+</tr>
+<!--/TME NAV -->
+<!--ON TV NAV -->
+<tr  bgcolor="#666699">
+<td  width="125">
+<div  class="Navthreespaceindent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+CNN NETWORKS:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+</td>
+</tr>
+<tr >
+<td >
+<map  name="networks.map">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<div  class="Navthreespaceindent">
+<a  class="NvSmPDk">
+CNN anchors
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+transcripts
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+Turner distribution
+</a>
+<br ></br>
+<br ></br>
+</div>
+</td>
+</tr>
+<!--ON TV NAV -->
+<!-- SITE INFO NAV -->
+<tr  bgcolor="#666699">
+<td  width="125">
+<div  class="Navthreespaceindent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+SITE INFO:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+</td>
+</tr>
+<tr >
+<td >
+<div  class="Navthreespaceindent">
+<a  class="NvSmPDk">
+help
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+contents
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+search
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+ad info
+</a>
+<br ></br>
+<a  class="NvSmPDk">
+jobs
+</a>
+<br ></br>
+<br ></br>
+</div>
+</td>
+</tr>
+<tr  bgcolor="#666699">
+<td  width="125">
+<div  class="Navthreespaceindent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+WEB SERVICES:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+</td>
+</tr>
+</table>
+<br ></br>
+<!-- ProfileID=66&amp;amp;amp;amp;RunID=9989&amp;amp;amp;amp;AdID=5007&amp;amp;amp;amp;GroupID=341&amp;amp;amp;amp;FamilyID=1&amp;amp;amp;amp;TagValues=4.435.1011.1234.1715.2430.3654 -->
+<!-- ================== /nav ================== -->
+</td>
+<td  valign="top" width="15">
+<img ></img>
+</td>
+<td  valign="top" width="460">
+<br ></br>
+<!--========================================================-->
+<!--===============Paste story between here=================-->
+<!--========================================================-->
+<table  TABID="07853" border="0" cellpadding="4" cellspacing="0" width="460">
+<tr >
+<td  colspan="2" valign="top" width="460">
+<center >
+<h4 >
+What time is it?
+</h4>
+</center>
+<p  class="VSnPSm">
+From Alaska to Australia, use our world time map to find out. Roll over the map below for each time zone's offset from GMT. Roll over red dots and get the current local time in that city. In the Swatch box, you're looking at the current internet time.
+<a  href="#whatisit">
+What IS internet time?
+</a>
+</p>
+<br ></br>
+<br ></br>
+<center >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+This feature uses
+<b >
+Shockwave
+</b>
+. If you don't have it,
+<a  href="http://www.macromedia.com/shockwave/download/" target="new">
+get it here.
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</center>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top" width="460">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<hr ></hr>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="230">
+<!-- .:.:.:.:.:.:.:.:.:. LEFT SIDE .:.:.:.:.:.:.:.:.:. -->
+<table  TABID="07851" align="top" bgcolor="#cccccc" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr >
+<td  bgcolor="#ff9900" colspan="2" width="156">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+INTERNET TIME CONVERTER
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+If it is
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<form  name="console">
+@
+<input ></input>
+</form>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccccc" colspan="2"></td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+in
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<select >
+<option  value="180">
+Addis Ababa
+</option>
+<option  value="570">
+Adelaide
+</option>
+<option  value="180">
+Aden
+</option>
+<option  value="-360">
+Aklavik
+</option>
+<option  value="60">
+Algiers
+</option>
+<option  value="180">
+Amman
+</option>
+<option  value="120">
+Amsterdam
+</option>
+<option  value="840">
+Anadyr
+</option>
+<option  value="-480">
+Anchorage
+</option>
+<option  value="180">
+Ankara
+</option>
+<option  value="180">
+Antananarivo
+</option>
+<option  value="-240">
+Asuncion
+</option>
+<option  value="180">
+Athens
+</option>
+<option  value="-240">
+Atlanta
+</option>
+<option  value="720">
+Auckland
+</option>
+<option  value="-300">
+Austin
+</option>
+<option  value="0">
+Azores
+</option>
+<option  value="240">
+Baghdad
+</option>
+<option  value="420">
+Bangkok
+</option>
+<option  value="120">
+Barcelona
+</option>
+<option  value="480">
+Beijing
+</option>
+<option  value="180">
+Beirut
+</option>
+<option  value="120">
+Belgrade
+</option>
+<option  value="120">
+Berlin
+</option>
+<option  value="-180">
+Bermuda
+</option>
+<option  value="120">
+Bern
+</option>
+<option  value="-300">
+Bogota
+</option>
+<option  value="-240">
+Boston
+</option>
+<option  value="-240">
+Brasilia
+</option>
+<option  value="600">
+Brisbane
+</option>
+<option  value="120">
+Brussels
+</option>
+<option  value="180">
+Bucharest
+</option>
+<option  value="120">
+Budapest
+</option>
+<option  value="-180">
+Buenos Aires
+</option>
+<option  value="180">
+Cairo
+</option>
+<option  value="330">
+Calcutta
+</option>
+<option  value="120">
+Cape Town
+</option>
+<option  value="-240">
+Caracas
+</option>
+<option  value="0">
+Casablanca
+</option>
+<option  value="765">
+Chatham Islands
+</option>
+<option  value="-300">
+Chicago
+</option>
+<option  value="120">
+Copenhagen
+</option>
+<option  value="-300">
+Dallas
+</option>
+<option  value="180">
+Dar es Salaam
+</option>
+<option  value="570">
+Darwin
+</option>
+<option  value="-360">
+Denver
+</option>
+<option  value="-240">
+Detroit
+</option>
+<option  value="360">
+Dhaka
+</option>
+<option  value="60">
+Dublin
+</option>
+<option  value="-360">
+Edmonton
+</option>
+<option  value="120">
+Frankfurt
+</option>
+<option  value="120">
+Geneva
+</option>
+<option  value="-360">
+Guatemala City
+</option>
+<option  value="420">
+Hanoi
+</option>
+<option  value="120">
+Harare
+</option>
+<option  value="-240">
+Havana
+</option>
+<option  value="180">
+Helsinki
+</option>
+<option  value="420">
+Ho Chi Minh City
+</option>
+<option  value="480">
+Hong Kong
+</option>
+<option  value="-600">
+Honolulu
+</option>
+<option  value="-300">
+Houston
+</option>
+<option  value="-300">
+Indianapolis
+</option>
+<option  value="300">
+Islamabad
+</option>
+<option  value="180">
+Istanbul
+</option>
+<option  value="420">
+Jakarta
+</option>
+<option  value="180">
+Jerusalem
+</option>
+<option  value="120">
+Johannesburg
+</option>
+<option  value="270">
+Kabul
+</option>
+<option  value="180">
+Kamchatka
+</option>
+<option  value="300">
+Kathmandu
+</option>
+<option  value="120">
+Khartoum
+</option>
+<option  value="120">
+Kigali
+</option>
+<option  value="-300">
+Kingston
+</option>
+<option  value="480">
+Kuala Lumpur
+</option>
+<option  value="180">
+Kuwait City
+</option>
+<option  value="-240">
+La Paz
+</option>
+<option  value="60">
+Lagos
+</option>
+<option  value="-300">
+Lima
+</option>
+<option  value="60">
+Lisbon
+</option>
+<option  value="60">
+London
+</option>
+<option  value="-420">
+Los Angeles
+</option>
+<option  value="120">
+Madrid
+</option>
+<option  value="-360">
+Managua
+</option>
+<option  value="480">
+Manila
+</option>
+<option  value="240">
+Masqat
+</option>
+<option  value="600">
+Melbourne
+</option>
+<option  value="-300">
+Mexico City
+</option>
+<option  value="-240">
+Miami
+</option>
+<option  value="120">
+Milan
+</option>
+<option  value="-300">
+Minneapolis
+</option>
+<option  value="-180">
+Montevideo
+</option>
+<option  value="-240">
+Montreal
+</option>
+<option  value="240">
+Moscow
+</option>
+<option  value="330">
+Mumbai
+</option>
+<option  value="120">
+Munich
+</option>
+<option  value="180">
+Nairobi
+</option>
+<option  value="120">
+Naples
+</option>
+<option  value="-240">
+Nassau
+</option>
+<option  value="330">
+New Delhi
+</option>
+<option  value="-300">
+New Orleans
+</option>
+<option  value="-240">
+New York City
+</option>
+<option  value="120">
+Oslo
+</option>
+<option  value="-240">
+Ottawa
+</option>
+<option  value="120">
+Paris
+</option>
+<option  value="480">
+Perth
+</option>
+<option  value="-420">
+Phoenix
+</option>
+<option  value="420">
+Phnom Penh
+</option>
+<option  value="120">
+Prague
+</option>
+<option  value="540">
+Pyongyang
+</option>
+<option  value="0">
+Reykjavik
+</option>
+<option  value="-240">
+Rio de Janeiro
+</option>
+<option  value="180">
+Riyadh
+</option>
+<option  value="120">
+Rome
+</option>
+<option  value="-150">
+St. John's
+</option>
+<option  value="-300">
+St. Paul
+</option>
+<option  value="-420">
+San Francisco
+</option>
+<option  value="-240">
+San Juan
+</option>
+<option  value="-360">
+San Salvador
+</option>
+<option  value="-240">
+Santo Domingo
+</option>
+<option  value="-240">
+Santiago
+</option>
+<option  value="-180">
+Sao Paulo
+</option>
+<option  value="-420">
+Seattle
+</option>
+<option  value="540">
+Seoul
+</option>
+<option  value="480">
+Shanghai
+</option>
+<option  value="480">
+Singapore
+</option>
+<option  value="180">
+Sofia
+</option>
+<option  value="120">
+Stockholm
+</option>
+<option  value="720">
+Suva
+</option>
+<option  value="600">
+Sydney
+</option>
+<option  value="480">
+Taipei
+</option>
+<option  value="180">
+Tallinn
+</option>
+<option  value="300">
+Tashkent
+</option>
+<option  value="-360">
+Tegucigalpa
+</option>
+<option  value="270">
+Tehran
+</option>
+<option  value="540">
+Tokyo
+</option>
+<option  value="-240">
+Toronto
+</option>
+<option  value="120">
+Turin
+</option>
+<option  value="-420">
+Vancouver
+</option>
+<option  value="120">
+Venice
+</option>
+<option  value="120">
+Vienna
+</option>
+<option  value="660">
+Vladivostok
+</option>
+<option  value="120">
+Warsaw
+</option>
+<option  value="-240">
+Washington
+</option>
+<option  value="720">
+Wellington
+</option>
+<option  value="-300">
+Winnipeg
+</option>
+<option  value="390">
+Yangon
+</option>
+<option  value="120">
+Zagreb
+</option>
+<option  value="120">
+Zurich
+</option>
+<option  value="120">
+--------
+</option>
+<option  value="0">
+GMT
+</option>
+<option  value="60">
+BST
+</option>
+<option  value="60">
+IST
+</option>
+<option  value="0">
+WET
+</option>
+<option  value="60">
+WEST
+</option>
+<option  value="60">
+CET
+</option>
+<option  value="120">
+CEST
+</option>
+<option  value="120">
+EET
+</option>
+<option  value="180">
+EEST
+</option>
+<option  value="180">
+MSK
+</option>
+<option  value="240">
+MSD
+</option>
+<option  value="-300">
+ET (Americas)
+</option>
+<option  value="-360">
+CT (Americas)
+</option>
+<option  value="-420">
+MT (Americas)
+</option>
+<option  value="-480">
+PT (Americas)
+</option>
+<option  value="-600">
+HST (Hawaii)
+</option>
+<option  value="-540">
+AKST (Alaska)
+</option>
+<option  value="-480">
+AKDT (Alaska)
+</option>
+<option  value="480">
+WST (Australia)
+</option>
+<option  value="570">
+CST (Australia)
+</option>
+<option  value="600">
+EST (Australia)
+</option>
+</select>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccccc" colspan="2"></td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+it is
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccccc" colspan="2"></td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<center >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+JavaScript must be enabled
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</center>
+</td>
+</tr>
+<!-- /........... -->
+<tr >
+<td  bgcolor="#cccccc" colspan="2"></td>
+</tr>
+</table>
+<!-- .:.:.:.:.:.:.:.:.:. LEFT SIDE end end.:.:.:.:.:.:.:.:.:. -->
+<br ></br>
+<a  href="http://www.swatch.com" name="whatisit" target="new">
+<img ></img>
+</a>
+<p  class="VSnPSm">
+<b >
+What is Internet Time?
+</b>
+</p>
+<p  class="VSnPSm">
+Internet Time represents a completely new global concept of time:
+</p>
+<p  class="VSnPSm">
+No Time Zones.
+<br ></br>
+No Geographical Borders.
+</p>
+<p  class="VSnPSm">
+Swatch has divided the virtual and real day into 1000 "beats". One Swatch beat is the equivalent of 1 minute 26.4 seconds. That means that 12 noon in the old time system is the equivalent of @500 Swatch beats.
+</p>
+<p  class="VSnPSm">
+Want to know more?
+</p>
+<p  class="VSnPSm">
+<a  href="http://www.swatch.com" target="new">
+Visit Swatch.
+</a>
+</p>
+<!-- .:.:.:.:.:.:.:.:.:. /LEFT SIDE .:.:.:.:.:.:.:.:.:. -->
+</td>
+<td  valign="top" width="230">
+<!-- .:.:.:.:.:.:.:.:.:. RIGHT SIDE .:.:.:.:.:.:.:.:.:. -->
+<table  TABID="07852" align="top" bgcolor="#cccccc" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr >
+<td  bgcolor="#ff9900" colspan="2" width="156">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+WORLD TIME CONVERTER
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+If it is
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<form  name="city2city">
+<select >
+<option  selected="selected" value="0">
+12:00 A.M.
+</option>
+<option  value="1">
+12:30 A.M.
+</option>
+<option  value="2">
+1:00 A.M.
+</option>
+<option  value="3">
+1:30 A.M.
+</option>
+<option  value="4">
+2:00 A.M.
+</option>
+<option  value="5">
+2:30 A.M.
+</option>
+<option  value="6">
+3:00 A.M.
+</option>
+<option  value="7">
+3:30 A.M.
+</option>
+<option  value="8">
+4:00 A.M.
+</option>
+<option  value="9">
+4:30 A.M.
+</option>
+<option  value="10">
+5:00 A.M.
+</option>
+<option  value="11">
+5:30 A.M.
+</option>
+<option  value="12">
+6:00 A.M.
+</option>
+<option  value="13">
+6:30 A.M.
+</option>
+<option  value="14">
+7:00 A.M.
+</option>
+<option  value="15">
+7:30 A.M.
+</option>
+<option  value="16">
+8:00 A.M.
+</option>
+<option  value="17">
+8:30 A.M.
+</option>
+<option  value="18">
+9:00 A.M.
+</option>
+<option  value="19">
+9:30 A.M.
+</option>
+<option  value="20">
+10:00 A.M.
+</option>
+<option  value="21">
+10:30 A.M.
+</option>
+<option  value="22">
+11:00 A.M.
+</option>
+<option  value="23">
+11:30 A.M.
+</option>
+<option  value="24">
+12:00 P.M.
+</option>
+<option  value="25">
+12:30 P.M.
+</option>
+<option  value="26">
+1:00 P.M.
+</option>
+<option  value="27">
+1:30 P.M.
+</option>
+<option  value="28">
+2:00 P.M.
+</option>
+<option  value="29">
+2:30 P.M.
+</option>
+<option  value="30">
+3:00 P.M.
+</option>
+<option  value="31">
+3:30 P.M.
+</option>
+<option  value="32">
+4:00 P.M.
+</option>
+<option  value="33">
+4:30 P.M.
+</option>
+<option  value="34">
+5:00 P.M.
+</option>
+<option  value="35">
+5:30 P.M.
+</option>
+<option  value="36">
+6:00 P.M.
+</option>
+<option  value="37">
+6:30 P.M.
+</option>
+<option  value="38">
+7:00 P.M.
+</option>
+<option  value="39">
+7:30 P.M.
+</option>
+<option  value="40">
+8:00 P.M.
+</option>
+<option  value="41">
+8:30 P.M.
+</option>
+<option  value="42">
+9:00 P.M.
+</option>
+<option  value="43">
+9:30 P.M.
+</option>
+<option  value="44">
+10:00 P.M.
+</option>
+<option  value="45">
+10:30 P.M.
+</option>
+<option  value="46">
+11:00 P.M.
+</option>
+<option  value="47">
+11:30 P.M.
+</option>
+</select>
+</form>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccccc" colspan="2"></td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+in
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<select >
+<option  value="180">
+Addis Ababa
+</option>
+<option  value="570">
+Adelaide
+</option>
+<option  value="180">
+Aden
+</option>
+<option  value="-360">
+Aklavik
+</option>
+<option  value="60">
+Algiers
+</option>
+<option  value="180">
+Amman
+</option>
+<option  value="120">
+Amsterdam
+</option>
+<option  value="840">
+Anadyr
+</option>
+<option  value="-480">
+Anchorage
+</option>
+<option  value="180">
+Ankara
+</option>
+<option  value="180">
+Antananarivo
+</option>
+<option  value="-240">
+Asuncion
+</option>
+<option  value="180">
+Athens
+</option>
+<option  value="-240">
+Atlanta
+</option>
+<option  value="720">
+Auckland
+</option>
+<option  value="-300">
+Austin
+</option>
+<option  value="0">
+Azores
+</option>
+<option  value="240">
+Baghdad
+</option>
+<option  value="420">
+Bangkok
+</option>
+<option  value="120">
+Barcelona
+</option>
+<option  value="480">
+Beijing
+</option>
+<option  value="180">
+Beirut
+</option>
+<option  value="120">
+Belgrade
+</option>
+<option  value="120">
+Berlin
+</option>
+<option  value="-180">
+Bermuda
+</option>
+<option  value="120">
+Bern
+</option>
+<option  value="-300">
+Bogota
+</option>
+<option  value="-240">
+Boston
+</option>
+<option  value="-240">
+Brasilia
+</option>
+<option  value="600">
+Brisbane
+</option>
+<option  value="120">
+Brussels
+</option>
+<option  value="180">
+Bucharest
+</option>
+<option  value="120">
+Budapest
+</option>
+<option  value="-180">
+Buenos Aires
+</option>
+<option  value="180">
+Cairo
+</option>
+<option  value="330">
+Calcutta
+</option>
+<option  value="120">
+Cape Town
+</option>
+<option  value="-240">
+Caracas
+</option>
+<option  value="0">
+Casablanca
+</option>
+<option  value="765">
+Chatham Islands
+</option>
+<option  value="-300">
+Chicago
+</option>
+<option  value="120">
+Copenhagen
+</option>
+<option  value="-300">
+Dallas
+</option>
+<option  value="180">
+Dar es Salaam
+</option>
+<option  value="570">
+Darwin
+</option>
+<option  value="-360">
+Denver
+</option>
+<option  value="-240">
+Detroit
+</option>
+<option  value="360">
+Dhaka
+</option>
+<option  value="60">
+Dublin
+</option>
+<option  value="-360">
+Edmonton
+</option>
+<option  value="120">
+Frankfurt
+</option>
+<option  value="120">
+Geneva
+</option>
+<option  value="-360">
+Guatemala City
+</option>
+<option  value="420">
+Hanoi
+</option>
+<option  value="120">
+Harare
+</option>
+<option  value="-240">
+Havana
+</option>
+<option  value="180">
+Helsinki
+</option>
+<option  value="420">
+Ho Chi Minh City
+</option>
+<option  value="480">
+Hong Kong
+</option>
+<option  value="-600">
+Honolulu
+</option>
+<option  value="-300">
+Houston
+</option>
+<option  value="-300">
+Indianapolis
+</option>
+<option  value="300">
+Islamabad
+</option>
+<option  value="180">
+Istanbul
+</option>
+<option  value="420">
+Jakarta
+</option>
+<option  value="180">
+Jerusalem
+</option>
+<option  value="120">
+Johannesburg
+</option>
+<option  value="270">
+Kabul
+</option>
+<option  value="180">
+Kamchatka
+</option>
+<option  value="300">
+Kathmandu
+</option>
+<option  value="120">
+Khartoum
+</option>
+<option  value="120">
+Kigali
+</option>
+<option  value="-300">
+Kingston
+</option>
+<option  value="480">
+Kuala Lumpur
+</option>
+<option  value="180">
+Kuwait City
+</option>
+<option  value="-240">
+La Paz
+</option>
+<option  value="60">
+Lagos
+</option>
+<option  value="-300">
+Lima
+</option>
+<option  value="60">
+Lisbon
+</option>
+<option  value="60">
+London
+</option>
+<option  value="-420">
+Los Angeles
+</option>
+<option  value="120">
+Madrid
+</option>
+<option  value="-360">
+Managua
+</option>
+<option  value="480">
+Manila
+</option>
+<option  value="240">
+Masqat
+</option>
+<option  value="600">
+Melbourne
+</option>
+<option  value="-300">
+Mexico City
+</option>
+<option  value="-240">
+Miami
+</option>
+<option  value="120">
+Milan
+</option>
+<option  value="-300">
+Minneapolis
+</option>
+<option  value="-180">
+Montevideo
+</option>
+<option  value="-240">
+Montreal
+</option>
+<option  value="240">
+Moscow
+</option>
+<option  value="330">
+Mumbai
+</option>
+<option  value="120">
+Munich
+</option>
+<option  value="180">
+Nairobi
+</option>
+<option  value="120">
+Naples
+</option>
+<option  value="-240">
+Nassau
+</option>
+<option  value="330">
+New Delhi
+</option>
+<option  value="-300">
+New Orleans
+</option>
+<option  value="-240">
+New York City
+</option>
+<option  value="120">
+Oslo
+</option>
+<option  value="-240">
+Ottawa
+</option>
+<option  value="120">
+Paris
+</option>
+<option  value="480">
+Perth
+</option>
+<option  value="-420">
+Phoenix
+</option>
+<option  value="420">
+Phnom Penh
+</option>
+<option  value="120">
+Prague
+</option>
+<option  value="540">
+Pyongyang
+</option>
+<option  value="0">
+Reykjavik
+</option>
+<option  value="-240">
+Rio de Janeiro
+</option>
+<option  value="180">
+Riyadh
+</option>
+<option  value="120">
+Rome
+</option>
+<option  value="-150">
+St. John's
+</option>
+<option  value="-300">
+St. Paul
+</option>
+<option  value="-420">
+San Francisco
+</option>
+<option  value="-240">
+San Juan
+</option>
+<option  value="-360">
+San Salvador
+</option>
+<option  value="-240">
+Santo Domingo
+</option>
+<option  value="-240">
+Santiago
+</option>
+<option  value="-180">
+Sao Paulo
+</option>
+<option  value="-420">
+Seattle
+</option>
+<option  value="540">
+Seoul
+</option>
+<option  value="480">
+Shanghai
+</option>
+<option  value="480">
+Singapore
+</option>
+<option  value="180">
+Sofia
+</option>
+<option  value="120">
+Stockholm
+</option>
+<option  value="720">
+Suva
+</option>
+<option  value="600">
+Sydney
+</option>
+<option  value="480">
+Taipei
+</option>
+<option  value="180">
+Tallinn
+</option>
+<option  value="300">
+Tashkent
+</option>
+<option  value="-360">
+Tegucigalpa
+</option>
+<option  value="270">
+Tehran
+</option>
+<option  value="540">
+Tokyo
+</option>
+<option  value="-240">
+Toronto
+</option>
+<option  value="120">
+Turin
+</option>
+<option  value="-420">
+Vancouver
+</option>
+<option  value="120">
+Venice
+</option>
+<option  value="120">
+Vienna
+</option>
+<option  value="660">
+Vladivostok
+</option>
+<option  value="120">
+Warsaw
+</option>
+<option  value="-240">
+Washington
+</option>
+<option  value="720">
+Wellington
+</option>
+<option  value="-300">
+Winnipeg
+</option>
+<option  value="390">
+Yangon
+</option>
+<option  value="120">
+Zagreb
+</option>
+<option  value="120">
+Zurich
+</option>
+<option  value="120">
+--------
+</option>
+<option  value="0">
+GMT
+</option>
+<option  value="60">
+BST
+</option>
+<option  value="60">
+IST
+</option>
+<option  value="0">
+WET
+</option>
+<option  value="60">
+WEST
+</option>
+<option  value="60">
+CET
+</option>
+<option  value="120">
+CEST
+</option>
+<option  value="120">
+EET
+</option>
+<option  value="180">
+EEST
+</option>
+<option  value="180">
+MSK
+</option>
+<option  value="240">
+MSD
+</option>
+<option  value="-300">
+ET (Americas)
+</option>
+<option  value="-360">
+CT (Americas)
+</option>
+<option  value="-420">
+MT (Americas)
+</option>
+<option  value="-480">
+PT (Americas)
+</option>
+<option  value="-600">
+HST (Hawaii)
+</option>
+<option  value="-540">
+AKST (Alaska)
+</option>
+<option  value="-480">
+AKDT (Alaska)
+</option>
+<option  value="480">
+WST (Australia)
+</option>
+<option  value="570">
+CST (Australia)
+</option>
+<option  value="600">
+EST (Australia)
+</option>
+</select>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccccc" colspan="2"></td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+What time is it in
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<select >
+<option  value="180">
+Addis Ababa
+</option>
+<option  value="570">
+Adelaide
+</option>
+<option  value="180">
+Aden
+</option>
+<option  value="-360">
+Aklavik
+</option>
+<option  value="60">
+Algiers
+</option>
+<option  value="180">
+Amman
+</option>
+<option  value="120">
+Amsterdam
+</option>
+<option  value="840">
+Anadyr
+</option>
+<option  value="-480">
+Anchorage
+</option>
+<option  value="180">
+Ankara
+</option>
+<option  value="180">
+Antananarivo
+</option>
+<option  value="-240">
+Asuncion
+</option>
+<option  value="180">
+Athens
+</option>
+<option  value="-240">
+Atlanta
+</option>
+<option  value="720">
+Auckland
+</option>
+<option  value="-300">
+Austin
+</option>
+<option  value="0">
+Azores
+</option>
+<option  value="240">
+Baghdad
+</option>
+<option  value="420">
+Bangkok
+</option>
+<option  value="120">
+Barcelona
+</option>
+<option  value="480">
+Beijing
+</option>
+<option  value="180">
+Beirut
+</option>
+<option  value="120">
+Belgrade
+</option>
+<option  value="120">
+Berlin
+</option>
+<option  value="-180">
+Bermuda
+</option>
+<option  value="120">
+Bern
+</option>
+<option  value="-300">
+Bogota
+</option>
+<option  value="-240">
+Boston
+</option>
+<option  value="-240">
+Brasilia
+</option>
+<option  value="600">
+Brisbane
+</option>
+<option  value="120">
+Brussels
+</option>
+<option  value="180">
+Bucharest
+</option>
+<option  value="120">
+Budapest
+</option>
+<option  value="-180">
+Buenos Aires
+</option>
+<option  value="180">
+Cairo
+</option>
+<option  value="330">
+Calcutta
+</option>
+<option  value="120">
+Cape Town
+</option>
+<option  value="-240">
+Caracas
+</option>
+<option  value="0">
+Casablanca
+</option>
+<option  value="765">
+Chatham Islands
+</option>
+<option  value="-300">
+Chicago
+</option>
+<option  value="120">
+Copenhagen
+</option>
+<option  value="-300">
+Dallas
+</option>
+<option  value="180">
+Dar es Salaam
+</option>
+<option  value="570">
+Darwin
+</option>
+<option  value="-360">
+Denver
+</option>
+<option  value="-240">
+Detroit
+</option>
+<option  value="360">
+Dhaka
+</option>
+<option  value="60">
+Dublin
+</option>
+<option  value="-360">
+Edmonton
+</option>
+<option  value="120">
+Frankfurt
+</option>
+<option  value="120">
+Geneva
+</option>
+<option  value="-360">
+Guatemala City
+</option>
+<option  value="420">
+Hanoi
+</option>
+<option  value="120">
+Harare
+</option>
+<option  value="-240">
+Havana
+</option>
+<option  value="180">
+Helsinki
+</option>
+<option  value="420">
+Ho Chi Minh City
+</option>
+<option  value="480">
+Hong Kong
+</option>
+<option  value="-600">
+Honolulu
+</option>
+<option  value="-300">
+Houston
+</option>
+<option  value="-300">
+Indianapolis
+</option>
+<option  value="300">
+Islamabad
+</option>
+<option  value="180">
+Istanbul
+</option>
+<option  value="420">
+Jakarta
+</option>
+<option  value="180">
+Jerusalem
+</option>
+<option  value="120">
+Johannesburg
+</option>
+<option  value="270">
+Kabul
+</option>
+<option  value="180">
+Kamchatka
+</option>
+<option  value="300">
+Kathmandu
+</option>
+<option  value="120">
+Khartoum
+</option>
+<option  value="120">
+Kigali
+</option>
+<option  value="-300">
+Kingston
+</option>
+<option  value="480">
+Kuala Lumpur
+</option>
+<option  value="180">
+Kuwait City
+</option>
+<option  value="-240">
+La Paz
+</option>
+<option  value="60">
+Lagos
+</option>
+<option  value="-300">
+Lima
+</option>
+<option  value="60">
+Lisbon
+</option>
+<option  value="60">
+London
+</option>
+<option  value="-420">
+Los Angeles
+</option>
+<option  value="120">
+Madrid
+</option>
+<option  value="-360">
+Managua
+</option>
+<option  value="480">
+Manila
+</option>
+<option  value="240">
+Masqat
+</option>
+<option  value="600">
+Melbourne
+</option>
+<option  value="-300">
+Mexico City
+</option>
+<option  value="-240">
+Miami
+</option>
+<option  value="120">
+Milan
+</option>
+<option  value="-300">
+Minneapolis
+</option>
+<option  value="-180">
+Montevideo
+</option>
+<option  value="-240">
+Montreal
+</option>
+<option  value="240">
+Moscow
+</option>
+<option  value="330">
+Mumbai
+</option>
+<option  value="120">
+Munich
+</option>
+<option  value="180">
+Nairobi
+</option>
+<option  value="120">
+Naples
+</option>
+<option  value="-240">
+Nassau
+</option>
+<option  value="330">
+New Delhi
+</option>
+<option  value="-300">
+New Orleans
+</option>
+<option  value="-240">
+New York City
+</option>
+<option  value="120">
+Oslo
+</option>
+<option  value="-240">
+Ottawa
+</option>
+<option  value="120">
+Paris
+</option>
+<option  value="480">
+Perth
+</option>
+<option  value="-420">
+Phoenix
+</option>
+<option  value="420">
+Phnom Penh
+</option>
+<option  value="120">
+Prague
+</option>
+<option  value="540">
+Pyongyang
+</option>
+<option  value="0">
+Reykjavik
+</option>
+<option  value="-240">
+Rio de Janeiro
+</option>
+<option  value="180">
+Riyadh
+</option>
+<option  value="120">
+Rome
+</option>
+<option  value="-150">
+St. John's
+</option>
+<option  value="-300">
+St. Paul
+</option>
+<option  value="-420">
+San Francisco
+</option>
+<option  value="-240">
+San Juan
+</option>
+<option  value="-360">
+San Salvador
+</option>
+<option  value="-240">
+Santo Domingo
+</option>
+<option  value="-240">
+Santiago
+</option>
+<option  value="-180">
+Sao Paulo
+</option>
+<option  value="-420">
+Seattle
+</option>
+<option  value="540">
+Seoul
+</option>
+<option  value="480">
+Shanghai
+</option>
+<option  value="480">
+Singapore
+</option>
+<option  value="180">
+Sofia
+</option>
+<option  value="120">
+Stockholm
+</option>
+<option  value="720">
+Suva
+</option>
+<option  value="600">
+Sydney
+</option>
+<option  value="480">
+Taipei
+</option>
+<option  value="180">
+Tallinn
+</option>
+<option  value="300">
+Tashkent
+</option>
+<option  value="-360">
+Tegucigalpa
+</option>
+<option  value="270">
+Tehran
+</option>
+<option  value="540">
+Tokyo
+</option>
+<option  value="-240">
+Toronto
+</option>
+<option  value="120">
+Turin
+</option>
+<option  value="-420">
+Vancouver
+</option>
+<option  value="120">
+Venice
+</option>
+<option  value="120">
+Vienna
+</option>
+<option  value="660">
+Vladivostok
+</option>
+<option  value="120">
+Warsaw
+</option>
+<option  value="-240">
+Washington
+</option>
+<option  value="720">
+Wellington
+</option>
+<option  value="-300">
+Winnipeg
+</option>
+<option  value="390">
+Yangon
+</option>
+<option  value="120">
+Zagreb
+</option>
+<option  value="120">
+Zurich
+</option>
+<option  value="120">
+--------
+</option>
+<option  value="0">
+GMT
+</option>
+<option  value="60">
+BST
+</option>
+<option  value="60">
+IST
+</option>
+<option  value="0">
+WET
+</option>
+<option  value="60">
+WEST
+</option>
+<option  value="60">
+CET
+</option>
+<option  value="120">
+CEST
+</option>
+<option  value="120">
+EET
+</option>
+<option  value="180">
+EEST
+</option>
+<option  value="180">
+MSK
+</option>
+<option  value="240">
+MSD
+</option>
+<option  value="-300">
+ET (Americas)
+</option>
+<option  value="-360">
+CT (Americas)
+</option>
+<option  value="-420">
+MT (Americas)
+</option>
+<option  value="-480">
+PT (Americas)
+</option>
+<option  value="-600">
+HST (Hawaii)
+</option>
+<option  value="-540">
+AKST (Alaska)
+</option>
+<option  value="-480">
+AKDT (Alaska)
+</option>
+<option  value="480">
+WST (Australia)
+</option>
+<option  value="570">
+CST (Australia)
+</option>
+<option  value="600">
+EST (Australia)
+</option>
+</select>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccccc" colspan="2"></td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccccc" colspan="2"></td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccccc" colspan="2"></td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+internet time
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccccc" colspan="2"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<center >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+JavaScript must be enabled
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</center>
+</td>
+</tr>
+<!-- /........... -->
+<tr >
+<td  bgcolor="#cccccc" colspan="2"></td>
+</tr>
+</table>
+<!-- .:.:.:.:.:.:.:.:.:. RIGHT SIDE end end end.:.:.:.:.:.:.:.:.:. -->
+<br ></br>
+<br ></br>
+<center >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+brought to you in conjunction with:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<img ></img>
+</center>
+<br ></br>
+<ul >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<li  type="square">
+<a  href="http://cnn.com/StudioTour/index7.html" target="new">
+About CNN International
+</a>
+</li>
+<li  type="square">
+<a  href="http://cnn.com/CNNI/Programs/scheds.html">
+Programming schedule
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</li>
+</ul>
+<!-- .:.:.:.:.:.:.:.:.:. /RIGHT SIDE .:.:.:.:.:.:.:.:.:. -->
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top" width="460"></td>
+</tr>
+</table>
+<!--========================================================-->
+<!--===============Paste story between here=================-->
+<!--========================================================-->
+<center >
+<!-- search box -->
+<form  onsubmit="return" this="#DEFAULT" validate="#DEFAULT">
+<table  TABID="07854" bgcolor="#666666" border="0" cellpadding="0" cellspacing="0" width="460">
+<tr >
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Search
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td >
+<select >
+<option  value="CNN">
+CNN.com
+</option>
+<option  value="CNNSI">
+CNNSI.com
+</option>
+<option  value="CNNfn">
+CNNfn.com
+</option>
+<!-- &amp;amp;amp;lt;OPTION value="TIME"&amp;amp;amp;gt;TIME.com&amp;amp;amp;lt;/OPTION&amp;amp;amp;gt; -->
+<option  value="Internet">
+The Web
+</option>
+</select>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+</td>
+<td  align="right">
+<input ></input>
+</td>
+<td  align="center">
+<input ></input>
+</td>
+</tr>
+</table>
+</form>
+<!-- /search box -->
+</center>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  colspan="7">
+<hr ></hr>
+</td>
+</tr>
+</table>
+<table  TABID="07856" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  valign="top" width="125">
+<a  class="BackToTop">
+Back to the top
+</a>
+</td>
+<td  width="15"></td>
+<td  valign="top" width="460">
+<font  arial="#DEFAULT" face="Verdana," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="1">
+<b >
+© 2001 Cable News Network.
+</b>
+All Rights Reserved.
+<br ></br>
+<a  href="/interactive_legal.html">
+Terms
+</a>
+under which this service is provided to you.
+<br ></br>
+Read our
+<a  href="/privacy.html">
+privacy guidelines
+</a>
+.
+</font>
+<br ></br>
+</td>
+</tr>
+</table>
+</body>
+</html>

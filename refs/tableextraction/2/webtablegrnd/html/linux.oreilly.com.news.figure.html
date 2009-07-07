@@ -1,0 +1,326 @@
+<html >
+<head >
+<title >
+Gear Heads figure page
+</title>
+<meta ></meta>
+</head>
+<body  bgcolor="#FFFFFF">
+<table  TABID="05459" border="0" height="2642" width="100%">
+<tr >
+<td >
+<a  name="fig1a"></a>
+<br ></br>
+FIGURE 1A
+<br ></br>
+</td>
+</tr>
+<tr >
+<td >
+<pre >
+<font  face="Courier New, Courier, mono" size="3">
+struct thing my_thing;
+
+if(verify_area(VERIFY_READ, userptr, sizeof(my_thing)))
+       return -EFAULT;
+memcpy_fromuser(&amp;my_thing, userptr, sizeof(my_thing));
+</font>
+</pre>
+</td>
+</tr>
+<tr >
+<td >
+<p ></p>
+<p ></p>
+<p >
+<a  name="fig1b"></a>
+<br ></br>
+FIGURE 1B
+<br ></br>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<pre >
+<font  face="Courier New, Courier, mono" size="3">
+#include &lt;asm/uaccess.h&gt;
+
+struct thing my_thing;
+
+if(copy_from_user(&amp;my_thing, userptr, sizeof(my_thing)))
+       return -EFAULT;
+</font>
+</pre>
+</td>
+</tr>
+<tr >
+<td >
+<p ></p>
+<p ></p>
+<p >
+<a  name="fig2a"></a>
+<br ></br>
+FIGURE 2A
+<br ></br>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<pre >
+<font  face="Courier New, Courier, mono" size="3">
+if(verify_area(VERIFY_READ,        pointer, sizeof(*pointer)))
+       return -EFAULT;
+c=get_user(pointer);
+switch(c)
+{
+       ..
+</font>
+</pre>
+</td>
+</tr>
+<tr >
+<td >
+<p ></p>
+<p ></p>
+<p >
+<a  name="fig2b"></a>
+<br ></br>
+FIGURE 2B
+<br ></br>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<pre >
+<font  face="Courier New, Courier, mono" size="3">
+if(get_user(c, pointer))
+      return -EFAULT'
+switch(c)
+{
+       ..
+</font>
+</pre>
+</td>
+</tr>
+<tr >
+<td >
+<p ></p>
+<p ></p>
+<p >
+<a  name="fig3"></a>
+<br ></br>
+FIGURE 3
+<br ></br>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<pre >
+<font  face="Courier New, Courier, mono" size="3">
+POLLERR      - an error is pending
+POLLHUP      - a hangup occurred
+POLLIN       - input data exists
+POLLRDNORM   - normal readable data exists
+POLLPRI      - a “priority” message is waiting (used for urgent data on sockets)
+POLLOUT      - output is possible (there is room)
+POLLWRNORM   - there is space to output normal data.
+</font>
+</pre>
+</td>
+</tr>
+<tr >
+<td >
+<p ></p>
+<p ></p>
+<p >
+<a  name="fig4"></a>
+<br ></br>
+FIGURE 4
+<br ></br>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<pre >
+<font  face="Courier New, Courier, mono" size="3">
+Linux 2.0 - select
+
+/*
+ * select for mouse input
+ */
+ static int mouse_select(struct inode *inode, struct file *file,
+<br ></br>
+int sel_type,  select_table * wait)
+ {
+        if (sel_type == SEL_IN) {
+               if (mouse.ready)
+                      return 1;
+        select_wait(&amp;mouse.wait, wait);
+        }
+        return 0;
+  }
+Linux 2.2 - poll
+
+/*
+ * poll for mouse input
+ */
+static unsigned int mouse_poll(struct file *file, poll_table * wait)
+{
+       poll_wait(file, &amp;mouse.wait, wait);
+       if (mouse.ready)
+              return POLLIN | POLLRDNORM;
+       return 0;
+}
+</font>
+</pre>
+</td>
+</tr>
+<tr >
+<td >
+<p ></p>
+<p ></p>
+<p >
+<a  name="fig5a"></a>
+<br ></br>
+FIGURE 5A
+<br ></br>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<pre >
+<font  face="Courier New, Courier, mono" size="3">
+void my_interrupt(int        irq, void *dev_id, struct pt_regs *regs)
+{
+       struct my_device *dev=my_devices[irq];
+</font>
+...
+</pre>
+</td>
+</tr>
+<tr >
+<td >
+<p ></p>
+<p ></p>
+<p >
+<a  name="fig5b"></a>
+<br ></br>
+FIGURE 5B
+<br ></br>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="Courier New, Courier, mono" size="3">
+request_irq(irq, my_interrupt, SA_SHIRQ, “mythingy”, dev);
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<p ></p>
+<p ></p>
+<p >
+<a  name="fig6"></a>
+<br ></br>
+FIGURE 6
+<br ></br>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<pre >
+<font  face="Courier New, Courier, mono" size="3">
+void my_interrupt(int        irq, void *dev_id, struct pt_regs *regs)
+       {
+             struct my_device *dev=dev_id;
+             spin_lock(&amp;dev-&gt;lock);
+             /* Do the same things as we always did in 2.0
+                knowing user code grabbing the lock will be
+<br ></br>
+held up until ... */
+
+             spin_unlock(&amp;dev-&gt;lock);
+       }
+</font>
+</pre>
+</td>
+</tr>
+<tr >
+<td >
+<p ></p>
+<p ></p>
+<p >
+<a  name="fig7"></a>
+<br ></br>
+FIGURE 7
+<br ></br>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<pre >
+<font  face="Courier New, Courier, mono" size="3">
+struct my_device *dev;
+unsigned long flags;
+
+spin_lock_irqsave(&amp;dev-&gt;lock, flags);
+       
+/* The interrupt cannot interfere here */
+/* Do the things we did in 2.0 */
+spin_unlock_irqrestore(dev-&gt;lock, flags);
+</font>
+</pre>
+</td>
+</tr>
+<tr >
+<td  height="70">
+<p ></p>
+<p ></p>
+<p >
+<a  name="fig8"></a>
+<br ></br>
+FIGURE 8
+<br ></br>
+</p>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<pre >
+<font  face="Courier New, Courier, mono" size="3">
+spin_unlock_irq(&amp;io_request_lock);
+
+       while(!(NCR5380_read(INITIATOR_
+COMMAND_REG)&amp; ICR_ARBITRATION_PROGRESS)
+             &amp;&amp; time_before(jiffies,timeout));
+
+spin_lock_irq(&amp;io_request_lock);
+</font>
+</pre>
+</td>
+</tr>
+</table>
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+</body>
+</html>

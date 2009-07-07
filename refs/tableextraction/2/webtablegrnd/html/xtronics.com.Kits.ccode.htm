@@ -1,0 +1,1077 @@
+<html >
+<head >
+<meta ></meta>
+<title >
+Capcitor Value Codes
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<link ></link>
+</head>
+<body >
+<p ></p>
+<p >
+<img ></img>
+</p>
+<p ></p>
+<hr ></hr>
+<h1 >
+How to read Capacitor Codes
+</h1>
+<p >
+<a  href="../stock/surplus.htm">
+Surplus capacitors
+</a>
+</p>
+<p >
+Large capacitor have the value printed plainly on them, such as 10.uF (Ten Micro Farads) but smaller disk types along with plastic film types often have just 2 or three numbers on them?
+</p>
+<p >
+First, most will have three numbers, but sometimes there are just two numbers. These are read as Pico-Farads. An example: 47 printed on a small disk can be assumed to be 47 Pico-Farads (or 47 puff as some like to say)
+</p>
+<p >
+Now, what about the three numbers? It is somewhat similar to the
+<a  href="rcode.htm">
+resistor code
+</a>
+. The first two are the 1
+<sup >
+st
+</sup>
+and 2
+<sup >
+nd
+</sup>
+significant digits and the third is a multiplier code. Most of the time the last digit tells you how many zeros to write after the first two digits, but the standard (EIA standard RS-198) has a couple of curves that you probably will never see. But just to be complete here it is in a table.
+</p>
+<p >
+What these numbers don't tell us is the ESR rating of a capacitor. Despite popular belief capacitors will often still have the correct value of capacitance when they fail. To truly check a capacitor's condition, you need a meter that measures the ESR like the
+<a  href="../capacitor-wizard.htm">
+Capacitor Wizard.
+</a>
+</p>
+<table  TABID="14610" class="floatr" genuinetable="yes" tabletitle="Table 1 Digit multipliers">
+<tr >
+<th  colspan="2">
+Table 1 Digit multipliers
+</th>
+</tr>
+<tr >
+<th >
+Third digit
+</th>
+<th >
+Multiplier (this times the first two digits
+<br ></br>
+gives you the value in Pico-Farads)
+</th>
+</tr>
+<tr >
+<td >
+0
+</td>
+<td >
+1
+</td>
+</tr>
+<tr >
+<td >
+1
+</td>
+<td >
+10
+</td>
+</tr>
+<tr >
+<td >
+2
+</td>
+<td >
+100
+</td>
+</tr>
+<tr >
+<td >
+3
+</td>
+<td >
+1,000
+</td>
+</tr>
+<tr >
+<td >
+4
+</td>
+<td >
+10,000
+</td>
+</tr>
+<tr >
+<td >
+5
+</td>
+<td >
+100,000
+</td>
+</tr>
+<tr >
+<td >
+6 not used
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+7 not used
+</td>
+<td ></td>
+</tr>
+<tr >
+<td >
+8
+</td>
+<td >
+.01
+</td>
+</tr>
+<tr >
+<td >
+9
+</td>
+<td >
+.1
+</td>
+</tr>
+</table>
+<p >
+Now for an example: A capacitor marked 104 is 10 with 4 more zeros or 100,000pF which is otherwise referred to as a .1 uF capacitor.
+</p>
+<p >
+Most kit builders don't need to go further, but I know you want to learn more. Anyway, Just to confuse you some more there is sometimes a tolerance code given by a single letter. I don't know why there were picked in the order they are, except that it kind of follows the middle row of keys on a typewriter.
+</p>
+<p >
+So a 103J is a 10,000 pF with +/-5% tolerance
+<br ></br>
+</p>
+<table  TABID="14611" class="floatr" genuinetable="yes" tabletitle="Table 2 Letter tolerance code">
+<tr >
+<th  colspan="2">
+Table 2 Letter tolerance code
+</th>
+</tr>
+<tr >
+<th >
+Letter symbol
+</th>
+<th >
+Tolerance of capacitor
+</th>
+</tr>
+<tr >
+<td >
+B
+</td>
+<td >
++/- 0.10%
+</td>
+</tr>
+<tr >
+<td >
+C
+</td>
+<td >
++/- 0.25%
+</td>
+</tr>
+<tr >
+<td >
+D
+</td>
+<td >
++/- 0.5%
+</td>
+</tr>
+<tr >
+<td >
+E
+</td>
+<td >
++/- 0.5%
+</td>
+</tr>
+<tr >
+<td >
+F
+</td>
+<td >
++/- 1%
+</td>
+</tr>
+<tr >
+<td >
+G
+</td>
+<td >
++/- 2%
+</td>
+</tr>
+<tr >
+<td >
+H
+</td>
+<td >
++/- 3%
+</td>
+</tr>
+<tr >
+<td >
+J
+</td>
+<td >
++/- 5%
+</td>
+</tr>
+<tr >
+<td >
+K
+</td>
+<td >
++/- 10%
+</td>
+</tr>
+<tr >
+<td >
+M
+</td>
+<td >
++/- 20%
+</td>
+</tr>
+<tr >
+<td >
+N
+</td>
+<td >
++/- 0.05%
+</td>
+</tr>
+<tr >
+<td >
+P
+</td>
+<td >
++100% ,-0%
+</td>
+</tr>
+<tr >
+<td >
+Z
+</td>
+<td >
++80%, -20%
+</td>
+</tr>
+</table>
+<p >
+Now to be really complicate things there is sometimes a
+<i >
+letter-number-letter
+</i>
+(like Z5U) code that gives information. Table 3 shows how to read these cryptic codes. A 224 Z5U would be a 220,000 pF (or .22 uF) cap with a low temperature rating of -10 deg C a high temperature rating of +85 Deg C and a tolerance of +22%,-56%.
+<br ></br>
+</p>
+<table  TABID="14612" cellpadding="4" cellspacing="0" genuinetable="yes" tabletitle="Table 3 Dielectric codes">
+<tr >
+<th  colspan="6">
+Table 3 Dielectric codes
+</th>
+</tr>
+<tr >
+<th >
+First symbol
+<br ></br>
+(a letter)
+</th>
+<th >
+Low temperature requirement
+</th>
+<th >
+Second symbol
+<br ></br>
+(a number)
+</th>
+<th >
+High Temperature requirement
+</th>
+<th >
+Third Symbol
+<br ></br>
+(a letter)
+</th>
+<th >
+MAX. Capacitance change over temperature
+</th>
+</tr>
+<tr >
+<td >
+Z
+</td>
+<td >
++10 deg. C
+</td>
+<td >
+2
+</td>
+<td >
++45 deg. C
+</td>
+<td >
+A
+</td>
+<td >
++1.0%
+</td>
+</tr>
+<tr >
+<td >
+Y
+</td>
+<td >
+-30 deg. C
+</td>
+<td >
+4
+</td>
+<td >
++65 deg. C
+</td>
+<td >
+B
+</td>
+<td >
++/- 1.5%
+</td>
+</tr>
+<tr >
+<td >
+X
+</td>
+<td >
+-55 deg. C
+</td>
+<td >
+5
+</td>
+<td >
++85 deg. C
+</td>
+<td >
+C
+</td>
+<td >
++/- 2.2%
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td >
+6
+</td>
+<td >
++105 deg. C
+</td>
+<td >
+D
+</td>
+<td >
++/- 3.3%
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td >
+7
+</td>
+<td >
++125 deg. C
+</td>
+<td >
+E
+</td>
+<td >
++/- 4.7%
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >
+F
+</td>
+<td >
++/- 7.5%
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >
+P
+</td>
+<td >
++/- 10.0%
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >
+R
+</td>
+<td >
++/- 15.0%
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >
+S
+</td>
+<td >
++/- 22.0%
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >
+T
+</td>
+<td >
++22%, -33%
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >
+U
+</td>
+<td >
++22%, -56%
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >
+V
+</td>
+<td >
++22%, -82%
+</td>
+</tr>
+</table>
+<p >
+There are some Capacitor color codes - the last dot is the tolerance code where brown is +/-1% red +/-2% as in the resistor color code with two exceptions black is +/- 20% and white is +/- 10% going backward the three dots to the left of the tolerance dot form the value in pF There will be two or three more color dots before the value but they mean different things about temperature range and coefficient depend which one of three systems is used - so I will leave it out for now unless some one asks.
+</p>
+<p >
+There are two more number systems seen on caps. The first one can be recognized as the EIA because it starts with an R.
+</p>
+<p >
+<b >
+R DM 15 F 471(R) J 5 O (C)
+</b>
+</p>
+<p >
+The above number means the following
+</p>
+<table  TABID="14613" genuinetable="yes" cellpadding="4" cellspacing="0">
+<tr >
+<th >
+R
+</th>
+<td >
+tells us this is an EIA code
+</td>
+</tr>
+<tr >
+<th >
+DM
+</th>
+<td >
+is a dipped case style CM would be a molded case style
+</td>
+</tr>
+<tr >
+<th >
+15
+</th>
+<td >
+is the case size code - if anyone asks I will put up a table for this
+</td>
+</tr>
+<tr >
+<th >
+F
+</th>
+<td >
+is the characteristic code from table 4
+</td>
+</tr>
+<tr >
+<th >
+471R
+</th>
+<td >
+the R is a decimal point when used (not often) the
+<br ></br>
+first two digits form the significant value and the third
+<br ></br>
+is the multiplier thus, this is a 470pF part
+</td>
+</tr>
+<tr >
+<th >
+J
+</th>
+<td >
+is the capacitance tolerance code as given in table 2 above thus J is a 5% part
+</td>
+</tr>
+<tr >
+<th >
+5
+</th>
+<td >
+is the DC working voltage in hundreds of volts (EIA only) thus 500V
+</td>
+</tr>
+<tr >
+<th >
+O
+</th>
+<td >
+is the temperature range from table 5
+</td>
+</tr>
+<tr >
+<th >
+C
+</th>
+<td >
+tells us the leads are crimped where a S would tell us they are straight.
+</td>
+</tr>
+</table>
+<p ></p>
+<p >
+This next one is the Military code
+</p>
+<p >
+<b >
+CM 15 B D 332 K N 3
+</b>
+</p>
+<table  TABID="14614" genuinetable="yes" cellpadding="4" cellspacing="0">
+<tr >
+<th >
+CM
+</th>
+<td >
+is the case code - DM is a dipped case style CM would be a molded case style
+</td>
+</tr>
+<tr >
+<th >
+15
+</th>
+<td >
+is the case size code - if anyone asks I will put up a table for this
+</td>
+</tr>
+<tr >
+<th >
+B
+</th>
+<td >
+characteristic code tells us it doesn't have a drift specified (from table 4)
+</td>
+</tr>
+<tr >
+<th >
+D
+</th>
+<td >
+is the Military voltage code from table 6
+</td>
+</tr>
+<tr >
+<th >
+332
+</th>
+<td >
+tells us that it is 3,300pF
+</td>
+</tr>
+<tr >
+<th >
+K
+</th>
+<td >
+tells us from table 2 that this is a 10% part
+</td>
+</tr>
+<tr >
+<th >
+N
+</th>
+<td >
+gives us our temperature range of -55 to 85 °C from table 5
+</td>
+</tr>
+<tr >
+<th >
+3
+</th>
+<td >
+The 3gives the vibration grade 3 tells us 20g at 10 to 2,000 hz for 12 hours (1 is 10G at 10 to 55 Hz for 4.5 hours)
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="14615" cellpadding="4" cellspacing="0" genuinetable="yes" tabletitle="Table 4 characteristic codes">
+<tr >
+<th  colspan="3">
+Table 4 characteristic codes
+</th>
+</tr>
+<tr >
+<th >
+EIA or MIL characteristic code
+</th>
+<th >
+Maximum capacitance drift
+</th>
+<th >
+Maximum range of Temp coefficient
+</th>
+</tr>
+<tr >
+<td >
+B
+</td>
+<td >
+Not specified
+</td>
+<td >
+Not specified
+</td>
+</tr>
+<tr >
+<td >
+C
+</td>
+<td >
++/-(0.5% + 0.1pF)
+</td>
+<td >
++/- 200 ppm/°C
+</td>
+</tr>
+<tr >
+<td >
+D
+</td>
+<td >
++/-(0.3% + 0.1pF)
+</td>
+<td >
++/- 100 ppm/°C
+</td>
+</tr>
+<tr >
+<td >
+E
+</td>
+<td >
++/-(0.1% + 0.1pF)
+</td>
+<td >
+-20 to +100 ppm/°C
+</td>
+</tr>
+<tr >
+<td >
+F
+</td>
+<td >
++/-(0.05% + 0.1pF)
+</td>
+<td >
+0 to +70 ppm/°C
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="14616" cellpadding="4" cellspacing="0" genuinetable="yes" tabletitle="Table 5 Temperature range">
+<tr >
+<th  colspan="2">
+Table 5 Temperature range
+</th>
+</tr>
+<tr >
+<td >
+M
+</td>
+<td >
+-55 to 70 °C
+</td>
+</tr>
+<tr >
+<td >
+N
+</td>
+<td >
+-55 to 85 °C
+</td>
+</tr>
+<tr >
+<td >
+O
+</td>
+<td >
+-55 to 125 °C
+</td>
+</tr>
+<tr >
+<td >
+P
+</td>
+<td >
+-55 to 150 °C
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="14617" cellpadding="4" cellspacing="0" genuinetable="yes" tabletitle="Table 6 Mil voltage range code in volts">
+<tr >
+<th  colspan="2">
+Table 6 Mil voltage range code in volts
+</th>
+</tr>
+<tr >
+<td >
+A
+</td>
+<td >
+100
+</td>
+</tr>
+<tr >
+<td >
+B
+</td>
+<td >
+250
+</td>
+</tr>
+<tr >
+<td >
+C
+</td>
+<td >
+300
+</td>
+</tr>
+<tr >
+<td >
+D
+</td>
+<td >
+500
+</td>
+</tr>
+<tr >
+<td >
+E
+</td>
+<td >
+600
+</td>
+</tr>
+<tr >
+<td >
+F
+</td>
+<td >
+1,000
+</td>
+</tr>
+<tr >
+<td >
+G
+</td>
+<td >
+1,200
+</td>
+</tr>
+<tr >
+<td >
+H
+</td>
+<td >
+1,500
+</td>
+</tr>
+<tr >
+<td >
+J
+</td>
+<td >
+2,000
+</td>
+</tr>
+<tr >
+<td >
+K
+</td>
+<td >
+2,500
+</td>
+</tr>
+<tr >
+<td >
+L
+</td>
+<td >
+3,000
+</td>
+</tr>
+<tr >
+<td >
+M
+</td>
+<td >
+4,000
+</td>
+</tr>
+<tr >
+<td >
+N
+</td>
+<td >
+5,000
+</td>
+</tr>
+<tr >
+<td >
+P
+</td>
+<td >
+6,000
+</td>
+</tr>
+<tr >
+<td >
+Q
+</td>
+<td >
+8,000
+</td>
+</tr>
+<tr >
+<td >
+R
+</td>
+<td >
+10,000
+</td>
+</tr>
+<tr >
+<td >
+S
+</td>
+<td >
+12,000
+</td>
+</tr>
+<tr >
+<td >
+T
+</td>
+<td >
+15,000
+</td>
+</tr>
+<tr >
+<td >
+U
+</td>
+<td >
+20,000
+</td>
+</tr>
+<tr >
+<td >
+V
+</td>
+<td >
+25,000
+</td>
+</tr>
+<tr >
+<td >
+W
+</td>
+<td >
+30,000
+</td>
+</tr>
+<tr >
+<td >
+X
+</td>
+<td >
+35,000
+</td>
+</tr>
+</table>
+<p >
+Now that you know more than most EE's about reading capacitor codes why not take a look at our
+<a  href="../capacitor-wizard.htm">
+Capacitor Wizard
+</a>
+</p>
+<table  TABID="14618" class="contact">
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+3209 W.9th street
+<br ></br>
+Lawrence, KS 66049
+<br ></br>
+USA
+</td>
+<td >
+<p >
+Ph
+<br ></br>
+FAX
+<br ></br>
+Email
+<br ></br>
+WEB
+</p>
+</td>
+<td >
+(785) 841 3089
+<br ></br>
+(785) 841 0434
+<br ></br>
+<a  href="mailto:ccode@xtronics.com">
+ccode@xtronics.com
+</a>
+<br ></br>
+<a  href="../index.htm">
+http://xtronics.com
+</a>
+</td>
+<td >
+<u >
+Bookmark this page
+</u>
+</td>
+</tr>
+</table>
+<form  action="http://xtronics.com/cgi-bin/search.pl" method="post">
+<input ></input>
+<input ></input>
+<br ></br>
+Boolean:
+<select >
+<option >
+AND
+</option>
+<option >
+OR
+</option>
+</select>
+Case
+<select >
+<option >
+Insensitive
+</option>
+<option >
+Sensitive
+</option>
+</select>
+</form>
+<table  TABID="14619" class="links">
+<tr >
+<td >
+<a  href="../index.htm">
+Transtronics Home Page
+</a>
+<br ></br>
+See our line of industrial control electronics
+</td>
+<td >
+<a  href="../Tosh/plc.htm">
+PLC's
+</a>
+Index
+</td>
+<td >
+<a  href="../memory/index.htm">
+PC test equipment and EPROM programmer
+</a>
+</td>
+<td >
+<a  href="../pdindex.htm">
+Process Control
+</a>
+<br ></br>
+Panel meters
+</td>
+<td >
+<a  href="../isens3ph.htm">
+Current sensors
+</a>
+</td>
+<td >
+<a  href="../index.htm#pdflib">
+Resource library
+</a>
+handbooks, primers and spec sheets
+</td>
+</tr>
+</table>
+<p  class="foot">
+(C) Copyright 1994-2000, Transtronics, Inc. All rights reserved
+<br ></br>
+Transtronics® is a registered trademark of Transtronics, Inc.
+</p>
+</body>
+</html>

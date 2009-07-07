@@ -1,0 +1,4351 @@
+<html >
+<head >
+<title >
+Smart Networks from Motorola -- Smart Networks Developer Forum 2001
+</title>
+<script ></script>
+<script ></script>
+<style >
+<!--
+	A{text-decoration:none;}
+-->
+</style>
+</head>
+<body  alink="#000000" bgcolor="#FFFFFF" leftmargin="0" link="#CC3333" marginheight="0" marginwidth="0" onload="init(); MM_preloadImages('../../images/b.gif','../../images/s.gif','../../images/chip_network_over.gif','../../images/platform_on.gif','../../images/events_on.gif','../../images/support_on.gif','../../images/devforum_on.gif','../../images/sps_products_over.gif','../../images/sps_docs_over.gif','../../images/sps_tools_over.gif','../../images/sps_support_over.gif','../../images/solutions_on.gif','../../solution/images/apps_all_on.gif','../../solution/images/apps_soho_on.gif','../../solution/images/apps_access_on.gif','../../solution/images/apps_edge_on.gif','../../solution/images/apps_core_on.gif','../../images/products_on.gif','../../images/opensystems_on.gif','../../images/architectures_on.gif','../../images/alliance_on.gif','../../images/news_on.gif','../../images/mkt_tsg_on.gif','../../images/mkt_hng_on.gif','../../images/mkt_ncsg_on.gif','../../images/mkt_wssg_on.gif','../../images/login_on.gif');MM_preloadImages('../../images/developer_on.gif','../../1')" text="#000000" topmargin="0" vlink="#666666">
+<p >
+<a  name="top"></a>
+</p>
+<table  TABID="09607" border="0" cellpadding="0" cellspacing="0" width="750">
+<tr  bgcolor="#FFFFFF">
+<td  colspan="3">
+<img ></img>
+<img ></img>
+<a  href="http://www.mot-sps.com/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1','','../../images/chip_network_over.gif',1)">
+<img ></img>
+</a>
+<a  href="../../index.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF" valign="top">
+<td  colspan="3">
+<div  align="left">
+<img ></img>
+<a  href="http://e-www.motorola.com/webapp/sps/prod_cat/index_pc.jsp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','../../images/sps_products_over.gif',1)" target="_blank">
+<img ></img>
+<img ></img>
+</a>
+<a  href="http://e-www.motorola.com/webapp/sps/library/docu_lib.jsp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','../../images/sps_docs_over.gif',1)" target="_blank">
+<img ></img>
+</a>
+<a  href="http://e-www.motorola.com/webapp/sps/prod_cat/index_pc.jsp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','../../images/sps_products_over.gif',1)" target="_blank">
+<img ></img>
+</a>
+<a  href="http://e-www.motorola.com/webapp/sps/design_tools/index_dt.jsp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','../../images/sps_tools_over.gif',1)" target="_blank">
+<img ></img>
+</a>
+<a  href="http://e-www.motorola.com/webapp/sps/prod_cat/index_pc.jsp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','../../images/sps_products_over.gif',1)" target="_blank">
+<img ></img>
+</a>
+<a  href="http://e-www.motorola.com/support/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image14','','../../images/sps_support_over.gif',1)" target="_blank">
+<img ></img>
+</a>
+</div>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF" valign="top">
+<td  colspan="3">
+<img ></img>
+<a  href="http://e-www.motorola.com/automotive/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7','','../../images/mkt_tsg_on.gif',1)" target="_blank">
+<img ></img>
+</a>
+<img ></img>
+<a  href="http://e-www.motorola.com/adc/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','../../images/mkt_hng_on.gif',1)" target="_blank">
+<img ></img>
+</a>
+<img ></img>
+<a  href="../../index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image15','','../../images/mkt_ncsg_on.gif',1)">
+<img ></img>
+</a>
+<img ></img>
+<a  href="http://www.motorola.com/SPS/WIRELESS/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image16','','../../images/mkt_wssg_on.gif',1)" target="_blank">
+<img ></img>
+</a>
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" valign="top" width="105">
+<div  align="left">
+<table  TABID="09606" border="0" cellpadding="0" cellspacing="0" width="100">
+<tr >
+<td >
+<a  href="../../index.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="../index.htm" onmouseover="hideAll(); show('devcomm0', '0')">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="../../solution/index.htm" onmouseover="hideAll(); show('solution0', '0')">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="../../products/index.htm" onmouseover="hideAll(); show('products0', '0')">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="../../opensys/index.htm" onmouseover="hideAll(); show('opensys0', '0')">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="../../arch/index.htm" onmouseover="hideAll(); show('arch0', '0')">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="../../alliance/index.htm" onmouseover="hideAll(); show('alli0', '0')">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="../../news/index.htm" onmouseover="hideAll(); show('news0', '0')">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="https://e-www.motorola.com/webapp/Login.jsp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','../../images/login_on.gif',1)" target="_blank">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  background="../../images/search.gif" bgcolor="#666666">
+<td >
+<!-- BEGIN SEARCH FORM -->
+<script >
+<!--
+          function advanced_search() {
+          document.forms.AdvancedSearch.tx0.value = document.forms.BasicSearch.qt.value;
+          }
+          //-->
+</script>
+<form  action="http://search.motorola.com/semiconductors/query.html" method="get" name="BasicSearch" target="_blank">
+<div  align="center">
+<input ></input>
+<input ></input>
+</div>
+</form>
+<!-- END SEARCH FORM -->
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF" valign="top">
+<td >
+<table  TABID="09605" border="0" cellpadding="0" cellspacing="0" width="100">
+<tr >
+<td  width="4"></td>
+<td  height="20" width="96">
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<b >
+<a  href="index.htm">
+Forum Home
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="4"></td>
+<td  height="20" width="96">
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<b >
+<a  href="https://getregisterednow.com/MotorolaSmartNetworks/Login.asp">
+Register Now!
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="4"></td>
+<td  height="20" width="96">
+<b >
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<a  href="schedule.htm">
+Schedule
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="4"></td>
+<td  height="20" width="96">
+<b >
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<a  href="keynote.htm">
+Keynote Speakers
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="4"></td>
+<td  height="20" width="96">
+<b >
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<a  href="attendee.htm">
+Attendee Sessions
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="4"></td>
+<td  height="20" width="96">
+<b >
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<a  href="sunday_sched.htm">
+Sunday Seminars
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="4"></td>
+<td  height="20" width="96">
+<b >
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<a  href="techlab.htm">
+Technology Lab
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="4"></td>
+<td  height="28" width="96">
+<b >
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<a  href="sponsorship.htm">
+Sponsor Information
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="4"></td>
+<td  height="20" width="96">
+<b >
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<a  href="press_analyst.htm">
+Press/Analysts
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="4"></td>
+<td  height="20" width="96">
+<b >
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<a  href="new_orleans.htm">
+New Orleans
+</a>
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td  width="4"></td>
+<td  height="20" width="96">
+<b >
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<a  href="contact.htm">
+Contacts
+</a>
+</font>
+</b>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p ></p>
+<p ></p>
+</div>
+</td>
+</tr>
+</table>
+<img ></img>
+<script >
+if (browser == "Netscape") { document.write("
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+"); } else { document.write("
+<div  onmouseover="\hideAll()\">
+"); }
+</div>
+</script>
+<table  TABID="09612" border="0" cellpadding="0" cellspacing="0" width="650">
+<tr >
+<td  colspan="2">
+<table  TABID="09608" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="#336666" width="28">
+<img ></img>
+</td>
+<td  width="232">
+<img ></img>
+</td>
+<td  width="232">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="09611" border="0" cellpadding="0" cellspacing="0" width="650">
+<tr >
+<td  bgcolor="#336666" rowspan="2" width="28">
+<img ></img>
+</td>
+<td  width="19">
+<img ></img>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td  width="19"></td>
+<td >
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#336666" width="28"></td>
+<td  bgcolor="#99CCCC" colspan="2">
+<table  TABID="09609" border="0" cellpadding="5" width="100%">
+<tr >
+<td  align="center">
+<font  face="Arial, Helvetica, sans-serif">
+<b >
+Mark your calendar: May 20-23, 2001.
+</b>
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#336666" rowspan="2" width="28">
+<img ></img>
+</td>
+<td  width="19">
+<img ></img>
+</td>
+<td >
+<p >
+<br ></br>
+<a  href="images/matrix.pdf">
+<b >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+Download Conference Schedule (PDF format)
+</font>
+</b>
+</a>
+<br ></br>
+<br ></br>
+</p>
+</td>
+</tr>
+<tr >
+<td  width="19"></td>
+<td >
+<table  TABID="09610" genuinetable="yes" border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr  bgcolor="#336666">
+<td  align="left" colspan="2">
+<p >
+<font  color="#FFFFFF" face="helvetica, arial, sans-serif" size="2">
+<b >
+Sunday, May 20:
+</b>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+10:00am - 8:00pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Arrivals and registration
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+1:00pm - 5:00pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+<a  href="sunday_sched.htm">
+Smart Networks Sunday Seminars
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+6:00pm - 9:00pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Attendee Welcome reception
+</font>
+</td>
+</tr>
+<tr  bgcolor="#336666">
+<td  align="left" colspan="2">
+<p >
+<font  color="#ffffff" face="helvetica, arial, sans-serif" size="2">
+<b >
+Monday, May 21:
+</b>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+8:00am - 9:45am
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Opening general session featuring Chuck Martin, author of "Net Future" and "Max-e Marketing in the Net Future," and Daniel Artusi, Corporate Vice President and General Manager, Motorola Networking and Computing Systems Group
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+10:00am - 5:45pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Forum breakout sessions
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+12:00pm - 8:30pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Smart Networks Technology Lab open
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+6:30pm - 8:30pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Evening reception in Technology Lab
+</font>
+</td>
+</tr>
+<tr  bgcolor="#336666">
+<td  align="left" colspan="2">
+<p >
+<font  color="#ffffff" face="helvetica, arial, sans-serif" size="2">
+<b >
+Tuesday, May 22:
+</b>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+8:00am - 8:50pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+General session featuring Dr. Larry Walker, CEO &amp; Co-Founder, C-Port, a Motorola Company
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+9:00am - 5:45pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Forum breakout sessions
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+9:00am - 6:00pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Smart Networks Technology Lab open
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+6:30pm - 10:00pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Evening party at House of Blues
+</font>
+</td>
+</tr>
+<tr  bgcolor="#336666">
+<td  align="left" colspan="2">
+<p >
+<font  color="#ffffff" face="helvetica, arial, sans-serif" size="2">
+<b >
+Wednesday, May 23:
+</b>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+8:00am - 9:00am
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+General session featuring a panel discussion with leading Motorola networking and computing systems architects
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+9:15am - 11:30am
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Forum breakout sessions
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+11:30am - 12:30pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Closing general session featuring panel discussion with Motorola Executives and General Managers
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+12:30am - 1:30pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Survey Handling and Parting Gift distribution from Motorola
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="30%">
+<font  face="helvetica, arial, sans-serif" size="2">
+1:30pm
+</font>
+</td>
+<td  align="left" valign="top" width="70%">
+<font  face="helvetica, arial, sans-serif" size="2">
+Afternoon departures
+</font>
+</td>
+</tr>
+</table>
+<p >
+<font  face="helvetica, arial, sans-serif" size="1">
+<b >
+Please note: Forum schedule subject to change.
+</b>
+</font>
+</p>
+<p >
+<font  face="helvetica, arial, sans-serif" size="2">
+At the conclusion of the closing general session on Wednesday, May 23, 2001, attendees are encouraged to complete the Post-Event Survey to receive a set of Motorola TalkAbout® radios - compliments of the Smart Networks Alliance and Motorola. (US$180 value)
+</font>
+</p>
+<p >
+<font  face="helvetica, arial, sans-serif" size="2">
+Much more than a new way for groups of people to keep in touch over short distances, TalkAbout® radios are built to Motorola's uncompromising standards of quality. Small and light, they easily fit in a pocket, purse, fanny pack or backpack. They're even fun to look at. You can make TalkAbout® radios part of your neighborhood, outdoor and leisure activities for free by simply providing us with valuable feedback on your Smart Networks Developer Forum experience.
+</font>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table  TABID="09614" border="0" cellpadding="0" cellspacing="0" width="650">
+<tr >
+<td  width="15">
+<img ></img>
+</td>
+<td  width="622"></td>
+</tr>
+<tr >
+<td  width="15">
+<img ></img>
+</td>
+<td  width="622">
+<div  align="right">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+<a  href="../../index.htm">
+Smart Networks Home
+</a>
+|
+<a  href="../index.htm">
+Developer Community
+</a>
+|
+<a  href="../../solution/index.htm">
+Solutions
+</a>
+|
+<a  href="../../news/index.htm"></a>
+<a  href="../../products/index.htm">
+Products
+</a>
+|
+<a  href="../../opensys/index.htm">
+Open Systems
+</a>
+|
+<a  href="../../arch/index.htm">
+Architectures
+</a>
+|
+<a  href="../../alliance/index.htm">
+Alliances
+</a>
+|
+<a  href="../../platform/index.htm"></a>
+<a  href="../../news/index.htm">
+News Room
+</a>
+<br ></br>
+<br ></br>
+Updated: May 4, 2001
+</font>
+</div>
+</td>
+</tr>
+<tr >
+<td  width="15">
+<img ></img>
+</td>
+<td  width="622">
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<a  href="#top">
+Top of Page
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<table  TABID="09613" border="0" cellpadding="0" cellspacing="0" width="650">
+<tr  bgcolor="#000000">
+<td  width="325">
+<a  href="http://www.mot-sps.com/" target="_blank">
+<img ></img>
+</a>
+</td>
+<td  width="325">
+<div  align="right">
+<font  color="WHITE" face="Arial, Helvetica, sans-serif" size="1">
+<a  href="http://www.mot-sps.com/copyright.html" target="_blank">
+<img ></img>
+</a>
+<font  color="WHITE" face="Arial, Helvetica, sans-serif" size="1">
+|
+<a  href="http://www.mot-sps.com/privacy.html" target="_blank">
+<img ></img>
+</a>
+|
+<a  href="http://www.mot-sps.com/products/terms/standardterms.html" target="_blank">
+<img ></img>
+</a>
+</font>
+</font>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<script >
+if (browser == "Netscape") { document.write("
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+<layer ></layer>
+"); } else { document.write(""); }
+</script>
+<!-- the layer code starts here -->
+<div  id="devcomm0" style="position:absolute; visibility:hidden; WIDTH:150; top:139; left:0px; z-index: 2;">
+<table  TABID="09617" border="0" cellpadding="0" cellspacing="0" height="66" width="250">
+<tr >
+<td  width="100">
+<table  TABID="09615" border="0" cellpadding="0" cellspacing="0" width="100">
+<tr >
+<td >
+<a  href="../index.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="#" onmouseover="hideAll()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  width="150">
+<table  TABID="09616" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" width="150">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" rowspan="3">
+<img ></img>
+</td>
+<td  height="20">
+<b >
+<img ></img>
+<a  href="index.htm" onmouseout="b0101.src='images/s.gif'" onmouseover="hideOne(); show('devcomm1a', '1'); b0101.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Developer Forum 2001
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<b >
+<img ></img>
+<a  href="../tools/index.htm" onmouseout="b0102.src='images/s.gif'" onmouseover="hideOne(); show('devcomm1b', '1'); b0102.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Third-Party Tools
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<b >
+<img ></img>
+<a  href="../snug/index.htm" onmouseout="a01a03.src='images/s.gif'" onmouseover="hideOne(); a01a03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+User Groups
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="devcomm1a" style="position:absolute; visibility:hidden; WIDTH:297; top:139; left:100px; z-index:3;">
+<table  TABID="09620" border="0" cellpadding="0" cellspacing="0" height="220" width="300">
+<tr >
+<td  valign="top" width="147">
+<table  TABID="09618" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  width="144">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  background="../../images/m.gif" height="20" width="144">
+<b >
+<img ></img>
+<a  href="index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Developer Forum 2001
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  width="144">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="150">
+<table  TABID="09619" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="226" width="150">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="11">
+<img ></img>
+</td>
+<td  height="20" width="134">
+<img ></img>
+<b >
+<a  href="index.htm" onmouseout="b01b02.src='images/s.gif'" onmouseover="b01b02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Forum Home
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="11">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="134">
+<img ></img>
+<b >
+<a  href="https://getregisterednow.com/MotorolaSmartNetworks/Login.asp" onmouseout="b01b03.src='images/s.gif'" onmouseover="b01b03.src='images/b.gif'" target="_blank">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Register Now!
+</font>
+</a>
+<font  color="black"></font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="134">
+<img ></img>
+<b >
+<a  href="schedule.htm" onmouseout="b01b04.src='images/s.gif'" onmouseover="b01b04.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Forum Schedule
+</font>
+</a>
+<font  color="black"></font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="134">
+<img ></img>
+<b >
+<a  href="keynote.htm" onmouseout="b01b05.src='images/s.gif'" onmouseover="b01b05.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Keynote Speakers
+</font>
+</a>
+<font  color="black"></font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="134">
+<img ></img>
+<b >
+<a  href="attendee.htm" onmouseout="b01b06.src='images/s.gif'" onmouseover="b01b06.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Attendee Sessions
+</font>
+</a>
+<font  color="black"></font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="134">
+<img ></img>
+<b >
+<a  href="sunday_sched.htm" onmouseout="b01b07.src='images/s.gif'" onmouseover="b01b07.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Sunday Seminars
+</font>
+</a>
+<font  color="black"></font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="134">
+<img ></img>
+<b >
+<a  href="techlab.htm" onmouseout="b01b08.src='images/s.gif'" onmouseover="b01b08.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Technology Lab
+</font>
+</a>
+<font  color="black"></font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="134">
+<img ></img>
+<b >
+<a  href="sponsorship.htm" onmouseout="b01b09.src='images/s.gif'" onmouseover="b01b09.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Sponsor Information
+</font>
+</a>
+<font  color="black"></font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="134">
+<img ></img>
+<b >
+<a  href="press_analyst.htm" onmouseout="b01b10.src='images/s.gif'" onmouseover="b01b10.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Press/Analysts
+</font>
+</a>
+<font  color="black"></font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="134">
+<img ></img>
+<b >
+<a  href="new_orleans.htm" onmouseout="b01b11.src='images/s.gif'" onmouseover="b01b11.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+New Orleans
+</font>
+</a>
+<font  color="black"></font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="134">
+<img ></img>
+<b >
+<a  href="contact.htm" onmouseout="b01b12.src='images/s.gif'" onmouseover="b01b12.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Contacts
+</font>
+</a>
+<font  color="black"></font>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="devcomm1b" style="position:absolute; visibility:hidden; WIDTH:300px; top:139; left:100px; z-index:3; height: 320">
+<table  TABID="09623" border="0" cellpadding="0" cellspacing="0" height="220" width="300">
+<tr >
+<td  valign="top" width="147">
+<table  TABID="09621" border="0" cellpadding="0" cellspacing="0" height="323" width="147">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  width="144">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  height="20" width="144">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td  background="../../images/m.gif" height="20" width="144">
+<b >
+<img ></img>
+<a  href="../tools/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Third-Party Tools
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  width="144">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="150">
+<table  TABID="09622" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="326" width="150">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="16">
+<img ></img>
+</td>
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#chipdrivers" onmouseout="b01c01.src='images/s.gif'" onmouseover="b01c01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Chip Drivers
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="16">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#compilers" onmouseout="b01c02.src='images/s.gif'" onmouseover="b01c02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Compilers/Code Generators
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#supportchips" onmouseout="b01c03.src='images/s.gif'" onmouseover="b01c03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Companion/Support Chips
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#consultants" onmouseout="b01c04.src='images/s.gif'" onmouseover="b01c04.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Consultants
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#debuggers" onmouseout="b01c05.src='images/s.gif'" onmouseover="b01c05.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Debuggers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#designservices" onmouseout="b01c06.src='images/s.gif'" onmouseover="b01c06.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Design Services
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#devsystems" onmouseout="b01c07.src='images/s.gif'" onmouseover="b01c07.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Development Systems
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#dspalgorithm" onmouseout="b01c08.src='images/s.gif'" onmouseover="b01c08.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+DSP Algorithm Development
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#emulators" onmouseout="b01c09.src='images/s.gif'" onmouseover="b01c09.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Emulators
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#hardwaretools" onmouseout="b01c10.src='images/s.gif'" onmouseover="b01c10.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Hardware Tools
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#logicanalyzer" onmouseout="b01c11.src='images/s.gif'" onmouseover="b01c11.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Logic Analyzer/Disassembler
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#models" onmouseout="b01c12.src='images/s.gif'" onmouseover="b01c12.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Models
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#networksoftware" onmouseout="b01c13.src='images/s.gif'" onmouseover="b01c13.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Network Software
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#rtos" onmouseout="b01c14.src='images/s.gif'" onmouseover="b01c14.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Real-Time OS
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#systemsim" onmouseout="b01c15.src='images/s.gif'" onmouseover="b01c15.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+System Simulation
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="166">
+<img ></img>
+<b >
+<a  href="../tools/index.htm#training" onmouseout="b01c16.src='images/s.gif'" onmouseover="b01c16.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Training
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="solution0" style="position:absolute; visibility:hidden; WIDTH:250; top:169; left:0px; z-index: 2; height: 86">
+<table  TABID="09626" border="0" cellpadding="0" cellspacing="0" height="86" width="250">
+<tr >
+<td  width="100">
+<table  TABID="09624" border="0" cellpadding="0" cellspacing="0" height="86" width="100">
+<tr >
+<td  height="30">
+<a  href="../../solution/index.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="#" onmouseover="hideAll()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  width="150">
+<table  TABID="09625" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" width="150">
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+<td  height="3" width="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="80" rowspan="4" width="3">
+<img ></img>
+</td>
+<td  height="20" width="144">
+<b >
+<img ></img>
+</b>
+<a  href="../../solution/soho_lan.htm" onmouseover="hideOne(); show('solution1a', '1');">
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<b >
+<font  color="black">
+SOHO/LAN Applications
+</font>
+</b>
+</font>
+</a>
+</td>
+<td  height="80" rowspan="4" width="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="144">
+<b >
+<img ></img>
+</b>
+<a  href="../../solution/access.htm" onmouseover="hideOne(); show('solution1b', '1');">
+<font  face="Arial, Helvetica, sans-serif" size="1">
+<b >
+<font  color="black">
+Access Applications
+</font>
+</b>
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<b >
+<img ></img>
+<a  href="../../solution/edge.htm" onmouseover="hideOne(); show('solution1c', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Edge Applications
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<b >
+<img ></img>
+<a  href="../../solution/core.htm" onmouseover="hideOne(); show('solution1d', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Core Applications
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+<td  height="3" width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="solution1a" style="position:absolute; visibility:hidden; WIDTH:322; top:169; left:100px; z-index:3; height: 126">
+<table  TABID="09629" border="0" cellpadding="0" cellspacing="0" height="126" width="300">
+<tr >
+<td  valign="top" width="147">
+<table  TABID="09627" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="80" rowspan="4" width="3">
+<img ></img>
+</td>
+<td  background="../../images/m.gif" height="20">
+<b >
+<img ></img>
+<a  href="../../solution/soho_lan.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+SOHO/LAN Applications
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  width="150">
+<table  TABID="09628" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" width="150">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="6">
+<img ></img>
+</td>
+<td  height="20" width="169">
+<img ></img>
+<b >
+<a  href="../../solution/apps/dsl_modem.htm" onmouseout="b02a01.src='images/s.gif'" onmouseover="b02a01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+DSL Modem
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="6">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="169">
+<img ></img>
+<b >
+<a  href="../../solution/apps/lan-to-wan_router.htm" onmouseout="b02a02.src='images/s.gif'" onmouseover="b02a02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+LAN-to-WAN Bridge/Router
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="169">
+<img ></img>
+<b >
+<a  href="../../solution/apps/regional_office_router.htm" onmouseout="b02a03.src='images/s.gif'" onmouseover="b02a03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Regional Office Router
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="169">
+<img ></img>
+<b >
+<a  href="../../solution/apps/l2-l3_router.htm" onmouseout="b02a04.src='images/s.gif'" onmouseover="b02a04.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+OSI Layer2/Layer3 Router
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="169">
+<img ></img>
+<b >
+<a  href="../../solution/apps/res_media_gateway.htm" onmouseout="b02a05.src='images/s.gif'" onmouseover="b02a05.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Residential Media Gateway
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="169">
+<img ></img>
+<b >
+<a  href="../../solution/apps/wireless_gateway.htm" onmouseout="b02a06.src='images/s.gif'" onmouseover="b02a06.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Wireless Gateway
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="solution1b" style="position:absolute; visibility:hidden; WIDTH:347; top:169; left:100px; z-index:3; height: 126">
+<table  TABID="09632" border="0" cellpadding="0" cellspacing="0" height="126" width="300">
+<tr >
+<td  valign="top" width="147">
+<table  TABID="09630" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="80" rowspan="4" width="3">
+<img ></img>
+</td>
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20">
+<b >
+<img ></img>
+<a  href="../../solution/access.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Access Applications
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="200">
+<table  TABID="09631" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="126" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="6">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../solution/apps/atm_mux.htm" onmouseout="b02b01.src='images/s.gif'" onmouseover="b02b01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+ATM Interworking Multiplexer
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="6">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../solution/apps/dslam.htm" onmouseout="b02b02.src='images/s.gif'" onmouseover="b02b02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+DSLAM
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../solution/apps/remote_access.htm" onmouseout="b02b03.src='images/s.gif'" onmouseover="b02b03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Remote Access Server
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../solution/apps/univ_access_gateway.htm" onmouseout="b02b04.src='images/s.gif'" onmouseover="b02b04.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Universal Access Gateway
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../solution/apps/wireless_base_sta_baseband.htm" onmouseout="b02b05.src='images/s.gif'" onmouseover="b02b05.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Wireless Base Station
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../solution/apps/wireless_base_sta_rf.htm" onmouseout="b02b06.src='images/s.gif'" onmouseover="b02b06.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Wireless Base Station - RF
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="solution1c" style="position:absolute; visibility:hidden; WIDTH:347; top:169; left:100px; z-index:3; height: 46">
+<table  TABID="09635" border="0" cellpadding="0" cellspacing="0" height="46" width="200">
+<tr >
+<td  width="150">
+<table  TABID="09633" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="80" rowspan="4" width="3">
+<img ></img>
+</td>
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20">
+<b >
+<img ></img>
+<a  href="../../solution/edge.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Edge Applications
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="150">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+<table  TABID="09634" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" width="150">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="3">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../solution/apps/atm_interworking.htm" onmouseout="b02c01.src='images/s.gif'" onmouseover="b02c01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+ATM Interworking Switch
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../solution/apps/atm_line_card.htm" onmouseout="b02c02.src='images/s.gif'" onmouseover="b02c02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+ATM Switch Line Card
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../solution/apps/ethernet_ip_switch.htm" onmouseout="b02c03.src='images/s.gif'" onmouseover="b02c03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+High-Function Ethernet/IP Switch
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="solution1d" style="position:absolute; visibility:hidden; WIDTH:200; top:169; left:100px; z-index:3; height: 46">
+<table  TABID="09638" border="0" cellpadding="0" cellspacing="0" height="46" width="200">
+<tr >
+<td  valign="top" width="147">
+<table  TABID="09636" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="80" rowspan="4" width="3">
+<img ></img>
+</td>
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20">
+<b >
+<img ></img>
+<a  href="../../solution/core.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Core Applications
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  width="150">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+<table  TABID="09637" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" width="150">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="2">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../solution/apps/optical_edge_sw_router.htm" onmouseout="b02d01.src='images/s.gif'" onmouseover="b02d01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Optical Edge Switch/Router
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../solution/apps/sonet_mux.htm" onmouseout="b02d02.src='images/s.gif'" onmouseover="b02d02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+SONET Multiplexer
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="products0" style="position:absolute; visibility:hidden; WIDTH:325; top:199; left:0px; z-index: 2; height: 206">
+<table  TABID="09641" border="0" cellpadding="0" cellspacing="0" height="206" width="325">
+<tr >
+<td  width="100">
+<table  TABID="09639" border="0" cellpadding="0" cellspacing="0" height="86" width="100">
+<tr >
+<td  height="30">
+<a  href="../../products/index.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="#" onmouseover="hideAll()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  width="225">
+<table  TABID="09640" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" width="225">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="10">
+<img ></img>
+</td>
+<td  height="20" width="219">
+<img ></img>
+<b >
+<a  href="../../products/netproc/index.htm" onmouseout="a03a01.src='images/s.gif'" onmouseover="hideOne(); a03a01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Network Processors
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="10">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/intcomm/index.htm" onmouseover="hideOne(); show('products1b', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Integrated Communications Processors
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/hostproc/index.htm" onmouseover="hideOne(); show('products1c', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Host Processors
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/clocks/index.htm" onmouseover="hideOne(); show('products1d', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Advanced Clock Drivers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/asp/index.htm" onmouseover="hideOne(); show('products1e', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Analog Signal Processors
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/dsp/index.htm" onmouseover="hideOne(); show('products1f', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Digital Signal Processors
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/x-bridge/index.htm" onmouseover="hideOne(); show('products1g', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Interconnect/Bridge
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/memory/index.htm" onmouseover="hideOne(); show('products1h', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Networking Memory
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/rf/index.htm" onmouseover="hideOne(); show('products1i', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+RF Devices
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219">
+<img ></img>
+<b >
+<a  href="../../products/security/index.htm" onmouseout="a03a02.src='images/s.gif'" onmouseover="hideOne(); a03a02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Security Processors
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="products1b" style="position:absolute; visibility:hidden; WIDTH:422; top:199; left:100px; z-index:3; height: 206">
+<table  TABID="09644" border="0" cellpadding="0" cellspacing="0" height="206" width="422">
+<tr >
+<td  height="206" valign="top" width="222">
+<table  TABID="09642" border="0" cellpadding="0" cellspacing="0" height="206" width="222">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="10">
+<img ></img>
+</td>
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/intcomm/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Integrated Communications Processors
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  height="206" valign="top" width="200">
+<table  TABID="09643" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="3">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/intcomm/index.htm" onmouseout="b03a01.src='images/s.gif'" onmouseover="b03a01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+MPC8XXX and PowerQUICC II
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/intcomm/index.htm#mpc8xx" onmouseout="b03a02.src='images/s.gif'" onmouseover="b03a02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+MPC8XX and PowerQUICC
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/intcomm/index.htm#mc683xx" onmouseout="b03a03.src='images/s.gif'" onmouseover="b03a03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+MC683XX / QUICC
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="products1c" style="position:absolute; visibility:hidden; WIDTH:422; top:199; left:100px; z-index:3; height: 206">
+<table  TABID="09647" border="0" cellpadding="0" cellspacing="0" height="206" width="422">
+<tr >
+<td  height="206" valign="top" width="222">
+<table  TABID="09645" border="0" cellpadding="0" cellspacing="0" height="206" width="222">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="10">
+<img ></img>
+</td>
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/hostproc/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Host Processors
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  height="206" valign="top" width="200">
+<table  TABID="09646" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="66" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="3">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/hostproc/index.htm" onmouseout="b03c01.src='images/s.gif'" onmouseover="b03c01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+MPC7XXX / PowerPC
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/hostproc/index.htm#mpc7xx" onmouseout="b03c02.src='images/s.gif'" onmouseover="b03c02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+MPC7XX / PowerPC
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/hostproc/index.htm#mpc6xx" onmouseout="b03c03.src='images/s.gif'" onmouseover="b03c03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+MPC6XX / PowerPC
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="products1d" style="position:absolute; visibility:hidden; WIDTH:422; top:199; left:100px; z-index:3; height: 206">
+<table  TABID="09650" border="0" cellpadding="0" cellspacing="0" height="206" width="422">
+<tr >
+<td  height="206" valign="top" width="222">
+<table  TABID="09648" border="0" cellpadding="0" cellspacing="0" height="206" width="222">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="10">
+<img ></img>
+</td>
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/clocks/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Advanced Clock Drivers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  height="206" valign="top" width="200">
+<table  TABID="09649" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="106" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="5">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/clocks/index.htm" onmouseout="b03d00.src='images/s.gif'" onmouseover="b03d00.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Clock Synthesizers
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="5">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/clocks/index.htm#generators" onmouseout="b03d01.src='images/s.gif'" onmouseover="b03d01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Clock Generators
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/clocks/index.htm#zero_delay" onmouseout="b03d02.src='images/s.gif'" onmouseover="b03d02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Zero-Delay Buffers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/clocks/index.htm#cmos_output" onmouseout="b03d03.src='images/s.gif'" onmouseover="b03d03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+CMOS Output Fanout Buffers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/clocks/index.htm#differential" onmouseout="b03d04.src='images/s.gif'" onmouseover="b03d04.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Differential Output Fanout Buffers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="products1e" style="position:absolute; visibility:hidden; WIDTH:422; top:199; left:100px; z-index:3; height: 286">
+<table  TABID="09653" border="0" cellpadding="0" cellspacing="0" height="286" width="422">
+<tr >
+<td  height="206" valign="top" width="222">
+<table  TABID="09651" border="0" cellpadding="0" cellspacing="0" height="206" width="222">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="10">
+<img ></img>
+</td>
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/asp/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Analog Signal Processors
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  height="206" valign="top" width="200">
+<table  TABID="09652" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="286" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="14" width="3">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm" onmouseout="b03e01.src='images/s.gif'" onmouseover="b03e01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+RS232 Transceivers
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="14" width="10">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#mim" onmouseout="b03e02.src='images/s.gif'" onmouseover="b03e02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Multichannel Modem
+</font>
+<font  face="Arial, Helvetica, sans-serif" size="1"></font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#300_baud" onmouseout="b03e03.src='images/s.gif'" onmouseover="b03e03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+300-Baud Modem
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#isdn" onmouseout="b03e04.src='images/s.gif'" onmouseover="b03e04.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+ISDN Transceivers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#udlt" onmouseout="b03e05.src='images/s.gif'" onmouseover="b03e05.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+UDLT Transceivers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#codecs" onmouseout="b03e06.src='images/s.gif'" onmouseover="b03e06.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Voice and Data Coding
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#caller_id" onmouseout="b03e07.src='images/s.gif'" onmouseover="b03e07.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Caller ID
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#dtmf" onmouseout="b03e08.src='images/s.gif'" onmouseover="b03e08.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+DTMF Communications
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#audio" onmouseout="b03e09.src='images/s.gif'" onmouseover="b03e09.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Audio Amplifier
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#current" onmouseout="b03e10.src='images/s.gif'" onmouseover="b03e10.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Current Controller
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#slic" onmouseout="b03e11.src='images/s.gif'" onmouseover="b03e11.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Subscriber Loop Interface Circuit
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#speakerphone" onmouseout="b03e12.src='images/s.gif'" onmouseover="b03e12.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Speakerphone
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#speech" onmouseout="b03e13.src='images/s.gif'" onmouseover="b03e13.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Speech Network
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/asp/index.htm#ringer" onmouseout="b03e14.src='images/s.gif'" onmouseover="b03e14.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Ringer
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="products1f" style="position:absolute; visibility:hidden; WIDTH:422; top:289; left:100px; z-index:3; height: 46">
+<table  TABID="09656" border="0" cellpadding="0" cellspacing="0" height="46" width="422">
+<tr >
+<td  width="150">
+<table  TABID="09654" border="0" cellpadding="0" cellspacing="0" width="222">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  background="../../images/m.gif" height="20">
+<b >
+<img ></img>
+<a  href="../../products/dsp/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Digital Signal Processors
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  width="150">
+<table  TABID="09655" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="2">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/dsp/index.htm" onmouseout="b03f01.src='images/s.gif'" onmouseover="b03f01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+StarCore
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/dsp/index.htm#563xx" onmouseout="b03f02.src='images/s.gif'" onmouseover="b03f02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+DSP563xx
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="products1g" style="position:absolute; visibility:hidden; WIDTH:422; top:199; left:100; z-index:3; height: 206">
+<table  TABID="09659" border="0" cellpadding="0" cellspacing="0" height="206" width="422">
+<tr >
+<td  height="206" valign="top" width="222">
+<table  TABID="09657" border="0" cellpadding="0" cellspacing="0" height="206" width="222">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="10">
+<img ></img>
+</td>
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/x-bridge/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Interconnect/Bridge
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  height="206" valign="bottom" width="200">
+<table  TABID="09658" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="86" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/x-bridge/index.htm" onmouseout="b03g01.src='images/s.gif'" onmouseover="b03g01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+WarpLink Transceiver
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/x-bridge/index.htm#atmc" onmouseout="b03g02.src='images/s.gif'" onmouseover="b03g02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+ATM Cell Processor
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/x-bridge/index.htm#mc68160a" onmouseout="b03g03.src='images/s.gif'" onmouseover="b03g03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Ethernet Transceiver
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/x-bridge/index.htm#mpc1xx" onmouseout="b03g04.src='images/s.gif'" onmouseover="b03g04.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+PCI Bridge/Memory Controllers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="products1h" style="position:absolute; visibility:hidden; WIDTH:422; top:199; left:100; z-index:3; height: 206">
+<table  TABID="09662" border="0" cellpadding="0" cellspacing="0" height="206" width="422">
+<tr >
+<td  height="206" valign="top" width="222">
+<table  TABID="09660" border="0" cellpadding="0" cellspacing="0" height="206" width="222">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="10">
+<img ></img>
+</td>
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/memory/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Networking Memory
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  height="206" valign="bottom" width="200">
+<table  TABID="09661" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" width="150">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="9">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/memory/index.htm" onmouseout="b03h01.src='images/s.gif'" onmouseover="b03h01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Content-Addressable Memories
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="9">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/memory/index.htm#integrated" onmouseout="b03h02.src='images/s.gif'" onmouseover="b03h02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Integrated Cache Solutions
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/memory/index.htm#asynchronous" onmouseout="b03h03.src='images/s.gif'" onmouseover="b03h03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Asynchronous
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/memory/index.htm#burstram" onmouseout="b03h04.src='images/s.gif'" onmouseover="b03h04.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+BurstRAM
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/memory/index.htm#ddr" onmouseout="b03h05.src='images/s.gif'" onmouseover="b03h05.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Double Data Rate
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/memory/index.htm#dual" onmouseout="b03h06.src='images/s.gif'" onmouseover="b03h06.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Dual Port Devices
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/memory/index.htm#late" onmouseout="b03h07.src='images/s.gif'" onmouseover="b03h07.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Late Write
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/memory/index.htm#separate" onmouseout="b03h08.src='images/s.gif'" onmouseover="b03h08.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Separate I-O
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/memory/index.htm#tagram" onmouseout="b03h09.src='images/s.gif'" onmouseover="b03h09.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Tag RAM
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="products1i" style="position:absolute; visibility:hidden; WIDTH:422; top:199px; left:100px; z-index:3; height: 206">
+<table  TABID="09665" border="0" cellpadding="0" cellspacing="0" height="206" width="422">
+<tr >
+<td  height="206" width="222">
+<table  TABID="09663" border="0" cellpadding="0" cellspacing="0" height="206" width="222">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="10">
+<img ></img>
+</td>
+<td  height="13">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20" width="219"></td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20" width="219">
+<b >
+<img ></img>
+<a  href="../../products/rf/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+RF Devices
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="219">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  height="206" valign="bottom" width="200">
+<table  TABID="09664" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="126" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="6">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/rf/index.htm" onmouseout="b03i01.src='images/s.gif'" onmouseover="b03i01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+900 MHz GSM Amplifiers
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="6">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/rf/index.htm#gsm-edge" onmouseout="b03i02.src='images/s.gif'" onmouseover="b03i02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+1.8 GHz GSM/EDGE Amplifiers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/rf/index.htm#cdma" onmouseout="b03i03.src='images/s.gif'" onmouseover="b03i03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+1.9 GHz CDMA Amplifiers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/rf/index.htm#w-cdma" onmouseout="b03i04.src='images/s.gif'" onmouseover="b03i04.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+2.1 GHz W-CDMA Amplifiers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/rf/index.htm#base_stations" onmouseout="b03i05.src='images/s.gif'" onmouseover="b03i05.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Base Stations
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../products/rf/index.htm#base_station_drivers" onmouseout="b03i06.src='images/s.gif'" onmouseover="b03i06.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Base Station Drivers
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="opensys0" style="position:absolute; visibility:hidden; WIDTH:250; top:229px; left:0px; z-index: 2; height: 46">
+<table  TABID="09668" border="0" cellpadding="0" cellspacing="0" height="46" width="250">
+<tr >
+<td  width="100">
+<table  TABID="09666" border="0" cellpadding="0" cellspacing="0" height="46" width="100">
+<tr >
+<td  height="30">
+<a  href="../../opensys/index.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="#" onmouseover="hideAll()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="150">
+<table  TABID="09667" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="46" width="150">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="2">
+<img ></img>
+</td>
+<td  height="20" width="144">
+<img ></img>
+<b >
+<a  href="../../opensys/platform/index.htm" onmouseout="a04a01.src='images/s.gif'" onmouseover="hideOne(); a04a01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Smart Networks Platform
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="144">
+<img ></img>
+<b >
+<a  href="../../opensys/standard/index.htm" onmouseover="hideOne(); show('opensys1a', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Standards
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="144">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="opensys1a" style="position:absolute; visibility:hidden; WIDTH:347; top:229; left:100px; z-index:3; height: 46">
+<table  TABID="09671" border="0" cellpadding="0" cellspacing="0" height="46" width="300">
+<tr >
+<td  height="26" valign="top" width="147">
+<table  TABID="09669" border="0" cellpadding="0" cellspacing="0" height="46" width="147">
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" valign="top" width="144">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  rowspan="2">
+<img ></img>
+</td>
+<td  height="3" valign="top" width="144">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20" width="144">
+<b >
+<img ></img>
+<a  href="../../opensys/standard/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Standards
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td >
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="150">
+<table  TABID="09670" border="0" cellpadding="0" cellspacing="0" height="46" width="150">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" rowspan="2">
+<img ></img>
+</td>
+<td  background="../../images/m.gif" height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../opensys/standard/index.htm" onmouseout="a04b01.src='images/s.gif'" onmouseover="a04b01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+RapidIO Interconnect
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../opensys/standard/index.htm#npf" onmouseout="a04b02.src='images/s.gif'" onmouseover="a04b02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Network Processing Forum
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="arch0" style="position:absolute; visibility:hidden; top:259; left:0px; z-index: 2; width: 250; height: 106">
+<table  TABID="09674" border="0" cellpadding="0" cellspacing="0" height="106" width="250">
+<tr >
+<td  width="100">
+<table  TABID="09672" border="0" cellpadding="0" cellspacing="0" height="46" width="100">
+<tr >
+<td  height="30">
+<a  href="../../arch/index.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="#" onmouseover="hideAll()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="150">
+<table  TABID="09673" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="106" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3" width="194">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="5">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<b >
+<img ></img>
+<a  href="../../arch/powerpc/index.htm" onmouseover="hideOne(); show('arch1a', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+PowerPC
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="5">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<b >
+<img ></img>
+<a  href="../../arch/powerquicc/index.htm" onmouseover="hideOne(); show('arch1b', '1');">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+PowerQUICC / QUICC
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="http://www.cportcorp.com/" onmouseout="a05a02.src='images/s.gif'" onmouseover="hideOne(); a05a02.src='images/b.gif'" target="_blank">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+C-Port
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="http://www.motorola.com/SPS/DSP/" onmouseout="a05a03.src='images/s.gif'" onmouseover="hideOne(); a05a03.src='images/b.gif'" target="_blank">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+DSP/StarCore
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="http://mot-sps.com/rf/" onmouseout="a05a04.src='images/s.gif'" onmouseover="hideOne(); a05a04.src='images/b.gif'" target="_blank">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+RF Devices
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="194">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="arch1a" style="position:absolute; visibility:hidden; WIDTH:397; top:259; left:100; z-index:3; height: 86">
+<table  TABID="09677" border="0" cellpadding="0" cellspacing="0" height="86" width="397">
+<tr >
+<td  height="86" valign="top" width="197">
+<table  TABID="09675" border="0" cellpadding="0" cellspacing="0" width="197">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="3"></td>
+<td  background="../../images/m.gif" height="20">
+<b >
+<img ></img>
+<a  href="../../arch/powerpc/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+PowerPC
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="3"></td>
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  height="86" width="200">
+<table  TABID="09676" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="86" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../arch/powerpc/family.htm" onmouseout="a05b01.src='images/s.gif'" onmouseover="a05b01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Product Family
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../arch/powerpc/doclib.htm" onmouseout="a05b02.src='images/s.gif'" onmouseover="a05b02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Documentation Library
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../arch/powerpc/toolslib.htm" onmouseout="a05b03.src='images/s.gif'" onmouseover="a05b03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Tools Library
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../arch/powerpc/features.htm" onmouseout="a05b04.src='images/s.gif'" onmouseover="a05b04.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Architectural Features
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="arch1b" style="position:absolute; visibility:hidden; WIDTH:398; top:259; left:100; z-index:3; height: 106">
+<table  TABID="09680" border="0" cellpadding="0" cellspacing="0" height="106" width="397">
+<tr >
+<td  width="198">
+<table  TABID="09678" border="0" cellpadding="0" cellspacing="0" height="106" width="197">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="19" rowspan="5">
+<img ></img>
+</td>
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="../../images/m.gif" height="20">
+<b >
+<img ></img>
+<a  href="../../arch/powerquicc/index.htm">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+PowerQUICC / QUICC
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="20">
+<a  href="#" onmouseover="hideOne()">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  bgcolor="#99CCFF" height="3" width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="200">
+<table  TABID="09679" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="66" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="3">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../arch/powerquicc/doclib.htm" onmouseout="a05c01.src='images/s.gif'" onmouseover="a05c01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Documentation Library
+</font>
+<font  face="Arial, Helvetica, sans-serif" size="1"></font>
+</a>
+</b>
+</td>
+<td  rowspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="http://www.mot.com/SPS/RISC/netcomm/tools/" onmouseout="a05c02.src='images/s.gif'" onmouseover="a05c02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Tools Library
+</font>
+<font  face="Arial, Helvetica, sans-serif" size="1"></font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../arch/powerquicc/errata.htm" onmouseout="a05c03.src='images/s.gif'" onmouseover="a05c03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Device Errata
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="alli0" style="position:absolute; visibility:hidden; top:289; left:0px; z-index: 2; height: 46; width: 250">
+<table  TABID="09681" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<a  href="../../alliance/index.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</div>
+<div  id="news0" style="position:absolute; visibility:hidden; top:319; left:0px; z-index: 2; width: 250; height: 106;">
+<table  TABID="09684" border="0" cellpadding="0" cellspacing="0" height="106" width="250">
+<tr >
+<td  width="100">
+<table  TABID="09682" border="0" cellpadding="0" cellspacing="0" height="46" width="100">
+<tr >
+<td  height="30">
+<a  href="../../news/index.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="#" onmouseover="hideAll()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="150">
+<table  TABID="09683" background="../../images/m.gif" border="0" cellpadding="0" cellspacing="0" height="106" width="200">
+<tr >
+<td  height="3">
+<img ></img>
+</td>
+<td  height="3" width="194">
+<img ></img>
+</td>
+<td  height="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  rowspan="5">
+<img ></img>
+</td>
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../news/events/index.htm" onmouseout="a07a01.src='images/s.gif'" onmouseover="hideOne(); a07a01.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Events
+</font>
+</a>
+</b>
+</td>
+<td  rowspan="5">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../news/quotes/index.htm" onmouseout="a07a02.src='images/s.gif'" onmouseover="hideOne(); a07a02.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Industry Quotes
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../news/pressrels/index.htm" onmouseout="a07a03.src='images/s.gif'" onmouseover="hideOne(); a07a03.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Press Releases
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../news/presskit/index.htm" onmouseout="a07a04.src='images/s.gif'" onmouseover="hideOne(); a07a04.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Press Kits
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="20" width="194">
+<img ></img>
+<b >
+<a  href="../../news/contacts/index.htm" onmouseout="a07a05.src='images/s.gif'" onmouseover="hideOne(); a07a05.src='images/b.gif'">
+<font  color="black" face="Arial, Helvetica, sans-serif" size="1">
+Press/Analyst Contacts
+</font>
+</a>
+</b>
+</td>
+</tr>
+<tr >
+<td  height="3" width="3">
+<img ></img>
+</td>
+<td  height="3" width="194">
+<img ></img>
+</td>
+<td  width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="hold" style="position:absolute; visibility:hidden; WIDTH:100;
+HEIGHT:100; top:495; left:210px; x-index:3;">
+<center >
+hold layer
+</center>
+</div>
+</body>
+</html>

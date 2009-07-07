@@ -1,0 +1,1099 @@
+<html >
+<head >
+<title >
+Kestrel Pocket Weather &amp; Wind Meter Station. Kestrel by NK
+</title>
+<script >
+<!--
+
+// Detect if browser is Netscape 3 + or IE 4 +.
+bName = navigator.appName;
+bVer = parseInt(navigator.appVersion);
+    if ((bName == "Netscape" &amp;amp;amp;amp;&amp;amp;amp;amp; bVer &amp;amp;amp;gt;= 3) || 
+        (bName == "Microsoft Internet Explorer" &amp;amp;amp;amp;&amp;amp;amp;amp; bVer &amp;amp;amp;gt;= 4)) br = "n3"; 
+    else br = "n2";
+
+// Create image objects, preload all active and inactive ../images/.
+    if (br== "n3") { 
+    img1on = new Image();        		// Create preloads for "on" ../images/
+    img1on.src = "../images//ordershigh.gif";
+    img2on = new Image();
+    img2on.src = "../images//disthigh.gif";
+    img3on = new Image();
+    img3on.src = "../images//linkshigh.gif";
+    img4on = new Image();
+    img4on.src = "../images//newshigh.gif";
+    img5on = new Image();
+    img5on.src = "../images//helphigh.gif";
+    img6on = new Image();
+    img6on.src = "../images//wwbar1high.gif";
+    img7on = new Image();
+    img7on.src = "../images//wwbar2high.gif";
+    img8on = new Image();
+    img8on.src = "../images//wwbar3high.gif";
+    img9on = new Image();
+    img9on.src = "../images//wwbarwihigh.gif";
+    img12on = new Image();
+    img12on.src = "../images//homehigh.gif";
+    img13on = new Image();
+    img13on.src = "../images//contacthigh.gif";
+    img14on = new Image();
+    img14on.src = "../images//wwbar4high.gif";
+	
+    img1off = new Image();        		 // Create preloads for "off" ../images/
+    img1off.src = "../images//ordersnorm.gif";
+    img2off = new Image();
+    img2off.src = "../images//distnorm.gif";
+    img3off = new Image();
+    img3off.src = "../images//linksnorm.gif";
+    img4off = new Image();
+    img4off.src = "../images//newsnorm.gif";
+    img5off = new Image();
+    img5off.src = "../images//helpnorm.gif";
+    img6off = new Image();
+    img6off.src = "../images//wwbar1norm.gif";
+    img7off = new Image();
+    img7off.src = "../images//wwbar2norm.gif";
+    img8off = new Image();
+    img8off.src = "../images//wwbar3norm.gif";
+    img9off = new Image();
+    img9off.src = "../images//wwbarwinorm.gif";
+    img12off = new Image();
+    img12off.src = "../images//homenorm.gif";
+    img13off = new Image();
+    img13off.src = "../images//contactnorm.gif";
+     img14off = new Image();
+    img14off.src = "../images//wwbar4norm.gif";   }
+
+// Function to "activate" ../images/.
+function imgAct(imgName) {
+    if (br == "n3") {
+    document[imgName].src = eval(imgName + "on.src");
+    }
+}
+
+// Function to "deactivate" ../images/.
+function imgInact(imgName) {
+    if (br == "n3") {
+    document[imgName].src = eval(imgName + "off.src");
+    }
+}
+
+function formHandler(){
+var URL = document.form.site.options[document.form.site.selectedIndex].value;
+window.location.href = URL;
+}
+
+
+// -->
+</script>
+<meta ></meta>
+<meta ></meta>
+</head>
+<body  bgcolor="#ffffff" link="#336699" text="#333333" vlink="#336699">
+<center >
+<basefont ></basefont>
+<table  TABID="10167" border="0" cellpadding="0" cellspacing="0" width="610">
+<tr >
+<td  rowspan="2" valign="top">
+<img ></img>
+</td>
+<td  align="right" valign="top">
+<a  onmouseout="imgInact(img12);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+<a  onmouseout="imgInact(img13);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+<a  onmouseout="imgInact(img1);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+<a  onmouseout="imgInact(img2);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+<a  onmouseout="imgInact(img3);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+<a  onmouseout="imgInact(img4);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+<a  onmouseout="imgInact(img5);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="right" bgcolor="#ffffff" colspan="2" valign="top">
+<a  onmouseout="imgInact(img9);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+<img ></img>
+<a  onmouseout="imgInact(img6);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+<img ></img>
+<a  onmouseout="imgInact(img7);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+<img ></img>
+<a  onmouseout="imgInact(img8);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+<img ></img>
+<a  onmouseout="imgInact(img14);self.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<table  TABID="10168" border="0" width="610">
+<tr >
+<td >
+Nielsen-Kellerman is a proud supplier of the Discovery EcoChallenge.
+<p  align="center">
+<font  color="#008000" size="4">
+<i >
+<b >
+Please click on the image to view detailed information or purchase a Kestrel Wind and Weather Meter.
+</b>
+</i>
+</font>
+<a  href="http://www.discovery.com/indep/ecopatagonia/reports/report.html">
+a&gt;
+</a>
+</p>
+</td>
+</tr>
+</table>
+<table  TABID="10169" border="1" genuinetable="yes">
+<tr >
+<td  align="right" colspan="5">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+Available
+<br ></br>
+Functions
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+Kestrel 1000
+<br ></br>
+</em>
+</strong>
+</font>
+<font  color="#006699" size="1">
+<strong >
+<em >
+Pocket Wind Meter
+<br ></br>
+$89.00
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#336600">
+<strong >
+<em >
+Kestrel 2000
+<br ></br>
+</em>
+</strong>
+</font>
+<font  color="#336600" size="1">
+<strong >
+<em >
+Pocket Thermo Wind Meter
+<br ></br>
+$119.00
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<strong >
+<em >
+<font  color="#990000">
+Kestrel 3000
+<br ></br>
+</font>
+</em>
+</strong>
+<font  color="#990000" size="1">
+<strong >
+<em >
+Pocket Weather Meter
+<br ></br>
+$159.00
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<strong >
+<em >
+<font  color="#777777">
+Kestrel 4000
+<br ></br>
+</font>
+</em>
+</strong>
+<font  color="#777777" size="1">
+<strong >
+<em >
+Pocket Weather Tracker
+<br ></br>
+$329.00
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+WIND SPEED
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#336600">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#990000">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+MAX WIND SPEED
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#336600">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#990000">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+AVG WIND SPEED
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#336600">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#990000">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+TEMPERATURE
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#336600">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#990000">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+WIND CHILL
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#336600">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#990000">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+RELATIVE HUMIDITY
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#990000">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+HEAT STRESS INDEX
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#990000">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+DEW POINT
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#990000">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+WET BULB
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+ALTITUDE
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+DENSITY ALTITUDE
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right" fontsize="2">
+<em >
+<strong >
+<font  size="2">
+BAROMETRIC PRESSURE
+</font>
+</strong>
+</em>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#006699">
+<strong >
+<em >
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+<td >
+<p  align="center">
+<font  color="#777777">
+<strong >
+<em >
+X
+<br ></br>
+</em>
+</strong>
+</font>
+</p>
+</td>
+</tr>
+</table>
+<table  TABID="10170" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  colspan="3"></td>
+</tr>
+<tr >
+<td  valign="center">
+<a  href="mailto:" nkhome.com="#DEFAULT" nkinc="#DEFAULT">
+<img ></img>
+</a>
+</td>
+<td  valign="center">
+<img ></img>
+<br ></br>
+<br ></br>
+</td>
+<td  align="middle">
+<img ></img>
+</td>
+</tr>
+<form  name="form">
+<tr >
+<td  align="middle">
+<select >
+<option  value="selected=selected">
+Choose a Destination
+</option>
+<option  value="http://www.nkhome.com/about.html">
+About NK
+</option>
+<option  value="http://www.nkhome.com/job-ops.html">
+Job Opportunities
+</option>
+<option  value="http://www.nkhome.com/producthelp.html">
+Product Help and Troubleshooting
+</option>
+<option  value="http://www.nkhome.com/PDF.html">
+Download PDF Instructions
+</option>
+<option  value="http://www.nkhome.com/pressreleases.html">
+Press Releases
+</option>
+<option  value="http://www.nkhome.com/rp/coxbox/coxbox.html">
+Cox-Box
+</option>
+<option  value="http://www.nkhome.com/rp/coxvox/coxvox.html">
+Cox-Vox
+</option>
+<option  value="http://www.nkhome.com/rp/strokecoach/strokecoach.html">
+StrokeCoach
+</option>
+<option  value="http://www.nkhome.com/rp/speedcoach/speedcoach.html">
+SpeedCoach
+</option>
+<option  value="http://www.nkhome.com/rp/speedcoachp/speedcoachp.html">
+SpeedCoach (Paddle)
+</option>
+<option  value="http://www.nkhome.com/ts/interval/interval.html">
+Interval Timing System
+</option>
+<option  value="http://www.nkhome.com/ww/1000/1000.html">
+Kestrel 1000
+</option>
+<option  value="http://www.nkhome.com/ww/2000/2000.html">
+Kestrel 2000
+</option>
+<option  value="http://www.nkhome.com/ww/3000/3000.html">
+Kestrel 3000
+</option>
+<option  value="http://www.nkhome.com/ww/4000/4000.html">
+Kestrel 4000
+</option>
+<option  value="http://www.nkhome.com/repairs.html">
+Repair Costs
+</option>
+</select>
+</td>
+</tr>
+</form>
+</table>
+<table  TABID="10171">
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tr >
+<td  align="middle" colspan="3">
+<br ></br>
+<font  arial="#DEFAULT" face="Helvetica,">
+<a  href="http://www.nkhome.com/rp/rpindex.html">
+Rowing/Paddling Equipment
+</a>
+|
+<a  href="http://www.nkhome.com/ts/tsindex.html">
+Interval Timing Systems
+</a>
+|
+<a  href="http://www.nkhome.com/ww/wwindex.html">
+Wind/Weather Instruments
+</a>
+<br ></br>
+<a  href="http://www.nkhome.com/repairs.html">
+Service and Repairs
+</a>
+|
+<a  href="http://www.nkhome.com/about.html">
+About NK
+</a>
+|
+<a  href="http://www.nkhome.com/contact.html">
+Contact NK
+</a>
+|
+<a  href="http://www.nkhome.com/direction.html"></a>
+<a >
+Directions
+</a>
+</font>
+</td>
+</tr>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+</table>
+</center>
+</body>
+</html>

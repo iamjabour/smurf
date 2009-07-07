@@ -1,0 +1,418 @@
+<html >
+<head >
+<title >
+OVERFLOW Gets Excellent Results on SGI Origin2000
+</title>
+</head>
+<body  alink="#0066ff" bgcolor="#ffffff" link="#000066" text="#000000" vlink="#330066">
+<table  TABID="09873" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  colspan="5">
+<img ></img>
+</td>
+</tr>
+<tr >
+<!-- START SIDEBAR SECTION -->
+<td  align="left" rowspan="4" valign="top" width="123">
+<img ></img>
+<br ></br>
+<font  size="-1">
+<p >
+<b >
+In this issue...
+</b>
+</p>
+<p >
+OVERFLOW Speeds SGI Origin2000 Performance
+</p>
+<p >
+<a  href="secure.html">
+Secure Shell Keeps Accounts Safe
+</a>
+</p>
+<p >
+<a  href="id.html">
+Group IDs and Account IDs
+</a>
+</p>
+<p >
+<a  href="lunar.html">
+Web Pages Show Lunar Prospector Satellite Data
+</a>
+</p>
+<p >
+<a  href="pbs.html">
+PBS Offers 24-hour Support
+</a>
+</p>
+<p >
+<a  href="newtool.html">
+New Tool for Interactive Analysis of CFD Data
+</a>
+</p>
+<p >
+<a  href="cookbook.html">
+Network Analysis and Design Cookbook
+</a>
+</p>
+<p ></p>
+</font>
+</td>
+<!-- END SIDEBAR SECTION -->
+<!-- FORMATTING STUFF -->
+<td  align="left" rowspan="4" valign="top" width="16">
+<img ></img>
+</td>
+<td  colspan="3" height="14" valign="top">
+<img ></img>
+<a  href="index.html">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<!-- PUT TITLE AND BYLINE HERE -->
+<td  align="left" colspan="3" valign="top" width="379">
+<img ></img>
+<h2 >
+<b >
+OVERFLOW Gets Excellent Results on SGI Origin2000
+</b>
+</h2>
+<h5 >
+by
+<a  href="http://www.nas.nasa.gov/~jtaft">
+Jim Taft
+</a>
+</h5>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="255">
+<img ></img>
+<br ></br>
+<!-- PUT FIRST PARAGRAPH HERE -->
+The
+<a  href="http://www.nas.nasa.gov/Pubs/NASnews/97/07/article01.html">
+July-August 1997
+</a>
+issue of NAS News reported on the parallel performance achieved with the ARC3D code on a 64-CPU Silicon Graphics Inc. (SGI) Origin2000. The result -- 6.4 GFLOPS of sustained performance on a 7-million point problem -- was a shock to many NAS researchers. A new project was immediately undertaken to test the Origin2000's parallel architecture even more strenuously -- this time, using the well-known production CFD code, OVERFLOW. Initial results show performance levels at 72 percent of a dedicated 16-CPU CRAY C90 -- with only minimal code changes.
+<p >
+OVERFLOW was chosen as the second test case because it represented a "toughest-case" scenario; it is highly "vector" oriented and historically has not run well on microprocessor-based systems. OVERFLOW is written in FORTRAN 77 and consists of approximately 87,000 lines of code. It offers users the ability to select from a wide range of proven solvers, smoothers, and turbulence models to solve the three-dimensional (3D) time-dependent Reynold's-Averaged Navier-Stokes equations for fluid motion at moderate mach numbers.
+<!-- END FIRST PARAGRAPH -->
+</p>
+</td>
+<td  align="left" valign="top" width="5">
+<img ></img>
+</td>
+<td  align="left" bgcolor="#cccccc" valign="top" width="119">
+<img ></img>
+<table  TABID="09871" border="0" cellpadding="2" cellspacing="3">
+<tr >
+<td >
+<!-- PUT LINKS TO ANCHORS HERE -->
+<font  size="-1">
+<b >
+Within This Article...
+</b>
+<p >
+<a  href="#anchor1">
+OVERFLOW's Approach to Solution
+</a>
+</p>
+<p >
+<a  href="#anchor2">
+MPI Approach
+</a>
+</p>
+<p >
+<a  href="#anchor3">
+'Minimal Change' Philosophy
+</a>
+</p>
+<p >
+<a  href="#anchor4">
+A New Approach: Multi-Level Parallelism
+</a>
+</p>
+<p >
+<a  href="#anchor5">
+OVERFLOW-MLP
+</a>
+</p>
+<p >
+<a  href="#anchor6">
+OVERFLOW-MLP
+<br ></br>
+Test Results
+</a>
+</p>
+<p >
+<a  href="#anchor7">
+Answers to Common Questions
+</a>
+</p>
+<p >
+<a  href="#anchor8">
+The Future of OVERFLOW-MLP
+</a>
+<br ></br>
+<br ></br>
+<!-- END LINKS TO ANCHORS -->
+</p>
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="3" valign="top" width="379">
+<img ></img>
+<!-- PUT THE REST OF TEXT HERE -->
+<a  name="anchor1">
+<br ></br>
+<b >
+OVERFLOW's Approach to Solution
+</b>
+</a>
+<p >
+OVERFLOW's typical solution approach is to solve for the fluid motion in the region of interest by determining the flow through a series of connected 3D grids, or zones, that cover the region in a patchwork fashion. The calculation advances in time for all zones until the solution has converged to the user's satisfaction. Typical problem sizes range from small calculations involving about one million points to simulations of an entire aircraft requiring tens of millions of points.
+</p>
+<p >
+On the CRAY C90, the standard solution approach is to sequentially process each 3D zone through one timestep. Once all zones have been advanced to the new time, the process repeats and all zones are advanced to the next time level. Typical solutions require thousands of timesteps to reach convergence.
+</p>
+<p >
+Typical performance for the standard C90 version of the code is around 450 million floating-point operations per second (MFLOP/s) on a single CPU, making it one of the better "vector" codes in the CFD arena. Typical microtasking parallel efficiency for the code is about 11 of 16 CPUs when the C90 is in dedicated mode. This is not a particularly efficient use of the system, but typical of "good" classic parallel-vector codes on the C90.
+<a  name="anchor2"></a>
+</p>
+<p >
+<b >
+MPI Approach
+</b>
+</p>
+<p >
+There are other ways of achieving parallel performance with OVERFLOW. For example, the code has also been converted to solve the flow field in a more coarsely parallel fashion using MPI, the Message Passing Interface. The MPI approach is theoretically more efficient than the standard C90 code in that it attempts to parcel the zones to different processors in such a way that many zones are being processed simultaneously at each timestep. This methodology is still under development for OVERFLOW, and performance is still uncertain for the general case.
+</p>
+<p >
+One drawback to the MPI approach is that it is subject to the latencies and added overhead imposed by MPI's message passing library. This library of messaging subroutines is used to communicate boundary values and other data between the zones as the solution progresses. Another drawback is added code complexity; the current MPI version of OVERFLOW requires an additional 20,000 lines of code to support this form of parallelism.
+<a  name="anchor3"></a>
+</p>
+<p >
+<b >
+'Minimal Change' Philosophy
+</b>
+</p>
+<p >
+When deciding how to efficiently optimize OVERFLOW for the Origin2000, it became clear that the best approach was to take advantage of the coarse-grained parallelism concept within the MPI code and at the same time avoid the pitfalls of MPI's labor-intensive code conversion.
+</p>
+<p >
+As with the previous ARC3D conversion effort, a prime focus was to adopt an approach that required minimal changes to the production version of the code. This was essential to keeping the porting effort small, and critical to ensuring that users would be comfortable with the new approach. In particular, it was determined that the solution methodology must be robust and easy to use in order to be successfully adopted in other mainstream production codes.
+</p>
+<p >
+Another important consideration that demands the "minimal change" philosophy was that production codes are often customized by users for their particular needs. An optimized code that is massively different from the standard release is almost useless to these users because the effort needed to incorporate modifications is prohibitively time-consuming and difficult to debug.
+<a  name="anchor4"></a>
+</p>
+<p >
+<b >
+A New Approach: Multi-Level Parallelism
+</b>
+</p>
+<p >
+With these concerns in mind, a new form of parallelism was developed that is applicable to a wide range of CFD codes. This new approach falls into the generic category termed "Multi-Level Parallelism" (MLP). At present, this concept is vague and is viewed very differently by almost all high-end system vendors.
+</p>
+<p >
+The MLP approach is usually distinguished from the standard coarse-fine parallelism that is possible in MPI codes. The term MLP is generally associated with shared-memory, multiprocessor architectures, in which the shared memory features allow users to dispense with message passing altogether. As its name implies, code developed under MLP contains multiple levels of parallelism. In general, this means fine-grained parallelism at the loop level, using compilers to generate the parallel code and, at the same time, performing parallel work at a coarser level using a standard Unix fork system call to effect any needed coarser levels of parallelism. Data that is truly "global" is shared among the forked processes through standard shared-memory arenas.
+</p>
+<p >
+With the MLP approach, "messages" that are needed in the MPI code become nothing more than standard memory references. As a result, virtually all of the user's time and effort in building code for synchronization and communication disappears -- with a massive reduction in the code development effort.
+<a  name="anchor5"></a>
+</p>
+<p >
+<b >
+OVERFLOW-MLP
+</b>
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+The OVERFLOW-MLP code developed in the NAS Systems Division is based on the standard C90 parallel-vector version of OVERFLOW. The total time to generate this new parallel version and correctly execute three widely varying test cases was around three weeks.
+</p>
+<p >
+About 250 lines of code were inserted or changed in the base MLP version. Most changes came from the addition of four small subroutines. If a user removes these calls, then the code reverts to its original form and executes at typical C90 performance. The end result is that one code executes with excellent efficiency on both Cray vector systems and massively parallel microprocessor-based systems.
+</p>
+<p >
+The OVERFLOW-MLP code organizes the calculations such that groups of zones are processed by groups of CPUs in parallel. An initial distribution of zones is made across a user-defined number of CPU groups so that the work is approximately equal. The number of CPUs in each group is adjusted to further load-balance the work. Load balancing is fully automatic and dynamic in time. During the solution process, each group of CPUs advances the time level for its assigned zones until the solution converges to the degree needed.
+<a  name="anchor6"></a>
+</p>
+<p >
+<b >
+OVERFLOW-MLP Test Results
+</b>
+</p>
+<p >
+To fully stress-test both the MLP methodology and the Origin2000 system, a very large test case was selected. The test dataset was provided by Karlin Roth (high-lift CFD team lead, NASA Ames Applied Computational Aerodynamics Branch) and consisted of 153 zones totaling over 33 million grid points. This is thought to be the largest problem ever solved at the NAS Facility. Typical executions of this dataset are performed on a dedicated 16-CPU C90, taking many hundreds of CPU hours.
+</p>
+<p ></p>
+<table  TABID="09872" border="1" cellpadding="5" cellspacing="2" genuinetable="yes">
+<tr >
+<th  align="center">
+<b >
+System
+</b>
+</th>
+<th  align="center">
+<b >
+No. CPUs
+</b>
+</th>
+<th  align="center">
+<b >
+GFLOP/s
+</b>
+</th>
+</tr>
+<tr >
+<td  align="center">
+CRAY C90
+</td>
+<td  align="center">
+16
+</td>
+<td  align="center">
+4.6
+</td>
+</tr>
+<tr >
+<td  align="center">
+Origin2000
+</td>
+<td  align="center">
+64
+</td>
+<td  align="center">
+3.3
+</td>
+</tr>
+</table>
+<p >
+The table summarizes the relative performance on these two systems. The test executions began with a restart and continued for an additional 10 timesteps. Surprisingly, all I/O-related activity on the two systems required about the same time -- around 180 seconds.
+</p>
+<p >
+The important and exciting aspect of this work is that the Origin2000 performs this very large calculation at a rate that is 72 percent of the full dedicated C90. Furthermore, it gets this result using OVERFLOW's standard "good" vector code -- and with only a few weeks of optimization work.
+<a  name="anchor7"></a>
+</p>
+<p >
+<b >
+Answers to Common Questions
+</b>
+</p>
+<p >
+One of the first questions commonly asked in studies of this nature is: What are the scaling issues, and how well did the Origin2000 scale on the problem? The chart below reveals the dramatic answer -- scaling to 64 CPUs is completely linear. There is none of the tailing-off that is frequently seen when some aspect of a parallel system's architecture (or the numerical algorithms) begins to infringe on performance.
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+To be sure, the linear scaling in this case is somewhat assisted by the sheer problem size. "Back-of-the-envelope" calculations and test executions of portions of the problem as it might execute on larger systems indicate that this test case may scale to several hundred CPUs. This hypothesis will be further tested over the next few weeks on a 128-CPU Origin2000.
+</p>
+<p >
+Another commonly asked question is: What improvements in performance can be had with some level of single CPU optimization? The fact is that the code is not very efficient in its reuse of level-1 cache, and subsequent speedups can be expected with some tuning effort in this area. It is estimated that two work-months of optimization will result in a code that could be two times faster on the large test problem.
+<a  name="anchor8"></a>
+</p>
+<p >
+<b >
+The Future of OVERFLOW-MLP
+</b>
+</p>
+<p >
+The new microprocessor-based, distributed shared-memory systems are widely perceived as the standard high-performance architectures for the foreseeable future. Fortunately, they appear suitable to the needs of the CFD community, and the MLP approach naturally maps to these new systems.
+</p>
+<p >
+MLP standardization efforts have already begun, with the recent announcement of "openMP," supported by SGI and others. Clearly, MLP is here to stay. At present, the NAS Facility is the only site in the U.S. to successfully implement MLP in a fully production-qualified CFD code.
+</p>
+<p >
+The major outcome of this initial work is not that the relatively inexpensive Origin2000 nearly outperformed the C90, but that the new trend in computer architectures can successfully be used to solve the largest problems of interest to NASA. This is the first time that this has been true since the computer industry began touting massively parallel architectures 15 years ago.
+</p>
+<p >
+The success of this study opens the door to some intriguing possibilities: one-hundred-million-point problems can be attempted today. Large simulations on larger systems can be done in hours instead of days. And for the first time in many years, problem sizes can increase significantly and still be practical to solve.
+</p>
+<p >
+For more information on the OVERFLOW-Origin2000 study, send email to
+<a  href="mailto:jtaft@nas.nasa.gov">
+<b >
+jtaft@nas.nasa.gov
+</b>
+</a>
+.
+</p>
+</td>
+<!-- END MAIN TEXT SECTION -->
+</tr>
+</table>
+<p ></p>
+<center >
+<!-- LINK BACK TO PREVIOUS ARTICLE AND FORWARD TO NEXT ARTICLE -->
+<a  href="index.html">
+<img ></img>
+</a>
+<a  href="secure.html">
+<img ></img>
+</a>
+</center>
+<br ></br>
+<table  TABID="09874" border="0" cellpadding="0" cellspacing="0" width="587">
+<tr >
+<td  colspan="2" height="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="45">
+<img ></img>
+</td>
+<td  align="left" valign="middle" width="542">
+<p >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2" verdana="#DEFAULT">
+<b >
+Do not bookmark this page
+</b>
+. This content from the old NAS website is moving from www.nas.nasa.gov to a new site. Please visit our
+<a  href="/index.html">
+new home page
+</a>
+for up-to-date news and information about the NAS Systems Division.
+</font>
+</p>
+<p >
+<b >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2" verdana="#DEFAULT">
+Updated:
+</font>
+</b>
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2" verdana="#DEFAULT">
+Tuesday, 03-Aug-1999 16:05:28 PDT
+<br ></br>
+<i >
+<b >
+WebWork:
+</b>
+<a  href="mailto:wroush@mail.arc.nasa.gov,lwhitney@nas.nasa.gov">
+Publications Media Group
+</a>
+<br ></br>
+<b >
+NASA Responsible Official:
+</b>
+<a  href="/~wfeierei/">
+Bill Feiereisen
+</a>
+</i>
+</font>
+</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,1964 @@
+<html >
+<head >
+<title >
+Weather Underground: Welcome to The Weather Underground
+</title>
+<meta ></meta>
+</head>
+<body  bgcolor="#FFFFFF" text="#000000">
+<table  TABID="14512" bgcolor="#eeeeee" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  rowspan="3" valign="top" width="130">
+<a  href="/">
+<img ></img>
+</a>
+</td>
+<td  bgcolor="#000000" colspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#cccccc" colspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" height="70" width="100%">
+<form  action="/cgi-bin/findweather/getForecast">
+<font  color="#000000">
+Find the Weather for any
+<b >
+City
+</b>
+,
+<b >
+State
+</b>
+or
+<b >
+ZIP Code
+</b>
+, or
+<b >
+Country
+</b>
+<!-- Find the Weather for any &amp;amp;amp;lt;b&amp;amp;amp;gt;City&amp;amp;amp;lt;/b&amp;amp;amp;gt;, &amp;amp;amp;lt;b&amp;amp;amp;gt;State&amp;amp;amp;lt;/b&amp;amp;amp;gt; or &amp;amp;amp;lt;b&amp;amp;amp;gt;ZIP Code&amp;amp;amp;lt;/b&amp;amp;amp;gt;, or &amp;amp;amp;lt;b&amp;amp;amp;gt;Country&amp;amp;amp;lt;/b&amp;amp;amp;gt; [213] -->
+</font>
+<br ></br>
+<font  color="#000000">
+<input ></input>
+<input ></input>
+</font>
+</form>
+</td>
+<script >
+function LanguageChange (form) { var myindex=form.LanguageMenu.selectedIndex if (form.LanguageMenu.options[myindex].value) { if (form.LanguageMenu.options[myindex].value=="other") location="http://www.wunderground.com/language/signup.html" else location=form.LanguageMenu.options[myindex].value+window.location.pathname + window.location.search; } }
+</script>
+<td  align="center">
+<form >
+<font  color="#000000">
+<b >
+Language
+</b>
+<br ></br>
+<select >
+<option  selected="selected" value="http://www.wunderground.com">
+English
+</option>
+<option  value="http://afrikaans.wunderground.com">
+Afrikaans
+</option>
+<option  value="http://albanian.wunderground.com">
+Albanian
+</option>
+<option  value="http://arabic.wunderground.com">
+Arabic
+</option>
+<option  value="http://basque.wunderground.com">
+Basque
+</option>
+<option  value="http://bulgarian.wunderground.com">
+Bulgarian
+</option>
+<option  value="http://belarusian.wunderground.com">
+Belarusian
+</option>
+<option  value="http://catalan.wunderground.com">
+Catalan
+</option>
+<option  value="http://simplifiedchinese.wunderground.com">
+Chinese (Simp)
+</option>
+<option  value="http://traditionalchinese.wunderground.com">
+Chinese (Trad)
+</option>
+<option  value="http://croatian.wunderground.com">
+Croatian
+</option>
+<option  value="http://czech.wunderground.com">
+Czech
+</option>
+<option  value="http://danish.wunderground.com">
+Danish
+</option>
+<option  value="http://dutch.wunderground.com">
+Dutch
+</option>
+<option  value="http://www.wunderground.com">
+English
+</option>
+<option  value="http://esperanto.wunderground.com">
+Esperanto
+</option>
+<option  value="http://estonian.wunderground.com">
+Estonian
+</option>
+<option  value="http://farsi.wunderground.com">
+Farsi
+</option>
+<option  value="http://finnish.wunderground.com">
+Finnish
+</option>
+<option  value="http://french.wunderground.com">
+French
+</option>
+<option  value="http://galician.wunderground.com">
+Galician
+</option>
+<option  value="http://gaelic.wunderground.com">
+Gaelic
+</option>
+<option  value="http://deutsch.wunderground.com">
+German
+</option>
+<option  value="http://greek.wunderground.com">
+Greek
+</option>
+<option  value="http://hebrew.wunderground.com">
+Hebrew
+</option>
+<option  value="http://hungarian.wunderground.com">
+Hungarian
+</option>
+<option  value="http://icelandic.wunderground.com">
+Icelandic
+</option>
+<option  value="http://ido.wunderground.com">
+Ido
+</option>
+<option  value="http://indonesian.wunderground.com">
+Indonesian
+</option>
+<option  value="http://italian.wunderground.com">
+Italian
+</option>
+<option  value="http://nihongo.wunderground.com">
+Japanese
+</option>
+<option  value="http://korean.wunderground.com">
+Korean
+</option>
+<option  value="http://latin.wunderground.com">
+Latin
+</option>
+<option  value="http://latvian.wunderground.com">
+Latvian
+</option>
+<option  value="http://lowgerman.wunderground.com">
+Low German
+</option>
+<option  value="http://lithuanian.wunderground.com">
+Lithuanian
+</option>
+<option  value="http://macedonian.wunderground.com">
+Macedonian
+</option>
+<option  value="http://maltese.wunderground.com">
+Maltese
+</option>
+<option  value="http://norwegian.wunderground.com">
+Norwegian
+</option>
+<option  value="http://polish.wunderground.com">
+Polish
+</option>
+<option  value="http://portuguese.wunderground.com">
+Portuguese
+</option>
+<option  value="http://romanian.wunderground.com">
+Romanian
+</option>
+<option  value="http://russian.wunderground.com">
+Russian
+</option>
+<option  value="http://serbian.wunderground.com">
+Serbian
+</option>
+<option  value="http://slovak.wunderground.com">
+Slovak
+</option>
+<option  value="http://slovenian.wunderground.com">
+Slovenian
+</option>
+<option  value="http://espanol.wunderground.com">
+Spanish
+</option>
+<option  value="http://swahili.wunderground.com">
+Swahili
+</option>
+<option  value="http://swedish.wunderground.com">
+Swedish
+</option>
+<option  value="http://swiss.wunderground.com">
+Swiss
+</option>
+<option  value="http://tagalog.wunderground.com">
+Tagalog
+</option>
+<option  value="http://thai.wunderground.com">
+Thai
+</option>
+<option  value="http://turkish.wunderground.com">
+Turkish
+</option>
+<option  value="http://ukrainian.wunderground.com">
+Ukrainian
+</option>
+<option  value="http://vietnamese.wunderground.com">
+Vietnamese
+</option>
+<option  value="http://welsh.wunderground.com">
+Welsh
+</option>
+<option  value="http://yiddishtransliterated.wunderground.com">
+Yiddish - transliterated
+</option>
+<option  value="other">
+Other...
+</option>
+</select>
+</font>
+</form>
+</td>
+</tr>
+</table>
+<table  TABID="14529" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#eeeeee">
+<img ></img>
+</td>
+<td  colspan="3">
+<img ></img>
+</td>
+<td >
+<table  TABID="14513" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#cccccc" valign="top" width="7">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#000000" valign="top" width="1">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#ffffff" valign="top" width="6">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#EEEEEE" valign="top" width="115">
+<img ></img>
+<br ></br>
+<script >
+<!--
+document.write('&amp;amp;amp;lt;a href=http://printer.wunderground.com'+window.location.pathname+ window.location.search+'&amp;amp;amp;gt;');
+document.write('&amp;amp;amp;lt;img border=0 height=24 width=31 src=http://icons.wunderground.com/graphics/print.gif&amp;amp;amp;gt;');
+document.write('Print This Page&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;p&amp;amp;amp;gt;');
+// -->
+</script>
+<table  TABID="14517" border="0" cellpadding="4" cellspacing="0" width="100">
+<!-- NEXRAD Promo Section -->
+<tr >
+<td  align="center" bgcolor="#000080">
+<font  color="FFFFFF" face="Arial,Helvetica">
+<b >
+New!
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="FFFFFF" valign="top">
+<a  href="/radar/mosaic.asp"></a>
+<center >
+<b >
+NEXRAD COMPOSITE IMAGERY WITH MIXED PRECIP!
+</b>
+</center>
+<br ></br>
+<center >
+<img ></img>
+<img ></img>
+<img ></img>
+</center>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+<!-- NEXRAD Promo Section -->
+<tr >
+<td  align="center" bgcolor="#000080">
+<font  color="FFFFFF" face="Arial,Helvetica">
+<b >
+New!
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="FFFFFF" valign="top">
+<a  href="/radar/map.asp"></a>
+<center >
+<b >
+US CURRENT NEXRAD!
+</b>
+</center>
+<br ></br>
+<center >
+<img ></img>
+<img ></img>
+<img ></img>
+</center>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#000080">
+<font  color="#ffffff" face="Arial,Helvetica">
+<b >
+Features
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" valign="top">
+<ul >
+<li >
+<a  href="/weatherstation/index.asp">
+Personal Weather Stations
+</a>
+<img ></img>
+</li>
+<li >
+<a  href="/satellite/vis/1k/US.html">
+US Visible Satellite
+</a>
+</li>
+<li >
+<a  href="/severe.asp">
+US Severe Weather
+</a>
+</li>
+<li >
+<a  href="/sky/index.asp">
+Astronomy
+</a>
+</li>
+<li >
+<a  href="/ski/">
+Ski Reports
+</a>
+</li>
+<li >
+<a  href="/MAR/">
+Marine Forecasts
+</a>
+</li>
+<li >
+<a  href="/tropical/">
+Tropical Storms
+</a>
+</li>
+<li >
+<a  href="/cgi-bin/findweather/getForecast?addfav=">
+Favorites
+</a>
+</li>
+<li >
+<a  href="/search.asp">
+Web Search
+</a>
+</li>
+<li >
+<a  href="http://server.as5000.com/AS5000/adserver/click?ID=TRIP-00003&C=0">
+FlightTracker
+</a>
+<img ></img>
+</li>
+</ul>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+<!-- 
+// MSIE 4 detector
+function isMsie4orGreater()
+{
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf ( "MSIE " );
+        if  (msie &amp;amp;amp;gt; 0) 
+		{
+           var majorVer = ua.substring( msie+5, ua.indexOf(".",msie) );
+           return ( parseInt( majorVer ) &amp;amp;amp;gt;=4);
+        }
+		 else 
+		{ 
+			return false; 
+		}
+}
+
+	if (isMsie4orGreater())
+		{
+
+		document.write('&amp;amp;amp;lt;tr&amp;amp;amp;gt;&amp;amp;amp;lt;td bgcolor="#000080" align=center&amp;amp;amp;gt;');
+		document.write('&amp;amp;amp;lt;font face="Arial,Helvetica" color="FFFFFF"&amp;amp;amp;gt;&amp;amp;amp;lt;b&amp;amp;amp;gt;Desktop Gizmo!&amp;amp;amp;lt;/b&amp;amp;amp;gt;&amp;amp;amp;lt;/font&amp;amp;amp;gt;');
+		document.write('&amp;amp;amp;lt;/td&amp;amp;amp;gt;&amp;amp;amp;lt;/tr&amp;amp;amp;gt;&amp;amp;amp;lt;tr&amp;amp;amp;gt;&amp;amp;amp;lt;td bgcolor="FFFFFF" valign=top&amp;amp;amp;gt;');
+		document.write('&amp;amp;amp;lt;a href="/mschannels/GizmoScroller.cdf"&amp;amp;amp;gt;');
+		document.write('&amp;amp;amp;lt;center&amp;amp;amp;gt;&amp;amp;amp;lt;img src="http://icons.wunderground.com/graphics/GizmoScrollerDemo.gif"'); 
+		document.write(' width=100 height=25&amp;amp;amp;gt;&amp;amp;amp;lt;/center&amp;amp;amp;gt;');
+		document.write('Add a Scrolling Gizmo to your Windows Desktop&amp;amp;amp;lt;/a&amp;amp;amp;gt;');
+
+		document.write('&amp;amp;amp;lt;/td&amp;amp;amp;gt;&amp;amp;amp;lt;/tr&amp;amp;amp;gt;')
+		document.write('&amp;amp;amp;lt;tr&amp;amp;amp;gt;&amp;amp;amp;lt;td&amp;amp;amp;gt;&amp;amp;amp;amp;nbsp;&amp;amp;amp;lt;/td&amp;amp;amp;gt;&amp;amp;amp;lt;/tr&amp;amp;amp;gt;')
+     
+		}
+
+
+//-->
+<!--  [ ] [ ] [ ] -->
+<!--    -->
+<tr >
+<td  align="center" bgcolor="000080">
+<font  color="#ffffff" face="Arial,Helvetica">
+<b >
+US Maps
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#ffffff">
+<a  href="/US/Region/US/Temperature.html">
+Temperature
+</a>
+<br ></br>
+<a  href="/US/Region/US/Radar.html">
+Radar Map
+</a>
+<br ></br>
+<a  href="/US/Region/US/Visibility.html">
+Visibility
+</a>
+<br ></br>
+<a  href="/US/Region/US/WindSpeed.html">
+Wind
+</a>
+<br ></br>
+<a  href="/US/Region/US/HeatIndex.html">
+HeatIndex
+</a>
+<br ></br>
+<a  href="/US/Region/US/Windchill.html">
+Windchill
+</a>
+<br ></br>
+<a  href="/US/Region/US/Humidity.html">
+Humidity
+</a>
+<br ></br>
+<a  href="/US/Region/US/Dewpoint.html">
+Dewpoint
+</a>
+<br ></br>
+<a  href="/US/Region/US/UVForecast.html">
+UV Forecast
+</a>
+<br ></br>
+<a  href="/US/Region/US/IRSatellite.html">
+Satellite Map
+</a>
+<br ></br>
+<a  href="/US/Region/US/Fronts.html">
+Fronts
+</a>
+<br ></br>
+<a  href="/US/Region/US/SnowDepth.html">
+Snow
+</a>
+<br ></br>
+<a  href="/US/Region/US/JetStream.html">
+Jet Stream
+</a>
+<br ></br>
+<a  href="/US/Region/US/Pollen.html">
+Pollen
+</a>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+<tr >
+<td  align="center" bgcolor="000080">
+<font  color="#ffffff" face="Arial,Helvetica">
+<b >
+International
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#ffffff">
+<a  href="/">
+United States
+</a>
+<br ></br>
+<a  href="/global/CN_ST_Index.html">
+Canada
+</a>
+<br ></br>
+<a  href="/global/CA_ST_Index.html">
+Central America
+</a>
+<br ></br>
+<a  href="/global/SA_ST_Index.html">
+South America
+</a>
+<br ></br>
+<a  href="/global/AS_ST_Index.html">
+Northern Asia
+</a>
+<br ></br>
+<a  href="/global/A2_ST_Index.html">
+Southern Asia
+</a>
+<br ></br>
+<a  href="/global/EU_ST_Index.html">
+Europe
+</a>
+<br ></br>
+<a  href="/global/AU_ST_Index.html">
+Australia
+</a>
+<br ></br>
+<a  href="/global/AF_ST_Index.html">
+Africa
+</a>
+<br ></br>
+<a  href="/global/IS_ST_Index.html">
+Islands
+</a>
+<br ></br>
+<a  href="/global/AN_ST_Index.html">
+Antarctica
+</a>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#000080">
+<font  color="FFFFFF" face="Arial,Helvetica">
+<b >
+Information
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="FFFFFF" valign="top">
+<b >
+<a  href="/about/faq/faq.asp">
+Need Help?
+</a>
+</b>
+<br ></br>
+<b >
+<a  href="/about/faq/faq.asp">
+Link to Us
+</a>
+</b>
+<br ></br>
+<b >
+<a  href="/about/contact.asp">
+About Us
+</a>
+</b>
+<br ></br>
+<b >
+<a  href="/autobrandinfo/">
+Custom Weather
+</a>
+</b>
+<br ></br>
+<b >
+<a  href="/about/adinfo.asp">
+Advertising
+</a>
+</b>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+<!-- State Farm Section -->
+<tr >
+<td  align="center" bgcolor="#000080">
+<font  color="FFFFFF" face="Arial,Helvetica">
+<b >
+statefarm.com
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="FFFFFF" valign="top">
+<table  TABID="14514">
+<tr >
+<td >
+<ul >
+<li >
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=FARM-00003&C=7">
+Free Quotes
+</a>
+</li>
+<li >
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=FARM-00003&C=8">
+Child Passenger Safety
+</a>
+</li>
+<li >
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=FARM-00003&C=9">
+Tornado Safety
+</a>
+</li>
+<li >
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=FARM-00003&C=10">
+Most Dangerous Intersections
+</a>
+</li>
+<li >
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=FARM-00003&C=11">
+Aggressive Driving
+</a>
+</li>
+<li >
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=FARM-00003&C=12">
+Seasonal Home Safety Tips
+</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=FARM-00003&C=6">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+<!-- Quotes123 Section -->
+<tr >
+<td  align="center" bgcolor="#000080">
+<font  color="FFFFFF" face="Arial,Helvetica">
+<b >
+Quotes123
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="FFFFFF" valign="top">
+<table  TABID="14515">
+<tr >
+<td >
+<ul >
+<li >
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=Quox-00002&C=0">
+Mortage/Loan Center
+</a>
+</li>
+<li >
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=Quox-00002&C=2">
+Commodity Trading
+</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+<tr >
+<td  align="center" bgcolor="000080">
+<font  color="#ffffff" face="Arial,Helvetica">
+<b >
+WunderSearch
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#ffffff">
+<form  action="/search.asp">
+Search the Net!
+<br ></br>
+<font  color="#ff0000" size="-1">
+Find non weather stuff!
+</font>
+<input ></input>
+<table  TABID="14516">
+<tr >
+<td >
+<input ></input>
+<input ></input>
+</td>
+</tr>
+</table>
+<font  size="-1">
+<a  href="http://www.google.com">
+Powered by Google
+</a>
+</font>
+<br ></br>
+<font  size="-1">
+<a  href="/about/whysearch.asp">
+Why use WunderSearch?
+</a>
+</font>
+</form>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+<tr >
+<td >
+<font  color="#EEEEEE" size="-4">
+moonset.wunderground.com
+</font>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="#CCCCCC" width="6">
+<img ></img>
+</td>
+<td  bgcolor="#000000" width="1">
+<img ></img>
+</td>
+<td  bgcolor="#FFFFFF" width="8">
+<img ></img>
+</td>
+<td  valign="top">
+<center >
+<!-- AS5000 -->
+<!-- URL: http://server2.as5000.com/AS5000/adserver/html?page=home&amp;amp;amp;amp;IsGOV=0 -->
+<center >
+<!-- AS5000 Server: kudzu.wunderground.com -->
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=CLSM-00013&C=3&T=990735867">
+<img ></img>
+</a>
+</center>
+<table  TABID="14523" bgcolor="#DDDDDD" border="0" cellpadding="0" cellspacing="1">
+<tr  valign="top">
+<td  align="center">
+<table  TABID="14519" border="0" cellpadding="0" cellspacing="1" width="100">
+<tr  bgcolor="#000080">
+<td >
+<center >
+<b >
+<font  color="#FFFFFF">
+Map Type:
+</font>
+</b>
+</center>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<b >
+<font  color="#606060">
+<b >
+Temperature
+</b>
+</font>
+</b>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/Radar.html">
+<b >
+Radar Map
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/Visibility.html">
+<b >
+Visibility
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/WindSpeed.html">
+<b >
+Wind
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/HeatIndex.html">
+<b >
+HeatIndex
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/Windchill.html">
+<b >
+Windchill
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/Humidity.html">
+<b >
+Humidity
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/Dewpoint.html">
+<b >
+Dewpoint
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/UVForecast.html">
+<b >
+UV Forecast
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/IRSatellite.html">
+<b >
+Satellite Map
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/Fronts.html">
+<b >
+Fronts
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/SnowDepth.html">
+<b >
+Snow
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/JetStream.html">
+<b >
+Jet Stream
+</b>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#000080">
+<td >
+<center >
+<b >
+<font  color="#FFFFFF">
+Health Maps
+</font>
+</b>
+</center>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td >
+<a  href="/US/Region/US/Pollen.html">
+<b >
+Pollen
+</b>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<table  TABID="14518">
+<tr >
+<td >
+<a  href="/US/Region/US/2xTemperature.html">
+<img ></img>
+<br ></br>
+</a>
+<center >
+Double
+</center>
+</td>
+<td >
+<a  href="/US/Region/US/pxTemperature.html">
+<img ></img>
+<br ></br>
+</a>
+<center >
+Animate
+</center>
+</td>
+</tr>
+</table>
+<a  href="/setfavmapcookie.php?favpath=/US&favreg=us&favmap=st&favintl=0&favregname=US">
+Set this map as your favorite map.
+</a>
+<br ></br>
+<br ></br>
+<a  href="/about/MapKey.asp#st">
+About this map.
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td  height="256" valign="top" width="344">
+<table  TABID="14520" border="0" cellpadding="0" cellspacing="1" width="100%">
+<tr >
+<td  bgcolor="#000080" width="100%">
+<font  color="#FFFFFF">
+<b >
+US Temperature
+<br ></br>
+</b>
+</font>
+<map  name="IMAGEMAP">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+</map>
+</td>
+</tr>
+</table>
+<center >
+<b >
+Click on map for current conditions and forecasts.
+</b>
+<br ></br>
+<img ></img>
+<br ></br>
+<center >
+Updated:
+<b >
+04:00 PM EDT on May 24, 2001
+</b>
+<a  href="/picktimezone.asp?tz=WUND">
+change
+</a>
+</center>
+<br ></br>
+</center>
+<center >
+<a  href="/US/Region/US/Temperature.html">
+Current
+</a>
+<table  TABID="14521" genuinetable="yes" tabletitle="Current">
+<tr >
+<td ></td>
+<td  bgcolor="#000080">
+<font  color="#FFFFFF">
+Historic
+</font>
+</td>
+<td  bgcolor="#000080">
+<font  color="#FFFFFF">
+Forecasted
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#000080">
+<font  color="#FFFFFF">
+High:
+</font>
+</td>
+<td  bgcolor="#FFFFFF">
+<a  href="/US/Region/US/MaxTempp5Day.html">
+May, 19
+</a>
+<a  href="/US/Region/US/MaxTempp4Day.html">
+20
+</a>
+<a  href="/US/Region/US/MaxTempp3Day.html">
+21
+</a>
+<a  href="/US/Region/US/MaxTempp2Day.html">
+22
+</a>
+<a  href="/US/Region/US/MaxTempp1Day.html">
+23
+</a>
+<br ></br>
+</td>
+<td  bgcolor="#FFFFFF">
+<a  href="/US/Region/US/MaxTemp1Day.html">
+24
+</a>
+<a  href="/US/Region/US/MaxTemp2Day.html">
+25
+</a>
+<a  href="/US/Region/US/MaxTemp3Day.html">
+26
+</a>
+<a  href="/US/Region/US/MaxTemp4Day.html">
+27
+</a>
+<a  href="/US/Region/US/MaxTemp5Day.html">
+28
+</a>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#000080">
+<font  color="#FFFFFF">
+Low:
+</font>
+</td>
+<td  bgcolor="#FFFFFF">
+<a  href="/US/Region/US/MinTempp5Day.html">
+May, 19
+</a>
+<a  href="/US/Region/US/MinTempp4Day.html">
+20
+</a>
+<a  href="/US/Region/US/MinTempp3Day.html">
+21
+</a>
+<a  href="/US/Region/US/MinTempp2Day.html">
+22
+</a>
+<a  href="/US/Region/US/MinTempp1Day.html">
+23
+</a>
+<br ></br>
+</td>
+<td  bgcolor="#FFFFFF">
+<a  href="/US/Region/US/MinTemp1Day.html">
+24
+</a>
+<a  href="/US/Region/US/MinTemp2Day.html">
+25
+</a>
+<a  href="/US/Region/US/MinTemp3Day.html">
+26
+</a>
+<a  href="/US/Region/US/MinTemp4Day.html">
+27
+</a>
+<a  href="/US/Region/US/MinTemp5Day.html">
+28
+</a>
+</td>
+</tr>
+</table>
+</center>
+</td>
+<td  width="163">
+<table  TABID="14522" border="0" cellpadding="0" cellspacing="1">
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<default ></default>
+<tr  align="center" bgcolor="#000080">
+<td >
+<center >
+<b >
+<font  color="#FFFFFF">
+Click Here
+</font>
+</b>
+</center>
+</td>
+</tr>
+<tr  bgcolor="#D0D0D0">
+<td >
+<a  href="/US/Region/US/Temperature.html">
+<b >
+United States
+</b>
+</a>
+<br ></br>
+</td>
+</tr>
+<tr  align="center">
+<td >
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr  bgcolor="#D0D0D0">
+<td >
+<b >
+World
+</b>
+<br ></br>
+</td>
+</tr>
+<tr  align="center">
+<td >
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+<br ></br>
+<center >
+<a  href="/cgi-bin/findweather/getForecast?setunits=metric">
+Metric
+</a>
+|
+<a  href="/cgi-bin/findweather/getForecast?setunits=english">
+English
+</a>
+|
+<a  href="/cgi-bin/findweather/getForecast?setunits=both">
+Both
+</a>
+</center>
+<p ></p>
+<center >
+<br ></br>
+<b >
+<font  size="+1">
+Favorites!
+</font>
+</b>
+</center>
+<p ></p>
+<center >
+<b >
+Click on a city name for the forecast.
+</b>
+</center>
+<center >
+To add a city to your favorites, go to a city forecast page and click "add to favorites".
+</center>
+<center >
+<table  TABID="14524" genuinetable="yes" tabletitle="Favorites!">
+<tr  bgcolor="#eeeeee">
+<th >
+Place
+</th>
+<th >
+Temperature
+</th>
+<th >
+Humidity
+</th>
+<th >
+Pressure
+</th>
+<th >
+Conditions
+</th>
+<th >
+Updated
+</th>
+<th >
+Warning
+</th>
+<th >
+Favorites
+</th>
+</tr>
+<tr  bgcolor="#ffffff">
+<td >
+<a  href="/US/TX/Dallas.html">
+Dallas, Texas
+</a>
+</td>
+<td >
+79° F
+</td>
+<td >
+28%
+</td>
+<td >
+29.95 in
+</td>
+<td >
+Scattered Clouds
+</td>
+<td >
+2:53 PM CDT
+</td>
+<td >
+<pre >
+<a  href="/US/TX/Dallas.html#SPE">
+<img ></img>
+</a>
+</pre>
+</td>
+<td >
+<a  href="/cgi-bin/findweather/getForecast?delfav=75201.1">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#ffffff">
+<td >
+<a  href="/US/IL/Chicago.html">
+Chicago, Illinois
+</a>
+</td>
+<td >
+54° F
+</td>
+<td >
+58%
+</td>
+<td >
+29.75 in
+</td>
+<td >
+Thunderstorms and Rain
+</td>
+<td >
+2:55 PM CDT
+</td>
+<td >
+<pre ></pre>
+</td>
+<td >
+<a  href="/cgi-bin/findweather/getForecast?delfav=60601.1">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#ffffff">
+<td >
+<a  href="/US/MN/Minneapolis.html">
+Minneapolis, Minnesota
+</a>
+</td>
+<td >
+52° F
+</td>
+<td >
+88%
+</td>
+<td >
+29.89 in
+</td>
+<td >
+Light Rain
+</td>
+<td >
+3:00 PM CDT
+</td>
+<td >
+<pre >
+<a  href="/US/MN/Minneapolis.html#WAT">
+<img ></img>
+</a>
+</pre>
+</td>
+<td >
+<a  href="/cgi-bin/findweather/getForecast?delfav=55401.1">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#ffffff">
+<td >
+<a  href="/US/MA/Boston.html">
+Boston, Massachusetts
+</a>
+</td>
+<td >
+57° F
+</td>
+<td >
+72%
+</td>
+<td >
+30.12 in
+</td>
+<td >
+Overcast
+</td>
+<td >
+3:54 PM EDT
+</td>
+<td >
+<pre ></pre>
+</td>
+<td >
+<a  href="/cgi-bin/findweather/getForecast?delfav=02101.1">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#ffffff">
+<td >
+<a  href="/US/NM/Albuquerque.html">
+Albuquerque, New Mexico
+</a>
+</td>
+<td >
+84° F
+</td>
+<td >
+13%
+</td>
+<td >
+30.07 in
+</td>
+<td >
+Partly Cloudy
+</td>
+<td >
+1:56 PM MDT
+</td>
+<td >
+<pre ></pre>
+</td>
+<td >
+<a  href="/cgi-bin/findweather/getForecast?delfav=87101.1">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#ffffff">
+<td >
+<a  href="/US/MI/Lansing.html">
+Lansing, Michigan
+</a>
+</td>
+<td >
+54° F
+</td>
+<td >
+83%
+</td>
+<td >
+29.76 in
+</td>
+<td >
+Light Rain
+</td>
+<td >
+3:55 PM EDT
+</td>
+<td >
+<pre ></pre>
+</td>
+<td >
+<a  href="/cgi-bin/findweather/getForecast?delfav=48901.1">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#ffffff">
+<td >
+<a  href="/US/CO/Denver.html">
+Denver, Colorado
+</a>
+</td>
+<td >
+70° F
+</td>
+<td >
+23%
+</td>
+<td >
+30.11 in
+</td>
+<td >
+Partly Cloudy
+</td>
+<td >
+1:53 PM MDT
+</td>
+<td >
+<pre ></pre>
+</td>
+<td >
+<a  href="/cgi-bin/findweather/getForecast?delfav=80014.2">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#ffffff">
+<td >
+<a  href="/US/NY/New_York.html">
+New York, New York
+</a>
+</td>
+<td >
+66° F
+</td>
+<td >
+73%
+</td>
+<td >
+30.01 in
+</td>
+<td >
+Scattered Clouds
+</td>
+<td >
+3:51 PM EDT
+</td>
+<td >
+<pre ></pre>
+</td>
+<td >
+<a  href="/cgi-bin/findweather/getForecast?delfav=10001.1">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#ffffff">
+<td >
+<a  href="/US/CA/San_Francisco.html">
+San Francisco, California
+</a>
+</td>
+<td >
+64° F
+</td>
+<td >
+68%
+</td>
+<td >
+30.02 in
+</td>
+<td >
+Clear
+</td>
+<td >
+12:56 PM PDT
+</td>
+<td >
+<pre ></pre>
+</td>
+<td >
+<a  href="/cgi-bin/findweather/getForecast?delfav=94101.1">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</center>
+<p ></p>
+<center >
+<h3 >
+Click on a State for Conditions and Forecasts
+</h3>
+<p >
+<script >
+function showLink(theString) { window.status='Forecasts and Conditions for '+theString; }
+</script>
+</p>
+<table  TABID="14525">
+<tr >
+<td >
+<a  onmouseover="showLink(Alabama);return" true="#DEFAULT">
+Alabama
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Alaska);return" true="#DEFAULT">
+Alaska
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Arizona);return" true="#DEFAULT">
+Arizona
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Arkansas);return" true="#DEFAULT">
+Arkansas
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="showLink(California);return" true="#DEFAULT">
+California
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Colorado);return" true="#DEFAULT">
+Colorado
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Connecticut);return" true="#DEFAULT">
+Connecticut
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Delaware);return" true="#DEFAULT">
+Delaware
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  columbia="#DEFAULT" of="#DEFAULT" onmouseover="showLink(District" return="#DEFAULT" true="#DEFAULT">
+District of Columbia
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Florida);return" true="#DEFAULT">
+Florida
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Georgia);return" true="#DEFAULT">
+Georgia
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Hawaii);return" true="#DEFAULT">
+Hawaii
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="showLink(Idaho);return" true="#DEFAULT">
+Idaho
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Illinois);return" true="#DEFAULT">
+Illinois
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Indiana);return" true="#DEFAULT">
+Indiana
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Iowa);return" true="#DEFAULT">
+Iowa
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="showLink(Kansas);return" true="#DEFAULT">
+Kansas
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Kentucky);return" true="#DEFAULT">
+Kentucky
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Louisiana);return" true="#DEFAULT">
+Louisiana
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Maine);return" true="#DEFAULT">
+Maine
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="showLink(Maryland);return" true="#DEFAULT">
+Maryland
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Massachusetts);return" true="#DEFAULT">
+Massachusetts
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Michigan);return" true="#DEFAULT">
+Michigan
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Minnesota);return" true="#DEFAULT">
+Minnesota
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="showLink(Mississippi);return" true="#DEFAULT">
+Mississippi
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Missouri);return" true="#DEFAULT">
+Missouri
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Montana);return" true="#DEFAULT">
+Montana
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Nebraska);return" true="#DEFAULT">
+Nebraska
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="showLink(Nevada);return" true="#DEFAULT">
+Nevada
+</a>
+</td>
+<td >
+<a  hampshire="#DEFAULT" onmouseover="showLink(New" return="#DEFAULT" true="#DEFAULT">
+New Hampshire
+</a>
+</td>
+<td >
+<a  jersey="#DEFAULT" onmouseover="showLink(New" return="#DEFAULT" true="#DEFAULT">
+New Jersey
+</a>
+</td>
+<td >
+<a  mexico="#DEFAULT" onmouseover="showLink(New" return="#DEFAULT" true="#DEFAULT">
+New Mexico
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="showLink(New" return="#DEFAULT" true="#DEFAULT" york="#DEFAULT">
+New York
+</a>
+</td>
+<td >
+<a  carolina="#DEFAULT" onmouseover="showLink(North" return="#DEFAULT" true="#DEFAULT">
+North Carolina
+</a>
+</td>
+<td >
+<a  dakota="#DEFAULT" onmouseover="showLink(North" return="#DEFAULT" true="#DEFAULT">
+North Dakota
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Ohio);return" true="#DEFAULT">
+Ohio
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="showLink(Oklahoma);return" true="#DEFAULT">
+Oklahoma
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Oregon);return" true="#DEFAULT">
+Oregon
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Pennsylvania);return" true="#DEFAULT">
+Pennsylvania
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Puerto" return="#DEFAULT" rico="#DEFAULT" true="#DEFAULT">
+Puerto Rico
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  island="#DEFAULT" onmouseover="showLink(Rhode" return="#DEFAULT" true="#DEFAULT">
+Rhode Island
+</a>
+</td>
+<td >
+<a  carolina="#DEFAULT" onmouseover="showLink(South" return="#DEFAULT" true="#DEFAULT">
+South Carolina
+</a>
+</td>
+<td >
+<a  dakota="#DEFAULT" onmouseover="showLink(South" return="#DEFAULT" true="#DEFAULT">
+South Dakota
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Tennessee);return" true="#DEFAULT">
+Tennessee
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="showLink(Texas);return" true="#DEFAULT">
+Texas
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Utah);return" true="#DEFAULT">
+Utah
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Vermont);return" true="#DEFAULT">
+Vermont
+</a>
+</td>
+<td >
+<a  islands="#DEFAULT" onmouseover="showLink(Virgin" return="#DEFAULT" true="#DEFAULT">
+Virgin Islands
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="showLink(Virginia);return" true="#DEFAULT">
+Virginia
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Washington);return" true="#DEFAULT">
+Washington
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(West" return="#DEFAULT" true="#DEFAULT" virginia="#DEFAULT">
+West Virginia
+</a>
+</td>
+<td >
+<a  onmouseover="showLink(Wisconsin);return" true="#DEFAULT">
+Wisconsin
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseover="showLink(Wyoming);return" true="#DEFAULT">
+Wyoming
+</a>
+</td>
+</tr>
+</table>
+</center>
+<p ></p>
+<center >
+<a  href="http://www.rsac.org">
+<img ></img>
+</a>
+</center>
+<p ></p>
+<center ></center>
+<!-- blue credits bar -->
+<table  TABID="14526" width="100%">
+<tr  bgcolor="#000080" valign="top">
+<td >
+<font  color="#ffffff" size="+1">
+<b >
+Please Visit Our Sponsors:
+</b>
+</font>
+</td>
+</tr>
+</table>
+<!-- ads -->
+<center >
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=AMAZ-00002&C=0">
+<img ></img>
+</a>
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=CLSM-00013&C=0">
+<img ></img>
+</a>
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=PGCX-00001&C=0">
+<img ></img>
+</a>
+<p ></p>
+<table  TABID="14527" border="0" cellspacing="0">
+<tr  align="top">
+<td  align="top">
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=NXCD-00009&C=5">
+<img ></img>
+</a>
+</td>
+<td  align="top">
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=TRIP-00002&C=1">
+<img ></img>
+</a>
+</td>
+<td  align="top">
+<a  href="http://server2.as5000.com/AS5000/adserver/click?ID=ADOC-00001&C=3">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="14528">
+<tr  valign="top">
+<td >
+<img ></img>
+</td>
+<td  valign="bottom">
+Copyright © 2001
+<a  href="mailto:info@wunderground.com">
+The Weather Underground, Inc.
+</a>
+</td>
+</tr>
+</table>
+</center>
+<font  color="#ffffff">
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+</font>
+</td>
+</tr>
+</table>
+</body>
+</html>

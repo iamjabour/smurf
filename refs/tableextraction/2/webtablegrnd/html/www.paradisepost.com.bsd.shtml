@@ -1,0 +1,413 @@
+<html >
+<head >
+<title >
+Business Service Directory
+</title>
+<meta ></meta>
+</head>
+<body  background="art/spback3.gif" bgcolor="#FFFFFF" tracingopacity="31" tracingsrc="art/snake&cup.gif">
+<div  align="center">
+<table  TABID="10603" width="713">
+<tr >
+<td  valign="top" width="128">
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<script >
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<form >
+<font  color="#000000" size="2">
+<select >
+<option  selected="selected"></option>
+</select>
+<font >
+Quick Links
+</font>
+</font>
+</form>
+</td>
+</tr>
+<tr >
+<td >
+Local News
+</td>
+</tr>
+<tr >
+<td >
+Local Sports
+</td>
+</tr>
+<tr >
+<td >
+Employment Classifieds
+</td>
+</tr>
+<tr >
+<td >
+Rentals Classifieds
+</td>
+</tr>
+<tr >
+<td >
+Classifieds
+</td>
+</tr>
+<tr >
+<td >
+Obituaries
+</td>
+</tr>
+<tr >
+<td >
+Features
+</td>
+</tr>
+<tr >
+<td >
+Columns/Reviews
+</td>
+</tr>
+<tr >
+<td >
+49er Speakeasy
+</td>
+</tr>
+<tr >
+<td >
+Subscribe
+</td>
+</tr>
+<tr >
+<td >
+Job Openings
+</td>
+</tr>
+<tr >
+<td >
+The Good Life
+</td>
+</tr>
+<tr >
+<td >
+The Ridge Online
+</td>
+</tr>
+<tr >
+<td >
+Northern California Homes
+</td>
+</tr>
+<tr >
+<td >
+Paradise Post Printing
+<br ></br>
+<a  href="/">
+Home
+</a>
+<br ></br>
+<a  href="/news/">
+Local News
+</a>
+<br ></br>
+<a  href="/sports/">
+Local Sports
+</a>
+<br ></br>
+<a  href="/class/">
+Classifieds
+</a>
+<br ></br>
+<a  href="/obits/">
+Obituaries
+</a>
+<br ></br>
+<a  href="/extras/obituaries/">
+Obituary Index
+</a>
+<br ></br>
+<a  href="/features/">
+Features
+</a>
+<br ></br>
+<a  href="/columns/">
+Columns/Reviews
+</a>
+<br ></br>
+<a  href="http://www.dekalb-chronicle.com/apindex/">
+National News
+</a>
+<br ></br>
+<a  href="http://www.paradisepost.com/MorePhotos/">
+More Photos
+</a>
+<br ></br>
+<a  href="/health/">
+Health
+</a>
+<br ></br>
+<a  href="/INN_stocks/">
+Stock Quotes
+</a>
+<br ></br>
+<a  href="/49er/">
+49er Speakeasy
+</a>
+<br ></br>
+<a  href="/extras/subscribe/">
+Subscribe
+</a>
+<br ></br>
+<a  href="/extras/job/">
+Job Openings
+</a>
+<br ></br>
+<a  href="/extras/contactus/">
+Contact Us
+</a>
+<br ></br>
+<a  href="/extras/other_pubs/">
+Other Publications
+</a>
+<a  href="http://www.paradisepostyellowpages.com/">
+<br ></br>
+Paradise Yellow Pages
+<br ></br>
+</a>
+<a  href="http://www.buttecountyyellowpages.com/">
+Butte County Yellow Pages
+<br ></br>
+</a>
+<a  href="http://www.theridgeonline.com">
+The Ridge Online
+</a>
+<br ></br>
+<a  href="http://www.paradisepostprinting.com">
+Paradise Post Printing
+</a>
+<br ></br>
+<a  href="http://www.northerncahomes.net/">
+Northern California Homes
+<br ></br>
+</a>
+<a  href="/goodlife/">
+The Good Life
+<br ></br>
+</a>
+<a  href="/bsd.shtml">
+Business Service Directory
+</a>
+<br ></br>
+<a  href="/passport/">
+Passport
+</a>
+<br ></br>
+<a  href="/extras/contactus/">
+Advertise
+</a>
+<br ></br>
+<a  href="/classified_form.shtml">
+Submit Your Classified Ad
+</a>
+</td>
+<td  align="center" valign="top" width="591">
+<a  href="http://www.paradisepost.com/" target="_top">
+<img ></img>
+</a>
+<table  TABID="10602" background="/art/brick.gif" border="0" bordercolor="#CC9966" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  height="486">
+<div  align="center">
+<b >
+<br ></br>
+<br ></br>
+</b>
+<table  TABID="10601" bgcolor="#666600" border="5" cellpadding="3" cellspacing="10" width="90%">
+<tr >
+<td  align="center" bgcolor="#FFFFFF" height="25" valign="middle" width="33%">
+<a  href="bsdlist.shtml#ac">
+<b >
+Air Conditioning &amp; Heating
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="25" valign="middle" width="34%">
+<a  href="bsdlist.shtml#ar">
+<b >
+Appliance Repair
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="25" valign="middle" width="33%">
+<a  href="bsdlist.shtml#agd">
+<b >
+Automatic garage Doors
+</b>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFFF" height="43" valign="middle" width="33%">
+<a  href="bsdlist.shtml#bs">
+<b >
+Beauty Salons
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="43" valign="middle" width="34%">
+<a  href="bsdlist.shtml#cc">
+<b >
+Carpet Cleaning
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="43" valign="middle" width="33%">
+<a  href="bsdlist.shtml#cs">
+<b >
+Computer Services
+</b>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFFF" height="41" valign="middle" width="33%">
+<a  href="bsdlist.shtml#cl">
+<b >
+Contractors - Licensed
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="41" valign="middle" width="34%">
+<a  href="bsdlist.shtml#ds">
+<b >
+Diabetic Supplies
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="41" valign="middle" width="33%">
+<a  href="bsdlist.shtml#d">
+<b >
+Doors
+</b>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFFF" height="42" valign="middle" width="33%">
+<a  href="bsdlist.shtml#hm"></a>
+<a  href="bsdlist.shtml#g">
+<b >
+Garages
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="42" valign="middle" width="34%">
+<a  href="bsdlist.shtml#hm">
+<b >
+Handyman
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="42" valign="middle" width="33%">
+<a  href="bsdlist.shtml#hs">
+<b >
+Health Services
+</b>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFFF" height="41" valign="middle" width="33%">
+<a  href="bsdlist.shtml#ls">
+<b >
+Landscape Services
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="41" valign="middle" width="34%">
+<a  href="bsdlist.shtml#mhs"></a>
+<a  href="bsdlist.shtml#ms">
+<b >
+Mortgage Services
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="41" valign="middle" width="33%">
+<a  href="bsdlist.shtml#r">
+<b >
+Roofing
+</b>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#FFFFFF" height="39" valign="middle" width="27%">
+<a  href="bsdlist.shtml#pgs"></a>
+<a  href="bsdlist.shtml#tw">
+<b >
+Tractor Work
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="39" valign="middle" width="37%">
+<a  href="bsdlist.shtml#tv">
+<b >
+TV &amp; VCR Service
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#FFFFFF" height="39" valign="middle" width="36%">
+<a  href="bsdlist.shtml#tw"></a>
+<a  href="bsdlist.shtml#ts">
+<b >
+Tree Service
+</b>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#EFF7FF" height="39" valign="middle" width="27%"></td>
+<td  align="center" bgcolor="#FFFFFF" height="39" valign="middle" width="37%">
+<a  href="bsdlist.shtml#ws">
+<b >
+Windows &amp; Siding
+</b>
+</a>
+</td>
+<td  align="center" bgcolor="#EFF7FF" height="39" valign="middle" width="36%"></td>
+</tr>
+</table>
+<b >
+<img ></img>
+</b>
+</div>
+</td>
+</tr>
+</table>
+<div  align="center">
+<font  size="-1">
+All rights reserved. Copyright The Paradise Post.This content may not be archived, retransmitted,
+<br ></br>
+saved in a database, or used for any commercial purpose without the express
+<br ></br>
+written permission of The Paradise Post.
+<a  href="mailto:webmaster@paradisepost.com">
+Contact the webmaster.
+</a>
+</font>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

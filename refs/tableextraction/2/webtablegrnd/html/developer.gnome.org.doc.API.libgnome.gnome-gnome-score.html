@@ -1,0 +1,389 @@
+<html >
+<head >
+<title >
+gnome-score
+</title>
+<meta ></meta>
+<link ></link>
+<link ></link>
+<link ></link>
+<link ></link>
+</head>
+<body  alink="#0000FF" bgcolor="#FFFFFF" class="REFENTRY" link="#0000FF" text="#000000" vlink="#840084">
+<div  class="NAVHEADER">
+<table  TABID="00875" bgcolor="#000000" border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr >
+<th  align="center" colspan="4">
+<font  color="#FFFFFF" size="5">
+Gnome Library Reference Manual
+</font>
+</th>
+</tr>
+<tr >
+<td  align="left" bgcolor="#C00000" width="25%">
+<a  href="gnome-gnome-remote.html">
+<font  color="#FFFFFF" size="3">
+<b >
+&lt;&lt;&lt; Previous Page
+</b>
+</font>
+</a>
+</td>
+<td  align="center" bgcolor="#0000C0" width="25%">
+<font  color="#FFFFFF" size="3">
+<b >
+<a  href="book1.html">
+<font  color="#FFFFFF" size="3">
+<b >
+Home
+</b>
+</font>
+</a>
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#00C000" width="25%">
+<font  color="#FFFFFF" size="3">
+<b >
+<a  href="libgnome.html">
+<font  color="#FFFFFF" size="3">
+<b >
+Up
+</b>
+</font>
+</a>
+</b>
+</font>
+</td>
+<td  align="right" bgcolor="#C00000" width="25%">
+<a  href="gnome-gnome-sound.html">
+<font  color="#FFFFFF" size="3">
+<b >
+Next Page &gt;&gt;&gt;
+</b>
+</font>
+</a>
+</td>
+</tr>
+</table>
+</div>
+<h1 >
+<a  name="GNOME-GNOME-SCORE">
+gnome-score
+</a>
+</h1>
+<div  class="REFNAMEDIV">
+<a  name="AEN3954"></a>
+<h2 >
+Name
+</h2>
+gnome-score -- Tracking score for games
+</div>
+<div  class="REFSYNOPSISDIV">
+<a  name="AEN3957"></a>
+<h2 >
+Synopsis
+</h2>
+<table  TABID="00876" bgcolor="#D6E8FF" border="0" cellpadding="6" width="100%">
+<tr >
+<td >
+<pre  class="SYNOPSIS">
+#include &lt;gnome.h&gt;
+<a  href="../glib/glib-basic-types.html#GINT">
+gint
+</a>
+<a  href="gnome-gnome-score.html#GNOME-SCORE-INIT">
+gnome_score_init
+</a>
+(const
+<a  href="../glib/glib-basic-types.html#GCHAR">
+gchar
+</a>
+*gamename);
+<a  href="../glib/glib-basic-types.html#GINT">
+gint
+</a>
+<a  href="gnome-gnome-score.html#GNOME-SCORE-LOG">
+gnome_score_log
+</a>
+(
+<a  href="../glib/glib-basic-types.html#GFLOAT">
+gfloat
+</a>
+score,
+<a  href="../glib/glib-basic-types.html#GCHAR">
+gchar
+</a>
+*level,
+<a  href="../glib/glib-basic-types.html#GBOOLEAN">
+gboolean
+</a>
+higher_to_lower_score_order);
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<div  class="REFSECT1">
+<a  name="AEN3968"></a>
+<h2 >
+Description
+</h2>
+<p >
+The routines in this module provide a simple way for games to keep track of the user's score in a game.
+</p>
+<p >
+The programmer needs to call
+<a  href="gnome-gnome-score.html#GNOME-SCORE-INIT">
+gnome_score_init
+</a>
+() with the name of the game prior to accessing any of the other gnome_score functions.
+<a  href="gnome-gnome-score.html#GNOME-SCORE-LOG">
+gnome_score_log
+</a>
+() should then be called every time the user ends a round. To get a list of the most notable scores, you call the gnome_score_get_notable() routine.
+</p>
+</div>
+<div  class="REFSECT1">
+<a  name="AEN3975"></a>
+<h2 >
+Details
+</h2>
+<div  class="REFSECT2">
+<a  name="AEN3977"></a>
+<h3 >
+<a  name="GNOME-SCORE-INIT"></a>
+gnome_score_init ()
+</h3>
+<table  TABID="00877" bgcolor="#D6E8FF" border="0" cellpadding="6" width="100%">
+<tr >
+<td >
+<pre  class="PROGRAMLISTING">
+<a  href="../glib/glib-basic-types.html#GINT">
+gint
+</a>
+gnome_score_init                (const
+<a  href="../glib/glib-basic-types.html#GCHAR">
+gchar
+</a>
+*gamename);
+</pre>
+</td>
+</tr>
+</table>
+<p >
+GNOME Games should call this routine as the first statement in main() if they have been installed setgid to the games() group.
+</p>
+<p ></p>
+<div  class="INFORMALTABLE">
+<a  name="AEN3987"></a>
+<p ></p>
+<table  TABID="00878" bgcolor="#FFD0D0" border="0" cellpadding="4" cellspacing="0" class="CALSTABLE" width="100%">
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tr >
+<td  align="right" valign="top" width="20%">
+<tt  class="PARAMETER">
+<i >
+gamename
+</i>
+</tt>
+:
+</td>
+<td  align="left" valign="top" width="80%">
+Identifies the game name.
+</td>
+</tr>
+<tr >
+<td  align="right" valign="top" width="20%">
+<i  class="EMPHASIS">
+Returns
+</i>
+:
+</td>
+<td  align="left" valign="top" width="80%">
+0 on success, returns -1 on failure. group privileges are dropped regardless of the status returned.
+</td>
+</tr>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+</table>
+<p ></p>
+</div>
+</div>
+<hr ></hr>
+<div  class="REFSECT2">
+<a  name="AEN4000"></a>
+<h3 >
+<a  name="GNOME-SCORE-LOG"></a>
+gnome_score_log ()
+</h3>
+<table  TABID="00879" bgcolor="#D6E8FF" border="0" cellpadding="6" width="100%">
+<tr >
+<td >
+<pre  class="PROGRAMLISTING">
+<a  href="../glib/glib-basic-types.html#GINT">
+gint
+</a>
+gnome_score_log                 (
+<a  href="../glib/glib-basic-types.html#GFLOAT">
+gfloat
+</a>
+score,
+<a  href="../glib/glib-basic-types.html#GCHAR">
+gchar
+</a>
+*level,
+<a  href="../glib/glib-basic-types.html#GBOOLEAN">
+gboolean
+</a>
+higher_to_lower_score_order);
+</pre>
+</td>
+</tr>
+</table>
+<p >
+Logs a score entry for the user.
+</p>
+<p ></p>
+<div  class="INFORMALTABLE">
+<a  name="AEN4010"></a>
+<p ></p>
+<table  TABID="00880" genuinetable="yes" bgcolor="#FFD0D0" border="0" cellpadding="4" cellspacing="0" class="CALSTABLE" width="100%">
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tr >
+<td  align="right" valign="top" width="20%">
+<tt  class="PARAMETER">
+<i >
+score
+</i>
+</tt>
+:
+</td>
+<td  align="left" valign="top" width="80%">
+the score achieved by the user in this game
+</td>
+</tr>
+<tr >
+<td  align="right" valign="top" width="20%">
+<tt  class="PARAMETER">
+<i >
+level
+</i>
+</tt>
+:
+</td>
+<td  align="left" valign="top" width="80%">
+level on which the score was obtained
+</td>
+</tr>
+<tr >
+<td  align="right" valign="top" width="20%">
+<tt  class="PARAMETER">
+<i >
+higher_to_lower_score_order
+</i>
+</tt>
+:
+</td>
+<td  align="left" valign="top" width="80%">
+biggers is better or not
+</td>
+</tr>
+<tr >
+<td  align="right" valign="top" width="20%">
+<i  class="EMPHASIS">
+Returns
+</i>
+:
+</td>
+<td  align="left" valign="top" width="80%">
+0 on failure or the status from the gnome-score helper program.
+</td>
+</tr>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+</table>
+<p ></p>
+</div>
+</div>
+</div>
+<div  class="NAVFOOTER">
+<br ></br>
+<br ></br>
+<table  TABID="00881" bgcolor="#000000" border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr >
+<td  align="left" bgcolor="#C00000" width="25%">
+<a  href="gnome-gnome-remote.html">
+<font  color="#FFFFFF" size="3">
+<b >
+&lt;&lt;&lt; Previous Page
+</b>
+</font>
+</a>
+</td>
+<td  align="center" bgcolor="#0000C0" width="25%">
+<font  color="#FFFFFF" size="3">
+<b >
+<a  href="book1.html">
+<font  color="#FFFFFF" size="3">
+<b >
+Home
+</b>
+</font>
+</a>
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#00C000" width="25%">
+<font  color="#FFFFFF" size="3">
+<b >
+<a  href="libgnome.html">
+<font  color="#FFFFFF" size="3">
+<b >
+Up
+</b>
+</font>
+</a>
+</b>
+</font>
+</td>
+<td  align="right" bgcolor="#C00000" width="25%">
+<a  href="gnome-gnome-sound.html">
+<font  color="#FFFFFF" size="3">
+<b >
+Next Page &gt;&gt;&gt;
+</b>
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="2">
+<font  color="#FFFFFF" size="3">
+<b >
+gnome-remote
+</b>
+</font>
+</td>
+<td  align="right" colspan="2">
+<font  color="#FFFFFF" size="3">
+<b >
+gnome-sound
+</b>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

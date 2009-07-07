@@ -1,0 +1,1006 @@
+<!-- NCompass Resolution Template File -->
+<html >
+<head >
+<link ></link>
+<title >
+U.S. Chamber of Commerce: Results
+</title>
+<meta ></meta>
+<meta ></meta>
+<style >
+a. {color:#336699;text-decoration:none;} a.:active {color:#CC3300;} a.:visited {color:#000080;} a.:hover {color:#CC3300;} a.:visited:hover {color:#CC3300;}
+</style>
+<base ></base>
+<script >
+<!-- Hide script from older browsers
+
+		function validEmail(email) {
+			invalidChars = " /:,;"
+	
+			if (email == "") {						// cannot be empty
+				return false
+			}
+			for (i=0; i&amp;amp;amp;lt;invalidChars.length; i++) {	// does it contain any invalid characters?
+				badChar = invalidChars.charAt(i)
+				if (email.indexOf(badChar,0) &amp;amp;amp;gt; -1) {
+					return false
+				}
+			}
+			atPos = email.indexOf("@",1)			// there must be one "@" symbol
+			if (atPos == -1) {
+				return false
+			}
+			if (email.indexOf("@",atPos+1) != -1) {	// and only one "@" symbol
+				return false
+			}
+			periodPos = email.indexOf(".",atPos)
+			if (periodPos == -1) {					// and at least one "." after the "@"
+				return false
+			}
+			if (periodPos+3 &amp;amp;amp;gt; email.length)	{		// must be at least 2 characters after the "."
+				return false
+			}
+			return true
+		}
+
+		function isNum(passedVal) {					// Is this a number?
+			if (passedVal == "") {
+				return false
+			}
+			for (i=0; i&amp;amp;amp;lt;passedVal.length; i++) {
+				if (passedVal.charAt(i) &amp;amp;amp;lt; "0") {
+					return false
+				}
+				if (passedVal.charAt(i) &amp;amp;amp;gt; "9") {
+					return false
+				}
+			}
+			return true
+		}
+
+		function validZip(inZip) {					// Is this a valid Zip code?
+			if (inZip == "") {
+				return true
+			}
+			if (isNum(inZip)) {						// Check if Zip is numeric
+				return true
+			}
+			return false
+		}
+
+		function submitIt(usccForm) {
+	
+			// make sure they enter in a cardName
+			cardOption = -1
+			for (i=0; i&amp;amp;amp;lt;usccForm.cardName.length; i++) {
+				if (usccForm.cardName[i].checked) {
+					cardOption = i
+				}
+			}
+			if (cardOption == -1) {
+				alert("You must choose a Card Name")
+				return false
+			}
+	
+			// check to see if the email's valid
+			if (!validEmail(usccForm.emailAddr.value)) {
+				alert("Invalid email address")
+				usccForm.emailAddr.focus()
+				usccForm.emailAddr.select()
+				return false
+			}
+
+			if (usccForm.zipCode.value == "") {
+				alert("You must enter a Zip code")
+				usccForm.zipCode.focus()
+				return false
+			}
+
+			if (!validZip(usccForm.zipCode.value)) {
+				alert("That is an invalid Zip code")
+				usccForm.zipCode.focus()
+				usccForm.zipCode.select()
+				return false
+			}
+
+			if (usccForm.firstName.value == "") {
+				alert("You must fill in First Name")
+				usccForm.firstName.focus()
+				return false
+			}
+
+			if (usccForm.lastName.value == "") {
+				alert("You must fill in Last Name")
+				usccForm.lastName.focus()
+				return false
+			}
+	
+			if (usccForm.busiNess.value == "") {
+				alert("You must fill in Business")
+				usccForm.busiNess.focus()
+				return false
+			}
+
+			if (usccForm.addRess.value == "") {
+				alert("You must fill in Address")
+				usccForm.addRess.focus()
+				return false
+			}
+
+			if (usccForm.ciTy.value == "") {
+				alert("You must fill in City")
+				usccForm.ciTy.focus()
+				return false
+			}
+
+			if (usccForm.staTe.value == "") {
+				alert("You must fill in State")
+				usccForm.staTe.focus()
+				return false
+			}
+
+			if (usccForm.memNum.value == "") {
+				alert("You must fill in Membership Number")
+				usccForm.memnum.focus()
+				return false
+			}
+
+			if (usccForm.cardName.value == "") {
+				alert("You must fill in Card Name")
+				usccForm.cardName.focus()
+				return false
+			}
+
+			if (usccForm.cardNum.value == "") {
+				alert("You must fill in Card Number")
+				usccForm.cardNum.focus()
+				return false
+			}
+
+			// If we made it to here, everything's valid, so return true
+			return true
+		}
+
+		// End hiding script -->
+</script>
+<script >
+<!-- Hide this
+if (document.images) {
+   off = new MakeArray(11);
+   over = new MakeArray(11);
+
+   off[1].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_about_off.gif";
+   off[2].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_mems_off.gif";
+   off[3].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_political_off.gif";
+   off[4].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_news_off.gif";
+   off[5].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_business_off.gif";
+   off[6].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_programs_off.gif";
+   off[7].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_thiswk_off.gif";
+   off[8].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_takaction_off.gif";
+   off[9].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_iss_off.gif";
+   off[10].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_ele2000_off.gif";
+   off[11].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_guide_off.gif";
+
+   over[1].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_about_on.gif";
+   over[2].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_mems_on.gif";
+   over[3].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_political_on.gif";
+   over[4].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_news_on.gif";
+   over[5].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_business_on.gif";
+   over[6].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_programs_on.gif";
+   over[7].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_thiswk_on.gif";
+   over[8].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_takaction_on.gif";
+   over[9].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_iss_on.gif";
+   over[10].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_ele2000_on.gif";
+   over[11].src = "http://www.uschamber.com/nr/includes/NavImages/advocacy/adv_bn_guide_on.gif";
+
+
+}
+function MakeArray(n) {
+   this.length = n
+   for (var i = 1; i&amp;amp;amp;lt;=n; i++) {
+      this[i] = new Image()
+   }
+   return this;
+}
+function UDIover(name,number){
+if (document.images){
+      name.src = over[number].src;
+   }
+}
+function UDIoff(name,number){
+if (document.images){
+      name.src = off[number].src;
+   }
+}
+// Done -->
+</script>
+<!-- Inserted by Resolution: BEGIN EmbedTmplHeadHook -->
+<link ></link>
+<script ></script>
+<script ></script>
+<!-- Inserted by Resolution: END EmbedTmplHeadHook -->
+</head>
+<body  alink="#003399" bgcolor="#FFFFFF" leftmargin="0" link="#003399" text="#000000" vlink="#666666">
+<!-- Inserted by Resolution: BEGIN EmbedBodyBeginHook -->
+<!-- Inserted by Resolution: BEGIN EmbedBodyBeginHook -->
+<table  TABID="13533" border="0" cellpadding="0" cellspacing="0" width="620">
+<tr >
+<td  width="100%">
+<table  TABID="13525" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="left" valign="top" width="335">
+<img ></img>
+</td>
+<td  bordercolor="#000066">
+<table  TABID="13524" cellpadding="0" cellspacing="0" height="54">
+<tr >
+<td  align="left" valign="top" width="228">
+<a  href="http://www.uschamber.com/default.htm">
+<img ></img>
+</a>
+<a  href="http://www.uschamber.com/Join/default.htm">
+<img ></img>
+</a>
+<a  href="http://www.uschamber.com/main+search.htm">
+<img ></img>
+</a>
+<a  href="http://www.uschamber.com/Contact+Us.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="228">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  align="right" valign="top" width="57">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="100%">
+<a  onmouseout="UDIoff(about,1)">
+<img ></img>
+</a>
+<a  onmouseout="UDIoff(mems,2)">
+<img ></img>
+</a>
+<a  onmouseout="UDIoff(political,3)">
+<img ></img>
+</a>
+<a  onmouseout="UDIoff(news,4)">
+<img ></img>
+</a>
+<a  onmouseout="UDIoff(business,5)">
+<img ></img>
+</a>
+<a  onmouseout="UDIoff(programs,6)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="UDIoff(thiswk,7)">
+<img ></img>
+</a>
+<a  onmouseout="UDIoff(takaction,8)">
+<img ></img>
+</a>
+<a  onmouseout="UDIoff(iss,9)">
+<img ></img>
+</a>
+<a  onmouseout="UDIoff(ele2000,10)">
+<img ></img>
+</a>
+<a  onmouseout="UDIoff(guide,11)">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  width="100%">
+<table  TABID="13526" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="left" valign="top" width="235">
+<br ></br>
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="13532" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="left" valign="top" width="165">
+<p  align="left" valign="top"></p>
+<table  TABID="13527" border="0" cellpadding="6" cellspacing="0" width="100%">
+<tr >
+<td  align="right" valign="top">
+<a  onmouseout="window.status=" return="#DEFAULT" true="#DEFAULT">
+<img ></img>
+<font  arial="#DEFAULT" face="Verdana," helvetica="#DEFAULT" size="2">
+Elections
+</font>
+</a>
+</td>
+</tr>
+<!-- ---- display this channel ---- -->
+<tr >
+<td  align="right">
+<a  onmouseout="window.status=" return="#DEFAULT" true="#DEFAULT">
+<font  arial="#DEFAULT" face="Verdana," helvetica="#DEFAULT" size="2">
+Results
+</font>
+</a>
+</td>
+</tr>
+<!-- ---- display sub channels ---- -->
+<tr >
+<td  align="right"></td>
+</tr>
+</table>
+<table  TABID="13528" border="0" cellpadding="0" cellspacing="0" width="150">
+<tr >
+<td >
+<p  align="right"></p>
+</td>
+</tr>
+</table>
+<br ></br>
+<table  TABID="13530" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="center" width="100%">
+<table  TABID="13529" border="0" cellspacing="0" width="145">
+<tr >
+<td  width="100%"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  align="left" valign="top" width="45">
+<br ></br>
+</td>
+<td  align="left" valign="top" width="390">
+<br ></br>
+<font  arial="#DEFAULT" face="Verdana," helvetica="#DEFAULT" size="2"></font>
+<table  TABID="13531" genuinetable="yes" tabletitle="WASHINGTON">
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tr >
+<td  valign="top" width="25%">
+<b >
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+WASHINGTON
+</font>
+</p>
+</b>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<br ></br>
+</td>
+<td  valign="top" width="75%"></td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<b >
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Washington-Senate
+</font>
+</p>
+</b>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Incumbent:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Slade Gorton (R)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  face="Verdana" size="2">
+Challanger:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Maria Cantwell (D)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Recommendation:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Slade Gorton
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<b >
+Winner:
+</b>
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<p >
+<font  color="#cc3300">
+<b >
+Pending Results of Recount Expected to be Finished December 7, 2000
+</b>
+</font>
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%"></td>
+<td  valign="top" width="75%"></td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<b >
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Washington-2
+</font>
+</p>
+</b>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Open:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+John Koster (R)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p ></p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Richard Larsen (D)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Recommendation:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+John Koster
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<b >
+Winner:
+</b>
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<b >
+Richard Larsen
+</b>
+</font>
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<br ></br>
+</td>
+<td  valign="top" width="75%"></td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<b >
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Washington-3
+</font>
+</p>
+</b>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Incumbent:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Brian Baird (D)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Challenger:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Trent Matson (R)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Recommendation:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Trent Matson
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<b >
+Winner:
+</b>
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<b >
+Brian Baird
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<b >
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Washington-4
+</font>
+</p>
+</b>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Incumbent:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Doc Hastings (R)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Challenger:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Jim Davis (D)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Recommendation:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Doc Hastings
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<b >
+Winner:
+</b>
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<b >
+Doc Hastings
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<b >
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Washington-5
+</font>
+</p>
+</b>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Incumbent:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+George Nethercutt (R)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Challengers:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Wayne Brokaw (D)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Tommy Flynn (D)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Brad Lyons (D)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Recommendation:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+George Nethercutt
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<b >
+Winner:
+</b>
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<strong >
+<font  color="#cc3300">
+George Nethercutt
+</font>
+</strong>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<b >
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Washington-8
+</font>
+</p>
+</b>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2"></font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Incumbent:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Jennifer Dunn (R)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Challenger:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Heidi Behrens-Benedict (D)
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Recommendation:
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+Jennifer Dunn
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="25%">
+<p >
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<b >
+Winner:
+</b>
+</font>
+</p>
+</td>
+<td  valign="top" width="75%">
+<font  arial="#DEFAULT" face="Verdana," geneva="#DEFAULT" helvetica="#DEFAULT" size="2">
+<b >
+Jennifer Dunn
+</b>
+</font>
+</td>
+</tr>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+<tbody ></tbody>
+</table>
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="3" valign="top" width="600">
+<p  align="center">
+<font  face="Verdana" size="1">
+<br ></br>
+Paid for by U.S. ChamberPAC and not authorized by any candidate.
+<br ></br>
+</font>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table  TABID="13534" border="0" cellpadding="0" cellspacing="0" width="620">
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#336699" colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="right" bgcolor="#ffffff" width="85%%">
+<font  arial="#DEFAULT" face="Verdana," helvetica="#DEFAULT" size="1">
+<a  href="http://www.uschamber.com/_copyright.htm">
+Copyright © 2001 U.S. Chamber of Commerce
+</a>
+</font>
+<img ></img>
+</td>
+<td  align="right" bgcolor="#ffffff" width="15%">
+<font  arial="#DEFAULT" face="Verdana," helvetica="#DEFAULT" size="1">
+<a  href="http://www.uschamber.com/_privacy+policy.htm">
+Privacy Policy
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#336699" colspan="2">
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- Inserted by Resolution: BEGIN EmbedBodyEndHook -->
+<!-- Inserted by Resolution: BEGIN EmbedBodyEndHook -->
+</body>
+</html>

@@ -1,0 +1,557 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<title >
+KODAK: Service &amp; Support
+</title>
+<script >
+//
+<!--
+// Browser detection script by Tim Poulsen, Sr. Staff Writer, Ziff-Davis Education
+
+// create some shorthand notations for the objects of interest
+// and convert them to lower case for ease of handling
+var name = navigator.appName.toLowerCase();
+var ver = navigator.appVersion.toLowerCase();
+
+// now detect
+if(name == "microsoft internet explorer" &amp;amp;amp;&amp;amp;amp; ver &amp;amp;gt;="3")
+  {
+  // browser is IE, version 3 or greater
+  if(ver.indexOf("mac") != -1)
+    {
+    // platform is Macintosh
+    document.write('&amp;amp;lt;LINK REL=StyleSheet HREF="/global/style/en/service/services.IE.Mac.css" TYPE="text/css"&amp;amp;gt;'); 
+    }
+  else
+    {
+    // platform is something else, probably Windows
+    document.write('&amp;amp;lt;LINK REL=StyleSheet HREF="/global/style/en/service/services.IE.Win.css" TYPE="text/css"&amp;amp;gt;');
+    }
+  }
+else if(name == "netscape" &amp;amp;amp;&amp;amp;amp; ver &amp;amp;gt;="3")
+  {
+  // browser is Navigator, version 3 or greater
+  if(ver.indexOf("mac") != -1)
+    {
+    // platform is Macintosh
+    document.write('&amp;amp;lt;LINK REL=StyleSheet HREF="/global/style/en/service/services.N.Mac.css" TYPE="text/css"&amp;amp;gt;'); 
+    }
+  else
+    {
+    // platform is something else, probably Windows
+    document.write('&amp;amp;lt;LINK REL=StyleSheet HREF="/global/style/en/service/services.N.Win.css" TYPE="text/css"&amp;amp;gt;');
+    }
+  }
+	
+// -->
+</script>
+</head>
+<body  bgcolor="#ffffff">
+<!-- Service and Support Main Banner -->
+<table  TABID="09321" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="09325" border="0" cellpadding="5" cellspacing="0" width="600">
+<tr >
+<td  valign="top" width="290">
+<form  action="/cgi-bin/searchKodak.cgi" method="post">
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<img ></img>
+<input ></input>
+<input ></input>
+</form>
+<img ></img>
+<table  TABID="09322" border="0" cellpadding="3" cellspacing="0" width="320">
+<tr >
+<td  class="header">
+Home, Consumer, Personal Products
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<form  action="/cgi-bin/navigation.cgi" method="post">
+<select >
+<option  value="/US/en/service/consumer/index.shtml">
+Select a product type
+</option>
+<option  value="/US/en/service/consumer/index.shtml">
+------------------------------
+</option>
+<option  value="/global/en/consumer/products/batteries/index.shtml">
+Batteries
+</option>
+<option  value="/US/en/service/consumer/35mmCameras.shtml">
+Cameras, 35mm
+</option>
+<option  value="/US/en/service/consumer/advantixCameras.shtml">
+Cameras, ADVANTIX
+</option>
+<option  value="/US/en/service/consumer/110Cameras.shtml">
+Cameras, 110
+</option>
+<option  value="/US/en/service/consumer/digitalCameras.shtml">
+Cameras, Digital
+</option>
+<option  value="/global/en/consumer/products/cameras/faqs/otuFAQ.shtml">
+Cameras, One-Time-Use
+</option>
+<option  value="/global/en/service/cdrMedia/cdr.shtml">
+CDR Media
+</option>
+<option  value="/go/earthimagingservice">
+Earth Imaging
+</option>
+<option  value="/US/en/service/consumer/films.shtml">
+Films
+</option>
+<option  value="/global/en/service/printers/ppm200/ppm200Printer.shtml">
+Home Inkjet Printers
+</option>
+<option  value="/global/en/service/chemicals/photoChems.shtml">
+Photochemicals
+</option>
+<option  value="/US/en/service/consumer/papers.shtml">
+Photographic Papers
+</option>
+<option  value="/global/en/service/digPrintService/pictureCD/pictureCD.shtml">
+Picture CD
+</option>
+<option  value="/global/en/service/digPrintService/pictureDisk/pictureDisk.shtml">
+Picture Disk
+</option>
+<option  value="/US/en/service/business/slideProjectors.shtml">
+Projectors, Slide
+</option>
+<option  value="/US/en/service/consumer/scanners.shtml">
+Scanners
+</option>
+<option  value="/global/en/service/smartFrame/smartPictureFrame.shtml">
+Smart Picture Frame
+</option>
+<option  value="/US/en/service/consumer/software.shtml">
+Software
+</option>
+<option  value="/global/en/consumer/products/videoTape/">
+Video Tape Cassettes
+</option>
+</select>
+<input ></input>
+</form>
+</td>
+</tr>
+<tr >
+<td  class="header">
+Professional Photography Products
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<form  action="/cgi-bin/navigation.cgi" method="post">
+<select >
+<option  value="/US/en/service/professional/index.shtml">
+Select a product type
+</option>
+<option  value="/US/en/service/professional/index.shtml">
+------------------------------
+</option>
+<option  value="/global/en/professional/support/databanks/filmDatabankBW.shtml">
+Black-and-White Films
+</option>
+<option  value="/US/en/service/professional/proDigitalCameras.shtml">
+Cameras, Digital
+</option>
+<option  value="/global/en/professional/support/databanks/filmDatabankChemicals.shtml">
+Chemicals, Black and White
+</option>
+<option  value="/go/photochemicals">
+Chemicals, Color
+</option>
+<option  value="/global/en/professional/support/databanks/filmDatabankColorNeg.shtml">
+Color Negative Films
+</option>
+<option  value="/global/en/professional/support/databanks/filmDatabankColorRev.shtml">
+Color Reversal Films
+</option>
+<option  value="/global/en/professional/support/databanks/filmDatabankPapers.shtml">
+Papers and Materials
+</option>
+<option  value="/global/en/service/chemicals/photoChems.shtml">
+Photochemicals
+</option>
+<option  value="/global/en/service/photofinishing/klab/index.shtml">
+Photofinishing
+</option>
+<option  value="/global/en/service/software/photoCDPapers.shtml">
+Photo CD
+</option>
+<option  value="/US/en/service/professional/printersLargeFormat.shtml">
+Printers, Large Format
+</option>
+<option  value="/US/en/service/professional/printersThermal.shtml">
+Printers, Thermal
+</option>
+<option  value="/US/en/service/professional/proScanners.shtml">
+Scanners
+</option>
+<option  value="/US/en/service/professional/software.shtml">
+Software
+</option>
+<option  value="/global/en/professional/support/databanks/printingDatabankIndex.shtml">
+Specialty Products
+</option>
+<option  value="/global/en/service/digPrintService/seniorPortrait/seniorPortraitCD.shtml">
+Senior Portrait CD
+</option>
+<option  value="/global/en/service/digPrintService/wedding/weddingCD.shtml">
+Wedding CD
+</option>
+</select>
+<input ></input>
+</form>
+</td>
+</tr>
+<tr >
+<td  class="header">
+Business and Office Imaging Products
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<form  action="/cgi-bin/navigation.cgi" method="post">
+<select >
+<option  value="/US/en/service/business/">
+Select a product type
+</option>
+<option  value="/US/en/service/business/">
+------------------------------
+</option>
+<option  value="/US/en/service/consumer/digitalCameras.shtml">
+Cameras, Digital
+</option>
+<option  value="/global/en/professional/support/databanks/filmDatabankColorProofing.shtml">
+Color Proofing Products
+</option>
+<option  value="/global/en/service/cdrMedia/cdr.shtml">
+CDR Media
+</option>
+<option  value="/go/earthimagingservice">
+Earth Imaging
+</option>
+<option  value="/global/en/service/software/photoCDPapers.shtml">
+Photo CD
+</option>
+<option  value="/global/en/service/chemicals/photoChems.shtml">
+Photochemicals
+</option>
+<option  value="/US/en/service/consumer/papers.shtml">
+Photographic Papers
+</option>
+<option  value="/US/en/service/professional/printersLargeFormat.shtml">
+Printers, Large Format
+</option>
+<option  value="/US/en/service/business/digitalProjectors.shtml">
+Projectors, Digital
+</option>
+<option  value="/US/en/service/business/slideProjectors.shtml">
+Projectors, Slide
+</option>
+<option  value="/US/en/business/support/online/">
+Scanners, Document
+</option>
+<option  value="/global/en/professional/support/databanks/printingDatabankIndex.shtml">
+Specialty Products
+</option>
+</select>
+<input ></input>
+</form>
+</td>
+</tr>
+<tr >
+<td  class="header">
+Motion Picture Imaging Products
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<form  action="/cgi-bin/navigation.cgi" method="post">
+<select >
+<option  value="/US/en/service/motion/index.shtml">
+Select a product type
+</option>
+<option  value="/US/en/service/motion/index.shtml">
+------------------------------
+</option>
+<option  value="/US/en/motion/products/films.shtml">
+Camera and Lab Films
+</option>
+<option  value="/US/en/motion/products/kit/kit.shtml">
+Kit Chemicals
+</option>
+<option  value="/US/en/motion/products/preview/preview2.shtml">
+PreView System
+</option>
+<option  value="/US/en/motion/super8/index.shtml">
+Super 8mm Film
+</option>
+<option  value="/US/en/motion/support/">
+Tips &amp; Technical Support
+</option>
+</select>
+<input ></input>
+</form>
+</td>
+</tr>
+<tr >
+<td  class="header">
+Health and Medical Imaging Products
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<form  action="/cgi-bin/navigation.cgi" method="post">
+<select >
+<option  value="/US/en/service/healthMedical">
+Select a product type
+</option>
+<option  value="/US/en/service/healthMedical">
+------------------------------
+</option>
+<option  value="/US/en/service/healthMedical/cassettes.shtml">
+Cassettes
+</option>
+<option  value="/US/en/service/healthMedical/chemicals.shtml">
+Chemicals, Medical
+</option>
+<option  value="/US/en/service/healthMedical/film.shtml">
+Films, Medical
+</option>
+<option  value="/global/en/service/health/160Laser/160Laser.shtml">
+Imagers, Laser
+</option>
+<option  value="/US/en/health/productsByUse/medicalRadiography/filmImaging/techSupTool.jhtml">
+Mammography Products
+</option>
+<option  value="/US/en/service/healthMedical/processors.shtml">
+Processors
+</option>
+<option  value="/US/en/service/healthMedical/filmhandling.shtml">
+Roomlight-Handling Equipment
+</option>
+<option  value="/US/en/service/healthMedical/screens.shtml">
+Screens
+</option>
+<option  value="/US/en/health/support/service/">
+Service Bulletins
+</option>
+<option  value="/US/en/health/tiDocs/tiIndex.shtml">
+Technical Information (TI)
+</option>
+</select>
+<input ></input>
+</form>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="290">
+<p  class="headerRed">
+Popular Support Topics
+</p>
+<table  TABID="09323" border="0" cellpadding="2" cellspacing="0">
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/global/en/service/software/driverSupport.shtml">
+Drivers, Software and Firmware
+</a>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/global/en/service/topQuestions.shtml">
+Frequently Asked Questions (FAQs)
+</a>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/US/en/service/dealers.shtml">
+Where to Find KODAK Products/Services
+</a>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/global/en/service/supportServices/qualex/index.shtml">
+Check status of your Photo Processing Order (U.S. orders only)
+</a>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/global/en/service/supportServices/serviceStatus/">
+Check your Status for Service and Support (U.S. Only)
+</a>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/US/en/corp/hse/prodSearchMSDS.shtml">
+Material Safety Data Sheets (MSDS)
+</a>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/cgi-bin/global/en/service/correctionFactors.cgi">
+Correction Factors
+</a>
+</td>
+</tr>
+</table>
+<p  class="headerRed">
+Services
+</p>
+<p >
+Kodak offers imaging network services, environmental services, reseller programs, and product support services:
+<br ></br>
+<img ></img>
+<a  href="/global/en/service/about/">
+Kodak services
+</a>
+</p>
+<p  class="headerRed">
+Library of KODAK Publications
+</p>
+<p >
+The
+<a  href="/global/en/service/library/index.shtml">
+Library of KODAK Publications
+</a>
+includes manuals, "how-to" guides, tips, techniques, technical bulletins, and more.
+</p>
+<p  class="headerRed">
+Contact Kodak
+</p>
+<table  TABID="09324" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/cgi-bin/contact.cgi">
+Send an Email to Kodak
+</a>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/include/kodakPhoneNumbers.shtml">
+United States Telephone Support Numbers
+</a>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/include/international.shtml">
+International Telephone Support Numbers
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br ></br>
+<table  TABID="09326" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  class="footer" colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  class="footer" width="54">
+<img ></img>
+</td>
+<td  class="footer" width="696">
+<small  class="footer">
+<a  class="footer" href="/" target="_top">
+Home
+</a>
+|
+<a  class="footer" href="/cgi-bin/search.cgi" target="_top">
+Search
+</a>
+|
+<a  class="footer" href="/cgi-bin/support.cgi" target="_top">
+Service &amp; Support
+</a>
+| Visit
+<a  class="footer" href="/cgi-bin/shop.cgi" target="_top">
+shop @ kodak
+</a>
+, the online store
+<br ></br>
+<a  class="footer" href="/cgi-bin/copyright.cgi" target="_top">
+Copyright
+</a>
+© Eastman Kodak Company, 1994-2001 and
+<a  class="footer" href="/cgi-bin/privacy.cgi" target="_top">
+Privacy Practices
+</a>
+.
+</small>
+</td>
+</tr>
+</table>
+</body>
+</html>

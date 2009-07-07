@@ -1,0 +1,1901 @@
+<html >
+<head >
+<title >
+2000 Stock Market Game Top 50
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<script >
+<!--
+function newWin(url, name) {
+                        var l = newWin.arguments.length;
+                        var w = "";
+                        var h = "";
+                        var features = "";
+
+                        for (i=2; i&amp;amp;amp;lt;l; i++) {
+                          var param = newWin.arguments[i];
+                          if ( (parseInt(param) == 0) ||
+                            (isNaN(parseInt(param))) ) {
+                            features += param + ',';
+                          } else {
+                            (w == "") ? w = "width=" + param + "," :
+                              h = "height=" + param;
+                          }
+                        }
+
+                        features += w + h;
+                        var code = "popupWin = window.open(url, name";
+                        if (l &amp;amp;amp;gt; 2) code += ", '" + features;
+                        code += "')";
+                        eval(code);
+                      }
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" link="#003399" vlink="black">
+<table  TABID="08716" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  bgcolor="#003399" colspan="2">
+<center >
+<a  href="http://www.delawareonline.com/news/weather.html">
+<font  color="#ffcc66" face="helvetica,arial" size="2">
+<b >
+WEATHER:
+</b>
+</font>
+</a>
+<br ></br>
+<font  color="#ffcc66" face="helvetica,arial" size="1">
+<br ></br>
+Wed, May 16
+<br ></br>
+2001
+<br ></br>
+</font>
+</center>
+</td>
+<td  bgcolor="#FFFFFF" colspan="2">
+<a  href="http://www.delawareonline.com">
+<img ></img>
+</a>
+<img ></img>
+<map  name="mid2B2B688A1">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<img ></img>
+<map  name="mid3B2D4A4AC">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#003399" valign="top" width="91">
+<table  TABID="08711" border="0" cellpadding="0" cellspacing="0" width="91">
+<tr >
+<td  width="91">
+<br ></br>
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" width="91">
+<font  color="black" face="helvetica,arial" size="2">
+<b >
+NEWS
+</b>
+</font>
+<font  color="#ffffff">
+<br ></br>
+</font>
+<a  href="http://www.delawareonline.com/index.html">
+<font  face="helvetica,arial" size="1">
+headlines
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://www.delawareonline.com/oped">
+<font  face="helvetica,arial" size="1">
+opinion
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://www.delawareonline.com/sports">
+<font  face="helvetica,arial" size="1">
+sports
+</font>
+</a>
+<br ></br>
+<a  href="http://www.delawareonline.com/index.html#archives">
+<font  face="helvetica,arial" size="1">
+archives
+</font>
+</a>
+<br ></br>
+<p >
+<font  color="black" face="helvetica,arial" size="2">
+<b >
+SCENE
+</b>
+</font>
+<font  color="#666633" face="helvetica,arial" size="1">
+<b >
+<br ></br>
+</b>
+</font>
+<a  href="http://scene.delawareonline.com/pages/events.shtml">
+<font  face="helvetica,arial" size="1">
+calendar
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://scene.delawareonline.com/Museums">
+<font  face="helvetica,arial" size="1">
+museums
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://scene.delawareonline.com/livestage">
+<font  face="helvetica,arial" size="1">
+live stage
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://scene.delawareonline.com/delaware-dg/index.html">
+<font  face="helvetica,arial" size="1">
+dining
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://scene.delawareonline.com/movies/index.shtml">
+<font  face="helvetica,arial" size="1">
+movies
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+</p>
+<p >
+<font  color="black" face="helvetica,arial" size="2">
+<b >
+SERVICES
+</b>
+</font>
+<font  color="#666633" face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://homes.delawareonline.com">
+<font  face="helvetica,arial" size="1">
+buy a home
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://delawareonline.com/rentals/index.shtml">
+<font  face="helvetica,arial" size="1">
+rent a home
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://drive.delawareonline.com">
+<font  face="helvetica,arial" size="1">
+buy a car
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://jobs.delawareonline.com">
+<font  face="helvetica,arial" size="1">
+find a job
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://classifieds.delawareonline.com">
+<font  face="helvetica,arial" size="1">
+classified ads
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://visitors.delawareonline.com">
+<font  face="helvetica,arial" size="1">
+visitors center
+</font>
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" width="91">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="91">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" width="91">
+<a  href="http://www.delawareonline.com/newsjournal.html">
+<font  face="helvetica,arial" size="1">
+about us
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://www.delawareonline.com/signup.html">
+<font  face="helvetica,arial" size="1">
+subscriptions
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://www.delawareonline.com/userguide/contactus.html">
+<font  face="helvetica,arial" size="1">
+contact us
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://www.delawareonline.com/advertising.html">
+<font  face="helvetica,arial" size="1">
+to advertise
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://www.delawareonline.com/empop.html">
+<font  face="helvetica,arial" size="1">
+positions available
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://www.delawareonline.com/help.html">
+<font  face="helvetica,arial" size="1">
+help
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<br ></br>
+</font>
+<a  href="http://www.delawareonline.com/access.html">
+<font  face="helvetica,arial" size="1">
+internet access
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" width="91">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="#003399" valign="top">
+<font  color="#003399">
+.
+</font>
+<img ></img>
+</td>
+<td  valign="top" width="91">
+<div  align="right">
+<table  TABID="08712" border="0" cellpadding="0" cellspacing="0" width="480">
+<tr >
+<td >
+<br ></br>
+<center >
+<a  href="http://ads.infi.net/tag?click=delads.12.13.1999.15:51:31.1">
+<img ></img>
+</a>
+<a  href="http://ads.infi.net/tag?click=delads.12.13.1999.15:51:31.2">
+<img ></img>
+</a>
+</center>
+</td>
+</tr>
+</table>
+<table  TABID="08713" border="0" cellpadding="0" cellspacing="0" width="480">
+<tr >
+<td >
+<center >
+<hr ></hr>
+<br ></br>
+<font  face="helvetica,arial" size="6">
+<b >
+Stock Market Game 2000
+</b>
+</font>
+</center>
+</td>
+</tr>
+</table>
+<table  TABID="08715" bgcolor="#FFFFFF" border="0" cellpadding="5" cellspacing="0">
+<tr >
+<td >
+<font  face="helvetica,arial" size="2">
+The News Journal's Stock Market Game 2000 has come to a close! More than 2,800 readers entered this year's game. Calculations were performed by Systems &amp; Solutions Inc. in Greenville and audited by Kalmar Investments Inc. in Greenville. The top 50 finishers are listed below.
+<!--&amp;amp;amp;lt;a href="http://www.delawareonline.com/news/2000/jan/stock101292000.html"&amp;amp;amp;gt;Read about the preliminary results here.&amp;amp;amp;lt;/a&amp;amp;amp;gt; &amp;amp;amp;lt;a href="toppicks.html"&amp;amp;amp;gt;Click here to see the 50 most-picked stocks&amp;amp;amp;lt;/a&amp;amp;amp;gt;.-->
+<p >
+For the complete story on this year's winner,
+<a  href="http://business.delawareonline.com/news/2000/july/story107062000.shtml">
+click here
+</a>
+.
+<!--&amp;amp;amp;lt;p&amp;amp;amp;gt;
+The contest closes Friday, June 30. Our consultants at Systems &amp;amp;amp;amp; Solutions will take a couple of days to check and re-check the final results, which will be posted here and published in The News Journal on Thursday, July 6.&amp;amp;amp;lt;P&amp;amp;amp;gt;-->
+<!--&amp;amp;amp;lt;a href="http://www.delawareonline.com/userguide/feedback_stock.html"&amp;amp;amp;gt;&amp;amp;amp;lt;b&amp;amp;amp;gt;Click here to submit your question.&amp;amp;amp;lt;/b&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;-->
+<!--&amp;amp;amp;lt;p&amp;amp;amp;gt;For a complete list of contest rules, &amp;amp;amp;lt;a href="rules2000.html"&amp;amp;amp;gt;click here&amp;amp;amp;lt;/a&amp;amp;amp;gt;.&amp;amp;amp;lt;br&amp;amp;amp;gt;&amp;amp;amp;lt;/FONT&amp;amp;amp;gt;-->
+</p>
+<p >
+<font  face="helvetica,arial" size="2">
+<b >
+Want to see how YOU finished?
+<a  href="javascript:newWin(http://miva.delawareonline.com/miva/cgi-bin/miva?playerfind.mv,subWindow,scrollbars=yes,yes,left=500,top=200,no,400,300);">
+Click Here
+</a>
+</b>
+</font>
+<br ></br>
+<font  color="red" face="helvetica,arial" size="-2">
+(Your browser needs to be Java enabled in order to use this function.)
+</font>
+<br ></br>
+<br ></br>
+<font  face="helvetica,arial" size="2">
+Having trouble with the pop-up window?
+<a  href="http://miva.delawareonline.com/miva/cgi-bin/miva?playerfind.mv">
+Click here
+</a>
+.
+</font>
+<br ></br>
+</p>
+<p ></p>
+<center >
+<font  face="helvetica,arial" size="1">
+<a  href="thisweek.shtml">
+<b >
+This Week
+</b>
+</a>
+<a  href="weekbyweek.shtml">
+<b >
+Week by Week
+</b>
+</a>
+<a  href="pctgain.shtml">
+<b >
+Percentage Gainers
+</b>
+</a>
+<a  href="dollargain.shtml">
+<b >
+Dollar Gainers
+</b>
+</a>
+<p ></p>
+<p ></p>
+<center >
+<font  face="helvetica,arial" size="5">
+<b >
+TOP 50
+</b>
+</font>
+<br ></br>
+<font  face="helvetica,arial" size="1">
+These results are preliminary and subject to further verification.
+<br ></br>
+Results updated July 6
+</font>
+</center>
+</font>
+</center>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<table  TABID="08714" bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" genuinetable="yes" tabletitle="TOP 50
+                          These results are preliminary and subject to further verification.
+                                     Results updated July 6 " width="480">
+<tr  bgcolor="#ffcc66">
+<td  align="top">
+<center >
+<font  face="helvetica,arial" size="2">
+<b >
+Rank
+</b>
+</font>
+<br ></br>
+<font  face="helvetica,arial" size="1">
+[Last week]
+</font>
+</center>
+</td>
+<td  align="top">
+<center >
+<font  face="helvetica,arial" size="2">
+<b >
+Contestant &amp; Portfolio
+</b>
+</font>
+</center>
+</td>
+<td  align="top">
+<center >
+<font  face="helvetica,arial" size="2">
+<b >
+Change
+</b>
+</font>
+</center>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+1
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+SEAN KEEHAN,
+</b>
+Lutherville, MD
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Nat Semi, Terayon Commun, Neon Communications, Allaire Corporation, Lanoptics Ltd)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+89.3%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+2
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+SCOTT BRICKER,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(CacheFlow Inc, Inktomi Corp, Vitria Tech, Portal Software Inc, CMGI Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+88.2%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+3
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+RON RICHMANN,
+</b>
+New Castle, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(K mart, Digital River Inc, Loral Space, Portal Software Inc, Intl Fibercom)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+87.2%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+4
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+DARRYL LECATES,
+</b>
+Seaford, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Copper Mountain, Puma Technology Inc, CMGI Inc, Terayon Commun, Register.com Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+82.5%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+5
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+MARY AVIOLA,
+</b>
+Newark, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Adelphia Business, Golden Telecom Inc, ACT Mfg, Puma Technology Inc, Safeguard Sci)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+78.2%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+6
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+PHYLLIS JONES,
+</b>
+Seaford, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(CMGI Inc, Neon Communications, S1 Corporation, Clarus Corp, jazz)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+76.5%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+7
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+DAVID BOYLAN-KOLCHIN,
+</b>
+Newark, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(AsiaInfo Holdings, Integrated Telecom, Mercator Software, Pharmacopeia Inc, Symntc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+74.3%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+8
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+HENRY HEIDT,
+</b>
+Hockessin, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Harmonic Inc, Conductus Unc, Supcond Tech, InfoSpace Inc, NeoRx Cp)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+69.5%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+9
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+ALAN MINCHINI,
+</b>
+Bear, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Terayon Commun, Harmonic Inc, Visual Networks Inc, Metromedia Fiber, EchoStar Com)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+67.0%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+10
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+KURT PITZER,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Internet Capital Grp, CMGI Inc, Wireless Facilities, Inktomi Corp, Yahoo Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+61.3%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+11
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+RAY QUEREY,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Redback Networks Inc, CMGI Inc, Avocent Corporation, Maxim Pharm, Terayon Commun)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+60.2%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+12
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+JOHN ARMSTRONG,
+</b>
+Newark, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(CMGI Inc, DoubleClick Inc, RealNetworks Inc, S1 Corporation, VerticalNet Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+59.8%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+13
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+JOHN O'MAHONY,
+</b>
+Lakeland, FL
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Nuance Commun Inc, SpeechWorks Intl, Exodus Commun, WorldCom Inc, Texas Instru)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+59.6%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+14
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+NANCY HICKMAN,
+</b>
+Seaford, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Tibco Software Inc, Exodus Commun, Interwoven Inc, Commerce One Inc, Resonate Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+59.3%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+15
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+ROBERT JONES,
+</b>
+Seaford, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Inktomi Corp, CMGI Inc, Harmonic Inc, VerticalNet Inc, Red Hat Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+59.2%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+16
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+LES CRAIG,
+</b>
+Townsend, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(iBasis Inc, Inrange Tech Corp, InfoSpace Inc, Lanoptics Ltd, Symmetricom Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+57.6%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+17
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+LARRY BOYD,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Ciena Corporation, Jabil Circuit, Foundry Networks Inc, Solectron Cp, Akamai Technologies)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+56.5%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+18
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+TOM KEATING,
+</b>
+Newark, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(GlobeSpan Inc, Ariba Inc, PMC-Sierra Inc, Puma Technology Inc, E*Trade Group Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+55.8%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+19
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+TERRY VANCE,
+</b>
+Newark, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(BMC Software, Inktomi Corp, Pfizer Inc, Vitria Tech, ASM Lithography)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+55.6%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+20
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+RONALD SANDERSON,
+</b>
+Wilm, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Newport Corp, Power-One Inc, CuraGen Corp, Cor Therapeutic, Netegrity Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+55.6%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+21
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+HAL WELLS,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Qualcom Inc, Internet Capital Grp, Oak Tech, Nortel Network, Supcond Tech)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+54.7%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+22
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+THERESE LAGASSE,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(JNI Corporation, AudioCodes Ltd, Cal Amplif, DMC Stratex Netw, DSP Group)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+54.2%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+23
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+DAVID SZWETKOWSKI,
+</b>
+Middletown, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Openwave Systems, Inktomi Corp, Red Hat Inc, Qualcom Inc, Corning Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+54.1%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+24
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+DAVID CANNON,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(EMC Corp, APW Ltd, Internet Capital Grp, Inrange Tech Corp, America Online)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+53.3%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+25
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+JOHN LEONOWICH,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Ariba Inc, Adtran Inc, Copper Mountain, Legato Systems, US Wireless Corp)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+52.9%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+26
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+DAVE DRAPER,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(PMC-Sierra Inc, GlobeSpan Inc, Yahoo Inc, Mercury Interact, Extreme Networks Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+52.8%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+27
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+MARK GIBBONS,
+</b>
+Havertown, PA
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Celgene Inc, Commerce One Inc, CMGI Inc, JDS Uniphase Cp, Ariba Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+52.6%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+28
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+DAVID-ADAM JONES,
+</b>
+Lexington, KY
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Harmonic Inc, Read-Rite, Akamai Technologies, BMC Software, Nat Semi)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+52.5%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+29
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+GARY BOLLINGER,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Brio Technology, Luminent Inc, Business Objects, Radvision Ltd, Sycamore Networks)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+52.0%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+30
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+JANICE EPSTEIN,
+</b>
+Newark, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Liberate Tech, Exodus Commun, Focal Communications, Boston Scientific, Genome Therapeut)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+51.7%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+31
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+JOHN PETERS,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Digital Island Inc, PSS World Medical, CMGI Inc, 3Com Corp, Safeguard Sci)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+51.6%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+32
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+ANDREW GALLAGHER,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Akamai Technologies, Crayfish Co Ltd, FreeMarket Inc, Marimba Inc, MicroStrategy)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+51.4%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+33
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+ANNE MURPHY,
+</b>
+Reading, PA
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Yahoo Inc, Red Hat Inc, Inter Tel, eBay Inc, Ciena Corporation)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+51.3%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+34
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+SHANE PECK,
+</b>
+Newcastle, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Puma Technology Inc, Viatel Inc, Ibis Technol, BroadVision Inc, Semtech Corp)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+51.2%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+35
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+ART BADDORF,
+</b>
+Newark, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(SpeechWorks Intl, SanDisk Corporation, CTS Corp, Noven Phrm, Walgreen Co)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+51.2%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+36
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+KIMBERLEY QUEREY,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Biosource Intl, Compugen Ltd, Cysive Inc, sify, Frontstep Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+50.4%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+37
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+PAUL RABINOVITCH,
+</b>
+Delaware City, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Mercator Software, Juniper Networks, Sycamore Networks, Ribozyme Pharma, Yahoo Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+50.3%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+38
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+JASON MYERS,
+</b>
+Elkton, MD
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Genome Therapeut, Micron Elec, Legato Systems, Xicor, Celera Genomics)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+49.7%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+39
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+KATHLEEN MCDERMOTT,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(InfoSpace Inc, PurchasePro.com, Interwoven Inc, Internet Capital Grp, JDS Uniphase Cp)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+49.6%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+40
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+JEFFREY QI,
+</b>
+Middletown, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Terayon Commun, Digital Lightwave, Mapics Inc, Osicom Tech)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+49.6%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+41
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+STEPHEN ZACK II,
+</b>
+Millville, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Adaptive Broadband, Avax Technologies, Cyber-Care Inc, Micron Elec, Vitria Tech)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+49.5%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+42
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+STEVE HWA,
+</b>
+Chadds Ford, PA
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Advanta B, Cisco Syst, Verizon Comm, Openwave Systems, Internet Sec Sys Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+49.3%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+43
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+GEORGE REDDEN,
+</b>
+Linwood, PA
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Puma Technology Inc, Cisco Syst, Plug Power Inc, Agilent Tech, SDL Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+49.3%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+44
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+BRUCE BENNER,
+</b>
+Bethany Beach, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(JDS Uniphase Cp, Bookham Tech, EMC Corp, Extreme Networks Inc, Corvis Corporation)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+48.4%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+45
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+KRISTEN GILLEY,
+</b>
+Delaware City, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(BMC Software, EMC Corp, eBay Inc, Ciena Corporation, Cysive Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+48.2%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+46
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+STEPHEN GIBSON,
+</b>
+Newark, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(CMGI Inc, Dell Computer, Brio Technology, Gateway Inc, Pfizer Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+47.4%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+47
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+CHRISTOPHER BEANE,
+</b>
+Exton, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(JDS Uniphase Cp, Measuremt Spcl, Mercury Interact, VerticalNet Inc, PMC-Sierra Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+47.3%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+48
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+GEORGE ST. AMAND,
+</b>
+Hockessin, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Ariba Inc, Art Technology Grp, Interwoven Inc, Sycamore Networks, Commerce One Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+47.1%
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFCC66">
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+49
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+DOUG PURSE,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Adv Tissue Sci, Cor Therapeutic, Celera Genomics, Immunex Corp, Immune Resp)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+47.1%
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+50
+</b>
+</font>
+</td>
+<td >
+<font  face="Verdana,Arial,Helvetica" size="2">
+<b >
+GREGORY KOHS,
+</b>
+Wilmington, DE
+</font>
+<font  face="Verdana,Arial,Helvetica" size="1">
+(Lam Rsch, Celera Genomics, Brocade Commun, Abgenix Inc, UTStarcom Inc)
+</font>
+</td>
+<td  align="right" valign="top">
+<font  face="Verdana,Arial,Helvetica" size="3">
+<b >
+47.0%
+</b>
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td >
+<p ></p>
+<center >
+<a  href="#top">
+<font  face="helvetica,arial" size="1">
+<b >
+TOP OF PAGE
+</b>
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<b >
+<br ></br>
+</b>
+</font>
+<a  href="http://www.delawareonline.com/index.html">
+<font  face="helvetica,arial" size="1">
+[NEWS]
+</font>
+</a>
+<font  face="helvetica,arial" size="1">
+<a  href="http://homes.delawareonline.com">
+[HOMES]
+</a>
+<a  href="http://classifieds.delawareonline.com">
+[CLASSIFIEDS]
+</a>
+<a  href="http://homes.delawareonline.com/com">
+[COMMUNITIES]
+</a>
+<a  href="http://drive.delawareonline.com">
+[CARS]
+</a>
+<a  href="http://jobs.delawareonline.com">
+[JOBS]
+</a>
+<a  href="http://delawareonline.com/rentals/index.shtml">
+[RENTALS]
+</a>
+</font>
+<font  size="-2">
+<b >
+<br ></br>
+Copyright ® 2000, The News Journal.
+</b>
+</font>
+<br ></br>
+<font  size="-2">
+Use of this site signifies your agreement to the
+<a  href="http://www.delawareonline.com/userguide/terms_of_service.html">
+Terms of Service
+</a>
+. Updated 4/20/00
+</font>
+</center>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td  bgcolor="#003399" width="5">
+.
+</td>
+</tr>
+<tr >
+<td  bgcolor="#003399" width="91"></td>
+<td  bgcolor="#003399" valign="bottom"></td>
+<td  valign="bottom" width="91">
+<img ></img>
+</td>
+<td  width="5">
+<img ></img>
+</td>
+</tr>
+</table>
+</body>
+</html>

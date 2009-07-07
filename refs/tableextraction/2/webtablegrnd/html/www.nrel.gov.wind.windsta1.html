@@ -1,0 +1,203 @@
+<html >
+<head >
+<title >
+Measuring Wind Plant Capacity Value
+</title>
+</head>
+<body  alink="#FF0000" bgcolor="#F4F4FF" link="#FF0000" text="#000055" vlink="#800080">
+<center >
+<a  href="/wind/images/subtop.map">
+<img ></img>
+</a>
+<a  href="/wind/library.html">
+<img ></img>
+</a>
+<br ></br>
+<br ></br>
+<br ></br>
+</center>
+<h2 >
+Measuring Wind Plant Capacity Value
+</h2>
+<p >
+Michael Milligan
+<br ></br>
+National Renewable Energy Laboratory
+</p>
+<p ></p>
+<h3 >
+Introduction
+</h3>
+<p >
+Electric utility planners and wind energy researchers pose a common question: What is the capacity value of a wind plant? Tentative answers, which can be phrased in a variety of ways, are based on widely varying definitions and methods of calculation. From the utility's point of view, a resource that has no capacity value also has a reduced economic value. Utility planners must be able to quantify the capacity value of a wind plant so that investment in conventional generating capacity can be potentially offset by the capacity value of the wind plant. Utility operations personnel must schedule its conventional resources to ensure adequate generation to meet load. Given a choice between two resources, one that can be counted on and the other that can't, the utility will avoid the risky resource. This choice will be reflected in the price that the utility will pay for the capacity: higher capacity credits result in higher payments. This issue is therefore also important to the other side of the power purchase transaction the wind plant developer. Both the utility and the developer must accurately assess the capacity value of wind. This article summarizes and evaluates some common methods of evaluating capacity credit. During the new era of utility deregulation in the United States, it is clear that many changes will occur in both utility planning and operations. However, it is my judgment that the evaluation of capacity credit for wind plants will continue to play an important part in renewable energy development in the future.
+</p>
+<p ></p>
+<h3 >
+Utility Modeling and Planning
+</h3>
+<p >
+Utilities use several software tools to obtain a measure of system reliability. These tools consist of electric production cost and reliability models. Depending on the specific model, it is possible to obtain production cost and reliability estimates from the same model. In other cases, separate modules provide these outputs. The most common methods of measuring the capacity credit of a given wind plant are based on comparing the wind plant with another unit that is used as the standard of measure. In this context, electric system reliability can be thought of as the probability that sufficient generation is available to meet the system load. However, the term "capacity credit" means different things to different analysts, depending in part on whether their involvement is primarily utility planning, operations, or another related area. Should capacity credit measure some long-term average wind power during an appropriate period, or should it be based on constant reliability levels? Until there is general agreement about the answer to this question, there will be disagreement about the appropriate measurement of wind capacity credit.
+</p>
+<p >
+Electric production and reliability models are based on the premise that conventional generating units have two types of outages: planned and unplanned (forced). The former are primarily for scheduled maintenance and normally do not coincide with periods of peak load. The latter result from equipment malfunction (or any other unplanned event). The models require input that describes the overall forced outage rate of the plant. This value is interpreted as a probability that the plant will be available and is folded into the statistically expected capacities of all other plants. There is usually some very small probability that the combinations of on-line and available units cannot supply sufficient generation, expressed as the loss-of-load probability (LOLP). It is typically calculated for each hour of the year, converted to a measure of statistically expected outage times or number of outage events (depending on the model), and summed for the year. The annual measure estimates the generating system's reliability. A high LOLP generally indicates a resource shortage, which can be due to generator outages, insufficient installed generation, or both. Target values for annual system LOLP depend on the utilities' degree of risk aversion, but a level equivalent of one day per ten years is typical.
+</p>
+<p >
+In the context of production cost and reliability modeling, wind plants can be treated in a similar manner. Although the availability of a wind turbine might be superior to that of a conventional generator, wind plants lack fuel when the wind doesn't blow. Typically, conventional generators do not experience fuel shortages, although it might be important in certain cases. Wind availability can be captured in the production and reliability models by applying the forced outage rate to account for this lack of fuel, just as mechanical outages are treated with conventional units. In order to correctly describe the range of wind power values in these models, one should be able to describe probability distributions underlying the wind speed so that the model can fold these values into the reliability calculation just as it does for the conventional generating units.
+</p>
+<p >
+To calculate the minimum-cost generation mix, low-cost resources are dispatched before high-cost resources, and usage of inexpensive plants is maximized. Prior to performing the economic dispatch algorithm or reliability calculations, a common modeling technique is to subtract the hourly wind generation from the utility electric load, resulting in the load level that must be met by conventional generation. However, modeling the wind plant as a load-modifier does not allow the variance of the wind plant output to be captured and quantified into the LOLP calculation. Other methods for modeling wind plants typically lose the detailed chronological variation of the wind plant output. See Milligan (1995) for a discussion of this topic.
+</p>
+<p ></p>
+<h3 >
+LOLP-Based Reliability Measurement
+</h3>
+<p ></p>
+<p >
+Many studies that incorporate the use of electric utility reliability and production cost models characterize wind plants by the load-modification technique and measure capacity credit as measured with the effective load-carrying capacity (ELCC). The ELCC method is based on the LOLP measure of system reliability, and incorporates LOLP calculations in such a way that adding a new generator (for example a wind plant) is benchmarked against an ideal, perfectly reliable unit with 100% availability. A related approach substitutes an alternative unit instead of the ideal unit and can be thought of as an "equivalent capacity" method. In many cases, the alternative unit is natural gas. The gas unit is sized so that the LOLP calculation is the same as that calculated with a wind plant instead of the gas plant. If, for example, we get the same LOLP result for 400 MW of wind and 100 MW of gas, we have a rough measure that tells us that wind represents 25% of the capacity of a gas plant. It does not imply that operating the utility with 400 MW of wind is the same as operating with 100 MW of gas, nor does it imply that these two resources are equivalent in an economic sense. The only implication is that, based on the LOLP measure, the plants have the same overall reliability for the time period in question. Note that measures such as these are very general, and they represent reliability measures that would be used only in utility planning.
+</p>
+<p >
+However, the LOLP calculation is not credible if it is based on the load modification approach to modeling the wind plant. In cases like this, the ELCC measure of capacity credit is also suspect. Reliability measures such as LOLP are weighted heavily on the peak hour (or several hours) of the year. If full wind-plant output is attained during the peak hours for a given year, wind will compare favorably with its alternative. However, if in another year wind plant output is low during system peak times, LOLP-based measures will find wind much less favorable, even if annual energy capture is unchanged. This observation points out the fallacy of using limited wind data for planning studies, and it raises the question of how much wind data is necessary in order to properly assess the inter-annual variation in wind output. This problem underlies all studies that model the wind plant as a load modifier unless there is some form of repeated sampling of the wind probability distribution.
+</p>
+<p >
+In order to plan future capacity expansion, the utility needs to know how much conventional capacity (however one wants to define "conventional") can be replaced with wind, so ELCC/LOLP measures are calculated for long periods, such as a year or a planning horizon. Projected costs and benefits are also important products of this type of analysis. Some analysts approach the problem by attempting to assess the capacity and energy credits of the wind plant directly, in other cases the capacity credit is estimated as a fraction of a conventional resource. If this latter approach is used, some analysts refer to the capacity penalty associated with the wind resource, using the conventional resource as a benchmark.
+</p>
+<p >
+Which should be used--long-term or short-term costs and penalties? The answers won't be the same. A long-term LOLP/ELCC measure is a very broad average, and thus obscures a lot of detail; hours in which wind contributes 100% of rated capacity along with hours of 0% contribution. Although planning, by its nature, must deal with such broad measures and averages, utility operations must be more specific. For example, if the average wind power output for a particular day of the year averages 50 MW, but the short-term weather/wind forecast for tomorrow is for no wind, it would not be rational for a system dispatcher to schedule the days resources and ignore the forecast. Therefore, we must be careful to distinguish whether "capacity credit" is for planning or operations. An operational capacity credit might be closely related to the short-term accuracy of the wind forecast that is used to schedule generation schedules for the following day. This issue is treated in more detail in Milligan et al. (1995). Also, ELCC measures depend on the way wind is modeled in the production cost and reliability models. Most modelers use the load-modifier method, which is at best a single draw from a random variable (in statistical sense). A more accurate way of representing outages is to perform repeated Monte Carlo simulations, selecting the available generation in each hour based on drawing from the probability distribution that describes its availability (see Marnay &amp; Strauss 1989).
+</p>
+<p >
+This brings us to the question of how to calculate an operational intermittency penalty for a wind plant. In my judgment, this is an ill-formed question, because it is unclear on what basis the penalty should be assessed. Conventional generation can include many different types of resources with differing availabilities. Furthermore, such a penalty, should we accept it, would be subject to the relative value of an additional kW, which varies throughout the day. During low-load periods, the value of a kW is lower than during high-load periods, because plenty of relatively inexpensive resources are available. During peak load periods, most existing capacity is pressed into service. If a capacity shortage still exists, the utility will generally be willing to pay a premium value for additional kW to avoid a loss-of-load event. In scheduling generators during system peaks, mistakes are much more costly than in off-peak periods. One would rely on wind plants during the peak period to the extent that wind plant output forecasts are believed to be accurate and result in significant output. A system scheduler might be more likely to rely on an uncertain wind plant at night, when there is plenty of spinning capability available should it be necessary. Therefore, it doesn't make sense to say "wind should be assessed an x% capacity penalty" unless the frame of reference is allowed to vary with the utility's exposure to inadequate generation to meet load. The value of both capacity and energy varies widely and depends on the interplay between system loads and available generation. There is no single value that would adequately measure an intermittency penalty for wind plants.
+</p>
+<p ></p>
+<h3 >
+The Fallacy of Firm Power
+</h3>
+<p >
+Utilities face the backup problem every day with conventional generation. A 1,000 MW base load plant with annual capacity factor of 65% (which takes planned outages into account) does not require a 1,000 MW backup for 35% of the year. The utility relies on the statistical independence of forced outages (which is built into modern generation expansion and production cost models) and the implied diversity of outages so that unreasonably high installed capacity levels can be avoided. Although the magnitude of the resource availability fraction for wind, as approximated by the forced outage rate, differs from the conventional unit's forced outage rate (i.e., wind on the order of 20%-30% and compared to conventional units at 60%-95% or so), the issue appears to be the same. Why should I back up my 50 MW wind plant with another 50 MW resource? Wouldn't it make more sense to use a probability--based estimate of wind contribution during important periods, taking into account a long wind resource record, and install, for example, a 20 MW backup? In this way the utility can rely not only on the installed wind backup (gas or whatever), but on the natural diversity of outages in other units. This reasoning is roughly the justification for the ubiquitous use of the 7% spinning reserve fraction, which requires the utility to spin an additional 7% over its load.
+</p>
+<p ></p>
+<h3 >
+Other Approaches
+</h3>
+<p ></p>
+<p >
+The capacity factor of the wind plant (the ratio of average output to total output) can be used to approximate the capacity credit. From a planning perspective, one could interpret the capacity factor as the ratio of statistically expected output divided by annual energy output. Because planning often focuses on the "reasonably expected future," this measure can be viewed as a first-stage approximation to overall capacity credit. The calculation of the capacity factor also can be applied to various time periods, such as years, months, or peak periods. The use of a suitably defined peak period might help approximate the capacity credit of a wind plant. One could easily imagine an ideal situation in which expected wind output during peak is near 60% of rated output, yet the annual capacity factor may be in the 20%-30% range; conversely, given a 20%-30% annual capacity factor, wind regimes that are poorly correlated with system load could contribute a very low average percentage of rated output during system peak. By restricting the capacity factor calculation to the appropriate period, we would obtain a more reasonable approximation of the wind plant capacity credit. Other methods examine mean or median values of wind power during time windows surrounding the utility peak. (See, for example, MAPP 1994 )
+</p>
+<p >
+Table 1 summarizes my judgments of the usefulness of three methods of assessing wind plant capacity credit in the context of both utility operation and planning. For the capacity factor approach, it would be important to define the time period in such a way that it captures the utility's cost structure, operational practices, and constraints. The table illustrates that evaluation of the capacity credit for a wind plant must be done in the proper context. This also implies that short-term operational capacity credit may vary from the long-term planning credit, although one would expect that over time, the average of the short-term credits would approach the long-term credit.
+</p>
+<p ></p>
+<center >
+<table  TABID="10237" border="1" genuinetable="yes" tabletitle="Table 1. Usefulness for Assessing Capacity Credit Methods">
+<caption >
+<b >
+Table 1. Usefulness for Assessing Capacity Credit Methods
+</b>
+</caption>
+<tr  width="80">
+<th ></th>
+<th  width="100">
+ELCC
+</th>
+<th  width="100">
+Capacity Factor
+</th>
+<th  width="100">
+Wind Forecasting
+</th>
+</tr>
+<tr >
+<td  width="80">
+<b >
+Operations
+</b>
+</td>
+<td  align="center" width="100"></td>
+<td  align="center" width="100">
+x
+</td>
+<td  align="center" width="100">
+x
+</td>
+</tr>
+<tr >
+<td  width="80">
+<b >
+Planning
+</b>
+</td>
+<td  align="center" width="100">
+x
+</td>
+<td  align="center" width="100">
+x
+</td>
+<td  align="center" width="100"></td>
+</tr>
+<tr ></tr>
+</table>
+</center>
+<p ></p>
+<h3 >
+Conclusions
+</h3>
+<p ></p>
+<p >
+This article does not discuss all of the possible variations in capacity credit valuation, but it introduces some of the issues surrounding valuation. Conceptually, the equivalent capacity approach appears sound; however, one must properly model the wind plant so that the correct LOLP is used in the capacity credit calculation. Many estimates of wind plant capacity credit are deficient for this reason. Capacity factor appears to approximate the capacity credit, provided that the time periods are chosen to correspond with the utility's peak loads. Finally, all measure of capacity credit must be put in the proper operational or planning context.
+</p>
+<p ></p>
+<p ></p>
+<h3 >
+References
+</h3>
+<p ></p>
+<p >
+Grubb, M. (1991). "Value of variable sources on power systems."
+<i >
+IEE Proceedings-C
+</i>
+, Vol. 138, No. 2.
+</p>
+<p ></p>
+<p >
+Marnay, C. and T. Strauss (1989).
+<i >
+Chronological Model Comparison
+</i>
+. Sacramento, California: California Public Utility Commission.
+</p>
+<p ></p>
+<p >
+Milligan, M. (1995).
+<i >
+Alternative Windpower Modeling Methods Using Chronological and Load Duration Curve Production Cost Models
+</i>
+. Draft Report. NREL/TP-441-8171. Golden, Colorado: National Renewable Energy Laboratory.
+</p>
+<p ></p>
+<p >
+Milligan, M. and A. Miller (1993). "The Value of Windpower: An Investigation Using a Qualified Production Cost Model."
+<i >
+Windpower '93 Proceedings; July 12-16, 1993;
+</i>
+San Francisco, California. Washington, DC: American Wind Energy Association; pp. 74-81.
+</p>
+<p ></p>
+<p >
+Milligan, M., A. Miller, and F. Chapman (1995). "Estimating the Economic Value of Wind Forecasting to Utilities."
+<i >
+Windpower '95 Proceedings; March 27-30, 1995;
+</i>
+Washington, DC. Washington, DC: American Wind Energy Association.
+</p>
+<p ></p>
+<p >
+Mid-Atlantic Power Pool (1994).
+<i >
+Generator Capacity Accreditation Proposal
+</i>
+.
+</p>
+<p ></p>
+<p ></p>
+</body>
+</html>

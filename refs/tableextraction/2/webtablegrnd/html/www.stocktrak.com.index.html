@@ -1,0 +1,1069 @@
+<html >
+<head >
+<meta ></meta>
+<title >
+STOCK-TRAK : Complete investments simulation
+</title>
+<meta ></meta>
+<meta ></meta>
+<style  type="text/css">
+<!-- 
+   BODY {margin-left: 0px; margin-top: 0px}
+   a:hover { text-decoration: underline; color: #ff0000}
+   .headerlink { color: #ffffff; text-decoration: none; font-size: 8pt; font-family: arial; font-weight: bold}
+   .footerlink { color: #000080; text-decoration: none; font-size: 8pt; font-family: arial; font-weight: bold}
+   .copyright { color: #000000; text-decoration: none; font-size: 8pt; font-family: arial; font-weight: bold}
+   .headers { color: #000080; font-size: 9pt; font-family: verdana; font-weight: bold}
+   .headline { color: #000080; font-size: 8pt; font-family: verdana; font-weight: bold}
+   .streetfeeds { color: #000080; text-decoration: none; font-size: 7pt; font-family: helvetica}
+   .symbollookup { color: #000080; text-decoration: none; font-size: 7pt; font-family: arial}
+   .leftnavheader { color: #6495ed; text-decoration: none; font-size: 8pt; font-family: arial; font-weight: bold}	
+   .leftnavlinks { color: #000080; text-decoration: none; font-size: 8pt; font-family: verdana}
+   .thestreetlogo { color: #000080; font-size: 8pt; font-family: times; font-weight: bold}
+   .stories { color: black; text-decoration: none; font-size: 10pt; font-family: arial }
+   .red { color: #ff0000; text-decoration: none; font-size: 8pt; font-family: verdana; font-weight: bold } 
+   .date { color: #000080; text-decoration: none; font-size: 7pt; font-family: arial }
+   .plug { color: #000080; text-decoration: none; font-size: 8pt; font-family: arial; font-weight: bold}
+   .streetheadlines { color: #000080; text-decoration: none; font-size: 8pt; font-family: verdana}
+   .attentionred { color: #ff0000; text-decoration: none; font-size: 8pt; font-family: helvetica; font-weight: bold } 
+   .marketclose { color: #ff0000; text-decoration: none; font-size: 7pt; font-family: arial }
+   -->
+</style>
+<script >
+<!--- THIS IS THE INTRADAY CHARTING --------->
+<!--- THESE ARE COMMANDS TO OPEN OTHER WINDOWS --------->
+function thestreet() { window.open('http://www.thestreet.com','thestreet','toolbar=no,scrollbars=yes'); }
+<!--- THESE ARE THE EXPRESS LINK FEATURES --------->
+function go(theSelect, window) { objSelect = eval("document.forms.Navigate." + theSelect); if (objSelect.options[objSelect.selectedIndex].value != "x") { parent.location.href = objSelect.options[objSelect.selectedIndex].value } else { objSelect.options[0].selected = true } } function jump(theSelect, window) { objSelect = eval("document.forms.NewsForm." + theSelect); if (objSelect.options[objSelect.selectedIndex].value != "x") { parent.location.href = objSelect.options[objSelect.selectedIndex].value } else { objSelect.options[0].selected = true } }
+</script>
+</head>
+<body  alink="#ff0000" bgcolor="#ffffff" link="#000099" text="#000099" vlink="#000099">
+<basefont ></basefont>
+<!--- BEGIN HEADER --------->
+<table  TABID="12244" border="0" cellpadding="0" cellspacing="0" width="750">
+<tr  bgcolor="#ffffff">
+<td  width="100%">
+<table  TABID="12241" align="center" border="0" width="100%">
+<tr >
+<td  align="center">
+<table  TABID="12240" align="center" border="0">
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td >
+<!--Begin Engage Media Ad Copyright 2000  Engage Media.
+All rights reserved. Patent Pending -->
+<script >
+<!--
+FlycastSite = "StockTrakPortfolioSimulations";
+FlycastPage = "MainBanner";
+FlycastWidth = 468;
+FlycastHeight = 60;
+FlycastPrintTag = true;
+FlycastNewAd = true;
+FlycastEnableTargetWindow = false;
+FlycastKeyword = "";
+FlycastLoaded = false;
+FlycastVersion = 3.6;
+//-->
+</script>
+<script ></script>
+<script >
+<!--
+    if (!FlycastLoaded) document.write('&amp;amp;lt;A target="_top" HREF="http://ad-adex3.flycast.com/server/click/StockTrakPortfolioSimulations/MainBanner/123"&amp;amp;gt;&amp;amp;lt;IMG WIDTH=468 HEIGHT=60 BORDER=0 SRC="http://ad-adex3.flycast.com/server/ad/StockTrakPortfolioSimulations/MainBanner/123"&amp;amp;gt;&amp;amp;lt;/A&amp;amp;gt;');
+//-->
+</script>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="http://ad-adex3.flycast.com/server/click/StockTrakPortfolioSimulations/MainBanner/123" target="_top">
+<img ></img>
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<!--End Engage Media Ad Copyright 2000 Engage Media. All rights reserved
+ Patent Pending -->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<table  TABID="12243" border="0" cellpadding="0" cellspacing="0" width="750">
+<tr >
+<td  align="left" bgcolor="#000060" height="20" nowrap="nowrap" valign="middle">
+<table  TABID="12242" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#000060" height="20" nowrap="nowrap" valign="middle" width="100%">
+<a  class="headerlink" href="index.shtml" target="_top">
+HOME
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<b >
+|
+</b>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="headerlink" href="order2.php3" target="_top">
+MAKE A TRADE
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<b >
+|
+</b>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="headerlink" href="acctact.shtml" target="_top">
+ACCT DETAIL
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<b >
+|
+</b>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="headerlink" href="acctsum.shtml" target="_top">
+ACCT SUMMARY
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<b >
+|
+</b>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="headerlink" href="getsum.php3" target="_top">
+RANKING
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<b >
+|
+</b>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="headerlink" href="bwquotes.php3" target="_top">
+GET QUOTES
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<b >
+|
+</b>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="headerlink" href="research.shtml" target="_top">
+RESEARCH DESK
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<b >
+|
+</b>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="headerlink" href="http://www.traderspressbookstore.com/traders-stocktrak/" target="_top">
+BOOKSTORE
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr  bgcolor="#EDECE5">
+<td  align="right" height="5" width="100%"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--- BEGIN BODY TABLE --------->
+<table  TABID="12264" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+<tr >
+<!--- BEGIN LEFT NAVIGATION BAR --------->
+<td  bgcolor="#edece5" valign="top" width="125">
+<table  TABID="12245" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr  align="center">
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Wednesday, May 16
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Market closes in 1:14
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+</table>
+<table  TABID="12246" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr  align="center">
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+PROFESSORS &amp; INSTRUCTORS
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="howto.htm" onmouseover="window.status='Learn how STOCK-TRAK can supplement your course'; return true;">
+Introduction
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="signup.htm" onmouseover="window.status='Click to have STOCK-TRAK working for you tomorrow'; return true;">
+Register Class
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="prohelp.htm">
+User's Guide
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="/newsletters/">
+Newsletters
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="procomp.htm">
+Competition
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+</table>
+<hr ></hr>
+<table  TABID="12247" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr  align="center">
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+STUDENTS &amp; TRADERS
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="studsignup.htm" onmouseover="window.status='Have your account opened within one business day'; return true;">
+Open Account
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="regmat.php3" onmouseover="window.status='All important rules of engagement'; return true;">
+Read Rules
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="preemail.htm">
+FAQ
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="studsignup.htm">
+Buy More Trades
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+</table>
+<hr ></hr>
+<table  TABID="12248" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr  align="center">
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+OTHER INFORMATION
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="generali.htm">
+Contact Us
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="http://www.traderspressbookstore.com/traders-stocktrak/">
+Bookstore
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<a  class="leftnavlinks" href="adinfo.htm">
+Advertising Info
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+</table>
+<hr ></hr>
+<table  TABID="12249" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr >
+<td >
+<!---- &amp;amp;lt;A HREF="http://www.amazon.com/exec/obidos/redirect-home/stocktrakportfol"&amp;amp;gt;&amp;amp;lt;IMG SRC="images/amazon.gif" width="110" BORDER="0" ALT="Amazon.com" ALIGN="TOP"&amp;amp;gt;&amp;amp;lt;/A&amp;amp;gt;  ------>
+</td>
+</tr>
+</table>
+</td>
+<!--- BEGIN FROM NAVBAR RIGHTWARDS --------->
+<td  width="635">
+<basefont ></basefont>
+<center ></center>
+<table  TABID="12262" border="1" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td  width="80%">
+<!--- BEGIN MIDDLE COLUMN --------->
+<table  TABID="12255" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="100%">
+<table  TABID="12254" align="center" border="0" cellpadding="3" cellspacing="0" valign="top" width="100%">
+<tr >
+<td  valign="top" width="49%">
+<center >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Welcome to
+<i >
+STOCK-TRAK
+</i>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</center>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<i >
+STOCK-TRAK
+</i>
+is the internet's most comprehensive capital markets simulation available featuring:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<table  TABID="12250" align="center" border="0" cellpadding="0" cellspacing="0" valign="top" width="100%">
+<tr >
+<td >
+<ul ></ul>
+</td>
+<td >
+<ul >
+<li >
+<b >
+<font  color="#ff0000" face="Arial" size="1">
+Stocks
+</font>
+</b>
+</li>
+<li >
+<b >
+<font  color="#ff0000" face="Arial" size="1">
+Options
+</font>
+</b>
+</li>
+<li >
+<b >
+<font  color="#ff0000" face="Arial" size="1">
+Futures
+</font>
+</b>
+</li>
+</ul>
+</td>
+<td >
+<ul >
+<li >
+<b >
+<font  color="#ff0000" face="Arial" size="1">
+Mutual Funds
+</font>
+</b>
+</li>
+<li >
+<b >
+<font  color="#ff0000" face="Arial" size="1">
+Bonds
+</font>
+</b>
+</li>
+<li >
+<b >
+<font  color="#ff0000" face="Arial" size="1">
+International Stocks
+</font>
+</b>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<i >
+STOCK-TRAK
+</i>
+is used by tens of thousands of students and the general investing public each year. It provides the ideal method to practice investment strategies, test theories, practice day trading, learn about the various markets, and compete against your classmates, friends, &amp; colleagues. Whether you are a
+<a  href="studsignup.htm">
+student
+</a>
+or a member of the
+<a  href="natlcomp.htm">
+general public
+</a>
+, register today and begin trading tomorrow!
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+<hr ></hr>
+<table  TABID="12251" align="center" border="0" cellpadding="0" cellspacing="0" valign="top" width="100%">
+<tr >
+<td >
+<br ></br>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Want to know what a Market Maker does?
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Test your skills at being a NASDAQ Market Maker with
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+<p ></p>
+<center >
+<a  href="http://www.nasd.com/headtrader/head_trader.htm">
+<img ></img>
+</a>
+</center>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Looking for premium charting software?
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Our favorite is . . .
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+<p ></p>
+<center >
+<a  href="http://www.tc2000.com/">
+<img ></img>
+</a>
+</center>
+<p ></p>
+<center >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Try their special offer now!
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</center>
+</td>
+</tr>
+</table>
+</td>
+<td  align="center" valign="top" width="1%">
+<img ></img>
+</td>
+<td  align="center" valign="top" width="50%">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Stock Watch &amp; Market Update
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<table  TABID="12253" border="0" cellpadding="0" cellspacing="0" valign="top" width="100%">
+<tr >
+<td  align="left">
+<img ></img>
+<img ></img>
+</td>
+<td  valign="bottom">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Courtesy of:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+TheStreet.com
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<table  TABID="12252" align="center" border="0" cellpadding="5" cellspacing="4">
+<tr  class="streetheadlines">
+<td  bgcolor="#edece5">
+<a  href="stockwatch.php3" target="_top">
+Stocks to Watch Wednesday: Dell, Krispy Kreme, Applied Materials, Brocade
+</a>
+</td>
+</tr>
+<tr  class="streetheadlines">
+<td  bgcolor="#ffffe0">
+<a  href="marketstory.php3" target="_top">
+Today's Market: Dow Bursts Through 11K
+</a>
+</td>
+</tr>
+<tr  class="headline">
+<td  align="center">
+Other Top Business Stories
+</td>
+</tr>
+<tr  align="left" bgcolor="#edece5" class="streetheadlines" valign="bottom">
+<td  valign="top">
+<a  href="http://www.thestreet.com/_stocktrak/tech/software/1431041.html">
+Xbox Arrives Before Thanksgiving With PlayStation Price Tag
+</a>
+<font  color="black" face="Verdana,Sans-serif" size="1">
+:
+<i >
+05-16 14:34 EST
+</i>
+</font>
+</td>
+</tr>
+<tr  align="left" bgcolor="#FFFFE0" class="streetheadlines" valign="bottom">
+<td  valign="top">
+<a  href="http://www.thestreet.com/_stocktrak/markets/sectorwatch/1431039.html">
+Sector Watch: Biotechs Storm Higher
+</a>
+<font  color="black" face="Verdana,Sans-serif" size="1">
+:
+<i >
+05-16 14:23 EST
+</i>
+</font>
+</td>
+</tr>
+<tr  align="left" bgcolor="#edece5" class="streetheadlines" valign="bottom">
+<td  valign="top">
+<a  href="http://www.thestreet.com/_stocktrak/markets/marketstory/1430932.html">
+Market Update: Dow Bursts 11K
+</a>
+<font  color="black" face="Verdana,Sans-serif" size="1">
+:
+<i >
+05-16 14:19 EST
+</i>
+</font>
+</td>
+</tr>
+<tr  align="left" bgcolor="#FFFFE0" class="streetheadlines" valign="bottom">
+<td  valign="top">
+<a  href="http://www.thestreet.com/_stocktrak/markets/techmovers/1431018.html">
+Motorola Lifts on Job Cuts
+</a>
+<font  color="black" face="Verdana,Sans-serif" size="1">
+:
+<i >
+05-16 14:10 EST
+</i>
+</font>
+</td>
+</tr>
+<tr  align="left" bgcolor="#edece5" class="streetheadlines" valign="bottom">
+<td  valign="top">
+<a  href="http://www.thestreet.com/_stocktrak/stocks/timarango/1430873.html">
+Family Dollar Looks to Cash In on Dollar General Worries
+</a>
+<font  color="black" face="Verdana,Sans-serif" size="1">
+:
+<i >
+05-16 13:01 EST
+</i>
+</font>
+</td>
+</tr>
+<tr  align="left" bgcolor="#FFFFE0" class="streetheadlines" valign="bottom">
+<td  valign="top">
+<a  href="http://www.thestreet.com/_stocktrak/markets/techmovers/1430905.html">
+QLogic Rises on Earnings, Outlook
+</a>
+<font  color="black" face="Verdana,Sans-serif" size="1">
+:
+<i >
+05-16 12:53 EST
+</i>
+</font>
+</td>
+</tr>
+<tr  align="left" bgcolor="#edece5" class="streetheadlines" valign="bottom">
+<td  valign="top">
+<a  href="http://www.thestreet.com/_stocktrak/markets/upgrades/1430829.html">
+Analysts Jump to Lower Sprint Earnings Expectations
+</a>
+<font  color="black" face="Verdana,Sans-serif" size="1">
+:
+<i >
+05-16 12:23 EST
+</i>
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  align="center" width="100%">
+<hr ></hr>
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="100%">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<p >
+Register now for the next
+<i >
+STOCK-TRAK
+</i>
+Derivatives Challenge. The Derivatives Challenge begins every other Monday. Manage a $100,000 portfolio of stocks, options and futures mutual funds, bonds, and spots. For more info please read the details on
+<a  href="natlcomp.htm">
+the Derivatives Challenge.
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+</td>
+</tr>
+</table>
+</td>
+<!--- BEGIN RIGHT COLUMN --------->
+<td  align="center" valign="top" width="20%">
+<basefont ></basefont>
+<table  TABID="12256" align="center" bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="center">
+<form  action="http://fast2.quote.com/fq/stocktrak/quote" enctype="x-www-form-urlencoded" method="post" name="GetQuotes">
+<font  face="verdana,arial,helvetica" size="1">
+<b >
+Obtain Quotes
+</b>
+</font>
+<br ></br>
+<font  face="verdana,arial,helvetica" size="1">
+<b >
+Ticker(s):
+</b>
+</font>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<br ></br>
+<a  class="symbollookup" href="http://fast2.quote.com/fq/stocktrak/ticker?id=">
+[Symbol lookup]
+</a>
+</form>
+</td>
+</tr>
+</table>
+<hr ></hr>
+<table  TABID="12257">
+<tr  align="center">
+<td  colspan="2">
+<font  face="verdana,arial,helvetica" size="1">
+<b >
+TRAK CORNER
+</b>
+</font>
+</td>
+</tr>
+<tr  align="left">
+<td  valign="top" width="50%">
+<a  class="symbollookup" href="keynumbers.php3" target="_top">
+Bond Focus
+</a>
+</td>
+<td  valign="top" width="50%">
+<a  class="symbollookup" href="mktupdate.php3" target="_top">
+Market Update
+</a>
+</td>
+</tr>
+<tr  align="left">
+<td  valign="top" width="50%">
+<a  class="symbollookup" href="stockwatch.php3" target="_top">
+Stocks to Watch
+</a>
+</td>
+<td  valign="top" width="50%">
+<a  class="symbollookup" href="marketstory.php3" target="_top">
+The Market Story
+</a>
+</td>
+</tr>
+<tr  align="left">
+<td  valign="top" width="50%">
+<a  class="symbollookup" href="marketfeatures.php3" target="_top">
+Market Features
+</a>
+</td>
+<td  valign="top" width="50%">
+<a  class="symbollookup" href="thecomingweek.php3" target="_top">
+The Coming Week
+</a>
+</td>
+</tr>
+</table>
+<hr ></hr>
+<img ></img>
+<hr ></hr>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="http://www.traderspressbookstore.com/traders-stocktrak/">
+<b >
+The STOCK-TRAK Investment Bookstore
+</b>
+<!-- &amp;amp;lt;br&amp;amp;gt;Offering the most popular investment books, videos, and tapes at deeply discounted prices (up to 70% off).&amp;amp;lt;br&amp;amp;gt;Also featuring Wall Street art &amp;amp;amp; other collectibles! -------->
+<br ></br>
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<table  TABID="12258" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="center">
+<a  href="http://www.traderspressbookstore.com/traders-stocktrak/">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<hr ></hr>
+<table  TABID="12260" align="center" border="2" bordercolor="#3399CC" cellpadding="0" cellspacing="0" width="100%">
+<tr  align="center">
+<td >
+<table  TABID="12259" bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="100%">
+<form  action="http://205.210.134.51/af/alert.asp" method="get">
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<div  align="center">
+<img ></img>
+<br ></br>
+<input ></input>
+<input ></input>
+<input ></input>
+</div>
+</td>
+</tr>
+</form>
+</table>
+</td>
+</tr>
+</table>
+<hr ></hr>
+<table  TABID="12261" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  align="left">
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Are you ready to start investing in the stock market on your own terms?
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr  align="center">
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<b >
+Try Sharebuilder.com
+</b>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td ></td>
+</tr>
+<tr  align="center">
+<td >
+<img ></img>
+<a  href="http://service.bfast.com/bfast/click?bfmid=29150849&siteid=36106732&bfpage=home" target="_top">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--- BEGIN FOOTER --------->
+<tr  height="100%" width="750">
+<td  align="center" bgcolor="#edece5" height="100%" width="125"></td>
+<td  align="center" width="625">
+<basefont ></basefont>
+<table  TABID="12263" align="center" border="0" cellpadding="0" cellspacing="0" width="625">
+<tr  align="center">
+<td  bgcolor="#ffffff" height="20" nowrap="nowrap" valign="middle" width="625">
+<br ></br>
+<a  class="footerlink" href="index.shtml" target="_top">
+HOME
+</a>
+<a  class="footerlink" href="order2.php3" target="_top">
+MAKE A TRADE
+</a>
+<a  class="footerlink" href="acctact.shtml" target="_top">
+ACCOUNT DETAIL
+</a>
+<a  class="footerlink" href="acctsum.shtml" target="_top">
+ACCOUNT SUMMARY
+</a>
+<a  class="footerlink" href="getsum.shtml" target="_top">
+RANKING
+</a>
+<a  class="footerlink" href="bwquotes.php3" target="_top">
+GET QUOTES
+</a>
+<a  class="footerlink" href="research.shtml" target="_top">
+RESEARCH DESK
+</a>
+</td>
+</tr>
+<tr  align="center">
+<td  width="95%">
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Copyright, 2000 Stock-Trak, Inc. All rights reserved.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

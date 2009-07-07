@@ -1,0 +1,6223 @@
+<html >
+<head >
+<!-- DOC-FACTORY Generated Tags BEGIN -->
+<title >
+RIMM Module - Validation Testing Results
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<!-- /DOC-FACTORY Generated Tags END -->
+<meta ></meta>
+<script >
+<!--
+if (window.status) window.status='Loading menus, please wait....'; // -->
+</script>
+<link ></link>
+<script >
+<!--
+  var dhtmlBrowser=0; var isIE=0; var isNS=0; var DHTML=0;
+  function d_cnavOver() {} function d_cnavOut() {} function d_init() {}
+  function d_navOver() { }  function d_navOut() { } // -->
+</script>
+<script ></script>
+<script >
+<!--
+
+if (document.images) {
+  image1on = new Image();
+  image1on.src = "/technology/memory/rdram/pix/pgnav_pc800_on.gif";
+
+  image2on = new Image();
+  image2on.src = "/technology/memory/rdram/pix/pgnav_pc700_on.gif";
+
+  image3on = new Image();
+  image3on.src = "/technology/memory/rdram/pix/pgnav_pc600_on.gif";
+
+  image1off = new Image();
+  image1off.src = "/technology/memory/rdram/pix/pgnav_pc800.gif";
+
+  image2off = new Image();
+  image2off.src = "/technology/memory/rdram/pix/pgnav_pc700.gif";
+
+  image3off = new Image();
+  image3off.src = "/technology/memory/rdram/pix/pgnav_pc600.gif";
+
+}
+
+function changeImages() {
+  if (document.images) {
+    for (var i=0; i&amp;amp;amp;amp;lt;changeImages.arguments.length; i+=2) {
+      document[changeImages.arguments[i]].src = eval(changeImages.arguments[i+1] + ".src");
+    }
+  }
+}
+
+// -->
+</script>
+</head>
+<body  dhtmlnav="1;">
+<a  name="IntelTop"></a>
+<script >
+<!--
+if (window.status) window.status=defaultStatus; // -->
+</script>
+<!-- Developer Header -->
+<table  TABID="00882" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr >
+<td  colspan="8">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="http://developer.intel.com/">
+<img ></img>
+</a>
+<br ></br>
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="http://developer.intel.com/sites/developer/contents.htm?iid=devheader+contents&">
+<img ></img>
+</a>
+</td>
+<td  valign="top">
+<a  href="http://developer.intel.com/sites/developer/search.htm?iid=devheader+search&">
+<img ></img>
+</a>
+</td>
+<td  valign="top">
+<a  href="http://developer.intel.com/design/sitehelp/index.htm?iid=devheader+contact&">
+<img ></img>
+</a>
+</td>
+<td  valign="top">
+<a  href="http://support.intel.com/sites/support/index.htm?iid=devheader+support&">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<a  href="http://www.intel.com">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!-- End Developer Header -->
+<table  TABID="00891" border="0" cellpadding="0" cellspacing="0" width="723">
+<tr >
+<!-- LEFT HAND NAVIGATION -->
+<td  bgcolor="#FF9900" width="1">
+<img ></img>
+</td>
+<td  bgcolor="#FFFFCC" valign="top" width="171">
+<img ></img>
+<br ></br>
+<script >
+<!--
+/* IE 4.5 Mac Fix */ if (isIE&amp;amp;amp;amp;amp;&amp;amp;amp;amp;amp;isMac&amp;amp;amp;amp;amp;&amp;amp;amp;amp;amp;(navigator.appVersion.indexOf('4.')!=-1)) document.write('&amp;amp;amp;amp;lt;IMG SRC="/sites/developer/i/sp0033ff.gif" WIDTH="171" HEIGHT="0"&amp;amp;amp;amp;gt;'); //-->
+</script>
+<!-- Navigation Buttons -->
+<table  TABID="00883" border="0" cellpadding="0" cellspacing="0" width="171">
+<tr >
+<td >
+<a  onmouseout="d_navOut(prod);">
+<img ></img>
+</a>
+</td>
+</tr>
+<!-- Menu Positioning Image -->
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseout="d_navOut(plat);">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseout="d_navOut(soft);">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  onmouseout="d_navOut(tech);">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- End Navigation Buttons -->
+<!-- NAVIGATION LINKS -->
+<!-- ORANGE TAB -->
+<img ></img>
+<a  href="/technology/memory/">
+<img ></img>
+</a>
+<!-- /ORANGE TAB -->
+<!-- BULLETED LINKS -->
+<table  TABID="00884" align="left" border="0" cellpadding="0" cellspacing="0" width="162">
+<tr >
+<td  colspan="2" width="162">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top" width="162">
+<img ></img>
+<font  color="#333333" helvetica="#DEFAULT">
+Direct RDRAM
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" width="162">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="16">
+<img ></img>
+</td>
+<td  valign="top" width="146">
+<font  helvetica="#DEFAULT" size="1">
+<a  href="/technology/memory/rdram/valid/">
+Validation Overview
+</a>
+<br ></br>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" width="162">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="16">
+<img ></img>
+</td>
+<td  valign="top" width="146">
+<font  helvetica="#DEFAULT" size="1">
+<a  href="/technology/memory/rdram/rimmdes.htm">
+RIMM Module Reference Designs Overview
+</a>
+<br ></br>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" width="162">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2" valign="top" width="162">
+<img ></img>
+<font  color="#333333" helvetica="#DEFAULT">
+PC SDRAM
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" width="162">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="16">
+<img ></img>
+</td>
+<td  valign="top" width="146">
+<font  helvetica="#DEFAULT" size="1">
+<a  href="/technology/memory/pcsdram/valid/">
+Validation Overview
+</a>
+<br ></br>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" width="162">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="16">
+<img ></img>
+</td>
+<td  valign="top" width="146">
+<font  helvetica="#DEFAULT" size="1">
+<a  href="/technology/memory/pcsdram/spec/">
+Specifications Overview
+</a>
+<br ></br>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" width="162">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="16">
+<img ></img>
+</td>
+<td  valign="top" width="146">
+<font  helvetica="#DEFAULT" size="1">
+<a  href="/technology/memory/pcsdram/pcsdram.htm">
+DIMM Module Reference Designs Overview
+</a>
+<br ></br>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" width="162">
+<img ></img>
+</td>
+</tr>
+<!-- Related Sites -->
+<tr >
+<td  colspan="2" valign="top" width="162">
+<img ></img>
+<font  color="#333333" helvetica="#DEFAULT">
+Related Sites
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" width="162">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="16">
+<img ></img>
+</td>
+<td  valign="top" width="146">
+<font  helvetica="#DEFAULT" size="1">
+<a  href="/design/chipsets/">
+Intel Chipsets
+</a>
+<br ></br>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" width="162">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="16">
+<img ></img>
+</td>
+<td  valign="top" width="146">
+<font  helvetica="#DEFAULT">
+<a  href="http://support.intel.com/support/graphics/intel740/">
+Performance PC Graphics Memory
+</a>
+<br ></br>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="2" width="162">
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- /Related Sites -->
+<!-- /NAVIGATION LINKS -->
+</td>
+<td  bgcolor="#FF9900" valign="top" width="3">
+<img ></img>
+</td>
+<!-- /LEFT HAND NAVIGATION -->
+<!-- RIGHT HAND CONTENT -->
+<td  valign="top" width="580">
+<!-- PRODUCT BANNER HEADER -->
+<table  TABID="00885" border="0" cellpadding="0" cellspacing="0" width="580">
+<tr >
+<td  valign="top" width="580">
+<img ></img>
+<br ></br>
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- /PRODUCT BANNER HEADER -->
+<!-- CONTENT -->
+<table  TABID="00889" border="0" cellpadding="0" cellspacing="0" width="580">
+<tr >
+<td  valign="top" width="16">
+<img ></img>
+</td>
+<td  valign="top" width="564">
+<font  helvetica="#DEFAULT" size="2">
+<!-- Page Navigation -->
+</font>
+<blockquote >
+<a >
+<img ></img>
+</a>
+<br ></br>
+<a >
+<img ></img>
+</a>
+<br ></br>
+<a >
+<img ></img>
+</a>
+</blockquote>
+Listed below are the results of testing a small number of RIMM modules on the Intel customer reference motherboard(s). The reference motherboard is intended for evaluation purposes only. We are providing this information to complement RIMM data sheet validation, and as a guide to module performance with the Intel® 820 chipset customer reference platform or Intel® 850 chipset platform (Intel® Desktop Board D850GB) or BOTH platforms. The customer reference motherboard is intended for evaluation purposes only. This testing is not intended to replace the normal OEM module qualification process. For results on specific Intel or OEM production motherboards, refer to the OEM's list of qualified memory suppliers.
+<br ></br>
+<br ></br>
+<i >
+<b >
+Please note
+</b>
+: The Module Number_Date Codes in the tables below have the following color scheme as tested on:
+</i>
+<blockquote >
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Intel® 820 chipset customer reference platform
+</b>
+</font>
+<br ></br>
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Intel® 850 chipset platform (Intel® Desktop Board D850GB)
+</b>
+</font>
+<br ></br>
+<font  helvetica="#DEFAULT" size="2">
+<b >
+BOTH platforms
+</b>
+</font>
+</blockquote>
+<!-- Table 1 -->
+<a  name="PC800"></a>
+<table  TABID="00886" border="1" cellpadding="2" cellspacing="0" genuinetable="yes" tabletitle="PC800 Validated RIMM Modules " width="564">
+<tr >
+<td  align="center" bgcolor="#CCCCCC" colspan="4">
+<b >
+PC800 Validated RIMM Modules
+</b>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Supplier
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="105">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Module Density
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="100">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Device Configuration
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Module Number_Date Code
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+High Conn. Density
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HCD800R128N8C
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+High Conn. Density
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HCD800R128E8A
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+High Conn. Density
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HCD800R256N16C
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+High Conn. Density
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HCD800R256E16A
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+High Conn. Density
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx186
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HCD800R256E16C
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR13216H-845_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR14816H-845_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR16416H-845_0008
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR13218H-845_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR14818H-845_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR16418H-845_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR112818H-845_0021
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145">
+<b ></b>
+</td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Infineon
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYR183220G-845_006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Infineon
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYR186420G-845_0008
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Infineon
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYR186440G-845_0113
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Infineon
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYR1812840G-845_0113
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Kingston
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+KVR800x16-4/128_0103
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Kingston
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+KVR800x16-8/128_0003
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Kingston
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+KVR800x18-8/128_0003
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD800-64M-N1E_0006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD800-96M-N1E_0006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD800-128M-N1E_0006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD800-256M-N1E_0006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD800-E64M-T0M_0004
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD800-E96M-T0M_0004
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD800-E128M-T0M_0004
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD800-E256M-T0M_0004
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Micron
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MT8VR6418AG-845A2_0039
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R64CKE6B-845_9935
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R64CEE6C-845_9946
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R64CPE6C-845_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R96CKE6B-845_9939
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R96CEE6C-845_9946
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128CKE6B-845_9939
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128CPE6C-845_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128CEE6C-845_9946
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+192 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R192CKE6B-845_9936
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+192 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R192CEE6C-845_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R256CKE6B-845_9936
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R256CPE6C-845_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="120">
+<b >
+<font  size="2">
+NEC
+</font>
+</b>
+</td>
+<td  width="97">
+<font  size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="101">
+<font  size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="168">
+<font  color="#0033FF" size="2">
+<b >
+MC-4R256CEE6C-845_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R64FKE8D-845_0110
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128FKE8D-845_0113
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R256FKE8D-845_0113
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+512 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R512FKE8D-845_0112
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0824AN1-CK8_0020
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0824BN1-CK8_0049
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0834BN1-CK8_0109
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0828AMO-CK8_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0828AN1-CK8_0020
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0828BN1-CK8_0049
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0838BN1-CK8_0109
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R1624MNO-CK8_0031
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R1624MN1-CK8_0109
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R082GAN1-CK8_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R082GBN1-CK8_0113
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R1628MNO-CK8_0035
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R1628MN1-CK8_0109
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+512 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R162GMNO-CK8_0047
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0834BN1-CK8_0108
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0824BN1-CK8_0108
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0824AN1-CK8_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0824AS0-CK8_0102
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0828AN1-CK8_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0828BN1-CK8_0108
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0828AMO-CK8_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0838BN1-CK8_0108
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0828AS0-CK8_0042
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R082GAN1-CK8_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R082GBN1-CK8_0113
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R083GBN1-CK8_0108
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+512MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R162GMNO-CK8_0046
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Smart Modular
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+108M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+SMH072RFSAD01_0020
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Smart Modular
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+SMH064RFSAD01_0036
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Smart Modular
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+108M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+SMH108RFSAD01_0020
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Smart Modular
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+SMH096RFSAD01_0036
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Smart Modular
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+SMH128RFSAD01_0020
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Smart Modular
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+SMH144RFSAD01_0035
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Smart Modular
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+SMH256RFSAD01_0036
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Smart Modular
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+SMH256RFSAD01_0020
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N4-8_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N4E-8_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N8-8_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N8E-8_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N16-8_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N16E-8_0014
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E4-8_9945
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E4E-8_0014
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR2E2Z-8_0113
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E8-8_9945
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E8E-8_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR2E4-8_0113
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E16-8_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR2E8Z-8_0113
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E16E-8_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+512 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR2E16-8_0102
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Viking
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+R64168Z8N2-40_0014
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Viking
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+R64188Z8N2-40_0014
+</b>
+</font>
+</td>
+</tr>
+</table>
+<!-- /Table 1 -->
+<br ></br>
+<a  href="#IntelTop">
+<img ></img>
+</a>
+<br ></br>
+<br ></br>
+<!-- Table 2 -->
+<a  name="PC700"></a>
+<table  TABID="00887" border="1" cellpadding="2" cellspacing="0" genuinetable="yes" tabletitle="PC700 Validated RIMM Modules " width="564">
+<tr >
+<td  align="center" bgcolor="#CCCCCC" colspan="4">
+<b >
+PC700 Validated RIMM Modules
+</b>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Supplier
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="105">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Module Density
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="100">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Device Configuration
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Module Number_Date Code
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR13216H-745_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR14816H-745_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR16416H-745_0008
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR13218H-745_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR14818H-745_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR16418H-745_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Infineon
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+72 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYR183220G-745_006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Infineon
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYR186420G-745_0008
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Infineon
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYR1812820G_0030
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD700-64M-NIE_0006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD700-96M-NIE_0006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD700-128M-NIE_0006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD700-256M-NIE_0006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD700-E64M-T0M_0004
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD700-E96M-T0M_0004
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD700-E128M-T0M_0004
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+RD700-E256M-T0M_0006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Micron
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MT8VR6418AG-745_0035
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R64CKE6B-745_9936
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R64CPE6C-745_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R64CEE6C-745_9946
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R96CKE6B-745_9939
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R96CEE6C-745_9946
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128CKE6B-745_9935
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128CPE6C-745_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128CEE6C-745_9946
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+192 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R192CKE6B-745_9936
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+192 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R192CEE6C-745_9949
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R256CKE6B-745_9936
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R256CEE6C-745_9946
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R256CPE6C-745_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128FKE8D-745_0043
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+512 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R512FKE8D-745_0036
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0824AN1-CK7_9933
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0824BN1-CK7_0103
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0828AN1-CK7_0020
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0828BN1-CK7_0103
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R082GAN1-CK7_9937
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R082GBN1-CK7_0103
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0824AN1-CK7_9932
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0824BN1-CK7_0103
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0828AN1-CK7_9932
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128 M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0828BN1-CK7_0103
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R082GAN1-CK7_9935
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R082GBN1-CK7_0103
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Smart Modular
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+SMH072RFSAH01
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Smart Modular
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+SMH144RFSAH01
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N4-7_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N4E-7_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N8-7_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N8E-7_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N16-7_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N16E-7_0014
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E4-7_9945
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E4E-7_0014
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E8-7_9945
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E8E-7_0014
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E16-7_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E16E-7_0014
+</b>
+</font>
+</td>
+</tr>
+</table>
+<!-- /Table 2 -->
+<br ></br>
+<a  href="#IntelTop">
+<img ></img>
+</a>
+<br ></br>
+<br ></br>
+<!-- Table 3 -->
+<a  name="PC600"></a>
+<table  TABID="00888" border="1" cellpadding="2" cellspacing="0" genuinetable="yes" tabletitle="PC600 Validated RIMM Modules " width="564">
+<tr >
+<td  align="center" bgcolor="#CCCCCC" colspan="4">
+<b >
+PC600 Validated RIMM Modules
+</b>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Supplier
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="105">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Module Density
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="100">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Device Configuration
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#0000FF" valign="bottom" width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Module Number_Date Code
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR13216H-653_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR14816H-653_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR16416H-653_0008
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR13218H-653_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR14818H-653_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Hyundai
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYMR16418H-653_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Infineon
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYR183220G-653_006
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Infineon
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYR186420G-653_0008
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Infineon
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+HYR1812820G-653_0030
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Melco Inc. "Buffalo"
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+<font  color="#66CC33">
+RD600-E256M
+</font>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R64CKE6B-653_9937
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R64CPE6C-653_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R64CEE6C-653_9946
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R96CKE6B-653_9939
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+96 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R96CEE6C-653_9946
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128CKE6B-653_9937
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128CPE6C-653_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+192 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R196CKE6B-653_9936
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+192 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R196CEE6C-653_99E9
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R256CKE6B-653_9936
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128CEE6C-653_9946
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R256CEE6C-653_9946
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R64FKE8D-653_0110
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R128FKE8D-653_0043
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R256FKE8D-653_0043
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+NEC
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+512MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+288M-16Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MC-4R512FKE8D-653_0112
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0824AN1-CG6_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0824BN1-CG6_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0828AN1-CG6_9933
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R0828BN1-CG6_0102
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R082GAN1-CG6_9932
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR18R082GBN1-CG6_0102
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0824AN1-CG6_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0824BN1-CG6_0103
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0828AN1-CG6_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R0828BN1-CG6_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R082GAN1-CG6_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Samsung
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+MR16R082GBN1-CG6_0103
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99CCFF" width="145"></td>
+<td  bgcolor="#99CCFF" width="105"></td>
+<td  bgcolor="#99CCFF" width="100"></td>
+<td  bgcolor="#99CCFF" width="200"></td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N4-6_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N4E-6_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N8-6_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N8E-6_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N16-6_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB non-ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+128M-8Mx16
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1N16E-6_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E4-6_9945
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+64 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E4E-6_0048
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E8-6_9945
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+128 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E8E-6_0014
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E16-6_0010
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  width="145">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+Toshiba
+</b>
+</font>
+</td>
+<td  width="105">
+<font  helvetica="#DEFAULT" size="2">
+256 MB ECC
+</font>
+</td>
+<td  width="100">
+<font  helvetica="#DEFAULT" size="2">
+144M-8Mx18
+</font>
+</td>
+<td  width="200">
+<font  helvetica="#DEFAULT" size="2">
+<b >
+THMR1E16E-6_0048
+</b>
+</font>
+</td>
+</tr>
+</table>
+<!-- /Table 3 -->
+<p >
+<b >
+<a  href="/technology/memory/rdram_cts_ovlegal.htm">
+Validation Results Legal Information
+</a>
+</b>
+</p>
+<p >
+The following test labs have the capability of performing RIMM System Validation testing. For further information, please contact:
+<br ></br>
+<br ></br>
+</p>
+<blockquote >
+Advanced Validation Labs, Inc.
+<br ></br>
+17800 Newhope Street, Suite B
+<br ></br>
+Fountain Valley, CA 92708
+<br ></br>
+Attn: Rhonda Duda
+<br ></br>
+Phone: 714-435-2630
+<br ></br>
+Fax: 714-427-3752
+<br ></br>
+Email:
+<a  href="mailto:sales@validationlabs.com">
+sales@validationlabs.com
+</a>
+<br ></br>
+<br ></br>
+Computer Memory Test Labs
+<br ></br>
+101 Main Street, Suite 2G
+<br ></br>
+Huntington Beach, CA 92648
+<br ></br>
+Attn: John Deters
+<br ></br>
+Phone: 714-960-1243
+<br ></br>
+Fax: 714-960-4695
+<br ></br>
+Email:
+<a  href="mailto:jbdeters@cmtlabs.com">
+jbdeters@cmtlabs.com
+</a>
+<br ></br>
+Web site:
+<a  href="http://www.cmtlabs.com">
+www.cmtlabs.com
+</a>
+<br ></br>
+</blockquote>
+</td>
+</tr>
+</table>
+<!-- /CONTENT -->
+<!-- FOOTER SECTION -->
+<table  TABID="00890" border="0" cellpadding="0" cellspacing="0" width="548">
+<tr >
+<td  valign="top" width="16">
+<img ></img>
+</td>
+<td  valign="top" width="532">
+<br ></br>
+<a  href="#IntelTop">
+<img ></img>
+</a>
+<br ></br>
+<font  helvetica="#DEFAULT" size="2">
+<!-- StandardFooter -->
+<br ></br>
+<font  face="arial">
+<i >
+*
+<a  href="http://developer.intel.com/sites/developer/tradmarx.htm" target="_top">
+Legal Information
+</a>
+and
+<a  href="http://developer.intel.com/sites/developer/privacy.htm" target="_top">
+Privacy Policy
+</a>
+© 2001 Intel Corporation
+</i>
+</font>
+<!-- /StandardFooter -->
+</font>
+</td>
+</tr>
+</table>
+<!-- /FOOTER SECTION -->
+<!-- /RIGHT HAND CONTENT -->
+</td>
+</tr>
+</table>
+<!-- Developer Blue Footer -->
+<img ></img>
+<!-- /Developer Blue Footer -->
+<script >
+<!--
+if (document.js) writeLayers();
+
+if ((isIE)&amp;amp;amp;amp;amp;&amp;amp;amp;amp;amp;(navigator.appVersion.lastIndexOf('4.')&amp;amp;amp;amp;gt;0)) {
+var check4JS = new Function("n","if ((!document.loaded)&amp;amp;amp;amp;amp;&amp;amp;amp;amp;amp;(document.scripts[n])) whenPageLoaded('d_init()'); else d_init();");
+var nscr = document.scripts.length; setTimeout("check4JS(nscr)",50); } else d_init();
+
+// -->
+</script>
+</body>
+</html>

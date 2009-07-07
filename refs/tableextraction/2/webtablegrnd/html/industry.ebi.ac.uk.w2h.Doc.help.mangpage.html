@@ -1,0 +1,629 @@
+<html >
+<head >
+<script >
+<!-- to hide script contents from old browser
+function helpCard (title, func) {
+    var winProps = "scrollbars=1,toolbar=0,location=0,directories=0,menubar=0,width=450,height=350";
+    var winName = (document.forms[0].MULTI.checked ? '_blank' : 'helpCard');
+    var w = window.open ("", winName, winProps);
+    if (w == null) {
+        alert ('I cannot open help window\n(Probably it is a bug,\nlet me know, please...)\n');
+        return;
+    }
+    if (w.focus != null) w.focus();
+    w.document.close();
+//    w.document.open();
+    w.document.writeln ('&amp;amp;lt;HEAD&amp;amp;gt;&amp;amp;lt;TITLE&amp;amp;gt;Help Card&amp;amp;lt;/TITLE&amp;amp;gt;&amp;amp;lt;/HEAD&amp;amp;gt;&amp;amp;lt;BODY BGCOLOR="#dae3fd" TEXT="#008080"&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;TABLE WIDTH="100%"&amp;amp;gt;&amp;amp;lt;TR&amp;amp;gt;&amp;amp;lt;TD ALIGN=LEFT VALIGN=BOTTOM WIDTH="35%"&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;FORM&amp;amp;gt;&amp;amp;lt;FONT COLOR="#000000"&amp;amp;gt;&amp;amp;lt;INPUT TYPE="button" VALUE=" Close " onClick="self.close()"&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;/FONT&amp;amp;gt;&amp;amp;lt;/FORM&amp;amp;gt;&amp;amp;lt;/TD&amp;amp;gt;&amp;amp;lt;TH ALIGN=LEFT&amp;amp;gt;&amp;amp;lt;FONT SIZE="+2" COLOR="#990000"&amp;amp;gt;'+title+'&amp;amp;lt;/FONT&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;/TH&amp;amp;gt;&amp;amp;lt;/TR&amp;amp;gt;&amp;amp;lt;/TABLE&amp;amp;gt;&amp;amp;lt;CENTER&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;TABLE BORDER=5 WIDTH=100% HEIGHT=70% CELLPADDING=8 &amp;amp;gt;&amp;amp;lt;TR&amp;amp;gt;&amp;amp;lt;TH ALIGN=CENTER&amp;amp;gt;');
+    func(w.document);
+    w.document.writeln ('&amp;amp;lt;/TH&amp;amp;gt;&amp;amp;lt;/TR&amp;amp;gt;&amp;amp;lt;/TABLE&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;/CENTER&amp;amp;gt;&amp;amp;lt;/BODY&amp;amp;gt;');
+    w.document.close();
+    return;
+}
+
+function h_refresh (d) {
+    d.writeln ('The Results window stays open during your session. Use the Refresh button to update both the list of applications you have started and the list of output files.&amp;amp;lt;BR&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;BR&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;&amp;amp;lt;P&amp;amp;gt;&amp;amp;lt;IMG  SRC="icons/exclamation.gif" ALT="HINT" ALIGN=LEFT HEIGHT="40" HSPACE="10" &amp;amp;gt; Use this button to check whether a job you just started has completed. In this case the status of the job will change from empty value to zero.&amp;amp;lt;/P&amp;amp;gt;&amp;amp;lt;BR CLEAR=LEFT&amp;amp;gt;');
+}
+
+function h_auto (d) {
+    d.writeln ('If you do not want to use the Refresh button for some reason,&amp;amp;lt;BR&amp;amp;gt; you can switch Auto &amp;amp;lt;B&amp;amp;gt; on &amp;amp;lt;/B&amp;amp;gt; and define a &amp;amp;lt;B&amp;amp;gt; delay &amp;amp;lt;/B&amp;amp;gt; time interval after which the Results window will be refreshed automatically.'); 
+}
+
+function h_view (d) {
+    d.writeln ('The button allows you to &amp;amp;lt;B&amp;amp;gt; view &amp;amp;lt;/B&amp;amp;gt; and browse through your directories on our server.&amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('To view a file or directory simply click on the name. &amp;amp;lt;P&amp;amp;gt;');
+}
+
+function h_multi (d) {
+    d.writeln ('Enable this function, if you want to view more than one of your result files at the same time. Each viewed file will be displayed in a new window.&amp;amp;lt;P&amp;amp;gt;')
+    d.writeln ('If not enabled the files are going to be displayed in one window. Here you can go back and forward using the Netscape menu you get when pressing the right mouse button).');
+}
+
+function h_help (d) {
+    d.writeln ("If you are reading this you already know how to use it, don't you? &amp;amp;lt;br&amp;amp;gt;&amp;amp;amp;lt;grin&amp;amp;amp;gt;");
+}
+
+function h_close (d) {
+    d.writeln ('Clicking on this button closes the Results window.&amp;amp;lt;p&amp;amp;gt;');
+    d.writeln ('The current application and output lists are not lost.&amp;amp;lt;P&amp;amp;gt; They will reappear when you open the Results window again.');
+}
+
+function h_log (d) {
+    d.writeln ('Here you can view the log file of any application you have started. It pops up when you click on one of your listed jobs.');
+    d.writeln ('The log contains &amp;amp;lt;/center&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt; time the job was started and finished &amp;amp;lt;li&amp;amp;gt; list of parameters defined for the application');
+    d.writeln ('&amp;amp;lt;li&amp;amp;gt; list of terminal output files, and &amp;amp;lt;li&amp;amp;gt; error messages &amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;center&amp;amp;gt;');
+    d.writeln ('Within the log file, names of all existing output files are highlighted. Click on them to view the output file.&amp;amp;lt;p&amp;amp;gt;');
+}
+
+function h_jid (d) {
+    d.writeln ('Every listed job is identified by ID number. &amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('Click on the check box next to the ID number to mark a particular job, that you want to remove or stop using the &amp;amp;lt;em&amp;amp;gt;Remove/KillMarked&amp;amp;lt;/em&amp;amp;gt; button.');
+}
+
+function h_job (d) {
+    d.writeln ('Every job you start will be listed in this column. The job stays in this list until you remove it. &amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('To delete a job from the list of applications or to stop a running job click on the check box next to its ID-number and use the &amp;amp;lt;em&amp;amp;gt;Remove/KillMarked&amp;amp;lt;/em&amp;amp;gt; button.&amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('If you click on the &amp;amp;lt;em&amp;amp;gt; application_name &amp;amp;lt;/em&amp;amp;gt; the log file will be displayed. Particulars of the job such as parameters, error messages, terminal output list etc. can be viewed here. &amp;amp;lt;P&amp;amp;gt;');
+}
+
+function h_status (d) {
+    d.writeln ('This column tells you the job status, i.e. whether your job is still running, ');
+    d.writeln ('has been completed successfully or terminated.');
+    d.writeln ('&amp;amp;lt;/center&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;RUNNING&amp;amp;lt;/b&amp;amp;gt;: The job is still running. You can check the box');
+    d.writeln ('and stop the job using the &amp;amp;lt;em&amp;amp;gt;Remove/KillMarked&amp;amp;lt;/em&amp;amp;gt; button. &amp;amp;lt;BR&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;IMG ALIGN=BOTTOM SRC="icons/exclamation.gif" HEIGHT=25&amp;amp;gt; Press the &amp;amp;lt;em&amp;amp;gt; Refresh &amp;amp;lt;/em&amp;amp;gt;');
+    d.writeln ('button to update the status column. &amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;DONE&amp;amp;lt;/b&amp;amp;gt;: The job has been completed successfully.');
+    d.writeln ("&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;ERROR&amp;amp;lt;/b&amp;amp;gt;: The job has been stopped. An error occurred. &amp;amp;lt;BR&amp;amp;gt;");
+    d.writeln ("View the &amp;amp;lt;B&amp;amp;gt; log &amp;amp;lt;/B&amp;amp;gt; file (click onto the application name) to");
+    d.writeln ("find out why the job has been terminated. &amp;amp;lt;BR&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;");
+}
+
+function h_oid (d) {
+    d.writeln ('Every listed output file is identified by ID number. This ID number corresponds to your job ID number.&amp;amp;lt;p&amp;amp;gt;');
+    d.writeln ('Click on the check box next to the ID number to mark the output file. The marked files can then be processed or removed from the list.&amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;IMG SRC="icons/exclamation.gif" ALIGN=BOTTOM &amp;amp;gt; To view the output file simply click on its name. The file does not have to be marked.');
+}
+
+function h_type (d) {
+    d.writeln ('This shows the type of file listed:&amp;amp;lt;/center&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;T&amp;amp;lt;/b&amp;amp;gt; for text file &amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;S&amp;amp;lt;/b&amp;amp;gt; for sequence &amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;L&amp;amp;lt;/b&amp;amp;gt; for sequence list &amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;G&amp;amp;lt;/b&amp;amp;gt; for graphic output, and &amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;N&amp;amp;lt;/b&amp;amp;gt; for non-displayable file (probably binary)&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;center&amp;amp;gt;');
+}
+
+function h_rename (d) {
+    d.writeln ('Use this feature to organize your Working Directory');
+    d.writeln ('and projects by renaming your result files.');
+    d.writeln ('During your session all output files are automatically created in the current Working Directory');
+    d.writeln ('on our server. With the &amp;amp;lt;em&amp;amp;gt; Rename&amp;amp;lt;/em&amp;amp;gt; button you can rename an output file. &amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;IMG SRC="icons/exclamation.gif" HEIGHT="40"&amp;amp;gt; You can also save a file on YOUR LOCAL computer. &amp;amp;lt;BR&amp;amp;gt; Click on');
+    d.writeln ('the output name to view the file and use &amp;amp;lt;BR&amp;amp;gt;the netscape function &amp;amp;lt;em&amp;amp;gt;save as&amp;amp;lt;/em&amp;amp;gt;, where you can define the directory you want to save to.');
+}
+
+function h_oremove (d) {
+    d.writeln ('This button helps you cleaning up your Results window.&amp;amp;lt;P&amp;amp;gt; It removes the marked output files from the list of output files.&amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;BR&amp;amp;gt;&amp;amp;lt;IMG ALIGN=LEFT SRC="icons/exclamation.gif" HEIGHT="40" HSPACE="5"&amp;amp;gt;Cleaning up your Results window does NOT delete the files from your Working Directory on the server. To delete files from the Working Directory use the function &amp;amp;lt;em&amp;amp;gt; Delete from Disk &amp;amp;lt;/em&amp;amp;gt;.');
+}
+
+function h_delete (d) {
+    d.writeln ('Deletes the marked output files from your Working Directory on the server. The Results window is also updated automatically. You are prompted to confirm before a file is deleted.&amp;amp;lt;p&amp;amp;gt;');
+}
+
+function h_mark (d) {
+    d.writeln ('With this button you can mark all listed jobs or output files.');
+    d.writeln ('You might want to remove all the old jobs from your Working Directory. Be sure you have saved the files you still need under a different name or on your local computer.');
+}
+
+function h_unmark (d) {
+    d.writeln ('With this button you can unmark all listed jobs or output files.');
+}
+
+function h_output (d) {
+    d.writeln ('Click onto the result file name to view its contents.');
+}
+
+function h_jremove (d) {
+    d.writeln ('Use this button to: &amp;amp;lt;ul&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;B&amp;amp;gt; Remove &amp;amp;lt;/B&amp;amp;gt; marked jobs and their log file from your Results window. The output files are not affected.&amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;Kill&amp;amp;lt;/b&amp;amp;gt; a running job you want to terminate.&amp;amp;lt;/ul&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;IMG SRC="icons/exclamation.gif" ALIGN=BOTTOM &amp;amp;gt;Don`t forget to &amp;amp;lt;B&amp;amp;gt; mark &amp;amp;lt;/B&amp;amp;gt; the job you want to remove or kill using the check box next to the ID number.');
+}
+
+//  -- end hiding -->
+</script>
+<title >
+W2H Help - Results Window
+</title>
+</head>
+<!-- ******************* end of document head ******************* -->
+<body  bgcolor="#FFFFFF" link="#000080" text="#008080" vlink="#000080">
+<table  TABID="05340" border="0" cellpadding="10">
+<tr >
+<!-- ******************* start of help header ******************* -->
+<form >
+<td  bgcolor="#F5F5F5" colspan="2">
+<table  TABID="05326" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="left"></td>
+<td  align="right">
+<font  color="#000000" size="-1">
+Check this box to get HelpCards in multiple windows
+<input ></input>
+</font>
+</td>
+</tr>
+</table>
+</td>
+</form>
+</tr>
+<!-- ******************* end of help header ******************* -->
+<tr >
+<td  bgcolor="#F5F5F5" valign="top" width="15%">
+<br ></br>
+<table  TABID="05327" border="0">
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="startpage.html">
+Main Window
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="uploadpage.html">
+Upload Window
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="apppage.html">
+Application Window
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+Results Window
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="fetchpage.html">
+Fetch Utility
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="sspage.html">
+Sequence Selector
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="searchsetpage.html">
+Search Set Builder
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="graphpage.html">
+Graphics Viewer
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="alertspage.html">
+Alerts Window
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="projpage.html">
+User Projects
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="chooserpage.html">
+Pattern Chooser
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="chattrpage.html">
+Change Attributes
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="setuppage.html">
+Setup Window
+</a>
+</font>
+</td>
+</tr>
+</table>
+</td>
+<td >
+<center >
+<h2 >
+Results Manager Window
+</h2>
+<table  TABID="05328" border="2" cellpadding="8">
+<tr >
+<td >
+<img ></img>
+The Results window gives you an overview of the applications you started (lower left frame), their status (status column) and their output files (lower right frame). From here you can view and print your results. You can save output files under different names, or delete them. You can also kill a running job in this window.
+<br ></br>
+A log file is displayed for each job. This helps you keeping track if different jobs with the same application were started.
+<p >
+<img ></img>
+The
+<b >
+Refresh
+</b>
+button updates the contents of your Results window. Use the "Remove" function to clean up this window.
+<br ></br>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="05339" bgcolor="DAE3FD" border="1" cellspacing="0" width="100%">
+<tr >
+<td  colspan="2">
+<table  TABID="05332" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="20%">
+<!-- ******************* start of refresh window ******************** -->
+<table  TABID="05330" border="5" width="100%">
+<tr >
+<td >
+<table  TABID="05329" border="0" cellpadding="3" cellspacing="0">
+<tr >
+<th  bgcolor="#FFFACD">
+<a  href="javascript:helpCard('<EM>Button</EM> Close', h_close)">
+Close
+</a>
+</th>
+</tr>
+<tr >
+<th  bgcolor="#FFFACD">
+<a  href="javascript:helpCard('<EM>Button</EM> Help', h_help)">
+Help
+</a>
+</th>
+</tr>
+<tr >
+<th  bgcolor="#FFFACD">
+<a  href="javascript:helpCard('<EM>Button</EM> Refresh', h_refresh)">
+Refresh
+</a>
+</th>
+</tr>
+<tr >
+<th >
+<a  href="javascript:helpCard('Automatic refresh', h_auto)">
+Auto
+</a>
+</th>
+</tr>
+<tr >
+<th >
+on/off
+<br ></br>
+Delay
+</th>
+</tr>
+<tr >
+<th  bgcolor="#FFFACD">
+<a  href="javascript:helpCard('<EM>Button</EM> Files', h_view)">
+Files
+</a>
+</th>
+</tr>
+<tr >
+<th >
+<a  href="javascript:helpCard('<EM>Check box</EM> Multiple Windows', h_multi)">
+Multiple windows
+</a>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- ******************* end of refresh window ******************** -->
+</td>
+<td >
+<!-- ******************* start of log window ******************** -->
+<table  TABID="05331" border="5" cellpadding="70" height="100%" width="100%">
+<tr >
+<th >
+Application
+<a  href="javascript:helpCard('Application Log', h_log)">
+Log
+</a>
+<br ></br>
+(report about a running/finished
+<br ></br>
+application)
+</th>
+</tr>
+</table>
+<!-- ******************** end of log window ********************** -->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<!-- ******************* start of jobs window *********************** -->
+<table  TABID="05335" border="5" width="100%">
+<tr >
+<td >
+<table  TABID="05334" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr >
+<th >
+List of Applications
+</th>
+</tr>
+<tr >
+<th  bgcolor="#FFFACD">
+<a  href="javascript:helpCard('<EM>Button</EM> Mark All', h_mark)">
+Mark all
+</a>
+<a  href="javascript:helpCard('<EM>Button</EM> UnMark', h_unmark)">
+UnMark
+</a>
+<br ></br>
+<a  href="javascript:helpCard('<EM>Button</EM> Remove / Kill marked', h_jremove)">
+Remove/Kill marked
+</a>
+</th>
+</tr>
+<tr >
+<td >
+<table  TABID="05333" genuinetable="yes" border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr >
+<th >
+<a  href="javascript:helpCard('<EM>Choice Boxes</EM> Select Application', h_jid)">
+ID
+</a>
+</th>
+<th >
+<a  href="javascript:helpCard('Application name', h_job)">
+Application
+</a>
+</th>
+<th >
+Started
+</th>
+<th >
+<a  href="javascript:helpCard('Application Status', h_status)">
+Status
+</a>
+</th>
+</tr>
+<tr >
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+</tr>
+<tr >
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- ******************** end of jobs window ********************** -->
+</td>
+<td >
+<!-- ******************* start of outputs window *********************** -->
+<table  TABID="05338" border="5" width="100%">
+<tr >
+<td >
+<table  TABID="05337" border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr >
+<th >
+List of Output Files
+</th>
+</tr>
+<tr >
+<th  bgcolor="#FFFACD">
+<a  href="javascript:helpCard('<EM>Button</EM> Mark All', h_mark)">
+Mark all
+</a>
+<a  href="javascript:helpCard('<EM>Button</EM> UnMark', h_unmark)">
+UnMark
+</a>
+<a  href="javascript:helpCard('<EM>Button</EM> Rename', h_rename)">
+Rename
+</a>
+<a  href="javascript:helpCard('<EM>Button</EM> Remove from List', h_oremove)">
+Remove from List
+</a>
+<a  href="javascript:helpCard('<EM>Button</EM> Delete from Disk', h_delete)">
+Delete from Disk
+</a>
+</th>
+</tr>
+<tr >
+<td >
+<table  TABID="05336" genuinetable="yes" border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr >
+<th >
+<a  href="javascript:helpCard('<EM>Choice Boxes</EM> Select Output File', h_oid)">
+ID
+</a>
+</th>
+<th >
+<a  href="javascript:helpCard('Output File', h_output)">
+Output File
+</a>
+</th>
+<th >
+Size
+</th>
+<th >
+<a  href="javascript:helpCard('Output Type', h_type)">
+Type
+</a>
+</th>
+</tr>
+<tr >
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+</tr>
+<tr >
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- ******************** end of outputs window ********************** -->
+</td>
+</tr>
+</table>
+</center>
+<p ></p>
+</td>
+</tr>
+</table>
+<div  align="right">
+<font  size="-3">
+<!-- hhmts start -->
+Last modified: Mon Sep 25 17:30:50 2000
+<!-- hhmts end -->
+</font>
+</div>
+</body>
+</html>

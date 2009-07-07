@@ -1,0 +1,746 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<title >
+Unisys Weather
+</title>
+<script >
+<!-- HIDE
+var zipcode = ""
+function gotoSetup() {
+   var index = document.cookie.indexOf("ZIP")
+   if( index != -1 ){
+      zipcode = document.cookie.substring(index+4,index+9)
+      if( ! isNaN(zipcode))
+         document.Forecast.Name.value = parseInt(zipcode)
+      }
+   return true;
+   }
+// UNHIDE -->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" link="#0000FF" onload="gotoSetup()" vlink="#800000">
+<table  TABID="06095" border="0" cellpadding="2">
+<tr >
+<td  bgcolor="#FFFFFF" valign="top" width="150">
+<a  href="http://www.unisys.com">
+<img ></img>
+</a>
+<table  TABID="06091" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="white" valign="top" width="100%">
+<a  href="http://www.unisys.com">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+Unisys Home Page
+</b>
+</small>
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="white" valign="top" width="100%">
+<a  href="http://www.unisys.com/biz/trans">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+Unisys Transportation
+</b>
+</small>
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="white" valign="top" width="100%">
+<a  href="solutions/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+Weather Solutions
+</b>
+</small>
+</font>
+</a>
+</td>
+</tr>
+</table>
+<table  TABID="06092" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#800000" valign="top" width="100%">
+<a  href="index.html">
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+Unisys Weather
+</b>
+</small>
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#b0b0d0" valign="top" width="100%">
+<a  href="index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Home
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="info/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Information
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="content.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Contents
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#505070" valign="top" width="100%">
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+Analyses
+</b>
+</small>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#b0b0d0" valign="top" width="100%">
+<a  href="satellite/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Satellite Images
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="surface/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Surface Data
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="upper_air/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Upper Air Data
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="radar/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Radar Data
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#505070" valign="top" width="100%">
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+Forecasts
+</b>
+</small>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#b0b0d0" valign="top" width="100%">
+<a  href="mos/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Model Statistics
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="ngm/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+NGM Model
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="eta/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Eta Model
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="aviation/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+AVN Model
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="mrf/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+MRF Model
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="ruc/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+RUC Model
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="ecmwf/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+ECMWF Model
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#505070" valign="top" width="100%">
+<font  color="#FFFFFF" face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+Miscellaneous
+</b>
+</small>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#b0b0d0" valign="top" width="100%">
+<a  href="hurricane/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Hurricane Data
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="archive/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Archive of Images
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+<a  href="usgs/index.html">
+<font  color="#000000" face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+USGS Maps
+</b>
+</small>
+</small>
+</font>
+</a>
+<br ></br>
+</td>
+</tr>
+</table>
+<form  action="forecast.cgi" method="post" name="Forecast">
+<p  align="center">
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<small >
+<b >
+Enter a zip code or city name to get forecast:
+<br ></br>
+</b>
+</small>
+</small>
+</font>
+</p>
+<div  align="center">
+<input ></input>
+<br ></br>
+<input ></input>
+<a  href="foresetup.html">
+<img ></img>
+</a>
+</div>
+</form>
+<script >
+<!-- HIDE
+var index = document.cookie.indexOf("ZIP")
+var zipcode = 0
+var region = ""
+if( index != -1 ){
+   zipcode = parseInt( document.cookie.substring(index+4,index+9))
+   if( zipcode &amp;amp;gt;= 01000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 19699 )
+      region = "_ne"
+   else if( zipcode &amp;amp;gt;= 19700 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 28999 )
+      region = "_at"
+   else if( zipcode &amp;amp;gt;= 43000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 45999 )
+      region = "_at"
+   else if( zipcode &amp;amp;gt;= 29000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 36999 )
+      region = "_se"
+   else if( zipcode &amp;amp;gt;= 38600 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 39999 )
+      region = "_se"
+   else if( zipcode &amp;amp;gt;= 46000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 58999 )
+      region = "_mw"
+   else if( zipcode &amp;amp;gt;= 60000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 62999 )
+      region = "_mw"
+   else if( zipcode &amp;amp;gt;= 68000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 69999 )
+      region = "_mw"
+   else if( zipcode &amp;amp;gt;= 63000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 67999 )
+      region = "_cp"
+   else if( zipcode &amp;amp;gt;= 71600 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 74999 )
+      region = "_cp"
+   else if( zipcode &amp;amp;gt;= 70000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 71499 )
+      region = "_sp"
+   else if( zipcode &amp;amp;gt;= 75000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 79999 )
+      region = "_sp"
+   else if( zipcode &amp;amp;gt;= 59000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 59999 )
+      region = "_nw"
+   else if( zipcode &amp;amp;gt;= 82000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 83999 )
+      region = "_nw"
+   else if( zipcode &amp;amp;gt;= 97000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 99499 )
+      region = "_nw"
+   else if( zipcode &amp;amp;gt;= 80000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 81999 )
+      region = "_sw"
+   else if( zipcode &amp;amp;gt;= 84000 &amp;amp;amp;&amp;amp;amp; zipcode &amp;amp;lt;= 96199 )
+      region = "_sw"
+   if( region != "" ){
+      document.write( "&amp;amp;lt;table border=\"0\" width=\"100%\"&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;tr&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;td valign=\"top\" bgcolor=\"#505070\"&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;a href=\"surface/sfc" + region + ".html\"&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;font face=\"Arial, Helvetica, sans-serif\" color=\"#FFFFFF\"&amp;amp;gt;&amp;amp;lt;small&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;Sfc" )
+      document.write( "&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/small&amp;amp;gt;&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/a&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;/td&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;td valign=\"top\" bgcolor=\"#505070\"&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;a href=\"radar/rad" + region + ".html\"&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;font face=\"Arial, Helvetica, sans-serif\" color=\"#FFFFFF\"&amp;amp;gt;&amp;amp;lt;small&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;Rad" )
+      document.write( "&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/small&amp;amp;gt;&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/a&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;/td&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;td valign=\"top\" bgcolor=\"#505070\"&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;a href=\"satellite/sat_vis" + region + ".html\"&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;font face=\"Arial, Helvetica, sans-serif\" color=\"#FFFFFF\"&amp;amp;gt;&amp;amp;lt;small&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;Vis" )
+      document.write( "&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/small&amp;amp;gt;&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/a&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;/td&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;td valign=\"top\" bgcolor=\"#505070\"&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;a href=\"satellite/sat_ir_enh" + region + ".html\"&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;font face=\"Arial, Helvetica, sans-serif\" color=\"#FFFFFF\"&amp;amp;gt;&amp;amp;lt;small&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;IR" )
+      document.write( "&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/small&amp;amp;gt;&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/a&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;/td&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;/table&amp;amp;gt;" )
+      document.write( "&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/small&amp;amp;gt;&amp;amp;lt;/font&amp;amp;gt;" )
+      }
+   }
+// UNHIDE -->
+</script>
+<p  align="center">
+<a  href="noaaport/index.html">
+<img ></img>
+</a>
+</p>
+<p  align="center">
+<a  href="http://www.selfhelpdesk.com/">
+<img ></img>
+</a>
+</p>
+<p  align="center">
+<a  href="http://www.rsac.org/">
+<img ></img>
+</a>
+</p>
+</td>
+<td  bgcolor="#FFFFFF" valign="top" width="470">
+<img ></img>
+<br ></br>
+<p  align="center">
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+<a  href="news/internet_customers.html">
+Unisys Internet Delivered Weather Products - Difax, FOS, Radar, FAA604 (click here)
+</a>
+<br ></br>
+<a  href="noaaport/index.html">
+Unisys NOAAPORT Data Delivery System (click here)
+</a>
+<br ></br>
+<a  href="wxp/Overview.html">
+Unisys Weather Visualization Software (click here for WXP info)
+</a>
+</b>
+</small>
+</font>
+<map  name="forecast_map">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<img ></img>
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<i >
+Current satellite image and surface map (background is elevation relief)
+<br ></br>
+Click on map for forecast
+</i>
+</small>
+</font>
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+<a  href="images/sat_sfc_map_loop.html">
+[click here for loop]
+</a>
+</b>
+</small>
+</font>
+</p>
+<table  TABID="06093" border="0" width="100%">
+<tr >
+<td  valign="top" width="33%">
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+<a  href="satellite/sat_vis_us.html">
+Visible Satellite Image
+</a>
+</b>
+</small>
+</font>
+</td>
+<td  valign="top" width="33%">
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+<a  href="satellite/sat_ir_enh_us.html">
+Enh IR Satellite Image
+</a>
+</b>
+</small>
+</font>
+</td>
+<td  valign="top" width="33%">
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+<a  href="satellite/sat_sfc_map.html">
+Satellite Surface Map
+</a>
+</b>
+</small>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="33%">
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+<a  href="radar/rad_us.html">
+US Radar Summary
+</a>
+</b>
+</small>
+</font>
+</td>
+<td  valign="top" width="33%">
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+<a  href="eta/4panel/eta_pres_4panel.html">
+Eta Model Forecast
+</a>
+</b>
+</small>
+</font>
+</td>
+<td  valign="top" width="33%">
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+<a  href="mrf/mrf_500p_9panel.html">
+MRF 10 day Forecast
+</a>
+</b>
+</small>
+</font>
+</td>
+</tr>
+</table>
+<table  TABID="06094" bgcolor="#a5a5bb" width="100%">
+<tr >
+<td  valign="top" width="50%">
+<font  face="Arial, Helvetica, sans-serif">
+<b >
+NEWS - 10 April 01
+</b>
+</font>
+<p >
+<font  face="Arial, Helvetica, sans-serif">
+<small ></small>
+</font>
+</p>
+</td>
+<td  valign="top" width="50%">
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<b >
+<a  href="info/FAQ.html">
+FAQ
+</a>
+<br ></br>
+<a  href="info/first.html">
+First Time User
+</a>
+<br ></br>
+<a  href="survey.html">
+Site Survey
+</a>
+<br ></br>
+<a  href="guest_book.html">
+Guest Book
+</a>
+<br ></br>
+</b>
+</small>
+</font>
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+<br ></br>
+</small>
+</font>
+</td>
+</tr>
+</table>
+<p  align="center">
+<font  face="Arial, Helvetica, sans-serif">
+<small >
+The intent of this weather site is to provide a complete source of graphical weather information. This is intended to satisfy the needs of the weather professional but can be a tool for the casual user as well. The graphics and data are displayed as a meteorologist would expect to see. For the novice user, there are detailed explanation pages to guide them through the various plots, charts and images. The data on this site are provided from the
+<a  href="http://www.nws.noaa.gov">
+National Weather Service
+</a>
+via the
+<a  href="http://www.nws.noaa.gov/noaaport/html/noaaport.shtml">
+NOAAPORT
+</a>
+satellite data service. All the images are generated using the
+<a  href="wxp">
+Weather Processor (WXP)
+</a>
+analysis package which is available from Unisys.
+</small>
+</font>
+</p>
+</td>
+</tr>
+</table>
+<small >
+<a  href="http://www.unisys.com/ServerInformation/contact/copyright.html">
+©Unisys Corp. 2000
+</a>
+</small>
+<br ></br>
+<small >
+- For questions and information on this server, NOAAPORT and WXP, contact
+<a  href="mailto:devo@ks.unisys.com">
+Dan Vietor at
+<i >
+devo@ks.unisys.com
+</i>
+</a>
+<br ></br>
+- For sales information on Unisys weather solutions, contact
+<a  href="mailto:robert.benedict@unisys.com">
+Robert Benedict at
+<i >
+robert.benedict@unisys.com
+</i>
+</a>
+</small>
+<br ></br>
+<small >
+<i >
+<em >
+- Last modified May 7, 2001
+</em>
+</i>
+</small>
+</body>
+</html>

@@ -1,0 +1,768 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<title >
+Boundary Value Problems for ODEs:
+</title>
+</head>
+<body  alink="#FF0000" bgcolor="#FFD700" link="#FF0000" text="#000000" vlink="#0000FF">
+<address ></address>
+<br ></br>
+<p ></p>
+<hr ></hr>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  href="node1.html" name="tex2html1"></a>
+<a  href="node1.html" name="tex2html1"></a>
+<a  href="node1.html" name="tex2html1"></a>
+<a  href="node1.html" name="tex2html1"></a>
+<a  href="node1.html" name="tex2html1">
+<img ></img>
+</a>
+<img ></img>
+<img ></img>
+<br ></br>
+<font  size="+2">
+<b >
+Next:
+</b>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  href="node1.html" name="tex2html2"></a>
+<a  href="node1.html" name="tex2html2"></a>
+<a  href="node1.html" name="tex2html2"></a>
+<a  href="node1.html" name="tex2html2"></a>
+<a  href="node1.html" name="tex2html2">
+Buckling of a
+</a>
+</font>
+<center >
+<h1 >
+<font  size="+4">
+Boundary Value Problems for ODEs
+</font>
+</h1>
+</center>
+<center >
+<font  size="+2">
+George C. Hsiao and Richard J. Weinacht (Mathematical Sciences)
+</font>
+</center>
+<center >
+<font  size="+2">
+Abraham M. Lenhoff and Andrew Zydney (Chemical Engineering)
+</font>
+</center>
+<center >
+<font  size="+2">
+Jack R. Vinson (Mechanical Engineering)
+</font>
+</center>
+<center >
+<font  size="+4">
+University of Delaware
+</font>
+</center>
+<center >
+<img ></img>
+</center>
+<center >
+<h2 >
+<hr ></hr>
+</h2>
+</center>
+<font  size="+2">
+In addition to initial-value problems (IVPs) for ODEs one also encounters boundary-value problems (BVPs) for ODEs. If you want to see first some situations where BVPs arise you can click on
+</font>
+<ul >
+<ul >
+<ul >
+<a  href="node1.html">
+<img ></img>
+</a>
+<font  size="+2">
+<a  href="node1.html">
+Buckling of a Yardstick
+</a>
+</font>
+<p >
+<a  href="node5.html">
+<img ></img>
+</a>
+<font  size="+2">
+<a  href="node5.html">
+Delaware Tea Party - A Diffusion Process
+</a>
+</font>
+</p>
+<p >
+<a  href="node11.html">
+<img ></img>
+</a>
+<font  size="+2">
+<a  href="node11.html">
+Vibrating Elastic String - The Physics of Music
+</a>
+</font>
+</p>
+<p >
+<a  href="node100.html">
+<img ></img>
+</a>
+<font  size="+2">
+<a  href="node100.html">
+Vibrating Beam
+</a>
+</font>
+</p>
+</ul>
+</ul>
+</ul>
+<font  size="+2">
+You also can get a bit of orientation about BVPs by clicking on Orientation in the following Table of Contents.
+</font>
+<p ></p>
+<hr ></hr>
+<h1 >
+<b >
+Table of Contents
+</b>
+</h1>
+<ol >
+<li >
+<font  size="+2">
+<a  href="#orientation">
+Orientation
+</a>
+</font>
+</li>
+<li >
+<font  size="+2">
+<a  href="#situations">
+Situations where BVPs arise
+</a>
+</font>
+</li>
+<li >
+<font  size="+2">
+<a  href="#solving">
+Solving BVPs
+</a>
+</font>
+</li>
+<li >
+<font  size="+2">
+<a  href="#eigenvalue">
+Eigenvalue Problems (EVP)
+</a>
+</font>
+</li>
+<li >
+<font  size="+2">
+<a  href="#sturm">
+Sturm/Liouville Systems
+</a>
+</font>
+</li>
+</ol>
+<hr ></hr>
+<p >
+<a  name="orientation"></a>
+<img ></img>
+</p>
+<p ></p>
+<hr ></hr>
+<p ></p>
+<hr ></hr>
+<p >
+<font  size="+2">
+Consider the following simple but proto-typical example of a boundary-value problem (BVP) for an ordinary differential equation (ODE)
+</font>
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+<font  size="+2">
+where
+<img ></img>
+is some given "length''.
+</font>
+</p>
+<p >
+<font  size="+2">
+<b >
+Question:
+</b>
+How does this problem differ from an initial-value problem (IVP) for a second order ODE? Take as an example
+</font>
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+<font  size="+2">
+that you have (probably) encountered in examining the motion of a mass/spring system (linear oscillator).
+</font>
+</p>
+<p >
+<font  size="+2">
+Well, to get at the heart of the matter: in the case of the IVP the "side conditions'' are two initial conditions (ICs) specified at a single point t=0. In the case of the BVP the "side conditions'' are two boundary conditions (BCs), one specified at x=0 and the other specified at a different point
+<img ></img>
+. This is not merely a formal distinction but leads to very different results as we shall see.
+</font>
+</p>
+<p >
+<font  size="+2">
+In the case of the (IVP) it is fact [CLICK to another MODULE] that there is exactly one solution of the IVP. We recall here briefly how that solution is obtained:
+</font>
+</p>
+<dl >
+<dd >
+<font  size="+2">
+(1) The given (non-homogeneous) DE has the general solution [CLICK to another MODULE]
+</font>
+</dd>
+<p >
+<img ></img>
+</p>
+<p >
+<font  size="+2">
+because the corresponding homogeneous DE
+<img ></img>
+has general solution
+</font>
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+<font  size="+2">
+and because the function
+</font>
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+<font  size="+2">
+is a solution of the given non-homogeneous DE. This general solution can be obtained via MAPLE, although in Release 3 it does not yield our nice form directly.
+</font>
+</p>
+<dd >
+<font  size="+2">
+(2) The ICs imply that
+</font>
+</dd>
+<p >
+<img ></img>
+</p>
+<p >
+<font  size="+2">
+and so the solution of the (IVP) is
+</font>
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+<font  size="+2">
+which also can be obtained via MAPLE, again not directly with Release 3.
+</font>
+</p>
+</dl>
+<font  size="+2">
+Now using the same procedure just outlined you can solve the BVP (or more precisely you can solve the BVP when it can be solved and you can determine when the BVP has no solution --- MAPLE properly interpreted can also do the job but look at what MAPLE says if you give the BC
+<img ></img>
+for the case when
+<img ></img>
+--- recall that
+<img ></img>
+in MAPLE is Pi).
+</font>
+<p >
+<font  size="+2">
+Just do it! Right now solve the BVP. And discover that, in contrast to the IVP, the BVP does not always have exactly one solution.
+</font>
+</p>
+<p >
+<img ></img>
+<font  size="+2">
+Incidentally, if in the IVP you would prefer to have the non-homogeneous term in the DE to be the exact analogue of that for the BVP, just replace
+<img ></img>
+by t and then the solution of the IVP is
+</font>
+</p>
+<p >
+<a  name="situations"></a>
+<img ></img>
+</p>
+<p >
+<font  size="+2">
+as MAPLE will also tell you.
+<img ></img>
+</font>
+</p>
+<p >
+<a  name="situations"></a>
+<img ></img>
+<br ></br>
+</p>
+<hr ></hr>
+<p ></p>
+<hr ></hr>
+<ul >
+<li >
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  name="tex2html3"></a>
+<a  href="node1.html#SECTION00010000000000000000" name="tex2html3"></a>
+<a  href="node1.html#SECTION00010000000000000000" name="tex2html3"></a>
+<a  href="node1.html#SECTION00010000000000000000" name="tex2html3"></a>
+<a  href="node1.html#SECTION00010000000000000000" name="tex2html3"></a>
+<font  size="+2">
+<a  href="node1.html#SECTION00010000000000000000" name="tex2html3">
+Buckling of a Yardstick
+</a>
+</font>
+</li>
+<ul >
+<li >
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  name="tex2html4"></a>
+<a  href="node2.html#SECTION00011000000000000000" name="tex2html4"></a>
+<a  href="node2.html#SECTION00011000000000000000" name="tex2html4"></a>
+<a  href="node2.html#SECTION00011000000000000000" name="tex2html4"></a>
+<a  href="node2.html#SECTION00011000000000000000" name="tex2html4"></a>
+<font  size="+2">
+<a  href="node2.html#SECTION00011000000000000000" name="tex2html4">
+Solution of the BVP
+</a>
+</font>
+</li>
+<li >
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  name="tex2html5"></a>
+<a  href="node3.html#SECTION00012000000000000000" name="tex2html5"></a>
+<a  href="node3.html#SECTION00012000000000000000" name="tex2html5"></a>
+<a  href="node3.html#SECTION00012000000000000000" name="tex2html5"></a>
+<a  href="node3.html#SECTION00012000000000000000" name="tex2html5"></a>
+<font  size="+2">
+<a  href="node3.html#SECTION00012000000000000000" name="tex2html5">
+Relationship to the Physical Problem
+</a>
+</font>
+</li>
+<li >
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  name="tex2html6"></a>
+<a  href="node4.html#SECTION00013000000000000000" name="tex2html6"></a>
+<a  href="node4.html#SECTION00013000000000000000" name="tex2html6"></a>
+<a  href="node4.html#SECTION00013000000000000000" name="tex2html6"></a>
+<a  href="node4.html#SECTION00013000000000000000" name="tex2html6"></a>
+<font  size="+2">
+<a  href="node4.html#SECTION00013000000000000000" name="tex2html6">
+Evaluation
+</a>
+</font>
+</li>
+</ul>
+<li >
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  name="tex2html7"></a>
+<a  href="node5.html#SECTION00020000000000000000" name="tex2html7"></a>
+<a  href="node5.html#SECTION00020000000000000000" name="tex2html7"></a>
+<a  href="node5.html#SECTION00020000000000000000" name="tex2html7"></a>
+<a  href="node5.html#SECTION00020000000000000000" name="tex2html7"></a>
+<font  size="+2">
+<a  href="node5.html#SECTION00020000000000000000" name="tex2html7">
+Delaware Tea Party --- A Diffusion Process
+</a>
+</font>
+</li>
+<ul >
+<li >
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  name="tex2html8"></a>
+<a  href="node6.html#SECTION00021000000000000000" name="tex2html8"></a>
+<a  href="node6.html#SECTION00021000000000000000" name="tex2html8"></a>
+<a  href="node6.html#SECTION00021000000000000000" name="tex2html8"></a>
+<a  href="node6.html#SECTION00021000000000000000" name="tex2html8"></a>
+<font  size="+2">
+<a  href="node6.html#SECTION00021000000000000000" name="tex2html8">
+Summary
+</a>
+</font>
+</li>
+<li >
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  name="tex2html9"></a>
+<a  href="node7.html#SECTION00022000000000000000" name="tex2html9"></a>
+<a  href="node7.html#SECTION00022000000000000000" name="tex2html9"></a>
+<a  href="node7.html#SECTION00022000000000000000" name="tex2html9"></a>
+<a  href="node7.html#SECTION00022000000000000000" name="tex2html9"></a>
+<font  size="+2">
+<a  href="node7.html#SECTION00022000000000000000" name="tex2html9">
+Boundary Conditions - Initial Conditions
+</a>
+</font>
+</li>
+<li >
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  name="tex2html10"></a>
+<a  href="node8.html#SECTION00023000000000000000" name="tex2html10"></a>
+<a  href="node8.html#SECTION00023000000000000000" name="tex2html10"></a>
+<a  href="node8.html#SECTION00023000000000000000" name="tex2html10"></a>
+<a  href="node8.html#SECTION00023000000000000000" name="tex2html10"></a>
+<font  size="+2">
+<a  href="node8.html#SECTION00023000000000000000" name="tex2html10">
+Initial-Boundary Value Problem:
+</a>
+</font>
+</li>
+<li >
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  name="tex2html11"></a>
+<a  href="node9.html#SECTION00024000000000000000" name="tex2html11"></a>
+<a  href="node9.html#SECTION00024000000000000000" name="tex2html11"></a>
+<a  href="node9.html#SECTION00024000000000000000" name="tex2html11"></a>
+<a  href="node9.html#SECTION00024000000000000000" name="tex2html11"></a>
+<font  size="+2">
+<a  href="node9.html#SECTION00024000000000000000" name="tex2html11">
+Solving the IBVP
+</a>
+</font>
+</li>
+<li >
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  name="tex2html12"></a>
+<a  href="node10.html#SECTION00025000000000000000" name="tex2html12"></a>
+<a  href="node10.html#SECTION00025000000000000000" name="tex2html12"></a>
+<a  href="node10.html#SECTION00025000000000000000" name="tex2html12"></a>
+<a  href="node10.html#SECTION00025000000000000000" name="tex2html12"></a>
+<font  size="+2">
+<a  href="node10.html#SECTION00025000000000000000" name="tex2html12">
+Solving the BVP
+</a>
+</font>
+</li>
+</ul>
+<li >
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  name="tex2html13"></a>
+<a  href="node11.html#SECTION00030000000000000000" name="tex2html13"></a>
+<a  href="node11.html#SECTION00030000000000000000" name="tex2html13"></a>
+<a  href="node11.html#SECTION00030000000000000000" name="tex2html13"></a>
+<a  href="node11.html#SECTION00030000000000000000" name="tex2html13"></a>
+<font  size="+2">
+<a  href="node11.html#SECTION00030000000000000000" name="tex2html13">
+Vibrating Elastic String
+</a>
+</font>
+</li>
+<ul >
+<li >
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  name="tex2html14"></a>
+<a  href="node12.html#SECTION00031000000000000000" name="tex2html14"></a>
+<a  href="node12.html#SECTION00031000000000000000" name="tex2html14"></a>
+<a  href="node12.html#SECTION00031000000000000000" name="tex2html14"></a>
+<a  href="node12.html#SECTION00031000000000000000" name="tex2html14"></a>
+<font  size="+2">
+<a  href="node12.html#SECTION00031000000000000000" name="tex2html14">
+Initial and Boundary Conditions
+</a>
+</font>
+</li>
+<li >
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  name="tex2html15"></a>
+<a  href="node13.html#SECTION00032000000000000000" name="tex2html15"></a>
+<a  href="node13.html#SECTION00032000000000000000" name="tex2html15"></a>
+<a  href="node13.html#SECTION00032000000000000000" name="tex2html15"></a>
+<a  href="node13.html#SECTION00032000000000000000" name="tex2html15"></a>
+<font  size="+2">
+<a  href="node13.html#SECTION00032000000000000000" name="tex2html15">
+The Initial-Boundary Value Problem
+</a>
+</font>
+</li>
+</ul>
+<li >
+<font  size="+2">
+<a  href="node100.html" name="tex2html15">
+Vibrating Beam
+</a>
+</font>
+</li>
+<li >
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  name="tex2html18"></a>
+<a  href="node16.html#SECTION00050000000000000000" name="tex2html18"></a>
+<a  href="node16.html#SECTION00050000000000000000" name="tex2html18"></a>
+<a  href="node16.html#SECTION00050000000000000000" name="tex2html18"></a>
+<a  href="node16.html#SECTION00050000000000000000" name="tex2html18"></a>
+<font  size="+2">
+<a  href="node16.html#SECTION00050000000000000000" name="tex2html18">
+About this document ...
+</a>
+</font>
+</li>
+</ul>
+<hr ></hr>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  name="tex2html1"></a>
+<a  href="node1.html" name="tex2html1"></a>
+<a  href="node1.html" name="tex2html1"></a>
+<a  href="node1.html" name="tex2html1"></a>
+<a  href="node1.html" name="tex2html1"></a>
+<a  href="node1.html" name="tex2html1">
+<img ></img>
+</a>
+<font  size="+2">
+<img ></img>
+<img ></img>
+</font>
+<br ></br>
+<font  size="+2">
+<b >
+Next:
+</b>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  name="tex2html2"></a>
+<a  href="node1.html" name="tex2html2"></a>
+<a  href="node1.html" name="tex2html2"></a>
+<a  href="node1.html" name="tex2html2"></a>
+<a  href="node1.html" name="tex2html2"></a>
+<a  href="node1.html" name="tex2html2">
+Buckling of a
+</a>
+</font>
+<address >
+<font  size="+2">
+George C. Hsiao and Richard J. Weinacht
+</font>
+</address>
+<address >
+<font  size="+2">
+Fri 5 Jun 15:45:22 EST 1998
+</font>
+</address>
+</body>
+</html>

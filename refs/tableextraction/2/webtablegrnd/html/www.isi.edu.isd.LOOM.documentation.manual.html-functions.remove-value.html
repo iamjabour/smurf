@@ -1,0 +1,173 @@
+<html >
+<head >
+<title >
+remove-value
+</title>
+</head>
+<body >
+<h1 >
+remove-value [
+<i >
+Function
+</i>
+]
+</h1>
+<hr ></hr>
+<h2 >
+Purpose
+</h2>
+The
+<b >
+remove-value
+</b>
+function removes a value from a given role on a given instance.
+<p ></p>
+<h2 >
+Syntax
+</h2>
+<b >
+remove-value
+</b>
+<i >
+instance role value
+</i>
+<tt >
+&amp;key
+</tt>
+<i >
+kb no-error-p
+</i>
+<p ></p>
+<h2 >
+Arguments
+</h2>
+The
+<i >
+instance
+</i>
+argument is an instance or an instance identifier.
+<p >
+The
+<i >
+role
+</i>
+argument is a relation, or the name of a relation.
+</p>
+<p >
+The
+<i >
+value
+</i>
+argument is the value to be removed from the fillers of
+<i >
+role
+</i>
+. If
+<i >
+value
+</i>
+is a list, the list is interpreted as a single role filler. If
+<i >
+value
+</i>
+is a symbol, the value is coerced to an instance unless the the range of
+<i >
+role
+</i>
+indicates that it should be interpreted as a constant.
+</p>
+<p >
+The
+<i >
+kb
+</i>
+argument is the knowledge base, or the symbol or string that names the knowledge base, where the lookup of
+<i >
+instance
+</i>
+and
+<i >
+role
+</i>
+begins. This defaults to the current knowledge base.
+</p>
+<p >
+If the
+<i >
+no-error-p
+</i>
+argument is
+<b >
+t
+</b>
+, then error messages are suppressed.
+</p>
+<p ></p>
+<h2 >
+Value
+</h2>
+If the update is successful, the newly removed value is returned. If
+<i >
+no-error-p
+</i>
+is set and
+<i >
+instance
+</i>
+(or
+<i >
+role
+</i>
+) cannot be found, the two values
+<b >
+nil
+</b>
+and
+<b >
+:missing-instance
+</b>
+(or
+<b >
+:missing-role
+</b>
+) are returned.
+<p ></p>
+<h2 >
+Examples
+</h2>
+<pre >
+(defrelation rr) 
+(set-values 'Joe 'rr '(Mary Sue (3 4 5))) ==&gt; (|I|MARY |I|SUE (3 4 5)) 
+(remove-value 'Joe 'rr 'Mary) ==&gt; |I|MARY 
+(remove-value 'Joe 'rr '(3 4 5)) ==&gt; (3 4 5) 
+(get-values 'Joe 'rr) ==&gt; (|I|SUE) 
+(defrelation ss :range Symbol) 
+(add-value 'Joe 'ss 'Mary) ==&gt; MARY 
+(remove-value 'Joe 'ss 'Mary) ==&gt; MARY 
+(remove-value 'Joe 'xx 'Mary :no-error-p t) ==&gt; NIL :MISSING-ROLE
+</pre>
+<h2 >
+See Also
+</h2>
+<ul >
+<li >
+<a  href="add-value.html">
+add-value
+</a>
+</li>
+<li >
+<a  href="forget.html">
+forget
+</a>
+</li>
+<li >
+<a  href="remove-type.html">
+remove-type
+</a>
+</li>
+</ul>
+<small >
+Last modified: Jun 1 1995
+</small>
+</body>
+</html>

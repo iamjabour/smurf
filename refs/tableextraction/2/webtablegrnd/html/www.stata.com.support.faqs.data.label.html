@@ -1,0 +1,215 @@
+<html >
+<head >
+<title >
+Using the same value label multiple times
+</title>
+</head>
+<body  background="/images/spiral.gif" bgcolor="#FFFFFF">
+<ul >
+<ul >
+<a  href="/map.html">
+<img ></img>
+</a>
+<img ></img>
+</ul>
+</ul>
+<hr ></hr>
+<h3 >
+Can I apply the label values command to more than one variable at the same time? I want to attach the same value labels to several variables.
+</h3>
+<table  TABID="12017" genuinetable="yes" width="50%">
+<tr >
+<td  valign="top" width="20%">
+Title
+</td>
+<td >
+Using a value label multiple times
+</td>
+</tr>
+<tr >
+<td  valign="top">
+Author
+</td>
+<td >
+Paul Lin, Stata Corporation
+</td>
+</tr>
+<tr >
+<td >
+Date
+</td>
+<td >
+March 1997, updated April 1999
+</td>
+</tr>
+</table>
+<hr ></hr>
+Yes. Say you have a survey and the codings for the variables
+<b >
+q1, q2, ..., q10
+</b>
+are all the same. You create a value label,
+<pre >
+<b >
+. label define yesno 0 "no" 1 "yes"
+</b>
+</pre>
+and you can use it ten times:
+<pre >
+<b >
+. label values q1 yesno
+	. label values q2 yesno
+	. . .
+	. label values q10 yesno
+</b>
+</pre>
+Actually, you can save yourself some typing by
+<pre >
+<b >
+. for varlist q1-q10: label values X yesno
+</b>
+</pre>
+<b >
+for
+</b>
+is intended to overcome the shortcomings of commands that do not allow varlists. The command is executed once for each variable, and the variable name is substituted for
+<b >
+X
+</b>
+. For on-line help, type
+<b >
+<a  href="/help.cgi?for">
+help for
+</a>
+</b>
+in Stata, or see [R]
+<b >
+for
+</b>
+.
+<hr ></hr>
+<center >
+[
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<a  href="/">
+Home
+</a>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+|
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<a  href="/guide.html">
+Guide
+</a>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+|
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<a  href="/info/">
+Info
+</a>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+|
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<a  href="/support/">
+Support
+</a>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+|
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<a  href="/news/whatsnew.html">
+What's New
+</a>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+]
+</center>
+<p >
+Email
+<a  href="mailto:stata@stata.com">
+stata@stata.com
+</a>
+if you have questions about Stata.
+</p>
+<p >
+Email
+<a  href="mailto:webmaster@stata.com">
+webmaster@stata.com
+</a>
+with questions or problems about this service.
+</p>
+<p ></p>
+<h5 >
+<a  href="/copyright.html">
+© Copyright 2001 Stata Corporation.
+</a>
+</h5>
+</body>
+</html>

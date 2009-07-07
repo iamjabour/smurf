@@ -1,0 +1,434 @@
+<html >
+<head >
+<title >
+Kiplinger.com: Calculators: How much you need to save for college
+</title>
+<script >
+<!--
+// base figures for school cost
+var baseCost = new Array();
+baseCost[0] = 11000.00;
+baseCost[1] = 33000.00; 
+baseCost[2] = 22000.00;
+var costPerYear = new Array();
+costPerYear[0] = 0;
+costPerYear[1] = 0;
+costPerYear[2] = 0;
+costPerYear[3] = 0;
+
+function getPercent(obj)
+{	// performs data validation and returns float value
+  // parameter must be a form element with a 'value' attribute
+  // containing a parseFloat()-able piece of data, followed by a percent sign
+  var val = obj.value+"";
+	var psign = val.indexOf("%", 0);
+	if(psign &amp;amp;gt; -1)
+	{	var val = val.substring(0, psign);
+	} else
+	{	alert("This value has been incorrectly entered:\n\n-->
+"+val+"\n\nInput should be a percentage."); return 0.0; } if(parseFloat(val)) { return parseFloat(val)/100; } else { alert("This value has been incorrectly entered:\n\n--&gt;"+val+"\n\nInput should be a percentage."); return 0.00; } } function getNumber(obj) { // performs data validation and returns float value // parameter must be a form element with a 'value' attribute // containing a parseFloat()-able piece of data, eg: 1.5, or empty var numString1 = obj.value+""; var num = 0; var comma = numString1.indexOf(",", 0); if (!parseFloat(numString1) || comma &gt; -1){ if(numString1 == "" || numString1 == " ") { } else if (comma &gt; -1) { alert("This value has been incorrectly entered:\n\n--&gt;"+numString1); } else { alert("This value has been incorrectly entered:\n\n--&gt;"+numString1); } }else { num = parseFloat(numString1); } return num; } function makeDollars(number) { //formats number to two decimal places var rounded = Math.round(number); var dollars = rounded+".00"; return dollars; } function getFV(rate, nper, pmt, pv, type) { var rPowN = Math.pow((1.0 + rate), nper); var fv = pv * rPowN + (pmt*(1+rate*type)*((rPowN - 1)/rate)); return fv; } // compares the available funds during each year of college // to the payment that must be made -- returns false if any // payment exceeds the available funds. function compareFundsToCost(rate, nper, pmt, pv, type, percent) { if (costPerYear[0] = 0) { alert("You need to repeat the first step, \"Estimating the Projected\nCost of College\" before proceeding to this step.\nOtherwise, the monthly contribution value will be too low."); return true; } var funds = getFV(rate/12, (nper)*12, pmt, pv, type); for(loop=0;loop costPerYear.length;loop++) { funds -= costPerYear[loop]*percent; if (funds 0) { return false; } else { var tempFunds = getFV(rate/12, 12, pmt, funds, type); funds = tempFunds; } } return true; } function getPMT(pv, fv, rate, nper) { var rPowN = Math.pow((1.0 + rate), nper); var numerator = fv - (pv*rPowN); var denominator = (1.0 + rate)*((rPowN - 1.0)/rate); return numerator/denominator; } function getTotalPC() { var bcindex, yrindex, inflate, future; with (document.theform) { bcindex = s1.selectedIndex; yrindex = s2.selectedIndex + 1; inflate = getPercent(t6); future = 0.0; if (inflate 1.0) { for(loop=0;loop4;loop++) { costPerYear[loop] = getFV(inflate, yrindex+loop, 0, baseCost[bcindex], 0); future += costPerYear[loop]; } } else alert("College-cost inflation must be a percentage less than 100%\n\neg., 7% inflation"); t1.value = makeDollars(future); } return true; } function getTargetAmt() { with (document.theform) { var amt = getNumber(t1); var pct = parseFloat(s3.options[s3.selectedIndex].value); t3.value = makeDollars(amt*pct); } return true; } function getEstReturn() { with(document.theform) { var rate = parseFloat(s4.options[s4.selectedIndex].value); t4.value = (Math.round(rate*100))+"%"; } return true; } // estimate monthly contributions if period of investment is until 4th year of college // then, use compareFundsToCost() to test monthly contrib. values until just high // enough so that all tuition can be paid function getMonthly() { var pv, fv, rate, nper, pmt, percent; with(document.theform) { pv = getNumber(t2); fv = getNumber(t3); rate = getPercent(t4); if (rate 1.0) { nper = s2.selectedIndex; pmt = getPMT(pv, fv, rate/12, (nper+5)*12); percent = parseFloat(s3.options[s3.selectedIndex].value); var tooLow = true; while(tooLow) { if (compareFundsToCost(rate, nper+1, pmt, pv, 1, percent)) tooLow = false; else pmt++; } if (pmt &gt; 0) t5.value = makeDollars(pmt); else t5.value = "0.00"; } else alert("Rate of return must be a percentage less than 100%\n\neg., 12% return"); } return true; } function goTo(aSelect) { if(aSelect.selectedIndex != 0) { top.document.location.href=aSelect.options[aSelect.selectedIndex].value; } return true; } function popPage(some_url) { var details="width=300,height=250,top=0,left=0,titlebar=yes,menubar=yes,st atusbar=yes,toolbar=yes,scrollbars=yes"; window.open(some_url, "pop_win", details); return false; } //--&gt;
+</script>
+<!--------end scripting------------------------------------------------------------>
+<link ></link>
+<link ></link>
+</head>
+<body  bgcolor="#ffffff">
+<!-- start tools top -->
+<a  name="top"></a>
+<table  TABID="09315">
+<!-- start header -->
+<tr >
+<td  bgcolor="#336699" width="130">
+<a  href="/">
+<img ></img>
+</a>
+</td>
+<td  align="left" bgcolor="#ffffff" colspan="3" width="470">
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<script ></script>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<a  href="http://ad.doubleclick.net/jump/kiplinger.dart/tools;abr=!ie;area=college;sz=468x60;ord=055048?">
+<img ></img>
+</a>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+<iframe ></iframe>
+</td>
+</tr>
+<tr >
+<td  colspan="4" width="600">
+<a  href="/">
+<img ></img>
+</a>
+<a  href="/investing/">
+<img ></img>
+</a>
+<a  href="/managing/">
+<img ></img>
+</a>
+<a  href="/spending/">
+<img ></img>
+</a>
+<a  href="/tools/">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!--------------COLOR BOX------------------------------>
+<table  TABID="09318" border="0" cellpadding="0" cellspacing="0" width="400">
+<tr >
+<td  colspan="3" height="2" width="100%">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="100%" width="2">
+<img ></img>
+</td>
+<td  width="100%">
+<table  TABID="09317" cellpadding="2" width="100%">
+<tr >
+<td >
+<!----------------------WORKSHEET CONTENT------------------------->
+<a  name="top"></a>
+<h3  class="ws_ti">
+Figuring a Monthly College Savings Plan
+</h3>
+<p >
+This worksheet aims to show you how much you'll need to save each month to meet your college savings goals. It assumes that the student will be attending a four-year college and that he or she will finish the degree in four sequential years.
+</p>
+<form  name="theform">
+<table  TABID="09316" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#99ccff" class="bold" colspan="2">
+Estimate the Projected Cost of College
+<a  class="help" href="#n1" name="n1" onclick="popPage('/worksheet/help/coll1h1.htm');">
+Help
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Type of school the student will attend:
+</p>
+</td>
+<td  align="right">
+<select >
+<option >
+public college
+</option>
+<option >
+expensive private college
+</option>
+<option >
+average private college
+</option>
+</select>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Years until student enters college:
+</p>
+</td>
+<td  align="right">
+<select >
+<option  value="1">
+1
+</option>
+<option  value="2">
+2
+</option>
+<option  value="3">
+3
+</option>
+<option  value="4">
+4
+</option>
+<option  value="5">
+5
+</option>
+<option  value="6">
+6
+</option>
+<option  value="7">
+7
+</option>
+<option  value="8">
+8
+</option>
+<option  value="9">
+9
+</option>
+<option  value="10">
+10
+</option>
+<option  value="11">
+11
+</option>
+<option  value="12">
+12
+</option>
+<option  value="13">
+13
+</option>
+<option  value="14">
+14
+</option>
+<option  value="15">
+15
+</option>
+<option  value="16">
+16
+</option>
+<option  value="17">
+17
+</option>
+<option  value="18">
+18
+</option>
+</select>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+College-cost inflation rate:
+</p>
+</td>
+<td  align="right">
+<input ></input>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+<input ></input>
+</p>
+</td>
+<td  align="right">
+<input ></input>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Current college savings:
+</p>
+</td>
+<td  align="right">
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  align="right"></td>
+</tr>
+<tr >
+<td ></td>
+<td  align="right"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99ccff" class="bold" colspan="2">
+Choose Your Savings Goal
+<a  class="help" href="#n2" name="n2" onclick="popPage('/worksheet/help/coll1h2.htm');">
+Help
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Percentage of the projected cost that you will try to save in advance:
+</p>
+</td>
+<td  align="right">
+<select >
+<option  value="0.25">
+25%
+</option>
+<option  value="0.50">
+50%
+</option>
+<option  value="0.75">
+75%
+</option>
+<option  value="1">
+100%
+</option>
+</select>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+<input ></input>
+</p>
+</td>
+<td  align="right">
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  align="right"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99ccff" class="bold" colspan="2">
+Estimate the Return on Your Investments
+<a  class="help" href="#n3" name="n3" onclick="popPage('/worksheet/help/coll1h3.htm');">
+Help
+</a>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Choose an investment style:
+</p>
+</td>
+<td  align="right">
+<select >
+<option  value="0.11">
+aggressive
+</option>
+<option  value="0.08">
+conservative
+</option>
+</select>
+</td>
+</tr>
+<tr >
+<td >
+<input ></input>
+</td>
+<td  align="right">
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#99ccff" class="bold" colspan="2">
+Your Monthly Contribution
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<p >
+This is the approximate amount you'll have to contribute each month to reach your savings goal. The saving period includes the 4 years that the student is in school.
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+<input ></input>
+</p>
+</td>
+<td  align="right">
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<br ></br>
+<input ></input>
+</td>
+</tr>
+</table>
+</form>
+<div  align="right"></div>
+<!------------------------END WORKSHEET CONTENT------------------------------------------>
+</td>
+</tr>
+</table>
+</td>
+<td  height="100%" width="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="2" width="100%">
+<img ></img>
+</td>
+</tr>
+</table>
+<!--------------------END COLOR BOX-------------------------------------------->
+<!-- start tools bottom -->
+<tr >
+<td ></td>
+</tr>
+<!-- start default footer -->
+<tr >
+<td  align="center" colspan="4">
+<font  class="text">
+<a  href="/cgi-bin/remind.pl">
+Recommend This Page to a Friend
+</a>
+<p >
+© 2001 The Kiplinger Washington Editors, Inc.
+</p>
+</font>
+</td>
+</tr>
+<!-- end default footer -->
+</body>
+</html>

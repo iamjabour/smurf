@@ -1,0 +1,564 @@
+<html >
+<head >
+<title >
+Singular Value Decomposition and Numeric Stability
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+</head>
+<body  bgcolor="#CFFFCC" lang="EN">
+<p >
+<!--Converted with LaTeX2HTML 96.1-h (September 30, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+</p>
+<link ></link>
+<a  name="tex2html450"></a>
+<a  name="tex2html450"></a>
+<a  href="node37.html" name="tex2html450">
+<img ></img>
+</a>
+<font  size="+1">
+<a  name="tex2html448"></a>
+<a  name="tex2html448"></a>
+<a  href="node35.html" name="tex2html448">
+<img ></img>
+</a>
+<a  name="tex2html442"></a>
+<a  name="tex2html442"></a>
+<a  href="node35.html" name="tex2html442">
+<img ></img>
+</a>
+</font>
+<hr ></hr>
+<h1 >
+<a  name="SECTION00018100000000000000"></a>
+Singular Value Decomposition and Numeric Stability
+</h1>
+<p ></p>
+<hr ></hr>
+<p >
+<a  name="e-rank"></a>
+<font  size="+1">
+<b >
+Definition 8.1.1.
+</b>
+The
+<img ></img>
+<i >
+rank
+</i>
+of the matrix
+<i >
+A
+</i>
+is defined by the formula
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+</p>
+<p >
+<a  name="Example8-1-1"></a>
+<font  size="+1">
+<b >
+Example 8.1.1.
+</b>
+<sup >
+*
+</sup>
+Let us find the
+<a  href="#e-rank">
+<img ></img>
+</a>
+<a  href="#e-rank">
+-rank
+</a>
+of the matrix
+<br ></br>
+<img ></img>
+<br ></br>
+if
+<img ></img>
+</font>
+</p>
+<p >
+<font  size="+1">
+Evidently,
+<br ></br>
+<img ></img>
+<br ></br>
+If the equality
+<br ></br>
+<img ></img>
+<br ></br>
+holds, then
+<br ></br>
+<img ></img>
+<br ></br>
+Since
+<br ></br>
+<img ></img>
+<br ></br>
+then
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+where
+<img ></img>
+and
+<img ></img>
+are the
+<a  href="../lin1/node16.html#eigenvalue">
+eigenvalues
+</a>
+of the matrix
+<br ></br>
+<img ></img>
+<br ></br>
+Therefore,
+<img ></img>
+and
+<img ></img>
+and
+<br ></br>
+<img ></img>
+<br ></br>
+This is a contradiction, and it means that
+<img ></img>
+Let us show that
+<img ></img>
+Really, for the matrix
+<br ></br>
+<img ></img>
+<br ></br>
+<i >
+rank
+</i>
+(
+<i >
+B
+</i>
+)=1 and
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+where
+<img ></img>
+and
+<img ></img>
+are the
+<a  href="../lin1/node16.html#eigenvalue">
+eigenvalues
+</a>
+of the matrix
+<br ></br>
+<img ></img>
+<br ></br>
+Thus,
+<img ></img>
+and
+<img ></img>
+, and
+<br ></br>
+<img ></img>
+<br ></br>
+But this means that
+<img ></img>
+</font>
+</p>
+<p >
+<a  name="Proposition 8.1.1."></a>
+<font  size="+1">
+<b >
+Proposition 8.1.1.
+</b>
+Let
+<img ></img>
+be the
+<a  href="node12.html#singularvaluedecomp">
+singular value decomposition
+</a>
+of a matrix
+<img ></img>
+. If
+<i >
+k
+</i>
+&lt;
+<i >
+r
+</i>
+=
+<i >
+rank
+</i>
+(
+<i >
+A
+</i>
+) and
+<br ></br>
+<img ></img>
+<br ></br>
+then
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+</p>
+<p >
+<font  size="+1">
+<i >
+Proof.
+</i>
+Since
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+and
+<br ></br>
+<img ></img>
+<br ></br>
+while
+<img ></img>
+Since the Euclid norm of the matrix
+<i >
+A
+</i>
+-
+<i >
+A
+<sub >
+k
+</sub>
+</i>
+equals the greatest entry of the matrix
+<i >
+U
+<sup >
+T
+</sup>
+</i>
+(
+<i >
+A
+</i>
+-
+<i >
+A
+<sub >
+k
+</sub>
+</i>
+)
+<i >
+V
+</i>
+, then
+<br ></br>
+<img ></img>
+<br ></br>
+Let
+<img ></img>
+be a matrix for which
+<i >
+rank
+</i>
+(
+<i >
+B
+</i>
+)=
+<i >
+k
+</i>
+. We can find the
+<a  href="../lin1/node10.html#orthogonal">
+orthonormal vectors
+</a>
+<img ></img>
+such that the
+<a  href="../lin1/node15.html#nullspace">
+null space
+</a>
+of the matrix
+<i >
+B
+</i>
+is a linear
+<a  href="../lin1/node6.html#span">
+span
+</a>
+of the vectors
+<img ></img>
+, i.e.,
+<br ></br>
+<img ></img>
+<br ></br>
+Since in the space
+<img ></img>
+<i >
+n
+</i>
++1 vectors are
+<a  href="../lin1/node7.html#linearly_dependent">
+linearly dependent
+</a>
+, then
+<br ></br>
+<img ></img>
+<br ></br>
+If
+<img ></img>
+is a unit vector (by the Euclidean norm) from this intersection, then
+<img ></img>
+and
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+Hence
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+</p>
+<p >
+<a  name="Corollary 8.1.1."></a>
+<font  size="+1">
+<b >
+Corollary 8.1.1.
+</b>
+If the matrix
+<img ></img>
+is regular, then the least
+<a  href="node12.html#singularvalues">
+singular value
+</a>
+<a >
+<img ></img>
+</a>
+of the matrix
+<i >
+A
+</i>
+shows the distance of the matrix
+<i >
+A
+</i>
+from the nearest singular matrix.
+</font>
+</p>
+<p >
+<a  name="Corollary 8.1.2."></a>
+<font  size="+1">
+<b >
+Corollary 8.1.2.
+</b>
+If
+<img ></img>
+then
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+</p>
+<p >
+<font  size="+1">
+<b >
+Problem 8.1.1.
+</b>
+<sup >
+*
+</sup>
+Use corollary 8.1.2 to solve the problem given in
+<a  href="#Example8-1-1">
+example 8.1.1.
+</a>
+</font>
+</p>
+<p >
+<a  name="Proposition 8.1.2."></a>
+<font  size="+1">
+<b >
+Proposition 8.1.2.
+</b>
+If
+<br ></br>
+<img ></img>
+<br ></br>
+is the
+<a  href="node12.html#singularvaluedecomp">
+singular value decomposition
+</a>
+of the regular matrix
+<img ></img>
+, then the solution
+<img ></img>
+of
+<a  href="node35.html#1">
+system (1)
+</a>
+can be expressed in the form
+<br ></br>
+<a  name="2"></a>
+</font>
+<img ></img>
+<br ></br>
+</p>
+<p >
+<font  size="+1">
+<i >
+Proof.
+</i>
+Let us check the correctness of the assertion of the proposition:
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+</p>
+<p >
+<a  name="Corollary 8.1.3."></a>
+<font  size="+1">
+<b >
+Corollary 8.1.3.
+</b>
+From the representation of the solution in form
+<a  href="#2">
+(2)
+</a>
+it appears that small deviations of the entries of the matrix
+<i >
+A
+</i>
+could cause great deviations of the solution
+<img ></img>
+if
+<img ></img>
+is small.
+</font>
+</p>
+<p >
+<font  size="+1">
+<b >
+Example 8.1.2.
+</b>
+<sup >
+*
+</sup>
+For which system
+<br ></br>
+<img ></img>
+<br ></br>
+or
+<br ></br>
+<img ></img>
+<br ></br>
+small deviations of the entries of the system matrix can cause greater deviations of the solution
+<img ></img>
+? Applying the package ``Maple'', we find the
+<a  href="node12.html#singularvaluedecomp">
+singular value decomposition
+</a>
+of both system matrices:
+<br ></br>
+<img ></img>
+<br ></br>
+and
+<br ></br>
+<img ></img>
+<br ></br>
+We see that the least
+<a  href="node12.html#singularvalues">
+singular value
+</a>
+<img ></img>
+of the first system matrix is hundred times smaller than the least
+<a  href="node12.html#singularvalues">
+singular value
+</a>
+of the second system matrix. Therefore, in virtue of
+<a  href="#Corollary 8.1.3.">
+corollary 8.1.3
+</a>
+, we can state that the first system is more stable than the second one, i.e., small deviations of the entries of the second system matrix can cause greater deviations of the solution
+<img ></img>
+than the deviation of the same order of the entries of the first system matrix.
+</font>
+</p>
+<p >
+<font  size="+1">
+<b >
+Problem 8.1.2.
+</b>
+<sup >
+*
+</sup>
+What of two systems
+<br ></br>
+<img ></img>
+<br ></br>
+or
+<br ></br>
+<img ></img>
+<br ></br>
+is more stable?
+</font>
+</p>
+<p ></p>
+<hr ></hr>
+<a  name="tex2html450"></a>
+<a  name="tex2html450"></a>
+<a  href="node37.html" name="tex2html450">
+<img ></img>
+</a>
+<font  size="+1">
+<a  name="tex2html448"></a>
+<a  name="tex2html448"></a>
+<a  href="node35.html" name="tex2html448">
+<img ></img>
+</a>
+<a  name="tex2html442"></a>
+<a  name="tex2html442"></a>
+<a  href="node35.html" name="tex2html442">
+<img ></img>
+</a>
+</font>
+<br ></br>
+<!---- &amp;amp;lt;ADDRESS&amp;amp;gt;
+&amp;amp;lt;I&amp;amp;gt;Toomas Lepikult &amp;amp;lt;BR&amp;amp;gt;
+Wed Oct  8 08:53:27 EET DST 1997&amp;amp;lt;/I&amp;amp;gt;
+&amp;amp;lt;/ADDRESS&amp;amp;gt;------>
+</body>
+</html>

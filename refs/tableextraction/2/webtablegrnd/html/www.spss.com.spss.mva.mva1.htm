@@ -1,0 +1,855 @@
+<html >
+<head >
+<meta ></meta>
+<title >
+SPSS Missing Value Analysis
+</title>
+<link ></link>
+</head>
+<!--/GO GET THE EXTERNAL JAVASCRIPT FILES-->
+<!--- JavaScript files ------>
+<body >
+<script >
+<!-- Activate Cloaking Device 
+// Loads a new page from a selected entry.
+function leapto(form) 
+   {
+   var myindex=form.dest.selectedIndex;
+   if (myindex&amp;amp;gt;=1)
+      {window.location=form.dest.options[myindex].value;}
+   else
+      {alert("You must SELECT an item before energizing.");}
+   }
+
+   
+   
+   function leapto2(form) 
+   {
+   var myindex=form.city.selectedIndex;
+   if (myindex&amp;amp;gt;=1)
+      {window.location=form.city.options[myindex].value;}
+   else
+      {alert("You must SELECT an item before energizing.");}
+   }
+   
+   
+   
+   
+   
+// Function for viewing source code
+function WinOpen() 
+   {
+   alert('\nPage will load to full screen.\n\nUse View/Document Source from menu bar to view source.\n\nClose new window to return to this page. ');
+   window.open("js-lp2.htm","DisplayWindow","menubar=yes");
+   window.open("js-lp2.htm","DisplayWindow","menubar=yes");   // double for Macs
+   }
+// Deactivate Cloaking -->
+</script>
+<!--BROWSER DETECTION-->
+<script >
+<!-- 
+   NS4 = (document.layers); 
+   IE4 = (document.all); 
+  ver4 = (NS4 || IE4);    
+ isMac = (navigator.appVersion.indexOf("Mac") != -1); 
+isMenu = (NS4 || (IE4 &amp;amp;amp;&amp;amp;amp; !isMac)); 
+ 
+function popUp(){return}; 
+function popDown(){return}; 
+function startIt(){return}; 
+if (!ver4) event = null; 
+//-->
+</script>
+<!--/BROWSER DETECTION-->
+<!--SET UP DROP-DOWN MENUS-->
+<script >
+<!-- 
+if (isMenu) { 
+  menuVersion = 3; 
+ 
+  menuWidth = 90; 
+  childOverlap = 1; 
+  childOffset = 1; 
+  perCentOver = null; 
+  secondsVisible = .1; 
+ 
+  fntCol = "#ffffff"; 
+  fntSiz = "9"; 
+  fntBold = false; 
+  fntItal = false; 
+  fntFam = "sans-serif"; 
+ 
+  backCol = "#181ea5"; 
+  overCol = "#cf0042"; 
+  overFnt = "#FFFFFF"; 
+ 
+  borWid = 1; 
+  borCol = "#000000"; 
+  borSty = "outset"; 
+  itemPad = 2; 
+ 
+  imgSrc = "images/triangle.gif"; 
+  imgSiz = 8; 
+ 
+  separator = 1; 
+  separatorCol = "#000000"; 
+ 
+  isFrames = false; 
+  navFrLoc =  "left"; 
+  mainFrName = "main"; 
+ 
+  clickStart = false; 
+  clickKill = false; 
+ 
+  keepHilite = false; 
+ 
+  NSfontOver = true; 
+  showVisited = "#666666"; 
+} 
+//-->
+</script>
+<!--/SET UP DROP-DOWN MENUS-->
+<!--GO GET THE EXTERNAL JAVASCRIPT FILES-->
+<script >
+<!--
+if (isMenu) {
+  document.write("&amp;amp;lt;SCRIPT LANGUAGE='JavaScript1.2' SRC='/javascript/hierArrays.js'&amp;amp;gt;&amp;amp;lt;\/SCRIPT&amp;amp;gt;");
+  document.write("&amp;amp;lt;SCRIPT LANGUAGE='JavaScript1.2' SRC='/javascript/hierMenus.js'&amp;amp;gt;&amp;amp;lt;\/SCRIPT&amp;amp;gt;");
+}
+//-->
+</script>
+<!--- Close HEAD tag and BODY tag ------>
+<!--- Top Logo, Image, and Navigation 772 Wide ------>
+<table  TABID="11962" border="0" cellpadding="0" cellspacing="0" id="bar" width="775">
+<tr >
+<td  colspan="6" valign="top">
+<img ></img>
+<a  href="/industries/retail">
+<img ></img>
+</a>
+<map  name="top">
+<area ></area>
+</map>
+</td>
+</tr>
+<tr >
+<td  colspan="6" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="FFFFFF" width="25"></td>
+<td  valign="top" width="580">
+<br ></br>
+<!--- Start Main Body ------>
+<h1 >
+SPSS Missing Value Analysis
+</h1>
+<h2 >
+Draw more valid conclusions by discovering and removing hidden bias in your data
+</h2>
+<table  TABID="11958" border="0" cellpadding="2" cellspacing="1">
+<tr >
+<td >
+<p >
+<a  href="/downloads/papers.cfm">
+Missing data: the hidden problem
+</a>
+, a white paper that shows how missing data can affect your analysis and resulting decisions, is available for review!
+</p>
+<p >
+Quickly and easily assess the magnitude of each pattern of missing data using the Tabulated Patterns table. In this example, you can see the most common missing pattern is income. You can also tell that non-professionals were much less likely to answer a question on income.
+</p>
+</td>
+<td  align="center">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+</table>
+Missing data can seriously affect your results. When you ignore missing data or assume that excluding missing data from calculations is sufficient, you risk getting invalid results.
+<p  align="left">
+SPSS Missing Value Analysis® is a critical tool for anyone concerned about the validity of their data, including survey researchers, social scientists, data miners and market researchers.
+</p>
+Easily examine your data from several different angles with six diagnostic reports to uncover missing data patterns. And, then estimate summary statistics and impute missing values through statistical algorithms.
+<ul  type="square">
+<li >
+<a  href="#quick">
+Quickly and easily diagnose your missing data
+</a>
+</li>
+<li >
+<a  href="#get">
+Get better summary statistics
+</a>
+</li>
+<li >
+<a  href="#easy">
+Easily replace missing values with estimates
+</a>
+</li>
+<li >
+<a  href="#specs">
+Product specifications
+</a>
+<ul  type="square">
+<li >
+<a  href="/spss/specs.htm">
+SPSS Base Product specifications
+</a>
+</li>
+</ul>
+</li>
+<li >
+<a  href="#sys">
+System requirements
+</a>
+</li>
+</ul>
+<hr ></hr>
+<a  name="quick">
+<b >
+Quickly and easily diagnose your missing data
+</b>
+</a>
+<br ></br>
+Explore your data with six flexible diagnostic reports to assess if missing data can impact your conclusions and to better understand the characteristics of the missing data.
+<p >
+You can quickly diagnose if you have a serious missing data problem with the Data Patterns report. This report gives you an overview of your data case by case. It helps you determine the extent of missing data and gives you a snapshot of each type of missing value and any extreme values for each case.
+</p>
+<p >
+Use the flexible Separate Variance t-test and Crosstab of Categorical Variables tables to discover if significant differences exist between respondents and nonrespondents. These reports help you decide if missing data can cause problems in your analysis.
+</p>
+<p >
+The Tabulated Patterns report summarizes each missing data pattern and highlights which set of variables make up the pattern. For example, quickly see that 98 of the 100 cases did not respond to the set of questions about preferred features and price.
+</p>
+<p >
+Enhance the quality of future data by improving any survey questions which may be confusing or identified as a trouble spot by a missing data pattern. And, confidently determine if missing values for one variable are related to missing values of another variable with the Percent Mismatch of Patterns table that displays the relationships between variables with missing data. For example, respondents who did not answer the income question also did not answer the question about education.
+</p>
+<a  name="get">
+<b >
+Get better summary statistics
+</b>
+</a>
+<br ></br>
+Summary statistics of your data often are the starting point for other analyses, such as factor, regression or ANOVA. Get more reliable results by using summary statistics which are adjusted for missing data.
+<p >
+Choose from four methods, Listwise Deletion, Pairwise Deletion, EM or Regression to estimate the means, correlation matrix or covariance matrix.
+</p>
+<a  name="easy">
+<b >
+Easily replace missing values with estimates
+</b>
+</a>
+<br ></br>
+Improve the likelihood of finding statistically significant results by using all your data instead of limiting your analysis to complete cases. Choose the powerful EM or Regression algorithm to predict missing values based on data you already have.
+<p >
+Draw more valid conclusions by removing hidden bias from your data by replacing missing values with estimates so all groups are represented in your analysis - even those with poor responsiveness.
+</p>
+<hr ></hr>
+<table  TABID="11959" align="right" valign="top">
+<tr >
+<td >
+<a  href="ftp://ftp.spss.com/pub/web/specs/SMV10SPC-0799W.pdf">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<a  name="specs">
+<b >
+Product Specifications
+</b>
+</a>
+<br ></br>
+<b >
+Analyze patterns
+</b>
+<ul  type="square">
+<li >
+Display missing data and extreme cases for all cases and all variables with the Data Patterns table
+<ul >
+<li >
+Displays system missing and three types of user-defined missing values
+</li>
+<li >
+Sort in ascending or descending order
+</li>
+<li >
+Display actual values for specified variables
+</li>
+</ul>
+</li>
+<li >
+Display patterns of missing values for all cases with at least one missing value using the Missing Patterns table
+<ul >
+<li >
+Similar missing value patterns grouped together
+</li>
+<li >
+Sort by missing patterns and variables
+</li>
+<li >
+Display actual values for specified variables
+</li>
+</ul>
+</li>
+<li >
+Determine differences between missing and non-missing groups for a related variable with the Separate Variance t-test table
+<ul >
+<li >
+t-test, degrees of freedom, mean, p-value, count
+</li>
+</ul>
+</li>
+<li >
+Show differences between present and missing data for categorical variables using the Distribution of Categorical Variables table
+<ul >
+<li >
+crosstab of missing and present data for each category of one variable by other variables
+</li>
+</ul>
+</li>
+<li >
+Assess how much missing data for one variable relates to the missing data of another variable with the Percent Mismatch of Patterns table
+<ul >
+<li >
+Sort matrix by missing value patterns or variables
+</li>
+</ul>
+</li>
+<li >
+Identify all unique patterns with the Tabulated Patterns table, which summarizes each missing data pattern and displays the count for each pattern plus means and frequencies for each variable
+<ul >
+<li >
+Summary of Missing Value Patterns table displays count and averages for each missing value pattern
+</li>
+</ul>
+</li>
+</ul>
+<b >
+Statistics
+</b>
+<ul  type="square">
+<li >
+Univariate: compute count, mean, standard deviation and standard error of mean for all cases excluding those containing missing values, count and percent of missing values and extreme values for all variables
+</li>
+<li >
+Listwise: compute mean, covariance matrix and correlation matrix for all quantitative variables for cases excluding missing values
+</li>
+<li >
+Pairwise: compute frequency, mean, variance, covariance matrix and correlation matrix
+</li>
+<li >
+EM algorithm
+<ul >
+<li >
+estimate the means, covariance matrix and the correlation matrix of quantitative variables with missing values, assuming normal distribution, t-distribution with degrees of freedom or a mixed normal distribution with any mixture proportion and any standard deviation ratio
+</li>
+<li >
+impute missing data and save the completed data as a file
+</li>
+</ul>
+</li>
+<li >
+Regression algorithm
+<ul >
+<li >
+estimate the means, covariance matrix and correlation matrix of the variables set as dependent; set number of predictor variables; set random elements as normal; t, observed residuals, or none
+</li>
+<li >
+impute missing data and save the completed data as a file
+</li>
+</ul>
+</li>
+</ul>
+<b >
+Data management
+</b>
+<ul  type="disc">
+<li >
+Handles all character variables as categorical variables
+</li>
+<li >
+Uses first 8 characters of string variable when defined as categorical
+</li>
+<li >
+Save completed data matrix as external file
+</li>
+</ul>
+<a  name="sys">
+<b >
+System requirements
+</b>
+</a>
+<ul  type="square">
+<li >
+SPSS Base 10.0 for Windows
+</li>
+<li >
+2MB of additional hard disk space
+</li>
+</ul>
+<p >
+<img ></img>
+<br ></br>
+This Separate Variance t-test table defines two groups of cases: those with data on income and those which are missing data on income. Then, the table tests to see if these two groups are different from each other on a series of variables. This table shows that people with missing data on income are more likely to have a non-professional occupation, more likely to be female, more likely to be married, and have a larger family than people who reported data on their family income.
+</p>
+<!--- End main Body ------>
+<!--- Quick links ------>
+<br ></br>
+<br ></br>
+<table  TABID="11960" width="100%">
+<tr >
+<td >
+<center >
+<hr ></hr>
+<!-- text or graphics in table here-->
+<form  name="myform">
+<select >
+<option  onclick="leapto(this.form)" selected="selected" value="/">
+Quick links:
+</option>
+<option >
+-------------------------------------------------
+</option>
+<option  onclick="leapto(this.form)" value="">
+Hot topics
+</option>
+<option  onclick="leapto(this.form)" value="/spssatwork/list.cfm">
+Application stories
+</option>
+<option  onclick="leapto(this.form)" value="/bpm/">
+Business performance measurement
+</option>
+<option  onclick="leapto(this.form)" value="/crm/">
+Customer relationship management
+</option>
+<option  onclick="leapto(this.form)" value="/datamine/">
+Data mining
+</option>
+<option  onclick="leapto(this.form)" value="/nViZn/">
+Data visualization
+</option>
+<option  onclick="leapto(this.form)" value="/ecrm/">
+e-CRM
+</option>
+<option  onclick="leapto(this.form)" value="/spssmr/">
+Market research
+</option>
+<option >
+------------------------------------------------
+</option>
+<option  onclick="leapto(this.form)" value="/industries/">
+Industries
+</option>
+<option  onclick="leapto(this.form)" value="/industries/banking/">
+Banking
+</option>
+<option  onclick="leapto(this.form)" value="/industries/ebusiness/">
+e-business
+</option>
+<option  onclick="leapto(this.form)" value="/industries/government/">
+Government
+</option>
+<option  onclick="leapto(this.form)" value="/industries/health_care/">
+Health care
+</option>
+<option  onclick="leapto(this.form)" value="/industries/higher_ed/">
+Higher ed
+</option>
+<option  onclick="leapto(this.form)" value="/spssmr/">
+Market Research
+</option>
+<option  onclick="leapto(this.form)" value="/industries/manufacturing/">
+Manufacturing
+</option>
+<option  onclick="leapto(this.form)" value="/industries/primary_secondary_ed/">
+Primary and secondary ed
+</option>
+<option  onclick="leapto(this.form)" value="/industries/retail/">
+Retail
+</option>
+<option  onclick="leapto(this.form)" value="http://www.spssscience.com">
+SPSS science
+</option>
+<option  onclick="leapto(this.form)" value="/industries/telecommunications/">
+Telecommunications
+</option>
+<option >
+-------------------------------------------------
+</option>
+<option  onclick="leapto(this.form)" value="/solutions/products/">
+Products
+</option>
+<option  onclick="leapto(this.form)" value="/solutions/products/">
+About products
+</option>
+<option  onclick="leapto(this.form)" value="/estore/softwaremenu">
+Buy products
+</option>
+<option  onclick="leapto(this.form)" value="/services/">
+Consulting
+</option>
+<option  onclick="leapto(this.form)" value="/downloads/">
+Downloads
+</option>
+<option  onclick="leapto(this.form)" value="/solutions/products/">
+Software
+</option>
+<option  onclick="leapto(this.form)" value="/downloads/">
+White papers
+</option>
+<option >
+------------------------------------------------
+</option>
+<option  onclick="leapto(this.form)" value="">
+Corporate
+</option>
+<option  onclick="leapto(this.form)" value="/corpinfo/sar98/">
+Annual report
+</option>
+<option  onclick="leapto(this.form)" value="/corpinfo/faqs.htm">
+FAQs
+</option>
+<option  onclick="leapto(this.form)" value="/invest/">
+Investor information
+</option>
+<option  onclick="leapto(this.form)" value="/jobs/">
+Jobs at SPSS
+</option>
+<option  onclick="leapto(this.form)" value="/worldwide/">
+Worldwide offices
+</option>
+<option >
+------------------------------------------------
+</option>
+<option  onclick="leapto(this.form)" value="/press/">
+News
+</option>
+<option  onclick="leapto(this.form)" value="/events/">
+Corporate events
+</option>
+<option  onclick="leapto(this.form)" value="/newsltrs/spssupdate/">
+Newsletters
+</option>
+<option  onclick="leapto(this.form)" value="/press/">
+Press releases
+</option>
+<option >
+-------------------------------------------------
+</option>
+<option  onclick="leapto(this.form)" value="">
+Services
+</option>
+<option  onclick="leapto(this.form)" value="/custsrv/">
+Customer service
+</option>
+<option  onclick="leapto(this.form)" value="/tech/">
+Technical support
+</option>
+<option  onclick="leapto(this.form)" value="/training/">
+Training
+</option>
+<option >
+-------------------------------------------------
+</option>
+<option  onclick="leapto(this.form)" value="/site_index.htm">
+Site index
+</option>
+</select>
+</form>
+<!--- Copyright Information ------>
+<!-- aap links -->
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<p >
+<b >
+Copyright © 2001, SPSS Inc. All rights reserved.
+</b>
+<br ></br>
+SPSS Inc. Headquarters, 233 S. Wacker Drive, 11th floor, Chicago, Illinois 60606
+<br ></br>
+<a  href="/privacy.htm">
+Privacy Policy
+</a>
+|
+<a  href="/terms.htm">
+Terms and Conditions
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+</center>
+</td>
+</tr>
+</table>
+<!--- Top of Side Bar Width 140 ------>
+</td>
+<td  width="22">
+<img ></img>
+</td>
+<td  bgcolor="e7d9d1" width="10"></td>
+<td  bgcolor="e7d9d1" height="95%" rowspan="2" valign="top" width="140">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<!--- break up sidebar items with hr's as below ------>
+<!---  &amp;amp;lt;br&amp;amp;gt;
+ &amp;amp;lt;hr width="90%" color="Black"&amp;amp;gt;  ------>
+<br ></br>
+<font  face="arial, verdana, helvetica" size="1">
+<b >
+SPSS
+<br ></br>
+Additional analytic power
+<br ></br>
+<p >
+SPSS Regression Models
+</p>
+</b>
+<br ></br>
+<a  href="/spss/regression/regression.htm">
+Product information
+</a>
+<br ></br>
+<a  href="/spss/regression/regspecs.htm">
+Specifications
+</a>
+<br ></br>
+<a  href="/spss/regression/regbenefits.htm">
+Benefits
+</a>
+<br ></br>
+<a  href="/spss/regression/regexamples.htm">
+Examples
+</a>
+<br ></br>
+</font>
+<hr ></hr>
+<b >
+SPSS Advanced Models
+</b>
+<br ></br>
+<a  href="/spss/advanced/advmodels.htm">
+Product information
+</a>
+<br ></br>
+<a  href="/spss/advanced/advmodel_specs.htm">
+Specifications
+</a>
+<br ></br>
+<hr ></hr>
+<b >
+SPSS Categories
+</b>
+<br ></br>
+<a  href="/spss/categories/cat95-98.htm">
+Product information
+</a>
+<br ></br>
+<a  href="/spss/categories/specs.htm">
+Specifications
+</a>
+<br ></br>
+<a  href="/spss/
+categories/cat_exampleA.htm">
+Examples
+</a>
+<br ></br>
+<hr ></hr>
+<b >
+SPSS Conjoint
+</b>
+<br ></br>
+<a  href="/spss/conjoint/con1.htm">
+Product information
+</a>
+<br ></br>
+<a  href="/spss/conjoint/conjspec.htm">
+Specifications
+</a>
+<br ></br>
+<a  href="/spss/conjoint/con_example.htm">
+Examples
+</a>
+<br ></br>
+<hr ></hr>
+<b >
+SPSS Exact Tests
+</b>
+<br ></br>
+<a  href="/spss/exact/exact1.htm">
+Product information
+</a>
+<br ></br>
+<a  href="/spss/exact/exspec.htm">
+Specifications
+</a>
+<br ></br>
+<hr ></hr>
+<b >
+SPSS Maps
+</b>
+<br ></br>
+<a  href="/spss/maps/">
+Introduction
+</a>
+<br ></br>
+<a  href="/spss/maps/overview.htm">
+Product information
+</a>
+<br ></br>
+<a  href="/spss/maps/specs.htm">
+Specifications
+</a>
+<br ></br>
+<a  href="/spss/maps/samplemaps.htm">
+Sample maps
+</a>
+<br ></br>
+<hr ></hr>
+<b >
+SPSS Missing Value Analysis
+</b>
+<br ></br>
+<a  href="/spss/mva/mva1.htm">
+Product information
+</a>
+<br ></br>
+<a  href="/spss/mva/mva1.htm#specs">
+Specifications
+</a>
+<br ></br>
+<a  href="/spss/mva/mva_example.htm">
+Examples
+</a>
+<br ></br>
+<hr ></hr>
+<b >
+SPSS Report Writer
+</b>
+<br ></br>
+<a  href="/reportwriter">
+introduction
+</a>
+<br ></br>
+<a  href="/reportwriter/spec.htm">
+Specifications
+</a>
+<br ></br>
+<hr ></hr>
+<b >
+SPSS Tables
+</b>
+<br ></br>
+<a  href="/spss/tables/tables.htm">
+Product information
+</a>
+<br ></br>
+<a  href="/spss/tables/tablesspecs.htm">
+Specifications
+</a>
+<br ></br>
+<hr ></hr>
+<b >
+SPSS Trends
+</b>
+<br ></br>
+<a  href="/spss/trends/trends.htm">
+Product information
+</a>
+<br ></br>
+<a  href="/spss/trends/trendspecs.htm">
+Specifications
+</a>
+<br ></br>
+<p >
+<a  href="/spss/index.htm">
+SPSS home
+</a>
+<br ></br>
+<br ></br>
+</p>
+<hr ></hr>
+<a  href="/estore/softwaremenu">
+Order now
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="/spssatwork/">
+SPSS@work
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="/contact_us/">
+Contact us
+</a>
+<br ></br>
+<a  href="/">
+spss.com home
+</a>
+<br ></br>
+<!--- Bottom of Side Bar and Search ------>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<img ></img>
+<br ></br>
+<br ></br>
+<!--SEARCH FIELD-->
+<table  TABID="11961" alt="" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td >
+<form  action="/searchaction.cfm" method="post">
+<input ></input>
+<input ></input>
+<input ></input>
+</form>
+</td>
+</tr>
+</table>
+<!--END SEARCH FIELD-->
+</td>
+<td  bgcolor="ffffff" width="1"></td>
+</tr>
+</table>
+<!--- Top Navigation Image map ------>
+<!----tagline ------>
+<map  name="nav.dropdownb365e30c">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</body>
+</html>

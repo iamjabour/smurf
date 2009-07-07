@@ -1,0 +1,362 @@
+<html >
+<head >
+<title >
+Singular Value Decomposition (DSP Blockset)
+</title>
+<link ></link>
+<!-- $Revision$  $Date$ -->
+<!-- DOCNAME: DSP Blockset -->
+<!-- CHUNKNAME: Singular Value Decomposition -->
+<!-- CHAPNAME: Singular Value Decomposition -->
+<!-- HEADSTUFF -->
+</head>
+<body  bgcolor="#ffffff">
+<a  name="1250488">
+<!-- NAVBARTOP -->
+<script >
+if (parent.frames.length2) document.write('
+<p ></p>
+</script>
+</a>
+<a >
+<b >
+Documentation
+</b>
+</a>
+<img ></img>
+<a  href="dspblks.shtml">
+<b >
+DSP Blockset
+</b>
+</a>
+');
+<table  TABID="09358" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#d9e1e1" valign="baseline">
+<b >
+DSP Blockset
+</b>
+</td>
+<td  align="right" bgcolor="#d9e1e1" valign="baseline">
+<a  href="sinewave.shtml">
+<img ></img>
+</a>
+<a  href="sort.shtml">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<font  class="headdoc" color="#990000" size="+3">
+Singular Value Decomposition
+</font>
+<!-- FNAME:Singular Value Decomposition -->
+<a  name="1250488"></a>
+<!-- H2 -->
+<a  name="1250489"></a>
+<br ></br>
+<p >
+<a  name="1250490"></a>
+Factor a matrix using singular value decomposition.
+</p>
+<!-- H2 -->
+<a  name="1250491"></a>
+<p >
+<font  class="midsup" color="#990000" size="+1">
+<b >
+Library
+</b>
+</font>
+<br ></br>
+</p>
+<p >
+<a  name="1250492"></a>
+Math Functions / Matrices and Linear Algebra /
+<a  name="rmvd_mllnk">
+Matrix Factorizations
+</a>
+</p>
+<!-- H2 -->
+<a  name="1250496"></a>
+<p >
+<font  class="midsup" color="#990000" size="+1">
+<b >
+Description
+</b>
+</font>
+<br ></br>
+</p>
+<p >
+<a  name="1250498"></a>
+The Singular Value Decomposition block factors the M-by-N input matrix A such that
+</p>
+<ul >
+<a  name="1250502"></a>
+<img ></img>
+</ul>
+<p >
+<a  name="1383727"></a>
+where U is an M-by-P matrix, V is an N-by-P matrix, S is a length-P vector, and P is defined as min(M,N).
+</p>
+<p >
+<a  name="1383952"></a>
+When M = N, U and V are both M-by-M unitary matrices. When M &gt; N, V is an N-by-N unitary matrix, and U is an M-by-N matrix whose columns are the first N columns of a unitary matrix. When N &gt; M, U is an M-by-M unitary matrix, and V is an M-by-N matrix whose columns are the first N columns of a unitary matrix. In all cases, S is a 1-D vector of positive singular values having length P. The output is always sample-based.
+</p>
+<p >
+<a  name="1391281"></a>
+Length-N row inputs are treated as length-N columns.
+</p>
+<ul ></ul>
+<pre >
+<a  name="1250504"></a>
+[U,S,V] = svd(A,0)       % Equivalent MATLAB code for M &gt; N
+</pre>
+<p >
+<a  name="1259644"></a>
+Note that the first (maximum) element of output S is equal to the 2-norm of the matrix A.
+</p>
+<p >
+<a  name="1384051"></a>
+You can enable the
+<code >
+U
+</code>
+and
+<code >
+V
+</code>
+output ports by selecting the
+<strong >
+Output the singular vectors
+</strong>
+parameter.
+</p>
+<!-- H2 -->
+<a  name="1384072"></a>
+<p >
+<font  class="midsup" color="#990000" size="+1">
+<b >
+Dialog Box
+</b>
+</font>
+<br ></br>
+</p>
+<p >
+<a  name="1250547"></a>
+<img ></img>
+</p>
+<dl ></dl>
+<a ></a>
+<b >
+Compute singular vectors
+</b>
+<a  name="1384104"></a>
+Enables the
+<code >
+U
+</code>
+and
+<code >
+V
+</code>
+output ports when selected.
+<!-- H2 -->
+<a  name="1384105"></a>
+<p >
+<font  class="midsup" color="#990000" size="+1">
+<b >
+References
+</b>
+</font>
+<br ></br>
+</p>
+<p >
+<a  name="1250549"></a>
+Golub, G. H., and C. F. Van Loan.
+<em >
+Matrix Computations
+</em>
+. 3rd ed. Baltimore, MD: Johns Hopkins University Press, 1996.
+</p>
+<a  name="seeal_sec"></a>
+<!-- H2 -->
+<a  name="1250550"></a>
+<p >
+<font  class="midsup" color="#990000" size="+1">
+<b >
+See Also
+</b>
+</font>
+<br ></br>
+</p>
+<p >
+<a  name="1250485"></a>
+<!-- TBLSTART -->
+</p>
+<table  TABID="09359" genuinetable="yes" border="0" cellpadding="2" cellspacing="0" width="100%">
+<caption ></caption>
+<tr  valign="top">
+<td >
+<a  name="1283070"></a>
+<a  href="autocorrelationlpc.shtml#645787">
+Autocorrelation LPC
+</a>
+<br ></br>
+</td>
+<td >
+<a  name="1283072"></a>
+DSP Blockset
+<br ></br>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<a  name="1283077"></a>
+<a  href="choleskyfactorization.shtml#638865">
+Cholesky Factorization
+</a>
+<br ></br>
+</td>
+<td >
+<a  name="1283079"></a>
+DSP Blockset
+<br ></br>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<a  name="1283084"></a>
+<a  href="ldlfactorization.shtml#517107">
+LDL Factorization
+</a>
+<br ></br>
+</td>
+<td >
+<a  name="1283086"></a>
+DSP Blockset
+<br ></br>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<a  name="1284936"></a>
+<a  href="luinverse.shtml#712399">
+LU Inverse
+</a>
+<br ></br>
+</td>
+<td >
+<a  name="1284938"></a>
+DSP Blockset
+<br ></br>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<a  name="1283091"></a>
+<a  href="pseudoinverse.shtml#1258911">
+Pseudoinverse
+</a>
+<br ></br>
+</td>
+<td >
+<a  name="1283093"></a>
+DSP Blockset
+<br ></br>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<a  name="1283098"></a>
+<a  href="qrfactorization.shtml#695626">
+QR Factorization
+</a>
+<br ></br>
+</td>
+<td >
+<a  name="1283100"></a>
+DSP Blockset
+<br ></br>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<a  name="1283105"></a>
+<a  href="svdsolver.shtml#1256921">
+SVD Solver
+</a>
+<br ></br>
+</td>
+<td >
+<a  name="1283107"></a>
+DSP Blockset
+<br ></br>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<a  name="1283109"></a>
+<code >
+<a  href="../../techdoc/ref/svd.shtml">
+svd
+</a>
+</code>
+<br ></br>
+</td>
+<td >
+<a  name="1283111"></a>
+MATLAB
+<br ></br>
+</td>
+</tr>
+</table>
+<table  TABID="09360">
+<tr  valign="top">
+<td ></td>
+</tr>
+</table>
+<p >
+<a  name="1305891"></a>
+See
+<a  href="dsp4_31a.shtml#116624">
+Factoring Matrices
+</a>
+for related information.
+</p>
+<p >
+<br ></br>
+</p>
+<p ></p>
+<table  TABID="09361" bgcolor="#d9e1e1" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  valign="top">
+<td  align="left" width="20">
+<a  href="sinewave.shtml">
+<img ></img>
+</a>
+</td>
+<td  align="left">
+Sine Wave
+</td>
+<td ></td>
+<td  align="right">
+Sort
+</td>
+<td  align="right" width="20">
+<a  href="sort.shtml">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<br ></br>
+<!-- Copyright (c) 1999 by The MathWorks, Inc. -->
+<!-- Last updated: Sat Sep 09 12:12:26 2000 -->
+<br ></br>
+<center >
+<img ></img>
+</center>
+<map  name="Copyright_map">
+<area ></area>
+</map>
+</body>
+</html>

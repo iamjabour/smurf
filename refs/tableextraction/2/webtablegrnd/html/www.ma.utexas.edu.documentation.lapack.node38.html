@@ -1,0 +1,672 @@
+<!-- Converted with LaTeX2HTML 0.6.4 (Tues Aug 30 1994) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -&amp;amp;gt;-->
+<!---->
+<html >
+<head ></head>
+<body >
+<p ></p>
+<title >
+Generalized Singular Value Decomposition (GSVD)
+</title>
+<p >
+<br ></br>
+</p>
+<hr ></hr>
+<a  href="node39.html" name="tex2html2530">
+<img ></img>
+</a>
+<a  href="node35.html" name="tex2html2528">
+<img ></img>
+</a>
+<a  href="node37.html" name="tex2html2524">
+<img ></img>
+</a>
+<a  href="node1.html" name="tex2html2532">
+<img ></img>
+</a>
+<a  href="node139.html" name="tex2html2533">
+<img ></img>
+</a>
+<br ></br>
+<b >
+Next:
+</b>
+<a  href="node39.html" name="tex2html2531">
+Computational Routines
+</a>
+<b >
+Up:
+</b>
+<a  href="node35.html" name="tex2html2529">
+Generalized Eigenvalue and
+</a>
+<b >
+Previous:
+</b>
+<a  href="node37.html" name="tex2html2525">
+Generalized Nonsymmetric Eigenproblems
+</a>
+<br ></br>
+<hr ></hr>
+<p ></p>
+<h3 >
+<a  name="SECTION03225300000000000000">
+Generalized Singular Value Decomposition (GSVD)
+</a>
+</h3>
+<a  name="sectionGSVDdriver"></a>
+<p >
+<a  name="993"></a>
+<a  name="994"></a>
+<a  name="995"></a>
+<a  name="996"></a>
+<a  name="997"></a>
+The
+<b >
+generalized (or quotient) singular value decomposition
+</b>
+of an
+<var >
+m
+</var>
+-by-
+<var >
+n
+</var>
+matrix
+<var >
+A
+</var>
+and a
+<var >
+p
+</var>
+-by-
+<var >
+n
+</var>
+matrix
+<var >
+B
+</var>
+is given by the pair of factorizations
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+The matrices in these factorizations have the following properties:
+</p>
+<ul >
+<li >
+<var >
+U
+</var>
+is
+<var >
+m
+</var>
+-by-
+<var >
+m
+</var>
+,
+<var >
+V
+</var>
+is
+<var >
+p
+</var>
+-by-
+<var >
+p
+</var>
+,
+<var >
+Q
+</var>
+is
+<var >
+n
+</var>
+-by-
+<var >
+n
+</var>
+, and all three matrices are orthogonal. If
+<var >
+A
+</var>
+and
+<var >
+B
+</var>
+are complex, these matrices are unitary instead of orthogonal, and
+<img ></img>
+should be replaced by
+<img ></img>
+in the pair of factorizations.
+</li>
+<li >
+<var >
+R
+</var>
+is
+<var >
+r
+</var>
+-by-
+<var >
+r
+</var>
+, upper triangular and nonsingular. [0 ,
+<var >
+R
+</var>
+] is
+<var >
+r
+</var>
+-by-
+<var >
+n
+</var>
+(in other words, the 0 is an
+<var >
+h
+</var>
+-by-
+<var >
+n
+</var>
+-
+<var >
+r
+</var>
+zero matrix). The integer
+<var >
+r
+</var>
+is the rank of
+<img ></img>
+, and satisfies
+<var >
+r
+</var>
+=
+<var >
+n
+</var>
+.
+</li>
+<li >
+<img ></img>
+is
+<var >
+m
+</var>
+-by-
+<var >
+r
+</var>
+,
+<img ></img>
+is
+<var >
+p
+</var>
+-by-
+<var >
+r
+</var>
+, both are real, nonnegative and diagonal, and
+<img ></img>
+. Write
+<img ></img>
+and
+<img ></img>
+, where
+<img ></img>
+and
+<img ></img>
+lie in the interval from 0 to 1. The ratios
+<img ></img>
+are called the
+<b >
+generalized singular values
+</b>
+of the pair
+<var >
+A
+</var>
+,
+<var >
+B
+</var>
+,
+<img ></img>
+. If
+<img ></img>
+, then the generalized singular value
+<a  name="1005"></a>
+<a  name="1006"></a>
+<img ></img>
+is
+<b >
+infinite
+</b>
+.
+</li>
+</ul>
+<p >
+<img ></img>
+and
+<img ></img>
+have the following detailed structures, depending on whether
+<var >
+m
+</var>
+-
+<var >
+r
+</var>
+&gt; = 0 or
+<var >
+m
+</var>
+-
+<var >
+r
+</var>
+0. In the first case,
+<var >
+m
+</var>
+-
+<var >
+r
+</var>
+&gt; = 0, then
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+Here
+<var >
+l
+</var>
+is the rank of
+<var >
+B
+</var>
+,
+<var >
+m
+</var>
+=
+<var >
+r
+</var>
+- 1,
+<var >
+C
+</var>
+and
+<var >
+S
+</var>
+are diagonal matrices satisfying
+<img ></img>
+, and
+<var >
+S
+</var>
+is nonsingular. We may also identify
+<img ></img>
+,
+<img ></img>
+for
+<img ></img>
+,
+<img ></img>
+, and
+<img ></img>
+for
+<img ></img>
+. Thus, the first
+<var >
+k
+</var>
+generalized singular values
+<img ></img>
+are infinite, and the remaining
+<var >
+l
+</var>
+generalized singular values are finite.
+</p>
+<p >
+In the second case, when
+<var >
+m
+</var>
+-
+<var >
+r
+</var>
+0,
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+and
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+Again,
+<var >
+l
+</var>
+is the rank of
+<var >
+B
+</var>
+,
+<var >
+k
+</var>
+=
+<var >
+r
+</var>
+- 1,
+<var >
+C
+</var>
+and
+<var >
+S
+</var>
+are diagonal matrices satisfying
+<img ></img>
+,
+<var >
+S
+</var>
+is nonsingular, and we may identify
+<img ></img>
+,
+<img ></img>
+for
+<img ></img>
+,
+<img ></img>
+,
+<img ></img>
+,
+<img ></img>
+for
+<img ></img>
+, and
+<img ></img>
+. Thus, the first
+<img ></img>
+generalized singular values
+<img ></img>
+are infinite, and the remaining
+<img ></img>
+generalized singular values are finite.
+</p>
+<p >
+Here are some important special cases of the generalized singular value decomposition.
+<a  name="1024"></a>
+<a  name="1025"></a>
+First, if
+<var >
+B
+</var>
+is square and nonsingular, then
+<var >
+r
+</var>
+=
+<var >
+n
+</var>
+and the generalized singular value decomposition of
+<var >
+A
+</var>
+and
+<var >
+B
+</var>
+is equivalent to the singular value decomposition of
+<img ></img>
+, where the singular values of
+<img ></img>
+are equal to the generalized singular values of the pair
+<var >
+A
+</var>
+,
+<var >
+B
+</var>
+:
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+Second, if the columns of
+<img ></img>
+are orthonormal, then
+<var >
+r
+</var>
+=
+<var >
+n
+</var>
+,
+<var >
+R
+</var>
+=
+<var >
+I
+</var>
+and the generalized singular value decomposition of
+<var >
+A
+</var>
+and
+<var >
+B
+</var>
+is equivalent to the CS (Cosine-Sine) decomposition of
+<img ></img>
+<a  href="node138.html#GVL2">
+[45]
+</a>
+:
+<a  name="1032"></a>
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+Third, the generalized eigenvalues and eigenvectors of
+<img ></img>
+can be expressed in terms of the generalized singular value decomposition: Let
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+Then
+</p>
+<p >
+<img ></img>
+</p>
+<p >
+Therefore, the columns of
+<var >
+X
+</var>
+are the eigenvectors of
+<img ></img>
+, and the ``nontrivial'' eigenvalues are the squares of the generalized singular values (see also section
+<a  href="node36.html#secGSEP">
+2.2.5.1
+</a>
+). ``Trivial'' eigenvalues are those corresponding to the leading
+<var >
+n
+</var>
+-
+<var >
+r
+</var>
+columns of
+<var >
+X
+</var>
+, which span the common null space of
+<img ></img>
+and
+<img ></img>
+.
+<a  name="1046"></a>
+<a  name="1047"></a>
+The ``trivial eigenvalues'' are not well defined
+<a  href="footnode.html#8852" name="tex2html180">
+<img ></img>
+</a>
+.
+</p>
+<p >
+A single driver routine xGGSVD
+<a  name="1049"></a>
+<a  name="1050"></a>
+<a  name="1051"></a>
+<a  name="1052"></a>
+computes the generalized singular value decomposition
+<a  name="1053"></a>
+<a  name="1054"></a>
+of
+<var >
+A
+</var>
+and
+<var >
+B
+</var>
+(see Table
+<a  href="node38.html#tabdrivegeig">
+2.6
+</a>
+). The method is based on the method described in
+<a  href="node138.html#baizha93">
+[12]
+</a>
+<a  href="node138.html#baidemmel92b">
+[10]
+</a>
+<a  href="node138.html#paige86a">
+[62]
+</a>
+.
+</p>
+<p ></p>
+<p >
+<a  name="1058"></a>
+<a  name="tabdrivegeig"></a>
+</p>
+<pre >
+----------------------------------------------------------------
+Type of  Function and         Single precision  Double precision
+problem  storage scheme       real     complex  real     complex
+----------------------------------------------------------------
+GSEP     simple driver        SSYGV    CHEGV    DSYGV    ZHEGV
+
+         simple driver        SSPGV    CHPGV    DSPGV    ZHPGV
+          (packed storage)
+
+         simple driver        SSBGV    CHBGV    DSBGV    ZHBGV
+          (band matrices) 
+----------------------------------------------------------------
+GNEP     simple driver for    SGEGS    CGEGS    DGEGS    ZGEGS
+          Schur factorization 
+
+         simple driver for    SGEGV    CGEGV    DGEGV    ZGEGV
+          eigenvalues/vectors 
+----------------------------------------------------------------
+GSVD     singular values/     SGGSVD   CGGSVD   DGGSVD  ZGGSVD
+         vectors 
+-----------------------------------------------------------------
+</pre>
+<strong >
+Table 2.6:
+</strong>
+Driver routines for generalized eigenvalue and singular value problems
+<br ></br>
+<p ></p>
+<p >
+<br ></br>
+</p>
+<hr ></hr>
+<a  href="node39.html" name="tex2html2530">
+<img ></img>
+</a>
+<a  href="node35.html" name="tex2html2528">
+<img ></img>
+</a>
+<a  href="node37.html" name="tex2html2524">
+<img ></img>
+</a>
+<a  href="node1.html" name="tex2html2532">
+<img ></img>
+</a>
+<a  href="node139.html" name="tex2html2533">
+<img ></img>
+</a>
+<br ></br>
+<b >
+Next:
+</b>
+<a  href="node39.html" name="tex2html2531">
+Computational Routines
+</a>
+<b >
+Up:
+</b>
+<a  href="node35.html" name="tex2html2529">
+Generalized Eigenvalue and
+</a>
+<b >
+Previous:
+</b>
+<a  href="node37.html" name="tex2html2525">
+Generalized Nonsymmetric Eigenproblems
+</a>
+<br ></br>
+<hr ></hr>
+<p >
+<br ></br>
+</p>
+<hr ></hr>
+<p ></p>
+<address >
+<i >
+<br ></br>
+Tue Nov 29 14:03:33 EST 1994
+</i>
+</address>
+</body>
+</html>

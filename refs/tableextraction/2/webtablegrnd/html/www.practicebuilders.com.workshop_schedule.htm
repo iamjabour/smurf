@@ -1,0 +1,1398 @@
+<html >
+<head >
+<title >
+PBA Million Dollar Workshop Goals and Schedule
+</title>
+<meta ></meta>
+<meta ></meta>
+<script >
+<!--  hide from browser 
+
+// ---  image mouseovers  -----------
+
+// Detect browser 
+function Is() {
+    var agent = navigator.userAgent.toLowerCase();
+    this.major = parseInt(navigator.appVersion);
+    this.minor = parseFloat(navigator.appVersion);
+    this.ns  = ((agent.indexOf('mozilla')!=-1) &amp;amp;amp;amp;&amp;amp;amp;amp; ((agent.indexOf('spoofer')==-1) &amp;amp;amp;amp;&amp;amp;amp;amp; (agent.indexOf('compatible') == -1)));
+    this.ns2 = (this.ns &amp;amp;amp;amp;&amp;amp;amp;amp; (this.major == 3));
+    this.ns3 = (this.ns &amp;amp;amp;amp;&amp;amp;amp;amp; (this.major == 3));
+    this.ns4 = (this.ns &amp;amp;amp;amp;&amp;amp;amp;amp; (this.major &amp;amp;amp;gt;= 4));
+    this.ns406 = (this.ns &amp;amp;amp;amp;&amp;amp;amp;amp; (this.minor == 4.06));
+    this.ns45 = (this.ns &amp;amp;amp;amp;&amp;amp;amp;amp; (this.minor == 4.5));
+    this.ie   = (agent.indexOf("msie") != -1);
+    this.ie3  = (this.ie &amp;amp;amp;amp;&amp;amp;amp;amp; (this.major == 2));
+    this.ie4  = (this.ie &amp;amp;amp;amp;&amp;amp;amp;amp; (this.major &amp;amp;amp;gt;= 4));
+    this.op3 = (agent.indexOf("opera") != -1);
+}
+
+var is = new Is();
+
+var section_state = 0;
+var page_state = 0;
+
+// Create image objects, preload all active and inactive images.
+    if(is.ns3 || is.op3 || is.ie4 || is.ns4) { 
+    img1on = new Image();
+      img1on.src = "nav/home_btn.gif";
+    img2on = new Image();
+      img2on.src = "nav/who_we_btn.gif";
+    img3on = new Image();
+      img3on.src = "nav/services_btn.gif";
+    img4on = new Image();
+      img4on.src = "nav/gallery_btn.gif";
+    img5on = new Image();
+      img5on.src = "nav/why_us_btn.gif";
+    img6on = new Image();
+      img6on.src = "nav/self_btn.gif";
+    img7on = new Image();
+      img7on.src = "nav/join_btn.gif";
+    img8on = new Image();
+      img8on.src = "nav/contact_btn.gif";
+    img9on = new Image();
+      img9on.src = "nav/members_btn.gif";
+    img10on = new Image();
+      img10on.src = "nav/leftnav39_a.gif";
+    img11on = new Image();
+      img11on.src = "nav/leftnav3_a.gif";
+    img12on = new Image();
+      img12on.src = "nav/leftnav12_a.gif";
+    img13on = new Image();
+      img13on.src = "nav/leftnav4_a.gif";
+    img14on = new Image();
+      img14on.src = "nav/leftnav13_a.gif";
+    img15on = new Image();
+      img15on.src = "nav/leftnav14_a.gif";
+    img16on = new Image();
+      img16on.src = "nav/leftnav7_a.gif";
+   img17on = new Image();
+      img17on.src = "nav/leftnav18_a.gif";
+    img18on = new Image();
+      img18on.src = "nav/leftnav14_a.gif";
+    img19on = new Image();
+      img19on.src = "nav/leftnav19_btn.gif";
+    img20on = new Image();
+      img20on.src = "nav/leftnav20_a.gif";
+        
+    img1off = new Image();
+      img1off.src = "nav/home_a.gif";
+    img2off = new Image();
+      img2off.src = "nav/who_we_a.gif";
+    img3off = new Image();
+      img3off.src = "nav/services_a.gif";
+    img4off = new Image();
+      img4off.src = "nav/gallery_a.gif";
+    img5off = new Image();
+      img5off.src = "nav/why_us_a.gif";
+    img6off = new Image();
+      img6off.src = "nav/self_a.gif";
+    img7off = new Image();
+      img7off.src = "nav/join_a.gif";
+    img8off = new Image();
+      img8off.src = "nav/contact_a.gif";
+    img9off = new Image();
+      img9off.src = "nav/members_a.gif";
+    img10off = new Image();
+      img10off.src = "nav/leftnav39_btn.gif";
+    img11off = new Image();
+      img11off.src = "nav/leftnav3_btn.gif";
+    img12off = new Image();
+      img12off.src = "nav/leftnav12_btn.gif";
+    img13off = new Image();
+      img13off.src = "nav/leftnav4_btn.gif";
+    img14off = new Image();
+      img14off.src = "nav/leftnav13_btn.gif";
+    img15off = new Image();
+      img15off.src = "nav/leftnav14_btn.gif";
+    img16off = new Image();
+      img16off.src = "nav/leftnav7_btn.gif";
+    img17off = new Image();
+      img17off.src = "nav/leftnav18_btn.gif";
+    img18off = new Image();
+      img18off.src = "nav/leftnav14_btn.gif";
+    img19off = new Image();
+      img19off.src = "nav/leftnav19_a.gif";
+    img20off = new Image();
+      img20off.src = "nav/leftnav20_btn.gif";
+}
+
+// Function to "activate" images.
+function imgAct(imgName) {
+    if(is.ns3 || is.op3 || is.ie4 || is.ns4) {
+    document[imgName].src = eval(imgName + "on.src");
+    }
+}
+
+// Function to "deactivate" images.
+function imgInact(imgName) {
+    if(is.ns3 || is.op3 || is.ie4 || is.ns4) {
+    document[imgName].src = eval(imgName + "off.src");
+    }
+}
+
+function openWindow(url) {
+  popupWin = new Object()                                                                      
+}
+
+function openWin(url, name) 
+{
+popupWin = window.open(url, name, "width=630,height=470,left=0,right=0,toolbar=yes,scrollbars=yes,resizable=yes");
+}
+
+// End ------->
+</script>
+</head>
+<body  alink="navy" bgcolor="#FFFFFF" link="#006699" text="#000000" vlink="#009999">
+<a  name="top"></a>
+<table  TABID="10863" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  align="left" valign="top" width="120">
+<img ></img>
+<br ></br>
+<p >
+<br ></br>
+</p>
+<p >
+<!--- Start left Menu ------->
+<a  onmouseout="imgInact(img10)">
+<img ></img>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  onmouseout="imgInact(img12)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="imgInact(img13)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="imgInact(img14)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="imgInact(img15)">
+<img ></img>
+</a>
+<br ></br>
+</p>
+<p >
+<a  onmouseout="imgInact(img19)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="imgInact(img20)">
+<img ></img>
+</a>
+</p>
+</td>
+<!--- End left Menu ------->
+<td  border="0" width="360">
+<p  align="center">
+<img ></img>
+</p>
+<table  TABID="10862" border="0" cellpadding="0" cellspacing="0" width="360">
+<tr >
+<td  align="left" valign="top" width="155">
+<img ></img>
+</td>
+<!----- Italic Text Copy Begins Here --------->
+<td  width="100%">
+<font  face="Arial" size="2">
+<i >
+Light produces different effects at different frequencies. So do ideas.
+</i>
+</font>
+</td>
+</tr>
+</table>
+<p >
+<!----- Body Copy Begins Here --------->
+<font  face="Arial">
+<strong >
+WORKSHOP GOALS AND SCHEDULE
+</strong>
+</font>
+</p>
+<p >
+<a  name="goals">
+<strong >
+<font  face="Arial">
+Your Million Dollar Workshop has two primary goals:
+</font>
+</strong>
+</a>
+</p>
+<p >
+<font  face="Arial">
+? You?ll learn all the most proven techniques to build your practice, based upon our experience with over 100,000 practices before you. By the time you walk out, you?ll have been exposed to hundreds of ideas, techniques and strategies, culminating in all the knowledge you need to begin building your dream practice immediately. In fact, you?ll know more about how to build a practice than at least 95% of professional practitioners everywhere.
+</font>
+</p>
+<p >
+<font  face="Arial">
+? Obviously when you learn that much, you?ll need specific next steps. That?s why your Senior Marketing Director will custom design a marketing plan especially for you. This 12-month plan-of-attack will be built based upon our rigorous analysis of your practice, so that your marketing plan fits your unique situation and personality.
+</font>
+</p>
+<p >
+<font  face="Arial">
+You won?t have to wonder what to do next - those strategies most appropriate for you will be consolidated onto one, easy-to-understand page, complete with specific timings and budgets. And, your plan will fit you like a glove, or we?ll work with you until it does. You?ll be more confident about the future than you have in years, secure in the knowledge you finally have a
+<em >
+?secret weapon?
+</em>
+to build your dream practice.
+<br ></br>
+[
+<a  href="#top">
+Top
+</a>
+]
+</font>
+</p>
+<p >
+<font  face="Arial">
+[
+<a  href="register.htm">
+Sign Up Now!
+</a>
+] [
+<a  href="contact_us.htm#call">
+Please Contact Me!
+</a>
+]
+</font>
+</p>
+<p ></p>
+</td>
+<!-----  Right Colum Menu Buttons Begin Here  --------->
+<!---- Remark Out Current Page Button  -------->
+<!---- Use the _a Button for Main Menu Item and the _btn for the Mouse Over, if used -------->
+<td  border="0" width="120">
+<a  onmouseout="imgInact(img1)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="imgInact(img2)">
+<img ></img>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  onmouseout="imgInact(img4)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="imgInact(img5)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="imgInact(img6)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="imgInact(img7)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="imgInact(img8)">
+<img ></img>
+</a>
+<br ></br>
+<a  onmouseout="imgInact(img9)">
+<img ></img>
+</a>
+<br ></br>
+<!------  Right Colum Menu Buttons End Here  --------->
+</td>
+</tr>
+</table>
+<table  TABID="10867" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  valign="top" width="600">
+<center >
+<p >
+<a  name="schedule">
+<strong >
+<font  face="Arial">
+Weekend Workshops are scheduled for the following dates and locations:
+</font>
+</strong>
+</a>
+</p>
+<table  TABID="10864" border="0" cellpadding="1" cellspacing="1" genuinetable="yes" tabletitle="Weekend Workshops are scheduled for the following dates and locations:" width="95%">
+<tr  bgcolor="#3399CC">
+<td >
+<strong >
+<font  face="Arial">
+2000 DATES
+</font>
+</strong>
+</td>
+<td >
+<strong >
+<font  face="Arial">
+CITY
+</font>
+</strong>
+</td>
+<td >
+<strong >
+<font  face="Arial">
+VENUE
+</font>
+</strong>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+April 28-30
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+ORANGE COUNTY
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Doubletree Hotel
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+May 5-7
+</font>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+MIAMI
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Inter-Continental Hotel Miami
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+May 19-21
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+NEW YORK
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Crowne Plaza Manhattan
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+June 2-4
+</font>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+LAS VEGAS
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Harrah's Las Vegas
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+June 9-11
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+NASHVILLE
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Sheraton Music City
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<p >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+June 23-25
+</font>
+</p>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+DALLAS
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Crowne Plaza Dallas Market Center
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+July 7-9
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT">
+CHICAGO
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Palmer House Hilton
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+July 14-16
+</font>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+LOS ANGELES
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Crowne Plaza Los Angeles Airport Hotel
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+July 28-30
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+ATLANTIC CITY
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Sheraton Atlantic City West Hotel
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+August 4-6
+</font>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+SEATTLE
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Sheraton Seattle Hotel and Towers
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+August 11-13
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+BOSTON
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Hilton Boston Logan Airport
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+August 25-27
+</font>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+ORLANDO
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Hilton in the Walt Disney World Resort
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+September 8-10
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+HOUSTON
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Crowne Plaza Houston - Galleria Area
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+September 15-17
+</font>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+NEW YORK
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Grand Hyatt New York
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+September 22-24
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+ATLANTA
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Omni Hotel at CNN Center
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+October 13-15
+</font>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+DALLAS
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Omni Mandalay Hotel at Las Colinas
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+October 20-22
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+WASHINGTON, DC
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Hilton Alexandria Old Town
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+October 27-29
+</font>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+DENVER
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Hilton Denver Tech South
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+November 3-5
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+ORANGE COUNTY
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Doubletree Hotel Anaheim
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+November 10-12
+</font>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+CHICAGO
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Palmer House Hilton
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+November 17-19
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+PHILADELPHIA
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Warwick Hotel &amp; Towers
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+December 1-3
+</font>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+LAS VEGAS
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Harrah's Las Vegas
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+December 8-10
+</font>
+</td>
+<td  valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+SAN FRANCISCO
+</font>
+</td>
+<td >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+San Francisco Marriott Fisherman's Wharf
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+December 15-17
+</font>
+<font  size="3">
+<b >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT">
+<br ></br>
+</font>
+</b>
+</font>
+</td>
+<td  bgcolor="#99CCCC" valign="top">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+ATLANTA
+</font>
+</td>
+<td  bgcolor="#99CCCC">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+Omni Hotel at CNN Center
+</font>
+</td>
+</tr>
+</table>
+<p  align="center">
+<font  face="Arial">
+[
+<a  href="register.htm">
+Sign Up Now!
+</a>
+] [
+<a  href="contact_us.htm#call">
+Please Contact Me!
+</a>
+]
+</font>
+</p>
+<p >
+<br ></br>
+</p>
+</center>
+<p >
+<strong >
+<font  face="Arial">
+USEFUL REFERENCE...
+</font>
+</strong>
+</p>
+<p >
+<font  face="Arial">
+To help with your travel plans and for your convenience, here's more about each of our Workshop locations:
+</font>
+</p>
+<center >
+<table  TABID="10865" border="0" cellpadding="2" cellspacing="6" genuinetable="yes" tabletitle="USEFUL REFERENCE...
+To help with your travel plans and for your convenience, here's more about each of our Workshop locations:
+2000 SCHEDULE & LOCATIONS " width="95%">
+<tr  bgcolor="#3399CC">
+<td  colspan="2">
+<font  face="Arial">
+<b >
+2000 SCHEDULE &amp; LOCATIONS
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+ORANGE COUNTY WORKSHOP April 28-30
+<br ></br>
+Doubletree Hotel Anaheim/Orange County
+</b>
+<br ></br>
+100 The City Drive Orange, CA 92868
+</font>
+</td>
+<td  bgcolor="#CCCCCC" valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+714-634-4500
+<br ></br>
+or 800-222-TREE (8733)
+<br ></br>
+<a  href="http://www.doubletreehotel.com">
+www.doubletreehotel.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+MIAMI WORKSHOP May 5-7
+<br ></br>
+Inter-Continental Hotel Miami
+</b>
+<br ></br>
+100 Chopin Plaza Miami, FL 33131
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-327-0200
+<br ></br>
+<a  href="http://www.interconti.com">
+www.interconti.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  bgcolor="#CCCCCC" width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+NEW YORK WORKSHOP May 19-21
+<br ></br>
+Crowne Plaza Manhattan
+</b>
+<br ></br>
+1605 Broadway New York, NY 10019
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-243-6969
+<br ></br>
+<a  href="http://www.crowneplaza.com">
+www.crowneplaza.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+LAS VEGAS WORKSHOP June 2-4
+<br ></br>
+Harrah's Las Vegas
+</b>
+<br ></br>
+3475 Las Vegas Blvd. South Las Vegas, NV 89109
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+888-458-8471
+<br ></br>
+<a  href="http://www.harrahs.lv.com">
+www.harrahs.lv.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+NASHVILLE WORKSHOP June 9-11, 2000
+<br ></br>
+Sheraton Music City
+</b>
+<br ></br>
+777 McGavock Pike Nashville, TN 37214
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-325-3535
+<br ></br>
+<a  href="http://www.tenn.com/sheraton">
+www.tenn.com/sheraton
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<p >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+DALLAS WORKSHOP June 23-25
+<br ></br>
+Crowne Plaza Dallas Market Center
+</b>
+<br ></br>
+7050 Stemmons Freeway Dallas, TX 75247
+</font>
+</p>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-2-CROWNE
+<br ></br>
+<a  href="http://www.crowneplaza.com">
+www.crowneplaza.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+CHICAGO WORKSHOP - July 7-9
+<br ></br>
+Palmer House Hilton
+</b>
+<br ></br>
+17 E. Monroe Street Chicago, IL 60603
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-445-8667
+<br ></br>
+<a  href="http://www.htlton.com">
+www.hilton.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+LOS ANGELES WORKSHOP - July 14-16
+<br ></br>
+Crowne Plaza Los Angeles Airport Hotel
+</b>
+<br ></br>
+5985 West Century Boulevard Los Angeles, CA 90045
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+888-315-3700
+<br ></br>
+<a  href="http://www.crowneplaza.com">
+www.crowneplaza.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+ATLANTIC CITY WORKSHOP - July 28-30
+<br ></br>
+Sheraton Atlantic City West Hotel
+</b>
+<br ></br>
+6821 Black Horse Pike Atlantic City West, EHT, NJ 08234
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-782-9237
+<br ></br>
+<a  href="http://www.starwood.com">
+www.starwood.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+SEATTLE WORKSHOP - August 4-6
+<br ></br>
+Sheraton Seattle Hotel and Towers
+</b>
+<br ></br>
+1400 Sixth Avenue Seattle, WA 98101
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-325-3535
+<br ></br>
+<a  href="http://www.sheraton.com">
+www.sheraton.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+BOSTON WORKSHOP - August 11-13
+<br ></br>
+Hilton Boston Logan Airport
+</b>
+<br ></br>
+85 Terminal Road Boston, MA 02128
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-HILTONS
+<br ></br>
+<a  href="http://www.htlton.com">
+www.hilton.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+ORLANDO WORKSHOP - August 25-27
+<br ></br>
+Hilton in the Walt Disney World Resort
+</b>
+<br ></br>
+1751 Hotel Plaza Boulevard Lake Buena Vista, FL 32830
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-445-8667
+<br ></br>
+<a  href="http://www.htlton.com">
+www.hilton.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+HOUSTON WORKSHOP - September 8-10
+<br ></br>
+Crowne Plaza Houston - Galleria Area
+</b>
+<br ></br>
+2222 West Loop South Houston, TX 77027
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-327-6213
+<br ></br>
+<a  href="http://www.crowneplaza.com">
+www.crowneplaza.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+NEW YORK WORKSHOP - September 15-17
+<br ></br>
+Grand Hyatt New York
+</b>
+<br ></br>
+Park Avenue at Grand Central New York, NY 10017
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-233-1234
+<br ></br>
+<a  href="http://www.hyatt.com">
+www.hyatt.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+ATLANTA WORKSHOP - September 22-24
+<br ></br>
+Omni Hotel at CNN Center
+</b>
+<br ></br>
+100 CNN Center Atlanta, GA 30335
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-THE-OMNI
+<br ></br>
+or the Hotel Direct at 404-659-0000
+<br ></br>
+<a  href="http://www.omnihotels.com">
+www.omnihotels.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+DALLAS WORKSHOP - October 13-15
+<br ></br>
+Omni Mandalay Hotel at Las Colinas
+</b>
+<br ></br>
+221 East Las Colinas Boulevard Irving, TX 75039
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-THE OMNI
+<br ></br>
+or the Hotel Direct at 972-556-0800
+<a  href="http://www.omnihotels.com">
+www.omnihotels.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+WASHINGTON, DC WORKSHOP - October 20-22
+<br ></br>
+Hilton Alexandria Old Town
+<br ></br>
+</b>
+1767 King Street Alexandria, VA 22314
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+703-837-0440
+<br ></br>
+<a  href="http://www.htlton.com">
+www.hilton.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+DENVER WORKSHOP - October 27-29
+<br ></br>
+Hilton Denver Tech South
+</b>
+<br ></br>
+7801 East Orchard Street Greenwood Village, CO 80111
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+303-689-7063
+<br ></br>
+<a  href="http://www.htlton.com">
+www.hilton.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+ORANGE COUNTY WORKSHOP - November 3-5
+<br ></br>
+Doubletree Hotel Anaheim/Orange County
+</b>
+<br ></br>
+100 The City Drive Orange, CA 92868
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+714-634-4500
+<br ></br>
+or 800-222-TREE (8733)
+<br ></br>
+<a  href="http://www.doubletreehotel.com">
+www.doubletreehotel.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+CHICAGO WORKSHOP - November 10-12
+<br ></br>
+Palmer House Hilton
+</b>
+<br ></br>
+17 E. Monroe Street Chicago, IL 60603
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-445-8667
+<br ></br>
+<a  href="http://www.htlton.com">
+www.hilton.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+PHILADELPHIA WORKSHOP - November 17-19
+<br ></br>
+Warwick Hotel &amp; Towers
+</b>
+1701 Locust Street Philadelphia, PA 19103
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+215-735-6000
+<br ></br>
+<a  href="http://www.warwickhotels.com">
+www.warwickhotels.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+LAS VEGAS WORKSHOP - December 1-3
+<br ></br>
+Harrah's Las Vegas
+</b>
+<br ></br>
+3475 Las Vegas Blvd. South Las Vegas, NV 89109
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+888-458-8471
+<br ></br>
+<a  href="http://www.harrahs.lv.com">
+www.harrahs.lv.com
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#CCCCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+SAN FRANCISCO WORKSHOP - December 8-10
+<br ></br>
+San Francisco Marriott Fisherman's Wharf
+</b>
+<br ></br>
+1250 Columbus Avenue San Francisco, CA 94133
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-228-9290
+<br ></br>
+<a  href="http://www.marriotthotels.com/sfofw">
+www.marriotthotels.com/sfofw
+</a>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#99CCCC">
+<td  width="62%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+ATLANTA WORKSHOP - December 15-17
+<br ></br>
+Omni Hotel at CNN Center
+</b>
+<br ></br>
+100 CNN Center Atlanta, GA 30335
+</font>
+</td>
+<td  valign="top" width="38%">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+800-THE-OMNI
+<br ></br>
+or the Hotel Direct at 404-659-0000
+<a  href="http://www.omnihotels.com">
+www.omnihotels.com
+</a>
+</font>
+</td>
+</tr>
+</table>
+</center>
+<p >
+<br ></br>
+</p>
+<p  align="center">
+<font  face="Arial" size="1">
+[
+<a  href="guarantee.htm">
+Guarantee
+</a>
+] [
+<a  href="register.htm">
+Sign Up Now!
+</a>
+]
+</font>
+</p>
+<p >
+<!----- Body Copy Ends Here --------->
+<!----- Previsous and Next Buttons Go Here  --------->
+</p>
+<p >
+<br ></br>
+</p>
+<table  TABID="10866" border="0" cellpadding="0" cellspacing="0" width="360">
+<tr  valign="top">
+<td  width="160">
+<a  history.back="#DEFAULT" href="javascript:">
+<img ></img>
+</a>
+</td>
+<td  align="center" width="40">
+<a  href="#top">
+<img ></img>
+</a>
+</td>
+<td  align="right" width="160">
+<a  href="in-house.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<p >
+<br ></br>
+</p>
+<p >
+<br ></br>
+</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

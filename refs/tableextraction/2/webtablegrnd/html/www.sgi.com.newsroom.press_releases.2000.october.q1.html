@@ -1,0 +1,876 @@
+<html >
+<head >
+<title >
+SGI - Newsroom: SGI Announces Fiscal 2001 First Quarter Results
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<!-- Begin Header -->
+<script ></script>
+<!-- Stylesheet section is used to initialize the menus and the highlight menus -->
+<link ></link>
+<style  type="text/css">
+<!--
+#menu0	{	position: absolute; left: 156px; top: 79px; z-index: 101; visibility: hidden; width: 107px;}
+#menu0overs {	position: absolute; left: 156px; top: 79px; z-index: 111; visibility: hidden; width: 107px;}
+#menu1	{	position: absolute; left: 264px; top: 79px; z-index: 102; visibility: hidden; width: 110px;}
+#menu1overs {	position: absolute; left: 264px; top: 79px; z-index: 112; visibility: hidden; width: 110px;}
+#menu2	{	position: absolute; left: 375px; top: 79px; z-index: 103; visibility: hidden; width: 119px;}
+#menu2overs {	position: absolute; left: 375px; top: 79px; z-index: 113; visibility: hidden; width: 119px;}
+#menu3	{	position: absolute; left: 495px; top: 79px; z-index: 104; visibility: hidden; width: 167px;}
+#menu3overs {	position: absolute; left: 495px; top: 79px; z-index: 114; visibility: hidden; width: 167px;}
+#menu4	{	position: absolute; left: 663px; top: 79px; z-index: 106; visibility: hidden; width: 116px;}
+#menu4overs {	position: absolute; left: 663px; top: 79px; z-index: 116; visibility: hidden; width: 116px;}
+#menu5overs {	position: absolute; left: 615px; top: 45px; z-index: 400; visibility: hidden;}
+
+IMG.menu {border-bottom:1px white solid}
+BR.menu{margin-bottom:1px}
+
+DIV.print {	position: absolute; left: 0px; top: 81px; }
+-->
+</style>
+<script >
+<!--
+
+window.onerror = null;
+window.defaultStatus = '';
+
+var initialized = 0;
+var menus = new Array();
+var menustatus = new Array();
+var menuovers = new Array();
+
+// initializes the menus into an array
+function init(){
+	if(isFour) {
+		for (var i=0;i&amp;amp;amp;lt;=5;i++) {
+			menustatus[i] = "closed";
+			if (document.layers) {
+				menuovers[i] = eval("window.document.menu"+i+"overs");
+				menus[i] = eval("window.document.menu"+i);
+				if (i &amp;amp;amp;lt; 5) menuovers[i].onmouseout = menuhider;
+			} else {
+				var tmnov = (document.all)?eval("document.all.menu"+i+"overs"):document.getElementById("menu"+i+"overs");
+				var tmn = (document.all)?eval("document.all.menu"+i):document.getElementById("menu"+i);
+				menuovers[i] = tmnov.style;
+				menus[i] = tmn.style;
+				if (i &amp;amp;amp;lt; 5) tmnov.onmouseout = menuhider;
+			}
+		}
+	}
+	initialized = true;
+}
+
+// Sets the selected menu to visible
+function change(Name,Image,No) {
+        if (initialized) {
+                document [Name].src = eval(Image + No + ".src");
+		if (Name == 'imgmenu0') document ['imgcrnr'].src = eval("nav_prod_corner" + No + ".src");
+        	var menunumber = parseInt(Name.charAt(7));
+        	if((isFour)&amp;amp;amp;amp;&amp;amp;amp;amp;(No)&amp;amp;amp;amp;&amp;amp;amp;amp;(menustatus[menunumber] == 'closed')) {
+			menuovers[menunumber].visibility = 'visible';
+			menuovers[menunumber].zIndex = '310';
+			menus[menunumber].visibility = 'visible';
+			menus[menunumber].zIndex = '300';
+			menustatus[menunumber] = 'open';
+	        }
+        }
+}
+
+// Clears all menus
+function clearmenus() {
+	if (initialized) {
+		change('imgmenu0','nav_prd',0);
+		change('imgmenu1','nav_sol',0);
+		change('imgmenu2','nav_dev',0);
+		change('imgmenu3','nav_srv',0);
+		change('imgmenu4','nav_fun',0);
+		if(isFour) {
+			for(i=0; i&amp;amp;amp;lt;menus.length; i++) {
+				if(menustatus[i] == 'open') {
+					menuovers[i].visibility = 'hidden';
+					menuovers[i].zIndex = '110';
+					menus[i].visibility = 'hidden';
+					menus[i].zIndex = '100';
+					menustatus[i] = 'closed';
+				}
+			}
+		}
+	}
+}
+
+// Turns the highlighted part of a menu to visible
+function imagerep(imgname, divname){
+	if(isFour){
+		if (document.layers)
+			eval("window.document."+divname+".document['"+imgname+"'].src="+imgname+"over.src")
+		else
+			eval("document['"+imgname+"'].src="+imgname+"over.src");
+	}
+}
+
+// Turns off the highlighted part of a menu
+function eraseimage(imgname, divname){
+	if(isFour) {
+		if(document.layers)
+			eval("window.document."+divname+".document['"+imgname+"'].src=blank.src");
+		else
+			eval("document['" + imgname + "'].src = blank.src");
+	}
+}
+
+// Used to clear the menu after the mouse leaves it
+function menuhider(evnt) {
+        if (initialized) {
+                if (window.event) {
+                        if (window.event.toElement.className != "menu")
+				clearmenus();
+                } else if (evnt.target) {
+                        if(evnt.target.id || evnt.target.className != "menu")
+                                clearmenus();
+                }
+        }
+}
+
+// Caches the dropdown menus
+if (document.images) {
+
+	// Products Menu
+	var serversover=new Image();
+	serversover.src="/images/nav/drop_prod_servers.gif";
+	var workstationsover=new Image();
+	workstationsover.src="/images/nav/drop_prod_workstations.gif";
+	var swover=new Image();
+	swover.src="/images/nav/drop_prod_soft.gif";
+	var vissysover=new Image();
+	vissysover.src="/images/nav/drop_prod_vissys.gif";
+	var storageover=new Image();
+	storageover.src="/images/nav/drop_prod_storage.gif";
+	var remanover=new Image();
+	remanover.src="/images/nav/drop_prod_reman.gif";
+	var peripheralsover=new Image();
+	peripheralsover.src="/images/nav/drop_prod_peripherals.gif";
+
+	// Solutions Menu
+	var manover=new Image();
+	manover.src="/images/nav/drop_sol_man.gif";
+	var scienceover=new Image();
+	scienceover.src="/images/nav/drop_sol_science.gif";
+        var defenseover=new Image();
+        defenseover.src="/images/nav/drop_sol_defense.gif";
+	var telcoover=new Image();
+	telcoover.src="/images/nav/drop_sol_telco.gif";
+
+	// Developers Menu
+	var toolsover=new Image();
+	toolsover.src="/images/nav/drop_dev_prod.gif";
+	var programsover=new Image();
+	programsover.src="/images/nav/drop_dev_prog.gif";
+	var libraryover=new Image();
+	libraryover.src="/images/nav/drop_dev_libr.gif";
+	var opensourceover=new Image();
+	opensourceover.src="/images/nav/drop_dev_oss.gif";
+	var opsysover=new Image();
+	opsysover.src="/images/nav/drop_dev_opsys.gif";
+	var resourcesover=new Image();
+	resourcesover.src="/images/nav/drop_dev_reso.gif";
+
+	// Support Menu
+	var profover=new Image();
+	profover.src="/images/nav/drop_supp_prof.gif";
+	var prdvtyover=new Image();
+	prdvtyover.src="/images/nav/drop_supp_prdvty.gif";
+	var ortover=new Image();
+	ortover.src="/images/nav/drop_supp_ort.gif";
+	var eduover=new Image();
+	eduover.src="/images/nav/drop_supp_edu.gif";
+	var onlineover=new Image();
+	onlineover.src="/images/nav/drop_supp_online.gif";
+
+	// Fun Menu
+	var gamesover=new Image();
+	gamesover.src="/images/nav/drop_fun_games.gif";
+	var webdevover=new Image();
+	webdevover.src="/images/nav/drop_fun_webdev.gif";
+	var softdevover=new Image();
+	softdevover.src="/images/nav/drop_fun_softdev.gif";
+	var graphicsover=new Image();
+	graphicsover.src="/images/nav/drop_fun_graphics.gif";
+	var sysadminover=new Image();
+	sysadminover.src="/images/nav/drop_fun_sysadmin.gif";
+	var freewareover=new Image();
+	freewareover.src="/images/nav/drop_fun_freeware.gif";
+
+	// Clear GIF
+	var blank=new Image();
+	blank.src="/images/dots/dot_clear.gif";
+
+	// Products Rollover
+	nav_prod_corner0=new Image();
+	nav_prod_corner0.src="/images/nav/nav_prod_corner0.gif";
+	nav_prod_corner1=new Image();
+	nav_prod_corner1.src="/images/nav/nav_prod_corner1.gif";
+	nav_prd0=new Image();
+	nav_prd0.src="/images/nav/nav_prod0.gif";
+	nav_prd1=new Image();
+	nav_prd1.src="/images/nav/nav_prod1.gif";
+
+	// Solutions Rollover
+	nav_sol0=new Image();
+	nav_sol0.src="/images/nav/nav_solutions0.gif";
+	nav_sol1=new Image();
+	nav_sol1.src="/images/nav/nav_solutions1.gif";
+
+	// Developers Rollover
+	nav_dev0=new Image();
+	nav_dev0.src="/images/nav/nav_dev0.gif";
+	nav_dev1=new Image();
+	nav_dev1.src="/images/nav/nav_dev1.gif";
+
+	// Support Rollover
+	nav_srv0=new Image();
+	nav_srv0.src="/images/nav/nav_support0.gif";
+	nav_srv1=new Image();
+	nav_srv1.src="/images/nav/nav_support1.gif";
+
+	// Fun Rollover
+	nav_fun0=new Image();
+	nav_fun0.src="/images/nav/nav_fun0.gif";
+	nav_fun1=new Image();
+	nav_fun1.src="/images/nav/nav_fun1.gif";
+}
+
+// Is This Netscape 4 or up?
+var isFour = (parseInt(navigator.appVersion) &amp;amp;amp;gt; 3);
+
+//-->
+</script>
+</head>
+<body  topmargin="0">
+<!-- Global Navigation Include (Generic) -->
+<table  TABID="11735" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  bgcolor="#7C7F87">
+<td  rowspan="3" width="126">
+<a  href="/">
+<img ></img>
+</a>
+</td>
+<td >
+<table  TABID="11734" valign="top">
+<tr >
+<td  width="212">
+<img ></img>
+</td>
+<td  valign="top" width="285">
+<a  href="/sales/">
+<img ></img>
+</a>
+<img ></img>
+<a  href="/resellers/">
+<img ></img>
+</a>
+<img ></img>
+<a  href="/company_info/">
+<img ></img>
+</a>
+<img ></img>
+<a  href="/employment/">
+<img ></img>
+</a>
+</td>
+<td  align="right" valign="top" width="160">
+<a  false="#DEFAULT" onclick="if(isFour){menuovers[5].visibility=visible;return">
+<img ></img>
+</a>
+<a  href="/">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr  bgcolor="#7C7F87">
+<td  width="100%">
+<a  onmouseover="clearmenus()">
+<img ></img>
+</a>
+</td>
+</tr>
+<!-- Nav Menus -->
+<tr  bgcolor="#CFCFCF">
+<td  width="100%">
+<a  onmouseover="clearmenus()">
+<img ></img>
+</a>
+<img ></img>
+<img ></img>
+<img ></img>
+<img ></img>
+<img ></img>
+<a  onmouseover="clearmenus()">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!-- End Global Navigation -->
+<table  TABID="11738" border="0" cellpadding="0" cellspacing="0" width="780">
+<tr >
+<!--- This is the site banner TD ------->
+<td  colspan="2"></td>
+<td  align="right" colspan="3">
+<!-- End Header -->
+<img ></img>
+<div  class="print">
+<img ></img>
+<map  name="printme">
+<area ></area>
+</map>
+</div>
+</td>
+</tr>
+<tr  valign="top">
+<td  width="130">
+<!-- Begin Side Nav -->
+<div  id="SIDENAV">
+<table  TABID="11736" border="0" cellpadding="0" cellspacing="0">
+<tr  valign="top">
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr  valign="top">
+<td ></td>
+<td >
+<a  href="/newsroom/">
+Newsroom
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<img ></img>
+</td>
+<td ></td>
+</tr>
+<tr  valign="top">
+<td ></td>
+<td >
+<a  href="/origin/3000/">
+SGI Origin 3000 Series
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td >
+<img ></img>
+</td>
+<td ></td>
+</tr>
+<tr  valign="top">
+<td ></td>
+<td >
+<a  href="/workstations/octane2/">
+Octane2
+</a>
+</td>
+</tr>
+</table>
+</div>
+<!-- End Side Nav -->
+<!-- Begin Left Seperator -->
+<!-- Start sep_left.htmlf -->
+</td>
+<td  valign="top" width="30">
+<img ></img>
+</td>
+<td >
+<!-- End sep_left.htmlf -->
+<div  class="content">
+<!-- End Left Seperator -->
+<!-- Content Starts Here -->
+<font  class="header">
+SGI Announces Fiscal 2001 First Quarter Results
+</font>
+<p ></p>
+<h3 >
+New Products Generate Strong Order Demand
+</h3>
+<p >
+MOUNTAIN VIEW, Calif. (Oct. 23, 2000)--SGI (NYSE: SGI) today announced financial results for its first quarter of fiscal 2001 ended September 30, 2000. For the quarter, the company posted revenue of $426 million compared with $514 million one year ago. The company reported a net loss of $49 million for the quarter or $.26 per share compared with a net loss of $225 million or $1.24 for the same quarter one year ago. The prior year revenue and net loss amounts exclude divested businesses.
+</p>
+<p >
+The company stated that component shortages accounted for the revenue shortfall. Even with material shortages, the company generated orders in the first quarter of $376 million. This equates to a book-to-bill ratio of approximately 1.23 and 14% growth on a year-over-year basis. Order backlog as of September 30, 2000 was $367 million, which is $69 million higher than June 30, 2000 and approximately $120 million above the desired level.
+</p>
+<p >
+Order momentum for the company was led by its new line of high-end systems, the SGI
+<font  class="tm">
+<sup >
+TM
+</sup>
+</font>
+Origin
+<font  class="tm">
+<sup >
+TM
+</sup>
+</font>
+3000 and SGI
+<font  class="tm">
+<sup >
+TM
+</sup>
+</font>
+Onyx® 3000 series, which were launched earlier this summer and utilize the unique scalable and modular SGI NUMAflex™ architecture. "Our data shows a significant opportunity for scalable architectures, particularly those that are built around the concept of modularity," said Debra Goldfarb, group vice president, IDC, an industry-leading market research firm. "According to feedback we've received from end users, the NUMAflex modular architecture strongly positions SGI to take advantage of this important trend and is prompting customers to re-engage with the company." The company also generated strong orders for its new Silicon Graphics® Octane2
+<font  class="tm">
+<sup >
+TM
+</sup>
+</font>
+desktop graphics workstation.
+</p>
+<p >
+"We continue to be encouraged by the positive response our products are receiving from customers, in particular their outstanding benchmark performance and the order momentum we are experiencing," said Bob Bishop, chairman and CEO of SGI. "While there is no short-term resolution to this industry-wide component shortage, we are making every effort to lessen its impact on our business."
+</p>
+<p >
+Earlier this month, the company announced a new company-wide operating model designed to improve overall efficiency and operating profit. That model includes, among other things, a new global enterprise resource planning system, supply chain and order administration streamlining and the sale of selected assets. The plan is under the stewardship of the company's new executive vice president and chief financial officer, Hal Covert. Covert joined the company at the end of July and has a successful track record of increasing shareholder value, most notably at Adobe Systems, Inc.
+</p>
+<p >
+"With our enhanced operating model, we expect to significantly improve our operating results in the second half of fiscal 2001," said Covert. "This model will also position us competitively for the future."
+</p>
+<p >
+The company will conduct a conference call today at 2 p.m. PDT to provide additional details. The dial-in number for the call is (913) 981-4900, and the webcast site is www.StreetFusion.com. An audio replay of this call will be available after 5 p.m. PDT today until midnight October 30, 2000 at (719) 457-0820 (passcode: 785856). All links to the archived Webcast and audio replay are available through the Company's Web site at www.sgi.com/company_info/investors.
+</p>
+<p >
+This news release contains forward-looking statements regarding our business, objectives, financial condition and future performance. These forward-looking statements are subject to risks and uncertainties detailed from time to time in the company's SEC filings, including the report on Form 10K for the fiscal year that ended June 30, 2000, including the risks of continued constraints on availability of key, single-sourced components. These risks and uncertainties could cause actual results to differ materially from those expressed or implied in such forward-looking statements.
+</p>
+<p >
+<b >
+About SGI
+</b>
+<br ></br>
+SGI, also known as Silicon Graphics, Inc., is a technology solutions provider with a broad range of high-performance computing, advanced graphics and consulting services that enable its technical and creative customers to maintain a competitive advantage in their core businesses. SGI customers are making important contributions and discoveries in a wide range of fields that improve our daily lives. Whether being used to design and build safer cars and airplanes, discover new medications and oil reserves, help us understand and better predict the weather or entertain us with thrilling movie special effects, SGI
+<font  class="tm">
+<sup >
+TM
+</sup>
+</font>
+systems and expertise are empowering a world of innovation and discovery.
+</p>
+<p >
+The company is headquartered in Mountain View, Calif., and has offices worldwide. The company is located on the Web at www.sgi.com.
+</p>
+<p >
+Silicon Graphics, Onyx and Octane are registered trademarks and SGI, Origin, NUMAflex, Octane2 and the SGI logo are trademarks, of Silicon Graphics, Inc.
+<br ></br>
+<br ></br>
+</p>
+<p ></p>
+<pre >
+SILICON GRAPHICS, INC.
+                    CONDENSED CONSOLIDATED BALANCE SHEETS
+                                (In thousands)
+
+                                                    September 30,    June 30,
+                                                        2000           2000
+    ASSETS
+
+    Current assets:
+      Cash and cash equivalents                       $192,857       $251,811
+      Short-term marketable investments                  7,447          6,270
+      Accounts receivable, net                         309,667        347,515
+      Inventories                                      169,723        181,594
+      Prepaid expenses and other current assets         84,032        133,119
+        Total current assets                           763,726        920,309
+
+    Restricted investments                             104,380        126,408
+
+    Net property and equipment                         483,089        466,726
+
+    Other assets                                       282,646        325,768
+
+                                                    $1,633,841     $1,839,211
+
+
+    LIABILITIES AND STOCKHOLDERS' EQUITY
+
+    Current liabilities:
+      Accounts payable                                $124,258       $147,366
+      Other current liabilities                        585,266        714,162
+        Total current liabilities                      709,524        861,528
+
+    Long-term debt and other                           403,895        385,133
+
+    Total stockholders' equity                         520,422        592,550
+
+                                                    $1,633,841     $1,839,211
+
+                            SILICON GRAPHICS, INC.
+               CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS
+                   (In thousands except per share amounts)
+
+                                                       Three Months Ended
+                                                     Sept. 30,    Sept. 30,
+                                                        2000         1999
+                                                           (unaudited)
+
+    Product and other revenue                        $279,999     $425,001
+    Service revenue                                   146,337      160,202
+      Total revenue                                   426,336      585,203
+
+    Costs and expenses:
+      Cost of product and other revenue               166,907      312,178(B)
+      Cost of service revenue                         116,218      129,085(C)
+      Research and development                         57,349       85,350
+      Selling, general and administrative             185,663      228,360
+      Other operating expense                          (6,221)(A)  144,538(D)
+        Total costs and expenses                      519,916      899,511
+
+    Operating loss                                    (93,580)    (314,308)
+
+    Gain on sale of marketable investments             38,805           --
+    Interest and other income (expense)                 9,303       (4,019)
+
+    Loss before income taxes                          (45,472)    (318,327)
+
+    Income tax provision (benefit)                      3,516     (105,426)
+
+    Net loss                                         $(48,988)   $(212,901)
+
+    Net loss per common share - basic and diluted      $(0.26)      $(1.17)
+
+    Common shares outstanding - basic and diluted     187,872      181,924
+
+    (A) Represents a change in previously estimated restructuring costs.
+    (B) Includes a charge of $65.8 million for non-recurring inventory charges
+        related to the NT product line.
+    (C) Includes a charge of $19.8 million for future support costs related to
+        the NT product line.
+    (D) Represents a charge for estimated restructuring costs.
+</pre>
+<!-- Content Ends Here -->
+<!-- Begin Right Seperator -->
+</div>
+</td>
+<td  valign="top" width="20">
+<img ></img>
+</td>
+<td  valign="top" width="50">
+<img ></img>
+<!-- End Right Seperator -->
+<!-- Begin Footer -->
+<!-- Begin trademark footer -->
+</td>
+</tr>
+<tr >
+<td  colspan="2"></td>
+<td  align="middle">
+<br ></br>
+<br ></br>
+<br ></br>
+<table  TABID="11737" border="0" cellpadding="0" width="600">
+<tr >
+<td  class="footer">
+<a  href="/company_info/privacy.html" target="_top">
+privacy policy
+</a>
+</td>
+<td  class="footer">
+|
+</td>
+<td  class="footer">
+<a  href="/cgi-bin/feedback/" target="TOP">
+questions/comments
+</a>
+</td>
+</tr>
+<tr >
+<td  class="footer">
+<a  href="/company_info/copyright.html" target="_top">
+Copyright © 1993-2001 Silicon Graphics, Inc.
+</a>
+All rights reserved.
+</td>
+<td  class="footer">
+|
+</td>
+<td  class="footer">
+<a  href="/company_info/trademarks/" target="_top">
+Trademark Information
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End trademark footer -->
+<!-- javascript/CGI links and images so the linkscan checker finds them-->
+<a  href="/images/common/javascript.html"></a>
+<!-- end links and images -->
+<map  name="menu0map">
+<area ></area>
+</map>
+<map  name="menu1map">
+<area ></area>
+</map>
+<map  name="menu2map">
+<area ></area>
+</map>
+<map  name="menu3map">
+<area ></area>
+</map>
+<map  name="menu4map">
+<area ></area>
+</map>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<table  TABID="11741" height="1" width="1">
+<tr >
+<td >
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<div  id="menu0">
+<img ></img>
+</div>
+<div  id="menu0overs">
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+</div>
+<div  id="menu1">
+<a  onmouseout="clearmenus()">
+<img ></img>
+</a>
+</div>
+<div  id="menu1overs">
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<!--A HREF="/solutions/"
+	ONMOUSEOVER="imagerep('defense', 'menu1overs')"
+	ONMOUSEOUT="eraseimage('defense', 'menu1overs')"
+	CLASS="menu"&amp;amp;amp;gt;&amp;amp;amp;lt;IMG
+		SRC="/images/dots/dot_clear.gif"
+		ALT="Intelligence/Defense"
+		BORDER="0" HEIGHT="15" HSPACE="0" NAME="defense" VSPACE="0" WIDTH="110" CLASS="menu"&amp;amp;amp;gt;&amp;amp;amp;lt;BR CLASS="menu"&amp;amp;amp;gt;&amp;amp;amp;lt;/A -->
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+</div>
+<div  id="menu2">
+<img ></img>
+</div>
+<div  id="menu2overs">
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+</div>
+<div  id="menu3">
+<img ></img>
+</div>
+<div  id="menu3overs">
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+</div>
+<div  id="menu4">
+<a  onmouseout="clearmenus()">
+<img ></img>
+</a>
+</div>
+<div  id="menu4overs">
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+<a  class="menu">
+<img ></img>
+<br ></br>
+</a>
+</div>
+<div  id="menu5overs">
+<table  TABID="11740" bgcolor="#0066CC" border="0" cellpadding="1" cellspacing="0">
+<tr >
+<td >
+<table  TABID="11739" border="0" cellpadding="2" cellspacing="1" width="150">
+<tr  bgcolor="#0066CC">
+<td >
+<font  color="#FFFFFF">
+<b >
+SGI Search
+</b>
+</font>
+</td>
+<td  align="right">
+<a  onclick="menuovers[5].visibility=hidden">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  bgcolor="#CFCFCF">
+<td  align="center" colspan="2">
+<form  action="/cgi-bin/surfsrch.cgi" class="wwsgi" method="get">
+<input ></input>
+<input ></input>
+<select >
+<option  selected="selected" value="All">
+All of SGI
+</option>
+<option  value="Hardware;Software">
+Products
+</option>
+<option  value="Solutions">
+Solutions
+</option>
+<option  value="Developer">
+Developers
+</option>
+<option  value="Support">
+Services &amp; Support
+</option>
+<option  value="Fun">
+Serious Fun
+</option>
+</select>
+<br ></br>
+<input ></input>
+<br ></br>
+<nobr >
+<input ></input>
+<input ></input>
+</nobr>
+</form>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div  id="menu5"></div>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+</td>
+</tr>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<!-- End Footer -->
+</table>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<html >
+<head ></head>
+<body >
+<h1 >
+A recursive error was detected.
+</h1>
+<h3 >
+The server cannot use specified error page. Please check the application error-path.
+</h3>
+<br ></br>
+<h3 >
+Original Error:
+</h3>
+<b >
+Error Message:
+</b>
+File not found: //us/
+<br ></br>
+<b >
+Error Code:
+</b>
+404
+<br ></br>
+<b >
+Target Servlet:
+</b>
+File Serving Enabler
+<br ></br>
+<b >
+Error Stack:
+</b>
+<br ></br>
+<hr ></hr>
+<b >
+Root Error-1
+</b>
+: File not found: //us/
+<br ></br>
+<xmp >
+com.ibm.servlet.engine.webapp.WebAppErrorReport: File not found: //us/
+	at java.lang.Throwable.fillInStackTrace(Native Method)
+	at java.lang.Throwable.fillInStackTrace(Compiled Code)
+	at java.lang.Throwable.&lt;init&gt;(Compiled Code)
+	at java.lang.Exception.&lt;init&gt;(Compiled Code)
+	at javax.servlet.ServletException.&lt;init&gt;(Compiled Code)
+	at com.ibm.websphere.servlet.error.ServletErrorReport.&lt;init&gt;(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppErrorReport.&lt;init&gt;(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppDispatcherResponse.sendError(Compiled Code)
+	at com.ibm.servlet.engine.webapp.SimpleFileServlet.doGet(Compiled Code)
+	at javax.servlet.http.HttpServlet.service(Compiled Code)
+	at javax.servlet.http.HttpServlet.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.StrictServletInstance.doService(Compiled Code)
+	at com.ibm.servlet.engine.webapp.StrictLifecycleServlet._service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.IdleServletState.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.StrictLifecycleServlet.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.ServletInstance.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.ValidServletReferenceState.dispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.ServletInstanceReference.dispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppRequestDispatcher.handleWebAppDispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppRequestDispatcher.dispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppRequestDispatcher.forward(Compiled Code)
+	at com.ibm.servlet.engine.srt.WebAppInvoker.handleInvocationHook(Compiled Code)
+	at com.ibm.servlet.engine.invocation.CachedInvocation.handleInvocation(Compiled Code)
+	at com.ibm.servlet.engine.srp.ServletRequestProcessor.dispatchByURI(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.OSEListenerDispatcher.service(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.SQEventListenerImp$ServiceRunnable.run(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.SQEventListenerImp.notifySQEvent(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.serverqueue.SQEventSource.notifyEvent(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.serverqueue.SQWrapperEventSource$SelectRunnable.notifyService(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.serverqueue.SQWrapperEventSource$SelectRunnable.run(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.outofproc.OutOfProcThread$CtlRunnable.run(Compiled Code)
+	at java.lang.Thread.run(Compiled Code)
+</xmp>
+<br ></br>
+<br ></br>
+<br ></br>
+<h3 >
+Recursive Error:
+</h3>
+<b >
+Error Message:
+</b>
+File not found: null
+<br ></br>
+<b >
+Error Code:
+</b>
+404
+<br ></br>
+<b >
+Target Servlet:
+</b>
+File Serving Enabler
+<br ></br>
+<b >
+Error Stack:
+</b>
+<br ></br>
+<hr ></hr>
+<b >
+Root Error-1
+</b>
+: File not found: null
+<br ></br>
+<xmp >
+com.ibm.servlet.engine.webapp.WebAppErrorReport: File not found: null
+	at java.lang.Throwable.fillInStackTrace(Native Method)
+	at java.lang.Throwable.fillInStackTrace(Compiled Code)
+	at java.lang.Throwable.&lt;init&gt;(Compiled Code)
+	at java.lang.Exception.&lt;init&gt;(Compiled Code)
+	at javax.servlet.ServletException.&lt;init&gt;(Compiled Code)
+	at com.ibm.websphere.servlet.error.ServletErrorReport.&lt;init&gt;(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppErrorReport.&lt;init&gt;(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppDispatcherResponse.sendError(Compiled Code)
+	at com.ibm.servlet.engine.webapp.SimpleFileServlet.doGet(Compiled Code)
+	at javax.servlet.http.HttpServlet.service(Compiled Code)
+	at javax.servlet.http.HttpServlet.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.StrictServletInstance.doService(Compiled Code)
+	at com.ibm.servlet.engine.webapp.StrictLifecycleServlet._service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.ServicingServletState.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.StrictLifecycleServlet.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.ServletInstance.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.ValidServletReferenceState.dispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.ServletInstanceReference.dispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppRequestDispatcher.handleWebAppDispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppRequestDispatcher.dispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppRequestDispatcher.include(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebApp.sendError(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppDispatcherResponse.sendError(Compiled Code)
+	at com.ibm.servlet.engine.webapp.SimpleFileServlet.doGet(Compiled Code)
+	at javax.servlet.http.HttpServlet.service(Compiled Code)
+	at javax.servlet.http.HttpServlet.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.StrictServletInstance.doService(Compiled Code)
+	at com.ibm.servlet.engine.webapp.StrictLifecycleServlet._service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.IdleServletState.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.StrictLifecycleServlet.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.ServletInstance.service(Compiled Code)
+	at com.ibm.servlet.engine.webapp.ValidServletReferenceState.dispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.ServletInstanceReference.dispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppRequestDispatcher.handleWebAppDispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppRequestDispatcher.dispatch(Compiled Code)
+	at com.ibm.servlet.engine.webapp.WebAppRequestDispatcher.forward(Compiled Code)
+	at com.ibm.servlet.engine.srt.WebAppInvoker.handleInvocationHook(Compiled Code)
+	at com.ibm.servlet.engine.invocation.CachedInvocation.handleInvocation(Compiled Code)
+	at com.ibm.servlet.engine.srp.ServletRequestProcessor.dispatchByURI(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.OSEListenerDispatcher.service(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.SQEventListenerImp$ServiceRunnable.run(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.SQEventListenerImp.notifySQEvent(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.serverqueue.SQEventSource.notifyEvent(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.serverqueue.SQWrapperEventSource$SelectRunnable.notifyService(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.serverqueue.SQWrapperEventSource$SelectRunnable.run(Compiled Code)
+	at com.ibm.servlet.engine.oselistener.outofproc.OutOfProcThread$CtlRunnable.run(Compiled Code)
+	at java.lang.Thread.run(Compiled Code)
+</xmp>
+<br ></br>
+</body>
+</html>

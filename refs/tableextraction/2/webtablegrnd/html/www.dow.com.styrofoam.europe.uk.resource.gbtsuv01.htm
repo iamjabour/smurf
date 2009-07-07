@@ -1,0 +1,1957 @@
+<html >
+<head >
+<meta ></meta>
+<title >
+Resources - U-value calculator
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<script >
+<!--
+function nav_change() {
+
+newindex = document.navform.select.selectedIndex;
+newdirect = document.navform.select.options[newindex].value;
+window.location = newdirect
+
+}
+
+
+
+
+function which_Browser() {
+
+a  = navigator.appVersion;
+b = a.charAt(0);
+
+if (b &amp;amp;lt;= 2) {
+}
+else {
+nav_refresh();
+}
+}
+
+
+function nav_refresh() {
+
+newindex = document.navform.select.selectedIndex;
+newvalue = document.navform.select.options[newindex].value;
+
+if (newvalue == "") {
+}
+
+if (newvalue != "") {
+document.navform.reset();
+}
+
+}
+// -->
+</script>
+</head>
+<body  alink="red" bgcolor="white" link="red" onload="which_Browser();" text="black" vlink="#006699">
+<!-- BEGIN GLOBAL NAVIGATION -->
+<script >
+<!--
+function writeNavigationBar()
+{	
+	var	sDowHomeURL = "http://" + location.hostname  + "/homepage/index.html" ;
+	var	sHelpURL = "http://" + location.hostname + "/assistance/assist_about.html" ;
+	var	sRegisterURL = "http://" + location.hostname + "/webapps/reg/OverviewRegistration.asp" ;
+	var sSearchURL = "http://" + location.hostname + "/webapps/search/basicSearch.asp" ;
+	var	path=location.pathname;
+	var currentURL=location.href;
+	var	sHeaderhtml ='';
+	var sFolderName;
+			
+	if (location.pathname != "")
+	{
+		sFolderName=path.substring(path.indexOf("/")+1,path.indexOf("/",1));
+	}	
+	else
+	{
+		sFolderName="corporate";
+	}
+
+	sHeaderhtml = '';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;body bgcolor="#ffffff"&amp;amp;gt;';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;div align="center"&amp;amp;gt;&amp;amp;lt;center&amp;amp;gt;';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 width="100%"&amp;amp;gt;';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;TR&amp;amp;gt;&amp;amp;lt;TD&amp;amp;gt;&amp;amp;lt;IMG SRC="/webapps/nav/gnav_01.gif" WIDTH="149" HEIGHT="48" border="0" alt="The Dow Chemical Company" usemap="#downav"&amp;amp;gt;&amp;amp;lt;/TD&amp;amp;gt;';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;td background="/webapps/nav/gnav_02.gif" align="right" width="100%"&amp;amp;gt;&amp;amp;lt;IMG SRC="/webapps/nav/gnav_03.gif" WIDTH="440" HEIGHT="48" usemap="#globnav" border="0"&amp;amp;gt;&amp;amp;lt;/TD&amp;amp;gt;';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;/TR&amp;amp;gt;&amp;amp;lt;/TABLE&amp;amp;gt;&amp;amp;lt;/center&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;';
+	
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;map name="globnav"&amp;amp;gt; ';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;area alt="The Dow Chemical Home Page" coords="139,14,210,33" href="'+sDowHomeURL+'"&amp;amp;gt; ';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;area alt="register" coords="250,14,301,32" href="'+sRegisterURL+'?caller='+location.pathname+'"&amp;amp;gt; ';
+	document.writeln(sHeaderhtml);
+	sHeaderhtml = '';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;area alt="help" coords="319,14,353,34" href="'+sHelpURL+'?folderName='+sFolderName+'"&amp;amp;gt; ';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;area alt="search" coords="370,15,417,33" href="'+sSearchURL+'?folderName='+sFolderName+'"&amp;amp;gt; ';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;/map&amp;amp;gt;';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;map name="downav"&amp;amp;gt; ';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;area alt="The Dow Chemical Home Page" coords="8,42,87,11" href="'+sDowHomeURL+'"&amp;amp;gt; ';
+	sHeaderhtml = sHeaderhtml + '&amp;amp;lt;/map&amp;amp;gt;';
+	document.writeln(sHeaderhtml);
+}
+
+function chkMyAccountFrame()
+{
+//Determine if the Global Navigation Bar should be displayed
+
+	if (top.frames.length&amp;amp;gt;1)
+	{
+
+	}
+	else 
+	{		
+		writeNavigationBar();		
+	}
+}
+chkMyAccountFrame();
+//-->
+</script>
+<!-- END GLOBAL NAVIGATION -->
+<center >
+<table  TABID="08809" border="0" cellpadding="0" cellspacing="0" width="90%">
+<tr >
+<td  width="15"></td>
+<td  align="center" colspan="2">
+<img ></img>
+<map  name="FrontPageMap">
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</td>
+<td  width="15"></td>
+</tr>
+<tr >
+<td  width="15"></td>
+<td  align="center" colspan="2">
+<img ></img>
+</td>
+<td  width="15"></td>
+</tr>
+<tr >
+<td  width="15"></td>
+<td  width="30"></td>
+<td >
+<font  color="black" face="Arial,Helvetica,SansSerif" size="2">
+The STYROFOAM Solutions U-value calculator is intended to assist you to make initial design decisions. If you require more complex calculations or condensation risk analysis please contact the Dow Technical Centre.
+</font>
+<p >
+<font  color="black" face="Arial,Helvetica,SansSerif" size="2">
+For help with using the STYROFOAM Solutions U-value calculator click on white text.
+</font>
+</p>
+<p >
+<a  href="#calculator_top">
+<font  face="Arial,Helvetica,SansSerif" size="2">
+Click here to bring the calculator to the top of the window
+</font>
+</a>
+<font  face="Arial,Helvetica,SansSerif" size="2">
+.
+</font>
+<br ></br>
+<a  href="#GroundFloorTop">
+<font  face="Arial,Helvetica,SansSerif" size="2">
+Click here to bring the Ground Floor calculator to the top of the window
+</font>
+</a>
+<font  face="Arial,Helvetica,SansSerif" size="2">
+.
+</font>
+</p>
+</td>
+<td  width="15"></td>
+</tr>
+</table>
+<form  action="mailto:huwevans@techlit.co.uk" method="post" name="DowUvalueForm">
+<table  TABID="08810" bgcolor="#006699" border="0" cellpadding="2" cellspacing="0">
+<tr >
+<td  align="left" bgcolor="#006699" height="5" width="165">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<a  name="calculator_top"></a>
+</font>
+</td>
+<td  align="center" bgcolor="#006699" height="5" width="185">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  align="center" bgcolor="#006699" height="5" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  align="center" bgcolor="#006699" colspan="2" height="5">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  height="5" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  height="5"></td>
+<td  height="5"></td>
+<td  height="5"></td>
+<td  height="5"></td>
+</tr>
+<tr >
+<td  align="left" bgcolor="#006699" height="40" width="165">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<!--Element type-->
+<a  name="Element_type" onclick="alert('Select the type of building element you require from the drop-down list. You must do this before attempting the rest of the calculation')"></a>
+Element type
+</font>
+</td>
+<td  align="center" bgcolor="#006699" height="40" width="185">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<select >
+<option  value="0"></option>
+<option  value="1">
+Flat roof
+</option>
+<option  value="2">
+Pitched roof, horizontal ceiling
+</option>
+<option  value="3">
+Pitched roof, ceiling at rafter line
+</option>
+<option  value="4">
+Wall
+</option>
+<option  value="5">
+Floor (other than ground floor)
+</option>
+</select>
+</font>
+</td>
+<td  align="center" bgcolor="#006699" height="40" width="50">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<a  name="Roof_pitch" onclick="alert('If you have selected a pitched roof with insulation at ceiling level, enter the slope of the roof here.')"></a>
+Roof pitch (&amp;deg)
+</font>
+</td>
+<td  align="center" bgcolor="#006699" colspan="2" height="40">
+<div  align="left">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+</font>
+</div>
+</td>
+<td  bgcolor="#006699" colspan="5" height="40">
+<div  align="left">
+<font  face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+</font>
+</div>
+</td>
+</tr>
+<tr >
+<td  align="left" bgcolor="#006699" width="165">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<!--Building use-->
+<a  name="Building_use" onclick="alert('Select the building use from the drop-down list.')"></a>
+Building use
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="185">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<select >
+<option  value="0">
+BS5250 dry/moist occupancy
+</option>
+<option  value="1">
+BS5250 moist/wet occupancy
+</option>
+<option  value="2">
+House or flat
+</option>
+<option  value="3">
+Offices
+</option>
+<option  value="4">
+School
+</option>
+<option  value="5">
+Factories or heated warehouse
+</option>
+<option  value="6">
+Textile factory
+</option>
+<option  value="7">
+Swimming pool hall
+</option>
+</select>
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<a  name="Exposure" onclick="alert('Set the building exposure here.')"></a>
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Exposure
+</font>
+</td>
+<td  align="center" bgcolor="#006699" colspan="2">
+<div  align="left">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<select >
+<option  value="0">
+Sheltered
+</option>
+<option  value="1">
+Normal
+</option>
+<option  value="2">
+Exposed
+</option>
+</select>
+</font>
+</div>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  align="left" bgcolor="#006699" colspan="2">
+<a  name="External_Surface_Emissivity"></a>
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Internal and external surface emissivities are high.
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#006699" width="165">
+<a  name="Category" onclick="alert('Select the category of material from the drop-down list then select the material from the Product drop-down list and, if necessary specify the thickness. Finish defining each layer before starting the next.')"></a>
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Category
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="185">
+<a  name="Product" onclick="alert('Select the specific material from the drop-down list. You must select a category first.')"></a>
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Product
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<a  name="Thickness" onclick="alert('For some materials, for example blockwork, you will have to specify the thickness, for others the calculator will automatically complete the thickness.')"></a>
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Thickness
+<br ></br>
+(mm)
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<a  name="Thermal_Conductivity" onclick="alert('Materials in the calculator alreay have thermal conductivities assigned. You may change them if you want to use specific values.')"></a>
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Thermal Conductivity (W/mK)
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<a  name="Thermal_Resistance" onclick="alert('The calculator automatically determines the thermal resistance of a layer using information you enter and information from its database.')"></a>
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Thermal Resistance (m²K/W)
+</font>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  bgcolor="#006699" width="165">
+<input ></input>
+</td>
+<td  bgcolor="#006699" width="185"></td>
+<td  align="center" bgcolor="#006699" width="50">
+-
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+-
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  bgcolor="#006699" width="165">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  bgcolor="#006699" width="185">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  bgcolor="#006699" width="165">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  bgcolor="#006699" width="185">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  bgcolor="#006699" width="165">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  bgcolor="#006699" width="185">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  bgcolor="#006699" width="165">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  bgcolor="#006699" width="185">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  bgcolor="#006699" width="165">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  bgcolor="#006699" width="185">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  bgcolor="#006699" width="165">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  bgcolor="#006699" width="185">
+<select >
+<option  value="0">
+XXXXXXXXXXXXXXXXXXXXX
+</option>
+</select>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  bgcolor="#006699" width="165">
+<input ></input>
+</td>
+<td  bgcolor="#006699" width="185">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+-
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+-
+</td>
+<td  align="center" bgcolor="#006699" width="50">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  bgcolor="#006699" height="40" width="165">
+<div  align="left">
+<font  face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+</font>
+</div>
+</td>
+<td  align="center" bgcolor="#006699" height="40" width="185">
+<div  align="right">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="3">
+<strong >
+<a  name="U-value" onclick="alert('This displays the result of the calculation')"></a>
+U-value =
+</strong>
+</font>
+</div>
+</td>
+<td  align="center" bgcolor="#006699" colspan="2" height="40">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+W/m²K
+</font>
+</td>
+<td  align="left" bgcolor="#006699" height="40" valign="top" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  height="40" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  height="40"></td>
+<td  height="40"></td>
+<td  height="40"></td>
+<td  height="40"></td>
+</tr>
+<tr >
+<td  bgcolor="#006699" colspan="5" height="40">
+<div  align="left">
+<font  face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+</font>
+</div>
+</td>
+<td  height="40" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  height="40"></td>
+<td  height="40"></td>
+<td  height="40"></td>
+<td  height="40"></td>
+</tr>
+<tr  align="center">
+<td  align="center" bgcolor="#006699" colspan="5">
+<div  align="left">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+To receive a full print out and/or condensation risk analysis please complete the following details and submit the calculation to Dow
+</font>
+</div>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  align="center">
+<td  align="center" bgcolor="#006699" width="165">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Surname
+</font>
+</td>
+<td  align="left" bgcolor="#006699" colspan="4">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  align="center">
+<td  align="center" bgcolor="#006699" width="165">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+First name
+</font>
+</td>
+<td  align="left" bgcolor="#006699" colspan="4">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  align="center">
+<td  align="center" bgcolor="#006699" width="165">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Email address
+</font>
+</td>
+<td  align="left" bgcolor="#006699" colspan="4">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr  align="center">
+<td  align="center" bgcolor="#006699" width="165">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Telephone number
+</font>
+</td>
+<td  align="left" bgcolor="#006699" colspan="4">
+<input ></input>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  align="left" bgcolor="#006699" colspan="5" height="40">
+<div  align="left">
+<font  face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+</font>
+</div>
+</td>
+<td  height="40" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+<td  height="40"></td>
+<td  height="40"></td>
+<td  height="40"></td>
+<td  height="40"></td>
+</tr>
+</table>
+<p >
+<font  face="Arial,Helvetica,SansSerif" size="2">
+<br ></br>
+<a  href="#calculator_top">
+Click here to bring the calculator to the top of the window
+</a>
+.
+<br ></br>
+<a  href="#GroundFloorTop">
+Click here to bring the Ground Floor calculator to the top of the window
+</a>
+.
+<br ></br>
+</font>
+<font  face="Arial,Helvetica,SansSerif" size="2">
+<br ></br>
+Ground Floor U-value Calculation
+<br ></br>
+<br ></br>
+</font>
+</p>
+<p ></p>
+<table  TABID="08812">
+<tr >
+<td >
+<a  name="GroundFloorTop"></a>
+<table  TABID="08811" bgcolor="#006699" border="0" cellpadding="2" cellspacing="0">
+<tr >
+<td  align="left" bordercolor="#006699" width="165">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<a  name="FloorType" onclick="alert('Select the type of ground floor.')"></a>
+Floor type
+</font>
+</td>
+<td  align="left" bordercolor="#006699" width="185">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<select >
+<option  value="0">
+Solid
+</option>
+<option  value="1">
+Suspended, timber
+</option>
+<option  value="1">
+Suspended, concrete
+</option>
+</select>
+</font>
+</td>
+<td  align="left" bordercolor="#006699" width="150">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<a  name="DeckResistanceST" onclick="alert('Enter the thermal resistance of the deck.')"></a>
+Suspended floor deck thermal resistance (m²K/W)
+</font>
+</td>
+<td  align="left" bordercolor="#006699" width="50">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+</font>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" bordercolor="#006699" width="165">
+<a  name="FloorPerimeter" onclick="alert('Enter the total perimeter length of the floor')"></a>
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Floor perimeter (m)
+</font>
+</td>
+<td  align="left" bordercolor="#006699" width="185">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+</font>
+</td>
+<td  align="left" bordercolor="#006699" width="150">
+<a  name="Floor_area" onclick="alert('Enter the area of the ground floor here.')"></a>
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Floor area (m²)
+</font>
+</td>
+<td  align="left" bordercolor="#006699" width="50">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+</font>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" bordercolor="#006699" width="165">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<a  name="FloorMateType" onclick="alert('Select the type of Floormate thermal insulation to use.')"></a>
+Floormate
+</font>
+</td>
+<td  align="left" bordercolor="#006699" width="185">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<select >
+<option  value=""></option>
+</select>
+</font>
+</td>
+<td  align="left" bordercolor="#006699" width="150">
+<a  name="Floormate_thermal_resistance" onclick="alert('Enter the resistance of the whole floor thermal insulation.')"></a>
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+Floormate thermal resistance (m²K/W)
+</font>
+</td>
+<td  align="left" bordercolor="#006699" width="50">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+</font>
+</td>
+<td  width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+</tr>
+<tr >
+<td  bordercolor="#006699" height="40" width="165">
+<div  align="left">
+<font  face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+</font>
+</div>
+</td>
+<td  align="center" height="40" width="185">
+<div  align="right">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="3">
+<strong >
+<a  name="GFUU-value" onclick="alert('This displays the result of the calculation')"></a>
+Ground floor U-value =
+</strong>
+</font>
+</div>
+</td>
+<td  align="center" bordercolor="#006699" colspan="2" height="40">
+<font  color="white" face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+W/m²K
+</font>
+</td>
+<td  align="center" bordercolor="#006699" height="40" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="4" height="40">
+<div  align="left">
+<font  face="Arial,Helvetica,SansSerif" size="2">
+<input ></input>
+</font>
+</div>
+</td>
+<td  height="40" width="50">
+<font  color="#00639c">
+-
+</font>
+</td>
+</tr>
+</table>
+<center >
+<p >
+<a  href="#calculator_top">
+<font  face="Arial,Helvetica,SansSerif" size="2">
+Click here to bring the calculator to the top of the window
+</font>
+</a>
+<font  face="Arial,Helvetica,SansSerif" size="2">
+.
+</font>
+<br ></br>
+<a  href="#GroundFloorTop">
+<font  face="Arial,Helvetica,SansSerif" size="2">
+Click here to bring the Ground Floor calculator to the top of the window
+</font>
+</a>
+<font  face="Arial,Helvetica,SansSerif" size="2">
+.
+</font>
+</p>
+<script >
+<!--
+//initialize global varaibles
+var LoftSpaceName = "Loft space";
+var NumberOfMaterials,NumberOfCategories;
+var MaterialsArray = new Array(100);
+var CategoryNameArray = new Array(100);
+
+function Material (group,name,thickness,materialType,ThermalRV,ThermalRT)
+{
+  this.group=group;
+  this.name=name;
+  this.thickness=thickness;
+  this.materialType=materialType;
+  this.ThermalRV=ThermalRV;
+  this.ThermalRT=ThermalRT;
+} //Material
+
+  i=1;
+  MaterialsArray[i]=new Material(2,"Blockwork, dense",0,1,0.5999,0);i++;
+  MaterialsArray[i]=new Material(2,"Blockwork, light",0,1,5,0);i++;
+  MaterialsArray[i]=new Material(2,"Blockwork, medium",0,1,1.50,0);i++;
+
+  MaterialsArray[i]=new Material(4,"Brick, Dense, external",0,1,1.19,0);i++;
+  MaterialsArray[i]=new Material(4,"Brick, Dense, internal",0,1,1.11,0);i++;
+  MaterialsArray[i]=new Material(4,"Brick, Light wt external",0,1,2.44,0);i++;
+  MaterialsArray[i]=new Material(4,"Brick, Light wt internal",0,1,3.7,0);i++;
+  MaterialsArray[i]=new Material(4,"Brick, Medium wt external",0,1,1.33,0);i++;
+  MaterialsArray[i]=new Material(4,"Brick, Medium wt internal",0,1,1.85,0);i++;
+  MaterialsArray[i]=new Material(4,"Engineering brick",0,1,0.80,0);i++;
+
+  MaterialsArray[i]=new Material(5,"Cavity &amp;amp;lt;25mm",0,5,0,0.10);i++;
+  MaterialsArray[i]=new Material(5,"Cavity &amp;amp;gt;24mm, floor",0,5,0,0.22);i++;
+  MaterialsArray[i]=new Material(5,"Cavity &amp;amp;gt;24mm, roof",0,5,0,0.17);i++;
+  MaterialsArray[i]=new Material(5,"Cavity &amp;amp;gt;24mm, wall",0,5,0,0.18);i++;
+  MaterialsArray[i]=new Material(5,LoftSpaceName,0,5,0,0.18);i++;
+  MaterialsArray[i]=new Material(5,"Vented wall cavity &amp;amp;gt;25mm",0,5,0,0.18);i++;
+
+  MaterialsArray[i]=new Material(3,"Asbestos cement",0,1,1.70,0);i++;
+  MaterialsArray[i]=new Material(3,"Chipboard",0,1,7,0);i++;
+  MaterialsArray[i]=new Material(3,"Fibreboard, bitumen",0,1,15,0);i++;
+  MaterialsArray[i]=new Material(3,"Fibreboard, plain",0,1,15,0);i++;
+  MaterialsArray[i]=new Material(3,"Hardboard",0,1,6,0);i++;
+  MaterialsArray[i]=new Material(3,"PVC rigid sheet",0,1,1.20,0);i++;
+  MaterialsArray[i]=new Material(3,"Plasterboard",0,1,6.25,0);i++;
+  MaterialsArray[i]=new Material(3,"Plywood",0,1,7,0);i++;
+  MaterialsArray[i]=new Material(3,"Waferboard",0,1,6,0);i++;
+  MaterialsArray[i]=new Material(3,"Woodwool slabs",0,1,10,0);i++;
+
+  MaterialsArray[i]=new Material(6,"Concrete, dense",0,1,0.60,0);i++;
+  MaterialsArray[i]=new Material(6,"Concrete, light weight",0,1,2.50,0);i++;
+  MaterialsArray[i]=new Material(6,"Concrete, medium weight",0,1,1.20,0);i++;
+  MaterialsArray[i]=new Material(6,"Concrete, no fines",0,1,0.95,0);i++;
+
+  MaterialsArray[i]=new Material(8,"Cork tiles",0,1,12.50,0);i++;
+  MaterialsArray[i]=new Material(8,"Foam backed carpet",0,1,20,0);i++;
+  MaterialsArray[i]=new Material(8,"Linoleum",0,1,1,0);i++;
+  MaterialsArray[i]=new Material(8,"Normal backed carpet",0,1,10,0);i++;
+  MaterialsArray[i]=new Material(8,"PVC flooring",0,1,1.20,0);i++;
+  MaterialsArray[i]=new Material(8,"Rubber flooring",0,1,1.20,0);i++;
+  MaterialsArray[i]=new Material(8,"Rubber underlay",0,1,10,0);i++;
+  MaterialsArray[i]=new Material(8,"Tiles, clay",0,1,1.20,0);i++;
+  MaterialsArray[i]=new Material(8,"Tiles, terazzo",0,1,0.60,0);i++;
+  MaterialsArray[i]=new Material(8,"Underlay",0,1,16.70,0);i++;
+  MaterialsArray[i]=new Material(8,"Woodblock",0,1,7,0);i++;
+
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL 50mm",50,4,0,1.471);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL 60mm",60,4,0,1.764);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL 75mm",75,4,0,2.206);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL 90mm",90,4,0,2.647);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL 100mm",100,4,0,2.941);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL 120mm",120,4,0,3.529);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL-A 30mm",30,4,0,0.732);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL-A 40mm",40,4,0,0.976);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL-A 50mm",50,4,0,1.220);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL-A 60mm",60,4,0,1.463);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL-A 80mm",80,4,0,1.860);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL-A 100mm",100,4,0,2.233);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE SL-A 120mm",120,4,0,2.791);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE LG 50mm",50,4,0,1.471);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE LG 60mm",60,4,0,1.765);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE LG 80mm",80,4,0,2.353);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE LG 100mm",100,4,0,2.941);i++;
+  MaterialsArray[i]=new Material(7,"ROOFMATE LG 120mm",120,4,0,3.529);i++;
+  MaterialsArray[i]=new Material(7,"DECKMATE CM 50mm",50,4,0,1.786);i++;
+  MaterialsArray[i]=new Material(7,"DECKMATE CM 60mm",60,4,0,2.143);i++;
+  MaterialsArray[i]=new Material(7,"DECKMATE CM 80mm",80,4,0,2.857);i++;
+  MaterialsArray[i]=new Material(7,"DECKMATE CM 100mm",100,4,0,3.571);i++;
+  MaterialsArray[i]=new Material(7,"DECKMATE FF 60mm",60,4,0,2.143);i++;
+
+  MaterialsArray[i]=new Material(12,"ROOFMATE PR 80mm",80,4,0,3.200);i++;
+  MaterialsArray[i]=new Material(12,"ROOFMATE PR 90mm",90,4,0,3.600);i++;
+  MaterialsArray[i]=new Material(12,"ROOFMATE PR 120mm",120,4,0,4.800);i++;
+  MaterialsArray[i]=new Material(12,"ROOFMATE RL 35mm",35,4,0,1.400);i++;
+  MaterialsArray[i]=new Material(12,"ROOFMATE RL 50mm",50,4,0,2.000);i++;
+
+  MaterialsArray[i]=new Material(18,"WALLMATE CW 25mm",25,4,0,1.000);i++;
+  MaterialsArray[i]=new Material(18,"WALLMATE CW 30mm",30,4,0,1.200);i++;
+  MaterialsArray[i]=new Material(18,"WALLMATE CW 35mm",35,4,0,1.400);i++;
+  MaterialsArray[i]=new Material(18,"WALLMATE CW 40mm",40,4,0,1.600);i++;
+  MaterialsArray[i]=new Material(18,"WALLMATE CW 50mm",50,4,0,2.000);i++;
+  MaterialsArray[i]=new Material(18,"PERIMATE DI 50mm",50,4,0,1.786);i++;
+  MaterialsArray[i]=new Material(18,"STYROFOAM IB 25mm",25,4,0,0.758);i++;
+  MaterialsArray[i]=new Material(18,"STYROFOAM IB 50mm",50,4,0,1.515);i++;
+  MaterialsArray[i]=new Material(18,"STYROFOAM IB 60mm",60,4,0,1.818);i++;
+  MaterialsArray[i]=new Material(18,"STYROFOAM IB 75mm",75,4,0,2.273);i++;
+  MaterialsArray[i]=new Material(18,"STYROFOAM IB 150mm",150,4,0,4.545);i++;
+
+  MaterialsArray[i]=new Material(9,"FLOORMATE 200 25mm",25,4,0,0.893);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 200 30mm",30,4,0,1.071);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 200 35mm",35,4,0,1.250);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 200 50mm",50,4,0,1.786);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 200-A 30mm",30,4,0,0.909);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 200-A 40mm",40,4,0,1.212);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 200-A 50mm",50,4,0,1.515);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 200-A 60mm",60,4,0,1.818);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 200-A 80mm",80,4,0,2.286);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 350 35mm",35,4,0,1.296);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 350 50mm",50,4,0,1.852);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 350 75mm",75,4,0,2.778);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 500 50mm",50,4,0,1.923);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 500 75mm",75,4,0,2.885);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 500-A 40mm",40,4,0,1.176);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 500-A 50mm",50,4,0,1.471);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 500-A 60mm",60,4,0,1.765);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 500-A 80mm",80,4,0,2.222);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 500-A 100mm",100,4,0,2.778);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 700 50mm",50,4,0,1.852);i++;
+  MaterialsArray[i]=new Material(9,"FLOORMATE 700 80mm",80,4,0,2.963);i++;
+
+  MaterialsArray[i]=new Material(1,"AGMATE TG 30mm",30,4,0,1.071);i++;
+  MaterialsArray[i]=new Material(1,"AGMATE TG 40mm",40,4,0,1.429);i++;
+  MaterialsArray[i]=new Material(1,"AGMATE TG 50mm",50,4,0,1.786);i++;
+  MaterialsArray[i]=new Material(1,"AGMATE TG 60mm",60,4,0,2.143);i++;
+  MaterialsArray[i]=new Material(1,"AGMATE TG 80mm",80,4,0,2.857);i++;
+
+  MaterialsArray[i]=new Material(10,"Aluminium foil",0,3,0,0);i++;
+  MaterialsArray[i]=new Material(10,"Bitumen paper",0,3,0,0);i++;
+  MaterialsArray[i]=new Material(10,"Breather membrane",0,3,0,0);i++;
+  MaterialsArray[i]=new Material(10,"Polyester film",0,3,0,0);i++;
+  MaterialsArray[i]=new Material(10,"Polythene, 500 gauge",0,3,0,0);i++;
+  MaterialsArray[i]=new Material(10,"Polythene,1000 gauge",0,3,0,0);i++;
+
+  MaterialsArray[i]=new Material(11,"Aluminium",0,1,0.0050,0);i++;
+  MaterialsArray[i]=new Material(11,"Code 3 Lead",1.32,1,0,0);i++;
+  MaterialsArray[i]=new Material(11,"Code 4 Lead",1.80,1,0,0);i++;
+  MaterialsArray[i]=new Material(11,"Code 5 Lead",2.24,1,0.0030,0);i++;
+  MaterialsArray[i]=new Material(11,"Code 6 Lead",2.65,1,0.0030,0);i++;
+  MaterialsArray[i]=new Material(11,"Code 7 Lead",3.15,1,0.0030,0);i++;
+  MaterialsArray[i]=new Material(11,"Code 8 Lead",3.55,1,0.0030,0);i++;
+  MaterialsArray[i]=new Material(11,"Copper",0,1,0,0);i++;
+  MaterialsArray[i]=new Material(11,"Glass",0,1,1,0);i++;
+  MaterialsArray[i]=new Material(11,"Steel",0,1,0.02,0);i++;
+  MaterialsArray[i]=new Material(11,"Tin",0,1,0.0150,0);i++;
+  MaterialsArray[i]=new Material(11,"Zinc",0,1,0.0090,0);i++;
+
+  MaterialsArray[i]=new Material(15,"Screed, cast (sand/cement)",0,1,0.7143,0);i++;
+  MaterialsArray[i]=new Material(15,"Screed, lightweight",0,1,2.439,0);i++;
+
+  MaterialsArray[i]=new Material(13,"Plasterboard",0,1,6.25,0);i++;
+  MaterialsArray[i]=new Material(13,"Plaster, dense",0,1,2,0);i++;
+  MaterialsArray[i]=new Material(13,"Plaster, lightweight",0,1,6.25,0);i++;
+  MaterialsArray[i]=new Material(13,"Render",0,1,1.80,0);i++;
+
+  MaterialsArray[i]=new Material(14,"Asphalt",0,1,2,0);i++;
+  MaterialsArray[i]=new Material(14,"Built-up roofing",0,1,5,0);i++;
+  MaterialsArray[i]=new Material(14,"Roofing felt in bitumen",0,1,5,0);i++;
+  MaterialsArray[i]=new Material(14,"Sarking felt",0,1,5,0);i++;
+  MaterialsArray[i]=new Material(14,"Sarking felt in bitumen",0,1,5,0);i++;
+  MaterialsArray[i]=new Material(14,"Single ply membrane",0,1,7.7,0);i++;
+  MaterialsArray[i]=new Material(14,"Slating (inc. batten space)",0,5,0,0.18);i++;
+  MaterialsArray[i]=new Material(14,"Thatch",0,1,15,0);i++;
+  MaterialsArray[i]=new Material(14,"Tiling (inc. batten space)",0,5,0,0.18);i++;
+
+  MaterialsArray[i]=new Material(16,"Granite",0,1,0.40,0);i++;
+  MaterialsArray[i]=new Material(16,"Limestone",0,1,0.50,0);i++;
+  MaterialsArray[i]=new Material(16,"Marble",0,1,0.40,0);i++;
+  MaterialsArray[i]=new Material(16,"Sandstone",0,1,0.50,0);i++;
+  MaterialsArray[i]=new Material(16,"Slate",0,1,0.50,0);i++;
+
+  MaterialsArray[i]=new Material(17,"Chipboard",0,1,7,0);i++;
+  MaterialsArray[i]=new Material(17,"Hardboard",0,1,6,0);i++;
+  MaterialsArray[i]=new Material(17,"Hardwood, dry",0,1,6,0);i++;
+  MaterialsArray[i]=new Material(17,"Hardwood, wet",0,1,3,0);i++;
+  MaterialsArray[i]=new Material(17,"OSB",0,1,17,0);i++;
+  MaterialsArray[i]=new Material(17,"Plywood",0,1,7,0);i++;
+  MaterialsArray[i]=new Material(17,"Softwood, dry",0,1,8,0);i++;
+  MaterialsArray[i]=new Material(17,"Softwood, wet",0,1,4,0);i++;
+
+  NumberOfMaterials=i-1;
+
+  i = 1;
+  CategoryNameArray[i] = ""; i++;
+  CategoryNameArray[i] = "Agricultural insulation"; i++;  // 1
+  CategoryNameArray[i] = "Blockwork"; i++;                // 2
+  CategoryNameArray[i] = "Boards"; i++;                   // 3
+  CategoryNameArray[i] = "Brickwork"; i++;                // 4
+  CategoryNameArray[i] = "Cavities"; i++;                 // 5
+  CategoryNameArray[i] = "Concrete"; i++;                 // 6
+  CategoryNameArray[i] = "Flat roof insulation"; i++;     // 7
+  CategoryNameArray[i] = "Floor finishes"; i++;           // 8
+  CategoryNameArray[i] = "Floor insulation"; i++;         // 9
+  CategoryNameArray[i] = "Membranes"; i++;                // 10
+  CategoryNameArray[i] = "Metals and glass"; i++;         // 11
+  CategoryNameArray[i] = "Pitched roof insulation"; i++;  // 12
+  CategoryNameArray[i] = "Render and plaster"; i++;       // 13
+  CategoryNameArray[i] = "Roofing"; i++;                  // 14
+  CategoryNameArray[i] = "Screeds"; i++;                  // 15
+  CategoryNameArray[i] = "Stone"; i++;                    // 16
+  CategoryNameArray[i] = "Timber"; i++;                   // 17
+  CategoryNameArray[i] = "Wall insulation"; i++;          // 18
+
+  NumberOfCategories = i-1;
+
+  function fillCategoryList(CategoryCB,ProductCB)
+  {
+    var i,pt;
+    with (CategoryCB)
+      {
+        length = 0;
+        size = 0;
+        pt=0;
+        for (i=1; i&amp;amp;lt;=NumberOfCategories; i++)
+        {
+          length=++pt;
+          if (navigator.appName=="Netscape") size=pt;
+          options[pt-1].text = CategoryNameArray[i];
+        }//for
+      } //with
+    with (ProductCB)
+      {
+        size = 0;
+        length = 0;
+      }
+  }//function fillCategoryList
+
+
+
+  function twoDPs(NumberToRound)
+  {
+    return (Math.round(NumberToRound*100))/100;
+  }
+
+  function threeDPs(NumberToRound)
+  {
+    return (Math.round(NumberToRound*1000))/1000;
+  }
+
+  function isLoftSpace(CategoryCB,ProductCB)
+  {
+    var i,pt,LoftFound;
+    with (ProductCB)
+      {
+        i = 0;
+        pt = 0;
+        LoftFound = false;
+        //while (pt==0  &amp;amp;amp;&amp;amp;amp; i&amp;amp;lt;NumberOfMaterials)
+        while (pt==0  &amp;amp;amp;&amp;amp;amp; i&amp;amp;lt;15)
+        {
+          i++;
+          if (MaterialsArray[i].group==CategoryCB.selectedIndex &amp;amp;amp;&amp;amp;amp; ProductCB.selectedIndex&amp;amp;gt;=0)
+          {
+            pt=i+ProductCB.selectedIndex;
+            if (MaterialsArray[pt].name==LoftSpaceName) LoftFound = true;
+          }//if
+        }//while
+      } //with
+    return LoftFound;
+  }//function isLoftSpace
+
+
+  function findFloormateValues ()
+  {
+    var i,pt;
+    with (document.DowUvalueForm)
+    {
+      with (FloormateTypeCB)
+        {
+          i=0;
+          pt=0;
+          while (pt==0  &amp;amp;amp;&amp;amp;amp; i&amp;amp;lt;NumberOfMaterials)
+          {
+            i++;
+            if (MaterialsArray[i].group==9)
+            {
+              pt = i + FloormateTypeCB.selectedIndex - 1;
+              FloormateResEC.value = MaterialsArray[pt].ThermalRT;
+              if (FloormateTypeCB.selectedIndex==0) FloormateResEC.value = "";
+              calcGFUUvalue();
+            }//if
+          }//while
+        } //with
+      } //with
+  }// function findFloormateValues
+
+
+  function floorTypeCBChange()
+  {
+    with (document.DowUvalueForm)
+    {
+      if (FloorTypeCB.selectedIndex == 0) DeckResistanceEC.value = '';
+      if (FloorTypeCB.selectedIndex == 1) DeckResistanceEC.value = 0.2;
+      if (FloorTypeCB.selectedIndex == 2) DeckResistanceEC.value = 0.11;
+      calcGFUUvalue();
+    }
+  }
+
+  function calcGFUUvalue()
+  {
+    var GFUvalue, FloorPerimeter, FloorArea, FloormateRes, DeckResistance, FloorType, POverA;
+
+  with (document.DowUvalueForm)
+    {
+    GFUvalue = "n/a";
+    FloorPerimeter = FloorPerimeterEC.value;
+    FloorArea = FloorAreaEC.value;
+    FloormateRes = FloormateResEC.value;
+    DeckResistance = DeckResistanceEC.value;
+    FloorType = FloorTypeCB.selectedIndex;
+    POverA = 0;
+    {if (FloorArea&amp;amp;gt;0 &amp;amp;amp;&amp;amp;amp; FloorPerimeter&amp;amp;gt;0) {POverA = FloorPerimeter / FloorArea}};
+    {if ( (POverA&amp;amp;lt;=0 || POverA&amp;amp;gt;=1) &amp;amp;amp;&amp;amp;amp;  FloorPerimeter&amp;amp;gt;0 &amp;amp;amp;&amp;amp;amp; FloorArea&amp;amp;gt;0)
+      {
+        alert("Floor Perimeter divided by Floor Area must be greater than 0 and less than 1");
+      }
+    } //if
+    {if (POverA&amp;amp;gt;0)
+      {
+        if (POverA&amp;amp;lt;0.1)
+          GFUvalue=0.01+(2.16*POverA)-(2.1*POverA*POverA);
+            else GFUvalue=0.05+(1.65*POverA)-(0.6*POverA*POverA);
+        if (FloorType&amp;amp;gt;1) GFUvalue=1/((1/GFUvalue)+(DeckResistance-0.2));
+        GFUvalue=1/((1/GFUvalue)+(10*FloormateRes/10));
+      }
+    } //if
+    GFUvalue = twoDPs(GFUvalue);
+    GFUUvalueST.value=GFUvalue;
+    } //with
+  } //calcGFUUvalue
+
+  function calcUvalue()
+  {
+    var Uvalue,Elm,RoofPitch,PitchFactor,LayerPitchFactor;
+
+  with (document.DowUvalueForm)
+    {
+    RoofPitch = RoofPitchEC.value;
+    PitchFactor = Math.cos(Math.PI*RoofPitch/180);
+    Elm=ElementTypeCB.selectedIndex;
+
+    {if (RoofPitch==0 &amp;amp;amp;&amp;amp;amp; Elm==2)
+      {
+        alert("Please enter a roof pitch");
+        OKToCalculate=false;
+      }
+    } //if
+
+    LayerPitchFactor = 1;
+    Uvalue = IntSurfResEC.value*100;
+
+    Uvalue = Uvalue+(Layer6ResEC.value*100*LayerPitchFactor);
+    if (isLoftSpace(Layer6CategoryCB,Layer6ProductCB)) LayerPitchFactor = PitchFactor;
+    Uvalue = Uvalue+(Layer5ResEC.value*100*LayerPitchFactor);
+    if (isLoftSpace(Layer5CategoryCB,Layer5ProductCB)) LayerPitchFactor = PitchFactor;
+    Uvalue = Uvalue+(Layer4ResEC.value*100*LayerPitchFactor);
+    if (isLoftSpace(Layer4CategoryCB,Layer4ProductCB)) LayerPitchFactor = PitchFactor;
+    Uvalue = Uvalue+(Layer3ResEC.value*100*LayerPitchFactor);
+    if (isLoftSpace(Layer3CategoryCB,Layer3ProductCB)) LayerPitchFactor = PitchFactor;
+    Uvalue = Uvalue+(Layer2ResEC.value*100*LayerPitchFactor);
+    if (isLoftSpace(Layer2CategoryCB,Layer2ProductCB)) LayerPitchFactor = PitchFactor;
+    Uvalue = Uvalue+(Layer1ResEC.value*100*LayerPitchFactor);
+    if (isLoftSpace(Layer1CategoryCB,Layer1ProductCB)) LayerPitchFactor = PitchFactor;
+    Uvalue = Uvalue+(ExtSurfResEC.value*100*LayerPitchFactor);
+    Uvalue = Uvalue/100;
+    Uvalue = twoDPs(1/Uvalue);
+
+
+    UvalueST.value=Uvalue;
+    } //with
+  } //calcUvalue
+
+  function submitForm ()
+  {
+    var s;
+
+    with (document.DowUvalueForm)
+    {
+      s = window.history.previous;
+      alert (s);
+      alert (window);
+    }// with
+  } //submitForm
+
+  function showHelp ()
+  {
+    window.open("dow_help.htm","DowUvalueHelpWindow","resizable=yes,scrollbars=yes,height=250,width=250");
+  }
+
+  function clearTable ()
+  {
+    with (document.DowUvalueForm)
+    {
+      ExposureCB.selectedIndex = "1";
+      ElementTypeCB.selectedIndex = "0";
+      RoofPitchEC.value = "";
+      ExtSurfResEC.value = "";
+      IntSurfResEC.value = "";
+      UvalueST.value = "";
+      Layer1ProductCB.length = 0;
+      Layer1CategoryCB.selectedIndex = "0";
+      Layer1ThicknessEC.value = "";
+      Layer1CondEC.value = "";
+      Layer1ResEC.value = "";
+
+      Layer2ProductCB.length = 0;
+      Layer2CategoryCB.selectedIndex = "0";
+      Layer2ThicknessEC.value = "";
+      Layer2CondEC.value = "";
+      Layer2ResEC.value = "";
+
+      Layer3ProductCB.length = 0;
+      Layer3CategoryCB.selectedIndex = "0";
+      Layer3ThicknessEC.value = "";
+      Layer3CondEC.value = "";
+      Layer3ResEC.value = "";
+
+      Layer4ProductCB.length = 0;
+      Layer4CategoryCB.selectedIndex = "0";
+      Layer4ThicknessEC.value = "";
+      Layer4CondEC.value = "";
+      Layer4ResEC.value = "";
+
+      Layer5ProductCB.length = 0;
+      Layer5CategoryCB.selectedIndex = "0";
+      Layer5ThicknessEC.value = "";
+      Layer5CondEC.value = "";
+      Layer5ResEC.value = "";
+
+      Layer6ProductCB.length = 0;
+      Layer6CategoryCB.selectedIndex = "0";
+      Layer6ThicknessEC.value = "";
+      Layer6CondEC.value = "";
+      Layer6ResEC.value = "";
+
+    } // with
+  } // clearTable
+
+  function clearGFUTable ()
+  {
+    with (document.DowUvalueForm)
+    {
+      FloorTypeCB.selectedIndex = "0";
+      DeckResistanceEC.value = "0.2";
+      FloorPerimeterEC.value = "";
+      FloorAreaEC.value = "";
+      FloormateTypeCB.selectedIndex = "0";
+      FloormateResEC.value = "";
+      GFUUvalueST.value = "";
+    } // with
+  } // clearGFUTable
+
+
+  function setIntExtResistances()
+  {
+    var Exp,Elm,ExtEm,IntEm;
+    var ExtRes,IntRes;
+    var OKToCalculate
+
+    OKToCalculate=true;
+    Exp=document.DowUvalueForm.ExposureCB.selectedIndex;
+    Elm=document.DowUvalueForm.ElementTypeCB.selectedIndex;
+
+    {if (Elm != 2)
+      document.DowUvalueForm.RoofPitchEC.value = '';
+    }// if
+
+    ExtEm=0;
+    IntEm=0;
+
+    ExtRes=0;
+    IntRes=0;
+
+    {if (Elm==0)
+      {
+        alert("Please select an Element Type");
+        OKToCalculate=false;
+      }
+    } //if
+
+    {if (OKToCalculate==true)
+      //external values
+       {switch (Elm){
+          case 1 : case 2 : case 3 : switch (Exp){
+                                        case 0 : if (ExtEm==0) ExtRes=0.07; else ExtRes=0.09;break;
+                                        case 1 : if (ExtEm==0) ExtRes=0.04; else ExtRes=0.05;break;
+                                        case 2 : if (ExtEm==0) ExtRes=0.02; else ExtRes=0.02;break;
+                                     }// switch
+                                     break;
+          case 4 : switch (Exp){
+                                        case 0 : if (ExtEm==0) ExtRes=0.08; else ExtRes=0.11;break;
+                                        case 1 : if (ExtEm==0) ExtRes=0.06; else ExtRes=0.07;break;
+                                        case 2 : if (ExtEm==0) ExtRes=0.03; else ExtRes=0.03;break;
+                                     }// switch
+                                     break;
+          case 5 : switch (Exp){
+                                        case 0 : if (ExtEm==0) ExtRes=0.10; else ExtRes=0.12;break;
+                                        case 1 : if (ExtEm==0) ExtRes=0.08; else ExtRes=0.09;break;
+                                        case 2 : if (ExtEm==0) ExtRes=0.04; else ExtRes=0.04;break;
+                                     }// switch
+                                     break;
+
+        } //switch
+        document.DowUvalueForm.ExtSurfResEC.value=ExtRes;
+
+      //internal values
+       switch (Elm){
+          case 1 :case 2 : case 3 : if (IntEm==0) IntRes=0.1; else IntRes=0.22;break;
+          case 4 : if (IntEm==0) IntRes=0.12; else IntRes=0.3;break;
+          case 5 : if (IntEm==0) IntRes=0.14; else IntRes=0.55;break;
+        } //switch
+        document.DowUvalueForm.IntSurfResEC.value=IntRes;
+        calcUvalue();
+      }
+    } //if
+  } //setIntExtResistances()
+
+  function updateProducts(CategoryCB,ProductCB,ThicknessEC,CondEC,ThermalResEC)
+  {
+    var i,pt;
+
+    with (ProductCB)
+      {
+        size = 0;
+        length = 0;
+        pt=0;
+        for (i=1; i&amp;amp;lt;=NumberOfMaterials; i++)
+        {
+          if (MaterialsArray[i].group==CategoryCB.selectedIndex)
+          {
+            length=++pt;
+            if (navigator.appName=="Netscape") size=pt;
+            options[pt-1].text = MaterialsArray[i].name;
+          }//if
+        }//for
+        //ThicknessEC.value='-';
+        ThicknessEC.value='0';
+        CondEC.value='-';
+        ThermalResEC.value='';
+        ProductCB.selectedIndex = -1;
+        setIntExtResistances();
+      } //with
+  }//updateProducts
+
+  function fillFloormateList(ProductCB)
+  {
+    var i,pt;
+
+    with (ProductCB)
+      {
+        size = 0;
+        length = 0;
+        pt=1;
+        for (i=1; i&amp;amp;lt;=NumberOfMaterials; i++)
+        {
+          if (MaterialsArray[i].group==9)
+          {
+            length=++pt;
+            if (navigator.appName=="Netscape") size=pt;
+            options[pt-1].text = MaterialsArray[i].name;
+          }//if
+        }//for
+      } //with
+  }//fillFloormateList
+
+  function updateValues(CategoryCB,ProductCB,ThicknessEC,CondEC,ThermalResEC)
+  {
+    var i,pt;
+    with (ProductCB)
+      {
+        i=0;
+        pt=0;
+
+        while (pt==0  &amp;amp;amp;&amp;amp;amp; i&amp;amp;lt;NumberOfMaterials)
+        {
+          i++;
+          if (MaterialsArray[i].group==CategoryCB.selectedIndex)
+          {
+            pt=i+ProductCB.selectedIndex;
+            if (MaterialsArray[pt].materialType==5 || MaterialsArray[pt].materialType==3)
+            {
+              ThicknessEC.value='-';
+              CondEC.value='-';
+              ThermalResEC.value=MaterialsArray[pt].ThermalRT;
+            }//if
+            else
+            {
+              if (MaterialsArray[pt].thickness != 0) ThicknessEC.value=MaterialsArray[pt].thickness;
+              if (MaterialsArray[pt].ThermalRV==0) CondEC.value='-'; else CondEC.value=threeDPs(1/MaterialsArray[pt].ThermalRV);
+              if (ThicknessEC.value != 0 &amp;amp;amp;&amp;amp;amp; ThicknessEC.value != '-' &amp;amp;amp;&amp;amp;amp; CondEC.value != 0 &amp;amp;amp;&amp;amp;amp; CondEC.value != '-') ThermalResEC.value=threeDPs((ThicknessEC.value/1000)/CondEC.value); else ThermalResEC.value=MaterialsArray[pt].ThermalRT;
+              if (MaterialsArray[pt].thickness == 0)
+              {
+                ThicknessEC.value = '';
+                ThicknessEC.focus();
+              }//if
+            }//if
+            setIntExtResistances();
+          }//if
+        }//while
+      } //with
+  }//updateValues
+
+
+  function updateLayer1Products()
+  {with (document.DowUvalueForm) updateProducts(Layer1CategoryCB,Layer1ProductCB,Layer1ThicknessEC,Layer1CondEC,Layer1ResEC);}
+
+  function updateLayer2Products()
+  {with (document.DowUvalueForm) updateProducts(Layer2CategoryCB,Layer2ProductCB,Layer2ThicknessEC,Layer2CondEC,Layer2ResEC);}
+
+  function updateLayer3Products()
+  {with (document.DowUvalueForm) updateProducts(Layer3CategoryCB,Layer3ProductCB,Layer3ThicknessEC,Layer3CondEC,Layer3ResEC);}
+
+  function updateLayer4Products()
+  {with (document.DowUvalueForm) updateProducts(Layer4CategoryCB,Layer4ProductCB,Layer4ThicknessEC,Layer4CondEC,Layer4ResEC);}
+
+  function updateLayer5Products()
+  {with (document.DowUvalueForm) updateProducts(Layer5CategoryCB,Layer5ProductCB,Layer5ThicknessEC,Layer5CondEC,Layer5ResEC);}
+
+  function updateLayer6Products()
+  {with (document.DowUvalueForm) updateProducts(Layer6CategoryCB,Layer6ProductCB,Layer6ThicknessEC,Layer6CondEC,Layer6ResEC);}
+
+  function updateLayer1Values()
+  {with (document.DowUvalueForm) updateValues(Layer1CategoryCB,Layer1ProductCB,Layer1ThicknessEC,Layer1CondEC,Layer1ResEC);}
+
+  function updateLayer2Values()
+  {with (document.DowUvalueForm) updateValues(Layer2CategoryCB,Layer2ProductCB,Layer2ThicknessEC,Layer2CondEC,Layer2ResEC);}
+
+  function updateLayer3Values()
+  {with (document.DowUvalueForm) updateValues(Layer3CategoryCB,Layer3ProductCB,Layer3ThicknessEC,Layer3CondEC,Layer3ResEC);}
+
+  function updateLayer4Values()
+  {with (document.DowUvalueForm) updateValues(Layer4CategoryCB,Layer4ProductCB,Layer4ThicknessEC,Layer4CondEC,Layer4ResEC);}
+
+  function updateLayer5Values()
+  {with (document.DowUvalueForm) updateValues(Layer5CategoryCB,Layer5ProductCB,Layer5ThicknessEC,Layer5CondEC,Layer5ResEC);}
+
+  function updateLayer6Values()
+  {with (document.DowUvalueForm) updateValues(Layer6CategoryCB,Layer6ProductCB,Layer6ThicknessEC,Layer6CondEC,Layer6ResEC);}
+
+  function ThicknessECchange(CondEC,ResEC,ThicknessEC)
+  {with (document.DowUvalueForm) if (CondEC.value!='-') ResEC.value=threeDPs((ThicknessEC.value/1000)/CondEC.value);
+    setIntExtResistances();}
+
+  function Layer1ThicknessECchange()
+  {with (document.DowUvalueForm) ThicknessECchange(Layer1CondEC,Layer1ResEC,Layer1ThicknessEC);}
+
+  function Layer2ThicknessECchange()
+  {with (document.DowUvalueForm) ThicknessECchange(Layer2CondEC,Layer2ResEC,Layer2ThicknessEC);}
+
+  function Layer3ThicknessECchange()
+  {with (document.DowUvalueForm) ThicknessECchange(Layer3CondEC,Layer3ResEC,Layer3ThicknessEC);}
+
+  function Layer4ThicknessECchange()
+  {with (document.DowUvalueForm) ThicknessECchange(Layer4CondEC,Layer4ResEC,Layer4ThicknessEC);}
+
+  function Layer5ThicknessECchange()
+  {with (document.DowUvalueForm) ThicknessECchange(Layer5CondEC,Layer5ResEC,Layer5ThicknessEC);}
+
+  function Layer6ThicknessECchange()
+  {with (document.DowUvalueForm) ThicknessECchange(Layer6CondEC,Layer6ResEC,Layer6ThicknessEC);}
+
+  function Layer1ThicknessECblur()
+  {with (document.DowUvalueForm) if (Layer1ThicknessEC.value == 0) alert("Please enter a thickness for layer 1");}
+
+  function Layer2ThicknessECblur()
+  {with (document.DowUvalueForm) if (Layer2ThicknessEC.value == 0) alert("Please enter a thickness for layer 2");}
+
+  function Layer3ThicknessECblur()
+  {with (document.DowUvalueForm) if (Layer3ThicknessEC.value == 0) alert("Please enter a thickness for layer 3");}
+
+  function Layer4ThicknessECblur()
+  {with (document.DowUvalueForm) if (Layer4ThicknessEC.value == 0) alert("Please enter a thickness for layer 4");}
+
+  function Layer5ThicknessECblur()
+  {with (document.DowUvalueForm) if (Layer5ThicknessEC.value == 0) alert("Please enter a thickness for layer 5");}
+
+  function Layer6ThicknessECblur()
+  {with (document.DowUvalueForm) if (Layer6ThicknessEC.value == 0) alert("Please enter a thickness for layer 6");}
+
+  function CondECchange(ResEC,ThicknessEC,CondEC)
+  {with (document.DowUvalueForm) ResEC.value=threeDPs((ThicknessEC.value/1000)/CondEC.value);
+    setIntExtResistances();}
+
+  function Layer1CondECchange()
+  {with (document.DowUvalueForm) CondECchange(Layer1ResEC,Layer1ThicknessEC,Layer1CondEC);}
+
+  function Layer2CondECchange()
+  {with (document.DowUvalueForm) CondECchange(Layer2ResEC,Layer2ThicknessEC,Layer2CondEC);}
+
+  function Layer3CondECchange()
+  {with (document.DowUvalueForm) CondECchange(Layer3ResEC,Layer3ThicknessEC,Layer3CondEC);}
+
+  function Layer4CondECchange()
+  {with (document.DowUvalueForm) CondECchange(Layer4ResEC,Layer4ThicknessEC,Layer4CondEC);}
+
+  function Layer5CondECchange()
+  {with (document.DowUvalueForm) CondECchange(Layer5ResEC,Layer5ThicknessEC,Layer5CondEC);}
+
+  function Layer6CondECchange()
+  {with (document.DowUvalueForm) CondECchange(Layer6ResEC,Layer6ThicknessEC,Layer6CondEC);}
+
+  function ResECchange(CondEC,ThicknessEC,ResEC)
+  {with (document.DowUvalueForm) CondEC.value=threeDPs((ThicknessEC.value/1000)/ResEC.value);
+    setIntExtResistances();}
+
+  function Layer1ResECchange()
+  {with (document.DowUvalueForm) ResECchange(Layer1CondEC,Layer1ThicknessEC,Layer1ResEC)}
+
+  function Layer2ResECchange()
+  {with (document.DowUvalueForm) ResECchange(Layer2CondEC,Layer2ThicknessEC,Layer2ResEC)}
+
+  function Layer3ResECchange()
+  {with (document.DowUvalueForm) ResECchange(Layer3CondEC,Layer3ThicknessEC,Layer3ResEC)}
+
+  function Layer4ResECchange()
+  {with (document.DowUvalueForm) ResECchange(Layer4CondEC,Layer4ThicknessEC,Layer4ResEC)}
+
+  function Layer5ResECchange()
+  {with (document.DowUvalueForm) ResECchange(Layer5CondEC,Layer5ThicknessEC,Layer5ResEC)}
+
+  function Layer6ResECchange()
+  {with (document.DowUvalueForm) ResECchange(Layer6CondEC,Layer6ThicknessEC,Layer6ResEC)}
+// -->
+</script>
+<script >
+<!--
+// executed code
+  var HelpWindow = window.open("dow_help.htm","DowUvalueHelpWindow","resizable=yes,scrollbars=yes,height=250,width=250");
+  with (document.DowUvalueForm)
+    {
+      RecalcBT.onclick=setIntExtResistances;
+      ClearBT.onclick=clearTable;
+      HelpBT.onclick=showHelp;
+      GFUClearBT.onclick=clearGFUTable;
+      GFURecalcBT.onclick=calcGFUUvalue;
+      //SubmitBT.onclick=submitForm;
+      ExposureCB.onchange=setIntExtResistances;
+      ExposureCB.selectedIndex = "1";
+      ElementTypeCB.onchange=setIntExtResistances;
+      RoofPitchEC.onchange=setIntExtResistances;
+      Layer1CategoryCB.onchange=updateLayer1Products;
+      Layer1ProductCB.onchange=updateLayer1Values;
+      Layer1ThicknessEC.onchange=Layer1ThicknessECchange;
+      Layer1ThicknessEC.onblur=Layer1ThicknessECblur;
+      Layer1CondEC.onchange=Layer1CondECchange;
+      Layer1ResEC.onchange=Layer1ResECchange;
+      Layer2CategoryCB.onchange=updateLayer2Products;
+      Layer2ProductCB.onchange=updateLayer2Values;
+      Layer2ThicknessEC.onchange=Layer2ThicknessECchange;
+      Layer2ThicknessEC.onblur=Layer2ThicknessECblur;
+      Layer2CondEC.onchange=Layer2CondECchange;
+      Layer2ResEC.onchange=Layer2ResECchange;
+      Layer3CategoryCB.onchange=updateLayer3Products;
+      Layer3ProductCB.onchange=updateLayer3Values;
+      Layer3ThicknessEC.onchange=Layer3ThicknessECchange;
+      Layer3ThicknessEC.onblur=Layer3ThicknessECblur;
+      Layer3CondEC.onchange=Layer3CondECchange;
+      Layer3ResEC.onchange=Layer3ResECchange;
+      Layer4CategoryCB.onchange=updateLayer4Products;
+      Layer4ProductCB.onchange=updateLayer4Values;
+      Layer4ThicknessEC.onchange=Layer4ThicknessECchange;
+      Layer4ThicknessEC.onblur=Layer4ThicknessECblur;
+      Layer4CondEC.onchange=Layer4CondECchange;
+      Layer4ResEC.onchange=Layer4ResECchange;
+      Layer5CategoryCB.onchange=updateLayer5Products;
+      Layer5ProductCB.onchange=updateLayer5Values;
+      Layer5ThicknessEC.onchange=Layer5ThicknessECchange;
+      Layer5ThicknessEC.onblur=Layer5ThicknessECblur;
+      Layer5CondEC.onchange=Layer5CondECchange;
+      Layer5ResEC.onchange=Layer5ResECchange;
+      Layer6CategoryCB.onchange=updateLayer6Products;
+      Layer6ProductCB.onchange=updateLayer6Values;
+      Layer6ThicknessEC.onchange=Layer6ThicknessECchange;
+      Layer6ThicknessEC.onblur=Layer6ThicknessECblur;
+      Layer6CondEC.onchange=Layer6CondECchange;
+      Layer6ResEC.onchange=Layer6ResECchange;
+
+      FloorTypeCB.onchange=floorTypeCBChange;
+      DeckResistanceEC.onchange=calcGFUUvalue;
+      FloorPerimeterEC.onchange=calcGFUUvalue;
+      FloorAreaEC.onchange=calcGFUUvalue;
+      FloormateResEC.onchange=calcGFUUvalue;
+      FloormateTypeCB.onchange=findFloormateValues;
+
+      fillFloormateList(FloormateTypeCB)
+      fillCategoryList(Layer1CategoryCB,Layer1ProductCB);
+      fillCategoryList(Layer2CategoryCB,Layer2ProductCB);
+      fillCategoryList(Layer3CategoryCB,Layer3ProductCB);
+      fillCategoryList(Layer4CategoryCB,Layer4ProductCB);
+      fillCategoryList(Layer5CategoryCB,Layer5ProductCB);
+      fillCategoryList(Layer6CategoryCB,Layer6ProductCB);
+    } //with
+// -->
+</script>
+</center>
+</td>
+</tr>
+</table>
+</form>
+<p ></p>
+<table  TABID="08815" border="0" cellpadding="0" cellspacing="0" width="90%">
+<tr >
+<td  width="15"></td>
+<td  align="center" colspan="2">
+<img ></img>
+</td>
+<td  width="15"></td>
+</tr>
+<tr >
+<td  width="15"></td>
+<td  width="30"></td>
+<td  align="center">
+<div  align="left">
+<table  TABID="08813" align="left" bgcolor="white" border="0" cellpadding="0" cellspacing="0" height="18" width="380">
+<tr >
+<td  align="left" height="18" valign="top" width="140">
+<div  align="left">
+<font  color="#006699" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">
+Related topics:
+</font>
+</div>
+</td>
+<td  align="left" height="18" valign="top" width="140">
+<form  action="" method="get" name="navform">
+<p ></p>
+<font  color="#006699" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">
+<select >
+<option  selected="selected" value="select a topic">
+select a topic
+</option>
+<option  value="----------------">
+------------------
+</option>
+<option  value="gbtscd01.htm">
+CAD details
+</option>
+<option  value="gbtsco01.htm">
+Contact details
+</option>
+<option  value="gbtsdl01.htm">
+Download documents
+</option>
+<option  value="gbtsir01.htm">
+Information request
+</option>
+<option  value="gbtsstin.htm">
+Specification tool
+</option>
+<option  value="gbtsskin.htm">
+Stockist details
+</option>
+<option  value="gbtsts01.htm">
+Technical support
+</option>
+<option  value="gbtsuv01.htm">
+U-value calculator
+</option>
+</select>
+</font>
+</form>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td  width="15"></td>
+</tr>
+<tr >
+<td  width="15"></td>
+<td  align="center" colspan="2">
+<img ></img>
+</td>
+<td  width="15"></td>
+</tr>
+<tr >
+<td  width="15"></td>
+<td  width="30"></td>
+<td  align="center">
+<table  TABID="08814" bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="461">
+<tr >
+<td  align="left" height="13" valign="top" width="97"></td>
+<td  align="left" height="13" valign="top" width="155">
+<a  href="../index.htm" target="_self">
+<font  face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">
+STYROFOAM Solutions
+</font>
+</a>
+</td>
+<td  align="left" height="13" valign="top" width="177">
+<a  href="gbtools.htm" target="_self">
+<font  face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">
+Resources
+</font>
+</a>
+</td>
+</tr>
+</table>
+<p ></p>
+<font  face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="1">
+This U-value calculation does not take into account thermal bridging and should not be submitted for Building Regulation approval. Please contact the Dow Technical Centre for a fully detailed calculation
+<br ></br>
+<br ></br>
+© 2000 The Dow Chemical Company
+</font>
+</td>
+<td  width="15"></td>
+</tr>
+</table>
+</center>
+<center >
+<font  color="#999999" size="1">
+<br ></br>
+Copyright © The Dow Chemical Company (1995-2001). All rights reserved.
+</font>
+<br ></br>
+<font  size="1">
+<script >
+document.write('
+<a  href="http://' + location.hostname + '/homepage/privacy.html">
+Privacy Statement
+</a>
+'); document.write(' &amp; '); document.write('
+<a  href="http://' + location.hostname + '/homepage/disclosure.html">
+Internet Disclaimer
+</a>
+');
+</script>
+</font>
+</center>
+</body>
+</html>

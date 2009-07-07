@@ -1,0 +1,979 @@
+<!-- begin StandardHead.inc -->
+<html >
+<head >
+<title >
+Microsoft Office - Business Value
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<script >
+function preloadImages() { if (document.images) { var imgFiles = preloadImages.arguments; var preloadArray = new Array(); for (var i=0; i
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Image; preloadArray[i].src = imgFiles[i]; } } } function swapImage() { var i,j=0,objStr,obj,swapArray=new Array,oldArray=document.swapImgData; for (i=0; i (swapImage.arguments.length-2); i+=3) { objStr = swapImage.arguments[(navigator.appName == 'Netscape')?i:i+1]; if ((objStr.indexOf('document.layers[')==0 &amp;&amp; document.layers==null) || (objStr.indexOf('document.all[') ==0 &amp;&amp; document.all ==null)) objStr = 'document'+objStr.substring(objStr.lastIndexOf('.'),objStr.length); obj = eval(objStr); if (obj != null) { swapArray[j++] = obj; swapArray[j++] = (oldArray==null || oldArray[j-1]!=obj)?obj.src:oldArray[j]; obj.src = swapImage.arguments[i+2]; } } document.swapImgData = swapArray; } function swapImgRestore() { if (document.swapImgData != null) for (var i=0; i(document.swapImgData.length-1); i+=2) document.swapImgData[i].src = document.swapImgData[i+1]; } //--&gt;
+</script>
+</head>
+<!--
+	.heading	{font-family: verdana; font-size: 75%}
+	.blurb	{font-family: verdana; font-size: 70%}
+	.body	{font-family: verdana; line-height:130%;}
+	.smheading	{font-family: verdana;font-size: 70%;font-weight: bold}
+	A.definition	{color: #ff6600;text-decoration: none}
+	
+	.headcolor{color: #3366CC}
+	UL	{margin-top: 0pt}
+	a:hover {color: #0099FF}
+	.chartlabel {font-size:75%}
+	.cancelvlink {color: #0033CC}
+	.sublink		{font-size: 70%; line-height: 150%}
+	.subtext 		{font-size: 70%}
+	.price   	{font-family: verdana; font-size: 11px}
+	.order	   {font-family: verdana; font-size: 10px}
+	.blacklink	{color: #000000}
+	.hilitelink {color: #339933}
+	FONT.noul A {text-decoration:none;color:#3366CC}
+	.tblMatrix { border-color: #999999}
+	.tblHeader { background-color: #FFCC66; font-weight: bold; font-size: 75%; font-family: verdana, helvetica, sans-serif }
+	.tblColOne { background-color: #FFFAEA; font-size: 70%; font-weight: bold; font-family: verdana, helvetica, sans-serif}
+	.tblColOneTrans { font-size: 70%; font-weight: bold; font-family: verdana, helvetica, sans-serif}
+	.tblData { font-size: 70%; font-family: verdana, helvetica, sans-serif } 
+
+	.LeftNavOff
+	{
+   BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #3366CC solid 1px;
+   BORDER-LEFT: #3366CC solid 1px;
+   BORDER-RIGHT: #3366CC solid 1px;
+   BORDER-TOP: #3366CC solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 10px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px
+	}
+	.LeftNavUp
+	{
+   BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #000066 solid 1px;
+   BORDER-LEFT: #33CCFF solid 1px;
+   BORDER-RIGHT: #000066 solid 1px;
+   BORDER-TOP: #33CCFF solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   HEIGHT: 0pt;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 10px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px
+	}
+	.LeftNavDown
+	{
+   BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #99CCFF solid 1px;
+   BORDER-LEFT: #003399 solid 1px;
+   BORDER-RIGHT: #99CCFF solid 1px;
+   BORDER-TOP: #003399 solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 10px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px
+	}
+	.LeftNavOn
+	{
+   BACKGROUND-COLOR: #FFA500;
+   BORDER-BOTTOM: #99CCFF solid 1px;
+   BORDER-LEFT: #003399 solid 1px;
+   BORDER-RIGHT: #99CCFF solid 1px;
+   BORDER-TOP: #003399 solid 1px;
+   COLOR: ;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 10px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px
+	}
+	.LeftNavChosen
+	{
+   BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #3366CC solid 1px;
+   BORDER-LEFT: #3366CC solid 1px;
+   BORDER-RIGHT: #3366CC solid 1px;
+   BORDER-TOP: #3366CC solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 1px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px;
+	}
+	.LeftNavChosenUp
+	{
+   BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #000066 solid 1px;
+   BORDER-LEFT: #33CCFF solid 1px;
+   BORDER-RIGHT: #000066 solid 1px;
+   BORDER-TOP: #33CCFF solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   HEIGHT: 0pt;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 1px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px
+	}
+	.LeftNavChosenDown
+	{
+   BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #99CCFF solid 1px;
+   BORDER-LEFT: #003399 solid 1px;
+   BORDER-RIGHT: #99CCFF solid 1px;
+   BORDER-TOP: #003399 solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 5px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px
+	}
+	.LeftNavSubOff
+	{
+		BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #3366CC solid 1px;
+   BORDER-LEFT: #3366CC solid 1px;
+   BORDER-RIGHT: #3366CC solid 1px;
+   BORDER-TOP: #3366CC solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 30px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px
+	}
+	.LeftNavSubUp
+	{
+   BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #000066 solid 1px;
+   BORDER-LEFT: #33CCFF solid 1px;
+   BORDER-RIGHT: #000066 solid 1px;
+   BORDER-TOP: #33CCFF solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 30px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px
+	}
+	.LeftNavSubDown
+	{
+   BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #99CCFF solid 1px;
+   BORDER-LEFT: #003399 solid 1px;
+   BORDER-RIGHT: #99CCFF solid 1px;
+   BORDER-TOP: #003399 solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 30px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px
+	}
+	.LeftNavSubChosen
+	{
+   BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #3366CC solid 1px;
+   BORDER-LEFT: #3366CC solid 1px;
+   BORDER-RIGHT: #3366CC solid 1px;
+   BORDER-TOP: #3366CC solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 22px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px;
+	}
+	.LeftNavSubChosenUp
+	{
+   BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #000066 solid 1px;
+   BORDER-LEFT: #33CCFF solid 1px;
+   BORDER-RIGHT: #000066 solid 1px;
+   BORDER-TOP: #33CCFF solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   HEIGHT: 0pt;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 22px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px
+	}
+	.LeftNavSubChosenDown
+	{
+   BACKGROUND-COLOR: #3366CC;
+   BORDER-BOTTOM: #99CCFF solid 1px;
+   BORDER-LEFT: #003399 solid 1px;
+   BORDER-RIGHT: #99CCFF solid 1px;
+   BORDER-TOP: #003399 solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 22px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 164px
+	}
+-->
+<body >
+<script >
+<!--
+	var oLastBtn=0;
+	function RaiseButton(){
+		window.event.cancelBubble=true;
+		oBtn = window.event.srcElement;
+		var bChosen = false;
+		if(oLastBtn &amp;amp;amp;&amp;amp;amp; oLastBtn != oBtn){
+			HideButton();
+		}
+		if(oBtn.buttonType){
+			oBtn.className = oBtn.buttonType + "Up";
+			oLastBtn=oBtn;
+			}
+		else {
+		oLastBtn = 0;
+		}
+	}
+	function DepressButton(){
+		window.event.cancelBubble=true;
+		oBtn = window.event.srcElement;
+		if(oBtn.buttonType){
+			oBtn.className = oBtn.buttonType + "Down";
+		}
+	}
+	function HideButton(){
+		if ((oLastBtn.buttonType == "LeftNavChosen") || (oLastBtn.buttonType == "LeftNavSubChosen") || (oLastBtn.buttonType == "appNavChosen") || (oLastBtn.buttonType == "appNavSubChosen")) {
+			oLastBtn.className = oLastBtn.buttonType;
+		}
+		else {
+		oLastBtn.className = oLastBtn.buttonType + "Off";
+		}
+	}
+		
+//-->
+</script>
+<a  name="TOP"></a>
+<basefont ></basefont>
+<!-- end StandardHead.inc -->
+<!-- begin Masthead -->
+<!-- Start: ToolBar V2.0-->
+<script ></script>
+<script ></script>
+<script ></script>
+<!-- Start: ToolBar For old browsers-->
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<table  TABID="09424" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#FFFFFF" rowspan="2" valign="top" width="250">
+<a  href="/office/">
+<img ></img>
+</a>
+</td>
+<td  align="right" bgcolor="#FFFFFF" height="20" valign="top" width="19">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#000000" colspan="2" height="20" nowrap="nowrap" valign="middle">
+<font  color="#FFFFFF" face="Verdana, Arial, Helvetica" size="1">
+<a  href="http://www.microsoft.com/products/" style="color:#FFFFFF;text-decoration:none;" target="_top">
+<font  color="#FFFFFF">
+All Products
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="http://www.microsoft.com/support/" style="color:#FFFFFF;text-decoration:none;" target="_top">
+<font  color="#FFFFFF">
+Support
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="http://search.microsoft.com/" style="color:#FFFFFF;text-decoration:none;" target="_top">
+<font  color="#FFFFFF">
+Search
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="http://www.microsoft.com/" style="color:#FFFFFF;text-decoration:none;" target="_top">
+<font  color="#FFFFFF">
+microsoft.com Guide
+</font>
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" height="40" valign="top" width="19">
+<img ></img>
+</td>
+<td  bgcolor="#FFFFFF" height="40" valign="top" width="200">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#FFFFFF" height="40" valign="top" width="112">
+<a  href="http://www.microsoft.com/">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#000000" colspan="4" height="20" nowrap="nowrap" valign="middle">
+<font  color="#FFFFFF" face="Verdana, Arial, Helvetica" size="1">
+<b >
+<a  href="/office/" style="color:#FFFFFF;text-decoration:none;" target="_top">
+<font  color="#FFFFFF">
+Office Home
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="/office/products.htm" style="color:#FFFFFF;text-decoration:none;" target="_top">
+<font  color="#FFFFFF">
+Products
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="/office/faq.htm" style="color:#FFFFFF;text-decoration:none;" target="_top">
+<font  color="#FFFFFF">
+FAQ
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="/office/worldwide.htm" style="color:#FFFFFF;text-decoration:none;" target="_top">
+<font  color="#FFFFFF">
+Worldwide
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="/office/index.htm" style="color:#FFFFFF;text-decoration:none;" target="_top">
+<font  color="#FFFFFF">
+Site Index
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+<a  href="/office/contactus.htm" style="color:#FFFFFF;text-decoration:none;" target="_top">
+<font  color="#FFFFFF">
+Contact Us
+</font>
+</a>
+<font  color="#FFFFFF">
+|
+</font>
+</b>
+</font>
+</td>
+</tr>
+</table>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<!-- End: ToolBar For old browsers-->
+<script >
+<!--// Hide from old browsers
+
+var ToolBar_Supported = ToolBar_Supported;
+if (ToolBar_Supported != null &amp;amp;amp;&amp;amp;amp; ToolBar_Supported == true)
+{
+	TBDownLevelDiv.style.display ='none';
+	drawToolbar();
+	var fBrowserOK = true;
+}
+
+//-->
+</script>
+<!-- End: ToolBar V2.0-->
+<!-- end MastHead -->
+<!-- begin Body Table -->
+<table  TABID="09433" border="0" cellpadding="0" cellspacing="0" height="100%">
+<tr >
+<td  bgcolor="#3366CC" rowspan="2" valign="top" width="164">
+<!-- quick search -->
+<table  TABID="09425" bgcolor="#FFCC00" border="0" cellpadding="0" cellspacing="0" width="165">
+<tr >
+<td  rowspan="4">
+<img ></img>
+</td>
+<td  width="100%">
+<img ></img>
+<br ></br>
+<font  color="#000000" face="Arial,Verdana,Helvetica" size="2" style="font-size:12px">
+<b >
+Search This Site
+</b>
+</font>
+</td>
+<td  rowspan="4">
+<img ></img>
+</td>
+</tr>
+<form  action="http://search.microsoft.com/us/products/office/searchms25.asp" method="get">
+<tr >
+<td >
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<font  size="-1"></font>
+<input ></input>
+</td>
+</tr>
+</form>
+<tr >
+<td  valign="top">
+<a  href="http://search.microsoft.com/us/products/office/searchms25.asp?intCat=0" style="color:#000000;">
+<font  color="#000000" face="Arial,Verdana,Helvetica" size="1" style="COLOR:#000000">
+Advanced Search
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- end quick search -->
+<!-- left nav output -->
+<table  TABID="09426" bgcolor="#3366CC" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<a  href="/office/evaluate.htm">
+<font  face="Verdana,Arial,Helvetica" size="2" style="COLOR:#FFCC00">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+• Why Office 2000
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</font>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="/office/easysteps.htm">
+<font  face="Verdana,Arial,Helvetica" size="2" style="COLOR:#FFFFFF">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+How to Buy
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</font>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="/office/deployment/default.htm">
+<font  face="Verdana,Arial,Helvetica" size="2" style="COLOR:#FFFFFF">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Office Deployment
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</font>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="/office/using.htm">
+<font  face="Verdana,Arial,Helvetica" size="2" style="COLOR:#FFFFFF">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Using Office
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</font>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="/office/downloads.htm">
+<font  face="Verdana,Arial,Helvetica" size="2" style="COLOR:#FFFFFF">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Office Software Updates
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</font>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="/office/support.htm">
+<font  face="Verdana,Arial,Helvetica" size="2" style="COLOR:#FFFFFF">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Office Support
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</font>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="/office/resources.htm">
+<font  face="Verdana,Arial,Helvetica" size="2" style="COLOR:#FFFFFF">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Office Resources
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</font>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="/office/products.htm">
+<font  face="Verdana,Arial,Helvetica" size="2" style="COLOR:#FFFFFF">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Office Programs
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</font>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+</td>
+</tr>
+</table>
+<!-- end left nav output -->
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+</td>
+<td  bgcolor="#000066" rowspan="2" valign="top" width="1">
+<img ></img>
+</td>
+<td  align="center" bgcolor="#FFFFFF" valign="top" width="80%">
+<table  TABID="09427" align="center" border="0" cellpadding="0" cellspacing="0" width="435">
+<tr >
+<td  width="15">
+<img ></img>
+</td>
+<td  valign="top">
+<img ></img>
+<br ></br>
+<font  color="#0033CC" face="Verdana,Arial,Helvetica" size="1">
+<a  class="cancelvlink" href="/office/evaluate.htm">
+Why Office 2000
+</a>
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+<font  face="Arial,Helvetica,Sanserif" size="4">
+<b >
+Business Value
+</b>
+</font>
+<br ></br>
+<font  face="Arial,Helvetica,Sanserif" size="2">
+Office 2000 can help your organization succeed in today's business environment because it finally makes an intranet a practical collaboration tool. New features enable your employees to use the productivity tools they're already familiar with to work together more effectively over your existing intranet infrastructure.
+<p >
+Read our
+<a  href="/office/value/benefits.htm">
+Business Value Overview
+</a>
+for the "big picture" of the main benefits of moving to Office 2000:
+</p>
+<ul >
+<li >
+Enhanced communication and collaboration
+</li>
+<li >
+More targeted data access and analysis
+</li>
+<li >
+Better management and improved ease of use
+</li>
+</ul>
+The links below take you to additional summary information about the business value of Office 2000. If your focus is IT or you want to dig into more details right away, visit the
+<a  href="/office/evaluation/default.htm">
+Information for IT
+</a>
+page.
+</font>
+<p ></p>
+<p >
+<font  face="Arial,Helvetica,Sanserif" size="2">
+<a  href="/office/value/benefits.htm">
+<b >
+Business Value Overview
+</b>
+</a>
+</font>
+<br ></br>
+<font  face="ARIAL,VERDANA,HELVETICA" size="2">
+Read a top-level summary of the benefits Office 2000 can bring to your organization in terms of productivity and reduced cost of ownership.
+</font>
+<br ></br>
+<br ></br>
+<font  face="Arial,Helvetica,Sanserif" size="2">
+<a  href="/office/evaluation/RPRCStdy.htm">
+<b >
+Giga Information Group Analysis
+</b>
+</a>
+</font>
+<br ></br>
+<font  face="ARIAL,VERDANA,HELVETICA" size="2">
+Learn how a Giga Information Group report convinced the French firm Rhône-Poulenc Rorer (now Aventis Pharmaceuticals, following a merger with Houscht-Marion Roussel) to upgrade to Office 2000 and thus achieve a potential internal rate of return of between 134 percent and 333 percent.
+</font>
+<br ></br>
+<br ></br>
+<font  face="Arial,Helvetica,Sanserif" size="2">
+<a  href="/office/evaluation/studies.htm">
+<b >
+Office 2000 Case Studies
+</b>
+</a>
+</font>
+<br ></br>
+<font  face="ARIAL,VERDANA,HELVETICA" size="2">
+Read why major organizations are moving to Office 2000. See how each aims to improve its collaboration and data analysis while simultaneously reducing operational costs.
+</font>
+<br ></br>
+<br ></br>
+<font  face="Arial,Helvetica,Sanserif" size="2">
+<a  href="http://www.microsoft.com/business/km/default.asp">
+<b >
+Office 2000 and Knowledge Management
+</b>
+</a>
+</font>
+<br ></br>
+<font  face="ARIAL,VERDANA,HELVETICA" size="2">
+Find out how Office 2000 can help streamline knowledge management in your organization, combining new Web-enabled collaboration and data-analysis capabilities into a customized
+<a  href="http://www.microsoft.com/business/DigitalDashboard/">
+digital dashboard
+</a>
+that gives users a single, consolidated view of all their key information.
+</font>
+<br ></br>
+<br ></br>
+<font  face="Arial,Helvetica,Sanserif" size="2">
+<a  href="/office/evaluation/solutions/default.htm">
+<b >
+Solution Building
+</b>
+</a>
+</font>
+<br ></br>
+<font  face="ARIAL,VERDANA,HELVETICA" size="2">
+Find out how Office 2000 can help your organization create custom solutions based on the familiar Office user interface.
+</font>
+<br ></br>
+<br ></br>
+<font  face="Arial,Helvetica,Sanserif" size="2">
+<a  href="/office/value/win2Kfastfacts.htm">
+<b >
+Office 2000 and Windows 2000 Fast Facts
+</b>
+</a>
+</font>
+<br ></br>
+<font  face="ARIAL,VERDANA,HELVETICA" size="2">
+Find out what makes Office 2000 and Microsoft Windows
+<font  size="-2">
+®
+</font>
+2000 Professional the most powerful productivity solution available for the next generation of business computers.
+</font>
+<br ></br>
+<br ></br>
+<font  face="Arial,Helvetica,Sanserif" size="2">
+<a  href="/office/value/windows2000.htm">
+<b >
+Using Office 2000 and Windows 2000 Professional
+</b>
+</a>
+</font>
+<br ></br>
+<font  face="ARIAL,VERDANA,HELVETICA" size="2">
+Find out how using Office 2000 and Windows 2000 Professional together will make you more productive than ever.
+</font>
+<br ></br>
+<br ></br>
+</p>
+</td>
+<td  width="5">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<!--TD WIDTH="1" VALIGN="TOP" BGCOLOR="#000066"&amp;amp;gt;&amp;amp;lt;IMG SRC="/library/Images/Gifs/General/Trans.gif" WIDTH="1" HEIGHT="1" ALT=" " BORDER="0"&amp;amp;gt;&amp;amp;lt;/TD-->
+<td  background="/office/images/office_bg.gif" bgcolor="#3366CC" rowspan="2" width="15%">
+<!--&amp;amp;lt;IMG SRC="/library/Images/Gifs/General/Trans.gif" WIDTH="1" HEIGHT="1"  BORDER="0"&amp;amp;gt;-->
+</td>
+</tr>
+<!-- begin the gray bottom area -->
+<tr >
+<td  align="center" bgcolor="#FFFFFF" valign="bottom" width="80%">
+<table  TABID="09432" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#EDEDED" colspan="10" height="3" width="100%">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#EDEDED" colspan="10" valign="bottom" width="80%">
+<table  TABID="09429" align="center" bgcolor="#EDEDED" border="0" cellpadding="0" cellspacing="0" width="465">
+<tr >
+<td  rowspan="2" width="30">
+<img ></img>
+</td>
+<script >
+function Change_Status(text){ window.setTimeout("window.status='" + text + "'",1); }
+</script>
+<script >
+function New_Window() { var sPageAddress, iID; iID = "2"; sPageAddress = '%2Foffice%2Fvalue%2Fdefault%2Ehtm'; window.open('/office/sendfriend.asp?sAddress=' + sPageAddress + '&amp;iSiteID=' + iID,'wincalc','toolbar=no,titlebar=no,location=no,directories=no,status=no,menubar=no,resizable=no,copyhistory=no,fullscreen=no,scrollbars=yes,top=150,left=190,width=482,height=266'); }
+</script>
+<td  colspan="5" valign="top">
+<table  TABID="09428" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="6" width="100%">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="bottom" width="15">
+<a  href="/office/sendfriend.asp" onclick="New_Window(); return false" target="_new">
+<img ></img>
+</a>
+</td>
+<td  nowrap="nowrap" valign="middle" width="160">
+<a  class="cancelvlink" href="/office/sendfriend.asp" onclick="New_Window(); return false" target="_new">
+<font  face="Verdana" size="1">
+Send this page to a friend
+</font>
+</a>
+</td>
+<td  width="14">
+<img ></img>
+</td>
+<td  width="80%"></td>
+</tr>
+<tr >
+<td  colspan="6" width="100%">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table  TABID="09430" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="8" width="100%">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="8" width="100%">
+<img ></img>
+</td>
+</tr>
+</table>
+<table  TABID="09431" align="center" bgcolor="#EDEDED" border="0" cellpadding="0" cellspacing="0" width="465">
+<tr >
+<td  colspan="6" width="100%">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="30">
+<img ></img>
+</td>
+<td  align="left" valign="middle" width="100%">
+<font  face="Verdana,Arial,Helvetica" size="-2">
+<a  class="cancelvlink" href="/info/cpyright.htm">
+© 2001 Microsoft Corporation. All rights reserved. Terms of use.
+</a>
+</font>
+</td>
+<td  width="17%"></td>
+</tr>
+<tr >
+<td  colspan="6" width="100%">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- end bottom gray area -->
+</table>
+<!-- end body table -->
+</body>
+</html>

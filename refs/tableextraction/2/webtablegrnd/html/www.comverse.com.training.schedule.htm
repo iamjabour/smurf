@@ -1,0 +1,1265 @@
+<html  lang="en" xml="#DEFAULT" xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<title >
+Comverse &gt; Training &gt; Schedule
+</title>
+<link ></link>
+<script ></script>
+<script >
+nv1on = new Image(); // Active images nv2on = new Image(); // Active images nv3on = new Image(); // Active images nv4on = new Image(); // Active images nv5on = new Image(); // Active images nv6on = new Image(); // Active images nv1off = new Image(); // Inactive images nv2off = new Image(); // Inactive images nv3off = new Image(); // Inactive images nv4off = new Image(); // Inactive images nv5off = new Image(); // Inactive images nv6off = new Image(); // Inactive images function imageLoad() { if (document.images) { nv1on.src = "/images/about_on.gif" nv2on.src = "/images/com_sol_on.gif" nv3on.src = "/images/train_on.gif" nv4on.src = "/images/pr_on.gif" nv5on.src = "/images/career_on.gif" nv6on.src = "/images/cont_us_on.gif" return (flag=true); } } nv1off.src = "/images/about_off.gif" nv2off.src = "/images/com_sol_off.gif" nv3off.src = "/images/train_off.gif" nv4off.src = "/images/pr_off.gif" nv5off.src = "/images/career_off.gif" nv6off.src = "/images/cont_us_off.gif"
+</script>
+</head>
+<body  background="images/background.gif" bgcolor="#FFFFFF" onload="init();imageLoad();trackMouse();">
+<div  id="backmask">
+<table  TABID="07907" border="0" cellpadding="0" cellspacing="0" width="794">
+<tr >
+<td  class="maskclr">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+<div  id="comlogo">
+<a  href="/index.htm">
+<img ></img>
+&gt;
+</a>
+</div>
+<!-- The layers below are for the navigation which should not be changed -->
+<div  id="menustrip">
+<table  TABID="07908" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="#CCCCCC">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<div  id="menustripb">
+<table  TABID="07909" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="#CCCCCC">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<div  id="srch">
+<form  action="/cgi-bin/lfi.pl" method="post">
+<table  TABID="07910" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<input ></input>
+&gt;
+</td>
+<td >
+<input ></input>
+&gt;
+</td>
+</tr>
+</table>
+</form>
+</div>
+<!-- Below are the layers for the top navigation -->
+<!-- this is the about comverse plus the gray bar next to it -->
+<div  id="menu1">
+<a  href="/about/index.htm" onmouseover="imgOn('menu1','nv1');show('abmenu');imgabouton = true;">
+<img ></img>
+&gt;
+</a>
+</div>
+<div  id="gb1">
+<img ></img>
+&gt;
+</div>
+<!-- this is the comverse solutions plus the gray bar next to it -->
+<div  id="menu2">
+<a  href="/solutions/index.htm" onmouseover="imgOn('menu2','nv2');show('csmenu');imgcson = true;">
+<img ></img>
+&gt;
+</a>
+</div>
+<div  id="gb2">
+<img ></img>
+</div>
+<!-- traing plus the gray bar -->
+<div  id="menu3">
+<a  href="/training/index.htm" onmouseover="imgOn('menu3','nv3');show('trmenu');imgtrainon = true;">
+<img ></img>
+&gt;
+</a>
+</div>
+<div  id="gb3">
+<img ></img>
+&gt;
+</div>
+<!-- press room plus gray bar -->
+<div  id="menu4">
+<a  href="/press/index.htm" onmouseover="imgOn('menu4','nv4');show('prmenu'); hide('trmenu');imgOff('menu3','nv3');imgpresson = true;">
+<img ></img>
+&gt;
+</a>
+</div>
+<div  id="gb4">
+<img ></img>
+</div>
+<!-- career plus gray bar -->
+<div  id="menu5">
+<a  href="/careers/index.htm" onmouseover="imgOn('menu5','nv5');show('crmenu'); hide('prmenu');imgOff('menu4','nv4');imgcaron = true;">
+<img ></img>
+&gt;
+</a>
+</div>
+<div  id="gb5">
+<img ></img>
+&gt;
+</div>
+<!-- contact us -->
+<div  id="menu6">
+<a  href="/contact/input_cns.cfm" onmouseout="imgOff('menu6','nv6')" onmouseover="imgOn('menu6','nv6'); hide('crmenu');imgOff('menu5','nv5');">
+<img ></img>
+&gt;
+</a>
+</div>
+<!-- below is the drop down for converse solutions -->
+<div  id="abmenu">
+<table  TABID="07912" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  bgcolor="#999999">
+<img ></img>
+&gt;
+</td>
+<td  bgcolor="#FFFFFF">
+<table  TABID="07911" border="0" cellpadding="0" cellspacing="0" width="145">
+<tr  id="map" onmouseout="bgChangeOff('map')" onmouseover="bgChangeOn('map')">
+<td >
+<img ></img>
+</td>
+<td >
+<a  href="/about/map.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+worldwide offices
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="assoc" onmouseout="bgChangeOff('assoc')" onmouseover="bgChangeOn('assoc')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/about/assoc.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+associations
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="part" onmouseout="bgChangeOff('part')" onmouseover="bgChangeOn('part')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/about/part.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+partnerships
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="#999999">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<!-- below is the drop down for converse solutions -->
+<div  id="csmenu">
+<table  TABID="07914" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  bgcolor="#999999">
+<img ></img>
+&gt;
+</td>
+<td  bgcolor="#FFFFFF">
+<table  TABID="07913" border="0" cellpadding="0" cellspacing="0" width="145">
+<tr  id="corp" onmouseout="bgChangeOff('corp')" onmouseover="bgChangeOn('corp')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/solutions/corp_sol.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+corporate solutions
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="mobi" onmouseout="bgChangeOff('mobi')" onmouseover="bgChangeOn('mobi')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/solutions/mobi_sol.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+mobile internet solutions
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="multi" onmouseout="bgChangeOff('multi')" onmouseover="bgChangeOn('multi')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/solutions/mult_mes.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+multimedia messaging
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="spee" onmouseout="bgChangeOff('spee')" onmouseover="bgChangeOn('spee')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/solutions/spee_por.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+speech portal
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="higband" onmouseout="bgChangeOff('higband')" onmouseover="bgChangeOn('higband')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href=" /solutions/3g_sol.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+3g wideband solutions
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="comm" onmouseout="bgChangeOff('comm')" onmouseover="bgChangeOn('comm')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/solutions/comm_ent.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+community &amp; entertainment
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="sms" onmouseout="bgChangeOff('sms')" onmouseover="bgChangeOn('sms')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/solutions/sms_sol.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+sms solutions
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="prepaid" onmouseout="bgChangeOff('prepaid')" onmouseover="bgChangeOn('prepaid')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/solutions/prep_sol.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+prepaid solutions
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="product" onmouseout="bgChangeOff('product')" onmouseover="bgChangeOn('product')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/solutions/products/index.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+product list
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="customer" onmouseout="bgChangeOff('customer')" onmouseover="bgChangeOn('customer')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/solutions/cus_sup.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+customer support
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="#999999">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<!-- training dropdown -->
+<div  id="trmenu">
+<table  TABID="07916" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  bgcolor="#999999">
+<img ></img>
+&gt;
+</td>
+<td  bgcolor="#FFFFFF">
+<table  TABID="07915" border="0" cellpadding="0" cellspacing="0" width="145">
+<tr  id="courses" onmouseout="bgChangeOff('courses')" onmouseover="bgChangeOn('courses')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/training/courses.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+courses
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="schedule" onmouseout="bgChangeOff('schedule')" onmouseover="bgChangeOn('schedule')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/training/schedule.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+schedule
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="request" onmouseout="bgChangeOff('request')" onmouseover="bgChangeOn('request')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/training/req_info.cfm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+request for information
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="#999999">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<!-- press room dropdown -->
+<div  id="prmenu">
+<table  TABID="07918" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  bgcolor="#999999">
+<img ></img>
+&gt;
+</td>
+<td  bgcolor="#FFFFFF">
+<table  TABID="07917" border="0" cellpadding="0" cellspacing="0" width="145">
+<tr  id="currentpress" onmouseout="bgChangeOff('currentpress')" onmouseover="bgChangeOn('currentpress')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/press/index.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+2001 press releases
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="release" onmouseout="bgChangeOff('release')" onmouseover="bgChangeOn('release')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/press/prev_pr.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+2000 press releases
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="coverage" onmouseout="bgChangeOff('coverage')" onmouseover="bgChangeOn('coverage')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/press/coverage.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+press coverage
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="kit" onmouseout="bgChangeOff('kit')" onmouseover="bgChangeOn('kit')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/press/press_kit.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+press kit
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="calendar" onmouseout="bgChangeOff('calendar')" onmouseover="bgChangeOn('calendar')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/press/cal_evt.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+calendar
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="#999999">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<!-- career dropdown -->
+<div  id="crmenu">
+<table  TABID="07920" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  bgcolor="#999999">
+<img ></img>
+&gt;
+</td>
+<td  bgcolor="#FFFFFF">
+<table  TABID="07919" border="0" cellpadding="0" cellspacing="0" width="145">
+<tr  id="usa" onmouseout="bgChangeOff('usa')" onmouseover="bgChangeOn('usa')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/careers/career_template.cfm?Region=US+%26+Canada">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+americas
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="emea" onmouseout="bgChangeOff('emea')" onmouseover="bgChangeOn('emea')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="/careers/career_emea.htm">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+europe/middle east/africa
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr  id="israel" onmouseout="bgChangeOff('israel')" onmouseover="bgChangeOn('israel')">
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<a  href="http://199.203.140.124/sites/careers">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+israel
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#CCCCCC" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="#999999">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<!-- This is the section that is for template F in the press room section-->
+<!-- bacground of breadcrumb -->
+<div  id="thickstrip">
+<table  TABID="07921" border="0" cellpadding="0" cellspacing="0" width="759">
+<tr >
+<td  bgcolor="#CCCC00">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<div  id="thinstrip">
+<table  TABID="07922" border="0" cellpadding="0" cellspacing="0" width="731">
+<tr >
+<td  bgcolor="#CCCC00">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<!-- this is the breadcrum layer -->
+<div  id="breadcrumb">
+<table  TABID="07923" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="/index.htm">
+home
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+&gt;
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="/training/index.htm">
+training
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+&gt;
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+schedule
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+</table>
+</div>
+<div  id="corner">
+<table  TABID="07924" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="#CCCC00">
+<img ></img>
+&gt;
+</td>
+<td >
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<div  id="rightstrip">
+<table  TABID="07925" border="0" cellpadding="0" cellspacing="0" height="17" width="1">
+<tr >
+<td  bgcolor="#CCCC00">
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<!-- this is the page head i.e. Press Room Press Release with picture -->
+<div  id="pagehd">
+<table  TABID="07926" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<img ></img>
+&gt;
+</td>
+<td >
+<img ></img>
+&gt;
+</td>
+</tr>
+</table>
+</div>
+<!-- the layers below this point have to do with the content of the individual page -->
+<div  id="leftcontent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Contact Training:
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="mailto:Training@comverse.com">
+CTS Training Development Center
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Americas &amp; Asia/Pacific
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Please
+<a  href="mailto:Training@comverse.com">
+contact us
+</a>
+at our Wakefield, Massachusetts (USA) facility.
+<br ></br>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Europe, Middle East &amp; Africa
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Please
+<a  href="mailto:EMEA_Training@comverse.com">
+contact us
+</a>
+at our London, England facility.
+<br ></br>
+<br ></br>
+We are building a new training center to serve the Asia Pacific region. Please
+<a  href="mailto:APD_Training@comverse.com">
+contact us
+</a>
+to learn more.
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+<!-- this is the center content -->
+<div  id="maincontent">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Schedule
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Comverse offers an extensive and flexible training and certification program schedule for its Field Service Engineers (FSE) and customers. Whether you participate in a global live lesson online (via the Internet) or learn about a particular Comverse product (via a CD-ROM or from our CTS virtual campus), our learning methods are designed to ensure your success.
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Choose from a variety of courses flexibly offered at different Comverse Training Center sites, throughout the year. If you'd like to find out more about our training schedule, please contact the
+<a  href="mailto:Training@comverse.com">
+CTS Training Development Center
+</a>
+. Look for more detailed information on this page quite soon.
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<!--
+&amp;amp;lt;table width="481" border="0" cellspacing="1" cellpadding="8"&amp;amp;gt;
+			
+					&amp;amp;lt;tr bgcolor="#ACDBED"&amp;amp;gt;
+	&amp;amp;lt;td colspan="2" class="tbnsbrd" align="center"&amp;amp;gt;&amp;amp;lt;span class="textblack12b"&amp;amp;gt;FSE Training and Certification Program&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#BFE5F2"&amp;amp;gt;&amp;amp;lt;td align="center"  width="100"&amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;Series 0101&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center"  width="300"&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;Date&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;BSFE&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;January 7-11&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" valign="middle" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;IEFSE&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;March 4-15&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+			&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" valign="middle"&amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;UFSE&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;May 20-31&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+			&amp;amp;lt;/tr&amp;amp;gt;
+			
+			
+			
+						&amp;amp;lt;tr bgcolor="#BFE5F2"&amp;amp;gt;&amp;amp;lt;td align="center"  width="100"&amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;Series 0201&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center"  width="300"&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;Date&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;BSFE&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;February 4-8&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" valign="middle" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;IEFSE&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;April 1-12 (Apr. 8 holiday off)&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+			&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" valign="middle"&amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;UFSE&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;June 17-28&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+			&amp;amp;lt;/tr&amp;amp;gt;			&amp;amp;lt;tr bgcolor="#BFE5F2"&amp;amp;gt;&amp;amp;lt;td align="center"  width="100"&amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;Series 0301&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center"  width="300"&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;Date&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;BSFE&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;March 4-8&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" valign="middle" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;IEFSE&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;May 6-10&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+			&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" valign="middle"&amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;UFSE&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;july 15-26&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+			&amp;amp;lt;/tr&amp;amp;gt;			&amp;amp;lt;tr bgcolor="#BFE5F2"&amp;amp;gt;&amp;amp;lt;td align="center"  width="100"&amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;Series 0401&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center"  width="300"&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;Date&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;BSFE&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;April 1-5&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" valign="middle" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;IEFSE&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;June 3-14&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+			&amp;amp;lt;/tr&amp;amp;gt;
+			&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" valign="middle"&amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;UFSE&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;August 19-30&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/table&amp;amp;gt;
+			&amp;amp;lt;span class="text8"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;br /&amp;amp;gt;&amp;amp;lt;br /&amp;amp;gt;&amp;amp;lt;br /&amp;amp;gt;&amp;amp;lt;/span&amp;amp;gt;		
+
+
+
+
+
+
+&amp;amp;lt;table width="481" border="0" cellspacing="1" cellpadding="8"&amp;amp;gt;
+			
+					&amp;amp;lt;tr bgcolor="#ACDBED"&amp;amp;gt;&amp;amp;lt;td colspan="5" class="tbnsbrd" align="center"&amp;amp;gt;&amp;amp;lt;span class="textblack12b"&amp;amp;gt;Customer Training Courses at The London Training Centre&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;
+&amp;amp;lt;tr bgcolor="#BFE5F2"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;Course Title&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;February&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;March&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;April&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;					
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11b"&amp;amp;gt;May&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;	
+
+&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;TRILOGUE Foundation 3.2 Hardware&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;12-16&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;12-16&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;2-6&amp;amp;lt;br&amp;amp;gt;23-27&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;						
+&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;14-18&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	&amp;amp;lt;/tr&amp;amp;gt;										
+	
+&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;TRILOGUE Foundation 3.4 Hardware&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;5-9&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;9-13&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;						
+&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;23-27&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	&amp;amp;lt;/tr&amp;amp;gt;	
+&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;TRILOGUE 3.4 Delta&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;22-23&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;						
+&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;14-15&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	&amp;amp;lt;/tr&amp;amp;gt;	
+&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;TRILOGUE Advanced 3.2 Hardware&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;5-16&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;5-16&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;2-12&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;						
+&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;14-25&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	&amp;amp;lt;/tr&amp;amp;gt;	
+&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;TRILOGUE ISMC&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;19-22&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;26-29&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;9-12&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;						
+&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;8-11&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	&amp;amp;lt;/tr&amp;amp;gt;	
+&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;TRILOGUE TNC&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;26-28&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;						
+&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;9-11&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	&amp;amp;lt;/tr&amp;amp;gt;	
+&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;Pre-paid&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;26-30&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;2-6&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;
+&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;30 Apr.-4 May&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	&amp;amp;lt;/tr&amp;amp;gt;
+
+
+
+&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;Unified Messaging 1.3&amp;amp;lt;br&amp;amp;gt;5 Day Course&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;5-9&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;						
+&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	&amp;amp;lt;/tr&amp;amp;gt;
+
+
+&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;Unified Messaging 2&amp;amp;lt;br&amp;amp;gt;2 Day Course&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;						
+&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;21-22&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	&amp;amp;lt;/tr&amp;amp;gt;	
+&amp;amp;lt;tr bgcolor="#D9F0F7"&amp;amp;gt;&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;Network Management Centre Foundation&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	
+&amp;amp;lt;td align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;19-21&amp;amp;lt;/span&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;						
+&amp;amp;lt;td  align="center" &amp;amp;gt;&amp;amp;lt;span class="textblack11"&amp;amp;gt;30 Apr. -2 May&amp;amp;lt;br&amp;amp;gt;30 May -1 June&amp;amp;lt;/span&amp;amp;gt; &amp;amp;lt;/td&amp;amp;gt;	&amp;amp;lt;/tr&amp;amp;gt;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	&amp;amp;lt;/table&amp;amp;gt;	&amp;amp;lt;br&amp;amp;gt;&amp;amp;lt;br&amp;amp;gt;	-->
+<!-- this is the copyright information and should always be two br's away from the content -->
+<table  TABID="07927" border="0" cellpadding="0" cellspacing="0" width="495">
+<tr >
+<td  valign="bottom">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+© 2001, Comverse Network Systems, Inc. All Rights reserved. Read
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="/legal/index.htm">
+our legal notice
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+and
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="/privacy/index.htm">
+our privacy policy
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+We are part of
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="http://www.cmvt.com">
+Comverse Technology
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+, a publicly traded company.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+</table>
+<br ></br>
+&gt;
+<br ></br>
+&gt;
+</div>
+</body>
+</html>

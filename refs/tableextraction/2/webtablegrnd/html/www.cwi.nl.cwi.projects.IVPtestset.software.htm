@@ -1,0 +1,1449 @@
+<html >
+<head >
+<title >
+Test Set for Initial Value Problem Solvers: Software part of the test set
+</title>
+</head>
+<body  background="alink=#ff00ff">
+<table  TABID="08455" border="0" cellpadding="10" cellspacing="0">
+<tr >
+<td  bgcolor="#ffffff" height="750" valign="top">
+<font  face="lucida">
+<a  href="http://www.cwi.nl/index.html">
+<img ></img>
+</a>
+<br ></br>
+<font  size="+1">
+<p >
+Test Set for IVP Solvers
+</p>
+</font>
+<font  size="-1">
+release 2.1
+<ul >
+<li >
+<a  href="index.htm">
+Introduction
+</a>
+<br ></br>
+</li>
+<li >
+<a  href="structur.htm">
+Structure of the test set
+</a>
+<br ></br>
+</li>
+<li >
+<a  href="descrip.htm">
+Descriptive part of the test set
+</a>
+<br ></br>
+</li>
+<li >
+<font  color="#008888">
+Software part of the test set
+</font>
+<br ></br>
+</li>
+<li >
+<a  href="disclaim.htm">
+Disclaimer
+</a>
+<br ></br>
+</li>
+<li >
+<a  href="instruc.htm">
+How to perform tests
+</a>
+<br ></br>
+</li>
+<li >
+<a  href="people.htm">
+People involved
+</a>
+<br ></br>
+</li>
+<li >
+<a  href="ack.htm">
+Acknowledgements
+</a>
+<br ></br>
+</li>
+<li >
+<a  href="stats.htm">
+Web server statistics
+</a>
+<br ></br>
+</li>
+</ul>
+</font>
+<img ></img>
+<br ></br>
+<br ></br>
+</font>
+<h6 >
+Suggestions, questions, remarks?
+<br ></br>
+<a  href="mailto:IVPtestset@cwi.nl">
+IVPtestset@cwi.nl
+</a>
+</h6>
+</td>
+<td  valign="top">
+<font  face="lucida">
+<font  color="#008888" size="+2">
+<a  name="top">
+<h2  align="center">
+Software part of the test set
+</h2>
+</a>
+</font>
+The codes available in this test can be categorized as follows:
+<ul >
+<li >
+<a  href="#solvers">
+solvers
+</a>
+,
+</li>
+<li >
+<a  href="#drivers">
+drivers
+</a>
+,
+</li>
+<li >
+<a  href="#problems">
+problem codes
+</a>
+and
+</li>
+<li >
+<a  href="#auxil">
+auxiliary routines
+</a>
+.
+</li>
+</ul>
+Instructions for the use of these codes can be found in:
+<a  href="instruc.htm">
+How to perform tests
+</a>
+. Please read this
+<a  href="disclaim.htm">
+disclaimer
+</a>
+before using any of these codes. The codes can be downloaded separately below, or obtained together in the gzip-ped tar-file
+<a  href="src.tgz">
+src.tgz
+</a>
+(0.3 Mbyte) or as a zip-file
+<a  href="src.zip">
+src.zip
+</a>
+(0.3 Mbyte).
+</font>
+<h4 >
+<a  name="solvers">
+<font  color="#008888">
+Solvers
+</font>
+</a>
+<font  size="-1">
+(
+<a  href="#top">
+back
+</a>
+to top of page)
+</font>
+</h4>
+Currently, the solvers listed in the table below are available. The first column contains the official links to the solvers. The links in the second column direct to versions of the solvers with which the numerical experiments were conducted. These may be older than the versions under the official links.
+<br ></br>
+<br ></br>
+<table  TABID="08453" border="1" cellpadding="5" cellspacing="5" genuinetable="yes">
+<tr >
+<td  valign="top">
+<font  face="lucida">
+name
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+code
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+author(s)
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+version
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+applicable to
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<font  face="lucida">
+<a  href="http://www.netlib.org/ode/ddassl.f">
+DASSL
+</a>
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+<a  href="src/solvers/ddassl.f">
+ddassl.f
+</a>
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+Petzold
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+24 June 1991
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+ODEs and IDEs/DAEs of index = 1
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<font  face="lucida">
+<a  href="http://www.ma.ic.ac.uk/~jcash/IVP_software/finaldae/readme.html">
+MEBDFDAE
+</a>
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+<a  href="src/solvers/mebdfdae.f">
+mebdfdae.f
+</a>
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+Cash
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+6 November 1998
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+ODEs and DAEs of index = 3
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<font  face="lucida">
+<a  href="http://www.cwi.nl/cwi/projects/PSIDE/">
+PSIDE
+</a>
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+<a  href="src/solvers/pside.f">
+pside.f
+</a>
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+De Swart, Lioen &amp; Van der Veen
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+25 November 1998
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+ODEs and IDEs/DAEs of index upto at least 3
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<font  face="lucida">
+<a  href="ftp://ftp.unige.ch/pub/doc/math/stiff/radau.f">
+RADAU
+</a>
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+<a  href="src/solvers/radau.f">
+radau.f
+</a>
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+Hairer &amp; Wanner
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+18 September 1998
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+ODEs and DAEs of index = 3
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<font  face="lucida">
+<a  href="ftp://ftp.unige.ch/pub/doc/math/stiff/radau5.f">
+RADAU5
+</a>
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+<a  href="src/solvers/radau5.f">
+radau5.f
+</a>
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+Hairer &amp; Wanner
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+9 July 1996
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+ODEs and DAEs of index = 3
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<font  face="lucida">
+<a  href="http://www.netlib.org/ode/vode.f">
+VODE
+</a>
+.
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+<a  href="src/solvers/vode.f">
+vode.f
+</a>
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+Brown, Hindmarsh &amp; Byrne
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+Bug fix release 12 November 1998
+</font>
+</td>
+<td  valign="top">
+<font  face="lucida">
+ODEs
+</font>
+</td>
+</tr>
+</table>
+<h4 >
+<a  name="drivers">
+<font  color="#008888">
+Drivers
+</font>
+</a>
+<font  size="-1">
+(
+<a  href="#top">
+back
+</a>
+to top of page)
+</font>
+</h4>
+These are the drivers that link the solvers to the problems:
+<ul >
+<li >
+<a  href="src/drivers/dassld.f">
+dassld.f
+</a>
+,
+</li>
+<li >
+<a  href="src/drivers/mebdfd.f">
+mebdfd.f
+</a>
+,
+</li>
+<li >
+<a  href="src/drivers/psided.f">
+psided.f
+</a>
+,
+</li>
+<li >
+<a  href="src/drivers/radaud.f">
+radaud.f
+</a>
+,
+</li>
+<li >
+<a  href="src/drivers/radau5d.f">
+radau5d.f
+</a>
+and
+</li>
+<li >
+<a  href="src/drivers/voded.f">
+voded.f
+</a>
+.
+</li>
+</ul>
+<h4 >
+<a  name="problems">
+<font  color="#008888">
+Problem codes
+</font>
+</a>
+<font  size="-1">
+(
+<a  href="#top">
+back
+</a>
+to top of page)
+</font>
+</h4>
+Currently, the following test problems have been collected:
+<br ></br>
+<br ></br>
+<table  TABID="08454" border="0" cellpadding="0" cellspacing="5" genuinetable="yes" tabletitle="">
+<tr >
+<td  align="right">
+<font  face="lucida">
+1.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Chemical Akzo Nobel problem
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+index 1 DAE of dimension 6
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/chemakzo.f">
+chemakzo.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+DASSL, MEBDFDAE, PSIDE, RADAU, RADAU5
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+2.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Problem HIRES
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+ODE of dimension 8
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/hires.f">
+hires.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+all
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+3.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Pollution problem
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+ODE of dimension 20
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/pollu.f">
+pollu.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+all
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+4.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Ring modulator
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+ODE of dimension 15
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/ringmod.f">
+ringmod.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+all
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+5.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Andrews' squeezing mechanism
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+index 3 DAE of dimension 27
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/andrews.f">
+andrews.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+MEBDFDAE, PSIDE, RADAU, RADAU5
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+6.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Transistor amplifier
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+index 1 DAE of dimension 8
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/transamp.f">
+transamp.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+DASSL, MEBDFDAE, PSIDE, RADAU, RADAU5
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+7.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Medical Akzo Nobel problem
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+ODE of dimension 400
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/medakzo.f">
+medakzo.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+all
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+8.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+EMEP problem
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+ODE of dimension 66
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/emep.f">
+emep.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+all
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+9.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+NAND gate
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+index 1 IDE of dimension 14
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/nand.f">
+nand.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+DASSL, PSIDE
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+10.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Charge pump
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+index 2 DAE of dimension 9
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/pump.f">
+pump.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+DASSL, PSIDE
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+11.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Wheelset
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+index 2 IDE of dimension 17
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/wheel.f">
+wheel.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+DASSL, PSIDE
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+12.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Two bit adding unit
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+index 1 DAE of dimension 350
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/tba.f">
+tba.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+DASSL, MEBDFDAE, PSIDE, RADAU, RADAU5
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+13.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Car axis problem
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+index 3 DAE of dimension 10
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/caraxis.f">
+caraxis.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+MEBDFDAE, PSIDE, RADAU, RADAU5
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+14.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Fekete problem
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+index 2 DAE of dimension 160
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/fekete.f">
+fekete.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+MEBDFDAE, PSIDE, RADAU, RADAU5
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+15.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Pleiades problem
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+ODE of dimension 28
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/plei.f">
+plei.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+all
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+16.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Slider crank
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+index 2 DAE of dimension 24
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/crank.f">
+crank.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+MEBDFDAE, PSIDE, RADAU, RADAU5
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" height="10"></td>
+</tr>
+<tr >
+<td  align="right">
+<font  face="lucida">
+17.
+</font>
+</td>
+<td  colspan="2">
+<font  face="lucida">
+Water tube system
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+type:
+</font>
+</td>
+<td >
+<font  face="lucida">
+index 2 DAE of dimension 49
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+code:
+</font>
+</td>
+<td >
+<font  face="lucida">
+<a  href="src/problems/water.f">
+water.f
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<font  face="lucida">
+applicable solvers:
+</font>
+</td>
+<td >
+<font  face="lucida">
+MEBDFDAE, PSIDE, RADAU, RADAU5
+</font>
+</td>
+</tr>
+</table>
+<h4 >
+<a  name="auxil">
+<font  color="#008888">
+Auxiliary routines
+</font>
+</a>
+<font  size="-1">
+(
+<a  href="#top">
+back
+</a>
+to top of page)
+</font>
+</h4>
+The file
+<a  href="src/auxil/report.f">
+report.f
+</a>
+contains a user interface. The following files contain linear algebra routines needed by the solvers. (For MEBDFDAE the linear algebra routines are already contained in the solver; RADAU and RADAU5 use the same linear algebra.)
+<ul >
+<li >
+<a  href="src/auxil/dassla.f">
+dassla.f
+</a>
+,
+</li>
+<li >
+<a  href="src/auxil/psidea.f">
+psidea.f
+</a>
+,
+</li>
+<li >
+<a  href="src/auxil/radaua.f">
+radaua.f
+</a>
+and
+</li>
+<li >
+<a  href="src/auxil/vodea.f">
+vodea.f
+</a>
+.
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</body>
+</html>

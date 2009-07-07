@@ -1,0 +1,870 @@
+<html >
+<head >
+<link ></link>
+<link ></link>
+<link ></link>
+<meta ></meta>
+<meta ></meta>
+<title >
+UUNET Service Level Agreements
+</title>
+<!--  drop-down menu script  -->
+<script >
+<!-- 
+function update_frame(myoptions) 
+{
+        destination = myoptions[myoptions.selectedIndex].value;
+        if (destination == "null")
+        {
+                return true;
+        }
+        window.open(destination, '_top');
+        myoptions.selectedIndex = 0;
+
+        return true;
+}
+// -->
+</script>
+<!--  survey script  -->
+<script >
+<!-- 
+function getCookie (name) {
+var dcookie = document.cookie; 
+var cname = name + "=";
+var clen = dcookie.length;
+var cbegin = 0;
+        while (cbegin &amp;amp;lt; clen) {
+        var vbegin = cbegin + cname.length;
+                if (dcookie.substring(cbegin, vbegin) == cname) { 
+                var vend = dcookie.indexOf (";", vbegin);
+                        if (vend == -1) vend = clen;
+                return unescape(dcookie.substring(vbegin, vend));
+                }
+        cbegin = dcookie.indexOf(" ", cbegin) + 1;
+                if (cbegin == 0) break;
+        }
+return null;
+}
+
+function getCookieArray(name) {
+    var i = 0;
+    while (getCookie(name + i) != null) {
+    	this[i + 1] = getCookie(name + i);
+    	i++; this.length = i; 
+    }
+}
+
+function loadSurvey (lang) {
+	var surveyArray = new getCookieArray("_survey");
+
+	if (surveyArray[1] == null) {
+		for (var i = 1; i &amp;amp;lt;= 15; i++) {
+			surveyArray[i] = 0;
+		}
+	}
+
+	var hideUntilDate = surveyArray[14];
+	var cookieDate = new Date();
+	cookieDate.setTime(hideUntilDate);
+	if ((eval(hideUntilDate) == 0)) {
+		flagHideThirty = false;
+	} else {
+		today = new Date();
+		if (today.getTime() &amp;amp;lt; cookieDate.getTime()) {
+			flagHideThirty = true;
+		}
+		else {
+			flagHideThirty = false;
+		}
+	}
+
+	var allcookies = document.cookie;
+	var pos = allcookies.indexOf("_session=");
+	if (pos == -1) {
+		flagHideSession = false;
+	}
+	else {
+		flagHideSession = true;
+	}
+
+	var surveyComplete = surveyArray[15]
+	var strQueryString="";
+	if (eval(surveyComplete)==0 &amp;amp;amp;&amp;amp;amp; !flagHideThirty &amp;amp;amp;&amp;amp;amp; !flagHideSession) {
+		for (var i = 1; i &amp;amp;lt;= 13; i++) {
+    		strQueryString = strQueryString + "Questions=" + surveyArray[i];
+			strQueryString = strQueryString + "&amp;amp;amp;";
+    	}      
+		win = window.open("http://emeasurvey.uk.uu.net/survey.asp?" + strQueryString + "Lang=" + lang, "survey", "width=250,height=300");	
+	}
+}
+// -->
+</script>
+</head>
+<body  alink="#003366" bgcolor="White" leftmargin="0" link="#003366" marginheight="0" marginwidth="0" onload="if ( window.gtPreload ) { gtPreload(); };" text="#444444" topmargin="0" vlink="#003366">
+<table  TABID="13624" border="0" cellpadding="0" cellspacing="0" width="780">
+<tr >
+<td  align="left" bgcolor="#ffffff" colspan="2" valign="top" width="780">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="120">
+<table  TABID="13620" border="0" cellpadding="0" cellspacing="0" width="120">
+<tr >
+<td  valign="top" width="120">
+<table  TABID="13618" border="0" cellpadding="3" cellspacing="0" width="120">
+<tr >
+<td  background="/templates/uunav/1.gif" class="nav1">
+<img ></img>
+&gt;
+</td>
+<td  class="nav1">
+<a  class="nav1" href="/">
+UUNET HOME
+</a>
+</td>
+</tr>
+<tr >
+<td  class="nav1" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/1.gif" class="nav1">
+<img ></img>
+&gt;
+</td>
+<td  class="nav1">
+<a  class="nav1" href="/terms/index.xml">
+TERMS
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/1.gif" class="nav1">
+<img ></img>
+&gt;
+</td>
+<td  class="nav1">
+<a  class="nav1" href="/terms/aup/">
+ACCEPTABLE USE POLICIES
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/1h.gif" class="nav1h">
+<img ></img>
+&gt;
+</td>
+<td  class="nav1h">
+<a  class="nav1h" href="/terms/sla/">
+SERVICE LEVEL AGREEMENTS
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/1l.gif" class="nav1">
+<img ></img>
+&gt;
+</td>
+<td  class="nav1">
+<a  class="nav1" href="/terms/netapps/">
+NETWORK APPLICATIONS FEE SCHEDULES
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/1l.gif" class="nav1">
+<img ></img>
+&gt;
+</td>
+<td  class="nav1">
+<a  class="nav1" href="/terms/licenses/">
+SOFTWARE LICENSES
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/1l.gif" class="nav1">
+<img ></img>
+&gt;
+</td>
+<td  class="nav1">
+<a  class="nav1" href="/terms/privacy/">
+DATA PROTECTION &amp; PRIVACY POLICIES
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/1l.gif" class="nav1">
+<img ></img>
+&gt;
+</td>
+<td  class="nav1">
+<a  class="nav1" href="/terms/ricochet/">
+MOBILE WIRELESS SERVICE TERMS OF USE
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/spacer_l.gif" class="nav1" colspan="2">
+<img ></img>
+&gt;
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/australia/">
+AUSTRALIA
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/belgium/">
+BELGIUM
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/canada/">
+CANADA
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/czech/">
+CZECH REPUBLIC
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/denmark/">
+DENMARK
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/france/">
+FRANCE
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/germany/">
+GERMANY
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/hong_kong/">
+HONG KONG
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/ireland/">
+IRELAND
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/italy/">
+ITALY
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/japan/">
+JAPAN
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/luxembourg/">
+LUXEMBOURG
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/netherlands/">
+NETHERLANDS
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/singapore/">
+SINGAPORE
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/sweden/">
+SWEDEN
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/swiss/">
+SWITZERLAND
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="/terms/sla/uk/">
+UNITED KINGDOM
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/templates/uunav/2b.gif" class="nav2">
+<img ></img>
+&gt;
+</td>
+<td  class="nav2">
+<a  class="nav2" href="http://www.us.uu.net/support/sla/terms/">
+UNITED STATES
+</a>
+</td>
+</tr>
+</table>
+<table  TABID="13619" border="0" cellpadding="0" cellspacing="0" width="120">
+<tr >
+<td  bgcolor="#003366">
+<!-- an extra break to prevent a bare line...  -->
+<br ></br>
+<!--the edit link-->
+</td>
+</tr>
+</table>
+<img ></img>
+</td>
+</tr>
+</table>
+<!--the new printer friendly icon-->
+<p  align="center">
+<a  href="/terms/sla/index.xml?printer_friendly=true&&_show_url=%2fterms%2fsla%2findex.xml" target="_blank">
+<img ></img>
+&gt;
+</a>
+</p>
+<!-- END MENU TABLE -->
+<!-- OVERALL TABLE NEW COL -->
+</td>
+<td  align="left" valign="top" width="660">
+<!-- OVERALL TABLE NEW COL -->
+<!-- START CONTENT TABLE -->
+<table  TABID="13622" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td ></td>
+<td  colspan="4">
+<img ></img>
+&gt;
+<br ></br>
+<img ></img>
+&gt;
+<br ></br>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="top"></td>
+<td  colspan="4">
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<font  face="verdana,arial,helvetica,geneva,sans-serif">
+Click on the Service Level Agreement for the country in which your UUNET service is provided:
+<ul ></ul>
+</font>
+</p>
+<table  TABID="13621">
+<tr >
+<td  align="center">
+<a  href="/terms/sla/australia/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/australia/">
+Australia
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/terms/sla/belgium">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/belgium">
+Belgium
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/terms/sla/canada/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/canada/">
+Canada
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+-
+<a  href="/terms/sla/canada/index.xml?SetLang=en&temp=1">
+English
+</a>
+-
+<a  href="/terms/sla/canada/index.xml?SetLang=fr&temp=1">
+Français
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/terms/sla/czech/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/czech/">
+Czech Republic
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+-
+<a  href="/terms/sla/czech/index.xml?SetLang=en&temp=1">
+English
+</a>
+-
+<a  href="/terms/sla/czech/index.xml?SetLang=cs&temp=1">
+Czech
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/terms/sla/denmark/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/denmark/">
+Denmark
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/terms/sla/france/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/france/">
+France
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+-
+<a  href="/terms/sla/france/index.xml?SetLang=en&temp=1">
+English
+</a>
+-
+<a  href="/terms/sla/france/index.xml?SetLang=fr&temp=1">
+Français
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/terms/sla/germany/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/germany/">
+Germany
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/terms/sla/hong_kong/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/hong_kong/">
+Hong Kong
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/terms/sla/ireland/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/ireland/">
+Ireland
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/terms/sla/italy/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/italy/">
+Italy
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="japan/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="japan/">
+Japan
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/terms/sla/luxembourg">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/luxembourg">
+Luxembourg
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="/terms/sla/netherlands/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="/terms/sla/netherlands/">
+Netherlands
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="singapore/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="singapore/">
+Singapore
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="sweden/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="sweden/">
+Sweden
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="swiss/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="swiss/">
+Switzerland
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="uk/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="uk/">
+United Kingdom
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<a  href="http://www.us.uu.net/support/sla/terms/">
+<img ></img>
+&gt;
+</a>
+</td>
+<td >
+<a  href="http://www.us.uu.net/support/sla/terms/">
+United States
+</a>
+</td>
+</tr>
+</table>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- END CONTENT TABLE -->
+<!-- end of content -->
+</td>
+</tr>
+<tr >
+<td ></td>
+<td >
+<table  TABID="13623" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  align="left" width="560">
+<img ></img>
+</td>
+<td >
+<br ></br>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="/">
+[Home]
+</a>
+<a  href="/about/">
+[About]
+</a>
+<a  href="/new/">
+[What's new?]
+</a>
+<a  href="/products/">
+[Products &amp; services]
+</a>
+<br ></br>
+<a  href="/network/">
+[Our network]
+</a>
+<a  href="/customer/">
+[Customer care]
+</a>
+<a  href="/contact/">
+[Contact us]
+</a>
+<a  href="/search/">
+[Search]
+</a>
+<br ></br>
+<br ></br>
+<a  href="/cgi-bin/redirect.cgi?s=footer&loc=http://www.worldcom.com/" target="_blank">
+<img ></img>
+&gt;
+</a>
+© 2001 - UUNET, a
+<a  href="/cgi-bin/redirect.cgi?s=footer&loc=http://www.worldcom.com/" target="_blank">
+WorldCom
+</a>
+Company
+<br ></br>
+&gt;
+<br ></br>
+&gt;
+<a  href="/terms/aup/">
+UUNET Acceptable Use Policy
+</a>
+-
+<a  href="http://www.worldcom.com/legal/privacy/">
+Online Privacy
+</a>
+-
+<a  href="/terms/privacy/">
+Data Protection
+</a>
+<br ></br>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br ></br>
+<br ></br>
+<br ></br>
+<br ></br>
+</body>
+</html>

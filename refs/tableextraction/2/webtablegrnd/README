@@ -1,0 +1,52 @@
+
+                   Web Table Groundtruth Database
+                          Jan. 10, 2003
+
+The package includes the web table groundtruth database used in table
+detection recognition research.  The details of the database can be 
+found at our two papers as below.
+
+You are welcome to use and distribute the database under the terms of the
+licence for research or commercial purposes,
+however please acknowledge its use with a citation:
+
+Yalin Wang and Jianying Hu, "A Machine Learning Based Approach for
+Table Detection on The Web", The Eleventh International World Web
+Conference(WWW2002), Honolulu, Hawaii, USA, May 2002.
+
+Yalin Wang and Jianying Hu, "Detecting Tables in HTML Documents"", 
+D. Lopresti, J. Hu, and R. Kashi (Eds.), Document Image Analysis System V, 
+5th International Workshop DAS 2002, Princeton, NJ, USA, Aug. 2002. 
+Proceedings, pp. 249 - 260.
+
+
+In this package, there are two subdirectories,
+
+html ---- It includes 1,393 HTML pages collected from around 200 web sites.
+There are a total of 14,609 <TABLE> nodes, including 11,477 leaf <TABLE>
+nodes.  Out of the 11,477 leaf <TABLE> nodes, 1,740 are genuine tables
+and 9,737 are non-genuine tables.  We use a home brewed HTML DTD to write the
+ground truth information in the HTML files.  The HTML DTD file is in DTD 
+directory.
+
+DTD ---- It includes our home brewed HTML DTD.  The major difference
+between it and a standard HTML 3.2 is that we added some new attribute-value
+pairs in the table attribute list.  With the parser which we got from 
+javax.swing.text.html.parser, this DTD can be used to parse the table
+groundtruth html files.
+
+
+If you have any questions regarding this database, please contact 
+Dr. Yalin Wang or Dr. Jianying Hu at
+-----------------------------------------------------------------------
+Yalin Wang
+UCLA Mathematics Department    (310)8258525(O)
+Box 951555,                    
+Los Angeles, CA 90095-1555     ylwang@u.washington.edu
+-----------------------------------------------------------------------
+Jianying Hu
+Avaya Labs Research
+Rm. 2A41         		 Tel: (908) 696-5117
+233 Mount Airy Road		 Fax: (908) 696-5402
+Basking Ridge, NJ 07920		 jianhu@avaya.com
+-----------------------------------------------------------------------

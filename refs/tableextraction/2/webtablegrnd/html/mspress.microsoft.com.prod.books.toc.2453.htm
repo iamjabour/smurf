@@ -1,0 +1,4652 @@
+<html >
+<head >
+<!--Header Area-->
+<title >
+Table of Contents from Microsoft® Windows® 2000 TCP/IP Protocols and Services Technical Reference
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<!--End Header Area-->
+<link ></link>
+</head>
+<body  alink="#660033" bgcolor="#ffffff" leftmargin="0" link="#003399" marginheight="0" marginwidth="0" text="#000000" topmargin="0" vlink="#6699cc">
+<a  name="top"></a>
+<!-- Start: ToolBar V2.0-->
+<script ></script>
+<script ></script>
+<script ></script>
+<script >
+<!--// Default Search Text Clear
+
+function clearField(field) {
+		field.value = "";
+} 
+
+//-->
+</script>
+<!-- Start: ToolBar for down-level browsers-->
+<div  id="TBDownLevelDiv">
+<table  TABID="05581" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  height="60" rowspan="2" valign="top">
+<a  href="/" target="_top">
+<img ></img>
+</a>
+</td>
+<td  align="right" height="20" valign="top">
+<img ></img>
+</td>
+<td  align="right" bgcolor="#000000" colspan="2" height="20" nowrap="nowrap" valign="middle">
+<font  class="NSTB" color="#ffffff" face="verdana, arial" size="1">
+<a  href="/isapi/gomscom.asp?target=/products/" style="color:#ffffff;text-decoration:none;" target="_top">
+<font  color="#ffffff">
+All Products
+</font>
+</a>
+<font  color="#ffffff">
+|
+</font>
+<a  href="/isapi/gomscom.asp?target=/support/" style="color:#ffffff;text-decoration:none;" target="_top">
+<font  color="#ffffff">
+Support
+</font>
+</a>
+<font  color="#ffffff">
+|
+</font>
+<a  href="/isapi/gosearch.asp?target=/" style="color:#ffffff;text-decoration:none;" target="_top">
+<font  color="#ffffff">
+Search
+</font>
+</a>
+<font  color="#ffffff">
+|
+</font>
+<a  href="/isapi/gomscom.asp?target=/" style="color:#ffffff;text-decoration:none;" target="_top">
+<font  color="#ffffff">
+microsoft.com Home
+</font>
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  height="40" valign="top" width="19">
+<img ></img>
+</td>
+<td  align="right" colspan="2" height="40" nowrap="nowrap" valign="top">
+<a  href="/isapi/gomscom.asp?target=/" target="_top">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<!-- Start: Local menus -->
+<td  bgcolor="#0066CC" colspan="4" height="20" nowrap="nowrap" valign="middle">
+<font  class="NSTB" color="#ffffff" face="verdana, arial, helvetica" size="1">
+<b >
+<a  href="/" style="color:#ffffff;text-decoration:none;" target="_top">
+<font  color="#ffffff">
+Home
+</font>
+</a>
+<font  color="#ffffff">
+|
+</font>
+<a  href="/welcome/" style="color:#ffffff;text-decoration:none;" target="_top">
+<font  color="#ffffff">
+About This Site
+</font>
+</a>
+<font  color="#ffffff">
+|
+</font>
+<a  href="/support/" style="color:#ffffff;text-decoration:none;" target="_top">
+<font  color="#ffffff">
+Support
+</font>
+</a>
+<font  color="#ffffff">
+|
+</font>
+<a  href="/worldwide/" style="color:#ffffff;text-decoration:none;" target="_top">
+<font  color="#ffffff">
+Worldwide Sites
+</font>
+</a>
+<font  color="#ffffff">
+|
+</font>
+<a  href="/findabook/" style="color:#ffffff;text-decoration:none;" target="_top">
+<font  color="#ffffff">
+Advanced Search
+</font>
+</a>
+<font  color="#ffffff">
+|
+</font>
+</b>
+</font>
+</td>
+<!-- End: Local menus -->
+</tr>
+</table>
+</div>
+<!-- End: ToolBar For down-level browsers-->
+<script >
+<!--// Hide from old browsers
+
+var ToolBar_Supported = ToolBar_Supported;
+if (ToolBar_Supported != null &amp;amp;amp;&amp;amp;amp; ToolBar_Supported == true)
+{
+	TBDownLevelDiv.style.display ='none';
+
+	// To change current page ICP banner, pass the appropriate values to the 
+	// function: setICPBanner (BannerGif, BannerUrl, BannerAltStr).
+	// For example,
+	//setICPBanner("/library/homepage/images/bnr_all.gif","","microsoft.com Home");
+
+	drawToolbar();
+
+	// To highlight current menu button, pass the appropriate values to the 
+	// function: setICPMenuColor(MenuIDStr, bgColor, fontColor, mouseoverColor).
+	// For example,
+	// setICPMenuColor("HomeMenu", "blue", "", "");
+}
+
+//-->
+</script>
+<!-- End: ToolBar V2.0-->
+<!--  OVERALL TABLE  -->
+<table  TABID="05592" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  id="leftnav" rowspan="3" valign="top" width="158">
+<!-- SEARCH TABLE -->
+<table  TABID="05583" bgcolor="#CCFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  rowspan="4" valign="top" width="8">
+<img ></img>
+</td>
+<td  align="left" valign="middle" width="25%">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="middle" width="25%">
+<table  TABID="05582" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<form  action="/findabook/default.asp" method="get" name="SearchForm">
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+</form>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="2" nowrap="nowrap" valign="top" width="25%">
+<img ></img>
+<br ></br>
+<font  size="1">
+<a  class="menuhead2" href="/findabook/">
+<b >
+Advanced Search
+</b>
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="middle" width="25%">
+<img ></img>
+</td>
+</tr>
+</table>
+<!--  LEFT NAV  -->
+<table  TABID="05584" align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" width="8">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<font  size="1">
+<b  class="l_nav_head">
+What's New
+</b>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/officexp/">
+Office XP
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/cashback/">
+Cash Back Promotion
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/custombook/">
+Order Custom Books
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/hop/">
+New Releases
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/hop/comingsoon.htm">
+Coming Soon Titles
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/NET/">
+Microsoft .NET
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/developer/msdnseries/">
+MSDN Book Series
+</a>
+<br ></br>
+<!--&amp;amp;lt;img src="/images/1pxt.gif" width=1 height=15&amp;amp;gt;&amp;amp;lt;a class=menuhead2 href="/NET/"&amp;amp;gt;Microsoft .NET&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;br&amp;amp;gt;-->
+<img ></img>
+<a  class="menuhead2" href="/XML/">
+XML
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/troubleshooting/">
+Troubleshooting Series
+</a>
+<br ></br>
+<!--&amp;amp;lt;img src="/images/1pxt.gif" width=1 height=15&amp;amp;gt;&amp;amp;lt;a class=menuhead2 href="/.net/"&amp;amp;gt;Microsoft .NET&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;br&amp;amp;gt;-->
+<!--img src="/images/1pxt.gif" width=1 height=15&amp;amp;gt;&amp;amp;lt;a class=menuhead2 href="/education/"&amp;amp;gt;Education &amp;amp;amp;amp; Training&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;br-->
+<!--&amp;amp;lt;img src="/images/1pxt.gif" width=1 height=15&amp;amp;gt;&amp;amp;lt;a class=menuhead2 href="/specialoffers/"&amp;amp;gt;Special Offers&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;br&amp;amp;gt;-->
+<p >
+<b  class="l_nav_head">
+Hot Products
+</b>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/windows2000/">
+Windows 2000
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/net/servers/exchange2000/">
+Exchange 2000 Server
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/net/servers/SQL2000/">
+SQL Server 2000
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/windowsme/">
+Windows Me
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/office2000/">
+Office 2000
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/developer/vstudio/">
+Visual Studio
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/lifestyles/">
+Web Lifestyles
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/hop/bestsellers.htm">
+Bestsellers
+</a>
+<br ></br>
+</p>
+<p >
+<b  class="l_nav_head">
+Business
+</b>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/business/">
+Products and Strategies
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/business/pricing/">
+Product Pricing
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/business/sales/">
+Sales Contacts
+</a>
+<br ></br>
+</p>
+<p >
+<b  class="l_nav_head">
+Customer Corners
+</b>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/certification/">
+Certification
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/developer/">
+Developer
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/it/">
+IT Professional
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/desktop/">
+Personal Desktop
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/education/">
+Education &amp; Training
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/partners/">
+Partners &amp; Resellers
+</a>
+<br ></br>
+</p>
+<p >
+<b  class="l_nav_head">
+About This Site
+</b>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/welcome/">
+About this site
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/contact/">
+Contact Us
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/sitemap/">
+Site Map
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="/awards/">
+Press Releases &amp; Awards
+</a>
+<br ></br>
+<img ></img>
+<a  class="menuhead2" href="http://www.microsoft.com/jobs/mspress.htm">
+Microsoft Press Job Listings
+</a>
+<br ></br>
+<br ></br>
+</p>
+</font>
+</td>
+</tr>
+</table>
+</td>
+<!--END LEFT NAV-->
+<!--PIXEL LINE-->
+<td  bgcolor="#0066CC" rowspan="3" valign="top" width="1">
+<img ></img>
+</td>
+<td  rowspan="3" valign="top" width="10">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="100%">
+<!--StartMainInc-->
+<img ></img>
+<br ></br>
+<a  name="top"></a>
+<table  TABID="05585" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<!-- Display top right three buttons -->
+<td  align="right" colspan="2" nowrap="nowrap" valign="top">
+<a  href="https://mspress.vitessa.net/servlet/net.vitessa.clients.mspress.webcart.View">
+<img ></img>
+</a>
+<a  href="https://mspress.vitessa.net/servlet/net.vitessa.clients.mspress.webcart.MyAccountLogin">
+<img ></img>
+</a>
+<a  href="/findabook/buy/" target="out">
+<img ></img>
+</a>
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+<!-- Now we render the top portion, with general book info etc..., and the right nav -->
+<tr >
+<td  colspan="2" valign="top">
+<font  color="#003366" face="Verdana,Arial,Helvetica" size="3">
+<b >
+Microsoft® Windows® 2000 TCP/IP Protocols and Services Technical Reference
+</b>
+</font>
+</td>
+</tr>
+</table>
+<table  TABID="05588" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="left" valign="top" width="100%">
+<img ></img>
+<table  TABID="05586" genuinetable="yes" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  rowspan="8" valign="top" width="130">
+<a  href="/prod/books/2453.htm">
+<img ></img>
+</a>
+</td>
+<td  rowspan="8" valign="top" width="5">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="65">
+<font  face="Verdana,Arial,Helvetica" size="1">
+Author
+</font>
+</td>
+<td  rowspan="8" valign="top" width="5">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  face="Verdana,Arial,Helvetica" size="1">
+Thomas Lee and Joseph Davies
+</font>
+</td>
+<td  rowspan="8" valign="top" width="5">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="65">
+<font  face="Verdana,Arial,Helvetica" size="1">
+Pages
+</font>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  face="Verdana,Arial,Helvetica" size="1">
+576
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="65">
+<font  face="Verdana,Arial,Helvetica" size="1">
+Disk
+</font>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  face="Verdana,Arial,Helvetica" size="1">
+1 CD
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="65">
+<font  face="Verdana,Arial,Helvetica" size="1">
+Level
+</font>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  face="Verdana,Arial,Helvetica" size="1">
+Int/Adv
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="65">
+<font  face="Verdana,Arial,Helvetica" size="1">
+Published
+</font>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  face="Verdana,Arial,Helvetica" size="1">
+01/05/2000
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="65">
+<font  face="Verdana,Arial,Helvetica" size="1">
+ISBN
+</font>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  face="Verdana,Arial,Helvetica" size="1">
+0-7356-0556-4
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="65">
+<font  face="Verdana,Arial,Helvetica" size="1">
+Price
+</font>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  face="Verdana,Arial,Helvetica" size="1">
+<strike  style="color:red">
+$49.99 US ($76.99 Cdn)
+</strike>
+<br ></br>
+<font  color="#ff3300">
+Save up to 34% off this price when you buy here!
+</font>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top" width="65">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="100%">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  align="right" valign="top" width="162">
+<img ></img>
+<table  TABID="05587" align="right" border="0" cellpadding="0" cellspacing="0" width="162">
+<tr >
+<td  bgcolor="#FFCC33" colspan="4" height="1" valign="top">
+<img ></img>
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" valign="top" width="1">
+<img ></img>
+</td>
+<td  valign="top" width="5">
+<img ></img>
+</td>
+<td  valign="top" width="100%">
+<font  face="Verdana,Arial,Helvetica" size="1">
+<img ></img>
+<br ></br>
+<img ></img>
+<font  color="#003366" face="Verdana,Arial,Helvetica" size="2">
+<b >
+More Information
+</b>
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+<img ></img>
+<a  class="bookmark" href="/prod/books/2453.htm#AboutTheBook">
+About the Book
+</a>
+<br ></br>
+<img ></img>
+<a  class="bookmark" href="/prod/books/toc/2453.htm#TableOfContents">
+Table of Contents
+</a>
+<br ></br>
+<img ></img>
+<a  class="bookmark" href="/prod/books/sampchap/2453.htm#SampleChapter">
+Sample Chapter
+</a>
+<br ></br>
+<img ></img>
+<a  class="bookmark" href="/prod/books/index/2453.htm#Index">
+Index
+</a>
+<br ></br>
+<img ></img>
+<a  class="bookmark" href="/findabook/list/series_ae.htm">
+Related Series
+</a>
+<br ></br>
+<img ></img>
+<a  class="bookmark" href="/prod/books/authors/auth2453.htm">
+About the Author
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<img ></img>
+<a  class="bookmark" href="/prod/reviews/default.asp?id=2453&isbn=0-7356-0556-4">
+Write A Review
+</a>
+<br ></br>
+<img ></img>
+</font>
+</td>
+<td  bgcolor="#FFCC33" valign="top" width="1">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" colspan="4" height="1" valign="top">
+<img ></img>
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+<td  width="16">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top">
+<form  action="/msnsmoke/redirect.asp" method="get" target="_top">
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<br ></br>
+<font  face="Verdana,Arial,Helvetica" size="1">
+*Accepted orders US/Canada only.
+</font>
+</form>
+</td>
+</tr>
+</table>
+<!--EndMainInc-->
+<p >
+<font  siz="1"></font>
+<!--Body Area-->
+</p>
+<h1 ></h1>
+<a  name="TableOfContents"></a>
+<h2 >
+Table of Contents
+</h2>
+<hr ></hr>
+<p ></p>
+<table  TABID="05589" genuinetable="yes" border="0" cellpadding="4" cellspacing="1" width="100%">
+<tr >
+<td  valign="top">
+<i >
+Tables
+</i>
+</td>
+<td  valign="top">
+<i >
+xv
+</i>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<i >
+Preface
+</i>
+</td>
+<td  valign="top">
+<i >
+xix
+</i>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<i >
+Acknowledgments
+</i>
+</td>
+<td  valign="top">
+<i >
+xxi
+</i>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<i >
+Introduction
+</i>
+</td>
+<td  valign="top">
+<i >
+xxiii
+</i>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+PART I THE NETWORK INTERFACE LAYER
+</b>
+</td>
+<td  valign="top"></td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 1 Local Area Network (LAN) Technologies
+</b>
+</td>
+<td  valign="top">
+<b >
+3
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+LAN Encapsulations
+</b>
+</td>
+<td  valign="top">
+3
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Ethernet
+</b>
+</td>
+<td  valign="top">
+4
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Ethernet II
+</td>
+<td  valign="top">
+4
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IEEE 802.3
+</td>
+<td  valign="top">
+9
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IEEE 802.3 SNAP
+</td>
+<td  valign="top">
+11
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Special Bits on Ethernet MAC Addresses
+</td>
+<td  valign="top">
+14
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Token Ring
+</b>
+</td>
+<td  valign="top">
+15
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IEEE 802.5
+</td>
+<td  valign="top">
+16
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IEEE 802.5 SNAP
+</td>
+<td  valign="top">
+19
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Special Bits on Token Ring MAC Addresses
+</td>
+<td  valign="top">
+21
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+FDDI
+</b>
+</td>
+<td  valign="top">
+23
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+FDDI Frame Format
+</td>
+<td  valign="top">
+23
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+FDDI SNAP
+</td>
+<td  valign="top">
+26
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Special Bits on FDDI MAC Addresses
+</td>
+<td  valign="top">
+28
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+28
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 2 Wide Area Network (WAN) Technologies
+</b>
+</td>
+<td  valign="top">
+<b >
+29
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+WAN Encapsulations
+</b>
+</td>
+<td  valign="top">
+29
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Point-to-Point Encapsulation
+</b>
+</td>
+<td  valign="top">
+30
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+SLIP
+</td>
+<td  valign="top">
+30
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+PPP
+</td>
+<td  valign="top">
+32
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+PPP Multilink Protocol
+</td>
+<td  valign="top">
+36
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+X.25
+</b>
+</td>
+<td  valign="top">
+39
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+X.25 Encapsulation
+</td>
+<td  valign="top">
+40
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Frame Relay
+</b>
+</td>
+<td  valign="top">
+42
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Frame Relay Encapsulation
+</td>
+<td  valign="top">
+44
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+ATM
+</b>
+</td>
+<td  valign="top">
+46
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+The ATM Cell
+</td>
+<td  valign="top">
+47
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+ATM Architecture
+</td>
+<td  valign="top">
+49
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+AAL5
+</td>
+<td  valign="top">
+51
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Multiprotocol Encapsulation with AAL5
+</td>
+<td  valign="top">
+54
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+55
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 3 Address Resolution Protocol (ARP)
+</b>
+</td>
+<td  valign="top">
+<b >
+57
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Overview of ARP
+</b>
+</td>
+<td  valign="top">
+57
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+The ARP Cache
+</td>
+<td  valign="top">
+58
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Updating the MAC Address
+</td>
+<td  valign="top">
+60
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Windows 2000 ARP Registry Settings
+</td>
+<td  valign="top">
+60
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+ARP Frame Structure
+</b>
+</td>
+<td  valign="top">
+62
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+ARP Request and ARP Reply Example
+</td>
+<td  valign="top">
+64
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Gratuitous ARP and Duplicate IP Address Detection
+</b>
+</td>
+<td  valign="top">
+67
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IP Address Conflict Detection
+</td>
+<td  valign="top">
+67
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+The Gratuitous ARP and Address Conflict Exchange
+</td>
+<td  valign="top">
+68
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Inverse ARP (InARP)
+</b>
+</td>
+<td  valign="top">
+69
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Proxy ARP
+</b>
+</td>
+<td  valign="top">
+70
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+72
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+PART II INTERNET LAYER PROTOCOLS
+</b>
+</td>
+<td  valign="top"></td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 4 Internet Protocol (IP) Basics
+</b>
+</td>
+<td  valign="top">
+<b >
+75
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Introduction to IP
+</b>
+</td>
+<td  valign="top">
+75
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IP Services
+</td>
+<td  valign="top">
+75
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IP MTU
+</td>
+<td  valign="top">
+77
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+The IP Datagram
+</b>
+</td>
+<td  valign="top">
+78
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+The IP Header
+</b>
+</td>
+<td  valign="top">
+78
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Version
+</td>
+<td  valign="top">
+78
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Header Length
+</td>
+<td  valign="top">
+79
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Type Of Service
+</td>
+<td  valign="top">
+80
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Total Length
+</td>
+<td  valign="top">
+83
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Identification
+</td>
+<td  valign="top">
+83
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Flags
+</td>
+<td  valign="top">
+83
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Fragment Offset
+</td>
+<td  valign="top">
+83
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Time To Live
+</td>
+<td  valign="top">
+83
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Protocol
+</td>
+<td  valign="top">
+85
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Header Checksum
+</td>
+<td  valign="top">
+86
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Source Address
+</td>
+<td  valign="top">
+86
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Destination Address
+</td>
+<td  valign="top">
+86
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Options and Padding
+</td>
+<td  valign="top">
+86
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Fragmentation
+</b>
+</td>
+<td  valign="top">
+87
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Fragmentation Fields
+</td>
+<td  valign="top">
+87
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Fragmentation Example
+</td>
+<td  valign="top">
+89
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Reassembly Example
+</td>
+<td  valign="top">
+91
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Fragmenting a Fragment
+</td>
+<td  valign="top">
+93
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Avoiding Fragmentation
+</td>
+<td  valign="top">
+93
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+IP Options
+</b>
+</td>
+<td  valign="top">
+96
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+End Of Option List
+</td>
+<td  valign="top">
+97
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+No Operation
+</td>
+<td  valign="top">
+98
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Record Route
+</td>
+<td  valign="top">
+98
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Strict and Loose Source Routing
+</td>
+<td  valign="top">
+100
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IP Router Alert
+</td>
+<td  valign="top">
+103
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Internet Timestamp
+</td>
+<td  valign="top">
+104
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+106
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 5 Internet Protocol (IP) Addressing
+</b>
+</td>
+<td  valign="top">
+<b >
+107
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Types of IP Addresses
+</b>
+</td>
+<td  valign="top">
+107
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Expressing IP Addresses
+</b>
+</td>
+<td  valign="top">
+107
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Converting from Binary to Decimal
+</td>
+<td  valign="top">
+108
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Converting from Decimal to Binary
+</td>
+<td  valign="top">
+109
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IP Addresses in the IP Header
+</td>
+<td  valign="top">
+109
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Unicast IP Addresses
+</b>
+</td>
+<td  valign="top">
+109
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+A History Lesson: IP Address Classes
+</td>
+<td  valign="top">
+110
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Rules for Enumerating Network IDs
+</td>
+<td  valign="top">
+112
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Rules for Enumerating Host IDs
+</td>
+<td  valign="top">
+112
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Subnets and the Subnet Mask
+</td>
+<td  valign="top">
+113
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+How to Subnet
+</td>
+<td  valign="top">
+117
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Variable-Length Subnetting
+</td>
+<td  valign="top">
+125
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Supernetting and Classless Inter-Domain Routing (CIDR)
+</td>
+<td  valign="top">
+128
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Public and Private Addresses
+</td>
+<td  valign="top">
+131
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Microsoft Windows 2000 Automatic Private IP Addressing
+</td>
+<td  valign="top">
+134
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+IP Broadcast Addresses
+</b>
+</td>
+<td  valign="top">
+134
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Network Broadcast
+</td>
+<td  valign="top">
+134
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Subnet Broadcast
+</td>
+<td  valign="top">
+135
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+All-Subnets-Directed Broadcast
+</td>
+<td  valign="top">
+135
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Limited Broadcast
+</td>
+<td  valign="top">
+135
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+IP Multicast Addresses
+</b>
+</td>
+<td  valign="top">
+136
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Mapping IP Multicast Addresses to MAC Addresses
+</td>
+<td  valign="top">
+137
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+138
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 6 Internet Protocol (IP) Routing
+</b>
+</td>
+<td  valign="top">
+<b >
+139
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Introduction to IP Routing
+</b>
+</td>
+<td  valign="top">
+139
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Direct and Indirect Deliveries
+</td>
+<td  valign="top">
+139
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Types of Links
+</b>
+</td>
+<td  valign="top">
+140
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Broadcast
+</td>
+<td  valign="top">
+140
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Point-to-Point
+</td>
+<td  valign="top">
+141
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Non-Broadcast Multiple Access
+</td>
+<td  valign="top">
+142
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+The IP Routing Table
+</b>
+</td>
+<td  valign="top">
+143
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Structure
+</td>
+<td  valign="top">
+143
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Types of Routes
+</td>
+<td  valign="top">
+144
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Route Determination Process
+</td>
+<td  valign="top">
+145
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+The Microsoft Windows 2000 IP Routing Table
+</b>
+</td>
+<td  valign="top">
+146
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Multihomed Nodes
+</td>
+<td  valign="top">
+148
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Maintaining the Microsoft Windows 2000 IP Routing Table
+</td>
+<td  valign="top">
+148
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+IP Routing from Sending Host to Destination
+</b>
+</td>
+<td  valign="top">
+151
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Sending Host Forwarding Process
+</td>
+<td  valign="top">
+151
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IP Router Forwarding Process
+</td>
+<td  valign="top">
+151
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Destination Host Receiving Process
+</td>
+<td  valign="top">
+152
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+IP Routing Infrastructure Overview
+</b>
+</td>
+<td  valign="top">
+153
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Single-Path vs. Multi-Path
+</td>
+<td  valign="top">
+154
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Class-Based vs. Classless
+</td>
+<td  valign="top">
+155
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Flat vs. Hierarchical
+</td>
+<td  valign="top">
+156
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Static vs. Dynamic
+</td>
+<td  valign="top">
+157
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Single vs. Multiple Autonomous Systems
+</td>
+<td  valign="top">
+161
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Routing Utilities
+</b>
+</td>
+<td  valign="top">
+161
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+162
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 7 Internet Control Message Protocol (ICMP)
+</b>
+</td>
+<td  valign="top">
+<b >
+163
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+ICMP Message Structure
+</b>
+</td>
+<td  valign="top">
+164
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+ICMP Messages
+</b>
+</td>
+<td  valign="top">
+165
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+ICMP Echo/Echo Reply
+</td>
+<td  valign="top">
+165
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+ICMP Destination Unreachable
+</td>
+<td  valign="top">
+167
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Path MTU Discovery
+</td>
+<td  valign="top">
+171
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Windows 2000 Registry Settings for PMTU
+</td>
+<td  valign="top">
+174
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+ICMP Source Quench
+</td>
+<td  valign="top">
+174
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+ICMP Redirect
+</td>
+<td  valign="top">
+176
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+ICMP Router Discovery
+</td>
+<td  valign="top">
+178
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+ICMP Time Exceeded
+</td>
+<td  valign="top">
+181
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+ICMP Parameter Problem
+</td>
+<td  valign="top">
+182
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+PING Utility
+</b>
+</td>
+<td  valign="top">
+184
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+PING Options
+</td>
+<td  valign="top">
+184
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TRACERT Utility
+</b>
+</td>
+<td  valign="top">
+186
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+TRACERT Options
+</td>
+<td  valign="top">
+189
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+PATHPING Utility
+</b>
+</td>
+<td  valign="top">
+189
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+PATHPING Options
+</td>
+<td  valign="top">
+190
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+190
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 8 Internet Group Management Protocol (IGMP)
+</b>
+</td>
+<td  valign="top">
+<b >
+191
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Introduction to IP Multicast and IGMP
+</b>
+</td>
+<td  valign="top">
+191
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IP Multicasting Overview
+</td>
+<td  valign="top">
+191
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Host Support
+</td>
+<td  valign="top">
+192
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Router Support
+</td>
+<td  valign="top">
+194
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+The Multicast-Enabled IP Internetwork
+</td>
+<td  valign="top">
+195
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+IGMP Message Structure
+</b>
+</td>
+<td  valign="top">
+196
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IGMP Version 1 (IGMPv1)
+</td>
+<td  valign="top">
+197
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IGMP Version 2 (IGMPv2)
+</td>
+<td  valign="top">
+200
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Microsoft Windows 2000 and IGMP
+</b>
+</td>
+<td  valign="top">
+204
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+TCP/IP Protocol
+</td>
+<td  valign="top">
+204
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+The Routing and Remote Access Service
+</td>
+<td  valign="top">
+204
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+207
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 9 Internet Protocol Version 6 (IPv6)
+</b>
+</td>
+<td  valign="top">
+<b >
+209
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Chapter Contents
+</b>
+</td>
+<td  valign="top">
+210
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Introduction to IPv6
+</b>
+</td>
+<td  valign="top">
+211
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Nodes, Routers, Hosts, and Interfaces
+</td>
+<td  valign="top">
+211
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Links, Neighbors, Link MTUs, and Link Layer Addresses
+</td>
+<td  valign="top">
+212
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Unicast, Multicast, and Anycast Addresses
+</td>
+<td  valign="top">
+212
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Addressing
+</b>
+</td>
+<td  valign="top">
+212
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Text Representation of IPv6 Addresses
+</td>
+<td  valign="top">
+212
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Unicast Addresses
+</td>
+<td  valign="top">
+213
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Anycast Addresses
+</td>
+<td  valign="top">
+216
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Multicast Addresses
+</td>
+<td  valign="top">
+216
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Neighbor Discovery
+</td>
+<td  valign="top">
+217
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+IPv6 Header Format and Routing Mechanisms
+</b>
+</td>
+<td  valign="top">
+219
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Hop-by-Hop Options Header
+</td>
+<td  valign="top">
+221
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Destination Options Header
+</td>
+<td  valign="top">
+221
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Routing Header
+</td>
+<td  valign="top">
+222
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Fragment Header
+</td>
+<td  valign="top">
+222
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Authentication Header
+</td>
+<td  valign="top">
+223
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Transition Mechanisms
+</b>
+</td>
+<td  valign="top">
+224
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Dual-Stack Implementation
+</td>
+<td  valign="top">
+224
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IPv6 Over IPv4 Tunneling
+</td>
+<td  valign="top">
+224
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+224
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+PART III TRANSPORT LAYER PROTOCOLS
+</b>
+</td>
+<td  valign="top"></td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 10 User Datagram Protocol (UDP)
+</b>
+</td>
+<td  valign="top">
+<b >
+227
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Introduction to User Datagram Protocol
+</b>
+</td>
+<td  valign="top">
+227
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Uses for UDP
+</td>
+<td  valign="top">
+228
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+The UDP Message
+</b>
+</td>
+<td  valign="top">
+228
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+The UDP Header
+</b>
+</td>
+<td  valign="top">
+229
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+The UDP Pseudo Header
+</td>
+<td  valign="top">
+230
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+UDP Ports
+</b>
+</td>
+<td  valign="top">
+231
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+MaxUserPort
+</td>
+<td  valign="top">
+232
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+234
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 11 Transmission Control Protocol (TCP) Basics
+</b>
+</td>
+<td  valign="top">
+<b >
+235
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Introduction to TCP
+</b>
+</td>
+<td  valign="top">
+235
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+The TCP Segment
+</b>
+</td>
+<td  valign="top">
+236
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+The TCP Header
+</b>
+</td>
+<td  valign="top">
+237
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Ports
+</b>
+</td>
+<td  valign="top">
+239
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+MaxUserPort
+</td>
+<td  valign="top">
+240
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Flags
+</b>
+</td>
+<td  valign="top">
+242
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+The TCP Pseudo Header
+</b>
+</td>
+<td  valign="top">
+243
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Urgent Data
+</b>
+</td>
+<td  valign="top">
+244
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Options
+</b>
+</td>
+<td  valign="top">
+246
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+End Of Option List and No Operation
+</td>
+<td  valign="top">
+246
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Maximum Segment Size Option
+</td>
+<td  valign="top">
+247
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+TCP Window Scale Option
+</td>
+<td  valign="top">
+249
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Selective Acknowledgment Option
+</td>
+<td  valign="top">
+251
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+TCP Timestamps Option
+</td>
+<td  valign="top">
+255
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+258
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 12 Transmission Control Protocol (TCP) Connections
+</b>
+</td>
+<td  valign="top">
+<b >
+259
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+The TCP Connection
+</b>
+</td>
+<td  valign="top">
+259
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Connection Establishment
+</b>
+</td>
+<td  valign="top">
+260
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Segment 1: The Synchronize (SYN) Segment
+</td>
+<td  valign="top">
+260
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Segment 2: The SYN-ACK Segment
+</td>
+<td  valign="top">
+262
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Segment 3: The ACK Segment
+</td>
+<td  valign="top">
+263
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Result of TCP Connection Establishment Process
+</td>
+<td  valign="top">
+265
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Half-Open Connections
+</b>
+</td>
+<td  valign="top">
+266
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Connection Maintenance
+</b>
+</td>
+<td  valign="top">
+269
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+KeepAliveTime
+</td>
+<td  valign="top">
+270
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+KeepAliveInterval
+</td>
+<td  valign="top">
+270
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Connection Termination
+</b>
+</td>
+<td  valign="top">
+270
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Segment 1
+</td>
+<td  valign="top">
+271
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Segment 2
+</td>
+<td  valign="top">
+272
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Segment 3
+</td>
+<td  valign="top">
+273
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Segment 4
+</td>
+<td  valign="top">
+274
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Connection Reset
+</b>
+</td>
+<td  valign="top">
+275
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Connection States
+</b>
+</td>
+<td  valign="top">
+277
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Controlling TCP Connection Terminations in Microsoft Windows 2000
+</td>
+<td  valign="top">
+279
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+280
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 13 Transmission Control Protocol (TCP) Data Flow
+</b>
+</td>
+<td  valign="top">
+<b >
+281
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Basic TCP Data Flow Behavior
+</b>
+</td>
+<td  valign="top">
+281
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Acknowledgments
+</b>
+</td>
+<td  valign="top">
+281
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Delayed Acknowledgments
+</td>
+<td  valign="top">
+282
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Cumulative for Contiguous Data
+</td>
+<td  valign="top">
+282
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Selective for Non-Contiguous Data
+</td>
+<td  valign="top">
+283
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+TCP Sliding Windows
+</b>
+</td>
+<td  valign="top">
+284
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Send Window
+</td>
+<td  valign="top">
+284
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Receive Window
+</td>
+<td  valign="top">
+288
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Microsoft Windows 2000 Maximum Receive Window Size
+</td>
+<td  valign="top">
+290
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Small Segments
+</b>
+</td>
+<td  valign="top">
+293
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+The Nagle Algorithm
+</td>
+<td  valign="top">
+293
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Silly Window Syndrome
+</td>
+<td  valign="top">
+294
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Sender-Side Flow Control
+</b>
+</td>
+<td  valign="top">
+295
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Slow Start Algorithm
+</td>
+<td  valign="top">
+296
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Congestion Avoidance Algorithm
+</td>
+<td  valign="top">
+298
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+300
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 14 Transmission Control Protocol (TCP) Retransmission and Time-Out
+</b>
+</td>
+<td  valign="top">
+<b >
+301
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Retransmission Time-Out and Round-Trip Time
+</b>
+</td>
+<td  valign="top">
+301
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Congestion Collapse
+</td>
+<td  valign="top">
+302
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Retransmission Behavior
+</b>
+</td>
+<td  valign="top">
+303
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+TcpMaxDataRetransmissions
+</td>
+<td  valign="top">
+304
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Retransmission Behavior for New Connections
+</td>
+<td  valign="top">
+305
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Dead Gateway Detection
+</td>
+<td  valign="top">
+306
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Using the Selective Acknowledgment (SACK) TCP Option
+</td>
+<td  valign="top">
+307
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Calculating the RTO
+</b>
+</td>
+<td  valign="top">
+308
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+TcpInitialRTT
+</td>
+<td  valign="top">
+309
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Using the TCP Timestamps Option
+</td>
+<td  valign="top">
+309
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Karn's Algorithm
+</b>
+</td>
+<td  valign="top">
+313
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Karn's Algorithm and the Timestamps Option
+</td>
+<td  valign="top">
+315
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Fast Retransmit
+</b>
+</td>
+<td  valign="top">
+315
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+TcpMaxDupAcks
+</td>
+<td  valign="top">
+316
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Fast Recovery
+</td>
+<td  valign="top">
+317
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+317
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+PART IV APPLICATION LAYER PROTOCOLS AND SERVICES
+</b>
+</td>
+<td  valign="top"></td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 15 Dynamic Host Configuration Protocol (DHCP) Service
+</b>
+</td>
+<td  valign="top">
+<b >
+321
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Chapter Contents
+</b>
+</td>
+<td  valign="top">
+322
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Overview to DHCP in Windows 2000
+</b>
+</td>
+<td  valign="top">
+322
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+What Is DHCP?
+</td>
+<td  valign="top">
+322
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+DHCP Overview and Key Terms
+</td>
+<td  valign="top">
+322
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+How DHCP Works
+</td>
+<td  valign="top">
+328
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+DHCP Messages
+</b>
+</td>
+<td  valign="top">
+332
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+General Message Format
+</td>
+<td  valign="top">
+332
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+DHCPDISCOVER
+</td>
+<td  valign="top">
+334
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+DHCPOFFER
+</td>
+<td  valign="top">
+336
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+DHCPREQUEST
+</td>
+<td  valign="top">
+338
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+DHCPACK
+</td>
+<td  valign="top">
+340
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+DHCPDECLINE
+</td>
+<td  valign="top">
+341
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+DHCPNAK
+</td>
+<td  valign="top">
+343
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+DHCPRELEASE
+</td>
+<td  valign="top">
+345
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+DHCPINFORM
+</td>
+<td  valign="top">
+346
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+DHCP Options
+</b>
+</td>
+<td  valign="top">
+347
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+What Are DHCP Options?
+</td>
+<td  valign="top">
+347
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Options Supported by Windows 2000
+</td>
+<td  valign="top">
+348
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+350
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 16 Domain Name Service (DNS)
+</b>
+</td>
+<td  valign="top">
+<b >
+351
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Chapter Contents
+</b>
+</td>
+<td  valign="top">
+352
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Overview to DNS in Microsoft Windows 2000
+</b>
+</td>
+<td  valign="top">
+352
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+What Is DNS?
+</td>
+<td  valign="top">
+352
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Key DNS Terms
+</td>
+<td  valign="top">
+353
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+How DNS Works
+</b>
+</td>
+<td  valign="top">
+367
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Configuring DNS Client Functions
+</td>
+<td  valign="top">
+367
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Resolving Names
+</td>
+<td  valign="top">
+368
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Resolving Aliases
+</td>
+<td  valign="top">
+369
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Dynamically Updating DNS
+</td>
+<td  valign="top">
+370
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Transferring Zone Information
+</td>
+<td  valign="top">
+372
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+DNS Resource Records
+</b>
+</td>
+<td  valign="top">
+373
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+What Are Resource Records?
+</td>
+<td  valign="top">
+373
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Resource Records Supported by Windows 2000
+</td>
+<td  valign="top">
+375
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+DNS Messages
+</b>
+</td>
+<td  valign="top">
+377
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+DNS Messages
+</td>
+<td  valign="top">
+377
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Name-Query Message
+</td>
+<td  valign="top">
+382
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Name-Query Response Message
+</td>
+<td  valign="top">
+383
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Reverse-Name Query Message
+</td>
+<td  valign="top">
+383
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Name Update Message
+</td>
+<td  valign="top">
+383
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Name Update Response Message
+</td>
+<td  valign="top">
+384
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+384
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 17 Windows Internet Name Service (WINS)
+</b>
+</td>
+<td  valign="top">
+<b >
+385
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Chapter Contents
+</b>
+</td>
+<td  valign="top">
+386
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Overview of WINS in Windows 2000
+</b>
+</td>
+<td  valign="top">
+387
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+What Is WINS?
+</td>
+<td  valign="top">
+387
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Key WINS Terms
+</td>
+<td  valign="top">
+387
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+How WINS Works
+</b>
+</td>
+<td  valign="top">
+398
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Registering NetBIOS Names
+</td>
+<td  valign="top">
+398
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Resolving NetBIOS Name Registration Conflicts
+</td>
+<td  valign="top">
+400
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Releasing NetBIOS Names
+</td>
+<td  valign="top">
+401
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Resolving NetBIOS Names
+</td>
+<td  valign="top">
+401
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Refreshing NetBIOS Names
+</td>
+<td  valign="top">
+403
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Determining Adapter Status
+</td>
+<td  valign="top">
+403
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+NetBIOS Name Service Messages
+</b>
+</td>
+<td  valign="top">
+404
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Name Service Header
+</td>
+<td  valign="top">
+405
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+NetBIOS Name Representation
+</td>
+<td  valign="top">
+408
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Question Entries
+</td>
+<td  valign="top">
+409
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Resource Records (RRs)
+</td>
+<td  valign="top">
+410
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Resource Record Name Compression
+</td>
+<td  valign="top">
+412
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Name Registration Message
+</td>
+<td  valign="top">
+413
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Positive Name Registration Response
+</td>
+<td  valign="top">
+414
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Negative Name Registration Response
+</td>
+<td  valign="top">
+414
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Name Refresh Message
+</td>
+<td  valign="top">
+416
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Name Release Request Message
+</td>
+<td  valign="top">
+416
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Name Release Response Message
+</td>
+<td  valign="top">
+417
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Name Query Request Message
+</td>
+<td  valign="top">
+418
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Positive Name Query Response Message
+</td>
+<td  valign="top">
+419
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Negative Name Response Message
+</td>
+<td  valign="top">
+419
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Wait Acknowledgment Message
+</td>
+<td  valign="top">
+420
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+421
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 18 File and Printer Sharing
+</b>
+</td>
+<td  valign="top">
+<b >
+423
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Overview
+</b>
+</td>
+<td  valign="top">
+423
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Chapter Contents
+</b>
+</td>
+<td  valign="top">
+423
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Introduction to Internet Printing
+</b>
+</td>
+<td  valign="top">
+423
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IPP Operation
+</td>
+<td  valign="top">
+424
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IPP Specifications
+</td>
+<td  valign="top">
+426
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Introduction to CIFS
+</b>
+</td>
+<td  valign="top">
+434
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+CIFS Operation
+</td>
+<td  valign="top">
+434
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+439
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 19 Internet Information Server (IIS) and the Internet Protocols
+</b>
+</td>
+<td  valign="top">
+<b >
+441
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Chapter Contents
+</b>
+</td>
+<td  valign="top">
+441
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+HTTP
+</b>
+</td>
+<td  valign="top">
+441
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Introduction and Terminology
+</td>
+<td  valign="top">
+441
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+HTTP Operation
+</td>
+<td  valign="top">
+443
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+URIs
+</td>
+<td  valign="top">
+443
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+HTTP Messages
+</td>
+<td  valign="top">
+444
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Request Messages
+</td>
+<td  valign="top">
+445
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Response Messages
+</td>
+<td  valign="top">
+446
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+HTTP Codings
+</td>
+<td  valign="top">
+458
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+HTTP Content Negotiation
+</td>
+<td  valign="top">
+459
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+HTTP Caching
+</td>
+<td  valign="top">
+460
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+FTP
+</b>
+</td>
+<td  valign="top">
+461
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Introduction and Terminology
+</td>
+<td  valign="top">
+461
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+FTP Operation
+</td>
+<td  valign="top">
+462
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+FTP Data
+</td>
+<td  valign="top">
+464
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Connections and Transmission Modes
+</td>
+<td  valign="top">
+465
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+FTP Commands and Responses
+</td>
+<td  valign="top">
+467
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+SMTP
+</b>
+</td>
+<td  valign="top">
+468
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Introduction and Terminology
+</td>
+<td  valign="top">
+468
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+SMTP Operation
+</td>
+<td  valign="top">
+469
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+SMTP Commands
+</td>
+<td  valign="top">
+471
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+SMTP Replies
+</td>
+<td  valign="top">
+474
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+475
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 20 Securing IP Communications with IP Security (IPSec)
+</b>
+</td>
+<td  valign="top">
+<b >
+477
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Chapter Contents
+</b>
+</td>
+<td  valign="top">
+478
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+IPSec Overview
+</td>
+<td  valign="top">
+478
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+How IPSec Works
+</td>
+<td  valign="top">
+483
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Authentication Header (AH) Details
+</td>
+<td  valign="top">
+485
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Encapsulating Security Payload (ESP) Details
+</td>
+<td  valign="top">
+487
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+490
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+CHAPTER 21 Virtual Private Networks (VPNs)
+</b>
+</td>
+<td  valign="top">
+<b >
+491
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Chapter Contents
+</b>
+</td>
+<td  valign="top">
+491
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Overview of Virtual Private Networks
+</b>
+</td>
+<td  valign="top">
+492
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+What Is a VPN?
+</b>
+</td>
+<td  valign="top">
+492
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+VPN Clients and Servers
+</td>
+<td  valign="top">
+493
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+VPN Protocols
+</td>
+<td  valign="top">
+493
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Tunneling
+</td>
+<td  valign="top">
+494
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+VPN Authentication
+</td>
+<td  valign="top">
+497
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Extensible Authentication Protocol (EAP)
+</td>
+<td  valign="top">
+498
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+VPN Address Assignment
+</td>
+<td  valign="top">
+498
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+VPN Data Compression
+</td>
+<td  valign="top">
+499
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+VPN Data Encryption
+</td>
+<td  valign="top">
+499
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Introduction to Point-to-Point Tunneling Protocol (PPTP)
+</b>
+</td>
+<td  valign="top">
+499
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Installation of PPTP
+</td>
+<td  valign="top">
+500
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+PPTP Encapsulation
+</td>
+<td  valign="top">
+500
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+PPTP Encryption
+</td>
+<td  valign="top">
+501
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Introduction to Layer 2 Tunneling Protocol (L2TP)
+</b>
+</td>
+<td  valign="top">
+501
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+Installation of L2TP
+</td>
+<td  valign="top">
+501
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+L2TP Encapsulation
+</td>
+<td  valign="top">
+502
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b ></b>
+L2TP Encryption
+</td>
+<td  valign="top">
+503
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Summary
+</b>
+</td>
+<td  valign="top">
+503
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Glossary
+</b>
+</td>
+<td  valign="top">
+505
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Bibliography
+</b>
+</td>
+<td  valign="top">
+511
+</td>
+</tr>
+<tr >
+<td  valign="top">
+<b >
+Index
+</b>
+</td>
+<td  valign="top">
+515
+</td>
+</tr>
+</table>
+<p ></p>
+<p ></p>
+<hr ></hr>
+<center >
+Visit
+<a  href="/">
+Microsoft Press
+</a>
+for more information on
+<br ></br>
+<a  href="/order/bookpage.asp?title_id=2453">
+Microsoft® Windows® 2000 TCP/IP Protocols and Services Technical Reference
+</a>
+</center>
+<!--End Body Area-->
+<br ></br>
+<!--StartBottomInc-->
+<br ></br>
+<table  TABID="05590" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<form  action="/msnsmoke/redirect.asp" method="get" target="_top">
+<td  align="left" nowrap="nowrap" valign="top" width="243">
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<font  size="1"></font>
+<br ></br>
+<font  face="Verdana,Arial,Helvetica" size="1">
+*Accepted orders US/Canada only.
+</font>
+</td>
+</form>
+<td  align="left" valign="middle" width="100%">
+<font  face="verdana,arial,helvetica" size="1">
+<a  class="bookmark" href="#top">
+<b >
+Top of Page
+</b>
+</a>
+</font>
+</td>
+</tr>
+</table>
+<!--EndBottomInc-->
+<br ></br>
+</td>
+</tr>
+<tr >
+<td >
+<br ></br>
+<script >
+function New_Window() { var sPageAddress, iID; iID = "15"; sPageAddress = ("" + document.location); window.open('http://www.microsoft.com/office/sendfriend.asp?sAddress=' + sPageAddress + '&amp;iSiteID=' + iID,'wincalc','toolbar=no,titlebar=no,location=no,directories=no,status=no,menubar=no,resizable=no,copyhistory=no,fullscreen=no,scrollbars=yes,top=150,left=190,width=482,height=266'); }
+</script>
+<table  TABID="05591" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="left" valign="bottom" width="2%">
+<a  href="http://www.microsoft.com/office/sendfriend.asp" onclick="New_Window(); return false" target="_new">
+<img ></img>
+</a>
+</td>
+<td  align="left" width="98%">
+<a  href="http://www.microsoft.com/office/sendfriend.asp" onclick="New_Window(); return false" target="_new">
+<font  face="Verdana" size="1">
+Send this page to a friend
+</font>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="2" width="50%">
+<font  face="Verdana,Arial,Helvetica" size="1">
+<br ></br>
+Please forward us your site
+<a  href="/support/contact.htm">
+feedback
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="2" width="50%">
+<font  face="Verdana,Arial,Helvetica" size="1">
+<br ></br>
+<strong >
+IMPORTANT!
+</strong>
+Microsoft Press Online can accept orders from and ship orders to customers in Canada and the 50 United States and Washington, D.C., only. For purchases outside North America, contact the
+<a  href="/worldwide/">
+Microsoft Press Worldwide sites
+</a>
+.
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3" width="100%">
+<font  face="Verdana,Arial,Helvetica" size="1">
+<br ></br>
+© 2001 Microsoft Corporation. All rights reserved. All use of this site is subject to the Microsoft Press
+<a  href="/legal/tnc.htm" target="out">
+Terms &amp; Conditions
+</a>
+, including the
+<a  href="/legal/privacy.htm" target="out">
+Privacy Statement
+</a>
+. Microsoft Press, Visual Studio, and Windows are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries.
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

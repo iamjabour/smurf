@@ -1,0 +1,455 @@
+<html >
+<!-- Design, Programming and Production by Onramp Access, Inc. 1999 -->
+<!-- www.onr.com -->
+<!-- The incorporation of modifications, to include programming and design, produced by Phil Robles, VIA Metro Transit -->
+<head >
+<title >
+VIA - Route &amp; Schedule Information
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<style  type="text/css">
+<!--
+A:hover {color:red} 
+-->
+</style>
+<script >
+<!--
+function MM_preloadImages() { //v2.0
+  if (document.images) {
+    var imgFiles = MM_preloadImages.arguments;
+    if (document.preloadArray==null) document.preloadArray = new Array();
+    var i = document.preloadArray.length;
+    with (document) for (var j=0; j&amp;amp;lt;imgFiles.length; j++) if (imgFiles[j].charAt(0)!="#"){
+      preloadArray[i] = new Image;
+      preloadArray[i++].src = imgFiles[j];
+  } }
+}
+
+function MM_swapImgRestore() { //v2.0
+  if (document.MM_swapImgData != null)
+    for (var i=0; i&amp;amp;lt;(document.MM_swapImgData.length-1); i+=2)
+      document.MM_swapImgData[i].src = document.MM_swapImgData[i+1];
+}
+
+function MM_swapImage() { //v2.0
+  var i,j=0,objStr,obj,swapArray=new Array,oldArray=document.MM_swapImgData;
+  for (i=0; i &amp;amp;lt; (MM_swapImage.arguments.length-2); i+=3) {
+    objStr = MM_swapImage.arguments[(navigator.appName == 'Netscape')?i:i+1];
+    if ((objStr.indexOf('document.layers[')==0 &amp;amp;amp;&amp;amp;amp; document.layers==null) ||
+        (objStr.indexOf('document.all[')   ==0 &amp;amp;amp;&amp;amp;amp; document.all   ==null))
+      objStr = 'document'+objStr.substring(objStr.lastIndexOf('.'),objStr.length);
+    obj = eval(objStr);
+    if (obj != null) {
+      swapArray[j++] = obj;
+      swapArray[j++] = (oldArray==null || oldArray[j-1]!=obj)?obj.src:oldArray[j];
+      obj.src = MM_swapImage.arguments[i+2];
+  } }
+  document.MM_swapImgData = swapArray; //used for restore
+}
+//-->
+</script>
+</head>
+<body  alink="#F16913" bgcolor="#FFFFFF" link="#CC0000" onload="MM_preloadImages('images/route_nav_01a_F2.gif','#927058264100');MM_preloadImages('images/access_nav_01a_F2.gif','#927058299410');MM_preloadImages('images/fare_nav_01a_F2.gif','#927058316000');MM_preloadImages('images/pub_info_nav_01a_F2.gif','#927058338360');MM_preloadImages('images/event_nav_01a_F2.gif','#927058511540');MM_preloadImages('images/business_op_nav_01a_F2.gif','#927058526750');MM_preloadImages('images/employment_nav_01a_F2.gif','#927058956540');MM_preloadImages('images/links_nav_01a_F2.gif','#927058973130');MM_preloadImages('images/sugesstions_nav_01a_F2.gif','#927058985270');MM_preloadImages('images/home_nav_01a_F2.gif','#927059001360')" vlink="#F16913">
+<table  TABID="13758" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  background="../images/left_bar.jpg" height="51" rowspan="2" valign="top" width="128">
+<a  href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.route_nav_01a','document.route_nav_01a','../images/route_nav_01a_F2.gif','#927058264100')">
+<img ></img>
+</a>
+</td>
+<td  background="../images/sub_proto_02_r01_c2.gif" height="24" valign="top">
+<img ></img>
+</td>
+<td  align="right" background="../images/sub_proto_02_r01_c2.gif" height="24" valign="top">
+<a  href="../search/query.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.search_nav_01a','document.search_nav_01a','../images/search_nav_01a_F2.gif','#927058956540')">
+<img ></img>
+</a>
+<a  href="../whatsnew/update.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.newbutton_nav_01a','document.newbutton_nav_01a','../images/newbutton_nav_01a_F2.gif','#927058956540')">
+<img ></img>
+</a>
+<a  href="../employment/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.employment_nav_01a','document.employment_nav_01a','../images/employment_nav_01a_F2.gif','#927058956540')">
+<img ></img>
+</a>
+<a  href="../links/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.links_nav_01a','document.links_nav_01a','../images/links_nav_01a_F2.gif','#927058973130')">
+<img ></img>
+</a>
+</td>
+<td  align="right" background="../../images/sub_proto_02_r01_c2.gif" height="24" valign="top" width="140">
+<a  href="../suggestions/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.sugesstions_nav_01a','document.sugesstions_nav_01a','../images/sugesstions_nav_01a_F2.gif','#927058985270')">
+<img ></img>
+</a>
+<a  href="../index.asp">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="2" valign="top">
+<table  TABID="13753" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="33%">
+<table  TABID="13752" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="33%">
+<img ></img>
+</td>
+<td  width="33%">
+<img ></img>
+</td>
+<td  width="34%">
+<p  align="right">
+<img ></img>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  align="right" rowspan="2" valign="top" width="140">
+<table  TABID="13756" border="0" cellpadding="0" cellspacing="0" width="100">
+<tr  valign="top">
+<td  bgcolor="#CC0000">
+<br ></br>
+<img ></img>
+<table  TABID="13754" bgcolor="#FFFFFF" border="0" cellspacing="0" width="100%">
+<tr >
+<td  width="100%"></td>
+</tr>
+</table>
+<table  TABID="13755" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#FFFFFF" width="100%">
+<p  align="center">
+<strong >
+<font  color="#FF0000">
+<img ></img>
+<br ></br>
+</font>
+</strong>
+<font  face="Arial" size="1">
+On Mar 5, 2001 certain Bus Routes will change. To view the upcoming changes click:
+</font>
+<b >
+<br ></br>
+</b>
+<br ></br>
+<a  href="changes.html">
+<img ></img>
+</a>
+<br ></br>
+<br ></br>
+<font  face="Arial" size="1">
+Click Here To View the New Streetcar Route Map (Effective Nov 6, 2000)
+</font>
+<br ></br>
+<br ></br>
+<a  href="StreetCarRouteMapNov00.pdf">
+<img ></img>
+</a>
+</p>
+<p  align="center">
+<font  color="#FFFFFF">
+.
+</font>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p ></p>
+</td>
+</tr>
+<tr >
+<td  background="../images/left_bar.jpg" valign="top" width="128">
+<a  href="../accessible_services/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.access_nav_01a','document.access_nav_01a','../images/access_nav_01a_F2.gif','#927058299410')">
+<img ></img>
+</a>
+<br ></br>
+<a  href="../fare_info/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.fare_nav_01a','document.fare_nav_01a','../images/fare_nav_01a_F2.gif','#927058316000')">
+<img ></img>
+</a>
+<br ></br>
+<a  href="../2025/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.transit_2025_nav_01a','document.transit_2025_nav_01a','../images/transit_2025_nav_01a_F2.gif','#927058316001')">
+<img ></img>
+</a>
+<br ></br>
+<a  href="../deo/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.deo_nav_01a','document.deo_nav_01a','../images/deo_nav_01a_F2.gif','#927058338360')">
+<img ></img>
+</a>
+<br ></br>
+<a  href="../public_info/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.pub_info_nav_01a','document.pub_info_nav_01a','../images/pub_info_nav_01a_F2.gif','#927058338360')">
+<img ></img>
+</a>
+<br ></br>
+<a  href="../special_events/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.event_nav_01a','document.event_nav_01a','../images/event_nav_01a_F2.gif','#927058511540')">
+<img ></img>
+</a>
+<a  href="../business_opps/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('document.business_op_nav_01a','document.business_op_nav_01a','../images/business_op_nav_01a_F2.gif','#927058526750')">
+<br ></br>
+<img ></img>
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<br ></br>
+<a  href="../index.asp">
+<img ></img>
+</a>
+</td>
+<td  colspan="2" valign="top" width="1000">
+<table  TABID="13757" border="0" cellspacing="0" width="100%">
+<tr >
+<td >
+<form  action="/scripts/via/go.pl" method="post" name="GO">
+<dl >
+<dd  align="center">
+<div  align="center">
+<center >
+<p >
+<select >
+<option  selected="selected" value="index.html">
+Please select a topic
+</option>
+<option  value="holiday.html">
+Schedule for Upcoming Holiday Service
+</option>
+<option  value="streetcar.html">
+Downtown Streetcar Service
+</option>
+<option  value="phone.html">
+Phone Numbers
+</option>
+<option  value="routes_index.html">
+Routes
+</option>
+<option  value="../map/default.htm">
+Interactive System Map
+</option>
+<option  value="faq.html">
+Frequently Asked Questions
+</option>
+</select>
+</p>
+</center>
+</div>
+</dd>
+</dl>
+</form>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+Welcome to VIA's route and schedule page, where riding the bus is made easy and convenient. Whether for work or play, VIA can take you almost anywhere in the San Antonio, Texas area. VIA operates 106 bus lines, serving an area of 1,233.78 square miles or 99% of Bexar County. Bus lines are divided into six categories: radial, limited stop, express, crosstown, circulator, and streetcar.
+</font>
+<p >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+<a  href="faq.html">
+Frequently asked questions
+</a>
+concerning bus riding:
+</font>
+<img ></img>
+<br ></br>
+<font  face="Arial, Helvetica, sans-serif" size="2">
+<b >
+Radial
+</b>
+- provides local service to the central business district and travels along most major streets. Bus lines 1 through 99, with the exception of lines listed below as limited stop and express, are considered radial lines.
+</font>
+</p>
+<ul >
+<li >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+<b >
+Limited stop
+</b>
+- used primarily to reduce loads on local service and provide shorter travel time for longer trips. These lines follow the same route as a local line service but only stop at high activity or transfer bus stops. Presently VIA operates twelve limited stop routes (3, 10, 21, 38, 31, 52, 76, 81, 87, 91, 550, and 551).
+</font>
+</li>
+<li >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+<b >
+Express
+</b>
+- provides non-stop service between major transit generators, park and ride facilities, and transfer centers. In order to provide customers the shortest travel time, the majority of the express line is operated on expressways. Presently VIA operates five express routes (17, 64, 65, 93, and 94).
+</font>
+</li>
+<li >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+<b >
+Crosstown
+</b>
+- provides service on major travel corridors that are outside the central business district. Crosstown lines generally intersect radial lines and optimize transfer connections. All 500 series routes are crosstowns with the exception of the 550 and 551.
+</font>
+</li>
+<li >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+<b >
+Circulator
+</b>
+- provide local circulation within residential areas and allow transfer connections with other lines at transfer centers or park and ride facilities. Circulator lines are numbered in the 600 series.
+</font>
+</li>
+<li >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+<b >
+Streetcar
+</b>
+- provide circulator service within the central business district with high frequency service levels. Presently VIA operates five streetcar lines (301-305), each line is distinguished by a color and symbol: route 301- red square, 302 - yellow star, 303 - purple diamond, 304 - brown triangle, and 305 - blue circle.
+</font>
+</li>
+</ul>
+<p >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+Route and schedule modifications are made three times a year to adjust to changing ridership patterns and area developments. Public hearings may be held to discuss these modifications.
+<a  href="holiday.html">
+Holiday schedules
+</a>
+are reduced to Saturday or Sunday service level to reflect ridership. Promotions and information for these modifications, public hearings and holiday schedules are accomplished using bus flyers, farebox cards, Press releases and updated pocket schedules.
+</font>
+</p>
+<p >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+<b >
+Automated information
+</b>
+</font>
+</p>
+<p >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+VIAINFO, (210) 362-2020, is an automated information system that is available 24 hours a day in English and Spanish. Bus schedule information can be accessed with a touch-tone phone by entering the four-digit and one letter bus stop number that appears on each bus stop sign and following the instructions.
+</font>
+</p>
+<p >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+<b >
+Need help planning your trip?
+</b>
+</font>
+</p>
+<p >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+VIA's friendly customer service representatives can help plan your bus trip. We will recommend the most suitable route and departure time, quote the fare, and advise you of any transfers you'll need along the way.
+</font>
+</p>
+<p >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+<b >
+Helpful tips when calling
+</b>
+:
+</font>
+</p>
+<ul >
+<li >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+Have pencil and paper ready
+</font>
+</li>
+<li >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+Be ready to tell the operator
+<br ></br>
+1) where you are (nearest intersection)
+<br ></br>
+2) where you are going (nearest intersection)
+<br ></br>
+3) when you would like to get there
+</font>
+</li>
+</ul>
+<p >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+Our representatives are available Monday - Friday from 6 a.m. to 8 p.m., Saturday from 7 a.m. to 7 p.m. and Sunday from 8 a.m. to 5 p.m. Central Standard Time at (210) 362-2020 or TDD (210) 362-2019.
+</font>
+</p>
+<p >
+<strong >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+Free Guide to Ride Materials
+</font>
+</strong>
+</p>
+<p >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+Our "Guide to Ride" brochure reviews the four easy steps to a smooth bus ride. These brochures are available at all Information Centers or by calling Customer Service.
+</font>
+</p>
+<p >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+Prefer to talk to a customer representative in person? Visit one of VIA's Customer Service Centers listed in our
+<a  href="phone.html">
+helpful telephone numbers
+</a>
+.
+</font>
+</p>
+<p >
+<font  face="Arial, Helvetica, sans-serif" size="2">
+VIA prides itself on the service it provides and would like to hear about your riding experience and suggestion for improvement. A special electronic
+<a  href="../suggestions/feedback.html">
+feedback form
+</a>
+is available for your use. Thank you for riding with us.
+</font>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table  TABID="13759" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="left" background="../images/footer_backgrnd.jpg" valign="top">
+<img ></img>
+</td>
+<td  align="right" background="../images/footer_backgrnd.jpg" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<b >
+<a  href="../../text_only/index.html">
+<font  color="#CC0033" face="Arial, Helvetica, sans-serif" size="1">
+TEXT ONLY
+</font>
+</a>
+<font  color="#660066" face="Arial, Helvetica, sans-serif" size="1">
+- Copyright© 1999 VIA Metropolitan Transit
+<!-- last date modified script-->
+<br ></br>
+<script >
+<!-- begin hide 
+
+var theDate = ""
+
+theDate = document.lastModified;
+
+document.writeln("Last Updated: ");
+
+document.write(theDate);
+
+document.write();
+
+// end hide -->
+</script>
+<!-- end last modified script-->
+</font>
+</b>
+</td>
+</tr>
+</table>
+</body>
+</html>

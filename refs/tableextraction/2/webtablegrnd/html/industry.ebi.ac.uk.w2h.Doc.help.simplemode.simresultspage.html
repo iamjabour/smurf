@@ -1,0 +1,377 @@
+<html >
+<head >
+<script >
+<!-- to hide script contents from old browser
+function helpCard (title, func) {
+    var winProps = "scrollbars=1,toolbar=0,location=0,directories=0,menubar=0,width=450,height=350";
+    var winName = (document.forms[0].MULTI.checked ? '_blank' : 'helpCard');
+    var w = window.open ("", winName, winProps);
+    if (w == null) {
+        alert ('I cannot open help window\n(Probably it is a bug,\nlet me know, please...)\n');
+        return;
+    }
+    if (w.focus != null) w.focus();
+    w.document.close();
+//    w.document.open();
+    w.document.writeln ('&amp;amp;lt;HEAD&amp;amp;gt;&amp;amp;lt;TITLE&amp;amp;gt;Help Card&amp;amp;lt;/TITLE&amp;amp;gt;&amp;amp;lt;/HEAD&amp;amp;gt;&amp;amp;lt;BODY BGCOLOR="#dae3fd" TEXT="#008080"&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;TABLE WIDTH="100%"&amp;amp;gt;&amp;amp;lt;TR&amp;amp;gt;&amp;amp;lt;TD ALIGN=LEFT VALIGN=BOTTOM WIDTH="35%"&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;FORM&amp;amp;gt;&amp;amp;lt;FONT COLOR="#000000"&amp;amp;gt;&amp;amp;lt;INPUT TYPE="button" VALUE=" Close " onClick="self.close()"&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;/FONT&amp;amp;gt;&amp;amp;lt;/FORM&amp;amp;gt;&amp;amp;lt;/TD&amp;amp;gt;&amp;amp;lt;TH ALIGN=LEFT&amp;amp;gt;&amp;amp;lt;FONT SIZE="+2" COLOR="#990000"&amp;amp;gt;'+title+'&amp;amp;lt;/FONT&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;/TH&amp;amp;gt;&amp;amp;lt;/TR&amp;amp;gt;&amp;amp;lt;/TABLE&amp;amp;gt;&amp;amp;lt;CENTER&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;TABLE BORDER=5 WIDTH=100% HEIGHT=70% CELLPADDING=8 &amp;amp;gt;&amp;amp;lt;TR&amp;amp;gt;&amp;amp;lt;TH ALIGN=CENTER&amp;amp;gt;');
+    func(w.document);
+    w.document.writeln ('&amp;amp;lt;/TH&amp;amp;gt;&amp;amp;lt;/TR&amp;amp;gt;&amp;amp;lt;/TABLE&amp;amp;gt;');
+    w.document.writeln ('&amp;amp;lt;/CENTER&amp;amp;gt;&amp;amp;lt;/BODY&amp;amp;gt;');
+    w.document.close();
+    return;
+}
+
+function h_refresh (d) {
+    d.writeln ('Use the Refresh button to update the list of applications and output files.&amp;amp;lt;BR&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;BR&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;&amp;amp;lt;P&amp;amp;gt;&amp;amp;lt;IMG  SRC="../icons/exclamation.gif" ALT="HINT" ALIGN=LEFT HEIGHT="40" HSPACE="10" &amp;amp;gt; Use this button to check whether a job you just started has completed. In this case the status of the job will change from RUNNING to DONE.&amp;amp;lt;/P&amp;amp;gt;&amp;amp;lt;BR CLEAR=LEFT&amp;amp;gt;');
+}
+
+function h_job (d) {
+    d.writeln ('Every job you start will be listed in this column. The job stays in this list until you remove it. &amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('To delete a job from the list of applications or to stop a running job click on the check box next to it and use the &amp;amp;lt;em&amp;amp;gt;Remove&amp;amp;lt;/em&amp;amp;gt; button.&amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('If you click on the &amp;amp;lt;em&amp;amp;gt; application_name &amp;amp;lt;/em&amp;amp;gt; the log file will be displayed. &amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('The log contains &amp;amp;lt;/center&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt; time the job was started and finished &amp;amp;lt;li&amp;amp;gt; list of parameters defined for the application');
+    d.writeln ('&amp;amp;lt;li&amp;amp;gt; list of terminal output files, and &amp;amp;lt;li&amp;amp;gt; error messages &amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;center&amp;amp;gt;');
+    d.writeln ('Within the log file, names of all existing output files are highlighted. Click on them to view the output file.&amp;amp;lt;p&amp;amp;gt;');
+}
+
+function h_status (d) {
+    d.writeln ('This column tells you the job status, i.e. whether your job is still running, has been completed successfully or terminated.');
+    d.writeln ('&amp;amp;lt;/center&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;RUNNING&amp;amp;lt;/b&amp;amp;gt;: The job is still running. You can check the box and stop the job using the &amp;amp;lt;em&amp;amp;gt;Remove/KillMarked&amp;amp;lt;/em&amp;amp;gt; button. &amp;amp;lt;BR&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;IMG ALIGN=BOTTOM SRC="../icons/exclamation.gif" HEIGHT=25&amp;amp;gt; Press the &amp;amp;lt;em&amp;amp;gt; Refresh &amp;amp;lt;/em&amp;amp;gt; button to update the status column. &amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;DONE&amp;amp;lt;/b&amp;amp;gt;: The job has been completed successfully.');
+    d.writeln ("&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;ERROR&amp;amp;lt;/b&amp;amp;gt;: The job has been stopped. An error occurred. &amp;amp;lt;BR&amp;amp;gt;");
+    d.writeln ("View the &amp;amp;lt;B&amp;amp;gt; log &amp;amp;lt;/B&amp;amp;gt; file (click onto the application name) to");
+    d.writeln ("find out why the job has been terminated. &amp;amp;lt;BR&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;");
+}
+
+function h_type (d) {
+    d.writeln ('This shows the type of file listed:&amp;amp;lt;/center&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;T&amp;amp;lt;/b&amp;amp;gt; for text file &amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;S&amp;amp;lt;/b&amp;amp;gt; for sequence &amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;L&amp;amp;lt;/b&amp;amp;gt; for sequence list &amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;G&amp;amp;lt;/b&amp;amp;gt; for graphic output, and &amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;N&amp;amp;lt;/b&amp;amp;gt; for non-displayable file (probably binary)&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;center&amp;amp;gt;');
+}
+
+function h_save (d) {
+    d.writeln ('Use this feature to organize your Working Directory');
+    d.writeln ('and projects by renaming your result files.');
+    d.writeln ('During your session all output files are automatically created in the current Working Directory');
+    d.writeln ('on our server. With the &amp;amp;lt;em&amp;amp;gt; Rename file&amp;amp;lt;/em&amp;amp;gt; button you can rename your output files. &amp;amp;lt;BR&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;IMG SRC="../icons/exclamation.gif" HEIGHT="40"&amp;amp;gt; You can also save a file on YOUR LOCAL computer. &amp;amp;lt;BR&amp;amp;gt; Click on');
+    d.writeln ('the output name to view the file and use &amp;amp;lt;BR&amp;amp;gt;the netscape function &amp;amp;lt;em&amp;amp;gt;save as&amp;amp;lt;/em&amp;amp;gt;, where you can define the directory you want to save to.');
+    d.writeln ('&amp;amp;lt;BR&amp;amp;gt; &amp;amp;lt;IMG SRC="../icons/exclamation.gif" HEIGHT="40" HSPACE="10"&amp;amp;gt;');
+    d.writeln ('You can achieve a higher printing quality of your graphic output if you use the &amp;amp;lt;BR&amp;amp;gt; option &amp;amp;lt;I&amp;amp;gt; Send in Postscript');
+    d.writeln ('format &amp;amp;lt;/I&amp;amp;gt; in the Graphics Viewer. In this case &amp;amp;lt;BR&amp;amp;gt; the file will be saved in Postscript format. Use this option if your printer supports Postscript format.');
+}
+
+function h_oremove (d) {
+    d.writeln ('This button helps you cleaning up your Results window.&amp;amp;lt;P&amp;amp;gt; It removes ');
+    d.writeln ('the marked items from the list.&amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;BR&amp;amp;gt;&amp;amp;lt;IMG ALIGN=LEFT SRC="../icons/exclamation.gif" HEIGHT="40" HSPACE="5"&amp;amp;gt;Cleaning');
+    d.writeln ('up your Results window does NOT delete the files from your Working Directory.');
+    d.writeln ('To delete files use the function &amp;amp;lt;em&amp;amp;gt; Delete files &amp;amp;lt;/em&amp;amp;gt;.');
+}
+
+function h_delete (d) {
+    d.writeln ('Deletes the marked output files from your Working Directory on the server. The Results window is also updated automatically. You are prompted to confirm before a file is deleted.&amp;amp;lt;p&amp;amp;gt;');
+}
+
+function h_mark (d) {
+    d.writeln ('With this button you can mark all listed jobs or output files.');
+    d.writeln ('You might want to remove all the old jobs from your Working Directory. Be sure you have saved the files you still need under a different name or on your local computer.');
+}
+
+function h_unmark (d) {
+    d.writeln ('With this button you can unmark all listed jobs or output files.');
+}
+
+function h_outputfile (d) {
+    d.writeln ('All result files are listed here. Click on a file name to view its contents.');
+}
+
+function h_jremove (d) {
+    d.writeln ('Use this button to: &amp;amp;lt;ul&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;B&amp;amp;gt;Remove&amp;amp;lt;/B&amp;amp;gt; marked applications and their result file from your Results window.&amp;amp;lt;P&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;Kill&amp;amp;lt;/b&amp;amp;gt; a running job you want to terminate.&amp;amp;lt;/ul&amp;amp;gt;');
+    d.writeln ('&amp;amp;lt;IMG SRC="../icons/exclamation.gif" ALIGN=BOTTOM &amp;amp;gt;Don`t forget to &amp;amp;lt;B&amp;amp;gt; mark &amp;amp;lt;/B&amp;amp;gt; the job you want to remove or kill using the check box next it.');
+}
+
+//  -- end hiding -->
+</script>
+<title >
+W2H Help - Results Window
+</title>
+</head>
+<!-- ******************* end of document head ******************* -->
+<body  bgcolor="#FFFFFF" link="#000080" text="#008080" vlink="#000080">
+<table  TABID="05347" border="0" cellpadding="10">
+<tr >
+<!-- ******************* start of help header ******************* -->
+<form >
+<td  bgcolor="#F5F5F5" colspan="2">
+<table  TABID="05341" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="left"></td>
+<td  align="right">
+<font  color="#000000" size="-1">
+Check this box to get HelpCards in multiple windows
+<input ></input>
+</font>
+</td>
+</tr>
+</table>
+</td>
+</form>
+</tr>
+<!-- ******************* end of help header ******************* -->
+<tr >
+<td  bgcolor="#F5F5F5" valign="top" width="15%">
+<br ></br>
+<table  TABID="05342" border="0">
+<tr >
+<th  colspan="2">
+Go to other help pages:
+</th>
+</tr>
+<tr >
+<th ></th>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="simplemode.html">
+Main Page
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="simapppage.html">
+A pplication Page
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+Results Page
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="simfilepage.html">
+Files Page
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="simuploadpage.html
+">
+Upload Page
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<font  size="-1">
+<a  href="simgraphpage.html">
+Graphics Viewer
+</a>
+</font>
+</td>
+</tr>
+</table>
+</td>
+<td >
+<center >
+<h2 >
+Results Page
+</h2>
+<table  TABID="05343" border="2" cellpadding="8">
+<tr >
+<td >
+<img ></img>
+The Results window gives you an overview of the applications you started, their status (status column) and their output files. From here you can view and print your results. You can save output files under different names, or delete them. You can also kill a running job in this window.
+<p >
+<img ></img>
+To view a result file click onto the output file name.
+</p>
+<p >
+<img ></img>
+The
+<b >
+Refresh
+</b>
+button updates the contents of your Results window. Use the "Remove" function to clean up this window.
+<br ></br>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="05346" bgcolor="DAE3FD" border="1" cellspacing="0" width="100%">
+<tr >
+<td >
+<table  TABID="05344" border="0" width="100%">
+<tr >
+<th  colspan="2" width="18%"></th>
+<th  bgcolor="#FFFACD">
+<a  href="javascript:helpCard('<EM>Button</EM> Refresh', h_refresh)">
+Refresh
+</a>
+</th>
+<th  bgcolor="#FFFACD">
+<a  href="javascript:helpCard('<EM>Button</EM> Mark All', h_mark)">
+Mark all
+</a>
+</th>
+<th  bgcolor="#FFFACD">
+<a  href="javascript:helpCard('<EM>Button</EM> UnMark', h_unmark)">
+UnMark all
+</a>
+<br ></br>
+</th>
+<th ></th>
+</tr>
+<tr >
+<th  bgcolor="#FFFACD" colspan="3">
+<a  href="javascript:helpCard('<EM>Button</EM> Remove from the table', h_jremove)">
+Remove from the table
+</a>
+</th>
+<th  bgcolor="#FFFACD" colspan="2">
+<a  href="javascript:helpCard('<EM>Button</EM> Delete files', h_delete)">
+Delete files
+</a>
+</th>
+<th  bgcolor="#FFFACD">
+<a  href="javascript:helpCard('<EM>Button</EM> Rename file', h_save)">
+Rename file
+</a>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td >
+<table  TABID="05345" genuinetable="yes" border="1" cellpadding="4" width="100%">
+<tr >
+<th  colspan="6"></th>
+</tr>
+<tr >
+<th  width="20%">
+<a  href="javascript:helpCard('Application name', h_job)">
+Application
+</a>
+</th>
+<th >
+Started
+</th>
+<th >
+<a  href="javascript:helpCard('Application Status', h_status)">
+Status
+</a>
+</th>
+<th  width="50%">
+<a  href="javascript:helpCard('Output File', h_outputfile)">
+Output File
+</a>
+</th>
+<th >
+Size
+</th>
+<th  width="5%">
+<a  href="javascript:helpCard('Output Type', h_type)">
+Type
+</a>
+</th>
+</tr>
+<tr >
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+</tr>
+<tr >
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+<th >
+...
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+<p ></p>
+</td>
+</tr>
+</table>
+<div  align="right">
+<font  size="-3">
+<!-- hhmts start -->
+Last modified: Mon Sep 25 17:30:41 2000
+<!-- hhmts end -->
+</font>
+</div>
+</body>
+</html>

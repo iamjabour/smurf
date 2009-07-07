@@ -1,0 +1,262 @@
+<!-- Converted with LaTeX2HTML 0.6.4 (Tues Aug 30 1994) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -&amp;amp;gt;-->
+<!---->
+<html >
+<head ></head>
+<body >
+<p ></p>
+<title >
+Choosing the Value of
+</title>
+<img ></img>
+<p >
+<br ></br>
+</p>
+<hr ></hr>
+<a  href="node17.html" name="tex2html688">
+<img ></img>
+</a>
+<a  href="node15.html" name="tex2html686">
+<img ></img>
+</a>
+<a  href="node15.html" name="tex2html682">
+<img ></img>
+</a>
+<a  href="node4.html" name="tex2html690">
+<img ></img>
+</a>
+<a  href="node136.html" name="tex2html691">
+<img ></img>
+</a>
+<br ></br>
+<b >
+Next:
+</b>
+<a  href="node17.html" name="tex2html689">
+The Symmetric Successive
+</a>
+<b >
+Up:
+</b>
+<a  href="node15.html" name="tex2html687">
+The Successive Overrelaxation
+</a>
+<b >
+Previous:
+</b>
+<a  href="node15.html" name="tex2html683">
+The Successive Overrelaxation
+</a>
+<br ></br>
+<hr ></hr>
+<p ></p>
+<h3 >
+<a  name="SECTION00723100000000000000">
+Choosing the Value of
+<img ></img>
+</a>
+</h3>
+<p >
+<a  name="secstaomega"></a>
+<a  name="393"></a>
+</p>
+<p >
+If
+<img ></img>
+, the SOR method simplifies to the Gauss-Seidel method. A theorem due to Kahan
+<a  href="node135.html#Kahan58a">
+[130]
+</a>
+shows that SOR fails to converge if
+<img ></img>
+is outside the interval
+<img ></img>
+. Though technically the term
+<em >
+underrelaxation
+<a  name="395"></a>
+</em>
+should be used when
+<img ></img>
+, for convenience the term overrelaxation
+<a  name="396"></a>
+is now used for any value of
+<img ></img>
+.
+</p>
+<p >
+In general, it is not possible to compute in advance the value of
+<img ></img>
+that is optimal with respect to the rate of convergence of SOR. Even when it is possible to compute the optimal value for
+<img ></img>
+, the expense of such computation is usually prohibitive. Frequently, some heuristic estimate is used, such as
+<img ></img>
+where
+<img ></img>
+is the mesh spacing of the discretization of the underlying physical domain.
+</p>
+<p >
+If the coefficient matrix
+<img ></img>
+is symmetric and positive definite, the SOR iteration is guaranteed to converge for
+<em >
+any
+</em>
+value of
+<img ></img>
+between 0 and 2, though the choice of
+<img ></img>
+can significantly affect the rate at which the SOR iteration converges. Sophisticated implementations of the SOR algorithm (such as that found in
+<tt >
+ITPACK
+<a  name="3809"></a>
+</tt>
+<a  href="node135.html#itpacktoms82">
+[140]
+</a>
+) employ adaptive parameter estimation schemes to try to home in on the appropriate value of
+<img ></img>
+by estimating the rate at which the iteration is converging.
+</p>
+<p >
+Adaptive methods: Iterative methods that collect information about the coefficient matrix during the iteration process, and use this to speed up convergence. Symmetric matrix: See: Matrix properties. Diagonally dominant matrix: See: Matrix properties
+<img ></img>
+-Matrix: See: Matrix properties. Positive definite matrix: See: Matrix properties. Matrix properties: We call a square matrix
+<img ></img>
+</p>
+<dl >
+<dt >
+Symmetric
+</dt>
+<dd >
+if
+<img ></img>
+for all
+<img ></img>
+,
+<img ></img>
+.
+</dd>
+<dt >
+Positive definite
+</dt>
+<dd >
+if it satisfies
+<img ></img>
+for all nonzero vectors
+<img ></img>
+.
+</dd>
+<dt >
+Diagonally dominant
+</dt>
+<dd >
+if
+<img ></img>
+.
+</dd>
+<dt >
+An
+<img ></img>
+-matrix
+</dt>
+<dd >
+if
+<img ></img>
+for
+<img ></img>
+, and it is nonsingular with
+<img ></img>
+for all
+<img ></img>
+,
+<img ></img>
+.
+<p ></p>
+</dd>
+</dl>
+<p >
+For coefficient matrices of a special class called
+<em >
+consistently ordered with property A
+</em>
+(see Young
+<a  href="node135.html#Yobook">
+[217]
+</a>
+), which includes certain orderings of matrices arising from the discretization of elliptic PDEs, there is a direct relationship between the spectra of the Jacobi and SOR iteration matrices. In principle, given the spectral radius
+<img ></img>
+of the Jacobi iteration matrix, one can determine
+<em >
+a priori
+</em>
+the theoretically optimal value of
+<img ></img>
+for SOR:
+</p>
+<p >
+<a  name="eqnstaoptimalomega"></a>
+<img ></img>
+</p>
+<p >
+This is seldom done, since calculating the spectral radius of the Jacobi matrix requires an impractical amount of computation. However, relatively inexpensive rough estimates of
+<img ></img>
+(for example, from the power method, see Golub and Van Loan [p. 351]GoVL:matcomp) can yield reasonable estimates for the optimal value of
+<img ></img>
+.
+<a  name="424"></a>
+<a  name="425"></a>
+</p>
+<p >
+<br ></br>
+</p>
+<hr ></hr>
+<a  href="node17.html" name="tex2html688">
+<img ></img>
+</a>
+<a  href="node15.html" name="tex2html686">
+<img ></img>
+</a>
+<a  href="node15.html" name="tex2html682">
+<img ></img>
+</a>
+<a  href="node4.html" name="tex2html690">
+<img ></img>
+</a>
+<a  href="node136.html" name="tex2html691">
+<img ></img>
+</a>
+<br ></br>
+<b >
+Next:
+</b>
+<a  href="node17.html" name="tex2html689">
+The Symmetric Successive
+</a>
+<b >
+Up:
+</b>
+<a  href="node15.html" name="tex2html687">
+The Successive Overrelaxation
+</a>
+<b >
+Previous:
+</b>
+<a  href="node15.html" name="tex2html683">
+The Successive Overrelaxation
+</a>
+<br ></br>
+<hr ></hr>
+<p >
+<br ></br>
+</p>
+<hr ></hr>
+<p ></p>
+<address >
+<i >
+Jack Dongarra
+<br ></br>
+Mon Nov 20 08:52:54 EST 1995
+</i>
+</address>
+</body>
+</html>

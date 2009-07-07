@@ -1,0 +1,1016 @@
+<html >
+<!-- #BeginTemplate "/Templates/abouttemplate.dwt" -->
+<head >
+<!-- #BeginEditable "doctitle" -->
+<title >
+Value of Membership
+</title>
+<!-- #EndEditable -->
+<meta ></meta>
+<link ></link>
+<meta ></meta>
+<meta ></meta>
+<script >
+<!--
+&amp;amp;lt;!--Adobe(R) ImageStyler(TM) 1.0 Generated JavaScript. Please do not edit.
+isamap = new Object();
+isamap[0] = "_df"
+isamap[1] = "_ov"
+isamap[2] = "_ot"
+isamap[3] = "_dn"
+
+function isimgact(id, act)
+{
+	if(document.images) document.images[id].src = eval( "isimages." + id + isamap[act] + ".src");
+}
+
+if (document.images) { // ensure browser can do JavaScript rollovers.
+isimages = new Object();
+isimages.aboutbuttons14_df = new Image();
+isimages.aboutbuttons14_df.src = "../images/aboutbuttonsabout_the_socie.gif";
+
+isimages.aboutbuttons14_ov = new Image();
+isimages.aboutbuttons14_ov.src = "../images/aboutbuttonsabout_the_socov.gif";
+
+isimages.aboutbuttons14_dn = new Image();
+isimages.aboutbuttons14_dn.src = "../images/aboutbuttonsabout_the_socdn.gif";
+
+isimages.aboutbuttons16_df = new Image();
+isimages.aboutbuttons16_df.src = "../images/aboutbuttonslearning_center.gif";
+
+isimages.aboutbuttons16_ov = new Image();
+isimages.aboutbuttons16_ov.src = "../images/aboutbuttonslearning_centov.gif";
+
+isimages.aboutbuttons16_dn = new Image();
+isimages.aboutbuttons16_dn.src = "../images/aboutbuttonslearning_centdn.gif";
+
+isimages.aboutbuttons18_df = new Image();
+isimages.aboutbuttons18_df.src = "../images/aboutbuttonsconsumer_inform.gif";
+
+isimages.aboutbuttons18_ov = new Image();
+isimages.aboutbuttons18_ov.src = "../images/aboutbuttonsconsumer_infoov.gif";
+
+isimages.aboutbuttons18_dn = new Image();
+isimages.aboutbuttons18_dn.src = "../images/aboutbuttonsconsumer_infodn.gif";
+
+isimages.aboutbuttons20_df = new Image();
+isimages.aboutbuttons20_df.src = "../images/aboutbuttonshelp.gif";
+
+isimages.aboutbuttons20_ov = new Image();
+isimages.aboutbuttons20_ov.src = "../images/aboutbuttonshelpov.gif";
+
+isimages.aboutbuttons20_dn = new Image();
+isimages.aboutbuttons20_dn.src = "../images/aboutbuttonshelpdn.gif";
+
+isimages.aboutbuttons27_df = new Image();
+isimages.aboutbuttons27_df.src = "../images/aboutbuttonsmembers___chapt.gif";
+
+isimages.aboutbuttons27_ov = new Image();
+isimages.aboutbuttons27_ov.src = "../images/aboutbuttonsmembers___chaov.gif";
+
+isimages.aboutbuttons27_dn = new Image();
+isimages.aboutbuttons27_dn.src = "../images/aboutbuttonsmembers___chadn.gif";
+
+isimages.aboutbuttons29_df = new Image();
+isimages.aboutbuttons29_df.src = "../images/aboutbuttonscareer_manageme.gif";
+
+isimages.aboutbuttons29_ov = new Image();
+isimages.aboutbuttons29_ov.src = "../images/aboutbuttonscareer_manageov.gif";
+
+isimages.aboutbuttons29_dn = new Image();
+isimages.aboutbuttons29_dn.src = "../images/aboutbuttonscareer_managedn.gif";
+
+isimages.aboutbuttons31_df = new Image();
+isimages.aboutbuttons31_df.src = "../images/aboutbuttonsinsurance_indus.gif";
+
+isimages.aboutbuttons31_ov = new Image();
+isimages.aboutbuttons31_ov.src = "../images/aboutbuttonsinsurance_indov.gif";
+
+isimages.aboutbuttons31_dn = new Image();
+isimages.aboutbuttons31_dn.src = "../images/aboutbuttonsinsurance_inddn.gif";
+
+isimages.aboutbuttons33_df = new Image();
+isimages.aboutbuttons33_df.src = "../images/aboutbuttonssite_map.gif";
+
+isimages.aboutbuttons33_ov = new Image();
+isimages.aboutbuttons33_ov.src = "../images/aboutbuttonssite_mapov.gif";
+
+isimages.aboutbuttons33_dn = new Image();
+isimages.aboutbuttons33_dn.src = "../images/aboutbuttonssite_mapdn.gif";
+
+isimages.aboutbuttons39_df = new Image();
+isimages.aboutbuttons39_df.src = "../images/aboutbuttonssections.gif";
+
+isimages.aboutbuttons39_ov = new Image();
+isimages.aboutbuttons39_ov.src = "../images/aboutbuttonssectionsov.gif";
+
+isimages.aboutbuttons39_dn = new Image();
+isimages.aboutbuttons39_dn.src = "../images/aboutbuttonssectionsdn.gif";
+
+isimages.aboutbuttons41_df = new Image();
+isimages.aboutbuttons41_df.src = "../images/aboutbuttonsmedia_relations.gif";
+
+isimages.aboutbuttons41_ov = new Image();
+isimages.aboutbuttons41_ov.src = "../images/aboutbuttonsmedia_relatioov.gif";
+
+isimages.aboutbuttons41_dn = new Image();
+isimages.aboutbuttons41_dn.src = "../images/aboutbuttonsmedia_relatiodn.gif";
+
+isimages.aboutbuttons43_df = new Image();
+isimages.aboutbuttons43_df.src = "../images/aboutbuttonslinks.gif";
+
+isimages.aboutbuttons43_ov = new Image();
+isimages.aboutbuttons43_ov.src = "../images/aboutbuttonslinksov.gif";
+
+isimages.aboutbuttons43_dn = new Image();
+isimages.aboutbuttons43_dn.src = "../images/aboutbuttonslinksdn.gif";
+
+isimages.aboutbuttons45_df = new Image();
+isimages.aboutbuttons45_df.src = "../images/aboutbuttonscontact_us.gif";
+
+isimages.aboutbuttons45_ov = new Image();
+isimages.aboutbuttons45_ov.src = "../images/aboutbuttonscontact_usov.gif";
+
+isimages.aboutbuttons45_dn = new Image();
+isimages.aboutbuttons45_dn.src = "../images/aboutbuttonscontact_usdn.gif";
+
+isimages.aboutbuttons49_df = new Image();
+isimages.aboutbuttons49_df.src = "../images/aboutbuttonshistory.gif";
+
+isimages.aboutbuttons49_ov = new Image();
+isimages.aboutbuttons49_ov.src = "../images/aboutbuttonshistoryov.gif";
+
+isimages.aboutbuttons50_df = new Image();
+isimages.aboutbuttons50_df.src = "../images/aboutbuttonsorganization.gif";
+
+isimages.aboutbuttons50_ov = new Image();
+isimages.aboutbuttons50_ov.src = "../images/aboutbuttonsorganizationov.gif";
+
+isimages.aboutbuttons51_df = new Image();
+isimages.aboutbuttons51_df.src = "../images/aboutbuttonsvalue_of__membe.gif";
+
+isimages.aboutbuttons51_ov = new Image();
+isimages.aboutbuttons51_ov.src = "../images/aboutbuttonsvalue_of__memov.gif";
+
+isimages.aboutbuttons52_df = new Image();
+isimages.aboutbuttons52_df.src = "../images/aboutbuttonsstrategic__plan.gif";
+
+isimages.aboutbuttons52_ov = new Image();
+isimages.aboutbuttons52_ov.src = "../images/aboutbuttonsstrategic__plov.gif";
+
+isimages.aboutbuttons53_df = new Image();
+isimages.aboutbuttons53_df.src = "../images/aboutbuttonsmember__resourc.gif";
+
+isimages.aboutbuttons53_ov = new Image();
+isimages.aboutbuttons53_ov.src = "../images/aboutbuttonsmember__resouov.gif";
+
+isimages.aboutbuttons54_df = new Image();
+isimages.aboutbuttons54_df.src = "../images/aboutbuttonsamerican__insti.gif";
+
+isimages.aboutbuttons54_ov = new Image();
+isimages.aboutbuttons54_ov.src = "../images/aboutbuttonsamerican__insov.gif";
+
+isimages.aboutbuttons55_df = new Image();
+isimages.aboutbuttons55_df.src = "../images/aboutbuttonscpcu__harry_j__.gif";
+
+isimages.aboutbuttons55_ov = new Image();
+isimages.aboutbuttons55_ov.src = "../images/aboutbuttonscpcu__harry_jov.gif";
+
+}
+// end generated JavaScript. -->
+function MM_displayStatusMsg(msgStr) { //v1.0 status=msgStr; document.MM_returnValue = true; } //--&gt;
+</script>
+</head>
+<body  bgcolor="#FFFFFF">
+<div  id="Layer1" style="position:absolute; width:97px; height:115px; z-index:1; left: 9px; top: 125px">
+<table  TABID="08059" align="left" border="0" width="100%">
+<tr  align="left" valign="top">
+<td  height="30">
+<a  href="history.shtml" onmouseout="isimgact( 'aboutbuttons49',0)" onmouseover="isimgact( 'aboutbuttons49',1);MM_displayStatusMsg('History');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  height="30">
+<p >
+<a  href="leaders.shtml" onmouseout="isimgact( 'aboutbuttons50',0)" onmouseover="isimgact( 'aboutbuttons50',1);MM_displayStatusMsg('Our organization');return document.MM_returnValue">
+<img ></img>
+</a>
+</p>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  height="45">
+<a  href="vom.shtml" onmouseout="isimgact( 'aboutbuttons51',0)" onmouseover="isimgact( 'aboutbuttons51',1);MM_displayStatusMsg('The value of CPCU membership');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  height="45">
+<a  href="strategic.shtml" onmouseout="isimgact( 'aboutbuttons52',0)" onmouseover="isimgact( 'aboutbuttons52',1);MM_displayStatusMsg('Our strategic plan');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  height="60">
+<a  href="mrc.shtml" onmouseout="isimgact( 'aboutbuttons53',0)" onmouseover="isimgact( 'aboutbuttons53',1);MM_displayStatusMsg('Member Resource Center');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+</div>
+<div  id="Layer2" style="position:absolute; width:410px; height:115px; z-index:2; left: 139px; top: 123px">
+<!-- #BeginEditable "content" -->
+<table  TABID="08062" border="0" width="410">
+<tr  align="left" valign="top">
+<td >
+<p  class="text">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Value of Membership
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+CPCU Membership Offers
+<br ></br>
+Opportunities and Benefits
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+<p  class="text">
+<br ></br>
+</p>
+<table  TABID="08060" align="center" border="0" cellspacing="6" width="100%">
+<tr  align="left" valign="top">
+<td  class="linkstable" width="50%">
+<a  href="#educational">
+Educational Opportunities
+</a>
+</td>
+<td  class="linkstable" width="50%">
+<a  href="#sections">
+Special Interest Sections
+</a>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  class="linkstable" width="50%">
+<a  href="#visibility">
+Visibility
+</a>
+</td>
+<td  class="linkstable" width="50%">
+<a  href="#pubs">
+Publications
+</a>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  class="linkstable" width="50%">
+<a  href="#networking">
+Networking
+</a>
+</td>
+<td  class="linkstable" width="50%">
+<a  href="#shop">
+Society Shop
+</a>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  class="linkstable" width="50%">
+<a  href="#leadership">
+Leadership Opportunities
+</a>
+</td>
+<td  class="linkstable" width="50%">
+<a  href="#insurance">
+Group Insurance
+</a>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  class="linkstable" width="50%">
+<a  href="#PD">
+Continuing Professional Development
+</a>
+</td>
+<td  class="linkstable" width="50%">
+<a  href="#disability">
+Long-term Disability
+</a>
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  class="linkstable" width="50%"></td>
+<td  class="linkstable" width="50%">
+<a  href="#visa">
+Mastercard/Visa
+</a>
+</td>
+</tr>
+</table>
+<p  class="text"></p>
+<p  class="text">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  name="educational"></a>
+Educational Opportunities with
+<br ></br>
+Continuing Education Credits
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+The Society provides a large number of workshops, seminars and satellite broadcasts on timely property and casualty insurance issues. Visit the
+<a  href="../learning/index.shtml">
+Learning Center
+</a>
+to learn more about educational opportunities.
+<br ></br>
+</p>
+<p  class="text">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  name="visibility"></a>
+Visibility
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+This is the key to your prestige in the industry. The Society's
+<a  href="..//members/releases.shtml">
+public relations program
+</a>
+, with its
+<i >
+Insurance Guide for the Media
+</i>
+, national advertising campaign, and
+<a  href="../media/reqspeaker.shtml">
+national speaker's bureau
+</a>
+, is focused on making CPCU recognized as the mark of ultimate professionalism in the insurance industry. Members gain professional visibility by building their reputations in the industry through
+<a  href="../members/volunteer_nat.shtml">
+Society service
+</a>
+, by teaching, conducting seminars, leading chapter meetings, and participating in chapter projects.
+</p>
+<p  class="text">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  name="networking"></a>
+Networking
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+Your local chapter offers opportunities to network with CPCUs in your area.
+<a  href="../sections/index.shtml">
+Special Interest Sections
+</a>
+offer opportunities to network with professionals in your area of specialization. The Society's annual meetings provide opportunities to network with CPCUs, new designees and guests from across the nation.
+</p>
+<p  class="text">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  name="leadership"></a>
+Leadership Opportunities
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+The CPCU Society is volunteer-driven. It is organized by and for CPCUs.
+<a  href="../members/volunteer_nat.shtml">
+Leadership opportunities
+</a>
+at the chapter and national level offer members the chance to hone their knowledge, leadership skills and experience.
+</p>
+<p  class="text">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  name="PD"></a>
+Continuing Professional Development
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+CPCU Society members are eligible to earn
+<a  href="../learning/cpd.shtml">
+CPD certification
+</a>
+through a voluntary incentive program that recognizes achievement in continuing education and professional activities.
+</p>
+<p  class="text">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  name="sections"></a>
+Special Interest Sections
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+The CPCU Society has 14
+<a  href="../sections/index.shtml">
+Special Interest Sections
+</a>
+to accommodate Society members with different interests and views. Each section publishes its own quarterly newsletter, sponsors symposia, and conducts research projects. Members can belong to as many sections as they choose.
+</p>
+<table  TABID="08061" align="center" border="0" cellspacing="4" width="85%">
+<tr  align="left" valign="top">
+<td  class="text" height="20" width="54%">
+Agent &amp; Broker
+</td>
+<td  class="text" height="20" width="46%">
+Personal Lines
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  class="text" height="20" width="54%">
+Claims
+</td>
+<td  class="text" height="20" width="46%">
+Regulatory &amp; Legislative
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  class="text" height="20" width="54%">
+Consulting, Litigation &amp; Expert Witness
+</td>
+<td  class="text" height="20" width="46%">
+Reinsurance
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  class="text" height="20" width="54%">
+Excess/Surplus/Specialty Lines
+</td>
+<td  class="text" height="20" width="46%">
+Risk Management
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  class="text" height="20" width="54%">
+Information Technology
+</td>
+<td  class="text" height="20" width="46%">
+Senior Resource
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  class="text" height="20" width="54%">
+International Insurance
+</td>
+<td  class="text" height="20" width="46%">
+Total Quality
+</td>
+</tr>
+<tr  align="left" valign="top">
+<td  class="text" height="20" width="54%">
+Loss Control
+</td>
+<td  class="text" height="20" width="46%">
+Underwriting
+</td>
+</tr>
+</table>
+<p ></p>
+<p  class="headline3">
+<a  name="pubs"></a>
+Publications
+</p>
+<blockquote >
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+CPCU News
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Periodic updates on what your peers, the national Society and local chapters are doing.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+CPCU Journal
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+In-depth articles in the professional quarterly magazine update you on the changing insurance industry.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Special Reports
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="../learning/researchreports.shtml">
+Annual, comprehensive studies
+</a>
+on timely, provocative topics.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+</p>
+<p ></p>
+</blockquote>
+<p  class="text">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  name="shop"></a>
+Society Shop
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+The
+<a  href="http://dom2.jiispai.com/cpcu/">
+Society Shop
+</a>
+offers a variety of personal and professional merchandise to help make your designation visible.
+</p>
+<p  class="text">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  name="insurance"></a>
+Group Insurance
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+The Society offers attractive rates on the following insurance plans:
+</p>
+<ul >
+<li >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Long-term disability
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</li>
+<li >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Supplemental hospital benefits
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</li>
+<li >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Excess major medical
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</li>
+<li >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Personal accident
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</li>
+<li >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Term life
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</li>
+<li >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Long-term nursing home care
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</li>
+</ul>
+<p >
+Click here to go to the
+<a  href="http://www.cpcusociety-ins.com">
+Member Insurance Center
+</a>
+.
+</p>
+<p  class="text">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  name="visa"></a>
+Mastercard/Visa
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+Members enjoy a low annual rate and a multitude of travel privileges with no annual fee.
+<br ></br>
+</p>
+</td>
+</tr>
+<tr  align="center" valign="middle">
+<td  class="captions" height="60">
+Comments or questions, contact:
+<br ></br>
+<a  href="mailto:%20CPCUhelp@Synergyfirst.com">
+CPCUhelp@Synergyfirst.com
+</a>
+<br ></br>
+800.932.2728
+</td>
+</tr>
+</table>
+<!-- #EndEditable -->
+</div>
+<div  id="Layer3" style="position:absolute; width:500px; height:105px; z-index:3">
+<table  TABID="08064" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" width="5"></td>
+<td  height="5" width="4"></td>
+<td  height="5" width="3"></td>
+<td  height="5" width="1"></td>
+<td  height="5" width="60"></td>
+<td  height="5" width="18"></td>
+<td  height="5" width="4"></td>
+<td  height="5" width="8"></td>
+<td  height="5" width="18"></td>
+<td  height="5" width="4"></td>
+<td  height="5" width="425"></td>
+</tr>
+<tr >
+<td  height="86" width="5"></td>
+<td  colspan="10" height="86" width="545">
+<table  TABID="08063" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="1" width="66">
+<img ></img>
+<map  name="aboutbuttons1">
+<area ></area>
+</map>
+</td>
+<td  height="1" width="115">
+<img ></img>
+</td>
+<td  height="1" width="2">
+<img ></img>
+</td>
+<td  height="1" width="115">
+<img ></img>
+</td>
+<td  height="1" width="2">
+<img ></img>
+</td>
+<td  height="1" width="115">
+<img ></img>
+</td>
+<td  height="1" width="2">
+<img ></img>
+</td>
+<td  height="1" width="115">
+<img ></img>
+</td>
+<td  height="1" width="13">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="9" height="13" width="545">
+<img ></img>
+<map  name="aboutbuttons11">
+<area ></area>
+<area ></area>
+</map>
+</td>
+</tr>
+<tr >
+<td  height="18" width="66">
+<img ></img>
+<map  name="aboutbuttons13">
+<area ></area>
+</map>
+</td>
+<td  height="19" rowspan="2" width="115">
+<a  href="index.shtml" onmousedown="isimgact( 'aboutbuttons14',3)" onmouseout="isimgact( 'aboutbuttons14',0)" onmouseover="isimgact( 'aboutbuttons14',1);MM_displayStatusMsg('About the CPCU Society');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="2">
+<img ></img>
+</td>
+<td  height="18" width="115">
+<a  href="../learning/index.shtml" onmousedown="isimgact( 'aboutbuttons16',3)" onmouseout="isimgact( 'aboutbuttons16',0)" onmouseover="isimgact( 'aboutbuttons16',1);MM_displayStatusMsg('CPCU Learning Section');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="2">
+<img ></img>
+</td>
+<td  height="18" width="115">
+<a  href="../consumer/index.shtml" onmousedown="isimgact( 'aboutbuttons18',3)" onmouseout="isimgact( 'aboutbuttons18',0)" onmouseover="isimgact( 'aboutbuttons18',1);MM_displayStatusMsg('Consumer Information');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="2">
+<img ></img>
+</td>
+<td  height="18" width="115">
+<a  href="../support/faq.shtml" onmousedown="isimgact( 'aboutbuttons20',3)" onmouseout="isimgact( 'aboutbuttons20',0)" onmouseover="isimgact( 'aboutbuttons20',1);MM_displayStatusMsg('Frequently Asked Questions and more');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="13">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="1" width="66">
+<img ></img>
+<map  name="aboutbuttons23">
+<area ></area>
+</map>
+</td>
+<td  colspan="7" height="1" width="364">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="18" width="66">
+<img ></img>
+<map  name="aboutbuttons26">
+<area ></area>
+</map>
+</td>
+<td  height="18" width="115">
+<a  href="../members/index.shtml" onmousedown="isimgact( 'aboutbuttons27',3)" onmouseout="isimgact( 'aboutbuttons27',0)" onmouseover="isimgact( 'aboutbuttons27',1);MM_displayStatusMsg('CPCU Members & Chapters');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="2">
+<img ></img>
+</td>
+<td  height="18" width="115">
+<a  href="../careers/index.shtml" onmousedown="isimgact( 'aboutbuttons29',3)" onmouseout="isimgact( 'aboutbuttons29',0)" onmouseover="isimgact( 'aboutbuttons29',1);MM_displayStatusMsg('Career Management');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="2">
+<img ></img>
+</td>
+<td  height="18" width="115">
+<a  href="../insurance/index.shtml" onmousedown="isimgact( 'aboutbuttons31',3)" onmouseout="isimgact( 'aboutbuttons31',0)" onmouseover="isimgact( 'aboutbuttons31',1);MM_displayStatusMsg('Insurance Industry');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="2">
+<img ></img>
+</td>
+<td  height="18" width="115">
+<a  href="../sitemap/index.shtml" onmousedown="isimgact( 'aboutbuttons33',3)" onmouseout="isimgact( 'aboutbuttons33',0)" onmouseover="isimgact( 'aboutbuttons33',1);MM_displayStatusMsg('Site Map');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="13">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="9" height="1" width="545">
+<img ></img>
+<map  name="aboutbuttons36">
+<area ></area>
+</map>
+</td>
+</tr>
+<tr >
+<td  height="18" width="66">
+<img ></img>
+<map  name="aboutbuttons38">
+<area ></area>
+</map>
+</td>
+<td  height="18" width="115">
+<a  href="../sections/index.shtml" onmousedown="isimgact( 'aboutbuttons39',3)" onmouseout="isimgact( 'aboutbuttons39',0)" onmouseover="isimgact( 'aboutbuttons39',1);MM_displayStatusMsg('CPCU Special Interest Sections');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="2">
+<img ></img>
+</td>
+<td  height="18" width="115">
+<a  href="../media/index.shtml" onmousedown="isimgact( 'aboutbuttons41',3)" onmouseout="isimgact( 'aboutbuttons41',0)" onmouseover="isimgact( 'aboutbuttons41',1);MM_displayStatusMsg('Media Relations');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="2">
+<img ></img>
+</td>
+<td  height="18" width="115">
+<a  href="../links/index.shtml" onmousedown="isimgact( 'aboutbuttons43',3)" onmouseout="isimgact( 'aboutbuttons43',0)" onmouseover="isimgact( 'aboutbuttons43',1);MM_displayStatusMsg('Insurance-related Links');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="2">
+<img ></img>
+</td>
+<td  height="18" width="115">
+<a  href="../contacts/staff.shtml" onmousedown="isimgact( 'aboutbuttons45',3)" onmouseout="isimgact( 'aboutbuttons45',0)" onmouseover="isimgact( 'aboutbuttons45',1);MM_displayStatusMsg('Who to contact at the CPCU Society');return document.MM_returnValue">
+<img ></img>
+</a>
+</td>
+<td  height="18" width="13">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="9" height="16" width="545">
+<img ></img>
+<map  name="aboutbuttons48">
+<area ></area>
+</map>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</body>
+<!-- #EndTemplate -->
+</html>

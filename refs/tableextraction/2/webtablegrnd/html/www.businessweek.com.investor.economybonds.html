@@ -1,0 +1,1463 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<title >
+Business Week Online: Personal Investing
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<script >
+<!--
+
+var cookieDate = new Date ();
+
+// set date to + 12 minutes
+cookieDate.setMinutes ( cookieDate.getMinutes() + 12 );
+
+// if you are within asia site...
+if (location.hostname.indexOf ('asia.businessweek.com') != -1) {
+
+	// set a cookie
+	document.cookie = 'sitename=asia;domain=.businessweek.com;path=/;expires=' + cookieDate.toGMTString();
+
+// if you are within the europe site...
+} else if (location.hostname.indexOf ('europe.businessweek.com') != -1) {
+
+	// set a cookie
+	document.cookie = 'sitename=europe;domain=.businessweek.com;path=/;expires=' +
+	cookieDate.toGMTString();
+
+// if you are at the domestic site...
+} else if (location.hostname.indexOf ('www.businessweek.com') != -1 &amp;amp;amp;amp;&amp;amp;amp;amp; location.pathname.indexOf ('/magazine') == -1 &amp;amp;amp;amp;&amp;amp;amp;amp; document.cookie.indexOf ('bypassRedirect=true') == -1) {
+
+	// if you have asia cookie...
+	if (document.cookie.indexOf ('sitename=asia') != -1) {
+	
+		// redirect to asia hostname
+		location.hostname = 'testasia.businessweek.com';
+	
+	// if you have the europe cookie...
+	} else if (document.cookie.indexOf ('sitename=europe') != -1) {
+	
+		// redirect to the europe hostname
+		location.hostname = 'testeurope.businessweek.com';
+	
+	}
+
+}
+
+//-->
+</script>
+<script >
+<!--
+
+if (parent != self) {
+	
+	if (document.images) {
+		
+		top.location.replace(self.location.href);
+	
+	} else {
+		
+		top.location = self.location
+	
+	}
+
+}
+
+var axel = Math.random() + "";
+
+var rnd = axel * 1000000000000000000;
+
+self.name = 'mainwindow';
+
+function showZipper() {
+	if (navigator.appName == "Microsoft Internet Explorer" &amp;amp;amp;amp;&amp;amp;amp;amp; navigator.appVersion.substring(0,1) &amp;amp;amp;gt;= 4){
+		window.open('http://research.businessweek.com/ticker/ticker_main.asp','Ticker1','width=451,height=129,scrollbars=no,resizable=no,left=6,top=6');
+	}else if (navigator.appName == "Netscape" &amp;amp;amp;amp;&amp;amp;amp;amp; navigator.appVersion.substring(0,1) == 3){
+		window.open('http://research.businessweek.com/ticker/ticker_main.asp','Ticker1','width=454,height=129,scrollbars=no,resizable=no,left=6,top=6');
+	}else if (navigator.appName == "Netscape" &amp;amp;amp;amp;&amp;amp;amp;amp; navigator.appVersion.substring(0,1) &amp;amp;amp;gt;= 4){
+		window.open('http://research.businessweek.com/ticker/ticker_main.asp','Ticker1','width=451,height=128,scrollbars=no,resizable=no,left=6,top=6');
+	}else{
+		window.open('http://research.businessweek.com/ticker/ticker_main.asp');
+	}
+}
+
+//-->
+</script>
+<script >
+<!--
+
+function showGlossaryTerm(term) {
+	browserVer = parseInt(navigator.appVersion);
+	
+	if (navigator.appName == "Netscape" &amp;amp;amp;amp;&amp;amp;amp;amp; browserVer &amp;amp;amp;lt; 3) 
+	{
+		remote=window.open("http://bwnt.businessweek.com/Glossary/home.asp?Code="+term,"glossaryWindow","width=470,height=400");
+	}
+	else 
+	{
+		remote=window.open("http://bwnt.businessweek.com/Glossary/home.asp?Code="+term,"glossaryWindow","width=470,height=400,scrollbars=yes,toolbar=no,location=no,directories=no,status=no,menubar=yes,resizable=yes");
+	}
+
+	remote.focus();
+
+}
+
+function showTicker(symbol, channel) {
+	theURL = "http://host.businessweek.com/businessweek/Corporate_Snapshot.html?Symbol=" + symbol;
+	top.location = theURL;
+}
+
+//-->
+</script>
+<script >
+var isSubscriber = false; callPopup(); function callPopup () { if (document.cookie.indexOf ("BWPopCount") != -1) { isSubscriber = true; } else if (document.cookie.indexOf ("BWOLCookie") != -1) { isSubscriber = true; } else if (window.location.href.indexOf ("bwol") != -1) { isSubscriber = true; } else if (window.location.href.indexOf ("152.159") != -1) { isSubscriber = true; } else if (window.location.href.indexOf ("bwips") != -1) { isSubscriber = true; } else if (document.cookie.indexOf ("BWOLSessionCookie") != -1) { isSubscriber = true; } return isSubscriber; } bwDomains = new Array(); bwDomains[0] = "bwol"; bwDomains[1] = "businessweek.com"; bwDomains[2] = "www.mobshop.com"; bwDomains[3] = "www.bigcharts.com"; bwDomains[4] = "www.businessfinance.com"; bwDomains[5] = "businessweek.buyerszone.com"; bwDomains[6] = "businessweek.clickthings.com"; bwDomains[7] = "bw.pipe9.com"; bwDomains[8] = "businessweek.digitalwork.com"; bwDomains[9] = "www.elance.com"; bwDomains[10] = "www.calcbuilder.com"; bwDomains[11] = "www.financecenter.com"; bwDomains[12] = "businessweek.findlaw.com"; bwDomains[13] = "intraware.com"; bwDomains[14] = "www.ipo.com"; bwDomains[15] = "leadersonline.com"; bwDomains[16] = "businessweek.lycos.com"; bwDomains[17] = "www.morningstar.com"; bwDomains[18] = "personalwealth.com"; bwDomains[19] = "www.pl.com"; bwDomains[20] = "www.portablelife.com"; bwDomains[21] = "swz-businessweek.salary.com"; bwDomains[22] = "thomasregional.com"; bwDomains[23] = "www.thetrip.com"; bwDomains[24] = "www.vault.com"; bwDomains[25] = "monstermoving.com"; bwDomains[26] = "virtualrelo.com"; bwDomains[27] = "www.wetfeet.com"; bwDomains[28] = "www.businesssweek.telebase.com"; bwDomains[29] = "152.159.87.142"; bwDomains[30] = "152.159.87.143"; bwDomains[31] = "javascript:"; bwDomains[32] = "164.109.22.240"; bwDomains[33] = "164.109.22.208"; function setFriendly () { isSubscriber = true; } function doit (ev) { if (document.layers) { if (ev.target != "undefined") { var targetHref = ev.target.toString(); for (i=0; i
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+-1) return routeEvent(ev); } } function setFormsFriendly () { for (i=0; i
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+/ } else { if (document.layers) { window.captureEvents(Event.CLICK); window.onClick = doit; window.captureEvents(Event.UNLOAD); window.onUnload = winUnload; window.routeEvent(ev); window.releaseEvents(Event.LOAD); window.routeEvent(ev); } if (document.all) { window.onbeforeunload=winUnloadIE; document.onclick=doit; } } } if (callPopup()) { // } else { if (document.layers) { window.captureEvents(Event.LOAD); window.onLoad = setHandlers; } else if (document.all) { setHandlers(); } }
+</script>
+<link ></link>
+</head>
+<body  leftmargin="3">
+<!-- Investing Index Ads -->
+<!--open -ad box-->
+<table  TABID="06956" border="0" cellpadding="0" cellspacing="0" width="763">
+<tr >
+<td  valign="bottom" width="295">
+<!--open -register box-->
+<table  TABID="06955" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<img ></img>
+<br ></br>
+</td>
+<td  valign="bottom">
+<font  class="smalltext">
+<a  href="/register.htm">
+Register/Subscribe
+</a>
+<br ></br>
+<a  href="/index.html" target="_top">
+Home
+</a>
+<br ></br>
+</font>
+</td>
+</tr>
+</table>
+<!--close -register box-->
+</td>
+<td  align="right" valign="bottom" width="468">
+<font  color="#FFFFFF" size="-2">
+<script >
+<!--
+
+bannerParams = "page=index&amp;amp;amp;amp;chan=investing&amp;amp;amp;amp;pagepos=10&amp;amp;amp;amp;var="
+
+document.write('&amp;amp;amp;lt;NOLAYER&amp;amp;amp;gt;&amp;amp;amp;lt;IFRAME SRC="http://www.businessweek.com/html.ng/'+bannerParams+rnd+'?" width=468 height=60 frameborder=0 border=0 marginheight=0 marginwidth=0 vspace=0 scrolling=no&amp;amp;amp;gt;&amp;amp;amp;lt;A HREF="http://www.businessweek.com/html.ng/'+bannerParams+rnd+'?"&amp;amp;amp;gt;&amp;amp;amp;lt;IMG SRC="http://www.businessweek.com/html.ng/'+bannerParams+rnd+'?" border=0 width=468 height=60&amp;amp;amp;gt;&amp;amp;amp;lt;\/A&amp;amp;amp;gt;&amp;amp;amp;lt;\/IFRAME&amp;amp;amp;gt;&amp;amp;amp;lt;\/NOLAYER&amp;amp;amp;gt;&amp;amp;amp;lt;ILAYER id=banner visibility=hide width=468 height=60&amp;amp;amp;gt;&amp;amp;amp;lt;\/ILAYER&amp;amp;amp;gt;');
+
+//-->
+</script>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<a  href="http://www.businessweek.com/html.ng/page=index&chan=investing&pagepos=10&var=987654321?">
+<img ></img>
+</a>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+</font>
+</td>
+</tr>
+</table>
+<!--close -ad box-->
+<!-- Investing Index Ads -->
+<!-- Investing Header -->
+<script >
+<!--
+
+
+
+function getUrlSubstring (startsWith, endsWith) {
+
+	// get the position of the first string
+
+	startPosition = document.location.href.indexOf(startsWith);
+
+	
+
+	// if the string is found...	
+
+	if (startPosition != -1) {
+
+		// find the position of the second string starting after the first position
+
+		endPosition = document.location.href.indexOf(endsWith, startPosition);
+
+		// extract the substring between the two positions
+
+		returnString = document.location.href.substring(startPosition, endPosition);
+
+	} else { // if the string isn't found...
+
+		returnString = "";
+
+	}
+
+	
+
+	// return the substring
+
+	return returnString;
+
+}
+
+
+
+function readCookie (cookieName) {
+
+
+
+	raw_cookie = document.cookie;
+
+	
+
+	startPos = raw_cookie.indexOf(cookieName);
+
+	
+
+	if (startPos != -1) {
+
+	
+
+		startPos = raw_cookie.indexOf("=", startPos) + 1;
+
+		
+
+		endPos = raw_cookie.indexOf(";", startPos);
+
+		
+
+		if (endPos == -1) { endPos = raw_cookie.length }
+
+		
+
+		var cookieValue = raw_cookie.substring(startPos, endPos);
+
+		
+
+		return cookieValue
+
+	
+
+	} else {
+
+	
+
+		return "none";
+
+		
+
+	}
+
+}
+
+
+
+function cookieCheck () {
+
+	var subs_cookie = readCookie("subscriber");
+
+
+
+	if (subs_cookie == "yes") {
+
+	
+
+		top.location = "http://bwarchive.businessweek.com";
+
+		
+
+	} else if (subs_cookie == "no") {
+
+	
+
+		top.location = "/cgi-bin/redirect?url=%2Fpremium%2Fsubs_search.htm";
+
+		
+
+	} else {
+
+	
+
+		cookieSetter = window.open(OMTicket + '/cgi-bin/redirect?url=%2Fsearch%2Fin_page_remote.htm', 'in_page_remote', 'dependant=yes,directories=no,height=120,width=220,location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no');
+
+		
+
+	}
+
+}
+
+
+
+function optionAction (currSelect, popup) {
+
+
+
+	if (currSelect == "pastIssues") {
+
+		cookieCheck();
+
+		popup.selectedIndex = 0;
+
+	} else if (currSelect == "advanced") {
+
+		top.location = "/cgi-bin/redirect?url=%2Fsearch%2Fadvanced.htm";
+
+	} else if (currSelect == "null") {
+
+		popup.selectedIndex = 0;
+
+	} else {
+
+		popup.form.QueryText.focus();
+
+	}
+
+}
+
+
+
+function queryValid (currForm) {
+
+
+
+var popupValue = currForm.collname[currForm.collname.selectedIndex].value;
+
+	if (popupValue == "pastIssues" || popupValue == "advanced" || popupValue == "null") {
+
+		currForm.collname.selectedIndex = 0;
+
+		currForm.collname.focus();
+
+		return false;
+
+	} else {
+
+		if (currForm.elements['QueryText'].value == "") {
+
+			alert ("Please enter a search term");
+
+			currForm.elements['QueryText'].focus();
+
+			return false;
+
+		} else {
+
+			return true;
+
+		}
+
+	}
+
+}
+
+
+
+OMTicket = "";
+
+// get the macNumber
+
+OMTicket = getUrlSubstring("@@", "/");
+
+
+
+// if OMTicket has a value then pre-append '/'
+
+if (OMTicket != "" ) { OMTicket = "/" + OMTicket; }
+
+
+
+//-->
+</script>
+<table  TABID="06958" border="0" cellpadding="0" cellspacing="0" width="763">
+<tr >
+<td  align="left" valign="bottom">
+<table  TABID="06957" align="right" border="0" cellpadding="5" cellspacing="0">
+<tr >
+<form  target="_top">
+<td  name="action" type="hidden" value="FilterSearch">
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+</td>
+<td  align="left" valign="top">
+<font  class="smalltext" color="999966">
+Search
+</font>
+<br ></br>
+<nobr >
+<select >
+<option  value="site">
+THE SITE
+</option>
+<option  value="Magazine">
+BW Magazine
+</option>
+<option  value="Bschools">
+B-Schools
+</option>
+<option  value="careers">
+Careers
+</option>
+<option  value="daily6">
+Daily Briefing
+</option>
+<option  value="Ebiz">
+e.biz
+</option>
+<option  selected="selected" value="investor">
+Investing
+</option>
+<option  value="Sbiz">
+Small Business
+</option>
+<option  value="null">
+----------------
+</option>
+<option  value="pastIssues">
+Past Issues -&gt;
+</option>
+<option  value="advanced">
+Advanced Search -&gt;
+</option>
+</select>
+<input ></input>
+<input ></input>
+</nobr>
+</td>
+</form>
+</tr>
+</table>
+<a  href="/index.html" target="_top">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!-- channels -->
+<map  name="channels">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<img ></img>
+<!-- End Investing Header -->
+<a  name="top"></a>
+<table  TABID="06959" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  align="left" valign="top" width="130">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="486">
+<font  class="smalltextcaps">
+Thursday, May 17, 2001
+<br ></br>
+</font>
+</td>
+<td >
+<font  class="smalltext">
+<img ></img>
+=Subscribers Only
+</font>
+<br ></br>
+<br ></br>
+</td>
+</tr>
+</table>
+<table  TABID="06967" border="0" cellpadding="0" cellspacing="0" width="763">
+<tr >
+<td  align="left" valign="top" width="120">
+<!-- Navigation Bar -->
+<!--open -left padding-->
+<table  TABID="06960" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<img ></img>
+</td>
+<td  valign="top">
+<a  href="/investor/" target="_top">
+<img ></img>
+</a>
+<br ></br>
+<!--spacer-->
+<img ></img>
+<br ></br>
+<font  class="smalltext">
+<a  href="/investor/markets.html" target="_top">
+Markets
+</a>
+<br ></br>
+<a  href="/investor/stocks.html" target="_top">
+Stocks
+</a>
+<br ></br>
+<a  href="/investor/funds.html" target="_top">
+Funds
+</a>
+<br ></br>
+<a  href="/investor/sectors.html" target="_top">
+Sectors
+</a>
+<br ></br>
+<a  href="/investor/economybonds.html" target="_top">
+Economy &amp; Bonds
+</a>
+<br ></br>
+<img ></img>
+<br ></br>
+<a  href="/investor/list/mcoltoc01.htm" target="_top">
+Investing Columns
+</a>
+<br ></br>
+<a  href="/investor/list/recent_katie01.htm" target="_top">
+Ask Katie
+</a>
+<br ></br>
+<a  a01="#DEFAULT" href="javascript:" showglossaryterm="#DEFAULT" void="#DEFAULT">
+Glossary
+</a>
+</font>
+<!--spacer-->
+<br ></br>
+<img ></img>
+<br ></br>
+</td>
+</tr>
+</table>
+<!--close -left padding-->
+<!-- End Navigation Bar -->
+<!-- supplemental -->
+<map  name="supplemental">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<img ></img>
+<font  color="#FFFFFF" size="-2">
+<script >
+<!--
+
+
+
+sponsorAdParams = "page=investor&amp;amp;amp;amp;bwframe=investfr&amp;amp;amp;amp;pagepos=4&amp;amp;amp;amp;var="
+
+
+
+document.write('&amp;amp;amp;lt;NOLAYER&amp;amp;amp;gt;&amp;amp;amp;lt;IFRAME SRC="http://www.businessweek.com/html.ng/'+sponsorAdParams+rnd+'?" width=120 height=90 frameborder=0 border=0 marginheight=0 marginwidth=0 vspace=0 scrolling=no&amp;amp;amp;gt;&amp;amp;amp;lt;A HREF="http://www.businessweek.com/html.ng/'+sponsorAdParams+rnd+'?"&amp;amp;amp;gt;&amp;amp;amp;lt;IMG SRC="http://www.businessweek.com/html.ng/'+sponsorAdParams+rnd+'?" border=0 width=120 height=90&amp;amp;amp;gt;&amp;amp;amp;lt;\/A&amp;amp;amp;gt;&amp;amp;amp;lt;\/IFRAME&amp;amp;amp;gt;&amp;amp;amp;lt;\/NOLAYER&amp;amp;amp;gt;&amp;amp;amp;lt;ILAYER id=sponsorAd visibility=hide width=120 height=90&amp;amp;amp;gt;&amp;amp;amp;lt;\/ILAYER&amp;amp;amp;gt;');
+
+
+
+//-->
+</script>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<a  href="http://www.businessweek.com/html.ng/page=investor&bwframe=investfr&pagepos=4&var=987654321?">
+<img ></img>
+</a>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+</font>
+<img ></img>
+<br ></br>
+<table  TABID="06961" border="0" cellpadding="5" cellspacing="0" width="99%">
+<tr >
+<td  align="left" valign="top" width="109">
+<font  class="smalltext">
+<a  href="/register.htm">
+Subscribe to BW
+</a>
+<br ></br>
+<a  href="/contact.htm">
+Contact Us
+</a>
+<br ></br>
+<a  href="/advertising.htm">
+Advertising
+</a>
+<br ></br>
+<a  href="http://conferences.businessweek.com" target="_new">
+Conferences
+</a>
+<br ></br>
+<a  href="/reprints.htm">
+Permissions &amp; Reprints
+</a>
+<br ></br>
+<a  href="/services/services.htm">
+Services
+</a>
+<br ></br>
+<a  href="/marketplace.htm">
+Marketplace
+</a>
+<br ></br>
+</font>
+</td>
+</tr>
+</table>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="318">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td >
+TREASURY MARKET WATCH
+<font  class="smalltext">
+? From S&amp;P
+</font>
+<br ></br>
+<font  class="bighed">
+<a  href="/investor/content/may2001/pi20010516_318.htm">
+Treasuries Rise on Benign Data
+</a>
+</font>
+<br ></br>
+<font  class="bigtext">
+A lower-than-expected rise in the Consumer Price Index suggested inflation remains calm, spurring Treasuries
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+<font  class="smalltextcaps">
+ECONOMIC INSIGHT
+</font>
+<font  class="smalltext">
+? From S&amp;P
+</font>
+<br ></br>
+<font  class="secondhed">
+<a  href="/investor/content/may2001/pi20010515_623.htm">
+The Door Is Still Open
+</a>
+</font>
+<br ></br>
+<font  class="secondtext">
+Yes, there may be more easings after the May 15 move. But the Fed is holding its policy cards close to the vest
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+<font  class="smalltextcaps">
+ECONOMIC BRIEF
+</font>
+<font  class="smalltext">
+? From S&amp;P
+</font>
+<br ></br>
+<font  class="hed">
+<a  href="/investor/content/may2001/pi20010515_791.htm">
+The End of the Line?
+</a>
+</font>
+<br ></br>
+<font  class="itext">
+Could the current string of rate cuts be nearing an end? The markets are beginning to think so
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+<!--Unknown Stories(Stories)-->
+<img ></img>
+<br ></br>
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td >
+CREDIT WEEK FOCUS
+<font  class="smalltext">
+? From S&amp;P
+</font>
+<br ></br>
+<font  class="hed">
+<a  href="/investor/content/apr2001/pi20010425_986.htm">
+Power Woes Lead to California Downgrade
+</a>
+</font>
+<br ></br>
+<font  class="itext">
+The state's credit rating was cut as the costs of its electrical power crisis mount
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+<font  class="smalltextcaps">
+CREDIT WEEK FOCUS
+</font>
+<font  class="smalltext">
+? From S&amp;P
+</font>
+<br ></br>
+<font  class="hed">
+<a  href="/investor/content/apr2001/pi20010424_086.htm">
+A Bad Start to 2001
+</a>
+</font>
+<br ></br>
+<font  class="itext">
+The default experience of the first quarter already approaches the dismal performance of recessionary 1991
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+<font  class="smalltextcaps">
+CREDIT WEEK FOCUS
+</font>
+<font  class="smalltext">
+? From S&amp;P
+</font>
+<br ></br>
+<font  class="hed">
+<a  href="/investor/content/apr2001/pi20010417_293.htm">
+Alliance Gaming Raised as Winning Streak Continues
+</a>
+</font>
+<br ></br>
+<font  class="itext">
+The upgrade comes amid a meaningful turnaround for the casino operator
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+<table  TABID="06962" background="http://www.businessweek.com/common_images/pi_bg_investools.gif" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td >
+<img ></img>
+<br ></br>
+</td>
+</tr>
+</table>
+<img ></img>
+<br ></br>
+<font  class="itext">
+<a  href="/cgi-bin/register/ts_auth.cgi?AUTH=1&WHERE=portfolio_quotes&Symbol=&Validate=Submit+Query" target="_top">
+<b >
+Portfolio Tracker
+</b>
+</a>
+<br ></br>
+Follow your investments. Get Standard &amp; Poor's Fair Value price and 75 STARS rankings
+<br ></br>
+<br ></br>
+<a  href="/investor/nonips_content/financenter.htm">
+<b >
+Personal Finance
+</b>
+</a>
+<br ></br>
+Make sense of your finances - calculate, compare, learn
+<br ></br>
+<br ></br>
+<a  href="http://prosearch.businessweek.com/businessweek/general_free_search.html?" target="_top">
+<b >
+Stock Screeners
+</b>
+</a>
+<br ></br>
+Use our three screeners to find the equities that suit your investing needs
+<br ></br>
+<br ></br>
+<a  href="/mutualfunds/mutfunds/scorebrd/index.html" target="_top">
+<b >
+Mutual Fund Scoreboard
+</b>
+</a>
+<br ></br>
+How's your fund doing? Find out with BW's exclusive risk-adjusted ratings
+<br ></br>
+<br ></br>
+<a  href="/common_frames/pi.htm?/2000/00_38/b3699142.htm">
+<b >
+BW's Disclosure Survey
+</b>
+</a>
+<br ></br>
+Our exclusive survey of corporate disclosure practices
+<br ></br>
+<br ></br>
+<a  href="/common_frames/pi.htm?/investor/barkertools/gchooser.htm">
+<b >
+Capital Gains Calculator
+</b>
+</a>
+<br ></br>
+A tool to help you decide when to sell
+</font>
+<br ></br>
+<img ></img>
+<br ></br>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="147">
+<img ></img>
+<img ></img>
+<br ></br>
+<table  TABID="06963" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="Interest Rates" width="147">
+<tr >
+<td  valign="bottom">
+<font  class="smalltext" color="#000000">
+Key Rates
+</font>
+</td>
+<td  align="right" valign="bottom">
+<font  class="smalltext" color="#000000">
+May 17
+</font>
+</td>
+<td  align="right" valign="bottom">
+<font  class="smalltext" color="#000000">
+Week Ago
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<font  class="smalltext" color="#000000">
+Money Mkt
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+4.58%
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+4.72%
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<font  class="smalltext" color="#000000">
+90 day T.Bills
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+3.48%
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+3.62%
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<font  class="smalltext" color="#000000">
+5-Yr T.Notes
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+5.01%
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+4.73%
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<font  class="smalltext" color="#000000">
+10-Yr T.Notes
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+5.47%
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+5.27%
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<font  class="smalltext" color="#000000">
+30-Yr Bonds
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+5.82%
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+5.74%
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<font  class="smalltext" color="#000000">
+Fed Funds
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+4.43%
+</font>
+</td>
+<td  align="right">
+<font  class="smalltext" color="#000000">
+4.51%
+</font>
+</td>
+</tr>
+</table>
+<br ></br>
+<img ></img>
+<br ></br>
+<img ></img>
+<br ></br>
+<font  class="itext">
+<b >
+<a  href="/common_frames/pi2.htm?http://hosting.standardandpoors.com/cgi-bin/WebObjects/SNP?action=gotoDocumentPage&location=research/economy/EconomicCalendar&tracking=BWT&pc=BWT&auth=USER">
+Calendar of Events
+</a>
+</b>
+<br ></br>
+This month's economic releases, and S&amp;P's predictions on the numbers
+<br ></br>
+<br ></br>
+<b >
+<a  href="/investor/dntnum.htm">
+The Week Ahead
+</a>
+</b>
+<br ></br>
+Business Week Magazine's Jim Cooper discusses this week's upcoming releases.
+<br ></br>
+<img ></img>
+<br ></br>
+<!-- investing video -->
+<a  href="/mediacenter/index.html" target="_top">
+<img ></img>
+</a>
+<font  class="itext">
+<a  href="/common_frames/vv.htm?/mediacenter/ram/personal_finance/atergesen051001.htm">
+<img ></img>
+<br ></br>
+<b >
+Keeping Covered
+</b>
+</a>
+<br ></br>
+Covered-call options can be a rewarding strategy in times of market calm, says BW's Anne Tergesen
+</font>
+<br ></br>
+<br ></br>
+<font  class="smalltext">
+?
+<a  href="/mediacenter/index.html" target="_top">
+More Video Views
+</a>
+<br ></br>
+<br ></br>
+</font>
+<font  class="smalltext">
+?
+<a  href="http://play.rbn.com/?url=abcnews/channel/g2demand/audio/anq2k_busweek.rm">
+<b >
+Hourly Market Reports
+</b>
+</a>
+</font>
+<br ></br>
+<font  class="smalltext">
+Hear market updates from
+<i >
+BusinessWeek
+</i>
+'s Ray Hoffman
+<br ></br>
+</font>
+<br ></br>
+</font>
+</td>
+<td  width="11">
+<img ></img>
+</td>
+<td  valign="top">
+<!-- Market Info -->
+</td>
+</tr>
+<tr >
+<td >
+self.name = 'mainwindow'; function showZipper() { if (navigator.appName == "Microsoft Internet Explorer" &amp;&amp; navigator.appVersion.substring(0,1) &gt;= 4){ window.open('http://research.businessweek.com/ticker/ticker_main.asp','Ticker1','width=451,height=129,scrollbars=no,resizable=no,left=6,top=6'); }else if (navigator.appName == "Netscape" &amp;&amp; navigator.appVersion.substring(0,1) == 3){ window.open('http://research.businessweek.com/ticker/ticker_main.asp','Ticker1','width=454,height=129,scrollbars=no,resizable=no,left=6,top=6'); }else if (navigator.appName == "Netscape" &amp;&amp; navigator.appVersion.substring(0,1) &gt;= 4){ window.open('http://research.businessweek.com/ticker/ticker_main.asp','Ticker1','width=451,height=128,scrollbars=no,resizable=no,left=6,top=6'); }else{ window.open('http://research.businessweek.com/ticker/ticker_main.asp'); } } //--&gt;
+<form  action="http://host.businessweek.com/businessweek/Corporate_Snapshot.html?" target="_top">
+<table  TABID="06964" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="MARKET INFO" width="147">
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr  align="left" class="smalltext" nowrap="nowrap">
+<td >
+<a  href="http://host.businessweek.com/businessweek/Corporate_Snapshot.html?Symbol=.DJI&Timespan=260" target="_top">
+<font  class="smalltext">
+DJIA
+</font>
+</a>
+</td>
+<td  align="right" class="smalltext" nowrap="nowrap">
+11309.22
+</td>
+<td  align="right" class="smalltext" nowrap="nowrap">
+<font  color="#339900">
++93.30
+</font>
+</td>
+</tr>
+<tr  bgcolor="#999966">
+<td  colspan="3" height="1">
+<img ></img>
+</td>
+</tr>
+<tr  align="left" class="smalltext" nowrap="nowrap">
+<td >
+<a  href="http://host.businessweek.com/businessweek/Corporate_Snapshot.html?Symbol=NASD&Timespan=260" target="_top">
+<font  class="smalltext">
+Nasdaq
+</font>
+</a>
+</td>
+<td  align="right" class="smalltext" nowrap="nowrap">
+2212.76
+</td>
+<td  align="right" class="smalltext" nowrap="nowrap">
+<font  color="#339900">
++46.32
+</font>
+</td>
+</tr>
+<tr  bgcolor="#999966">
+<td  colspan="3" height="1">
+<img ></img>
+</td>
+</tr>
+<tr  align="left" class="smalltext" nowrap="nowrap">
+<td >
+<a  href="http://host.businessweek.com/businessweek/Corporate_Snapshot.html?Symbol=SPX&Timespan=260" target="_top">
+<font  class="smalltext">
+S&amp;P 500
+</font>
+</a>
+</td>
+<td  align="right" class="smalltext" nowrap="nowrap">
+1294.91
+</td>
+<td  align="right" class="smalltext" nowrap="nowrap">
+<font  color="#339900">
++9.92
+</font>
+</td>
+</tr>
+<tr  bgcolor="#999966">
+<td  colspan="3" height="1">
+<img ></img>
+</td>
+</tr>
+<tr  align="left" class="smalltext" nowrap="nowrap">
+<td >
+<a  href="http://host.businessweek.com/businessweek/Corporate_Snapshot.html?Symbol=TYX.X&Timespan=260" target="_top">
+<font  class="smalltext">
+30 yr Bond
+</font>
+</a>
+</td>
+<td  align="right" class="smalltext" nowrap="nowrap">
+5.82
+</td>
+<td  align="right" class="smalltext" nowrap="nowrap">
+<font  color="#CC0033">
+-0.05
+</font>
+</td>
+</tr>
+<tr  bgcolor="#999966">
+<td  colspan="3" height="1">
+<img ></img>
+</td>
+</tr>
+</table>
+<img ></img>
+<br ></br>
+<table  TABID="06965" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  class="smalltext" nowrap="nowrap">
+<a  href="http://www.businessweek.com/cgi-bin/register/ts_auth.cgi?AUTH=1&WHERE=portfolio_quotes&Symbol=&Validate=Submit+Query" target="_top">
+Create / Check Portfolio
+</a>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  class="smalltext" nowrap="nowrap">
+<a  href="javascript:showZipper();">
+Launch Popup Ticker
+</a>
+<br ></br>
+</td>
+</tr>
+</table>
+<img ></img>
+<br ></br>
+<font  class="smalltext">
+Stock Lookup
+</font>
+<br ></br>
+<font  class="text">
+<script >
+<!--
+var isNav, isIE
+if (navigator.appName == "Netscape") {
+	if (parseInt(navigator.appVersion) &amp;amp;amp;lt; 5) {
+		isNav = true
+	}
+} else {
+		isIE = true
+}
+if (isNav &amp;amp;amp;amp;&amp;amp;amp;amp; !isIE) {
+if (navigator.appVersion.indexOf ('Mac') == -1) {
+document.write('&amp;amp;amp;lt;INPUT TYPE=text NAME=Symbol SIZE=7 MAXLENGTH=30&amp;amp;amp;gt;');
+} else {
+document.write('&amp;amp;amp;lt;INPUT TYPE=text NAME=Symbol SIZE=17 MAXLENGTH=30&amp;amp;amp;gt;');
+}
+}
+if (!isNav &amp;amp;amp;amp;&amp;amp;amp;amp; isIE) {
+document.write('&amp;amp;amp;lt;INPUT TYPE=text NAME=Symbol SIZE=14 MAXLENGTH=30&amp;amp;amp;gt;');
+}
+if (!isNav &amp;amp;amp;amp;&amp;amp;amp;amp; !isIE) {
+document.write('&amp;amp;amp;lt;INPUT TYPE=text NAME=Symbol SIZE=12 MAXLENGTH=30&amp;amp;amp;gt;');
+}
+//-->
+</script>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<input ></input>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+</font>
+<input ></input>
+<br ></br>
+<font  class="smalltext">
+Enter name or ticker
+</font>
+</form>
+<!-- Marketplace -->
+<!--open id1-->
+<table  TABID="06966" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="147">
+<tr >
+<td  bgcolor="#B5B5B5" colspan="3">
+<img ></img>
+<br ></br>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#B5B5B5" valign="top" width="1">
+<img ></img>
+</td>
+<td >
+<img ></img>
+<br ></br>
+</td>
+<td  align="left" bgcolor="#ffffff" valign="top" width="146">
+<!--continue id1-->
+<img ></img>
+<br ></br>
+<font  color="#FFFFFF" size="-2">
+<script >
+<!--
+
+skyParams = "businessweek.financial/;tile=4;pos=4;ord="
+
+document.write('&amp;amp;amp;lt;NOLAYER&amp;amp;amp;gt;&amp;amp;amp;lt;IFRAME SRC="http://ad.doubleclick.net/adi/'+skyParams+rnd+'?" width=140 height=800 frameborder=0 border=0 marginheight=0 marginwidth=0 vspace=0 scrolling=no&amp;amp;amp;gt;&amp;amp;amp;lt;A HREF="http://ad.doubleclick.net/adi/'+skyParams+rnd+'?"&amp;amp;amp;gt;&amp;amp;amp;lt;IMG SRC="http://ad.doubleclick.net/adi/'+skyParams+rnd+'?" width=140 height=800 border=0&amp;amp;amp;gt;&amp;amp;amp;lt;\/A&amp;amp;amp;gt;&amp;amp;amp;lt;\/IFRAME&amp;amp;amp;gt;&amp;amp;amp;lt;\/NOLAYER&amp;amp;amp;gt;&amp;amp;amp;lt;ILAYER id=sky visibility=hide width=140 height=800&amp;amp;amp;gt;&amp;amp;amp;lt;\/ILAYER&amp;amp;amp;gt;');
+
+//-->
+</script>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<a  href="http://ad.doubleclick.net/adi/businessweek.financial/;tile=4;pos=4;ord=987654321?">
+<img ></img>
+</a>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+<noscript ></noscript>
+</font>
+</td>
+</tr>
+</table>
+<br ></br>
+<img ></img>
+<br ></br>
+</td>
+</tr>
+</table>
+<br ></br>
+<br ></br>
+<div  class="footer">
+<img ></img>
+<table  TABID="06968" border="0" cellpadding="5" cellspacing="0" width="763">
+<tr >
+<td  align="left" valign="top">
+<a  href="http://www.mcgraw-hill.com" target="_top">
+<img ></img>
+</a>
+<font  class="copyright">
+Copyright 2001 , by The McGraw-Hill Companies Inc. All rights reserved.
+<br ></br>
+<a  href="/cgi-bin/redirect?url=%2Fcopyrt.htm" target="_top">
+Terms of Use
+</a>
+|
+<a  href="/cgi-bin/redirect?url=%2Fprivacy.htm" target="_top">
+Privacy Policy
+</a>
+<br ></br>
+<br ></br>
+</font>
+</td>
+</tr>
+</table>
+</div>
+<script >
+if (!window.epulse_content_group) { window.epulse_content_group="cg1=investing,cg2=general"; }
+</script>
+<script ></script>
+<script >
+<!--
+
+
+
+if (document.banner) {
+
+
+
+document.write ('&amp;amp;amp;lt;LAYER SRC="http://www.businessweek.com/html.ng/'+bannerParams+rnd+'?" visibility="hide" onload="moveToAbsolute(banner.pageX, banner.pageY); clip.height=60; clip.width=468; visibility=\'show\';"&amp;amp;amp;gt;&amp;amp;amp;lt;\/LAYER&amp;amp;amp;gt;');
+
+
+
+}
+
+
+
+if (document.sponsorAd) {
+
+
+
+document.write ('&amp;amp;amp;lt;LAYER SRC="http://www.businessweek.com/html.ng/'+sponsorAdParams+rnd+'?" visibility="hide" onload="moveToAbsolute(sponsorAd.pageX, sponsorAd.pageY); clip.height=90; clip.width=120; visibility=\'show\';"&amp;amp;amp;gt;&amp;amp;amp;lt;\/LAYER&amp;amp;amp;gt;');
+
+
+
+}
+
+
+
+if (document.topAd1) {
+
+
+
+document.write ('&amp;amp;amp;lt;LAYER SRC="http://www.businessweek.com/html.ng/'+topAd1Params+rnd+'?" visibility="hide" onload="moveToAbsolute(topAd1.pageX, topAd1.pageY); clip.height=60; clip.width=234; visibility=\'show\';"&amp;amp;amp;gt;&amp;amp;amp;lt;\/LAYER&amp;amp;amp;gt;');
+
+
+
+}
+
+
+
+if (document.topAd2) {
+
+
+
+document.write ('&amp;amp;amp;lt;LAYER SRC="http://www.businessweek.com/html.ng/'+topAd2Params+rnd+'?" visibility="hide" onload="moveToAbsolute(topAd2.pageX, topAd2.pageY); clip.height=60; clip.width=234; visibility=\'show\';"&amp;amp;amp;gt;&amp;amp;amp;lt;\/LAYER&amp;amp;amp;gt;');
+
+
+
+}
+
+
+
+if (document.infoAd) {
+
+
+
+document.write ('&amp;amp;amp;lt;LAYER SRC="http://www.businessweek.com/html.ng/'+infoAdParams+rnd+'?" visibility="hide" onload="moveToAbsolute(infoAd.pageX, infoAd.pageY); clip.height=31; clip.width=88; visibility=\'show\';"&amp;amp;amp;gt;&amp;amp;amp;lt;\/LAYER&amp;amp;amp;gt;');
+
+
+
+}
+
+
+
+if (document.marketplace1) {
+
+
+
+document.write ('&amp;amp;amp;lt;LAYER SRC="http://ad.doubleclick.net/adl/'+marketplace1Params+rnd+'?" visibility="hide" onload="moveToAbsolute(marketplace1.pageX, marketplace1.pageY); clip.height=300; clip.width=125; visibility=\'show\';"&amp;amp;amp;gt;&amp;amp;amp;lt;\/LAYER&amp;amp;amp;gt;');
+
+
+
+}
+
+
+
+if (document.sky) {
+
+
+
+document.write ('&amp;amp;amp;lt;LAYER SRC="http://ad.doubleclick.net/adl/'+skyParams+rnd+'?" visibility="hide" onload="moveToAbsolute(sky.pageX, sky.pageY); clip.height=800; clip.width=140; visibility=\'show\';"&amp;amp;amp;gt;&amp;amp;amp;lt;\/LAYER&amp;amp;amp;gt;');
+
+
+
+}
+
+
+
+//-->
+</script>
+</body>
+</html>

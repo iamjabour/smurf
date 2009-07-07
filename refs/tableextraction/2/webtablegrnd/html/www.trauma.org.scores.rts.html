@@ -1,0 +1,950 @@
+<html >
+<!-- #BeginTemplate "/Templates/newbase.dwt" -->
+<head >
+<meta ></meta>
+<!-- #BeginEditable "dockeywords" -->
+<meta ></meta>
+<!-- #EndEditable -->
+<!-- #BeginEditable "docdescription" -->
+<meta ></meta>
+<!-- #EndEditable -->
+<!-- #BeginEditable "doctitle" -->
+<title >
+TRAUMA.ORG: Trauma Scoring: Revised Trauma Score
+</title>
+<!-- #EndEditable -->
+<style  type="text/css">
+<!--
+.bodytext {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; font-weight: normal; color: #333333}
+.boldtext {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; font-weight: bold; color: #333333}
+.subhead01 {  font-size: 14pt; font-style: normal; font-weight: normal; color: #333399; font-family: Arial, Helvetica, sans-serif}
+.subhead02 {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #330099; text-decoration: none}
+.subhead03 {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-style: italic; font-weight: bold; color: #6666CC}
+.tinytext {  font-family: Arial, Helvetica, sans-serif; font-size: small; font-weight: normal; color: #000000}
+.whitetext {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; font-weight: bold; color: #000066; text-decoration: none}
+.reftext {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; font-weight: normal; color: #333333}
+.menu {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; font-weight: bold; text-decoration: none}
+-->
+<!-- #BeginEditable "docstyles" -->
+<!-- #EndEditable -->
+</style>
+<!-- #BeginEditable "docscripts" -->
+<script >
+<!--//
+
+function open_window(url) {
+mywin = window.open(url,"rtswin",'toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=0,width=180,height=270');
+}
+
+function ValidateInput(checkVal){
+        len = checkVal.length;
+        for (i = 0; i&amp;amp;amp;lt;len; i++) {
+        if (!((checkVal.substring(i, i+1)=="0") ||
+                (checkVal.substring(i,i+1)=="1") ||
+                (checkVal.substring(i,i+1)=="2") ||
+                (checkVal.substring(i,i+1)=="3") ||
+                (checkVal.substring(i,i+1)=="4") ||
+                (checkVal.substring(i,i+1)=="5") ||
+                (checkVal.substring(i,i+1)=="6") ||
+                (checkVal.substring(i,i+1)=="7") ||
+                (checkVal.substring(i,i+1)=="8") ||
+                (checkVal.substring(i,i+1)=="9") ||
+                (checkVal.substring(i,i+1)=="."))) {
+                errorMsg = "You have entered an invalid number. Please enter a new amount and try again.";
+                        return true;
+                }
+        }
+        if (!((checkVal &amp;amp;amp;gt;= 0) &amp;amp;amp;amp; (checkVal &amp;amp;amp;lt; 300))) {
+                errorMsg = "Numbers way out of range";
+                return true;
+        } else {
+        return false;
+        }
+}
+
+
+function doStuff(form)  {
+
+
+var rts = 0;
+var rr = document.rtscalc.resprate.value;
+var sbp = document.rtscalc.sysbp.value;
+var gcs = document.rtscalc.coma.value;
+var rri = 0;
+var sbpi = 0;
+var gcsi = 0;
+
+
+        if (ValidateInput(rr)) {
+            window.alert(errorMsg);
+                distance = 0;
+                }
+
+        if (ValidateInput(sbp)) {
+            window.alert(errorMsg);
+                distance = 0;
+                }
+
+        if (ValidateInput(gcs)) {
+            window.alert(errorMsg);
+                distance = 0;
+                }
+
+		if (gcs == 3) gcsi = 0;
+		else if (gcs &amp;amp;amp;gt;= 4 &amp;amp;amp;amp;&amp;amp;amp;amp; gcs &amp;amp;amp;lt;= 5) gcsi = 1;
+		else if (gcs &amp;amp;amp;gt;= 6 &amp;amp;amp;amp;&amp;amp;amp;amp; gcs &amp;amp;amp;lt;= 8) gcsi = 2;
+		else if (gcs &amp;amp;amp;gt;= 9 &amp;amp;amp;amp;&amp;amp;amp;amp; gcs &amp;amp;amp;lt;= 12) gcsi = 3;
+		else if (gcs &amp;amp;amp;gt;= 12 &amp;amp;amp;amp;&amp;amp;amp;amp; gcs &amp;amp;amp;lt;= 15) gcsi = 4;
+		else alert('Glasgow Coma Score has values 3-15');
+
+		if (rr &amp;amp;amp;gt;= 10 &amp;amp;amp;amp;&amp;amp;amp;amp; rr &amp;amp;amp;lt;= 29) rri = 4;
+		else if (rr &amp;amp;amp;gt;= 30 &amp;amp;amp;amp;&amp;amp;amp;amp; rr &amp;amp;amp;lt;=80) rri = 3;
+		else if (rr &amp;amp;amp;gt;= 6 &amp;amp;amp;amp;&amp;amp;amp;amp; rr &amp;amp;amp;lt;= 9) rri = 2;
+		else if (rr &amp;amp;amp;gt;= 1 &amp;amp;amp;amp;&amp;amp;amp;amp; rr &amp;amp;amp;lt;= 5) rri = 1;
+		else if (rr == 0) rri = 0;
+		else alert('Respiratory rate invalid');
+
+		if (sbp &amp;amp;amp;gt;= 90 &amp;amp;amp;amp;&amp;amp;amp;amp; sbp &amp;amp;amp;lt;= 300) sbpi = 4;
+		else if (sbp &amp;amp;amp;gt;= 76 &amp;amp;amp;amp;&amp;amp;amp;amp; sbp &amp;amp;amp;lt;= 89) sbpi = 3;
+		else if (sbp &amp;amp;amp;gt;= 50 &amp;amp;amp;amp;&amp;amp;amp;amp; sbp &amp;amp;amp;lt;= 75) sbpi = 2;
+		else if (sbp &amp;amp;amp;gt;= 1 &amp;amp;amp;amp;&amp;amp;amp;amp; sbp &amp;amp;amp;lt;= 49) sbpi = 1;
+		else if (sbp == 0) sbpi = 0;
+		else alert('Systolic Blood Pressure Invalid');
+
+		rts = sbpi*0.7326 + rri*0.2908 + gcsi*0.9368;
+
+
+        document.rtscalc.rtsscore.value = (Math.round(1000 * rts)/1000);
+  }
+
+
+
+//-->
+</script>
+<!-- #EndEditable -->
+</head>
+<body  alink="#000000" bgcolor="#FFFFFF" link="#000000" text="#333333" vlink="#000000">
+<table  TABID="13302" height="100%">
+<tr >
+<td  background="../images/titlebarback.gif">
+<a  href="../index.html">
+<img ></img>
+</a>
+</td>
+<td  background="../images/titlebarback.gif" width="812">
+<div  align="right">
+<a  href="../index.html">
+<img ></img>
+</a>
+</div>
+</td>
+</tr>
+<tr >
+<td  align="left" bgcolor="#CCCCFF" height="100%" valign="top" width="178">
+<table  TABID="13298" valign="top">
+<tr  valign="top">
+<td  height="37" valign="top">
+<img ></img>
+<map  name="Map">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</td>
+</tr>
+<tr  valign="top">
+<td  height="37" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr  valign="top">
+<td  background="../images/relatedmid.gif" valign="top">
+<!-- #BeginEditable "pointers" -->
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<img ></img>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="whitetext">
+TRAUMA SCORING
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+<form  name="rtscalc">
+<table  TABID="13297" bgcolor="DDDDFF" border="0" cellpadding="4" cellspacing="0">
+<tr >
+<td  align="center" colspan="2">
+<a  href="http://www.trauma.org">
+<img ></img>
+</a>
+<br ></br>
+<a  href="http://www.trauma.org/scores/rts.html">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="right" width="65%">
+<font  arial="#DEFAULT" color="#400080" face="geneva," helvetica="#DEFAULT" size="2">
+Systolic BP:
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  arial="#DEFAULT" color="#400080" face="geneva," helvetica="#DEFAULT" size="2">
+Resp. Rate:
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<font  arial="#DEFAULT" color="#400080" face="geneva," helvetica="#DEFAULT" size="2">
+Coma Score:
+</font>
+</td>
+<td >
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  align="center" colspan="2">
+<font  arial="#DEFAULT" color="#400080" face="geneva," helvetica="#DEFAULT" size="2">
+<input ></input>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" colspan="2">
+<font  arial="#DEFAULT" color="#400080" face="geneva," helvetica="#DEFAULT" size="2">
+<b >
+RTS:
+</b>
+<br ></br>
+</font>
+<input ></input>
+</td>
+</tr>
+</table>
+</form>
+<p ></p>
+<!-- #EndEditable -->
+</td>
+</tr>
+<tr  valign="top">
+<td  valign="top">
+<img ></img>
+</td>
+</tr>
+<tr  height="*" valign="top">
+<td  valign="top"></td>
+</tr>
+</table>
+<p  align="center"></p>
+</td>
+<td  align="left" bgcolor="#FFFFFF" valign="top">
+<table  TABID="13299" bgcolor="#FFFFFF" height="40">
+<tr  align="center" bgcolor="#FFFFFF" valign="top">
+<td >
+<div  align="right">
+<!-- #BeginEditable "sectionhead" -->
+<img ></img>
+<!-- #EndEditable -->
+</div>
+</td>
+</tr>
+</table>
+<!-- #BeginEditable "bodytext" -->
+<table  TABID="13301" border="0" cellpadding="15" cellspacing="0">
+<tr >
+<td  valign="top">
+<center ></center>
+<p ></p>
+<center >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Revised Trauma Score
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</center>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+The Revised Trauma Score is a physiological scoring system, with high inter-rater reliability and demonstrated accurracy in predictng death. It is scored from the first set of data obtained on the patient, and consists of
+<a  href="gcs.html">
+Glasgow Coma Scale
+</a>
+, Systolic Blood Pressure and Respiratory Rate.
+</p>
+<p ></p>
+<center >
+<table  TABID="13300" border="0" cellpadding="5" cellspacing="0" genuinetable="yes">
+<tr  bgcolor="#999999">
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<strong >
+Glasgow Coma Scale
+<br ></br>
+(GCS)
+</strong>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<strong >
+Systolic Blood Pressure
+<br ></br>
+(SBP)
+</strong>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<strong >
+Respiratory Rate
+<br ></br>
+(RR)
+</strong>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="top">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<strong >
+Coded Value
+</strong>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+13-15
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+&gt;89
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+10-29
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<strong >
+4
+</strong>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+9-12
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+76-89
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+&gt;29
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<strong >
+3
+</strong>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+6-8
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+50-75
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+6-9
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<strong >
+2
+</strong>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+4-5
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+1-49
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+1-5
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<strong >
+1
+</strong>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+3
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+0
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+0
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" valign="center">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<strong >
+0
+</strong>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+</table>
+</center>
+<p ></p>
+<center >
+<p ></p>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<strong >
+RTS = 0.9368 GCS + 0.7326 SBP + 0.2908 RR
+</strong>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+</center>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Values for the RTS are in the range 0 to 7.8408. The RTS is heavily weighted towards the Glasgow Coma Scale to compensate for major head injury without multisystem injury or major physiological changes. A threshold of RTS 4 has been proposed to identify those patients who should be treated in a trauma centre, although this value may be somewhat low.
+</p>
+<p >
+The RTS correlates well with the probability of survival :
+</p>
+<p ></p>
+<center >
+<img ></img>
+</center>
+<p >
+The
+<a  class="menu">
+RTS Calculator
+</a>
+will sit as a standalone window on your desktop.
+</p>
+<p >
+<font  face="Arial" size="1">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Champion HR et al, "A Revision of the Trauma Score", J Trauma 29:623-629,1989
+<br ></br>
+Champion HR et al, "Trauma Score", Crit Care Med 9:672-676,1981
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+</font>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+</td>
+</tr>
+</table>
+<!-- #EndEditable -->
+</td>
+</tr>
+</table>
+</body>
+<!-- #EndTemplate -->
+</html>

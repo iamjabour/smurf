@@ -1,0 +1,191 @@
+<html >
+<head >
+<title >
+How to fit an extreme value or gompit regression
+</title>
+</head>
+<body  background="/images/spiral.gif" bgcolor="#FFFFFF">
+<ul >
+<ul >
+<a  href="/map.html">
+<img ></img>
+</a>
+<img ></img>
+</ul>
+</ul>
+<hr ></hr>
+<h3 >
+How can I fit an extreme value or gompit regression?
+</h3>
+<table  TABID="12018" genuinetable="yes" tabletitle="How can I fit an extreme value or gompit regression?" width="50%">
+<tr >
+<td  valign="top" width="20%">
+Title
+</td>
+<td >
+Fitting gompit models with cloglog
+</td>
+</tr>
+<tr >
+<td  valign="top">
+Author
+</td>
+<td >
+James Hardin, Stata Corporation
+</td>
+</tr>
+<tr >
+<td >
+Date
+</td>
+<td >
+January 1999
+</td>
+</tr>
+</table>
+<hr ></hr>
+<p >
+This is easy to do in Stata using the
+<b >
+<a  href="/help.cgi?cloglog">
+cloglog
+</a>
+</b>
+command. The gompit model (extreme value) has the success/failure coding of the dependent variable reversed from the complementary log-log model. So, to fit a gompit model in Stata, you can simply generate a reverse-coded dependent variable and use
+<b >
+cloglog
+</b>
+as in
+<b ></b>
+</p>
+<pre >
+. gen newy = (y==0)
+
+. cloglog newy x1 x2 x3
+</pre>
+<hr ></hr>
+<center >
+[
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<a  href="/index.html">
+Home
+</a>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+|
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<a  href="/guide.html">
+Guide
+</a>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+|
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<a  href="/info/">
+Info
+</a>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+|
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<a  href="/support/">
+Support
+</a>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+|
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<a  href="/news/">
+What's New
+</a>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+<emspace ></emspace>
+]
+</center>
+<p >
+Email
+<a  href="mailto:stata@stata.com">
+stata@stata.com
+</a>
+if you have questions about Stata.
+</p>
+<p >
+Email
+<a  href="mailto:webmaster@stata.com">
+webmaster@stata.com
+</a>
+with questions or problems about this service.
+</p>
+<p ></p>
+<h5 >
+<a  href="/copyright.html">
+© Copyright 2001 Stata Corporation.
+</a>
+</h5>
+</body>
+</html>

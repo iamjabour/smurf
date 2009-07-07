@@ -1,0 +1,5253 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<script >
+<!-- Hide from old browsers
+//BEGIN ROLLOVER CODE
+
+if (document.images) {
+	arrow_on = new Image();          
+	arrow_on.src = "images/dhtml/arrowcountry.gif";       // Active Images
+	arrowcountry_on = new Image();          
+	arrowcountry_on.src = "images/dhtml/arrowcountry.gif";       // Active Images
+
+	arrow_off = new Image();          
+	arrow_off.src = "images/dhtml/arrow.gif";       // Inactive Images
+}
+
+// Function to 'activate' images.
+function imgOn(imgName,which) {
+	if (document.images) {
+		if (document.layers &amp;amp;amp;amp;&amp;amp;amp;amp; which) {
+			if (which != 'productlayer') {
+				document.layers['menu' + which].document.images[imgName].src = arrowcountry_on.src;
+				} else {
+				document.layers['menu' + which].document.images[imgName].src = arrow_on.src;
+				} 
+			} else  {
+			document.images[imgName].src = arrow_on.src;
+		}
+	}
+}	
+
+// Function to 'deactivate' images.
+function imgOff(imgName,which) {
+	if (document.images) {
+		if (document.layers &amp;amp;amp;amp;&amp;amp;amp;amp; which) {
+			document.layers['menu' + which].document.images[imgName].src = arrow_off.src; 
+			} else  {
+			document.images[imgName].src = arrow_off.src;
+		}
+	}
+}	
+
+//END ROLLOVER CODE
+
+//BEGIN POPUP MENU CODE
+var menusLoaded = false;
+var prevMenu;
+function toggleMenu(evt,which,toggle,headernumber,listingnumber) {
+	if (!menusLoaded)
+	{
+	  return;
+	}
+	if (document.layers) {
+			if (toggle) {
+//turns off last submenu when new one is opened
+			if (currentMenu &amp;amp;amp;amp;&amp;amp;amp;amp; currentMenu != 'productlayer') {
+				document.layers['menu' + currentMenu].visibility = "hidden";
+				document.layers['menuproductlayer'].document.images[currentMenu].src = arrow_off.src;
+			}
+//turns on arrow of selection whose submenu is opened
+			if (which != 'productlayer') {
+				document.layers['menuproductlayer'].document.images[which].src = arrow_on.src;
+			}
+//sets y value of menu
+			if (evt != 'null') {
+				var menuheight = (headernumber * 24) + (listingnumber * 15); 
+				if ((evt.pageY+eval(menuheight)) &amp;amp;amp;gt; window.innerHeight) {
+				document.layers['menu' + which].top = eval(window.innerHeight - menuheight);
+				} else {
+				document.layers['menu' + which].top = eval(evt.pageY-5);
+				}
+			}
+			
+			document.layers['menu' + which].visibility = "visible";
+			currentMenu = which;
+			rolling = "on";
+		} else {
+			document.layers['menu' + which].visibility = "hidden";
+			document.layers['menu' + currentMenu].visibility = "hidden";
+			if (which !='productlayer') {
+				setLayerTimer('productlayer',0);
+			}
+			if (which != 'productlayer') {
+				document.layers['menuproductlayer'].document.images[which].src = arrow_off.src;
+			}
+			rolling = null;
+		}
+	} else {
+			if (toggle) {
+			if (currentMenu &amp;amp;amp;amp;&amp;amp;amp;amp; currentMenu != 'productlayer') {
+				document.all.tags("DIV")['menu' + currentMenu].style.visibility = "hidden";
+			}
+			if (evt != 'null') {
+				var menuheight = (headernumber * 24) + (listingnumber * 15); 
+				if ((event.y+eval(menuheight)) &amp;amp;amp;gt; document.body.clientHeight) {
+				document.all.tags("DIV")['menu' + which].style.top = eval(document.body.clientHeight - menuheight);
+				} else {
+				document.all.tags("DIV")['menu' + which].style.top = event.y;
+				}
+			}
+			if (document.images[which]) {
+				document.images[which].src = arrow_on.src;
+			}
+			document.all.tags("DIV")['menu' + which].style.visibility = "visible";
+			prevMenu = currentMenu;
+			currentMenu = which;
+		} else {
+			document.all.tags("DIV")['menu' + which].style.visibility = "hidden";
+			document.all.tags("DIV")['menu' + currentMenu].style.visibility = "hidden";
+			// Added check to ensure that prevMenu has been set.
+			if (prevMenu &amp;amp;amp;amp;&amp;amp;amp;amp; prevMenu != 'productlayer') {
+			document.all.tags("DIV")['menu' + prevMenu].style.visibility = "hidden";
+				}
+			if (which !='productlayer') {
+				setLayerTimer('productlayer',0);
+			}
+			if (which != 'productlayer') {
+				document.images[which].src = arrow_off.src;
+			}
+			rolling = null;
+		}
+	}
+}
+
+function popUp(address) {
+
+	popWindow = window.open(address , 'popWindow' , 'scrollbars=1,width=447,height=470,scrolling=auto');
+	popWindow.focus();
+}
+
+function ContResPopUp(address)
+{
+	popWindow = window.open(address , 'ContResWindow' , 'width=432,height=500,scrolling=auto');
+	popWindow.focus();
+}
+
+function sharepopUp(address) {
+
+	popWindow = window.open(address , 'popWindow' , 'scrollbars=1,width=615,height=500,scrolling=auto');
+}
+
+function rollingMenu(which,toggle) {
+        if (rolling) {
+        toggleMenu(which,toggle);
+        }
+}
+
+function setLayerTimer(which,toggle) {
+        layerTimer = setTimeout('toggleMenu(\'null,\',\'' + which + '\',' + toggle + ')',100);
+}
+var layerTimer;
+var currentMenu = "";
+var rolling = "";
+
+//END POPUP MENU CODE
+// -->
+</script>
+<title >
+Schroders - Extract of Announcement of Results for Year Ended 31st December 1999
+</title>
+<link ></link>
+</head>
+<body  marginwidth="0">
+<a  name="top"></a>
+<!--BEGIN TOPNAV TABLE-->
+<table  TABID="11563" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="#000066" height="40" nowrap="nowrap" valign="top" width="160">
+<a  href="./">
+<img ></img>
+</a>
+</td>
+<td  bgcolor="#000066" nowrap="nowrap" valign="top" width="270">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  align="left" bgcolor="#000066" height="40" nowrap="nowrap" valign="bottom" width="105">
+<a  href="javascript:popUp(page70.htm)">
+<img ></img>
+</a>
+</td>
+<td  align="center" bgcolor="#000066" height="40" nowrap="nowrap" valign="bottom" width="20">
+<img ></img>
+</td>
+<td  align="left" bgcolor="#000066" height="40" nowrap="nowrap" valign="bottom" width="45">
+<a  href="search.asp">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#E4AB3B" colspan="5" height="10" nowrap="nowrap" valign="top" width="600">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+</table>
+<table  TABID="11578" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  height="115" nowrap="nowrap" valign="top" width="150">
+<table  TABID="11564" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="#000066" nowrap="nowrap">
+<a  href="page5.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#E4AB3B" nowrap="nowrap">
+<a  href="page32.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#E4AB3B" nowrap="nowrap">
+<a  href="page33.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#E4AB3B" nowrap="nowrap">
+<a  href="page68.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#E4AB3B" nowrap="nowrap">
+<a  href="page36.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#E4AB3B" nowrap="nowrap">
+<a  href="page174.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#000066" nowrap="nowrap">
+<a  href="page2.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#000066" nowrap="nowrap">
+<a  href="page3.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#000066" nowrap="nowrap">
+<a  href="page4.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#000066" nowrap="nowrap">
+<a  href="page6.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="20"></td>
+<td  nowrap="nowrap" valign="top" width="430">
+<table  TABID="11565" border="0" cellpadding="0" cellspacing="0" width="430">
+<tr >
+<td  height="10" nowrap="nowrap"></td>
+</tr>
+<tr >
+<td  height="22" nowrap="nowrap" valign="top" width="410">
+<p >
+<a  class="breadcrumblink" href="page1.htm">
+<img ></img>
+Home
+</a>
+<a  class="breadcrumblink" href="page5.htm">
+<img ></img>
+About Schroders
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  height="32" nowrap="nowrap" valign="top" width="410">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  height="20" nowrap="nowrap" valign="top" width="410">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+</table>
+<table  TABID="11577" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  align="top" valign="top" width="260">
+<table  TABID="11568" border="0" cellpadding="1" cellspacing="1">
+<tr >
+<td >
+<h3 >
+Extract of Announcement of Results for Year Ended 31st December 1999
+</h3>
+<ul >
+<li >
+<p >
+Profits before tax up £92mn to £324mn
+</p>
+</li>
+<li >
+<p >
+Basic earnings per share of 82.8p - up 45%
+</p>
+</li>
+<li >
+<p >
+Total dividend up 12% to 18.5p
+</p>
+</li>
+</ul>
+<p ></p>
+<table  TABID="11566" genuinetable="yes">
+<tr >
+<td ></td>
+<td  align="center">
+<p >
+<b >
+Year ended
+<br ></br>
+31st December 1999
+<br ></br>
+£'mn
+</b>
+</p>
+</td>
+<td  align="center">
+<p >
+<b >
+Year ended
+<br ></br>
+31st December 1998
+<br ></br>
+£'mn
+</b>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Profit before tax and Asian debt provisions
+</p>
+</td>
+<td  align="center">
+<p >
+306
+</p>
+</td>
+<td  align="center">
+<p >
+275
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Asian debt provisions (net)
+</p>
+</td>
+<td  align="center">
+<p >
+<u >
+18
+</u>
+</p>
+</td>
+<td  align="center">
+<p >
+<u >
+(43)
+</u>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Profit before tax
+</p>
+</td>
+<td  align="center">
+<p >
+324
+</p>
+</td>
+<td  align="center">
+<p >
+232
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Tax
+</p>
+</td>
+<td  align="center">
+<p >
+<u >
+(80)
+</u>
+</p>
+</td>
+<td  align="center">
+<p >
+<u >
+(63)
+</u>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Profit after tax
+</p>
+</td>
+<td  align="center">
+<p >
+244
+</p>
+</td>
+<td  align="center">
+<p >
+169
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Minority interest
+</p>
+</td>
+<td  align="center">
+<p >
+<u >
+1
+</u>
+</p>
+</td>
+<td  align="center">
+<p >
+<u >
+(1)
+</u>
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Profit attributable to shareholders
+</p>
+</td>
+<td  align="center">
+<p >
+<u >
+245
+</u>
+</p>
+</td>
+<td  align="center">
+<p >
+<u >
+168
+</u>
+</p>
+</td>
+</tr>
+</table>
+<p >
+<b >
+Commentary
+</b>
+<br ></br>
+It is gratifying that we are able to report record results for Schroders for 1999, the last complete year in which the asset management and investment banking businesses will be combined. First half profits of £147 million before tax were followed by pre-tax profits of £177 million in the second half, giving a total before tax for the year of £324 million, compared with the 1998 figure of £232 million. The 1999 results include a net write-back of £18 million in respect of Asian debt exposures, as against a £43 million (net) charge in 1998. Underlying profits (excluding Asian write-backs/provisions) were £31 million or 11 per cent. higher than in 1998. The pre-tax return on average equity was 26 per cent. (1998: 21 per cent.). At the attributable level, profits were £245 million (1998: £168 million), giving a post-tax return on average equity of 19 per cent. (1998: 15 per cent.). Basic earnings per share were up by 45 per cent. to 82.8p (1998:57.2p).
+</p>
+<p >
+The Board is recommending a final dividend of 13p (1998: 11.5p), making a total of 18.5p for the year (1998: 16.5p).
+</p>
+<p >
+<b >
+Divisional Results
+</b>
+<br ></br>
+Asset Management
+</p>
+<p >
+Our asset management business continued to expand in 1999, with funds under management rising by 20 per cent. to stand at £143 billion at the year end, compared with £119 billion a year earlier. Average assets rose by some 15 per cent. and underlying fee income by 16 per cent. Total revenues rose by 10 per cent. from £447 million to £491 million, reflecting the effect of lower transaction income, royalties and performance fees. With costs rising by 9 per cent., underlying pre-tax profits also increased by 10 per cent. to a record level of £162 million, compared with £147 million in 1998. In addition, a profit of £25 million was realised on the sale of our Australian property management business, so that total pre-tax profits were £187 million.
+</p>
+<p >
+The international diversification of our client base continued and the proportion of funds under management owned by non-UK clients increased; in particular, a return to favour of Pacific and emerging markets helped us to generate a strong new business flow of specialist mandates, especially from American clients. The strong inflow of business in Japan continued, enabling us to maintain our leading position as a pension fund manager. Assets managed by our Japanese operation rose from £6.2 billion to £11.8 billion. Throughout the rest of Asia, mutual funds sales advanced substantially, including the successful launch of two new funds in Singapore investing in Japanese and global smaller companies. On the institutional side, in Hong Kong considerable resources have been devoted to preparing for the introduction of mandatory provident funds, a significant potential market for us. Our continental European client base also continued to expand, based primarily upon the ongoing success of our Luxembourg-based Schroder International Selection Fund family of open-end funds.
+</p>
+<p >
+Within our domestic UK market place, our retail unit trust operation had a better year. Net outflows from our funds changed to net inflows as the year progressed, reflecting the improved performance of our key UK, Far East and emerging markets funds. Our core UK balanced pension fund and charity institutional business, however, continued to face competition from index trackers. We have taken steps during the year to strengthen the investment team devoted to this business and performance has begun to improve in a number of areas. This has helped us sustain the development of our more specialist services for UK institutional clients.
+</p>
+<p >
+We continued to expand our product line. New retail funds last year included the Schroder Global Technology Fund and the Schroder UK Mid 250 Fund, while more recently we have launched the Schroder Institutional Multinational Equity Fund and the Schroder Monthly High Income Fund.
+</p>
+<p >
+We have also expanded the resources devoted to alternative investments. Notwithstanding the sale of our Australian property management business, property management remains one of our core activities, especially in the UK, where the Schroder Exempt Property Unit Trust is the largest fund of its kind. Schroder Ventures consolidated its position as a leading international private equity group, with committed capital of £2.5 billion in 25 funds. 1999 saw the raising of the largest international life sciences fund, the initial launch of Schroder Ventures Asia Pacific Fund and the establishment of a New York private equity operation. To complement our existing alternative investment expertise, a new structured products team was established in the middle of the year.
+</p>
+<p >
+We continued the development of our private client business, in particular with the formation of Schroder Trust Bank in Miami to provide private banking and investment services to clients in the Americas.
+</p>
+<p >
+Investment Banking
+</p>
+<p >
+In investment banking, underlying pre-tax profits were £144 million (1998: £128 million), before a write-back of £18 million in respect of Asian debt provisions and a charge for London surplus property of £25 million, bringing overall profits before tax to £137 million.
+</p>
+<p >
+The major contribution came from European activities. UK corporate finance continued to win a good share of UK mandates and new clients, whilst progress in the continental European business, in both mergers and acquisitions and capital markets, was particularly encouraging. Assignments included advice to BTR on its merger with Siebe to form Invensys and to Crédit Lyonnais on its privatisation, including acting as joint global lead manager of its IPO. Our European securities teams maintained their positions in research rankings and achieved record revenues and a substantial gain in market share over the previous year in many of the sectors in which they operate.
+</p>
+<p >
+In the United States, corporate finance activity was broadly in line with the previous year, whilst our US equities business showed satisfactory improvements in commission levels.
+</p>
+<p >
+In Asia, corporate finance generated record results, with revenues close to double the levels seen in 1998. Major assignments included advising Cable and Wireless on the first successful contested acquisition in Japan, the acquisition by Standard Chartered Bank of Nakornthon Bank in Thailand, advice to British American Tobacco on the merger with Rothmans in South East Asia, and advice to Hanvit Bank on a variety of debt restructurings in Korea. Our Japanese securities business had an excellent year.
+</p>
+<p >
+In financial markets, both trading and client related activities generated higher profits than in the previous year, with a particular improvement in our European financing and risk management services and our London-based interest rate trading. In addition, our New York-based high yield business generated good profits from secondary trading in Asian debt.
+</p>
+<p >
+<b >
+Outlook
+</b>
+<br ></br>
+In January this, year we announced the proposed merger of our investment banking business with Salomon Smith Barney. This merger is expected to be completed around the end of April and our investment bankers look forward to participating in the creation of one of the world's leading investment banks.
+</p>
+<p >
+The disposal of that business will enable our asset management business to implement fully its strategy to establish Schroders as one of the world's leading asset managers. In that connection we shall be undertaking initiatives designed to:
+</p>
+<ul >
+<li >
+<p >
+Expand the resources dedicated to our institutional business, both in our home market within the UK and in continental Europe, Japan and North America, with the objective of achieving strong and competitive performance for clients, as well as growing our client base.
+</p>
+</li>
+<li >
+<p >
+Develop our mutual funds businesses in the UK, continental Europe and Asia as leaders in their fields.
+</p>
+</li>
+<li >
+<p >
+Expand our private banking business through growth of both private client asset management and lending and advisory activities. In particular we will apply for authorisation to establish a private bank in London.
+</p>
+</li>
+<li >
+<p >
+Accelerate the development of our range of alternative investment products, including private equity, property, hedge funds and structured investments.
+</p>
+</li>
+</ul>
+<p >
+Finally, we shall shortly be launching an "e-incubator" to develop business-to-business financial services activities.
+</p>
+<p >
+We have relaunched our website and details of our services will be made continuously available at www.schroders.com.
+</p>
+<p ></p>
+<table  TABID="11567">
+<tr >
+<td  align="left">
+<p >
+Sir Winfried F.W. Bischoff
+</p>
+</td>
+<td  align="right">
+<p >
+I.P. Sedgwick
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+Chairman
+</p>
+</td>
+<td  align="right">
+<p >
+Deputy Chairman
+</p>
+</td>
+</tr>
+<tr >
+<td >
+<p >
+3rd March 2000
+</p>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+120 Cheapside
+</p>
+</td>
+<td ></td>
+</tr>
+<tr >
+<td  valign="top">
+<p >
+London EC2V 6DS
+</p>
+</td>
+<td  align="right">
+<p >
+Tel: (44) 020 7658 6000
+</p>
+</td>
+</tr>
+</table>
+<p >
+<b >
+Notes
+</b>
+<br ></br>
+This is an extract of the full press release which contains more detailed financial figures. For a copy of the full press release in pdf format, please
+<a  href="pdf/schpar99.pdf">
+click here
+</a>
+</p>
+<p >
+For other financial information about Schroders plc
+<a  href="page34.htm">
+click here
+</a>
+.
+</p>
+<p >
+For information about the Schroders plc share price from FT.com
+<a  href="javascript:sharepopUp(http://www.marketprices.ft.com/Quote.ft?symbols=LSE\:GBX\\SET1\\SDR&view=tearsheet)">
+click here
+</a>
+.
+</p>
+<a  href="#Top"></a>
+<p >
+Back to top
+</p>
+</td>
+</tr>
+</table>
+</td>
+<td  valign="top" width="20"></td>
+<td  valign="top" width="150">
+<table  TABID="11573" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="CCCCCC" colspan="3" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="CCCCCC" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td >
+<table  TABID="11569" bgcolor="E4AB3B" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="24">
+<img ></img>
+</td>
+<td  width="118">
+<p  class="sidebarheader">
+Contact Us
+</p>
+</td>
+</tr>
+</table>
+<table  TABID="11570" background="images/general/map_bkground.gif">
+<tr >
+<td >
+<p  class="sidebartextmargin">
+For a business contact in a country please click below.
+</p>
+</td>
+</tr>
+</table>
+<!--BEGIN CONTACT TOOL BUTTON-->
+<script >
+<!--
+  if (document.all) 
+    document.writeln('&amp;amp;amp;lt;DIV STYLE="cursor:hand;" onclick=\"toggleMenu(event,\'productlayer\',1, 3, 7); return false;\"&amp;amp;amp;gt;');
+  //-->
+</script>
+<table  TABID="11572" bgcolor="FFFFFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  valign="top">
+<img ></img>
+</td>
+<td  bgcolor="FFFFFF">
+<table  TABID="11571" bgcolor="FFFFFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="1" nowrap="nowrap"></td>
+</tr>
+<tr >
+<td  bgcolor="000066" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000066" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000066" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000066" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000066" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="CCCCFF" height="1" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<!--BEGIN USE THIS IF NO LEVEL THREE NEEDS TO APPEAR HERE-->
+<td  bgcolor="CCCCFF" height="14" nowrap="nowrap" width="110">
+<p >
+<a  false="#DEFAULT" onclick="javascript:toggleMenu(event,productlayer,1," return="#DEFAULT">
+Select
+</a>
+</p>
+</td>
+<!--END USE THIS IF NO LEVEL THREE NEEDS TO APPEAR HERE-->
+<td  bgcolor="000066" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="999999" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000066" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000066" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000066" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000066" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="999999" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000066" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="999999" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="999999" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="999999" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="999999" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  height="10" nowrap="nowrap"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<script >
+<!--
+  if (document.all) document.writeln("&amp;amp;amp;lt;/DIV&amp;amp;amp;gt;");
+  //-->
+</script>
+<!--END CONTACT TOOL BUTTON-->
+</td>
+<td  bgcolor="CCCCCC" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="CCCCCC" colspan="3" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+</table>
+<table  TABID="11574" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="10" nowrap="nowrap"></td>
+</tr>
+</table>
+<!--BEGIN RELATED SITES-->
+<!--END RELATED SITES-->
+<table  TABID="11575" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="10" nowrap="nowrap"></td>
+</tr>
+</table>
+<!--BEGIN FEATURES SITES-->
+<!--END FEATURES SITES-->
+<!--BEGIN COMPANY NAME-->
+<table  TABID="11576" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="30" nowrap="nowrap"></td>
+</tr>
+<tr >
+<td  align="right" nowrap="nowrap" width="150">
+<p  class="copyright">
+©copyright2000 Schroders plc
+</p>
+</td>
+</tr>
+</table>
+<!--END COMPANY NAME-->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--BEGIN LAYERS OF DHTML-->
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;LAYER NAME="menuproductlayer" TOP=100 LEFT=325 WIDTH=155 VISIBILITY="hidden" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'productlayer\',1, 3, 7);" ONMOUSEOUT="setLayerTimer(\'productlayer\',0);"&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;DIV ID="menuproductlayer" STYLE="position:absolute; top:100; left:325; width:165; z-index:10; visibility:hidden;" ONMOUSEOVER="clearTimeout(layerTimer);" ONMOUSEOUT="setLayerTimer(\'productlayer\',0);"&amp;amp;amp;gt;');
+}
+// -->
+</script>
+<table  TABID="11585" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11580" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11579" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="145">
+<p  class="dhtmlheader">
+About Schroders
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top">
+<p >
+<a  onmouseout="imgOff(INVREL,productlayer)">
+Investor Relations
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11582" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11581" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="145">
+<p  class="dhtmlheader">
+Our Businesses
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top">
+<p >
+<a  onmouseout="imgOff(INVFND,productlayer)">
+Investment Funds
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top">
+<p >
+<a  onmouseout="imgOff(BUYVEN,productlayer)">
+Buy-Outs &amp; V.C.
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top">
+<p >
+<a  onmouseout="imgOff(INSSVC,productlayer)">
+Institutional Srvs.
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top">
+<p >
+<a  onmouseout="imgOff(PRVBNK,productlayer)">
+Private Banking
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11584" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11583" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="145">
+<p  class="dhtmlheader">
+Career Opportunities
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top">
+<p >
+<a  onmouseout="imgOff(GRDREC,productlayer)">
+Graduate Rec.
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top">
+<p >
+<a  onmouseout="imgOff(OTHREC,productlayer)">
+Other Recruitment
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+</table>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;/LAYER&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;/DIV&amp;amp;amp;gt;');
+}
+//-->
+</script>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;LAYER NAME="menuINVREL" LEFT=214 WIDTH=110 VISIBILITY="hidden" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'INVREL\',1, 1, 1);" ONMOUSEOUT="toggleMenu(\'null\',\'INVREL\',0);"&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;DIV ID="menuINVREL" STYLE="position:absolute; left:214; width:120; z-index:10; visibility:hidden;" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'INVREL\',1, 1, 1);" ONMOUSEOUT="setLayerTimer(\'INVREL\',0);"&amp;amp;amp;gt;');
+}
+// -->
+</script>
+<table  TABID="11588" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11587" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11586" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Global
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(GB_INVREL,INVREL)">
+All regions
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+</table>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;/LAYER&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;/DIV&amp;amp;amp;gt;');
+}
+//-->
+</script>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;LAYER NAME="menuINVFND" LEFT=214 WIDTH=110 VISIBILITY="hidden" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'INVFND\',1, 3, 21);" ONMOUSEOUT="toggleMenu(\'null\',\'INVFND\',0);"&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;DIV ID="menuINVFND" STYLE="position:absolute; left:214; width:120; z-index:10; visibility:hidden;" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'INVFND\',1, 3, 21);" ONMOUSEOUT="setLayerTimer(\'INVFND\',0);"&amp;amp;amp;gt;');
+}
+// -->
+</script>
+<table  TABID="11595" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11590" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11589" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Europe and MEA
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(CI_INVFND,INVFND)">
+Channel Islands
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(DE_INVFND,INVFND)">
+Germany
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(IT_INVFND,INVFND)">
+Italy
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(LU_INVFND,INVFND)">
+Luxembourg
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(NL_INVFND,INVFND)">
+Netherlands
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(ZA_INVFND,INVFND)">
+South Africa
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(SE_INVFND,INVFND)">
+Sweden
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(CH_INVFND,INVFND)">
+Switzerland
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(GB_INVFND,INVFND)">
+United Kingdom
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11592" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11591" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Americas
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(AR_INVFND,INVFND)">
+Argentina
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(BM_INVFND,INVFND)">
+Bermuda
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(BR_INVFND,INVFND)">
+Brazil
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(MX_INVFND,INVFND)">
+Mexico
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(US_INVFND,INVFND)">
+United States
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11594" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11593" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Asia Pacific
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(AU_INVFND,INVFND)">
+Australia
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(CN_INVFND,INVFND)">
+China
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(HK_INVFND,INVFND)">
+Hong Kong
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(ID_INVFND,INVFND)">
+Indonesia
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(SG_INVFND,INVFND)">
+Singapore
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(TW_INVFND,INVFND)">
+Taiwan
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(TH_INVFND,INVFND)">
+Thailand
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+</table>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;/LAYER&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;/DIV&amp;amp;amp;gt;');
+}
+//-->
+</script>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;LAYER NAME="menuBUYVEN" LEFT=214 WIDTH=110 VISIBILITY="hidden" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'BUYVEN\',1, 3, 23);" ONMOUSEOUT="toggleMenu(\'null\',\'BUYVEN\',0);"&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;DIV ID="menuBUYVEN" STYLE="position:absolute; left:214; width:120; z-index:10; visibility:hidden;" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'BUYVEN\',1, 3, 23);" ONMOUSEOUT="setLayerTimer(\'BUYVEN\',0);"&amp;amp;amp;gt;');
+}
+// -->
+</script>
+<table  TABID="11602" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11597" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11596" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Europe and MEA
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(AT_BUYVEN,BUYVEN)">
+Austria
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(FR_BUYVEN,BUYVEN)">
+France
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(DE_BUYVEN,BUYVEN)">
+Germany
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(IT_BUYVEN,BUYVEN)">
+Italy
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(LU_BUYVEN,BUYVEN)">
+Luxembourg
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(NO_BUYVEN,BUYVEN)">
+Norway
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(ES_BUYVEN,BUYVEN)">
+Spain/Portugal
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(SE_BUYVEN,BUYVEN)">
+Sweden
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(CH_BUYVEN,BUYVEN)">
+Switzerland
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(GB_BUYVEN,BUYVEN)">
+United Kingdom
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(OT_BUYVEN,BUYVEN)">
+Others
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11599" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11598" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Americas
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(BM_BUYVEN,BUYVEN)">
+Bermuda
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(CA_BUYVEN,BUYVEN)">
+Canada
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(US_BUYVEN,BUYVEN)">
+United States
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11601" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11600" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Asia Pacific
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(AU_BUYVEN,BUYVEN)">
+Australia
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(GC_BUYVEN,BUYVEN)">
+Greater China
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(IN_BUYVEN,BUYVEN)">
+India
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(ID_BUYVEN,BUYVEN)">
+Indonesia
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(JP_BUYVEN,BUYVEN)">
+Japan
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(NZ_BUYVEN,BUYVEN)">
+New Zealand
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(SG_BUYVEN,BUYVEN)">
+Singapore
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(TH_BUYVEN,BUYVEN)">
+Thailand
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(OA_BUYVEN,BUYVEN)">
+Others
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+</table>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;/LAYER&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;/DIV&amp;amp;amp;gt;');
+}
+//-->
+</script>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;LAYER NAME="menuINSSVC" LEFT=214 WIDTH=110 VISIBILITY="hidden" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'INSSVC\',1, 3, 21);" ONMOUSEOUT="toggleMenu(\'null\',\'INSSVC\',0);"&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;DIV ID="menuINSSVC" STYLE="position:absolute; left:214; width:120; z-index:10; visibility:hidden;" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'INSSVC\',1, 3, 21);" ONMOUSEOUT="setLayerTimer(\'INSSVC\',0);"&amp;amp;amp;gt;');
+}
+// -->
+</script>
+<table  TABID="11609" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11604" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11603" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Europe and MEA
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(DE_INSSVC,INSSVC)">
+Germany
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(IT_INSSVC,INSSVC)">
+Italy
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(LU_INSSVC,INSSVC)">
+Luxembourg
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(NL_INSSVC,INSSVC)">
+Netherlands
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(ZA_INSSVC,INSSVC)">
+South Africa
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(ES_INSSVC,INSSVC)">
+Spain
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(SE_INSSVC,INSSVC)">
+Sweden
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(CH_INSSVC,INSSVC)">
+Switzerland
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(GB_INSSVC,INSSVC)">
+United Kingdom
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11606" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11605" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Americas
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(AR_INSSVC,INSSVC)">
+Argentina
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(BM_INSSVC,INSSVC)">
+Bermuda
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(BR_INSSVC,INSSVC)">
+Brazil
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(CA_INSSVC,INSSVC)">
+Canada
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(MX_INSSVC,INSSVC)">
+Mexico
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(US_INSSVC,INSSVC)">
+United States
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11608" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11607" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Asia Pacific
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(AU_INSSVC,INSSVC)">
+Australia
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(HK_INSSVC,INSSVC)">
+Hong Kong
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(ID_INSSVC,INSSVC)">
+Indonesia
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(SG_INSSVC,INSSVC)">
+Singapore
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(TW_INSSVC,INSSVC)">
+Taiwan
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(TH_INSSVC,INSSVC)">
+Thailand
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+</table>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;/LAYER&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;/DIV&amp;amp;amp;gt;');
+}
+//-->
+</script>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;LAYER NAME="menuPRVBNK" LEFT=214 WIDTH=110 VISIBILITY="hidden" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'PRVBNK\',1, 3, 16);" ONMOUSEOUT="toggleMenu(\'null\',\'PRVBNK\',0);"&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;DIV ID="menuPRVBNK" STYLE="position:absolute; left:214; width:120; z-index:10; visibility:hidden;" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'PRVBNK\',1, 3, 16);" ONMOUSEOUT="setLayerTimer(\'PRVBNK\',0);"&amp;amp;amp;gt;');
+}
+// -->
+</script>
+<table  TABID="11616" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11611" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11610" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Europe and MEA
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(CI_PRVCLT,PRVBNK)">
+Channel Islands
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(DE_PRVCLT,PRVBNK)">
+Germany
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(IT_PRVCLT,PRVBNK)">
+Italy
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(CH_PRVCLT,PRVBNK)">
+Switzerland
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(ES_PRVCLT,PRVBNK)">
+Spain
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(GB_PRVCLT,PRVBNK)">
+United Kingdom
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11613" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11612" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Americas
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(AR_PRVCLT,PRVBNK)">
+Argentina
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(BM_PRVCLT,PRVBNK)">
+Bermuda
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(BR_PRVCLT,PRVBNK)">
+Brazil
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(KY_PRVCLT,PRVBNK)">
+Cayman Islands
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(CL_PRVCLT,PRVBNK)">
+Chile
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(CO_PRVCLT,PRVBNK)">
+Colombia
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(MX_PRVCLT,PRVBNK)">
+Mexico
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(PE_PRVCLT,PRVBNK)">
+Peru
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11615" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11614" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Asia Pacific
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(HK_PRVCLT,PRVBNK)">
+Hong Kong
+</a>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(SG_PRVCLT,PRVBNK)">
+Singapore
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+</table>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;/LAYER&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;/DIV&amp;amp;amp;gt;');
+}
+//-->
+</script>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;LAYER NAME="menuGRDREC" LEFT=214 WIDTH=110 VISIBILITY="hidden" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'GRDREC\',1, 1, 1);" ONMOUSEOUT="toggleMenu(\'null\',\'GRDREC\',0);"&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;DIV ID="menuGRDREC" STYLE="position:absolute; left:214; width:120; z-index:10; visibility:hidden;" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'GRDREC\',1, 1, 1);" ONMOUSEOUT="setLayerTimer(\'GRDREC\',0);"&amp;amp;amp;gt;');
+}
+// -->
+</script>
+<table  TABID="11619" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11618" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11617" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Global
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(GB_GRDREC,GRDREC)">
+United Kingdom
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+</table>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;/LAYER&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;/DIV&amp;amp;amp;gt;');
+}
+//-->
+</script>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;LAYER NAME="menuOTHREC" LEFT=214 WIDTH=110 VISIBILITY="hidden" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'OTHREC\',1, 1, 1);" ONMOUSEOUT="toggleMenu(\'null\',\'OTHREC\',0);"&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;DIV ID="menuOTHREC" STYLE="position:absolute; left:214; width:120; z-index:10; visibility:hidden;" ONMOUSEOVER="clearTimeout(layerTimer),toggleMenu(\'null\',\'OTHREC\',1, 1, 1);" ONMOUSEOUT="setLayerTimer(\'OTHREC\',0);"&amp;amp;amp;gt;');
+}
+// -->
+</script>
+<table  TABID="11622" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="FFFFFF" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  nowrap="nowrap">
+<table  TABID="11621" bgcolor="CCCCFF" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top">
+<table  TABID="11620" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  height="5" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  colspan="2" height="15" nowrap="nowrap" valign="top" width="90">
+<p  class="dhtmlheader">
+Global
+</p>
+</td>
+</tr>
+<tr >
+<td  align="right">
+<img ></img>
+</td>
+<td  nowrap="nowrap" width="10"></td>
+<td  height="15" nowrap="nowrap" valign="top" width="80">
+<p >
+<a  onmouseout="imgOff(GB_OTHREC,OTHREC)">
+United Kingdom
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td  bgcolor="9999CC" nowrap="nowrap" width="10">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+<tr >
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="6666CC" height="1" nowrap="nowrap">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+<td  bgcolor="000099" height="1" nowrap="nowrap" width="1">
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+<spacer ></spacer>
+</td>
+</tr>
+</table>
+<script >
+<!-- Hide from old browsers
+if (document.layers) {
+	document.writeln('&amp;amp;amp;lt;/LAYER&amp;amp;amp;gt;');
+} else {
+	document.writeln('&amp;amp;amp;lt;/DIV&amp;amp;amp;gt;');
+}
+//-->
+</script>
+<!--END LAYERS OF DHTML-->
+<script >
+<!--
+menusLoaded = true;
+//-->
+</script>
+</body>
+</html>

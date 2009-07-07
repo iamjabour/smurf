@@ -1,0 +1,442 @@
+<html >
+<head >
+<title >
+Concord Monitor NH 03301: Weather Webcam
+</title>
+</head>
+<body  background="../../../graphics/bkgn3.gif" leftmargin="0" link="maroon" topmargin="0" vlink="coral">
+<a  name="top"></a>
+<!-- ************** BANNER TABLE ************** -->
+<table  TABID="00000" border="0" cellpadding="0" cellspacing="0">
+<tr  align="left" valign="top">
+<td >
+<img ></img>
+<a  href="../../../stories/service/siteindex.shtml">
+<img ></img>
+</a>
+</td>
+<td >
+<!-- BLANK SPACE -->
+</td>
+<td  align="left" valign="middle">
+<img ></img>
+<font  color="royalblue" size="6">
+<b >
+/Concord NH Web Cam
+</b>
+</font>
+</td>
+</tr>
+</table>
+<!-- ******************* END ******************* -->
+<table  TABID="00001" width="600">
+<tr >
+<td >
+<hr ></hr>
+</td>
+</tr>
+</table>
+<table  TABID="00003" width="600">
+<tr >
+<td >
+<center >
+<table  TABID="00002" border="0">
+<tr >
+<td  align="center">
+<a  href="http://www.cmonitor.com/cgi-bin/traps/rathyoung.cgi" target="_blank">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center"></td>
+</tr>
+</table>
+</center>
+</td>
+</tr>
+</table>
+<table  TABID="00004" width="600">
+<tr >
+<td >
+<hr ></hr>
+</td>
+</tr>
+</table>
+<table  TABID="00010" width="600">
+<tr  valign="top">
+<td >
+<!--@@@@@@@@@@@@@@@@@@ SIDEBAR @@@@@@@@@@@@@@@@@@@@@@@@@@-->
+<table  TABID="00005" width="130">
+<tr  align="center" valign="top">
+<td >
+<a  href="../../../index.shtml" target="_top">
+<img ></img>
+</a>
+</td>
+</tr>
+<!-- ~~~~~~~~~~~~~~~~ INDEX VERTICAL SPACER ~~~~~~~~~~~~~~~~ -->
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr  align="center" valign="top">
+<td >
+<a  href="../../../index/news.shtml">
+<img ></img>
+</a>
+</td>
+</tr>
+<!-- ~~~~~~~~~~~~~~~~ INDEX VERTICAL SPACER ~~~~~~~~~~~~~~~~ -->
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<!-- ******************** LEFT INDEX/MARKETPLACE ******************** -->
+<tr  align="center" valign="top">
+<td >
+<a  href="../../../index/market.shtml">
+<img ></img>
+</a>
+</td>
+</tr>
+<!-- ~~~~~~~~~~~~~~~~ INDEX VERTICAL SPACER ~~~~~~~~~~~~~~~~ -->
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<!-- ******************** LEFT INDEX/Sports ******************** -->
+<tr  align="center" valign="top">
+<td >
+<a  href="../../../index/sports.shtml">
+<img ></img>
+</a>
+</td>
+</tr>
+<!-- ~~~~~~~~~~~~~~~~ INDEX VERTICAL SPACER ~~~~~~~~~~~~~~~~ -->
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<!-- ******************** LEFT INDEX/COMMUNITY ******************** -->
+<tr  align="center" valign="top">
+<td >
+<a  href="../../../index/commnews.shtml">
+<img ></img>
+</a>
+</td>
+</tr>
+<!-- ~~~~~~~~~~~~~~~~ INDEX VERTICAL SPACER ~~~~~~~~~~~~~~~~ -->
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<!-- *** LEFT INDEX/GETTING OUT **** -->
+<tr  align="center" valign="top">
+<td >
+<a  href="../../../index/a&e.shtml">
+<img ></img>
+</a>
+</td>
+</tr>
+<!-- ~~~~~~~~~~~~~~~~ INDEX VERTICAL SPACER ~~~~~~~~~~~~~~~~ -->
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<!-- ******************** LEFT INDEX/MONITOR INFO ******************** -->
+<tr  align="center" valign="top">
+<td >
+<a  href="../../../stories/service/index.shtml">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<hr ></hr>
+<!-- ******************** COPYRIGHT INFO ******************** -->
+<font  size="-1">
+<i >
+Material posted to this site retains copyright. See the
+<a  href="../../../stories/service/users.shtml">
+User's Guide
+</a>
+for details.
+</i>
+</font>
+</td>
+</tr>
+</table>
+</td>
+<!-- @@@@@@@@@@@@@@@@@@@@@@ END SIDEBAR @@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<!-- @@@@@@@@@@@@@@@@@@@@@@ BEGIN MAIN @@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<td  align="center">
+<center >
+<table  TABID="00009" border="0" cellpadding="5" cellspacing="5">
+<tr  align="center">
+<td  align="center">
+<!--b&amp;amp;gt;Winter note: The Concord Web cam faces due south. The resulting picture between 10 am and 1 pm can be of poor quality due to the influence of the sun on the camera lens.&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;p-->
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<p >
+<font  size="+1">
+<b >
+Current Weather Conditions
+</b>
+</font>
+<!-- Begin weather.com magnet include -->
+</p>
+<table  TABID="00006">
+<tr >
+<td  colspan="2">
+<a  href="http://oap.weather.com/fcgi-bin/oap/redirect_magnet?loc_id=USNH0045&par=Trans&site=magnet&code=233909&promo=english">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!-- End weather.com magnet include -->
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<h4 >
+24 hour archive
+</h4>
+<table  TABID="00007" width="200">
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam00.shtml">
+Midnight
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam12.shtml">
+Noon
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam01.shtml">
+1 am
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam13.shtml">
+1 pm
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam02.shtml">
+2 am
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam14.shtml">
+2 pm
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam03.shtml">
+3 am
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam15.shtml">
+3 pm
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam04.shtml">
+4 am
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam16.shtml">
+4 pm
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam05.shtml">
+5 am
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam17.shtml">
+5 pm
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam06.shtml">
+6 am
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam18.shtml">
+6 pm
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam07.shtml">
+7 am
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam19.shtml">
+7 pm
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam08.shtml">
+8 am
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam20.shtml">
+8 pm
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam09.shtml">
+9 am
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam21.shtml">
+9 pm
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam10.shtml">
+10 am
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam22.shtml">
+10 pm
+</a>
+</center>
+</td>
+</tr>
+<tr >
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam11.shtml">
+11 am
+</a>
+</center>
+</td>
+<td >
+<center >
+<a  href="http://www.cmonitor.com/stories/features/webcam/webcam23.shtml">
+11 pm
+</a>
+</center>
+</td>
+</tr>
+</table>
+<br ></br>
+<table  TABID="00008" border="2" width="345">
+<tr >
+<td >
+Note: be sure to refresh/reload your browser page to get the latest picture. Also, your browser preferences should be set to refresh every time a page is requested, not 'once per session' or 'never'. You will need to restart your browser if you change any settings.
+<p ></p>
+<p >
+Brought to you in part by
+<a  href="http://www.cicnetwork.net">
+Concord Integrated Community Network
+</a>
+and
+<a  href="http://www.verizon.com">
+Verizon
+</a>
+.
+</p>
+</td>
+</tr>
+</table>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</td>
+</tr>
+</table>
+</body>
+</html>

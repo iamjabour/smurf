@@ -1,0 +1,764 @@
+<html >
+<head >
+<title >
+Primus Extra Value
+</title>
+<link ></link>
+<link ></link>
+<!-- ============ interactivity ============ -->
+<script >
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i&amp;amp;lt;a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&amp;amp;amp;&amp;amp;amp;i&amp;amp;lt;a.length&amp;amp;amp;&amp;amp;amp;(x=a[i])&amp;amp;amp;&amp;amp;amp;x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))&amp;amp;gt;0&amp;amp;amp;&amp;amp;amp;parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&amp;amp;amp;&amp;amp;amp;d.all) x=d.all[n]; for (i=0;!x&amp;amp;amp;&amp;amp;amp;i&amp;amp;lt;d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&amp;amp;amp;&amp;amp;amp;d.layers&amp;amp;amp;&amp;amp;amp;i&amp;amp;lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i&amp;amp;lt;(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script >
+<!--
+function MM_openBrWindow(theURL,winName,features) {
+if (document.all){
+  window.open(theURL,winName,features);
+}
+else
+{
+var features2 = features.replace("left=","screenX=");
+features = features2.replace("top=","screenY=");
+window.open(theURL,winName,features);
+}
+}
+//-->
+</script>
+<!-- ============ browser detection ============ -->
+<script >
+<!--
+
+   NS4 = (document.layers);
+   IE4 = (document.all);
+  ver4 = (NS4 || IE4);   
+ isMac = (navigator.appVersion.indexOf("Mac") != -1);
+isMenu = (NS4 || (IE4 &amp;amp;amp;&amp;amp;amp; !isMac));
+
+function popUp(){return};
+function popDown(){return};
+function startIt(){return};
+
+if (!ver4) event = null;
+if (IE4 &amp;amp;amp;&amp;amp;amp; isMac) {
+sS = document.styleSheets(document.styleSheets.length-1);
+with (sS) {
+addRule("A.white","color:black;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold;font-size:10pt");
+addRule("A.white:active","color:black");
+addRule("A.white:visited","color:black");
+addRule("A.white:hover","color:white;background-color:maroon");
+}
+} 
+//-->
+</script>
+<!-- ============ format menu, global parameters ============ -->
+<script >
+<!--
+if (isMenu) {
+    menuVersion = "4.0b1";
+    
+    menuWidth = 118;
+    childOverlap = 65;
+    childOffset = 15;
+    perCentOver = null;
+    secondsVisible = 0.5;
+ 
+    fntCol = "black";
+    fntSiz = "8";
+    fntBold = false;
+    fntItal = false;
+    fntFam = "Arial,sans-serif";
+    
+    backCol = "white";
+    overCol = "#999999";
+    overFnt = "black";
+    
+    borWid = 1;
+    borCol = "#999999";
+    borSty = "solid";
+    itemPad = 3;
+    
+    imgSrc = "tri.gif";
+    imgSiz = 10;
+    
+    separator = 0;
+    separatorCol = "white";
+    
+    isFrames = false;
+    
+    keepHilite = true; 
+    NSfontOver = true;
+    clickStart = false;
+    clickKill = true;
+    
+    showVisited = "black";
+
+        menusOn = false;
+}
+function db(str) {
+if(NS4) java.lang.System.out.println(str)
+}
+//-->
+</script>
+<!-- ============ Call Hirarchical Menu Structure and Script ============ -->
+<script >
+<!--
+if (isMenu) {
+if(IE4){window.onresize=function(){setTimeout("elMenu1.moveTo(getAnch('pp')[0],getAnch('pp')[1])",20)}}
+document.write("&amp;amp;lt;SCRIPT LANGUAGE='JavaScript1.2' SRC='common/hierArrays4b1.js' TYPE='text/javascript'&amp;amp;gt;&amp;amp;lt;\/SCRIPT&amp;amp;gt;");
+}
+//-->
+</script>
+<script >
+<!--
+if (isMenu) {
+document.write("&amp;amp;lt;SCRIPT LANGUAGE='JavaScript1.2' SRC='common/hierMenus4b1.js' TYPE='text/javascript'&amp;amp;gt;&amp;amp;lt;\/SCRIPT&amp;amp;gt;");
+}
+//-->
+</script>
+</head>
+<body  background="../pix/back_points.gif" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+<!-- ============ Header ============ -->
+<table  TABID="09744" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<a  href="index.shtml" name="oben">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- ============ Navigation bar ============ -->
+<table  TABID="09745" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<a  href="javascript:void(0)" onclick="return false" onmouseout="popDown('elMenu1')" onmouseover="popUp('elMenu1',event)">
+<img ></img>
+</a>
+</td>
+<td >
+<a  href="javascript:void(0)" onclick="return false" onmouseout="popDown('elMenu2')" onmouseover="popUp('elMenu2',event)">
+<img ></img>
+</a>
+</td>
+<td >
+<a  href="javascript:void(0)" onclick="return false" onmouseout="popDown('elMenu3')" onmouseover="popUp('elMenu3',event)">
+<img ></img>
+</a>
+</td>
+<td >
+<a  href="javascript:void(0)" onclick="return false" onmouseout="popDown('elMenu4')" onmouseover="popUp('elMenu4',event)">
+<img ></img>
+</a>
+</td>
+<td >
+<a  href="javascript:void(0)" onclick="return false" onmouseout="popDown('elMenu5')" onmouseover="popUp('elMenu5',event)">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- ============ Page Container ============ -->
+<table  TABID="09748" border="0" cellpadding="0" cellspacing="0" width="750">
+<tr >
+<td ></td>
+<td  align="left" valign="top">
+<!-- ============ Marginal Column Header============ -->
+<table  TABID="09746" border="0" cellpadding="0" cellspacing="0" width="130">
+<tr >
+<td  colspan="6">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="6">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="6">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+<td >
+<a  href="https://ecom.mwgdna.com/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('order','','../pix/marginal/marginal_order_hi.gif','click','','../pix/marginal/marginal_order.gif',1)" target="_blank">
+<img ></img>
+</a>
+</td>
+<td >
+<a  href="search.shtml" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('search','','../pix/marginal/marginal_search_hi.gif','click','','../pix/marginal/marginal_search.gif',1)">
+<img ></img>
+</a>
+</td>
+<td >
+<a  href="company_contact.shtml" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contact','','../pix/marginal/marginal_contact_hi.gif','click','','../pix/marginal/marginal_contact.gif',1)">
+<img ></img>
+</a>
+</td>
+<td >
+<img ></img>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="6">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="6">
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- ============ End of Marginal Column Header ============ -->
+</td>
+<td ></td>
+<td ></td>
+<td  colspan="14" valign="top">
+<img ></img>
+<br ></br>
+<img ></img>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="statuslineoff" href="index.shtml">
+Home
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+- Genomic Instruments -
+<a  class="statuslineoff" href="primus_overview.shtml">
+PCR Systems
+</a>
+-
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Primus Extra Value
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  align="left" bgcolor="99BAD7" rowspan="3" valign="top">
+<table  TABID="09747" border="0" cellpadding="5" cellspacing="0" width="130">
+<tr >
+<td >
+<p >
+<a  href="../software/kc4_27R9.zip"></a>
+<a  class="marginaltopic" href="primus_technology.shtml">
+<img ></img>
+Technology
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Primus
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<img ></img>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="../software/kc4_27R9.zip">
+<br ></br>
+<img ></img>
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="marginaltopic" href="primus_extravalue.shtml">
+Primus extra value
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<img ></img>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="../software/kc4_27R9.zip">
+<img ></img>
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="marginaltopic" href="primus_accessoires.shtml">
+Accessories
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Thermosprint plates and seals
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<img ></img>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="../software/kc4_27R9.zip">
+<br ></br>
+<img ></img>
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="marginaltopic" href="primus_ncc.shtml">
+NCC-Consumables
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<img ></img>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="../software/kc4_27R9.zip">
+<br ></br>
+<img ></img>
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="marginaltopic" href="primus_software.shtml">
+Software
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Primus Multiblock
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<img ></img>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  href="../software/kc4_27R9.zip">
+<br ></br>
+<img ></img>
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="marginaltopic" href="mailto:aglaser@mwgdna.com">
+Contact
+</a>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+for further information
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+</td>
+</tr>
+</table>
+<!-- ============ Marginal Column ============ -->
+<!-- ============ Contents ============ -->
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td ></td>
+<td ></td>
+<td  class="headline" colspan="14" valign="top">
+Primus Extra Value
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+<td  valign="top"></td>
+<td  valign="top"></td>
+<td  valign="top"></td>
+<td  valign="top"></td>
+<td  valign="top"></td>
+<td  valign="top"></td>
+<td  valign="top"></td>
+<td  valign="top"></td>
+<td  valign="top"></td>
+<td  colspan="5" valign="top"></td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td ></td>
+<td  colspan="11" valign="top">
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+When choosing Primus, you receive not just the instrument,
+<br ></br>
+but also a lot of Extra Value
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+MWG-BIOTECH AG offers you 10 years of expertise in PCR technology.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Rely on our technology because we use what we sell and we sell what we use
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+<blockquote >
+<p  class="headline">
+<font  color="#003399">
+Primus = Quality made in Germany
+</font>
+</p>
+</blockquote>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Applications support assists your research: Reap the benefit of our new T A S T Centre (Training, Application, Support and Test Centre)
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+<p >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Don`t worry be happy: Our excellent service network guarantees fast and professional on- and off-site service.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+All Primus thermal cyclers are licensed for PCR.
+<br ></br>
+Get the licence to cycle and be legal.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</p>
+<p  class="einleitungstext">
+...plus a lot more extras: Just ask!
+</p>
+</td>
+<td  valign="top"></td>
+<td  valign="top"></td>
+<td  valign="top"></td>
+</tr>
+<tr >
+<td ></td>
+<td  align="left" bgcolor="99BAD7" valign="bottom">
+<img ></img>
+</td>
+<td ></td>
+<td ></td>
+<td  colspan="8" valign="top"></td>
+<td  valign="top"></td>
+<td  colspan="5" valign="top"></td>
+</tr>
+<tr >
+<td ></td>
+<td  align="left" bgcolor="#CCCCCC" colspan="17" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  width="10">
+<img ></img>
+</td>
+<td  width="130">
+<img ></img>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  width="100">
+<img ></img>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  width="100">
+<img ></img>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  width="100">
+<img ></img>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  width="100">
+<img ></img>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+<td  width="100">
+<img ></img>
+</td>
+<td  width="10">
+<img ></img>
+</td>
+</tr>
+</table>
+</body>
+</html>

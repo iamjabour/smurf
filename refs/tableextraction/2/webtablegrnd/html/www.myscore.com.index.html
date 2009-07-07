@@ -1,0 +1,1372 @@
+<html >
+<head >
+<title >
+MyScore Home Page
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<script >
+function newWindow() { var thisWindow; thisWindow ="scorekeepervote.asp?group=" window.open(thisWindow,"","height=125, width=250"); };
+</script>
+<link ></link>
+<style  type="text/css">
+/* position Images or layers begin*/ #moreBoys { z-index: 5; position: absolute; top: 400px; left:80px; visibility: hidden; }; #moreGirls { z-index: 6; position: absolute; top: 500px; left: 80px; visibility: hidden; };
+</style>
+<script >
+/* variable f is what had past on to "this" f become actual form object at here */ function validate(f) { var aok; aok=true; // IN JAVASCRIPT, "IF-ELSE" STATEMENT DOES NOT SUPPORTED if ( isEmpty(f.username.value) ) { alert("Please enter your User Name"); aok=false; }; if ( isEmpty(f.password.value) ) { alert("Please enter your Password"); aok=false; }; return aok; }; function isEmpty(str) { return (str == "" || str == null); }; /* Show layers*/ // script for crossbrowser layerRef = "" ; styleRef = "" ; if (navigator.appName == "Netscape") { // netscape: document.layers[layerName].visibility = 'visible' layerRef = ".layers" ; styleRef = "" ; } else { //must be IE // IE: document.all[layerName].style.visibility = 'visible' layerRef = ".all" ; styleRef = ".style" ; }; /* 1. Navigator does not rely only on the LAYER tage or NEW LAYER() construction for layer objects. If the document contains CCS-position information, Navigator automatically turns each named, positioned item into a layer object. */ /* 2. eval() function helps on testing which browser */ function hideLayer(layerName) { eval("document" + layerRef + "[layerName]" + styleRef + ".visibility = 'hidden'"); // document.layers[layerName].visibility = 'hidden'; }; /* this is a flag that will check whether there is any layer open, if its open and user click other selection, previous layers will closed before open up the new layer */ openLayerName= ""; /* this is a flag that will check whether the current layer is open, if open reclick will close it. if not click will open */ layerFlag = false ; function showLayer(layerName) { if ((layerFlag == false) || (openLayerName=="")) { eval("document" + layerRef + "[layerName]" + styleRef + ".visibility = 'visible'"); //document.layers[layerName].visibility='visible'; layerFlag = true; openLayerName = layerName; } else { if (openLayerName == layerName) { eval("document" + layerRef + "[openLayerName]" + styleRef + ".visibility = 'hidden'"); openLayerName = ""; layerFlag = false; } else { eval("document" + layerRef + "[openLayerName]" + styleRef + ".visibility = 'hidden'"); openLayerName = ""; layerFlag = false; eval("document" + layerRef + "[layerName]" + styleRef + ".visibility = 'visible'"); openLayerName = layerName; layerFlag = true; }; }; };
+<!--
+  		function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+    	if (init==true) with (navigator) {if ((appName=="Netscape")&amp;amp;amp;&amp;amp;amp;(parseInt(appVersion)==4)) {
+      	  document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+    	else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+  		}
+  		MM_reloadPage(true);
+		
+    	function newWindow1() {
+	  		var thisWindow;
+	  		thisWindow ="../scorekeeper.html"
+	  		window.open(thisWindow,"","height=550, width=450,");
+		};
+  		// -->
+</script>
+</head>
+<body  alink="#FF0000" bgcolor="#FFFFFF" leftmargin="0" link="#3366FF" marginheight="0" marginwidth="0" topmargin="0" vlink="#FF0000">
+<!-- more boys and more girls sports set up -->
+<div  id="moreBoys">
+<table  TABID="09798" bgcolor="#f8faed" border="1" cellpadding="10">
+<tr >
+<td >
+<font  class="moresport">
+<a  href="../navigation/teamlisting.asp?sport=badminton&state=CA&orgtype=high%20school&county=Orange">
+Badminton
+</a>
+<br ></br>
+Cheerleaders
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=crosscountry&state=CA&orgtype=high%20school&county=Orange">
+Cross Country
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=golf&state=CA&orgtype=high%20school&county=Orange">
+Golf
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=soccer&state=CA&orgtype=high%20school&county=Orange">
+Soccer
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=swimming&state=CA&orgtype=high%20school&county=Orange">
+Swimming
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=tennis&state=CA&orgtype=high%20school&county=Orange">
+Tennis
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=trackfield&state=CA&orgtype=high%20school&county=Orange">
+Track Field
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=volleyball&state=CA&orgtype=high%20school&county=Orange">
+Volleyball
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=waterpolo&state=CA&orgtype=high%20school&county=Orange">
+Waterpolo
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=wrestling&state=CA&orgtype=high%20school&county=Orange">
+Wrestling
+</a>
+<br ></br>
+</font>
+</td>
+</tr>
+</table>
+</div>
+<div  id="moreGirls">
+<table  TABID="09799" bgcolor="#f8faed" border="1" bordercolor="black" cellpadding="10">
+<tr >
+<td >
+<font  class="moresport">
+<a  href="../navigation/teamlisting.asp?sport=badminton&state=CA&orgtype=high%20school&county=Orange">
+Badminton
+</a>
+<br ></br>
+Cheerleaders
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=crosscountry-girls&state=CA&orgtype=high%20school&county=Orange">
+Cross Country
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=golf-girls&state=CA&orgtype=high%20school&county=Orange">
+Golf
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=soccer-girls&state=CA&orgtype=high%20school&county=Orange">
+Soccer
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=swimming-girls&state=CA&orgtype=high%20school&county=Orange">
+Swimming
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=tennis-girls&state=CA&orgtype=high%20school&county=Orange">
+Tennis
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=trackfield-girls&state=CA&orgtype=high%20school&county=Orange">
+Track Field
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=waterpolo-girls&state=CA&orgtype=high%20school&county=Orange">
+Waterpolo
+</a>
+<br ></br>
+</font>
+</td>
+</tr>
+</table>
+</div>
+<!-- beginning of banner table -->
+<table  TABID="09803" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  bgcolor="#000000">
+<td  height="86">
+<table  TABID="09800" border="0" width="100%">
+<tr >
+<td  valign="top" width="20%">
+<div  align="center">
+<a  href="AdRedirect.asp?url=../navigation/contest.asp&image=../images/contest.gif">
+<img ></img>
+</a>
+<!-- &amp;amp;lt;a href="../navigation/contest.asp"&amp;amp;gt;&amp;amp;lt;font color="white"&amp;amp;gt;&amp;amp;lt;IMG BORDER="0" SRC="../images/contest.gif"&amp;amp;gt;&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/a&amp;amp;gt; -->
+</div>
+<!-- &amp;amp;lt;div align="center"&amp;amp;gt;&amp;amp;lt;a href="http://www.myoc.com/"&amp;amp;gt;&amp;amp;lt;font color="white"&amp;amp;gt;&amp;amp;lt;IMG BORDER="0" SRC="../images/myoc_home_logo.gif"&amp;amp;gt;&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt; -->
+</td>
+<td  valign="top" width="60%">
+<!-- Begin of Banner -->
+<div  align="center">
+<a  href="AdRedirect.asp?url=http://www.bn.com/&image=../images/advertising/dummies468.gif">
+<img ></img>
+</a>
+</div>
+<!-- End of Banner -->
+</td>
+<td  align="center" valign="top" width="20%">
+<a  href="http://www.myoc.com/">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!-- End of banner table -->
+<!-- beginning of myscore logo and drop down boxes table -->
+<table  TABID="09802" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="338">
+<img ></img>
+</td>
+<td  align="center" bgcolor="#FFCC00" width="668">
+<table  TABID="09801" border="0" width="214">
+<form  action="../navigation/upperdropdown.asp" method="post">
+<tr >
+<td  height="2" width="70">
+<select >
+<option  selected="selected" value="findschool">
+Find My School
+</option>
+<option  value="findplayer">
+Find My Player
+</option>
+</select>
+</td>
+<td  height="2" valign="top" width="85">
+<input ></input>
+</td>
+<td  height="2" valign="top" width="45">
+<input ></input>
+</td>
+</tr>
+</form>
+</table>
+<div  align="center">
+<font  class="nav">
+<a  href="../index.asp">
+Home
+</a>
+<font  style="font-size: 10px; color: black;">
+|
+</font>
+<a  href="../navigation/aboutus.asp">
+About Us
+</a>
+<font  style="font-size: 10px; color: black;">
+|
+</font>
+<a  href="../cgi-bin/coachesinput/coachesnavigation.asp">
+Scorekeeper
+</a>
+<font  style="font-size: 10px; color: black;">
+|
+</font>
+<a  href="http://partners.everyone.net/136536/email/scripts/unifiedlogin.pl?EV1=9827808265405297&rcode=1">
+MyScore Email
+</a>
+</font>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of myscore logo and drop down boxes table -->
+<table  TABID="09804" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  bgcolor="#FFCC00">
+<td  height="24">
+<div  align="left">
+<font  class="sessionbar">
+&gt;&gt;
+<a  href="#schoolyear">
+2000 - 2001
+</a>
+School Yr. &gt;&gt;
+<a  href="../navigation/choosestate.asp">
+Orange
+</a>
+County
+</font>
+</div>
+</td>
+</tr>
+<tr >
+<td  height="2">
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- beginning of bottom table -->
+<!-- include left navigation and content table and bottom page -->
+<div  align="left">
+<table  TABID="09819" border="1" bordercolor="#000066" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tr >
+<!--  Beginning of Left Navigation -->
+<td  bgcolor="#000066" valign="top" width="19%">
+<div  align="center">
+<table  TABID="09807" border="0" width="133">
+<tr >
+<td >
+<font  class="leftnavigation">
+<font  style="font-size: 11px; color: white">
+May 30, 2001
+</font>
+<br ></br>
+<br ></br>
+<font  class="lefttitle">
+New @ MyScore
+</font>
+<br ></br>
+<a  href="javascript: newWindow1()">
+Scorekeeper
+<br ></br>
+of the Year
+</a>
+<br ></br>
+<!-- begin weather.com logo include code -->
+</font>
+<table  TABID="09806">
+<tr >
+<td  align="left" width="120">
+<a  href="http://www.weather.com?par=internal&code=397312&site=logo&promo=english">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  align="center" width="120">
+<form  action="http://www.weather.com/cgi-bin/uncgi/zip_city_search.cgi?par=internal&code=397312&site=logo&promo=english" method="post" target="_new">
+<table  TABID="09805" cellpadding="0" cellspacing="0">
+<tr >
+<td  colspan="2" valign="center" width="120"></td>
+</tr>
+<tr >
+<td  colspan="2">
+<font  style="font-size:10px; color=white">
+Enter city or US Zip
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<input ></input>
+</td>
+<td >
+<input ></input>
+</td>
+</tr>
+</table>
+</form>
+</td>
+</tr>
+</table>
+<!-- end weather.com logo include code-->
+<font  class="lefttitle">
+Features
+</font>
+<br ></br>
+<a  href="../navigation/powerpollresult.asp?sport=baseball">
+MyScore Poll
+</a>
+<br ></br>
+<a  href="../navigation/schedulecalendar.asp?dayselect=5/29/2001">
+Scoreboard
+</a>
+<br ></br>
+<br ></br>
+<font  class="lefttitle">
+Personal Search
+</font>
+<br ></br>
+<a  href="../navigation/findplayers.asp">
+Find My Player
+</a>
+<br ></br>
+<a  href="../navigation/findschool.asp">
+Find My Team
+</a>
+<br ></br>
+<a  href="../navigation/choosestate.asp">
+Find My County
+</a>
+<br ></br>
+<br ></br>
+<font  class="lefttitle">
+Pick A Sport
+</font>
+<br ></br>
+<font  style="font-size: 8pt; color: #b0c0d0">
+Boys :
+</font>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=baseball&state=CA&orgtype=high%20school&county=Orange">
+Baseball
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=basketball&state=CA&orgtype=high%20school&county=Orange">
+Basketball
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=football&state=CA&orgtype=high%20school&county=Orange">
+Football
+</a>
+<br ></br>
+<!--
+					  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=badminton&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Badminton&amp;amp;lt;/A&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;a href="javascript: void(0)"&amp;amp;gt;Cheerleaders&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=crosscountry&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Cross Country&amp;amp;lt;/A&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=golf&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Golf&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;br&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=soccer&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Soccer&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;br&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=swimming&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Swimming&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;br&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=tennis&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Tennis&amp;amp;lt;/A&amp;amp;gt;&amp;amp;lt;br&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=trackfield&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Track Field&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=volleyball&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Volleyball&amp;amp;lt;/A&amp;amp;gt;&amp;amp;lt;br&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=waterpolo&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Waterpolo&amp;amp;lt;/A&amp;amp;gt;&amp;amp;lt;br&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=wrestling&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Wrestling&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+					  -->
+<a  href="javascript: showLayer('moreBoys')">
+<font  style="font-size: 12; color: red">
+<i >
+More...
+</i>
+</font>
+<br ></br>
+</a>
+<br ></br>
+<font  style="font-size: 8pt;color: #b0c0d0">
+Girls :
+</font>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=basketball-girls&state=CA&orgtype=high%20school&county=Orange">
+Basketball
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=softball&state=CA&orgtype=high%20school&county=Orange">
+Softball
+</a>
+<br ></br>
+<a  href="../navigation/teamlisting.asp?sport=volleyball-girls&state=CA&orgtype=high%20school&county=Orange">
+Volleyball
+</a>
+<br ></br>
+<!-- 
+					  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=badminton&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Badminton&amp;amp;lt;/A&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;a href="javascript: void(0)"&amp;amp;gt;Cheerleaders&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=crosscountry-girls&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Cross Country&amp;amp;lt;/A&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=golf-girls&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Golf&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=soccer-girls&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Soccer&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=swimming-girls&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Swimming&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=tennis-girls&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Tennis&amp;amp;lt;/A&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=trackfield-girls&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Track Field&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+			  		  &amp;amp;lt;A href="../navigation/teamlisting.asp?sport=waterpolo-girls&amp;amp;amp;amp;state=CA&amp;amp;amp;amp;orgtype=high%20school&amp;amp;amp;amp;county=Orange" &amp;amp;gt;Waterpolo&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;BR&amp;amp;gt;
+					  -->
+<a  href="javascript: showLayer('moreGirls')">
+<font  style="font-size: 12; color: red">
+<i >
+More...
+</i>
+</font>
+</a>
+<br ></br>
+<br ></br>
+<font  class="lefttitle">
+SoCal Counties
+</font>
+<br ></br>
+<a  href="../index.asp?state=ca&county=LosAngeles">
+Los Angeles
+</a>
+<br ></br>
+<a  href="../index.asp?state=ca&county=Orange">
+Orange
+</a>
+<br ></br>
+<a  href="../index.asp?state=ca&county=Riverside">
+Riverside
+</a>
+<br ></br>
+<a  href="../index.asp?state=ca&county=SanBernardino">
+San Bernardino
+</a>
+<br ></br>
+<a  href="../index.asp?state=ca&county=SanDiego">
+San Diego
+</a>
+<br ></br>
+<a  href="../index.asp?state=ca&county=Ventura">
+Ventura
+</a>
+<br ></br>
+<a  href="../navigation/choosestate.asp">
+Others ...
+</a>
+<br ></br>
+<br ></br>
+<font  class="lefttitle">
+School Year
+</font>
+<br ></br>
+<a  href="../index.asp?yearpick=2001" name="schoolyear">
+2001-2002
+</a>
+<br ></br>
+<a  href="../index.asp?yearpick=2000" name="schoolyear">
+<font  color="red">
+2000-2001
+</font>
+</a>
+<br ></br>
+<a  href="../index.asp?yearpick=1999" name="schoolyear">
+1999-2000
+</a>
+<br ></br>
+<br ></br>
+<font  class="lefttitle">
+MyScore Inc.
+</font>
+<br ></br>
+<a  href="../navigation/aboutus.asp">
+About Us
+</a>
+<br ></br>
+<a  href="mailto:Admin@MyScore.com">
+Contact Us
+</a>
+<br ></br>
+<a  href="../privacy.asp">
+Privacy Policy
+</a>
+<br ></br>
+<br ></br>
+<font  class="lefttitle">
+Sponsorship
+</font>
+<br ></br>
+<a  href="../x/default.htm">
+Advertising
+</a>
+<br ></br>
+<a  href="../advertise.asp">
+Existing Advertisers
+</a>
+<br ></br>
+<a  href="../testimonial.asp">
+Customer Testimonial
+</a>
+<br ></br>
+<a  href="../services.asp">
+Special Offer
+</a>
+<br ></br>
+<a  href="../sponsors/becomesponsors.asp">
+Reports
+</a>
+<br ></br>
+<br ></br>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<!-- Beginning of content -->
+<td  valign="top" width="81%">
+<table  TABID="09818" border="0" cellpadding="0" cellspacing="2" width="100%">
+<tr >
+<td >
+<!-- End of Left Navigation -->
+<!-- end of page top -->
+<table  TABID="09817" border="0" cellpadding="0" cellspacing="2" width="100%">
+<tr  width="100%">
+<td  valign="top" width="33%">
+<!-- Beginning of Left table -->
+<table  TABID="09811" border="0" cellpadding="0" cellspacing="2" name="left_table" width="100%">
+<!--
+		  &amp;amp;lt;tr width="100%"&amp;amp;gt;
+			&amp;amp;lt;td bgcolor="#394274" width="100%" align="center"&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;&amp;amp;lt;font size="2" color="#FFFFFF"&amp;amp;gt;MyScore Live&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+	 	  &amp;amp;lt;/tr&amp;amp;gt;
+		 
+	 	  &amp;amp;lt;tr width="100%"&amp;amp;gt;
+	   		&amp;amp;lt;td width="100%"&amp;amp;gt;
+	    		&amp;amp;lt;font&amp;amp;gt;
+				Questions about MyScore? &amp;amp;lt;br&amp;amp;gt;Need help entering data?&amp;amp;lt;br&amp;amp;gt;&amp;amp;lt;a href="mailto:admin@MyScore.com" title="email administrator"&amp;amp;gt;Can't find your team?&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;br&amp;amp;gt;Click below to talk to us live.&amp;amp;lt;br&amp;amp;gt;  
+				If we are not logged on, leave us a message.
+	    		&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;P&amp;amp;gt;
+			-->
+<!-- Beginning of Human Click -->
+<!--
+				&amp;amp;lt;table border='0' cellspacing='0'cellpadding='0' align="center"&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td align='center'&amp;amp;gt;
+				  &amp;amp;lt;a href='http://hc2.humanclick.com/hc/81880060/?cmd=file&amp;amp;amp;file=visitorWantsToChat&amp;amp;amp;site=81880060&amp;amp;amp;byhref=1' target='chat81880060'
+				  onClick="window.open('http://hc2.humanclick.com/hc/81880060/?cmd=file&amp;amp;amp;file=visitorWantsToChat&amp;amp;amp;site=81880060','chat81880060','width=419,height=320');
+				  return false;"&amp;amp;gt;&amp;amp;lt;img src='http://hc2.humanclick.com/hc/81880060/?cmd=repstate&amp;amp;amp;site=81880060&amp;amp;amp;category=en;signature;1&amp;amp;amp;ver=1' name='hcIcon' width=120 height=36
+				  border=0&amp;amp;gt;&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td align='center'&amp;amp;gt;&amp;amp;lt;a href='http://hc2.humanclick.com/hc/81880060/?cmd=PoweredByPage&amp;amp;amp;site=81880060' target='_top'&amp;amp;gt;
+				  &amp;amp;lt;img src='http://hc2.humanclick.com/hc/81880060/?cmd=hccredit&amp;amp;amp;site=81880060' width=106 height=35 border=0&amp;amp;gt;&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;/table&amp;amp;gt;
+			-->
+<!-- End of Human Click -->
+<!--
+				&amp;amp;lt;br&amp;amp;gt;
+	   		&amp;amp;lt;/td&amp;amp;gt;
+	 	  &amp;amp;lt;/tr&amp;amp;gt;  
+
+			-->
+<!-- Beginning of Scorekeeper -->
+<tr  width="100%">
+<td  align="center" bgcolor="#394274" nowrap="nowrap" valign="top" width="100%">
+<font  color="#ffffff">
+<b >
+Scorekeeper of the Year
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<table  TABID="09808" bgcolor="#elelel" border="1" bordercolor="#000000" cellpadding="0" cellspacing="0" width="100%">
+<form  action="index.asp" method="post" name="votescorekeeper" onsubmit="newWindow()">
+<tr >
+<td >
+<font  class="showcase">
+<center >
+<b >
+<a  href="javascript: newWindow1()">
+<u >
+And the winner is...
+</u>
+</a>
+</b>
+</center>
+<br ></br>
+<br ></br>
+Conratulations to
+<a  href="navigation/game.asp?teamid=200&sport=softball">
+Michael Newton
+</a>
+of the
+<a  href="navigation/game.asp?teamid=200&sport=softball">
+Santa Ana Valley Softball
+</a>
+who has been voted as the first MyScore.com Scorekeeper of the Year.
+<br ></br>
+<center >
+<img ></img>
+</center>
+<br ></br>
+<br ></br>
+</font>
+</td>
+</tr>
+</form>
+</table>
+</td>
+</tr>
+<!-- End of Scorekeeper-->
+<!-- Begin Test Area -->
+<tr  align="center" bgcolor="#394274" nowrap="nowrap" valign="top" width="100%">
+<td >
+<font  color="#ffffff">
+<b >
+Question of the Week
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<table  TABID="09809" bgcolor="#ffcc66" border="1" bordercolor="#000000" cellpadding="0" cellspacing="0" width="100%">
+<form  action="index.asp" method="post" name="votescorekeeper" onsubmit="newWindow()">
+<tr >
+<td >
+<font  class="showcase">
+<center >
+<b >
+What will you be doing with your Summer Break?
+</b>
+<br ></br>
+<br ></br>
+</center>
+<input ></input>
+Summer School
+<br ></br>
+<input ></input>
+Summer job
+<br ></br>
+<input ></input>
+Family vacation
+<br ></br>
+<input ></input>
+Reside at the Beach
+<br ></br>
+<br ></br>
+</font>
+<div >
+<input ></input>
+</div>
+<br ></br>
+</td>
+</tr>
+</form>
+</table>
+</td>
+</tr>
+<!-- End Test Area -->
+<tr  width="100%">
+<td  align="center" bgcolor="#394274" nowrap="nowrap" valign="top" width="100%">
+<font  color="#ffffff">
+<b >
+MyScore Showcase
+</b>
+</font>
+</td>
+</tr>
+<tr  width="100%">
+<td  width="100%">
+<table  TABID="09810" border="1" bordercolor="gray" cellpadding="2" cellspacing="0" width="100%">
+<tr  width="100%">
+<td  bgcolor="#e6e3e9" width="100%">
+<font  class="showcase">
+<center >
+<b >
+<u >
+Showcase Teams
+</u>
+</b>
+</center>
+<b >
+-
+</b>
+<a  href="navigation/game.asp?teamid=33584&sport=waterpolo-girls">
+La Habra G Waterpolo
+</a>
+<br ></br>
+<b >
+-
+</b>
+<a  href="navigation/game.asp?teamid=16364&sport=softball">
+Northwood Softball
+</a>
+<br ></br>
+<b >
+-
+</b>
+<a  href="navigation/game.asp?teamid=200&sport=softball">
+Santa Ana Valley Softball
+</a>
+<br ></br>
+<b >
+-
+</b>
+<a  href="navigation/game.asp?teamid=461&sport=tennis">
+Bolsa Grande Tennis
+</a>
+<br ></br>
+<b >
+-
+</b>
+<a  href="navigation/game.asp?teamid=231&sport=baseball">
+El Dorado Baseball
+</a>
+<br ></br>
+<b >
+-
+</b>
+<a  href="navigation/game.asp?teamid=250&sport=baseball">
+Troy Baseball
+</a>
+<br ></br>
+<b >
+-
+</b>
+<a  href="navigation/game.asp?teamid=181&sport=softball">
+<b >
+Capistrano Valley Softball
+</b>
+</a>
+<br ></br>
+<b >
+-
+</b>
+<a  href="navigation/game.asp?teamid=186&sport=softball">
+<b >
+Santa Margarita Softball
+</b>
+</a>
+<br ></br>
+<br ></br>
+<center >
+<b >
+<u >
+Showcase Schools
+</u>
+</b>
+</center>
+<b >
+-
+</b>
+<a  href="http://www.myscore.com/cypress/">
+Cypress
+</a>
+<br ></br>
+<b >
+-
+</b>
+<a  href="http://www.myscore.com/sanclemente/">
+San Clemente
+</a>
+<br ></br>
+<b >
+-
+</b>
+<a  href="http://www.myscore.com/lagunahills/">
+Laguna Hills
+</a>
+<br ></br>
+<b >
+-
+</b>
+<a  href="http://www.myscore.com/lahabra/">
+La Habra
+</a>
+<br ></br>
+<b >
+-
+</b>
+<a  href="http://www.myscore.com/northwood/">
+Northwood
+</a>
+<br ></br>
+<br ></br>
+<b >
+Get your
+<a  href="signup.asp">
+team page
+</a>
+and
+<a  href="changepin.asp">
+player profiles
+</a>
+today.
+</b>
+</font>
+<br ></br>
+<br ></br>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<!-- End of left table -->
+<!-- Beginning of center table -->
+<td  valign="top" width="34%">
+<table  TABID="09812" border="0" cellpadding="0" cellspacing="2" width="100%">
+<!-- Beginning of Sports Central -->
+<tr  width="100%">
+<td  align="center" bgcolor="#394274" width="100%">
+<b >
+<font  color="#ffffff" size="2">
+Sports Central
+</font>
+</b>
+</td>
+</tr>
+<tr >
+<td >
+<font >
+<a  href="../navigation/schedulecalendar.asp">
+Scoreboard
+</a>
+<br ></br>
+<font  class="subtitle">
+Schedules and Results
+</font>
+<br ></br>
+<br ></br>
+<a  href="navigation/powerpollresult.asp?sport=baseball">
+MyScore Poll
+</a>
+<br ></br>
+<font  class="subtitle">
+Official Team Rankings
+</font>
+<br ></br>
+<br ></br>
+<a  href="navigation/findschool.asp">
+Active Schools
+</a>
+<br ></br>
+<font  class="subtitle">
+Frequently Visited High Schools
+</font>
+<br ></br>
+<br ></br>
+<a  href="navigation/findplayers.asp">
+Popular Players
+</a>
+<br ></br>
+<font  class="subtitle">
+Frequently Visited Athletes
+</font>
+<br ></br>
+<br ></br>
+<a  href="navigation/tournaments.asp">
+Tournaments
+</a>
+<br ></br>
+<font  class="subtitle">
+Local Tournament results
+</font>
+<br ></br>
+<br ></br>
+<a  href="navigation/tournaments.asp">
+Playoffs
+</a>
+<br ></br>
+<font  class="subtitle">
+The road to the CIF-SS Championship
+</font>
+<br ></br>
+<br ></br>
+<a  href="navigation/archive.asp">
+Game of the Week
+</a>
+<br ></br>
+<font  class="subtitle">
+Game highlights, Have MyScore at your next game
+</font>
+<br ></br>
+<br ></br>
+<a  href="newsletter/issue.asp">
+Weekly Newsletter
+</a>
+<br ></br>
+<font  class="subtitle">
+Look for our newsletter throughout your community
+</font>
+<br ></br>
+<br ></br>
+<a  href="update/index.asp">
+E-mail Update
+</a>
+<br ></br>
+<font  class="subtitle">
+Sign up for the latest newsletter
+</font>
+<br ></br>
+<br ></br>
+<a  href="http://partners.everyone.net/136536/email/scripts/unifiedlogin.pl?EV1=9827808265405297&rcode=1">
+MyScore E-mail
+</a>
+<br ></br>
+<font  class="subtitle">
+Check your e-mail or sign up for yourname@MyScore.com
+</font>
+<br ></br>
+<br ></br>
+<a  href="signup.asp">
+Sign Up My Team
+</a>
+<br ></br>
+<font  class="subtitle">
+Get your team involved at MyScore
+</font>
+<br ></br>
+<br ></br>
+<a  href="changepin.asp">
+Edit Player Profile
+</a>
+<br ></br>
+<font  class="subtitle">
+Find out how to activate and interact with your own profile
+</font>
+<br ></br>
+<br ></br>
+<a  href="navigation/inspiration.asp">
+Inspirational Story
+</a>
+<br ></br>
+<font  class="subtitle">
+Sometimes sports is not always about winning
+</font>
+<br ></br>
+<br ></br>
+</font>
+</td>
+</tr>
+<!-- End of Sports Central -->
+<!-- Beginning of Demographics Poll -->
+<!--
+					  &amp;amp;lt;tr&amp;amp;gt;
+          				&amp;amp;lt;td valign="top" bgcolor="#394274" align="center" width="100%"&amp;amp;gt;&amp;amp;lt;font size="2" color="#ffffff"&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;Tell Us About You&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+					  &amp;amp;lt;/tr&amp;amp;gt;					  
+					  &amp;amp;lt;tr&amp;amp;gt;
+					    &amp;amp;lt;td&amp;amp;gt;
+						  &amp;amp;lt;form name="demographics" action="index.asp" method="post" onSubmit="newWindow()"&amp;amp;gt;
+						  &amp;amp;lt;table border="1" bordercolor="#000000" bgcolor="#f7f8e7" width="100%" cellspacing="0" cellpadding="0"&amp;amp;gt;
+						    &amp;amp;lt;tr&amp;amp;gt;
+							  &amp;amp;lt;td&amp;amp;gt;
+							    &amp;amp;lt;table border="0" cellspacing="2" cellpadding="0"&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td colspan="3"&amp;amp;gt;&amp;amp;lt;font size="2"&amp;amp;gt;Who are you ?&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td width="50"&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;input type="radio" name="age" value="jr"&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+									&amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;font style="font-size: 10"&amp;amp;gt;Jr. High Student&amp;amp;lt;/font&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td width="50"&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;input type="radio" name="age" value="hs"&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+									&amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;font style="font-size: 10"&amp;amp;gt;H.S. Student&amp;amp;lt;/font&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;input type="radio" name="age" value="coach"&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+									&amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;font style="font-size: 10"&amp;amp;gt;Coach&amp;amp;lt;/font&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;input type="radio" name="age" value="parent"&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+									&amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;font style="font-size: 10"&amp;amp;gt;Parent&amp;amp;lt;/font&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;input type="radio" name="age" value="others"&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+									&amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;font style="font-size: 10"&amp;amp;gt;Others&amp;amp;lt;/font&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td colspan="3"&amp;amp;gt;&amp;amp;lt;font size="2"&amp;amp;gt;Where do you live ?&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td width="50"&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;input type="radio" name="location" value="la"&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+									&amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;font style="font-size: 10"&amp;amp;gt;LA, California&amp;amp;lt;/font&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td width="50"&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;input type="radio" name="location" value="oc"&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+									&amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;font style="font-size: 10"&amp;amp;gt;OC, California&amp;amp;lt;/font&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td width="50"&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;input type="radio" name="location" value="sc"&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+									&amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;font style="font-size: 10"&amp;amp;gt;S. California&amp;amp;lt;/font&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td width="50"&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;input type="radio" name="location" value="state"&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+									&amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;font style="font-size: 10"&amp;amp;gt;California&amp;amp;lt;/font&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td width="50"&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+								    &amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;input type="radio" name="location" value="others"&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+									&amp;amp;lt;td&amp;amp;gt;
+									  &amp;amp;lt;font style="font-size: 10"&amp;amp;gt;Others&amp;amp;lt;/font&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								  
+								  &amp;amp;lt;tr&amp;amp;gt;
+								    &amp;amp;lt;td colspan="3" align="center"&amp;amp;gt;
+									  &amp;amp;lt;input type="submit" value="Result"&amp;amp;gt;
+									&amp;amp;lt;/td&amp;amp;gt;
+								  &amp;amp;lt;/tr&amp;amp;gt;
+								&amp;amp;lt;/table&amp;amp;gt;
+								&amp;amp;lt;/form&amp;amp;gt;
+							  &amp;amp;lt;/td&amp;amp;gt;
+							&amp;amp;lt;/tr&amp;amp;gt;
+						  &amp;amp;lt;/table&amp;amp;gt;
+						&amp;amp;lt;/td&amp;amp;gt;
+					  &amp;amp;lt;/tr&amp;amp;gt;
+-->
+<!--Beginning of Demographics Poll -->
+</table>
+</td>
+<!-- Beginning of right table -->
+<td  valign="top" width="33%">
+<table  TABID="09816" border="0" cellpadding="0" cellspacing="2" width="100%">
+<!--
+					  &amp;amp;lt;tr width="100%"&amp;amp;gt;
+						&amp;amp;lt;td bgcolor="#394274" width="100%" align="center"&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;&amp;amp;lt;font size="2" color="#FFFFFF"&amp;amp;gt;Scorekeepers Login&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/b&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+	 	  			  &amp;amp;lt;/tr&amp;amp;gt;
+		  			  &amp;amp;lt;tr width="100%"&amp;amp;gt;
+		    			&amp;amp;lt;td valign="top"&amp;amp;gt;
+  			  			  &amp;amp;lt;table border="0" width="100%"&amp;amp;gt;
+			  				&amp;amp;lt;form method="POST" action="cgi-bin/coachesinput/coachesnavigation.asp"&amp;amp;gt;
+    			  			  &amp;amp;lt;tr&amp;amp;gt;
+          						&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;font&amp;amp;gt;UserName:&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+          						&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;font&amp;amp;gt;&amp;amp;lt;input type="text" name="email" size="8"&amp;amp;gt;&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+        	  	  			  &amp;amp;lt;/tr&amp;amp;gt;
+        	  	  			  &amp;amp;lt;tr&amp;amp;gt;
+          						&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;font&amp;amp;gt;Password:&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+          						&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;font&amp;amp;gt;&amp;amp;lt;input type="password" name="password" size="8"&amp;amp;gt;&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+				  			  &amp;amp;lt;/tr&amp;amp;gt;
+				  			  &amp;amp;lt;tr&amp;amp;gt;
+				    			&amp;amp;lt;td&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/td&amp;amp;gt;
+          						&amp;amp;lt;td align="center"&amp;amp;gt;&amp;amp;lt;font&amp;amp;gt;&amp;amp;lt;input type="submit" value="Login" name="B1"&amp;amp;gt;&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+          		  			  &amp;amp;lt;/tr&amp;amp;gt;
+				  			  &amp;amp;lt;tr&amp;amp;gt;
+				    			&amp;amp;lt;td&amp;amp;gt;&amp;amp;amp;nbsp;&amp;amp;lt;/td&amp;amp;gt;
+								&amp;amp;lt;td align="center"&amp;amp;gt;&amp;amp;lt;a href="navigation/findschool.asp"&amp;amp;gt;&amp;amp;lt;font&amp;amp;gt;new scorekeeper&amp;amp;lt;/font&amp;amp;gt;&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;
+			  	  			  &amp;amp;lt;/tr&amp;amp;gt;
+  							&amp;amp;lt;/form&amp;amp;gt;
+			  			  &amp;amp;lt;/table&amp;amp;gt;
+						&amp;amp;lt;/td&amp;amp;gt;
+		  			  &amp;amp;lt;/tr&amp;amp;gt;
+					  -->
+<tr >
+<td  align="center" bgcolor="#394274" valign="top" width="100%">
+<font  color="#ffffff" size="2">
+<b >
+MyScore Contest
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="100%">
+<font ></font>
+<div >
+<table  TABID="09813" width="100%">
+<tr >
+<td  align="center">
+<a  href="http://www.knotts.com/">
+<img ></img>
+</a>
+</td>
+<td  align="center"></td>
+</tr>
+</table>
+</div>
+<div  align="center"></div>
+<font >
+<a  href="navigation/contest1.asp">
+<font  style="font-size: 18px">
+<b >
+WIN 4 Tickets!
+</b>
+</font>
+<br ></br>
+</a>
+Win 4 all day admission passes for Knott's Berry Farm Theme Park. Contest ends May 31, 2001.
+<a  href="navigation/contest1.asp">
+Enter Here
+</a>
+</font>
+<hr ></hr>
+<table  TABID="09814" width="100%">
+<tr >
+<td >
+<a  href="http://www.danawharfsportfishing.com/">
+<img ></img>
+</a>
+</td>
+<td  align="center">
+<font >
+<font  style="font-size: 18px">
+Dorris Thompson
+</font>
+<br ></br>
+Congratulations
+</font>
+</td>
+</tr>
+</table>
+<font  color="red">
+Congratulations to Dorris Thompson
+</font>
+from the
+<a  href="navigation/game.asp?teamid=38&sport=baseball">
+Trabuco Hills Baseball Team
+</a>
+for winning last months prize of 2 half day passes for a Dana Wharf Sportfishing excursion!!!
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#394274" valign="top" width="100%">
+<font  color="#ffffff">
+<b >
+Game Highlights
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td >
+<font >
+- 5/29/2001 Mission Viejo
+<br ></br>
+</font>
+<table  TABID="09815">
+<tr >
+<td  align="center" valign="middle">
+<a  href="navigation/game.asp?sport=baseball&teamid=38">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="middle">
+<font >
+<a  href="navigation/highlightstory.asp">
+Trabuco Hills baseball team loses to Riverside Poly, 3-5.
+</a>
+</font>
+</td>
+</tr>
+</table>
+Mario Ramirez started out the pitching with P.J. Sandoval came in the top of the 3rd and had 5 strike outs, then Kyle Allen finished the game in the top of the 6th with 2 strike outs. P.J. Sandoval had 3 singles, Brad Boster had a single, Andrew Romine had a bunt single, Mike Thompson had 2 RBI's and had a infield single that he
+<a  href="navigation\highlightstory.asp">
+<i >
+...More
+</i>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<hr ></hr>
+</td>
+</tr>
+<tr >
+<td >
+<i >
+<font >
+Recent Game Articles ...
+</font>
+</i>
+<p ></p>
+</td>
+</tr>
+<tr >
+<td  width="60%">
+<font  class="document">
+- 5/25/2001 Beverly Hills
+<br ></br>
+<a  href="navigation/stats.asp?choice=fbstatsoffensive&Name=Offensive&teamid=3279&gameid=43602&sport=baseball&highschoolname=Beverly+Hills&highschoolid=1467&opponent=Yearly+Summary&date=5%2F25%2F2001">
+<u >
+Beverly Hills baseball team scrimmaged Yearly Summary
+</u>
+</a>
+<br ></br>
+</font>
+<p ></p>
+</td>
+</tr>
+<tr >
+<td  width="60%">
+<font  class="document">
+- 5/25/2001 Westminster
+<br ></br>
+<a  href="navigation/stats.asp?choice=fbstatsoffensive&Name=Offensive&teamid=247&gameid=43580&sport=baseball&highschoolname=La+Quinta&highschoolid=91&opponent=Ridgecrest+Burroughs&date=5%2F25%2F2001">
+<u >
+La Quinta baseball team loses to Ridgecrest Burroughs, 2-10
+</u>
+</a>
+<br ></br>
+</font>
+<p ></p>
+</td>
+</tr>
+<tr >
+<td  width="60%">
+<font  class="document">
+- 5/25/2001 Mission Viejo
+<br ></br>
+<a  href="navigation/stats.asp?choice=fbstatsoffensive&Name=Offensive&teamid=38&gameid=43599&sport=baseball&highschoolname=Trabuco+Hills&highschoolid=28&opponent=Irvine&date=5%2F25%2F2001">
+<u >
+Trabuco Hills baseball team defeats Irvine, 4-2
+</u>
+</a>
+<br ></br>
+</font>
+<p ></p>
+</td>
+</tr>
+<tr >
+<td  width="60%">
+<font  class="document">
+- 5/23/2001 Irvine
+<br ></br>
+<a  href="navigation/stats.asp?choice=fbstatsoffensive&Name=Offensive&teamid=35995&gameid=43573&sport=volleyball&highschoolname=Northwood&highschoolid=6160&opponent=Santa+Ynez+HS&date=5%2F23%2F2001">
+<u >
+Northwood volleyball team loses to Santa Ynez HS, 1-3
+</u>
+</a>
+<br ></br>
+</font>
+<p ></p>
+</td>
+</tr>
+<tr >
+<td  width="60%">
+<font  class="document">
+- 5/22/2001 Westminster
+<br ></br>
+<a  href="navigation/stats.asp?choice=fbstatsoffensive&Name=Offensive&teamid=247&gameid=43574&sport=baseball&highschoolname=La+Quinta&highschoolid=91&opponent=Hesperia&date=5%2F22%2F2001">
+<u >
+La Quinta baseball team defeats Hesperia, 6-3
+</u>
+</a>
+<br ></br>
+</font>
+<p ></p>
+</td>
+</tr>
+</table>
+</td>
+<!-- End of right table -->
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<!-- End of content -->
+</tr>
+</table>
+</div>
+<!------------------------------------------------------------->
+<p >
+<br ></br>
+</p>
+<table  TABID="09820" align="center" width="100%">
+<tr  valign="top">
+<td  align="center">
+<!-- &amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;
+				&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp; -->
+<a  href="AdRedirect.asp?url=http://www.universalstudioshollywood.com/&image=../images/advertising/56.gif">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr  valign="top">
+<td  align="center" nowrap="nowrap">
+<!-- &amp;amp;lt;IMG border=0 height=1 src="images/mylockerimages/shim.gif" width=150&amp;amp;gt; -->
+<!-- &amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;&amp;amp;amp;nbsp;-->
+<font  class="nav">
+<a  href="../index.asp" target="_top">
+Home
+</a>
+|
+<a  href="../advertise.asp" target="_top">
+Advertise
+</a>
+|
+<a  href="../navigation/findplayers.asp" target="_top">
+Find Player
+</a>
+|
+<a  href="../navigation/findschool.asp" target="_top">
+Find School
+</a>
+|
+<a  href="../navigation/choosestate.asp" target="_top">
+Change Team
+</a>
+|
+<a  href="../cgi-bin/coachesinput/coachesnavigation.asp" target="_top">
+Scorekeeper
+</a>
+|
+<a  href="../navigation/aboutus.asp" target="_top">
+About Us
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center">
+<font  class="nav" style="color: black">
+Copyright © 1999, 2000, 2001 Myscore.com. All rights reserved.
+</font>
+</td>
+</tr>
+</table>
+<!-- End of content -->
+</body>
+</html>

@@ -1,0 +1,1264 @@
+<!-- Texis RDBMS Copyright (c) 1992 - 2000 Thunderstone - EPI, Inc. -->
+<!-- Texis Web Script Copyright (c) 1996 - 2000 Thunderstone - EPI, Inc. -->
+<html >
+<head >
+<title >
+BrassRing.com - Career Events Schedule - Job Fairs, Job Search, Resume, and Career Fair Portal; High Tech Employment Opportunities
+</title>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+</head>
+<body >
+<script >
+<!--
+ // name - name of the cookie
+ // value - value of the cookie
+ // [expires] - expiration date of the cookie (defaults to end of current session)
+ // [path] - path for which the cookie is valid (defaults to path of calling document)
+ // [domain] - domain for which the cookie is valid (defaults to domain of calling document)
+ // [secure] - Boolean value indicating if the cookie transmission requires a secure transmission
+ // * an argument defaults when it is assigned null as a placeholder
+ // * a null placeholder is not required for trailing omitted arguments
+ function setCookie(name, value, expires, path, domain, secure) {
+  var curCookie = name + "=" + escape(value) +
+   ((expires) ? "; expires=" + expires.toGMTString() : "") +
+   ((path) ? "; path=" + path : "") +
+   ((domain) ? "; domain=" + domain : "") +
+   ((secure) ? "; secure" : "");
+  document.cookie = curCookie;
+ }
+
+ // name - name of the desired cookie
+ // * return string containing value of specified cookie or null if cookie does not exist
+ function getCookie(name) {
+  var dc = document.cookie;
+  var prefix = name + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+   begin = dc.indexOf(prefix);
+   if (begin != 0) return null;
+  }
+  else
+   begin += 2;
+  var end = document.cookie.indexOf(";", begin);
+  if (end == -1)
+   end = dc.length;
+  return unescape(dc.substring(begin + prefix.length, end));
+ }
+
+ // name - name of the cookie
+ // [path] - path of the cookie (must be same as path used to create cookie)
+ // [domain] - domain of the cookie (must be same as domain used to create cookie)
+ // * path and domain default if assigned null or omitted if no explicit argument proceeds
+ function deleteCookie(name, path, domain) {
+  if (getCookie(name)) {
+   document.cookie = name + "=" + 
+    ((path) ? "; path=" + path : "") +
+    ((domain) ? "; domain=" + domain : "") +
+    "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+  }
+ }
+
+ // date - any instance of the Date object
+ // * hand all instances of the Date object to this function for "repairs"
+ function fixDate(date) {
+  var base = new Date(0);
+  var skew = base.getTime();
+  if (skew &amp;amp;amp;gt; 0)
+   date.setTime(date.getTime() - skew);
+ }
+
+ // functions for setting BrassRing cookies
+ function setUserInfo(savePasswd, usernameVAL, useridVAL, firstVAL, lastVAL, resumeVAL, emailVAL) {
+  var expdate = new Date ();
+  fixDate (expdate);
+  if (savePasswd == 1) {
+   expdate.setTime (expdate.getTime() + (60 * 24 * 60 * 60 * 1000));
+  }
+  else {
+   expdate.setTime (expdate.getTime() + (3 * 60 * 60 * 1000));
+  }
+  setCookie("passwdCOOKIE", savePasswd, expdate, '/');
+  setCookie("usernameCOOKIE", usernameVAL, expdate, '/');
+  setCookie("useridCOOKIE", useridVAL, expdate, '/');
+  setCookie("firstCOOKIE", firstVAL, expdate, '/');
+  setCookie("lastCOOKIE", lastVAL, expdate, '/');
+  setCookie("resumeCOOKIE", resumeVAL, expdate, '/');
+  setCookie("emailCOOKIE", emailVAL, expdate, '/');
+  setCookie("useCookie", "yes", '', '/');
+ }
+
+ function setUsername(usernameVAL) {
+  passwdCOOKIE = getCookie("passwdCOOKIE");
+  var expdate = new Date ();
+  fixDate (expdate);
+  if (passwdCOOKIE == 1) {
+   expdate.setTime (expdate.getTime() + (60 * 24 * 60 * 60 * 1000));
+  }
+  else {
+   expdate.setTime (expdate.getTime() + (3 * 60 * 60 * 1000));
+  }
+  setCookie("usernameCOOKIE", usernameVAL, expdate, '/');
+ }
+
+ function setId(useridVAL) {
+  passwdCOOKIE = getCookie("passwdCOOKIE");
+  var expdate = new Date ();
+  fixDate (expdate);
+  expdate.setTime (expdate.getTime() + (60 * 24 * 60 * 60 * 1000));
+  if (passwdCOOKIE == 1) {
+   setCookie("useridCOOKIE", useridVAL, expdate, '/');
+  }
+ }
+
+ function setName(firstVAL, lastVAL) {
+  passwdCOOKIE = getCookie("passwdCOOKIE");
+  var expdate = new Date ();
+  fixDate (expdate);
+  if (passwdCOOKIE == 1) {
+   expdate.setTime (expdate.getTime() + (60 * 24 * 60 * 60 * 1000));
+  }
+  else {
+   expdate.setTime (expdate.getTime() + (3 * 60 * 60 * 1000));
+  }
+  setCookie("firstCOOKIE", firstVAL, expdate, '/');
+  setCookie("lastCOOKIE", lastVAL, expdate, '/');
+ }
+
+ function setResume(resumeVAL) {
+  passwdCOOKIE = getCookie("passwdCOOKIE");
+  var expdate = new Date ();
+  fixDate (expdate);
+  if (passwdCOOKIE == 1) {
+   expdate.setTime (expdate.getTime() + (60 * 24 * 60 * 60 * 1000));
+  }
+  else {
+   expdate.setTime (expdate.getTime() + (3 * 60 * 60 * 1000));
+  }
+  setCookie("resumeCOOKIE", resumeVAL, expdate, '/');
+ }
+
+ function setEmail(emailVAL) {
+  passwdCOOKIE = getCookie("passwdCOOKIE");
+  var expdate = new Date ();
+  fixDate (expdate);
+  if (passwdCOOKIE == 1) {
+   expdate.setTime (expdate.getTime() + (60 * 24 * 60 * 60 * 1000));
+  }
+  else {
+   expdate.setTime (expdate.getTime() + (3 * 60 * 60 * 1000));
+  }
+  setCookie("emailCOOKIE", emailVAL, expdate, '/');
+ }
+
+ function getUserInfo() {
+  useCookie = getCookie("useCookie");
+  passwdCOOKIE = getCookie("passwdCOOKIE");
+  usernameCOOKIE = getCookie("usernameCOOKIE");
+  useridCOOKIE = getCookie("useridCOOKIE");
+  firstCOOKIE = getCookie("firstCOOKIE");
+  lastCOOKIE = getCookie("lastCOOKIE");
+  resumeCOOKIE = getCookie("resumeCOOKIE");
+  emailCOOKIE = getCookie("emailCOOKIE");
+ }
+
+ function deleteUserInfo() {
+  deleteCookie("passwdCOOKIE", '/');
+  deleteCookie("usernameCOOKIE", '/');
+  deleteCookie("useridCOOKIE", '/');
+  deleteCookie("firstCOOKIE", '/');
+  deleteCookie("lastCOOKIE", '/');
+  deleteCookie("resumeCOOKIE", '/');
+  deleteCookie("emailCOOKIE", '/');
+ }
+
+ function loginbox() {
+  application = window.location;
+  firstCOOKIE = getCookie("firstCOOKIE");
+  document.write('&amp;amp;amp;lt;tr&amp;amp;amp;gt;&amp;amp;amp;lt;td bgcolor="#333366"&amp;amp;amp;gt;&amp;amp;amp;lt;font face="arial, helvetica, sans-serif" size="2" color="#FFFFFF"&amp;amp;amp;gt;&amp;amp;amp;lt;b&amp;amp;amp;gt;&amp;amp;amp;amp;nbsp;Hello '+firstCOOKIE+'&amp;amp;amp;lt;/b&amp;amp;amp;gt;&amp;amp;amp;lt;/font&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt;&amp;amp;amp;lt;/tr&amp;amp;amp;gt;');
+  document.write('&amp;amp;amp;lt;tr&amp;amp;amp;gt;&amp;amp;amp;lt;td bgcolor="#ffffff"&amp;amp;amp;gt;&amp;amp;amp;amp;nbsp;&amp;amp;amp;amp;nbsp;&amp;amp;amp;amp;nbsp;&amp;amp;amp;lt;font face="arial, helvetica, sans-serif" size="2"&amp;amp;amp;gt;&amp;amp;amp;lt;b&amp;amp;amp;gt;&amp;amp;amp;lt;a href="'+application+'" onClick="deleteUserInfo();"&amp;amp;amp;gt;Log Out&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/b&amp;amp;amp;gt;&amp;amp;amp;lt;/font&amp;amp;amp;gt;&amp;amp;amp;lt;P&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt;&amp;amp;amp;lt;/tr&amp;amp;amp;gt;');
+ }
+
+ function resumesilo() {
+  resumeCOOKIE = getCookie('resumeCOOKIE');
+  if (resumeCOOKIE == 1) {
+   manageresume = new Image;
+   manageresume.src = '/images/headers/words_manageresume_black.gif';
+   document.images['resumesilo'].src = manageresume.src;
+  }
+ }
+// -->
+</script>
+<table  TABID="13848" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  rowspan="3" valign="top">
+<a  href="/">
+<img ></img>
+</a>
+</td>
+<td  background="/images/headers/bg_blue_pinstripe_slant.gif">
+<img ></img>
+</td>
+<td  background="/images/headers/bg_blue_pinstripe_large.gif">
+<a  href="http://www.brassring.com/RealMedia/ads/click_lx.ads/www.brassring.com/cgi-bin/texis/vortex/exhibitor/19648/Top/brassring_postresume_camp1/Post-Your-Resume.gif/38373638323039663362306437353030" target="_top">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  background="/images/headers/bg_yellow_pinstripe_small.gif">
+<img ></img>
+</td>
+<td  background="/images/headers/bg_yellow_pinstripe_small.gif" nowrap="nowrap" valign="middle">
+<nobr >
+<a  href="/mypages/" target="_parent">
+<img ></img>
+</a>
+<a  href="/techinfo/" target="_parent">
+<img ></img>
+</a>
+<a  href="/jobsearch/" target="_parent">
+<img ></img>
+</a>
+<a  href="/cgi-bin/texis/vortex/mypages/rescenter.html" target="_parent">
+<img ></img>
+</a>
+<a  href="/career/" target="_parent">
+<img ></img>
+</a>
+<a  href="/employers/" target="_parent">
+<img ></img>
+</a>
+</nobr>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+</tr>
+</table>
+<script >
+<!--
+ resumesilo();
+// -->
+</script>
+<table  TABID="13855" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  valign="top" width="179">
+<table  TABID="13849" border="0" cellpadding="0" cellspacing="0" width="179">
+<tr >
+<td  bgcolor="#ffcc00" rowspan="3">
+<img ></img>
+</td>
+<form  action="/cgi-bin/texis/vortex/articlesearch" method="get" name="articlesearch">
+<td  bgcolor="#ffcc00">
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+<img ></img>
+<br ></br>
+<font  face="Arial,Helvetica,Sans-Serif" size="-1">
+<font  color="#000000">
+<b >
+245,716 Tech Articles
+</b>
+</font>
+<br ></br>
+<input ></input>
+<input ></input>
+</font>
+</td>
+</form>
+</tr>
+<tr >
+<form  action="/cgi-bin/texis/vortex/jobsearch/results.html" method="get">
+<td  bgcolor="#ffcc00">
+<img ></img>
+<br ></br>
+<font  face="Arial,Helvetica,Sans-Serif" size="-1">
+<font  color="#000000">
+<b >
+31,358 Jobs
+</b>
+</font>
+<br ></br>
+<input ></input>
+<input ></input>
+</font>
+</td>
+</form>
+</tr>
+<tr >
+<td  bgcolor="#ffcc00" rowspan="3">
+<img ></img>
+</td>
+</tr>
+</table>
+<img ></img>
+<br ></br>
+<table  TABID="13850" bgcolor="#333366" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#333366">
+<font  color="white" face="Arial,Helvetica,Sans-Serif" size="2">
+<b >
+My BrassRing Login
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF">
+<font  face="Arial,Helvetica,Sans-Serif" size="1">
+<nobr >
+<b >
+Need to Log in?
+<a  href="/cgi-bin/texis/vortex/exhibitor/../mypages/login.html" target="_top">
+Click Here
+</a>
+</b>
+</nobr>
+</font>
+</td>
+</tr>
+</table>
+<img ></img>
+<br ></br>
+<table  TABID="13851" border="0" cellpadding="2" cellspacing="0" width="179">
+<tr >
+<td  colspan="2">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  border="0" target="_top">
+<img ></img>
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#333366" colspan="2">
+<font  color="#ffffff" face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+Career Events
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  rowspan="2">
+<img ></img>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor" target="_top">
+US Career Events
+</a>
+<br ></br>
+<a  href="http://www.brassring.com/canada" target="_top">
+Canada Career Events
+</a>
+<br ></br>
+<a  href="http://www.brassring.de" target="_top">
+Germany Career Events
+</a>
+<br ></br>
+<a  href="http://www.brassring.nl" target="_top">
+Netherlands Career Events
+</a>
+<br ></br>
+<img ></img>
+</font>
+</td>
+</tr>
+<!--tr&amp;amp;amp;gt;
+    &amp;amp;amp;lt;td&amp;amp;amp;gt;&amp;amp;amp;lt;font face="arial, helvetica, sans-serif" size=2&amp;amp;amp;gt;
+    &amp;amp;amp;lt;a href="http://www.resume-link.com/brassring/br_registration.htm" target="_blank"&amp;amp;amp;gt;
+Register on-line now&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/font&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt;
+  &amp;amp;amp;lt;/tr-->
+<!--tr&amp;amp;amp;gt;
+	&amp;amp;amp;lt;td&amp;amp;amp;gt;&amp;amp;amp;lt;a href="http://www.brassring.com/comdex0401.html" border=0&amp;amp;amp;gt;&amp;amp;amp;lt;img src="http://www.brassring.com/internal/featrelease/CHC0401.gif" border=0&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt;&amp;amp;amp;lt;/tr-->
+</table>
+</td>
+<td  width="10"></td>
+<td  valign="top">
+<table  TABID="13852" cellpadding="0" cellspacing="0" width="100%">
+<tr  valign="top">
+<td  colspan="5">
+<font  face="Arial,Helvetica,Sans-Serif" size="3">
+<b >
+BrassRing Career Events 2001 Schedule
+</b>
+</font>
+</td>
+</tr>
+<tr  valign="top">
+<td  bgcolor="#000000" colspan="5">
+<img ></img>
+</td>
+</tr>
+</table>
+<form  action="/cgi-bin/texis/vortex/exhibitor" method="post">
+<table  TABID="13853" border="0" cellpadding="0" cellspacing="3">
+<tr >
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Find an event by location:
+</font>
+</td>
+<td ></td>
+<td >
+<select >
+<option  value=""></option>
+<option  value="Phoenix,AZ">
+AZ - Phoenix
+</option>
+<option  value="Tempe,AZ">
+AZ - Tempe
+</option>
+<option  value="Anaheim,CA">
+CA - Anaheim
+</option>
+<option  angeles="#DEFAULT" ca="#DEFAULT" value="Los">
+CA - Los Angeles
+</option>
+<option  value="Sacramento,CA">
+CA - Sacramento
+</option>
+<option  ca="#DEFAULT" diego="#DEFAULT" value="San">
+CA - San Diego
+</option>
+<option  ca="#DEFAULT" francisco="#DEFAULT" value="San">
+CA - San Francisco
+</option>
+<option  ca="#DEFAULT" clara="#DEFAULT" value="Santa">
+CA - Santa Clara
+</option>
+<option  value="Denver,CO">
+CO - Denver
+</option>
+<option  value="Hartford,CT">
+CT - Hartford
+</option>
+<option  fl="#DEFAULT" lauderdale="#DEFAULT" value="Ft.">
+FL - Ft. Lauderdale
+</option>
+<option  value="Orlando,FL">
+FL - Orlando
+</option>
+<option  value="Atlanta,GA">
+GA - Atlanta
+</option>
+<option  il="#DEFAULT" terrace="#DEFAULT" value="Oakbrook">
+IL - Oakbrook Terrace
+</option>
+<option  ks="#DEFAULT" park="#DEFAULT" value="Overland">
+KS - Overland Park
+</option>
+<option  ks="#DEFAULT" park="#DEFAULT" value="Overland">
+KS - Overland Park
+</option>
+<option  value="Burlington,MA">
+MA - Burlington
+</option>
+<option  value="Westborough,MA">
+MA - Westborough
+</option>
+<option  value="Woburn,MA">
+MA - Woburn
+</option>
+<option  value="Columbia,MD">
+MD - Columbia
+</option>
+<option  value="Greenbelt,MD">
+MD - Greenbelt
+</option>
+<option  value="Durham,NC">
+NC - Durham
+</option>
+<option  nc="#DEFAULT" park="#DEFAULT" triangle="#DEFAULT" value="Research">
+NC - Research Triangle Park
+</option>
+<option  value="Nashua,NH">
+NH - Nashua
+</option>
+<option  nv="#DEFAULT" value="Las" vegas="#DEFAULT">
+NV - Las Vegas
+</option>
+<option  value="Columbus,OH">
+OH - Columbus
+</option>
+<option  value="Portland,OR">
+OR - Portland
+</option>
+<option  value="Austin,TX">
+TX - Austin
+</option>
+<option  value="Dallas,TX">
+TX - Dallas
+</option>
+<option  value="Plano,TX">
+TX - Plano
+</option>
+<option  value="Richardson,TX">
+TX - Richardson
+</option>
+<option  value="Chantilly,VA">
+VA - Chantilly
+</option>
+<option  value="McLean,VA">
+VA - McLean
+</option>
+<option  value="Richmond,VA">
+VA - Richmond
+</option>
+<option  value="Vienna,VA">
+VA - Vienna
+</option>
+<option  value="Bellevue,WA">
+WA - Bellevue
+</option>
+<option  value="Seattle,WA">
+WA - Seattle
+</option>
+</select>
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<input ></input>
+Within 50 miles
+</font>
+<p ></p>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Find an event by type:
+</font>
+</td>
+<td ></td>
+<td >
+<select >
+<option  value=""></option>
+<option  value="Diversity">
+Diversity
+</option>
+<option  professional="#DEFAULT" value="Diversity">
+Diversity Professional
+</option>
+<option  undergraduate="#DEFAULT" value="Diversity">
+Diversity Undergraduate
+</option>
+<option  value="Engineering">
+Engineering
+</option>
+<option  value="Financial">
+Financial
+</option>
+<option  value="Healthcare">
+Healthcare
+</option>
+<option  value="MBA">
+MBA
+</option>
+<option  value="Professional/General">
+Professional/General
+</option>
+<option  value="Sales">
+Sales
+</option>
+<option  value="Technical">
+Technical
+</option>
+</select>
+<p ></p>
+</td>
+</tr>
+<tr >
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Find an event in the month of:
+</font>
+</td>
+<td ></td>
+<td >
+<select >
+<option  value=""></option>
+<option  value="05">
+May
+</option>
+<option  value="06">
+June
+</option>
+<option  value="07">
+July
+</option>
+<option  value="08">
+August
+</option>
+<option  value="09">
+September
+</option>
+<option  value="10">
+October
+</option>
+<option  value="11">
+November
+</option>
+<option  value="12">
+December
+</option>
+</select>
+<input ></input>
+</td>
+</tr>
+</table>
+</form>
+<font  color="blue">
+<i ></i>
+</font>
+<h4 >
+Select a career event in order to pre-register on line or
+<br ></br>
+update your current Career Event record.
+</h4>
+BrassRing is now offering free candidate videos at select
+<br ></br>
+events to supplement your resume. Click
+<a  href="http://www.brassring.com/videopage.html">
+<font  color="red">
+here
+</font>
+</a>
+to find out
+<br ></br>
+more information.
+<table  TABID="13854" border="0" cellpadding="4" cellspacing="0" genuinetable="yes" tabletitle="BrassRing Career Events 2001 Schedule" width="550">
+<tr  bgcolor="#ccccff">
+<td  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<font ></font>
+</td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+<b >
+Location
+</b>
+</font>
+</td>
+<td  width="3"></td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+<b >
+Type
+</b>
+</font>
+</td>
+<td  width="3"></td>
+<td >
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="3">
+<b >
+Date
+</b>
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0601RAT">
+Raleigh, NC
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+May 24, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0501GRT">
+Washington, DC (Greenbelt)
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+May 24, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+KwwFqAlnwcBrqwGn/showsponsor.html?showid=0501DCH">
+Washington, DC (Northern VA)
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Healthcare
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+May 24, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0601SCT">
+Santa Clara, CA
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+June 04 - 05, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0601DVT">
+Denver, CO
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+June 12 - 13, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0601WOT">
+Woburn, MA
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+June 18 - 19, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0601WET">
+Westborough, MA
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+June 20, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0601CHT">
+Chicago, IL
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+June 25 - 26, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0601PHT">
+Phoenix, AZ
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+June 25 - 26, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0701LAT">
+Los Angeles, CA (Anaheim)
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 09 - 10, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0701SCT">
+Santa Clara, CA (NetFair)
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 09 - 10, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0701ORT">
+Orlando, FL
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 16, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0801SDT">
+San Diego, CA
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 16 - 17, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0701DCT">
+Washington, DC (Northern VA)
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 16 - 17, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=07NW">
+Bellevue, WA
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 17 - 18, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0701BAT">
+Baltimore, MD (Columbia)
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 18, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+XwwFqgeNP5ndhn55odDwceRxqxDnGwcCIwcn5eZxww/showsponsor.html?showid=0701COS">
+Columbus, OH
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Professional/General,Sales
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 18, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0701COT">
+Columbus, OH
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 18, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0701HAT">
+Hartford, CT
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 18, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+kwwFq17Gdhn55odDwceRxqxDnGwc/showsponsor.html?showid=0701HAS">
+Hartford, CT
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Professional/General
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 18, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0701RIT">
+Richmond, VA
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 18, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+OwwFqhIwcn5/showsponsor.html?showid=0701DCS">
+Washington, DC (Northern VA)
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Sales
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 18, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0601PLT">
+Plano, TX
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 24, 2001
+</font>
+</td>
+</tr>
+<tr  align="center" bgcolor="#cccccc">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0701DAT">
+Dallas, TX
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 25 - 26, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="align=center">
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<a  href="/cgi-bin/texis/vortex/exhibitor/+swwFqzRnqrDoqwc/showsponsor.html?showid=0801AUT">
+Austin, TX
+</a>
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Technical
+</font>
+</td>
+<td  width="3"></td>
+<td  align="left">
+<font  face="arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+July 30 - 31, 2001
+</font>
+</td>
+</tr>
+<tr  bgcolor="#ccccff">
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td  align="right">
+<a  href="/cgi-bin/texis/vortex/exhibitor?skip=25">
+Next &gt;&gt;
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p ></p>
+<p ></p>
+<p ></p>
+<table  TABID="13856" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#FFFFFF" height="10">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#333366" height="2">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCF00" height="4">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="middle" bgcolor="#FFCF00">
+<font  face="ARIAL,HELVETICA,SANS-SERIF" size="2">
+<img ></img>
+<a  href="/" target="_top">
+Home
+</a>
+<a  href="/cgi-bin/texis/vortex/faq/">
+FAQ
+</a>
+<a  href="/about/contact.html">
+Contact Us
+</a>
+<a  href="/about/advertise.html" target="_top">
+Advertise Here
+</a>
+<a  href="/about/index.html" target="_top">
+About BrassRing.com
+</a>
+<a  href="/global/sitemap.html" target="_top">
+Site Map
+</a>
+<a  href="/feedback.html" target="_top">
+Comments
+</a>
+<a  href="/global/legal.html" target="_top">
+Legal
+</a>
+<a  href="http://about.brassring.com/" target="_top">
+Corporate
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCF00" height="4">
+<img ></img>
+</td>
+</tr>
+</table>
+</body>
+</html>

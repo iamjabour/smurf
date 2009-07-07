@@ -1,0 +1,3114 @@
+<html >
+<!-- #BeginTemplate "/Templates/default.dwt" -->
+<head >
+<!-- #BeginEditable "doctitle" -->
+<title >
+XPRESSTRADE Margin Table
+</title>
+<!-- #EndEditable -->
+<meta ></meta>
+</head>
+<body  marginheight="0">
+<table  TABID="14577" height="50">
+<tr  background="content/images/bg_header.gif" valign="top">
+<td  height="50" width="63%">
+<font  arial="#DEFAULT" color="#FFFFFF" face="Verdana," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="1">
+<a  href="index.shtml">
+<img ></img>
+</a>
+<img ></img>
+<map  name="Map5">
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</font>
+</td>
+<td  background="content/images/bg_header.gif">
+<div  align="center">
+<font  arial="#DEFAULT" color="#FFFFFF" face="Verdana," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="1">
+<b >
+<script >
+var day=""; var month=""; var myweekday=""; var year=""; newdate = new Date(); mydate = new Date(); dston = new Date('April 4, 2001 2:59:59'); dstoff = new Date('october 31, 2001 2:59:59'); var myzone = newdate.getTimezoneOffset(); newtime=newdate.getTime(); var zone = 6; // references your time zone if (newdate &gt; dston &amp;&amp; newdate dstoff ) { zonea = zone - 1 ; dst = " Central"; } else { zonea = zone ; dst = " Central"; } var newzone = (zonea*60*60*1000); newtimea = newtime+(myzone*60*1000)-newzone; mydate.setTime(newtimea); myday = mydate.getDay(); mymonth = mydate.getMonth(); myweekday= mydate.getDate(); myyear= mydate.getYear(); year = myyear; if (year 2000) year = year + 1900; myhours = mydate.getHours(); if (myhours &gt;= 12) { myhours = (myhours == 12) ? 12 : myhours - 12; mm = " PM"; } else { myhours = (myhours == 0) ? 12 : myhours; mm = " AM"; } myminutes = mydate.getMinutes(); if (myminutes 10){ mytime = ":0" + myminutes; } else { mytime = ":" + myminutes; }; arday = new Array("Sun.","Mon.","Tue.","Wed.","Thr.","Fri.","Sat.") armonth = new Array("Jan. ","Feb. ","Mar. ","Apr. ","May ","Jun. ","Jul. ","Aug. ","Sept. ", "Oct. ","Nov. ","Dec. ") ardate = new Array("0","1","2","3","4","5","6","7","8","9","10","11","12","13th","14th","15th","16th","17th","18th","19th","20th","21st","22nd","23rd","24th","25th","26th","27th","28th","29th","30th","31st"); // rename locale as needed. var time = (arday[myday] +", " + armonth[mymonth] +" "+ardate[myweekday] + ", " + year); document.write(time); //--&gt;
+</script>
+<br ></br>
+<script >
+var day=""; var month=""; var myweekday=""; var year=""; newdate = new Date(); mydate = new Date(); dston = new Date('April 4, 2001 2:59:59'); dstoff = new Date('october 31, 2001 2:59:59'); var myzone = newdate.getTimezoneOffset(); newtime=newdate.getTime(); var zone = 6; if (newdate &gt; dston &amp;&amp; newdate dstoff ) { zonea = zone - 1 ; dst = " Chicago USA"; } else { zonea = zone ; dst = " Chicago USA"; } var newzone = (zonea*60*60*1000); newtimea = newtime+(myzone*60*1000)-newzone; mydate.setTime(newtimea); myday = mydate.getDay(); mymonth = mydate.getMonth(); myweekday= mydate.getDate(); myyear= mydate.getYear(); year = myyear; if (year 2000) year = year + 1900; myhours = mydate.getHours(); if (myhours &gt;= 12) { myhours = (myhours == 12) ? 12 : myhours - 12; mm = " PM"; } else { myhours = (myhours == 0) ? 12 : myhours; mm = " AM"; } myminutes = mydate.getMinutes(); if (myminutes 10){ mytime = ":0" + myminutes; } else { mytime = ":" + myminutes; }; arday = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday") armonth = new Array("January ","February ","March ","April ","May ","June ","July ","August ","September ", "October ","November ","December ") ardate = new Array("0th","1st","2nd","3rd","4th","5th","6th","7th","8th","9th","10th","11th","12th","13th","14th","15th","16th","17th","18th","19th","20th","21st","22nd","23rd","24th","25th","26th","27th","28th","29th","30th","31st"); var time = (myhours + mytime+ mm + dst); document.write(time);
+</script>
+</b>
+</font>
+</div>
+</td>
+<td  background="content/images/bg_header.gif"></td>
+</tr>
+</table>
+<table  TABID="14578" background="content/images/bg_navbar.gif">
+<tr  background="content/images/bg_navbar.gif">
+<td >
+<img ></img>
+<map  name="Map3">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</td>
+</tr>
+</table>
+<table  TABID="14580" border="0" cellpadding="0" cellspacing="0" genuinetable="no" tabletitle="XPRESSTRADE Margin Table 
+Most Recent Update: May. 15, 2001" width="775">
+<tr >
+<td  bgcolor="#003366" valign="top" width="155">
+<img ></img>
+<map  name="Map2">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</td>
+<td  valign="top" width="10"></td>
+<td  valign="top" width="610">
+<!-- #BeginEditable "main" -->
+</td>
+</tr>
+<tr >
+<td >
+Futures Margin Table
+<center >
+<table  TABID="14579" genuinetable="yes" nowrap="#DEFAULT">
+<tr >
+<td  width="bgcolor=#003366">
+<font  color="white" face="Arial" size="3">
+<b >
+XPRESSTRADE Margin Table
+</b>
+</font>
+<br ></br>
+<font  color="white" face="Arial" size="1">
+<b >
+Most Recent Update: May. 15, 2001
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#003366" valign="top">
+<font  face="arial" size="2">
+<b >
+Name
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#003366" valign="top">
+<font  face="arial" size="2">
+<b >
+Code
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#003366" valign="top">
+<font  face="arial" size="2">
+<b >
+Exch
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#003366" valign="top">
+<font  color="white" face="Arial" size="2">
+<b >
+Initial
+</b>
+</font>
+</td>
+<td  align="center" bgcolor="#003366" valign="top">
+<font  color="white" face="Arial" size="2">
+<b >
+Maint.
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ALUMINUM, COMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+AL
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+COMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,080
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$800
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+AUST. DOLLAR, GLBX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+@AD
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,215
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$900
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+AUST. DOLLAR, MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+XA
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$573
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$425
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+AUSTRALIAN DOLLAR
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+AD
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,215
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$900
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+BANK BILLS, 90-DAY
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ASR
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SFE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$368
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$273
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+BRAZILIAN REAL
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+BR
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,800
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+BRITISH POUND
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+BP
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,417
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,050
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+BRITISH POUND, GLBX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+@BP
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,417
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,050
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+BRITISH POUND, MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+XP
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$364
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$270
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CAC 40 INDEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MCT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MATIF
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$4,050
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$3,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CANADIAN DLR, GLBX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+@CD
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$742
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$550
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CANADIAN DLR, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+XD
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$351
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$260
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CANADIAN DOLLAR
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CD
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$742
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$550
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+COCOA
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CC
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$980
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$700
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+COCOA # 7 (LIFFE)
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LCO
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LIFFE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$589
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$589
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+COFFEE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+KC
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,695
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,925
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+COFFEE, ROBUSTA
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LKD
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LIFFE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$400
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$400
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+COPPER
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HG
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+COMEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,350
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+COPPER, ACCESS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+QHG
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+COMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,350
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CORN
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+C
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$472
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$350
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CORN, A/C/E
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ZC
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$472
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$350
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CORN, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+XC
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$94
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$70
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+COTTON
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$997
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$750
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CRB PRICE INDEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CR
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYCE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,500
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CRUDE OIL
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CL
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$3,375
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$2,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CRUDE OIL, ACCESS
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+QCL
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$3,375
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+DAX 30 INDEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+DAX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EUREX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$9,000
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$9,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+DEUTSCHE MARK, GLBX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+DM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,350
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+DEUTSCHE MARK, MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+XM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$675
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+DOW EURO STOXX 50
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+DEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EUREX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,500
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+DOW JONES IND. A/C/E
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ZD
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$6,750
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$5,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+DOW JONES IND. INDEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+DJ
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$6,750
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$5,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ELECTRICITY, PALO VERDE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+PV
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$12,150
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$9,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EURIBOR, EUREX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+DFE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EUREX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$700
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$700
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EURIBOR, LIFFE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LEI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LIFFE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$500
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EURO CURRENCY
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EU
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,511
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,860
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EURO CURRENCY, E-MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,570
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,163
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EURO CURRENCY, GLBX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+@EU
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,511
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,860
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EURO NOTIONAL BOND
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MNN
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MATIF
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$2,025
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EURO/YEN X-RATE, GLBX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+RY
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$396
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$294
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EUROBOBL
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+DMB
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EUREX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$800
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$800
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EUROBUND
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+DGB
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EUREX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,400
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,400
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EUROCURRENCY, MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+XG
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,215
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$900
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EURODOLLAR, CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+ED
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$810
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EURODOLLAR, GLBX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+@ED
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$810
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EURODOLLAR, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+UD
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$337
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$250
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EURODOLLAR, SGX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SED
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SGX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$810
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EUROSCHATZ
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+DSB
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EUREX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$400
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$400
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EUROSWISS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LES
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LIFFE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$550
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$550
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EUROYEN
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EY
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$132
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$98
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EUROYEN LIBOR
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SEL
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SGX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,320
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$978
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EUROYEN TIBOR
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SEY
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SGX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,452
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,076
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+FED FUNDS, 30-DAY
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+FF
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$675
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+FED FUNDS, 30-DAY, A/C/E
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+ZQ
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$675
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+FEEDER CATTLE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+FC
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$843
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$625
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+FEEDER CATTLE, E-MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+FM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$168
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$125
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+FLAXSEED
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+WF
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+WCE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$157
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$117
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+FORTUNE E-50 INDEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+FE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,250
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+FRENCH FRANC
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+FR
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,620
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+FTSE 100 INDEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+LFT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+LIFFE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$3,000
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$3,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+GAS., UNL., ACCESS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+QHU
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$3,375
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$2,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+GASOLINE, UNLEADED
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HU
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$3,375
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+GOLD, ACCESS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+QGC
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+COMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,350
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+GOLD, COMEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+GC
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+COMEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,350
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+GOLD, KILO
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+KI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$472
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$350
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+GOLD, KILO, A/C/E
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+ZH
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$591
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$438
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+GOLD, MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+XK
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$472
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$350
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+GSCI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+GI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$3,300
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+GSCI INDEX, GLBX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+@GI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$3,300
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$2,200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HANG SENG, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HMI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HKFE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,937
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,550
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+HANG SENG_INDEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+HHA
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+HKFE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$9,687
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$7,750
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HEATING OIL
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HO
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$3,375
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+HEATING OIL, ACCESS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+QHO
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$3,375
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$2,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HIBOR, 3-MONTH
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HBR
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HKFE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,250
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ISDEX INTERNET INDEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+IS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+KCBT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$2,500
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$2,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+JAPANESE BOND
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+JG
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,003
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$743
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+JAPANESE GOVT. BOND, SGX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SJB
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SGX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$13,500
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$10,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+JAPANESE YEN
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+JY
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,835
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,100
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+JAPANESE YEN, E-MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+JE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,417
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,050
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+JAPANESE YEN, GLBX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+@JY
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,835
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,100
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+JAPANESE YEN, MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+XJ
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,417
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,050
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+LEAN HOG
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+LH
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$945
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$700
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LEAN HOG, E-MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+HM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$236
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$175
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+LEAN HOG, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+XH
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$405
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$300
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LIBOR, 1-MONTH
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$405
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$300
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+LIBOR, GLBX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+@EM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$405
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$300
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LIVE CATTLE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LC
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$810
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+LIVE CATTLE, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+XL
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$405
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$300
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LONG GILT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LGL
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+LIFFE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,500
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+LUMBER
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+LB
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,650
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,100
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MEXICAN PESO
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+PX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,875
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MEXICAN PESO, GLBX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+@PX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,875
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MILK, BFP, CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+DA
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,620
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MSCI CHINA FREE INDEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HCF
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+HKFE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$0
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$0
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MUNICIPAL BOND INDEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MB
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,215
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$900
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MUNICIPAL BOND, A/C/E
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+ZU
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,215
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$900
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NASDAQ 100 INDEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ND
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$33,750
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$27,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NASDAQ 100, E-MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EN
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$6,750
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$5,400
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NASDAQ 100, GLBX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+@ND
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$33,750
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$27,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NATURAL GAS
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NG
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$4,725
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$3,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NATURAL GAS, ACCESS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+QNG
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$4,725
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$3,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NIKKEI 225 INDEX, CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NK
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$6,750
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$5,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NIKKEI 225 INDEX, SGX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SNI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SGX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$5,468
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$4,375
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYSE COMP. IND, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+YS
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$4,750
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$4,750
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYSE COMP. INDEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+YX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$9,500
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$9,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+OATS
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+O
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$270
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+OATS, A/C/E
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ZO
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$270
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+OATS, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+XO
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$108
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$80
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ORANGE JUICE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+JO
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$700
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+PALLADIUM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+PA
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$6,750
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$5,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+PALLADIUM, ACCESS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+QPA
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$6,750
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$5,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+PLATINUM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+PL
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,160
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+PLATINUM, ACCESS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+QPL
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$2,160
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+PLATINUM, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+XU
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$810
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+PORK BELLIES
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+PB
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,620
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+PROPANE GAS
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+PN
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,025
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+PROPANE, ACCESS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+QPN
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NYMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$2,025
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+RAPESEED (CANOLA)
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+RS
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+WCE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$249
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$249
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ROUGH RICE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+RR
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,350
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+ROUGH RICE, A/C/E
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+ZR
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,350
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+RUSSELL 2000 INDEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+RL
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$28,350
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$21,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+RUSSELL 2000, GLBX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+@RL
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$28,350
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$21,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+RUSSIAN RUBLE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+RU
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$15,000
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$10,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+S&amp;P 500 INDEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SP
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$21,562
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$17,250
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+S&amp;P 500, E-MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+@ES
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$4,312
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$3,450
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+S&amp;P 500, GLOBEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+@SP
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$21,562
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$17,250
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+S&amp;P MID 400, GLBX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+@MD
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$20,250
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$15,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+S&amp;P MIDCAP 400 INDEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MD
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$20,250
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$15,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SHARE PRICE INDEX (SPI)
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ASI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SFE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,840
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,363
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SHORT STERLING
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+LSS
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+LIFFE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$300
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$300
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SILVER, ACCESS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+QSI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+COMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,350
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SILVER, CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+AG
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$270
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SILVER, COMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+COMEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,350
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SILVER, NY, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+XY
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$270
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SOYBEAN MEAL
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$810
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SOYBEAN MEAL, A/C/E
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+ZM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$810
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SOYBEAN MEAL, MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+XE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$405
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$300
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SOYBEAN OIL
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+BO
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$472
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$350
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SOYBEAN OIL, A/C/E
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ZL
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$472
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$350
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SOYBEAN OIL, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+XR
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$236
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$175
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SOYBEANS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+S
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$945
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$700
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SOYBEANS, A/C/E
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+ZS
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$945
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$700
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SOYBEANS, MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+XS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$189
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$140
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SUGAR #11
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SB
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$840
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SWISS FRANC
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SF
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,620
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SWISS FRANC, GLBX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+@SF
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,620
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SWISS FRANC, MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+XF
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$945
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$700
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SWISS GOV'T BOND
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SGB
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+EUREX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,500
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SWISS MARKET INDEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SMI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+EUREX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$4,000
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$4,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+T-BOND,CMNWLTH,10 YR
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+AXB
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+SFE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,471
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,090
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+T-BOND,CMNWLTH,3 YR
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+AYB
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SFE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$515
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$382
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+T-NOTE, 10 YR.
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+TY
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,620
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+T-NOTE, 10 YR., A/C/E
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ZN
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,620
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,200
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+T-NOTE, 10 YR., MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+XN
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$810
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+T-NOTE, 2 YR.
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+TU
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$810
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+T-NOTE, 2 YR., A/C/E
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+ZT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$810
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+T-NOTE, 5 YR.
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+FV
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$945
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$700
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+T-NOTE, 5 YR., A/C/E
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+ZF
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$945
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$700
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+TAIWAN INDEX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+STW
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+SGX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$3,250
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$2,600
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+TREASURY BILL, 13 WK.
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+TB
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$540
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$400
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+TREASURY BILL, GLBX
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+@TB
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CME
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$540
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$400
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+TREASURY BILL, MINI
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+XT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$148
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$110
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+TREASURY BONDS
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+US
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$2,025
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+TREASURY BONDS, A/C/E
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+ZB
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$2,025
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+TREASURY BONDS, MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+XB
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$1,012
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$750
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+US DOLLAR INDEX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+DX
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+NYBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,995
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$1,500
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+VALUE LINE, MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MV
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+KCBT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$3,750
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$3,000
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+WHEAT, CHICAGO
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+W
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$742
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$550
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+WHEAT, CHICAGO A/C/E
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+ZW
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+CBOT
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$742
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$550
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+WHEAT, KC, HARD RED
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+KW
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+KCBT
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$500
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$400
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+WHEAT, MINI
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+XW
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MIDAM
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$148
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$110
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+WHEAT, SPRING
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MW
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+MGE
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$500
+</td>
+<td  bgcolor="#FFCC33" class="TABLEDATA2">
+$400
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+WHEAT, WHITE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+NW
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+MGE
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$500
+</td>
+<td  bgcolor="#FFFFFF" class="TABLEDATA2">
+$400
+</td>
+</tr>
+</table>
+</center>
+<!-- THEN END-->
+<!-- #EndEditable -->
+</td>
+</tr>
+</table>
+<table  TABID="14581" background="content/images/bg_footerbar.gif">
+<tr  background="content/images/bg_footerbar.gif">
+<td >
+<img ></img>
+<map  name="Map1">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</td>
+</tr>
+</table>
+</body>
+<!-- #EndTemplate -->
+</html>

@@ -1,0 +1,223 @@
+<html >
+<head >
+<title >
+Erg Score Calculator
+</title>
+</head>
+<body >
+<h3 >
+Erg Score Calculator
+</h3>
+<i >
+<b >
+NB:
+</b>
+This requires a JavaScript-enabled browser , such as
+<a  href="http://home.netscape.com">
+Netscape 2.01
+</a>
+. Click
+<a  href="http://www.cris.com/~raydaly/javatell.html">
+here
+</a>
+to test for the presence of JavaScript.
+<i ></i>
+</i>
+<hr ></hr>
+<form >
+<b >
+<i >
+Split Time
+</i>
+</b>
+<br ></br>
+<input ></input>
+min
+<input ></input>
+sec /500m
+<br ></br>
+<b >
+<i >
+Distance (m)
+</i>
+</b>
+<br ></br>
+<input ></input>
+<br ></br>
+<b >
+<i >
+Total Time (mm:ss)
+</i>
+</b>
+<br ></br>
+<input ></input>
+hr
+<input ></input>
+min
+<input ></input>
+sec
+<br ></br>
+<br ></br>
+<b >
+<i >
+Calculate:
+</i>
+</b>
+<br ></br>
+<input ></input>
+<input ></input>
+<input ></input>
+<input ></input>
+</form>
+<script >
+<!--
+function reset(form) {
+        form.split_min.value=""
+        form.split_sec.value=""
+        form.distance.value=""
+        form.time_hr.value=""
+        form.time_min.value=""
+        form.time_sec.value=""
+}
+
+function HelloJavaScript() {
+alert("You have JavaScript!")
+}
+
+function ergdistance(form) {
+var th=0, tm=0, ts=0, sm=0, ss=0, dis=0
+if (form.time_hr.value.length==0) {
+form.time_hr.value = 0
+}
+if (form.time_min.value.length==0) {
+form.time_min.value = 0
+}
+if (form.time_sec.value.length==0) {
+form.time_sec.value = 0
+}
+if (form.split_min.value.length==0) {
+form.split_min.value = 0
+}
+if (form.split_sec.value.length==0) {
+form.split_sec.value = 0
+}
+if ((form.time_hr.value==0 
+&amp;amp;amp;&amp;amp;amp; form.time_min.value==0 
+&amp;amp;amp;&amp;amp;amp; form.time_sec.value==0) 
+|| (form.split_min.value==0 
+&amp;amp;amp;&amp;amp;amp; form.split_sec.value==0)) {
+alert("Cannot calculate when the" +
+ " Split or Total times are Zero!")
+}
+else {
+th = 1*form.time_hr.value
+tm = 1*form.time_min.value
+ts = 1*form.time_sec.value
+sm = 1*form.split_min.value
+ss = 1*form.split_sec.value
+if (th&amp;amp;gt;=24 || th&amp;amp;lt;0 || tm&amp;amp;gt;59 
+|| tm&amp;amp;lt;0 || ts&amp;amp;gt;59 || ts&amp;amp;lt;0 
+|| sm&amp;amp;gt;=60 || sm&amp;amp;lt;0 || ss&amp;amp;gt;=60 
+|| ss&amp;amp;lt;0 ) {
+alert("Check your Time values: Hours 0-23,"+
+" Minutes 0-59, seconds 0-59")
+}
+else {
+ss = ss + (60*sm)
+ts = ts + (60*tm) + (60*60*th)
+dis = (ts/ss) *500
+form.distance.value = dis
+}
+}
+}
+
+function ergsplit(form) {
+var ts=0, ss1=0, ss=0, sm=0
+if (form.time_hr.value.length==0) {
+form.time_hr.value = 0
+}
+if (form.time_min.value.length==0) {
+form.time_min.value = 0
+}
+if (form.time_sec.value.length==0) {
+form.time_sec.value = 0
+}
+if (form.distance.value.length==0) {
+form.distance.value = 0
+}
+if ((form.time_hr.value==0
+ &amp;amp;amp;&amp;amp;amp; form.time_min.value==0
+ &amp;amp;amp;&amp;amp;amp; form.time_sec.value==0)
+ || (form.distance.value==0)) {
+alert("Cannot calculate when the "+
+"Distance or Total time is Zero!")
+}
+else {
+ts = (form.time_hr.value*3600) 
++ (form.time_min.value*60) 
++ 1*form.time_sec.value
+ss1 = 500*(ts / form.distance.value)
+sm = Math.floor(ss1/60)
+ss = ss1 - (60*sm)
+form.split_min.value = sm
+form.split_sec.value = ss
+}
+}
+
+function ergtime(form) {
+var tm=0, ts=0, th=0, ts1=0, ss=0
+if (form.split_min.value.length==0) {
+form.split_min.value = 0
+}
+if (form.split_sec.value.length==0) {
+form.split_sec.value = 0
+}
+if (form.distance.value.length==0) {
+form.distance.value = 0
+}
+if ((form.split_min.value==0 &amp;amp;amp;&amp;amp;amp; 
+form.split_sec.value==0) 
+|| (form.distance.value==0)) {
+alert("Cannot calculate when the"
++" Distance or Total time is Zero!")
+}
+else {
+ss = (form.split_min.value*60) 
++ 1*form.split_sec.value
+ts1 = ss * ((1*form.distance.value)/500)
+th = Math.floor(ts1/3600)
+tm = Math.floor((ts1 - 3600*th)/60)
+ts = ts1 - (3600*th) - (60*tm)
+form.time_hr.value = th
+form.time_min.value = tm
+form.time_sec.value = ts
+}
+
+if (form.distance.value.length==0 
+|| form.split_min.value.length==0 
+|| form.split_sec.value.length==0) {
+alert("Please complete the Split "
++"Time and Total Time fields first.")
+}
+else {
+}
+}
+
+&amp;amp;lt;!-- -->
+</script>
+<hr ></hr>
+<b >
+Instructions
+</b>
+<br ></br>
+Fill in the fields above, leaving out the value you want to calculate. Then click the appropriate button. For example, if you want to know how far you'll go in 7 minutes with a split time of 1'38", Type 1 in the Split Minutes field, 38 in the Split Seconds Field, and 7 in the Total Time Minutes field. Then just click the Distance button, and the answer appears in the Distance box. The program will complain if you try to do something silly (like a split time of 0'00")
+<hr ></hr>
+<i >
+Written by
+<a  href="mailto:simon_kenyon@studio.disney.com">
+Simon Kenyon
+</a>
+of Thames Tradesmen's Rowing Club, during a particularly boring lunchbreak.
+</i>
+</body>
+</html>

@@ -1,0 +1,1560 @@
+<!--Design and Development by Rose-Glenn Advertising-->
+<!-- www.rose-glenn.com | agency@rose-glenn.com-->
+<!--Copyright 2001 Nevada State Bank | All Rights Reserved-->
+<html >
+<!-- #BeginTemplate "/Templates/site_template.dwt" -->
+<head >
+<meta ></meta>
+<meta ></meta>
+<!-- #BeginEditable "doctitle" -->
+<title >
+Nevada State Bank
+</title>
+<!-- #EndEditable -->
+<meta ></meta>
+<script >
+<!-- Hide script from old browsers
+
+// N E T S C A P E   6   B R O W S E R   S N I F F   P O P  -  U P W A R N I N G 
+
+if (navigator.appName == "Netscape" &amp;amp;amp;amp;&amp;amp;amp;amp; navigator.appVersion &amp;amp;amp;gt;= "5") {
+		alert("Dear Netscape 6 and AOL 6 User, Nevada State Bank does not currently support Netscape 6 or AOL 6 Internet browsers. Should you attempt to navigate the Nevada State Bank Web Site using either of these browsers, you will encounter difficulties with a variety of features. We are working on a solution to this problem.Nevada State Bank is committed to supporting new browser releases. Until a solution is reached, we recommend that you log on to your Nevada State Bank account using the previous version of Netscape or AOL. Thank you for your patience.")
+	}
+	else {
+		document.write()
+	}
+
+// N A V I G A T I O N   I M A G E   P R E L O A D 
+
+ if (document.images)
+ {var imglist = new Array
+(
+"/images/nav/nav_00-over.gif",
+"/images/nav/nav_01-over.gif",
+"/images/nav/nav_02-over.gif",
+"/images/nav/nav_03-over.gif",
+"/images/nav/nav_04-over.gif",
+"/images/nav/nav_05-over.gif",
+"/images/nav/nav_06-over.gif",
+"/images/nav/nav_07-over.gif"
+);
+ var imgs = new Array(); var count;
+ for (count=0; count&amp;amp;amp;lt;imglist.length; count++)
+ {imgs[count]=new Image(); imgs[count].src=imglist[count];}
+ }
+ function hilite(name,m)
+ {if (document.images)
+ {imgswap(name, imgs[m])}
+ }
+ function imgswap(i1,i2)
+ {if (document.images)
+ {var temp = i1.src; i1.src=i2.src; i2.src=temp;}
+ }
+
+ //B E G I N   H E I R M E N U   S C R I P T S 
+
+window.onerror = null;
+ var bName = navigator.appName;
+ var bVer = parseInt(navigator.appVersion);
+ var NS4 = (bName == "Netscape" &amp;amp;amp;amp;&amp;amp;amp;amp; bVer &amp;amp;amp;gt;= 4);
+ var IE4 = (bName == "Microsoft Internet Explorer" &amp;amp;amp;amp;&amp;amp;amp;amp; bVer &amp;amp;amp;gt;= 4);
+ var NS3 = (bName == "Netscape" &amp;amp;amp;amp;&amp;amp;amp;amp; bVer &amp;amp;amp;lt; 4);
+ var IE3 = (bName == "Microsoft Internet Explorer" &amp;amp;amp;amp;&amp;amp;amp;amp; bVer &amp;amp;amp;lt; 4);
+ var menuActive = 0
+ var menuOn = 0
+ var onLayer
+ var timeOn = null
+
+// LAYER SWITCHING CODE
+if (NS4 || IE4) {
+ if (navigator.appName == "Netscape") {
+ layerStyleRef="layer.";
+ layerRef="document.layers";
+ styleSwitch="";
+ }else{
+ layerStyleRef="layer.style.";
+ layerRef="document.all";
+ styleSwitch=".style";
+ }
+}
+ 
+// SHOW MENU
+function showLayer(layerName){
+if (NS4 || IE4) {
+ if (timeOn != null) {
+ clearTimeout(timeOn)
+ hideLayer(onLayer)
+ }
+ if (NS4 || IE4) {
+ eval(layerRef+'["'+layerName+'"]'+styleSwitch+'.visibility="visible"');
+ } 
+ onLayer = layerName
+ }
+}// HIDE MENU
+function hideLayer(layerName){
+ if (menuActive == 0) {
+ if (NS4 || IE4) {
+ eval(layerRef+'["'+layerName+'"]'+styleSwitch+'.visibility="hidden"');
+ }
+ }
+}// TIMER FOR BUTTON MOUSE OUT
+function btnTimer() {
+ timeOn = setTimeout("btnOut()",1000)
+}// BUTTON MOUSE OUT
+function btnOut(layerName) {
+ if (menuActive == 0) {
+ hideLayer(onLayer)
+ }
+}// MENU MOUSE OVER 
+function menuOver(itemName) {
+ clearTimeout(timeOn)
+ menuActive = 1
+}// MENU MOUSE OUT 
+function menuOut(itemName) {
+ menuActive = 0 
+ timeOn = setTimeout("hideLayer(onLayer)", 400)
+ }
+
+// T O O L   I M A G E S   P  R E L O A D
+
+function newImage(arg) {
+  if (document.images) {
+    rslt = new Image();
+    rslt.src = arg;
+    return rslt;
+  }
+}
+
+function changeImages() {
+  if (document.images &amp;amp;amp;amp;&amp;amp;amp;amp; (preloadFlag == true)) {
+    for (var i=0; i&amp;amp;amp;lt;changeImages.arguments.length; i+=2) {
+      document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+    }
+  }
+}
+
+var preloadFlag = false;
+function preloadImages() {
+  if (document.images) {
+    site_over = newImage("/images/tools/site-over.gif");
+    site_click = newImage("/images/tools/site-click.gif");
+    help_over = newImage("/images/tools/help-over.gif");
+    help_click = newImage("/images/tools/help-click.gif");
+    locate_over = newImage("/images/tools/locate-over.gif");
+    locate_click = newImage("/images/tools/locate-click.gif");
+    contact_over = newImage("/images/tools/contact-over.gif");
+    contact_click = newImage("/images/tools/contact-click.gif");
+    home_over = newImage("/images/tools/home-over.gif");
+    home_click = newImage("/images/tools/home-click.gif");
+    preloadFlag = true;
+  }
+}
+
+// J U M P   M E N U
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+// End hiding script from old browsers -->
+</script>
+<!-- #BeginEditable "css" -->
+<link ></link>
+<!-- #EndEditable -->
+<style >
+#Zero { position: absolute; visibility: hidden; z-index: 1 } #One { position: absolute; visibility: hidden; z-index: 1 } #Two { position: absolute; visibility: hidden; z-index: 1 } #Three { position: absolute; visibility: hidden; z-index: 1 } #Four { position: absolute; visibility: hidden; z-index: 1 } #Five { position: absolute; visibility: hidden; z-index: 1 } #Six { position: absolute; visibility: hidden; z-index: 1 } #Seven { position: absolute; visibility: hidden; z-index: 1 } .menus { color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; text-decoration: none ; font-weight: bold; line-height: 10px; padding-left: 5px; height: 15px} .menus:hover { color: #CCCCCC; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; text-decoration: none ; font-weight: bold; line-height: 10px; padding-left: 5px; height: 15px} .content2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; color: #333333; text-decoration: none} .select { background: #FFFFFF; color: #000000; font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold; } .littles { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold; color: #666666; text-decoration: none} .littleslinks { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold; color: #666666; text-decoration: underline} .contentbold { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #333333; text-decoration: none} .newform { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; color: #333333; text-decoration: none} .ziptop { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #003366} .zipsection { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF}
+</style>
+</head>
+<body  bgcolor="000000" marginheight="0">
+<!-- D E F I N E  H E I R   M E N U   L A Y E R  -->
+<!--ONLINE SERVICES-->
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<div  px="#DEFAULT" style="left:" top="#DEFAULT" width="#DEFAULT">
+<table  TABID="10238" bordercolor="#000000">
+<tr >
+<td  class="menus">
+<a  class="menus">
+Overview
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Internet Banking
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+PC Banking
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Internet Bill Payment
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+On-Line Trading
+</a>
+</td>
+</tr>
+</table>
+</div>
+<!--PERSONAL BANKING-->
+<div  hidden="#DEFAULT" px="#DEFAULT" style="left:" top="#DEFAULT" visibility="#DEFAULT" width="#DEFAULT">
+<table  TABID="10239" bordercolor="#000000">
+<tr >
+<td  class="menus">
+<a  class="menus">
+Overview
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Checking Accounts
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Savings Accounts
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Bank Cards
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Fee Schedule
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Lending Choices
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Home Loan Center
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Private Banking
+</a>
+</td>
+</tr>
+</table>
+</div>
+<!--BUSINESS BANKING-->
+<div  px="#DEFAULT" style="left:" top="#DEFAULT" width="#DEFAULT">
+<table  TABID="10240" bordercolor="#000000">
+<tr >
+<td  class="menus">
+<a  class="menus">
+Overview
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Checking Accounts
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Savings Accounts
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Bank Cards
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Fee Schedule
+</a>
+</td>
+</tr>
+<!-- &amp;amp;amp;lt;tr&amp;amp;amp;gt; 
+      &amp;amp;amp;lt;td height="15" class="menus"&amp;amp;amp;gt; &amp;amp;amp;lt;a class="menus" href="/business_banking/small_business/" onmouseout="menuOut('rollimg0')" onmouseover="menuOver('rollimg0')"&amp;amp;amp;gt;SBA 
+        Financing &amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/tr&amp;amp;amp;gt;-->
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Financing Choices
+</a>
+</td>
+</tr>
+<tr >
+<!-- &amp;amp;amp;lt;tr&amp;amp;amp;gt; 
+      &amp;amp;amp;lt;td height="15" class="menus"&amp;amp;amp;gt; &amp;amp;amp;lt;a class="menus" href="/business_banking/ag_financing/" onmouseout="menuOut('rollimg0')" onmouseover="menuOver('rollimg0')"&amp;amp;amp;gt;Agricultural 
+        Financing&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/tr&amp;amp;amp;gt;-->
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Cash Management
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Corporate Trust
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Merchant Services
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Wire Transfer
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Drop Service
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Affinity Program
+</a>
+</td>
+</tr>
+</table>
+</div>
+<!--INVESTOR RELATIONS-->
+<div  px="#DEFAULT" style="left:" top="#DEFAULT" width="#DEFAULT">
+<table  TABID="10241" bordercolor="#000000">
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Zions Bancorporation
+</a>
+</td>
+</tr>
+</table>
+</div>
+<!--TOOLS RESOURCES-->
+<div  px="#DEFAULT" style="left:" top="#DEFAULT" width="#DEFAULT">
+<table  TABID="10242" bordercolor="#000000">
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Calculators
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Secure Browsers
+</a>
+</td>
+</tr>
+</table>
+</div>
+<!--FINANCIAL NEWS-->
+<div  px="#DEFAULT" style="left:" top="#DEFAULT" width="#DEFAULT">
+<table  TABID="10243" bordercolor="#000000">
+<tr >
+<td  class="menus">
+<a  class="menus">
+Overview
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Market Headlines
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  class="menus">
+NSB Insight
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  class="menus">
+Tea Leaf Newsletter
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  class="menus">
+Small Business Index
+</a>
+</td>
+</tr>
+</table>
+</div>
+<!--AROUND NEVADA-->
+<div  px="#DEFAULT" style="left:" top="#DEFAULT" width="#DEFAULT">
+<table  TABID="10244" bordercolor="#000000">
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Community Links
+</a>
+</td>
+</tr>
+<tr >
+<!--HIDDEN LINK 
+&amp;amp;amp;lt;td height="15" class="menus"&amp;amp;amp;gt; &amp;amp;amp;lt;a class="menus" href="/around_nevada/photo_gallery/" onmouseout="menuOut('rollimg0')" onmouseover="menuOver('rollimg0')"&amp;amp;amp;gt;Nevada 
+        Photo Gallery&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt; -->
+</tr>
+</table>
+</div>
+<!--INSIDE NSB-->
+<div  px="#DEFAULT" style="left:" top="#DEFAULT" width="#DEFAULT">
+<table  TABID="10245" bordercolor="#000000">
+<tr >
+<td  class="menus">
+<a  class="menus">
+Overview
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  class="menus">
+Contact Us
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Locate Branches/ATMs
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Press Releases
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+TV/Radio Ads
+</a>
+</td>
+</tr>
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Financial Reports
+</a>
+</td>
+</tr>
+<!-- HIDDEN LINK 
+&amp;amp;amp;lt;tr&amp;amp;amp;gt; 
+      &amp;amp;amp;lt;td height="15" class="menus"&amp;amp;amp;gt; &amp;amp;amp;lt;a class="menus" href="/inside_NSB/stock_prices/" onmouseout="menuOut('rollimg0')" onmouseover="menuOver('rollimg0')"&amp;amp;amp;gt;Stock 
+        Prices&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/tr&amp;amp;amp;gt; -->
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Career Opportunities
+</a>
+</td>
+</tr>
+<!-- HIDDEN LINK 
+&amp;amp;amp;lt;tr&amp;amp;amp;gt; 
+     &amp;amp;amp;lt;td height="15" class="menus"&amp;amp;amp;gt; &amp;amp;amp;lt;a class="menus" href="/inside_NSB/employees_only/" onmouseout="menuOut('rollimg0')" onmouseover="menuOver('rollimg0')"&amp;amp;amp;gt;Employees 
+        Only&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/tr&amp;amp;amp;gt;-->
+<tr >
+<td  class="menus">
+<a  onmouseover="menuOver(rollimg0)">
+Privacy Statement
+</a>
+</td>
+</tr>
+</table>
+</div>
+<!-- B E G I N   P A G E   H E A D -->
+<table  TABID="10246" bgcolor="#000000" cellpadding="0" height="60">
+<tr >
+<td  height="61" width="376">
+<img ></img>
+</td>
+<td  align="right" height="60" width="411">
+<div  align="right">
+<!-- JUMP MENU-->
+<form >
+<img ></img>
+<select >
+<option  selected="selected" value="https://banking.nsbank.com">
+Access Your Accounts
+</option>
+<option  value="https://banking.nsbank.com">
+Personal Accounts
+</option>
+<option  value="/personal_banking/private/goto_zions.html">
+Investments
+</option>
+</select>
+<img ></img>
+</form>
+</div>
+</td>
+</tr>
+</table>
+<!-- #BeginEditable "rotatepic" -->
+<table  TABID="10247" border="0" cellspacing="0" height="60">
+<tr >
+<td  height="60"></td>
+</tr>
+</table>
+<!-- #EndEditable -->
+<!-- E N D   P A G E   H E A D -->
+<table  TABID="10251" border="0" height="400">
+<tr  valign="top">
+<td  bgcolor="#FFFFFF" height="362" rowspan="3" valign="top" width="130">
+<center >
+<img ></img>
+<!-- B E G I N   N A V I G A T I O N -->
+<table  TABID="10248" hspace="0">
+<tr >
+<td >
+<a  document.zero="#DEFAULT" hilite="#DEFAULT" onmouseover="showLayer(Zero),">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  document.one="#DEFAULT" hilite="#DEFAULT" onmouseover="showLayer(One),">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  document.two="#DEFAULT" hilite="#DEFAULT" onmouseover="showLayer(Two),">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  document.three="#DEFAULT" hilite="#DEFAULT" onmouseover="showLayer(Three)," target="new">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  document.four="#DEFAULT" hilite="#DEFAULT" onmouseover="showLayer(Four),">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  document.five="#DEFAULT" hilite="#DEFAULT" onmouseover="showLayer(Five),">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  document.six="#DEFAULT" hilite="#DEFAULT" onmouseover="showLayer(Six),">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  document.seven="#DEFAULT" hilite="#DEFAULT" onmouseover="showLayer(Seven),">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!-- E N D   N A V I G A T I O N -->
+<br ></br>
+<img ></img>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Equal Housing Lender
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<a  class="littleslinks" target="new">
+Member FDIC
+</a>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<br ></br>
+<a  class="littleslinks">
+NSB Privacy Policy
+</a>
+<br ></br>
+<br ></br>
+</center>
+</td>
+<td  class="pagetitle">
+<!-- #BeginEditable "content" -->
+<table  TABID="10250" genuinetable="yes" hspace="0" tabletitle="Personal Banking : Fee Schedules 
+Effective August 2000">
+<tr >
+<td  class="pagetitle" valign="top" width="175">
+<p >
+<img ></img>
+</p>
+</td>
+<td  class="content" valign="top" width="100%">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Personal Banking : Fee Schedules
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<p >
+Effective August 2000
+</p>
+<table  TABID="10249" genuinetable="yes" bordercolor="#CCCCCC">
+<tr  bgcolor="#660033">
+<td  class="form">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Service Description
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Fee
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  class="form">
+Account Closing
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Within 90 days of opening
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$10.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+ATM Transaction
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+At non-Nevada State Bank locations
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$1.50
+</td>
+</tr>
+<tr >
+<td  class="form">
+ATM Inquiry
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+At non-Nevada State Bank locations
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$1.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+ATM Mini Statement
+</td>
+<td  class="form">
+$0.50
+</td>
+</tr>
+<tr >
+<td  class="form">
+Official Checks
+</td>
+<td  class="form">
+$5.00 each
+</td>
+</tr>
+<tr >
+<td  class="form">
+Check Book Balancing
+</td>
+<td  class="form">
+$20.00/hour
+</td>
+</tr>
+<tr >
+<td  class="form">
+Collections (domestic)
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+(Plus charges from other banks)
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$15.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Collections (foreign)
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+(Plus charges from other banks)
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$40.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Dormant Account
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+(Non-Refundable)
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$5.00/month
+</td>
+</tr>
+<tr >
+<td  class="form">
+Legal Processes
+</td>
+<td  class="form">
+$25.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Microfilm Copies
+</td>
+<td  class="form">
+$2.50/copy
+</td>
+</tr>
+<tr >
+<td  class="form">
+Money Orders
+</td>
+<td  class="form">
+$3.00 each
+</td>
+</tr>
+<tr >
+<td  class="form">
+Night Deposit Bags
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Disposable Plastic
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$0.35 each
+</td>
+</tr>
+<tr >
+<td  class="form">
+Night Deposit Bags
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Canvas
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$35.00 each
+</td>
+</tr>
+<tr >
+<td  class="form">
+Night Deposit Keys
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+(
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Refundable)
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$5.00 each
+</td>
+</tr>
+<tr >
+<td  class="form">
+Non-truncation Fee
+</td>
+<td  class="form">
+$3.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Notary Services
+</td>
+<td  class="form">
+FREE
+</td>
+</tr>
+<tr >
+<td  class="form">
+NSF/UCF
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Non-Sufficient Funds
+<br ></br>
+Uncollected Funds
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$25.00/item
+</td>
+</tr>
+<tr >
+<td  class="form">
+Overdraft Service Fee
+</td>
+<td  class="form">
+$5.00/day
+</td>
+</tr>
+<tr >
+<td  class="form">
+Research
+</td>
+<td  class="form">
+$20.00/hour
+</td>
+</tr>
+<tr >
+<td  class="form">
+Returned Deposit Item
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Business Accounts Only
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$4.00 each
+</td>
+</tr>
+<tr >
+<td  class="form">
+Safe Deposit Boxes
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Not available at supermarket locations.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$15.00 to $315.00
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Annually - depending on size.
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  class="form">
+Safe Deposit Key
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+(Customer)
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$10.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Safe Deposit Key
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+(Non-Customer)
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$50.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Safe Deposit Box
+<br ></br>
+Forcible Entry Fee
+</td>
+<td  class="form">
+$100.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Stop Payment
+</td>
+<td  class="form">
+$15.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Transcript Statements
+</td>
+<td  class="form">
+$2.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Traveler's Cheques
+</td>
+<td  class="form">
+1-1/2%
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+purchase amount
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+</tr>
+<tr >
+<td  class="form">
+Uncollected Funds
+<br ></br>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Checks drawn against uncollected funds
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form">
+$25.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Wire Transfer
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Customer
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form"></td>
+</tr>
+<tr >
+<td  class="form">
+- Incoming
+</td>
+<td  class="form">
+None
+</td>
+</tr>
+<tr >
+<td  class="form">
+- Outgoing domestic
+</td>
+<td  class="form">
+$20.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+- Outgoing foreign
+</td>
+<td  class="form">
+$50.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Wire Transfer
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+Non-Customer
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  class="form"></td>
+</tr>
+<tr >
+<td  class="form">
+- Incoming
+</td>
+<td  class="form">
+$30.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+- Outgoing domestic
+</td>
+<td  class="form">
+$50.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+- Outgoing foreign
+</td>
+<td  class="form">
+$100.00
+</td>
+</tr>
+<tr >
+<td  class="form">
+Zipper Bags
+</td>
+<td  class="form">
+$5.00 each
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- #EndEditable -->
+<p  class="content"></p>
+</td>
+</tr>
+<tr  valign="top"></tr>
+</table>
+<!-- B E G I N   T O O L S  -->
+<table  TABID="10253" bgcolor="#000000" height="60">
+<tr >
+<td  width="50%">
+<table  TABID="10252" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<!-- HIDDEN LINK &amp;amp;amp;lt;td&amp;amp;amp;gt;&amp;amp;amp;lt;a href="/help/site_map.html"
+         onMouseOver="changeImages('site', '/images/tools/site-over.gif'); return true;"
+         onMouseOut="changeImages('site', '/images/tools/site.gif'); return true;"
+         onClick="changeImages('site', '/images/tools/site-click.gif');"&amp;amp;amp;gt; &amp;amp;amp;lt;img name="site" src="/images/tools/site.gif" width="52" height="54" border="0"&amp;amp;amp;gt;&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/td&amp;amp;amp;gt;-->
+<td >
+<a  onclick="changeImages(help,">
+images
+</a>
+tools/help-click.gif'); &gt;
+<img ></img>
+</td>
+<td >
+<a  onclick="changeImages(locate,">
+images
+</a>
+tools/locate-click.gif'); &gt;
+<img ></img>
+</td>
+<td >
+<a  onclick="changeImages(contact,">
+images
+</a>
+tools/contact-click.gif'); &gt;
+<img ></img>
+</td>
+<td >
+<a  onclick="changeImages(home,">
+images
+</a>
+tools/home-click.gif'); &gt;
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- E N D   T O O L S -->
+</td>
+<td  class="links">
+<div  align="right">
+<a  class="menus">
+nvinfo@nsbank.com
+<img ></img>
+</a>
+</div>
+</td>
+</tr>
+</table>
+<center >
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<font  color="#999999">
+©2001 Nevada State Bank
+<br ></br>
+All Rights Reserved.
+</font>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</center>
+</body>
+<!-- #EndTemplate -->
+</html>

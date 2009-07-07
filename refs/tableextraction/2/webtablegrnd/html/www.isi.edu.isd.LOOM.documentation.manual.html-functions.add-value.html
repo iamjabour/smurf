@@ -1,0 +1,213 @@
+<html >
+<head >
+<title >
+add-value
+</title>
+</head>
+<body >
+<h1 >
+add-value [
+<i >
+Function
+</i>
+]
+</h1>
+<hr ></hr>
+<h2 >
+Purpose
+</h2>
+The
+<b >
+add-value
+</b>
+function adds a value to a given role on a given instance.
+<p ></p>
+<h2 >
+Syntax
+</h2>
+<b >
+add-value
+</b>
+<i >
+instance role value
+</i>
+<tt >
+&amp;key
+</tt>
+<i >
+context no-error-p
+</i>
+<p ></p>
+<h2 >
+Arguments
+</h2>
+The
+<i >
+instance
+</i>
+argument is an instance or an instance identifier.
+<p >
+The
+<i >
+role
+</i>
+argument is a relation, or the name of a relation.
+</p>
+<p >
+The
+<i >
+value
+</i>
+argument is a value to be added to the fillers of
+<i >
+role
+</i>
+. If
+<i >
+value
+</i>
+is a list, the list is interpreted as a single role filler. If
+<i >
+value
+</i>
+is a symbol, the value is coerced to an instance unless the the range of
+<i >
+role
+</i>
+indicates that it should be interpreted as a constant.
+</p>
+<p >
+The
+<i >
+context
+</i>
+argument is the context, or the symbol or string that names the context, where the lookup of
+<i >
+instance
+</i>
+and
+<i >
+role
+</i>
+begins. This defaults to the current context.
+</p>
+<p >
+If the
+<i >
+no-error-p
+</i>
+argument is
+<b >
+t
+</b>
+, then error messages are suppressed.
+</p>
+<p ></p>
+<h2 >
+Value
+</h2>
+If the update is successful, the newly added value is returned. If it fails and
+<i >
+no-error-p
+</i>
+is set, then: (1) if
+<i >
+role
+</i>
+is single-valued and already has a filler, the two values
+<b >
+nil
+</b>
+and
+<b >
+:too-many-fillers
+</b>
+are returned, (2) if the type of
+<i >
+value
+</i>
+conflicts with the range of
+<i >
+role
+</i>
+,
+<b >
+nil
+</b>
+and
+<b >
+:type-clash
+</b>
+are returned, (3) if
+<i >
+instance
+</i>
+(or
+<i >
+role
+</i>
+) cannot be found,
+<b >
+nil
+</b>
+and
+<b >
+:missing-instance
+</b>
+(or
+<b >
+:missing-role
+</b>
+) are returned.
+<p ></p>
+<h2 >
+Examples
+</h2>
+<pre >
+(defrelation rr)  
+(add-value 'Joe 'rr 'Fred) ==&gt; |I|FRED 
+(add-value (fi Joe) (fr rr) (fi Sue) :context "CL-USER-THEORY") ==&gt; |I|SUE 
+(add-value 'Joe 'rr '(3 4 5)) ==&gt; (3 4 5) 
+(get-values 'Joe 'rr) ==&gt; (|I|FRED |I|SUE (3 4 5)) 
+(defrelation ss :range Symbol) 
+(add-value 'Joe 'ss 'Fred) ==&gt; FRED 
+(defrelation r :characteristics :single-valued) 
+(add-value 'Joe 'r 'Fred) ==&gt; |I|FRED 
+(add-value 'Joe 'r 'Sue :no-error-p t) ==&gt; NIL :TOO-MANY-FILLERS 
+(get-values 'Joe 'r) ==&gt; (|I|FRED)
+</pre>
+<h2 >
+See Also
+</h2>
+<ul >
+<li >
+<a  href="add-type.html">
+add-type
+</a>
+</li>
+<li >
+<a  href="remove-value.html">
+remove-value
+</a>
+</li>
+<li >
+<a  href="set-values.html">
+set-values
+</a>
+</li>
+<li >
+<a  href="tell.html">
+tell
+</a>
+</li>
+<li >
+<a  href="get-values.html">
+get-values
+</a>
+</li>
+</ul>
+<small >
+Last modified: Jun 1 1995
+</small>
+</body>
+</html>

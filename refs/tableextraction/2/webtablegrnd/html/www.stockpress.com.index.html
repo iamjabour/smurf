@@ -1,0 +1,1268 @@
+<html >
+<head ></head>
+<body  href="/graphics/stockpress.ico" icon="#DEFAULT" rel="shortcut">
+<link ></link>
+<title >
+Stock Press.com: Stock Quotes, Charts, Chat, News, Tips, Sport, and more
+</title>
+<!------------------------------- Loads Browser Specific Style Sheet Checker -->
+<script ></script>
+<!-- ----------------------------Preload Script -->
+<script >
+<!-- 
+
+var selected = 0
+
+var ArrowOn = new Image();
+ArrowOn.src = "/graphics/bar_arrow-over.gif";
+
+var ArrowOff = new Image();
+ArrowOff.src = "/graphics/bar_arrow.gif";
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function imageSwap(imgName, imgSrc) {
+   if (selected != imgName) {
+      eval('document.'+imgName+'.src="'+imgSrc+'"');
+   }
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		but1 = newImage("/graphics/bar_arrow-over.gif");
+		preloadFlag = true;
+	}
+}
+// -->
+</script>
+<br ></br>
+<form  action="/quotes.pl" method="get">
+<table  TABID="12177" align="center" border="0" cellpadding="0" cellspacing="0" width="779">
+<tr >
+<td  align="left" bgcolor="#FFFFFF" height="45" width="338">
+<a  href="http://www.stockpress.com:80">
+<img ></img>
+</a>
+</td>
+<td  align="right" background="/graphics/bkg_toprt.gif" height="45" valign="middle" width="441">
+<img ></img>
+<br ></br>
+<input ></input>
+<img ></img>
+<input ></input>
+<img ></img>
+</td>
+</tr>
+</table>
+</form>
+<table  TABID="12210">
+<tr >
+<td  bgcolor="003399" colspan="2">
+<table  TABID="12178" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  align="left" height="22">
+<img ></img>
+</td>
+<td  align="left" height="22" width="173">
+<img ></img>
+<img ></img>
+</td>
+<td  align="right" height="22" valign="middle" width="600">
+<img ></img>
+<img ></img>
+<a  arrowoff.src="#DEFAULT" onmouseout="imageSwap(arrow1,">
+<img ></img>
+</a>
+<img ></img>
+<img ></img>
+<img ></img>
+<a  arrowoff.src="#DEFAULT" onmouseout="imageSwap(arrow2,">
+<img ></img>
+</a>
+<img ></img>
+<img ></img>
+<img ></img>
+<a  arrowoff.src="#DEFAULT" onmouseout="imageSwap(arrow3,">
+<img ></img>
+</a>
+<img ></img>
+<img ></img>
+<img ></img>
+<a  arrowoff.src="#DEFAULT" onmouseout="imageSwap(arrow4,">
+<img ></img>
+</a>
+<img ></img>
+</td>
+<td  align="right" height="22" width="3">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" bgcolor="74C451" width="3">
+<img ></img>
+</td>
+<td  align="left" bgcolor="74C451" colspan="2">
+<font  class="smallbold">
+Wednesday May 16 01:41:23 PM EST
+</font>
+</td>
+<td  align="right" bgcolor="74C451" width="3">
+<img ></img>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" colspan="2">
+<table  TABID="12209" border="0" cellpadding="0" cellspacing="0" width="100%">
+<!-- Begin Login Block -->
+<tr >
+<td  align="left" colspan="2">
+<a  href="/users.pl?op=newuserform">
+<img ></img>
+</a>
+</td>
+<td  background="/graphics/boxbkg_login.gif" bgcolor="#0066CC">
+<img ></img>
+<table  TABID="12179" bgcolor="#0066CC" border="0" cellpadding="2" cellspacing="0" width="95%">
+<tr >
+<td  background="/graphics/spacer.gif">
+<form  action="http://www.stockpress.com:80/users.pl" method="post">
+<font  class="smallboldwhite">
+Username:
+</font>
+</form>
+</td>
+<td  background="/graphics/spacer.gif">
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  background="/graphics/spacer.gif">
+<font  class="smallboldwhite">
+Password:
+</font>
+</td>
+<td  background="/graphics/spacer.gif">
+<input ></input>
+</td>
+</tr>
+<tr >
+<td  background="/graphics/spacer.gif">
+<input ></input>
+<input ></input>
+<input ></input>
+<br ></br>
+<a  class="linkwhitetiny">
+Forget Password?
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- End Login Block -->
+<tr >
+<td  align="left" bgcolor="#175DDB" nowrap="nowrap" valign="middle">
+<font  class="mediumboldwhite">
+Recent Headlines
+</font>
+</td>
+<td  align="right" bgcolor="#175DDB" nowrap="nowrap" valign="middle">
+<a  class="linkwhitetiny">
+Customize
+</a>
+</td>
+<td  background="/graphics/boxbkg_login.gif">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  background="/graphics/bkg_centerwhite.gif">
+<font  class="small"></font>
+</td>
+<td  background="/graphics/stockbox_top2.gif">
+<a  class="tiny">
+Customize Boxes
+</a>
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  background="/graphics/bkg_centerwhite.gif" colspan="2">
+<!---------------------------Page Contents Here-->
+<!-- begin header block -->
+<!--
+
+.barlinks {
+
+   color: #000099;
+   text-decoration: none;
+   font-weight: bold;
+   font-family: Verdana;
+   font-size: x-small
+
+}
+
+.footerlinks {
+
+   color: #000000;
+   font-family: Arial;
+   font-size: x-small
+
+}
+
+.storylinks {
+   color: #000000
+}
+
+// -->
+<center >
+<table  TABID="12191" background="">
+<tr >
+<td  align="left" valign="top">
+<font  color="#000000">
+<!-- end header block -->
+<!-- begin index block -->
+<br ></br>
+<img ></img>
+<br ></br>
+<!-- begin spress client page block -->
+</font>
+<div >
+<table  TABID="12180" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="30">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top" width="125">
+<a  href="http://www.stockpress.com:80/search.pl?topic=vfin">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="middle" width="100%">
+<font  class="mediumlgbold">
+<b >
+Slowdown in VC Investing Gives vFinance.com a Boost
+</b>
+</font>
+<br ></br>
+<font  class="medium">
+Posted on Monday May 14, @11:37AM
+<br ></br>
+<a  href="http://www.stockpress.com:80/article.pl?sid=01/05/14/1714237&mode=thread">
+Read More...
+</a>
+</font>
+</td>
+<td  width="25">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  class="mediumbold">
+VFIN:
+<a  class="small">
+News
+</a>
+-
+<a  class="small">
+Chart
+</a>
+-
+<a  class="small">
+Profile
+</a>
+</font>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+<!-- end spress client page block -->
+<!-- begin spress client page block -->
+<div  align="left">
+<table  TABID="12181" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="30">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top" width="125">
+<a  href="http://www.stockpress.com:80/search.pl?topic=ncti">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="middle" width="100%">
+<font  class="mediumlgbold">
+<b >
+NCTI Subsidiary Acquires Rights to Low-cost Flat Screen Video Display Technology
+</b>
+</font>
+<br ></br>
+<font  class="medium">
+Posted on Monday May 14, @10:45AM
+<br ></br>
+<a  href="http://www.stockpress.com:80/article.pl?sid=01/05/14/176231&mode=thread">
+Read More...
+</a>
+</font>
+</td>
+<td  width="25">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  class="mediumbold">
+NCTI:
+<a  class="small">
+News
+</a>
+-
+<a  class="small">
+Chart
+</a>
+-
+<a  class="small">
+Profile
+</a>
+</font>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+<!-- end spress client page block -->
+<!-- begin spress client page block -->
+<div  align="left">
+<table  TABID="12182" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="30">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top" width="125">
+<a  href="http://www.stockpress.com:80/search.pl?topic=isnq">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="middle" width="100%">
+<font  class="mediumlgbold">
+<b >
+InsynQ Reports Sales Increases in its Enterprise Software Group
+</b>
+</font>
+<br ></br>
+<font  class="medium">
+Posted on Wednesday May 09, @11:08AM
+<br ></br>
+<a  href="http://www.stockpress.com:80/article.pl?sid=01/05/10/1659239&mode=thread">
+Read More...
+</a>
+</font>
+</td>
+<td  width="25">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  class="mediumbold">
+ISNQ:
+<a  class="small">
+News
+</a>
+-
+<a  class="small">
+Chart
+</a>
+-
+<a  class="small">
+Profile
+</a>
+</font>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+<!-- end spress client page block -->
+<!-- begin spress client page block -->
+<div  align="left">
+<table  TABID="12183" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="30">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top" width="125">
+<a  href="http://www.stockpress.com:80/search.pl?topic=isnq">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="middle" width="100%">
+<font  class="mediumlgbold">
+<b >
+InsynQ to Add E-Commerce Solution
+</b>
+</font>
+<br ></br>
+<font  class="medium">
+Posted on Tuesday May 08, @03:53PM
+<br ></br>
+<a  href="http://www.stockpress.com:80/article.pl?sid=01/05/10/1656249&mode=thread">
+Read More...
+</a>
+</font>
+</td>
+<td  width="25">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  class="mediumbold">
+ISNQ:
+<a  class="small">
+News
+</a>
+-
+<a  class="small">
+Chart
+</a>
+-
+<a  class="small">
+Profile
+</a>
+</font>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+<!-- end spress client page block -->
+<!-- begin spress client page block -->
+<div  align="left">
+<table  TABID="12184" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="30">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top" width="125">
+<a  href="http://www.stockpress.com:80/search.pl?topic=csgi">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="middle" width="100%">
+<font  class="mediumlgbold">
+<b >
+ConSyGen and EarthLink Agree to Develop EarthLink Version of BizPay Payment System
+</b>
+</font>
+<br ></br>
+<font  class="medium">
+Posted on Tuesday May 08, @08:15AM
+<br ></br>
+<a  href="http://www.stockpress.com:80/article.pl?sid=01/05/10/1653234&mode=thread">
+Read More...
+</a>
+</font>
+</td>
+<td  width="25">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="2">
+<img ></img>
+</td>
+<td  align="left" valign="top" width="100%">
+<font  class="mediumbold">
+CSGI:
+<a  class="small">
+News
+</a>
+-
+<a  class="small">
+Chart
+</a>
+-
+<a  class="small">
+Profile
+</a>
+</font>
+</td>
+<td >
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+<!-- end spress client page block -->
+<img ></img>
+<br ></br>
+<!-- begin spress index story block -->
+<div  align="left">
+<table  TABID="12185" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="30">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top" width="125">
+<a  href="http://www.stockpress.com:80/search.pl?topic=jimroam">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="middle" width="100%">
+<font  class="mediumlgbold">
+<b >
+Working with Difficult People
+</b>
+</font>
+<br ></br>
+<font  class="medium">
+Posted on Monday May 14, @11:42AM
+</font>
+<br ></br>
+<a  href="http://www.stockpress.com:80/article.pl?sid=01/05/15/1649210&mode=thread">
+Read More...
+</a>
+</td>
+<td  width="15">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+<!-- end spress index story block -->
+<!--  -->
+<!-- begin spress index story block -->
+<div  align="left">
+<table  TABID="12186" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="30">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top" width="125">
+<a  href="http://www.stockpress.com:80/search.pl?topic=edcroft">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="middle" width="100%">
+<font  class="mediumlgbold">
+<b >
+Boeing Welcomed To Chicago
+</b>
+</font>
+<br ></br>
+<font  class="medium">
+Posted on Friday May 11, @10:43AM
+</font>
+<br ></br>
+<a  href="http://www.stockpress.com:80/article.pl?sid=01/05/10/1748206&mode=thread">
+Read More...
+</a>
+</td>
+<td  width="15">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+<!-- end spress index story block -->
+<!--  -->
+<!-- begin spress index story block -->
+<div  align="left">
+<table  TABID="12187" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="30">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top" width="125">
+<a  href="http://www.stockpress.com:80/search.pl?topic=melissa">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="middle" width="100%">
+<font  class="mediumlgbold">
+<b >
+Another Internet Fund Finds It Hard To Stand Alone
+</b>
+</font>
+<br ></br>
+<font  class="medium">
+Posted on Friday May 11, @09:50AM
+</font>
+<br ></br>
+<a  href="http://www.stockpress.com:80/article.pl?sid=01/05/10/1753211&mode=thread">
+Read More...
+</a>
+</td>
+<td  width="15">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+<!-- end spress index story block -->
+<!--  -->
+<!-- begin spress index story block -->
+<div  align="left">
+<table  TABID="12188" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="30">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top" width="125">
+<a  href="http://www.stockpress.com:80/search.pl?topic=melissa">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="middle" width="100%">
+<font  class="mediumlgbold">
+<b >
+Another Internet Fund Finds It Hard To Stand Alone
+</b>
+</font>
+<br ></br>
+<font  class="medium">
+Posted on Friday May 11, @09:50AM
+</font>
+<br ></br>
+<a  href="http://www.stockpress.com:80/article.pl?sid=01/05/10/1753232&mode=thread">
+Read More...
+</a>
+</td>
+<td  width="15">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+<!-- end spress index story block -->
+<!--  -->
+<!-- begin spress index story block -->
+<div  align="left">
+<table  TABID="12189" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  width="30">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top" width="125">
+<a  href="http://www.stockpress.com:80/search.pl?topic=edcroft">
+<img ></img>
+</a>
+</td>
+<td  align="left" valign="middle" width="100%">
+<font  class="mediumlgbold">
+<b >
+When Will Oil Rest
+</b>
+</font>
+<br ></br>
+<font  class="medium">
+Posted on Thursday May 10, @01:29PM
+</font>
+<br ></br>
+<a  href="http://www.stockpress.com:80/article.pl?sid=01/05/10/1736209&mode=thread">
+Read More...
+</a>
+</td>
+<td  width="15">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="4">
+<img ></img>
+</td>
+</tr>
+</table>
+</div>
+<!-- end spress index story block -->
+<!--  -->
+<br ></br>
+<center >
+<table  TABID="12190" width="70%">
+<tr >
+<td  align="center" nowrap="nowrap">
+<a  class="mediumlg">
+Featured Companies
+</a>
+</td>
+<td  align="center" nowrap="nowrap">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+|
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" nowrap="nowrap">
+<a  class="mediumlg">
+Editorials
+</a>
+</td>
+<td  align="center" nowrap="nowrap">
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+|
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+<span ></span>
+</td>
+<td  align="center" nowrap="nowrap">
+<a  class="mediumlg">
+News Archives
+</a>
+</td>
+</tr>
+</table>
+</center>
+<br ></br>
+<!-- end index block. -->
+</td>
+</tr>
+</table>
+<p ></p>
+</center>
+</td>
+<td  background="graphics/stockbox_bkg.gif">
+<br ></br>
+<!-- begin fancy box -->
+<table  TABID="12195" background="">
+<tr >
+<td >
+<table  TABID="12194" background="">
+<tr >
+<td >
+<font  class="linkwhitesmall">
+<b >
+<a  href="http://www.stockpress.com/portfolio.pl">
+<font  color="#FFFFFF">
+My Portfolio
+</font>
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" width="100%">
+<table  TABID="12193" background="">
+<tr >
+<td  bgcolor="#FFFFFF">
+<font  class="small"></font>
+<table  TABID="12192" genuinetable="yes" tabletitle="My Portfolio">
+<tr >
+<td  align="left">
+<font  class="small">
+<a  class="small">
+Edit
+</a>
+</font>
+</td>
+<td  align="right" colspan="2">
+<font  class="small">
+<a  class="small">
+Create New
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  colspan="3">
+<img ></img>
+</td>
+</tr>
+<tr  bgcolor="#DDDDDD">
+<td  bgcolor="#DDDDDD" width="40%">
+<font  class="smallbold">
+<a  href="http://www.stockpress.com:80/quotes.pl?symbol=^DJI">
+<b >
+DOW
+</b>
+</a>
+</font>
+</td>
+<td  align="right" bgcolor="#DDDDDD">
+<font  class="small" color="#000000">
+11132.12
+</font>
+</td>
+<td  align="right" bgcolor="#DDDDDD">
+<font  class="small" color="#00AA00">
++259.15
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  bgcolor="#FFFFFF" width="40%">
+<font  class="smallbold">
+<a  href="http://www.stockpress.com:80/quotes.pl?symbol=^IXIC">
+<b >
+NASD
+</b>
+</a>
+</font>
+</td>
+<td  align="right" bgcolor="#FFFFFF">
+<font  class="small" color="#000000">
+2148.77
+</font>
+</td>
+<td  align="right" bgcolor="#FFFFFF">
+<font  class="small" color="#00AA00">
++63.19
+</font>
+</td>
+</tr>
+<tr  bgcolor="#DDDDDD">
+<td  bgcolor="#DDDDDD" width="40%">
+<font  class="smallbold">
+<a  href="http://www.stockpress.com:80/quotes.pl?symbol=^SPC">
+<b >
+S&amp;P 500
+</b>
+</a>
+</font>
+</td>
+<td  align="right" bgcolor="#DDDDDD">
+<font  class="small" color="#000000">
+1277.01
+</font>
+</td>
+<td  align="right" bgcolor="#DDDDDD">
+<font  class="small" color="#00AA00">
++27.57
+</font>
+</td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td  bgcolor="#FFFFFF" width="40%">
+<font  class="smallbold">
+<a  href="http://www.stockpress.com:80/quotes.pl?symbol=^TYX">
+<b >
+30yr
+</b>
+</a>
+</font>
+</td>
+<td  align="right" bgcolor="#FFFFFF">
+<font  class="small" color="#000000">
+58.56
+</font>
+</td>
+<td  align="right" bgcolor="#FFFFFF">
+<font  class="small" color="#CC0000">
+-0.38
+</font>
+</td>
+</tr>
+<tr  bgcolor="#DDDDDD">
+<td  align="center" bgcolor="#DDDDDD" colspan="3">
+<img ></img>
+<a  class="smallbold">
+<b >
+VIEW DETAILS
+</b>
+</a>
+</td>
+</tr>
+</table>
+<!-- By the way, You're -1 -->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p >
+<!-- end fancy box -->
+<!-- begin fancy box -->
+</p>
+<table  TABID="12199" background="">
+<tr >
+<td >
+<table  TABID="12198" background="">
+<tr >
+<td >
+<font  class="linkwhitesmall">
+<b >
+<a  href="http://stocksport.stockpress.com/index.cgi?decide=1">
+<font  color="#FFFFFF">
+StockSport
+</font>
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" width="100%">
+<table  TABID="12197" background="">
+<tr >
+<td  bgcolor="#FFFFFF">
+<font  class="small"></font>
+<table  TABID="12196">
+<tr >
+<td >
+<font  class="medium">
+Come Play StockSport! It is guaranteed to be the easiest stockmarket game to start, but it has the flexibilty and realism to challenge even the most skilled day trader.
+<br ></br>
+<br ></br>
+<center >
+<div  align="center">
+<b >
+Get $50,000 in StockSport Cash to play with!
+</b>
+<br ></br>
+<a  class="mediumbold">
+<b >
+PLAY NOW!
+</b>
+</a>
+</div>
+</center>
+</font>
+<br ></br>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p >
+<!-- end fancy box -->
+<!-- begin fancy box -->
+</p>
+<table  TABID="12202" background="">
+<tr >
+<td >
+<table  TABID="12201" background="">
+<tr >
+<td >
+<font  class="linkwhitesmall">
+<b >
+<a  href="http://stockpress.tickertips.com">
+<font  color="#FFFFFF">
+StockTips
+</font>
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" width="100%">
+<table  TABID="12200" background="">
+<tr >
+<td  bgcolor="#FFFFFF">
+<font  class="small">
+<ul >
+<li >
+<a  href="http://stockpress.tickertips.com/index.cgi?tip=10243">
+NasdaqSC: RMAG
+</a>
+</li>
+<li >
+<a  href="http://stockpress.tickertips.com/index.cgi?tip=10242">
+OTC BB: LRCM
+</a>
+</li>
+<li >
+<a  href="http://stockpress.tickertips.com/index.cgi?tip=10241">
+NasdaqNM: ABWG
+</a>
+</li>
+<li >
+<a  href="http://stockpress.tickertips.com/index.cgi?tip=10240">
+NasdaqNM: CRIO
+</a>
+</li>
+<li >
+<a  href="http://stockpress.tickertips.com/index.cgi?tip=10239">
+OTC BB: ONSE
+</a>
+</li>
+<li >
+<a  href="http://stockpress.tickertips.com/index.cgi?tip=10238">
+OTC BB: CLRT
+</a>
+</li>
+<li >
+<a  href="http://stockpress.tickertips.com/index.cgi?tip=10237">
+OTC BB: ICAS
+</a>
+</li>
+</ul>
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p >
+<!-- end fancy box -->
+<!-- begin fancy box -->
+</p>
+<table  TABID="12205" background="">
+<tr >
+<td >
+<table  TABID="12204" background="">
+<tr >
+<td >
+<font  class="linkwhitesmall">
+<b >
+<a  href="http://www.stockpress.com/users.pl?op=preferences">
+<font  color="#FFFFFF">
+Customize Shortcut
+</font>
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" width="100%">
+<table  TABID="12203" background="">
+<tr >
+<td  bgcolor="#FFFFFF">
+<font  class="small">
+<!-- begin block-->
+<font  class="medium">
+<p >
+You can customize the boxes that appear on this side of your pages by clicking the customize link below.
+<br ></br>
+<br ></br>
+</p>
+<center >
+<div  align="center">
+<a  class="mediumbold">
+<b >
+CUSTOMIZE
+</b>
+</a>
+</div>
+</center>
+<br ></br>
+</font>
+<!-- end block-->
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p >
+<!-- end fancy box -->
+<!-- begin fancy box -->
+</p>
+<table  TABID="12208" background="">
+<tr >
+<td >
+<table  TABID="12207" background="">
+<tr >
+<td >
+<font  class="linkwhitesmall">
+<b >
+<a  href="http://www.stockpress.com/advice.pl">
+<font  color="#FFFFFF">
+StockAdvice
+</font>
+</a>
+</b>
+</font>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#FFFFFF" width="100%">
+<table  TABID="12206" background="">
+<tr >
+<td  bgcolor="#FFFFFF">
+<font  class="small">
+<center >
+<font  class="mediumbold">
+<b >
+NEVER EVER.
+</b>
+</font>
+</center>
+<br ></br>
+<font  class="medium">
+NEVER RISK ANY MORE MONEY IN STOCKS THAN YOU CAN AFFORD TO LOSE. Know your psychological risk level.
+</font>
+<p  align="right">
+<a  class="medium">
+See more Advice...
+</a>
+</p>
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p >
+<!-- end fancy box -->
+</p>
+</td>
+</tr>
+<tr >
+<td  background="graphics/bkg_centerwhite.gif">
+<br ></br>
+<br ></br>
+<a  class="footer">
+Make Us Your Homepage
+</a>
+<a  class="footer">
+About StockPress.com
+</a>
+<br ></br>
+<a  class="footer">
+Submit A Story
+</a>
+<a  class="footer">
+Advertising
+</a>
+<a  class="footer">
+Disclaimer
+</a>
+<a  class="footer">
+Privacy Policy
+</a>
+<br ></br>
+<br ></br>
+<font  class="footer">
+Market data delayed up to 20 minutes
+<br ></br>
+<a  class="footer">
+Copyright © 2001 StockPress.com All Rights Reserved
+</a>
+<br ></br>
+<br ></br>
+</font>
+</td>
+<td  background="graphics/stockbox_bkg.gif"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

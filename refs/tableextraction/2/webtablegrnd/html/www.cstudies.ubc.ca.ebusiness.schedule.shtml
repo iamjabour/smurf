@@ -1,0 +1,770 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<title >
+UBC Certificate in eBusiness Program Schedule
+</title>
+<script >
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i&amp;amp;amp;lt;a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))&amp;amp;amp;gt;0&amp;amp;amp;amp;&amp;amp;amp;amp;parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&amp;amp;amp;amp;&amp;amp;amp;amp;d.all) x=d.all[n]; for (i=0;!x&amp;amp;amp;amp;&amp;amp;amp;amp;i&amp;amp;amp;lt;d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&amp;amp;amp;amp;&amp;amp;amp;amp;d.layers&amp;amp;amp;amp;&amp;amp;amp;amp;i&amp;amp;amp;lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i&amp;amp;amp;lt;(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+<body  marginheight="0">
+<table  TABID="08421" height="55">
+<tr >
+<td  align="left" height="55" rowspan="2" valign="bottom" width="210">
+<img ></img>
+<map  name="Map">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+</td>
+</tr>
+<tr ></tr>
+</table>
+<table  TABID="08426" border="0" cellpadding="0" cellspacing="0" width="100%">
+<!--
+
+
+
+if (document.images) {
+
+  image1on = new Image();
+
+  image1on.src = "images/g_over.gif";
+
+
+
+  image2on = new Image();
+
+  image2on.src = "images/g_backgrnd.gif";
+
+	
+
+	image3on = new Image();
+
+  image3on.src = "images/g_courses.gif";
+
+
+
+	image4on = new Image();
+
+  image4on.src = "images/g_admiss.gif";
+
+
+
+	image5on = new Image();
+
+  image5on.src = "images/g_apps.gif";
+
+  
+
+  	image6on = new Image();
+
+  image6on.src = "images/g_press.gif";
+
+
+
+	image7on = new Image();
+
+  image7on.src = "images/g_contact.gif";
+
+
+
+
+
+  image1off = new Image();
+
+  image1off.src = "images/w_over.gif";
+
+
+
+  image2off = new Image();
+
+  image2off.src = "images/w_backgrnd.gif";
+
+
+
+  image3off = new Image();
+
+  image3off.src = "images/w_courses.gif";
+
+
+
+  image4off = new Image();
+
+  image4off.src = "images/w_admiss.gif";
+
+
+
+  image5off = new Image();
+
+  image5off.src = "images/w_apps.gif";
+
+  
+
+   image6off = new Image();
+
+  image6off.src = "images/w_press.gif";
+
+
+
+  image7off = new Image();
+
+  image7off.src = "images/w_contact.gif";
+
+ 
+
+
+
+}
+
+
+
+function changeImages() {
+
+  if (document.images) {
+
+    for (var i=0; i&amp;amp;amp;lt;changeImages.arguments.length; i+=2) {
+
+      document[changeImages.arguments[i]].src = eval(changeImages.arguments[i+1] + ".src");
+
+    }
+
+  }
+
+}
+
+
+
+// -->
+<tr >
+<td  align="left" bgcolor="#003366" valign="top" width="112">
+<a  href="index.shtml">
+<img ></img>
+</a>
+<a  image1off="#DEFAULT" onmouseout="changeImages(image1,">
+<img ></img>
+</a>
+<a  image2off="#DEFAULT" onmouseout="changeImages(image2,">
+<img ></img>
+</a>
+<a  image3off="#DEFAULT" onmouseout="changeImages(image3,">
+<img ></img>
+</a>
+<a  image4off="#DEFAULT" onmouseout="changeImages(image4,">
+<img ></img>
+</a>
+<a  image5off="#DEFAULT" onmouseout="changeImages(image5,">
+<img ></img>
+</a>
+<a  href="../computers/press.htm" target="_blank">
+<img ></img>
+</a>
+<a  image7off="#DEFAULT" onmouseout="changeImages(image7,">
+<img ></img>
+</a>
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+<a  href="partner_opportunities.shtml"></a>
+<p >
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+<comment ></comment>
+</p>
+</td>
+<td  align="left" bgcolor="#FFFFFF" valign="top" width="95">
+<img ></img>
+<img ></img>
+<p  style="margin-left:">
+<b >
+<a  href="../internet/index.shtml">
+<font  color="#003366" face="Arial,geneva" size="2">
+<br ></br>
+Back to
+<br ></br>
+Internet Studies
+</font>
+</a>
+</b>
+</p>
+<p  style="margin-left:">
+<font  color="#003366" face="Arial" size="1">
+<b >
+<a  href="../computers/index.htm" target="_blank">
+Computer &amp; Technology
+<br ></br>
+Studies
+</a>
+</b>
+</font>
+</p>
+<p ></p>
+<p  style="margin-left:">
+<a  href="http://www.ubc.ca" target="_blank">
+<img ></img>
+<font  face="Arial"></font>
+</a>
+</p>
+<p ></p>
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="arial," geneva="#DEFAULT" size="1">
+The contents of this Web site are copyright © 1994-2000 The University of British Columbia.
+<br ></br>
+All rights reserved.
+</font>
+</p>
+<p ></p>
+</td>
+<td  align="left" bgcolor="#FFFFFF" valign="top">
+<table  TABID="08425" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr  height="10">
+<td  bgcolor="#99CCFF" height="10">
+<img ></img>
+</td>
+<td  bgcolor="#99CCFF" height="10">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="80%">
+<p  style="margin-left:">
+<br ></br>
+<img ></img>
+</p>
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#000080" face="Arial">
+<b >
+2001 Schedule
+</b>
+</font>
+</p>
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial" size="2">
+<strong >
+<font  color="#000099">
+<b >
+On-Campus session
+</b>
+</font>
+</strong>
+<b >
+<font  color="#000099">
+<br ></br>
+September 26, 2001 - September 7, 2002
+<br ></br>
+Application Deadline: September 14, 2001 12 Noon PST
+<br ></br>
+<a  href="#a">
+Activity Dates
+</a>
+</font>
+</b>
+</font>
+</p>
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT">
+<b >
+<font  color="#000099" size="2">
+100% Online Session
+<br ></br>
+October 15, 2001 - August 19, 2002
+<br ></br>
+</font>
+</b>
+</font>
+<font  color="#000099" size="2">
+<b >
+<font  face="arial," geneva="#DEFAULT">
+Application Deadline: September 28, 2001 (12:00 Noon P.S.T.)
+</font>
+</b>
+</font>
+<b >
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<br ></br>
+</font>
+<font  face="Arial" size="2">
+<b >
+<font  color="#000099">
+<a  href="#b">
+Activity Dates
+</a>
+</font>
+</b>
+</font>
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<br ></br>
+</font>
+</b>
+</p>
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Successful applicants will be notified of acceptance into the program within 10 working days of the application deadline. All other applicants will be notified within 15 working days.
+</font>
+</p>
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Note: Payment of
+</font>
+<font  face="Arial">
+<font  color="#333333">
+$7600 CDN
+</font>
+</font>
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+t
+</font>
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+uition is due upon acceptance into the program.
+</font>
+</p>
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+<a  name="a"></a>
+Schedule:
+</b>
+<br ></br>
+</font>
+</p>
+<div  align="center">
+<center >
+<table  TABID="08422" border="1" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="Schedule:" width="425">
+<tr  bgcolor="#CCCCCC">
+<td  height="22" valign="top" width="211">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial" size="2">
+<b >
+Activity
+</b>
+</font>
+</p>
+</td>
+<td  height="22" valign="top" width="208">
+<b >
+<font  face="Arial" size="2">
+<p  margin-right="#DEFAULT" style="margin-left:">
+Date
+</p>
+</font>
+</b>
+</td>
+</tr>
+<tr  bgcolor="#003366">
+<td  height="22" valign="top" width="211">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#FFFFFF" face="Arial" size="2">
+Module 1 - Getting Started
+</font>
+</p>
+</td>
+<td  height="22" valign="middle" width="208">
+<font  face="Arial" size="2">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#FFFFFF">
+September 26, 2001
+</font>
+</p>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#003366">
+<td  height="22" valign="top" width="211">
+<font  face="Arial" size="2">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#FFFFFF">
+Module 2 - E-Business Technologies
+</font>
+</p>
+</font>
+</td>
+<td  height="22" valign="middle" width="208">
+<font  face="Arial" size="2">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#FFFFFF">
+October 24 , 2001
+</font>
+</p>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#003366">
+<td  height="22" valign="top" width="211">
+<font  bgcolor="#003366">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#FFFFFF">
+Module 3 - E-Business Strategies
+</font>
+</p>
+</font>
+</td>
+<td  height="22" valign="middle" width="208">
+<font  bgcolor="#003366">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#FFFFFF">
+December 19 , 2001
+</font>
+</p>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#003366">
+<td  height="22" valign="top" width="211">
+<font  face="Arial" size="2">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#FFFFFF">
+Module 4 - E-Business Implementation
+</font>
+</p>
+</font>
+</td>
+<td  height="22" valign="middle" width="208">
+<font  face="Arial" size="2">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#FFFFFF">
+April 3 , 2002
+</font>
+</p>
+</font>
+</td>
+</tr>
+<tr  bgcolor="#003366">
+<td  height="22" valign="top" width="211">
+<font  face="Arial" size="2">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#FFFFFF">
+Module 5 - E-Business Specializations
+</font>
+</p>
+</font>
+</td>
+<td  height="22" valign="middle" width="208">
+<font  face="Arial" size="2">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#FFFFFF">
+June 12 , 2001
+</font>
+</p>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" height="22" valign="middle" width="211">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+Final Project Due
+</b>
+</font>
+</p>
+</td>
+<td  height="22" valign="middle" width="208">
+<font  face="Arial" size="2">
+<p  margin-right="#DEFAULT" style="margin-left:">
+August 10, 2002
+</p>
+</font>
+</td>
+</tr>
+</table>
+<br ></br>
+</center>
+</div>
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+For registration or general inquiries, call (604) 822-1420 or email
+<a  href="mailto:ebusiness@cstudies.ubc.ca">
+ebusiness@cstudies.ubc.ca
+</a>
+<br ></br>
+To register online or find out more about the program visit
+<a  href="http://www.cstudies.ubc.ca/ebusiness">
+www.cstudies.ubc.ca/ebusiness
+</a>
+</font>
+</p>
+<p  align="right" margin-right="#DEFAULT" style="margin-left:">
+<a  href="#">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT">
+Top
+</font>
+</a>
+</p>
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+<a  name="b"></a>
+Schedule:
+</b>
+<br ></br>
+</font>
+</p>
+<div  align="center">
+<center >
+<table  TABID="08423" border="1" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="Schedule" width="425">
+<tr  bgcolor="#CCCCCC">
+<td  height="22" valign="top" width="211">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial" size="2">
+<b >
+Activity
+</b>
+</font>
+</p>
+</td>
+<td  height="22" valign="top" width="208">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<b >
+<font  face="Arial" size="2">
+Date
+</font>
+</b>
+</p>
+</td>
+</tr>
+<tr  bgcolor="#003366">
+<td  height="22" valign="top" width="211">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  color="#FFFFFF" face="Arial" size="2">
+Module 1 - Getting Started
+</font>
+</p>
+</td>
+<td  height="22" valign="middle" width="208">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial" size="2">
+October 15 , 2001
+</font>
+</p>
+</td>
+</tr>
+<tr  bgcolor="#003366">
+<td  height="22" valign="top" width="211">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial" size="2">
+Module 2 - E-Business Technologies
+</font>
+</p>
+</td>
+<td  height="22" valign="middle" width="208">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial" size="2">
+November 19 , 2001
+</font>
+</p>
+</td>
+</tr>
+<tr  bgcolor="#003366">
+<td  height="22" valign="top" width="211">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  bgcolor="#003366">
+Module 3 - E-Business Strategies
+</font>
+</p>
+</td>
+<td  height="22" valign="middle" width="208">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  bgcolor="#003366">
+January 21 , 2001
+</font>
+</p>
+</td>
+</tr>
+<tr  bgcolor="#003366">
+<td  height="22" valign="top" width="211">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial" size="2">
+Module 4 - E-Business Implementation
+</font>
+</p>
+</td>
+<td  height="22" valign="middle" width="208">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial" size="2">
+April 29 , 2002
+</font>
+</p>
+</td>
+</tr>
+<tr  bgcolor="#003366">
+<td  height="22" valign="top" width="211">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial" size="2">
+Module 5 - E-Business Specializations
+</font>
+</p>
+</td>
+<td  height="22" valign="middle" width="208">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial" size="2">
+June 24 , 2001
+</font>
+</p>
+</td>
+</tr>
+<tr >
+<td  align="left" height="22" valign="middle" width="211">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<b >
+Final Project Due
+</b>
+</font>
+</p>
+</td>
+<td  height="22" valign="middle" width="208">
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial" size="2">
+August 19, 2002
+</font>
+</p>
+</td>
+</tr>
+</table>
+<br ></br>
+</center>
+</div>
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+For registration or general inquiries, call (604) 822-1420 or email
+<a  href="mailto:ebusiness@cstudies.ubc.ca">
+ebusiness@cstudies.ubc.ca
+</a>
+<br ></br>
+To register online or find out more about the program visit
+<a  href="http://www.cstudies.ubc.ca/ebusiness">
+www.cstudies.ubc.ca/ebusiness
+</a>
+</font>
+</p>
+<p  align="right" margin-right="#DEFAULT" style="margin-left:">
+<a  href="#">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT">
+Top
+</font>
+</a>
+</p>
+<hr ></hr>
+<p  style="margin-right:">
+<a  href="../computers/certificate.htm" target="_blank">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+Other UBC Certificate Programs
+</font>
+</a>
+</p>
+<p  style="margin-right:">
+<font  color="#000000" face="arial," geneva="#DEFAULT" size="-2">
+<b >
+Internet Studies is part of
+<br ></br>
+</b>
+</font>
+<a  href="../index.htm">
+<img ></img>
+</a>
+</p>
+</td>
+<td  bgcolor="#99CCFF" valign="top" width="20%">
+<table  TABID="08424" bgcolor="#FFCC00" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#99CCFF" valign="top" width="20%">
+<p  align="left" margin-right="#DEFAULT" style="margin-left:"></p>
+<p  align="left" margin-right="#DEFAULT" style="margin-left:">
+<font  face="arial,geneva" size="1">
+<b >
+<a  href="faq.shtml">
+FAQ on eBusiness
+</a>
+</b>
+</font>
+</p>
+<p  align="left" margin-right="#DEFAULT" style="margin-left:">
+<font  face="arial,geneva" size="1">
+<b >
+<a  href="../computers/contact.htm" target="_blank">
+Student Services
+</a>
+</b>
+</font>
+</p>
+<p  align="left" margin-right="#DEFAULT" style="margin-left:">
+<a  href="advisory.shtml">
+<font  face="arial,geneva" size="1">
+<b >
+Advisory Committee
+</b>
+</font>
+</a>
+</p>
+<p  align="left" margin-right="#DEFAULT" style="margin-left:">
+<font  face="arial,geneva" size="1">
+<strong >
+<a  href="schedule.shtml">
+2001 Program Schedule
+</a>
+</strong>
+</font>
+</p>
+<hr ></hr>
+<p  margin-right="#DEFAULT" style="margin-left:">
+<font  face="Arial," helvetica="#DEFAULT" sans-serif="#DEFAULT" size="2">
+<small >
+Call (604) 822-1420 for more information or to receive a program handbook.
+</small>
+</font>
+</p>
+<hr ></hr>
+<font  face="arial,geneva" size="-1"></font>
+<p  style="margin-left:"></p>
+<p  align="left" margin-right="#DEFAULT" style="margin-left:"></p>
+</td>
+</tr>
+</table>
+<p ></p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

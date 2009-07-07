@@ -1,0 +1,2874 @@
+<html >
+<head >
+<title >
+TI Reports 1Q00 Financial Results
+</title>
+<!--TI-NEW ADDDATE=000417 BUSINESS=corp TOPICS="tibus,investor" -->
+<script >
+<!--
+
+function buildArray() {
+  var a = buildArray.arguments;
+  for (i=0; i&amp;amp;amp;lt;a.length; i++) {
+    this[i] = a[i];
+  }
+  this.length = a.length;
+}
+
+var urls2 = new buildArray("/corp/docs/investor/index.htm",
+"/corp/docs/investor/index.htm",
+"/corp/docs/press/index.htm",
+"/corp/docs/investor/saying.shtml",
+"/corp/docs/investor/speeches.shtml",
+"/corp/docs/investor/speeches.shtml",
+"/corp/docs/investor/analyst/index.shtml",
+"/corp/docs/investor/analyst/index.shtml",
+"/corp/docs/investor/audionet.htm",
+"/corp/docs/investor/audionet.htm",
+"/corp/docs/investor/quarterly.shtml",
+"/corp/docs/investor/quarterly.shtml",
+"/corp/docs/investor/calendar.shtml",
+"/corp/docs/investor/calendar.shtml",
+"/corp/docs/investor/index.htm");
+
+var urls3 = new buildArray("/corp/docs/investor/index.htm",
+"/corp/docs/investor/index.htm",
+"/corp/docs/investor/fin/qfindata.shtml",
+"/corp/docs/investor/fin/qfindata.shtml",
+"/corp/docs/investor/fin/amortization.shtml",
+"/corp/docs/investor/fin/proforma.shtml",
+"/corp/docs/investor/fin/schist.shtml",
+"/corp/docs/investor/fin/schist.shtml",
+"/corp/docs/investor/fin/busseg.shtml",
+"/corp/docs/investor/fin/busseg.shtml",
+"/corp/docs/investor/fin/sbalance.shtml",
+"/corp/docs/investor/fin/sbalance.shtml",
+"/corp/docs/investor/fin/income.shtml",
+"/corp/docs/investor/fin/income.shtml",
+"/corp/docs/investor/fin/income.shtml",
+"/corp/docs/investor/fin/cbalance.shtml",
+"/corp/docs/investor/fin/cbalance.shtml",
+"/corp/docs/investor/3year.shtml",
+"/corp/docs/investor/3year.shtml",
+"/corp/docs/investor/scharts.htm",
+"/corp/docs/investor/whatif/calculator.shtml",
+"/corp/docs/investor/split.shtml",
+"/corp/docs/investor/dividend.shtml",
+"/corp/docs/investor/index.htm");
+
+var urls4 = new buildArray("/corp/docs/investor/index.htm",
+"/corp/docs/investor/index.htm",
+"/corp/docs/investor/faqs.shtml",
+"/corp/docs/investor/contacts.shtml",
+"/corp/docs/investor/contacts.shtml",
+"/sc/docs/general/dsp/momentum/index.htm",
+"/corp/docs/investor/dsp/index.htm",
+"/corp/docs/investor/index.htm");
+
+var urls5 = new buildArray("/corp/docs/investor/index.htm",
+"/corp/docs/investor/index.htm",
+"http://www.sec.gov/cgi-bin/srch-edgar?texas+ADJ+instruments",
+"/corp/docs/investor/industry.shtml",
+"http://www.tradingday.com/cgi-bin/ticker.cgi?ticker=txn&amp;amp;amp;amp;t=s",
+"/corp/docs/investor/index.htm");
+
+function go(which, num, win) {
+  n = which.selectedIndex;
+  if (n != 0) {
+    var url = eval("urls" + num + "[n]")
+    if (win) {
+      openWindow(url);
+    } else {
+      location.href = url;
+    }
+  }
+}
+
+// -->
+</script>
+</head>
+<!-- TI HEADER START -->
+<body  alink="#000066" bgcolor="#ffffff" link="#000066" text="#000000" vlink="#003366">
+<table  TABID="13072" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td  bgcolor="#000000" width="1%">
+<a  href="http://www.ti.com">
+<img ></img>
+</a>
+</td>
+<td  bgcolor="#FF0000">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="center" bgcolor="#999999" rowspan="4" valign="middle">
+<!-- SELECTS -->
+<table  TABID="13070" border="0" cellpadding="4" cellspacing="0">
+<tr >
+<form  action="http://www.ti.com/cgi-bin/sc/sc_redirect.cgi">
+<td >
+<select >
+<option  selected="selected" value="11">
+Semiconductor Products
+</option>
+<option  value="11"></option>
+<option  value="12">
+Digital Signal Processors
+</option>
+<option  value="13">
+Analog and Mixed-Signal
+</option>
+<option  value="14">
+Digital Logic
+</option>
+<option  value="15">
+ASIC
+</option>
+<option  value="16">
+Microcontrollers
+</option>
+<option  value="17">
+Speech and Graphics
+</option>
+<option  value="18">
+Programmable Logic
+</option>
+<option  value="19">
+Military
+</option>
+<option  value="20">
+FIFOs
+</option>
+</select>
+</td>
+<td >
+<input ></input>
+</td>
+</form>
+</tr>
+<tr >
+<form  action="http://www.ti.com/cgi-bin/sc/sc_redirect.cgi">
+<td >
+<select >
+<option  selected="selected" value="21">
+Find Development Tools
+</option>
+<option  value="21"></option>
+<option  value="22">
+Digital Signal Processors
+</option>
+<option  value="23">
+Analog and Mixed-Signal
+</option>
+<option  value="24">
+Digital Logic
+</option>
+<option  value="25">
+ASIC
+</option>
+<option  value="26">
+Microcontrollers
+</option>
+<option  value="27">
+Wireless/Telecom
+</option>
+</select>
+</td>
+<td >
+<input ></input>
+</td>
+</form>
+</tr>
+<tr >
+<form  action="http://www.ti.com/cgi-bin/sc/sc_redirect.cgi">
+<td >
+<select >
+<option  selected="selected" value="31">
+Find Applications
+</option>
+<option  value="31"></option>
+<option  value="32">
+Digital Innovations
+</option>
+<option  value="33">
+Audio
+</option>
+<option  value="34">
+Automotive
+</option>
+<option  value="35">
+Computing
+</option>
+<option  value="36">
+Control Systems
+</option>
+<option  value="37">
+Digital Motor Control
+</option>
+<option  value="38">
+Home Automation
+</option>
+<option  value="39">
+Imaging/Video
+</option>
+<option  value="40">
+Industrial
+</option>
+<option  value="41">
+Medical
+</option>
+<option  value="42">
+Military
+</option>
+<option  value="43">
+Networking
+</option>
+<option  value="44">
+Telecommunications
+</option>
+<option  value="45">
+Wireless
+</option>
+<option  value="31"></option>
+<option  value="46">
+Digital Signal Processors
+</option>
+<option  value="47">
+Analog
+</option>
+<option  value="48">
+Digital Logic
+</option>
+<option  value="49">
+Broadband
+</option>
+<option  value="50">
+Microcontrollers
+</option>
+<option  value="31">
+____________________
+</option>
+</select>
+</td>
+<td >
+<input ></input>
+</td>
+</form>
+</tr>
+</table>
+<!-- END SELECTS -->
+</td>
+<td  align="left" bgcolor="#FFFFCC">
+<table  TABID="13071" border="0" cellpadding="0" cellspacing="0" width="100%">
+<form >
+<tr >
+<td  width="1%">
+<img ></img>
+</td>
+<td  valign="middle" width="1%">
+<input ></input>
+</td>
+<td >
+<img ></img>
+</td>
+<td  valign="middle" width="2%">
+<input ></input>
+<input ></input>
+<input ></input>
+<select >
+<option  value="semiconductors">
+Specify an area
+</option>
+<option  value="semiconductors">
+All Semiconductors
+</option>
+<option  folders="#DEFAULT" product="#DEFAULT" value="sc">
+Products
+</option>
+<option  folders="#DEFAULT" tool="#DEFAULT" value="sc">
+Development Tools
+</option>
+<option  apps="#DEFAULT" value="sc">
+Applications
+</option>
+<option  docs="#DEFAULT" tech="#DEFAULT" value="sc">
+Technical Documents
+</option>
+<option  abstracts="#DEFAULT" app="#DEFAULT" note="#DEFAULT" value="sc">
+App Note Abstracts
+</option>
+<option  value="">
+All TI
+</option>
+</select>
+</td>
+<td  valign="middle">
+<input ></input>
+<a  href="http://www.ti.com/cgi-bin/sc/search.cgi">
+<img ></img>
+</a>
+</td>
+</tr>
+</form>
+</table>
+</td>
+</tr>
+<tr >
+<td  bgcolor="Black">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td >
+<a  href="http://www-k.ext.ti.com/sc/technical_support/index.htm">
+<img ></img>
+</a>
+<a  href="http://www-k.ext.ti.com/sc/technical_support/knowledgebase.asp">
+<img ></img>
+</a>
+<a  href="https://focus.ti.com/docs/shared/workspace/myworkspace.jhtml">
+<img ></img>
+</a>
+<a  href="https://www-a.ti.com/apps/ti_me/ti_me.asp">
+<img ></img>
+</a>
+</td>
+</tr>
+<tr >
+<td  bgcolor="#666666">
+<a  href="http://www.ti.com">
+<img ></img>
+</a>
+<a  href="/corp/docs/company/index.htm">
+<img ></img>
+</a>
+<a  href="/recruit/index.htm">
+<img ></img>
+</a>
+<a  href="/corp/docs/internat.htm">
+<img ></img>
+</a>
+<a  href="/corp/docs/feedback.htm">
+<img ></img>
+</a>
+<a  href="/pub/docs/corpmap.htm">
+<img ></img>
+</a>
+</td>
+</tr>
+</table>
+<!-- TI HEADER END -->
+<p >
+<nobr >
+<font  face="Arial,Helvetica,sans-serif">
+<b >
+<font  color="#FF9900" size="-1">
+&gt;&gt;
+</font>
+</b>
+<font  size="-2">
+<a  href="/corp/docs/home.htm">
+TI Home
+</a>
+</font>
+<b >
+<font  color="#FF9900" size="-1">
+&gt;
+</font>
+</b>
+<font  size="-2">
+<a  href="/corp/docs/investor/index.htm">
+Investor Info
+</a>
+</font>
+<b >
+<font  color="#FF9900" size="-1">
+&gt;
+</font>
+</b>
+<font  size="-2">
+<a  href="/corp/docs/investor/quarterly.shtml">
+Quarterly Results
+</a>
+</font>
+<b >
+<font  color="#FF9900" size="-1">
+&gt;
+</font>
+</b>
+</font>
+</nobr>
+</p>
+<p >
+<img ></img>
+</p>
+<p ></p>
+<table  TABID="13074" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  align="left" valign="top" width="200">
+<!-- Quick Links -->
+<form  name="form1">
+<table  TABID="13073" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td  align="left" rowspan="2" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" rowspan="2" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<font  size="-2">
+<br ></br>
+</font>
+<font  face="Arial," helvetica="#DEFAULT" san-serif="#DEFAULT" size="-1">
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/ar00/index.htm">
+2000 Summary Annual
+</a>
+<br ></br>
+<a  href="/corp/docs/investor/ar00/index.htm">
+Report
+</a>
+<br ></br>
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/quarterly/1q01.shtml">
+Latest Quarterly Results
+</a>
+<br ></br>
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/quarterly.shtml">
+Historical Financial Reports
+</a>
+<br ></br>
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/speeches.shtml">
+Executive Presentations
+</a>
+</font>
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="3" valign="top">
+<img ></img>
+</td>
+</tr>
+</table>
+<p >
+<!-- Investor News -->
+<img ></img>
+<br ></br>
+<select >
+<option >
+Select a Destination
+</option>
+<option ></option>
+<option >
+TI News Releases
+</option>
+<option >
+TI in the News
+</option>
+<option >
+Executive
+</option>
+<option >
+Presentations
+</option>
+<option >
+2001 TI Analyst
+</option>
+<option >
+Meeting
+</option>
+<option >
+2001 TI Stockholders
+</option>
+<option >
+Meeting Webcast
+</option>
+<option >
+Annual Reports
+</option>
+<option >
+Quarterly Results
+</option>
+<option >
+Calendar of Investor
+</option>
+<option >
+Events
+</option>
+<option >
+................................
+</option>
+</select>
+</p>
+<p >
+<!-- Financial Tables -->
+<img ></img>
+<br ></br>
+<select >
+<option >
+Select a Destination
+</option>
+<option ></option>
+<option >
+Quarterly Financial
+</option>
+<option >
+Data
+</option>
+<option >
+Amortization
+</option>
+<option >
+Pro Forma
+</option>
+<option >
+Semiconductor
+</option>
+<option >
+History
+</option>
+<option >
+Business Segment
+</option>
+<option >
+Review
+</option>
+<option >
+Selected Balance
+</option>
+<option >
+Sheet Items
+</option>
+<option >
+Consolidated
+</option>
+<option >
+Statement of
+</option>
+<option >
+Income
+</option>
+<option >
+Consolidated
+</option>
+<option >
+Balance Sheet
+</option>
+<option >
+3-Year Historical
+</option>
+<option >
+Graphs
+</option>
+<option >
+Stock Charts
+</option>
+<option >
+What-If Calculator
+</option>
+<option >
+Stock Split History
+</option>
+<option >
+Dividend History
+</option>
+<option >
+................................
+</option>
+</select>
+</p>
+<p >
+<!-- Investor Info -->
+<img ></img>
+<br ></br>
+<select >
+<option >
+Select a Destination
+</option>
+<option ></option>
+<option >
+FAQs
+</option>
+<option >
+Investor Contact
+</option>
+<option >
+Information
+</option>
+<option >
+Digital World
+</option>
+<option >
+What is DSP+Analog?
+</option>
+<option >
+................................
+</option>
+</select>
+</p>
+<p >
+<!-- Other TXN Financial Resources -->
+<img ></img>
+<br ></br>
+<select >
+<option >
+Select a Destination
+</option>
+<option ></option>
+<option >
+SEC Filings
+</option>
+<option >
+Industry Resources
+</option>
+<option >
+TXN on the Internet
+</option>
+<option >
+................................
+</option>
+</select>
+</p>
+</form>
+</td>
+<td  align="left" valign="top" width="400">
+<img ></img>
+<p >
+<b >
+<font  size="+1">
+TI Reports 1Q00 Financial Results
+</font>
+</b>
+</p>
+<p >
+<b >
+<ul >
+<li >
+Revenue of $2653 Million, Up 27% from Year Ago
+</li>
+<li >
+Pro Forma Earnings Per Share of $0.55
+</li>
+<li >
+Pro Forma Gross Profit Margin Expands to 49.5%
+</li>
+<li >
+DSP Revenues Grow 50%, Analog 25% from Year Ago
+</li>
+</ul>
+</b>
+</p>
+<p >
+<font  size="-1">
+<p >
+<font  face="Arial," helvetica="#DEFAULT" san-serif="#DEFAULT" size="-1">
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/quarterly/ti1q00.xls">
+Download Financials in MS Excel Format
+</a>
+(42KB)
+<br ></br>
+<b >
+<font  color="#FF0000">
+&gt;
+</font>
+</b>
+<a  href="/corp/docs/investor/confcall/index.htm">
+1Q conference call and slide presentation
+</a>
+<br ></br>
+<a  href="/corp/docs/investor/confcall/index.htm">
+Conference call begins at 4:30p.m. Central Time
+</a>
+</font>
+</p>
+<p >
+DALLAS (April 17, 2000) – Texas Instruments Incorporated (NYSE: TXN) today announced first-quarter 2000 financial results that showed continued strong growth for the company.
+</p>
+<p >
+“This is a good start to 2000,” said Tom Engibous, TI chairman, president and CEO. “Internet and communications applications continued to be our largest growth drivers, reinforcing the importance of programmable digital signal processors (DSPs) and analog products to the Internet age. This quarter we moved into high-volume production of DSPs for broadband applications; we announced two new cores that will provide the highest-performance and the lowest-power DSPs; and our DSPs power a number of new products, including Cisco’s new generation of Internet Protocol phones and Sony’s next Internet audio player.”
+</p>
+</font>
+</p>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="13080" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr >
+<td  align="left" valign="top" width="600">
+<font  size="+1">
+<b >
+Summary of Financial Results
+</b>
+</font>
+<p >
+For the first quarter of 2000, TI reported the following:
+</p>
+<ul >
+<li >
+Total revenues were $2653 million, up 27 percent from $2081 million in the year-ago quarter and up 4 percent sequentially, primarily due to increased strength in semiconductor.
+<br ></br>
+</li>
+<li >
+Semiconductor revenues were $2270 million, up 30 percent from $1741 million in the same quarter of 1999 and up 3 percent sequentially.
+<br ></br>
+</li>
+<li >
+Pro forma gross profit margin expanded to 49.5 percent, up 3.0 percentage points from the first quarter of 1999 and up 0.7 percentage points sequentially.
+<br ></br>
+</li>
+<li >
+On a pro forma basis, profit from operations was $576 million, an increase of 70 percent from $340 million in the year-ago quarter and up slightly from fourth quarter 1999.
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<br ></br>
+</li>
+<li >
+Operating margin for the first quarter was 21.7 percent on a pro forma basis, up 5.4 percentage points from 16.3 percent in the year-ago quarter due to increased product shipments. Pro forma operating margin decreased by 0.4 percentage points from the fourth quarter of 1999, due to increased strategic investment in research and development (R&amp;D) for DSP and analog.
+<br ></br>
+</li>
+<li >
+Pro forma net income for the quarter increased 69 percent to $470 million, compared with $278 million in the year-ago quarter primarily due to gains in semiconductor. Pro forma net income increased $37 million from the fourth quarter of 1999 primarily due to increased other income resulting from investment gains.
+<br ></br>
+</li>
+<li >
+Pro forma earnings per share (EPS) of $0.55 rose 62 percent from $0.34 in the first quarter of 1999 and increased by $0.04 sequentially.
+<br ></br>
+</li>
+<li >
+TI orders in the first quarter were $2876 million, up 26 percent from $2281 million in the year-ago quarter and up 5 percent from the fourth quarter primarily due to semiconductor.
+<br ></br>
+</li>
+<li >
+Pro forma results for this quarter exclude special charges of $29 million, primarily associated with previously announced actions, including the closing of a Materials &amp; Controls manufacturing facility in Versailles, Kentucky, and TI’s acquisition of Toccata Technology ApS. Also excluded is amortization of goodwill and other acquisition-related intangibles of $25 million.
+<br ></br>
+<br ></br>
+For the first quarter of 1999, pro forma results exclude special charges of $25 million, primarily for a consolidation of semiconductor manufacturing operations in Japan. Also excluded is amortization of goodwill and other acquisition-related intangibles of $10 million.
+<br ></br>
+<br ></br>
+For the fourth quarter of 1999, pro forma results exclude acquisition-related costs of $86 million associated with TI's pooling of interests acquisitions of Unitrode Corporation and Power Trends Inc., amortization of goodwill and other acquisition-related intangibles of $26 million, and a tax benefit effect of $67 million, primarily for research and experimental tax credit items.
+<br ></br>
+</li>
+<li >
+According to generally accepted accounting principles, for the first quarter of 2000: gross profit margin was 48.4 percent, compared with 45.6 percent in the year-ago quarter; profit from operations was $522 million, compared with $306 million; operating margin was 19.7 percent, compared with 14.7 percent; net income was $426 million, compared with $255 million; and diluted earnings per share were $0.50, compared with $0.31.
+</li>
+</ul>
+<p >
+<font  size="+1">
+Outlook
+</font>
+</p>
+<p >
+The company expects accelerating sequential revenue growth overall in the second quarter as it enters a seasonally stronger period in all its business segments, with semiconductor driving most of the growth.
+<br ></br>
+<br ></br>
+Sequentially, wireless is expected to accelerate, even after better than seasonal growth in the first quarter. Broadband communications, which includes digital subscriber line (DSL) and cable modem, also should continue to grow rapidly although from a low base. The mass market should maintain high growth as new applications for TI's catalog DSP and analog products continue to expand. Hard disk drive revenues are expected to decline in the quarter.
+<br ></br>
+<br ></br>
+Also, in Educational and Productivity Solutions (E&amp;PS), product shipments will continue to become more aligned with back-to-school retail sales as revenue that traditionally came in the second quarter shifts into the third quarter.
+<br ></br>
+<br ></br>
+For the year 2000, TI expects robust growth to continue in its semiconductor business, driven by strength in communications end-equipment markets, including wireless and broadband, as well as continued strength in the mass market. By the end of the fourth quarter, TI expects to reach pro forma operating margin of 25 percent.
+<br ></br>
+<br ></br>
+Additionally, TI is raising its capital expenditure forecast to $2.5 billion for the year, reflecting management's outlook for strong continued demand for its DSP and analog products. Depreciation for the year is expected to be $1.3 billion. R&amp;D for 2000 is expected to be $1.5 billion pro forma, primarily for DSP and analog.
+<br ></br>
+</p>
+<p ></p>
+<table  TABID="13075" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="PRO FORMA INCOME INFORMATION (In millions of dollars, except per-share amounts)" width="440">
+<tr >
+<td  align="center" colspan="7">
+<b >
+PRO FORMA INCOME INFORMATION
+</b>
+<br ></br>
+(In millions of dollars, except per-share amounts)
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="7">
+<br ></br>
+<font  size="-1">
+Pro forma supplemental income information, which is not prepared in accordance with generally accepted accounting principles, excludes amortization of goodwill and other acquisition-related intangibles, pooling of interests acquisition transaction costs, purchased in-process research and development costs, and special charges. The effect of these amounts is partially offset, as appropriate, by their allocated profit sharing and income tax effects.
+</font>
+</td>
+</tr>
+<tr >
+<td  align="right" colspan="7">
+<br ></br>
+<i >
+<u >
+For Three Months Ended
+</u>
+</i>
+</td>
+</tr>
+<tr >
+<td  colspan="2"></td>
+<td  align="right" colspan="2">
+Mar. 31
+</td>
+<td ></td>
+<td  align="right" colspan="2">
+Mar. 31
+</td>
+</tr>
+<tr >
+<td  colspan="2"></td>
+<td  align="right" colspan="2">
+<u >
+2000
+</u>
+</td>
+<td ></td>
+<td  align="right" colspan="2">
+<u >
+1999
+</u>
+</td>
+</tr>
+<tr >
+<td  colspan="7"></td>
+</tr>
+<tr >
+<td  align="left" width="250">
+Net revenues
+</td>
+<td  width="50"></td>
+<td  align="right" width="15">
+$
+</td>
+<td  align="right" width="35">
+2653
+</td>
+<td  width="40"></td>
+<td  align="right" width="15">
+$
+</td>
+<td  align="right" width="35">
+2081
+</td>
+</tr>
+<tr >
+<td  colspan="7"></td>
+</tr>
+<tr >
+<td  align="left">
+Cost of revenues
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+1339
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+1114
+</td>
+</tr>
+<tr >
+<td  align="left">
+Research and development
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+366
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+301
+</td>
+</tr>
+<tr >
+<td  align="left">
+Marketing, general and administrative
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+372
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+326
+</td>
+</tr>
+<tr >
+<td  colspan="7" width="440">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Profit from operations
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+576
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+340
+</td>
+</tr>
+<tr >
+<td  align="left">
+Other income/interest
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+105
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+70
+</td>
+</tr>
+<tr >
+<td  colspan="7" width="440">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Income before provision for income taxes
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+681
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+410
+</td>
+</tr>
+<tr >
+<td  align="left">
+Provision for income taxes
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+211
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+132
+</td>
+</tr>
+<tr >
+<td  align="left">
+Pro forma income
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+470
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+278
+</td>
+</tr>
+<tr >
+<td  colspan="7" width="440">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" colspan="7">
+Pro formal earnings per common share:
+</td>
+</tr>
+<tr >
+<td  align="left">
+Diluted
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+.55
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+.34
+</td>
+</tr>
+<tr >
+<td  colspan="7" width="440">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Basic
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+.58
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+.35
+</td>
+</tr>
+<tr >
+<td  colspan="7" width="440">
+<img ></img>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="13076" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="TEXAS INSTRUMENTS INCORPORATED AND SUBSIDIARIES Consolidated Income Statement  (In millions of dollars, except per-share amounts)" width="462">
+<tr >
+<td  align="center" colspan="6">
+<b >
+TEXAS INSTRUMENTS INCORPORATED AND SUBSIDIARIES
+</b>
+<br ></br>
+Consolidated Income Statement
+<br ></br>
+(In millions of dollars, except per-share amounts)
+</td>
+</tr>
+<tr >
+<td  colspan="6"></td>
+</tr>
+<tr >
+<td  align="right" colspan="6">
+<i >
+<u >
+For Three Months Ended
+</u>
+</i>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  align="right" colspan="2">
+Mar. 31
+</td>
+<td ></td>
+<td  align="right" colspan="2">
+Mar. 31
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  align="right" colspan="2">
+<u >
+2000
+</u>
+</td>
+<td ></td>
+<td  align="right" colspan="2">
+<u >
+1999
+</u>
+</td>
+</tr>
+<tr >
+<td  colspan="6"></td>
+</tr>
+<tr >
+<td  align="left" width="320">
+Net revenues
+</td>
+<td  align="right" width="15">
+$
+</td>
+<td  align="right" width="37">
+2653
+</td>
+<td  width="40"></td>
+<td  align="right" width="15">
+$
+</td>
+<td  align="right" width="35">
+2081
+</td>
+</tr>
+<tr >
+<td  align="left">
+Operating costs and expenses:
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr >
+<td  align="left">
+Cost of revenues
+</td>
+<td ></td>
+<td  align="right">
+1370
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+1133
+</td>
+</tr>
+<tr >
+<td  align="left">
+Research and development
+</td>
+<td ></td>
+<td  align="right">
+373
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+311
+</td>
+</tr>
+<tr >
+<td  align="left">
+Marketing, general and administrative
+</td>
+<td ></td>
+<td  align="right">
+388
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+331
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="462">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Total Costs of Operations
+</td>
+<td ></td>
+<td  align="right">
+2131
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+1775
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="462">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Profit from operations
+</td>
+<td ></td>
+<td  align="right">
+522
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+306
+</td>
+</tr>
+<tr >
+<td  align="left">
+Other income (expense) net
+</td>
+<td ></td>
+<td  align="right">
+124
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+88
+</td>
+</tr>
+<tr >
+<td  align="left">
+Interest on loans
+</td>
+<td ></td>
+<td  align="right">
+19
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+18
+</td>
+</tr>
+<tr >
+<td  align="left">
+Income before provision for income taxes
+</td>
+<td ></td>
+<td  align="right">
+627
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+376
+</td>
+</tr>
+<tr >
+<td  align="left">
+Provision for income taxes
+</td>
+<td ></td>
+<td  align="right">
+201
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+121
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="462">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Net income**
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+426
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+255
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="462">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Diluted earnings per common share*
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+.50
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+.31
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="462">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Basic earnings per common share
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+.52
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+.32
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="462">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Cash dividends declared per share of common stock
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+.0425
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+.0425
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="462">
+<img ></img>
+</td>
+</tr>
+</table>
+<p >
+<font  size="-1">
+* Diluted earnings per common share are based on average common and dilutive potential common shares outstanding (851.6 million shares and 824.7 million shares for the first quarters of 2000 and 1999).
+<p >
+** Income for the first quarter of 2000 includes the effects of pretax charges of $29 million, primarily associated with previously announced actions, including the closing of the Materials &amp; Controls manufacturing facility in Versailles, Kentucky, and TI's acquisition of Toccata Technology ApS. Of the $29 million, $20 million is included in cost of revenues, $6 million in marketing, general and administrative expense, and $3 million in research and development expense. Income for the first quarter of 1999 includes the effects of pretax charges of $25 million, primarily for a consolidation of semiconductor manufacturing operations in Japan. Of the $25 million, $12 million was included in cost of revenues, $10 million in research and development expense, and $3 million in marketing, general and administrative expense.
+</p>
+<p ></p>
+</font>
+</p>
+<table  TABID="13077" genuinetable="yes" tabletitle="TEXAS INSTRUMENTS INCORPORATED AND SUBSIDIARIES Consolidated Balance Sheet (In millions of dollars, except per-share amounts)">
+<tr >
+<td  align="center" colspan="6">
+<b >
+TEXAS INSTRUMENTS INCORPORATED AND SUBSIDIARIES
+</b>
+<br ></br>
+Consolidated Balance Sheet
+<br ></br>
+(In millions of dollars, except per-share amounts)
+</td>
+</tr>
+<tr >
+<td  colspan="6"></td>
+</tr>
+<tr >
+<td ></td>
+<td  align="right" colspan="2">
+Mar. 31
+</td>
+<td ></td>
+<td  align="right" colspan="2">
+Dec. 31
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  align="right" colspan="2">
+<u >
+2000
+</u>
+</td>
+<td ></td>
+<td  align="right" colspan="2">
+<u >
+1999
+</u>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Assets
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Current assets:
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Cash and cash equivalents
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+675
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+662
+</td>
+</tr>
+<tr >
+<td  align="left">
+Short-term investments
+</td>
+<td ></td>
+<td  align="right">
+1755
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+2000
+</td>
+</tr>
+<tr >
+<td  align="left">
+Accounts receivable, less allowance for losses of
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+$64 million in 2000 and $67 million in 1999
+</td>
+<td ></td>
+<td  align="right">
+1911
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+1843
+</td>
+</tr>
+<tr >
+<td  align="left">
+Inventories:
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Raw materials
+</td>
+<td ></td>
+<td  align="right">
+164
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+161
+</td>
+</tr>
+<tr >
+<td  align="left">
+Work in process
+</td>
+<td ></td>
+<td  align="right">
+508
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+463
+</td>
+</tr>
+<tr >
+<td  align="left" width="410">
+Finished goods
+</td>
+<td  width="15"></td>
+<td  align="right" width="45">
+265
+</td>
+<td  width="40"></td>
+<td  width="15"></td>
+<td  align="right" width="42">
+221
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Inventories
+</td>
+<td ></td>
+<td  align="right">
+937
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+845
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Prepaid expenses
+</td>
+<td ></td>
+<td  align="right">
+113
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+100
+</td>
+</tr>
+<tr >
+<td  align="left">
+Deferred income taxes
+</td>
+<td ></td>
+<td  align="right">
+583
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+605
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Total current assets
+</td>
+<td ></td>
+<td  align="right">
+5974
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+6055
+</td>
+</tr>
+<tr >
+<td  colspan="6"></td>
+</tr>
+<tr >
+<td  align="left">
+Property, plant and equipment
+</td>
+<td ></td>
+<td  align="right">
+7583
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+7120
+</td>
+</tr>
+<tr >
+<td  align="left">
+Less accumulated depreciation
+</td>
+<td ></td>
+<td  align="right">
+(3367)
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+(3285)
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Property, plant and equipment (net)
+</td>
+<td ></td>
+<td  align="right">
+4216
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+3835
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Investments
+</td>
+<td ></td>
+<td  align="right">
+6364
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+4204
+</td>
+</tr>
+<tr >
+<td  align="left">
+Goodwill and other acquisition-related intangibles
+</td>
+<td ></td>
+<td  align="right">
+500
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+503
+</td>
+</tr>
+<tr >
+<td  align="left">
+Deferred income taxes
+</td>
+<td ></td>
+<td  align="right">
+39
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+41
+</td>
+</tr>
+<tr >
+<td  align="left">
+Other assets
+</td>
+<td ></td>
+<td  align="right">
+407
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+390
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Total assets
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+17500
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+15028
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  colspan="6"></td>
+</tr>
+<tr >
+<td  align="left">
+Liabilities and Stockholders’ Equity
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Current liabilities:
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Loans payable and current portion long-term debt
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+385
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+313
+</td>
+</tr>
+<tr >
+<td  align="left">
+Accounts payable
+</td>
+<td ></td>
+<td  align="right">
+853
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+668
+</td>
+</tr>
+<tr >
+<td  align="left">
+Accrued and other current liabilities
+</td>
+<td ></td>
+<td  align="right">
+1280
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+1647
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Total current liabilities
+</td>
+<td ></td>
+<td  align="right">
+2518
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+2628
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Long-term debt
+</td>
+<td ></td>
+<td  align="right">
+991
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+1097
+</td>
+</tr>
+<tr >
+<td  align="left">
+Accrued retirement costs
+</td>
+<td ></td>
+<td  align="right">
+741
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+797
+</td>
+</tr>
+<tr >
+<td  align="left">
+Deferred income taxes
+</td>
+<td ></td>
+<td  align="right">
+1724
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+994
+</td>
+</tr>
+<tr >
+<td  align="left">
+Deferred credits and other liabilities
+</td>
+<td ></td>
+<td  align="right">
+327
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+257
+</td>
+</tr>
+<tr >
+<td  align="left">
+Stockholders’ equity:
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Preferred stock, $25 par value. Authorized - 10,000,000 shares.
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Participating cumulative preferred. None issued.
+</td>
+<td ></td>
+<td  align="right">
+--
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+--
+</td>
+</tr>
+<tr >
+<td  align="left">
+Common stock, $1 par value. Authorized - 1,200,000,000 shares.
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Shares issued: 2000 – 819,479,690; 1999 – 813,926,025
+</td>
+<td ></td>
+<td  align="right">
+819
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+814
+</td>
+</tr>
+<tr >
+<td  align="left">
+Paid-in capital
+</td>
+<td ></td>
+<td  align="right">
+995
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+822
+</td>
+</tr>
+<tr >
+<td  align="left">
+Retained earnings
+</td>
+<td ></td>
+<td  align="right">
+6569
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+6175
+</td>
+</tr>
+<tr >
+<td  align="left">
+Less treasury common stock at cost:
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Shares: 2000 - 1,283,543; 1999 - 1,034,757
+</td>
+<td ></td>
+<td  align="right">
+(161)
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+(109)
+</td>
+</tr>
+<tr >
+<td  align="left">
+Accumulated other comprehensive income
+</td>
+<td ></td>
+<td  align="right">
+2977
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+1553
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Total stockholders’ equity
+</td>
+<td ></td>
+<td  align="right">
+11199
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+9255
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Total liabilities and stockholders’ equity
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+17500
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+15028
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="567">
+<img ></img>
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="13078" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="BUSINESS SEGMENT NET REVENUES (Millions of dollars)" width="380">
+<tr >
+<td  colspan="6">
+<b >
+BUSINESS SEGMENT NET REVENUES
+</b>
+<br ></br>
+(Millions of dollars)
+</td>
+</tr>
+<tr >
+<td  colspan="6"></td>
+</tr>
+<tr >
+<td  align="right" colspan="6">
+<i >
+<u >
+For Three Months Ended
+</u>
+</i>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  align="right" colspan="2">
+Mar. 31
+</td>
+<td ></td>
+<td  align="right" colspan="2">
+Mar. 31
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  align="right" colspan="2">
+<u >
+2000
+</u>
+</td>
+<td ></td>
+<td  align="right" colspan="2">
+<u >
+1999
+</u>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Semiconductor
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Trade
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+2265
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+1737
+</td>
+</tr>
+<tr >
+<td  align="left" width="240">
+Intersegment
+</td>
+<td  width="15"></td>
+<td  align="right" width="35">
+5
+</td>
+<td  width="40"></td>
+<td  width="15"></td>
+<td  align="right" width="35">
+4
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="380">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td  align="right">
+2270
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+1741
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="380">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Materials &amp; Controls
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Trade
+</td>
+<td ></td>
+<td  align="right">
+290
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+245
+</td>
+</tr>
+<tr >
+<td  align="left">
+Intersegment
+</td>
+<td ></td>
+<td  align="right">
+-
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+-
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="380">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td ></td>
+<td  align="right">
+290
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+245
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="380">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Educational &amp; Productivity Solutions
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+Trade
+</td>
+<td ></td>
+<td  align="right">
+87
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+81
+</td>
+</tr>
+<tr >
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<colspan ></colspan>
+<td ></td>
+</tr>
+<tr >
+<td  align="left">
+Corporate activities
+</td>
+<td ></td>
+<td  align="right">
+2
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+(4)
+</td>
+</tr>
+<tr >
+<td  align="left">
+Divested activities
+</td>
+<td ></td>
+<td  align="right">
+4
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+18
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="380">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Total net revenues
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+2653
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+2081
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="380">
+<img ></img>
+</td>
+</tr>
+</table>
+<p >
+<font  size="-1">
+<b >
+(Note: The following Segment data includes ongoing amortization of goodwill and other acquisition-related intangible assets.)
+</b>
+</font>
+</p>
+<p ></p>
+<table  TABID="13079" border="0" cellpadding="0" cellspacing="0" genuinetable="yes" tabletitle="BUSINESS SEGMENT PROFIT (LOSS) (Millions of dollars)" width="392">
+<tr >
+<td  colspan="6">
+<b >
+BUSINESS SEGMENT PROFIT (LOSS)
+</b>
+<br ></br>
+(Millions of dollars)
+</td>
+</tr>
+<tr >
+<td  colspan="6"></td>
+</tr>
+<tr  align="right" colspan="6">
+<td >
+<i >
+<u >
+For Three Months Ended
+</u>
+</i>
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  align="right" colspan="2">
+Mar. 31
+</td>
+<td ></td>
+<td  align="right" colspan="2">
+Mar. 31
+</td>
+</tr>
+<tr >
+<td ></td>
+<td  align="right" colspan="2">
+<u >
+2000
+</u>
+</td>
+<td ></td>
+<td  align="right" colspan="2">
+<u >
+1999
+</u>
+</td>
+</tr>
+<tr >
+<td  colspan="6"></td>
+</tr>
+<tr >
+<td  align="left">
+Semiconductor
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+556
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+331
+</td>
+</tr>
+<tr >
+<td  align="left">
+Materials &amp; Controls
+</td>
+<td ></td>
+<td  align="right">
+55
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+40
+</td>
+</tr>
+<tr >
+<td  align="left">
+Educational &amp; Productivity Solutions
+</td>
+<td ></td>
+<td  align="right">
+12
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+10
+</td>
+</tr>
+<tr >
+<td  align="left">
+Corporate activities
+</td>
+<td ></td>
+<td  align="right">
+(74)
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+(58)
+</td>
+</tr>
+<tr >
+<td  align="left">
+Special charges and gains, net
+</td>
+<td  colspan="5"></td>
+</tr>
+<tr >
+<td  align="left">
+of applicable profit sharing
+</td>
+<td ></td>
+<td  align="right">
+(29)
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+(25)
+</td>
+</tr>
+<tr >
+<td  align="left">
+Interest on loans/other income (expense)
+</td>
+<td ></td>
+<td  align="right">
+105
+</td>
+<td ></td>
+<td ></td>
+<td  align="right">
+70
+</td>
+</tr>
+<tr >
+<td  align="left" width="250">
+Divested activities
+</td>
+<td  width="15"></td>
+<td  align="right" width="35">
+2
+</td>
+<td  width="40"></td>
+<td  width="15"></td>
+<td  align="right" width="37">
+8
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="392">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+<td  align="left" valign="top">
+<img ></img>
+</td>
+</tr>
+<tr >
+<td  align="left">
+Income before income taxes
+</td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+627
+</td>
+<td ></td>
+<td  align="right">
+$
+</td>
+<td  align="right">
+376
+</td>
+</tr>
+<tr >
+<td  colspan="6" width="392">
+<img ></img>
+</td>
+</tr>
+</table>
+<p >
+<b >
+Semiconductor
+</b>
+</p>
+<p >
+Semiconductor revenues in the first quarter were $2270 million, up 30 percent from the same period in 1999, primarily driven by DSP and analog. Semiconductor revenues increased 3 percent sequentially.
+<br ></br>
+<br ></br>
+Semiconductor operating margin for the first quarter was 24.5 percent, up 5.5 points from 19.0 percent in the same quarter a year ago. Sequentially, operating margin declined 0.8 points primarily due to increased investment in R&amp;D.
+<br ></br>
+<br ></br>
+DSP revenues in the first quarter were up 50 percent from the same quarter a year ago and up 2 percent sequentially, breaking the historical seasonal pattern of first-quarter revenue declines and reinforcing a strong growth outlook for 2000. This quarter's sequential growth was driven primarily by a 20 percent increase in revenues from catalog DSP products for the mass market, more than offsetting weakness from hard disk drive. Catalog DSP revenues increased 71 percent compared with the first quarter of 1999.
+<br ></br>
+<br ></br>
+During the quarter, market analyst Forward Concepts said TI had DSP market share of 48 percent in 1999 and continued its leadership in DSP. TI is the only company to gain DSP market share for six consecutive years.
+<br ></br>
+<br ></br>
+Analog revenues in the first quarter were up 25 percent compared with a year ago and were up slightly from the fourth quarter. Sequential growth in analog was affected primarily by weakness in hard disk drive and to a lesser extent by weakness in notebook computers in the first half of the quater. During the quarter, Dataquest said that TI continued its world leadership in the analog market in 1999. TI is the only major supplier to gain share in each of the last four years. In addition, TI attained the number one position in the fast-growing power management segment for the first time.
+<br ></br>
+<br ></br>
+Revenues for TI's remaining semiconductor products increased from the year-ago quarter and from the fourth quarter of 1999. Royalties also increased, both from a year ago and sequentially.
+<br ></br>
+<br ></br>
+Semiconductor orders increased 28 percent from the year-ago quarter and 3 percent sequentially primarily due to DSP and analog.
+<br ></br>
+<br ></br>
+Compared with the first quarter of 1999, wireless revenues increased 49 percent, mass market revenues grew 55 percent and hard disk drive revenues declined 19 percent. Broadband communications revenues more than doubled when compared to fourth quarter as DSL products transitioned into initial high-volume production.
+<br ></br>
+<br ></br>
+Other Semiconductor highlights from the first quarter include:
+<br ></br>
+</p>
+<ul >
+<li >
+TI announced two new DSP cores that further strengthened its technology leadership. The TMS320C64x? core has 10 times better performance than the previous performance leader, TI's TMS320C62x™ core. With clock rates that exceed 1 gigahertz, the C64x is targeted at broadband infrastructure applications, making connections to the home faster and cheaper. The TMS320C55x? core targets portable electronic devices such as wireless phones. This new DSP uses only one-sixth the power compared to TI's current DSPs for this market but delivers five times the performance.
+<br ></br>
+<br ></br>
+Customers, including Cisco, Ericsson and Nokia, are designing with these new cores today, in many cases reusing existing software. Software compatibility with earlier generations of TI DSPs means customers can shorten development time and get their products to market faster.
+<br ></br>
+</li>
+<li >
+ADSL shipments increased 5x from the fourth quarter of 1999 to almost 300,000 ADSL modem ports. TI expects to ship about 1 million ports through the first half of 2000.
+<br ></br>
+</li>
+<li >
+Ericsson's latest residential broadband modem products will feature TI's remote terminal ADSL chipset.
+<br ></br>
+</li>
+<li >
+TI and Microsoft announced they will collaborate to enable Windows? CE-based applications and embedded system development with TI programmable DSPs. This effort will expand the development of emerging Internet appliances and embedded solutions. Windows CE developers will be able to directly target TI Open Media Applications Program (OMAP?) to design programs for advanced wireless Internet access.
+<br ></br>
+</li>
+<li >
+Cisco will use TI DSPs to power its new generation of Internet Protocol (IP) phones that allow for a convergence of voice and data into a single appliance and fit within Cisco's Architecture for Voice, Video and Integrated Data (AVVID).
+<br ></br>
+</li>
+<li >
+Sony announced that it is using TI's DSP-based Internet audio solution for its VAIO? Music Clip? Internet audio player.
+<br ></br>
+</li>
+<li >
+TI acquired Toccata Technology ApS, a privately held company that is one of the leading developers of digital-audio amplifier technology, providing TI with an all-digital solution for the emerging digital speaker market.
+<br ></br>
+</li>
+<li >
+TI strengthened its power management leadership by introducing 10 new devices.
+<br ></br>
+</li>
+<li >
+In Digital Imaging, TI announced agreements with BARCO and Christie Systems Inc. to develop, manufacture and market projectors based on DLP Cinema™ projection technology.
+<br ></br>
+</li>
+</ul>
+<p >
+<b >
+Materials &amp; Controls (M&amp;C)
+</b>
+</p>
+<p >
+M&amp;C revenues in the first quarter were a record $290 million, up 18 percent from $245 million a year ago, primarily due to automotive sensors. Sequentially, first-quarter revenues were up 15 percent from $253 million in the fourth quarter primarily due to industrial control products and automotive sensors.
+<br ></br>
+<br ></br>
+Operating margin in the first quarter increased to 18.9 percent, up 2.5 points from a year ago and up 1.2 points from the fourth quarter of 1999, reflecting tight cost controls combined with increased revenues.
+<br ></br>
+<br ></br>
+In February, M&amp;C announced it will close its manufacturing and business center in Versailles, Kentucky, with manufacturing being consolidated into other locations for increased efficiencies.
+<br ></br>
+</p>
+<p >
+<b >
+Educational &amp; Productivity Solutions (E&amp;PS)
+</b>
+</p>
+<p >
+Revenues for E&amp;PS in the first quarter of 2000 were $87 million, up 8 percent from the year-ago quarter. Sequentially, revenues were down 3 percent.
+<br ></br>
+<br ></br>
+Operating margin for the quarter was 13.9 percent, up from 12.0 percent in the year-ago quarter, primarily due to increased manufacturing efficiencies.
+<br ></br>
+<br ></br>
+During the quarter, E&amp;PS sponsored the T
+<sup >
+<font  size="-1">
+3
+</font>
+</sup>
+-Teachers Teaching with Technology International Conference in Dallas, which was attended by 3000 teachers.
+<br ></br>
+</p>
+<p >
+<b >
+Additional Financial Information
+</b>
+</p>
+<p >
+During the first quarter of 2000, cash and cash equivalents plus short-term investments decreased by $232 million to $2430 million primarily due to the payment of 1999 profit sharing to employees in the first quarter.
+</p>
+<p >
+First-quarter 2000 cash flow from operating activities was $402 million. First-quarter capital expenditures totaled $641 million compared with $206 million in the first quarter of 1999.
+<br ></br>
+Depreciation for the first quarter of 2000 was $257 million, compared with $229 million in the same quarter a year ago.
+</p>
+<p >
+The pro forma income tax rate, excluding the effect of the first quarter 2000 non-deductible special charges, was 31 percent, which is the estimated rate for the full year.
+<br ></br>
+<br ></br>
+At the end of the first quarter, the debt-to-total capital ratio was .11 versus .13 at the end of 1999.
+<br ></br>
+</p>
+<p ></p>
+<div  align="center">
+<center >
+###
+</center>
+</div>
+<p >
+<font  face="Arial," helvetica="#DEFAULT" san-serif="#DEFAULT" size="+1">
+<b >
+Safe Harbor Statement
+</b>
+</font>
+</p>
+<p >
+"Safe Harbor" Statement under the Private Securities Litigation Reform Act of 1995: This release includes "forward-looking statements" intended to qualify for the safe harbor from liability established by the Private Securities Litigation Reform Act of 1995. These forward-looking statements generally can be identified by phrases such as TI or its management "believes," "expects," "anticipates," "foresees," "forecasts," "estimates" or other words or phrases of similar import. Similarly, such statements herein that describe the company's business strategy, outlook, objectives, plans, intentions or goals also are forward-looking statements. All such forward-looking statements are subject to certain risks and uncertainties that could cause actual results to differ materially from those in forward-looking statements.
+<br ></br>
+<br ></br>
+We urge you to carefully consider the following important factors that could cause actual results to differ materially from the expectations of the company or its management:
+</p>
+<ul >
+<li >
+Market demand for semiconductors, particularly for digital signal processors and analog chips in key markets, such as telecommunications and computers;
+</li>
+<li >
+TI's ability to develop, manufacture and market innovative products in a rapidly changing technological environment;
+</li>
+<li >
+TI's ability to compete in products and prices in an intensely competitive industry;
+</li>
+<li >
+TI's ability to maintain and enforce a strong intellectual property portfolio and obtain needed licenses from third parties;
+</li>
+<li >
+Global economic, social and political conditions in the countries in which TI and its customers and suppliers operate, including fluctuations in foreign currency exchange rates;
+</li>
+<li >
+Losses or curtailments of purchases from key customers;
+</li>
+<li >
+TI's ability to recruit and retain skilled personnel;
+</li>
+<li >
+Availability of raw materials and critical manufacturing equipment.
+<br ></br>
+</li>
+</ul>
+<p >
+For a more detailed discussion of these factors, see the text under the heading "Cautionary Statements Regarding Future Operations" in Item 1 of the company's most recent Form 10-K on
+<a  href="http://www.sec.gov/cgi-bin/srch-edgar?texas+ADJ+instruments">
+EDGAR
+</a>
+. The forward-looking statements included are made only as of the date of this release and the company undertakes no obligation to publicly update the forward-looking statements to reflect subsequent events or circumstances.
+</p>
+<p ></p>
+<div  align="center">
+<center >
+# # #
+</center>
+</div>
+<p >
+NOTE TO EDITORS: Texas Instruments Incorporated is the world leader in digital signal processing and analog technologies, the semiconductor engines of the Internet age. The company's businesses also include materials and controls, and educational and productivity solutions. TI is headquartered in Dallas, Texas, and has manufacturing or sales operations in more than 25 countries.
+</p>
+<p >
+Texas Instruments is traded on the New York Stock Exchange under the symbol TXN. The company's web site is
+<a  href="http://www.ti.com">
+http://www.ti.com
+</a>
+</p>
+<p >
+TI Trademarks: TMS320C64x, TMS320C62x, TMS320C55x, OMAP and DLP Cinema are registered trademarks of Texas Instruments Incorporated.
+</p>
+<p >
+Windows is a registered trademark of Microsoft Inc.
+</p>
+<p >
+VAIO Music Clip is a registered trademark of Sony Corporation.
+</p>
+</td>
+</tr>
+</table>
+<!-- TI FOOTER START -->
+<p ></p>
+<table  TABID="13082" bordercolor="#000000">
+<tr >
+<td >
+<img ></img>
+<br ></br>
+<!-- begin embedded table for copyright -->
+<table  TABID="13081" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td >
+<font  face="arial," helvetica="#DEFAULT" size="1">
+©
+<a  href="/corp/docs/copyright.htm">
+Copyright 2001
+</a>
+Texas Instruments Incorporated. All rights reserved.
+<a  href="/corp/docs/trademrk.htm">
+Trademarks
+</a>
+|
+<a  href="/pub/docs/privacy.htm">
+Privacy Policy
+</a>
+|
+<a  href="/corp/docs/investor/harbor.shtml">
+Safe Harbor
+</a>
+</font>
+</td>
+<td  align="right">
+<img ></img>
+</td>
+</tr>
+</table>
+<!-- end embedded table for copyright -->
+</td>
+</tr>
+</table>
+<p >
+<font  face="Arial,Helvetica,sans-serif" size="-2">
+This website is posted solely for information purposes and is not to be construed either as an offer to sell or the solicitation of an offer to buy any security.
+<br ></br>
+<a  href="/corp/docs/investor/harbor.shtml">
+Safe Harbor Statement
+</a>
+<p >
+<!-- TI FOOTER END -->
+</p>
+</font>
+</p>
+</body>
+</html>

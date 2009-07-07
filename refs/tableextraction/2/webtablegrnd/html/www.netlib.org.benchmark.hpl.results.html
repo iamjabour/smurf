@@ -1,0 +1,562 @@
+<html >
+<head >
+<title >
+HPL Results
+</title>
+</head>
+<body  alink="#947153" background="WHITE" bgcolor="WHITE" link="#0000ff" text="#000000" vlink="#000099">
+<h2 >
+HPL Performance Results
+</h2>
+<strong >
+The performance achieved by this software package on a few machine configurations is shown below. These results are only provided for illustrative purposes. By the time you read this, those systems have changed, they may not even exist anymore and one can surely not exactly reproduce the state in which these machines were when those measurements have been obtained. To obtain accurate figures on your system, it is absolutely necessary to
+<a  href="software.html">
+download the software
+</a>
+and run it there.
+</strong>
+<ul >
+<li >
+<a  href="results.html#AMD_K7000">
+Athlon 4-nodes cluster
+</a>
+</li>
+<li >
+<a  href="results.html#I550p3000">
+Intel PIII 8-duals cluster
+</a>
+</li>
+<li >
+<a  href="results.html#compaq000">
+Compaq 16-node AlphaServer SC
+</a>
+</li>
+</ul>
+<hr ></hr>
+<h3 >
+<a  name="AMD_K7000">
+4 AMD Athlon K7 500 Mhz (256 Mb) - (2x) 100 Mbs Switched - 2 NICs per node (channel bonding)
+</a>
+</h3>
+<center >
+<table  TABID="09899" border="#DEFAULT" genuinetable="yes" tabletitle="4 AMD Athlon K7 500 Mhz (256 Mb) - (2x) 100 Mbs Switched - 2 NICs per node (channel bonding)">
+<tr >
+<td >
+OS
+</td>
+<td >
+Linux 6.2 RedHat (Kernel 2.2.14)
+</td>
+</tr>
+<tr >
+<td >
+C compiler
+</td>
+<td >
+gcc (egcs-2.91.66 egcs-1.1.2 release)
+</td>
+</tr>
+<tr >
+<td >
+C flags
+</td>
+<td >
+-fomit-frame-pointer -O3 -funroll-loops
+</td>
+</tr>
+<tr >
+<td >
+MPI
+</td>
+<td >
+MPIch 1.2.1
+</td>
+</tr>
+<tr >
+<td >
+BLAS
+</td>
+<td >
+ATLAS (Version 3.0 beta)
+</td>
+</tr>
+<tr >
+<td >
+Comments
+</td>
+<td >
+09 / 00
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="09900" border="#DEFAULT" genuinetable="yes" tabletitle="Performance (Gflops) w.r.t Problem size on 4 nodes. ">
+<tr >
+<th  align="center">
+GRID
+</th>
+<th  align="center">
+2000
+</th>
+<th  align="center">
+5000
+</th>
+<th  align="center">
+8000
+</th>
+<th  align="center">
+10000
+</th>
+</tr>
+<tr >
+<th  align="center">
+1 x 4
+</th>
+<td  align="center">
+1.28
+</td>
+<td  align="center">
+1.73
+</td>
+<td  align="center">
+1.89
+</td>
+<td  align="center">
+1.95
+</td>
+</tr>
+<tr >
+<th  align="center">
+2 x 2
+</th>
+<td  align="center">
+1.17
+</td>
+<td  align="center">
+1.68
+</td>
+<td  align="center">
+1.88
+</td>
+<td  align="center">
+1.93
+</td>
+</tr>
+<tr >
+<th  align="center">
+4 x 1
+</th>
+<td  align="center">
+0.81
+</td>
+<td  align="center">
+1.43
+</td>
+<td  align="center">
+1.70
+</td>
+<td  align="center">
+1.80
+</td>
+</tr>
+<tr >
+<td >
+Performance (Gflops) w.r.t Problem size on 4 nodes.
+</td>
+</tr>
+</table>
+<p ></p>
+</center>
+The input file HPL.dat used for this run was:
+<pre >
+HPLinpack benchmark input file - Athlon cluster - 09/00
+Innovative Computing Laboratory, University of Tennessee
+HPL.out      output file name (if any)
+6            device out (6=stdout,7=stderr,file)
+4            # of problems sizes (N)
+2000 5000 8000 10000 Ns
+2            # of NBs
+60 60        NBs
+3            # of process grids (P x Q)
+1 2 4        Ps
+4 2 1        Qs
+16.0         threshold
+1            # of panel fact
+1            PFACTs (0=left, 1=Crout, 2=Right)
+1            # of recursive stopping criterium
+4            NBMINs (&gt;= 1)
+1            # of panels in recursion
+2            NDIVs
+1            # of recursive panel fact.
+2            RFACTs (0=left, 1=Crout, 2=Right)
+1            # of broadcast
+1            BCASTs (0=1rg,1=1rM,2=2rg,3=2rM,4=Lng,5=LnM)
+1            # of lookahead depth
+1            DEPTHs (&gt;=0)
+2            SWAP (0=bin-exch,1=long,2=mix)
+60           swapping threshold
+0            L1 in (0=transposed,1=no-transposed) form
+0            U  in (0=transposed,1=no-transposed) form
+1            Equilibration (0=no,1=yes)
+8            memory alignment in double (&gt; 0)
+</pre>
+<hr ></hr>
+<h3 >
+<a  name="I550p3000">
+8 Duals Intel PIII 550 Mhz (512 Mb) - Myrinet
+</a>
+</h3>
+<center >
+<table  TABID="09901" border="#DEFAULT" genuinetable="yes" tabletitle="8 Duals Intel PIII 550 Mhz (512 Mb) - Myrinet">
+<tr >
+<td >
+OS
+</td>
+<td >
+Linux 6.1 RedHat (Kernel 2.2.15)
+</td>
+</tr>
+<tr >
+<td >
+C compiler
+</td>
+<td >
+gcc (egcs-2.91.66 egcs-1.1.2 release)
+</td>
+</tr>
+<tr >
+<td >
+C flags
+</td>
+<td >
+-fomit-frame-pointer -O3 -funroll-loops
+</td>
+</tr>
+<tr >
+<td >
+MPI
+</td>
+<td >
+MPI GM (Version 1.2.3)
+</td>
+</tr>
+<tr >
+<td >
+BLAS
+</td>
+<td >
+ATLAS (Version 3.0 beta)
+</td>
+</tr>
+<tr >
+<td >
+Comments
+</td>
+<td >
+<a  href="http://icl.cs.utk.edu">
+UTK / ICL
+</a>
+- Torc cluster - 09 / 00
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="09902" border="#DEFAULT" genuinetable="yes" tabletitle="Performance (Gflops) w.r.t Problem size on 8- and 16-processors grids. ">
+<tr >
+<th  align="center">
+GRID
+</th>
+<th  align="center">
+2000
+</th>
+<th  align="center">
+5000
+</th>
+<th  align="center">
+8000
+</th>
+<th  align="center">
+10000
+</th>
+<th  align="center">
+15000
+</th>
+<th  align="center">
+20000
+</th>
+</tr>
+<tr >
+<th  align="center">
+2 x 4
+</th>
+<td  align="center">
+1.76
+</td>
+<td  align="center">
+2.32
+</td>
+<td  align="center">
+2.51
+</td>
+<td  align="center">
+2.58
+</td>
+<td  align="center">
+2.72
+</td>
+<td  align="center">
+2.73
+</td>
+</tr>
+<tr >
+<th  align="center">
+4 x 4
+</th>
+<td  align="center">
+2.27
+</td>
+<td  align="center">
+3.94
+</td>
+<td  align="center">
+4.46
+</td>
+<td  align="center">
+4.68
+</td>
+<td  align="center">
+5.00
+</td>
+<td  align="center">
+5.16
+</td>
+</tr>
+<tr >
+<td >
+Performance (Gflops) w.r.t Problem size on 8- and 16-processors grids.
+</td>
+</tr>
+</table>
+<p ></p>
+</center>
+The input file HPL.dat used for this run was:
+<pre >
+HPL Linpack benchmark input file - Torc - 09/00
+Innovative Computing Laboratory, University of Tennessee
+HPL.out      output file name (if any)
+6            device out (6=stdout,7=stderr,file)
+6            # of problems sizes (N)
+2000 5000 8000 10000 15000 20000 Ns
+2            # of NBs
+80 80           NBs
+2            # of process grids (P x Q)
+2 4            Ps
+4 4            Qs
+16.0         threshold
+1            # of panel fact
+2            PFACTs (0=left, 1=Crout, 2=Right)
+1            # of recursive stopping criterium
+8            NBMINs (&gt;= 1)
+1            # of panels in recursion
+2            NDIVs
+1            # of recursive panel fact.
+2            RFACTs (0=left, 1=Crout, 2=Right)
+1            # of broadcast
+1            BCASTs (0=1rg,1=1rM,2=2rg,3=2rM,4=Lng,5=LnM)
+1            # of lookahead depth
+1            DEPTHs (&gt;=0)
+2            SWAP (0=bin-exch,1=long,2=mix)
+80           swapping threshold
+0            L1 in (0=transposed,1=no-transposed) form
+0            U  in (0=transposed,1=no-transposed) form
+1            Equilibration (0=no,1=yes)
+8            memory alignment in double (&gt; 0)
+</pre>
+<hr ></hr>
+<h3 >
+<a  name="compaq000">
+Compaq 16-node (4 ev67 667 Mhz processors per node) AlphaServer SC
+</a>
+</h3>
+<center >
+<table  TABID="09903" border="#DEFAULT" genuinetable="yes" tabletitle="Compaq 16-node (4 ev67 667 Mhz processors per node) AlphaServer SC">
+<tr >
+<td >
+OS
+</td>
+<td >
+Tru64 Version 5
+</td>
+</tr>
+<tr >
+<td >
+C compiler
+</td>
+<td >
+cc Version 6.1
+</td>
+</tr>
+<tr >
+<td >
+C flags
+</td>
+<td >
+-arch host -tune host -std -O5
+</td>
+</tr>
+<tr >
+<td >
+MPI
+</td>
+<td >
+-lmpi -lelan
+</td>
+</tr>
+<tr >
+<td >
+BLAS
+</td>
+<td >
+CXML
+</td>
+</tr>
+<tr >
+<td >
+Comments
+</td>
+<td >
+<a  href="http://www.ccs.ornl.gov/ccs">
+ORNL / CCS
+</a>
+- falcon - 09 / 00
+</td>
+</tr>
+</table>
+<p ></p>
+<table  TABID="09904" border="#DEFAULT" genuinetable="yes" tabletitle="Performance (Gflops) w.r.t Problem size on 16 nodes (64 processors). ">
+<tr >
+<th  align="center">
+GRID
+</th>
+<th  align="center">
+5000
+</th>
+<th  align="center">
+10000
+</th>
+<th  align="center">
+25000
+</th>
+<th  align="center">
+53000
+</th>
+</tr>
+<tr >
+<th  align="center">
+8 x 8
+</th>
+<td  align="center">
+26.37
+</td>
+<td  align="center">
+45.00
+</td>
+<td  align="center">
+60.99
+</td>
+<td  align="center">
+66.93
+</td>
+</tr>
+<tr >
+<td >
+Performance (Gflops) w.r.t Problem size on 16 nodes (64 processors).
+</td>
+</tr>
+</table>
+<p ></p>
+</center>
+The input file HPL.dat used for this run was:
+<pre >
+HPL Linpack benchmark input file - falcon - 09/00
+Innovative Computing Laboratory, University of Tennessee
+HPL.out      output file name (if any)
+6            device out (6=stdout,7=stderr,file)
+4            # of problems sizes (N)
+5000 10000 25000 53000 Ns
+2            # of NBs
+88 88        NBs
+1            # of process grids (P x Q)
+8            Ps
+8            Qs
+16.0         threshold
+1            # of panel fact
+1            PFACTs (0=left, 1=Crout, 2=Right)
+1            # of recursive stopping criterium
+4            NBMINs (&gt;= 1)
+1            # of panels in recursion
+2            NDIVs
+1            # of recursive panel fact.
+1            RFACTs (0=left, 1=Crout, 2=Right)
+1            # of broadcast
+1            BCASTs (0=1rg,1=1rM,2=2rg,3=2rM,4=Lng,5=LnM)
+1            # of lookahead depth
+1            DEPTHs (&gt;=0)
+2            SWAP (0=bin-exch,1=long,2=mix)
+88           swapping threshold
+0            L1 in (0=transposed,1=no-transposed) form
+0            U  in (0=transposed,1=no-transposed) form
+1            Equilibration (0=no,1=yes)
+8            memory alignment in double (&gt; 0)
+</pre>
+<br ></br>
+<br ></br>
+The authors acknowledge the use of the Oak Ridge National Laboratory Compaq computer, funded by the Department of Energy's Office of Science and Energy Efficiency programs.
+<br ></br>
+<br ></br>
+<hr ></hr>
+<center >
+<a  href="index.html">
+[Home]
+</a>
+<a  href="mailto:hpl@cs.utk.edu">
+[Contact]
+</a>
+<a  href="copyright.html">
+[Copyright and Licensing Terms]
+</a>
+<a  href="algorithm.html">
+[Algorithm]
+</a>
+<a  href="scalability.html">
+[Scalability]
+</a>
+<a  href="results.html">
+[Performance Results]
+</a>
+<a  href="documentation.html">
+[Documentation]
+</a>
+<a  href="software.html">
+[Software]
+</a>
+<a  href="faqs.html">
+[FAQs]
+</a>
+<a  href="tuning.html">
+[Tuning]
+</a>
+<a  href="errata.html">
+[Errata-Bugs]
+</a>
+<a  href="references.html">
+[References]
+</a>
+<a  href="links.html">
+[Related Links]
+</a>
+<br ></br>
+</center>
+<hr ></hr>
+</body>
+</html>

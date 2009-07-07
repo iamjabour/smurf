@@ -1,0 +1,1406 @@
+<html >
+<head >
+<meta ></meta>
+<meta ></meta>
+<meta ></meta>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<script >
+<!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i&amp;amp;amp;lt;CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") &amp;amp;amp;gt; 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers &amp;amp;amp;lt; 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i&amp;amp;amp;lt;curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") &amp;amp;amp;gt;= 0) &amp;amp;amp;amp;&amp;amp;amp;amp; (bAgent.indexOf("Mozilla/3") &amp;amp;amp;gt;= 0) &amp;amp;amp;amp;&amp;amp;amp;amp; (bAgent.indexOf("Mac") &amp;amp;amp;gt;= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") &amp;amp;amp;gt;= 0) &amp;amp;amp;amp;&amp;amp;amp;amp; (bAgent.indexOf("Mozilla/3") &amp;amp;amp;gt;= 0) &amp;amp;amp;amp;&amp;amp;amp;amp; (bAgent.indexOf("Mac") &amp;amp;amp;gt;= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img &amp;amp;amp;amp;&amp;amp;amp;amp; typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i&amp;amp;amp;lt;5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i&amp;amp;amp;lt;array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+
+		var tempArray = new Array;
+		for(var j=1;j&amp;amp;amp;lt;actArray.length;j++) {
+			if((actArray[j] != null) &amp;amp;amp;amp;&amp;amp;amp;amp; (typeof(actArray[j]) == "object") &amp;amp;amp;amp;&amp;amp;amp;amp; (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+// -->
+</script>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<script >
+<!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button2',/*URL*/'../images/products.gif',/*URL*/'../images/productsdown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button3',/*URL*/'../images/service.gif',/*URL*/'../images/servicedown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button4',/*URL*/'../images/news.gif',/*URL*/'../images/newsdown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button7',/*URL*/'../images/investor.gif',/*URL*/'../images/investordown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button',/*URL*/'../images/aboutmti.gif',/*URL*/'../images/aboutmtigray.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button6',/*URL*/'../images/documents.gif',/*URL*/'../images/documentsdown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button9',/*URL*/'../images/home.gif',/*URL*/'../images/homedown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button10',/*URL*/'../images/contact.gif',/*URL*/'../images/contactdown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button11',/*URL*/'../images/search.gif',/*URL*/'../images/searchdown.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button12',/*URL*/'../images/careers.gif',/*URL*/'../images/careersdown.gif',/*URL*/'','');
+
+// -->
+</script>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<title >
+MTI Reports First Quarter Fiscal 1999 Results
+</title>
+</head>
+<body  topmargin="0">
+<div  align="center">
+<center >
+<table  TABID="09731" topmargin="0">
+<tr  height="66">
+<td  xpos="0">
+<img ></img>
+</td>
+</tr>
+<tr  height="28">
+<td  xpos="0">
+<!--webbot bot="ImageMap" rectangle="(490,3) (559,19) ../../documents.html" rectangle="(394,3) (473,19) ../../aboutmti.html" rectangle="(249,2) (369,19) ../../investor_relations.html" rectangle="(186,2) (226,19) ../../news.html" rectangle="(97,4) (163,19) ../../support.html" rectangle="(12,5) (77,19) ../../products.html" src="../../images/horizontalinks.gif" border="0" startspan -->
+<map  name="FrontPageMap">
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+<area ></area>
+</map>
+<a  href="/cgi-bin/imagemap/PR/pr1998/_derived/980730a.htm.map">
+<img ></img>
+</a>
+<!--webbot bot="ImageMap" endspan i-checksum="54897" -->
+</td>
+</tr>
+</table>
+</center>
+</div>
+<div  align="center">
+<center >
+<table  TABID="09735" cols="1" width="640">
+<tr >
+<td  valign="top">
+<h2  align="center">
+<font  color="#000080" face="Arial" size="4">
+<strong >
+MTI Reports First Quarter Fiscal 1999 Results
+</strong>
+</font>
+</h2>
+<p  align="center">
+<strong >
+<em >
+MTI's Net Income up 32% over Prior Year's First Quarter
+</em>
+</strong>
+</p>
+<p >
+<strong >
+ANAHEIM, Calif., July 30, 1998 -- MTI Technology Corp.
+</strong>
+(Nasdaq:MTIC) today reported net income for the first quarter of fiscal 1999 ended July 4, 1998 of $4.1 million, or 14 cents diluted earnings per share, compared to net income of $3.1 million, or 11 cents diluted earnings per share, in the same quarter of the previous year, and $5.8 million, or 19 cents diluted earnings per share for the immediately preceding quarter. Total revenue for the first quarter rose 13% to $49.4 million, compared to $43.8 million for last year?s first quarter, but was down 11% compared to $55.5 million for the fourth quarter of fiscal 1998. Net product revenue for the first quarter was $39.2 million, compared to $35.3 million in the first quarter last year, and $45.7 million for the immediately preceding quarter.
+</p>
+<p >
+Service revenue for the first quarter of $10.2 million represented a 20% increase over the $8.5 million reported in the first quarter of the previous year, and a 4% increase over the $9.8 million reported in the immediately preceding quarter.
+</p>
+<p >
+The gross profit margin for the first quarter was 36.2%, compared to 36.3% for the same period last year, and 35.9% for the fourth quarter of fiscal 1998.
+</p>
+<p >
+IN THE QUARTER ENDED JANUARY 3, 1998, THE COMPANY ADOPTED STATEMENT OF FINANCAIL ACCOUNTING STANDARDS NO. 128, "EARNINGS PER SHARE." ALL PRIOR PERIODS HAVE BEEN RESTATED ACCORDINGLY.
+</p>
+<b >
+<p >
+Business Trends
+</p>
+</b>
+<p >
+"The first quarter of fiscal 1999 presented both challenges and opportunities for MTI," said Earl Pearlman, MTI president and chief executive officer. "Although overall top line revenues grew year-over-year, total revenues for the first quarter were lower than anticipated. This shortfall was due to lower than expected product revenues from our domestic markets primarily related to the delay in the availability of our fibre channel products, and the impact of additional sales staffing requirements in certain geographical regions. From a positive standpoint, product sales from our European operations were up 24% and 22% from the same quarter last year and the immediately preceding quarter, respectively, indicating a significant improvement over the fourth quarter of fiscal 1998. Additionally, revenues from our customer service operation were at an all time high, with increases in both our European operations and domestically. I am also very pleased with our gross margin level, which was above 36% for only the second time in the past nine quarters," said Pearlman.
+</p>
+<p >
+"Clearly, to be able to attain our revenue growth targets for the remainder of this fiscal year is heavily dependent on our ability to bring to market our fibre channel RAID products. To this end, we have shifted additional resources within our research and development groups to focus solely on completing the initial models of our Gladiator 3600 Fibre Channel RAID array, which we anticipate will begin shipping during the month of August. Reflecting our commitment to the expansion of our sales organization, we have hired a net seven additional salespersons domestically since the beginning of the first quarter, and a net five additional salespersons in our European operations. As I have communicated in previous quarters, we strongly believe that the Open Systems storage market presents substantial opportunities for MTI and that we will best be able to pursue these opportunities by maintaining our focus on the needs and requirements of our customers," stated Mr. Pearlman.
+</p>
+<b >
+<p >
+Expense Overview
+</p>
+</b>
+<p >
+Selling, general and administrative expenses for the first quarter were $10.6 million, compared to $9.7 million for the first quarter last year, and $11.1 million for the immediately preceding quarter.
+</p>
+<p >
+The increase of $0.9 million over the same quarter of the previous year was primarily the result of an increase in compensation-related sales costs due to increased staff and higher revenues.
+</p>
+<p >
+Research and development expenses for the first quarter were $3.5 million, compared to $3.0 million in the same quarter last year and $3.5 million in the immediately prior quarter. The increase in expenses year-to-year was primarily due to increases in project development costs and increased staff costs.
+</p>
+<b >
+<p >
+Balance Sheet Summary
+</p>
+</b>
+<p >
+Cash on hand at the end of the first quarter of fiscal 1999 was $3.8 million, compared to $7.8 million at the end of the prior fiscal year. Trade accounts receivable increased $2.8 million from the end of the prior fiscal year, primarily as the result of an increase in sales in the Company?s European operations. Inventories decreased $2.1 million, or approximately 11% from the end of fiscal 1998, primarily as the result of a decrease in trade inventories held in the domestic operations. Total bank debt declined $1.8 million while trade payables and accrued liabilities decreased $3.1 million from the end of fiscal 1998.
+</p>
+<p >
+MTI?s mission is to be the premier provider of high-performance, cross-platform data storage management solutions for the enterprise. MTI integrates distributed data management software, a hierarchy of modular storage systems and on-site services to meet the mass storage needs of its customers.
+</p>
+<p >
+This press release includes forward-looking statements that are subject to change. The actual results may differ materially from those described in any forward-looking statement. In particular, there can be no assurances that the Company will be able to introduce its fibre channel RAID array products within the time frame that it has anticipated, or that when introduced, that these products will be accepted within the markets addressed by the Company. Furthermore, there can be no assurances that the financial performance of the Company?s European operations will continue to trend in a positive manner.
+</p>
+<p >
+The computer industry in general, and the market for the Company?s products in particular, is characterized by rapidly changing technology, evolving industry standards and frequent new product introductions, resulting in short product life cycles. Accordingly, the Company believes that its future success will depend in part on its ability to enhance existing products and to develop new products that maintain technological leadership, meet a wide range of changing customer needs and achieve market acceptance. In particular, the Company believes it must continue to respond quickly to customers? needs for innovative storage and data management solutions. Lack of market acceptance for the Company?s existing or new products or services, the Company?s failure to introduce new products or services in a timely or cost effective manner, or its failure to increase functionality of existing products or remain price competitive, would materially adversely affect the Company?s operating results. There can be no assurance that the Company will be successful in its product or service development efforts. In addition, there can be no assurance that the Company?s products or services, even if successfully developed, will achieve timely market acceptance. Additional information on potential factors that could affect the company?s financial results is included in the Company?s Annual Report to the SEC on Form 10K-for the year ended April 4, 1998.
+</p>
+<p >
+Headquartered in Anaheim, Calif., the company offers services and support from more than 40 offices in the U.S. and Europe. MTI may be reached by phone: 800-999-9MTI or 714-970-0300, fax: 714-693-2256 or e-mail:
+<a  href="mailto:info@mti.com">
+info@mti.com
+</a>
+. Information can also be accessed via MTI Online, the company?s World Wide Web server on the Internet at:
+<a  href="../../index.html">
+www.mti.com
+</a>
+.
+</p>
+<p  align="center">
+<font  face="Arial">
+<strong >
+MTI TECHNOLOGY CORPORATION
+<br ></br>
+CONDENSED CONSOLIDATED STATEMENTS OF INCOME
+<br ></br>
+(In thousands, except per share data)
+<br ></br>
+(Unaudited)
+</strong>
+</font>
+</p>
+<div  align="center">
+<center >
+<table  TABID="09732" border="0" cellpadding="7" cellspacing="0" genuinetable="yes" tabletitle="MTI TECHNOLOGY CORPORATION
+CONDENSED CONSOLIDATED STATEMENTS OF INCOME
+(In thousands, except per share data)
+(Unaudited)" width="80%">
+<tr >
+<td  valign="top" width="48%"></td>
+<td  valign="top" width="17%">
+<b >
+<p  align="right">
+FY99 Q1
+</p>
+</b>
+</td>
+<td  valign="top" width="17%">
+<b >
+<p  align="right">
+FY98 Q1
+</p>
+</b>
+</td>
+<td  valign="top" width="17%">
+<b >
+<p  align="right">
+FY98 Q4
+</p>
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Net product revenue
+</small>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+$39,222
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+$35,258
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+$45,693
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Service revenue
+</small>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+10,194
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+8,517
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+9,758
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Total revenue
+</small>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+49,416
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+43,775
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+55,451
+</p>
+</td>
+</tr>
+<tr >
+<td  colspan="4" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Product cost of revenue
+</small>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+25,130
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+23,005
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+29,266
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Service cost of revenue
+</small>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+6,390
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+4,892
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+6,305
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Total cost of revenue
+</small>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+31,520
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+27,897
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+35,571
+</p>
+</td>
+</tr>
+<tr >
+<td  colspan="4" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Gross profit
+</small>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+17,896
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+15,878
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+19,880
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%"></td>
+<td  valign="top" width="17%">
+<p  align="right">
+36.2%
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+36.3%
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+35.9%
+</p>
+</td>
+</tr>
+<tr >
+<td  colspan="4" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Operating expenses:
+</small>
+</td>
+<td  valign="top" width="17%"></td>
+<td  valign="top" width="17%"></td>
+<td  valign="top" width="17%"></td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<blockquote >
+<p  align="left">
+<small >
+Selling, general and administrative
+</small>
+</p>
+</blockquote>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+10,594
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+9,699
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+11,105
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<blockquote >
+<p >
+<small >
+Research and development
+</small>
+</p>
+</blockquote>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+3,457
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+2,980
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+3,468
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<blockquote >
+<p >
+<small >
+Total operating expenses
+</small>
+</p>
+</blockquote>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+14,051
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+12,679
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+14,573
+</p>
+</td>
+</tr>
+<tr >
+<td  colspan="4" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Operating income
+</small>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+3,845
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+3,199
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+5,307
+</p>
+</td>
+</tr>
+<tr >
+<td  colspan="4" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Interest and other income, net
+</small>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+959
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+559
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+767
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  colspan="4" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Income before income taxes
+</small>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+4,804
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+3,758
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+6,074
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Income tax expense
+</small>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+727
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+664
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+320
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<small >
+Net income
+</small>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+$4,077
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+$3,094
+</p>
+</u>
+</td>
+<td  valign="top" width="17%">
+<u >
+<p  align="right">
+$5,754
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  colspan="4" valign="top"></td>
+</tr>
+<tr >
+<td  colspan="4" valign="top">
+<small >
+Net income per share:
+</small>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<blockquote >
+<p >
+<small >
+Basic
+</small>
+</p>
+</blockquote>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+$0.14
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+$0.12
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+$0.21
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<blockquote >
+<p >
+<small >
+Diluted
+</small>
+</p>
+</blockquote>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+$0.14
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+$0.11
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+$0.19
+</p>
+</td>
+</tr>
+<tr >
+<td  colspan="4" valign="top"></td>
+</tr>
+<tr >
+<td  colspan="4" valign="top">
+<small >
+Weighted average shares used in per share computation:
+</small>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<blockquote >
+<p >
+<small >
+Basic
+</small>
+</p>
+</blockquote>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+28,249
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+25,814
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+27,727
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="48%">
+<blockquote >
+<p >
+<small >
+Diluted
+</small>
+</p>
+</blockquote>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+29,899
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+27,732
+</p>
+</td>
+<td  valign="top" width="17%">
+<p  align="right">
+29,687
+</p>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<p  align="center">
+<font  face="Arial">
+<strong >
+MTI TECHNOLOGY CORPORATION
+<br ></br>
+CONDENSED CONSOLIDATED BALANCE SHEETS
+<br ></br>
+(In thousands)
+<br ></br>
+(Unaudited)
+</strong>
+</font>
+</p>
+<div  align="center">
+<center >
+<table  TABID="09733" border="0" cellpadding="7" cellspacing="0" genuinetable="yes" width="80%">
+<tr >
+<td  valign="top" width="56%"></td>
+<td  valign="top" width="21%">
+<b >
+<p  align="right">
+July 4, 1998
+</p>
+</b>
+</td>
+<td  valign="top" width="22%">
+<b >
+<p  align="right">
+April 4, 1998
+</p>
+</b>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top">
+<b >
+<small >
+ASSETS
+</small>
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Cash
+</small>
+</td>
+<td  valign="top" width="21%">
+<p  align="right">
+$3,794
+</p>
+</td>
+<td  valign="top" width="22%">
+<p  align="right">
+$7,768
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Trade accounts receivable, net
+</small>
+</td>
+<td  valign="top" width="21%">
+<p  align="right">
+47,058
+</p>
+</td>
+<td  valign="top" width="22%">
+<p  align="right">
+44,260
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Inventories
+</small>
+</td>
+<td  valign="top" width="21%">
+<p  align="right">
+16,729
+</p>
+</td>
+<td  valign="top" width="22%">
+<p  align="right">
+18,819
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Other current assets
+</small>
+</td>
+<td  valign="top" width="21%">
+<u >
+<p  align="right">
+8,362
+</p>
+</u>
+</td>
+<td  valign="top" width="22%">
+<u >
+<p  align="right">
+8,702
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Total current assets
+</small>
+</td>
+<td  valign="top" width="21%">
+<p  align="right">
+75,943
+</p>
+</td>
+<td  valign="top" width="22%">
+<p  align="right">
+79,549
+</p>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Goodwill and intangibles, net
+</small>
+</td>
+<td  valign="top" width="21%">
+<p  align="right">
+12,294
+</p>
+</td>
+<td  valign="top" width="22%">
+<p  align="right">
+12,753
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Fixed assets and other non-current assets, net
+</small>
+</td>
+<td  valign="top" width="21%">
+<u >
+<p  align="right">
+14,449
+</p>
+</u>
+</td>
+<td  valign="top" width="22%">
+<u >
+<p  align="right">
+12,789
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Total assets
+</small>
+</td>
+<td  valign="top" width="21%">
+<u >
+<p  align="right">
+$102,686
+</p>
+</u>
+</td>
+<td  valign="top" width="22%">
+<u >
+<p  align="right">
+$105,091
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top"></td>
+</tr>
+<tr >
+<td  colspan="3" valign="top">
+<b >
+<small >
+LIABILITIES &amp; STOCKHOLDERS' EQUITY
+</small>
+</b>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Bank line and current portion of debt
+</small>
+</td>
+<td  valign="top" width="21%">
+<p  align="right">
+$6,099
+</p>
+</td>
+<td  valign="top" width="22%">
+<p  align="right">
+$7,904
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Trade payables and accrued liabilities
+</small>
+</td>
+<td  valign="top" width="21%">
+<p  align="right">
+35,371
+</p>
+</td>
+<td  valign="top" width="22%">
+<p  align="right">
+38,493
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Deferred income
+</small>
+</td>
+<td  valign="top" width="21%">
+<u >
+<p  align="right">
+14,195
+</p>
+</u>
+</td>
+<td  valign="top" width="22%">
+<u >
+<p  align="right">
+16,441
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Total current liabilities
+</small>
+</td>
+<td  valign="top" width="21%">
+<p  align="right">
+55,665
+</p>
+</td>
+<td  valign="top" width="22%">
+<p  align="right">
+62,838
+</p>
+</td>
+</tr>
+<tr >
+<td  colspan="3" valign="top"></td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Other non-current liabilities
+</small>
+</td>
+<td  valign="top" width="21%">
+<u >
+<p  align="right">
+416
+</p>
+</u>
+</td>
+<td  valign="top" width="22%">
+<u >
+<p  align="right">
+107
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Total liabilities
+</small>
+</td>
+<td  valign="top" width="21%">
+<p  align="right">
+56,081
+</p>
+</td>
+<td  valign="top" width="22%">
+<p  align="right">
+62,945
+</p>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%"></td>
+<td  valign="top" width="21%"></td>
+<td  valign="top" width="22%"></td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Total stockholders' equity
+</small>
+</td>
+<td  valign="top" width="21%">
+<u >
+<p  align="right">
+46,605
+</p>
+</u>
+</td>
+<td  valign="top" width="22%">
+<u >
+<p  align="right">
+42,146
+</p>
+</u>
+</td>
+</tr>
+<tr >
+<td  valign="top" width="56%">
+<small >
+Total liabilities &amp; stockholders' equity
+</small>
+</td>
+<td  valign="top" width="21%">
+<u >
+<p  align="right">
+$102,686
+</p>
+</u>
+</td>
+<td  valign="top" width="22%">
+<u >
+<p  align="right">
+$105,091
+</p>
+</u>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<p  align="center">
+<font  color="#000000">
+####
+</font>
+</p>
+<p >
+<font  color="#000000">
+This press release includes forward-looking statements, including statements regarding the company?s product development plans, which are subject to change. The actual results may differ materially from those described in any forward-looking statement. Important factors that may cause actual results to differ are set forth in the company?s periodic filings with the U.S. Securities and Exchange Commission including its Form 10-K for the year ended April 3, 1999.
+</font>
+</p>
+<p >
+<font  face="TimesNewRoman">
+<b >
+<i >
+MTI is a registered trademark, MTI DataServices, HardCache and DataShield are trademarks, and Continuous Access to Online Information is a service mark of MTI Technology Corp. All other company, brand or product names are registered trademarks or trademarks of their respective holders.
+</i>
+</b>
+</font>
+</p>
+<!--webbot bot="Include" u-include="../../_private/contacts.htm" tag="BODY" startspan -->
+<table  TABID="09734" border="0" width="100%">
+<tr >
+<td  width="33%">
+<font  size="2">
+Media Relations Contact:
+<br ></br>
+Kevin J. Liebl
+<br ></br>
+Vice President, Marketing
+<br ></br>
+714-693-2740
+<br ></br>
+<a  href="mailto:kliebl@mti.com">
+kliebl@mti.com
+</a>
+</font>
+</td>
+<td  width="33%">
+<font  size="2">
+Investor Relations Contact:
+<br ></br>
+Frank Yoshino
+<br ></br>
+Treasurer
+<br ></br>
+714-693-2775
+<br ></br>
+<a  href="mailto:fyoshino@mti.com">
+fyoshino@mti.com
+</a>
+</font>
+</td>
+<td  width="34%">
+<font  size="2">
+PR Agency Contact:
+<br ></br>
+Judy Smith
+<br ></br>
+JPR Communications
+<br ></br>
+818-386-0403
+<br ></br>
+<a  href="mailto:JPRCommun@aol.com">
+JPRCommun@aol.com
+</a>
+</font>
+</td>
+</tr>
+</table>
+<!--webbot bot="Include" endspan i-checksum="32521" -->
+</td>
+</tr>
+</table>
+</center>
+</div>
+<p  align="center">
+<a  csbuttonreturn="#DEFAULT" onclick="return">
+<img ></img>
+</a>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<a  csbuttonreturn="#DEFAULT" onclick="return">
+<img ></img>
+</a>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<a  csbuttonreturn="#DEFAULT" onclick="return">
+<img ></img>
+</a>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<a  csbuttonreturn="#DEFAULT" onclick="return">
+<img ></img>
+</a>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+<csobj ></csobj>
+</p>
+<!--webbot bot="Include" U-Include="../../copyrigh.htm" TAG="BODY" startspan -->
+<div  align="center">
+<center >
+<table  TABID="09736" border="0" cellpadding="2" cellspacing="1">
+<tr >
+<td  valign="top">
+<font  face="Arial">
+<a  href="../../copynote.htm">
+Copyright
+</a>
+© 1996-2000 MTI Technology Corporation.
+<br ></br>
+Comments about this web site? Contact the
+<a  href="mailto:jpinson@mti.com">
+MTI Webmaster
+</a>
+.
+</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<!--webbot bot="Include" endspan i-checksum="7022" -->
+</body>
+</html>
