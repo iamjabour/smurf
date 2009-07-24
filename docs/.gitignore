@@ -1,0 +1,20 @@
+
+# Arquivos intermediários do LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+
+# Arquivos intermediários do Makefile
+*.d
+*.fls
+*.make
+*.make.temp
+
+# Documentos finais
+*.dvi
+*.ps
+*.pdf
+
+
