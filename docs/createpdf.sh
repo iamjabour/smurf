@@ -1,4 +1,4 @@
-make 00_doc
+make doc
 
 # Documentos finais
 mv  *.dvi files/
