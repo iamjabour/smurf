@@ -12,6 +12,7 @@ class Node(object):
         self.result = []
 
         self.childNodes = []
+        self.maxC = 0
         self.parent = None
         self.length = 1
         self.height = 1
@@ -38,6 +39,11 @@ class Node(object):
                 treeNode.childNodes.append(childNode)
         #for
 
+        treeNode.maxC = len(treeNode.childNodes)
+
+        for c in treeNode.childNodes:
+            if c.maxC > treeNode.maxC:
+                treeNode.maxC = c.maxC
         return treeNode
 
     #loadNodeTree
@@ -56,42 +62,53 @@ def mdr(node, K, T, qnt):
 #    print node.depth
     exist = []
     result = []
-    if node.depth >= 0:# and len(node.str) <= 50:
+    if node.depth >= 3:# and len(node.str) <= 150:
         list = []
+#        print list
         for c in node.childNodes:
             list.append(c.str)
         r = combComp2(list, K, T)
         if len(r) > 1:
             result = (r,node)
             node.result = result
-#    print node.result
+#            print len(list) ,len(node.childNodes), node.result
     for child in node.childNodes:
-        mdr(child, K, T,qnt)
+        mdr(child, node.maxC, T,qnt)
 #mdr
 
-def printresult(f, list, orig):
+def printresult(f, list, orig, node):
 #    f.write(node.dom.toString())
 
+    ret = False
     for i in list:
 #        print i
+        flag = False
         if len(i) < 3:
             continue
         out = ''
         for x in xrange(i[1], i[1]+i[2]):
+#            print x
             if x >= len(orig) :
                 break
-            print x, orig[x].str
+#            print x, orig[x].str
             out += ''.join(orig[x].dom.toString())
-        f.write(out)
+            flag = True
+        if flag:# and len(out.strip()) > 0:
+            ret = True
+
+    if ret:
+        f.write(node.dom.toString())
         f.write('<hr>\n\n')
+    return ret
 
 def defresult(f, node):
     if node.result:
-        print "#"*80
-        print 'id', node.id, 'depth', node.depth
-        print node.result
-        printresult(f, node.result[0], node.childNodes)
-
+#        print "#"*80
+#        print 'id', node.id, 'depth', node.depth
+#        print node.result
+        if printresult(f, node.result[0], node.childNodes, node):
+            #return
+            pass
     for c in node.childNodes:
         defresult(f, c)
 
@@ -114,11 +131,13 @@ if __name__ == '__main__':
 #    dfs(tree)
 #    raise
 
-    mdr(tree,4,4,0)
+    mdr(tree,tree.maxC,0.005,0)
     f = open(sys.argv[2],'w')
     f.write('<html><body>')
     print "#" *80
     defresult(f,tree)
     f.write('</body></html>')
     f.close()
+
+#    print tree.maxC
 

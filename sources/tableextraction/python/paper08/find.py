@@ -117,6 +117,9 @@ def combComp2(nodeList, K, T, start=0):
 #    print "combComp2", len(nodeList), K, T, start
     maxDR = [0,0,0]
 
+    if start >= len(nodeList):
+        return [[]]
+
     for i in xrange(1,K+1):
 #        print "for i ", i
         for f in xrange(start,i):
@@ -135,9 +138,14 @@ def combComp2(nodeList, K, T, start=0):
 
 #                print j, fim, s1
 #                print fim, fim2, s2
-                price = {'add':1,'change':1,'del':1,'m':T}
-                ed = editDist(s1,s2,price)
-                if ed <= T:
+#                print T * len(s1), len(s1), len(s2)
+                price = {'add':1,'change':1,'del':1,'m':T*min(len(s1),len(s2))}
+                if len(s1) > 2*len(s2) or len(s2) > 2*len(s1):
+                    ed = 1
+                else:
+                    ed = editDist(s1,s2,price)
+
+                if float(ed)/(min(len(s1),len(s2))+1) <= T:
 #                    print "sim"
                     if flag:
 #                        print "cria curDR", i, j, 2*i
@@ -168,6 +176,7 @@ def combComp2(nodeList, K, T, start=0):
 # arrumar forma de nao repetir sequencias como comentado no paper
 #     0   1   2   3   4   5   6   7   8   9   10  11  12
 #a = ["3","3","0","3","3","1","2","1","1","1","1","1"]
+#a = []
 #print a
 #r = combComp2(a,2,0)
 #print r
