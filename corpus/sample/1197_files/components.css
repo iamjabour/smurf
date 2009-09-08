@@ -1,0 +1,1401 @@
+/* CSS Document */
+
+*{margin: 0; padding: 0; line-height: 1;}
+img, fieldset {border: 0;}
+ul, li, ol {list-style: none;}
+body {padding: 5px; font-family: arial, freesans, garuda, helvetica, verdana, sans-serif; font-size: 100%; min-width: 989px;}
+a:link {text-decoration: none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: underline;}
+input, select {font-size: 0.75em; line-height: 1em;}
+input.image {background: none;}
+
+/* HEADER */
+
+#header {height: 6.5em; margin-bottom: 5px; background:#8a0909 url(../img/headerBg.png) repeat-x; position: relative; text-align: center; border-bottom: 5px solid #9d0a0e; z-index: 10;}
+#header #headerBox {text-align: left; margin: 0 auto; width: 62em; height: 100%; position: relative;}
+
+#header #headerBox #header_top {display:block; margin:0pt auto; overflow:hidden; position:relative; width:56em;}
+#header #headerBox #header_bottom {display:block; margin:0 auto;}
+
+#header #logo {position: absolute; top:10px; left: 5px; background: url(../img/backHome.gif) no-repeat left bottom;}
+#header #logo img {display: block;}
+#header #mainNavigation {height:2.1em; display:block; margin:3px 0 0 2.0%;} /*height:1.9375em;*/
+#header #mainNavigation li {display:block; float: left; color: #FFF; font-size: 11px; padding-left:0; background: url(../img/topMenuTabBg1.png) no-repeat; height: 95%; margin:.4em 0 0 0;}
+#header #mainNavigation li.beforeLast a {background:url(../img/menuTopoLeftPink.png) no-repeat right top;}
+#header #mainNavigation li a {padding:0pt 10px 0pt 3px; background: url(../img/topMenuTabBg2.png) no-repeat right top; float: left; color: #FFF; height: 100%; display: table;}
+#header #mainNavigation li.lastTab a {background: url(../img/topMenuTabBg3.png) no-repeat right top;}
+
+#header #mainNavigation li.lastTab.yellow {background: url(../img/bgMenuTopoMeio.png) repeat-x right top;}
+#header #mainNavigation li.lastTab.yellow a {background: url(../img/menuTopoRight.png) no-repeat right top;}
+
+#header #mainNavigation li.beforeLast a {background:url(../img/topMenuTabBg2.png) no-repeat right top;}
+#header #mainNavigation li.lastTab.blue a {background:url(../img/topMenuTabBg3.png) no-repeat right 0; color:#ffffff;}
+#header #mainNavigation li.lastTab.blue {background:url(../img/topMenuTabBg1.png) repeat-x left top;}
+
+#header #mainNavigation li.BbeforeLast a {background:url(../img/topMenuTabBg2.png) no-repeat right top;}
+#header #mainNavigation li.BlastTab.blue a {background:url(../img/topMenuTabBg3.png) no-repeat right 0; color:#ffffff;}
+#header #mainNavigation li.BlastTab.blue {background:url(../img/topMenuTabBg1.png) repeat-x left top;}
+
+#header #mainNavigation li.lastTab.blue a span { top: 10%;
+display:table-cell;
+vertical-align:middle;
+white-space:nowrap;}
+
+#header #mainNavigation li.lastTab.pink a {background:url(../img/menuTopoRightPink.png) no-repeat right 0; color:#ffffff;}
+#header #mainNavigation li.lastTab.pink {background:url(../img/bgMenuTopoMeioPink.png) repeat-x left top;}
+
+#header #mainNavigation li.hasBreak {text-align:center;}
+#header #mainNavigation li a span {display: table-cell; vertical-align: middle; white-space: nowrap;}
+
+#header #mainNavigation li#showAll {height:2.3em; margin:0;}
+#header #mainNavigation li#showAll, #header #mainNavigation li#showAll a {padding: 0; position: relative; text-decoration:none;}
+#header #mainNavigation li#showAll img {display: block;}
+
+
+#header #mainNavigation li#showAll #allCategories {position: absolute; top: 3.3em; width: 64em; padding: 10px; background: #FFF url(../img/bgAllCategories.gif) repeat-x; color: #000; border: 3px solid #9d0a0e; z-index:10;}
+#header #mainNavigation li#showAll #allCategories div {float: left; padding: 10px 20px 10px 10px; border-right: 1px solid #CCC;}
+#header #mainNavigation li#showAll #allCategories div h3 {font-size: 1em; color: #900; text-transform: uppercase; padding-bottom: 6px; white-space: nowrap;}
+#header #mainNavigation li#showAll #allCategories ul {display: block; float: none; padding-bottom: 5px;}
+#header #mainNavigation li#showAll #allCategories ul li {display: block; float: none; background: none; font-size: 1em; padding: 3px 0; white-space: nowrap;}
+#header #mainNavigation li#showAll #allCategories ul li a {float: none; background: none; color: #000; display: inline;}
+#header #mainNavigation li#showAll #allCategories #menuArea5 {padding: 10px 0 10px 10px; border-right: 0;}
+#header #mainNavigation li#showAll #allCategories #menuArea6 {float: none; clear: left; border-right: 0; border-top: 1px solid #CCC;}
+#header #mainNavigation li#showAll #allCategories #menuArea6 ul {margin-left: -10px;}
+#header #mainNavigation li#showAll #allCategories #menuArea6 ul li {display: block; float: left; padding: 0 10px; margin: 5px 0; border-right: 1px solid #000;} 
+#header #mainNavigation li#showAll #allCategories #menuArea6 ul li a {display: inline;}
+#header #mainNavigation li#showAll #allCategories ul li a.menu_destaque {color:#A31010;}
+
+#header #mainNavigation li#showAll #allCategories #seeMore {padding: 10px 26px 10px 10px; width:668px; border-top: 1px solid #CCC; border-right: 0; clear:left; display:block; float:none;}
+#header #mainNavigation li#showAll #allCategories #seeMore ul {overflow:hidden; margin-left:100px}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li {display:block; float:left; margin-right:20px; padding:0pt; text-align:center; height:21px; }
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.seeMore a {padding: 5px 7px; background: #900; display: block; color: #fff; font-weight: bold;}
+
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.seeMore.block {width:91px;}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.seeMore.block a {color: #ffde00; background:url(../img/blockbuster.gif) center top no-repeat; }
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.seeMore.ingresso{ width:90px}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.seeMore.ingresso a {color: #fff; background:url(../img/ingresso.gif) center top no-repeat; }
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.seeMore.viagens{width:121px}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.seeMore.viagens a {color: #fff; background:url(../img/viagens.gif) center top no-repeat; }
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.seeMore.volta {width:145px;}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.seeMore.volta a {color: #ffde00; background: #fcd403; width:145px; padding:1px 0 0 0; text-align:center;}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.seeMore.volta a img {margin:0 auto;}
+
+#header #userNavigation {position: absolute; top: 0; left: 13em;}
+#header #userNavigation li {display: inline; font-size: 0.59em; line-height: 1.5; text-transform: uppercase; padding: 0 11px 7px 11px; background:url(../img/divisor_header.gif) no-repeat right 3px;}
+#header #userNavigation li.first {padding-left:6px;}
+#header #userNavigation li a {color: #FFF; position: relative; top: 2px;}
+#header #userNavigation li#myBag {border-right:0; background:none }
+
+#header #userNavigation li#myBag.hasItems a {font-weight: bold; color: #FFFF00;}
+
+#header #cartao {display:block; float:right; margin:8px 0px 3px 8px;}
+
+
+
+#header #quickSearch {position: absolute; left: 13.3em; top: 1.6em; text-align: right;}
+#header #quickSearch * {vertical-align: middle;}
+#header #quickSearch #searchString, #header #quickSearch #keyword {width: 28em; margin-left:.4em; color:#666;}
+#header #quickSearch #searchSelect {color:#73736c; width:11.7em; display:inline;}
+#header #quickSearch #poweredByGoogle {position: absolute; right: 0em; top: 1.9em;}
+div.resultAutoComplete {position: absolute;  background: #fff; border: 1px solid #ccc; top: 49px; left: 410px; padding: 10px; width: 318px; font-size: 1.1em; text-align: left;}
+div.resultAutoComplete a {color:#333; display:block; font-size:11px; margin:0 0 5px; padding-bottom:5px;}
+div.resultAutoComplete a.last {padding-bottom:0px; border-bottom:0;}
+div.resultAutoComplete a:hover {text-decoration:none;}
+
+
+#header #tel {font-size: 0.7em; color: #fff; text-transform: uppercase; position: absolute; top: 5.1em; left: 19.1em;}
+#header #tel a {color: #fff; text-transform: none; text-decoration:underline;}
+#header #tel span.telTelevendas {color:#fdd932;}
+#header #tel span.telTelevendas span {font-weight:bold;}
+#header #tel span.telAtendimento span {font-weight:bold;}
+
+
+/* BANNERS */
+
+.fixedBanner {width: 145px; float: left; border-right: 5px solid #FFF;}
+.extensibleBanner {display: block; text-align: center; background: #fff;}
+#faixaCond {margin-left:150px;}
+#faixaCond embed {position:relative;}
+
+
+.productBannerList li {background: #eaeaea url(../img/productBannerTop.gif) no-repeat right top; padding: 5px 0 0 0; text-align: center; margin-bottom: 10px;}
+.productBannerList a {display: block; text-align: center; font-size: 0.75em; color: #666; background: url(../img/productBannerBottom.gif) no-repeat left bottom; padding:0 5px 10px 5px; line-height: 1.2;}
+.productBannerList a strong {display: block; text-transform: uppercase; font-weight: bold; padding: 5px 0 2px 0;}
+.productBannerList a .price {color: #900; font-weight: bold;}
+
+.simpleBanner {display: block; margin-bottom: 10px; text-align: center;}
+
+
+
+.celular_banner{ text-align:center; margin:0 auto;}
+.concurso_armandinho{ text-align:center; margin:0 auto;}
+/* DESTAQUES */
+
+/*
+#spots {padding-bottom: 10px;}
+#spots .mainSpot {height: 233px; margin-right: 275px;}
+#spots .mainSpotFull {height: 233px; margin-right: 0;}
+#spots .spot {width: 265px; float: right; clear: right; height: 71px; margin-bottom: 10px; overflow: auto; font-size: 0.7em; position:relative;}
+#spots .spot img {float: left; margin-right: 5px;}
+#spots .spot a {line-height: 1.2; color: #666;}
+#spots .spot strong {display: block; font-weight: bold; text-transform: uppercase; margin-bottom: 3px;}
+*/
+
+#spots2 {padding-bottom: 10px;}
+/* #spots2 object {float:right;} */
+#spots2 .mainSpot {height: 230px; margin-right: 220px;}
+#spots2 .spot {width: 210px; float: right; clear: right; height: 110px; margin-bottom: 10px; font-size: 0.7em; border:0; display:block; position:relative;}
+#spots2 .spot a {display:block; height:110px; overflow:hidden;}
+
+.mainSpot  {display:block; height:230px;}
+.mainSpot  span {display:none;}
+.mainSpot a {display:block; height:229px; overflow:hidden;}
+
+
+/* TITULOS DE CAIXAS */
+
+.boxHeader {margin-bottom: 5px; font-size: 0.7em; text-transform: uppercase; color: #FFF; text-align: center; background: #930809 url(../img/boxHeaderRightBg.gif) no-repeat right top; width: 100%;}
+.boxHeader strong, .boxHeader a {background: url(../img/boxHeaderLeftBg.gif) no-repeat; padding: 12px 3px; display: block;}
+.boxHeader.imgTitle {margin-bottom: 0;}
+.boxHeader.imgTitle strong {padding: 10px 3px;}
+
+.boxHeader2 {font-size: 0.7em; text-transform: uppercase; color: #666; text-align: left; background: #d3d4c7 url(../img/boxHeader2RightBg.gif) no-repeat right top;}
+.boxHeader2 strong {background: url(../img/boxHeader2LeftBg.gif) no-repeat; padding: 10px 3px 10px 10px; display: block;}
+/*.boxHeader2 strong img { margin:0 auto;}*/
+
+.boxHeader2.carrossel {font-size: 0.7em; text-transform: uppercase; color: #666; height:33px; text-align: left; background: #980B0C url(../img/header_carrossel_right.gif) no-repeat right top;}
+.boxHeader2.carrossel strong {background: url(../img/header_carrossel_left.gif) no-repeat; padding: 6px 3px 8px 10px; display:block; text-align:center;}
+.boxHeader2.carrossel img.title {margin: -5px 0;}
+
+
+.boxHeader2.olimpiadas {font-size: 0.7em; text-transform: uppercase; color: #666; height:33px; text-align: left; background: #980B0C url(../img/headerLeft.gif) no-repeat left top; }
+.boxHeader2.olimpiadas strong {background: url(../img/headerRight.gif) no-repeat right top; padding: 8px 3px 15px 10px; display:block; text-align:center;}
+.boxHeader2.olimpiadas span {background: url(../img/headerRight.gif) no-repeat right top; padding: 8px 3px 15px 10px; display:block; text-align:center;}
+.boxHeader2.olimpiadas img.title {margin: -5px 0;}
+
+
+/*
+.boxHeader2.carrossel {font-size: 0.7em; text-transform: uppercase; color: #666; height:33px; text-align: left; background: /*#980B0C*/ url(../img/carroussel_diadasmaes.jpg) no-repeat center top;}
+.boxHeader2.carrossel strong {background: none; padding: 6px 3px 8px 10px; display:block; text-align:center;}
+.boxHeader2.carrossel strong a {display:block; height:33px;}*/
+.boxHeader2.carrossel img {display:block;}
+
+
+
+.storeHeader {position: relative; bottom: 5px;  font-size: 0.9em; text-transform: uppercase; color: #FFF; text-align: center; background: url(../img/storeHeaderRightBg.gif) no-repeat right top;}
+.storeHeader strong {background: url(../img/storeHeaderLeftBg.gif) no-repeat 0 bottom; padding: 18px 3px; display: block; color:#fff;}
+.storeHeader a {background: url(../img/storeHeaderLeftBg.gif) no-repeat 0 bottom; padding: 18px 3px; display: block; color:#fff;}
+
+.storeHeader2 {position: relative; bottom: 5px;  font-size: 0.7em; text-transform: uppercase; color: #FFF; text-align: center; background: url(../img/storeHeaderRightBg2.gif) no-repeat right top;}
+.storeHeader2 strong {background: url(../img/storeHeaderLeftBg2.gif) no-repeat 0 bottom; padding: 12px 3px; display: block; color:#fff;}
+.storeHeader2 a {background: url(../img/storeHeaderLeftBg2.gif) no-repeat 0 bottom; padding: 12px 3px; display: block; color:#fff;}
+
+/* SUBTITULOS */
+
+.subtitle1 {font-size: 0.75em; text-transform: uppercase; font-weight: bold; color: #fff; margin-bottom: 20px; text-align:center; padding:0 0 5px 0;}
+
+/* CAIXAS */
+
+.box {padding: 3px; border: 1px solid #CCC; margin-bottom: 5px; overflow: hidden;}
+.boxDestaque {border: 1px solid #940a0a;}
+
+.subSectionBox {padding: 5px; background: #8d0a0b;}
+
+/* ABAS */
+
+ul.tabs {background: #d3d4c7 url(../img/tabsBg.gif) repeat-x; overflow: hidden;}
+ul.tabs li {background: #dedfd1 url(../img/tabsLiBg.gif) no-repeat left top; float: left; padding: 0 0 0 20px; margin-right: 5px;}
+ul.tabs li a {background: url(../img/tabsLinkBg.gif) no-repeat right top; color: #333; font-size: 0.75em; font-weight: bold; padding:10px 20px 11px 0; float: left;}
+
+ul.tabs li.selected {background: #b9baaf url(../img/tabsLiSelectedBg.gif) no-repeat left top; margin-right: 0;}
+ul.tabs li.selected a {background: url(../img/tabsLinkSelectedBg.gif) no-repeat right top;}
+
+/* MENU DE SECAO */
+
+ul.sectionMenu {font-size: 0.7em; text-transform: uppercase; font-weight: bold; color:#900;}
+ul.sectionMenu li {margin-bottom: 15px;}
+ul.sectionMenu li a {color: #900;}
+ul.sectionMenu li a.text {color:#666; font-weight:normal; text-transform:none;}
+ul.sectionMenu li ul {text-transform: none; font-weight: normal; padding-left: 3px;}
+ul.sectionMenu li ul li {margin-bottom: 0; margin-top: 3px;}
+ul.sectionMenu li ul li a {color: #666;}
+ul.sectionMenu li ul li.more a {color: #900;}
+ul.sectionMenu li p {text-transform: none; font-weight: normal; color: #666;}
+
+ul.sectionMenu li p.title {color:#900; text-transform:uppercase; font-weight: bold; margin-top:8px;}
+ul.sectionMenu li div.vcard {margin-top:10px;}
+ul.sectionMenu li div.vcard span, ul.sectionMenu li span.generalInfo {text-transform: none; font-weight: normal; color: #666;}
+ul.sectionMenu li div.vcard span.depto {display:block; margin-top:3px;}
+ul.sectionMenu li div.vcard span.email {display:block; margin-top:3px;}
+ul.sectionMenu li span.generalInfo {display:block;}
+
+/* MENU ESPECIAL: LIVRO, CD, DVD */
+ul.sectionMenuSpecial {font-size: 0.7em; text-transform: none; font-weight: bold; color:#900;}
+ul.sectionMenuSpecial li {margin-bottom: 4px;}
+ul.sectionMenuSpecial li a {color: #6d6d6d;}
+ul.sectionMenuSpecial li a.text {color:#666; font-weight:normal; text-transform:none;}
+ul.sectionMenuSpecial li ul {text-transform: none; font-weight: normal; padding-left: 3px;}
+ul.sectionMenuSpecial li ul li {margin-bottom: 0; margin-top: 3px;}
+ul.sectionMenuSpecial li ul li a {color: #666;}
+ul.sectionMenuSpecial li ul li.more a {color: #900;}
+ul.sectionMenuSpecial li p {text-transform: none; font-weight: normal; color: #666;}
+
+/* MENU DE SUBSECAO */
+
+ul.subSectionMenu {font-size: 0.7em; color: #fff; font-weight: bold;}
+ul.subSectionMenu li {margin-bottom: 5px;}
+ul.subSectionMenu li ul {text-transform: none; font-weight: normal;}
+ul.subSectionMenu li ul li {margin-bottom: 0; margin-top: 6px;}
+ul.subSectionMenu li ul li a {color: #fff;}
+ul.subSectionMenu li ul li.more a {color: #900;}
+ul.subSectionMenu li p {text-transform: none; font-weight: normal;}
+
+/* SELECT AUTORES/ARTISTAS POR LETRA */
+#formAutores {padding:7px;}
+#formAutores label, ul.sectionMenu li label span {font-weight:normal; text-transform:none; color:#666; font-size:.7em;}
+#formAutores label {display:block;}
+#formAutores select {font-size:.7em; width:50px; float:left; margin-right:10px;text-align:left;}
+#formAutores select option {text-align:left; padding:2px 2px; color:#818181;}
+
+#formLetras {padding:7px; border-top:1px solid #e6e6e6;}
+#formLetras label, ul.sectionMenu li label span {font-weight:bold; text-transform:uppercase; color:#666; font-size:.7em;}
+#formLetras label {display:block; padding:0 0 5px 0;}
+#formLetras select {font-size:.7em; width:120px; float:left; margin-right:10px;}
+#formLetras select option {text-align:center; padding:2px 2px;}
+
+/* LISTA DE LOJAS ESPECIAIS */
+
+.storeList img {display: block; margin: 0 auto;}
+.storeList li {padding: 2px 0; text-align: center;}
+
+/* LISTA DE SUBCATEGORIAS DE UM DEPARTAMENTO */
+
+.subcategoryList {overflow: hidden;}
+.subcategoryList li {width: 33%; float: left;}
+
+/* BANNER DE CONDICAO ESPECIAL */
+
+.storeCondition {text-align: center; margin-bottom: 5px;}
+.storeCondition strong {display: block;}
+.storeCondition img {display: block; margin: 0 auto;}
+
+/* LOJA ESPECIAL */
+
+.specialStore {margin-bottom:20px;}
+.specialStoreProducts {overflow:hidden; margin:0 5px;}
+.specialStoreProducts li {width: 49.9%; float: left; overflow: hidden; padding: 10px 0;}
+.specialStoreProducts.last li {padding-bottom: 0;}
+.specialStoreProducts li span.boxPhoto {float: left; margin:0 5px 3px 0; border: 1px solid #999; display: block; width:80px; height:80px; text-align:center;}
+.specialStoreProducts a {text-align: left; font-size: 0.75em; color: #666; line-height: 1.2; padding-right: 5px; display:block;}
+.specialStoreProducts a strong {text-transform: uppercase; font-weight: normal; padding: 5px 0 2px 0; display:block;}
+.specialStoreProducts a .price {color: #900; font-weight: bold;}
+
+/* LISTA DE PRODUTOS */
+
+.productList {display: block; overflow: hidden; padding: 10px 0; border-bottom: 1px dotted #666; width: 100%;}
+.productList.last {border-bottom: none;}
+.productList .tag {display: block; margin: 0 auto 5px auto;}
+.productList li {display: block; float: left; width: 33%; text-align: center; font-size: 0.7em;}
+.productList li .listen,.productList li .productName, .productList li .from, .productList li .for, .productList li .parcel, .productList li .condition, .productList li .price, .productList li .more, .productList li .card {padding:0 0 0 4px; width: 114px; text-align: left; margin: 0 auto;}
+.productList li .productName {font-size: 1em; font-weight: bold; padding: 5px 0 10px 4px;}
+.productList li .productName a {color: #666;}
+.productList li .productName a span {display:block; font-weight:normal; margin:3px 0 0 0;}
+.productList li .for {color: #900; padding: 2px 0 2px 4px; font-weight:bold;}
+.productList li .condition {color: #666;}
+.productList li .parcel, .productList li .price {color: #900; font-weight: bold; font-size: 1em; padding: 2px 0 2px 4px;}
+.productList li .listen,.productList li .from {color:#666;}
+.productList li .from,.productList li .listen, .productList li .for, .productList li .parcel, .productList li .condition,.productList li .card {display:block;}
+.productList li .more {color:#aa0106; display:block; padding: 2px 0;}
+.productList li .more span {text-decoration:underline;}
+.productList li .esgotado {color: #900; padding: 2px 0 0 0; font-weight:normal; width: 113px; text-align: left; margin: 0 auto; display:block; text-transform:none; font-size:1em;}
+.productList li .esgotado strong {font-weight:normal;}
+.productList li .aviseme {color: #900; padding: 6px 0 0 0; width: 115px; text-align: left; margin: 0 auto; display:block; font-size:1em; text-decoration:underline; font-weight:bold; text-transform:uppercase; line-height:1.2em; }
+.productList li .listen{padding-bottom:10px;}
+.productList li .listen img{width:10px; margin:0; padding-right:3px; float:left;}
+
+/*cartao*/
+.productList li .card {padding:7px 0 0 0; color:#666;}
+.productList li .card {color: #686868;}
+.productList li .card strong {margin-bottom: 2px; display: block; font-size: 1em;}
+
+
+/* RODAPE */
+
+#footer {text-align: center;}
+#footer #footerBox{width: 47em; margin: 0 auto; text-align: left;}
+
+#footer h3 {margin-bottom: 10px;}
+#footer h4 {color: #999; font-size: 60%; text-transform: uppercase; margin-bottom: 5px;}
+#footer h4 strong {padding-right: 10px; background: url(../img/redBottomArrow.gif) no-repeat right center;}
+
+#footer .menu {font-size: 70%;}
+#footer .menu li {background: url(../img/greyRightArrow.gif) no-repeat left center; padding: 1px 0 1px 10px; border-right: 1px solid #999;}
+#footer .menu li a {color: #666; text-decoration: underline;}
+
+#footer #footerLinks {float: left; width: 140px; margin-left: 5px; display: inline;}
+#footer #footerLinks ul {border-right:1px solid #999999;} 
+#footer #footerLinks ul li { margin-bottom:6px; border:none}
+
+#footer #footerLinks2 {width: 600px; float: left; margin: 11px 0 0 0px;}
+#footer #footerLinks2 .menu li {display: inline; background: none; padding: 1px 10px 1px 10px;}
+
+#footer #footerLinks3 {width: 600px; float: left; margin: 11px 0 0 0px;}
+#footer #footerLinks3 .menu li {display: inline; background: none; padding: 1px 10px 1px 10px;}
+
+#footer #payMethods {width: 355px; float: left; margin-left: 10px;}
+#footer #payMethods ul {border-right: 1px solid #999;}
+#footer #payMethods li {display: inline;}
+#footer #payMethods p {font-size: 70%; color: #666; border-right: 1px solid #999;}
+#footer #payMethods p#msgPrecosValidos {display:block; margin:20px 0 0 0; border-right:none;}
+#footer #payMethods p#msgPrecosValidos a {color:#666; text-decoration:underline;}
+
+#footer #partners {width: 220px; float: left; margin-left: 10px; padding-top: 1.7em;}
+#footer #partners li {display: inline; margin-right: 5px;}
+
+
+
+#footer #footerBox {width:61.5em;}
+#footer #payMethods {width:590px;}
+#footer #partners {padding-top:1px;}
+#footer #payMethods ul {float:left; border-right:none; margin:0 20px 0 0;}
+#footer #payMethods {border-right:1px solid #999;}
+#footer #payMethods p {padding:0 20px 0 0; border-right:0;}
+#footer p#msgPrecosValidos {border-right:none; display:block; margin:0 20px 0 0; color:#666666; font-size:70%; padding-left:10px;}
+#footer p#msgPrecosValidos a {color:#999; text-decoration:underline;}
+#footer #footerLinks2 {float:none; margin:0; width:auto;}
+#footer #footerLinks2 .menu {float:left;}
+#footer #footerLinks2 .menu.first {display:block; margin-right:55px;}
+#footer #footerLinks2 .menu .menuLabel {font-size:1.6em; border-right:0; height:20px; display:block;}
+#footer #footerLinks2 .menu .menuLabel strong {font-size:11px; color:#999; background:url(http://images.americanas.com.br/Applications/site2007/img/redBottomArrow.gif) no-repeat right center; padding-right:10px;}
+#footer #footerLinks2 .menu .last {border-right:none;}
+
+
+#footer #footerLinks3 {float:none; margin:0; width:100%; }
+#footer #footerLinks3 .menu {float:left;}
+#footer #footerLinks3 .menu.first {display:block; margin-right:55px; margin-top:25px}
+#footer #footerLinks3 .menu .menuLabel {font-size:1.6em; border-right:0; height:20px; display:block;}
+#footer #footerLinks3 .menu strong {font-size:11px; color:#999; padding-right:10px;}
+#footer #footerLinks3 .menu .last {border-right:none;}
+
+
+#footer div.boxDivisor {display:block; overflow:hidden; margin:0 0 15px 150px;}
+
+
+/* PADROES DE FORMULARIO XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.defaultForm {font-size: 0.7em;}
+.defaultForm .boxHeader2{font-size: 1em;}
+.defaultForm input {background: #FFF; font-size: 1.2em;}
+.defaultForm fieldset.box {padding: 10px;}
+
+
+/* CATALOGO - PRODUTO xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+#productBody p, #productBody li {padding: 0 0 5px 0;}
+
+/* MSG PRECOS VALIDOS */
+.msgPrecosValidos {display:block; margin:20px 0 10px 0; font-size:11px;}
+.msgPrecosValidos a {color:#666; text-decoration:underline;}
+
+/* BREAD CRUMBS */
+
+.breadCrumbs {padding: 3px 5px 5px 40px; font-size: 0.7em; color: #666; min-height: 3em; margin-bottom:5px;}
+.breadCrumbs.simple {padding: 12px 5px 0 40px;}
+.breadCrumbs div {margin: auto 0;}
+.breadCrumbs p {padding-bottom: 5px;}
+.breadCrumbs a {color: #666;}
+.breadCrumbs .more a{color: #900; text-decoration:underline;}
+.breadCrumbs strong, .breadCrumbs strong a {color: #900; text-transform: uppercase; font-size:1.2em;}
+
+/* ICONES DEPARTAMENTOS BREAD CRUMBS */
+.breadCrumbs.bg575   {background: url(../img/icones/iconeEletronicos.gif) no-repeat left top;}
+.breadCrumbs.bg578   {background: url(../img/icones/iconeModa.gif) no-repeat left top;}
+.breadCrumbs.bg579   {background: url(../img/icones/iconeBrinquedos.gif) no-repeat left top;}
+.breadCrumbs.bg580   {background: url(../img/icones/iconeCDs.gif) no-repeat left top;}
+.breadCrumbs.bg581   {background: url(../img/icones/iconeCameba.gif) no-repeat left top;}
+.breadCrumbs.bg582   {background: url(../img/icones/iconeBeleza.gif) no-repeat left top;}
+.breadCrumbs.bg583   {background: url(../img/icones/iconeEsporte.gif) no-repeat left top;}
+.breadCrumbs.bg584   {background: url(../img/icones/iconeUD.gif) no-repeat left top;}
+.breadCrumbs.bg585   {background: url(../img/icones/iconePapelaria.gif) no-repeat left top;}
+.breadCrumbs.bg589   {background: url(../img/icones/iconeDVDs.gif) no-repeat left top;}
+.breadCrumbs.bg590   {background: url(../img/icones/iconeInformatica.gif) no-repeat left top;}
+.breadCrumbs.bg591   {background: url(../img/icones/iconeTelefonia.gif) no-repeat left top;}
+.breadCrumbs.bg594   {background: url(../img/icones/iconeBebes.gif) no-repeat left top;}
+.breadCrumbs.bg595   {background: url(../img/icones/iconeEletrodomesticos.gif) no-repeat left top;}
+.breadCrumbs.bg596   {background: url(../img/icones/iconeNatal.gif) no-repeat left top;}
+.breadCrumbs.bg1472  {background: url(../img/icones/iconeLivros.gif) no-repeat left top;}
+.breadCrumbs.bg1858  {background: url(../img/icones/iconeGames.gif) no-repeat left top;}
+.breadCrumbs.bg2025  {background: url(../img/icones/iconePresentes.gif) no-repeat left top;}
+.breadCrumbs.bg5359  {background: url(../img/icones/iconeEletroportateis.gif) no-repeat left top;}
+.breadCrumbs.bg6872  {background: url(../img/icones/iconeCine.gif) no-repeat left top;}
+.breadCrumbs.bg8936  {background: url(../img/icones/iconeGuloseimas.gif) no-repeat left top;}
+.breadCrumbs.bg14129 {background: url(../img/icones/iconeJardim.gif) no-repeat left top;}
+.breadCrumbs.bg17278 {background: url(../img/icones/iconeAutomotivos.gif) no-repeat left top;}
+.breadCrumbs.bg17350 {background: url(../img/icones/iconeInstrumentos.gif) no-repeat left top;}
+
+.breadCrumbs.bg62091 {background: url(../img/deptocasa/icones/ico_sala.gif) no-repeat left top;}
+.breadCrumbs.bg62092 {background: url(../img/deptocasa/icones/ico_cozinha.gif) no-repeat left top;}
+.breadCrumbs.bg62093 {background: url(../img/deptocasa/icones/ico_quarto.gif) no-repeat left top;}
+.breadCrumbs.bg62094 {background: url(../img/deptocasa/icones/ico_banheiro.gif) no-repeat left top;}
+.breadCrumbs.bg62095 {background: url(../img/deptocasa/icones/ico_escritorio.gif) no-repeat left top;}
+.breadCrumbs.bg62096 {background: url(../img/deptocasa/icones/ico_infantil.gif) no-repeat left top;}
+.breadCrumbs.bg62097 {background: url(../img/deptocasa/icones/ico_jardim.gif) no-repeat left top;}
+.breadCrumbs.bg62098 {background: url(../img/deptocasa/icones/ico_area.gif) no-repeat left top;}
+.breadCrumbs.bg62099 {background: url(../img/deptocasa/icones/ico_garagem.gif) no-repeat left top;}
+
+.depto24822 .breadCrumbs {display:none;}
+.depto27409 .breadCrumbs {display:none;}
+.depto35160 .breadCrumbs {display:none;}
+.depto44135 .breadCrumbs {display:none;}
+.depto15115 .breadCrumbs {display:none;}
+.depto14424 .breadCrumbs {display:none;}
+
+
+/* TITULO DO PRODUTO */
+
+#productHeader h1 {font-size: 1.2em; padding-bottom: 10px;}
+#productHeader h1 span {font-size: 0.7em; font-weight:normal;}
+#productHeader h1 .productCode {font-size: 0.5em;}
+
+
+/* TAGS */
+
+.tagList {overflow: hidden; padding-bottom: 10px;}
+.tagList {text-align:center;}
+/*
+.tagList .odd {width: 49%; float: left; text-align: left;}
+.tagList .even {width: 49%; float: right; text-align: right;}
+*/
+
+/* IMAGEM DO PRODUTO */
+#productCol1 img.productImage {margin:0 auto; display:block; margin-bottom:10px;}
+
+/* MAIS IMAGENS DO PRODUTO */
+
+.viewImagesControl {text-align: center; padding-bottom: 10px; background: url(../img/bgViewMoreImages.gif) no-repeat center bottom;}
+
+/* BOTOES */
+
+.buttonList {text-align: center; padding: 10px 0;}
+.buttonList li {margin:0 0 3px 0;}
+
+/* TITULOS DE CAIXAS DE PROMOCOES */
+
+.productBoxTitle {background: url(../img/productBoxTitleBgLeft.gif) no-repeat; font-size: 0.75em; text-align:left;}
+.productBoxTitle strong {background: url(../img/productBoxTitleBgRight.gif) no-repeat right top; display: block; padding: 10px 5px 15px 10px; color: #666;}
+
+.productBoxTitle2 {font-weight:normal; font-size: 0.75em; text-align:left; padding: 5px 5px 15px 10px;}
+.productBoxTitle2 a {color: #C10506; text-decoration:underline;}
+.productBoxTitle2 img{ padding:0 4px 1px 0}
+
+
+
+/* CAIXAS VÍDEOS */
+
+.boxVideo{ display:block; padding:2px 2px 2px 2px; height:442px; border:1px solid #d2b5bb; margin-bottom:10px;}
+.boxVideo .boxContent{background:url(../img/productBoxTitleVideo.jpg) left top repeat-x; height:10px; padding-top:4px }
+.boxVideo .boxTitleVideo{ background:url(../img/productBoxVideoIco.gif) left top no-repeat; color:color:#666666; font-size:0.90em; padding:8px 0 20px 67px}
+.boxVideo .boxTitleVideo strong{ text-transform:uppercase; display:block; margin-bottom:3px}
+.boxVideo .boxTitleVideo span{ display:block}
+.boxVideo .productVideo{ display:block; background:#e8e8e8; padding:13px 0 13px 13px}
+.boxVideo .productVideo object { border:1px solid #ffffff }
+
+
+
+/* CAIXAS */
+
+.productBox {background: url(../img/productBoxBgLeft.gif) no-repeat;}
+.productBoxInside {background: url(../img/productBoxBgRight.gif) no-repeat right top; padding: 10px;}
+.productBoxInside p input {margin-right: 5px;}
+
+.productBox2 {background: url(../img/productBoxTitleBgLeft.gif) no-repeat;}
+.productBox2Inside {background: url(../img/productBoxTitleBgRight.gif) no-repeat right top; padding: 10px;}
+.productBox2Inside .saibamais {font-weight:normal; margin:10px auto 10px auto; display:block; font-size:.75em; display:block; width: 304px; text-align:left;}
+.productBox2Inside .juros {font-weight:normal; margin:15px auto 0 auto; display:none; font-size:.65em; display:block; width: 304px; text-align:left; color:#686868;}
+.productBox2Inside .saibamais a {color: #900; text-decoration:underline;}
+
+/* MULTIPLOS SKUS */
+
+.skus ul {overflow: hidden; zoom: 1;}
+.skus ul li {float: left; width: 49.5%; text-align: left; padding: 10px 0; border-bottom: 1px dotted #666;}
+.skus ul li.last {border-bottom:0;}
+.skus ul li input {background:none;}
+.skus ul li p {font-size: 1em;}
+.skus ul li p strong {padding-left: 5px;}
+
+#skus ul {overflow: hidden; zoom: 1;}
+#skus ul li {float: left; width: 49.5%; text-align: left; padding: 10px 0; border-bottom: 1px dotted #666;}
+
+
+/* COMPRAR PRODUTO */
+
+#buyProduct {text-align: center;}
+
+#productConditions {width: 29em; margin: 0 auto; font-size: 0.7em; color: #666;}
+#productConditions dt {float: left; width: 125px; text-align: right;}
+#productConditions dd {padding: 0 0 7px 130px; text-align: left;}
+#productConditions .catalogPrice {color: #900;}
+#productConditions strong {color: #000; margin-top: 0.2em; display: block;}
+#productConditions .acomPrice {color: #900; font-size: 1.6em; font-weight: bold;}
+#productConditions .price {color: #900; font-weight: bold;}
+
+/*cartao americanas*/
+#productConditions .acomPriceCard {color: #900; font-size: 1.3em; font-weight: bold; padding-top:0.7em;}
+#buyProductCard{background:transparent url(../img/productBgDegradeGrayCard.jpg) top left repeat-x; padding:10px 0 20px 0;}
+#boxGetCard{display:block; text-align:center; padding:10px 0 0 0;}
+#productGetCard{margin-bottom:20px;}
+
+
+/* DESCONTO */
+
+#discount {font-size: 0.75em; color: #666; margin-bottom: 10px; padding-bottom: 0;}
+#discount .price {font-weight: bold; color: #900; font-size: 1.2em;}
+
+
+/* DISPONIBILIDADE */
+
+#availability {font-size: 0.75em; color: #000; font-weight: bold; padding-bottom: 20px; text-align:left;}
+#availability .status {font-weight: bold; color: #900;}
+#availability .saibamais {font-weight:normal; margin:5px 0 0 0; display:block; font-size:1em;}
+#availability .lancamento {margin:5px 0 0 0; display:block; font-size:1em;}
+#availability .saibamais a {color: #900; text-decoration:underline;}
+
+/* PARCELAMENTO */
+
+#productParcel table {width: 28em; margin: 0 auto; font-size: 0.7em; color: #666;}
+#productParcel caption {width: 28em; margin: 0 auto; text-transform: uppercase; font-size: 0.8em; padding-bottom: 10px;}
+#productParcel table td, #productParcel table th {padding: 5px 2px;}
+#productParcel table td {font-weight: bold;}
+#productParcel table th {font-weight: normal;}
+
+
+/* ESGOTADO */
+
+.outOfStock {font-size: 0.75em; text-align:center;}
+.outOfStock p {padding: 5px 0;}
+.outOfStock h2 {font-size: 1.5em; text-transform: uppercase; font-weight: bold; color: #900;}
+.outOfStock form {width: 22em; margin: 0 auto; text-align: left;}
+.outOfStock form div {overflow: hidden; padding: 5px 0;}
+.outOfStock form label {float: left; width: 4em; text-align: right;}
+.outOfStock form div input{width: 20em;}
+.outOfStock form .question label {float: none; width: auto; text-align: left; font-size: 0.75em;}
+.outOfStock form div.question input{width: auto;}
+.outOfStock form .buttons {text-align: right;}
+
+/* PRODUTOS SEMELHANTES */
+
+#similarProducts .productList.last {border-bottom: none;}
+#similarProducts .productList li {float: none; width: 100%; text-align: left; padding-bottom: 5px; overflow: hidden;}
+#similarProducts .productList li a {color:#73736c; width:auto;}
+#similarProducts .productList li .productImage {float: left; width: 80px; height:80px; margin:0 10px 0 0; text-align:center;}
+#similarProducts .productList li .productName, #similarProducts .productList li .from, #similarProducts .productList li .for, #similarProducts .productList li .parcel, #similarProducts .productList li .condition, #similarProducts .productList li .price {padding: 0; width: auto;}
+#similarProducts .productList li .productName {padding: 0; margin-top:20px;}
+#similarProducts .productList li .parcel, #similarProducts .productList li .condition {display: inline;}
+#similarProducts .productList li .for {color: #900; padding: 2px 0;}
+#similarProducts .productList li .parcel, .productList li .price {color: #900; font-weight: bold; font-size: 1.1em; padding: 2px 0;}
+#similarProducts .more {font-size:.7em; color:#000; margin:0 0 20px 10px;}
+#similarProducts .more a {color:#900;}
+
+#similarProducts li.simple {padding-left: 10px; background: url(../img/redRightArrow.gif) no-repeat left 3px;}
+#similarProducts li.simple * {display: inline;}
+
+/* ADICIONAR PRODUTO A LISTA */
+/* productGetCard re-aproveitando detalhe da lista para título cartao */
+
+#addToList,#productGetCard {margin-bottom:20px;}
+#addToList h2,#productGetCard h2 {background: url(../img/addToListBgLeft.gif) no-repeat;}
+#addToList h2 strong ,#productGetCard h2 strong {background: url(../img/addToListBgRight.gif) no-repeat right top; display: block;}
+#addToList h2 strong img ,#productGetCard h2 strong img {display: block; margin: 0 auto;}
+#addToList #boxLists {display:block; width:345px; margin:10px auto 0 auto;}
+#addToList .buttonsList {display:block; width:174px; float:left; margin-top:10px;}
+#addToList .buttonsList li {width:174px; display:block; text-align:right; margin:0 0 2px 0;}
+#addToList .listInfo {display:block; width:145px; font-size:.7em; text-align:left; margin-left:184px; padding:5px;}
+#addToList .listInfo strong {font-size:1.1em; color:#900; display:block; margin:0 0 5px 0;}
+#addToList .listInfo p {line-height:1.3em; color:#7a7a7a;}
+
+/* SUBMENU LISTA DE PRESENTES */
+#addToList .buttonsList .presentes {position:relative;}
+#addToList .buttonsList .presentes div {background:url(../img/bgSubMenuListaPresentes.gif) no-repeat; width:105px; height:76px; position:absolute; left:53px; top:26px;}
+#addToList .buttonsList .presentes div ul {margin:7px 0 0 7px; width:90px;}
+#addToList .buttonsList .presentes div ul li.titulo {background:url(../img/subListaPresente_incluir.gif) no-repeat; height:10px;}
+#addToList .buttonsList .presentes div ul li.titulo span {display:none;}
+#addToList .buttonsList .presentes div ul li {display:block; text-align:left; margin:0;}
+
+/* LISTA DE BOTOES HORIZONTAL */
+
+ul.buttonsList li {display: inline;}
+
+/* PROMOCOES RELACIONADAS */
+
+.textBanner * {vertical-align: middle;}
+.textBanner img {margin-right: 10px;}
+.textBanner a {color: #000;}
+.textBanner a.promoText {padding-left: 10px; background: url(../img/redRightArrow.gif) no-repeat left center;}
+
+/*.promoRelList {font-size: 0.7em;}*/
+#productBody .promoRelList .more, .promoRelList .more {padding: 10px; background: url(../img/redRightArrow.gif) no-repeat left center;}
+.promoRelList .more a {color: #900;}
+
+/* CARACTERISTICAS */
+
+.features {font-size: 0.75em; margin-bottom:10px; padding-left:10px; color:#333;overflow:hidden;}
+.features td {line-height:19px;}
+.features p {line-height:1.2em;}
+
+/* BOX FICHA TECNICA MODELO ANTIGO */
+#productInfoFicha {font-size:.7em; margin-left:20px; color:#333;}
+#productInfoFicha h3 {font-size:1.1em; margin:5px 0 0 0;}
+#productInfoFicha ul {margin:5px 0 20px 0;}
+
+
+/* ESPECIFICACAO TECNICA */
+#espTecTable {font-size:.7em; width:98%; color:#969595; margin:0 auto 20px auto; border-collapse: collapse; border-spacing: 0}
+#espTecTable td {padding:7px 20px; vertical-align:middle; width:50%; background:url(../img/separadorEspTec.gif) #f7f7f8 repeat-x 0 bottom;}
+#espTecTable .rightCol {text-align:right;}
+#espTecTable .tableFichaTitle {font-size:1.1em; background-color:#e9e8e8; font-weight:bold; color:#707070; text-align:left; height:22px; padding:0 5px;}
+
+
+/*===================================================================================================================================*/
+/* Componente de SKU Esgotado */
+.outOfStockSKU {margin:15px 0 0 0; overflow:hidden; zoom: 1;}
+.outOfStockSKU li.skus, .outOfStockSKU li.outOfStock {float:left; width:49.9%; min-width: 250px; }
+.outOfStockSKU .skus ul li p {margin:10px 0 0 0;}
+#productCol2 .outOfStockSKU li.skus, #productCol2 .outOfStockSKU li.outOfStock {float:none; width:100%; min-width: 250px; }
+#productCol2 .outOfStockSKU li.outOfStock .productBox, #productCol2 .outOfStockSKU li.outOfStock .productBoxInside {background:none;}
+.outOfStockSKU li.skus form {margin:0 0 0 10px;}
+#productBody .outOfStockSKU li.outOfStock h2 {display:none;}
+#productBody .outOfStockSKU li.outOfStock h2, .outOfStockSKU li.outOfStock p, .outOfStockSKU li.outOfStock span {text-align:center;} 
+#productBody .outOfStockSKU li.outOfStock p, .outOfStockSKU li.outOfStock p {color:#000;}
+#productBody .outOfStockSKU li.outOfStock span {display:block; font-size:1em;}
+#productBody .outOfStockSKU li.outOfStock .productBox, #productBody .outOfStockSKU li.outOfStock .productBoxInside {background:none;}
+
+
+/* GARANTIA ESTENDIDA */
+
+#warranty {font-size: 0.7em; color: #666;}
+#warranty ul {width: 29em; margin: 0 auto;}
+#warranty ul li {overflow: hidden; padding: 10px 0; border-bottom: 1px dotted #666; zoom: 1;}
+#warranty ul li.last {border-bottom: 0;}
+#warranty ul li div {float: left; padding: 2px 1em 2px 2em; width: 12em; background: url(../img/bgWarranty.gif) no-repeat;}
+#warranty ul li div .parcel {color: #900; font-weight: bold; padding: 3px 0;}
+#warranty ul li img {float: right;}
+
+.warrantyText {background: url(../img/warrantyTextBgLeft.gif) no-repeat left bottom; margin-bottom: 10px; font-size: 0.7em; color: #666; text-align: left;}
+.warrantyTextInside {background: url(../img/warrantyTextBgRight.gif) no-repeat right bottom; padding: 10px;}
+
+/* COMENTARIOS DOS CLIENTES */
+
+.comments {font-size: 0.75em; padding:20px 0 20px 10px; overflow:hidden;}
+.comments h3 {font-size:1em;}
+.comments .name {text-transform: uppercase;}
+.comments .name a {text-transform:lowercase; color:#73736c; text-decoration:none;}
+.comments .name a:hover {text-decoration:underline;}
+.comments li {display:block;}
+.comments li.star {width:100px; clear:left; margin-right:10px; float:left; height:50px;}
+.comments span.todos, .todos {font-size:.9em; color:#000; padding-left:10px; background:url(../img/setaComments.gif) no-repeat 0 center; display:block;}
+.comments span.todos a, .todos a {color:#aa0303; text-decoration:underline;}
+.opniao {font-size:.8em; color:#73736c; font-weight:bold; display:block; margin-left:10px; margin-bottom:20px;}
+.opniao a {color:#aa0303; font-weight:normal; text-decoration:underline;}
+
+/* ACESSORIOS */
+
+#accessories ul.productList {border-bottom:0;}
+#accessories .productList.last {border-bottom: none;}
+#accessories .productList li {float: none; width: auto; padding-right: 130px; text-align: left; padding-bottom: 0; overflow: hidden; position: relative; border-bottom: 1px solid #CCC; margin-bottom: 10px;}
+#accessories .productList li.last {border-bottom: 0;}
+#accessories .productList li .productImage {float: left; width: 90px; height:85px;}
+#accessories .productList li .productName, #accessories .productList li .from, #accessories .productList li .for, #accessories .productList li .parcel, #accessories .productList li .condition, #accessories .productList li .price {padding: 0; width: auto;}
+#accessories .productList li a {color:#73736c; width:auto;}
+#accessories .productList li a:hover * {text-decoration:underline;}
+#accessories .productList li .productName {padding: 0;}
+#accessories .productList li .condition {display: block;}
+#accessories .productList li .for {color: #900; padding: 2px 0; display:block;}
+#accessories .productList li .parcel, .productList li .price {color: #900; font-weight: bold; font-size: 1.1em; padding: 2px 0;display:block;}
+#accessories .productList li .moreInfo {position: absolute; top: 0; right: 10px;}
+#accessories .more {padding: 10px 10px 0 10px; background: url(../img/redRightArrow.gif) no-repeat left center; margin-left:90px;}
+#accessories .more a {color: #900;}
+#accessories .addProduct {padding: 10px; margin:5px 0 10px 0; color: #000; background: url(../img/addProductBg.gif) no-repeat left center; clear:left; display:block;}
+#accessories .addProduct input {background:none;}
+
+
+/* OBSERVACOES */
+
+.observations {font-size: 0.75em; padding: 10px 10px;}
+.observations p { margin-bottom:10px}
+.observations p a { text-decoration:underline; color:666666}
+
+/* SITE SEGURO */
+
+.security {font-size: 0.75em; padding: 10px 0 10px 70px; background: url(../img/security.gif) no-repeat left center;}
+.security p {line-height:1.2em;}
+
+/* COMPRE JUNTO */
+
+#crossSelling {overflow: hidden;  zoom: 1; margin-bottom:15px;}
+#crossSelling .productList {background: url(../img/plus.gif) no-repeat center center; width: 280px; float: left; border-bottom: 0;}
+#crossSelling .productList li {width:140px; }
+#crossSelling .productList li div {height:80px;}
+#crossSelling .crossInfo {font-size: 0.75em;}
+#crossSelling .comboPrice {float: right; text-align: right; padding-top: 20px;}
+#crossSelling .comboPrice .fullPrice {font-weight: bold;}
+#crossSelling .comboPrice span {color: #900;}
+#crossSelling .comboPrice .button {margin-top: 20px; display: block;}
+
+/* BOX DE INFORMACOES DIVERSAS SOBRE PRODUTOS */
+.productCatalogInfoTitle {background:url(../img/vTitle_End.gif) no-repeat 0 bottom; margin-bottom:20px;}
+.productCatalogInfoTitle h2 {display:block; width:25px; float:left; height:120px;}
+.productCatalogInfoTitle h2 span {display:none;}
+
+.productCatalogInfoTitle div {font-size:.75em; color:#73736c; padding:15px 0 10px 0;}
+.productCatalogInfoTitle div p {margin-left:35px;}
+
+.productCatalogInfoTitle table {margin:15px 0 10px 10px;}
+.productCatalogInfoTitle table td {padding:2px 0;}
+.productCatalogInfoTitle .infos {width:140px; font-weight:bold;}
+
+.productCatalogInfoTitle ul {margin-left:35px;}
+.productCatalogInfoTitle ul li {background:url(../img/iconeSamples.gif) no-repeat 0 2px; margin-bottom:5px;}
+.productCatalogInfoTitle ul li a {display:block; padding:5px 0 0 0; margin-left:20px; color:#73736c; text-decoration:none;}
+.productCatalogInfoTitle ul li a:hover {text-decoration:underline;}
+
+/* TITULO INFORMACOES DIVERSAS */
+.titInformacoes h2 {background:url(../img/vTitle_Informacoes.gif) no-repeat;}
+.titSinopse h2 {background:url(../img/vTitle_Sinopse.gif) no-repeat;}
+.titResenha h2 {background:url(../img/vTitle_Resenha.gif) no-repeat;}
+.titRecursos h2 {background:url(../img/vTitle_Recurso.gif) no-repeat;}
+.titCreditos h2 {background:url(../img/vTitle_Creditos.gif) no-repeat;}
+.titMusicas h2 {background:url(../img/vTitle_Musicas.gif) no-repeat;}
+
+
+/* ===================================================================================================================================================================*/
+
+/* LISTA DE PROMOÇÕES RELACIONADAS (PÁGINA DE BUSCA) */
+
+#promoRelCol {padding-top:39px;}
+#promoRelCol.sugestion {padding-top:0;}
+#promoRelCol h3 {display:block; height:19px; padding-left:6px;}
+
+ul.promoRelList {margin:0 0 15px 0;}
+ul.promoRelList p {display:block; padding-top:12px;}
+ul.promoRelList li {padding-bottom:20px; }
+ul.promoRelList .boxMaisPromo {font-size:0.7em;}
+ul.promoRelList .textBanner a.promoText {padding-left: 0; background: none; padding-top:5px; font-size:0.7em;}
+#mainContent ul.promoRelList .textBanner {margin-left:11px;}
+
+/* INFORMAÇÕES DO RESULTADO DA BUSCA */
+#infoSearch {font-size:0.8em; color:#4f4f4b; padding-top:7px; padding-left:2px;}
+#infoSearch p {margin:0 0 5px 0;}
+#infoSearch .keyword { color:#aa0303; font-weight:bold;}
+#infoSearch .destaqueInfoSearch {font-weight:bold;}
+
+/* LISTA DE RESULTADO DA BUSCA */
+ul.searchResultList {display:block; padding:0 5px; }
+ul.searchResultList li {padding:22px 0 15px 0; border-bottom:1px solid #aaa3a3; overflow:hidden; zoom:1;}
+ul.searchResultList li.lastSearchResultItem { border-bottom:none; }
+ul.searchResultList a {color: #73736c;}
+ul.searchResultList .productImage {display:block; width:90px; float:left; text-align:center;}
+ul.searchResultList .productInfo { padding-left:5px; overflow:hidden; }
+ul.searchResultList .productInfo div.programacao {font-size: 0.7em; font-weight: bold;margin-top:15px; text-decoration:underline;}
+ul.searchResultList div.tagBox {display:block; padding:9px 0 0 0;}
+ul.searchResultList div.boxPrecoDePor {display:block; margin-top:3px;}
+ul.searchResultList div.boxPrecoDePor a {font-size:0.7em;}
+ul.searchResultList div.boxPrecoDePor span.for {color:#aa0303; font-weight:bold; font-size:1.1em; padding:0 0 0 5px;}
+ul.searchResultList div.boxPreco {float:left; margin-left:2px; margin-top:3px;}
+ul.searchResultList div.boxPreco.single {font-weight:bold;}
+ul.searchResultList div.boxPreco a, ul.searchResultList div.boxPrecoURL a, ul.searchResultList div.irURL a {font-size:0.7em; color:#aa0303;}
+ul.searchResultList div.irURL a {text-decoration: underline;}
+ul.searchResultList div.boxPrecoURL {float:none; margin:0 0 5px 0;}
+ul.searchResultList div.boxPrecoURL a {font-weight:bold;}
+ul.searchResultList div.boxParcel {display:block; margin-top:3px;}
+ul.searchResultList div.boxParcel a {font-size:0.7em;}
+ul.searchResultList div.boxParcel span.parcel {color:#aa0303; font-weight:bold; font-size:1.1em;}
+
+ul.searchResultList div.boxCartao {display:block; margin-top:10px;}
+ul.searchResultList div.boxCartao a {font-size:0.7em;}
+ul.searchResultList div.boxCartao span.cartao {color:#aa0303; font-weight:bold; font-size:1.1em;}
+
+ul.searchResultList .productName, ul.searchResultList .productNameURL {font-size: 0.7em; font-weight: bold;}
+ul.searchResultList .productNameURL {margin-bottom:5px; margin-top:10px;}
+ul.searchResultList .productName a.namePriceLink span {display:block;margin:3px 0 0 0;}
+ul.searchResultList .moreProducts {color: #73736c; font-size: .7em; display:block; margin-top:15px; clear:left;}
+ul.searchResultList .moreProducts p {margin:2px 0;}
+ul.searchResultList .moreProducts a {color:#aa0303; text-decoration:underline;}
+
+ul.searchResultList .productInfo a.esgotado {color: #900; padding: 10px 0 0 0; font-weight:bold; text-align: left; display:block; text-transform:uppercase; text-decoration:underline; font-size:.7em;}
+ul.searchResultList .productInfo a.aviseme  {color: #900; padding: 4px 0 0 0; text-align: left; display:block; font-size:.7em; text-decoration:underline;}
+
+
+
+/* FORMULÁRIO BUSCA ZERADA */
+#reSearch * {vertical-align:middle; }
+#reSearch { margin-left:2px; width:353px; margin:26px 0 17px 0;}
+#reSearch legend {margin:0 0 5px -2px; font-size:0.8em; color:#4f4f4b;}
+#searchPageField {padding-left:5px; border:1px solid #7f9db9; height:20px; width:23em; }
+#tipSearchInfo {font-size:0.75em; color:#4f4f4b; font-weight:bold; padding-left:68px; margin-bottom:65px; background:url(../img/tipSearch.gif) no-repeat; }
+#tipSearchInfo p {font-weight:normal; margin-top:2px; }
+
+/* VOCE QUIS DIZER */
+
+#quisdizer {display:block; background:#fafafb; border:4px solid #f6f5f6; padding:25px; color:#4f4f4b; margin-top:30px}
+#quisdizer span, #quisdizer label { font-size:.75em;}
+#quisdizer span {display:block; margin-bottom:10px;}
+#quisdizer label {font-weight:bold; display:inline;}
+#quisdizer select {display:inline; font-size:1em; font-weight:bold;}
+#quisdizer select option {padding-right:10px;}
+#infoSearchSugestion {font-size:0.8em; color:#4f4f4b; padding-top:15px; padding-left:2px; padding-bottom:15px; margin-top:5px;}
+#infoSearchSugestion p {margin:0 0 5px 0;}
+#infoSearchSugestion .keyword { color:#aa0303; font-weight:bold;}
+#infoSearchSugestion .destaqueInfoSearch {font-weight:bold;}
+
+/* ================================================================================================================================================================= */
+
+/* BOX HEADER 2 COM ORDENADOR */
+.boxHeaderSorting {overflow:hidden;}
+.boxHeaderSorting strong {background: url(../img/boxHeader2LeftBg.gif) no-repeat; display: block; float:left; text-transform: uppercase; padding:8px 0 0 10px;}
+.boxHeaderSorting form * {vertical-align:middle; }
+.boxHeaderSorting form {display: block; text-align:right; padding:4px 10px 4px 10px;}
+.boxHeaderSorting form label {font-weight:normal;}
+.boxHeaderSorting form #SortingTypes {font-size:1em; text-transform: none; color:#73736c;}
+.boxHeaderSorting form #labelSorting {font-size:1em; text-transform: none; color:#73736c;}
+
+/* BOX HEADER 2 COM LINK VER TODOS */
+.linkSeeAll {overflow:hidden; margin-top:10px;}
+.linkSeeAll strong {background: url(../img/boxHeader2LeftBg.gif) no-repeat; display: block; float:left; text-transform: uppercase; padding:8px 0 0 10px;}
+.linkSeeAll span {display: block; text-align:right; padding:8px 10px 8px 10px; text-transform:none; font-weight:normal;}
+.linkSeeAll a {color:#aa0303; text-decoration:underline; font-weight:bold; display:inline; float:none;}
+
+
+/* INFORMAÇÕES PAGINAÇAO */
+.pageListInfo {font-size:0.8em; color:#4f4f4b; padding:10px 0; text-align:center;}
+.pageListInfo span {font-weight:bold;}
+
+/* PAGINAÇAO */
+.pageList {font-size:0.8em; color:#4f4f4b; text-align:center; padding:0; margin:0.7em 0 1.5em 0;}
+.pageList li {display:inline;}
+.pageList span {margin-right:0px;}
+.pageList a {color:#4f4f4b;}
+.pageList a.page, .pageList a.anterior, .pageList a.proxima { border:2px solid #fff; text-decoration:none; color:#4f4f4b; padding:1px;}
+.pageList a.atual, .pageList a.page:hover { color:#aa0303; font-weight:bold; border:2px solid #aa0303; padding:1px; text-decoration:none;}
+.pageList a.anterior {padding:0 5px 0 0;}
+.pageList a.proxima {padding:0 0 0 5px;}
+.pageList a.anterior:hover, .pageList a.proxima:hover {text-decoration:underline;}
+
+/* ================================================================================================================================================================== */
+
+/* LATERAL COMBO */
+.boxCombo {display:block; background:#e0e0e0; padding:7px 5px; font-size:.9em; color:#73736c; font-weight:bold;}
+.menuCombo li, .comboText {font-weight:normal; color:#73736c; font-size:.8em; padding:15px 0 0 0;}
+.menuCombo li span{color:#aa0303; font-weight:bold;}
+.comboText.last {margin:0 0 5px 0}
+
+/* ================================================================================================================================================================== */
+
+/* Box de Sublinhas */
+.boxSubLine {background:url(../img/bgSubLineBox.gif) repeat-x; padding:5px 5px;}
+
+/* Nome da Linha */
+.lineName {font-size:0.7em; color:#aa0303; font-weight:bold; text-transform:uppercase; display:block; margin-bottom:20px;}
+
+/* Sublinhas */
+.subLine {padding-bottom:9px;}
+.subLine li {background:url(../img/itemSubLine.gif) no-repeat 0 3px; padding-left:13px;}
+.subLine li a {color:#73736c; font-weight:bold;}
+
+.subLineDivisor {border-bottom:1px solid #fff;}
+
+/* Mais Promoções Relacionadas */
+.boxMaisPromo {font-size:0.7em;}
+.boxMaisPromo .maisPromoText {color:#000; line-height:.6em;}
+.boxMaisPromo .maisPromoDepto {color:#aa0303; background:url(../img/iconeMaisPromoRel.gif) no-repeat 0 center; padding-left:7px; margin-top:5px; display:block;}
+
+/* Lista Promoções Relacionadas - Linha */
+.promoRelListLine {border-bottom:1px solid #cfcfcf; border-top:1px solid #cfcfcf; padding:9px 0; overflow:hidden; margin-bottom:10px; font-size:0.7em;}
+.promoRelListLine li {float:left;}
+.promoRelListLine li img {display:block;}
+.promoRelListLine li#leftPromo {width:33%}
+.promoRelListLine li#leftPromo div {margin:0 auto 0 0; width:136px;}
+.promoRelListLine li#centerPromo {width:33%}
+.promoRelListLine li#centerPromo div {margin:0 auto 0 auto; width:136px;}
+.promoRelListLine li#rightPromo {width:33.4%}
+.promoRelListLine li#rightPromo div {margin:0 0 0 auto; width:136px;}
+.promoRelListLine .textBanner a.promoText {padding-left: 0; background: none; padding-top:5px;}
+
+/* ================================================================================================================================================================= */
+
+.bgComboHeader1 {background:url(../img/bgGroupComboHeader.gif) repeat-x;}
+.bgComboHeader2 {background:url(../img/GroupComboHeader.gif) no-repeat right 0;}
+.bgComboHeader2 img {padding:13px 26px 0 0;}
+.Group1 span, .Group2 span {display:block; height:37px; text-align:right;}
+.Group1 span {background:url(../img/grupoCombo1.gif) no-repeat left center;}
+.Group2 span {background:url(../img/grupoCombo2.gif) no-repeat left center;}
+
+/* ================================================================================================================================================================== */
+
+.language {text-align:right; height:30px; display:none;}
+.language a {font-size:.6em; color:#000; background:url(../img/english_flag.gif) no-repeat 0 center; padding-left:14px;}
+
+.staticText {display:block; font-size:.7em;  color:#707070; padding:0 11px; margin-bottom:30px;}
+.staticText .textBlock {padding-bottom:5px;}
+.staticText p {margin:10px 0;line-height:1.2em;}
+.staticText strong {font-weight:bold; display:block; margin-top:10px;}
+.staticText ul {margin-left:10px; line-height:1.2em;}
+.staticText ul ul{margin-left:10px;}
+.staticText ul ul li {padding-left:0;}
+.staticText ul ul li strong.listCall {display:block; margin-left:10px;}
+.staticText li {line-height:1.2em; padding:3px 0;}
+.staticText ul.lastList {margin-top:15px;}
+.staticText ul p.lastParagraph {margin-top:25px;}
+.staticText strong span {font-weight:normal;}
+
+/* ================================================================================================================================================================== */
+
+.marginParagraph {margin-bottom:30px; display:block;}
+.marginParagraph p {font-weight:normal; line-height:1.2em;}
+.marginParagraph p, .marginParagraph strong {color:#707070; margin:0 0 10px 88px; font-size: 0.7em;}
+.marginParagraph strong {display:block; margin:20px 0 0 88px;}
+.marginParagraph a {text-decoration:underline; color:#b80e0f}
+
+.projectList {padding:0 12px; margin:25px 0 0 0; overflow:hidden;}
+.projectList li {float:left; margin:0 10px 35px 10px;}
+.projectList a {display:block; border:7px solid #edeced;}
+.projectList a:hover {border:7px solid #dbdbdb;}
+.projectList a img {margin-bottom:-2px;}
+.projectList div {margin-right:9px; text-align:right;}
+
+/* ================================================================================================================================================================== */
+/* Página Especial */
+.specialPageContent {position:relative; display:block;}
+.boxFlashPrice {width:610px; position:absolute; left:50%; top:0; margin-left:-305px; overflow:hidden; height:350px;}
+.boxFlashPrice {margin:162px 0 0 -305px; height:188px;}
+.specialPageFlash {height:350px;}
+
+/* =============================================================================================================================== */
+/* Vale presente */
+.valeInfoList {font-size:.7em; color:#707070; width:370px; display:block; float:left; clear:left;}
+.valeInfoList li {background: url(../img/bgBoxTitleCidadania.gif) no-repeat right 0; margin-bottom:30px;}
+.valeInfoList div.vale {background:url(../img/icone_vale.gif) no-repeat; padding:20px 15px 0 95px;}
+.valeInfoList div.vale p {margin:10px 0; line-height:1.2em;}
+.valeInfoList div.vale strong {margin:10px 0; line-height:1.2em;}
+.valeInfoList div.ajuda {background:url(../img/icone_vale_ajuda.gif) no-repeat; padding:20px 15px 0 95px;}
+.valeInfoList div.ajuda div p {display:block; margin-bottom:10px; line-height:1.2em;}
+.valeInfoList div.ajuda a {text-decoration:underline;}
+.valeInfoList div.ajuda a.openAllContent {float:right;}
+.valeInfoList div.ajuda strong {display:block; margin:25px 0 10px 0; line-height:1.2em;}
+.valeInfoList h2 {color:#707070; font-size:1em;}
+.valeInfoList a {color:#707070; text-decoration:underline;}
+.valeContent {margin-left:375px;}
+.valeContent h2 {margin-left:30px; font-size:.7em; color:#707070; font-weight:normal;}
+.valeContent h3 { font-size:1em; color:#707070;display:block; padding:10px 0 0 20px;}
+.valeContent strong {color:#aa0303;display:block; padding:10px 0 5px 20px;}
+.valeContent a {display:block;}
+.valeContent ul {margin:15px 0 0 50px; font-size:.7em; color:#707070;}
+.valeContent ul li {overflow:hidden; margin-bottom:45px;}
+.valeContent ul li div {float:left;}
+.valeContent ul li div.boxComprar {margin-left:15px;}
+#ComoUtilizar {display:block;}
+#ComoEnviar {display:block;}
+#Regras {display:block;}
+#mostra_comoUtilizar {display:none;}
+#mostra_ComoEnviar {display:none;}
+#mostra_Regras {display:none;}
+#mostra_Todos {display:none;}
+
+/*********************************************************************************************************************************/
+/* INGRESSOS */
+#ticketsHeader h1 {display:block; width:146px; height:89px; background:url(../img/logoIngressos.gif) no-repeat; float:left;}
+#ticketsHeader h1 span {display:none;}
+#ticketsHeader ul {background:url(../img/bgTicketsLine.gif) repeat-x; overflow:hidden; margin-left:3px;}
+#ticketsHeader ul li {display:inline; background:url(../img/ticketsLineDivisor.gif) no-repeat right bottom; float:left; text-align:center; padding:16px 0 13px 0;}
+#ticketsHeader ul li.shows {background:none;}
+#ticketsHeader ul li a {display:block; margin:0 auto;}
+#ticketsHeader ul li a span {display:none;}
+#ticketsHeader ul li.micaretas a {background:url(../img/btMicaretas.gif) no-repeat; width:73px; height:16px;}
+#ticketsHeader ul li.micaretas {width:22%;}
+#ticketsHeader ul li.emusic a {background:url(../img/btEMusic.gif) no-repeat; width:126px; height:16px;}
+#ticketsHeader ul li.emusic {width:28%;}
+#ticketsHeader ul li.parques a {background:url(../img/btParques.gif) no-repeat; width:137px; height:16px;}
+#ticketsHeader ul li.parques {width:30%;}
+#ticketsHeader ul li.shows a {background:url(../img/btShows.gif) no-repeat; width:51px; height:16px;}
+#ticketsHeader ul li.shows {width:20%;}
+#ticketsHeader form {margin:3px 0 0 149px; display:block; background:#e5e6e5; padding:10px 0;}
+#ticketsHeader form fieldset {width:610px; margin:0 auto;}
+#ticketsHeader form fieldset legend {display:none;}
+#ticketsHeader form label.label {font-size:.7em; color:#737373; float:left; display:block; padding:3px 0 3px 0;}
+#ticketsHeader form select {margin-left:5px; width:115px;}
+
+.destaquesIngressos {margin:0 auto; overflow:hidden; width:770px; margin-bottom:40px;}
+.destaquesIngressos ul.boxDestaqueIngressos li {float:left; margin-right:12px; padding:4px; width:174px; background:#ebeceb;}
+.destaquesIngressos ul.boxDestaqueIngressos li.last {margin-right:0;}
+
+.bannersIngressos  {padding:20px 0; width:770px; margin:0 auto;}
+.bannersIngressos a {overflow:hidden;}
+.bannersIngressos a img {padding: 4px; border: 1px solid #CCC;}
+.bannersIngressos a.last {margin-left:8px;}
+.boxDestaqueIngressos img {display:block; margin-bottom:7px;}
+.boxDestaqueIngressos a, .boxDestaqueIngressos p {font-size:.7em; line-height:1.2em; color:#575757; margin:0 9px; font-weight:bold;}
+.boxDestaqueIngressos a {display:block; margin:0;}
+.boxDestaqueIngressos a.title {margin:0 9px;}
+.boxDestaqueIngressos p {padding-bottom:10px; font-weight:normal;}
+.boxDestaqueIngressos form {padding:10px 9px;}
+.boxDestaqueIngressos form select {width:157px; display:block;}
+
+/* Codigo da primeira fase de ingressos */
+.fase1 {height:89px; background:url(../img/bgHeaderIngressoF1.gif) repeat-x; margin-left:149px;}
+.fase1 div {background:url(../img/peopleHeaderIngressosF1.gif) no-repeat; height:89px; width:344px; margin:0 auto;}
+.fase1 div span {display:none;}
+
+/* Produto Ingressos */
+.ticketSaleList {float:left; margin-left:10px; margin-right:70px;}
+.ticketSaleList strong {color:#a90600; display:block; padding:5px 0; margin-left:140px; font-size:.7em;}
+.ticketSaleList a {display:block;}
+.ticketSaleList ul {width:335px;}
+.ticketSaleList ul li {overflow:hidden; padding:20px 0; border-bottom:1px solid #c9c9c9;}
+.ticketSaleList .ticketImg {float:left;}
+.ticketSaleList h2 {margin:5px 0 0 140px; line-height:1.2em; width:160px;font-size:.7em; color:#707070; font-weight:bold;}
+.ticketSaleList .boxComprar {margin:0 0 0 130px;}
+
+/* Informações sobre Ingresso */
+.infoSobreProduto {display:block; padding-right:10px;}
+.infoSobreProduto p, .infoSobreProduto strong, .infoSobreProduto ul li {color:#707070; font-size:.7em; line-height:1.2em;}
+.infoSobreProduto strong {padding:20px 0 0 0; text-transform:uppercase; display:block;}
+.infoSobreProduto .important {display:inline;}
+.infoSobreProduto p.ps {margin:15px 0 0 0;}
+.infoSobreProduto img {margin:15px 0 15px 0;}
+.infoSobreProduto ul.serviceList {margin-bottom:15px;}
+.infoSobreProduto strong.atention, .infoSobreProduto ul.atentionList li {color:#a90600; font-weight:bold;} 
+
+/* ================================================================================================================================================================== */
+/* PAGINA DE INDICAR PRODUTO */
+
+#recommend {font-size: 0.7em;}
+#recommend p {padding: 5px 0; text-align: left; width: 29em; margin: 0 auto;}
+#recommend h2 {font-size: 1.0em; text-transform: uppercase; font-weight: bold; color: #000; padding: 15px 0 20px 60px; text-align: left; width: 24em; margin: -15px auto 0  auto; background: url(../img/recommend.gif) no-repeat;}
+#recommend form {width: 29em; margin: 0 auto; text-align: left; padding-top: 10px;}
+#recommend form div {overflow: hidden; padding: 5px 0;}
+#recommend form label {float: left; width: 11em; text-align: right; font-weight: bold; margin-right: 5px;}
+#recommend form div input {width: 190px; font-size: 1em;}
+#recommend form div textarea {width: 190px; font-size: 1.3em;}
+#recommend form .buttons {text-align: right; display:block;}
+#recommend form .buttons a {width:72px; margin-right:63px;}
+#recommend form div.buttons input {width:66px;}
+
+/* ================================================================================================================================================================== */
+/* PAGINA DE GARANTIA ESTENDIDA */
+
+#warrantyInfo {font-size: 0.75em;}
+#warrantyInfo h2, #warrantyInfo p, #warrantyInfo ul{font-size: 1em; text-align: left;}
+#warrantyInfo h2 {color: #000; text-transform: uppercase; background: url(../img/warrantySymbol.gif) no-repeat; padding: 0 0 50px 70px;}
+#warrantyInfo p.description {padding: 0 0 0 70px; position: relative; bottom: 40px; margin-bottom: -40px;}
+#warrantyInfo ul {margin: 25px 5px 20px 5px; background: none;}
+#warrantyInfo ul li {padding: 10px 0; border-bottom: 1px dotted #000; overflow: hidden; zoom: 1;}
+#warrantyInfo ul li.last {border-bottom:none;}
+#warrantyInfo ul li input {float: left;}
+#warrantyInfo ul li div {margin: 0 0 0 25px;}
+#warrantyInfo a.buy {float: right;}
+#warrantyInfo ul li p {padding: 2px 0;}
+#warrantyInfo ul li p.lenght {font-weight: bold;}
+#warrantyInfo ul li p.totalPrice, #warrantyInfo ul li p.parcel {color: #C00; font-size: 1.2em; font-weight: bold;}
+
+
+#agreement, .agreement {margin:0pt auto; padding:10px; text-align:center; width:400px;}
+.agreement {margin:0; padding:10px 0; text-align:left;}
+#agreement a.notagree, .agreement a.notagree {display:block; float:left; margin:9px 0pt 0pt;}
+#agreement a.agree, .agreement a.agree {margin:0 0 0 10px;}
+
+.moreAboutWarranty {background: url(../img/moreAboutWarrantyBgRight.gif) no-repeat right top; margin-right: 5px; padding-right: 10px; height: 60px; width:190px; margin:0 auto;}
+.moreAboutWarranty a {padding: 12px 10px 20px 60px; background: url(../img/moreAboutWarrantyBgLeft.gif) no-repeat left top; display: block; color: #000; font-weight: bold; line-height:1.2em; font-size:.75em;}
+
+/*cartao americanas*/
+#warrantyInfo ul li p.lenghtCard {font-weight: bold;font-size: 0.95em; padding:10px 0 0 0;}
+#warrantyInfo ul li p.parcel span{font-size: 0.85em}
+/* ================================================================================================================================================================== */
+
+/* FAIXA DE CONDICAO */
+/*
+.depto575 .storeCondition {background: #24383b;}
+.depto578 .storeCondition {background: #5d4c5d;}
+.depto579 .storeCondition {background: #0083d5; height:30px;}
+.depto580 .storeCondition {background: #1d1c3c;}
+.depto581 .storeCondition {background: #baa483;}
+.depto582 .storeCondition {background: #375725;}
+.depto583 .storeCondition {background: #204b02;}
+.depto584 .storeCondition {background: #633601;}
+.depto585 .storeCondition {background: #ffffff; height:30px;}
+.depto589 .storeCondition {background: #58648f;}
+.depto590 .storeCondition {background: #445f5e;}
+.depto591 .storeCondition {background: #424136;}
+.depto594 .storeCondition {background: #ff6600;}
+.depto595 .storeCondition {background: #4e532e;}
+.depto596 .storeCondition {background: #0A320C;}
+.depto1472 .storeCondition {background:#7b5701;}
+.depto1858 .storeCondition {background: #450343;}
+.depto2025 .storeCondition {background: #365555;}
+.depto5359 .storeCondition {background: #f26522;}
+.depto6872 .storeCondition {background: #818b96;}
+.depto8936 .storeCondition {background: #f27a28;}
+.depto14129 .storeCondition {background: #4e532e;}
+.depto17278 .storeCondition {background: #4a6267;}
+.depto17350 .storeCondition {background: #674b28;}
+.depto42398 .storeCondition {background: #674b28;}
+.depto49963 .storeCondition {background: #276e8c;}
+*/
+
+.depto575 .storeCondition {background: #133f7d;}
+.depto578 .storeCondition {background: #133f7d;}
+.depto579 .storeCondition {background: #133f7d; height:30px;}
+.depto580 .storeCondition {background: #133f7d;}
+.depto581 .storeCondition {background: #133f7d;}
+.depto582 .storeCondition {background: #133f7d;}
+.depto583 .storeCondition {background: #133f7d;}
+.depto584 .storeCondition {background: #133f7d;}
+.depto585 .storeCondition {background: #133f7d; height:30px;}
+.depto589 .storeCondition {background: #133f7d;}
+.depto590 .storeCondition {background: #133f7d;}
+.depto591 .storeCondition {background: #133f7d;}
+.depto594 .storeCondition {background: #133f7d;}
+.depto595 .storeCondition {background: #133f7d;}
+.depto596 .storeCondition {background: #133f7d;}
+.depto1472 .storeCondition {background:#133f7d;}
+.depto1858 .storeCondition {background: #133f7d;}
+.depto2025 .storeCondition {background: #133f7d;}
+.depto5359 .storeCondition {background: #133f7d;}
+.depto6872 .storeCondition {background: #133f7d;}
+.depto8936 .storeCondition {background: #133f7d;}
+.depto14129 .storeCondition {background: #133f7d;}
+.depto17278 .storeCondition {background: #133f7d;}
+.depto17350 .storeCondition {background: #133f7d;}
+.depto42398 .storeCondition {background: #133f7d;}
+.depto49963 .storeCondition {background: #133f7d;}
+
+/* =========================================================================================================================================================== */
+# {border:1px solid #ccc; background:#efefef;}
+
+/* ========================================================================================================================================================================= */
+
+#dhtml {
+  /*left:50%;*/
+  /*margin-left:-320px;*/
+  margin-top:0px;
+  position:absolute;
+  top:160px;
+  z-index:10;
+  _left:0;
+}
+
+#flashRecarga {
+	text-align:center;
+}
+
+/* ALTERACOES RETIRADA DE PARCELAMENTO E OUTRAS
+
+.productList li .parcel, .productList li .condition, .parcel, .condition, ul.searchResultList div.boxParcel, #productParcel, #similarProducts .productList li .parcel, #similarProducts .productList li .condition, #accessories .productList li .parcel, #accessories .productList li .condition {display: none;}
+
+#productConditions .price {background: #FFF; color: #FFF; position: relative; right: 15px; width: 20px; margin-right: -15px; overflow: hidden;}
+
+.notfound #reSearch select {display: none;} foi retirado do html (comentado) */
+
+
+
+
+/********************** NATAL ***************************/
+#bgNatal #mainNavigation li {height:85%;}
+#bgNatal #mainNavigation {margin:0 0 0 6.8%;}
+#bgNatal {background:url(../img/natal2008/bg_neve.gif) no-repeat center bottom; display:block; height:108px;}
+#bgNatal #mainNavigation li a {background:url(../img/natal2008/tabMenuBg2Natal.gif) no-repeat right 1px;}
+#bgNatal #mainNavigation li {background:url(../img/natal2008/tabMenuBg1Natal.gif) repeat-x right 1px;}
+#bgNatal #headerBox #header_bottom {position:relative;}
+#bgNatal #mainNavigation li.beforeLast a {background:url(../img/natal2008/menuTopoLeftNatal.gif) no-repeat right top;}
+#bgNatal #mainNavigation li.lastTab.yellow a {background:url(../img/natal2008/menuTopoRightNatal.gif) no-repeat right 1px;}
+#bgNatal #mainNavigation li.lastTab.yellow {background:url(../img/natal2008/menuTopoCenterNatal.gif) repeat-x left top;}
+#pirulito {display:block; position:absolute; left:52px; top:33px; z-index:100;}
+
+
+/********************** NATAL DEZEMBRO ***************************/
+#header #bgNatalDez #mainNavigation li {height:85%;}
+#header #bgNatalDez #mainNavigation {margin:0 0 0 4%;}
+#header #bgNatalDez {background:url(../img/natal2008/bg_completo.gif) no-repeat center bottom; display:block; height:108px;}
+#header #bgNatalDez #mainNavigation li a {background:url(../img/natal2008/tabMenuBg2NatalDez.gif) no-repeat right 1px;}
+#header #bgNatalDez #mainNavigation li {background:url(../img/natal2008/tabMenuBg1NatalDez.gif) repeat-x right 1px;}
+#header #bgNatalDez #headerBox {width:62em;}
+#header #bgNatalDez #headerBox #header_bottom {position:relative;}
+#header #bgNatalDez #mainNavigation li.beforeLast a {background:url(../img/natal2008/menuTopoLeftNatalDez.gif) no-repeat right top;}
+#header #bgNatalDez #mainNavigation li.lastTab.blue a {background:url(../img/natal2008/menuTopoRightNatalDez.gif) no-repeat right 0; color:#ffde00;}
+#header #bgNatalDez #mainNavigation li.lastTab.blue {background:url(../img/natal2008/menuTopoCenterNatalDez.gif) repeat-x left top;}
+#header #bgNatalDez #pirulito {display:block; position:absolute; left:20px; top:33px; z-index:100;}
+
+#header #bgNatalDez #headerBox #header_top {width:54em;}
+#header #bgNatalDez #cartao {margin:8px -8px 3px 8px;}
+#header #bgNatalDez #logo {left:15px;}
+#header #bgNatalDez #userNavigation {left:15.8em;}
+#header #bgNatalDez #quickSearch {left:16.1em;}
+#header #bgNatalDez #tel {left:23em;}
+#header #bgNatalDez #quickSearch #searchString, #header #bgNatalDez #quickSearch #keyword {width:19.7em;}
+
+
+
+
+
+
+/********************** Dia D ***************************/
+
+#mainContent h2.boxHeader2 strong span { display:none;}
+#mainContent .productList .box{background-color:#fff;}
+
+
+
+
+
+/**************** dia D Casa ****************/
+.boxHeader2 h2.sala, .boxHeader2 h2.homeOffice,.boxHeader2 h2.lavanderia,  .boxHeader2 h2.quarto, .boxHeader2 h2.quarto2, .boxHeader2 h2.cozinha,.boxHeader2 h2.jardim{overflow:hidden; zoom:1; background:url(http://images.americanas.com.br/Applications/site2007/paginas/diad/casa/img/fundo.jpg) left top repeat-x; text-align:right;}
+.boxHeader2.sala, .boxHeader2.homeOffice,.boxHeader2.lavanderia, .boxHeader2.quarto, .boxHeader2.quarto2,  .boxHeader2.cozinha,.boxHeader2.jardim{text-align:right; }
+.boxHeader2.sala  strong {background: url(http://images.americanas.com.br/Applications/site2007/paginas/diad/casa/img/sala.gif) no-repeat scroll 0% 50%; display:block; float:left;  height:4px; width:67px;}
+.boxHeader2.homeOffice  strong {background: url(http://images.americanas.com.br/Applications/site2007/paginas/diad/casa/img/homeOffice.gif) no-repeat scroll 0% 50%; display:block; float:left; height:4px; width:121px;}
+.boxHeader2.lavanderia  strong {background: url(http://images.americanas.com.br/Applications/site2007/paginas/diad/casa/img/lavanderia.gif) no-repeat scroll 0% 50%; display:block; float:left; height:4px; width:116px;}
+.boxHeader2.quarto  strong {background: url(http://images.americanas.com.br/Applications/site2007/paginas/diad/casa/img/quarto.gif) no-repeat scroll 0% 50%; display:block; float:left;  height:4px; width:84px;}
+.boxHeader2.quarto2  strong {background: url(http://images.americanas.com.br/Applications/site2007/paginas/diad/casa/img/tag_cartao.gif) no-repeat scroll 0% 50%; display:block; float:left;  height:4px; width:400px;}
+
+.boxHeader2.cozinha  strong {background: url(http://images.americanas.com.br/Applications/site2007/paginas/diad/casa/img/cozinhaLavanderia.gif) no-repeat scroll 0% 50%; display:block; float:left;   height:4px; width:250px;}
+
+.boxHeader2.jardim  strong {background: url(http://images.americanas.com.br/Applications/site2007/paginas/diad/casa/img/jardim.gif) no-repeat scroll 0% 50%; display:block;  height:4px; width:84px;}
+.productList.quarto li, .productList.quarto2 li, .productList.cozinha li, .productList.sala li {height:330px; _height:330px;}
+
+
+
+
+
+/**************** dia D Eletro ****************/
+
+.boxHeader2.tvLCD, .boxHeader2.audio ,.boxHeader2.dvdPlayer, .boxHeader2.eltroAuto {overflow:hidden; zoom:1; background:url(http://images.americanas.com.br/Applications/site2007/paginas/diad/eletronico/img/fundo.jpg) repeat-x left top; text-align:right;}
+.boxHeader2.tvLCD strong {background: url(http://images.americanas.com.br/Applications/site2007/paginas/diad/eletronico/img/linha_tvsLcd.gif) no-repeat scroll 0% 50%; display:block; float:left; height:10px; width:50%;}
+.boxHeader2.audio strong {background: url(http://images.americanas.com.br/Applications/site2007/paginas/diad/eletronico/img/linha_homeaudio.gif) no-repeat scroll 0% 50%; display:block; float:left; height:10px; width:50%; }
+.boxHeader2.dvdPlayer strong {background: url(http://images.americanas.com.br/Applications/site2007/paginas/diad/eletronico/img/linha_dvdPlayer.gif) no-repeat scroll 0% 50%; display:block; float:left; height:10px; width:50%; }
+.boxHeader2.eltroAuto strong {background: url(http://images.americanas.com.br/Applications/site2007/paginas/diad/eletronico/img/linha_automotivo.gif) no-repeat scroll 0% 50%; display:block; float:left; height:10px; width:50%; }
+
+
+/*em caso de precisar ampliar alguma área específica, alterar aqui embaixo */
+
+.productList.tvLCD li {height:340px; _height:340px; } 
+.productList.infoAcessorios li {height:340px; _height:340px; }
+
+
+
+
+
+
+
+
+
+
+/************************** alteraçao do boxHeader2 para o novo modelo de busca ***************************************/
+
+
+#boxNewSearch{width:98%;height:60px;border:3px solid #f6f5f6;margin:15px 0px 20px 0px;background:#fafafa url(http://images.americanas.com.br/Applications/site2007/img/boxNewSearchBg.gif);}
+#boxNewSearch img{display:block;padding-left:30px;}
+#boxNewSearch p{padding:7px 0px 0px 7px;}
+#boxNewSearch p span{float:left;line-height:20px;}
+#boxNewSearch select option{font-size:11px; padding-right:6px;}
+.boxHeader2.newSearch {font-size: 0.7em; text-transform: uppercase; color: #666; text-align: left; background: #d3d4c7 url(http://images.americanas.com.br/Applications/site2007/img/boxHeader2RightBgGray.gif) no-repeat right top;}
+.boxHeader2.newSearch strong {background: url(http://images.americanas.com.br/Applications/site2007/img/boxHeader2LeftBgGray.gif) no-repeat; padding: 10px 3px 10px 10px; display: block;}
+.newSearch {overflow:hidden;}
+.newSearch strong {background: url(http://images.americanas.com.br/Applications/site2007/img/boxHeader2LeftBg.gif) no-repeat; display: block; float:left; text-transform: uppercase; padding:8px 0 0 10px;}
+.newSearch form * {vertical-align:middle;}
+.newSearch form {display: block; text-align:right; padding:4px 10px 4px 10px;}
+.newSearch form label {font-weight:normal;}
+.newSearch form #SortingTypes {font-size:1em; text-transform: none; color:#73736c;}
+.newSearch form #labelSorting {font-size:1em; text-transform: none; color:#73736c;}
+#rightSideSerch #promoRelCol{padding-top:0px;}
+/* terminam aqui as alterações do boxHeader2 para o novo modelo de busca */
+
+
+/***************************************** Banner Dinamico **************************/
+
+#dinamicHeaderButtons #productCols {height:17em;min-height:17em;}
+#dinamicHeaderButtons ul{display:block;margin:10px auto 0pt;}
+#dinamicHeaderButtons li {display:block;float:left;line-height:37px;	text-align:center;width:49%;}
+
+/***************************************** Faixa de CDs - Icones **********************/
+caption.textoPeqPreto{ text-align:left; padding:5px 0px 15px 10px;}
+.textoPeqPretoBold.listen a {color:#000}
+
+#bottomBanner {
+	display:block;
+	margin-top:10px;
+	text-align:center;
+}
+
+/************************************** Promo_Pai - Revelacao Digital ******************************/
+
+.promo_pai{ padding:0 0 10px 55px; display:block}
+.promo_pai img { margin:20px 0 0 120px}
+
+
+/* RODAPE */
+
+
+
+#footer #footerBox {width:65em;}
+#footer #payMethods {width: 355px; display:block;  float: left; margin-left: 10px;}
+#footer #payMethods #marcas .titulo{font-size:67%; color:#666666; border-right:0; padding-top:2px; height:20px; display:block;}
+#footer #payMethods #marcas {border-right: 1px solid #999;}
+#footer #payMethods #marcas li {display: inline;}
+#footer #payMethods #marcas {float:left; border-right:none; margin:0 20px 0 0;}
+
+#footer #payMethods .marcas .titulo{font-size:67%; color:#666666; border-right:0; padding-top:2px; height:20px; display:block;}
+#footer #payMethods .marcas {border-right: 1px solid #999;}
+#footer #payMethods .marcas li {display: inline;}
+#footer #payMethods .marcas {float:left; border-right:none; margin:0 20px 0 0;}
+
+
+#footer #payMethods {width:643px;} 
+
+
+/************************************************************************/
+
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.pascoa {display:none;}
+
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.header_cartao {display:block; background:url(../img/americanas.gif) center top no-repeat;  width:139px;}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.header_cartao span {display:block; padding-top:6px; text-transform:uppercase;}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.header_cartao a {display:block; color:#fff; padding-top:5px; text-transform:uppercase; font-weight:bold;}
+
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.queima {display:block; background:url(../img/queima.gif) center top no-repeat;   width:121px;}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.queima span {display:block; padding-top:6px; text-transform:uppercase;}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.queima a {display:block; color:#fff; margin-top:5px; text-transform:uppercase; font-weight:bold;}
+
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.pais {display:none; background:url(../img/dia_pais.gif) center top no-repeat; width:138px;}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.pais span {display:block; padding-top:6px; text-transform:uppercase;}
+#header #mainNavigation li#showAll #allCategories #seeMore ul li.pais a {display:block; color:#fff; padding-top:5px; text-transform:uppercase; font-weight:bold;}
+
+
+
+
+
+/* css do header novo */
+
+
+
+#header #header_top {overflow: visible !important; z-index: 10;}
+#header #header_top:after {content: "."; display: block; overflow: hidden; float: none; clear: both; visibility: hidden; height: 0;}
+#header #quickSearch { z-index: 10;}
+
+div.resultAutoComplete, #results {display: none; position: absolute; top: 100%; left: 149px; z-index: 10; background: #fff; border: 1px solid #ccc;  padding: 10px; width: 222px; height:160px; font-size: 1.1em; text-align: left; overflow: auto; }
+div.resultAutoComplete a {color:#333; display:block; font-size:11px; margin:0 0 5px; padding-bottom:5px;}
+div.resultAutoComplete a.last {padding-bottom:0px; border-bottom:0;}
+div.resultAutoComplete a:hover {text-decoration:none;}
+div.resultAutoComplete .searchResultList {padding: 0; margin: 0; font-size: .5em; overflow: hidden; }
+div.resultAutoComplete .searchResultList li {padding: 2px; border-color: #ddd }
+div.resultAutoComplete .searchResultList li a {padding: 5px; margin: 0; }
+
+div.resultAutoComplete a:hover{ background:#e01616; color:#FFFFFF}
+
+
+
+
+
+
+
+/* webslice */
+.hslice{overflow:hidden;}
+
+#extendedFlashFull{}

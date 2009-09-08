@@ -1,0 +1,198 @@
+
+#dinamicHeader {
+	display:block;
+	width:775px;
+	overflow:hidden;
+	margin:0 auto;
+	margin-bottom: 10px;
+       padding:30px 0;
+}
+
+#dinamicHeader.cartao {width:837px;}
+
+#dinamicHeader #imagemDestaque {
+	display:block;
+	float:left;
+	width:193px;
+	text-align:center;
+}
+
+#dinamicHeader #imagemDestaque a {
+	display:block;
+}
+
+#dinamicHeader #buyProduct {
+	display:block;
+	margin-left:203px;
+	width:430px;
+       _margin-left:198px;
+}
+
+#dinamicHeader #buyProduct dl {
+	float:left;
+	/*margin-left:40px;*/
+	_margin-left:0px;
+	width:230px;
+	_width:230px;
+}
+
+#dinamicHeader #buyProduct, #dinamicHeader #buyProduct input {
+	text-align:left;
+}
+
+#dinamicHeader #buyProduct input {padding:20px 0 0 10px;}
+
+#dinamicHeader #nomeDestaque {
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:10px;
+	/*padding-top:10px;*/
+	display:block;
+	width:430px;
+	margin-left:203px;
+       _margin-left:198px;
+}
+
+#dinamicHeader.cartao #nomeDestaque {
+	width:430px;
+}
+
+
+#dinamicHeader #pecaCartao {
+	display:block;
+	width:193px;
+	background:url(http://images.americanas.com.br/Applications/site2007/img/dinamicHeader/bg_peca_seu_cartao.gif) no-repeat 0 0;
+	margin-left:10px;
+	float:right;
+	text-align:center;
+}
+
+#dinamicHeader #pecaCartao a {
+	padding-top:50px;
+	display:block;
+}
+
+#dinamicHeader #cartaoBox {
+	padding-top:10px;
+	background:url(http://images.americanas.com.br/Applications/site2007/img/dinamicHeader/divisor_comprar.gif) no-repeat right 0;
+}
+
+#dinamicHeader #cartaoBox span {
+	font-size:11px;
+	color:#9e0406;
+	display:block;
+       width:240px;
+	_width:230px;
+	text-align:right;
+	line-height:13px;
+}
+
+#dinamicHeader #cartaoBox a {
+	display:block;
+	float:right;
+	margin-right:35px;
+	_margin-right:14px;
+}
+
+#dinamicHeader .productList.last {
+	width:770px;
+}
+
+
+#dinamicHeader.twoColumns .productList.last div#productBox {
+	width:250px;
+	margin:0 auto;
+}
+
+
+#dinamicHeader .productList.last li div.productImage {
+	display:block;
+	float:left;
+	width:120px;
+	text-align:center;
+}
+
+#dinamicHeader .productList.last li h3.productName {
+	display:block;
+	width:120px;
+	margin-left:120px;
+	_padding:5px 0px 10px 0px;
+}
+
+#dinamicHeader.threeColumns .productList.last li {
+	width:33.2%;
+}
+
+#dinamicHeader.twoColumns .productList.last li {
+	width:49.8%;
+}
+
+#dinamicHeader .productList.last li {
+	text-align:left;
+	border-right:1px dotted;
+}
+
+#dinamicHeader .productList.last li.last {
+	border-right:none;
+}
+
+#dinamicHeader .productList.last li a.tag, #dinamicHeader .productList.last li a.for, #dinamicHeader .productList.last li a.from, #dinamicHeader .productList.last li a.parcel, #dinamicHeader .productList.last li a.condition {
+	margin-left:120px;
+}
+
+#dinamicHeader.dCartoes #nomeDestaque {
+	border:1px solid;
+	margin-left:0;
+}
+
+#dinamicHeader.cartao #productConditions {margin-left:0px;}
+#dinamicHeader #productConditions dd {_padding:0 0 5px 105px; padding:0 0 5px 110px;}
+#dinamicHeader #productConditions dt {_width:100px; width:105px;}
+
+
+
+#dinamicHeader.dCartoes {width:870px;}
+#dinamicHeader.dCartoes table {display:block; width:870px;}
+#dinamicHeader.dCartoes td.col1 {border-right:1px solid #ccc;}
+#dinamicHeader.dCartoes #buyProduct {margin-left:0; width:220px;}
+#dinamicHeader.dCartoes #buyProduct dl {width:220px; margin-left:0;}
+#dinamicHeader.dCartoes #productConditions dt {width:105px;}
+#dinamicHeader.dCartoes #productConditions dd {padding:0 0 5px 110px; text-align:right;}
+#dinamicHeader.dCartoes #buyProduct {text-align:right;}
+#dinamicHeader.dCartoes #buyProduct  .productBoxInside {padding:0 0 5px 0;}
+
+#photo {display:block; width:200px;}
+#photo span {text-align:center; font-size:12px; color:#000; display:block; font-weight:bold;}
+#photo a {display:block; text-align:center;}
+#prices {width:220px;}
+.priceCartao {color:#990000; font-size:11px; display:block; padding-bottom:5px; line-height:12px;}
+
+#prices div.productBox {background:none;}
+#prices div.productBoxInside {background:none;}
+#prices #productConditions .price {color:#666; font-weight:normal;}
+
+#dinamicHeader #productConditions dt.labelCard {color:#940400; line-height:20px; margin-top:10px; width:94%; padding:0 5px 0 0;}
+#dinamicHeader #productConditions dd.priceCard {clear:both; color:#940400; display:block; font-size:1.3em; font-weight:bold; padding:0 15px 0 0; text-align:right;}
+
+#dinamicHeader.dCartoes #productConditions dt.labelCard {color:#000; font-weight:bold; width:100%;}
+#dinamicHeader.dCartoes #productConditions dd.priceCard {padding-right:0;}
+
+/* CSS Document */
+#header #headerBox #header_top { width:59em; }
+#header #quickSearch #searchString, #header #quickSearch #keyword {color:#666666; margin-left:0.4em; width:20em;}
+#header #cartao { display:block; float:right; margin:8px 8px 3px 8px; }
+#header .info_carrinho{ display:block; width:160px; float:right; margin:5px 5px 0 8px;}
+#header .info_carrinho h5{ font-family:Arial, Helvetica, sans-serif; font-size:0.58em; color:#FFFFFF; margin:0 0 3px 0; }
+#header .info_carrinho h5 a { text-decoration:underline; font-size:9px; color:#fccccc}
+#header .info_carrinho .myBag { background:url(/Applications/site2007/img/BagRightBg2.gif) no-repeat  top right; height:39px; margin-top:5px; width: 145px;  }
+#header .info_carrinho .myBag p{background:url(/Applications/site2007/img/BagLeftBg.gif)  no-repeat top left; display:block; height:39px; }
+#header .info_carrinho .myBag p{ font-family:Arial, Helvetica, sans-serif; font-size:0.60em; padding:5px 0 0 50px; color:#FFFFFF;}
+#header .info_carrinho .myBag span{ display:block; text-align:center; width:80px; margin-top:5px}
+#header #quickSearch {text-align:left;}
+#header #userNavigation {left:12em; }
+#header #quickSearch {left:12.2em;}
+#header #tel { left: 17.4em}
+
+#header .info_carrinho .myBag p a{color: #4c4949; display:block;}
+#header .info_carrinho .myBag p a span:hover  {text-decoration: underline;} 
+#header .info_carrinho .myBag p a:hover  {text-decoration: none;} 

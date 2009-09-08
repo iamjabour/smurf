@@ -1,0 +1,13 @@
+/* ESTRUTURA PADRAO */
+
+#banners {height: 30px; margin-bottom: 5px;}
+#menuCol {width: 145px; float: left;}
+#content {margin-left: 150px;}
+#footer {margin-top: 5px; clear: both; padding-bottom: 10px; overflow: hidden;}
+
+
+/* CONTEUDO */
+
+#bannerCol {width: 145px; float: right;}
+
+.home_skin h1 {display: none;}

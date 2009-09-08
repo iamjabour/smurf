@@ -1,0 +1,51 @@
+/* MENU */
+
+ul.sectionMenu {text-transform: none; padding:0 7px;}
+ul.sectionMenu li {padding:5px 0; margin-bottom:0; }
+
+ul.sectionMenu.anuncios {padding:0 5px;}
+ul.sectionMenu.anuncios li { background:none; }
+ul.sectionMenu.anuncios li a {padding-left:0;}
+
+ul.sectionMenu li.lines {padding:0; font-weight:normal;}
+ul.sectionMenu li.lines ul li {background:none;}
+ul li .ofertas {text-transform:uppercase;}
+ul.sectionMenu li.lines ul li a {background:none;}
+ul.sectionMenu li.menuHasSubLine {padding:0;}
+ul.sectionMenu li.menuHasSubLine a {font-weight:bold; padding-left:0;}
+ul.sectionMenu li.menuHasSubLine ul li {background:url(../img/dotted_bgLine_hotsites.gif) repeat-x 0 bottom;}
+ul.sectionMenu li.single a {padding:5px 0 5px 0;}
+ul.sectionMenu li a, ul.sectionMenu li strong {color: #73736c; padding-left:7px; display:block; margin-top:5px;}
+ul.sectionMenu li ul li a, ul.sectionMenu li ul li strong {}
+ul.sectionMenu li a.line, ul.sectionMenu li strong.line {padding-left:0;}
+/*ul.sectionMenu li ul {padding-left: 0;}
+ul.sectionMenu li ul li {background:url(../img/dotted_bgLine_hotsites.gif) no-repeat 5px bottom;}*/
+ul.sectionMenu li {background:url(../img/dotted_bgLine_hotsites.gif) repeat-x 0 bottom;}
+ul.sectionMenu li ul {padding-left:0;}
+ul.sectionMenu li ul li {background:none;}
+ul.sectionMenu li ul li.last {background:none;}
+ul.sectionMenu li ul li a {display:inline; color: #73736c; background:url(../img/iconeMenuHotsites.gif) no-repeat 0 center;}
+
+ul.justLines li {background:url(../img/dotted_bgLine_hotsites.gif) repeat-x 0 bottom; padding:7px 0;}
+ul.justLines li a {margin-top:0; color: #73736c; background:url(../img/iconeMenuHotsites.gif) no-repeat 0 center; font-weight:normal;}
+
+/* inclusão das ofertas no menu do hotsite */
+ul.sectionMenu li a.ofertas{font-weight:bold; background:none; padding-left:0px;}
+
+/* LISTA DE PRODUTOS */
+.productList li {width: 33%;}
+
+/* BOX HEADER 2 */
+.boxHeader2 strong {padding: 8px 3px 8px 10px;}
+
+.boxHeaderSorting{zoom: 1;}
+/*.boxHeaderSorting form {display: none;}*/
+
+#mainContent h2.home form {display:none;}
+
+/*.boxHeader2.home strong {background: none;}*/
+
+div.headerNetBook {display:none;}
+div.headerNetBook.line {display:block; height:150px; background:url(http://images.americanas.com.br/Applications/site2007/paginas/hotsites/netbooks/Hot_netbooks.jpg) no-repeat center 0;}
+div.headerNetBook.line a {display:block; height:150px;}
+div.headerNetBook.line a strong {display:none;}

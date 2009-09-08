@@ -1,0 +1,9 @@
+#searchstatus {padding:1px 0 0 0;height:32px;background-color:#f1f1f1;border-bottom:2px solid #006699;}
+#sitesearch {width:555px;float:left;padding:3px 0 3px 0;}
+#gobutton {padding:0 5px 0 5px;}
+#welcome {font-size:10px;padding-top:2px;}
+#welcome .topline {font-weight:bold;}
+#welcome .botomline {}
+.searchtext {padding:0 5px 0 5px;font-weight:bold;color:#000;font-size:10px;}
+.searchpull {font-size:11px;width:140px;}
+.searchfield {font-size:11px;width:245px;}

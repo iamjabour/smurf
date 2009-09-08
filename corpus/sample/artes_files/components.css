@@ -1,0 +1,53 @@
+.freeShipping { background: #416b20; }
+
+.header .mainSubMenu { background:#416b20 none repeat scroll 0% 50%;}
+.header .mainSubMenu  li a {color: #b3c4a6;}
+
+.listSearchOptions { background:transparent url(../img/bgSearchResult.gif) no-repeat scroll left top; }
+
+.header .mainSubMenu { background:#416B20 none repeat scroll 0% 50%;}
+
+.tagCloud li a { color:#568E2A; }
+.tagCloud li a:hover { text-decoration: none; background-color:#568E2A; color: #fff; }
+
+.breadcrumb .selected a { color:#568E2A; }
+.breadcrumb .viewMore {color:#568E2A;}
+.breadcrumb .viewMore a{color:#568E2A;}
+
+.menuNavigation .allProduct .selected strong a, .breadcrumbBox .group li a { color:#568E2A; }
+
+.pageList li a:hover { background-color:#568E2A; }
+
+.pageList .selected a { background:#568E2A; }
+
+.preview .listVitrine.selected a, .preview .gridVitrine.selected a { color:#568E2A; }
+#to_grid_link1.selected {background: url(../img/tabDepartament.gif) no-repeat scroll left -46px;}
+#to_list_link1.selected {background: url(../img/tabDepartament.gif) no-repeat scroll -90px -46px;}
+
+.box3 {background: #FDFDFD url(../img/bgBox2.png) no-repeat scroll left -80px;}
+#area12 .box3 {background: #f4f4f4 url(../img/bgBox2.png) no-repeat left -80px;}
+.box3  .box3A{background: url(../img/bgBox2.png) no-repeat right -80px; overflow: hidden; padding: 5px 10px 5px 5px;}
+
+.topBox2{background: url(../img/bgBox2.png) no-repeat left top;}
+.topBox2 .topBox2A{background: url(../img/bgBox2.png) no-repeat right top;}
+
+.menuBrowseWorld .productSession .selected strong a { color:#568E2A; }
+
+.pageList li {float: none; display: inline;}
+.pageList .previous a, .pageList .after a {height: auto; display:inline; padding-top:0;}
+.pageList .previous a {background: url(../img/tabDepartament.gif) no-repeat scroll left -91px;}
+.pageList .after a {background: url(../img/tabDepartament.gif) no-repeat scroll -92px -91px;}
+.pageList .previous a:hover {background: url(../img/tabDepartament.gif) no-repeat scroll left -91px;}
+.pageList .after a:hover {background: url(../img/tabDepartament.gif) no-repeat scroll -92px -91px;}
+
+.menuNavigation .typeProduct li.selected  a{ color: #568E2A;}
+
+.pageList .after a img, .pageList .previous a img{visibility: hidden;}
+
+.open .topBox1 { background:transparent url(../img/bgBox2.png) no-repeat scroll left top;}
+.open .topBox1 .title5 { color:#FFF;}
+.open .topBox1 .topBox1A { background: transparent url(../img/bgBox2.png) no-repeat scroll right top;}
+#area12 .mostDesired .open .box3 {background: #f4f4f4 url(../img/bgBox2.png) no-repeat left -80px; }
+.open .box3  .box3A {background: url(../img/bgBox2.png) no-repeat right -80px; }
+
+.advancedSearchBox .advancedSearch {color:#416b20;}

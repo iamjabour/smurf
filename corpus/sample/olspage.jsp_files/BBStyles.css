@@ -1,0 +1,272 @@
+BODY{
+	background-color : #ffffff;	
+}
+
+BODY,FORM,TABLE,TD,SPAN,DIV,.Body-Headline,.Body-Small,.Body-Subhead-333399,.Body-Headline-Yellow,.Body-Headline-333399,.Legal,.Legal-White,.Body-Form,.Body-Strike,.Body-White,.Error,.Nav-cc3333,.Nav-666666,.Nav-ff6600,.Nav-339933,.Nav-993399,.Nav-66cc33,.Nav-0099ff,.Nav-0066cc,.Nav-Left,.Nav-ffffff,.Body-Feature,.Required,.DropDown,.Company-Info-Nav,.Legal-ff0000,.Body-Small-Grey,.Nav-666666,.Sort-Filter{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+FORM{
+	margin-bottom : 0px;
+	margin-left : 0px;
+	margin-right : 0px;
+	margin-top : 0px;
+	padding-bottom : 0px;
+	padding-left : 0px;
+	padding-right : 0px;
+	padding-top : 0px;
+}
+.Body-Feature,.Body-Headline-333399,.Body-Headline,.Body-Headline-Yellow {
+	font-size: 12px;
+}
+
+BODY,FORM,TABLE,TD,.Body-Form,.Body-Strike,.Body-White,.Body-Subhead,.Body-Subhead-White,.Body-Subhead-333399,.Body-333399,.Error{
+	font-size: 11px;
+}
+
+UL {
+	margin-left : 16px;
+	margin-top : 5px;
+	margin-bottom : 5px;
+	padding-left : 0px;
+}
+
+.Body-Small,.Body-Small-White,.Body-Small-Grey,.Body-Small-333399,.Required,.Nav-cc3333,.Nav-ff6600,.Nav-339933,.Nav-993399,.Nav-66cc33,.Nav-0099ff,.Nav-0066cc,.Nav-cc3333,.Nav-ff6600,.Nav-339933,.Nav-993399,.Nav-66cc33,.Nav-0099ff,.Nav-0066cc,.Error-Field,.Search2,.Nav-cc3333-subsub,.Nav-ff6600-subsub,.Nav-339933-subsub,.Nav-993399-subsub,.Nav-66cc33-subsub,.Nav-0099ff-subsub,.Nav-0066cc-subsub,.Nav-Left,.Error-Field,.Nav-ffffff,.DropDown,.Company-Info-Nav,.Nav-336699,.Nav-336699-subsub,.Sort-Filter {
+	font-size: 10px;
+}
+.Nav666666{
+	font-size: 11px;
+}
+.Legal,.Legal-White,.Legal-Grey,.Legal-333399,.Legal-ff0000 {
+	font-size: 9px;
+}
+BODY,FORM,TABLE,TD,.Body-Headline,.Body-Headline-Yellow,.Body-Form,.Body-Strike,.Body-White,.Legal,.Legal-White,.Legal-ff0000,.Body-Feature {
+	font-style: normal;
+}
+
+.Nav-cc3333,.Nav-ff6600,.Nav-339933,.Nav-993399,.Nav-66cc33,.Nav-0099ff,.Nav-0066cc,.Nav-cc3333,.Nav-ff6600,.Nav-339933,.Nav-993399,.Nav-66cc33,.Nav-0099ff,.Nav-0066cc,.Nav-666666,.Error,.Error-Field,.Search2.Body-Subhead,.Body-Subhead-333399,.Body-Subhead-White,.Nav-cc3333-subsub,.Nav-ff6600-subsub,.Nav-339933-subsub,.Nav-993399-subsub,.Nav-66cc33-subsub,.Nav-0099ff-subsub,.Nav-0066cc-subsub,.Nav-336699,.DropDown,.Nav-ffffff,.Company-Info-Nav,a.Sort-Filter,.Nav-336699-subsub{
+	text-decoration: none;
+}
+
+.Body-Headline,.Body-Headline-Yellow,.Nav-Left,.Body-Headline-333399,.Nav-cc3333,.Nav-ff6600,.Nav-339933,.Nav-993399,.Nav-66cc33,.Nav-0099ff,.Nav-0066cc,.Error,.Error-Field,.Search2.Body-Subhead,.Body-Subhead-333399,.Body-Subhead-White,.Nav-cc3333-subsub,.Nav-ff6600-subsub,.Nav-339933-subsub,.Nav-993399-subsub,.Nav-66cc33-subsub,.Nav-0099ff-subsub,.Nav-0066cc-subsub,.Nav-ffffff,.DropDown,.Company-Info-Nav,.Nav-336699,.Nav-336699-subsub,.Body-Subhead {
+	font-weight: bold;
+}
+
+.Body-Strike{
+	text-decoration: line-through;
+}
+
+a:link{ 
+	color: #333399; 
+}
+
+a:visited,.Error,.Error-Field,.Required,.Legal-ff0000{
+	color: #ff0000; 
+}
+
+a:hover{
+	color: #6666cc;
+}
+
+BODY,FORM,TABLE,TD,.Body-Headline,.Body-Form,.Body-Strike,.Body-Subhead,.Nav-Left,a.Nav-Left,a.Nav-Left:visited,.Body-Feature,.Legal,.DropDown,a.DropDown:visited {
+	color: #000000;
+}
+
+.Company-Info-Nav,a.Company-Info-Nav,a.Company-Info-Nav:visited,a.Company-Info-Nav:hover{
+ 	color: #333333;
+}
+
+.Legal-Grey,.Body-Small-Grey,.Nav-666666,a.Nav-666666:link,a.Nav-666666:visited{
+	color: #666666;
+}
+
+.Body-Strike{
+	color: #c0c0c0;
+}
+
+.Nav-cc3333,a.Nav-cc3333,a.Nav-cc3333:visited,.Nav-cc3333-subsub,a.Nav-cc3333-subsub,a.Nav-cc3333-subsub:visited,a.Nav-cc3333:link,a.Nav-cc3333-subsub:link{
+	color: #990000;
+}
+
+.Nav-ff6600,a.Nav-ff6600,a.Nav-ff6600:visited,a.Nav-ff6600-subsub,a.Nav-ff6600-subsub:visited,a.Nav-cc3333:hover,a.Nav-ff6600:link,a.Nav-ff6600-subsub:link{
+	color: #cc3333;
+}
+
+a.Nav-ff6600:hover{
+	color: #ff9933;
+}
+
+.Nav-339933,a.Nav-339933,a.Nav-339933:visited,a.Nav-339933:link,.Nav-339933-subsub,a.Nav-339933-subsub,a.Nav-339933-subsub:visited,a.Nav-339933-subsub:link{
+	color: #006600
+}
+
+a.Nav-339933:hover{
+	color: #66cc66;
+}
+
+
+.Nav-993399,a.Nav-993399,a.Nav-993399:visited,.Nav-993399-subsub,a.Nav-993399-subsub,a.Nav-993399-subsub:visited,a.Nav-993399:link,a.Nav-993399-subsub:link{
+	color: #660066;
+}
+
+a.Nav-993399:hover{
+	color: #cc99cc;
+}
+
+.Nav-66cc33,a.Nav-66cc33,a.Nav-66cc33:visited,.Nav-66cc33-subsub,a.Nav-66cc33-subsub,a.Nav-66cc33-subsub:visited,a.Nav-66cc33:link,a.Nav-66cc33-subsub:link{
+	color: #339900;
+}
+a.Nav-66cc33:hover{
+	color: #66cc33;
+}
+
+a.Nav-666666:hover{
+	color: #ffffff;
+}
+
+.Nav-666666,a.Nav-666666,a.Nav-666666:visited,.Nav-666666-subsub,a.Nav-666666-subsub,a.Nav-666666-subsub:visited,a.Nav-666666:link,a.Nav-666666-subsub:link{
+	color: #333333;
+}
+
+.Nav-0099ff,a.Nav-0099ff,a.Nav-0099ff:visited,.Nav-0099ff-subsub,a.Nav-0099ff-subsub,a.Nav-0099ff-subsub:visited,a.Nav-0099ff:link,a.Nav-0099ff-subsub:link{
+	color: #0066cc;
+}
+
+a.Nav-0099ff:hover{
+	color: #0099ff;
+}
+
+.Nav-0066cc,a.Nav-0066cc,a.Nav-0066cc:visited,.Nav-0066cc-subsub,a.Nav-0066cc-subsub,a.Nav-0066cc-subsub:visited,a.Nav-0066cc:link,a.Nav-0066cc-subsub:link{
+	color: #333366;
+}
+a.Nav-0066cc:hover{
+	color: #99cccc;
+}
+
+.Body-Headline-Yellow {
+	color: #ffff00;
+}
+
+.Body-Headline-333399,.Body-Subhead-333399,.Body-333399,.Body-Small-333399,.Legal-333399,.Nav-336699,a.Nav-336699,a.Nav-336699:visited,a.Nav-336699-subsub:link,a.Nav-336699-subsub,a.Nav-336699-subsub:visited{
+	color: #333399;
+}
+
+a.Nav-336699:hover{
+	color: #99ccff;
+}
+
+.Legal-White,a.Legal-White,a.Legal-White:visited,.Body-White,a.Nav-Left:hover,a.Nav-0066cc-subsub:hover,a.Nav-0099ff-subsub:hover,a.Nav-66cc33-subsub:hover,a.Nav-993399-subsub:hover,a.Nav-339933-subsub:hover,a.Nav-ff6600-subsub:hover,a.Nav-cc3333-subsub:hover,.Body-Subhead-White,.Body-Small-White,.Nav-ffffff,a.Nav-ffffff,a.Nav-ffffff:visited,a.Nav-ffffff:hover,a.Nav-ffffff:active,a.Sort-Filter:link,a.Sort-Filter:visited,a.Sort-Filter,a.Nav-336699-subsub:hover{
+	color: #ffffff;
+}
+
+.Error-Field{
+	text-transform : uppercase;
+}
+.Research-Table {
+	background : #99ccff url(http://images.bestbuy.com/BestBuy_US/images/global/misc/em_backgrndguy.gif);
+	background-repeat : no-repeat;
+	background-position: bottom;
+}
+a.Body-Small-White:link{ 
+	color: #ffffff; 
+}
+
+a.Body-Small-White:visited{
+	color: #ffffff; 
+}
+
+a.Body-Small-White:hover{
+	color: #ffffff;
+}
+.m18_priceblock {
+	margin-top:5px;
+	padding-left:3px;
+	padding-top:1px;
+	padding-bottom:2px;
+	background-color:#ffff10;
+	width:107;
+	font-weight:bold;
+	font-size: 9px;
+}
+ul.m18_checkmarks{
+	margin-top:5px;
+	margin-left:22px;
+	list-style-image: url(http://images.bestbuy.com/BestBuy_US/images/global/misc/misc_check_ff0000.gif);
+}
+li.m18_checkmarks{
+	margin-top:2px;
+	font-weight:bold;
+	font-size: 9px;
+	color: #333399;
+}
+ul.m18_seemore{
+	margin-top:15px;
+	margin-left:18px;
+	list-style-image: url(http://images.bestbuy.com/BestBuy_US/images/global/misc/misc_arwr_red.gif);
+}
+li.m18_seemore{
+	margin-top:2px;
+	font-size: 9px;
+}
+#centerwellcontainer {padding-left:4px;padding-right:5px;font-size:10px;}
+.storeitem {margin-bottom:10px;}
+.storeitem .button{padding-left:0px;padding-right:5px;float:left;}
+.storeitem .desc {padding-left:5px;padding-right:5px;float:left;font-size:11px;}
+.storeitem .desc-strike {color:#999999;padding-left:5px;padding-right:5px;float:left;font-size:11px;}
+.storeitem .link {padding-left:5px;padding-right:0px;font-size:11px;}
+.frame {margin-top:10px;border:1px solid #cccccc;}
+.frame .content{padding-left:7px;padding-right:7px;padding-bottom:10px;font-size:10px;}
+.frame .head {background:#cccccc;font-size:12px;margin-bottom:5px;padding:2px 7px 2px 7px;}
+.frame .subhead {margin-left:15px;font-size:10px;}
+.pageid {background:#333399;}
+.chkform INPUT,SELECT {margin-right:10px;font-size:10px;}
+FORM,INPUT,SELECT {margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;}
+.lg {font-size:11px;}
+.storecolumn {padding-top:7px;padding-left:5px;padding-right:5px;font-size:10px;vertical-align:middle;}
+.unavail {color:#999999;}
+.stdheader {padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:3px;font-size:10px;font-weight:bold;color:#ffffff;border-right: 1px solid #ffffff;background:#999999;}
+.stdcolumn {padding-left:5px;padding-right:5px;font-size:10px;}
+.strike {text-decoration: line-through;}
+.m19_priceblock {margin-bottom:5px;padding-left:3px;padding-top:1px;padding-bottom:2px;background:#ffff10;width:107;font-weight:bold;font-size:9px;}
+.priceblock {margin-top:3px;margin-bottom:5px;padding-left:3px;padding-top:1px;padding-bottom:2px;background-color:#ffff10;width:107;font-weight:bold;font-size:9px;}
+.rebates {margin-bottom:5px;font-size:9px;}
+.addtocart {margin-top:3px;margin-bottom:3px;}
+.cart_priceblock {margin-top:3px;margin-bottom:5px;padding-left:3px;padding-top:1px;padding-bottom:2px;background:#ffff10;width:127;font-weight:bold;font-size:12px;}
+.storepickmessage {margin-top:5px;background:#ffff00;padding:5px;}
+.m19header {padding-left:5px;padding-right:5px;font-size:10px;font-weight:bold;color:#ffffff;border-right: 1px solid #ffffff;background:#999999;}
+.m19column {padding-left:5px;padding-right:5px;font-size:10px;}
+.m19_checkmarks{background-image: url(http://images.bestbuy.com/BestBuy_US/images/global/misc/misc_check_ff0000.gif);background-repeat: no-repeat;margin-bottom:5px;padding-left:13px;font-weight:bold;font-size: 9px;color: #333399;}
+.m19avail {background-color:#dddddd;font-size:9px;padding:3px;padding-left:5px;padding-right:5px;margin-top:3px;}
+.modelnumber {white-space: nowrap;}
+#cnavcontainer- {background-color:#f1f1f1;}
+#cnavcontainer-cc3333 {background-color:#ffe0dc;}
+#cnavcontainer-ff6600 {background-color:#ffdbc5;}
+#cnavcontainer-339933 {background-color:#cfe7cf;}
+#cnavcontainer-993399 {background-color:#f2e9f7;}
+#cnavcontainer-66cc33 {background-color:#dbf1cf;}
+#cnavcontainer-0099ff {background-color:#d6ebff;}
+#cnavcontainer-0066cc {background-color:#e5f2f2;}
+#cnavcontainer-336699 {background-color:#cfe7cf;}
+#cnavcontainer-666666 {background-color:#f1f1f1;}
+#centernav {width:170px;float:left;}
+#centernav UL {padding-right:10px;padding-left:5px;padding-bottom:10px;font-size:11px;}
+.cnavh {font-size:11px;font-weight:bold;background-color:#999999;color:#ffffff;padding:5px;}
+#cnavcontainer-cc3333 .cnavh {background-color:#cc3333;}
+#cnavcontainer-ff6600 .cnavh {background-color:#ff6600;}
+#cnavcontainer-339933 .cnavh {background-color:#339933;}
+#cnavcontainer-993399 .cnavh {background-color:#993399;}
+#cnavcontainer-66cc33 .cnavh {background-color:#66cc33;}
+#cnavcontainer-0099ff .cnavh {background-color:#0099ff;}
+#cnavcontainer-0066cc .cnavh {background-color:#0066cc;}
+#cnavcontainer-336699 .cnavh {background-color:#336699;}
+#cnavcontainer-666666 .cnavh {background-color:#666666;}
+.clearer {clear: left; line-height: 0px; height: 0px;}
+.pdpavail {background-color:#dddddd;font-size:9px;padding:3px;padding-left:5px;padding-right:5px;margin-top:3px;}
+ul.bullet-sq-ccccff {list-style-image: url(http://images.bestbuy.com/BestBuy_US/images/global/misc/misc_bullet_ccccff.gif);}
+li.bullet-sq-ccccff {margin-bottom:3px;}
+
+#swatches {margin:5px 0 5px 0;}
+#swatches td.label {font-size:10px;padding:2px 2px 2px 5px;}
+#swatches td.swatch {padding:4px 0 2px 0;}
+#swatches .head {font-weight:bold;font-size:10px;}
+#addrterms {border:1px solid #cccccc;padding:7px;margin:10px 0 10px;background-color:#ffffcc;}
+#addrterms TD {vertical-align:top;}

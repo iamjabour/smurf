@@ -1,0 +1,22 @@
+
+vjo.ctype("vjo.darwin.domain.finding.promo.PromoClient").needs(["vjo.dsf.assembly.VjClientAssembler","vjo.dsf.assembly.VjClientAssemblerRequest","vjo.darwin.domain.finding.ajax.AjaxUtils"]).satisfies("vjo.dsf.common.IJsServiceHandler").protos({AjaxUtils:vjo.darwin.domain.finding.ajax.AjaxUtils,ClientAssembler:vjo.dsf.assembly.VjClientAssembler,ClientAssemblerRequest:vjo.dsf.assembly.VjClientAssemblerRequest,constructs:function(_1){this.merch="ME";this.prefix="PROMO";this.promos=new Object();this.request=_1;},invoke:function(_2){this.loader=document.createElement("div");this.AjaxUtils.addAjaxHandler(this,this.onAjaxPage,"Page.promoRequest",document.body);this.AjaxUtils.addEventHandler(this,window,"load",this.onLoad);_2.returnData=false;return _2;},onLoad:function(){var _3=this;window.setTimeout(function(){_3.loadRequest(_3.request);},0);},loadRequest:function(_4){this.request=_4;this.visiblePromos=new Array();var cb=(this.request.useCallback)?"callback":"cb";var _6=new this.ClientAssemblerRequest(this.request.url,this.onLoadRequest,this,"callback");this.ClientAssembler.load(_6);},onLoadRequest:function(_7){if(!_7||!_7.data||!_7.data.map){return;}
+if(_7.length>0){_7=_7[0];}
+var _8=_7.data.map;var _9=_8.Style;if(_9){this.loadStyle(_9);}
+this.hidePromos();this.promos=new Object();for(var _a in _8){var _b=_a.match(/ME([0-9]+)(.*)/);if(_b&&(_b[1]=="74541")){this.loadDeals(_b,_8[_a]);}else{if(_b){this.loadPromo(_b[1],_b[2],_8[_a]);}}}
+var _c=_8.Script;if(_c){this.loadScript(_8.Script);}
+var _d=new vjo.dsf.Message("PROMO_COMPLETE");_d.vjPromoClientObject=this;vjo.dsf.ServiceEngine.handleRequest(_d);},loadStyle:function(_e){var _f=document.body.appendChild(document.createElement("style"));_f.setAttribute("type","text/css");if(_f.styleSheet){_f.styleSheet.cssText=_e;}else{_f.appendChild(document.createTextNode(_e));}},loadScript:function(_10){with(window){try{eval(_10);}
+catch(except){}
+vjo.dsf.EventDispatcher.reBind();}},hidePromos:function(){for(var _11 in this.promos){var _12=document.getElementById(_11);if(_12!=null){_12.style.display="none";}}},loadDeals:function(_13,_14){if(this.request.lowResults){this.loadPromo(_13[1].concat("LSRP"),_13[2],_14);}else{if(this.request.nullResults){this.loadPromo(_13[1].concat("NSRP"),_13[2],_14);}else{this.loadPromo(_13[1],_13[2],_14);}}},loadPromo:function(id,_16,_17){this.loader.innerHTML=_17;var _18=document.getElementById(this.prefix.concat(id));if(_18==null){return;}
+var _19=document.getElementById(this.merch.concat(id,_16));if(_19==null){return;}
+this.loader.firstChild.id=this.merch.concat(id,_16);_19.parentNode.replaceChild(this.loader.firstChild,_19);if(_18.tagName=="TABLE"&&navigator.userAgent.indexOf("MSIE")<0){_18.style.display="table";}else{_18.style.display="block";}
+this.promos[this.prefix.concat(id)]=_18;this.visiblePromos.push(_18.id);},onAjaxPage:function(_1a){var _1b=_1a.response.promoRequest;if((_1b!=null)&&(_1b.url!=this.request.url)){this.loadRequest(_1b);}}}).endType();
+
+vjo.ctype("vjo.darwin.domain.finding.ecm.FindingRTMHelper").needs("vjo.dsf.document.Element").props({removeClass:function(id){var _2=vjo.dsf.document.Element.get(id);if(_2){_2.className="";}},openWindow:function(_3){var _4=730;var _5=560;var _6="height="+_4+",width="+_5+",toolbar=0,location=0,status=0,scrollbars=1,resizable=0,menubar=0";return window.open(_3,"WhatsThisYahooGraphicalPopUp",_6,true);}}).endType();
+
+vjo.ctype("vjo.darwin.domain.finding.promo.handlers.PromoHandler").needs("vjo.dsf.cookie.VjCookieJar").props({onClick:function(_1){this.clearRecentViewedItems();var _2=document.getElementById(_1);if(_2!=null){_2.className=_1+" empty";_2.style.display="none";}
+return false;},clearRecentViewedItems:function(){this.oCj.writeCookielet("ebay","lvmn",this.removerecentlyvieweditemsonly("ebay","lvmn"));this.oCj.writeCookielet("dp1","vrvi",this.removerecentlyvieweditemsonly("dp1","vrvi"));},removerecentlyvieweditemsonly:function(_3,_4){var _5=this.oCj.readCookie(_3,_4);var _6=_5.split("|");var _7=_6[0];_6[0]="0";for(index=2;index<parseInt(2)+parseInt(_7);index=index+1){_6[index]="";}
+var _8="";for(index=0;index<_6.length;index=index+1){if(_6[index]!=""){_8=_8+_6[index]+"|";}}
+return _8;}}).inits(function(){vjo.darwin.domain.finding.promo.handlers.PromoHandler.oCj=vjo.dsf.cookie.VjCookieJar;}).endType();
+
+// en_US/e631/Finding_RTM_e6319884065_2_en_US
+// b=9884065

@@ -1,0 +1,701 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>
+Lost psa-request results
+</title>
+</head><body bgcolor="#ffffff">
+<h2>
+Lost
+<tt>
+psa-request
+</tt>
+results
+</h2>
+<a href="http://bmerc-www.bu.edu/">
+BMERC
+</a>
+:
+<a href="">
+<tt>
+psa-request
+</tt>
+</a>
+:
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/request.htm">
+Submit request
+</a>
+: Lost results
+<hr>
+<blockquote>
+<font size="+1">
+<b>
+Server upgrade:
+</b>
+</font>
+On 25 April 2001, version 2.4.2 of the
+<tt>
+psa-request
+</tt>
+server software was installed. The new software will allow us to add a
+new analysis type at the start of May. As soon as new features are
+introduced, they will be announced on the
+<a href="">
+<tt>
+psa-request
+</tt>
+home page
+</a>. We hope to complete these upgrades without any interruption in
+service. Please contact us immediately if you experience any
+difficulty.
+<p>
+<font size="+1">
+<b>
+Server outage:
+</b>
+from approximately 0900 EST on 23 March through 22:30 on 29 March
+</font>
+<br><br>
+The
+<tt>
+psa-request
+</tt>server went down for a protracted period because of a disk failure
+on the machine on which it runs, which also happens to be the Web
+server. The bad disk was replaced on 26 March, but it took three more
+days for all of the software necessary to run
+<tt>
+psa-request
+</tt>to be reinstalled. As of 18:20 on 27 March, starting from request
+30051, the server resumed processing requests, but the Web choice for
+returning results was disabled. Full Web operation was restored at
+22:30 on 29 March, starting with request 30102, though there may still
+be some lingering flakiness. We apologize for this inconvenience.
+</p>
+</blockquote>
+<p>
+The
+<tt>
+psa-request
+</tt>server is sometimes unable to return results to the user. This is
+usually due to an error in entering the e-mail address; the Web
+interface to the server has no way of checking that the e-mail address
+it is given actually works, short of using it. These cases are noted
+below with either "Host unknown" or "User unknown", depending on
+whether the problem is in the host part of the e-mail address, or the
+user name. (But the "Host unknown" case has become far rarer since the
+Web submission page was upgraded to validate the host part of the
+address on 25 August 1999.)
+</p>
+<p>Sometimes, even though the address is valid, the remote mail system
+cannot accept messages, and delivery fails. This can happen for any
+number of reasons, including user storage quota exceeded, server
+resources exhausted, and various configuration errors on the remote
+server. For an example of the latter, if
+<tt>
+mail.random.edu
+</tt>
+has been told to forward mail for
+<tt>
+"joe.user@mail.random.edu"
+</tt>
+to
+<tt>
+bio.random.edu
+</tt>
+, but
+<tt>
+bio.random.edu
+</tt>
+has been told to forward it to
+<tt>
+mail.random.edu
+</tt>
+, then
+<tt>
+joe.user
+</tt>isn't going to be able to get mail messages from anybody until one
+system or the other is told to accept them. These remote mail system
+problems are reported with whatever explanation the remote mail server
+gave for being unable to deliver the message, enclosed in double quotes
+("), with any additional information enclosed in parentheses. If it
+doesn't say "may still be delivered", then our mail delivery system has
+given up, and you will need to resubmit the request once your sysadmin
+has fixed the underlying problem.
+</p>
+<p>Another common problem is that the mail system may be temporarily
+unable to reach the remote host, or the remote host may be overloaded
+and unable to handle the connection. These problems are reported as
+"Connection timed out" or "Connection refused," or even "Network is
+unreachable." If the mail system indicates that it is still attempting
+to deliver these messages, as it usually does in these cases, that is
+noted with "may still be delivered" in the "Reported problem" column.
+If the address is valid, the mail system usually succeeds sooner or
+later, but such requests are still logged below because otherwise the
+addressee has no way to tell whether delivery has failed temporarily or
+permanently.
+</p>
+<p>
+Shown below are all failed requests since 1 January 2001:
+</p>
+<p></p>
+<center>
+<table tabid="00523" genuinetable="yes" tabletitle="Shown below are all failed requests since 1 January 2001: " border="2">
+<tbody><tr>
+<th>
+Req. ID
+</th>
+<th>
+Submission date
+<br><br>
+(EST or EDT)
+</th>
+<th>
+Reported problem
+</th>
+</tr>
+<!--boilerplate do="make lost.tmp" nl insert-file="lost.tmp" -->
+<tr valign="top">
+<td>
+28423
+</td>
+<td>
+Mon 8 Jan 06:47:52
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+28422
+</td>
+<td>
+Mon 8 Jan 06:47:15
+</td>
+<td>
+User unknown (same user as 28423)
+</td>
+</tr>
+<tr valign="top">
+<td>
+28424
+</td>
+<td>
+Mon 8 Jan 08:29:04
+</td>
+<td>
+User unknown (same user as 28423)
+</td>
+</tr>
+<tr valign="top">
+<td>
+28505
+</td>
+<td>
+Fri 12 Jan 09:07:37
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+28542
+</td>
+<td>
+Mon 15 Jan 06:27:45
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+28551
+</td>
+<td>
+Mon 15 Jan 10:28:09
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+28552
+</td>
+<td>
+Mon 15 Jan 10:28:19
+</td>
+<td>
+User unknown (same user as 28551)
+</td>
+</tr>
+<tr valign="top">
+<td>
+28610
+</td>
+<td>
+Wed 17 Jan 01:41:46
+</td>
+<td>
+User unknown (or misspelled domain?)
+</td>
+</tr>
+<tr valign="top">
+<td>
+28611
+</td>
+<td>
+Wed 17 Jan 01:44:42
+</td>
+<td>
+User unknown (same user as 28610)
+</td>
+</tr>
+<tr valign="top">
+<td>
+28615
+</td>
+<td>
+Wed 17 Jan 06:22:57
+</td>
+<td>
+"Transaction failed" (only one plot affected)
+</td>
+</tr>
+<tr valign="top">
+<td>
+28790
+</td>
+<td>
+Wed 24 Jan 04:28:28
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+28791
+</td>
+<td>
+Wed 24 Jan 04:31:17
+</td>
+<td>
+User unknown (same user as 28790)
+</td>
+</tr>
+<tr valign="top">
+<td>
+28792
+</td>
+<td>
+Wed 24 Jan 04:33:32
+</td>
+<td>
+User unknown (same user as 28790 et seq.)
+</td>
+</tr>
+<tr valign="top">
+<td>
+28794
+</td>
+<td>
+Wed 24 Jan 04:35:51
+</td>
+<td>
+User unknown (same user as 28790 et seq.)
+</td>
+</tr>
+<tr valign="top">
+<td>
+28795
+</td>
+<td>
+Wed 24 Jan 04:36:25
+</td>
+<td>
+User unknown (same user as 28790 et seq.)
+</td>
+</tr>
+<tr valign="top">
+<td>
+28796
+</td>
+<td>
+Wed 24 Jan 04:38:07
+</td>
+<td>
+User unknown (same user as 28790 et seq.)
+</td>
+</tr>
+<tr valign="top">
+<td>
+29025
+</td>
+<td>
+Mon 5 Feb 10:01:39
+</td>
+<td>
+"Illegal host/domain name found"
+</td>
+</tr>
+<tr valign="top">
+<td>
+29030
+</td>
+<td>
+Mon 5 Feb 11:51:03
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+29034
+</td>
+<td>
+Mon 5 Feb 15:12:31
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+29053
+</td>
+<td>
+Tue 6 Feb 03:51:27
+</td>
+<td>
+"Relaying denied" (probable configuration problem; only 2 messages affected)
+</td>
+</tr>
+<tr valign="top">
+<td>
+29085
+</td>
+<td>
+Tue 6 Feb 18:47:01
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+29326
+</td>
+<td>
+Sat 17 Feb 22:19:17
+</td>
+<td>
+User unknown ("User account is no longer active")
+</td>
+</tr>
+<tr valign="top">
+<td>
+29481
+</td>
+<td>
+Mon 26 Feb 14:51:11
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+29549
+</td>
+<td>
+Tue 27 Feb 14:51:31
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+29908
+</td>
+<td>
+Wed 14 Mar 18:39:09
+</td>
+<td>
+"recipient reached disk quota"
+</td>
+</tr>
+<tr valign="top">
+<td>
+29909
+</td>
+<td>
+Wed 14 Mar 18:50:59
+</td>
+<td>
+"recipient reached disk quota" (same user as 29908)
+</td>
+</tr>
+<tr valign="top">
+<td>
+30017
+</td>
+<td>
+Wed 21 Mar 19:30:28
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+30247
+</td>
+<td>
+Fri 6 Apr 16:09:25
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+30274
+</td>
+<td>
+Mon 9 Apr 08:26:11
+</td>
+<td>
+"delivery restrictions in place" -- contact your sysadmin
+</td>
+</tr>
+<tr valign="top">
+<td>
+30282
+</td>
+<td>
+Mon 9 Apr 15:23:04
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+30268
+</td>
+<td>
+Mon 9 Apr 05:29:12
+</td>
+<td>
+Configuration error
+</td>
+</tr>
+<tr valign="top">
+<td>
+30324
+</td>
+<td>
+Thu 12 Apr 08:29:17
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+30409
+</td>
+<td>
+Thu 19 Apr 11:06:56
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+30627
+</td>
+<td>
+Sun 29 Apr 03:36:04
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+30739
+</td>
+<td>
+Fri 4 May 04:38:57
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+30769
+</td>
+<td>
+Mon 7 May 07:47:10
+</td>
+<td>
+Configuration error; contact your ISP
+</td>
+</tr>
+<tr valign="top">
+<td>
+30782
+</td>
+<td>
+Mon 7 May 23:42:46
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<tr valign="top">
+<td>
+30783
+</td>
+<td>
+Mon 7 May 23:43:11
+</td>
+<td>
+User unknown (same user as 30782)
+</td>
+</tr>
+<tr valign="top">
+<td>
+30784
+</td>
+<td>
+Mon 7 May 23:44:06
+</td>
+<td>
+User unknown (same user as 30782 et seq.)
+</td>
+</tr>
+<tr valign="top">
+<td>
+30785
+</td>
+<td>
+Mon 7 May 23:44:12
+</td>
+<td>
+User unknown (same user as 30782 et seq.)
+</td>
+</tr>
+<tr valign="top">
+<td>
+30951
+</td>
+<td>
+Mon 14 May 06:39:39
+</td>
+<td>
+User unknown
+</td>
+</tr>
+<!--/boilerplate-->
+</tbody></table>
+</center>
+<p>
+The
+<b>
+request ID
+</b>
+is the number quoted on the
+<b>
+PSA Submission
+</b>
+page in response to submitting
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/request.htm">
+an interactive request
+</a>, and referenced by all subsequent correspondence. When a sequence
+is submitted, either by mail or by Web interface, the mail server will
+send an acknowledgement within a few minutes. If you do not receive
+such a message (allowing for possible delay in mail delivery), that
+means that either the server is down, or was unable to get the results
+back to you. In either case, you should check this page.
+</p>
+<p>
+This page was last updated at
+<!--boilerplate nl eval="(insert (current-time-string) ?\; ? )"-->
+Mon May 14 08:38:36 2001;
+<!--/boilerplate-->
+the database of lost requests was updated at
+<!--boilerplate nl
+    insert-do="ls -l lost.tbl | perl -ne 'print substr($_,41,12)'"
+    insert-string=".\n"-->
+May 14 08:38.
+<!--/boilerplate-->It is usually updated at the end of each working day
+(for which an update is necessary, of course). If, after waiting a day,
+your results have still not appeared, the request ID should show up on
+this list. If it does not, or if you find that the posted reason does
+not help you to correct the problem, please send e-mail to
+<a href="mailto:rogers@darwin.bu.edu">
+Bob Rogers
+</a>
+, referencing the request ID.
+<!--boilerplate nl insert-file="end.bp.html" -->
+<!-- This goes at the bottom of all files.  -.- rgr, 19-Mar-98. -->
+</p>
+<p></p>
+<hr>
+<p>
+Go to:
+</p>
+<ul>
+<li>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/request.htm">
+Submit a sequence analysis request.
+</a>
+</li>
+<li>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/#topics">
+List of topics about the PSA server.
+</a>
+</li>
+<li>
+<a href="http://bmerc-www.bu.edu/">
+The BMERC Home Page.
+</a>
+</li>
+</ul>
+<p></p>
+<hr>
+<p>
+Please direct your questions and comments about these Web pages and the PSA e-mail server to:
+</p>
+<address></address>
+<blockquote>
+<a href="mailto:rogers@darwin.bu.edu">
+Bob Rogers
+<tt>
+&lt;rogers@darwin.bu.edu&gt;
+</tt>
+</a>
+<br><br>
+<a href="http://bmerc-www.bu.edu/">
+BioMolecular Engineering Research Center
+</a>
+<br><br>
+<a href="http://www.bu.edu/">
+Boston University
+</a>
+, Boston Massachusetts
+</blockquote>
+<!-- hhmts start -->
+Last modified: Mon May 14 08:38:36 EDT 2001
+<!-- hhmts end -->
+<!--/boilerplate-->
+</body></html>

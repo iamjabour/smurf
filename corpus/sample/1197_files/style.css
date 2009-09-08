@@ -1,0 +1,26 @@
+/* geral */
+* { padding:0; margin:0; }
+img { border:none; }
+
+/* banner hotsites */
+.hotsiteHeader { background:url(../img/header.jpg) no-repeat center top; height:172px;}
+.hotsiteHeader a span {display:none;}
+.hotsiteHeaderNovo { background:url(../img/diadeinfo.jpg) no-repeat center top; height:180px}
+.hotsiteHeader .simpleBanner {display:block; margin:0 auto; text-align:center; height:130px;}
+.hotsiteHeader .cartao {display:block; margin:0 auto; text-align:center; height:35px; margin-top:5px;}
+.hotsiteHeaderNovo .simpleBanner {display:block; margin:0 auto; text-align:center; height:130px; width:100%}
+
+.hotsiteHeader span strong {display:none;}
+.hotsiteHeader .link1{display: block; height: 120px;}
+.hotsiteHeader .link2{display: block; height: 50px;}
+.amdNote {display:block; margin:0 auto; height:174px; text-align: center; margin:0px; background: url(../img/header_amdNote1899.jpg) no-repeat center top;}
+.notebookCore2DuoCCE {display:block; margin:0 auto; height:174px; text-align: center; margin:0px; background: url(../img/header_notebookCore2DuoCCE.jpg) no-repeat center top;}
+.noteduocce {display:block; margin:0 auto; height:174px; text-align: center; margin:0px; background: url(../img/header_noteccegratistargus.gif) no-repeat center top;}
+.noteccetargus {display:block; margin:0 auto; height:174px; text-align: center; margin:0px; background: url(../img/header_noteccetargus.jpg) no-repeat center top;}
+.microboardDuo2 {display:block; margin:0 auto; height:174px; text-align: center; margin:0px; background: url(../img/header_noteroboard.gif) no-repeat center top;}
+.microboardDuo2CCE {display:block; margin:0 auto; height:174px; text-align: center; margin:0px; background: url(../img/header_notebook2gb.jpg) no-repeat center top;}
+.noteItautec {display:block; margin:0 auto; height:174px; text-align: center; margin:0px; background: url(../img/header_Notebook_Itautec.jpg) no-repeat center top;}
+.noteToshiba {display:block; margin:0 auto; height:174px; text-align: center; margin:0px; background: url(http://images.americanas.com.br/site2007/banners/header_noteSempToshiba173GHz.jpg) no-repeat center top;}
+.vistaOffice {display:block; margin:0 auto; height:174px; text-align: center; margin:0px; background: url(../img/header_Vista_Office.jpg) no-repeat center top;}
+.Core2Duo {display:block; margin:0 auto; height:174px; text-align: center; margin:0px; background: url(../img/header_notebook_HP_Core2Duo.jpg) no-repeat center top;}
+.amelhorlojadenote {display:block; margin:0 auto; height:174px; text-align: center; margin:0px; background: url(../img/Header_amelhorlojadenote.jpg) no-repeat center top;}

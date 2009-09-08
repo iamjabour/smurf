@@ -1,0 +1,26 @@
+.depto578  .storeHeader strong, .depto578  .storeHeader a {padding:11px 3px;}
+.depto581  .storeHeader strong, .depto581  .storeHeader a {padding:11px 3px;}
+.depto591  .storeHeader strong, .depto591  .storeHeader a {padding:11px 3px;}
+.depto595  .storeHeader strong, .depto595  .storeHeader a {padding:11px 3px;}
+.depto2025 .storeHeader strong, .depto2025  .storeHeader a {padding:11px 3px;}
+.depto8936 .storeHeader strong, .depto8936  .storeHeader a {padding:11px 3px;}
+.depto42398 .storeHeader strong, .depto42398  .storeHeader a {padding:11px 3px;}
+.depto49963 .storeHeader strong, .depto49963  .storeHeader a {padding:11px 3px;}
+.depto6872 .storeHeader strong, .depto6872  .storeHeader a {padding:11px 3px;}
+.depto35217 .storeHeader strong, .depto35217  .storeHeader a {padding:11px 3px;}
+
+.storeCondition {overflow:hidden;}
+div#acomExplica {display:block; padding: 5px 0;}
+div#descEx {display:block; padding: 5px 0;}
+
+
+
+#formBuscaCDs {overflow:hidden; padding:7px;}
+#formBuscaCDs #tfKeyword {color:#666666; font-weight:bold; margin:0pt 0pt 5px; width:118px;}
+#formBuscaCDs fieldset {display:block; float:left; width:75px;}
+#formBuscaCDs #btOk {display:block; float:right;}
+
+#formBuscaDVDs {overflow:hidden; padding:7px;}
+#formBuscaDVDs #tfKeyword {color:#666666; font-weight:bold; margin:0pt 0pt 5px; width:118px;}
+#formBuscaDVDs fieldset {display:block; float:left; width:75px;}
+#formBuscaDVDs #btOk {display:block; float:right;}

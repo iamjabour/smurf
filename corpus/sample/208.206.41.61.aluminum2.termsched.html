@@ -1,0 +1,2096 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><!--- Generic Cold Fusion Template ------>
+<!----------------------------------------------------------------Generic Cold Fusion Template file:This file will be access by another template filewhich will populate the appropriate areas withthe corresponding content.-------------------------------------------------------------------->
+
+
+<meta>
+<meta>
+<script>
+<!--
+
+var banner = 1; 
+function banner_link() {
+   if (banner==1) window.location.href="/news/press.cfm";
+   if (banner==2) window.location.href="/sourmarker/";
+   if (banner==3) window.location.href="/news/pr_detail.cfm?id=219";
+   if (banner==4) window.location.href="/enymex/";                                     
+        }       
+
+
+function rotate_banner() {
+  if (document.images) {
+   if (++banner &amp;amp;gt; 4)  banner = 1;
+   document.banner.src = "/images/ad00" + banner + ".gif";
+   window.setTimeout('rotate_banner();',6000);
+  }
+}
+// -->
+// this script determines whether the user's browser // is IE3, IE4, or Netscape 4, and loads a different // style sheet for each; for other browsers, // it does nothing
+<!--
+var browser=navigator.appName;
+var version=navigator.appVersion
+var ver1=version.substring(0,1)
+var ver2=version.lastIndexOf("MSIE")
+var ver3=version.substring(ver2+5,ver2+6)
+
+function itsNetscape() {
+// document.write('&amp;amp;lt;LINK REL=StyleSheet HREF="styles/nn4.css" TYPE="text/css"&amp;amp;gt;')
+}
+
+function itsMsie() {
+ if (browser == "Microsoft Internet Explorer")
+ ieVersion()
+}
+function ieVersion(){	  if (ver1 &amp;amp;gt;= 4)
+ document.write('&amp;amp;lt;LINK REL=StyleSheet HREF="styles/ie4.css" TYPE="text/css"&amp;amp;gt;')
+if (ver3 == 3)
+ document.write('&amp;amp;lt;LINK REL=StyleSheet HREF="styles/ie33.css" TYPE="text/css"&amp;amp;gt;')
+}
+if ((browser == "Netscape") &amp;amp;amp;&amp;amp;amp; (ver1 &amp;amp;gt;= 4)){
+ itsNetscape()
+}
+else{
+itsMsie()
+}
+// -->
+</script>
+<title>
+Futures and Termination Schedule
+</title>
+<style type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+
+.firebugHighlight {
+    z-index: 2147483647;
+    position: absolute;
+    background-color: #3875d7;
+}
+
+.firebugLayoutBoxParent {
+    z-index: 2147483647;
+    position: absolute;
+    background-color: transparent;
+    border-right: 1px dashed #BBBBBB;
+    border-bottom: 1px dashed #BBBBBB;
+}
+
+.firebugRulerH {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 14px;
+    background: url(chrome://firebug/skin/rulerH.png) repeat-x;
+    border-top: 1px solid #BBBBBB;
+    border-right: 1px dashed #BBBBBB;
+    border-bottom: 1px solid #000000;
+}
+
+.firebugRulerV {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 14px;
+    height: 100%;
+    background: url(chrome://firebug/skin/rulerV.png) repeat-y;
+    border-left: 1px solid #BBBBBB;
+    border-right: 1px solid #000000;
+    border-bottom: 1px dashed #BBBBBB;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.firebugLayoutBoxOffset {
+    z-index: 2147483647;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.firebugLayoutBoxMargin {
+    background-color: #EDFF64;
+}
+
+.firebugLayoutBoxBorder {
+    background-color: #666666;
+}
+
+.firebugLayoutBoxPadding {
+    background-color: SlateBlue;
+}
+
+.firebugLayoutBoxContent {
+    background-color: SkyBlue;
+}
+
+/*.firebugHighlightGroup .firebugLayoutBox {
+    background-color: transparent;
+}
+
+.firebugHighlightBox {
+    background-color: Blue !important;
+}*/
+
+.firebugLayoutLine {
+    z-index: 2147483647;
+    background-color: #000000;
+    opacity: 0.4;
+}
+
+.firebugLayoutLineLeft,
+.firebugLayoutLineRight {
+    position: fixed;
+    width: 1px;
+    height: 100%;
+}
+
+.firebugLayoutLineTop,
+.firebugLayoutLineBottom {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px;
+    border-top: 1px solid #999999;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px;
+    border-left: 1px solid #999999;
+}
+</style></head><body onload="window.setTimeout('rotate_banner();',8000);" text="Black" alink="Red" bgcolor="White" link="Navy">
+<table tabid="00012" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<!--- Begin page header ------>
+<td bgcolor="White">
+<table tabid="00011" width="620" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td rowspan="2" width="250">
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/home.htm">
+<img>
+</a>
+</td>
+<td width="400" align="center">
+<a href="javascript:banner_link();">
+<img>
+</a>
+</td>
+<td rowspan="2"></td>
+</tr>
+<tr>
+<td valign="bottom" width="400" align="center">
+<!--webbot bot="ImageMap"
+        rectangle="(244,8) (342,31) ../sitemap/search.cfm"
+        rectangle="(132,8) (227,31) ../markets/quotes.cfm" rectangle="(21,8) (119,31) ../home.htm"
+        src="toptab.gif" border="0" alt="top_nav_bar" ismap width="365" height="32" startspan -->
+<map name="FrontPageMap">
+<area>
+<area>
+<area>
+</map>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/_vti_bin/shtml.dll/aluminum2/termsched.html/map">
+<img>
+</a>
+<!--webbot bot="ImageMap" endspan i-checksum="34181" -->
+</td>
+</tr>
+</tbody></table>
+</td>
+<!--- End page header ------>
+</tr>
+<tr>
+<td bgcolor="#cc9966">
+<a name="body">
+<img>
+</a>
+</td>
+</tr>
+</tbody></table>
+<table tabid="00020" width="600" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td valign="top" bgcolor="White">
+<img>
+<br><br>
+<!--- Begin left navbar ------>
+<table tabid="00013" width="120" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr>
+<td>
+<font size="1" face="Arial,Helvetica,sans-serif">
+<!-- begin welcome section -->
+<nobr>
+<font size="2">
+<strong>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/welcome/index.htm">
+WELCOME
+</a>
+</strong>
+</font>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/welcome/index.htm">
+About
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/welcome/index.htm#calendar">
+Calendar
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/welcome/index.htm#links">
+Links
+</a>
+</nobr>
+<br><br>
+<nobr>
+<font size="2">
+<strong>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/news/index.htm">
+HOT NEWS
+</a>
+</strong>
+</font>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/news/press.cfm">
+Press Releases
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/news/index.htm#speeches">
+Recent Speeches
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/news/index.htm#articles">
+Recent Articles
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/news/ein00.htm">
+Energy in
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/news/ein00.htm">
+the News
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/news/min00.htm">
+Metals in
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/news/min00.htm">
+the News
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/news/ce_index.htm">
+Cinergy&amp;Entergy
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/news/ce_index.htm">
+Futures Launch
+</a>
+</nobr>
+<br><br>
+<nobr>
+<font size="2">
+<strong>
+<font color="Red">
+[
+</font>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/markets/index.htm">
+MARKETS
+</a>
+<font color="Red">
+]
+</font>
+</strong>
+</font>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/markets/quotes.cfm">
+Quotes
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/markets/chart.cfm">
+Charts
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/markets/settle0.htm">
+Settlement Data
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/markets/contract.cfm">
+Futures and Options
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/markets/archive0.htm">
+Historical Data
+</a>
+</nobr>
+<br><br>
+<nobr>
+<font size="2">
+<strong>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/visitors/index.htm">
+VISITORS
+</a>
+</strong>
+</font>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/visitors/sights.htm">
+Sights and Sounds
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/visitors/scr.htm">
+ScreenSaver
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/visitors/museum.htm">
+Museum Info
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/visitors/getting.htm">
+Getting Here
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/visitors/commsvc.htm">
+Community Service
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/visitors/onenorth.htm">
+One North End Ave
+</a>
+</nobr>
+<br><br>
+<nobr>
+<font size="2">
+<strong>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/whoswho/index.htm">
+WHO'S WHO
+</a>
+</strong>
+</font>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/whoswho/contacts.htm">
+Contact Info
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/whoswho/index.htm#members">
+Member Firms
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/whoswho/form_bro.htm">
+Broker Associations
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/whoswho/index.htm#bios">
+Biographies
+</a>
+</nobr>
+<br><br>
+<nobr>
+<font size="2">
+<strong>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/refernce/index.htm">
+REFERENCE
+</a>
+</strong>
+</font>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/refernce/codes.htm">
+Commodity Codes
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/refernce/com_01.htm">
+Safeguards &amp; Std.
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/refernce/fastfact.htm">
+Fast Facts
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/refernce/glossary.htm">
+Glossary
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/refernce/speech00.htm">
+Articles &amp; Speeches
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/refernce/seats.htm">
+Seat Sales
+</a>
+</nobr>
+<br><br>
+<nobr>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/refernce/fees.htm">
+Fee Sched
+</a>
+</nobr>
+<br><br>
+</font>
+<!--- End left navbar ------>
+</td>
+</tr>
+</tbody></table>
+</td>
+<!--- Insert verticle beige border ------>
+<td width="3" bgcolor="#cc9966">
+<img>
+</td>
+<td valign="top">
+<!--- Begin page content (Leave it up to browser to determine cell width) ------>
+<img>
+<blockquote>
+<table tabid="00019" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td width="100%">
+<p align="center"></p>
+<table tabid="00014" width="585" border="1" height="72">
+<tbody><tr>
+<td width="107">
+<img>
+</td>
+<td width="471" align="center">
+<font size="2" color="#000000" face="Arial">
+|
+</font>
+<font size="2" color="Navy" face="Arial">
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/markets/contract.cfm">
+Futures and Options Home
+</a>
+</font>
+<font size="2" color="#000000" face="Arial">
+|
+</font>
+<font size="2" color="Navy" face="Arial"></font>
+<font size="2" face="Arial">
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/index.html">
+<nobr>
+Description
+</nobr>
+</a>
+</font>
+<font size="2" color="Gray" face="Arial"></font>
+<font size="2" color="#000000" face="Arial">
+|
+</font>
+<font size="2" color="Navy" face="Arial">
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/alumspec.html">
+<nobr>
+Specifications
+</nobr>
+</a>
+</font>
+<font size="2" color="Gray" face="Arial"></font>
+<font size="2" color="#000000" face="Arial">
+|
+</font>
+<font size="2" color="Navy" face="Arial"></font>
+<br><br>
+<font size="2" color="#000000" face="Arial">
+|
+</font>
+<font size="2" color="Navy" face="Arial">
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/depositories.html">
+<nobr>
+Depositories
+</nobr>
+</a>
+</font>
+<font size="2" color="Gray" face="Arial"></font>
+<font size="2" color="#000000" face="Arial">
+|
+</font>
+<font size="2" color="Navy" face="Arial"></font>
+<font size="2" color="#808080" face="Arial">
+<nobr>
+Futures Termination Schedule
+</nobr>
+</font>
+<font size="2" color="#000000" face="Arial">
+|
+</font>
+<font size="2" color="Navy" face="Arial"></font>
+<font size="2" face="Arial">
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/brands.htm">
+Brands
+</a>
+|
+</font>
+<font size="2" color="Navy" face="Arial"></font>
+<font size="2" color="#000000" face="Arial">
+|
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/whstocks/alstocks.htm">
+Warehouse Stocks
+</a>
+|
+</font>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/optexp.htm">
+<font size="2" color="Navy" face="Arial">
+<nobr>
+Options Expiration Schedule
+</nobr>
+</font>
+</a>
+<font size="2" color="Gray" face="Arial"></font>
+<font size="2" color="Navy" face="Arial">
+| |
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/cont_all.cfm?CID=3&amp;cont_name=margins">
+<nobr>
+Margins
+</nobr>
+</a>
+</font>
+<font size="2" color="#000000" face="Arial">
+|
+</font>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/spotavg.html">
+<font size="2" face="Arial">
+Spot Average
+</font>
+</a>
+<font size="2" color="#000000" face="Arial">
+|
+</font>
+<nobr>
+<font size="2" face="Arial">
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/hspotavg.htm">
+Historical Spot Average
+</a>
+</font>
+<font size="2" color="Navy" face="Arial">
+|
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/alumrequ.htm">
+Request Information
+</a>
+</font>
+</nobr>
+<font size="2" color="#000000" face="Arial">
+|
+</font>
+</td>
+</tr>
+</tbody></table>
+<p align="center">
+<b>
+<font face="Arial">
+Aluminum Futures Contracts
+</font>
+<font size="3" face="Times New Roman">
+<br><br>
+</font>
+</b>
+<font face="Arial">
+Termination of Trading and Delivery Dates
+</font>
+<font size="3" face="Times New Roman">
+<br><br>
+</font>
+</p>
+<table tabid="00015" width="585" border="0" height="82">
+<tbody><tr>
+<td colspan="4" height="21">
+<hr>
+</td>
+</tr>
+<tr>
+<td height="28">
+<font face="Arial">
+<b>
+Jump to year:
+</b>
+</font>
+</td>
+<td height="28">
+<font face="Arial">
+<a href="#2001">
+2001
+</a>
+</font>
+</td>
+<td height="28">
+<font face="Arial">
+<a href="#2002">
+2002
+</a>
+</font>
+</td>
+<td height="28">
+<a href="#2003">
+<font face="Arial">
+2003
+</font>
+</a>
+</td>
+</tr>
+<tr>
+<td colspan="4" height="21">
+<hr>
+</td>
+</tr>
+</tbody></table>
+<table tabid="00016" genuinetable="yes" width="585" border="0" cellpadding="2" cellspacing="0">
+<tbody><tr>
+<td width="87" align="center" bgcolor="#ffffff" height="60">
+<font size="2" color="#000000" face="Arial">
+<a href="#TOP">
+Back to Top
+</a>
+</font>
+</td>
+<td colspan="4" width="351" align="center" bgcolor="#ffffff" height="60">
+<p align="center">
+<font face="Arial">
+<a name="2001"></a>
+<b>
+2001*
+</b>
+</font>
+</p>
+</td>
+<td width="101" align="center" bgcolor="#ffffff" height="60">
+<font size="2" face="Arial">
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/contract.cfm">
+Homepage
+</a>
+</font>
+<font face="Arial"></font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Delivery Month
+</font>
+</td>
+<td width="103" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Termination of Trading
+</font>
+</td>
+<td width="104" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+First Notice
+<br><br>
+Day
+</font>
+</td>
+<td width="91" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+First Delivery Day
+</font>
+</td>
+<td width="82" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Last Notice Day
+</font>
+</td>
+<td width="101" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Last Delivery Day
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center">
+<font face="Arial">
+January
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Jan 29
+</font>
+</td>
+<td width="104" align="center">
+<font face="Arial">
+Dec 29, 2000
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+Jan 2
+</font>
+</td>
+<td width="82" align="center">
+<font face="Arial">
+Jan 30
+</font>
+</td>
+<td width="101" align="center">
+<font face="Arial">
+Jan 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+February
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 26
+</font>
+</td>
+<td width="104" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jan 31
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 1
+</font>
+</td>
+<td width="82" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 27
+</font>
+</td>
+<td width="101" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 28
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center">
+<font face="Arial">
+March
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Mar 28
+</font>
+</td>
+<td width="104" align="center">
+<font face="Arial">
+Feb 28
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+Mar 1
+</font>
+</td>
+<td width="82" align="center">
+<font face="Arial">
+Mar 29
+</font>
+</td>
+<td width="101" align="center">
+<font face="Arial">
+Mar 30
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+April
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 26
+</font>
+</td>
+<td width="104" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Mar 30
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 2
+</font>
+</td>
+<td width="82" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 27
+</font>
+</td>
+<td width="101" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 30
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center">
+<font face="Arial">
+May
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+May 29
+</font>
+</td>
+<td width="104" align="center">
+<font face="Arial">
+Apr 30
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+May 1
+</font>
+</td>
+<td width="82" align="center">
+<font face="Arial">
+May 30
+</font>
+</td>
+<td width="101" align="center">
+<font face="Arial">
+May 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+June
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 27
+</font>
+</td>
+<td width="104" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+May 31
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 1
+</font>
+</td>
+<td width="82" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 28
+</font>
+</td>
+<td width="101" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 29
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center">
+<font face="Arial">
+July
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Jul 27
+</font>
+</td>
+<td width="104" align="center">
+<font face="Arial">
+Jun 29
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+Jul 2
+</font>
+</td>
+<td width="82" align="center">
+<font face="Arial">
+Jul 30
+</font>
+</td>
+<td width="101" align="center">
+<font face="Arial">
+Jul 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+August
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 29
+</font>
+</td>
+<td width="104" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jul 31
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 1
+</font>
+</td>
+<td width="82" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 30
+</font>
+</td>
+<td width="101" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center">
+<font face="Arial">
+September
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Sep 26
+</font>
+</td>
+<td width="104" align="center">
+<font face="Arial">
+Aug 31
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+Sep 4
+</font>
+</td>
+<td width="82" align="center">
+<font face="Arial">
+Sep 27
+</font>
+</td>
+<td width="101" align="center">
+<font face="Arial">
+Sep 28
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+October
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 29
+</font>
+</td>
+<td width="104" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Sep 28
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 1
+</font>
+</td>
+<td width="82" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 30
+</font>
+</td>
+<td width="101" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center">
+<font face="Arial">
+November
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Nov 28
+</font>
+</td>
+<td width="104" align="center">
+<font face="Arial">
+Oct 31
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+Nov 1
+</font>
+</td>
+<td width="82" align="center">
+<font face="Arial">
+Nov 29
+</font>
+</td>
+<td width="101" align="center">
+<font face="Arial">
+Nov 30
+</font>
+</td>
+</tr>
+<tr>
+<td width="87" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+December
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 27
+</font>
+</td>
+<td width="104" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Nov 30
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 3
+</font>
+</td>
+<td width="82" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 28
+</font>
+</td>
+<td width="101" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 31
+</font>
+</td>
+</tr>
+</tbody></table>
+<table tabid="00017" genuinetable="yes" width="585" border="0" cellpadding="2" cellspacing="0">
+<tbody><tr>
+<td width="86" align="center" bgcolor="#ffffff" height="60">
+<font size="2" color="#000000" face="Arial">
+<a href="#TOP">
+Back to Top
+</a>
+</font>
+</td>
+<td colspan="4" width="386" align="center" bgcolor="#ffffff" height="60">
+<p align="center">
+<font face="Arial">
+<a name="2002"></a>
+<b>
+2002*
+</b>
+</font>
+</p>
+</td>
+<td width="99" align="center" bgcolor="#ffffff" height="60">
+<font size="2" face="Arial">
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/contract.cfm">
+Homepage
+</a>
+</font>
+<font face="Arial"></font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Delivery Month
+</font>
+</td>
+<td width="102" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Termination of Trading
+</font>
+</td>
+<td width="103" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+First Notice
+<br><br>
+Day
+</font>
+</td>
+<td width="91" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+First Delivery Day
+</font>
+</td>
+<td width="78" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Last Notice Day
+</font>
+</td>
+<td width="99" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Last Delivery Day
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center">
+<font face="Arial">
+January
+</font>
+</td>
+<td width="102" align="center">
+<font face="Arial">
+Jan 29
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Dec 31, 2001
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+Jan 2
+</font>
+</td>
+<td width="78" align="center">
+<font face="Arial">
+Jan 30
+</font>
+</td>
+<td width="99" align="center">
+<font face="Arial">
+Jan 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+February
+</font>
+</td>
+<td width="102" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 26
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jan 31
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 1
+</font>
+</td>
+<td width="78" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 27
+</font>
+</td>
+<td width="99" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 28
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center">
+<font face="Arial">
+March
+</font>
+</td>
+<td width="102" align="center">
+<font face="Arial">
+Mar 26
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Feb 28
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+Mar 1
+</font>
+</td>
+<td width="78" align="center">
+<font face="Arial">
+Mar 27
+</font>
+</td>
+<td width="99" align="center">
+<font face="Arial">
+Mar 28
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+April
+</font>
+</td>
+<td width="102" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 26
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Mar 28
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 1
+</font>
+</td>
+<td width="78" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 29
+</font>
+</td>
+<td width="99" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 30
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center">
+<font face="Arial">
+May
+</font>
+</td>
+<td width="102" align="center">
+<font face="Arial">
+May 29
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Apr 30
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+May 1
+</font>
+</td>
+<td width="78" align="center">
+<font face="Arial">
+May 30
+</font>
+</td>
+<td width="99" align="center">
+<font face="Arial">
+May 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+June
+</font>
+</td>
+<td width="102" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 26
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+May 31
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 3
+</font>
+</td>
+<td width="78" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 27
+</font>
+</td>
+<td width="99" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 28
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center">
+<font face="Arial">
+July
+</font>
+</td>
+<td width="102" align="center">
+<font face="Arial">
+Jul 29
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Jun 28
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+Jul 1
+</font>
+</td>
+<td width="78" align="center">
+<font face="Arial">
+Jul 30
+</font>
+</td>
+<td width="99" align="center">
+<font face="Arial">
+Jul 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+August
+</font>
+</td>
+<td width="102" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 28
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jul 31
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 1
+</font>
+</td>
+<td width="78" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 29
+</font>
+</td>
+<td width="99" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 30
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center">
+<font face="Arial">
+September
+</font>
+</td>
+<td width="102" align="center">
+<font face="Arial">
+Sep 26
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Aug 30
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+Sep 3
+</font>
+</td>
+<td width="78" align="center">
+<font face="Arial">
+Sep 27
+</font>
+</td>
+<td width="99" align="center">
+<font face="Arial">
+Sep 30
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+October
+</font>
+</td>
+<td width="102" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 29
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Sep 30
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 1
+</font>
+</td>
+<td width="78" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 30
+</font>
+</td>
+<td width="99" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center">
+<font face="Arial">
+November
+</font>
+</td>
+<td width="102" align="center">
+<font face="Arial">
+Nov 26
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Oct 31
+</font>
+</td>
+<td width="91" align="center">
+<font face="Arial">
+Nov 1
+</font>
+</td>
+<td width="78" align="center">
+<font face="Arial">
+Nov 27
+</font>
+</td>
+<td width="99" align="center">
+<font face="Arial">
+Nov 29
+</font>
+</td>
+</tr>
+<tr>
+<td width="86" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+December
+</font>
+</td>
+<td width="102" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 27
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Nov 29
+</font>
+</td>
+<td width="91" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 2
+</font>
+</td>
+<td width="78" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 30
+</font>
+</td>
+<td width="99" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 31
+</font>
+</td>
+</tr>
+</tbody></table>
+<table tabid="00018" genuinetable="yes" width="585" border="0" cellpadding="2" cellspacing="0">
+<tbody><tr>
+<td width="85" align="center" bgcolor="#ffffff" height="60">
+<a href="#TOP">
+<font size="2" color="#000000" face="arial">
+Back to Top
+</font>
+</a>
+</td>
+<td colspan="4" width="387" align="center" bgcolor="#ffffff" height="60">
+<a name="2003"></a>
+<font face="Arial">
+<b>
+2003*
+</b>
+</font>
+</td>
+<td width="98" align="center" bgcolor="#ffffff" height="60">
+<font size="2" face="arial">
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/html/contract.cfm">
+Homepage
+</a>
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Delivery Month
+</font>
+</td>
+<td width="103" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Termination of Trading
+</font>
+</td>
+<td width="103" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+First Notice
+<br><br>
+Day
+</font>
+</td>
+<td width="94" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+First Delivery Day
+</font>
+</td>
+<td width="75" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Last Notice Day
+</font>
+</td>
+<td width="98" align="center" bgcolor="#cc9966">
+<font size="3" face="Impact">
+Last Delivery Day
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center">
+<font face="Arial">
+January
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Jan 29
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Dec 31, 2002
+</font>
+</td>
+<td width="94" align="center">
+<font face="Arial">
+Jan 2
+</font>
+</td>
+<td width="75" align="center">
+<font face="Arial">
+Jan 30
+</font>
+</td>
+<td width="98" align="center">
+<font face="Arial">
+Jan 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+February
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 26
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jan 31
+</font>
+</td>
+<td width="94" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 3
+</font>
+</td>
+<td width="75" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 27
+</font>
+</td>
+<td width="98" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Feb 28
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center">
+<font face="Arial">
+March
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Mar 27
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Feb 28
+</font>
+</td>
+<td width="94" align="center">
+<font face="Arial">
+Mar 3
+</font>
+</td>
+<td width="75" align="center">
+<font face="Arial">
+Mar 28
+</font>
+</td>
+<td width="98" align="center">
+<font face="Arial">
+Mar 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+April
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 28
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Mar 31
+</font>
+</td>
+<td width="94" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 1
+</font>
+</td>
+<td width="75" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 29
+</font>
+</td>
+<td width="98" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Apr 30
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center">
+<font face="Arial">
+May
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+May 28
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Apr 30
+</font>
+</td>
+<td width="94" align="center">
+<font face="Arial">
+May 1
+</font>
+</td>
+<td width="75" align="center">
+<font face="Arial">
+May 29
+</font>
+</td>
+<td width="98" align="center">
+<font face="Arial">
+May 30
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+June
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 26
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+May 30
+</font>
+</td>
+<td width="94" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 2
+</font>
+</td>
+<td width="75" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 27
+</font>
+</td>
+<td width="98" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jun 30
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center">
+<font face="Arial">
+July
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Jul 29
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Jun 30
+</font>
+</td>
+<td width="94" align="center">
+<font face="Arial">
+Jul 1
+</font>
+</td>
+<td width="75" align="center">
+<font face="Arial">
+Jul 30
+</font>
+</td>
+<td width="98" align="center">
+<font face="Arial">
+Jul 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+August
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 27
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Jul 31
+</font>
+</td>
+<td width="94" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 1
+</font>
+</td>
+<td width="75" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 28
+</font>
+</td>
+<td width="98" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Aug 29
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center">
+<font face="Arial">
+September
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Sep 26
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Aug 29
+</font>
+</td>
+<td width="94" align="center">
+<font face="Arial">
+Sep 2
+</font>
+</td>
+<td width="75" align="center">
+<font face="Arial">
+Sep 29
+</font>
+</td>
+<td width="98" align="center">
+<font face="Arial">
+Sep 30
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+October
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 29
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Sep 30
+</font>
+</td>
+<td width="94" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 1
+</font>
+</td>
+<td width="75" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 30
+</font>
+</td>
+<td width="98" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Oct 31
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center">
+<font face="Arial">
+November
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Nov 25
+</font>
+</td>
+<td width="103" align="center">
+<font face="Arial">
+Oct 31
+</font>
+</td>
+<td width="94" align="center">
+<font face="Arial">
+Nov 3
+</font>
+</td>
+<td width="75" align="center">
+<font face="Arial">
+Nov 26
+</font>
+</td>
+<td width="98" align="center">
+<font face="Arial">
+Nov 28
+</font>
+</td>
+</tr>
+<tr>
+<td width="85" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+December
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 29
+</font>
+</td>
+<td width="103" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Nov 28
+</font>
+</td>
+<td width="94" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 1
+</font>
+</td>
+<td width="75" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 30
+</font>
+</td>
+<td width="98" align="center" bgcolor="#c0c0c0">
+<font face="Arial">
+Dec 31
+</font>
+</td>
+</tr>
+</tbody></table>
+<p align="center">
+<font face="Arial">
+Important- Consult rules for exact delivery procedures
+<br><br>
+* Subject to change
+<br><br>
+(r) Revised
+</font>
+</p>
+</td>
+</tr>
+</tbody></table>
+</blockquote>
+<p align="center">
+<strong>
+<font size="3" face="Arial"></font>
+</strong>
+</p>
+</td>
+</tr>
+</tbody></table>
+<table tabid="00022" width="600" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+<table tabid="00021" width="620" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td align="center">
+<br><br>
+<br><br>
+<a href="file:///home/iamjabour/workspace/tese/refs/tableextraction/2/webtablegrnd/disclaim.htm">
+<font size="1" face="Arial,Helvetica,sans-serif">
+©1998 New York Mercantile Exchange, All Rights Reserved. Legal &amp; Privacy Notice
+</font>
+</a>
+<br><br>
+<br><br>
+<font size="1" face="Arial,Helvetica,sans-serif">
+If you have any questions, please inquire at
+<a href="mailto:exchangeinfo@nymex.com">
+exchangeinfo@nymex.com
+</a>
+</font>
+<br><br>
+</td>
+</tr>
+</tbody></table>
+</td>
+<!--- End page footer ------>
+</tr>
+</tbody></table>
+</body></html>
