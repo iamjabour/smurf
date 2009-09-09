@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<!DOCTYPE window>
+<dialog title="RCD Segmentation Class"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  buttons="accept,cancel"
+  ondialogaccept="return rcdClassifyNode(document.getElementById('segclass').value);"
+  ondialogcancel="return true;">
+<script>
+// If we are unsetting, no need to show a dialog.
+if (window.arguments[0].getAttribute('rcd_segmentation_proof') != null) {
+	rcdUnsetNode(window.arguments[0]);
+	window.close();
+}
+
+// Auxiliary function that logs to the Console
+function addLog(msg) {
+	var consoleService = Components.classes["@mozilla.org/consoleservice;1"].getService(Components.interfaces.nsIConsoleService);
+	consoleService.logStringMessage(msg);
+}
+
+// Function that unsets a node.
+function rcdUnsetNode(node) {
+	addLog('Modded Firebug: Removed node from proof: ' + node);
+
+	node.style.backgroundColor = node.getAttribute('rcd_original_backgroundcolor');
+	node.style.border = node.getAttribute('rcd_original_border');
+	node.removeAttribute('rcd_segmentation_proof');
+	node.removeAttribute('rcd_original_backgroundcolor');
+	node.removeAttribute('rcd_original_border');
+}
+
+// Function that sets a node as part of the proof.
+function rcdClassifyNode(segmentationClass) {
+	var node = window.arguments[0];
+	addLog('Modded Firebug: Added node to proof: ' + node);
+
+	node.setAttribute('rcd_segmentation_proof', segmentationClass);
+	node.setAttribute('rcd_original_backgroundcolor', node.style.backgroundColor);
+	node.setAttribute('rcd_original_border', node.style.border);
+	if (segmentationClass == 'title') {
+		node.style.backgroundColor = 'cyan';
+		node.style.border = 'solid 2px magenta';
+	}
+	else if (segmentationClass == 'author') {
+		node.style.backgroundColor = 'orange';
+		node.style.border = 'solid 2px magenta';
+	}
+	else if (segmentationClass == 'date') {
+		node.style.backgroundColor = 'lime';
+		node.style.border = 'solid 2px magenta';
+	}
+	else if (segmentationClass == 'body') {
+		node.style.backgroundColor = 'yellow';
+		node.style.border = 'solid 2px magenta';
+	}
+	else { // unknown
+		node.style.backgroundColor = 'magenta';
+		node.style.border = 'solid 2px red';
+	}
+	return true;
+}
+</script>
+  <hbox align="center">
+    <label value="Segmentation class:" />
+    <menulist id="segclass">
+      <menupopup>
+        <menuitem label="Title" value="title"/>
+        <menuitem label="Author" value="author"/>
+        <menuitem label="Date" value="date"/>
+        <menuitem label="Body" value="body"/>
+        <menuitem label="Other" value="other"/>
+      </menupopup>
+    </menulist>
+  </hbox>
+</dialog>
