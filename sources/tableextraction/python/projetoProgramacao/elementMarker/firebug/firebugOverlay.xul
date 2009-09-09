@@ -18,6 +18,8 @@
         <command id="cmd_toggleSuspendFirebug" oncommand="Firebug.toggleSuspend()"/>
         <command id="cmd_toggleInspecting" oncommand="Firebug.Inspector.toggleInspecting(FirebugContext)"
                  checked="false"/>
+        <command id="cmd_toggleRCDInspecting" oncommand="Firebug.Inspector.toggleRCDInspecting(FirebugContext)"
+                 checked="false"/>
         <command id="cmd_toggleProfiling" oncommand="Firebug.Profiler.toggleProfiling(FirebugContext)"/>
         <command id="cmd_toggleHTMLEditing" oncommand="FirebugContext.getPanel('html').toggleEditing()"/>
         <command id="cmd_toggleCSSEditing" oncommand="FirebugContext.getPanel('stylesheet').toggleEditing()"/>
@@ -76,6 +78,8 @@
         <hbox id="fbToolbarInner" insertbefore="fbDetachButton" flex="1" align="center">
             <toolbarbutton id="fbInspectButton" label="&firebug.Inspect;" class="toolbar-text-button"
                            tooltiptext="&firebug.InspectTooltip;" command="cmd_toggleInspecting"/>
+            <toolbarbutton id="fbRCDInspectButton" label="RCD &firebug.Inspect;" class="toolbar-text-button"
+                           tooltiptext="[RCD] &firebug.InspectTooltip;" command="cmd_toggleRCDInspecting"/>
             <hbox id="fbConsoleButtons" collapsed="true">
                 <toolbarbutton label="&firebug.Clear;" class="toolbar-text-button"
                                tooltiptext="&firebug.ClearTooltip;" command="cmd_clearConsole"/>

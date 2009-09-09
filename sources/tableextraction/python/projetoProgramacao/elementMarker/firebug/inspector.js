@@ -26,6 +26,7 @@ var popupHighlighter = null;
 Firebug.Inspector = extend(Firebug.Module,
 {
     inspecting: false,
+    rcd_inspecting: false,
 
     highlightObject: function(element, context, highlightType, boxFrame)
     {
@@ -73,6 +74,20 @@ Firebug.Inspector = extend(Firebug.Module,
             this.stopInspecting(true);
         else
             this.startInspecting(context);
+    },
+
+    toggleRCDInspecting: function(context)
+    {
+        if (this.rcd_inspecting) {
+            context.chrome.setGlobalAttribute("cmd_toggleRCDInspecting", "checked", "false");
+            this.stopInspecting(true);
+            this.rcd_inspecting = false;
+        }
+        else {
+            context.chrome.setGlobalAttribute("cmd_toggleRCDInspecting", "checked", "true");
+            this.startInspecting(context);
+            this.rcd_inspecting = true;
+        }
     },
 
     startInspecting: function(context)
@@ -286,17 +301,19 @@ Firebug.Inspector = extend(Firebug.Module,
 
     onInspectingMouseDown: function(event)
     {
-        this.stopInspecting(false, true);
+        if (!this.rcd_inspecting) this.stopInspecting(false, true);
         cancelEvent(event);
     },
 
     onInspectingClick: function(event)
     {
+        if (this.rcd_inspecting) window.openDialog('chrome://firebug/content/rcdSegmentationClass.xul', 'wnd_rcdSegClass', 'chrome,modal,dialog', event.target);
+
         var win = event.currentTarget.defaultView;
         if (win)
         {
             win = getRootWindow(win);
-            this.detachClickInspectListeners(win);
+            if (!this.rcd_inspecting) this.detachClickInspectListeners(win);
         }
         cancelEvent(event);
     },

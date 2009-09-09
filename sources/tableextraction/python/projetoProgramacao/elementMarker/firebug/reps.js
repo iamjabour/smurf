@@ -736,6 +736,8 @@ this.Element = domplate(Firebug.Rep,
         var monitored = areEventsMonitored(elt, null, context);
 
         return [
+            {label: "Toggle RCD Segmentation", command: bindFixed(window.openDialog, window, 'chrome://firebug/content/rcdSegmentationClass.xul', 'wnd_rcdSegClass', 'chrome,modal,dialog', elt) },
+            "-",
             {label: "CopyHTML", command: bindFixed(this.copyHTML, this, elt) },
             {label: "CopyInnerHTML", command: bindFixed(this.copyInnerHTML, this, elt) },
             {label: "CopyXPath", command: bindFixed(this.copyXPath, this, elt) },
