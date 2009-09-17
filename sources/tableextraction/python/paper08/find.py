@@ -1,124 +1,33 @@
-def editDist(s1, s2, c={'change':1,'del':1,'add':1, 'm':100},at=0):
-
-    if at > c['m']:
-        return c['m']
-
-#    print ">",s1,"<",">", s2,"<"
-    if len(s1) <=0 and len(s2) <= 0:
-        return 0
-
-    if len(s2) <= 0:
-        return editDist(s1[0:-1], s2, c, at+c['add']) + c['add']
-
-    if len(s1) <= 0:
-        return editDist(s1, s2[0:-1], c,at+c['del']) + c['del']
-
-
-    if s1[-1] == s2[-1]:
-        return editDist(s1[0:-1], s2[0:-1], c, at)
-
-    change = editDist(s1[0:-1], s2[0:-1], c, at+c['change']) + c['change']
-    delete =  editDist(s1, s2[0:-1], c, at+c['del']) + c['del']
-    add = editDist(s1[0:-1], s2, c,at+c['add']) + c['add']
-
-    return min(change,delete,add)
-#editDist
-
-#print editDist("aac", "abdef")
-
-
-def editDist2(s1="", s2="", l1=0, l2=0, max=1, at=0):
-
-    print l1,l2
-    if l1 < 0 and l2 < 0:
-#        print 'fim'
-        return at
-
-    if float(len(s1)-at)/len(s1) > max:
-        print "sai 1"
-#        print float(at)/len(s1)
-        return at
-
-    if l2 < 0:
-#        print 'l2<0'
-        return editDist2(s1,s2,l1-1,l2,max,at + 1)
-
-    if l1 < 0:
-#        print 'l1<0'
-        return editDist2(s1,s2,l1,l2-1,max,at+1)
-
-    while l1 <0 and l2 < 0 and cmp(s1[l1],s2[l2]) == 0:
-#        print '%s==%s' % (s1[l1], s2[l2])
-        l1 -= 1
-        l2 -= 1
-
-    if l1 < 0 and l2 < 0:
-        return at
-
-    print 'c'
-    c = editDist2(s1,s2,l1-1,l2-1,max,at + 1)
-    print 'd'
-    d = editDist2(s1,s2,l1-1,l2,max,at + 1)
-    print 'a'
-    a = editDist2(s1,s2,l1,l2-1,max,at + 1)
-
-    return min(c,d,a)
-#editDist2
-
-#a = float(editDist2("aab", "baa", 2, 2))
-#print a, a/3
-
-def conflito(y, list):
-    i = list[y]
-    r = -1
-    x = y
-    while x >= 0:
-        j = list[x]
-        if i == j:
-            x -= 1
-            continue
-        elif (i[0] > j[1]):
-            return x
-        x -= 1
-
-    return r
-#...
-
-
-def _maxmatch(j, p, list):
-    if j <= 0:
-        return (0,[])
-    (v1,s1) = _maxmatch(p[j],p,list)
-    (v2,s2) = _maxmatch(j-1,p,list)
-    v1 += list[j][2]
-    if v1 >= v2:
-        return (v1, [list[j]]+ s1)
-    else:
-        return (v2, s2)
-#_maxmatch
-
-def maxmatch(list):
-
-    list.sort(lambda x, y: cmp(x[1], y[1]))
-
-    p = range(0,len(list))
-
-    x = len(list) - 1
-    while x >= 0:
-        p[x] = conflito(x,list)
-        x -= 1
-
-    (v,s) = _maxmatch(len(list)-1, p, list)
-    return (v,s)
-#maxmatch
-
+def distance(first, second):
+    """Find the Levenshtein distance between two strings."""
+    if len(first) > len(second):
+        first, second = second, first
+    if len(second) == 0:
+        return len(first)
+    first_length = len(first) + 1
+    second_length = len(second) + 1
+    distance_matrix = [[0] * second_length for x in range(first_length)]
+    for i in range(first_length):
+       distance_matrix[i][0] = i
+    for j in range(second_length):
+       distance_matrix[0][j]=j
+    for i in xrange(1, first_length):
+        for j in range(1, second_length):
+            deletion = distance_matrix[i-1][j] + 1
+            insertion = distance_matrix[i][j-1] + 1
+            substitution = distance_matrix[i-1][j-1]
+            if first[i-1] != second[j-1]:
+                substitution += 1
+            distance_matrix[i][j] = min(insertion, deletion, substitution)
+    return distance_matrix[first_length-1][second_length-1]
+#end
 
 def combComp2(nodeList, K, T, start=0):
 #    print "combComp2", len(nodeList), K, T, start
     maxDR = [0,0,0]
 
     if start >= len(nodeList):
-        return [[]]
+        return []
 
     for i in xrange(1,K+1):
 #        print "for i ", i
@@ -140,11 +49,11 @@ def combComp2(nodeList, K, T, start=0):
 #                print fim, fim2, s2
 #                print T * len(s1), len(s1), len(s2)
                 price = {'add':1,'change':1,'del':1,'m':T*min(len(s1),len(s2))}
-                if len(s1) > 2*len(s2) or len(s2) > 2*len(s1):
-                    ed = 1
-                else:
-                    ed = editDist(s1,s2,price)
-
+                #if len(s1) > 2*len(s2) or len(s2) > 2*len(s1):
+                #    ed = 1
+                #else:
+                #    ed = editDist(s1,s2,price)
+                ed = distance(s1,s2)
                 if float(ed)/(min(len(s1),len(s2))+1) <= T:
 #                    print "sim"
                     if flag:
@@ -169,9 +78,12 @@ def combComp2(nodeList, K, T, start=0):
 #        print "cont na lista"
         ret = []
         ret.append(maxDR)
-        ret.append(combComp2(nodeList, K, T, maxDR[1] + maxDR[2]))
+        r2 = combComp2(nodeList, K, T, maxDR[1] + maxDR[2])
+        for r in r2:
+            ret.append(r)
+
         return ret
-    return []
+    return None
 
 # arrumar forma de nao repetir sequencias como comentado no paper
 #     0   1   2   3   4   5   6   7   8   9   10  11  12

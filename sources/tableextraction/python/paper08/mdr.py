@@ -68,10 +68,10 @@ def mdr(node, K, T, qnt):
         for c in node.childNodes:
             list.append(c.str)
         r = combComp2(list, K, T)
-        if len(r) > 1:
+        if r != None and len(r) > 1:
             result = (r,node)
             node.result = result
-#            print len(list) ,len(node.childNodes), node.result
+            print len(list) ,len(node.childNodes), node.result
     for child in node.childNodes:
         mdr(child, node.maxC, T,qnt)
 #mdr
@@ -86,17 +86,20 @@ def printresult(f, list, orig, node):
         if len(i) < 3:
             continue
         out = ''
+        tags = ''
         for x in xrange(i[1], i[1]+i[2]):
 #            print x
             if x >= len(orig) :
                 break
 #            print x, orig[x].str
             out += ''.join(orig[x].dom.toString())
+            tags += orig[x].str
             flag = True
         if flag:# and len(out.strip()) > 0:
             ret = True
 
     if ret:
+        f.write('<h1>%s</h1>'% tags)
         f.write(node.dom.toString())
         f.write('<hr>\n\n')
     return ret
@@ -131,7 +134,7 @@ if __name__ == '__main__':
 #    dfs(tree)
 #    raise
 
-    mdr(tree,tree.maxC,0.005,0)
+    mdr(tree,tree.maxC,0.001,0)
     f = open(sys.argv[2],'w')
     f.write('<html><body>')
     print "#" *80
