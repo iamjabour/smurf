@@ -1,30 +1,8 @@
 import sys
-sys.path.append('/home/iamjabour/workspacePessoal/tese/sources/tableextraction/python/projetoProgramacao/parsedom')
-from htmltodom import ParseDom
+from utils.distances import stringDistance
+from utils.parsedom import ParseDom
 from node import *
 
-def distance(first, second):
-    """Find the Levenshtein distance between two strings."""
-    if len(first) > len(second):
-        first, second = second, first
-    if len(second) == 0:
-        return len(first)
-    first_length = len(first) + 1
-    second_length = len(second) + 1
-    distance_matrix = [[0] * second_length for x in range(first_length)]
-    for i in range(first_length):
-       distance_matrix[i][0] = i
-    for j in range(second_length):
-       distance_matrix[0][j]=j
-    for i in xrange(1, first_length):
-        for j in range(1, second_length):
-            deletion = distance_matrix[i-1][j] + 1
-            insertion = distance_matrix[i][j-1] + 1
-            substitution = distance_matrix[i-1][j-1]
-            if first[i-1] != second[j-1]:
-                substitution += 1
-            distance_matrix[i][j] = min(insertion, deletion, substitution)
-    return distance_matrix[first_length-1][second_length-1]
 
 def dfs(node, esp=0, maxDist=0.3):
     global s1
@@ -49,7 +27,7 @@ def dfs(node, esp=0, maxDist=0.3):
 
         if len(s1) <= (len(s2) * (1.0+maxDist)) and\
           len(s2) <= (len(s1) * (1.0 +maxDist)):
-            if float(distance(s1,s2))/max(len(s1), len(s2)) > maxDist :
+            if float(stringDistance(s1,s2))/max(len(s1), len(s2)) > maxDist :
                 s1 = c.str
                 match = False
                 comp += 1

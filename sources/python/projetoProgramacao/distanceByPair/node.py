@@ -1,5 +1,3 @@
-import htmltodom
-
 class Node(object):
 
     __id = 0
