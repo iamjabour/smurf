@@ -1,5 +1,6 @@
 import sys
-import htmltodom
+sys.path.append('/home/iamjabour/workspacePessoal/tese/sources/tableextraction/python/projetoProgramacao/parsedom')
+from htmltodom import ParseDom
 from node import *
 
 def distance(first, second):
@@ -157,7 +158,8 @@ if __name__ == '__main__':
     else:
         htmlString = open(filePath, 'r').read()
 
-    dom = htmltodom.parse(htmlString)
+    parser = ParseDom()
+    dom = parser.parse(htmlString)
 
     tree = Node(None).loadNodeTree(dom, 0)
 
