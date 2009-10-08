@@ -1,3 +1,4 @@
+= Extract and Retrival Information Frameworl (ERI) =
 == UnitTests ==
 Os testes unitários utilizam o framework unittest disponibilizado pelo python. Dentro de cada módulo podem ser encontrados os arquivos test_<nome do arquivo>.py que testa as funcões oferecidas pelo <nome do arquivo>.py
 
