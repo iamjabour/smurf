@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import utils.parsedom as parsedom
+import eri.utils.parsedom as parsedom
 import unittest
 
 class TestParseDom(unittest.TestCase):

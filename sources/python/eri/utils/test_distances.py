@@ -1,5 +1,5 @@
 import unittest
-import utils.distances as distances
+import eri.utils.distances as distances
 
 class TestDistances(unittest.TestCase):
 

@@ -1,7 +1,7 @@
 import sys
-from utils.distances import stringDistance
-from utils.parsedom import ParseDom
-from node import *
+from eri.utils.distances import stringDistance
+from eri.utils.parsedom import ParseDom
+from eri.extractors.distancebypair.node import *
 
 
 class DistanceByPair(object):
