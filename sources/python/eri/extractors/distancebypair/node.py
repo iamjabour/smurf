@@ -2,7 +2,7 @@ class Node(object):
 
     __id = 0
 
-    def __init__(self, xml):
+    def __init__(self, xml=None):
         self.id = Node.__id
         Node.__id += 1
         self.dom = xml
