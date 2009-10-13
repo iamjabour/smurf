@@ -1,5 +1,6 @@
 import sys
 from eri.utils.dynamicimport import *
+from eri.marker import Marker
 
 if __name__ == '__main__':
     import os
@@ -39,7 +40,8 @@ if __name__ == '__main__':
         htmlString = open(filePath, 'r').read()
 
     parser = ParseDom()
+    marker = Marker()
     dom = parser.parse(htmlString)
-    r = extractor.process(dom)
+    r = extractor.process(dom, marker)
 
     print r
