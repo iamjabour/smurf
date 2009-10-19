@@ -1,4 +1,6 @@
 import xml.dom
+import sanitizer
+from forceencode import *
 from libxml2dom import parseString
 
 # imports chardet module if avaiable
@@ -20,58 +22,7 @@ class ParseDom(object):
         if chardet:
             self._detector = chardet.universaldetector.UniversalDetector()
 
-    def __forceencode(self, string, fencode='utf8'):
-        try:
-            unicode = string.decode(fencode)
-            return unicode.encode('utf8')
-        except UnicodeDecodeError:
-            return None
-
-    def _convertStringToUTF8(self, string, encoding=None):
-        """
-        Convert string to unicode
-
-        @param str string: String to try convert
-        @param str encoding: Actual string encoding
-        @return str: original string converted to unicode. If one line not be 
-        converted this line not's added to this string.
-        """
-        if encoding:
-            # Test user encoding to decode
-            try:
-                unicode = string.decode(encoding)
-                return unicode.encode('utf8')
-            except UnicodeDecodeError:
-                 pass
-                 #User encoding isn't right, continue process to try convert
-        #if
-
-        #Encoding list to try decode original string
-        decodes = ['utf8', 'latin1']
-        lostLine = 0
-        unicodeString = ''
-
-        for line in string.split('\n'):
-            for fencode in decodes:
-                goodEncode = False
-                unicodeLine = self.__forceencode(line, fencode)
-                if unicodeLine:
-                    break
-
-            if not unicodeLine:
-                #Didn't have good encode!
-                lostLine += 1
-            else:
-                unicodeString += unicodeLine + '\n'
-
-        #return new string
-        if unicodeString != '':
-            return unicodeString
-
-        #didn't have success in decode
-        return None
-
-    def parse(self, htmlString, encoding=None):
+    def parse(self, htmlString, encoding='utf-8'):
         """
         This is the base implementation for the processing.
 
@@ -81,12 +32,14 @@ class ParseDom(object):
         """
         dom = None
 
-        if encoding != 'uft8' and encoding != 'utf-8':
+        if encoding != 'utf8' or encoding != 'utf-8':
             #Convert to utf8 encoding
-            encoding = 'utf-8'
-            unicodeHtml = self._convertStringToUTF8(htmlString, encoding)
+            unicodeHtml = convertStringToUTF8(htmlString, encoding)
             if unicodeHtml:
-                htmlStrong = unicodeHtml
+                htmlString = unicodeHtml
+
+        htmlString = sanitizer.removeJavaScript(htmlString)
+#        htmlString = sanitizer.replaceHtmlForDiv(htmlString)
 
         if chardet:
             # Resets any content that may be on the buffer
@@ -101,9 +54,8 @@ class ParseDom(object):
         except UnicodeDecodeError, ex:
             if not chardet:
                 # module is not avaiable, forward exception
-                self.__logObj.addError("Could not parse document " + \
-                    "because encoding detection is not available.")
-                raise UnicodeDecodeError(ex)
+                msg = "ERROR: Could not parse document because encoding detection is not available."
+                raise SystemExit, msg
 
             # feed the HTML in blocks of 4Kb to the UniversalDetector until
             # it is ready to identify the encoding
@@ -119,24 +71,38 @@ class ParseDom(object):
 
             try:
                 # Try processing the webpage with the detected encoding
-                dom = self._parse(htmlString)
-                self.__logObj.addInfo( \
-                    "Detected encoding '%s' for document" % \
-                    (encoding))
+                dom = self._parse(htmlString, encoding)
+                #self.__logObj.addInfo( \
+                #    "Detected encoding '%s' for document" % \
+                #    (encoding))
             except UnicodeDecodeError, ex2:
                 # This document cannot be processed
                 # We'll forward the exception
-                self.__logObj.addError("Could not parse document " + \
-                    "because encoding detection failed.")
-                raise UnicodeDecodeError(ex2)
+                #self.__logObj.addError("Could not parse document " + \
+                #    "because encoding detection failed.")
+                msg = "Could not parse document because encoding detection failed."
+                raise SystemExit, msg
 
         return dom
 
-    def _parse(self, htmlString):
+    def _parse(self, htmlString, encode='utf8'):
         """
         Parse HTML to DOM Document
         """
+        if encode:
+            dom = parseString(htmlString, html=1, unfinished=1, htmlencoding=encode)
+            self._testDom(dom)
+        else:
+            dom = parseString(htmlString, html=1, unfinished=1)
+            self._testDom(dom)
 
-        result = parseString(htmlString, html=1, unfinished=1, htmlencoding='utf8')
-        return result
+        return dom
 
+    def _testDom(self, domNode):
+        v = ""
+        v = domNode.textContent
+        v = domNode.nodeValue
+        v = domNode.value
+
+        for child in domNode.childNodes:
+            self._testDom(child)

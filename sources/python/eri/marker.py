@@ -8,15 +8,17 @@ class Marker(object):
 
     def mark(self, node, label):
 #        print node, label
-        try:
+        if self.labels.has_key(label):
             self.labels[label].append(node)
-        except KeyError:
+        else:
             self.labels[label] = [node]
 
 #        print self.labels
 
     def process(self):
 #        print self.labels
+        if len(self.labels) == 0:
+            return ""
         n = None
         for lable in self.labels:
             for node in self.labels[lable]:
