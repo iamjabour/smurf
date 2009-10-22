@@ -2,13 +2,15 @@ import sys
 from eri.utils.dynamicimport import *
 from eri.marker import Marker
 
+LIMIT = 300
+
 tables = []
 def dfs(node):
     global tables
     if node.localName and node.localName.lower() == 'table':
         if node.hasAttribute('genuinetable'):
             tables.append(node)
-            return
+#            return
     for child in node.childNodes:
         dfs(child)
 
@@ -17,6 +19,61 @@ def proof(dom):
     tables = []
     dfs(dom)
     return tables
+
+def file(files, extractor, output=None):
+    import urllib
+    parser = ParseDom()
+    marker = Marker()
+    metric = Metric()
+
+    print "Doc\tPre\tRec\tlext\tlpro\tfile_name"
+    for id, filePath in enumerate(files):
+        fileName = filePath.split('/')[-1]
+        marker.reset()
+        if filePath[0:4] == "http":
+            htmlString = urllib.urlopen(filePath).read()
+        else:
+            htmlString = open(filePath, 'r').read()
+
+        dom = parser.parse(htmlString)
+        p = proof(dom)
+        r = extractor.process(dom, marker)
+
+#        import pprint
+#        pprint.pprint(marker.labels)
+
+#        for p in marker.labels['table']:
+#            print p.toString()
+
+#        print 'tables'
+#        pprint.pprint(t)
+
+        v = 0
+        t = len(p)
+        if marker.labels.has_key('table'):
+            v = len(marker.labels['table'])
+
+        if t == 0:
+            if v == 0:
+                x = (1,1)
+            else:
+                x = (0,1)
+
+        elif v > 0:
+            x = metric.table(marker.labels['table'], p)
+
+        precision = x[0]
+        recall = x[1]
+        print "%d\t%.02f\t%0.2f\t%d\t%d\t%s" % \
+            (id+1, precision, recall, v, t, fileName)
+
+        if output:
+            out = open('out/%d.html' % (id+1), 'w')
+            print >>out, r
+        else:
+            pass
+#            print 'Document:%d' % count
+#            print r
 
 if __name__ == '__main__':
     import os
@@ -28,9 +85,10 @@ if __name__ == '__main__':
     modules = eri.extractors.modules
 
     #create an option parser
-    usage  = """%(prog)s [options] <extractor> <file> [file ...]
+    usage  = """%(prog)s [options] <extractor> <file|cPath> [file ...]
   <extractor>\t\tUser an module name [%(modules)s]
-  <file>     \t\tOne or any path to html file(s)""" % \
+  <file|cPath>\t\tOne or any path to html file(s) or
+    \t\t\ta corpus file if you use --limit  parameter""" % \
   {'prog':sys.argv[0], 'modules': '| '.join(modules)}
 
     parser = optparse.OptionParser(usage=usage)
@@ -38,6 +96,14 @@ if __name__ == '__main__':
     parser.add_option('-o', '--output', default='stdout', \
       dest='output', \
       help="Create and redirect stdout to file")
+
+    # logging-related options
+    parser.add_option(
+        '-l', '--limit', action='store', type='int', \
+        default=False, \
+        help="Set limit to hierarchical corpus" + \
+         "(default use no hierarchical corpus) or -1 to directory with files"
+        )
 
     (opt, args) = parser.parse_args()
 
@@ -49,37 +115,24 @@ if __name__ == '__main__':
 
     count = 0
 
-    for filePath in args[1:]:
-        count += 1
-        if filePath[0:4] == "http":
-            import urllib
-            htmlString = urllib.urlopen(filePath).read()
-        else:
-            htmlString = open(filePath, 'r').read()
+    if not opt.limit:
+        file(args[1:], extractor, opt.output)
+    elif opt.limit == -1:
+        list = []
+        paths = os.listdir(args[1])
+        #paths.sort()
 
-        parser = ParseDom()
-        marker = Marker()
-        metric = Metric()
-
-        dom = parser.parse(htmlString)
-        t = proof(dom)
-        r = extractor.process(dom, marker)
-
-        import pprint
-        pprint.pprint(marker.labels)
-
-        for p in marker.labels['table']:
-            print p.toString()
-
-        print 'tables'
-        pprint.pprint(t)
-
-        x = metric.table_Recall(marker.labels['table'], t)
-        print "Accuracy:", x
-
-        if opt.output != 'stdout':
-            out = open('%d%s' % (count, opt.output), 'w')
-            print >>out, r
-        else:
-            print 'Document:%d' % count
-            print r
+        for x,dir in enumerate(paths):
+            if x >= LIMIT:
+                break
+            path = os.path.join(args[1], dir)
+            list.append(path)
+        file(list, extractor, opt.output)
+    else:
+        print options.limit
+        list = []
+        for x in xrange(1, options.limit+1):
+            path = os.path.join(args[1], '%03d' % x, 'index.html')
+            if os.path.exists(path):
+                list.append(path)
+        file(list, extractor, opt.output)

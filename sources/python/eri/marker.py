@@ -33,6 +33,9 @@ class Marker(object):
 
         return node.toString()
 
+    def reset(self):
+        self.labels = {}
+
     def coloringNode(self, node, color):
         """
         Colore os nós das componetes, alternando entre a lista de cores.
@@ -47,24 +50,27 @@ class Marker(object):
             node.createAttribute('style')
             node.setAttribute('style', style)
 
+        node.createAttribute('eri')
+        node.setAttribute('eri', 'table')
 
-#    def printNodes(self, node, esp=0, file=sys.stdout):
-#        """
-#        Imprime as componentes em forma HTML, somente as componentes
-#        """
-#        table = False
-#
-#        for x in xrange(0, len(node.childNodes)):
-#            c = node.childNodes[x]
-#
-#            if not node.result[x]:
-#                printNodes(c,esp+1, file)
-#                continue
-#
-#            do = False
-#
-#            if x < len(node.childNodes)-1 and node.result[x] == node.result[x+1]:
-#                do = True
+
+    #    def printNodes(self, node, esp=0, file=sys.stdout):
+    #        """
+    #        Imprime as componentes em forma HTML, somente as componentes
+    #        """
+    #        table = False
+    #
+    #        for x in xrange(0, len(node.childNodes)):
+    #            c = node.childNodes[x]
+    #
+    #            if not node.result[x]:
+    #                printNodes(c,esp+1, file)
+    #                continue
+    #
+    #            do = False
+    #
+    #            if x < len(node.childNodes)-1 and node.result[x] == node.result[x+1]:
+    #                do = True
 #            if x > 0 and node.result[x] == node.result[x-1]:
 #                do = True
 #
