@@ -1,28 +1,39 @@
 # -*- coding: latin-1 -*-
 
-class Marker(object):
-    def __init__(self, output=None):
-#        print 'marker'
-        self.output = output
+class BaseMarker(object):
+"""
+    O marcador se destina a agrupar nós junto a um rótulo, tornando possível a
+    aplicação de métricas de avaliação sobre o conjunto de nós rotulados.
+"""
+    def __init__(self):
+    """
+        Inicializa um objeto com o dicionário de rotulos vazio.
+    """
         self.labels = {}
 
+
     def mark(self, node, label):
-#        print node, label
+        """
+        Adiciona um nó ao dicionario como pertencendo a um rótulo.
+
+        @param XmlNode node: Nó a ser adicionado ao conjunto.
+        @param str label: Rótulo ao qual o nó deve ser associado.
+        """
         if self.labels.has_key(label):
             self.labels[label].append(node)
         else:
             self.labels[label] = [node]
 
-#        print self.labels
-
     def process(self):
-#        print self.labels
+        """
+        Aplica a marcação aos nós selecionadas. Esse marcador base cria um
+        atributo para o nó e atribue o valor do rótulo a esse atributo.
+        """
         if len(self.labels) == 0:
             return ""
         n = None
         for lable in self.labels:
             for node in self.labels[lable]:
-#                print node
                 self.coloringNode(node, lable)
                 n = node
 
@@ -34,6 +45,10 @@ class Marker(object):
         return node.toString()
 
     def reset(self):
+        """
+        Reinicia o dicionário que guarda os nós associados aos rótulos.
+
+        """
         self.labels = {}
 
     def coloringNode(self, node, color):

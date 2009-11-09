@@ -1,5 +1,11 @@
 def stringDistance(first, second, cost={'a':1, 'd':1, 'c':1}):
-    """Find the Levenshtein distance between two strings."""
+    """
+    Find the Levenshtein distance between two strings.
+
+    @parm str first: First string to compare
+    @parm str second: Second string to compare to
+    @parm dic cost: Custs to add, delete ad change (default={'a':1,'d':2,'c':1})
+    """
 
     if len(second) == 0 or len(first) == 0:
         return max(len(first),len(second))

@@ -10,6 +10,9 @@ except ImportError:
     chardet = None
 
 class ParseDom(object):
+    """
+    Create a Dom tree from provided string
+    """
 
     def __init__(self):
         """

@@ -1,6 +1,9 @@
 
 
 def forceencode(string, fencode='utf8'):
+    """
+    Force encode change to utf8, if is not possible return None
+    """
     try:
         unicode = string.decode(fencode)
         return unicode.encode('utf8')
