@@ -2,11 +2,17 @@ import unittest
 import eri.utils.distances as distances
 
 class TestDistances(unittest.TestCase):
+    """
+    Unittest from class Distances
+    """
 
     def setUp(self):
         pass
 
     def test_stringDistance(self):
+        """
+        Test if costs and distance value are correct
+        """
         print '\n - Test: utils.distances.stringDistance()'
         add = 1
         change = 2
@@ -30,10 +36,6 @@ class TestDistances(unittest.TestCase):
 
         dist = distances.stringDistance('aba', 'aa', cost)
         self.assertEqual(dist, delete, '6: %d!=%d' % (dist, change))
-
-    def test_2(self):
-#        print '\n - Test - Nada'
-        pass
 
 if __name__ == '__main__':
     print "Test: utils.distances"
