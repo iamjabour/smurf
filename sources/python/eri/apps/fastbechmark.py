@@ -1,6 +1,6 @@
 import sys
 from eri.utils.dynamicimport import *
-from eri.marker import Marker
+from eri.markerbase import MarkerBase as Marker
 
 LIMIT = 300
 
@@ -60,7 +60,7 @@ def file(files, extractor, output=None):
                 x = (0,1)
 
         elif v > 0:
-            x = metric.table(marker.labels['table'], p)
+            x = metric.process(marker.labels['table'], p)
 
         precision = x[0]
         recall = x[1]
@@ -80,7 +80,7 @@ if __name__ == '__main__':
     import optparse
     import eri.extractors
     from eri.utils.parsedom import ParseDom
-    from eri.metric import Metric
+    from eri.metricbase import MetricBase as Metric
 
     modules = eri.extractors.modules
 
@@ -102,7 +102,7 @@ if __name__ == '__main__':
         '-l', '--limit', action='store', type='int', \
         default=False, \
         help="Set limit to hierarchical corpus" + \
-         "(default use no hierarchical corpus) or -1 to directory with files"
+         "(default use no hierarchical corpus) or -1 to directory with files (use -l < -1 to limit # of files"
         )
 
     (opt, args) = parser.parse_args()
@@ -117,21 +117,21 @@ if __name__ == '__main__':
 
     if not opt.limit:
         file(args[1:], extractor, opt.output)
-    elif opt.limit == -1:
+    elif opt.limit <= -1:
         list = []
         paths = os.listdir(args[1])
         #paths.sort()
 
         for x,dir in enumerate(paths):
-            if x >= LIMIT:
+            if x*(-1) <= int(opt.limit) and int(opt.limit) < -1:
                 break
             path = os.path.join(args[1], dir)
             list.append(path)
         file(list, extractor, opt.output)
     else:
-        print options.limit
+        print opt.limit
         list = []
-        for x in xrange(1, options.limit+1):
+        for x in xrange(1, opt.limit+1):
             path = os.path.join(args[1], '%03d' % x, 'index.html')
             if os.path.exists(path):
                 list.append(path)

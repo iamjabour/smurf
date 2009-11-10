@@ -55,7 +55,7 @@ class MarkerBase(object):
         n = None
         for lable in self.labels:
             for node in self.labels[lable]:
-                self.coloringNode(node, lable)
+                self.setattribute(node, lable)
                 n = node
 
         node = n

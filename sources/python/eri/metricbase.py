@@ -1,6 +1,6 @@
 # -*- coding: latin-1 -*-
 
-class BaseMetric(object):
+class MetricBase(object):
     """
     Métrica base para a avaliação dos resultados.
     """
@@ -14,7 +14,7 @@ class BaseMetric(object):
         """
         self._markers = markers
 
-    def table(self, extracted=[], proof=[]):
+    def process(self, extracted=[], proof=[]):
         """
         Calculate Precision and Recall
         @param list extractred: list of tables extracted from document
