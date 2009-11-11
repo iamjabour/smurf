@@ -5,13 +5,18 @@ class MarkerColoring(MarkerBase):
     """
     Marcador que colore os nós agrupados com cores alternadas.
     """
+    def __init__(self):
+        self.colors = ['magenta','yellow','lime','#9370db','cyan']
+        self.color = 0
 
     def coloringNode(self, node, color):
         """
         Colore os nós das componetes, alternando entre a lista de cores.
         """
+        self.color = (self.color +1) % 5
         style = "border: 2px solid %(c)s; background-color: %(c)s;" %\
-            {'c':color}
+            {'c':self.colors[self.color]}
+
 
         if node.hasAttribute('style'):
             att = node.getAttribute('style')

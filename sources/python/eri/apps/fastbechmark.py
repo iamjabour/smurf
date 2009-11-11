@@ -1,8 +1,6 @@
 import sys
 from eri.utils.dynamicimport import *
-from eri.markerbase import MarkerBase as Marker
-
-LIMIT = 300
+from eri.markercoloring import MarkerColoring as Marker
 
 tables = []
 def dfs(node):
@@ -111,7 +109,8 @@ if __name__ == '__main__':
         raise SystemExit(parser.print_help())
 
     # importando o extrator dinamicamente
-    extractor = dimport("eri.extractors.%s" % args[0].lower(), args[0])
+    m, c = args[0].split('.')
+    extractor = dimport("eri.extractors.%s" % m.lower(), c)
 
     count = 0
 

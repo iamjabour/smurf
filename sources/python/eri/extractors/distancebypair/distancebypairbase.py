@@ -3,7 +3,7 @@ import sys
 from eri.utils.distances import stringDistance
 from eri.extractors.distancebypair.node import *
 
-class DistanceByPair(object):
+class DistanceByPairBase(object):
     """
     Esse módulo busca nós adjecentes com distancia de edição menor que uma
     proporção, passada por parametro, e os agrupa em componentes.
@@ -63,20 +63,17 @@ class DistanceByPair(object):
                 self.dfs(node.childNodes[x], esp+1)
 
 
-    def _mark1(self, node, marker):
+    def _mark(self, node, marker):
         """
         Colore os nós das componetes, alternando entre a lista de cores.
         """
-        colors = ['magenta','yellow','lime','#9370db','cyan']
-        color = 0
+        l = 0
 
         for x in xrange(0, len(node.childNodes)):
             currNode = node.childNodes[x]
-            style = "border: 2px solid %(c)s; background-color: %(c)s;" %\
-                {'c':colors[color]}
 
             if not node.result[x]:
-                self._mark1(currNode, marker)
+                self._mark(currNode, marker)
 
             do = False
 
@@ -86,49 +83,9 @@ class DistanceByPair(object):
                 do = True
 
             if node.result[x] and do:
-                marker.mark(currNode.dom, colors[color])
+                marker.mark(currNode.dom, l)
             else:
-                color = (color + 1) % 5
-
-    def _mark2(self, node, marker):
-        self.__labels = {}
-        self._mark2_1(node)
-
-        for i in self.__labels:
-            lines = 0
-            for x in self.__labels[i]:
-
-                if x.str[0:5] == "table":
-                    marker.mark(x.dom, 'table')
-                if x.str[0:2] == "td" or x.str[0:2] == "tr" or x.str[0:2] == "th":
-                    lines += 1
-            if lines > 0:
-                name = ""
-                while name != "table":
-                    name = x.parent.dom.localName.lower()
-                    x = x.parent
-                marker.mark(x.dom, 'table')
-
-    def _mark2_1(self, node):
-        for x in xrange(0, len(node.childNodes)):
-            currNode = node.childNodes[x]
-
-            if not node.result[x]:
-                self._mark2_1(currNode)
-
-            do = False
-
-            if x < len(node.childNodes)-1 and node.result[x] == node.result[x+1]:
-                do = True
-            if x > 0 and node.result[x] == node.result[x-1]:
-                do = True
-
-            if node.result[x] and do:
-                if self.__labels.has_key(node.result[x]):
-                    self.__labels[node.result[x]].append(currNode)
-                else:
-                    self.__labels.update({node.result[x]: [currNode]})
-
+                l += 1
 
     def process(self, dom, marker):
         """
@@ -138,7 +95,7 @@ class DistanceByPair(object):
 
         self._comp = 0
         self.dfs(tree)
-        self._mark2(tree, marker)
+        self._mark(tree, marker)
 
         return marker.process()
 
@@ -168,7 +125,7 @@ if __name__ == '__main__':
     parser = ParseDom()
     dom = parser.parse(htmlString)
 
-    extractor = DistanceByPair()
+    extractor = DistanceByPairBase()
     result = extractor.process(dom, marker)
     print >> out, result
 

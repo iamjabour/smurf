@@ -1,1 +1,1 @@
-modules = ['DistanceByPair']
+modules = ['DistanceByPair.Coloring','DistanceByPair.Table']
