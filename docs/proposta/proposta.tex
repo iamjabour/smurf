@@ -1,0 +1,250 @@
+\documentclass{acm_proc_article-sp}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{hyperref}
+\usepackage{color}
+
+\newcommand{\remove}[1]{}
+
+\hyphenation{tra-zen-do Bra-sil}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\title{Sem Título}
+
+\numberofauthors{1}
+\author{
+\alignauthor
+Iam Jabour  
+\and \alignauthor \email{ijabour@inf.puc-rio.br}
+}
+
+
+\maketitle
+
+\begin{abstract}
+
+
+\end{abstract}
+
+\section*{RESUMO}\normalsize %\the\parskip \the\baselineskip%\ninept
+%\begin{abstract}
+
+
+%\end{abstract}
+
+
+% A category with the (minimum) three required fields
+%\category{H.4}{Information Systems Applications}{Miscellaneous}
+%A category including the fourth, optional field follows...
+%\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+
+%\terms{Delphi theory}
+
+\keywords{Aprendizado de Máquina, Extração de Informação, Heurística}
+
+\section{Introdução}
+
+A {\it World Wide Web} estendeu o paradigma de pesquisa que era conhecido, 
+	introduzindo o conceito de busca a milhares de pessoas.
+A tarefa de Extração de Informação ({\it Informarion Retrieval}, IR) apresenta 
+	estratégias que ajudam nos procedimentos de pequisa, estruturando a 
+	informação disponível na tentativa de facilitar seu entendimento.
+
+Os documentos da Web por apresentarem a informação de forma semi-estuturada,
+	mutas vezes, junto a um conjunto excessivo de conteúdo não informativo
+	representam um grande desafio para a extração de informação. 
+Por este motivo,
+	criar técnicas capazes de estruturar e tornar os documentos menos poluidos
+	é uma tarefa de valor com diversos estudo na útima década.
+
+\remove{
+Retirar uma parcela de informação não relevante desses documentos 
+	proporciona benefícios claros.
+}
+
+Tradicionalmente, existem duas abordagens para a tarefa de filtar a informação nos 
+	documento da Web. 
+  \remove{, diminuindo a quantidade de dados não informativos processados.}
+A primeira é direcionada a encontrar o {\bf conteúdo relevante} de um 
+	documento. {\bf Conteúdo relevante} é a informação trazida únicamente pelo 
+	documento, ou seja,
+		o conteúdo que motivou a criação do documento.
+
+Complementarmente, a segunda abordagem é direcionada a encontrar e remover o 
+	{\bf conteúdo não relevante} de um documento. {\bf Conteúdo não relevante},
+	é a informação que existe somenta para facilitar a navegação,
+	ajudar na aparência ou trazer informações que não sejam referentes ao 
+	conteúdo relevante, ou seja,
+		todo o tipo de informação que normalmente aprerece repetidamente 
+		dentre vários documentos de um Site.
+
+
+Estudos como [...] direcionados a encontrar o conteúdo não relevante,
+apresentam métodos para detectar o {\it template} dos documento.
+	Essa tentativa devesse a proporção de informação necessária para a criação
+	dos {\it templates} nos documentos da Web. Este padão é 
+	citada por estudos como o de [Brooks2003] e confirmado por análises 
+	como a de \cite{Gibson2005}, que apresenta estudos onde de $40\%$ a $50\%$ da 
+  informação dos documentos é constituida por {\it template}.
+
+
+Uma abordagem comum para detectar o conteúdo relevante é a criação de
+regras/heurísticas. 
+	Nessas 
+		o domínio da aplicação é bem direcionado, pois o tipo de informação é 
+		bem definido.
+		Como exemplo,
+			existem métodos expecializados em detectar o corpo de uma notícia 
+			dentro de uma página de jornal, ou site semelhante,
+			anotando qual parte da notícia é 
+				o título,
+				o autor, o corpo/texto e
+				a data de publicação.
+			Existem referências para estudos com domínios como:
+				notícia {\bf \cite{}...}, como o objetivo exemplificado acima;
+				comércio eletrônico {\bf \cite{}...}, com o objetivo de 
+				encontrar os produtos, a descrição e o preço oferecido;
+				blog {\bf \cite{}...}, com o objetivo de separar cada 
+				{\it post} e seus comentários.
+
+
+\remove{
+Embora estudos como \cite{}... apresentem resutados "interessantes" na detecção de templates, 
+%\subsection{Comparação com os resultados}
+}
+
+
+\subsection{Acompanhamento da Execução}
+%- mini-acompanhamento da execução: seqüência de tarefas de desenvolvimento utilizadas junto com estatísticas de tempo e esforço por tarefa.
+
+	- Definição da Tarefa: 1 de agosto a 30 de agosto
+	- Modelagem do Problema: 1 de setembro a 15 de setembro
+	- Impementação do Framework e Testes: 15 de setembro a 30 de novembro
+	- Documentação de usuario e relatório: 30 de novembro a 15 de dezembro
+	- entrega: 15 de dezembro
+
+
+
+\subsection{Especificação}
+%- especificação do programa
+% - objetivos, requisitos
+% - diagramas de especificação, por exemplo use-cases.
+
+	- Para facilitar agilizar e promover uma fácil abordagem sobre tarefas de experimentação em páginas HTML é necessário um framework que possibilite:
+		- parsear uma página HTML para uma árvore DOM: preprocessamento...
+		- Criar um pipe onde módulos possam ser aplicados sobre a árvore DOM
+		- fornecer uma interface onde os resultados dos módulos são guardados
+		- Criar uma interface onde regras de avaliação sobre o resultado possam ser aplicadas
+		- Criar forma de criar gabaritos para que as métricas de avaliação possam ser automatizadas
+
+
+\subsection{Modelagem}
+%- projeto modular do programa
+% - critérios de projeto utilizados
+% - diagramas de arquitetura e/ou segmentação do programa, por     exemplo UML.
+% - organização do programa (componentes, módulos, classes,...),    por exemplo  diagramas de classe UML.
+% - diagramas de organização dos dados, por exemplo diagramas     de modelagem de dados, ou entidade e relacionamentos.
+
+Modulos:
+ A organização modular do projeto facilita o entendimento da ferramenta
+ e possibilita que correções e atualizações possam ser feitas
+ facilmente. Abaixo descrevemos os principais módulos da ferramenta:
+
+ Extratores:
+  Conjunto de classes que são especializadas em extrair informação de
+  árvores DOM e utilizando {\bf Marcadores} rotular cada tipo de
+  informação extraida.
+
+ Marcadore:
+  Conjunto de classes especialzadas em atribuir labels a nós da árvore
+  DOM. Faz-se necessário deixar o desenvolvimento desse módulo
+  independente, pois a variação na forma de avaliação pelas {\bf
+  Métricas} influência a forma que os nós devem ser marcados.
+
+ Métricas (Avaliadores):
+  Os avaliadores atribuem valores para o acerto e o erro nas marcações.
+  Cada tarefa pode ser avaliada de forma diretente, pois é diretamente
+  relacionado a abordagem da tarefa ao tipo de avaliação. No final a
+  Métrica retorna três valores que são comulmente utilizados no universo
+  de aprendizado de máquina e experimentação (recall, precision,
+  f-measure), sendo documentada a forma do cálculo desses valores dentro
+  do módulo.
+ 
+ Aplicativos:
+  Os aplicativos são agrupados para agilizar e facilitar a utilização da
+  ferramenta pelos usuários. Nesse módulo são encontradas as aplicações
+  da ferrameta proposta, como: benchmarks e geradores de recortes com os
+  diversos extratores.
+
+
+Estrutura de diretorio
+- Framework 
+  - Documento(DOM-Tree)->(Documento):
+    DOM, Path, ID
+
+  - Extrator(Documento)->(Elementos)
+    Elementos que utilizam o framework para extrair elementos da arvore DOM
+
+  - Elemento
+
+  - Marcador(Elementos)->(SAIDA):
+    SAIDA: xml, html, cvs, txt, etc - formatos possiveis de saida
+
+  - Gabarito
+
+  - Avaliador(SAIDA, Gabarito)
+    Resultado: cvs, txt, etc - formatos possiveis de saida
+
+  - Utils
+    - Distances - Abstract functions:
+      stringDistance(string, string)->(int):
+        Levenshtien distance - distancia de edição entre strings
+
+    - PaseDom:
+      parse(htmlString, encoding)->(DOM):
+        - detecção de encode do htmlString, se nao foi passado
+        ...
+        Cria uma árvore dom com o módulo libxml2dom
+        - conformidade da árvore
+        - retorna uma DOM-Tree
+
+    - Dynamicimport:
+      dimport:
+        importa um modulo dinamicamente
+	
+    - Pré-Processamento(HTML-FILE)->(HTML-String)
+
+  - Apps
+    Benchmark:
+      Roda um conjunto de Extratores e depois de Avalidores gerando o
+      resultado no formato desejado.
+
+- Criador de Gabarito(HTML-FILE)->(Gabarito)
+
+\subsection{Código Fonte}
+      - código fonte cuidadosamente comentado
+                  - comentários cabeçalho de módulos, classes e funções
+                  - comentários de controle de versão
+                  - assertivas para dados e procedimentos, procure utilizar design     by contract
+                  - pseudo instruções
+                  - procure estabelecer e/ou adotar padrões de programação. Os apêndices do livro Staa, A.v.; Programação Modular, Campus 2000; contêm uma extensa lista de padrões de programação que pode servir de exemplo para a adaptação às características específicas do trabalho. 
+
+\subsection{Testes}
+      - roteiro de teste efetuado, composto de:
+                  - critérios de teste utilizados
+                  - descrição dos casos de teste
+                  - na medida do possível procure utilizar testes automatizados
+                  - scripts de teste automatizado
+                  - logs gerados pelo teste automatizado
+
+\subsection{Documentação do Usuário}
+      - documentação para o usuário 
+
+% \balancecolumns
+
+\bibliographystyle{alpha}
+\bibliography{bib}
+\end{document}
