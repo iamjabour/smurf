@@ -1,14 +1,16 @@
 import sys
 from eri.utils.dynamicimport import *
 
-# Essa funcao devera ser uma classe banchmark
-def file(files, extractor, c, output=None):
+def file(files, extractor, configurator, output=None):
+    """
+    Roda uma extrator com as configuracoes especificadas para um conjunto de arquivos
+    """
     import urllib
     parser = ParseDom()
-    marker = c.marker()
-    metric = c.metric()
+    marker = configurator.marker()
+    metric = configurator.metric()
 
-    proof = c.proof()
+    proof = configurator.proof()
 
     print "Doc\tPre\tRec\tlext\tlpro\tfile_name"
     for id, filePath in enumerate(files):
@@ -119,5 +121,5 @@ if __name__ == '__main__':
                 files.append(path)
 
     # importando as configuracoes do arquivo de config
-    c = Conf(opt.config)
-    file(files, extractor, c, opt.output)
+    cnf = Conf(opt.config)
+    file(files, extractor, cnf, opt.output)

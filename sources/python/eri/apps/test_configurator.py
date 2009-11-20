@@ -18,7 +18,7 @@ class TestParseDom(unittest.TestCase):
 
         print '\t - Test apps.configurator()'
 
-        c = Config('config_example.cnf')
+        c = Config()
 
         self.assert_(c != None)
         self.assert_(c.__class__ == Config)
@@ -28,11 +28,12 @@ class TestParseDom(unittest.TestCase):
         test instantiante and get a marker object
         """
         print '\t - Test apps.configurator.marker()'
-        c = Config('config_example.cnf')
+        c = Config()
+        m = c._create_marker({'marker':'MarkerColoring'}, 'eri')
         self.assert_(c != None)
 
         from eri.markercoloring import MarkerColoring as Marker
-        self.assert_(c.marker().__class__ == Marker)
+        self.assert_(m.__class__ == Marker)
 
 
     def test_importProof(self):
@@ -40,11 +41,12 @@ class TestParseDom(unittest.TestCase):
         test instantiante and get a proof object
         """
         print '\t - Test apps.configurator.proof()'
-        c = Config('config_example.cnf')
+        c = Config()
+        p = c._create_proof({'proof':'TablesProof'}, 'eri')
         self.assert_(c != None)
 
         from eri.tablesproof import TablesProof as Proof
-        self.assert_(c.proof().__class__ == Proof)
+        self.assert_(p.__class__ == Proof)
 
     def test_importMetric(self):
         """
@@ -52,10 +54,11 @@ class TestParseDom(unittest.TestCase):
         """
         print '\t - Test apps.configurator.metric()'
         c = Config('config_example.cnf')
+        m = c._create_metric({'metric':'MetricBase'}, 'eri')
         self.assert_(c != None)
 
         from eri.metricbase import MetricBase as Metric
-        self.assert_(c.metric().__class__ == Metric)
+        self.assert_(m.__class__ == Metric)
 
 
 if __name__ == '__main__':
