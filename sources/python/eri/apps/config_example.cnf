@@ -1,0 +1,9 @@
+# Geral Configs #
+## Marker ##
+marker: MarkerColoring
+
+# Corpus Configs #
+## Proof Format ##
+proof: TablesProof
+## Metric ##
+metric: MetricBase

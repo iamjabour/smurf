@@ -14,6 +14,8 @@ def dimport(module, className, parameters={}):
 
     dottedPath = module + '.' + className.lower()
 
+#    print module, className, dottedPath
+
     try:
         m = __import__(dottedPath, globals(), locals(), [''])
     except ImportError, ex:
