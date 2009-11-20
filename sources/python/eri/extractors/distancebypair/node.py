@@ -1,4 +1,7 @@
 class Node(object):
+    """
+    No da arvore utilizada para o processamento do extrator DistanceByPair
+    """
 
     __id = 0
 
@@ -18,6 +21,12 @@ class Node(object):
     #def __init__
 
     def loadNodeTree(self, xmlNode, depth):
+        """
+        Load all tre from provided root of xmlnode
+
+        @param xmlNode: Node to load subtree
+        @param depth: Corrent depth of tree
+        """
 
         treeNode = Node(xmlNode)
         treeNode.depth = depth

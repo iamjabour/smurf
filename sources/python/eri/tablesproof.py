@@ -1,7 +1,7 @@
 
 class TablesProof(object):
     """
-    Class proof  is a correct set of nodes extracted from a provided annotated file
+    Class proof is a correct set of nodes extracted from a provided annotated file
     """
 
     def __init__ (self):

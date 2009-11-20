@@ -6,6 +6,9 @@ class MarkerColoring(MarkerBase):
     Marcador que colore os nós agrupados com cores alternadas.
     """
     def __init__(self):
+        """
+        Cria uma instacia nova de um marcador
+        """
         self.colors = ['magenta','yellow','lime','#9370db','cyan']
         self.color = 0
 

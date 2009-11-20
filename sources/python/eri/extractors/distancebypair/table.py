@@ -11,6 +11,13 @@ class Table(DistanceByPairBase):
     """
 
     def _mark(self, node, marker):
+        """
+        Marca a sub arvore dos nos recortados como sendo tabela, utilizando o markador recebido
+
+        @param node: No para iniciar o procedimento de marcacao
+        @param marker: Marcador utilizado para realizar a marcacao
+        """
+
         self.__labels = {}
         self._submark(node)
 
@@ -30,6 +37,9 @@ class Table(DistanceByPairBase):
                 marker.mark(x.dom, 'table')
 
     def _submark(self, node):
+        """
+        Sub rotina para verificar uma sub arvore e marcar apenas tabelas genuinas
+        """
         for x in xrange(0, len(node.childNodes)):
             currNode = node.childNodes[x]
 

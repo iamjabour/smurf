@@ -53,7 +53,7 @@ class TestParseDom(unittest.TestCase):
         test instantiante and get a metric object
         """
         print '\t - Test apps.configurator.metric()'
-        c = Config('config_example.cnf')
+        c = Config()
         m = c._create_metric({'metric':'MetricBase'}, 'eri')
         self.assert_(c != None)
 

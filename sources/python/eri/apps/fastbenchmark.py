@@ -4,6 +4,10 @@ from eri.utils.dynamicimport import *
 def file(files, extractor, configurator, output=None):
     """
     Roda uma extrator com as configuracoes especificadas para um conjunto de arquivos
+
+    @param extractor: Extrator to extract information from dom tree
+    @param configurator: Configurator to provide the information to run benchmark
+    @param output: std to print output messagens
     """
     import urllib
     parser = ParseDom()

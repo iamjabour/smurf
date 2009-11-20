@@ -2,8 +2,15 @@ import sys
 from eri.utils.dynamicimport import *
 
 class Configurator(object):
-
+    """
+    Configurator carrega um arquivo de configuracao ou pode ser carregado manualmente para fornecer as informacoes para um estancia do eri.
+    """
     def __init__(self, path=None):
+        """
+        Configurator provide an intarface to configura necessaries informations to run an instance of eri.
+
+        @param path: File with informations to create configuration
+        """
         self.objects = {'marker':None, 'proof':None, 'metric':None}
 
         if path:
@@ -18,7 +25,13 @@ class Configurator(object):
 
             self.create_objects(conf)
 
-    def _create_metric(self, conf, eri):
+    def _create_metric(self, conf, eri='eri'):
+        """
+        Create a metric instance and value with the needed metric
+
+        @param conf: Dictionary with key metric
+        @param eri: name of projet (default 'eri')
+        """
         if 'metric' in conf:
             metric = dimport(eri, conf['metric'])
             return metric
@@ -26,6 +39,12 @@ class Configurator(object):
             raise SystemExit, "Dont found metric in config file"
 
     def _create_proof(self, conf, eri):
+        """
+        Create a proof instance and value with the needed proof
+
+        @param conf: Dictionary with key metric
+        @param eri: name of projet (default 'eri')
+        """
         if 'proof' in conf:
             proof = dimport(eri, conf['proof'])
             return proof
@@ -33,6 +52,12 @@ class Configurator(object):
             raise SystemExit, "Dont found proof in config file"
 
     def _create_marker(self, conf, eri):
+        """
+        Create a marker instace
+
+        @param conf: Dictionary with key metric and value with the needed marker
+        @param eri: name of projet (default 'eri')
+        """
         if 'marker' in conf:
             marker = dimport(eri, conf['marker'])
             return marker
@@ -40,16 +65,30 @@ class Configurator(object):
             raise SystemExit, "Dont found marker in config file"
 
     def create_objects(self, conf):
+        """
+        Create all necessery objects from provided conf
+
+        @param conf: Dictionary with name of classes neededs
+        """
         eri = "eri"
         self.objects['marker'] = self._create_marker(conf, eri)
         self.objects['proof'] = self._create_proof(conf, eri)
         self.objects['metric'] = self._create_metric(conf, eri)
 
     def marker(self):
+        """
+        return an instance of marker
+        """
         return self.objects['marker']
 
     def proof(self):
+        """
+        return an instance of proof
+        """
         return self.objects['proof']
 
     def metric(self):
+        """
+        return an instance of metric
+        """
         return self.objects['metric']

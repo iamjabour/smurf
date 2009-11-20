@@ -13,6 +13,7 @@ class DistanceByPairBase(object):
         """
         Navega em profundidade na árvore buscando nós adjacentes com distancia
         de edição menor que maxDist e os agrupa na mesma componente.
+
         @param Node node: No atual da dfs
         @param int esp: Nível da árvore
         @param float maxDist: Proporção máxima de diferença para ser agrupado

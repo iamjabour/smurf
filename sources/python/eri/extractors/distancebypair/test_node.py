@@ -8,6 +8,9 @@ class TestNode(unittest.TestCase):
         pass
 
     def test_TreeStructure(self):
+        """
+        Unittest tree strucure
+        """
         html = """
 <html>
     <body>
@@ -41,6 +44,9 @@ class TestNode(unittest.TestCase):
         self.assertEquals(tree.childNodes[0].childNodes[0].childNodes[0].childNodes[1].str, "diva")
 
     def test_TreeContent(self):
+        """
+        Unittest to check tree content after load
+        """
         html = """
 <html>
     <body>
