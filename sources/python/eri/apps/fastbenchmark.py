@@ -1,19 +1,14 @@
 import sys
 from eri.utils.dynamicimport import *
 
-# Esses imports devem ser dinamicos
-from eri.markercoloring import MarkerColoring as Marker
-from proof import TablesProof
-
-
 # Essa funcao devera ser uma classe banchmark
-def file(files, extractor, output=None):
+def file(files, extractor, c, output=None):
     import urllib
     parser = ParseDom()
-    marker = Marker()
-    metric = Metric()
+    marker = c.marker()
+    metric = c.metric()
 
-    proof = TablesProof()
+    proof = c.proof()
 
     print "Doc\tPre\tRec\tlext\tlpro\tfile_name"
     for id, filePath in enumerate(files):
@@ -91,9 +86,9 @@ if __name__ == '__main__':
          "(default use no hierarchical corpus) or -1 to directory with files (use -l < -1 to limit # of files"
         )
 
-    paser.add_option(
-        '-c', '--config', action='store', type='string', default=False, \
-        help="Configuration file to set Marker, ProofClass, and Marker, if omited fastbenchmark use MarkerColoring, ProofTable, and MetricBase (make sure provided corpus is ProofTable based)"
+    parser.add_option(
+        '-c', '--config', action='store', type='string', default='config_example.cnf', \
+        help="Configuration file to set Marker, ProofClass, and Marker, if omited fastbenchmark use config_example.cnf (make sure provided corpus is ProofTable based)")
 
     (opt, args) = parser.parse_args()
 
@@ -104,10 +99,10 @@ if __name__ == '__main__':
     m, c = args[0].split('.')
     extractor = dimport("eri.extractors.%s" % m.lower(), c)
 
+    files = []
     if not opt.limit:
-        file(args[1:], extractor, opt.output)
+        files = args[1:]
     elif opt.limit <= -1:
-        list = []
         paths = os.listdir(args[1])
         #paths.sort()
 
@@ -115,13 +110,14 @@ if __name__ == '__main__':
             if x*(-1) <= int(opt.limit) and int(opt.limit) < -1:
                 break
             path = os.path.join(args[1], dir)
-            list.append(path)
-        file(list, extractor, opt.output)
+            files.append(path)
     else:
         print opt.limit
-        list = []
         for x in xrange(1, opt.limit+1):
             path = os.path.join(args[1], '%03d' % x, 'index.html')
             if os.path.exists(path):
-                list.append(path)
-        file(list, extractor, opt.output)
+                files.append(path)
+
+    # importando as configuracoes do arquivo de config
+    c = Conf(opt.config)
+    file(files, extractor, c, opt.output)
