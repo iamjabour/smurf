@@ -48,11 +48,18 @@ Iam Jabour
 \section{Introdução}
 
 A {\it World Wide Web} estendeu o paradigma de pesquisa que era conhecido, 
-	introduzindo o conceito de busca a milhares de pessoas.
+	introduzindo o conceito de busca a milhares de pessoas. (mostrar
+  referencias sobre o fato)
+
+
 A tarefa de Extração de Informação ({\it Informarion Retrieval}, IR) apresenta 
 	estratégias que ajudam nos procedimentos de pequisa, estruturando a 
 	informação disponível na tentativa de facilitar seu entendimento.
+  (explicar melhor os objetivos de IR, e listar algumas das áreas ou
+  tarefas abordadas dentro de IR)
 
+(introduzir esse paragrafo de forma mais lenta, vindo de algo mais
+concreto)
 Os documentos da Web por apresentarem a informação de forma semi-estuturada,
 	mutas vezes, junto a um conjunto excessivo de conteúdo não informativo
 	representam um grande desafio para a extração de informação. 
@@ -65,6 +72,8 @@ Retirar uma parcela de informação não relevante desses documentos
 	proporciona benefícios claros.
 }
 
+(Iniciar a explicação da tarefa antes de apresentar esse paragrafo.
+Pegar um gancho dos exemplos feitos acima, para enunciar a tarefa)
 Tradicionalmente, existem duas abordagens para a tarefa de filtar a informação nos 
 	documento da Web. 
   \remove{, diminuindo a quantidade de dados não informativos processados.}
@@ -120,11 +129,35 @@ Embora estudos como \cite{}... apresentem resutados "interessantes" na detecçã
 \subsection{Acompanhamento da Execução}
 %- mini-acompanhamento da execução: seqüência de tarefas de desenvolvimento utilizadas junto com estatísticas de tempo e esforço por tarefa.
 
-	- Definição da Tarefa: 1 de agosto a 30 de agosto
-	- Modelagem do Problema: 1 de setembro a 15 de setembro
-	- Impementação do Framework e Testes: 15 de setembro a 30 de novembro
-	- Documentação de usuario e relatório: 30 de novembro a 15 de dezembro
-	- entrega: 15 de dezembro
+	- Definição da Tarefa: 1 de agosto a 30 de agosto \\
+  Inicialmente foi realizada uma busca pelos trabalhos relacionados a
+  extração de elementos e marcação em páginas Web para engrandecer o
+  conhecimento sobre a área, melhorando a capacidade de entendimento
+  sobre o problema.
+
+	- Modelagem do Problema: 1 de setembro a 15 de setembro \\ 
+  Após conhecer bem o problema de segmentação e marcação de elementos em
+  páginas Web a modelagem de uma ferramenta de apoio se tornou possível.
+  Durante esse processo de modelagem foram estabelecidos os limites e as
+  necessidades de uma ferramenta para suporte a criação de soluções para
+  o problema.
+
+	- Impementação do Framework e Testes: 15 de setembro a 30 de novembro \\
+  Durante o mês de setembro, outubro e novembro foi realizada a
+  codificação da ferramenta modelada. Durante esse tempo também foram
+  desenvolvidos alguns testes unitários para garantir a qualidade do
+  desenvolvimento da aplicação. Além do desenvolvimento da ferramenta de
+  suporte, também foi realizada a tentativa de resolver uma tarefa de
+  segmentação. Essa tarefa é detalhado mais adiante no texto, assim como
+  seus resultados.
+
+	- Documentação de usuario e relatório: 30 de novembro a 15 de dezembro \\
+  Os últimos 15 dias de projeto foram utilizados para a elaboração deste
+  documento e também para a criação da documentação para usuários,
+  tornando a ferramenta fácil de ser utilizada por profissíonais que
+  queiram pesquisar sobre problemas que possam ser modelados de forma
+  similar, ou seja, problemas de segmentação ou detecção de elementos em
+  páginas HTML.
 
 
 
@@ -133,12 +166,18 @@ Embora estudos como \cite{}... apresentem resutados "interessantes" na detecçã
 % - objetivos, requisitos
 % - diagramas de especificação, por exemplo use-cases.
 
-	- Para facilitar agilizar e promover uma fácil abordagem sobre tarefas de experimentação em páginas HTML é necessário um framework que possibilite:
-		- parsear uma página HTML para uma árvore DOM: preprocessamento...
+	- Para facilitar agilizar e promover uma fácil abordagem sobre tarefas
+  de experimentação em páginas HTML é necessário um framework que
+  possibilite: \\
+		- parsear uma página HTML para uma árvore DOM: preprocessamento... \\
 		- Criar um pipe onde módulos possam ser aplicados sobre a árvore DOM
-		- fornecer uma interface onde os resultados dos módulos são guardados
-		- Criar uma interface onde regras de avaliação sobre o resultado possam ser aplicadas
-		- Criar forma de criar gabaritos para que as métricas de avaliação possam ser automatizadas
+    \\
+		- fornecer uma interface onde os resultados dos módulos são
+    guardados \\
+		- Criar uma interface onde regras de avaliação sobre o resultado
+    possam ser aplicadas \\
+		- Criar forma de criar gabaritos para que as métricas de avaliação
+    possam ser automatizadas \\
 
 
 \subsection{Modelagem}
@@ -148,23 +187,23 @@ Embora estudos como \cite{}... apresentem resutados "interessantes" na detecçã
 % - organização do programa (componentes, módulos, classes,...),    por exemplo  diagramas de classe UML.
 % - diagramas de organização dos dados, por exemplo diagramas     de modelagem de dados, ou entidade e relacionamentos.
 
-Modulos:
+- Modulos \\
  A organização modular do projeto facilita o entendimento da ferramenta
  e possibilita que correções e atualizações possam ser feitas
  facilmente. Abaixo descrevemos os principais módulos da ferramenta:
 
- Extratores:
+ Extratores: \\
   Conjunto de classes que são especializadas em extrair informação de
   árvores DOM e utilizando {\bf Marcadores} rotular cada tipo de
   informação extraida.
 
- Marcadore:
+ Marcadore: \\
   Conjunto de classes especialzadas em atribuir labels a nós da árvore
   DOM. Faz-se necessário deixar o desenvolvimento desse módulo
   independente, pois a variação na forma de avaliação pelas {\bf
   Métricas} influência a forma que os nós devem ser marcados.
 
- Métricas (Avaliadores):
+ Métricas (Avaliadores): \\
   Os avaliadores atribuem valores para o acerto e o erro nas marcações.
   Cada tarefa pode ser avaliada de forma diretente, pois é diretamente
   relacionado a abordagem da tarefa ao tipo de avaliação. No final a
@@ -173,7 +212,7 @@ Modulos:
   f-measure), sendo documentada a forma do cálculo desses valores dentro
   do módulo.
  
- Aplicativos:
+ Aplicativos: \\
   Os aplicativos são agrupados para agilizar e facilitar a utilização da
   ferramenta pelos usuários. Nesse módulo são encontradas as aplicações
   da ferrameta proposta, como: benchmarks e geradores de recortes com os
