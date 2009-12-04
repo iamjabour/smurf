@@ -5,16 +5,30 @@ class MetricBase(object):
     Métrica base para a avaliação dos resultados.
     """
 
-    def __init__(self, markers=[]):
+    def __init__(self, marker=[]):
         """
         Inicia o conjunto de marks que podem ser utilizados com essa métrica.
 
         @parm (mark) markers: markadores que podem ser utilizados em conjunto a 
         essa métrica.
         """
-        self._markers = markers
+        self._marker = marker
 
-    def process(self, extracted=[], proof=[]):
+    def setMarkers(self, marker):
+        self._marker = marker
+
+    def marker(self):
+        return self._marker
+
+    def process(self, labels={}, proof=[]):
+        extracted = []
+        for key in labels:
+            for item in labels[key]:
+                extracted.append(item)
+
+        return self._process(extracted, proof)
+
+    def _process(self, extracted=[], proof=[]):
         """
         Calculate Precision and Recall
         @param list extractred: list of tables extracted from document
@@ -30,5 +44,6 @@ class MetricBase(object):
                 pass
 
         if len(proof) == 0:
-            return 0
-        return (float(acc)/len(extracted), float(acc)/len(proof))
+            return (0.0,0.0)
+        return (float(acc)/len(proof), float(acc)/len(extracted))
+

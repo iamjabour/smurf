@@ -49,7 +49,8 @@ class Configurator(object):
             proof = dimport(eri, conf['proof'])
             return proof
         else:
-            raise SystemExit, "Dont found proof in config file"
+#            raise SystemExit, "Dont found proof in config file"
+            return None
 
     def _create_marker(self, conf, eri):
         """
@@ -74,12 +75,7 @@ class Configurator(object):
         self.objects['marker'] = self._create_marker(conf, eri)
         self.objects['proof'] = self._create_proof(conf, eri)
         self.objects['metric'] = self._create_metric(conf, eri)
-
-    def marker(self):
-        """
-        return an instance of marker
-        """
-        return self.objects['marker']
+        self.objects['metric'].setMarkers(self.objects['marker'])
 
     def proof(self):
         """

@@ -2,7 +2,7 @@ import xml.dom
 import sanitizer
 from forceencode import *
 from libxml2dom import parseString
-
+import os
 # imports chardet module if avaiable
 try:
     import chardet.universaldetector
@@ -25,7 +25,11 @@ class ParseDom(object):
         if chardet:
             self._detector = chardet.universaldetector.UniversalDetector()
 
-    def parse(self, htmlString, encoding='utf-8'):
+    def parse(self, file, encoding='utf8'):
+        string = open(file,'r').read()
+        return parseString(string,encoding)
+
+    def parseString(self, htmlString, encoding='utf-8'):
         """
         This is the base implementation for the processing.
 

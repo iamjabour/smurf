@@ -1,9 +1,8 @@
 # Geral Configs #
-## Marker ##
-marker: MarkerColoring
-
 # Corpus Configs #
-## Proof Format ##
-proof: TablesProof
-## Metric ##
-metric: MetricBase
+## CorpusPath ##
+corpusPath: /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html
+
+# Metric #
+metric: MetricTables
+marker: MarkerBase
