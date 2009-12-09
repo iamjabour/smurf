@@ -4,5 +4,5 @@
 corpusPath: /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html
 
 # Metric #
-metric: MetricTables
+metric: MetricBase
 marker: MarkerBase

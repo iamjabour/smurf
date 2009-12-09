@@ -20,30 +20,34 @@ class MetricBase(object):
     def marker(self):
         return self._marker
 
-    def process(self, labels={}, proof=[]):
-        extracted = []
-        for key in labels:
-            for item in labels[key]:
-                extracted.append(item)
+    def process(self, labels={}, proof={}):
+        return self._process(labels, proof)
 
-        return self._process(extracted, proof)
-
-    def _process(self, extracted=[], proof=[]):
+    def _process(self, extracted={}, proof={}):
         """
         Calculate Precision and Recall
         @param list extractred: list of tables extracted from document
         @parm list proof: list of tables proof to compare
 
-        return: (precision, recall)
+        return: {key: [acc,err,total]}
         """
-        acc = 0
-        for node in proof:
-            if node in extracted:
-                acc += 1
-            else:
-                pass
+#        print extracted, proof
 
-        if len(proof) == 0:
-            return (0.0,0.0)
-        return (float(acc)/len(proof), float(acc)/len(extracted))
+        result = {}
 
+        for key in proof:
+            #acc, err
+            result.update({key:[0,len(proof[key]), len(extracted[key]) if extracted.has_key(key) else 0]})
+
+        for key in proof:
+            for p_node in proof[key]:
+                if extracted.has_key(key):
+                    if p_node in extracted[key]:
+                        result[key][0] += 1
+#                    else:
+#                        result[key][1] += 1
+#                else:
+#                    result[key][1] += len(proof[key])
+#                    break
+
+        return result

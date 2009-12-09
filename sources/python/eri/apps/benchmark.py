@@ -20,6 +20,7 @@ class Benchmark:
 
     def process(self):
         count = 0
+
         while True:
             count += 1
             doc = self.corpus.getDocument()
@@ -36,9 +37,44 @@ class Benchmark:
             self.benchmark.append(result)
 
     def pprint(self):
-        print 'doc\trecall\tprecision'
+
+        result = {}
+
+        for key in self.benchmark[0]:
+            result.update({key:[0,0,0]})
+
+        for id,doc in enumerate(self.benchmark):
+            print id, doc
+            for key in doc:
+                result[key][0] += doc[key][0]
+                result[key][1] += doc[key][1]
+                result[key][2] += doc[key][2]
+
+        print
+        print 'total'
+        print result
+
+        r = {}
+        for k in result:
+            if result[k][1] > 0:
+                if result[k][2] > 0:
+                    precision = result[k][0]/float(result[k][2])
+                else:
+                    precision = 1
+
+                recall = result[k][0]/float(result[k][1])
+                r.update({k: [recall, precision]})
+            else:
+                r.update({k: [1, 1 if result[k][1] == 0 else 0]})
+
+
+        print
+        print 'key\trecall\tprecision'
+        print r
+        return r
+
         for id,d in enumerate(self.benchmark):
-            print "%3d\t%0.3f\t%0.3f" % (id,float(d[0]),float(d[1]))
+            print id, d
 
 if __name__ == '__main__':
     import optparse
@@ -80,7 +116,10 @@ if __name__ == '__main__':
     # importando o extrator dinamicamente
     m, c = args[0].split('.')
     extractor = dimport("eri.extractors.%s" % m.lower(), c)
+    print 'benchmark'
+    b = Benchmark(args[1], opt.config, [extractor], limit= opt.limit)
 
-    b = Benchmark(args[1], opt.config, [extractor])
+    b.process()
+    b.pprint()
 
 

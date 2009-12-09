@@ -5,7 +5,7 @@ class TablesProof(object):
     """
 
     def __init__ (self):
-        self.tables = []
+        self.labels = {}
 
     def dfs(self, node):
         """
@@ -16,7 +16,9 @@ class TablesProof(object):
         if node.localName and node.localName.lower() == 'table':
             if node.hasAttribute('genuinetable') and \
               node.getAttribute('genuinetable') == 'yes':
-                self.tables.append(node)
+                self.labels['table'].append(node)
+#            else:
+#                self.labels['other'].append(node)
         for child in node.childNodes:
             self.dfs(child)
 
@@ -24,7 +26,7 @@ class TablesProof(object):
         """
         Get a set of nodes
         """
-
-        self.tables = []
+#        self.labels = {'table':[], 'other':[]}
+        self.labels = {'table':[]}
         self.dfs(dom)
-        return self.tables
+        return self.labels
