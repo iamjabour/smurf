@@ -61,7 +61,7 @@ A tarefa de Extração de Informação ({\it Informarion Retrieval}, IR) apresen
 (introduzir esse paragrafo de forma mais lenta, vindo de algo mais
 concreto)
 Os documentos da Web por apresentarem a informação de forma semi-estuturada,
-	mutas vezes, junto a um conjunto excessivo de conteúdo não informativo
+	muitas vezes, junto a um conjunto excessivo de conteúdo não informativo
 	representam um grande desafio para a extração de informação. 
 Por este motivo,
 	criar técnicas capazes de estruturar e tornar os documentos menos poluidos
@@ -74,8 +74,8 @@ Retirar uma parcela de informação não relevante desses documentos
 
 (Iniciar a explicação da tarefa antes de apresentar esse paragrafo.
 Pegar um gancho dos exemplos feitos acima, para enunciar a tarefa)
-Tradicionalmente, existem duas abordagens para a tarefa de filtar a informação nos 
-	documento da Web. 
+Tradicionalmente, existem duas abordagens para a tarefa de filtar a informação
+nos documento da Web. 
   \remove{, diminuindo a quantidade de dados não informativos processados.}
 A primeira é direcionada a encontrar o {\bf conteúdo relevante} de um 
 	documento. {\bf Conteúdo relevante} é a informação trazida únicamente pelo 
@@ -119,14 +119,260 @@ regras/heurísticas.
 				blog {\bf \cite{}...}, com o objetivo de separar cada 
 				{\it post} e seus comentários.
 
+Podemos também modelar o problema de filtar a informação em documentos da Web
+de forma a indetificar elementos dentro da estrutura do documento, pois 
+dessa forma tanto detectar o contêudo relevante quanto identificar o contêudo 
+não relevanto podem ser abordados com a mesma técnica. 
+
+A técnica de identificar elementos da estrutura dos documentos Web esta
+ainda está em aberto e uma ferramenta que ajude na experimentação dessa
+abordagem ou sua modelagem não é reportada por estudos na área.
+
+Neste trabalho buscamos modelar uma ferramenta que facilite a abordagem
+de problemas de identificação de elementos. Para isso,
+utilizaremos a tarefa de identificação de tablas, detalhada na seção X,
+como caso de uso.
 
 \remove{
 Embora estudos como \cite{}... apresentem resutados "interessantes" na detecção de templates, 
 %\subsection{Comparação com os resultados}
 }
 
+\section{Identificação de Tablas}
 
-\subsection{Acompanhamento da Execução}
+%  \subsection{Introdução}
+- o que é uma estrutura de dados tabulares (tabelas genuinas)
+- tag table e seu uso em documentos html
+- importancia em separar/identificar tabelas genuinas
+
+  \subsection{Trabalhos Relacionados}
+
+- trabalhos na area e seus resultados
+- modelagens comuns e importantes
+
+  \subsection{Abordagem adotada}
+
+- modelagem da abordagem adotada
+- justificativa
+
+
+\section{Experimentação em Documentos HTML}
+
+  \subsection{Documentos HTML e seus problemas}
+
+- problemas que se encontrar quando se trabalha com documentos html
+- encode, parser, documentos mal formados, referencias quebradas,
+visualizacao (renderização errada) ...
+
+A criação de soluções para as tarefas de segmentação ou
+identificação de elementos em páginas Web demanda uma atenção constante.
+Essa atenção proporciona o profundo conhecimento da estrutura do problema
+o que ajuda na capacidade de modelar novas abordagens. Porém,
+  é constantemente relatado em trabalhos relacionados a páginas Web 
+  a existência de diversas dificuldades de se trabalhar com os
+  documentos Web, essas impedem a atuação exclusiva no problema inicial 
+  demandando atenção e esforço, muitas vezes, tanto quanto a tarefa original.
+
+\remove{são encontrados sub-problemas que não pertencem ao problema
+  original, mas que impedem o andamento de pesquisas e experimentações
+  sobre o domínio.
+}
+
+Problemas como 
+    documentos com mais de uma codificação de caracteres, 
+    documentos com html mal formados
+
+ou até mesmo utilizar abordagens já utilizadas em problemas e semelhantes, para sua
+resolução.
+conhecimento do domínio do problema 
+
+  \subsection{Criação e armazenamento do Corpora}
+- como realizar experimentos em páginas html (corpus, anotacao)
+
+  \subsection{Abordagem e Avaliação}
+- quais as formas de se gerar os resultados (nos, texto, visual)
+- como medir a qualidade dos resultados (métricas)
+
+
+\section{Ferramenta de Suporte a Experimentação}
+
+Existem diversos problemas em aberto que envolvem a
+recuperação, indetificação e segmentação de 
+informação de páginas HTML. Esses problemas por serem referentes as
+páginas disponíveis na Web, na maior parte das vezes, demanda a
+experimentação em conjuntos de controle para que se possa avaliar o
+comportamento da solução proposta antes de colocar em produção.
+
+A experimentação em documentos HTML pode ser uma tarefa trabalhosa, pois
+para atacar o problema proposto é necessário antes enfrentar diversas
+barreiras para que o documento HTML possa ser carregado em memória e
+analisado. Problemas com a codificação de documentos ou má geração do
+HTML é normal dentre os documentos da Web e diversas vezes é necessário
+profundo conhecimento de aspéctos como a costrução da linguagem ou
+tabelas de codificação que, em grande maioria, foge ao domínio da tarefa
+principal desejada.
+
+Após sanar todos os problemas referentes ao tratamento dos documentos
+HTML surgem novos desafios que mesmo tendo um vínculo maior com a tarefa
+desejada poderia ser evitada. O aspécto de como grardar o conjunto
+resposta e como avaliar o resultado que foi obtido é enfrentado por
+todos que desejam realizar experimentos com documentos HTML. Porém em
+grande parte dos trabalhos apresentados a abordagem é semelhante, o que
+sugere espeço para a criação de um conjunto de ferramentas públicas que
+facilite também essa a tarefa de anotar e avaliar os resultados.
+
+O cenário acima é o que podemos observar lendo e estudando trabalhos
+relacionados a recuperação de informação e segmentação em documentos
+HTML. Com isso, propomos a ferramenta apresentada nesse documento para
+facilitar futuros trabalhos que necessitem de experimentação em páginas
+HTML.
+
+A seguir será apresentada, junto aos modelos, a caracteristicas
+necessárias para uma ferramenta de suporte a experimentação em
+documentos HTML.
+
+- necessidade de uma ferramenta de suporte a resolucao da tarefa
+- o que se espera de uma ferramenta de suporte a experimentação
+
+  \subsection{Modularização da Ferramenta}
+
+- como a ferramenta é dividida e para que serve cada módulo, o que ele
+faz.
+
+%Uma ferramenta que permita que o foco de desenvolvimento seja apenas nas
+%soluções de problemas de identificação e segmentação de elementos em páginas
+%Web e a análise dos resultados dessa soluções propostas, é extremamente 
+%interessante.
+
+%Por esse motivo, a modelagem dessa ferramenta de
+%suporte e sua implementação é necessária, 
+%escolhidas como tema para 
+
+%realização de experimentos, tendo todo dando todo o suporte
+%necessário para que os resultados das soluções possam sinteressante uma
+%plataforma/ferramenta 
+
+Observando os passos necessários para que seja possível o inicio do
+desenvolvimento de uma solução de experimentação fica evidente a
+necessidade de um módulo capaz de corrigir problemas de
+codificação nos documentos e má formação seguindo da uma estrutura em
+memória para que seja possível trabalhar neste documento. Por esse
+motivo, o primeiro módulo descrito é o Parser que atende a essa
+necessidade, sendo descrio a seguir:
+
+- Parser: 
+    - ForceEncode: Normaliza a codificação de um documento para UTF-8
+    - Santizer: Verifica a corretude do documento HTML e corrige alguns
+    erros e problemas comulmente encontrados.
+    - ParserDOM: Transforma o documento em uma estrutura em memória DOM
+    que é comulmente utilizada e recomendada para a representação de
+    documentos HTML em memória pela W3C.
+
+Com o documento HTML em memória e disponível para a execução de rotinas
+sobre sua estrutura a forma como as rotinas irão guardar seus resultados
+é importante, pois determinará todo o processo de geração de resultados
+e avaliação. Com isso, descrevemos o módulo de "anotação" e a interface
+que todas as rotinas, denominadas extratores, devem atender.
+
+Existe uma peculariedade com a modelagem adotada, pois a forma de marcar
+o resultado influencia como esse resultado poderá ser avaliado, porém
+essa dependecia será descrita quando for descrito o módulo de avaliação.
+
+- Marcadores: Armazena nós em rótulos para que eles possam ser
+organizados ou segmentados.
+
+- Extratores: Procura por elementos que atendem a especificação de um
+rótulo dentro de um documento e o marca, utilizando o marcador, com o
+referido rótulo .
+
+O conjunto de módulos descritos até então fornece um conjunto de
+funcionalidades que proporciona a colocação da solução encontrada em
+prática, porém como o objetivo da ferramenta é proporcionar um ambiente
+de experimentação são necessários mais alguns módulos, esses com o
+objetivo direto a tarefa de experimentação.
+
+A capacidade de avaliar os algoritmos, ou soluções, propostos é muito
+importante. Por isso, o módulo de avaliação fornece o conjunto de regras
+para que o resultado obtido possa ser mensurado e retornado como
+informações estatistica. A formas de avaliar são diretamente
+relacionadas a forma que o resultado foi armazenada, então para cada
+avaliador existe um marcador disponível, pois esse marcador armazena a
+solução no formato adequado para ser avalido posteriormente.
+
+Além de um marcador o avaliador necessita também de uma fonte de
+informação correta, denominada gabarito. Esse gabarito fornece um
+conjunto de informação, no mesmo formato que o conjunto armazenado pelo
+marcador, para que seja possível o cruzamento de informação para a
+avaliação. Um formato básico que atende as principais tarefas de
+identificação em páginas HTML é fornecido como base junto a ferramenta.
+
+- Avaliador: Recebe os rótulos, junto aos conjunto de nós que pertencem
+a eles, e também o gabarito para quantificar a qualidade do extrator.
+
+- Gabarito: Armazena os rótulos, junto ao conjunto de nós de cada
+rótulo, para que os extratores possam ser avaliados.
+
+A experimentação normalmente ocorre sobre um grande conjunto de
+documentos, por esse motivo descrevemos uma estrutura que descreve esse
+conjunto, denominado corpus. O corpus descreve um conjunto de
+documentos, informando a natureza dos documentos, o tipo de gabarito que
+pode ser obtido dos documentos e para quais tarefas esses documentos são
+interessantes.
+
+- Corpus: Conjunto de documentos, junto aos seus gabaritos. Os corpus
+são descritos por um arquivo de configuração que especifica o tipo de
+gabarito que esse corpus pode produzir e quais as tarefas que ele pode
+ser utilizado.
+
+Para utilizar desses módulos podem ser implementadas aplicações que
+utilizam o que é mais interessante para ela. Um bom exemplo de aplicação
+é a geração de um relatório de desempenho (Benchmark) para o conjunto de
+extratores e corpus. Atualmente o benchmark é a unica aplicação
+disponível junto a ferramenta, pois essa é uma necessidade direta para a
+experimentação. A seguir é apresentado um diagrama de sequência para
+exemplificar a utilização da ferramenta.
+
+\remove{
+Descrição dos Módulos: \\
+
+- Documento(DOM-Tree)- \\
+    (Documento): DOM, Path, ID
+
+- Extrator(Documento)->(Elementos) \\
+  Elementos que utilizam o framework para extrair elementos da árvore DOM
+
+- Elemento \\
+
+- Marcador(Elementos)->(SAIDA): SAIDA:\\
+  xml, html, cvs,txt, etc - formatos possiveis de saida
+
+- Gabarito \\
+
+- Avaliador(SAIDA, Gabarito) Resultado: \\
+   cvs, txt, etc - formatos possiveis de saida
+
+- Utils - Distances - Abstract functions: stringDistance(string,
+string)->(int): \\
+  Levenshtien distance - distancia de edição entre strings
+
+- PaseDom: parse(htmlString, encoding)->(DOM): \\
+  detecção de encode do htmlString, se nao foi passado ... 
+  Cria uma árvore dom com o módulo libxml2dom - conformidade da árvore - retorna uma DOM-Tree
+
+- Dynamicimport: dimport:\\
+  importa um modulo dinamicamente
+
+- Pré-Processamento(HTML-FILE)->(HTML-String)\\
+
+- Apps Benchmark: \\
+  Roda um conjunto de Extratores e depois de Avalidores gerando o
+resultado no formato desejado.
+
+- Criador de Gabarito(HTML-FILE)->(Gabarito)\\
+}
+
+
+  \subsection{Acompanhamento do Desenvolvimento da Ferramenta}
 %- mini-acompanhamento da execução: seqüência de tarefas de desenvolvimento utilizadas junto com estatísticas de tempo e esforço por tarefa.
 
 	- Definição da Tarefa: 1 de agosto a 30 de agosto \\
@@ -160,12 +406,11 @@ Embora estudos como \cite{}... apresentem resutados "interessantes" na detecçã
   páginas HTML.
 
 
-
-\subsection{Especificação}
+%\section{Especificação}
 %- especificação do programa
 % - objetivos, requisitos
 % - diagramas de especificação, por exemplo use-cases.
-
+\remove{
 	- Para facilitar agilizar e promover uma fácil abordagem sobre tarefas
   de experimentação em páginas HTML é necessário um framework que
   possibilite: \\
@@ -178,15 +423,16 @@ Embora estudos como \cite{}... apresentem resutados "interessantes" na detecçã
     possam ser aplicadas \\
 		- Criar forma de criar gabaritos para que as métricas de avaliação
     possam ser automatizadas \\
+}
 
-
-\subsection{Modelagem}
+%\section{Modelagem}
 %- projeto modular do programa
 % - critérios de projeto utilizados
 % - diagramas de arquitetura e/ou segmentação do programa, por     exemplo UML.
 % - organização do programa (componentes, módulos, classes,...),    por exemplo  diagramas de classe UML.
 % - diagramas de organização dos dados, por exemplo diagramas     de modelagem de dados, ou entidade e relacionamentos.
 
+\remove{
 - Modulos \\
  A organização modular do projeto facilita o entendimento da ferramenta
  e possibilita que correções e atualizações possam ser feitas
@@ -217,70 +463,183 @@ Embora estudos como \cite{}... apresentem resutados "interessantes" na detecçã
   ferramenta pelos usuários. Nesse módulo são encontradas as aplicações
   da ferrameta proposta, como: benchmarks e geradores de recortes com os
   diversos extratores.
-
-
-Estrutura de diretorio
-- Framework 
-  - Documento(DOM-Tree)->(Documento):
-    DOM, Path, ID
-
-  - Extrator(Documento)->(Elementos)
-    Elementos que utilizam o framework para extrair elementos da arvore DOM
-
-  - Elemento
-
-  - Marcador(Elementos)->(SAIDA):
-    SAIDA: xml, html, cvs, txt, etc - formatos possiveis de saida
-
-  - Gabarito
-
-  - Avaliador(SAIDA, Gabarito)
-    Resultado: cvs, txt, etc - formatos possiveis de saida
-
-  - Utils
-    - Distances - Abstract functions:
-      stringDistance(string, string)->(int):
-        Levenshtien distance - distancia de edição entre strings
-
-    - PaseDom:
-      parse(htmlString, encoding)->(DOM):
-        - detecção de encode do htmlString, se nao foi passado
-        ...
-        Cria uma árvore dom com o módulo libxml2dom
-        - conformidade da árvore
-        - retorna uma DOM-Tree
-
-    - Dynamicimport:
-      dimport:
-        importa um modulo dinamicamente
-	
-    - Pré-Processamento(HTML-FILE)->(HTML-String)
-
-  - Apps
-    Benchmark:
-      Roda um conjunto de Extratores e depois de Avalidores gerando o
-      resultado no formato desejado.
-
-- Criador de Gabarito(HTML-FILE)->(Gabarito)
-
+}
 \subsection{Código Fonte}
-      - código fonte cuidadosamente comentado
-                  - comentários cabeçalho de módulos, classes e funções
-                  - comentários de controle de versão
-                  - assertivas para dados e procedimentos, procure utilizar design     by contract
-                  - pseudo instruções
-                  - procure estabelecer e/ou adotar padrões de programação. Os apêndices do livro Staa, A.v.; Programação Modular, Campus 2000; contêm uma extensa lista de padrões de programação que pode servir de exemplo para a adaptação às características específicas do trabalho. 
 
-\subsection{Testes}
-      - roteiro de teste efetuado, composto de:
-                  - critérios de teste utilizados
-                  - descrição dos casos de teste
-                  - na medida do possível procure utilizar testes automatizados
-                  - scripts de teste automatizado
-                  - logs gerados pelo teste automatizado
+Para a codificação da ferramenta foi escolhida a linguagem script
+Python. Sua facilidade de prototipação e programação foram pontos
+positivos para essa escolha.
+
+Para tornar o código claro e padronizado foram utilizadas as
+recomendações de codificação da empresa Fast.
+Isso porque, as normas apresentadas são próximas as utilizadas pelos 
+próprios módulos disponibilizados nas bibliotecas padrões e, além disso,
+esclarecem pontos que muitas vezes ficam dúbios em outros manuais de 
+recomendações para codificação em Python. Porém,
+  o documento contendo as recomendações e regras não
+  poderá ser anexado por causa dos termos de sigilo. 
+
+Todo o código esta comentado no formato recomendado pelo manual de
+referência de Python e o  módulo de geração de documentação automático
+PyDoc foi utilizado, gerando a documentação em formato HTML. Para a
+documentação do código também foi adotado, como adendo, o padrão de 
+descrição de comentário recomentado pela empresa Fast.
+
+
+
+%      - código fonte cuidadosamente comentado
+%                  - comentários cabeçalho de módulos, classes e funções
+%                  - comentários de controle de versão
+%                  - assertivas para dados e procedimentos, procure utilizar design     by contract
+%                  - pseudo instruções
+%                  - procure estabelecer e/ou adotar padrões de programação. Os apêndices do livro Staa, A.v.; Programação Modular, Campus 2000; contêm uma extensa lista de padrões de programação que pode servir de exemplo para a adaptação às características específicas do trabalho. 
+
+\subsection{Validação e Testes}
+- testes dos modulos implementados
+
+Para verificar o funcionamento da ferramenta e validar a modelagem apresentada a tarefa de identificação de tabelas genuinas foi escolhida. Utilizando a Ferramenta de Experimentação em Documentos HTML foi implementada uma abordagem simplificada a proposta em []. Mesmo não obtendo bons resultados para a tarefa o objetivo foi alcançado, já que a ferramenta proporcionou a rápida codificação e experimentação da tarefa. Esses resultados estão disponíveis no apendice X e um fragmento do corpus utilizado está disponível junto ao código para a realizações de testes pelo usuário.
+
+Foi utilizado o framework de teste unitários fornecido pela distribuição
+oficial do Python [1]. Os módulos foram testados, buscando a verificação
+da corretude do código e também foram criados testes para verificar a
+API das classes importantes para a ferramenta.
+
+Os testes e todos os logs podem ser verificados no Anexo X. Esses testes
+também se encontram junto ao código, sendo eles nomeados como
+test\_<nome\_do\_arquivo> e podem ser executados separadamento como
+um scripts Python.
+
+A cobertura do código por testes foi programada a partir do modelo de
+sequência da aplicação "Benchmark" que descreve o principal uso da
+ferramenta. Outros casos também foram verificados para garantir que
+módulos de suporte, como o parser DOM ou a algorítmos clássicos como
+distáncia de ediçao, DFS, LLC estão corretamete
+implementados.
+
+%      - roteiro de teste efetuado, composto de:
+%                  - critérios de teste utilizados
+%                  - descrição dos casos de teste
+%                  - na medida do possível procure utilizar testes automatizados
+%                  - scripts de teste automatizado
+%                  - logs gerados pelo teste automatizado
 
 \subsection{Documentação do Usuário}
-      - documentação para o usuário 
+
+A documentação para utilização das aplicações existentes na ferramenta
+se encontram junto ao código e são apresentadas quando o usuário
+solicita ajuda (help) pela linha de comando. Essa documentação foi
+criada utilizando a biblioteca optparser, também disponibilizada pela
+distribuição oficial de Python.
+
+\remove{
+A documentação do código foi realizada utilizando outro modelo padrão de
+Python, o pydoc, e pode ser encontrada na pasta raiz do projeto em
+formato HTML para facilitar a leitura e a busca por alguma
+funcionalidade específica.
+}
+
+\subsection{Conteúdo do CD}
+
+O CD-ROM engtregue, onde esse documento pode ser encontrado, contêm
+todos os arquivos fonte e documentos necessários para o entendimento e
+utilização da ferramenta. Também é fornecido um pequeno conjunto de
+documentos onde a tarefa de detecção de tabela genuida pode ser
+executada e os resultados analizados utilizando a aplicação de Benchmark.
+
+A Estrutura de diretórios do código fonte, que pode ser encontrada na
+pasta sorce, é a seguinte:
+
+\begin{verbatim}
+|-- source
+  |-- README.txt 
+  |-- __init__.py
+  |-- apps
+  |   |-- __init__.py
+  |   |-- benchmark.py
+  |   |-- config_example.cnf
+  |   |-- configurator.py
+  |   |-- fastbenchmark.py
+  |   |-- out
+  |   |-- test_.py
+  |   |-- test_benchmark.py
+  |   `-- test_configurator.py
+  |-- corpus.py
+  |-- extractors
+  |   |-- __init__.py
+  |   `-- distancebypair
+  |       |-- __init__.py
+  |       |-- coloring.py
+  |       |-- distancebypairbase.py
+  |       |-- node.py
+  |       |-- table.py
+  |       `-- test_node.py
+  |-- markerbase.py
+  |-- markercoloring.py
+  |-- metricbase.py
+  |-- metrictables.py
+  |-- tablesproof.py
+  |-- test_corpus.py
+  `-- utils
+      |-- __init__.py
+      |-- distances.py
+      |-- dynamicimport.py
+      |-- forceencode.py
+      |-- parsedom.py
+      |-- sanitizer.py
+      |-- test_distances.py
+      |-- test_dynamicimport.py
+      |-- test_forceencode.py
+      `-- test_parsedom.py
+\end{verbatim}
+Na pasta pydoc pode ser encontrado a documentação gerada automaticamente
+a partir do código.
+
+\begin{verbatim}
+|-- pydoc
+|   |-- __init__.html
+|   |-- configurator.html
+|   |-- distancebypairbase.html
+|   |-- distances.html
+|   |-- dynamicimport.html
+|   |-- fastbenchmark.html
+|   |-- forceencode.html
+|   |-- markerbase.html
+|   |-- markercoloring.html
+|   |-- metricbase.html
+|   |-- node.html
+|   |-- sanitizer.html
+|   |-- table.html
+|   |-- tablesproof.html
+|   |-- test_configurator.html
+|   |-- test_distances.html
+|   |-- test_dynamicimport.html
+|   `-- test_parsedom.html
+\end{verbatim}
+
+Na pasta corpus, o sample para a execução e teste do benchmark pode ser
+encontrado:
+
+\begin{verbatim}
+|-- corpus
+    |-- file0.html 
+    |
+    `-- filen.html
+\end{verbatim}
+
+Para exemplificar o resultado de um Benchmark em um conjunto real de
+documentos e o tempo de execução, um corpus utilizado em estudos da área,
+foi adicionado ao CD-ROM a pasta experimento.
+
+\begin{verbatim}
+|-- experiments
+  |-- benchmark100docs.csv
+  |-- outAndtime100docs.out
+  |-- benchmark300docs.csv
+  |-- outAndtime300docs.out
+  |-- benchmark600documentos.csv
+  `-- outAndtime600docs.out
+\end{verbatim}
+%      - documentação para o usuário 
 
 % \balancecolumns
 
