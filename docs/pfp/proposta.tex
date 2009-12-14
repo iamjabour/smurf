@@ -63,8 +63,8 @@
 
 \begin{document}
 
-\title{Ferramenta de Suporte a Experimentação em Documentos HTML}
-
+\title{{\bf Projeto Final de Programação} \\ \bigskip Ferramenta de Suporte a Experimentação em Documentos HTML}
+\author{Iam Vita Jabour \\ Matrícula: 0821371}
 \maketitle
 
 
@@ -242,7 +242,7 @@ exemplificar a utilização da ferramenta.
 
 \begin{figure}[htb!]
   \begin{center}
-  \includegraphics[width=14cm]{img/fastbenchmark.eps}
+  \includegraphics[width=15cm]{img/fastbenchmark.eps}
   \caption{Diagrama de sequência do aplicação Benchmark}
   \label{sequencia}
   \end{center}
@@ -431,7 +431,7 @@ Na pasta corpus, o sample para a execução e teste do benchmark pode ser
 encontrado:
 
 \begin{verbatim}
-|-- corpus
+|-- corpus_sample
     |-- file0.html 
     |
     `-- filen.html
@@ -481,8 +481,47 @@ Options:
 
 \end{verbatim}
 
-\subsection{Resultados da Identificação de Tabelas Genuidas}
+\subsection{Resultados da Identificação de Tabelas Genuínas}
 \label{ritg}
+
+Experimento com 100 documentos:
+\begin{center}
+\begin{tabular}{| c | c | c |}
+\hline key  & recall & precision\\
+\hline table & 0.86 & 0.00\\
+\hline
+\end{tabular}
+\end{center}
+
+Experimento com 300 documentos:
+\begin{center}
+\begin{tabular}{| c | c | c |}
+\hline key  & recall & precision\\
+\hline table & 0.88 & 0.00\\
+\hline
+\end{tabular}
+\end{center}
+
+Experimento com 600 documentos:
+\begin{center}
+\begin{tabular}{| c | c | c |}
+\hline key  & recall & precision\\
+\hline table & 0.91 & 0.00\\
+\hline
+\end{tabular}
+\end{center}
+
+Mesmo observando que a precisão dos experimentos realizados é nula,
+podemos concluir que a ferramenta está operando de forma correta.
+Afirmamos isso, pois a solução para o problema não foi devidamente
+evoluida e varios nós que deveriam ser tratados e retirados da marcação
+de tabela genuina não foram tratados.
+
+A melhora do resultado fica em aberto, pois para o desenvolvimento de uma
+heuristica melhor seria necessário mais tempo e envolvimento com a
+tarefa de indentificação de tabelas genuinas, o que não é o objetivo
+deste trabalho.
+
 
 \subsection{Log dos Testes Unitários}
 \label{testes}
