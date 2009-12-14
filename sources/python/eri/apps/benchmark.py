@@ -6,7 +6,7 @@ from eri.corpus import Corpus
 import os
 
 class Benchmark:
-    def __init__(self, corpusPath, configFile=None, extractors=[], limit=int(2**31-1)):
+    def __init__(self, corpusPath, configFile=None, extractors=[], limit=int(2**31-1), output=None):
         if not configFile:
             if os.path.exists('config_example.cnf'):
                 config = Configurator('config_example.cnf')
@@ -15,6 +15,10 @@ class Benchmark:
         else:
             config = Configurator(configFile)
 
+        if output == None:
+            output = sys.stdout
+
+        self.output = output
         self.metric = config.metric()
         self.marker = self.metric.marker()
         self.corpus = Corpus(corpusPath)
@@ -81,12 +85,9 @@ class Benchmark:
 
 
         print
-        print 'key\trecall\tprecision'
-        print r
+        print >> self.output, 'key\trecall\tprecision'
+        print >> self.output, r
         return r
-
-        for id,d in enumerate(self.benchmark):
-            print id, d
 
 if __name__ == '__main__':
     import optparse
@@ -125,11 +126,18 @@ if __name__ == '__main__':
     if len(sys.argv) < 3:
         raise SystemExit(parser.print_help())
 
+    output = None
+
+    if opt.output == 'stdout':
+        output = sys.stdout
+    else:
+        output = open(opt.output, 'w')
+
     # importando o extrator dinamicamente
     m, c = args[0].split('.')
     extractor = dimport("eri.extractors.%s" % m.lower(), c)
     print 'benchmark'
-    b = Benchmark(args[1], opt.config, [extractor], limit= opt.limit)
+    b = Benchmark(args[1], opt.config, [extractor], limit= opt.limit, output=output)
 
     b.process()
     b.pprint()

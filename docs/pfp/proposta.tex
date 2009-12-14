@@ -63,114 +63,21 @@
 
 \begin{document}
 
-\title{Sem Título}
+\title{Ferramenta de Suporte a Experimentação em Documentos HTML}
 
 \maketitle
 
+
 \section{Introdução}
-
-A {\it World Wide Web} estendeu o paradigma de pesquisa que era conhecido, 
-	introduzindo o conceito de busca a milhares de pessoas. (mostrar
-  referencias sobre o fato)
-
-
-A tarefa de Extração de Informação ({\it Informarion Retrieval}, IR) apresenta 
-	estratégias que ajudam nos procedimentos de pequisa, estruturando a 
-	informação disponível na tentativa de facilitar seu entendimento.
-  (explicar melhor os objetivos de IR, e listar algumas das áreas ou
-  tarefas abordadas dentro de IR)
-
-(introduzir esse paragrafo de forma mais lenta, vindo de algo mais
-concreto)
-Os documentos da Web por apresentarem a informação de forma semi-estuturada,
-	muitas vezes, junto a um conjunto excessivo de conteúdo não informativo
-	representam um grande desafio para a extração de informação. 
-Por este motivo,
-	criar técnicas capazes de estruturar e tornar os documentos menos poluidos
-	é uma tarefa de valor com diversos estudo na útima década.
-
-\remove{
-Retirar uma parcela de informação não relevante desses documentos 
-	proporciona benefícios claros.
-}
-
-(Iniciar a explicação da tarefa antes de apresentar esse paragrafo.
-Pegar um gancho dos exemplos feitos acima, para enunciar a tarefa)
-Tradicionalmente, existem duas abordagens para a tarefa de filtar a informação
-nos documento da Web. 
-  \remove{, diminuindo a quantidade de dados não informativos processados.}
-A primeira é direcionada a encontrar o {\bf conteúdo relevante} de um 
-	documento. {\bf Conteúdo relevante} é a informação trazida únicamente pelo 
-	documento, ou seja,
-		o conteúdo que motivou a criação do documento.
-
-Complementarmente, a segunda abordagem é direcionada a encontrar e remover o 
-	{\bf conteúdo não relevante} de um documento. {\bf Conteúdo não relevante},
-	é a informação que existe somenta para facilitar a navegação,
-	ajudar na aparência ou trazer informações que não sejam referentes ao 
-	conteúdo relevante, ou seja,
-		todo o tipo de informação que normalmente aprerece repetidamente 
-		dentre vários documentos de um Site.
-
-
-Estudos como [...] direcionados a encontrar o conteúdo não relevante,
-apresentam métodos para detectar o {\it template} dos documento.
-	Essa tentativa devesse a proporção de informação necessária para a criação
-	dos {\it templates} nos documentos da Web. Este padão é 
-	citada por estudos como o de [Brooks2003] e confirmado por análises 
-	como a de \cite{Gibson2005}, que apresenta estudos onde de $40\%$ a $50\%$ da 
-  informação dos documentos é constituida por {\it template}.
-
-
-Uma abordagem comum para detectar o conteúdo relevante é a criação de
-regras/heurísticas. 
-	Nessas 
-		o domínio da aplicação é bem direcionado, pois o tipo de informação é 
-		bem definido.
-		Como exemplo,
-			existem métodos expecializados em detectar o corpo de uma notícia 
-			dentro de uma página de jornal, ou site semelhante,
-			anotando qual parte da notícia é 
-				o título,
-				o autor, o corpo/texto e
-				a data de publicação.
-			Existem referências para estudos com domínios como:
-				notícia {\bf \cite{}...}, como o objetivo exemplificado acima;
-				comércio eletrônico {\bf \cite{}...}, com o objetivo de 
-				encontrar os produtos, a descrição e o preço oferecido;
-				blog {\bf \cite{}...}, com o objetivo de separar cada 
-				{\it post} e seus comentários.
-
-Podemos também modelar o problema de filtar a informação em documentos da Web
-de forma a indetificar elementos dentro da estrutura do documento, pois 
-dessa forma tanto detectar o contêudo relevante quanto identificar o contêudo 
-não relevanto podem ser abordados com a mesma técnica. 
-
-A técnica de identificar elementos da estrutura dos documentos Web esta
-ainda está em aberto e uma ferramenta que ajude na experimentação dessa
-abordagem ou sua modelagem não é reportada por estudos na área.
-
-Neste trabalho buscamos modelar uma ferramenta que facilite a abordagem
-de problemas de identificação de elementos. Para isso,
-utilizaremos a tarefa de identificação de tablas, detalhada na seção X,
-como caso de uso.
-
-\remove{
-Embora estudos como \cite{}... apresentem resutados "interessantes" na detecção de templates, 
-%\subsection{Comparação com os resultados}
-}
-
-
-\section{Ferramenta de Suporte a Experimentação}
 
 %o que é um problema em aberto? não resolvido? não solucionado? 
 
 Existem diversos problemas não solucionados que envolvem a
 recuperação, indetificação e segmentação de 
-informação de páginas HTML. Por serem referentes as
-páginas disponíveis na Web, normalmente, esses problemas demandam a
+informação de documentos HTML. Por serem referentes a documentos disponíveis
+na Web, normalmente, esses problemas demandam a
 experimentação em conjuntos de controle para que se possa avaliar o
-comportamento da solução proposta antes de colocar em produção.
+comportamento da solução proposta antes de coloca-la em produção.
 
 % voce esta usando muito 'diversas vezes', 'em sua maioria'
 % vc escreve de uma forma vaga: olhe o pargrafo anterior 'diversos problemas'. quais sao esses? olhe esse paragrafo: 'problemas com codificação': existe mais de um problema relacionado a codificação? ou codificação é um problema só?
@@ -189,32 +96,31 @@ principal desejada.
 
 %"surgem novos desafios que poderia ser evitada" concordancia em genero e em numero erradas.
 
-Após sanar todos os problemas referentes ao tratamento dos documentos
+Após sanar alguns dos problemas referentes ao tratamento dos documentos
 HTML, surgem novos desafios, que mesmo tendo um vínculo maior com a tarefa
 desejada, poderiam ser evitados. O aspécto de como guardar o conjunto
-resposta e como avaliar o resultado que foi obtido é enfrentado por
+resposta e de como avaliar o resultado que foi obtido é enfrentado por
 todos que desejam realizar experimentos com documentos HTML. Porém em
 grande parte dos trabalhos apresentados, a abordagem é semelhante, o que
 sugere espeço para a criação de um conjunto de ferramentas públicas que
 facilite também a tarefa de anotar e avaliar os resultados.
 
-O cenário descrito nos paragrafos anteriores é encontrado ao estudar trabalhos
-relacionados a recuperação de informação e segmentação em documentos
+O cenário descrito nos paragrafos anteriores é encontrado ao se estudar 
+trabalhos relacionados a recuperação de informação e segmentação em documentos
 HTML. Com isso, este trabalho propõe uma ferramenta para
-facilitar futuros trabalhos que necessitem realizar experimentação em páginas
-HTML.
+facilitar futuras tarefas de experimentação em documentos HTML.
 
 As seções seguintes apresentarão os modelos e caracteristicas
 necessárias para uma ferramenta de suporte à experimentação em
 documentos HTML.
 
-  \subsection{Modularização da Ferramenta}
+\section{Modularização da Ferramenta}
 
 \begin{figure}[htb]
   \begin{center}
-  \includegraphics[width=12cm]{img/classes.eps}
-  \caption{x}
-  \label{x}
+  \includegraphics[width=13cm]{img/classes.eps}
+  \caption{Diagrama de classes da ferramenta}
+  \label{classes}
   \end{center}
 \end{figure}
 
@@ -249,7 +155,7 @@ descrio a seguir:
 Com o documento HTML em memória e disponível para a execução de rotinas
 sobre sua estrutura. A forma como as rotinas irão guardar seus resultados
 é importante, pois determinará todo o processo de geração de resultados
-e avaliação. Com isso, descrevemos o módulo de ''anotação'' e a interface
+e avaliação. Com isso, descrevemos o módulo de ``anotação'' e a interface
 que todas as rotinas, denominadas extratores, devem atender.
 
 Existe uma peculariedade com a modelagem adotada, pois a forma de marcar
@@ -262,14 +168,16 @@ essa dependecia será descrita junto com o módulo de avaliação.
   organizados ou segmentados.
 
 - Extratores:
-  Procura por elementos que atendem a especificação
-  de um rótulo em um documento e o marca, passando para o marcador o
-  rótulo e o nó que deve ser marcado com tal rótulo.
+  Procura por elementos, nós ou conjunto de nós, que
+  atendendam as especificações de um rótulo e os marca,
+  passando para o marcador o rótulo e o nó que deve
+  ser marcado pelo referido rótulo.
 \end{verbatim}
 
 Os módulos descritos fornece um conjunto de
-funcionalidades que proporcionam a aplicação da solução encontrada em
-prática, porém como o objetivo da ferramenta é proporcionar um ambiente
+funcionalidades que proporcionam a aplicação, ou seja, a colocação em
+prática da solução encontrada,
+porém como o objetivo da ferramenta é proporcionar um ambiente
 de experimentação, são necessários módulos para realizar a tarefa de experimentação.
 
 % porque é mt importante?
@@ -277,10 +185,10 @@ A capacidade de avaliar os algoritmos, ou soluções, propostos é
 importante, pois permite que se tenha a visão de que tipo de resultado
 esta sendo gerado. Por isso, o módulo de avaliação fornece o conjunto de
 regras para que o resultado obtido possa ser mensurado e retornado como
-informações estatísticas. A formas de avaliar são diretamente
-relacionadas a forma que o resultado foi armazenada. Assim, para cada
+informação estatística. As formas de avaliar são diretamente
+relacionadas a forma que o resultado foi armazenado. Assim, para cada
 avaliador existe um marcador disponível, pois esse marcador armazena a
-solução no formato adequado para ser avalido posteriormente.
+solução no formato adequado para ser posteriormente avaliado.
 
 %Acho que esse foi o melhor paragrafo.
 
@@ -335,12 +243,13 @@ exemplificar a utilização da ferramenta.
 \begin{figure}[htb!]
   \begin{center}
   \includegraphics[width=14cm]{img/fastbenchmark.eps}
-  \caption{x}
-  \label{x}
+  \caption{Diagrama de sequência do aplicação Benchmark}
+  \label{sequencia}
   \end{center}
 \end{figure}
 
-  \subsection{Acompanhamento do Desenvolvimento da Ferramenta}
+\section{Acompanhamento do Desenvolvimento da Ferramenta}
+
 %- mini-acompanhamento da execução: seqüência de tarefas de desenvolvimento utilizadas junto com estatísticas de tempo e esforço por tarefa.
 \begin{enumerate}
 \item Definição da Tarefa: 1 de agosto a 30 de agosto. \\
@@ -351,90 +260,31 @@ sobre o problema.
 
 \item Modelagem do Problema: 1 de setembro a 15 de setembro. \\ 
 Após conhecer bem o problema de segmentação e marcação de elementos em
-páginas Web, a modelagem de uma ferramenta de apoio se tornou possível.
-Durante esse processo de modelagem, foram estabelecidos os limites e as
-necessidades de uma ferramenta para suporte a criação de soluções para
-o problema.
+documentos HTML, a modelagem de uma ferramenta de apoio se tornou possível.
+Durante o processo de modelagem, foram estabelecidos os limites e as
+necessidades de uma ferramenta a experimentação em documentos HTML.
 
-\item Impementação do Framework e Testes: 15 de setembro a 30 de
+\item Impementação da Ferramenta e Testes: 15 de setembro a 30 de
 novembro. \\
 Durante o mês de setembro, outubro e novembro foi realizada a
 codificação da ferramenta modelada. Durante esse tempo, também foram
-desenvolvidos alguns testes unitários para garantir a qualidade do
+desenvolvidos os testes unitários para garantir a qualidade do
 desenvolvimento da aplicação. Além do desenvolvimento da ferramenta de
 suporte, também foi realizada a tentativa de resolver uma tarefa de
 segmentação. Essa tarefa será detalhada mais adiante no texto, assim como
 seus resultados.
 
-\item Documentação de usuario e relatório: 30 de novembro a 15 de
+\item Documentação de usuário e relatório: 30 de novembro a 15 de
 dezembro. \\
 Os últimos 15 dias de projeto foram utilizados para a elaboração deste
 documento e também para a criação da documentação para usuários,
-tornando a ferramenta fácil de ser utilizada por profissíonais que
-queiram pesquisar sobre problemas que possam ser modelados de forma
-similar, ou seja, problemas de segmentação ou detecção de elementos em
-páginas HTML.
+tornando a ferramenta fácil de ser utilizada por qualquer um que
+queira realizar experimentos em documentos HTML de forma semelhante a
+que a ferramenta atende, ou seja, experimentação de problemas de
+segmentação ou detecção de elementos em documentos HTML.
 \end{enumerate}
 
-%\section{Especificação}
-%- especificação do programa
-% - objetivos, requisitos
-% - diagramas de especificação, por exemplo use-cases.
-\remove{
-	- Para facilitar agilizar e promover uma fácil abordagem sobre tarefas
-  de experimentação em páginas HTML é necessário um framework que
-  possibilite: \\
-		- parsear uma página HTML para uma árvore DOM: preprocessamento... \\
-		- Criar um pipe onde módulos possam ser aplicados sobre a árvore DOM
-    \\
-		- fornecer uma interface onde os resultados dos módulos são
-    guardados \\
-		- Criar uma interface onde regras de avaliação sobre o resultado
-    possam ser aplicadas \\
-		- Criar forma de criar gabaritos para que as métricas de avaliação
-    possam ser automatizadas \\
-}
-
-%\section{Modelagem}
-%- projeto modular do programa
-% - critérios de projeto utilizados
-% - diagramas de arquitetura e/ou segmentação do programa, por     exemplo UML.
-% - organização do programa (componentes, módulos, classes,...),    por exemplo  diagramas de classe UML.
-% - diagramas de organização dos dados, por exemplo diagramas     de modelagem de dados, ou entidade e relacionamentos.
-
-\remove{
-- Modulos \\
- A organização modular do projeto facilita o entendimento da ferramenta
- e possibilita que correções e atualizações possam ser feitas
- facilmente. Abaixo descrevemos os principais módulos da ferramenta:
-
- Extratores: \\
-  Conjunto de classes que são especializadas em extrair informação de
-  árvores DOM e utilizando {\bf Marcadores} rotular cada tipo de
-  informação extraida.
-
- Marcadore: \\
-  Conjunto de classes especialzadas em atribuir labels a nós da árvore
-  DOM. Faz-se necessário deixar o desenvolvimento desse módulo
-  independente, pois a variação na forma de avaliação pelas {\bf
-  Métricas} influência a forma que os nós devem ser marcados.
-
- Métricas (Avaliadores): \\
-  Os avaliadores atribuem valores para o acerto e o erro nas marcações.
-  Cada tarefa pode ser avaliada de forma diretente, pois é diretamente
-  relacionado a abordagem da tarefa ao tipo de avaliação. No final a
-  Métrica retorna três valores que são comulmente utilizados no universo
-  de aprendizado de máquina e experimentação (recall, precision,
-  f-measure), sendo documentada a forma do cálculo desses valores dentro
-  do módulo.
- 
- Aplicativos: \\
-  Os aplicativos são agrupados para agilizar e facilitar a utilização da
-  ferramenta pelos usuários. Nesse módulo são encontradas as aplicações
-  da ferrameta proposta, como: benchmarks e geradores de recortes com os
-  diversos extratores.
-}
-\subsection{Código Fonte}
+\section{Código Fonte}
 
 %Essa secao está melhor.
 
@@ -457,44 +307,44 @@ PyDoc foi utilizado, gerando a documentação em formato HTML. Para a
 documentação do código também foi adotado, como adendo, o padrão de 
 descrição de comentário recomentado pela empresa Fast.
 
-\subsection{Validação e Testes}
-%- testes dos modulos implementados
+\section{Validação e Testes}
 
-Para verificar o funcionamento da ferramenta e validar a modelagem apresentada, a tarefa de identificação de tabelas genuinas foi escolhida. Utilizando a Ferramenta de Experimentação em Documentos HTML foi implementada uma abordagem simplificada a proposta em []. Mesmo não obtendo bons resultados para a tarefa, o objetivo foi alcançado, já que a ferramenta proporcionou a rápida codificação e experimentação da tarefa. Esses resultados estão disponíveis no apendice X e um fragmento do corpus utilizado está disponível junto ao código para a realizações de testes pelo usuário.
+Para verificar o funcionamento da ferramenta e validar a modelagem apresentada,
+a tarefa de identificação de tabelas genuinas foi escolhida. Utilizando a
+Ferramenta de Experimentação em Documentos HTML foi implementada uma abordagem
+simplificada a proposta em \cite{LGZ2003}. Mesmo não obtendo bons resultados
+para a tarefa, o objetivo foi alcançado, já que a ferramenta proporcionou a
+rápida codificação e experimentação da tarefa. Esses resultados estão
+disponíveis no Anexo \ref{ritg} e um fragmento do corpus utilizado está disponível junto ao código para a realizações de testes pelo usuário.
 
 Foi utilizado o framework de teste unitários fornecido pela distribuição
-oficial do Python [1]. Os módulos foram testados, buscando a verificação
+oficial do Python \cite{UTest}. Os módulos foram testados, buscando a verificação
 da corretude do código e também foram criados testes para verificar a
 API das classes importantes para a ferramenta.
 
-Os testes e todos os logs podem ser verificados no Anexo X. Esses testes
+Os testes e todos os logs podem ser verificados no Anexo \ref{testes}. Esses testes
 também se encontram junto ao código, sendo eles nomeados como
 test\_<nome\_do\_arquivo>.py e podem ser executados separadamento como
 um scripts Python.
 
 A cobertura do código por testes foi programada a partir do modelo de
-sequência da aplicação "Benchmark" que descreve o principal uso da
+sequência da aplicação ``Benchmark'' que descreve o principal uso da
 ferramenta. Outros casos também foram verificados para garantir que
 módulos de suporte, como o parser DOM ou algorítmos clássicos como
 distáncia de ediçao, DFS, LLC estão corretamete
 implementados.
 
-\subsection{Documentação do Usuário}
+\section{Documentação do Usuário}
 
 A documentação para utilização das aplicações existentes na ferramenta
 se encontram junto ao código e são apresentadas quando o usuário
-solicita ajuda (help) pela linha de comando. Essa documentação foi
+solicita ajuda (-help) pela linha de comando. Essa documentação foi
 criada utilizando a biblioteca optparser, também disponibilizada pela
-distribuição oficial de Python.
+distribuição oficial de Python. A documentação para usuário existente em
+código foi adicionada e este documento no Anexo \ref{userdoc}.
 
-\remove{
-A documentação do código foi realizada utilizando outro modelo padrão de
-Python, o pydoc, e pode ser encontrada na pasta raiz do projeto em
-formato HTML para facilitar a leitura e a busca por alguma
-funcionalidade específica.
-}
 
-\subsection{Conteúdo do CD}
+\section{Conteúdo do CD}
 
 O CD-ROM engtregue, onde este documento pode ser encontrado, contêm
 todos os arquivos fonte e documentos necessários para o entendimento e
@@ -502,7 +352,6 @@ utilização da ferramenta. Também é fornecido um pequeno conjunto de
 documentos onde a tarefa de detecção de tabela genuida pode ser
 executada e os resultados analizados utilizando a aplicação de Benchmark.
 
-% SORCE???? brabo...
 A Estrutura de diretórios do código fonte, que pode ser encontrada na
 pasta source, é a seguinte:
 
@@ -516,7 +365,6 @@ pasta source, é a seguinte:
   |   |-- config_example.cnf
   |   |-- configurator.py
   |   |-- fastbenchmark.py
-  |   |-- out
   |   |-- test_.py
   |   |-- test_benchmark.py
   |   `-- test_configurator.py
@@ -554,24 +402,29 @@ a partir do código.
 
 \begin{verbatim}
 |-- pydoc
-|   |-- __init__.html
-|   |-- configurator.html
-|   |-- distancebypairbase.html
-|   |-- distances.html
-|   |-- dynamicimport.html
-|   |-- fastbenchmark.html
-|   |-- forceencode.html
-|   |-- markerbase.html
-|   |-- markercoloring.html
-|   |-- metricbase.html
-|   |-- node.html
-|   |-- sanitizer.html
-|   |-- table.html
-|   |-- tablesproof.html
-|   |-- test_configurator.html
-|   |-- test_distances.html
-|   |-- test_dynamicimport.html
-|   `-- test_parsedom.html
+  |-- benchmark.html
+  |-- configurator.html
+  |-- corpus.html
+  |-- distancebypairbase.html
+  |-- distances.html
+  |-- dynamicimport.html
+  |-- fastbenchmark.html
+  |-- forceencode.html
+  |-- markerbase.html
+  |-- markercoloring.html
+  |-- metricbase.html
+  |-- metrictables.html
+  |-- node.html
+  |-- sanitizer.html
+  |-- table.html
+  |-- tablesproof.html
+  |-- test_benchmark.html
+  |-- test_configurator.html
+  |-- test_corpus.html
+  |-- test_distances.html
+  |-- test_dynamicimport.html
+  `-- test_parsedom.html
+
 \end{verbatim}
 
 Na pasta corpus, o sample para a execução e teste do benchmark pode ser
@@ -590,16 +443,270 @@ foi adicionado ao CD-ROM a pasta experimento.
 
 \begin{verbatim}
 |-- experiments
-  |-- benchmark100docs.csv
-  |-- outAndtime100docs.out
-  |-- benchmark300docs.csv
-  |-- outAndtime300docs.out
-  |-- benchmark600documentos.csv
-  `-- outAndtime600docs.out
+  |-- benchmark100docs
+  |-- benchmark300docs
+  |-- benchmark600docs
+  |-- out100docs.out
+  |-- out300docs.out
+  `-- out600docs.out
 \end{verbatim}
-%      - documentação para o usuário 
 
-% \balancecolumns
+\appendix
+
+\section{Anexos}
+\subsection{Manual do Usuário}
+\label{userdoc}
+
+\begin{verbatim}
+Usage: benchmark.py [options] <extractor> <cPath>
+<extractor> User an module name [DistanceByPair.Coloring
+            | DistanceByPair.Table]
+<cPath>     Corpus path 
+
+Options:
+  -h, --help            show this help message and exit
+  -o OUTPUT, --output=OUTPUT
+                        Create and redirect stdout to file
+  -l LIMIT, --limit=LIMIT
+                        Set limit to hierarchical corpus 
+                        (default use no hierarchical corpus)
+                         or -1 to directory with files
+                        (use -l < -1 to limit # of files
+  -c CONFIG, --config=CONFIG
+                        Configuration file to set Marker, 
+                        ProofClass, and Marker, if omited
+                        fastbenchmark use config\_example.cnf
+                        (make sure provided corpus is
+                        ProofTable based)
+
+\end{verbatim}
+
+\subsection{Resultados da Identificação de Tabelas Genuidas}
+\label{ritg}
+
+\subsection{Log dos Testes Unitários}
+\label{testes}
+
+Log Geral:
+\begin{verbatim}
+nosetests
+.................
+----------------------------------------------------------
+Ran 18 tests in 8.000s
+
+OK
+
+\end{verbatim}
+
+Log passo a passo:
+\begin{enumerate}
+
+\item Teste Distancias
+
+\begin{verbatim}
+Test: utils.distances
+
+ - Test: utils.distances.stringDistance()
+.
+------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+\end{verbatim}
+
+\item Teste Intanciação Dinamica
+
+\begin{verbatim}
+Test: utils.dynamicimport
+.
+------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+\end{verbatim}
+
+\item Teste Force Encode
+
+\begin{verbatim}
+Test: utils.forceencode
+   - Test: utils.parsedom._convertStringToUTF8()
+.
+------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+\end{verbatim}
+
+\item Teste ParseDom
+\begin{verbatim}
+Test: utils.parsedom
+   - Test: utils.parsedom.parse()
+.
+--------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+\end{verbatim}
+
+\item  Teste Node From Distance By Pair
+
+\begin{verbatim}
+Test: distancebypair.node
+body
+..
+---------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+\end{verbatim}
+
+\item Teste Configurator
+
+\begin{verbatim}
+Test: apps.configurator
+   - Test apps.configurator.marker()
+.  - Test apps.configurator.metric()
+.  - Test apps.configurator.proof()
+.  - Test apps.configurator()
+.
+---------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+\end{verbatim}
+
+\item Teste benchmark
+
+\begin{verbatim}
+Test: apps.configurator
+encoder error0 {'table': [0, 2, 4]}
+1 {'table': [1, 1, 12]}
+
+total
+{'table': [1, 3, 16]}
+
+key recall  precision
+{'table': [0.33333333333333331, 0.0625]}
+encoder error0 {'table': [0, 2, 4]}
+1 {'table': [1, 1, 12]}
+2 {'table': [0, 1, 20]}
+3 {'table': [3, 3, 24]}
+4 {'table': [23, 23, 69]}
+5 {'table': [0, 0, 72]}
+6 {'table': [0, 0, 78]}
+7 {'table': [1, 1, 84]}
+8 {'table': [0, 0, 93]}
+9 {'table': [0, 0, 96]}
+
+total
+{'table': [28, 31, 552]}
+
+key recall  precision
+{'table': [0.90322580645161288, 0.050724637681159424]}
+.
+-------------------------------------------------------------
+Ran 2 tests in 7.064s
+
+OK
+\end{verbatim}
+
+\item Teste Corpus
+
+\begin{verbatim}
+t: apps.configurator
+   - Test geral
+path /home/iamjabour/workspacePessoal/tese/corpus/machine
+_learning_tableextraction_paper2/webtablegrnd/html
+parser <eri.utils.parsedom.ParseDom object at 0x209b450>
+proof <eri.tablesproof.TablesProof object at 0x209b4d0>
+documents len 1393
+path /home/iamjabour/workspacePessoal/tese/corpus/machine
+_learning_tableextraction_paper2/webtablegrnd/html_desc
+parser <eri.utils.parsedom.ParseDom object at 0x209bd50>
+proof <eri.tablesproof.TablesProof object at 0x209b510>
+documents len 1393
+.path /home/iamjabour/workspacePessoal/tese/corpus/machine
+_learning_tableextraction_paper2/webtablegrnd/html
+parser <eri.utils.parsedom.ParseDom object at 0x209b510>
+proof <eri.tablesproof.TablesProof object at 0x209bd50>
+documents len 1393
+<eri.corpus.Doc instance at 0x209a560> 0 /home/iamjabour/
+workspacePessoal/tese/corpus/machine_learning_table
+extraction_paper2/webtablegrnd/html/industry.ebi.ac.uk.w2h
+.Doc.help.mangpage.html <libxml2dom.Document object at 
+0x209bcd0>
+{'table': [<libxml2dom.Node object at 0x21114d0>, 
+<libxml2dom.Node object at 0x2111710>]}
+<eri.corpus.Doc instance at 0x209a488> 1 /home/iamjabour/
+workspacePessoal/tese/corpus/machine_learning_table
+extraction_paper2/webtablegrnd/html/www.ovonic.com.news.
+Nov14_2000.html <libxml2dom.Document object at 0x209b450>
+{'table': [<libxml2dom.Node object at 0x2111350>]}
+<eri.corpus.Doc instance at 0x209a440> 2 /home/iamjabour/
+workspacePessoal/tese/corpus/machine_learning_table
+extraction_paper2/webtablegrnd/html/news.cnet.com.news.
+0-1005-200-1507039.html <libxml2dom.Document object at 
+0x209bcd0>
+{'table': [<libxml2dom.Node object at 0x2113510>]}
+<eri.corpus.Doc instance at 0x209a5a8> 3 /home/iamjabour/
+workspacePessoal/tese/corpus/machine_learning_table
+extraction_paper2/webtablegrnd/html/www.dieoff.org.page114.
+htm <libxml2dom.Document object at 0x209b450>
+{'table': [<libxml2dom.Node object at 0x2116890>, 
+<libxml2dom.Node object at 0x2116950>, 
+<libxml2dom.Node object at 0x2116c10>]}
+<eri.corpus.Doc instance at 0x209a248> 4 /home/iamjabour/
+workspacePessoal/tese/corpus/machine_learning_table
+extraction_paper2/webtablegrnd/html/www.microsoft.com.Open
+Type.OTSpec.base.htm <libxml2dom.Document object at 0x209bcd0>
+{'table': [<libxml2dom.Node object at 0x21198d0>, 
+<libxml2dom.Node object at 0x2119bd0>, 
+<libxml2dom.Node object at 0x2119f90>, 
+<libxml2dom.Node object at 0x211a310>,
+<libxml2dom.Node object at 0x211a5d0>, 
+<libxml2dom.Node object at 0x211abd0>, 
+<libxml2dom.Node object at 0x211ae90>]} 
+<eri.corpus.Doc instance at 0x209a488> 5 /home/iamjabour/
+workspacePessoal/tese/corpus/machine_learning_table
+extraction_paper2/webtablegrnd/html/directory.google.com.Top.
+Science.Technology.Electronics.Test.Programming_Services.
+index.html <libxml2dom.Document object at 0x209b450>
+{'table': []}
+<eri.corpus.Doc instance at 0x209a440> 6 /home/iamjabour/
+workspacePessoal/tese/corpus/machine_learning_table
+extraction_paper2/webtablegrnd/html/www.washingtonpost.com.wp-
+dyn.politics.elections.2000.index.html <libxml2dom.Document 
+object at 0x209bcd0>
+{'table': []}
+<eri.corpus.Doc instance at 0x209a488> 7 /home/iamjabour/
+workspacePessoal/tese/corpus/machine_learning_table
+extraction_paper2/webtablegrnd/html/www.cnn.com.2001.US.01.25
+.power.woes.gov.index.html <libxml2dom.Document object 
+at 0x209b5d0>
+{'table': [<libxml2dom.Node object at 0x2119210>]}
+<eri.corpus.Doc instance at 0x209a440> 8 /home/iamjabour/
+workspacePessoal/tese/corpus/machine_learning_table
+extraction_paper2/webtablegrnd/html/chicagosports.com.notfound
+.index.html <libxml2dom.Document object at 0x209b450>
+{'table': []}
+<eri.corpus.Doc instance at 0x209a5a8> 9 /home/iamjabour/
+workspacePessoal/tese/corpus/machine_learning_table
+extraction_paper2/webtablegrnd/html/www2.gol.com.users.isett.
+stock.pages.philippines.html <libxml2dom.Document object 
+at 0x209b5d0>
+{'table': []}
+.path /home/iamjabour/workspacePessoal/tese/corpus/machine_
+learning_tableextraction_paper2/webtablegrnd/html
+parser <eri.utils.parsedom.ParseDom object at 0x209bdd0>
+proof <eri.tablesproof.TablesProof object at 0x209bd50>
+documents len 1393
+.
+-----------------------------------------------------------
+Ran 3 tests in 0.362s
+
+OK
+\end{verbatim}
+\end{enumerate}
 
 \bibliographystyle{alpha}
 \bibliography{bib}
