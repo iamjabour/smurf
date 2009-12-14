@@ -163,39 +163,49 @@ Embora estudos como \cite{}... apresentem resutados "interessantes" na detecçã
 
 \section{Ferramenta de Suporte a Experimentação}
 
-Existem diversos problemas em aberto que envolvem a
+%o que é um problema em aberto? não resolvido? não solucionado? 
+
+Existem diversos problemas não solucionados que envolvem a
 recuperação, indetificação e segmentação de 
-informação de páginas HTML. Esses problemas por serem referentes as
-páginas disponíveis na Web, na maior parte das vezes, demanda a
+informação de páginas HTML. Por serem referentes as
+páginas disponíveis na Web, normalmente, esses problemas demandam a
 experimentação em conjuntos de controle para que se possa avaliar o
 comportamento da solução proposta antes de colocar em produção.
+
+% voce esta usando muito 'diversas vezes', 'em sua maioria'
+% vc escreve de uma forma vaga: olhe o pargrafo anterior 'diversos problemas'. quais sao esses? olhe esse paragrafo: 'problemas com codificação': existe mais de um problema relacionado a codificação? ou codificação é um problema só?
+% penultima linha do proximo paragrafo: vc tinha escrito 'foge ao dominio'. 
 
 A experimentação em documentos HTML pode ser uma tarefa trabalhosa, pois
 para atacar o problema proposto é necessário antes enfrentar diversas
 barreiras para que o documento HTML possa ser carregado em memória e
-analisado. Problemas com a codificação de documentos ou má geração do
-HTML é normal dentre os documentos da Web e diversas vezes é necessário
-profundo conhecimento de aspéctos como a costrução da linguagem ou
-tabelas de codificação que, em grande maioria, foge ao domínio da tarefa
+analisado. Por exemplo, diferentes codificações de caracteres ou má geração do
+HTML são esperados dentre os documentos da Web, o que pode 
+exigir profundo conhecimento de aspéctos como a costrução da linguagem ou
+tabelas de codificação que, em grande maioria, fogem do domínio da tarefa
 principal desejada.
 
+%minha preocupação nao é com o texto deste projeto final e sim tentar melhorar sua escrita geral, visando a dissertacao. observe como inicio desse paragrafo está muito vago 'apos sanar TODOS os problemas...' quais sao esses todos os problemas? foram apenas os 2 acima? se vc teve de se preocupar com N problemas, eu creio que seja necessário pelo menos listar (em tópicos mesmo) quais sao esses N problemas.
+
+%"surgem novos desafios que poderia ser evitada" concordancia em genero e em numero erradas.
+
 Após sanar todos os problemas referentes ao tratamento dos documentos
-HTML surgem novos desafios que mesmo tendo um vínculo maior com a tarefa
-desejada poderia ser evitada. O aspécto de como grardar o conjunto
+HTML, surgem novos desafios, que mesmo tendo um vínculo maior com a tarefa
+desejada, poderiam ser evitados. O aspécto de como guardar o conjunto
 resposta e como avaliar o resultado que foi obtido é enfrentado por
 todos que desejam realizar experimentos com documentos HTML. Porém em
-grande parte dos trabalhos apresentados a abordagem é semelhante, o que
+grande parte dos trabalhos apresentados, a abordagem é semelhante, o que
 sugere espeço para a criação de um conjunto de ferramentas públicas que
 facilite também a tarefa de anotar e avaliar os resultados.
 
-O cenário acima é o encontramos quando lemos e estudando trabalhos
+O cenário descrito nos paragrafos anteriores é encontrado ao estudar trabalhos
 relacionados a recuperação de informação e segmentação em documentos
-HTML. Com isso, propomos a ferramenta apresentada nesse documento para
+HTML. Com isso, este trabalho propõe uma ferramenta para
 facilitar futuros trabalhos que necessitem realizar experimentação em páginas
 HTML.
 
-A seguir será apresentada, junto aos modelos, a caracteristicas
-necessárias para uma ferramenta de suporte a experimentação em
+As seções seguintes apresentarão os modelos e caracteristicas
+necessárias para uma ferramenta de suporte à experimentação em
 documentos HTML.
 
   \subsection{Modularização da Ferramenta}
@@ -208,13 +218,16 @@ documentos HTML.
   \end{center}
 \end{figure}
 
-Observando os passos necessários para que seja possível o inicio do
-desenvolvimento de uma solução de experimentação fica evidente a
+% Le esse paragrafo de novo. Tah faltando pontuacao.
+
+Observando os passos necessários para que seja possível o 
+desenvolvimento de uma solução de experimentação, fica evidente a
 necessidade de um módulo capaz de corrigir problemas de
-codificação nos documentos e má formação seguindo da uma estrutura em
-memória para que seja possível trabalhar neste documento. Por esse
-motivo, o primeiro módulo descrito é o Parser que atende a essa
-necessidade, sendo descrio a seguir:
+codificação e má formação nos documentos HTML. Além
+disso, é necessário também uma estrutura em memória que permita a
+manipulação do documento por algoritmos.
+O módulo que atende essas necessidades é chamado de Parser, sendo 
+descrio a seguir:
 
 \begin{verbatim}
 - Parser: 
@@ -232,15 +245,16 @@ necessidade, sendo descrio a seguir:
     em memória pela W3C.
 \end{verbatim}
 
+%Nao entendi.
 Com o documento HTML em memória e disponível para a execução de rotinas
-sobre sua estrutura a forma como as rotinas irão guardar seus resultados
+sobre sua estrutura. A forma como as rotinas irão guardar seus resultados
 é importante, pois determinará todo o processo de geração de resultados
 e avaliação. Com isso, descrevemos o módulo de ''anotação'' e a interface
 que todas as rotinas, denominadas extratores, devem atender.
 
 Existe uma peculariedade com a modelagem adotada, pois a forma de marcar
 o resultado influencia como esse resultado poderá ser avaliado, porém
-essa dependecia será descrita quando for descrito o módulo de avaliação.
+essa dependecia será descrita junto com o módulo de avaliação.
 
 \begin{verbatim}
 - Marcadores:
@@ -249,25 +263,28 @@ essa dependecia será descrita quando for descrito o módulo de avaliação.
 
 - Extratores:
   Procura por elementos que atendem a especificação
-  de um rótulo em um documento e o marca, utilizando
-  o marcador, com o referido rótulo.
+  de um rótulo em um documento e o marca, passando para o marcador o
+  rótulo e o nó que deve ser marcado com tal rótulo.
 \end{verbatim}
 
-O conjunto de módulos descritos até então fornece um conjunto de
-funcionalidades que proporciona a colocação da solução encontrada em
+Os módulos descritos fornece um conjunto de
+funcionalidades que proporcionam a aplicação da solução encontrada em
 prática, porém como o objetivo da ferramenta é proporcionar um ambiente
-de experimentação são necessários mais alguns módulos, esses com o
-objetivo direto a tarefa de experimentação.
+de experimentação, são necessários módulos para realizar a tarefa de experimentação.
 
-A capacidade de avaliar os algoritmos, ou soluções, propostos é muito
-importante. Por isso, o módulo de avaliação fornece o conjunto de regras
-para que o resultado obtido possa ser mensurado e retornado como
-informações estatistica. A formas de avaliar são diretamente
-relacionadas a forma que o resultado foi armazenada, então para cada
+% porque é mt importante?
+A capacidade de avaliar os algoritmos, ou soluções, propostos é
+importante, pois permite que se tenha a visão de que tipo de resultado
+esta sendo gerado. Por isso, o módulo de avaliação fornece o conjunto de
+regras para que o resultado obtido possa ser mensurado e retornado como
+informações estatísticas. A formas de avaliar são diretamente
+relacionadas a forma que o resultado foi armazenada. Assim, para cada
 avaliador existe um marcador disponível, pois esse marcador armazena a
 solução no formato adequado para ser avalido posteriormente.
 
-Além de um marcador o avaliador necessita também de uma fonte de
+%Acho que esse foi o melhor paragrafo.
+
+Além de um marcador, o avaliador necessita também de uma fonte de
 informação correta, denominada gabarito. Esse gabarito fornece um
 conjunto de informação, no mesmo formato que o conjunto armazenado pelo
 marcador, para que seja possível o cruzamento de informação para a
@@ -286,8 +303,12 @@ identificação em páginas HTML é fornecido como base junto a ferramenta.
   ser avaliados.
 \end{verbatim}
 
+%descrevemos uma estrutura que descreve: RUIM.
+% e eu nao entendi o que é o corpus. é a estrura que descreve esse conjunto ou é o conjunto?
+% esta repetindo muito as palavras.
+
 A experimentação normalmente ocorre sobre um grande conjunto de
-documentos, por esse motivo descrevemos uma estrutura que descreve esse
+documentos, por esse motivo foi criada uma estrutura que descreve esse
 conjunto, denominado corpus. O corpus descreve um conjunto de
 documentos, informando a natureza dos documentos, o tipo de gabarito que
 pode ser obtido dos documentos e para quais tarefas esses documentos são
@@ -302,10 +323,11 @@ interessantes.
   que ele pode ser utilizado.
 \end{verbatim}
 
-Para utilizar desses módulos podem ser implementadas aplicações que
-utilizam o que é mais interessante para ela. Um bom exemplo de aplicação
+% ela quem? 
+Para utilizar esses módulos podem ser implementadas aplicações que
+utilizam o que é mais interessante. Um bom exemplo de aplicação
 é a geração de um relatório de desempenho (Benchmark) para o conjunto de
-extratores e corpus. Atualmente o benchmark é a unica aplicação
+extratores e corpus. Atualmente, o benchmark é a unica aplicação
 disponível junto a ferramenta, pois essa é uma necessidade direta para a
 experimentação. A seguir é apresentado um diagrama de sequência para
 exemplificar a utilização da ferramenta.
@@ -322,26 +344,26 @@ exemplificar a utilização da ferramenta.
 %- mini-acompanhamento da execução: seqüência de tarefas de desenvolvimento utilizadas junto com estatísticas de tempo e esforço por tarefa.
 \begin{enumerate}
 \item Definição da Tarefa: 1 de agosto a 30 de agosto. \\
-Inicialmente foi realizada uma busca pelos trabalhos relacionados a
+Inicialmente foi realizada uma busca pelos trabalhos relacionados à
 extração de elementos e marcação em páginas Web para engrandecer o
 conhecimento sobre a área, melhorando a capacidade de entendimento
 sobre o problema.
 
 \item Modelagem do Problema: 1 de setembro a 15 de setembro. \\ 
 Após conhecer bem o problema de segmentação e marcação de elementos em
-páginas Web a modelagem de uma ferramenta de apoio se tornou possível.
-Durante esse processo de modelagem foram estabelecidos os limites e as
+páginas Web, a modelagem de uma ferramenta de apoio se tornou possível.
+Durante esse processo de modelagem, foram estabelecidos os limites e as
 necessidades de uma ferramenta para suporte a criação de soluções para
 o problema.
 
 \item Impementação do Framework e Testes: 15 de setembro a 30 de
 novembro. \\
 Durante o mês de setembro, outubro e novembro foi realizada a
-codificação da ferramenta modelada. Durante esse tempo também foram
+codificação da ferramenta modelada. Durante esse tempo, também foram
 desenvolvidos alguns testes unitários para garantir a qualidade do
 desenvolvimento da aplicação. Além do desenvolvimento da ferramenta de
 suporte, também foi realizada a tentativa de resolver uma tarefa de
-segmentação. Essa tarefa é detalhado mais adiante no texto, assim como
+segmentação. Essa tarefa será detalhada mais adiante no texto, assim como
 seus resultados.
 
 \item Documentação de usuario e relatório: 30 de novembro a 15 de
@@ -414,6 +436,8 @@ páginas HTML.
 }
 \subsection{Código Fonte}
 
+%Essa secao está melhor.
+
 Para a codificação da ferramenta foi escolhida a linguagem script
 Python. Sua facilidade de prototipação e programação foram pontos
 positivos para essa escolha.
@@ -436,7 +460,7 @@ descrição de comentário recomentado pela empresa Fast.
 \subsection{Validação e Testes}
 %- testes dos modulos implementados
 
-Para verificar o funcionamento da ferramenta e validar a modelagem apresentada a tarefa de identificação de tabelas genuinas foi escolhida. Utilizando a Ferramenta de Experimentação em Documentos HTML foi implementada uma abordagem simplificada a proposta em []. Mesmo não obtendo bons resultados para a tarefa o objetivo foi alcançado, já que a ferramenta proporcionou a rápida codificação e experimentação da tarefa. Esses resultados estão disponíveis no apendice X e um fragmento do corpus utilizado está disponível junto ao código para a realizações de testes pelo usuário.
+Para verificar o funcionamento da ferramenta e validar a modelagem apresentada, a tarefa de identificação de tabelas genuinas foi escolhida. Utilizando a Ferramenta de Experimentação em Documentos HTML foi implementada uma abordagem simplificada a proposta em []. Mesmo não obtendo bons resultados para a tarefa, o objetivo foi alcançado, já que a ferramenta proporcionou a rápida codificação e experimentação da tarefa. Esses resultados estão disponíveis no apendice X e um fragmento do corpus utilizado está disponível junto ao código para a realizações de testes pelo usuário.
 
 Foi utilizado o framework de teste unitários fornecido pela distribuição
 oficial do Python [1]. Os módulos foram testados, buscando a verificação
@@ -451,7 +475,7 @@ um scripts Python.
 A cobertura do código por testes foi programada a partir do modelo de
 sequência da aplicação "Benchmark" que descreve o principal uso da
 ferramenta. Outros casos também foram verificados para garantir que
-módulos de suporte, como o parser DOM ou a algorítmos clássicos como
+módulos de suporte, como o parser DOM ou algorítmos clássicos como
 distáncia de ediçao, DFS, LLC estão corretamete
 implementados.
 
@@ -472,14 +496,15 @@ funcionalidade específica.
 
 \subsection{Conteúdo do CD}
 
-O CD-ROM engtregue, onde esse documento pode ser encontrado, contêm
+O CD-ROM engtregue, onde este documento pode ser encontrado, contêm
 todos os arquivos fonte e documentos necessários para o entendimento e
 utilização da ferramenta. Também é fornecido um pequeno conjunto de
 documentos onde a tarefa de detecção de tabela genuida pode ser
 executada e os resultados analizados utilizando a aplicação de Benchmark.
 
+% SORCE???? brabo...
 A Estrutura de diretórios do código fonte, que pode ser encontrada na
-pasta sorce, é a seguinte:
+pasta source, é a seguinte:
 
 \begin{verbatim}
 |-- source
