@@ -1,49 +1,71 @@
-\documentclass{acm_proc_article-sp}
-\usepackage[utf8]{inputenc}
-\usepackage[brazil]{babel}
-\usepackage{hyperref}
-\usepackage{color}
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+%\documentclass[12pt, a4paper, notitlepage]{article}
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[brazil]{babel}    % dá suporte para os termos na língua portuguesa do Brasil
+\usepackage[utf8]{inputenc} % ou latin1 dá suporte para caracteres especiais como acentos e cedilha
+\usepackage[T1]{fontenc}      % Lê a codificação de fonte T1 (font encoding default é 0T1).
+\usepackage[center,small]{caption} % legendas centralizadas e pequenas
+
+%\usepackage{ae}               % Fonte "Almost European"
+%\usepackage{lmodern}        % Fonte "Latin Modern", experimente no lugar de ae
+%\usepackage{times}          % Fonte "Times New", experimente no lugar de ae
+%\usepackage{helvet}
+
+%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the
+
+
+\usepackage{indentfirst}       % indenta os primeiros parágrafos
+\usepackage{amssymb,amsmath}   % simbolos matemáticos providos pela AMS
+%\usepackage[pdftex,dvipdfm]{graphicx}
+% para inclusão de figuras (png, jpg, gif,bmp)
+\usepackage{graphicx}          % figuras gráficas
+\usepackage{geometry}
+%\usepackage{layouts} 
+\usepackage{color}             % para letras e caixas coloridas
+%\usepackage{makeidx}           % índice remissivo
+\usepackage{a4wide}            % correta formatação da página em A4
+\usepackage{setspace}          % para a distância entre linhas
+
+\usepackage{longtable} % tabelas longas
+
+% Formatação ============================================================================
+%\geometry{paperwidth=21cm,paperheight=29.7cm,
+%left=3.5cm,right=3.5cm,top=2.5cm,bottom=2.5cm}
+\geometry{paperwidth=21cm}
+\geometry{paperheight=29.7cm}
+\geometry{left=3.5cm}
+\geometry{right=3.5cm}
+\geometry{top=2.5cm}
+\geometry{bottom=2.5cm}
+\geometry{headheight=15pt}
+\geometry{headsep=10mm}                  % espaço entre parágrafo e cabeçalho
+\geometry{footskip=10mm}                 % espaço entre parágrafo e rodapé
+% ---------------------------------------------------------------------------------------
+\setlength{\parindent}{1.5cm}             % indentação do parágrafo
+\setlength{\parskip}{6pt}                % espaço entre parágrafos
+\setlength{\abovecaptionskip}{3pt}       % espaço entre legenda e tabela ou gráfico
+%\setlength{\belowcaptionskip}{1pt}       % espaço entre legenda e tabela ougráfico 
+\setlength{\doublerulesep}{1pt}          % espaço entre linhas duplas de uma tabela
+%\usepackage[num,overcite]{num-abnt}
+%\citebrackets[]
+
+
+%\usepackage{listings}
+%\renewcommand{\lstlistingname}{Listagem}
+%\renewcommand{\lstlistlistingname}{Lista de Listagens}
+
 
 \newcommand{\remove}[1]{}
 
 \hyphenation{tra-zen-do Bra-sil}
 
-\numberwithin{equation}{section}
-
 \begin{document}
 
 \title{Sem Título}
 
-\numberofauthors{1}
-\author{
-\alignauthor
-Iam Jabour  
-\and \alignauthor \email{ijabour@inf.puc-rio.br}
-}
-
-
 \maketitle
-
-\begin{abstract}
-
-
-\end{abstract}
-
-\section*{RESUMO}\normalsize %\the\parskip \the\baselineskip%\ninept
-%\begin{abstract}
-
-
-%\end{abstract}
-
-
-% A category with the (minimum) three required fields
-%\category{H.4}{Information Systems Applications}{Miscellaneous}
-%A category including the fourth, optional field follows...
-%\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
-
-%\terms{Delphi theory}
-
-\keywords{Aprendizado de Máquina, Extração de Informação, Heurística}
 
 \section{Introdução}
 
@@ -138,61 +160,6 @@ Embora estudos como \cite{}... apresentem resutados "interessantes" na detecçã
 %\subsection{Comparação com os resultados}
 }
 
-\section{Identificação de Tablas}
-
-%  \subsection{Introdução}
-- o que é uma estrutura de dados tabulares (tabelas genuinas)
-- tag table e seu uso em documentos html
-- importancia em separar/identificar tabelas genuinas
-
-  \subsection{Trabalhos Relacionados}
-
-- trabalhos na area e seus resultados
-- modelagens comuns e importantes
-
-  \subsection{Abordagem adotada}
-
-- modelagem da abordagem adotada
-- justificativa
-
-
-\section{Experimentação em Documentos HTML}
-
-  \subsection{Documentos HTML e seus problemas}
-
-- problemas que se encontrar quando se trabalha com documentos html
-- encode, parser, documentos mal formados, referencias quebradas,
-visualizacao (renderização errada) ...
-
-A criação de soluções para as tarefas de segmentação ou
-identificação de elementos em páginas Web demanda uma atenção constante.
-Essa atenção proporciona o profundo conhecimento da estrutura do problema
-o que ajuda na capacidade de modelar novas abordagens. Porém,
-  é constantemente relatado em trabalhos relacionados a páginas Web 
-  a existência de diversas dificuldades de se trabalhar com os
-  documentos Web, essas impedem a atuação exclusiva no problema inicial 
-  demandando atenção e esforço, muitas vezes, tanto quanto a tarefa original.
-
-\remove{são encontrados sub-problemas que não pertencem ao problema
-  original, mas que impedem o andamento de pesquisas e experimentações
-  sobre o domínio.
-}
-
-Problemas como 
-    documentos com mais de uma codificação de caracteres, 
-    documentos com html mal formados
-
-ou até mesmo utilizar abordagens já utilizadas em problemas e semelhantes, para sua
-resolução.
-conhecimento do domínio do problema 
-
-  \subsection{Criação e armazenamento do Corpora}
-- como realizar experimentos em páginas html (corpus, anotacao)
-
-  \subsection{Abordagem e Avaliação}
-- quais as formas de se gerar os resultados (nos, texto, visual)
-- como medir a qualidade dos resultados (métricas)
-
 
 \section{Ferramenta de Suporte a Experimentação}
 
@@ -219,38 +186,27 @@ resposta e como avaliar o resultado que foi obtido é enfrentado por
 todos que desejam realizar experimentos com documentos HTML. Porém em
 grande parte dos trabalhos apresentados a abordagem é semelhante, o que
 sugere espeço para a criação de um conjunto de ferramentas públicas que
-facilite também essa a tarefa de anotar e avaliar os resultados.
+facilite também a tarefa de anotar e avaliar os resultados.
 
-O cenário acima é o que podemos observar lendo e estudando trabalhos
+O cenário acima é o encontramos quando lemos e estudando trabalhos
 relacionados a recuperação de informação e segmentação em documentos
 HTML. Com isso, propomos a ferramenta apresentada nesse documento para
-facilitar futuros trabalhos que necessitem de experimentação em páginas
+facilitar futuros trabalhos que necessitem realizar experimentação em páginas
 HTML.
 
 A seguir será apresentada, junto aos modelos, a caracteristicas
 necessárias para uma ferramenta de suporte a experimentação em
 documentos HTML.
 
-- necessidade de uma ferramenta de suporte a resolucao da tarefa
-- o que se espera de uma ferramenta de suporte a experimentação
-
   \subsection{Modularização da Ferramenta}
 
-- como a ferramenta é dividida e para que serve cada módulo, o que ele
-faz.
-
-%Uma ferramenta que permita que o foco de desenvolvimento seja apenas nas
-%soluções de problemas de identificação e segmentação de elementos em páginas
-%Web e a análise dos resultados dessa soluções propostas, é extremamente 
-%interessante.
-
-%Por esse motivo, a modelagem dessa ferramenta de
-%suporte e sua implementação é necessária, 
-%escolhidas como tema para 
-
-%realização de experimentos, tendo todo dando todo o suporte
-%necessário para que os resultados das soluções possam sinteressante uma
-%plataforma/ferramenta 
+\begin{figure}[htb]
+  \begin{center}
+  \includegraphics[width=12cm]{img/classes.eps}
+  \caption{x}
+  \label{x}
+  \end{center}
+\end{figure}
 
 Observando os passos necessários para que seja possível o inicio do
 desenvolvimento de uma solução de experimentação fica evidente a
@@ -260,30 +216,42 @@ memória para que seja possível trabalhar neste documento. Por esse
 motivo, o primeiro módulo descrito é o Parser que atende a essa
 necessidade, sendo descrio a seguir:
 
+\begin{verbatim}
 - Parser: 
-    - ForceEncode: Normaliza a codificação de um documento para UTF-8
-    - Santizer: Verifica a corretude do documento HTML e corrige alguns
-    erros e problemas comulmente encontrados.
-    - ParserDOM: Transforma o documento em uma estrutura em memória DOM
-    que é comulmente utilizada e recomendada para a representação de
-    documentos HTML em memória pela W3C.
+  - ForceEncode:
+    Normaliza a codificação de um documento para
+    UTF-8.
+  - Santizer:
+    Verifica a corretude do documento HTML e
+    corrige alguns erros e problemas comulmente
+    encontrados.
+  - ParserDOM:
+    Transforma o documento em uma estrutura em
+    memória DOM, essa estutura é recomendada
+    para a representação de documentos HTML
+    em memória pela W3C.
+\end{verbatim}
 
 Com o documento HTML em memória e disponível para a execução de rotinas
 sobre sua estrutura a forma como as rotinas irão guardar seus resultados
 é importante, pois determinará todo o processo de geração de resultados
-e avaliação. Com isso, descrevemos o módulo de "anotação" e a interface
+e avaliação. Com isso, descrevemos o módulo de ''anotação'' e a interface
 que todas as rotinas, denominadas extratores, devem atender.
 
 Existe uma peculariedade com a modelagem adotada, pois a forma de marcar
 o resultado influencia como esse resultado poderá ser avaliado, porém
 essa dependecia será descrita quando for descrito o módulo de avaliação.
 
-- Marcadores: Armazena nós em rótulos para que eles possam ser
-organizados ou segmentados.
+\begin{verbatim}
+- Marcadores:
+  Armazena nós em rótulos para que eles possam ser
+  organizados ou segmentados.
 
-- Extratores: Procura por elementos que atendem a especificação de um
-rótulo dentro de um documento e o marca, utilizando o marcador, com o
-referido rótulo .
+- Extratores:
+  Procura por elementos que atendem a especificação
+  de um rótulo em um documento e o marca, utilizando
+  o marcador, com o referido rótulo.
+\end{verbatim}
 
 O conjunto de módulos descritos até então fornece um conjunto de
 funcionalidades que proporciona a colocação da solução encontrada em
@@ -306,11 +274,17 @@ marcador, para que seja possível o cruzamento de informação para a
 avaliação. Um formato básico que atende as principais tarefas de
 identificação em páginas HTML é fornecido como base junto a ferramenta.
 
-- Avaliador: Recebe os rótulos, junto aos conjunto de nós que pertencem
-a eles, e também o gabarito para quantificar a qualidade do extrator.
+\begin{verbatim}
+- Avaliador:
+  Recebe os rótulos, junto aos conjunto de nós
+  que pertencem a eles, e também o gabarito para
+  quantificar a qualidade do extrator.
 
-- Gabarito: Armazena os rótulos, junto ao conjunto de nós de cada
-rótulo, para que os extratores possam ser avaliados.
+- Gabarito: 
+  Armazena os rótulos, junto ao conjunto de nós
+  de cada rótulo, para que os extratores possam
+  ser avaliados.
+\end{verbatim}
 
 A experimentação normalmente ocorre sobre um grande conjunto de
 documentos, por esse motivo descrevemos uma estrutura que descreve esse
@@ -319,10 +293,14 @@ documentos, informando a natureza dos documentos, o tipo de gabarito que
 pode ser obtido dos documentos e para quais tarefas esses documentos são
 interessantes.
 
-- Corpus: Conjunto de documentos, junto aos seus gabaritos. Os corpus
-são descritos por um arquivo de configuração que especifica o tipo de
-gabarito que esse corpus pode produzir e quais as tarefas que ele pode
-ser utilizado.
+\begin{verbatim}
+- Corpus: 
+  Conjunto de documentos, junto aos seus gabaritos.
+  Os corpus são descritos por um arquivo de
+  configuração que especifica o tipo de gabarito
+  que esse corpus pode produzir e quais as tarefas
+  que ele pode ser utilizado.
+\end{verbatim}
 
 Para utilizar desses módulos podem ser implementadas aplicações que
 utilizam o que é mais interessante para ela. Um bom exemplo de aplicação
@@ -332,79 +310,49 @@ disponível junto a ferramenta, pois essa é uma necessidade direta para a
 experimentação. A seguir é apresentado um diagrama de sequência para
 exemplificar a utilização da ferramenta.
 
-\remove{
-Descrição dos Módulos: \\
-
-- Documento(DOM-Tree)- \\
-    (Documento): DOM, Path, ID
-
-- Extrator(Documento)->(Elementos) \\
-  Elementos que utilizam o framework para extrair elementos da árvore DOM
-
-- Elemento \\
-
-- Marcador(Elementos)->(SAIDA): SAIDA:\\
-  xml, html, cvs,txt, etc - formatos possiveis de saida
-
-- Gabarito \\
-
-- Avaliador(SAIDA, Gabarito) Resultado: \\
-   cvs, txt, etc - formatos possiveis de saida
-
-- Utils - Distances - Abstract functions: stringDistance(string,
-string)->(int): \\
-  Levenshtien distance - distancia de edição entre strings
-
-- PaseDom: parse(htmlString, encoding)->(DOM): \\
-  detecção de encode do htmlString, se nao foi passado ... 
-  Cria uma árvore dom com o módulo libxml2dom - conformidade da árvore - retorna uma DOM-Tree
-
-- Dynamicimport: dimport:\\
-  importa um modulo dinamicamente
-
-- Pré-Processamento(HTML-FILE)->(HTML-String)\\
-
-- Apps Benchmark: \\
-  Roda um conjunto de Extratores e depois de Avalidores gerando o
-resultado no formato desejado.
-
-- Criador de Gabarito(HTML-FILE)->(Gabarito)\\
-}
-
+\begin{figure}[htb!]
+  \begin{center}
+  \includegraphics[width=14cm]{img/fastbenchmark.eps}
+  \caption{x}
+  \label{x}
+  \end{center}
+\end{figure}
 
   \subsection{Acompanhamento do Desenvolvimento da Ferramenta}
 %- mini-acompanhamento da execução: seqüência de tarefas de desenvolvimento utilizadas junto com estatísticas de tempo e esforço por tarefa.
+\begin{enumerate}
+\item Definição da Tarefa: 1 de agosto a 30 de agosto. \\
+Inicialmente foi realizada uma busca pelos trabalhos relacionados a
+extração de elementos e marcação em páginas Web para engrandecer o
+conhecimento sobre a área, melhorando a capacidade de entendimento
+sobre o problema.
 
-	- Definição da Tarefa: 1 de agosto a 30 de agosto \\
-  Inicialmente foi realizada uma busca pelos trabalhos relacionados a
-  extração de elementos e marcação em páginas Web para engrandecer o
-  conhecimento sobre a área, melhorando a capacidade de entendimento
-  sobre o problema.
+\item Modelagem do Problema: 1 de setembro a 15 de setembro. \\ 
+Após conhecer bem o problema de segmentação e marcação de elementos em
+páginas Web a modelagem de uma ferramenta de apoio se tornou possível.
+Durante esse processo de modelagem foram estabelecidos os limites e as
+necessidades de uma ferramenta para suporte a criação de soluções para
+o problema.
 
-	- Modelagem do Problema: 1 de setembro a 15 de setembro \\ 
-  Após conhecer bem o problema de segmentação e marcação de elementos em
-  páginas Web a modelagem de uma ferramenta de apoio se tornou possível.
-  Durante esse processo de modelagem foram estabelecidos os limites e as
-  necessidades de uma ferramenta para suporte a criação de soluções para
-  o problema.
+\item Impementação do Framework e Testes: 15 de setembro a 30 de
+novembro. \\
+Durante o mês de setembro, outubro e novembro foi realizada a
+codificação da ferramenta modelada. Durante esse tempo também foram
+desenvolvidos alguns testes unitários para garantir a qualidade do
+desenvolvimento da aplicação. Além do desenvolvimento da ferramenta de
+suporte, também foi realizada a tentativa de resolver uma tarefa de
+segmentação. Essa tarefa é detalhado mais adiante no texto, assim como
+seus resultados.
 
-	- Impementação do Framework e Testes: 15 de setembro a 30 de novembro \\
-  Durante o mês de setembro, outubro e novembro foi realizada a
-  codificação da ferramenta modelada. Durante esse tempo também foram
-  desenvolvidos alguns testes unitários para garantir a qualidade do
-  desenvolvimento da aplicação. Além do desenvolvimento da ferramenta de
-  suporte, também foi realizada a tentativa de resolver uma tarefa de
-  segmentação. Essa tarefa é detalhado mais adiante no texto, assim como
-  seus resultados.
-
-	- Documentação de usuario e relatório: 30 de novembro a 15 de dezembro \\
-  Os últimos 15 dias de projeto foram utilizados para a elaboração deste
-  documento e também para a criação da documentação para usuários,
-  tornando a ferramenta fácil de ser utilizada por profissíonais que
-  queiram pesquisar sobre problemas que possam ser modelados de forma
-  similar, ou seja, problemas de segmentação ou detecção de elementos em
-  páginas HTML.
-
+\item Documentação de usuario e relatório: 30 de novembro a 15 de
+dezembro. \\
+Os últimos 15 dias de projeto foram utilizados para a elaboração deste
+documento e também para a criação da documentação para usuários,
+tornando a ferramenta fácil de ser utilizada por profissíonais que
+queiram pesquisar sobre problemas que possam ser modelados de forma
+similar, ou seja, problemas de segmentação ou detecção de elementos em
+páginas HTML.
+\end{enumerate}
 
 %\section{Especificação}
 %- especificação do programa
@@ -485,17 +433,8 @@ PyDoc foi utilizado, gerando a documentação em formato HTML. Para a
 documentação do código também foi adotado, como adendo, o padrão de 
 descrição de comentário recomentado pela empresa Fast.
 
-
-
-%      - código fonte cuidadosamente comentado
-%                  - comentários cabeçalho de módulos, classes e funções
-%                  - comentários de controle de versão
-%                  - assertivas para dados e procedimentos, procure utilizar design     by contract
-%                  - pseudo instruções
-%                  - procure estabelecer e/ou adotar padrões de programação. Os apêndices do livro Staa, A.v.; Programação Modular, Campus 2000; contêm uma extensa lista de padrões de programação que pode servir de exemplo para a adaptação às características específicas do trabalho. 
-
 \subsection{Validação e Testes}
-- testes dos modulos implementados
+%- testes dos modulos implementados
 
 Para verificar o funcionamento da ferramenta e validar a modelagem apresentada a tarefa de identificação de tabelas genuinas foi escolhida. Utilizando a Ferramenta de Experimentação em Documentos HTML foi implementada uma abordagem simplificada a proposta em []. Mesmo não obtendo bons resultados para a tarefa o objetivo foi alcançado, já que a ferramenta proporcionou a rápida codificação e experimentação da tarefa. Esses resultados estão disponíveis no apendice X e um fragmento do corpus utilizado está disponível junto ao código para a realizações de testes pelo usuário.
 
@@ -506,7 +445,7 @@ API das classes importantes para a ferramenta.
 
 Os testes e todos os logs podem ser verificados no Anexo X. Esses testes
 também se encontram junto ao código, sendo eles nomeados como
-test\_<nome\_do\_arquivo> e podem ser executados separadamento como
+test\_<nome\_do\_arquivo>.py e podem ser executados separadamento como
 um scripts Python.
 
 A cobertura do código por testes foi programada a partir do modelo de
@@ -515,13 +454,6 @@ ferramenta. Outros casos também foram verificados para garantir que
 módulos de suporte, como o parser DOM ou a algorítmos clássicos como
 distáncia de ediçao, DFS, LLC estão corretamete
 implementados.
-
-%      - roteiro de teste efetuado, composto de:
-%                  - critérios de teste utilizados
-%                  - descrição dos casos de teste
-%                  - na medida do possível procure utilizar testes automatizados
-%                  - scripts de teste automatizado
-%                  - logs gerados pelo teste automatizado
 
 \subsection{Documentação do Usuário}
 
@@ -591,6 +523,7 @@ pasta sorce, é a seguinte:
       |-- test_forceencode.py
       `-- test_parsedom.py
 \end{verbatim}
+
 Na pasta pydoc pode ser encontrado a documentação gerada automaticamente
 a partir do código.
 

@@ -16,10 +16,10 @@ class TestParseDom(unittest.TestCase):
         test parse some basi html
         """
         print '\t - Test: utils.parsedom.parse()'
-        ret = self.parser.parse("<html><body>Hi</body></html>")
+        ret = self.parser.parseString("<html><body>Hi</body></html>")
         self.assert_(ret != None)
 
-        ret = self.parser.parse("<html><body>Ho")
+        ret = self.parser.parseString("<html><body>Ho")
         self.assert_(ret != None)
 
 if __name__ == '__main__':

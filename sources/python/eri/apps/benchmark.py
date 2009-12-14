@@ -1,12 +1,17 @@
+# -*- coding: utf-8 -*-
 import sys
 from eri.utils.dynamicimport import dimport
 from eri.apps.configurator import Configurator
 from eri.corpus import Corpus
+import os
 
 class Benchmark:
     def __init__(self, corpusPath, configFile=None, extractors=[], limit=int(2**31-1)):
         if not configFile:
-            config = Configurator('config_example.cnf')
+            if os.path.exists('config_example.cnf'):
+                config = Configurator('config_example.cnf')
+            else:
+                config = Configurator('apps/config_example.cnf')
         else:
             config = Configurator(configFile)
 
@@ -19,6 +24,11 @@ class Benchmark:
         self.benchmark = []
 
     def process(self):
+        """
+        Executa o benchmark, amarzenando os resultados parciais em
+        self.benchmark. para visualizar o resultado de forma adequada utilize
+        pprint()
+        """
         count = 0
 
         while True:
@@ -37,7 +47,9 @@ class Benchmark:
             self.benchmark.append(result)
 
     def pprint(self):
-
+        """
+        Consolida o benchmark e imprime o resultado na saida padrão
+        """
         result = {}
 
         for key in self.benchmark[0]:

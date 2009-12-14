@@ -1,16 +1,33 @@
-
+# -*- coding: utf-8 -*-
 import urllib
 from eri.utils.parsedom import ParseDom
 from eri.tablesproof import TablesProof
 import os
 
 class Doc:
+    """
+    Essa classe implementa um Documento para facilitar o processamento e
+    utilização da ferramenta
+    """
     def __init__(self, path, id=0):
+        """
+        Construtor do documento
+
+        @param string path: Path para o documento
+        @param int id: Identificador para o documento
+        """
         self.id = id
         self.path = path
+        # valor que será carregado com o parser escolhido
         self.content = None
 
 class Corpus:
+    """
+    Esta classe implementa um corpus, contendo todas as informações necessárias
+    para que seja possível executar qualquer tipo de aplicação da ferramenta
+    sobre esse corpus.
+    """
+
     def __init__(self, corpusPath):
         self.path = corpusPath
         self.parser = None
@@ -21,9 +38,15 @@ class Corpus:
         self.count = 0
 
     def getProof(self, doc):
+        """
+        Obtem o gabarito de um documento
+        """
         return self.proof.getProof(doc.content)
 
     def getDocument(self):
+        """
+        Obtem o proximo documento do corpus
+        """
         return self.__next()
 
     def __next(self):
