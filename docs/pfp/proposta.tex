@@ -73,11 +73,23 @@
 %o que é um problema em aberto? não resolvido? não solucionado? 
 
 Existem diversos problemas não solucionados que envolvem a
-recuperação, indetificação e segmentação de 
+recuperação, identificação e segmentação de 
 informação de documentos HTML. Por serem referentes a documentos disponíveis
 na Web, normalmente, esses problemas demandam a
 experimentação em conjuntos de controle para que se possa avaliar o
-comportamento da solução proposta antes de coloca-la em produção.
+comportamento da solução proposta antes de colocá-la em produção.
+
+Os referidos problemas em documentos HTML podem ser exemplificados
+por: identificação de tabelas genuínas, que busca separar as tabelas que
+são utilizadas somente para a composição visual das informações
+realmente tabulares; identificação de templates, que identifica a
+informação na página que tem o objetivo de manter um padrão visual;
+identificação de listas de produtos em sites de comércio eletrônico,
+tornando possível separar os produtos e as informações presentes nessas
+listas; identificação de comentários em documentos de blogs ou notícias,
+que normalmente são dispostos em forma de listas. Existem outros tipos
+de problemas que também demandam a experimentação em documentos HTML,
+porém os listados são os que inicialmente motivam este trabalho.
 
 % voce esta usando muito 'diversas vezes', 'em sua maioria'
 % vc escreve de uma forma vaga: olhe o pargrafo anterior 'diversos problemas'. quais sao esses? olhe esse paragrafo: 'problemas com codificação': existe mais de um problema relacionado a codificação? ou codificação é um problema só?
@@ -88,7 +100,7 @@ para atacar o problema proposto é necessário antes enfrentar diversas
 barreiras para que o documento HTML possa ser carregado em memória e
 analisado. Por exemplo, diferentes codificações de caracteres ou má geração do
 HTML são esperados dentre os documentos da Web, o que pode 
-exigir profundo conhecimento de aspéctos como a costrução da linguagem ou
+exigir profundo conhecimento de aspectos como a construção da linguagem ou
 tabelas de codificação que, em grande maioria, fogem do domínio da tarefa
 principal desejada.
 
@@ -98,19 +110,19 @@ principal desejada.
 
 Após sanar alguns dos problemas referentes ao tratamento dos documentos
 HTML, surgem novos desafios, que mesmo tendo um vínculo maior com a tarefa
-desejada, poderiam ser evitados. O aspécto de como guardar o conjunto
+desejada, poderiam ser evitados. O aspecto de como guardar o conjunto
 resposta e de como avaliar o resultado que foi obtido é enfrentado por
 todos que desejam realizar experimentos com documentos HTML. Porém em
 grande parte dos trabalhos apresentados, a abordagem é semelhante, o que
 sugere espeço para a criação de um conjunto de ferramentas públicas que
 facilite também a tarefa de anotar e avaliar os resultados.
 
-O cenário descrito nos paragrafos anteriores é encontrado ao se estudar 
+O cenário descrito nos parágrafos anteriores é encontrado ao se estudar 
 trabalhos relacionados a recuperação de informação e segmentação em documentos
 HTML. Com isso, este trabalho propõe uma ferramenta para
 facilitar futuras tarefas de experimentação em documentos HTML.
 
-As seções seguintes apresentarão os modelos e caracteristicas
+As seções seguintes apresentarão os modelos e características
 necessárias para uma ferramenta de suporte à experimentação em
 documentos HTML.
 
@@ -133,34 +145,35 @@ codificação e má formação nos documentos HTML. Além
 disso, é necessário também uma estrutura em memória que permita a
 manipulação do documento por algoritmos.
 O módulo que atende essas necessidades é chamado de Parser, sendo 
-descrio a seguir:
+descrito a seguir:
 
 \begin{verbatim}
 - Parser: 
   - ForceEncode:
     Normaliza a codificação de um documento para
     UTF-8.
-  - Santizer:
+  - Sanitize:
     Verifica a corretude do documento HTML e
-    corrige alguns erros e problemas comulmente
+    corrige alguns erros e problemas comunmente
     encontrados.
   - ParserDOM:
     Transforma o documento em uma estrutura em
-    memória DOM, essa estutura é recomendada
+    memória DOM, essa estrutura é recomendada
     para a representação de documentos HTML
     em memória pela W3C.
 \end{verbatim}
 
 %Nao entendi.
-Com o documento HTML em memória e disponível para a execução de rotinas
-sobre sua estrutura. A forma como as rotinas irão guardar seus resultados
+Após o documento HTML estar em memória, é possível que sejam executadas
+rotinas/algoritmos sobre sua estrutura. Assim,
+a maneira como as rotinas deverão guardar seus resultados
 é importante, pois determinará todo o processo de geração de resultados
 e avaliação. Com isso, descrevemos o módulo de ``anotação'' e a interface
 que todas as rotinas, denominadas extratores, devem atender.
 
-Existe uma peculariedade com a modelagem adotada, pois a forma de marcar
+Existe uma peculiaridade com a modelagem adotada, pois a forma de marcar
 o resultado influencia como esse resultado poderá ser avaliado, porém
-essa dependecia será descrita junto com o módulo de avaliação.
+essa dependência será descrita junto com o módulo de avaliação.
 
 \begin{verbatim}
 - Marcadores:
@@ -169,12 +182,12 @@ essa dependecia será descrita junto com o módulo de avaliação.
 
 - Extratores:
   Procura por elementos, nós ou conjunto de nós, que
-  atendendam as especificações de um rótulo e os marca,
+  atendam as especificações de um rótulo e os marca,
   passando para o marcador o rótulo e o nó que deve
   ser marcado pelo referido rótulo.
 \end{verbatim}
 
-Os módulos descritos fornece um conjunto de
+Os módulos descritos fornecem um conjunto de
 funcionalidades que proporcionam a aplicação, ou seja, a colocação em
 prática da solução encontrada,
 porém como o objetivo da ferramenta é proporcionar um ambiente
@@ -232,18 +245,19 @@ interessantes.
 \end{verbatim}
 
 % ela quem? 
-Para utilizar esses módulos podem ser implementadas aplicações que
-utilizam o que é mais interessante. Um bom exemplo de aplicação
-é a geração de um relatório de desempenho (Benchmark) para o conjunto de
-extratores e corpus. Atualmente, o benchmark é a unica aplicação
+Tendo esse conjunto de módulos disponíveis, diversas aplicações que
+utilizam esses modulos podem ser implementadas.
+Um exemplo de aplicação, que utiliza esse conjunto de módulos, é a geração de
+um relatório de desempenho (Benchmark) para o conjunto de
+extratores e corpus. Atualmente, o benchmark é a única aplicação
 disponível junto a ferramenta, pois essa é uma necessidade direta para a
-experimentação. A seguir é apresentado um diagrama de sequência para
+experimentação. Na figura \ref{sequencia} é apresentado um diagrama de seqüência para
 exemplificar a utilização da ferramenta.
 
 \begin{figure}[htb!]
   \begin{center}
   \includegraphics[width=15cm]{img/fastbenchmark.eps}
-  \caption{Diagrama de sequência do aplicação Benchmark}
+  \caption{Diagrama de seqüência do aplicação Benchmark}
   \label{sequencia}
   \end{center}
 \end{figure}
@@ -264,7 +278,7 @@ documentos HTML, a modelagem de uma ferramenta de apoio se tornou possível.
 Durante o processo de modelagem, foram estabelecidos os limites e as
 necessidades de uma ferramenta a experimentação em documentos HTML.
 
-\item Impementação da Ferramenta e Testes: 15 de setembro a 30 de
+\item Implementação da Ferramenta e Testes: 15 de setembro a 30 de
 novembro. \\
 Durante o mês de setembro, outubro e novembro foi realizada a
 codificação da ferramenta modelada. Durante esse tempo, também foram
@@ -310,7 +324,7 @@ descrição de comentário recomentado pela empresa Fast.
 \section{Validação e Testes}
 
 Para verificar o funcionamento da ferramenta e validar a modelagem apresentada,
-a tarefa de identificação de tabelas genuinas foi escolhida. Utilizando a
+a tarefa de identificação de tabelas genuínas foi escolhida. Utilizando a
 Ferramenta de Experimentação em Documentos HTML foi implementada uma abordagem
 simplificada a proposta em \cite{LGZ2003}. Mesmo não obtendo bons resultados
 para a tarefa, o objetivo foi alcançado, já que a ferramenta proporcionou a
@@ -324,14 +338,14 @@ API das classes importantes para a ferramenta.
 
 Os testes e todos os logs podem ser verificados no Anexo \ref{testes}. Esses testes
 também se encontram junto ao código, sendo eles nomeados como
-test\_<nome\_do\_arquivo>.py e podem ser executados separadamento como
+test\_<nome\_do\_arquivo>.py e podem ser executados separadamente como
 um scripts Python.
 
 A cobertura do código por testes foi programada a partir do modelo de
-sequência da aplicação ``Benchmark'' que descreve o principal uso da
+seqüência da aplicação ``Benchmark'' que descreve o principal uso da
 ferramenta. Outros casos também foram verificados para garantir que
-módulos de suporte, como o parser DOM ou algorítmos clássicos como
-distáncia de ediçao, DFS, LLC estão corretamete
+módulos de suporte, como o parser DOM ou algoritmos clássicos como
+distância de edição, DFS, LLC estão corretamente
 implementados.
 
 \section{Documentação do Usuário}
@@ -346,11 +360,11 @@ código foi adicionada e este documento no Anexo \ref{userdoc}.
 
 \section{Conteúdo do CD}
 
-O CD-ROM engtregue, onde este documento pode ser encontrado, contêm
+O CD-ROM entregue, onde este documento pode ser encontrado, contêm
 todos os arquivos fonte e documentos necessários para o entendimento e
 utilização da ferramenta. Também é fornecido um pequeno conjunto de
-documentos onde a tarefa de detecção de tabela genuida pode ser
-executada e os resultados analizados utilizando a aplicação de Benchmark.
+documentos onde a tarefa de detecção de tabela genuína pode ser
+executada e os resultados analisados utilizando a aplicação de Benchmark.
 
 A Estrutura de diretórios do código fonte, que pode ser encontrada na
 pasta source, é a seguinte:
@@ -518,8 +532,8 @@ evoluida e varios nós que deveriam ser tratados e retirados da marcação
 de tabela genuina não foram tratados.
 
 A melhora do resultado fica em aberto, pois para o desenvolvimento de uma
-heuristica melhor seria necessário mais tempo e envolvimento com a
-tarefa de indentificação de tabelas genuinas, o que não é o objetivo
+heurística melhor seria necessário mais tempo e envolvimento com a
+tarefa de identificação de tabelas genuínas, o que não é o objetivo
 deste trabalho.
 
 
