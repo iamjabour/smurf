@@ -29,7 +29,7 @@ class MetricBase(object):
         @param list extractred: list of tables extracted from document
         @parm list proof: list of tables proof to compare
 
-        return: {key: [acc,err,total]}
+        return: {key: [acc,proof,total]}
         """
 #        print extracted, proof
 

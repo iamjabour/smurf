@@ -96,6 +96,7 @@ class DistanceByPairBase(object):
 
         self._comp = 0
         self.dfs(tree)
+        print self._comp
         self._mark(tree, marker)
 
         return marker.process()

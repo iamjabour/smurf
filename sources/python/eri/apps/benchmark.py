@@ -44,8 +44,10 @@ class Benchmark:
             proof = self.corpus.getProof(doc)
             result = (0.0,0.0)
             for extractor in self.extractors:
+                self.marker.reset()
                 extractor.process(doc.content, self.marker)
                 extracted = self.marker.labels
+                print doc.path
                 result = self.metric.process(extracted, proof)
 
             self.benchmark.append(result)

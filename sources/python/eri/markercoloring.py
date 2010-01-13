@@ -1,18 +1,42 @@
 # -*- coding: latin-1 -*-
-from markerbase import MarkerBase
 
-class MarkerColoring(MarkerBase):
+class MarkerColoring(object):
     """
-    Marcador que colore os nós agrupados com cores alternadas.
+    O marcador se destina a agrupar nós junto a um rótulo, tornando possível a
+    aplicação de métricas de avaliação sobre o conjunto de nós rotulados.
+
+    Este marcador base cria um atibuto para o nó e coloca seu rótulo como valor.
     """
+
     def __init__(self):
         """
-        Cria uma instacia nova de um marcador
+        Inicializa um objeto com o dicionário de rotulos vazio.
         """
         self.colors = ['magenta','yellow','lime','#9370db','cyan']
         self.color = 0
+        self.labels = {}
 
-    def coloringNode(self, node, color):
+
+    def mark(self, node, label):
+        """
+        Adiciona um nó ao dicionario como pertencendo a um rótulo.
+
+        @param XmlNode node: Nó a ser adicionado ao conjunto.
+        @param str label: Rótulo ao qual o nó deve ser associado.
+        """
+        if self.labels.has_key(label):
+            self.labels[label].append(node)
+        else:
+            self.labels[label] = [node]
+
+    def reset(self):
+        """
+        Reinicia o dicionário que guarda os nós associados aos rótulos.
+
+        """
+        self.labels = {}
+
+    def setattribute(self, node, label):
         """
         Colore os nós das componetes, alternando entre a lista de cores.
         """
@@ -30,6 +54,12 @@ class MarkerColoring(MarkerBase):
 
         node.createAttribute('eri')
         node.setAttribute('eri', 'table')
+        if node.hasAttribute('eri_label'):
+            att = node.getAttribute('eri_label')
+            node.setAttribute('eri_label', label)
+        else:
+            node.createAttribute('eri_label')
+            node.setAttribute('eri_label', label)
 
     def process(self):
         """
@@ -41,7 +71,7 @@ class MarkerColoring(MarkerBase):
         n = None
         for lable in self.labels:
             for node in self.labels[lable]:
-                self.coloringNode(node, lable)
+                self.setattribute(node, lable)
                 n = node
 
         node = n

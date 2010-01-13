@@ -43,11 +43,21 @@ class Corpus:
         """
         return self.proof.getProof(doc.content)
 
-    def getDocument(self):
+    def getDocument(self, file=False):
         """
         Obtem o proximo documento do corpus
         """
-        return self.__next()
+        if file:
+            try:
+                c = int(file)
+                d = Doc(self.documents[c],c)
+            except ValueError:
+                d = Doc(os.path.join(self.path,file),0)
+
+            d.content = self.parser.parse(d.path)
+            return d
+        else:
+            return self.__next()
 
     def __next(self):
         if self.count >= len(self.documents):
