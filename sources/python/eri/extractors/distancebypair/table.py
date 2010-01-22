@@ -10,6 +10,22 @@ class Table(DistanceByPairBase):
     proporção, passada por parametro, e os agrupa em componentes.
     """
 
+    def tDfs(self, node, vet):
+        """
+        entrada: no
+        saida: a lista das tabelas 'mais internas' da arvore
+        """
+        i = False
+        for child in node.childNodes:
+            findTable = self.tDfs(child,vet)
+            i = i or findTable
+
+        if node.dom.tagName == 'table' and not i:
+            vet.append(node)
+            i = True
+
+        return i
+
     def _mark(self, node, marker):
         """
         Marca a sub arvore dos nos recortados como sendo tabela, utilizando o markador recebido
@@ -18,15 +34,19 @@ class Table(DistanceByPairBase):
         @param marker: Marcador utilizado para realizar a marcacao
         """
 
+        table = []
         self.__labels = {}
         self._submark(node)
+
+        print self.__labels
 
         for i in self.__labels:
             lines = 0
             for x in self.__labels[i]:
 
                 if x.str[0:5] == "table":
-                    marker.mark(x.dom, 'table')
+                    table.append(x)
+                    #marker.mark(x.dom, 'table')
                 if x.str[0:2] == "td" or x.str[0:2] == "tr" or x.str[0:2] == "th":
                     lines += 1
             if lines > 0:
@@ -34,7 +54,39 @@ class Table(DistanceByPairBase):
                 while name != "table":
                     name = x.parent.dom.localName.lower()
                     x = x.parent
-                marker.mark(x.dom, 'table')
+                table.append(x)
+                #marker.mark(x.dom, 'table')
+
+        print 'table'
+#        print table
+
+        te = []
+        for t in table:
+            vet = []
+            re = self.tDfs(t, vet)
+            if re:
+                for r in vet:
+#                    print r.str
+                    if not r in te:
+                        te.append(r)
+#            else:
+#                if not t in te:
+#                    te.append(t)
+
+
+#        for x in xrange(0,len(te)):
+#            if not self.morethentwocoluns(te[x]):
+#                #te.pop(x)
+#                print 'retirando o', x
+
+
+        print
+        print 'te'
+#        print te
+        for n in te:
+#            print n.str
+            marker.mark(n.dom, 'table')
+
 
     def _submark(self, node):
         """
@@ -43,8 +95,11 @@ class Table(DistanceByPairBase):
         for x in xrange(0, len(node.childNodes)):
             currNode = node.childNodes[x]
 
+            print x, node.result
             if not node.result[x]:
                 self._submark(currNode)
+            else:
+                print currNode.parent.dom.tagName, currNode.str
 
             do = False
 
@@ -59,10 +114,30 @@ class Table(DistanceByPairBase):
                 else:
                     self.__labels.update({node.result[x]: [currNode]})
 
+
+    def morethentwocoluns(self, node):
+        if node.dom.tagName == 'tr':
+            coluns = 0
+            for child in node.childNodes:
+                if child.dom.tagName == 'td' and len(child.dom.textContent) > 2:
+                    coluns += 1
+
+            if coluns > 2:
+                return True
+            else:
+                return False
+
+        ret = False
+        for child in node.childNodes:
+            ret = self.morethentwocoluns(child) or ret
+            if ret: break
+
+        return ret
+
 if __name__ == '__main__':
 
     from eri.utils.parsedom import ParseDom
-    from eri.marker import Marker
+    from eri.markercoloring import MarkerColoring as Marker
 
     if len(sys.argv) < 2:
         raise SystemExit, "use: %s <URI> [output_file]" % sys.argv[0]
@@ -82,7 +157,7 @@ if __name__ == '__main__':
 
     marker = Marker()
     parser = ParseDom()
-    dom = parser.parse(htmlString)
+    dom = parser.parse(filePath)
 
     extractor = Table()
     result = extractor.process(dom, marker)
