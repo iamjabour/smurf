@@ -50,13 +50,15 @@
   \subsection{Problema}
   \frametitle{Problema}
   \begin{my_itemize}
-    \item Identificar ou extrair conteúdo de documentos HTML
-    \begin{my_itemize}
+   \item Identificar e extrair conteúdo de documentos HTML
+
+   \item Tarefas
+   \begin{my_itemize}
     \item[-] Identificação de \textit{templates}: limpar o documento para diminuir a quantidade de informação não relevante 
 
-    \item[-] \alert{Extração de tabelas: entender as informações apresentadas em tabelas para facilitar tarefas de recuperação de informação }
+    \item[-] \alert{Extração de tabelas: entender as informações apresentadas em tabelas}
 
-    \item[-] Identificação de estruturas tabulares (tabelas, listas): identificar informações dispostas de forma estruturada para facilitar tarefas de recuperação de informação 
+    \item[-] Identificação de estruturas tabulares (tabelas, listas): identificar informações dispostas de forma estruturada 
 
     \item[-] \alert{Extração de itens em sites de comércio eletrônico: facilitar a recuperação de informação de itens}
     \end{my_itemize}
@@ -64,9 +66,12 @@
   \end{my_itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[allowframebreaks]
   \subsection{Motivação}
   \frametitle{Motivação}
+  \begin{my_itemize}
+   \item Motivação geral
+ 
   \begin{my_itemize}
     \item Estudar documentos HTML em busca de padrões e estruturas que ajudem na resolução de tarefas de extração de conteúdo
 
@@ -75,11 +80,18 @@
     \item Apresentar resultados para a tarefa de extração de itens em sites de comércio eletrônico
 
     \item Otimizar o tempo de processamento por documento
-
   \end{my_itemize}
+
+   \item Motivação das Tarefas
+
+   \begin{my_itemize}
+    \item facilitar tarefas de recuperação de informação
+   \end{my_itemize}
+
+\end{my_itemize} 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[allowframebreaks]
   \subsection{Abordagem proposta}
   \frametitle{Abordagem proposta}
   \begin{my_itemize}
@@ -87,8 +99,26 @@
 
     \item Agrupar o conjunto de informações que aparece com estrutura semelhante
 
-%% Inicialmente foi realizada a busca apenas nas árvores irmas
-
+\newpage
+\begin{figure}[h]
+    \includegraphics[scale=0.25]{img/tree0}
+    \caption{Árvore HTML, sub-árvores vermelhas têm a mesma estrutura}
+\end{figure}
+\newpage
+\begin{figure}[h]
+    \includegraphics[scale=0.25]{img/tree1}
+    \caption{Árvore que apresenta a mesma sub-estrutura, tipicamente listas e tabelas}
+\end{figure}
+\newpage
+\begin{figure}[h]
+    \includegraphics[scale=0.25]{img/tree2}
+    \caption{Árvore que apresenta sub-estrutura semelhante}
+\end{figure}
+\newpage
+\begin{figure}[h]
+    \includegraphics[scale=0.25]{img/tree3}
+    \caption{Árvore que não contem semelhança em sua estrutura}
+\end{figure}
   \end{my_itemize}
 \end{frame}
 
@@ -112,9 +142,9 @@
 \newpage
     \item ~\cite{Pinto2003} define 5 níveis de problemas na tarefa de extração de tabelas:
     \begin{my_itemize}
-    \item[1] \alert{Locate the table}
-    \item[2] Identify the row positions and types
-    \item[3] Identify the column position and types
+    \item[1] \alert{Localizar a tabela}
+    \item[2] Identificar a posição das linhas e seus tipos
+    \item[3] Identificar a posição das colunas e seus tipos
     \item[4] Tag the cells as data or headers
     \item[5] Associate data cells with their corresponding headers
     \end{my_itemize}
@@ -189,7 +219,7 @@
    \item Número de tabelas (\textit{tag table}) em {\color{yellow}XX} documentos
    \item Número de tabelas genuínas em {\color{yellow}XX} documentos
    \end{my_itemize}
-  
+
    \item Heurísticas existentes
    \begin{my_itemize}
    \item Regra básica: apenas verifica a semelhança entre os filhos no nó table
@@ -231,6 +261,8 @@
 %  \begin{tabular}{| c | c | c |}
 %    \hline
 %    Nome & Risco (Variância) & Retorno \\ \hline
+%    BBAS4 & 0.000731 & 1.313531 \\ \hline
+%    VALE5 & 0.000363 & 1.074398 \\ \hline
 %    BBAS4 & 0.000731 & 1.313531 \\ \hline
 %    VALE5 & 0.000363 & 1.074398 \\ \hline
 %    PETR3 & 0.000215 & 1.275080 \\ \hline
