@@ -91,8 +91,7 @@ class Benchfile:
                 recall = result[k][0]/float(result[k][1])
                 r.update({k: [recall, precision]})
             else:
-                r.update({k: [1, 1 if result[k][1] == 0 else 0]})
-
+                r.update({k: [1, 1 if result[k][2] == 0 else 0]})
 
         print
         print >> self.output, 'key\trecall\tprecision'

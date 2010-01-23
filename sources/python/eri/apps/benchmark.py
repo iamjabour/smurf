@@ -6,7 +6,7 @@ from eri.corpus import Corpus
 import os
 
 class Benchmark:
-    def __init__(self, corpusPath, configFile=None, extractors=[], limit=int(2**31-1), output=None):
+    def __init__(self, corpusPath, configFile=None, extractors=[], limit=int(2**31-1), output=None, pfilenames=False):
         if not configFile:
             if os.path.exists('config_example.cnf'):
                 config = Configurator('config_example.cnf')
@@ -18,6 +18,7 @@ class Benchmark:
         if output == None:
             output = sys.stdout
 
+        self.pfilenames = pfilenames
         self.output = output
         self.metric = config.metric()
         self.marker = self.metric.marker()
@@ -44,11 +45,13 @@ class Benchmark:
             proof = self.corpus.getProof(doc)
             result = (0.0,0.0)
             for extractor in self.extractors:
-                self.marker.reset()
-                extractor.process(doc.content, self.marker)
-                extracted = self.marker.labels
-                print doc.path
-                result = self.metric.process(extracted, proof)
+                if self.pfilenames:
+                    print doc.id,  doc.path
+                else:
+                    self.marker.reset()
+                    extractor.process(doc.content, self.marker)
+                    extracted = self.marker.labels
+                    result = self.metric.process(extracted, proof)
 
             self.benchmark.append(result)
 
@@ -83,7 +86,7 @@ class Benchmark:
                 recall = result[k][0]/float(result[k][1])
                 r.update({k: [recall, precision]})
             else:
-                r.update({k: [1, 1 if result[k][1] == 0 else 0]})
+                r.update({k: [1, 1 if result[k][2] == 0 else 0]})
 
 
         print
@@ -123,6 +126,8 @@ if __name__ == '__main__':
         '-c', '--config', action='store', type='string', default='config_example.cnf', \
         help="Configuration file to set Marker, ProofClass, and Marker, if omited fastbenchmark use config_example.cnf (make sure provided corpus is ProofTable based)")
 
+    parser.add_option('-n', '--names', action='store', type='int', \
+        default=False, help='just print file names')
     (opt, args) = parser.parse_args()
 
     if len(sys.argv) < 3:
@@ -135,11 +140,15 @@ if __name__ == '__main__':
     else:
         output = open(opt.output, 'w')
 
+    if opt.names:
+        names = True
+    else:
+        names = False
     # importando o extrator dinamicamente
     m, c = args[0].split('.')
     extractor = dimport("eri.extractors.%s" % m.lower(), c)
     print 'benchmark'
-    b = Benchmark(args[1], opt.config, [extractor], limit= opt.limit, output=output)
+    b = Benchmark(args[1], opt.config, [extractor], limit= opt.limit, output=output, pfilenames = names)
 
     b.process()
     b.pprint()
