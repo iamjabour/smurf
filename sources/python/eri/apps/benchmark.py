@@ -45,9 +45,8 @@ class Benchmark:
             proof = self.corpus.getProof(doc)
             result = (0.0,0.0)
             for extractor in self.extractors:
-                if self.pfilenames:
-                    print doc.id,  doc.path
-                else:
+                print doc.id,  doc.path
+                if not self.pfilenames:
                     self.marker.reset()
                     extractor.process(doc.content, self.marker)
                     extracted = self.marker.labels
