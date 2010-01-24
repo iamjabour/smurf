@@ -23,7 +23,8 @@ class MarkerBase(object):
         @param str label: Rótulo ao qual o nó deve ser associado.
         """
         if self.labels.has_key(label):
-            self.labels[label].append(node)
+            if not node in self.labels[label]:
+                self.labels[label].append(node)
         else:
             self.labels[label] = [node]
 
