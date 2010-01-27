@@ -107,8 +107,8 @@ tabelas:
 }
     \item[2] Identificar a posição das linhas e seus tipos
     \item[3] Identificar a posição das colunas e seus tipos
-    \item[4] Rotular cada celula como dado ou legenda
-    \item[5] Associar celulas de dados com sua legenda correspondente
+    \item[4] Rotular cada célula como dado ou legenda
+    \item[5] Associar células de dados com sua legenda correspondente
   \end{my_itemize}
 \end{frame}
 
@@ -143,7 +143,8 @@ tabelas:
     de forma a poder utilizar um {\it Conditional Random Fields} para resolver o problema de identificar linhas e determinar seus tipos.
 
 \pause
-   \item[-] ~\cite{Krupl2006}: Aborda o problema de forma visual, procurando blocos que podem ser tabelas (button-up).
+   \item[-] ~\cite{Krupl2006}: Aborda o problema de forma visual,
+   procurando blocos que podem ser tabelas (botton-up).
 
 \pause
    \item[-] ~\cite{Wang2002}: Aborda o problema de forma estrutural e textual, com features de estrutura (uso de tags), content (tipo de dados) e words (palavras chaves) utiliza técnicas de aprendizado de máquina para criar um classificador de tabelas genuínas.
@@ -186,32 +187,32 @@ Extrair as informações contidas nos itens apresentados por sites de comércio 
     \end{my_itemize}
 
 \only<1->{
-    \item Para:
+    \item Resolver:
 }
     \begin{my_itemize}
 
 \only<1-2>{
-      \item[-] Identificar tabelas
-      \item[-] Identificar itens
+      \item[-] Identificação de tabelas
+      \item[-] Identificação de itens
 }
 
 \only<3->{
-      \item[-] \alert{Identificar tabelas}
-      \item[-] \alert{Identificar itens}
+      \item[-] \alert{Identificação de tabelas}
+      \item[-] \alert{Identificação de itens}
 }
 
 \only<1->{
-      \item[-] Identificar template
+      \item[-] Identificação de template
 }
 
 \only<2->{
-      \item[-] \alert{Identificar estruturas em geral}
+      \item[-] \alert{Identificação de estruturas em geral}
 }
 
     \end{my_itemize}
   
   \only<4->{
-    \item Utilizando:
+    \item Utilizar:
   Somente as informações contidas na estrutura HTML, sem
   renderizar ou utilizar qualquer tipo de análise semântica do texto
 }
@@ -335,9 +336,9 @@ Extrair as informações contidas nos itens apresentados por sites de comércio 
    \item Heurísticas existentes
    \begin{my_itemize}
    \item Regra básica: apenas verifica a semelhança entre os filhos no nó table
-   \item Regra específica: Após aplicar a regra básica verifica se
+   \item Regra avançada: Após aplicar a regra básica verifica se
    existem pelo menos duas colunas que contêm informação nessa tabela.
-   Lista não devem ser marcadas como tabela.
+   Listas não devem ser marcadas como tabelas.
 
    \end{my_itemize}
   \end{my_itemize}
