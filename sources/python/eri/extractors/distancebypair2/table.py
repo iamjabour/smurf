@@ -143,9 +143,12 @@ class Table(DistanceByPairBase):
         print 'tables',  len(tables)
         print 'itables', len(itables)
 
-        if False:
-            for n in itables:
-                marker.mark(n.dom, 'table')
+        if True:
+#            for n in itables:
+#                marker.mark(n.dom, 'table')
+
+            for n in tables:
+                marker.mark(n, 'table')
 
         else:
             for table in itables:
