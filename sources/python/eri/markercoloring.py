@@ -25,7 +25,8 @@ class MarkerColoring(object):
         @param str label: Rótulo ao qual o nó deve ser associado.
         """
         if self.labels.has_key(label):
-            self.labels[label].append(node)
+            if not node in self.labels[label]:
+                self.labels[label].append(node)
         else:
             self.labels[label] = [node]
 
@@ -67,7 +68,9 @@ class MarkerColoring(object):
         atributo para o nó e atribue o valor do rótulo a esse atributo.
         """
         if len(self.labels) == 0:
-            return ""
+            import sys
+            sys.stderr.write("\n\nNenhum No marcado\n\n")
+            return False
         n = None
         for lable in self.labels:
             for node in self.labels[lable]:
@@ -79,4 +82,4 @@ class MarkerColoring(object):
             node = n
             n = n.parentNode
 
-        return node.toString()
+        return True

@@ -52,7 +52,7 @@ class MarkerBase(object):
         atributo para o nó e atribue o valor do rótulo a esse atributo.
         """
         if len(self.labels) == 0:
-            return ""
+            return False
         n = None
         for lable in self.labels:
             for node in self.labels[lable]:
@@ -64,4 +64,4 @@ class MarkerBase(object):
             node = n
             n = n.parentNode
 
-        return node.toString()
+        return True
