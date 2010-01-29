@@ -1,8 +1,7 @@
 # -*- coding: latin-1 -*-
 from eri.extractors.distancebypair.distancebypairbase import DistanceByPairBase
 import sys
-from eri.utils.distances import stringDistance
-from eri.extractors.distancebypair.node import *
+from eri.extractors.distancebypair2.node import Node
 
 class Table(DistanceByPairBase):
     """
@@ -26,145 +25,82 @@ class Table(DistanceByPairBase):
 
         return i
 
-    def _submark(self, node):
-        """
-        Sub rotina para verificar uma sub arvore e marcar apenas tabelas genuinas
-        """
-        for x in xrange(0, len(node.childNodes)):
-            currNode = node.childNodes[x]
+    def count_tr_td(self,node):
+        td = 0
+        tr = 0
 
-#           print x, node.result
-            if not node.result[x]:
-                self._submark(currNode)
-            else:
-#               print currNode.parent.dom.tagName, currNode.str
-                pass
-            do = False
+        if node.dom.localName == 'td' or node.dom.localName == 'th':
+            try:
+                text = node.dom.textContent
+            except UnicodeDecodeError:
+                text = ""
 
-            if x < len(node.childNodes)-1 and node.result[x] == node.result[x+1]:
-                do = True
-            if x > 0 and node.result[x] == node.result[x-1]:
-                do = True
+            if len(text.strip()) > 2:
+                td += 1
+        elif node.dom.localName == 'tr':
+            try:
+                text = node.dom.textContent
+            except UnicodeDecodeError:
+                text = ""
 
-            if node.result[x] and do:
-                if self.__labels.has_key(node.result[x]):
-                    self.__labels[node.result[x]].append(currNode)
-                else:
-                    self.__labels.update({node.result[x]: [currNode]})
+            if len(text.strip()) > 2:
+                tr += 1
 
-
-    def _mark(self, node, marker):
-        """
-        Marca a sub arvore dos nos recortados como sendo tabela, utilizando o markador recebido
-
-        @param node: No para iniciar o procedimento de marcacao
-        @param marker: Marcador utilizado para realizar a marcacao
-        """
-
-        table = []
-        self.__labels = {}
-        self._submark(node)
-
-#       print self.__labels
-
-        for i in self.__labels:
-            lines = 0
-            for x in self.__labels[i]:
-
-                if x.str[0:5] == "table":
-                    table.append(x)
-                    #marker.mark(x.dom, 'table')
-                if x.str[0:2] == "td" or x.str[0:2] == "tr" or x.str[0:2] == "th":
-                    lines += 1
-            if lines > 0:
-                name = ""
-                while name != "table":
-                    name = x.parent.dom.localName.lower()
-                    x = x.parent
-                table.append(x)
-                #marker.mark(x.dom, 'table')
-
-#        print 'table', len(table)
-#        print table
-
-        te = []
-        for t in table:
-            vet = []
-            re = self.tDfs(t, vet)
-            if re:
-                for r in vet:
- #                  print r.str
-                    if not r in te:
-                        te.append(r)
-            else:
-                if not t in te:
-                    te.append(t)
-
-
-        for n in te:
-            if n.dom.localName == 'table':# and self.twoormore(n):
-                marker.mark(n.dom, 'table')
-
-    def twoormore(self, node):
-        if node.dom.tagName == 'tr':
-            coluns = 0
-            for child in node.childNodes:
-                try:
-                    l = len(child.dom.textContent)
-                except:
-                    print 'encode error'
-                    l = 0
-                if (child.dom.tagName == 'td' or child.dom.tagName == 'th') and l > 0:
-                    coluns += 1
-
-            if coluns > 2:
-                return True
-            else:
-                return False
-
-        ret = False
         for child in node.childNodes:
-            ret = self.twoormore(child) or ret
-            if ret: break
+            (ctr,ctd) = self.count_tr_td(child)
+            tr += ctr
+            td += ctd
+        return (tr,td)
 
-        return ret
 
-    def process(self, dom, marker):
-        self._comp = 0
+    def _mark2(self, dom, marker):
+
         tables = dom.getElementsByTagName('table')
-
-        itables = []
         tree = Node().loadNodeTree(dom,0)
 
+        itables = []
         self.tDfs(tree,itables)
-
-
 
         print 'tables',  len(tables)
         print 'itables', len(itables)
 
-        if True:
-#            for n in itables:
-#                marker.mark(n.dom, 'table')
+        for table in itables:
+            self.dfs(table)
+            print table.result
 
-            for n in tables:
-                marker.mark(n, 'table')
+            d = {}
+            for o in table.result:
+                if o:
+                    d.setdefault(o,0)
+                    d[o]+=1
 
-        else:
-            for table in itables:
-                self.dfs(table)
-                self._mark(table,marker)
+            c = 0
+            for i in d:
+                c += d[i]
 
+            if c >= 2:
+                (tr,td) = self.count_tr_td(table)
+                if tr > 0 and td/float(tr) > 1:
+                    print 'mark', td/float(tr)
+                    marker.mark(table.dom,'table')
+
+    def process(self, dom, marker):
+
+        self._comp = 0
+        self._mark2(dom, marker)
         result = marker.process()
 
-        if result == "":
+        if not result:
+            print '\n\nResultado Vazio\n\n'
             return dom.toString()
-        return marker.process()
+        else:
+            return dom.toString()
 
 if __name__ == '__main__':
 
     from eri.utils.parsedom import ParseDom
     from eri.markercoloring import MarkerColoring as Marker
+#    from eri.markerbase import MarkerBase as Marker
 
     if len(sys.argv) < 2:
         raise SystemExit, "use: %s <URI> [output_file]" % sys.argv[0]
