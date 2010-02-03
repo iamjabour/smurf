@@ -16,13 +16,23 @@ def crawl(url, out=None):
             print 'achou a lista de produtos:', node.localName
     elif debug and len(productList) > 1:
         print 'tem mais de 1?'
-    elif debug:
-        print 'zero'
+    else:
+        print '\nERROR: Nao foi encontrado nenhuma lista de produtos'
+        return
+
 
     products = doc.xpath('//div[@class="productVitrine"]/ul/li')
 
     if debug:
         print len(products)
+
+    productList[0].createAttribute('proof_productlist')
+    productList[0].setAttribute('proof_productlist', 'true')
+
+    for product in products:
+        product.createAttribute('proof_product')
+        product.setAttribute('proof_product', 'true')
+
 
     if out != None:
         print >>out, doc.toString()
