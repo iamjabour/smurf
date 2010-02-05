@@ -1,0 +1,14 @@
+--2010-02-05 14:38:27--  http://www.submarino.com.br/menu/201389/moda+esportiva
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201389.moda+esportiva.html'
+
+     0K .......... .......... .......... .......... ..........  592K
+    50K .......... .......... .......... .......... ..........  302K
+   100K .......... .......... .......... .......... ..........  797K
+   150K .......... .......... ..                                441K=0.4s
+
+2010-02-05 14:38:28 (474 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201389.moda+esportiva.html' saved [176253]
+

@@ -1,0 +1,13 @@
+--2010-02-05 14:38:06--  http://www.submarino.com.br/menu/201731/condicionadores+de+ar
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201731.condicionadores+de+ar.html'
+
+     0K .......... .......... .......... .......... ..........  572K
+    50K .......... .......... .......... .......... ..........  268K
+   100K .....                                                  4.56M=0.3s
+
+2010-02-05 14:38:06 (383 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201731.condicionadores+de+ar.html' saved [107777]
+

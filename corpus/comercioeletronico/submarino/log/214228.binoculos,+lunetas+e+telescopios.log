@@ -1,0 +1,14 @@
+--2010-02-05 14:37:55--  http://www.submarino.com.br/menu/214228/binoculos,+lunetas+e+telescopios
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/214228.binoculos,+lunetas+e+telescopios.html'
+
+     0K .......... .......... .......... .......... ..........  874K
+    50K .......... .......... .......... .......... ..........  301K
+   100K .......... .......... .......... .......... ..........  715K
+   150K .......... .......... .....                             796K=0.3s
+
+2010-02-05 14:37:55 (540 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/214228.binoculos,+lunetas+e+telescopios.html' saved [179788]
+

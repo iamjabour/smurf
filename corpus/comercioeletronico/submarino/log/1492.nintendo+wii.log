@@ -1,0 +1,14 @@
+--2010-02-05 14:37:31--  http://www.submarino.com.br/menu/1492/nintendo+wii
+Resolving www.submarino.com.br... 143.108.13.102, 143.108.13.105
+Connecting to www.submarino.com.br|143.108.13.102|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1492.nintendo+wii.html'
+
+     0K .......... .......... .......... .......... ..........  638K
+    50K .......... .......... .......... .......... ..........  255K
+   100K .......... .......... .......... .......... ..........  644K
+   150K .......... .......... .                                1.14M=0.4s
+
+2010-02-05 14:37:32 (462 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1492.nintendo+wii.html' saved [175473]
+

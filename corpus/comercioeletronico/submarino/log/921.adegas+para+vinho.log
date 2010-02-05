@@ -1,0 +1,14 @@
+--2010-02-05 14:38:04--  http://www.submarino.com.br/menu/921/adegas+para+vinho
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/921.adegas+para+vinho.html'
+
+     0K .......... .......... .......... .......... ..........  579K
+    50K .......... .......... .......... .......... ..........  753K
+   100K .......... .......... .......... .......... ..........  745K
+   150K .......... .......... .......... .                      587K=0.3s
+
+2010-02-05 14:38:05 (664 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/921.adegas+para+vinho.html' saved [185473]
+

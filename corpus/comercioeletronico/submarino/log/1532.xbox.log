@@ -1,0 +1,14 @@
+--2010-02-05 14:37:34--  http://www.submarino.com.br/menu/1532/xbox
+Resolving www.submarino.com.br... 143.108.13.102, 143.108.13.105
+Connecting to www.submarino.com.br|143.108.13.102|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1532.xbox.html'
+
+     0K .......... .......... .......... .......... ..........  932K
+    50K .......... .......... .......... .......... ..........  797K
+   100K .......... .......... .......... .......... ..........  735K
+   150K .......... ..                                          1.23M=0.2s
+
+2010-02-05 14:37:34 (836 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1532.xbox.html' saved [166155]
+

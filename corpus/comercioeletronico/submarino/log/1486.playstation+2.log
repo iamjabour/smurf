@@ -1,0 +1,14 @@
+--2010-02-05 14:37:30--  http://www.submarino.com.br/menu/1486/playstation+2
+Resolving www.submarino.com.br... 143.108.13.102, 143.108.13.105
+Connecting to www.submarino.com.br|143.108.13.102|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1486.playstation+2.html'
+
+     0K .......... .......... .......... .......... ..........  779K
+    50K .......... .......... .......... .......... ..........  320K
+   100K .......... .......... .......... .......... ..........  757K
+   150K .......... .......... ..                                380K=0.3s
+
+2010-02-05 14:37:31 (499 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1486.playstation+2.html' saved [176482]
+

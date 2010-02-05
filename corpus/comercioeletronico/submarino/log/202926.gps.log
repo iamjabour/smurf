@@ -1,0 +1,14 @@
+--2010-02-05 14:38:17--  http://www.submarino.com.br/menu/202926/gps
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/202926.gps.html'
+
+     0K .......... .......... .......... .......... ..........  565K
+    50K .......... .......... .......... .......... ..........  446K
+   100K .......... .......... .......... .......... ..........  719K
+   150K .......... .......... .........                         587K=0.3s
+
+2010-02-05 14:38:18 (560 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/202926.gps.html' saved [183924]
+

@@ -1,0 +1,14 @@
+--2010-02-05 14:37:49--  http://www.submarino.com.br/menu/1321/informatica
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1321.informatica.html'
+
+     0K .......... .......... .......... .......... ..........  713K
+    50K .......... .......... .......... .......... ..........  700K
+   100K .......... .......... .......... .......... ..........  642K
+   150K .......... .......... .......                           798K=0.3s
+
+2010-02-05 14:37:50 (699 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1321.informatica.html' saved [181352]
+

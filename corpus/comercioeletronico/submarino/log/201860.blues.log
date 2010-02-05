@@ -1,0 +1,14 @@
+--2010-02-05 14:37:10--  http://www.submarino.com.br/menu/201860/blues
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201860.blues.html'
+
+     0K .......... .......... .......... .......... ..........  590K
+    50K .......... .......... .......... .......... ..........  315K
+   100K .......... .......... .......... .......... ..........  701K
+   150K .......... .......                                      620K=0.3s
+
+2010-02-05 14:37:12 (488 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201860.blues.html' saved [171452]
+

@@ -1,0 +1,14 @@
+--2010-02-05 14:37:49--  http://www.submarino.com.br/menu/675/acessorios+e+perifericos
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/675.acessorios+e+perifericos.html'
+
+     0K .......... .......... .......... .......... ..........  647K
+    50K .......... .......... .......... .......... ..........  854K
+   100K .......... .......... .......... .......... ..........  746K
+   150K .......... .......... .......... .......... .....       699K=0.3s
+
+2010-02-05 14:37:49 (730 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/675.acessorios+e+perifericos.html' saved [199733]
+

@@ -1,0 +1,12 @@
+--2010-02-05 14:37:52--  http://www.submarino.com.br/menu/211632/audio+conference
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/211632.audio+conference.html'
+
+     0K .......... .......... .......... .......... ..........  680K
+    50K .......... .......... .......... .......... ......      763K=0.1s
+
+2010-02-05 14:37:52 (718 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/211632.audio+conference.html' saved [99176]
+

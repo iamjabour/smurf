@@ -1,0 +1,14 @@
+--2010-02-05 14:37:33--  http://www.submarino.com.br/menu/1506/playstation+portatil+-+psp
+Resolving www.submarino.com.br... 143.108.13.102, 143.108.13.105
+Connecting to www.submarino.com.br|143.108.13.102|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1506.playstation+portatil+-+psp.html'
+
+     0K .......... .......... .......... .......... ..........  896K
+    50K .......... .......... .......... .......... ..........  267K
+   100K .......... .......... .......... .......... .......... 1.10M
+   150K .......... .......... .....                             557K=0.3s
+
+2010-02-05 14:37:33 (526 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1506.playstation+portatil+-+psp.html' saved [179561]
+

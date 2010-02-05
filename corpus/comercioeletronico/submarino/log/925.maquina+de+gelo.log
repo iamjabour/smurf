@@ -1,0 +1,12 @@
+--2010-02-05 14:38:12--  http://www.submarino.com.br/menu/925/maquina+de+gelo
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/925.maquina+de+gelo.html'
+
+     0K .......... .......... .......... .......... ..........  759K
+    50K .......... .....                                        810K=0.08s
+
+2010-02-05 14:38:12 (771 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/925.maquina+de+gelo.html' saved [66682]
+

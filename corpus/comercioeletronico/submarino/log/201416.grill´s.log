@@ -1,0 +1,14 @@
+--2010-02-05 14:38:14--  http://www.submarino.com.br/menu/201416/grill%C2%B4s
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201416.grill´s.html'
+
+     0K .......... .......... .......... .......... ..........  711K
+    50K .......... .......... .......... .......... ..........  743K
+   100K .......... .......... .......... .......... ..........  716K
+   150K .......... .......... .......                           477K=0.3s
+
+2010-02-05 14:38:14 (670 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201416.grill´s.html' saved [181284]
+

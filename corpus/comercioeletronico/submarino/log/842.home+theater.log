@@ -1,0 +1,14 @@
+--2010-02-05 14:37:58--  http://www.submarino.com.br/menu/842/home+theater
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/842.home+theater.html'
+
+     0K .......... .......... .......... .......... ..........  645K
+    50K .......... .......... .......... .......... ..........  293K
+   100K .......... .......... .......... .......... ..........  622K
+   150K .......... .......... ........                          718K=0.4s
+
+2010-02-05 14:37:58 (485 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/842.home+theater.html' saved [183120]
+

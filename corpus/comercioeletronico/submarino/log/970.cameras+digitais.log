@@ -1,0 +1,14 @@
+--2010-02-05 14:37:53--  http://www.submarino.com.br/menu/970/cameras+digitais
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/970.cameras+digitais.html'
+
+     0K .......... .......... .......... .......... ..........  647K
+    50K .......... .......... .......... .......... ..........  247K
+   100K .......... .......... .......... .......... ..........  663K
+   150K .......... .......... .........                         811K=0.4s
+
+2010-02-05 14:37:54 (459 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/970.cameras+digitais.html' saved [183867]
+

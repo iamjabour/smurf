@@ -1,0 +1,14 @@
+--2010-02-05 14:38:26--  http://www.submarino.com.br/menu/201379/mergulho
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201379.mergulho.html'
+
+     0K .......... .......... .......... .......... ..........  660K
+    50K .......... .......... .......... .......... ..........  670K
+   100K .......... .......... .......... .......... ..........  670K
+   150K .......... .......... ..                                813K=0.3s
+
+2010-02-05 14:38:26 (683 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201379.mergulho.html' saved [176815]
+

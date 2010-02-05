@@ -1,0 +1,14 @@
+--2010-02-05 14:37:01--  http://www.submarino.com.br/menu/1061/administracao+e+negocios
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1061.administracao+e+negocios.html'
+
+     0K .......... .......... .......... .......... ..........  636K
+    50K .......... .......... .......... .......... ..........  780K
+   100K .......... .......... .......... .......... ..........  609K
+   150K .......... .......... ....                              812K=0.3s
+
+2010-02-05 14:37:02 (684 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1061.administracao+e+negocios.html' saved [179023]
+

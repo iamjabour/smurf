@@ -1,0 +1,14 @@
+--2010-02-05 14:37:06--  http://www.submarino.com.br/menu/1112/arquitetura+e+urbanismo
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1112.arquitetura+e+urbanismo.html'
+
+     0K .......... .......... .......... .......... ..........  788K
+    50K .......... .......... .......... .......... ..........  295K
+   100K .......... .......... .......... .......... ..........  760K
+   150K .......... ..........                                   573K=0.3s
+
+2010-02-05 14:37:07 (509 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1112.arquitetura+e+urbanismo.html' saved [174357]
+

@@ -1,0 +1,14 @@
+--2010-02-05 14:38:09--  http://www.submarino.com.br/menu/949/fornos
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/949.fornos.html'
+
+     0K .......... .......... .......... .......... ..........  711K
+    50K .......... .......... .......... .......... ..........  807K
+   100K .......... .......... .......... .......... ..........  622K
+   150K .......... .......... ....                             1.02M=0.2s
+
+2010-02-05 14:38:09 (739 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/949.fornos.html' saved [178539]
+

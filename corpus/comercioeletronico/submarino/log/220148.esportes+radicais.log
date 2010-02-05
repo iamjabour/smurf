@@ -1,0 +1,14 @@
+--2010-02-05 14:38:23--  http://www.submarino.com.br/menu/220148/esportes+radicais
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/220148.esportes+radicais.html'
+
+     0K .......... .......... .......... .......... ..........  698K
+    50K .......... .......... .......... .......... ..........  822K
+   100K .......... .......... .......... .......... ..........  677K
+   150K .......... .......... .......                           706K=0.2s
+
+2010-02-05 14:38:23 (724 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/220148.esportes+radicais.html' saved [181397]
+

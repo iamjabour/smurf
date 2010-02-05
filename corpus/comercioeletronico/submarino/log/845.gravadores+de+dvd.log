@@ -1,0 +1,12 @@
+--2010-02-05 14:37:59--  http://www.submarino.com.br/menu/845/gravadores+de+dvd
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/845.gravadores+de+dvd.html'
+
+     0K .......... .......... .......... .......... ..........  727K
+    50K .......... .......... ..                                145K=0.2s
+
+2010-02-05 14:37:59 (322 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/845.gravadores+de+dvd.html' saved [74708]
+

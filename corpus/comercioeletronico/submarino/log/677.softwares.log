@@ -1,0 +1,14 @@
+--2010-02-05 14:37:49--  http://www.submarino.com.br/menu/677/softwares
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/677.softwares.html'
+
+     0K .......... .......... .......... .......... ..........  651K
+    50K .......... .......... .......... .......... ..........  711K
+   100K .......... .......... .......... .......... ..........  804K
+   150K .......... .......... ..........                        613K=0.3s
+
+2010-02-05 14:37:49 (697 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/677.softwares.html' saved [185324]
+

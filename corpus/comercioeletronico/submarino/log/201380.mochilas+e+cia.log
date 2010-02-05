@@ -1,0 +1,14 @@
+--2010-02-05 14:38:26--  http://www.submarino.com.br/menu/201380/mochilas+e+cia
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201380.mochilas+e+cia.html'
+
+     0K .......... .......... .......... .......... ..........  682K
+    50K .......... .......... .......... .......... ..........  686K
+   100K .......... .......... .......... .......... ..........  576K
+   150K .......... .......... ......                            869K=0.3s
+
+2010-02-05 14:38:27 (670 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201380.mochilas+e+cia.html' saved [180950]
+

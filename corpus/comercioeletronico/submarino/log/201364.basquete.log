@@ -1,0 +1,14 @@
+--2010-02-05 14:38:20--  http://www.submarino.com.br/menu/201364/basquete
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201364.basquete.html'
+
+     0K .......... .......... .......... .......... ..........  277K
+    50K .......... .......... .......... .......... ..........  710K
+   100K .......... .......... .......... .......... ..........  663K
+   150K .......... .....                                        392K=0.4s
+
+2010-02-05 14:38:21 (452 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201364.basquete.html' saved [169632]
+

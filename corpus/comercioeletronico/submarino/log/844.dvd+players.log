@@ -1,0 +1,14 @@
+--2010-02-05 14:37:58--  http://www.submarino.com.br/menu/844/dvd+players
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/844.dvd+players.html'
+
+     0K .......... .......... .......... .......... ..........  698K
+    50K .......... .......... .......... .......... ..........  302K
+   100K .......... .......... .......... .......... ..........  816K
+   150K .......... .......... ..                                828K=0.3s
+
+2010-02-05 14:37:59 (530 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/844.dvd+players.html' saved [176852]
+

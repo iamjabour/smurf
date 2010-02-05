@@ -1,0 +1,14 @@
+--2010-02-05 14:37:41--  http://www.submarino.com.br/menu/665/monitores+lcd
+Resolving www.submarino.com.br... 143.108.13.102, 143.108.13.105
+Connecting to www.submarino.com.br|143.108.13.102|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/665.monitores+lcd.html'
+
+     0K .......... .......... .......... .......... ..........  742K
+    50K .......... .......... .......... .......... ..........  251K
+   100K .......... .......... .......... .......... ..........  970K
+   150K .......... .......... ......                            231K=0.4s
+
+2010-02-05 14:37:42 (407 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/665.monitores+lcd.html' saved [180866]
+

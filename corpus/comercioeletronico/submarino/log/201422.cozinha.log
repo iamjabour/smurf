@@ -1,0 +1,14 @@
+--2010-02-05 14:38:15--  http://www.submarino.com.br/menu/201422/cozinha
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201422.cozinha.html'
+
+     0K .......... .......... .......... .......... ..........  637K
+    50K .......... .......... .......... .......... ..........  629K
+   100K .......... .......... .......... .......... ..........  744K
+   150K .......... .......... .......... ........               639K=0.3s
+
+2010-02-05 14:38:15 (661 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/201422.cozinha.html' saved [193168]
+

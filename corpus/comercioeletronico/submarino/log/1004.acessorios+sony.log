@@ -1,0 +1,14 @@
+--2010-02-05 14:37:56--  http://www.submarino.com.br/menu/1004/acessorios+sony
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1004.acessorios+sony.html'
+
+     0K .......... .......... .......... .......... ..........  763K
+    50K .......... .......... .......... .......... ..........  663K
+   100K .......... .......... .......... .......... ..........  583K
+   150K .......... ..........                                   807K=0.3s
+
+2010-02-05 14:37:57 (676 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1004.acessorios+sony.html' saved [174555]
+

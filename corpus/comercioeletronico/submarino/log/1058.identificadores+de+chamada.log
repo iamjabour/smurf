@@ -1,0 +1,12 @@
+--2010-02-05 14:37:53--  http://www.submarino.com.br/menu/1058/identificadores+de+chamada
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1058.identificadores+de+chamada.html'
+
+     0K .......... .......... .......... .......... ..........  808K
+    50K .......... .......... .                                1014K=0.08s
+
+2010-02-05 14:37:53 (861 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/1058.identificadores+de+chamada.html' saved [73322]
+

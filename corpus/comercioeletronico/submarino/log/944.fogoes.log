@@ -1,0 +1,14 @@
+--2010-02-05 14:38:08--  http://www.submarino.com.br/menu/944/fogoes
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/944.fogoes.html'
+
+     0K .......... .......... .......... .......... ..........  658K
+    50K .......... .......... .......... .......... ..........  331K
+   100K .......... .......... .......... .......... ..........  784K
+   150K .......... .......... .......... .                      679K=0.3s
+
+2010-02-05 14:38:09 (538 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/944.fogoes.html' saved [185643]
+

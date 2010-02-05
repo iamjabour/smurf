@@ -1,0 +1,14 @@
+--2010-02-05 14:38:12--  http://www.submarino.com.br/menu/952/microondas
+Resolving www.submarino.com.br... 143.108.13.105, 143.108.13.102
+Connecting to www.submarino.com.br|143.108.13.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/952.microondas.html'
+
+     0K .......... .......... .......... .......... ..........  704K
+    50K .......... .......... .......... .......... ..........  288K
+   100K .......... .......... .......... .......... ..........  723K
+   150K .......... ..                                           422K=0.3s
+
+2010-02-05 14:38:13 (473 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/952.microondas.html' saved [166272]
+

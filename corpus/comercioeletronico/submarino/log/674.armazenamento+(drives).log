@@ -1,0 +1,14 @@
+--2010-02-05 14:37:47--  http://www.submarino.com.br/menu/674/armazenamento+(drives)
+Resolving www.submarino.com.br... 143.108.13.102, 143.108.13.105
+Connecting to www.submarino.com.br|143.108.13.102|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/674.armazenamento+(drives).html'
+
+     0K .......... .......... .......... .......... ..........  853K
+    50K .......... .......... .......... .......... ..........  336K
+   100K .......... .......... .......... .......... ..........  938K
+   150K .......... .......... ..........                        599K=0.3s
+
+2010-02-05 14:37:49 (579 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/submarino/674.armazenamento+(drives).html' saved [185065]
+
