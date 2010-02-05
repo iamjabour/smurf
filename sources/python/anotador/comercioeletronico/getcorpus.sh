@@ -27,6 +27,11 @@ fi
 i=0
 while read line
 do
+	if [ ! $line ]
+	then
+		continue
+	fi
+
 	i=$(($i+1));
 	printf "downloading %03d document\n" $i
 	echo $line
