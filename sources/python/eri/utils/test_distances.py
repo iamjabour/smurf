@@ -9,6 +9,36 @@ class TestDistances(unittest.TestCase):
     def setUp(self):
         pass
 
+    def test_tagDistance(self):
+        """
+        Test if costs and distance value are correct
+        """
+        print '\n - Test: utils.distances.tagDistance()'
+        add = 1
+        change = 2
+        delete = 4
+        cost = { 'a': add, 'd': delete, 'c': change }
+
+        dist = distances.stringDistance(['a','a'],['a','ba','a'], cost)
+        self.assertEqual(dist, add, '1: %d!=%d' % (dist, change))
+
+
+        dist = distances.stringDistance(['aa'], ['aa','b'], cost)
+        self.assertEqual(dist, add, '2: %d!=%d' % (dist, change))
+
+        dist = distances.stringDistance(['a'], ['b','a'], cost)
+        self.assertEqual(dist, add, '3: %d!=%d' % (dist, change))
+
+        dist = distances.stringDistance(['a'], ['b'], cost)
+        self.assertEqual(dist, change, '4: %d!=%d' % (dist, change))
+
+        dist = distances.stringDistance(['b','a'], ['a'], cost)
+        self.assertEqual(dist, delete, '5: %d!=%d' % (dist, change))
+
+        dist = distances.stringDistance(['a','b','a'], ['a','a'], cost)
+        self.assertEqual(dist, delete, '6: %d!=%d' % (dist, change))
+
+
     def test_stringDistance(self):
         """
         Test if costs and distance value are correct
