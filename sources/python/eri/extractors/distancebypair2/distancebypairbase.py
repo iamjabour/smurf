@@ -9,16 +9,7 @@ class DistanceByPairBase(object):
     proporção, passada por parametro, e os agrupa em componentes.
     """
 
-    def dfs(self, node, esp=0, maxDist=0.3):
-        """
-        Navega em profundidade na árvore buscando nós adjacentes com distancia
-        de edição menor que maxDist e os agrupa na mesma componente.
-
-        @param Node node: No atual da dfs
-        @param int esp: Nível da árvore
-        @param float maxDist: Proporção máxima de diferença para ser agrupado
-        na mesma componente
-        """
+    def match(self, node, esp, maxDist, height):
         global s1
         global s2
         s1 = ""
@@ -30,7 +21,7 @@ class DistanceByPairBase(object):
         for x in xrange(0,len(node.childNodes)):
             c = node.childNodes[x]
 
-            if x == 0 or c.height < 3:
+            if x == 0 or c.height < height:
                 s1 = c.str
                 match = False
                 self._comp += 1
@@ -57,10 +48,23 @@ class DistanceByPairBase(object):
                 match = False
                 self._comp += 1
         #for
+        return result
 
-        node.result = result
+    def dfs(self, node, esp=0, maxDist=0.3, height=3):
+        """
+        Navega em profundidade na árvore buscando nós adjacentes com distancia
+        de edição menor que maxDist e os agrupa na mesma componente.
+
+        @param Node node: No atual da dfs
+        @param int esp: Nível da árvore
+        @param float maxDist: Proporção máxima de diferença para ser agrupado
+        na mesma componente
+        """
+
+        node.result = self.match(node,esp,maxDist, height)
+
         for x in xrange(0,len(node.childNodes)):
-            if not result[x]:
+            if not node.result[x]:
                 self.dfs(node.childNodes[x], esp+1)
 
 

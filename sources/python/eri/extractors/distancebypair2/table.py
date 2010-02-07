@@ -1,9 +1,9 @@
 # -*- coding: latin-1 -*-
-from eri.extractors.distancebypair.distancebypairbase import DistanceByPairBase
+from eri.extractors.distancebypair2.distancebypairbase import DistanceByPairBase as Base
 import sys
 from eri.extractors.distancebypair2.node import Node
 
-class Table(DistanceByPairBase):
+class Table(Base):
     """
     Esse módulo busca nós adjecentes com distancia de edição menor que uma
     proporção, passada por parametro, e os agrupa em componentes.
@@ -65,7 +65,8 @@ class Table(DistanceByPairBase):
         print 'itables', len(itables)
 
         for table in itables:
-            self.dfs(table)
+            #self.dfs(table)
+            table.result = self.match(table,0,0.3,3)
             print table.result
 
             d = {}
