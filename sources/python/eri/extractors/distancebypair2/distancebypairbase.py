@@ -1,7 +1,7 @@
 # -*- coding: latin-1 -*-
 import sys
 from eri.utils.distances import stringDistance
-from eri.extractors.distancebypair.node import *
+from eri.extractors.distancebypair.node import Node
 
 class DistanceByPairBase(object):
     """

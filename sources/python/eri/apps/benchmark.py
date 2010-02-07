@@ -18,6 +18,8 @@ class Benchmark:
         if output == None:
             output = sys.stdout
 
+        if not limit:
+            limit = int(2**31-1)
         self.pfilenames = pfilenames
         self.output = output
         self.metric = config.metric()
@@ -38,8 +40,18 @@ class Benchmark:
 
         while True:
             count += 1
-            doc = self.corpus.getDocument()
-            if doc == None or count > self.limit:
+            doc = None
+            print count, self.limit
+            if  count <= self.limit:
+                doc = self.corpus.getDocument()
+            elif self.limit <= 0:
+                doc = self.corpus.getDocument(id=abs(self.limit))
+                count = int(2**31-1) #infinito
+                self.limit = count
+            else:
+                break
+
+            if not doc:
                 break
 
             proof = self.corpus.getProof(doc)
@@ -59,6 +71,10 @@ class Benchmark:
         Consolida o benchmark e imprime o resultado na saida padrão
         """
         result = {}
+
+        if len(self.benchmark) == 0:
+            print 'Nao foi gerado nenhum resultado'
+            return {}
 
         for key in self.benchmark[0]:
             result.update({key:[0,0,0]})

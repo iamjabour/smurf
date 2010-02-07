@@ -43,7 +43,7 @@ class Corpus:
         """
         return self.proof.getProof(doc.content)
 
-    def getDocument(self, file=False):
+    def getDocument(self, file=False, id=False):
         """
         Obtem o proximo documento do corpus
         """
@@ -54,6 +54,10 @@ class Corpus:
             except ValueError:
                 d = Doc(os.path.join(self.path,file),0)
 
+            d.content = self.parser.parse(d.path)
+            return d
+        elif id:
+            d = Doc(self.documents[id],id)
             d.content = self.parser.parse(d.path)
             return d
         else:
