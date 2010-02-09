@@ -1,0 +1,14 @@
+--2010-02-09 16:41:49--  http://www.bestbuy.com/site/Amps-Effects/Effects-Pedals/pcmcat151600050027.c?id=pcmcat151600050027
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 161818 (158K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat151600050027.html'
+
+     0K .......... .......... .......... .......... .......... 31%  220K 0s
+    50K .......... .......... .......... .......... .......... 63%  239K 0s
+   100K .......... .......... .......... .......... .......... 94%  232K 0s
+   150K ........                                              100%  274K=0.7s
+
+2010-02-09 16:41:50 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat151600050027.html' saved [161818/161818]
+

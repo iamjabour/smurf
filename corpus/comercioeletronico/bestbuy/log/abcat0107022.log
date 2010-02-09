@@ -1,0 +1,13 @@
+--2010-02-09 16:38:02--  http://www.bestbuy.com/site/AV-Cables-Connectors/S-Video-Cables/abcat0107022.c?id=abcat0107022
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 114488 (112K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107022.html'
+
+     0K .......... .......... .......... .......... .......... 44%  219K 0s
+    50K .......... .......... .......... .......... .......... 89%  239K 0s
+   100K .......... .                                          100%  244K=0.5s
+
+2010-02-09 16:38:04 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107022.html' saved [114488/114488]
+

@@ -1,0 +1,14 @@
+--2010-02-09 16:41:33--  http://www.bestbuy.com/site/Guitars-Basses/Bass-Guitars/pcmcat151600050007.c?id=pcmcat151600050007
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 161929 (158K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat151600050007.html'
+
+     0K .......... .......... .......... .......... .......... 31%  216K 1s
+    50K .......... .......... .......... .......... .......... 63%  238K 0s
+   100K .......... .......... .......... .......... .......... 94%  232K 0s
+   150K ........                                              100%  273K=0.7s
+
+2010-02-09 16:41:36 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat151600050007.html' saved [161929/161929]
+

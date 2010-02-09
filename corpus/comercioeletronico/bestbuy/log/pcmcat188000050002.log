@@ -1,0 +1,12 @@
+--2010-02-09 16:40:54--  http://www.bestbuy.com/site/iPod-MP3-Player-Services/Music-Photo-Backup-Services/pcmcat188000050002.c?id=pcmcat188000050002
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 83100 (81K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat188000050002.html'
+
+     0K .......... .......... .......... .......... .......... 61%  218K 0s
+    50K .......... .......... .......... .                    100%  245K=0.4s
+
+2010-02-09 16:40:59 (228 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat188000050002.html' saved [83100/83100]
+

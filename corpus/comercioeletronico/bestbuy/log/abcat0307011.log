@@ -1,0 +1,14 @@
+--2010-02-09 16:39:14--  http://www.bestbuy.com/site/iPod-MP3-Accessories/Car-iPod-MP3-Connections/abcat0307011.c?id=abcat0307011
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 167761 (164K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0307011.html'
+
+     0K .......... .......... .......... .......... .......... 30%  219K 1s
+    50K .......... .......... .......... .......... .......... 61%  239K 0s
+   100K .......... .......... .......... .......... .......... 91%  232K 0s
+   150K .......... ...                                        100%  256K=0.7s
+
+2010-02-09 16:39:48 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0307011.html' saved [167761/167761]
+

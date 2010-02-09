@@ -1,0 +1,14 @@
+--2010-02-09 16:37:31--  http://www.bestbuy.com/site/TV-Video-Accessories/Maintenance-Care/abcat0107034.c?id=abcat0107034
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 160966 (157K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107034.html'
+
+     0K .......... .......... .......... .......... .......... 31%  218K 0s
+    50K .......... .......... .......... .......... .......... 63%  239K 0s
+   100K .......... .......... .......... .......... .......... 95%  233K 0s
+   150K .......                                               100%  273K=0.7s
+
+2010-02-09 16:37:33 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107034.html' saved [160966/160966]
+

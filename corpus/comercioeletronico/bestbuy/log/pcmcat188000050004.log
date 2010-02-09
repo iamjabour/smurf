@@ -1,0 +1,12 @@
+--2010-02-09 16:41:05--  http://www.bestbuy.com/site/iPod-MP3-Player-Services/In-Car-Installation-Services/pcmcat188000050004.c?id=pcmcat188000050004
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 81756 (80K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat188000050004.html'
+
+     0K .......... .......... .......... .......... .......... 62%  218K 0s
+    50K .......... .......... .........                       100%  245K=0.4s
+
+2010-02-09 16:41:06 (228 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat188000050004.html' saved [81756/81756]
+

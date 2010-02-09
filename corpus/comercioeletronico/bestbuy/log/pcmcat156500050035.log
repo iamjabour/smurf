@@ -1,0 +1,13 @@
+--2010-02-09 16:43:37--  http://www.bestbuy.com/site/Marine-Audio/Marine-Audio-Subwoofers/pcmcat156500050035.c?id=pcmcat156500050035
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 118277 (116K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat156500050035.html'
+
+     0K .......... .......... .......... .......... .......... 43%  218K 0s
+    50K .......... .......... .......... .......... .......... 86%  239K 0s
+   100K .......... .....                                      100%  241K=0.5s
+
+2010-02-09 16:43:39 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat156500050035.html' saved [118277/118277]
+

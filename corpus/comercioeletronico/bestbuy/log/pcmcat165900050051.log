@@ -1,0 +1,12 @@
+--2010-02-09 16:39:53--  http://www.bestbuy.com/site/Car-Marine-Audio-Accessories/Car-HD-Tuners/pcmcat165900050051.c?id=pcmcat165900050051
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.237
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 100713 (98K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat165900050051.html'
+
+     0K .......... .......... .......... .......... .......... 50%  218K 0s
+    50K .......... .......... .......... .......... ........  100%  242K=0.4s
+
+2010-02-09 16:39:54 (229 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat165900050051.html' saved [100713/100713]
+

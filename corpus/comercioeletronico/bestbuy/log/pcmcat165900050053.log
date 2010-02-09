@@ -1,0 +1,13 @@
+--2010-02-09 16:37:39--  http://www.bestbuy.com/site/Car-Marine-Audio-Accessories/Car-Portable-Power/pcmcat165900050053.c?id=pcmcat165900050053
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 152578 (149K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat165900050053.html'
+
+     0K .......... .......... .......... .......... .......... 33%  218K 0s
+    50K .......... .......... .......... .......... .......... 67%  239K 0s
+   100K .......... .......... .......... .......... ......... 100%  238K=0.6s
+
+2010-02-09 16:37:41 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat165900050053.html' saved [152578/152578]
+

@@ -1,0 +1,14 @@
+--2010-02-09 16:37:20--  http://www.bestbuy.com/site/Headphones/Over-the-Ear-Headphones/pcmcat143000050011.c?id=pcmcat143000050011
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 173422 (169K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat143000050011.html'
+
+     0K .......... .......... .......... .......... .......... 29%  218K 1s
+    50K .......... .......... .......... .......... .......... 59%  239K 0s
+   100K .......... .......... .......... .......... .......... 88%  232K 0s
+   150K .......... .........                                  100%  251K=0.7s
+
+2010-02-09 16:37:22 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat143000050011.html' saved [173422/173422]
+

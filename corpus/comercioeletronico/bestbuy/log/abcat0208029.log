@@ -1,0 +1,14 @@
+--2010-02-09 16:40:45--  http://www.bestbuy.com/site/iPod-MP3-Accessories/regularCat:abcat0208029/abcat0208029.c?id=abcat0208029
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 158980 (155K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0208029.html'
+
+     0K .......... .......... .......... .......... .......... 32%  219K 0s
+    50K .......... .......... .......... .......... .......... 64%  239K 0s
+   100K .......... .......... .......... .......... .......... 96%  233K 0s
+   150K .....                                                 100%  296K=0.7s
+
+2010-02-09 16:40:47 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0208029.html' saved [158980/158980]
+

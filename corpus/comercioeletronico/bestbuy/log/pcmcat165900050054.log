@@ -1,0 +1,14 @@
+--2010-02-09 16:39:56--  http://www.bestbuy.com/site/Car-Marine-Audio-Accessories/More-Car-Accessories/pcmcat165900050054.c?id=pcmcat165900050054
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.237
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 157686 (154K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat165900050054.html'
+
+     0K .......... .......... .......... .......... .......... 32%  218K 0s
+    50K .......... .......... .......... .......... .......... 64%  239K 0s
+   100K .......... .......... .......... .......... .......... 97%  232K 0s
+   150K ...                                                   100%  312K=0.7s
+
+2010-02-09 16:39:58 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat165900050054.html' saved [157686/157686]
+

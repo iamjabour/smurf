@@ -1,0 +1,14 @@
+--2010-02-09 16:38:42--  http://www.bestbuy.com/site/Musical-Instrument-Accessories/Guitar-Bass-Accessories/pcmcat151600050008.c?id=pcmcat151600050008
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 167803 (164K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat151600050008.html'
+
+     0K .......... .......... .......... .......... .......... 30%  218K 1s
+    50K .......... .......... .......... .......... .......... 61%  239K 0s
+   100K .......... .......... .......... .......... .......... 91%  232K 0s
+   150K .......... ...                                        100%  254K=0.7s
+
+2010-02-09 16:38:44 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat151600050008.html' saved [167803/167803]
+

@@ -1,0 +1,14 @@
+--2010-02-09 16:39:01--  http://www.bestbuy.com/site/Musical-Instrument-Accessories/regularCat:pcmcat194800050017/pcmcat194800050017.c?id=pcmcat194800050017
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 155724 (152K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat194800050017.html'
+
+     0K .......... .......... .......... .......... .......... 32%  219K 0s
+    50K .......... .......... .......... .......... .......... 65%  239K 0s
+   100K .......... .......... .......... .......... .......... 98%  232K 0s
+   150K ..                                                    100%  495K=0.7s
+
+2010-02-09 16:39:02 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat194800050017.html' saved [155724/155724]
+

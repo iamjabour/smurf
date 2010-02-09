@@ -1,0 +1,13 @@
+--2010-02-09 16:42:51--  http://www.bestbuy.com/site/DJ-Lighting-Equipment/DJ-Equipment-CD-Players/pcmcat152100050028.c?id=pcmcat152100050028
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 105207 (103K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050028.html'
+
+     0K .......... .......... .......... .......... .......... 48%  218K 0s
+    50K .......... .......... .......... .......... .......... 97%  239K 0s
+   100K ..                                                    100%  278K=0.4s
+
+2010-02-09 16:42:53 (229 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050028.html' saved [105207/105207]
+

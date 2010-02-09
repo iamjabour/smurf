@@ -1,0 +1,14 @@
+--2010-02-09 16:43:24--  http://www.bestbuy.com/site/Live-Sound/Live-Sound-Speakers/pcmcat152200050008.c?id=pcmcat152200050008
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 163742 (160K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152200050008.html'
+
+     0K .......... .......... .......... .......... .......... 31%  218K 1s
+    50K .......... .......... .......... .......... .......... 62%  237K 0s
+   100K .......... .......... .......... .......... .......... 93%  239K 0s
+   150K .........                                             100%  235K=0.7s
+
+2010-02-09 16:43:25 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152200050008.html' saved [163742/163742]
+

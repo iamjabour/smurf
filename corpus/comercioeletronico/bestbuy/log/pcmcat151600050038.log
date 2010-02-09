@@ -1,0 +1,13 @@
+--2010-02-09 16:41:52--  http://www.bestbuy.com/site/Music-Keyboards/Keyboards-Digital-Pianos/pcmcat151600050038.c?id=pcmcat151600050038
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 106052 (104K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat151600050038.html'
+
+     0K .......... .......... .......... .......... .......... 48%  218K 0s
+    50K .......... .......... .......... .......... .......... 96%  239K 0s
+   100K ...                                                   100%  263K=0.5s
+
+2010-02-09 16:41:53 (229 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat151600050038.html' saved [106052/106052]
+

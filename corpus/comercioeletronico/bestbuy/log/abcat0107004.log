@@ -1,0 +1,14 @@
+--2010-02-09 16:36:52--  http://www.bestbuy.com/site/TV-Video-Accessories/TV-Antennas/abcat0107004.c?id=abcat0107004
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 156835 (153K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107004.html'
+
+     0K .......... .......... .......... .......... .......... 32%  218K 0s
+    50K .......... .......... .......... .......... .......... 65%  237K 0s
+   100K .......... .......... .......... .......... .......... 97%  239K 0s
+   150K ...                                                   100%  238K=0.7s
+
+2010-02-09 16:36:54 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107004.html' saved [156835/156835]
+

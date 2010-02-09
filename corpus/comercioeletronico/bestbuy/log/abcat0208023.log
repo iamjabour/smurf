@@ -1,0 +1,14 @@
+--2010-02-09 16:40:03--  http://www.bestbuy.com/site/Audio-Accessories/Travel-Accessories/abcat0208023.c?id=abcat0208023
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.237
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 154407 (151K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0208023.html'
+
+     0K .......... .......... .......... .......... .......... 33%  219K 0s
+    50K .......... .......... .......... .......... .......... 66%  239K 0s
+   100K .......... .......... .......... .......... .......... 99%  234K 0s
+   150K                                                       100% 1503G=0.7s
+
+2010-02-09 16:40:05 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0208023.html' saved [154407/154407]
+

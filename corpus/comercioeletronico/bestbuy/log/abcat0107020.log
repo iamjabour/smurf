@@ -1,0 +1,14 @@
+--2010-02-09 16:37:50--  http://www.bestbuy.com/site/AV-Cables-Connectors/HDMI-DVI-Cables-Adapters/abcat0107020.c?id=abcat0107020
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 164369 (161K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107020.html'
+
+     0K .......... .......... .......... .......... .......... 31%  219K 1s
+    50K .......... .......... .......... .......... .......... 62%  239K 0s
+   100K .......... .......... .......... .......... .......... 93%  232K 0s
+   150K ..........                                            100%  262K=0.7s
+
+2010-02-09 16:37:51 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107020.html' saved [164369/164369]
+

@@ -1,0 +1,12 @@
+--2010-02-09 16:43:57--  http://www.bestbuy.com/site/Car-Installation-Services/GPS-Car-Installation/pcmcat143000050015.c?id=pcmcat143000050015
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 89660 (88K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat143000050015.html'
+
+     0K .......... .......... .......... .......... .......... 57%  218K 0s
+    50K .......... .......... .......... .......              100%  243K=0.4s
+
+2010-02-09 16:43:58 (228 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat143000050015.html' saved [89660/89660]
+

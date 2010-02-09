@@ -1,0 +1,13 @@
+--2010-02-09 16:41:55--  http://www.bestbuy.com/site/Music-Keyboards/Midi-Keyboards/pcmcat151600050039.c?id=pcmcat151600050039
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 122220 (119K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat151600050039.html'
+
+     0K .......... .......... .......... .......... .......... 41%  218K 0s
+    50K .......... .......... .......... .......... .......... 83%  239K 0s
+   100K .......... .........                                  100%  240K=0.5s
+
+2010-02-09 16:41:56 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat151600050039.html' saved [122220/122220]
+

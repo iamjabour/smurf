@@ -1,0 +1,13 @@
+--2010-02-09 16:42:08--  http://www.bestbuy.com/site/Drums-Percussion/Cymbals/pcmcat152100050012.c?id=pcmcat152100050012
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 149442 (146K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050012.html'
+
+     0K .......... .......... .......... .......... .......... 34%  219K 0s
+    50K .......... .......... .......... .......... .......... 68%  239K 0s
+   100K .......... .......... .......... .......... .....     100%  237K=0.6s
+
+2010-02-09 16:42:10 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050012.html' saved [149442/149442]
+

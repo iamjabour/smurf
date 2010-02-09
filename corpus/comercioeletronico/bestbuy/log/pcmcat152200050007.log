@@ -1,0 +1,13 @@
+--2010-02-09 16:43:20--  http://www.bestbuy.com/site/Live-Sound/Live-Sound-Power-Amps/pcmcat152200050007.c?id=pcmcat152200050007
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 140459 (137K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152200050007.html'
+
+     0K .......... .......... .......... .......... .......... 36%  218K 0s
+    50K .......... .......... .......... .......... .......... 72%  239K 0s
+   100K .......... .......... .......... .......              100%  238K=0.6s
+
+2010-02-09 16:43:22 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152200050007.html' saved [140459/140459]
+

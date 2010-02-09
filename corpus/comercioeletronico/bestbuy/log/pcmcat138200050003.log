@@ -1,0 +1,13 @@
+--2010-02-09 16:36:44--  http://www.bestbuy.com/site/Office-Furniture/Hutches/pcmcat138200050003.c?id=pcmcat138200050003
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 129714 (127K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat138200050003.html'
+
+     0K .......... .......... .......... .......... .......... 39%  218K 0s
+    50K .......... .......... .......... .......... .......... 78%  237K 0s
+   100K .......... .......... ......                          100%  243K=0.5s
+
+2010-02-09 16:36:46 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat138200050003.html' saved [129714/129714]
+

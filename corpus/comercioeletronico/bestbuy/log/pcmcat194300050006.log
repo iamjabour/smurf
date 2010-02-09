@@ -1,0 +1,13 @@
+--2010-02-09 16:44:13--  http://www.bestbuy.com/site/Satellite-Radios/regularCat:pcmcat194300050006/pcmcat194300050006.c?id=pcmcat194300050006
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 113679 (111K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat194300050006.html'
+
+     0K .......... .......... .......... .......... .......... 45%  219K 0s
+    50K .......... .......... .......... .......... .......... 90%  237K 0s
+   100K .......... .                                          100%  254K=0.5s
+
+2010-02-09 16:44:18 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat194300050006.html' saved [113679/113679]
+

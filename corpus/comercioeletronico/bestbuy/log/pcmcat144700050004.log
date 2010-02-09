@@ -1,0 +1,14 @@
+--2010-02-09 16:37:27--  http://www.bestbuy.com/site/Headphones/cfcat/pcmcat144700050004.c?id=pcmcat144700050004
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 172200 (168K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat144700050004.html'
+
+     0K .......... .......... .......... .......... .......... 29%  219K 1s
+    50K .......... .......... .......... .......... .......... 59%  239K 0s
+   100K .......... .......... .......... .......... .......... 89%  233K 0s
+   150K .......... ........                                   100%  249K=0.7s
+
+2010-02-09 16:37:29 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat144700050004.html' saved [172200/172200]
+

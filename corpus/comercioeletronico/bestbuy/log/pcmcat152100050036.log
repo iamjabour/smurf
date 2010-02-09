@@ -1,0 +1,14 @@
+--2010-02-09 16:43:08--  http://www.bestbuy.com/site/Live-Sound/Live-Sound-Headphones/pcmcat152100050036.c?id=pcmcat152100050036
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 153827 (150K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050036.html'
+
+     0K .......... .......... .......... .......... .......... 33%  218K 0s
+    50K .......... .......... .......... .......... .......... 66%  234K 0s
+   100K .......... .......... .......... .......... .......... 99%  236K 0s
+   150K                                                       100%  423G=0.7s
+
+2010-02-09 16:43:10 (229 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050036.html' saved [153827/153827]
+

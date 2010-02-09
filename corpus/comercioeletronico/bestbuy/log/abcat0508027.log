@@ -1,0 +1,13 @@
+--2010-02-09 16:40:42--  http://www.bestbuy.com/site/Software-Games/Music-MP3-Software/abcat0508027.c?id=abcat0508027
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 150048 (147K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0508027.html'
+
+     0K .......... .......... .......... .......... .......... 34%  218K 0s
+    50K .......... .......... .......... .......... .......... 68%  239K 0s
+   100K .......... .......... .......... .......... ......    100%  238K=0.6s
+
+2010-02-09 16:40:43 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0508027.html' saved [150048/150048]
+

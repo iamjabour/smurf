@@ -1,0 +1,13 @@
+--2010-02-09 16:40:10--  http://www.bestbuy.com/site/Audio+Cables+%26+Connectors/Speaker-Switchers/abcat0107032.c?id=abcat0107032
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 103455 (101K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107032.html'
+
+     0K .......... .......... .......... .......... .......... 49%  219K 0s
+    50K .......... .......... .......... .......... .......... 98%  239K 0s
+   100K .                                                     100%  420K=0.4s
+
+2010-02-09 16:40:12 (229 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107032.html' saved [103455/103455]
+

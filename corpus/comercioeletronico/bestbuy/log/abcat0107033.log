@@ -1,0 +1,13 @@
+--2010-02-09 16:40:13--  http://www.bestbuy.com/site/Audio+Cables+%26+Connectors/Subwoofer-Cables/abcat0107033.c?id=abcat0107033
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 129440 (126K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107033.html'
+
+     0K .......... .......... .......... .......... .......... 39%  218K 0s
+    50K .......... .......... .......... .......... .......... 79%  239K 0s
+   100K .......... .......... ......                          100%  239K=0.5s
+
+2010-02-09 16:40:14 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107033.html' saved [129440/129440]
+

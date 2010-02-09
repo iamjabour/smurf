@@ -1,0 +1,12 @@
+--2010-02-09 16:41:01--  http://www.bestbuy.com/site/iPod-MP3-Player-Services/MP3-Diagnostic-Services/pcmcat188000050003.c?id=pcmcat188000050003
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 81560 (80K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat188000050003.html'
+
+     0K .......... .......... .......... .......... .......... 62%  219K 0s
+    50K .......... .......... .........                       100%  246K=0.3s
+
+2010-02-09 16:41:03 (228 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat188000050003.html' saved [81560/81560]
+

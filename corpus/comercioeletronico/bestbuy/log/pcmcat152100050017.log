@@ -1,0 +1,13 @@
+--2010-02-09 16:42:28--  http://www.bestbuy.com/site/Drums-Percussion/Hand-Percussion/pcmcat152100050017.c?id=pcmcat152100050017
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 151561 (148K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050017.html'
+
+     0K .......... .......... .......... .......... .......... 33%  219K 0s
+    50K .......... .......... .......... .......... .......... 67%  239K 0s
+   100K .......... .......... .......... .......... ........  100%  238K=0.6s
+
+2010-02-09 16:42:29 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050017.html' saved [151561/151561]
+

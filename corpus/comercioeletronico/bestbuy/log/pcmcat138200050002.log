@@ -1,0 +1,13 @@
+--2010-02-09 16:36:39--  http://www.bestbuy.com/site/Office-Furniture/File-Storage-Cabinets/pcmcat138200050002.c?id=pcmcat138200050002
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 147363 (144K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat138200050002.html'
+
+     0K .......... .......... .......... .......... .......... 34%  219K 0s
+    50K .......... .......... .......... .......... .......... 69%  239K 0s
+   100K .......... .......... .......... .......... ...       100%  238K=0.6s
+
+2010-02-09 16:36:42 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat138200050002.html' saved [147363/147363]
+

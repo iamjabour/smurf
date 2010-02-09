@@ -1,0 +1,14 @@
+--2010-02-09 16:38:27--  http://www.bestbuy.com/site/olstemplatemapper.jsp?id=pcat17080&type=page&qp=cabcat0200000%23%23-1%23%23-1~~q70726f63657373696e6774696d653a3e313930302d30312d3031~~nf784%7C%7C546f702d5261746564&list=y&nrp=15&sc=audioSP&sp=%2Bbrand+skuid&usc=abcat0200000
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 158739 (155K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcat17080&type=page&qp=cabcat0200000%23%23-1%23%23-1~~q70726f63657373696e6774696d653a3e313930302d30312d3031~~nf784||546f702d5261746564&list=y&nrp=15&sc=audioSP&sp=%2Bbrand+skuid&usc=abcat0200000.html'
+
+     0K .......... .......... .......... .......... .......... 32%  218K 0s
+    50K .......... .......... .......... .......... .......... 64%  239K 0s
+   100K .......... .......... .......... .......... .......... 96%  233K 0s
+   150K .....                                                 100%  291K=0.7s
+
+2010-02-09 16:38:29 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcat17080&type=page&qp=cabcat0200000%23%23-1%23%23-1~~q70726f63657373696e6774696d653a3e313930302d30312d3031~~nf784||546f702d5261746564&list=y&nrp=15&sc=audioSP&sp=%2Bbrand+skuid&usc=abcat0200000.html' saved [158739/158739]
+

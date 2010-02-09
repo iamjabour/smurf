@@ -1,0 +1,14 @@
+--2010-02-09 16:35:01--  http://www.bestbuy.com/site/Televisions/LCD-TVs/pcmcat193400050017.c?id=pcmcat193400050017
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 197800 (193K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat193400050017.html'
+
+     0K .......... .......... .......... .......... .......... 25% 20.5K 7s
+    50K .......... .......... .......... .......... .......... 51%  516K 2s
+   100K .......... .......... .......... .......... .......... 77%  232K 1s
+   150K .......... .......... .......... .......... ...       100%  241K=2.9s
+
+2010-02-09 16:35:05 (65.8 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat193400050017.html' saved [197800/197800]
+

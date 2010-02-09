@@ -1,0 +1,12 @@
+--2010-02-09 16:39:50--  http://www.bestbuy.com/site/Car-Marine-Audio-Accessories/Car-Satellite-Radio-Mounts/pcmcat165900050050.c?id=pcmcat165900050050
+Resolving www.bestbuy.com... 200.216.69.237, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.237|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 97589 (95K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat165900050050.html'
+
+     0K .......... .......... .......... .......... .......... 52%  218K 0s
+    50K .......... .......... .......... .......... .....     100%  242K=0.4s
+
+2010-02-09 16:39:51 (229 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat165900050050.html' saved [97589/97589]
+

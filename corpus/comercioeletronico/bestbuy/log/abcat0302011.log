@@ -1,0 +1,13 @@
+--2010-02-09 16:43:54--  http://www.bestbuy.com/site/Car-Audio/CB+Radios+and+Scanners/abcat0302011.c?id=abcat0302011
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 120286 (117K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0302011.html'
+
+     0K .......... .......... .......... .......... .......... 42%  218K 0s
+    50K .......... .......... .......... .......... .......... 85%  239K 0s
+   100K .......... .......                                    100%  241K=0.5s
+
+2010-02-09 16:43:55 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0302011.html' saved [120286/120286]
+

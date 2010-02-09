@@ -1,0 +1,13 @@
+--2010-02-09 16:37:46--  http://www.bestbuy.com/site/TV-Video-Accessories/Do-It-Yourself-Tools/pcmcat184000050011.c?id=pcmcat184000050011
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 151901 (148K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat184000050011.html'
+
+     0K .......... .......... .......... .......... .......... 33%  218K 0s
+    50K .......... .......... .......... .......... .......... 67%  239K 0s
+   100K .......... .......... .......... .......... ........  100%  238K=0.6s
+
+2010-02-09 16:37:48 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat184000050011.html' saved [151901/151901]
+

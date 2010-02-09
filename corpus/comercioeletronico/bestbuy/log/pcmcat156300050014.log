@@ -1,0 +1,13 @@
+--2010-02-09 16:43:33--  http://www.bestbuy.com/site/Marine-Audio/Marine-Audio-Speakers/pcmcat156300050014.c?id=pcmcat156300050014
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 145272 (142K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat156300050014.html'
+
+     0K .......... .......... .......... .......... .......... 35%  218K 0s
+    50K .......... .......... .......... .......... .......... 70%  239K 0s
+   100K .......... .......... .......... .......... .         100%  238K=0.6s
+
+2010-02-09 16:43:35 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat156300050014.html' saved [145272/145272]
+

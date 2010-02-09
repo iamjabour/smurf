@@ -1,0 +1,12 @@
+--2010-02-09 16:40:49--  http://www.bestbuy.com/site/iPod-MP3-Player-Services/iPod-MP3-Setup-Training-Services/pcmcat188000050000.c?id=pcmcat188000050000
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 90515 (88K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat188000050000.html'
+
+     0K .......... .......... .......... .......... .......... 56%  218K 0s
+    50K .......... .......... .......... ........             100%  243K=0.4s
+
+2010-02-09 16:40:50 (228 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat188000050000.html' saved [90515/90515]
+

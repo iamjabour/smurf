@@ -1,0 +1,14 @@
+--2010-02-09 16:38:46--  http://www.bestbuy.com/site/Musical-Instrument-Accessories/Musical-Instrument-Cables/pcmcat157700050042.c?id=pcmcat157700050042
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 161584 (158K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat157700050042.html'
+
+     0K .......... .......... .......... .......... .......... 31%  219K 0s
+    50K .......... .......... .......... .......... .......... 63%  239K 0s
+   100K .......... .......... .......... .......... .......... 95%  233K 0s
+   150K .......                                               100%  270K=0.7s
+
+2010-02-09 16:38:48 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat157700050042.html' saved [161584/161584]
+

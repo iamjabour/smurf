@@ -1,0 +1,12 @@
+--2010-02-09 16:40:52--  http://www.bestbuy.com/site/iPod-MP3-Player-Services/CD-Ripping-Services/pcmcat188000050001.c?id=pcmcat188000050001
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 83009 (81K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat188000050001.html'
+
+     0K .......... .......... .......... .......... .......... 61%  219K 0s
+    50K .......... .......... .......... .                    100%  245K=0.4s
+
+2010-02-09 16:40:53 (228 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat188000050001.html' saved [83009/83009]
+

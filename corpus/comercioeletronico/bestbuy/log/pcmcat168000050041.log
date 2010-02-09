@@ -1,0 +1,12 @@
+--2010-02-09 16:37:24--  http://www.bestbuy.com/site/Headphones/Kids-Headphones/pcmcat168000050041.c?id=pcmcat168000050041
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 93377 (91K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat168000050041.html'
+
+     0K .......... .......... .......... .......... .......... 54%  218K 0s
+    50K .......... .......... .......... .......... .         100%  243K=0.4s
+
+2010-02-09 16:37:25 (229 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat168000050041.html' saved [93377/93377]
+

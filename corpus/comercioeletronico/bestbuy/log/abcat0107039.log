@@ -1,0 +1,14 @@
+--2010-02-09 16:36:56--  http://www.bestbuy.com/site/TV-Video-Accessories/TV-Remote-Controls/abcat0107039.c?id=abcat0107039
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 163847 (160K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107039.html'
+
+     0K .......... .......... .......... .......... .......... 31%  218K 1s
+    50K .......... .......... .......... .......... .......... 62%  239K 0s
+   100K .......... .......... .......... .......... .......... 93%  232K 0s
+   150K ..........                                            100%  264K=0.7s
+
+2010-02-09 16:36:57 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107039.html' saved [163847/163847]
+

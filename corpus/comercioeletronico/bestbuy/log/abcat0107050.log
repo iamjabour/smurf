@@ -1,0 +1,12 @@
+--2010-02-09 16:37:06--  http://www.bestbuy.com/site/Portable+Video+Accessories/Portable-DVD-Cases/abcat0107050.c?id=abcat0107050
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 92673 (91K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107050.html'
+
+     0K .......... .......... .......... .......... .......... 55%  219K 0s
+    50K .......... .......... .......... ..........           100%  243K=0.4s
+
+2010-02-09 16:37:08 (229 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107050.html' saved [92673/92673]
+

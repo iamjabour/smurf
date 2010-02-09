@@ -1,0 +1,13 @@
+--2010-02-09 16:44:06--  http://www.bestbuy.com/site/Car-Installation-Services/regularCat:pcmcat197500050000/pcmcat197500050000.c?id=pcmcat197500050000
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 108717 (106K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat197500050000.html'
+
+     0K .......... .......... .......... .......... .......... 47%  219K 0s
+    50K .......... .......... .......... .......... .......... 94%  239K 0s
+   100K ......                                                100%  248K=0.5s
+
+2010-02-09 16:44:07 (229 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat197500050000.html' saved [108717/108717]
+

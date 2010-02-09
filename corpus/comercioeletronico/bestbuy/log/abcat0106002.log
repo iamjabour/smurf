@@ -1,0 +1,13 @@
+--2010-02-09 16:36:09--  http://www.bestbuy.com/site/Stands,+Mounts+and+Furniture/Speaker-Stands/abcat0106002.c?id=abcat0106002
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 152936 (149K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0106002.html'
+
+     0K .......... .......... .......... .......... .......... 33%  219K 0s
+    50K .......... .......... .......... .......... .......... 66%  239K 0s
+   100K .......... .......... .......... .......... ......... 100%  237K=0.6s
+
+2010-02-09 16:36:11 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0106002.html' saved [152936/152936]
+

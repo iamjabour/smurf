@@ -1,0 +1,12 @@
+--2010-02-09 16:35:50--  http://www.bestbuy.com/site/TiVo-Internet-TV/Internet-TV/pcmcat166000050028.c?id=pcmcat166000050028
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 97621 (95K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat166000050028.html'
+
+     0K .......... .......... .......... .......... .......... 52%  219K 0s
+    50K .......... .......... .......... .......... .....     100%  209K=0.4s
+
+2010-02-09 16:35:52 (214 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat166000050028.html' saved [97621/97621]
+

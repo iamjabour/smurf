@@ -1,0 +1,14 @@
+--2010-02-09 16:36:32--  http://www.bestbuy.com/site/Office-Furniture/Chairs-Mats/abcat0809002.c?id=abcat0809002
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 160215 (156K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0809002.html'
+
+     0K .......... .......... .......... .......... .......... 31%  218K 0s
+    50K .......... .......... .......... .......... .......... 63%  239K 0s
+   100K .......... .......... .......... .......... .......... 95%  232K 0s
+   150K ......                                                100%  285K=0.7s
+
+2010-02-09 16:36:34 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0809002.html' saved [160215/160215]
+

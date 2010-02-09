@@ -1,0 +1,13 @@
+--2010-02-09 16:35:36--  http://www.bestbuy.com/site/Blu-ray-DVD-Players/DVD-Recorders/abcat0102006.c?id=abcat0102006
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 114245 (112K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0102006.html'
+
+     0K .......... .......... .......... .......... .......... 44%  218K 0s
+    50K .......... .......... .......... .......... .......... 89%  239K 0s
+   100K .......... .                                          100%  247K=0.5s
+
+2010-02-09 16:35:38 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0102006.html' saved [114245/114245]
+

@@ -1,0 +1,14 @@
+--2010-02-09 16:38:35--  http://www.bestbuy.com/site/Musical-Instrument-Accessories/Drum-Percussion-Accessories/pcmcat152100050018.c?id=pcmcat152100050018
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 162172 (158K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050018.html'
+
+     0K .......... .......... .......... .......... .......... 31%  218K 0s
+    50K .......... .......... .......... .......... .......... 63%  234K 0s
+   100K .......... .......... .......... .......... .......... 94%  237K 0s
+   150K ........                                              100%  268K=0.7s
+
+2010-02-09 16:38:37 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050018.html' saved [162172/162172]
+

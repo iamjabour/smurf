@@ -1,0 +1,13 @@
+--2010-02-09 16:37:58--  http://www.bestbuy.com/site/AV-Cables-Connectors/Component-Video-Cables/abcat0107018.c?id=abcat0107018
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 144121 (141K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107018.html'
+
+     0K .......... .......... .......... .......... .......... 35%  218K 0s
+    50K .......... .......... .......... .......... .......... 71%  239K 0s
+   100K .......... .......... .......... ..........           100%  238K=0.6s
+
+2010-02-09 16:38:00 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107018.html' saved [144121/144121]
+

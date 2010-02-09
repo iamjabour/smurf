@@ -1,0 +1,14 @@
+--2010-02-09 16:37:53--  http://www.bestbuy.com/site/AV-Cables-Connectors/Coax-Video-Cables/abcat0107017.c?id=abcat0107017
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 157654 (154K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107017.html'
+
+     0K .......... .......... .......... .......... .......... 32%  219K 0s
+    50K .......... .......... .......... .......... .......... 64%  239K 0s
+   100K .......... .......... .......... .......... .......... 97%  233K 0s
+   150K ...                                                   100%  321K=0.7s
+
+2010-02-09 16:37:56 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0107017.html' saved [157654/157654]
+

@@ -1,0 +1,13 @@
+--2010-02-09 16:42:58--  http://www.bestbuy.com/site/DJ-Lighting-Equipment/DJ-Equipment-Turntables/pcmcat152100050030.c?id=pcmcat152100050030
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 126275 (123K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050030.html'
+
+     0K .......... .......... .......... .......... .......... 40%  218K 0s
+    50K .......... .......... .......... .......... .......... 81%  239K 0s
+   100K .......... .......... ...                             100%  240K=0.5s
+
+2010-02-09 16:42:59 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050030.html' saved [126275/126275]
+

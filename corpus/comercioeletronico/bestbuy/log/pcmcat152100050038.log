@@ -1,0 +1,14 @@
+--2010-02-09 16:43:12--  http://www.bestbuy.com/site/Live-Sound/Live-Sound-Microphones/pcmcat152100050038.c?id=pcmcat152100050038
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 162557 (159K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050038.html'
+
+     0K .......... .......... .......... .......... .......... 31%  219K 0s
+    50K .......... .......... .......... .......... .......... 62%  239K 0s
+   100K .......... .......... .......... .......... .......... 94%  232K 0s
+   150K ........                                              100%  269K=0.7s
+
+2010-02-09 16:43:14 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050038.html' saved [162557/162557]
+

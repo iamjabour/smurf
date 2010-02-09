@@ -1,0 +1,13 @@
+--2010-02-09 16:36:17--  http://www.bestbuy.com/site/Stands,+Mounts+and+Furniture/Home-Theater-Seating/abcat0106009.c?id=abcat0106009
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 135020 (132K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0106009.html'
+
+     0K .......... .......... .......... .......... .......... 37%  218K 0s
+    50K .......... .......... .......... .......... .......... 75%  239K 0s
+   100K .......... .......... .......... .                    100%  239K=0.6s
+
+2010-02-09 16:36:18 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0106009.html' saved [135020/135020]
+

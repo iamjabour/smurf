@@ -1,0 +1,13 @@
+--2010-02-09 16:36:49--  http://www.bestbuy.com/site/Office-Furniture/Tables/pcmcat138200050000.c?id=pcmcat138200050000
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 143565 (140K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat138200050000.html'
+
+     0K .......... .......... .......... .......... .......... 35%  218K 0s
+    50K .......... .......... .......... .......... .......... 71%  239K 0s
+   100K .......... .......... .......... ..........           100%  238K=0.6s
+
+2010-02-09 16:36:51 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat138200050000.html' saved [143565/143565]
+

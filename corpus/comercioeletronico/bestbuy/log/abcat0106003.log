@@ -1,0 +1,12 @@
+--2010-02-09 16:36:06--  http://www.bestbuy.com/site/Stands,+Mounts+and+Furniture/TV-Mounts-Brackets/abcat0106003.c?id=abcat0106003
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 90921 (89K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0106003.html'
+
+     0K .......... .......... .......... .......... .......... 56%  218K 0s
+    50K .......... .......... .......... ........             100%  243K=0.4s
+
+2010-02-09 16:36:08 (228 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0106003.html' saved [90921/90921]
+

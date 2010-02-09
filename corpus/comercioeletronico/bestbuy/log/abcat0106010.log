@@ -1,0 +1,14 @@
+--2010-02-09 16:36:13--  http://www.bestbuy.com/site/Stands,+Mounts+and+Furniture/CD-DVD-Storage/abcat0106010.c?id=abcat0106010
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 162149 (158K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0106010.html'
+
+     0K .......... .......... .......... .......... .......... 31%  214K 1s
+    50K .......... .......... .......... .......... .......... 63%  236K 0s
+   100K .......... .......... .......... .......... .......... 94%  233K 0s
+   150K ........                                              100%  267K=0.7s
+
+2010-02-09 16:36:15 (229 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0106010.html' saved [162149/162149]
+

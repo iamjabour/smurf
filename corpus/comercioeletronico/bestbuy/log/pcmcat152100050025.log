@@ -1,0 +1,13 @@
+--2010-02-09 16:42:41--  http://www.bestbuy.com/site/Home-Recording/Home-Recording-Studio-Monitors/pcmcat152100050025.c?id=pcmcat152100050025
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 129077 (126K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050025.html'
+
+     0K .......... .......... .......... .......... .......... 39%  218K 0s
+    50K .......... .......... .......... .......... .......... 79%  239K 0s
+   100K .......... .......... ......                          100%  239K=0.5s
+
+2010-02-09 16:42:43 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050025.html' saved [129077/129077]
+

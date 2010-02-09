@@ -1,0 +1,13 @@
+--2010-02-09 16:36:23--  http://www.bestbuy.com/site/TV-Home-Theater-Services/Flat-Panel-TV-Mounting/pcmcat138100050028.c?id=pcmcat138100050028
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 126093 (123K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat138100050028.html'
+
+     0K .......... .......... .......... .......... .......... 40%  218K 0s
+    50K .......... .......... .......... .......... .......... 81%  239K 0s
+   100K .......... .......... ...                             100%  240K=0.5s
+
+2010-02-09 16:36:27 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat138100050028.html' saved [126093/126093]
+

@@ -1,0 +1,14 @@
+--2010-02-09 16:40:23--  http://www.bestbuy.com/site/iPod-MP3-Accessories/iPod-MP3-Chargers/abcat0208009.c?id=abcat0208009
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 169645 (166K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0208009.html'
+
+     0K .......... .......... .......... .......... .......... 30%  218K 1s
+    50K .......... .......... .......... .......... .......... 60%  239K 0s
+   100K .......... .......... .......... .......... .......... 90%  232K 0s
+   150K .......... .....                                      100%  252K=0.7s
+
+2010-02-09 16:40:25 (232 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/abcat0208009.html' saved [169645/169645]
+

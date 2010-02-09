@@ -1,0 +1,14 @@
+--2010-02-09 16:41:16--  http://www.bestbuy.com/site/iPod-MP3-Cases-Clips/iPod-MP3-Clips/pcmcat142900050011.c?id=pcmcat142900050011
+Resolving www.bestbuy.com... 200.216.69.232, 200.216.69.253
+Connecting to www.bestbuy.com|200.216.69.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 154843 (151K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat142900050011.html'
+
+     0K .......... .......... .......... .......... .......... 33%  218K 0s
+    50K .......... .......... .......... .......... .......... 66%  239K 0s
+   100K .......... .......... .......... .......... .......... 99%  232K 0s
+   150K .                                                     100% 1.64M=0.7s
+
+2010-02-09 16:41:18 (231 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat142900050011.html' saved [154843/154843]
+

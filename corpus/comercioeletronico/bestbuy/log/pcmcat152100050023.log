@@ -1,0 +1,13 @@
+--2010-02-09 16:42:35--  http://www.bestbuy.com/site/Home-Recording/Home-Recorders/pcmcat152100050023.c?id=pcmcat152100050023
+Resolving www.bestbuy.com... 200.216.69.253, 200.216.69.232
+Connecting to www.bestbuy.com|200.216.69.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 144689 (141K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050023.html'
+
+     0K .......... .......... .......... .......... .......... 35%  218K 0s
+    50K .......... .......... .......... .......... .......... 70%  237K 0s
+   100K .......... .......... .......... .......... .         100%  238K=0.6s
+
+2010-02-09 16:42:37 (230 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/bestbuy/pcmcat152100050023.html' saved [144689/144689]
+
