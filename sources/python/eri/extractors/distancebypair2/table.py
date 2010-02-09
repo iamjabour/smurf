@@ -110,8 +110,8 @@ class Table(Base):
     def process(self, dom, marker):
 
         self._comp = 0
-#        self._mark2(dom, marker, True)
-        self._mark(dom,marker)
+        self._mark2(dom, marker, True)
+#        self._mark(dom,marker)
         result = marker.process()
 
         if not result:
