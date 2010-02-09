@@ -99,9 +99,13 @@ class Benchmark:
                     precision = 1
 
                 recall = result[k][0]/float(result[k][1])
-                r.update({k: [recall, precision]})
+                f = (2*recall*precision)/(recall+precision)
+                r.update({k: [recall, precision, f]})
             else:
-                r.update({k: [1, 1 if result[k][2] == 0 else 0]})
+                recall = 1
+                precision = 1 if result[k][2] == 0 else 0
+                f = (2*recall*precision)/(recall+precision)
+                r.update({k: [recall, precision, f]})
 
 
         print
