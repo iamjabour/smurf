@@ -35,7 +35,15 @@ do
 	i=$(($i+1));
 	printf "downloading %03d document\n" $i
 	echo $line
-	f=${line#*submarino.com.br/menu/}
+	f=${line#*/}
+	if [ $corpus == "submarino" ]
+	then
+		f=${line#*submarino.com.br/menu/}
+	elif [ $corpus == "bestbuy" ]
+	then
+		f=${line#*?id=}
+	fi
+
 	file=${f/\//.}
 
 	out="$DIR/$corpus/$file"
