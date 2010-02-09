@@ -40,6 +40,11 @@ class Node(object):
         for x in xrange(0,len(xmlNode.childNodes)):
             xmlChild = xmlNode.childNodes[x]
             if xmlChild.nodeType == xmlChild.ELEMENT_NODE:
+                if xmlChild.localName == 'script':
+                    continue
+                elif xmlChild.localName == 'hr':
+                    continue
+
                 childNode = self.loadNodeTree(xmlChild, depth + 1)
                 childNode.parent = treeNode
                 treeNode.str += childNode.str
