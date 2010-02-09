@@ -9,7 +9,7 @@ class DistanceByPairBase(object):
     proporção, passada por parametro, e os agrupa em componentes.
     """
 
-    def match(self, node, esp, maxDist, height):
+    def match(self, node, esp, maxDist, height, tags=False, printtag=False):
         global s1
         global s2
         s1 = ""
@@ -22,29 +22,51 @@ class DistanceByPairBase(object):
             c = node.childNodes[x]
 
             if x == 0 or c.height < height:
-                s1 = c.str
+                if tags:
+                    s1 = c.tags
+                else:
+                    s1 = c.str
+
                 match = False
                 self._comp += 1
                 continue
 
-            s2 = c.str
-#            print 'str:', s1, s2
+            if tags:
+                s2 = c.tags
+            else:
+                s2 = c.str
+
+            if printtag:
+                print 'str:', s1, s2
+
             if len(s1) <= (len(s2) * (1.0+maxDist)) and\
               len(s2) <= (len(s1) * (1.0 +maxDist)):
                 if float(stringDistance(s1,s2))/max(len(s1), len(s2)) > maxDist :
-                    s1 = c.str
+                    if tags:
+                        s1 = c.tags
+                    else:
+                        s1 = c.str
+
                     match = False
                     self._comp += 1
                     continue
                 else:
-                    s1 = c.str
+                    if tags:
+                        s1 = c.tags
+                    else:
+                        s1 = c.str
+
                     result[x] = self._comp
                     if not match:
                         result[x-1] = self._comp
 
                     match = True
             else:
-                s1 = c.str
+                if tags:
+                    s1 = c.tags
+                else:
+                    s1 = c.str
+
                 match = False
                 self._comp += 1
         #for

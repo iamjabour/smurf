@@ -18,6 +18,8 @@ class Node(object):
         self.height = 1
         self.depth = 0
         self.str = ""
+        self.tags = []
+
     #def __init__
 
     def loadNodeTree(self, xmlNode, depth):
@@ -33,6 +35,7 @@ class Node(object):
 
         if depth > 0:
             treeNode.str = xmlNode.localName.lower().strip()
+            treeNode.tags.append(xmlNode.localName.lower().strip())
 
         for x in xrange(0,len(xmlNode.childNodes)):
             xmlChild = xmlNode.childNodes[x]
@@ -40,6 +43,7 @@ class Node(object):
                 childNode = self.loadNodeTree(xmlChild, depth + 1)
                 childNode.parent = treeNode
                 treeNode.str += childNode.str
+                treeNode.tags.extend(childNode.tags)
                 treeNode.length += childNode.length
                 treeNode.height += max(childNode.height, treeNode.height)
                 treeNode.childNodes.append(childNode)

@@ -53,7 +53,7 @@ class Table(Base):
         return (tr,td)
 
 
-    def _mark2(self, dom, marker):
+    def _mark2(self, dom, marker, postProcess=False):
 
         tables = dom.getElementsByTagName('table')
         tree = Node().loadNodeTree(dom,0)
@@ -66,7 +66,7 @@ class Table(Base):
 
         for table in itables:
             #self.dfs(table)
-            table.result = self.match(table,0,0.3,3)
+            table.result = self.match(table,0,0.5,0,printtag=False,tags=True)
             print table.result
 
             d = {}
@@ -79,16 +79,39 @@ class Table(Base):
             for i in d:
                 c += d[i]
 
-            if c >= 2:
-                (tr,td) = self.count_tr_td(table)
-                if tr > 0 and td/float(tr) > 1:
-                    print 'mark', td/float(tr)
+            if postProcess:
+                if c >= 2:
+                    (tr,td) = self.count_tr_td(table)
+                    if tr > 0 and td/float(tr) > 1:
+                        print 'mark', td/float(tr)
+                        marker.mark(table.dom,'table')
+            else:
+                if c >= 2:
                     marker.mark(table.dom,'table')
+
+
+    def _mark(self, dom, marker, post=False):
+        tables = dom.getElementsByTagName('table')
+        tree = Node().loadNodeTree(dom,0)
+
+        itables = []
+        self.tDfs(tree,itables)
+
+        print 'tables',  len(tables)
+        print 'itables', len(itables)
+
+        for table in itables:
+            (tr,td) = self.count_tr_td(table)
+            if tr > 0 and td/float(tr) > 1:
+                print 'mark', td/float(tr)
+                marker.mark(table.dom,'table')
+
 
     def process(self, dom, marker):
 
         self._comp = 0
-        self._mark2(dom, marker)
+#        self._mark2(dom, marker, True)
+        self._mark(dom,marker)
         result = marker.process()
 
         if not result:
