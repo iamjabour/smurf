@@ -1,0 +1,10 @@
+{
+"name": "comercioeletronico",
+"prooftype": "CeProof",
+"corpus": 
+[
+	{"name":"bestbuy", "path":"bestbuy", "proof":"bestbuy/proof", "type':"files"},
+	{"name":"submarino", "path":"submarino", "proof":"submarino/proof", "type":"files"}
+]
+}
+
