@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-import urllib
 from eri.utils.parsedom import ParseDom
 from eri.tablesproof import TablesProof
 import os
+from eri.utils.dynamicimport import dimport
 
 class Doc:
     """
@@ -74,14 +74,113 @@ class Corpus:
             d.content = self.parser.parse(d.path)
             return d
 
-    def __loadCorpus(self, path):
-        if not os.path.exists(os.path.join(path,'description.inf')):
-            self.parser = ParseDom()
-            self.proof = TablesProof()
-            # or exception "This corpus don't have a description"
-        else:
-            pass
+    def __loadcnf(self, path):
+        import json
+        cnf = None
 
+        cnfString = open(path).read()
+
+        cnfString = cnfString.replace("'", '"').replace('\n', '').replace('\t', '')
+        cnf = None
+        try:
+            cnf = json.loads(cnfString)
+
+        except ValueError:
+            print 'Error: O arquivo description.cnf do corpus informado nao atende as especificacoes'
+            return False
+
+        if not 'name' in cnf:
+            print 'Error: description.cnf sem atributo name'
+            return False
+
+        if not 'prooftype' in cnf:
+            print 'Error: description.cnf sem atributo prooftype'
+            return False
+
+        if not 'corpus' in cnf:
+            print 'Error: description.cnf sem atributo corpus'
+            return False
+
+        if len(cnf['corpus']) < 1:
+            print 'Error: description.cnf  nao tem nenhum corpus descrito'
+            return False
+
+        return cnf
+
+    def __parser(self, name=False):
+        if name:
+            return dimport('eri', name)
+        else:
+            return ParseDom()
+
+    def __proof(self, name=False):
+        """
+        Create a proof instance and value with the needed proof
+
+        @param conf: Dictionary with key metric
+        @param eri: name of projet (default 'eri')
+        """
+        if name:
+            return  dimport('eri', name)
+        else:
+            return TablesProof()
+
+    def __loadCorpus(self, path):
+        if not os.path.exists(os.path.join(path,'description.cnf')):
+            self.parser = self.__parser()
+            self.proof = self.__proof()
+            # or exception "This corpus don't have a description"
+            self.__defaultload(path)
+        else:
+            cnf = self.__loadcnf(os.path.join(path,'description.cnf'))
+            if cnf:
+                self.__load(path, cnf)
+            else:
+                print 'Error: Problema com a descricao do corpus'
+                return None
+
+    def __load(self, path, cnf):
+            #print cnf['prooftype']
+            if 'prooftype' in cnf:
+                self.proof = self.__proof(cnf['prooftype'])
+                #print self.proof
+
+            if 'parsertype' in cnf:
+                self.parser = self.__parser(cnf['parsertype'])
+                #print self.parser
+            else:
+                self.parser = self.__parser()
+
+            for corpus in cnf['corpus']:
+                #print corpus
+
+                corpuspath = os.path.join(path, corpus['path'])
+                proofpath = os.path.join(path, corpus['proof'])
+
+                type = None
+
+                if corpus['type'] == 'files' or corpus['type'] == 'file':
+                    type = 'files'
+                else:
+                    pass
+                    #print 'none'
+
+                if type == 'files':
+                    #print '\n\nload', corpuspath
+                    for file in os.listdir(proofpath):
+                        if file.lower()[-4:] == 'html' or file.lower()[-3:] == 'htm':
+                            docpath = os.path.join(proofpath,file)
+                            if os.path.exists(docpath):
+                                #print 'add', docpath
+                                self.documents.append(docpath)
+                            else:
+                                print "Doc don't exist:", docpath
+                else:
+                    print 'type error'
+
+
+
+    def __defaultload(self, path):
         for file in os.listdir(path):
             if file.lower()[-4:] == 'html' or file.lower()[-3:] == 'htm':
                 docpath = os.path.join(self.path,file)

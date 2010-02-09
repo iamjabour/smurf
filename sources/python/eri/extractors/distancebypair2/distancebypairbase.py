@@ -1,7 +1,7 @@
 # -*- coding: latin-1 -*-
 import sys
 from eri.utils.distances import stringDistance
-from eri.extractors.distancebypair.node import Node
+from eri.extractors.distancebypair2.node import Node
 
 class DistanceByPairBase(object):
     """
@@ -40,7 +40,7 @@ class DistanceByPairBase(object):
                 print 'str:', s1, s2
 
             if len(s1) <= (len(s2) * (1.0+maxDist)) and\
-              len(s2) <= (len(s1) * (1.0 +maxDist)):
+              len(s2) <= (len(s1) * (1.0+maxDist)):
                 if float(stringDistance(s1,s2))/max(len(s1), len(s2)) > maxDist :
                     if tags:
                         s1 = c.tags

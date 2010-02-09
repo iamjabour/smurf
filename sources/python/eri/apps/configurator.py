@@ -1,5 +1,4 @@
-import sys
-from eri.utils.dynamicimport import *
+from eri.utils.dynamicimport import dimport
 
 class Configurator(object):
     """
@@ -38,20 +37,6 @@ class Configurator(object):
         else:
             raise SystemExit, "Dont found metric in config file"
 
-    def _create_proof(self, conf, eri):
-        """
-        Create a proof instance and value with the needed proof
-
-        @param conf: Dictionary with key metric
-        @param eri: name of projet (default 'eri')
-        """
-        if 'proof' in conf:
-            proof = dimport(eri, conf['proof'])
-            return proof
-        else:
-#            raise SystemExit, "Dont found proof in config file"
-            return None
-
     def _create_marker(self, conf, eri):
         """
         Create a marker instace
@@ -73,15 +58,8 @@ class Configurator(object):
         """
         eri = "eri"
         self.objects['marker'] = self._create_marker(conf, eri)
-        self.objects['proof'] = self._create_proof(conf, eri)
         self.objects['metric'] = self._create_metric(conf, eri)
         self.objects['metric'].setMarkers(self.objects['marker'])
-
-    def proof(self):
-        """
-        return an instance of proof
-        """
-        return self.objects['proof']
 
     def metric(self):
         """

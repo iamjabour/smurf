@@ -7,27 +7,43 @@ import os
 
 class Benchmark:
     def __init__(self, corpusPath, configFile=None, extractors=[], limit=int(2**31-1), output=None, pfilenames=False):
+
         if not configFile:
+            # verifica se existe o arquivo de configuracao padrao e o carrega
             if os.path.exists('config_example.cnf'):
                 config = Configurator('config_example.cnf')
             else:
                 config = Configurator('apps/config_example.cnf')
         else:
+            # carrega o arquivo de configuracao fornecido
             config = Configurator(configFile)
 
         if output == None:
+            # imprime todas as informacoes na saida padrao
             output = sys.stdout
 
         if not limit:
-            limit = int(2**31-1)
-        self.pfilenames = pfilenames
-        self.output = output
-        self.metric = config.metric()
-        self.marker = self.metric.marker()
-        self.corpus = Corpus(corpusPath)
-        self.extractors = extractors
-        self.limit = limit
+            limit = int(2**31-1) # roda em todo o corpus
 
+        # somente imprimir o id do arquivo com seu path caso True
+        self.pfilenames = pfilenames
+
+        self.output = output # saida padrao onde sera impresso os benchmark
+
+        self.metric = config.metric() # metrica que sera utilizada
+
+        self.marker = self.metric.marker() # marcador que sera utilizado
+
+        self.corpus = Corpus(corpusPath) # carrega o corpus a partir do path
+
+        if self.corpus == None:
+            return None
+
+        self.extractors = extractors # extratores que serao utilziados
+
+        self.limit = limit # configura o limite para o que foi escolhido
+
+        # inicializa uma lista vazia onde serao guardados os resultados
         self.benchmark = []
 
     def process(self):
@@ -99,7 +115,10 @@ class Benchmark:
                     precision = 1
 
                 recall = result[k][0]/float(result[k][1])
-                f = (2*recall*precision)/(recall+precision)
+                if (recall+precision) > 0:
+                    f = (2*recall*precision)/(recall+precision)
+                else:
+                    f = 0.0
                 r.update({k: [recall, precision, f]})
             else:
                 recall = 1
