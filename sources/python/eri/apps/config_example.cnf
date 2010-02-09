@@ -1,7 +1,7 @@
 # Geral Configs #
 # Corpus Configs #
 ## CorpusPath ##
-corpusPath: /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html
+#corpusPath: /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html
 
 # Metric #
 metric: MetricBase
