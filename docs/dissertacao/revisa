@@ -1,0 +1,4 @@
+#!/bin/sh
+
+aspell -d pt_BR --encoding utf-8 check $1
+
