@@ -42,7 +42,11 @@ do
 	elif [ $corpus == "bestbuy" ]
 	then
 		f=${line#*?id=}
+	elif [ $corpus == "mysimon" ]
+	then
+		f=${line#*compare-prices/}
 	fi
+
 
 	file=${f/\//.}
 
