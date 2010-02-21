@@ -1,0 +1,13 @@
+--2010-02-21 16:20:36--  http://www.mysimon.com/compare-prices/nursing-and-feeding/my-brest-friend
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.my-brest-friend.html'
+
+     0K .......... .......... .......... .......... .......... 53.7K
+    50K .......... .......... .......... .......... .......... 89.2K
+   100K .......... .......... .......... .......               95.3K=1.9s
+
+2010-02-21 16:20:39 (72.9 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.my-brest-friend.html' saved [140441]
+

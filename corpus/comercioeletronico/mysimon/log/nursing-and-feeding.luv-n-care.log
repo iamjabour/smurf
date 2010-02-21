@@ -1,0 +1,14 @@
+--2010-02-21 16:16:34--  http://www.mysimon.com/compare-prices/nursing-and-feeding/luv-n-care
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.luv-n-care.html'
+
+     0K .......... .......... .......... .......... .......... 35.3K
+    50K .......... .......... .......... .......... .......... 60.2K
+   100K .......... .......... .......... .......... .......... 83.2K
+   150K .......... ...                                         75.7K=3.0s
+
+2010-02-21 16:16:39 (54.1 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.luv-n-care.html' saved [167289]
+

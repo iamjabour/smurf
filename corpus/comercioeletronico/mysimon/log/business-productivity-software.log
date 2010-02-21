@@ -1,0 +1,13 @@
+--2010-02-21 16:13:39--  http://www.mysimon.com/compare-prices/business-productivity-software
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 107322 (105K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/business-productivity-software.html'
+
+     0K .......... .......... .......... .......... .......... 47% 62.2K 1s
+    50K .......... .......... .......... .......... .......... 95%  133K 0s
+   100K ....                                                  100%  977K=1.2s
+
+2010-02-21 16:13:41 (88.5 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/business-productivity-software.html' saved [107322/107322]
+

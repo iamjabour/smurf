@@ -1,0 +1,13 @@
+--2010-02-21 16:13:48--  http://www.mysimon.com/compare-prices/printers-and-accessories
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/printers-and-accessories.html'
+
+     0K .......... .......... .......... .......... .......... 46.8K
+    50K .......... .......... .......... .......... .......... 58.7K
+   100K ..........                                              778K=1.9s
+
+2010-02-21 16:13:51 (57.3 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/printers-and-accessories.html' saved [113592]
+

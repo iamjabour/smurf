@@ -1,0 +1,12 @@
+--2010-02-21 16:12:45--  http://www.mysimon.com/compare-prices/nintendo-wii
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 78587 (77K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nintendo-wii.html'
+
+     0K .......... .......... .......... .......... .......... 65%  119K 0s
+    50K .......... .......... ......                          100%  140K=0.6s
+
+2010-02-21 16:12:46 (125 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nintendo-wii.html' saved [78587/78587]
+

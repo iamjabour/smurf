@@ -1,0 +1,13 @@
+--2010-02-21 16:21:23--  http://www.mysimon.com/compare-prices/nursing-and-feeding/under-the-nile
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 121817 (119K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.under-the-nile.html'
+
+     0K .......... .......... .......... .......... .......... 42% 54.1K 1s
+    50K .......... .......... .......... .......... .......... 84% 61.3K 0s
+   100K .......... ........                                   100% 52.8K=2.1s
+
+2010-02-21 16:21:26 (56.7 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.under-the-nile.html' saved [121817/121817]
+

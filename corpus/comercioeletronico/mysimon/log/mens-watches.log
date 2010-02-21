@@ -1,0 +1,14 @@
+--2010-02-21 16:13:21--  http://www.mysimon.com/compare-prices/mens-watches
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 185294 (181K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/mens-watches.html'
+
+     0K .......... .......... .......... .......... .......... 27% 62.6K 2s
+    50K .......... .......... .......... .......... .......... 55%  127K 1s
+   100K .......... .......... .......... .......... .......... 82%  228K 0s
+   150K .......... .......... ..........                      100%  163K=1.6s
+
+2010-02-21 16:13:25 (113 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/mens-watches.html' saved [185294/185294]
+

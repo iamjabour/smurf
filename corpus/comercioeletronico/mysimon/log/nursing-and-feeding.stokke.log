@@ -1,0 +1,13 @@
+--2010-02-21 16:19:54--  http://www.mysimon.com/compare-prices/nursing-and-feeding/stokke
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 152751 (149K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.stokke.html'
+
+     0K .......... .......... .......... .......... .......... 33% 55.4K 2s
+    50K .......... .......... .......... .......... .......... 67% 91.8K 1s
+   100K .......... .......... .......... .......... ......... 100%  125K=1.8s
+
+2010-02-21 16:19:57 (81.0 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.stokke.html' saved [152751/152751]
+

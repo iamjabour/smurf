@@ -1,0 +1,14 @@
+--2010-02-21 16:14:21--  http://www.mysimon.com/compare-prices/bath-and-body
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/bath-and-body.html'
+
+     0K .......... .......... .......... .......... .......... 35.8K
+    50K .......... .......... .......... .......... .......... 62.0K
+   100K .......... .......... .......... .......... .......... 62.2K
+   150K .......... ........                                    95.0K=3.2s
+
+2010-02-21 16:14:26 (52.7 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/bath-and-body.html' saved [173037]
+

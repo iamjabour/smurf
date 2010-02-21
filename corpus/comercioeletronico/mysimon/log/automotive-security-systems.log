@@ -1,0 +1,14 @@
+--2010-02-21 16:14:49--  http://www.mysimon.com/compare-prices/automotive-security-systems
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 194226 (190K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/automotive-security-systems.html'
+
+     0K .......... .......... .......... .......... .......... 26% 67.1K 2s
+    50K .......... .......... .......... .......... .......... 52%  217K 1s
+   100K .......... .......... .......... .......... .......... 79%  157K 0s
+   150K .......... .......... .......... .........            100%  217K=1.5s
+
+2010-02-21 16:14:52 (128 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/automotive-security-systems.html' saved [194226/194226]
+

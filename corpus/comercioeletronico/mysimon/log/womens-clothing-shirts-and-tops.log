@@ -1,0 +1,14 @@
+--2010-02-21 16:10:37--  http://www.mysimon.com/compare-prices/womens-clothing-shirts-and-tops
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 197391 (193K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/womens-clothing-shirts-and-tops.html'
+
+     0K .......... .......... .......... .......... .......... 25% 48.3K 3s
+    50K .......... .......... .......... .......... .......... 51% 81.5K 2s
+   100K .......... .......... .......... .......... .......... 77%  112K 1s
+   150K .......... .......... .......... .......... ..        100%  113K=2.5s
+
+2010-02-21 16:10:41 (77.9 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/womens-clothing-shirts-and-tops.html' saved [197391/197391]
+

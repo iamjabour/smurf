@@ -1,0 +1,14 @@
+--2010-02-21 16:15:11--  http://www.mysimon.com/compare-prices/car-seats
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 172947 (169K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/car-seats.html'
+
+     0K .......... .......... .......... .......... .......... 29% 33.6K 4s
+    50K .......... .......... .......... .......... .......... 59% 66.1K 2s
+   100K .......... .......... .......... .......... .......... 88% 67.9K 0s
+   150K .......... ........                                   100%  100K=3.2s
+
+2010-02-21 16:15:17 (53.3 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/car-seats.html' saved [172947/172947]
+

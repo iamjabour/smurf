@@ -1,0 +1,14 @@
+--2010-02-21 16:12:38--  http://www.mysimon.com/compare-prices/stuffed-animals-and-puppets
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/stuffed-animals-and-puppets.html'
+
+     0K .......... .......... .......... .......... .......... 62.3K
+    50K .......... .......... .......... .......... ..........  226K
+   100K .......... .......... .......... .......... ..........  233K
+   150K .......... .......... ..                                130K=1.4s
+
+2010-02-21 16:12:42 (122 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/stuffed-animals-and-puppets.html' saved [176478]
+

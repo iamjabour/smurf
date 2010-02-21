@@ -1,0 +1,14 @@
+--2010-02-21 16:14:15--  http://www.mysimon.com/compare-prices/cosmetics-face-makeup
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 177873 (174K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/cosmetics-face-makeup.html'
+
+     0K .......... .......... .......... .......... .......... 28% 66.6K 2s
+    50K .......... .......... .......... .......... .......... 57%  246K 1s
+   100K .......... .......... .......... .......... .......... 86%  256K 0s
+   150K .......... .......... ...                             100%  152K=1.3s
+
+2010-02-21 16:14:18 (133 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/cosmetics-face-makeup.html' saved [177873/177873]
+

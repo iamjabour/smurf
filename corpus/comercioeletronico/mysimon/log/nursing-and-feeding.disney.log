@@ -1,0 +1,14 @@
+--2010-02-21 16:16:46--  http://www.mysimon.com/compare-prices/nursing-and-feeding/disney
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 182170 (178K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.disney.html'
+
+     0K .......... .......... .......... .......... .......... 28% 57.9K 2s
+    50K .......... .......... .......... .......... .......... 56%  118K 1s
+   100K .......... .......... .......... .......... .......... 84%  220K 0s
+   150K .......... .......... .......                         100%  845K=1.5s
+
+2010-02-21 16:16:49 (115 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.disney.html' saved [182170/182170]
+

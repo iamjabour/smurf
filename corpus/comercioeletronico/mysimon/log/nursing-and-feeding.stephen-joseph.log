@@ -1,0 +1,14 @@
+--2010-02-21 16:18:19--  http://www.mysimon.com/compare-prices/nursing-and-feeding/stephen-joseph
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.stephen-joseph.html'
+
+     0K .......... .......... .......... .......... .......... 38.8K
+    50K .......... .......... .......... .......... .......... 58.2K
+   100K .......... .......... .......... .......... .......... 86.6K
+   150K .......... .......... ..                               73.1K=3.0s
+
+2010-02-21 16:18:23 (56.9 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.stephen-joseph.html' saved [176429]
+

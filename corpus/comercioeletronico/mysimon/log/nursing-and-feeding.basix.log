@@ -1,0 +1,14 @@
+--2010-02-21 16:20:52--  http://www.mysimon.com/compare-prices/nursing-and-feeding/basix
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 165215 (161K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.basix.html'
+
+     0K .......... .......... .......... .......... .......... 30% 51.8K 2s
+    50K .......... .......... .......... .......... .......... 61% 85.8K 1s
+   100K .......... .......... .......... .......... .......... 92%  123K 0s
+   150K .......... .                                          100% 63.1K=2.1s
+
+2010-02-21 16:20:55 (75.6 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.basix.html' saved [165215/165215]
+

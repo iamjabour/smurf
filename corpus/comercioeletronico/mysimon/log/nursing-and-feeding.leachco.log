@@ -1,0 +1,14 @@
+--2010-02-21 16:18:50--  http://www.mysimon.com/compare-prices/nursing-and-feeding/leachco
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.leachco.html'
+
+     0K .......... .......... .......... .......... .......... 39.6K
+    50K .......... .......... .......... .......... .......... 67.7K
+   100K .......... .......... .......... .......... .......... 69.6K
+   150K .......... ....                                         158K=2.8s
+
+2010-02-21 16:18:54 (58.5 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.leachco.html' saved [168147]
+

@@ -1,0 +1,13 @@
+--2010-02-21 16:13:44--  http://www.mysimon.com/compare-prices/computer-monitors
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 105768 (103K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/computer-monitors.html'
+
+     0K .......... .......... .......... .......... .......... 48% 61.9K 1s
+    50K .......... .......... .......... .......... .......... 96%  234K 0s
+   100K ...                                                   100% 1.09M=1.0s
+
+2010-02-21 16:13:46 (101 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/computer-monitors.html' saved [105768/105768]
+

@@ -1,0 +1,14 @@
+--2010-02-21 16:16:22--  http://www.mysimon.com/compare-prices/nursing-and-feeding/high-chairs
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.high-chairs.html'
+
+     0K .......... .......... .......... .......... .......... 56.1K
+    50K .......... .......... .......... .......... ..........  102K
+   100K .......... .......... .......... .......... ..........  110K
+   150K .......... .                                            102K=2.0s
+
+2010-02-21 16:16:26 (82.9 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.high-chairs.html' saved [165737]
+

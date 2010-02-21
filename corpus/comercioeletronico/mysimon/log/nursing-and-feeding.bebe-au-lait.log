@@ -1,0 +1,14 @@
+--2010-02-21 16:18:32--  http://www.mysimon.com/compare-prices/nursing-and-feeding/bebe-au-lait
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 165702 (162K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.bebe-au-lait.html'
+
+     0K .......... .......... .......... .......... .......... 30% 68.7K 2s
+    50K .......... .......... .......... .......... .......... 61% 90.3K 1s
+   100K .......... .......... .......... .......... .......... 92%  101K 0s
+   150K .......... .                                          100%  180K=1.8s
+
+2010-02-21 16:18:36 (87.9 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.bebe-au-lait.html' saved [165702/165702]
+

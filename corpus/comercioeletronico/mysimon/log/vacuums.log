@@ -1,0 +1,14 @@
+--2010-02-21 16:11:42--  http://www.mysimon.com/compare-prices/vacuums
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 181745 (177K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/vacuums.html'
+
+     0K .......... .......... .......... .......... .......... 28% 51.5K 2s
+    50K .......... .......... .......... .......... .......... 56%  105K 1s
+   100K .......... .......... .......... .......... .......... 84% 88.6K 0s
+   150K .......... .......... .......                         100%  138K=2.2s
+
+2010-02-21 16:11:46 (80.3 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/vacuums.html' saved [181745/181745]
+

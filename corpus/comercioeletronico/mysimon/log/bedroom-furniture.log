@@ -1,0 +1,14 @@
+--2010-02-21 16:11:21--  http://www.mysimon.com/compare-prices/bedroom-furniture
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 190580 (186K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/bedroom-furniture.html'
+
+     0K .......... .......... .......... .......... .......... 26% 54.6K 2s
+    50K .......... .......... .......... .......... .......... 53% 91.2K 1s
+   100K .......... .......... .......... .......... .......... 80%  129K 0s
+   150K .......... .......... .......... ......               100%  101K=2.2s
+
+2010-02-21 16:11:25 (84.3 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/bedroom-furniture.html' saved [190580/190580]
+

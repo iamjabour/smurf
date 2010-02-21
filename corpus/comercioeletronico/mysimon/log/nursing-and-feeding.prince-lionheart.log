@@ -1,0 +1,14 @@
+--2010-02-21 16:17:18--  http://www.mysimon.com/compare-prices/nursing-and-feeding/prince-lionheart
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 174032 (170K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.prince-lionheart.html'
+
+     0K .......... .......... .......... .......... .......... 29% 69.0K 2s
+    50K .......... .......... .......... .......... .......... 58%  255K 1s
+   100K .......... .......... .......... .......... .......... 88%  294K 0s
+   150K .......... .........                                  100%  852K=1.1s
+
+2010-02-21 16:17:20 (153 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.prince-lionheart.html' saved [174032/174032]
+

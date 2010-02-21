@@ -1,0 +1,14 @@
+--2010-02-21 16:18:38--  http://www.mysimon.com/compare-prices/nursing-and-feeding/babe-ease
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 174867 (171K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.babe-ease.html'
+
+     0K .......... .......... .......... .......... .......... 29% 67.2K 2s
+    50K .......... .......... .......... .......... .......... 58%  240K 1s
+   100K .......... .......... .......... .......... .......... 87%  262K 0s
+   150K .......... ..........                                 100%  140K=1.3s
+
+2010-02-21 16:18:41 (132 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.babe-ease.html' saved [174867/174867]
+

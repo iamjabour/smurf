@@ -1,0 +1,14 @@
+--2010-02-21 16:17:48--  http://www.mysimon.com/compare-prices/nursing-and-feeding/graco
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 165418 (162K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.graco.html'
+
+     0K .......... .......... .......... .......... .......... 30% 69.3K 2s
+    50K .......... .......... .......... .......... .......... 61%  152K 1s
+   100K .......... .......... .......... .......... .......... 92%  267K 0s
+   150K .......... .                                          100%  871K=1.3s
+
+2010-02-21 16:17:51 (129 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.graco.html' saved [165418/165418]
+

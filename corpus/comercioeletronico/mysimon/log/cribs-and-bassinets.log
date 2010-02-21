@@ -1,0 +1,14 @@
+--2010-02-21 16:15:28--  http://www.mysimon.com/compare-prices/cribs-and-bassinets
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 175560 (171K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/cribs-and-bassinets.html'
+
+     0K .......... .......... .......... .......... .......... 29% 55.1K 2s
+    50K .......... .......... .......... .......... .......... 58% 91.3K 1s
+   100K .......... .......... .......... .......... .......... 87% 92.0K 0s
+   150K .......... .......... .                               100%  120K=2.2s
+
+2010-02-21 16:15:32 (78.8 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/cribs-and-bassinets.html' saved [175560/175560]
+

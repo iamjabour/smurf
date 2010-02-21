@@ -1,0 +1,12 @@
+--2010-02-21 16:21:46--  http://www.mysimon.com/compare-prices/nursing-and-feeding/baby-smart
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 71507 (70K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.baby-smart.html'
+
+     0K .......... .......... .......... .......... .......... 71% 41.0K 0s
+    50K .......... .........                                  100%  107K=1.4s
+
+2010-02-21 16:21:49 (49.7 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.baby-smart.html' saved [71507/71507]
+

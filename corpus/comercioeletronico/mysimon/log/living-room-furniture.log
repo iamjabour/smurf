@@ -1,0 +1,14 @@
+--2010-02-21 16:11:12--  http://www.mysimon.com/compare-prices/living-room-furniture
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 191572 (187K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/living-room-furniture.html'
+
+     0K .......... .......... .......... .......... .......... 26% 51.3K 3s
+    50K .......... .......... .......... .......... .......... 53% 72.2K 1s
+   100K .......... .......... .......... .......... .......... 80% 90.7K 1s
+   150K .......... .......... .......... .......              100%  101K=2.6s
+
+2010-02-21 16:11:16 (72.4 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/living-room-furniture.html' saved [191572/191572]
+

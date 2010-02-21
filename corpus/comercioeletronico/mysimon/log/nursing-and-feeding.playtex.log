@@ -1,0 +1,14 @@
+--2010-02-21 16:15:46--  http://www.mysimon.com/compare-prices/nursing-and-feeding/playtex
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 166445 (163K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.playtex.html'
+
+     0K .......... .......... .......... .......... .......... 30% 68.9K 2s
+    50K .......... .......... .......... .......... .......... 61%  263K 1s
+   100K .......... .......... .......... .......... .......... 92%  291K 0s
+   150K .......... ..                                         100%  865K=1.1s
+
+2010-02-21 16:15:49 (147 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.playtex.html' saved [166445/166445]
+

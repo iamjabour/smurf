@@ -1,0 +1,14 @@
+--2010-02-21 16:19:42--  http://www.mysimon.com/compare-prices/nursing-and-feeding/mullins-square
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.mullins-square.html'
+
+     0K .......... .......... .......... .......... .......... 59.5K
+    50K .......... .......... .......... .......... ..........  125K
+   100K .......... .......... .......... .......... ..........  223K
+   150K .......... .....                                        222K=1.5s
+
+2010-02-21 16:19:45 (108 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.mullins-square.html' saved [169598]
+

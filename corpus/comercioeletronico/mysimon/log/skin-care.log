@@ -1,0 +1,14 @@
+--2010-02-21 16:13:53--  http://www.mysimon.com/compare-prices/skin-care
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 173096 (169K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/skin-care.html'
+
+     0K .......... .......... .......... .......... .......... 29% 58.5K 2s
+    50K .......... .......... .......... .......... .......... 59%  121K 1s
+   100K .......... .......... .......... .......... .......... 88%  226K 0s
+   150K .......... .........                                  100%  868K=1.5s
+
+2010-02-21 16:13:57 (112 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/skin-care.html' saved [173096/173096]
+

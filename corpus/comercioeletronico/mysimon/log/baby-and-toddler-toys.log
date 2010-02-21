@@ -1,0 +1,14 @@
+--2010-02-21 16:12:23--  http://www.mysimon.com/compare-prices/baby-and-toddler-toys
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/baby-and-toddler-toys.html'
+
+     0K .......... .......... .......... .......... .......... 61.1K
+    50K .......... .......... .......... .......... ..........  227K
+   100K .......... .......... .......... .......... ..........  230K
+   150K .......... ........                                     109K=1.4s
+
+2010-02-21 16:12:27 (118 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/baby-and-toddler-toys.html' saved [172687]
+

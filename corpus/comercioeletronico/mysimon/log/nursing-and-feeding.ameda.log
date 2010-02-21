@@ -1,0 +1,13 @@
+--2010-02-21 16:16:17--  http://www.mysimon.com/compare-prices/nursing-and-feeding/ameda
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 151803 (148K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.ameda.html'
+
+     0K .......... .......... .......... .......... .......... 33% 63.6K 2s
+    50K .......... .......... .......... .......... .......... 67%  229K 0s
+   100K .......... .......... .......... .......... ........  100%  263K=1.2s
+
+2010-02-21 16:16:20 (125 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.ameda.html' saved [151803/151803]
+

@@ -1,0 +1,13 @@
+--2010-02-21 16:16:41--  http://www.mysimon.com/compare-prices/nursing-and-feeding/mam-babyartikel
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.mam-babyartikel.html'
+
+     0K .......... .......... .......... .......... .......... 66.9K
+    50K .......... .......... .......... .......... ..........  133K
+   100K .......... .......... .......... .......... .........   139K=1.5s
+
+2010-02-21 16:16:44 (101 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.mam-babyartikel.html' saved [152986]
+

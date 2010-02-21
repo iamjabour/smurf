@@ -1,0 +1,14 @@
+--2010-02-21 16:16:04--  http://www.mysimon.com/compare-prices/nursing-and-feeding/dr-brown
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 170754 (167K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.dr-brown.html'
+
+     0K .......... .......... .......... .......... .......... 29% 37.6K 3s
+    50K .......... .......... .......... .......... .......... 59% 65.4K 1s
+   100K .......... .......... .......... .......... .......... 89% 66.7K 0s
+   150K .......... ......                                     100% 90.0K=3.0s
+
+2010-02-21 16:16:08 (55.0 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.dr-brown.html' saved [170754/170754]
+

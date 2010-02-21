@@ -1,0 +1,12 @@
+--2010-02-21 16:12:48--  http://www.mysimon.com/compare-prices/microsoft-xbox-360
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 79821 (78K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/microsoft-xbox-360.html'
+
+     0K .......... .......... .......... .......... .......... 64% 49.3K 1s
+    50K .......... .......... .......                         100% 68.9K=1.4s
+
+2010-02-21 16:12:51 (54.9 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/microsoft-xbox-360.html' saved [79821/79821]
+

@@ -1,0 +1,14 @@
+--2010-02-21 16:10:55--  http://www.mysimon.com/compare-prices/mens-clothing-pants
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/mens-clothing-pants.html'
+
+     0K .......... .......... .......... .......... .......... 48.9K
+    50K .......... .......... .......... .......... .......... 67.8K
+   100K .......... .......... .......... .......... .......... 75.5K
+   150K .......... .......... .......... ..........            82.7K=2.9s
+
+2010-02-21 16:11:00 (65.5 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/mens-clothing-pants.html' saved [195278]
+

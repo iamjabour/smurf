@@ -1,0 +1,14 @@
+--2010-02-21 16:15:21--  http://www.mysimon.com/compare-prices/baby-care-baby-activity
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 169932 (166K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/baby-care-baby-activity.html'
+
+     0K .......... .......... .......... .......... .......... 30% 47.0K 2s
+    50K .......... .......... .......... .......... .......... 60% 70.0K 1s
+   100K .......... .......... .......... .......... .......... 90% 91.4K 0s
+   150K .......... .....                                      100% 90.8K=2.5s
+
+2010-02-21 16:15:25 (66.4 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/baby-care-baby-activity.html' saved [169932/169932]
+

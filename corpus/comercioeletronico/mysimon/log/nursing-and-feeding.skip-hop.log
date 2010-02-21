@@ -1,0 +1,14 @@
+--2010-02-21 16:19:35--  http://www.mysimon.com/compare-prices/nursing-and-feeding/skip-hop
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 173138 (169K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.skip-hop.html'
+
+     0K .......... .......... .......... .......... .......... 29% 46.9K 3s
+    50K .......... .......... .......... .......... .......... 59% 70.2K 1s
+   100K .......... .......... .......... .......... .......... 88% 71.3K 0s
+   150K .......... .........                                  100%  106K=2.7s
+
+2010-02-21 16:19:40 (63.6 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.skip-hop.html' saved [173138/173138]
+

@@ -1,0 +1,14 @@
+--2010-02-21 16:19:28--  http://www.mysimon.com/compare-prices/nursing-and-feeding/gap
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.gap.html'
+
+     0K .......... .......... .......... .......... .......... 66.5K
+    50K .......... .......... .......... .......... .......... 93.3K
+   100K .......... .......... .......... .......... .......... 95.0K
+   150K .......... ......                                      97.7K=2.0s
+
+2010-02-21 16:19:31 (84.0 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.gap.html' saved [170938]
+

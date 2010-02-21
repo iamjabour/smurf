@@ -1,0 +1,14 @@
+--2010-02-21 16:12:31--  http://www.mysimon.com/compare-prices/action-figures
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 166592 (163K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/action-figures.html'
+
+     0K .......... .......... .......... .......... .......... 30% 42.3K 3s
+    50K .......... .......... .......... .......... .......... 61% 84.1K 1s
+   100K .......... .......... .......... .......... .......... 92% 86.4K 0s
+   150K .......... ..                                         100% 67.8K=2.5s
+
+2010-02-21 16:12:35 (64.0 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/action-figures.html' saved [166592/166592]
+

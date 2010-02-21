@@ -1,0 +1,12 @@
+--2010-02-21 16:21:42--  http://www.mysimon.com/compare-prices/nursing-and-feeding/lullaby
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.lullaby.html'
+
+     0K .......... .......... .......... .......... .......... 65.4K
+    50K .......... .......... .......... .......... ....        212K=1.0s
+
+2010-02-21 16:21:44 (96.8 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.lullaby.html' saved [96428]
+

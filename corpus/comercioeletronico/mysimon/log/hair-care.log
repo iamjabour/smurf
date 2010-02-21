@@ -1,0 +1,14 @@
+--2010-02-21 16:13:59--  http://www.mysimon.com/compare-prices/hair-care
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 176965 (173K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/hair-care.html'
+
+     0K .......... .......... .......... .......... .......... 28% 50.6K 2s
+    50K .......... .......... .......... .......... .......... 57% 63.7K 1s
+   100K .......... .......... .......... .......... .......... 86% 74.6K 0s
+   150K .......... .......... ..                              100% 79.6K=2.7s
+
+2010-02-21 16:14:04 (63.3 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/hair-care.html' saved [176965/176965]
+

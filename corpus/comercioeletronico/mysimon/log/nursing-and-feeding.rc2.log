@@ -1,0 +1,14 @@
+--2010-02-21 16:18:27--  http://www.mysimon.com/compare-prices/nursing-and-feeding/rc2
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 172778 (169K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.rc2.html'
+
+     0K .......... .......... .......... .......... .......... 29% 66.9K 2s
+    50K .......... .......... .......... .......... .......... 59%  257K 1s
+   100K .......... .......... .......... .......... .......... 88%  267K 0s
+   150K .......... ........                                   100%  133K=1.3s
+
+2010-02-21 16:18:30 (133 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.rc2.html' saved [172778/172778]
+

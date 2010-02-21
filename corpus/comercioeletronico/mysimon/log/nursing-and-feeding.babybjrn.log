@@ -1,0 +1,14 @@
+--2010-02-21 16:19:21--  http://www.mysimon.com/compare-prices/nursing-and-feeding/babybjrn
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 169843 (166K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.babybjrn.html'
+
+     0K .......... .......... .......... .......... .......... 30% 46.0K 3s
+    50K .......... .......... .......... .......... .......... 60% 57.6K 1s
+   100K .......... .......... .......... .......... .......... 90% 86.1K 0s
+   150K .......... .....                                      100% 89.3K=2.7s
+
+2010-02-21 16:19:25 (61.1 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.babybjrn.html' saved [169843/169843]
+

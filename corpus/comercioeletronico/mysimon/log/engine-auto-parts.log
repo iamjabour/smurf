@@ -1,0 +1,14 @@
+--2010-02-21 16:14:29--  http://www.mysimon.com/compare-prices/engine-auto-parts
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 199602 (195K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/engine-auto-parts.html'
+
+     0K .......... .......... .......... .......... .......... 25% 61.0K 2s
+    50K .......... .......... .......... .......... .......... 51%  231K 1s
+   100K .......... .......... .......... .......... .......... 76%  266K 0s
+   150K .......... .......... .......... .......... ....      100%  840K=1.3s
+
+2010-02-21 16:14:32 (153 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/engine-auto-parts.html' saved [199602/199602]
+

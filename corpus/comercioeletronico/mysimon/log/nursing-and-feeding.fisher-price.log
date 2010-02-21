@@ -1,0 +1,14 @@
+--2010-02-21 16:17:13--  http://www.mysimon.com/compare-prices/nursing-and-feeding/fisher-price
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 179790 (176K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.fisher-price.html'
+
+     0K .......... .......... .......... .......... .......... 28% 62.9K 2s
+    50K .......... .......... .......... .......... .......... 56%  238K 1s
+   100K .......... .......... .......... .......... .......... 85%  248K 0s
+   150K .......... .......... .....                           100%  858K=1.2s
+
+2010-02-21 16:17:15 (142 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.fisher-price.html' saved [179790/179790]
+

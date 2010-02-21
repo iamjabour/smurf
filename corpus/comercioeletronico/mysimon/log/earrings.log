@@ -1,0 +1,14 @@
+--2010-02-21 16:13:00--  http://www.mysimon.com/compare-prices/earrings
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 194407 (190K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/earrings.html'
+
+     0K .......... .......... .......... .......... .......... 26% 47.3K 3s
+    50K .......... .......... .......... .......... .......... 52% 79.4K 2s
+   100K .......... .......... .......... .......... .......... 79%  113K 1s
+   150K .......... .......... .......... .........            100% 98.2K=2.5s
+
+2010-02-21 16:13:05 (75.0 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/earrings.html' saved [194407/194407]
+

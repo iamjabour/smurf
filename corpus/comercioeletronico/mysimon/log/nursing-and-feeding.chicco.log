@@ -1,0 +1,14 @@
+--2010-02-21 16:20:00--  http://www.mysimon.com/compare-prices/nursing-and-feeding/chicco
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.chicco.html'
+
+     0K .......... .......... .......... .......... .......... 66.5K
+    50K .......... .......... .......... .......... ..........  244K
+   100K .......... .......... .......... .......... ..........  246K
+   150K .......... ........                                     117K=1.3s
+
+2010-02-21 16:20:03 (128 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.chicco.html' saved [172046]
+

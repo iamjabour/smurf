@@ -1,0 +1,14 @@
+--2010-02-21 16:18:02--  http://www.mysimon.com/compare-prices/nursing-and-feeding/bella
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.bella.html'
+
+     0K .......... .......... .......... .......... .......... 53.5K
+    50K .......... .......... .......... .......... .......... 88.3K
+   100K .......... .......... .......... .......... .......... 89.3K
+   150K .......                                                 947K=2.1s
+
+2010-02-21 16:18:05 (76.2 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.bella.html' saved [161492]
+

@@ -1,0 +1,14 @@
+--2010-02-21 16:14:42--  http://www.mysimon.com/compare-prices/interior-auto-parts
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 199939 (195K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/interior-auto-parts.html'
+
+     0K .......... .......... .......... .......... .......... 25% 53.9K 3s
+    50K .......... .......... .......... .......... .......... 51% 67.9K 2s
+   100K .......... .......... .......... .......... .......... 76% 90.0K 1s
+   150K .......... .......... .......... .......... .....     100%  120K=2.6s
+
+2010-02-21 16:14:47 (75.1 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/interior-auto-parts.html' saved [199939/199939]
+

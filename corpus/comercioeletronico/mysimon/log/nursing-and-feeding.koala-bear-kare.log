@@ -1,0 +1,13 @@
+--2010-02-21 16:20:59--  http://www.mysimon.com/compare-prices/nursing-and-feeding/koala-bear-kare
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.koala-bear-kare.html'
+
+     0K .......... .......... .......... .......... .......... 69.1K
+    50K .......... .......... .......... .......... .......... 95.4K
+   100K .......... .......... .......... .......... ......      129K=1.6s
+
+2010-02-21 16:21:01 (91.0 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.koala-bear-kare.html' saved [149748]
+

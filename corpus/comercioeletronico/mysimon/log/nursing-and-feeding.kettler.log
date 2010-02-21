@@ -1,0 +1,14 @@
+--2010-02-21 16:20:47--  http://www.mysimon.com/compare-prices/nursing-and-feeding/kettler
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.kettler.html'
+
+     0K .......... .......... .......... .......... .......... 65.7K
+    50K .......... .......... .......... .......... .......... 91.5K
+   100K .......... .......... .......... .......... ..........  135K
+   150K ...                                                    1.85M=1.7s
+
+2010-02-21 16:20:49 (91.2 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.kettler.html' saved [156937]
+

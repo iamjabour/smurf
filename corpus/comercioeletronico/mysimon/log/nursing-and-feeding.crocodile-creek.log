@@ -1,0 +1,13 @@
+--2010-02-21 16:21:13--  http://www.mysimon.com/compare-prices/nursing-and-feeding/crocodile-creek
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 134916 (132K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.crocodile-creek.html'
+
+     0K .......... .......... .......... .......... .......... 37% 66.1K 1s
+    50K .......... .......... .......... .......... .......... 75%  249K 0s
+   100K .......... .......... .......... .                    100%  848K=1.0s
+
+2010-02-21 16:21:16 (132 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.crocodile-creek.html' saved [134916/134916]
+

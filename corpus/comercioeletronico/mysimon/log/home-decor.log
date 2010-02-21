@@ -1,0 +1,14 @@
+--2010-02-21 16:11:29--  http://www.mysimon.com/compare-prices/home-decor
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 194917 (190K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/home-decor.html'
+
+     0K .......... .......... .......... .......... .......... 26% 67.9K 2s
+    50K .......... .......... .......... .......... .......... 52%  133K 1s
+   100K .......... .......... .......... .......... .......... 78%  139K 0s
+   150K .......... .......... .......... ..........           100%  214K=1.7s
+
+2010-02-21 16:11:32 (115 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/home-decor.html' saved [194917/194917]
+

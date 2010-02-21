@@ -1,0 +1,12 @@
+--2010-02-21 16:21:50--  http://www.mysimon.com/compare-prices/nursing-and-feeding/badger-basket
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 80339 (78K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.badger-basket.html'
+
+     0K .......... .......... .......... .......... .......... 63% 53.5K 1s
+    50K .......... .......... ........                        100% 76.6K=1.3s
+
+2010-02-21 16:21:52 (60.1 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.badger-basket.html' saved [80339/80339]
+

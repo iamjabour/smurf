@@ -1,0 +1,13 @@
+--2010-02-21 16:21:38--  http://www.mysimon.com/compare-prices/nursing-and-feeding/eddie-bauer
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 127875 (125K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.eddie-bauer.html'
+
+     0K .......... .......... .......... .......... .......... 40% 65.7K 1s
+    50K .......... .......... .......... .......... .......... 80%  247K 0s
+   100K .......... .......... ....                            100%  426K=1.0s
+
+2010-02-21 16:21:40 (122 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.eddie-bauer.html' saved [127875/127875]
+

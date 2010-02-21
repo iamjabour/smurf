@@ -1,0 +1,14 @@
+--2010-02-21 16:20:06--  http://www.mysimon.com/compare-prices/nursing-and-feeding/wela-electronic
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 162748 (159K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.wela-electronic.html'
+
+     0K .......... .......... .......... .......... .......... 31% 67.6K 2s
+    50K .......... .......... .......... .......... .......... 62%  133K 1s
+   100K .......... .......... .......... .......... .......... 94%  138K 0s
+   150K ........                                              100% 57.6K=1.6s
+
+2010-02-21 16:20:10 (97.3 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.wela-electronic.html' saved [162748/162748]
+

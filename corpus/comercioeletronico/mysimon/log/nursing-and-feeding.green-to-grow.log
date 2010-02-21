@@ -1,0 +1,14 @@
+--2010-02-21 16:16:52--  http://www.mysimon.com/compare-prices/nursing-and-feeding/green-to-grow
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 172251 (168K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.green-to-grow.html'
+
+     0K .......... .......... .......... .......... .......... 29% 65.4K 2s
+    50K .......... .......... .......... .......... .......... 59%  124K 1s
+   100K .......... .......... .......... .......... .......... 89%  137K 0s
+   150K .......... ........                                   100%  691K=1.6s
+
+2010-02-21 16:16:55 (108 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.green-to-grow.html' saved [172251/172251]
+

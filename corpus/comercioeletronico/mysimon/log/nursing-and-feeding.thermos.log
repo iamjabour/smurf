@@ -1,0 +1,14 @@
+--2010-02-21 16:17:53--  http://www.mysimon.com/compare-prices/nursing-and-feeding/thermos
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 172086 (168K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.thermos.html'
+
+     0K .......... .......... .......... .......... .......... 29% 45.2K 3s
+    50K .......... .......... .......... .......... .......... 59% 67.8K 1s
+   100K .......... .......... .......... .......... .......... 89% 69.2K 0s
+   150K .......... ........                                   100% 99.0K=2.7s
+
+2010-02-21 16:17:58 (61.2 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.thermos.html' saved [172086/172086]
+

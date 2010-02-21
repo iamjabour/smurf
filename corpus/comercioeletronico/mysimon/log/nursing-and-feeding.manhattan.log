@@ -1,0 +1,12 @@
+--2010-02-21 16:21:58--  http://www.mysimon.com/compare-prices/nursing-and-feeding/manhattan
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 67220 (66K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.manhattan.html'
+
+     0K .......... .......... .......... .......... .......... 76% 65.7K 0s
+    50K .......... .....                                      100%  882K=0.8s
+
+2010-02-21 16:21:59 (84.3 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.manhattan.html' saved [67220/67220]
+

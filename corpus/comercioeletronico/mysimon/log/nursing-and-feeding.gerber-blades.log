@@ -1,0 +1,14 @@
+--2010-02-21 16:15:56--  http://www.mysimon.com/compare-prices/nursing-and-feeding/gerber-blades
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 164559 (161K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.gerber-blades.html'
+
+     0K .......... .......... .......... .......... .......... 31% 62.9K 2s
+    50K .......... .......... .......... .......... .......... 62%  125K 1s
+   100K .......... .......... .......... .......... .......... 93%  128K 0s
+   150K ..........                                            100%  889K=1.6s
+
+2010-02-21 16:16:00 (101 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.gerber-blades.html' saved [164559/164559]
+

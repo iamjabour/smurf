@@ -1,0 +1,9 @@
+{
+"name": "comercioeletronico",
+"prooftype": "CeProof",
+"corpus": 
+[
+	{"name":"mysimon", "path":".", "proof":"proof", "type":"files"}
+]
+}
+

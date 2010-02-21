@@ -1,0 +1,14 @@
+--2010-02-21 16:18:45--  http://www.mysimon.com/compare-prices/nursing-and-feeding/summer-infant
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 170474 (166K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.summer-infant.html'
+
+     0K .......... .......... .......... .......... .......... 30% 66.2K 2s
+    50K .......... .......... .......... .......... .......... 60%  247K 1s
+   100K .......... .......... .......... .......... .......... 90%  290K 0s
+   150K .......... ......                                     100%  777K=1.2s
+
+2010-02-21 16:18:47 (145 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.summer-infant.html' saved [170474/170474]
+

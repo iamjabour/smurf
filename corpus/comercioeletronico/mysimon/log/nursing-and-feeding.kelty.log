@@ -1,0 +1,14 @@
+--2010-02-21 16:19:48--  http://www.mysimon.com/compare-prices/nursing-and-feeding/kelty
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.kelty.html'
+
+     0K .......... .......... .......... .......... .......... 69.3K
+    50K .......... .......... .......... .......... .......... 91.7K
+   100K .......... .......... .......... .......... .......... 93.3K
+   150K .......... .......... .......                           149K=2.0s
+
+2010-02-21 16:19:51 (89.3 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.kelty.html' saved [181847]
+

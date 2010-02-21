@@ -1,0 +1,13 @@
+--2010-02-21 16:10:22--  http://www.mysimon.com/compare-prices/cell-phones
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/cell-phones.html'
+
+     0K .......... .......... .......... .......... .......... 55.2K
+    50K .......... .......... .......... .......... .......... 92.1K
+   100K ..                                                     1.29M=1.5s
+
+2010-02-21 16:10:25 (70.7 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/cell-phones.html' saved [105097]
+

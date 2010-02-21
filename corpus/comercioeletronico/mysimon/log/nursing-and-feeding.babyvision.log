@@ -1,0 +1,14 @@
+--2010-02-21 16:16:29--  http://www.mysimon.com/compare-prices/nursing-and-feeding/babyvision
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.babyvision.html'
+
+     0K .......... .......... .......... .......... .......... 52.6K
+    50K .......... .......... .......... .......... ..........  129K
+   100K .......... .......... .......... .......... ..........  225K
+   150K ...                                                    1.03M=1.6s
+
+2010-02-21 16:16:32 (98.3 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.babyvision.html' saved [157601]
+

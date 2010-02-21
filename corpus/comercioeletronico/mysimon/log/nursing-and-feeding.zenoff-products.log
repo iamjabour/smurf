@@ -1,0 +1,13 @@
+--2010-02-21 16:21:29--  http://www.mysimon.com/compare-prices/nursing-and-feeding/zenoff-products
+Resolving www.mysimon.com... 216.239.122.130
+Connecting to www.mysimon.com|216.239.122.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.zenoff-products.html'
+
+     0K .......... .......... .......... .......... .......... 69.7K
+    50K .......... .......... .......... .......... ..........  135K
+   100K .....                                                  34.5K=1.2s
+
+2010-02-21 16:21:31 (84.8 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/mysimon/nursing-and-feeding.zenoff-products.html' saved [107882]
+
