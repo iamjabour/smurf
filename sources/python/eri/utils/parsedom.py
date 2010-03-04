@@ -26,7 +26,16 @@ class ParseDom(object):
             self._detector = chardet.universaldetector.UniversalDetector()
 
     def parse(self, file, encoding='utf8'):
-        string = open(file,'r').read()
+        import urlparse
+        scheme = urlparse.urlparse(file).scheme
+        if scheme == 'http':
+            import urllib
+            string = urllib.urlopen(file).read()
+        elif scheme == '':
+            string = open(file,'r').read()
+        else:
+            raise SystemExit, "Parser nao sabe tratar esse tipo de path"
+
         return parseString(string,encoding)
 
     def parseString(self, htmlString, encoding='utf-8'):
