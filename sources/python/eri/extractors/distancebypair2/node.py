@@ -18,11 +18,12 @@ class Node(object):
         self.height = 1
         self.depth = 0
         self.str = ""
+        self.text = ""
         self.tags = []
 
     #def __init__
 
-    def loadNodeTree(self, xmlNode, depth):
+    def loadNodeTree(self, xmlNode, depth=0):
         """
         Load all tre from provided root of xmlnode
 
@@ -36,6 +37,8 @@ class Node(object):
         if depth > 0:
             treeNode.str = xmlNode.localName.lower().strip()
             treeNode.tags.append(xmlNode.localName.lower().strip())
+#            treeNode.text = xmlNode.textContent
+            treeNode.tag = xmlNode.localName
 
         for x in xrange(0,len(xmlNode.childNodes)):
             xmlChild = xmlNode.childNodes[x]
@@ -48,6 +51,7 @@ class Node(object):
                 childNode = self.loadNodeTree(xmlChild, depth + 1)
                 childNode.parent = treeNode
                 treeNode.str += childNode.str
+#                treeNode.text += childNode.dom.textContent
                 treeNode.tags.extend(childNode.tags)
                 treeNode.length += childNode.length
                 treeNode.height += max(childNode.height, treeNode.height)

@@ -24,39 +24,45 @@ class Ce(Base):
 #        print self.__labels
 
         lists = []
+
+        # create productlist candidates
         for k, v in self.__labels.iteritems():
 #            print k, v
             for i in v:
                 pass
 #                print i.str
-                marker.mark(i.dom, 'product')
+                #marker.mark(i.dom, 'product')
             lists.append(v[0].parent)
 
+        plists = []
+        biggest = 0
         for i in lists:
-            if len(i.childNodes) > 4:
-                marker.mark(i.dom, 'productlist')
+#                plists.append(i)
+                print len(i.text), i.text[0:100]
+                biggest = max(len(i.text), biggest)
+
+        print biggest
+        for i in lists:
+            if self._c(i.text,biggest,5):
+                print 'add', i.text[0:100]
+                plists.append(i)
+
+        for k, v in self.__labels.iteritems():
+            for i in v:
+                if i.parent in plists:
+                    marker.mark(i.dom, 'product')
+
+
+        for pl in plists:
+            marker.mark(pl.dom, 'productlist')
 
 
         return
 
-        for i in self.__labels:
-            lines = 0
-            for x in self.__labels[i]:
-
-                if x.str[0:5] == "table":
-                    table.append(x)
-                    #marker.mark(x.dom, 'table')
-                if x.str[0:2] == "td" or x.str[0:2] == "tr" or x.str[0:2] == "th":
-                    lines += 1
-            if lines > 0:
-                name = ""
-                while name != "table":
-                    name = x.parent.dom.localName.lower()
-                    x = x.parent
-                table.append(x)
-                #marker.mark(x.dom, 'table')
-
-#            marker.mark(n.dom, 'table')
+    def _c(self, a, val, m ):
+        if abs(len(a) - val) < m:
+            return True
+        return False
 
     def _submark(self, node):
         """
@@ -114,12 +120,6 @@ if __name__ == '__main__':
         out = open(sys.argv[2], 'w')
     else:
         out = sys.stdout
-
-    if filePath[0:4] == "http":
-        import urllib
-        htmlString = urllib.urlopen(filePath).read()
-    else:
-        htmlString = open(filePath, 'r').read()
 
     marker = Marker()
     parser = ParseDom()
