@@ -33,3 +33,54 @@ def stringDistance(first, second, cost={'a':1, 'd':1, 'c':1}):
                 distance_matrix[i][j])
 
     return distance_matrix[-1][-1]
+
+
+from eri.extractors.distancebypair2.node import Node
+
+def simpleTreeMatching(a, b):
+
+    if a.tag != b.tag:
+        return 0
+
+    m, n = len(a.childNodes), len(b.childNodes)
+    print m, n
+    M = [ [0] * (n+1) for i in xrange(m+1) ]
+    print M
+    for i in xrange(m):
+        for j in xrange(n):
+            pass
+            w = simpleTreeMatching(a.childNodes[i], b.childNodes[j])
+            M[i][j] = max(M[i][j-1], M[i-1][j], M[i-1][j-1] + w)
+
+    return (M[m-1][n-1])+1
+
+if __name__ == '__main__':
+    import libxml2dom
+
+    html = """
+    <html>
+    <body>
+    <div>
+    1
+    <p>
+    2
+    </p>
+    </div>
+    <div>
+    3
+    <p>
+    <div></div>
+    </p>
+    </div>
+    </body>
+    </html>
+    """
+    dom = libxml2dom.parseString(html)
+    root = Node(dom)
+    root = root.loadNodeTree(dom)
+
+    a = root.childNodes[0].childNodes[0].childNodes[0]
+    b = root.childNodes[0].childNodes[0].childNodes[1]
+
+    print a.tag, b.tag
+    print simpleTreeMatching(a,b)

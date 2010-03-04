@@ -1,6 +1,7 @@
 # -*- coding: latin-1 -*-
 import sys
 from eri.utils.distances import stringDistance
+from eri.utils.distances import simpleTreeMatching
 from eri.extractors.distancebypair2.node import Node
 
 class DistanceByPairBase(object):
@@ -8,6 +9,41 @@ class DistanceByPairBase(object):
     Esse módulo busca nós adjecentes com distancia de edição menor que uma
     proporção, passada por parametro, e os agrupa em componentes.
     """
+    def match2(self, node, esp, maxDist, height, tags=False, printtag=False):
+        s1 = None
+        s2 = None
+
+        result = [False] * len(node.childNodes)
+        match = False
+
+        for x in xrange(0,len(node.childNodes)):
+            c = node.childNodes[x]
+
+            if x == 0 or c.height < height:
+                s1 = c
+                match = False
+                self._comp += 1
+                continue
+
+            s2 = c
+
+            if printtag:
+                print 'str:', s1.tag, s2.tag
+
+            if 1 - float(simpleTreeMatching(s1,s2))/max(len(s1.str), len(s2.str)) < maxDist :
+                s1 = c
+                result[x] = self._comp
+                if not match:
+                    result[x-1] = self._comp
+
+                match = True
+            else:
+                s1 = c
+
+                match = False
+                self._comp += 1
+        #for
+        return result
 
     def match(self, node, esp, maxDist, height, tags=False, printtag=False):
         global s1
