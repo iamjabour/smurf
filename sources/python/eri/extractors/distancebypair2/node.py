@@ -23,7 +23,8 @@ class Node(object):
 
     #def __init__
 
-    def loadNodeTree(self, xmlNode, depth=0, useText=False):
+    @staticmethod
+    def loadNodeTree(xmlNode, depth=0, useText=False):
         """
         Load all tre from provided root of xmlnode
 
@@ -38,7 +39,7 @@ class Node(object):
             treeNode.str = xmlNode.localName.lower().strip()
             treeNode.tags.append(xmlNode.localName.lower().strip())
             if useText:
-                treeNode.text = xmlNode.textContent
+                treeNode.text = xmlNode.textContent.encode('utf8')
             treeNode.tag = xmlNode.localName
 
         for x in xrange(0,len(xmlNode.childNodes)):
@@ -49,11 +50,11 @@ class Node(object):
                 elif xmlChild.localName == 'hr':
                     continue
 
-                childNode = self.loadNodeTree(xmlChild, depth + 1, useText)
+                childNode = Node.loadNodeTree(xmlChild, depth + 1, useText)
                 childNode.parent = treeNode
                 treeNode.str += childNode.str
                 if useText:
-                    treeNode.text += childNode.dom.textContent
+                    treeNode.text += childNode.dom.textContent.encode('utf8')
                 treeNode.tags.extend(childNode.tags)
                 treeNode.length += childNode.length
                 treeNode.height += max(childNode.height, treeNode.height)
@@ -68,4 +69,4 @@ class Node(object):
         return treeNode
 
     #loadNodeTree
-#Node
+

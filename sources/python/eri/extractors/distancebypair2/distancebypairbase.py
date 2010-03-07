@@ -2,7 +2,6 @@
 import sys
 from eri.utils.distances import stringDistance
 from eri.utils.distances import simpleTreeMatching
-from eri.extractors.distancebypair2.node import Node
 
 class DistanceByPairBase(object):
     """
@@ -29,8 +28,9 @@ class DistanceByPairBase(object):
 
             if printtag:
                 print 'str:', s1.tag, s2.tag
-
-            if 1 - float(simpleTreeMatching(s1,s2))/max(len(s1.str), len(s2.str)) < maxDist :
+            d = float(simpleTreeMatching(s1,s2))/max(len(s1.tags), len(s2.tags),1)
+            print 'distancia', d
+            if 1-d < maxDist :
                 s1 = c
                 result[x] = self._comp
                 if not match:
@@ -119,7 +119,8 @@ class DistanceByPairBase(object):
         na mesma componente
         """
 
-        node.result = self.match(node,esp,maxDist, height)
+#        node.result = self.match(node,esp,maxDist, height)
+        node.result = self.match2(node,esp,maxDist, height)
 
         for x in xrange(0,len(node.childNodes)):
             if not node.result[x]:
@@ -154,14 +155,15 @@ class DistanceByPairBase(object):
         """
         Processa o Documento enviado procurando por componentes semelhantes.
         """
-        tree = Node(None).loadNodeTree(dom, 0)
-
-        self._comp = 0
-        self.dfs(tree)
-        print self._comp
-        self._mark(tree, marker)
-
-        return marker.process()
+        pass
+#        tree = Node(None).loadNodeTree(dom, 0)
+#
+#        self._comp = 0
+#        self.dfs(tree)
+#        print self._comp
+#        self._mark(tree, marker)
+#
+#        return marker.process()
 
 
 if __name__ == '__main__':

@@ -94,7 +94,7 @@ class Ce(Base):
     def process(self, dom, marker):
 
         self._comp = 0
-        tree = Node().loadNodeTree(dom, 0, useText=True)
+        tree = Node().loadNodeTree(dom, 0, True)
         self.dfs(tree, maxDist=0, height=2)
         self._mark(tree, marker)
         result = marker.process()
