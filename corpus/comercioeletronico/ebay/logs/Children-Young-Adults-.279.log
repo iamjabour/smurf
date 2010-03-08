@@ -1,0 +1,13 @@
+--2010-03-07 22:36:32--  http://books.shop.ebay.com/Children-Young-Adults-/279/i.html
+Resolving books.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to books.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 139354 (136K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Children-Young-Adults-.279.html'
+
+     0K .......... .......... .......... .......... .......... 36%  113K 1s
+    50K .......... .......... .......... .......... .......... 73%  250K 0s
+   100K .......... .......... .......... ......               100%  209K=0.8s
+
+2010-03-07 22:36:36 (167 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Children-Young-Adults-.279.html' saved [139354/139354]
+

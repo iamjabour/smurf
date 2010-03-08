@@ -1,0 +1,13 @@
+--2010-03-07 22:44:25--  http://collectibles.shop.ebay.com/Disneyana-/137/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 135585 (132K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Disneyana-.137.html'
+
+     0K .......... .......... .......... .......... .......... 37% 99.5K 1s
+    50K .......... .......... .......... .......... .......... 75%  203K 0s
+   100K .......... .......... .......... ..                   100%  163K=0.9s
+
+2010-03-07 22:44:27 (140 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Disneyana-.137.html' saved [135585/135585]
+

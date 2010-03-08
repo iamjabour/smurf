@@ -1,0 +1,13 @@
+--2010-03-07 22:46:14--  http://collectibles.shop.ebay.com/Tobacciana-/593/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 134972 (132K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Tobacciana-.593.html'
+
+     0K .......... .......... .......... .......... .......... 37% 70.2K 1s
+    50K .......... .......... .......... .......... .......... 75%  493K 0s
+   100K .......... .......... .......... .                    100%  186K=1.0s
+
+2010-03-07 22:46:16 (134 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Tobacciana-.593.html' saved [134972/134972]
+

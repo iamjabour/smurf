@@ -1,0 +1,13 @@
+--2010-03-07 22:45:21--  http://collectibles.shop.ebay.com/Photographic-Images-/14277/i.html
+Resolving collectibles.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to collectibles.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 133864 (131K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Photographic-Images-.14277.html'
+
+     0K .......... .......... .......... .......... .......... 38% 35.7K 2s
+    50K .......... .......... .......... .......... .......... 76% 31.4K 1s
+   100K .......... .......... ..........                      100% 29.7K=4.0s
+
+2010-03-07 22:45:26 (32.5 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Photographic-Images-.14277.html' saved [133864/133864]
+

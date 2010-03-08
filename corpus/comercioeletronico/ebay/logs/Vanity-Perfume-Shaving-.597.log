@@ -1,0 +1,13 @@
+--2010-03-07 22:46:31--  http://collectibles.shop.ebay.com/Vanity-Perfume-Shaving-/597/i.html
+Resolving collectibles.shop.ebay.com... 66.211.160.10, 66.211.180.26, 66.135.202.88, ...
+Connecting to collectibles.shop.ebay.com|66.211.160.10|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 138732 (135K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Vanity-Perfume-Shaving-.597.html'
+
+     0K .......... .......... .......... .......... .......... 36%  105K 1s
+    50K .......... .......... .......... .......... .......... 73%  223K 0s
+   100K .......... .......... .......... .....                100%  189K=0.9s
+
+2010-03-07 22:46:32 (153 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Vanity-Perfume-Shaving-.597.html' saved [138732/138732]
+

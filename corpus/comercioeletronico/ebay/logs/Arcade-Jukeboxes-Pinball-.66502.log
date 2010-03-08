@@ -1,0 +1,13 @@
+--2010-03-07 22:43:29--  http://collectibles.shop.ebay.com/Arcade-Jukeboxes-Pinball-/66502/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 133399 (130K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Arcade-Jukeboxes-Pinball-.66502.html'
+
+     0K .......... .......... .......... .......... .......... 38% 32.0K 3s
+    50K .......... .......... .......... .......... .......... 76% 56.1K 1s
+   100K .......... .......... ..........                      100% 69.0K=2.9s
+
+2010-03-07 22:43:33 (45.0 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Arcade-Jukeboxes-Pinball-.66502.html' saved [133399/133399]
+

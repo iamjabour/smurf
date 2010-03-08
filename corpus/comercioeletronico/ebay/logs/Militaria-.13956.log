@@ -1,0 +1,13 @@
+--2010-03-07 22:45:03--  http://collectibles.shop.ebay.com/Militaria-/13956/i.html
+Resolving collectibles.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to collectibles.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 134801 (132K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Militaria-.13956.html'
+
+     0K .......... .......... .......... .......... .......... 37% 57.0K 1s
+    50K .......... .......... .......... .......... .......... 75%  228K 0s
+   100K .......... .......... .......... .                    100%  179K=1.3s
+
+2010-03-07 22:45:05 (103 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Militaria-.13956.html' saved [134801/134801]
+

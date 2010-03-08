@@ -1,0 +1,13 @@
+--2010-03-07 22:43:38--  http://collectibles.shop.ebay.com/Banks-Registers-Vending-/66503/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 130881 (128K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Banks-Registers-Vending-.66503.html'
+
+     0K .......... .......... .......... .......... .......... 39% 27.9K 3s
+    50K .......... .......... .......... .......... .......... 78% 55.7K 1s
+   100K .......... .......... .......                         100% 63.1K=3.1s
+
+2010-03-07 22:43:42 (40.8 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Banks-Registers-Vending-.66503.html' saved [130881/130881]
+

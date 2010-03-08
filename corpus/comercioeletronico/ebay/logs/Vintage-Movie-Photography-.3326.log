@@ -1,0 +1,13 @@
+--2010-03-07 22:39:46--  http://photography.shop.ebay.com/Vintage-Movie-Photography-/3326/i.html
+Resolving photography.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to photography.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 118379 (116K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Vintage-Movie-Photography-.3326.html'
+
+     0K .......... .......... .......... .......... .......... 43%  116K 1s
+    50K .......... .......... .......... .......... .......... 86%  248K 0s
+   100K .......... .....                                      100%  833K=0.7s
+
+2010-03-07 22:39:48 (177 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Vintage-Movie-Photography-.3326.html' saved [118379/118379]
+

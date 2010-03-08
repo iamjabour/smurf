@@ -1,0 +1,13 @@
+--2010-03-07 22:44:01--  http://collectibles.shop.ebay.com/Casino-/898/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 134721 (132K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Casino-.898.html'
+
+     0K .......... .......... .......... .......... .......... 38% 98.4K 1s
+    50K .......... .......... .......... .......... .......... 76%  197K 0s
+   100K .......... .......... .......... .                    100%  159K=1.0s
+
+2010-03-07 22:44:02 (137 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Casino-.898.html' saved [134721/134721]
+

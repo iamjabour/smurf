@@ -1,0 +1,13 @@
+--2010-03-07 22:42:24--  http://clothing.shop.ebay.com/Vintage-/110/i.html
+Resolving clothing.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to clothing.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 125880 (123K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Vintage-.110.html'
+
+     0K .......... .......... .......... .......... .......... 40%  103K 1s
+    50K .......... .......... .......... .......... .......... 81%  209K 0s
+   100K .......... .......... ..                              100%  129K=0.9s
+
+2010-03-07 22:42:25 (137 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Vintage-.110.html' saved [125880/125880]
+

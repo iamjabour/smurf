@@ -1,0 +1,13 @@
+--2010-03-07 22:44:32--  http://collectibles.shop.ebay.com/Historical-Memorabilia-/13877/i.html
+Resolving collectibles.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to collectibles.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 136283 (133K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Historical-Memorabilia-.13877.html'
+
+     0K .......... .......... .......... .......... .......... 37% 34.6K 2s
+    50K .......... .......... .......... .......... .......... 75% 61.5K 1s
+   100K .......... .......... .......... ...                  100%  143K=2.5s
+
+2010-03-07 22:44:35 (53.5 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Historical-Memorabilia-.13877.html' saved [136283/136283]
+

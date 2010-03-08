@@ -1,0 +1,13 @@
+--2010-03-07 22:36:17--  http://books.shop.ebay.com/Antiquarian-Collectible-/29223/i.html
+Resolving books.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to books.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 130131 (127K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Antiquarian-Collectible-.29223.html'
+
+     0K .......... .......... .......... .......... .......... 39% 36.5K 2s
+    50K .......... .......... .......... .......... .......... 78% 65.2K 1s
+   100K .......... .......... .......                         100%  130K=2.3s
+
+2010-03-07 22:36:20 (54.2 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Antiquarian-Collectible-.29223.html' saved [130131/130131]
+

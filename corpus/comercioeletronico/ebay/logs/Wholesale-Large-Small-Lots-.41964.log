@@ -1,0 +1,13 @@
+--2010-03-07 22:42:27--  http://clothing.shop.ebay.com/Wholesale-Large-Small-Lots-/41964/i.html
+Resolving clothing.shop.ebay.com... 66.135.213.214, 66.211.160.10, 66.211.180.26, ...
+Connecting to clothing.shop.ebay.com|66.135.213.214|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 128344 (125K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Wholesale-Large-Small-Lots-.41964.html'
+
+     0K .......... .......... .......... .......... .......... 39% 74.0K 1s
+    50K .......... .......... .......... .......... .......... 79%  843K 0s
+   100K .......... .......... .....                           100%  136K=0.9s
+
+2010-03-07 22:42:29 (136 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Wholesale-Large-Small-Lots-.41964.html' saved [128344/128344]
+

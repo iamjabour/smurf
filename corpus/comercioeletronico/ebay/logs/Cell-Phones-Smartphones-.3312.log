@@ -1,0 +1,13 @@
+--2010-03-07 22:39:55--  http://cell-phones.shop.ebay.com/Cell-Phones-Smartphones-/3312/i.html
+Resolving cell-phones.shop.ebay.com... 66.135.213.214, 66.211.160.10, 66.211.180.26, ...
+Connecting to cell-phones.shop.ebay.com|66.135.213.214|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 135258 (132K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Cell-Phones-Smartphones-.3312.html'
+
+     0K .......... .......... .......... .......... .......... 37% 99.2K 1s
+    50K .......... .......... .......... .......... .......... 75%  198K 0s
+   100K .......... .......... .......... ..                   100%  163K=1.0s
+
+2010-03-07 22:39:57 (139 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Cell-Phones-Smartphones-.3312.html' saved [135258/135258]
+

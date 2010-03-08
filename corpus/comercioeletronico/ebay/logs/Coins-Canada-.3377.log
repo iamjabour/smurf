@@ -1,0 +1,13 @@
+--2010-03-07 22:42:41--  http://coins.shop.ebay.com/Coins-Canada-/3377/i.html
+Resolving coins.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to coins.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 111483 (109K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Coins-Canada-.3377.html'
+
+     0K .......... .......... .......... .......... .......... 45%  104K 1s
+    50K .......... .......... .......... .......... .......... 91%  208K 0s
+   100K ........                                              100%  923K=0.7s
+
+2010-03-07 22:42:42 (149 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Coins-Canada-.3377.html' saved [111483/111483]
+

@@ -1,0 +1,13 @@
+--2010-03-07 22:35:07--  http://baby.shop.ebay.com/Baby-Safety-Health-/20433/i.html
+Resolving baby.shop.ebay.com... 66.135.213.214, 66.211.160.10, 66.211.180.26, ...
+Connecting to baby.shop.ebay.com|66.135.213.214|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 120586 (118K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Baby-Safety-Health-.20433.html'
+
+     0K .......... .......... .......... .......... .......... 42% 99.4K 1s
+    50K .......... .......... .......... .......... .......... 84%  197K 0s
+   100K .......... .......                                    100%  101K=0.9s
+
+2010-03-07 22:35:08 (126 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Baby-Safety-Health-.20433.html' saved [120586/120586]
+

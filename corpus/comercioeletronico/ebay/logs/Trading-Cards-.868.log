@@ -1,0 +1,13 @@
+--2010-03-07 22:46:21--  http://collectibles.shop.ebay.com/Trading-Cards-/868/i.html
+Resolving collectibles.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to collectibles.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 135094 (132K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Trading-Cards-.868.html'
+
+     0K .......... .......... .......... .......... .......... 37% 72.3K 1s
+    50K .......... .......... .......... .......... .......... 75%  488K 0s
+   100K .......... .......... .......... .                    100%  165K=1.0s
+
+2010-03-07 22:46:23 (134 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Trading-Cards-.868.html' saved [135094/135094]
+

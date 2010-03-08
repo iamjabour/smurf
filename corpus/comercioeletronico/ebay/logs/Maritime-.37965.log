@@ -1,0 +1,13 @@
+--2010-03-07 22:34:03--  http://antiques.shop.ebay.com/Maritime-/37965/i.html
+Resolving antiques.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to antiques.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 136819 (134K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Maritime-.37965.html'
+
+     0K .......... .......... .......... .......... .......... 37% 31.7K 3s
+    50K .......... .......... .......... .......... .......... 74% 82.9K 1s
+   100K .......... .......... .......... ...                  100% 85.5K=2.6s
+
+2010-03-07 22:34:06 (51.9 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Maritime-.37965.html' saved [136819/136819]
+

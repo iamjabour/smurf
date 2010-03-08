@@ -1,0 +1,13 @@
+--2010-03-07 22:37:50--  http://business.shop.ebay.com/Healthcare-Lab-Life-Science-/11815/i.html
+Resolving business.shop.ebay.com... 66.211.180.26, 66.135.202.88, 66.135.205.140, ...
+Connecting to business.shop.ebay.com|66.211.180.26|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 120094 (117K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Healthcare-Lab-Life-Science-.11815.html'
+
+     0K .......... .......... .......... .......... .......... 42%  101K 1s
+    50K .......... .......... .......... .......... .......... 85%  206K 0s
+   100K .......... .......                                    100%  846K=0.8s
+
+2010-03-07 22:37:52 (155 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Healthcare-Lab-Life-Science-.11815.html' saved [120094/120094]
+

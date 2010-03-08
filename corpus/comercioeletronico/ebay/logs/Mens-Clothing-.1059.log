@@ -1,0 +1,13 @@
+--2010-03-07 22:41:08--  http://clothing.shop.ebay.com/Mens-Clothing-/1059/i.html
+Resolving clothing.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to clothing.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 137755 (135K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Mens-Clothing-.1059.html'
+
+     0K .......... .......... .......... .......... .......... 37% 37.9K 2s
+    50K .......... .......... .......... .......... .......... 74% 57.9K 1s
+   100K .......... .......... .......... ....                 100% 80.2K=2.6s
+
+2010-03-07 22:41:18 (51.5 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Mens-Clothing-.1059.html' saved [137755/137755]
+

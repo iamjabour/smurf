@@ -1,0 +1,13 @@
+--2010-03-07 22:35:35--  http://baby.shop.ebay.com/Nursery-Decor-/66697/i.html
+Resolving baby.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to baby.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 118553 (116K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Nursery-Decor-.66697.html'
+
+     0K .......... .......... .......... .......... .......... 43% 31.8K 2s
+    50K .......... .......... .......... .......... .......... 86% 56.4K 0s
+   100K .......... .....                                      100% 71.2K=2.7s
+
+2010-03-07 22:35:38 (43.2 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Nursery-Decor-.66697.html' saved [118553/118553]
+

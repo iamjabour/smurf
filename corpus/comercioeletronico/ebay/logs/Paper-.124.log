@@ -1,0 +1,13 @@
+--2010-03-07 22:45:07--  http://collectibles.shop.ebay.com/Paper-/124/i.html
+Resolving collectibles.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to collectibles.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 137424 (134K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Paper-.124.html'
+
+     0K .......... .......... .......... .......... .......... 37% 34.3K 2s
+    50K .......... .......... .......... .......... .......... 74% 61.0K 1s
+   100K .......... .......... .......... ....                 100% 84.0K=2.7s
+
+2010-03-07 22:45:11 (50.0 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Paper-.124.html' saved [137424/137424]
+

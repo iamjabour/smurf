@@ -1,0 +1,13 @@
+--2010-03-07 22:36:39--  http://books.shop.ebay.com/Cookbooks-/11104/i.html
+Resolving books.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to books.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 124879 (122K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Cookbooks-.11104.html'
+
+     0K .......... .......... .......... .......... .......... 40%  113K 1s
+    50K .......... .......... .......... .......... .......... 81%  245K 0s
+   100K .......... .......... .                               100%  833K=0.7s
+
+2010-03-07 22:36:40 (181 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Cookbooks-.11104.html' saved [124879/124879]
+

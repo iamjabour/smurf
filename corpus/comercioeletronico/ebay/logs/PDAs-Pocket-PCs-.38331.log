@@ -1,0 +1,13 @@
+--2010-03-07 22:40:18--  http://cell-phones.shop.ebay.com/PDAs-Pocket-PCs-/38331/i.html
+Resolving cell-phones.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to cell-phones.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 128447 (125K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/PDAs-Pocket-PCs-.38331.html'
+
+     0K .......... .......... .......... .......... .......... 39% 55.8K 1s
+    50K .......... .......... .......... .......... .......... 79%  216K 0s
+   100K .......... .......... .....                           100%  854K=1.2s
+
+2010-03-07 22:40:20 (108 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/PDAs-Pocket-PCs-.38331.html' saved [128447/128447]
+

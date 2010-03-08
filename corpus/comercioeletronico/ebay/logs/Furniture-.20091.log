@@ -1,0 +1,13 @@
+--2010-03-07 22:33:47--  http://antiques.shop.ebay.com/Furniture-/20091/i.html
+Resolving antiques.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to antiques.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 149119 (146K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Furniture-.20091.html'
+
+     0K .......... .......... .......... .......... .......... 34%  119K 1s
+    50K .......... .......... .......... .......... .......... 68%  255K 0s
+   100K .......... .......... .......... .......... .....     100%  266K=0.8s
+
+2010-03-07 22:33:49 (185 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Furniture-.20091.html' saved [149119/149119]
+

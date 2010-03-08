@@ -1,0 +1,13 @@
+--2010-03-07 22:40:22--  http://cell-phones.shop.ebay.com/Phone-Cards-SIM-Cards-/146492/i.html
+Resolving cell-phones.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to cell-phones.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 117054 (114K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Phone-Cards-SIM-Cards-.146492.html'
+
+     0K .......... .......... .......... .......... .......... 43% 74.6K 1s
+    50K .......... .......... .......... .......... .......... 87%  252K 0s
+   100K .......... ....                                       100%  670K=0.9s
+
+2010-03-07 22:40:24 (128 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Phone-Cards-SIM-Cards-.146492.html' saved [117054/117054]
+

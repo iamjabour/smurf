@@ -1,0 +1,13 @@
+--2010-03-07 22:44:56--  http://collectibles.shop.ebay.com/Linens-Textiles-1930-Now-/940/i.html
+Resolving collectibles.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to collectibles.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 134464 (131K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Linens-Textiles-1930-Now-.940.html'
+
+     0K .......... .......... .......... .......... .......... 38% 87.7K 1s
+    50K .......... .......... .......... .......... .......... 76%  822K 0s
+   100K .......... .......... .......... .                    100%  198K=0.8s
+
+2010-03-07 22:44:58 (166 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Linens-Textiles-1930-Now-.940.html' saved [134464/134464]
+

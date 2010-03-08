@@ -1,0 +1,13 @@
+--2010-03-07 22:36:57--  http://books.shop.ebay.com/Nonfiction-/378/i.html
+Resolving books.shop.ebay.com... 66.135.213.214, 66.211.160.10, 66.211.180.26, ...
+Connecting to books.shop.ebay.com|66.135.213.214|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 133691 (131K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Nonfiction-.378.html'
+
+     0K .......... .......... .......... .......... .......... 38% 27.8K 3s
+    50K .......... .......... .......... .......... .......... 76% 55.7K 1s
+   100K .......... .......... ..........                      100% 68.6K=3.1s
+
+2010-03-07 22:37:07 (41.6 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Nonfiction-.378.html' saved [133691/133691]
+

@@ -1,0 +1,13 @@
+--2010-03-07 22:37:58--  http://business.shop.ebay.com/Manufacturing-Metalworking-/11804/i.html
+Resolving business.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to business.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 117261 (115K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Manufacturing-Metalworking-.11804.html'
+
+     0K .......... .......... .......... .......... .......... 43%  103K 1s
+    50K .......... .......... .......... .......... .......... 87%  207K 0s
+   100K .......... ....                                       100% 87.6K=0.9s
+
+2010-03-07 22:38:00 (129 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Manufacturing-Metalworking-.11804.html' saved [117261/117261]
+

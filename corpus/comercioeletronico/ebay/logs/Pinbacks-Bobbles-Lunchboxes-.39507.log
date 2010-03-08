@@ -1,0 +1,13 @@
+--2010-03-07 22:45:27--  http://collectibles.shop.ebay.com/Pinbacks-Bobbles-Lunchboxes-/39507/i.html
+Resolving collectibles.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to collectibles.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 129912 (127K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Pinbacks-Bobbles-Lunchboxes-.39507.html'
+
+     0K .......... .......... .......... .......... .......... 39% 34.5K 2s
+    50K .......... .......... .......... .......... .......... 78% 61.3K 1s
+   100K .......... .......... ......                          100% 67.8K=2.7s
+
+2010-03-07 22:45:31 (47.7 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Pinbacks-Bobbles-Lunchboxes-.39507.html' saved [129912/129912]
+

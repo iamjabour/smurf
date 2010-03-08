@@ -1,0 +1,13 @@
+--2010-03-07 22:38:57--  http://photography.shop.ebay.com/Film-/4201/i.html
+Resolving photography.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to photography.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 116611 (114K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Film-.4201.html'
+
+     0K .......... .......... .......... .......... .......... 43% 98.8K 1s
+    50K .......... .......... .......... .......... .......... 87%  197K 0s
+   100K .......... ...                                        100%  879K=0.8s
+
+2010-03-07 22:38:59 (147 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Film-.4201.html' saved [116611/116611]
+

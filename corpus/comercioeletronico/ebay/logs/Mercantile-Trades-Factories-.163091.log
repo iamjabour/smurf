@@ -1,0 +1,13 @@
+--2010-03-07 22:34:09--  http://antiques.shop.ebay.com/Mercantile-Trades-Factories-/163091/i.html
+Resolving antiques.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to antiques.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 125376 (122K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Mercantile-Trades-Factories-.163091.html'
+
+     0K .......... .......... .......... .......... .......... 40% 34.1K 2s
+    50K .......... .......... .......... .......... .......... 81% 60.6K 1s
+   100K .......... .......... ..                              100%  103K=2.5s
+
+2010-03-07 22:34:13 (48.8 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Mercantile-Trades-Factories-.163091.html' saved [125376/125376]
+

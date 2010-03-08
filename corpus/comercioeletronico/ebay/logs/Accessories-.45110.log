@@ -1,0 +1,13 @@
+--2010-03-07 22:36:12--  http://books.shop.ebay.com/Accessories-/45110/i.html
+Resolving books.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to books.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 120743 (118K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Accessories-.45110.html'
+
+     0K .......... .......... .......... .......... .......... 42% 95.1K 1s
+    50K .......... .......... .......... .......... .......... 84%  190K 0s
+   100K .......... .......                                    100% 92.7K=1.0s
+
+2010-03-07 22:36:14 (120 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Accessories-.45110.html' saved [120743/120743]
+

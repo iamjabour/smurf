@@ -1,0 +1,13 @@
+--2010-03-07 22:34:21--  http://antiques.shop.ebay.com/Primitives-/1217/i.html
+Resolving antiques.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to antiques.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 150016 (146K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Primitives-.1217.html'
+
+     0K .......... .......... .......... .......... .......... 34% 95.2K 1s
+    50K .......... .......... .......... .......... .......... 68%  192K 0s
+   100K .......... .......... .......... .......... ......    100%  206K=1.0s
+
+2010-03-07 22:34:23 (145 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Primitives-.1217.html' saved [150016/150016]
+

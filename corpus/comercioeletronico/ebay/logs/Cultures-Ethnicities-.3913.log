@@ -1,0 +1,13 @@
+--2010-03-07 22:44:12--  http://collectibles.shop.ebay.com/Cultures-Ethnicities-/3913/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.214, 66.211.160.10, 66.211.180.26, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.214|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 137783 (135K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Cultures-Ethnicities-.3913.html'
+
+     0K .......... .......... .......... .......... .......... 37% 27.6K 3s
+    50K .......... .......... .......... .......... .......... 74% 44.6K 1s
+   100K .......... .......... .......... ....                 100% 52.7K=3.6s
+
+2010-03-07 22:44:17 (37.5 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Cultures-Ethnicities-.3913.html' saved [137783/137783]
+

@@ -1,0 +1,13 @@
+--2010-03-07 22:44:43--  http://collectibles.shop.ebay.com/Kitchen-Home-/13905/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 131072 (128K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Kitchen-Home-.13905.html'
+
+     0K .......... .......... .......... .......... .......... 39% 97.9K 1s
+    50K .......... .......... .......... .......... .......... 78%  202K 0s
+   100K .......... .......... ........                        100%  144K=1.0s
+
+2010-03-07 22:44:45 (134 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Kitchen-Home-.13905.html' saved [131072/131072]
+

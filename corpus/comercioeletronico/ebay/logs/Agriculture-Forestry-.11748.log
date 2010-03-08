@@ -1,0 +1,13 @@
+--2010-03-07 22:37:31--  http://business.shop.ebay.com/Agriculture-Forestry-/11748/i.html
+Resolving business.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to business.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 118528 (116K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Agriculture-Forestry-.11748.html'
+
+     0K .......... .......... .......... .......... .......... 43%  104K 1s
+    50K .......... .......... .......... .......... .......... 86%  216K 0s
+   100K .......... .....                                      100%  819K=0.7s
+
+2010-03-07 22:37:32 (158 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Agriculture-Forestry-.11748.html' saved [118528/118528]
+

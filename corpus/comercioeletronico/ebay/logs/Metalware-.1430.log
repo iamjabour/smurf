@@ -1,0 +1,13 @@
+--2010-03-07 22:45:00--  http://collectibles.shop.ebay.com/Metalware-/1430/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.214, 66.211.160.10, 66.211.180.26, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.214|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 129884 (127K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Metalware-.1430.html'
+
+     0K .......... .......... .......... .......... .......... 39% 71.8K 1s
+    50K .......... .......... .......... .......... .......... 78%  809K 0s
+   100K .......... .......... ......                          100%  141K=0.9s
+
+2010-03-07 22:45:01 (134 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Metalware-.1430.html' saved [129884/129884]
+

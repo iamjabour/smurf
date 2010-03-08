@@ -1,0 +1,13 @@
+--2010-03-07 22:35:53--  http://baby.shop.ebay.com/Stroller-Accessories-/117038/i.html
+Resolving baby.shop.ebay.com... 66.135.213.214, 66.211.160.10, 66.211.180.26, ...
+Connecting to baby.shop.ebay.com|66.135.213.214|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 114855 (112K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Stroller-Accessories-.117038.html'
+
+     0K .......... .......... .......... .......... .......... 44% 26.6K 2s
+    50K .......... .......... .......... .......... .......... 89% 53.4K 0s
+   100K .......... ..                                         100% 53.6K=3.0s
+
+2010-03-07 22:35:57 (36.9 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Stroller-Accessories-.117038.html' saved [114855/114855]
+

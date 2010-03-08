@@ -1,0 +1,13 @@
+--2010-03-07 22:39:16--  http://photography.shop.ebay.com/Manuals-Guides-Books-/4684/i.html
+Resolving photography.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to photography.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 117730 (115K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Manuals-Guides-Books-.4684.html'
+
+     0K .......... .......... .......... .......... .......... 43% 94.6K 1s
+    50K .......... .......... .......... .......... .......... 86%  191K 0s
+   100K .......... ....                                       100% 79.2K=1.0s
+
+2010-03-07 22:39:18 (117 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Manuals-Guides-Books-.4684.html' saved [117730/117730]
+

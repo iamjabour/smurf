@@ -1,0 +1,13 @@
+--2010-03-07 22:34:45--  http://antiques.shop.ebay.com/Other-/12/i.html
+Resolving antiques.shop.ebay.com... 66.135.213.214, 66.211.160.10, 66.211.180.26, ...
+Connecting to antiques.shop.ebay.com|66.135.213.214|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 125915 (123K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Other-.12.html'
+
+     0K .......... .......... .......... .......... .......... 40% 98.8K 1s
+    50K .......... .......... .......... .......... .......... 81%  198K 0s
+   100K .......... .......... ..                              100%  122K=0.9s
+
+2010-03-07 22:34:47 (130 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Other-.12.html' saved [125915/125915]
+

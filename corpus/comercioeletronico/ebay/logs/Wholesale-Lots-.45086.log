@@ -1,0 +1,13 @@
+--2010-03-07 22:39:52--  http://photography.shop.ebay.com/Wholesale-Lots-/45086/i.html
+Resolving photography.shop.ebay.com... 66.135.213.214, 66.211.160.10, 66.211.180.26, ...
+Connecting to photography.shop.ebay.com|66.135.213.214|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 112033 (109K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Wholesale-Lots-.45086.html'
+
+     0K .......... .......... .......... .......... .......... 45% 88.8K 1s
+    50K .......... .......... .......... .......... .......... 91%  178K 0s
+   100K .........                                             100%  932K=0.9s
+
+2010-03-07 22:39:53 (128 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Wholesale-Lots-.45086.html' saved [112033/112033]
+

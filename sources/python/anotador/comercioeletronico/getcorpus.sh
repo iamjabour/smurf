@@ -45,6 +45,13 @@ do
 	elif [ $corpus == "mysimon" ]
 	then
 		f=${line#*compare-prices/}
+	elif [ $corpus == "dealextreme" ]
+	then
+		f=${line#*products.dx/}
+	elif [ $corpus=="ebay" ]
+	then
+		f=${line#*ebay.com/}
+		f=${f%/*}
 	fi
 
 

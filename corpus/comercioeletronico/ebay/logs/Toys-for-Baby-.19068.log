@@ -1,0 +1,13 @@
+--2010-03-07 22:35:58--  http://baby.shop.ebay.com/Toys-for-Baby-/19068/i.html
+Resolving baby.shop.ebay.com... 66.211.160.10, 66.211.180.26, 66.135.202.88, ...
+Connecting to baby.shop.ebay.com|66.211.160.10|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 113456 (111K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Toys-for-Baby-.19068.html'
+
+     0K .......... .......... .......... .......... .......... 45% 30.3K 2s
+    50K .......... .......... .......... .......... .......... 90% 43.8K 0s
+   100K ..........                                            100%  626K=2.8s
+
+2010-03-07 22:36:02 (39.5 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Toys-for-Baby-.19068.html' saved [113456/113456]
+

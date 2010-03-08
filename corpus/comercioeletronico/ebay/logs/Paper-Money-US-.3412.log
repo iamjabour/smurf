@@ -1,0 +1,13 @@
+--2010-03-07 22:42:55--  http://coins.shop.ebay.com/Paper-Money-US-/3412/i.html
+Resolving coins.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to coins.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 120794 (118K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Paper-Money-US-.3412.html'
+
+     0K .......... .......... .......... .......... .......... 42%  103K 1s
+    50K .......... .......... .......... .......... .......... 84%  206K 0s
+   100K .......... .......                                    100% 96.8K=0.9s
+
+2010-03-07 22:42:57 (129 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Paper-Money-US-.3412.html' saved [120794/120794]
+

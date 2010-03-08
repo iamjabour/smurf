@@ -1,0 +1,13 @@
+--2010-03-07 22:42:16--  http://clothing.shop.ebay.com/Womens-Shoes-/63889/i.html
+Resolving clothing.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to clothing.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 137225 (134K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Womens-Shoes-.63889.html'
+
+     0K .......... .......... .......... .......... .......... 37% 74.4K 1s
+    50K .......... .......... .......... .......... .......... 74%  688K 0s
+   100K .......... .......... .......... ....                 100%  181K=0.9s
+
+2010-03-07 22:42:20 (144 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Womens-Shoes-.63889.html' saved [137225/137225]
+

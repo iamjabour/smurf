@@ -1,0 +1,13 @@
+--2010-03-07 22:39:30--  http://photography.shop.ebay.com/Professional-Video-Equipment-/21162/i.html
+Resolving photography.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to photography.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 122307 (119K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Professional-Video-Equipment-.21162.html'
+
+     0K .......... .......... .......... .......... .......... 41%  117K 1s
+    50K .......... .......... .......... .......... .......... 83%  242K 0s
+   100K .......... .........                                  100%  135K=0.8s
+
+2010-03-07 22:39:32 (153 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Professional-Video-Equipment-.21162.html' saved [122307/122307]
+

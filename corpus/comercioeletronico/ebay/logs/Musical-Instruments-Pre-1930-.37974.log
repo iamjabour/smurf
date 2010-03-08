@@ -1,0 +1,13 @@
+--2010-03-07 22:34:14--  http://antiques.shop.ebay.com/Musical-Instruments-Pre-1930-/37974/i.html
+Resolving antiques.shop.ebay.com... 66.211.180.26, 66.135.202.88, 66.135.205.140, ...
+Connecting to antiques.shop.ebay.com|66.211.180.26|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 128196 (125K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Musical-Instruments-Pre-1930-.37974.html'
+
+     0K .......... .......... .......... .......... .......... 39%  100K 1s
+    50K .......... .......... .......... .......... .......... 79%  203K 0s
+   100K .......... .......... .....                           100%  135K=0.9s
+
+2010-03-07 22:34:16 (134 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Musical-Instruments-Pre-1930-.37974.html' saved [128196/128196]
+

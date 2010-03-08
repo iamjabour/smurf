@@ -1,0 +1,13 @@
+--2010-03-07 22:46:34--  http://collectibles.shop.ebay.com/Vintage-Retro-Mid-Century-/69851/i.html
+Resolving collectibles.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to collectibles.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 131590 (129K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Vintage-Retro-Mid-Century-.69851.html'
+
+     0K .......... .......... .......... .......... .......... 38% 85.4K 1s
+    50K .......... .......... .......... .......... .......... 77%  125K 0s
+   100K .......... .......... ........                        100%  127K=1.2s
+
+2010-03-07 22:46:36 (106 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Vintage-Retro-Mid-Century-.69851.html' saved [131590/131590]
+

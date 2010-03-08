@@ -1,0 +1,13 @@
+--2010-03-07 22:36:06--  http://baby.shop.ebay.com/Wholesale-Lots-/48757/i.html
+Resolving baby.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to baby.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 117265 (115K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Wholesale-Lots-.48757.html'
+
+     0K .......... .......... .......... .......... .......... 43%  104K 1s
+    50K .......... .......... .......... .......... .......... 87%  208K 0s
+   100K .......... ....                                       100%  854K=0.7s
+
+2010-03-07 22:36:08 (155 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Wholesale-Lots-.48757.html' saved [117265/117265]
+

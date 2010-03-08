@@ -1,0 +1,13 @@
+--2010-03-07 22:45:40--  http://collectibles.shop.ebay.com/Religion-Spirituality-/1446/i.html
+Resolving collectibles.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to collectibles.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 133338 (130K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Religion-Spirituality-.1446.html'
+
+     0K .......... .......... .......... .......... .......... 38%  111K 1s
+    50K .......... .......... .......... .......... .......... 76%  229K 0s
+   100K .......... .......... ..........                      100%  182K=0.8s
+
+2010-03-07 22:45:41 (156 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Religion-Spirituality-.1446.html' saved [133338/133338]
+

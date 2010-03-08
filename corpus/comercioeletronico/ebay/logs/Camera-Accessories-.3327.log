@@ -1,0 +1,13 @@
+--2010-03-07 22:38:35--  http://photography.shop.ebay.com/Camera-Accessories-/3327/i.html
+Resolving photography.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to photography.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 124296 (121K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Camera-Accessories-.3327.html'
+
+     0K .......... .......... .......... .......... .......... 41% 32.4K 2s
+    50K .......... .......... .......... .......... .......... 82% 84.7K 0s
+   100K .......... .......... .                               100% 60.0K=2.5s
+
+2010-03-07 22:38:39 (48.7 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Camera-Accessories-.3327.html' saved [124296/124296]
+

@@ -1,0 +1,13 @@
+--2010-03-07 22:44:05--  http://collectibles.shop.ebay.com/Clocks-/397/i.html
+Resolving collectibles.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to collectibles.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 129898 (127K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Clocks-.397.html'
+
+     0K .......... .......... .......... .......... .......... 39%  118K 1s
+    50K .......... .......... .......... .......... .......... 78%  226K 0s
+   100K .......... .......... ......                          100%  201K=0.8s
+
+2010-03-07 22:44:07 (163 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Clocks-.397.html' saved [129898/129898]
+

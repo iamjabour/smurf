@@ -1,0 +1,13 @@
+--2010-03-07 22:35:29--  http://baby.shop.ebay.com/Keepsakes-Baby-Announcements-/117388/i.html
+Resolving baby.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to baby.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 116318 (114K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Keepsakes-Baby-Announcements-.117388.html'
+
+     0K .......... .......... .......... .......... .......... 44%  112K 1s
+    50K .......... .......... .......... .......... .......... 88%  247K 0s
+   100K .......... ...                                        100%  823K=0.7s
+
+2010-03-07 22:35:30 (171 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Keepsakes-Baby-Announcements-.117388.html' saved [116318/116318]
+

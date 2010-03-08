@@ -1,0 +1,13 @@
+--2010-03-07 22:38:21--  http://business.shop.ebay.com/Other-/26261/i.html
+Resolving business.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to business.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 111263 (109K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Other-.26261.html'
+
+     0K .......... .......... .......... .......... .......... 46%  118K 0s
+    50K .......... .......... .......... .......... .......... 92%  261K 0s
+   100K ........                                              100%  876K=0.6s
+
+2010-03-07 22:38:22 (174 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Other-.26261.html' saved [111263/111263]
+

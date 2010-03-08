@@ -1,0 +1,13 @@
+--2010-03-07 22:39:59--  http://cell-phones.shop.ebay.com/Bluetooth-Accessories-/80077/i.html
+Resolving cell-phones.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to cell-phones.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 121783 (119K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Bluetooth-Accessories-.80077.html'
+
+     0K .......... .......... .......... .......... .......... 42%  103K 1s
+    50K .......... .......... .......... .......... .......... 84%  206K 0s
+   100K .......... ........                                   100%  109K=0.9s
+
+2010-03-07 22:40:01 (132 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Bluetooth-Accessories-.80077.html' saved [121783/121783]
+

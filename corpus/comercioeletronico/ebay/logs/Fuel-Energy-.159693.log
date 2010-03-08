@@ -1,0 +1,13 @@
+--2010-03-07 22:37:47--  http://business.shop.ebay.com/Fuel-Energy-/159693/i.html
+Resolving business.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to business.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 115621 (113K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Fuel-Energy-.159693.html'
+
+     0K .......... .......... .......... .......... .......... 44% 98.7K 1s
+    50K .......... .......... .......... .......... .......... 88%  195K 0s
+   100K .......... ..                                         100% 73.6K=0.9s
+
+2010-03-07 22:37:49 (120 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Fuel-Energy-.159693.html' saved [115621/115621]
+

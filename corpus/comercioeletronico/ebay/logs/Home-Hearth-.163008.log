@@ -1,0 +1,13 @@
+--2010-03-07 22:33:51--  http://antiques.shop.ebay.com/Home-Hearth-/163008/i.html
+Resolving antiques.shop.ebay.com... 66.135.213.214, 66.211.160.10, 66.211.180.26, ...
+Connecting to antiques.shop.ebay.com|66.135.213.214|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 127629 (125K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Home-Hearth-.163008.html'
+
+     0K .......... .......... .......... .......... .......... 40%  103K 1s
+    50K .......... .......... .......... .......... .......... 80%  208K 0s
+   100K .......... .......... ....                            100%  135K=0.9s
+
+2010-03-07 22:33:52 (137 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Home-Hearth-.163008.html' saved [127629/127629]
+

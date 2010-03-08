@@ -1,0 +1,13 @@
+--2010-03-07 22:35:10--  http://baby.shop.ebay.com/Bathing-Grooming-/20394/i.html
+Resolving baby.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to baby.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 114205 (112K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Bathing-Grooming-.20394.html'
+
+     0K .......... .......... .......... .......... .......... 44% 33.0K 2s
+    50K .......... .......... .......... .......... .......... 89% 58.1K 0s
+   100K .......... .                                          100%  593K=2.4s
+
+2010-03-07 22:35:13 (46.6 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Bathing-Grooming-.20394.html' saved [114205/114205]
+

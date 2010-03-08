@@ -1,0 +1,13 @@
+--2010-03-07 22:44:51--  http://collectibles.shop.ebay.com/Lamps-Lighting-/1404/i.html
+Resolving collectibles.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to collectibles.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 131816 (129K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Lamps-Lighting-.1404.html'
+
+     0K .......... .......... .......... .......... .......... 38% 28.7K 3s
+    50K .......... .......... .......... .......... .......... 77% 46.7K 1s
+   100K .......... .......... ........                        100%  120K=3.1s
+
+2010-03-07 22:44:54 (42.1 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Lamps-Lighting-.1404.html' saved [131816/131816]
+

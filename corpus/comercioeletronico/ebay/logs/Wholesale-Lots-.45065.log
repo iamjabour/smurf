@@ -1,0 +1,13 @@
+--2010-03-07 22:40:25--  http://cell-phones.shop.ebay.com/Wholesale-Lots-/45065/i.html
+Resolving cell-phones.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to cell-phones.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 116212 (113K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Wholesale-Lots-.45065.html'
+
+     0K .......... .......... .......... .......... .......... 44% 99.4K 1s
+    50K .......... .......... .......... .......... .......... 88%  189K 0s
+   100K .......... ...                                        100%  415K=0.8s
+
+2010-03-07 22:40:27 (142 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Wholesale-Lots-.45065.html' saved [116212/116212]
+

@@ -1,0 +1,13 @@
+--2010-03-07 22:45:36--  http://collectibles.shop.ebay.com/Radio-Phonograph-TV-Phone-/29832/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 134409 (131K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Radio-Phonograph-TV-Phone-.29832.html'
+
+     0K .......... .......... .......... .......... .......... 38% 94.7K 1s
+    50K .......... .......... .......... .......... .......... 76%  191K 0s
+   100K .......... .......... .......... .                    100%  149K=1.0s
+
+2010-03-07 22:45:38 (131 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Radio-Phonograph-TV-Phone-.29832.html' saved [134409/134409]
+

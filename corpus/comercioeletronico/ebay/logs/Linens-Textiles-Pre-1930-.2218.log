@@ -1,0 +1,13 @@
+--2010-03-07 22:33:54--  http://antiques.shop.ebay.com/Linens-Textiles-Pre-1930-/2218/i.html
+Resolving antiques.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to antiques.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 135176 (132K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Linens-Textiles-Pre-1930-.2218.html'
+
+     0K .......... .......... .......... .......... .......... 37% 38.1K 2s
+    50K .......... .......... .......... .......... .......... 75% 58.2K 1s
+   100K .......... .......... .......... ..                   100% 75.5K=2.6s
+
+2010-03-07 22:33:58 (50.9 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Linens-Textiles-Pre-1930-.2218.html' saved [135176/135176]
+

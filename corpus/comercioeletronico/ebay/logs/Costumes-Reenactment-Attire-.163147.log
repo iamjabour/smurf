@@ -1,0 +1,13 @@
+--2010-03-07 22:40:33--  http://clothing.shop.ebay.com/Costumes-Reenactment-Attire-/163147/i.html
+Resolving clothing.shop.ebay.com... 66.135.213.214, 66.211.160.10, 66.211.180.26, ...
+Connecting to clothing.shop.ebay.com|66.135.213.214|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 120849 (118K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Costumes-Reenactment-Attire-.163147.html'
+
+     0K .......... .......... .......... .......... .......... 42% 88.1K 1s
+    50K .......... .......... .......... .......... .......... 84%  187K 0s
+   100K .......... ........                                   100% 98.6K=1.0s
+
+2010-03-07 22:40:35 (116 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Costumes-Reenactment-Attire-.163147.html' saved [120849/120849]
+

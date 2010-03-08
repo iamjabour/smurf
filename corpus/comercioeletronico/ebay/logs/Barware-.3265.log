@@ -1,0 +1,13 @@
+--2010-03-07 22:43:45--  http://collectibles.shop.ebay.com/Barware-/3265/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 130940 (128K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Barware-.3265.html'
+
+     0K .......... .......... .......... .......... .......... 39% 98.4K 1s
+    50K .......... .......... .......... .......... .......... 78%  200K 0s
+   100K .......... .......... .......                         100%  144K=1.0s
+
+2010-03-07 22:43:47 (134 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Barware-.3265.html' saved [130940/130940]
+

@@ -1,0 +1,13 @@
+--2010-03-07 22:33:31--  http://antiques.shop.ebay.com/Asian-Antiques-/20082/i.html
+Resolving antiques.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to antiques.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 144828 (141K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Asian-Antiques-.20082.html'
+
+     0K .......... .......... .......... .......... .......... 35% 42.1K 2s
+    50K .......... .......... .......... .......... .......... 70% 64.4K 1s
+   100K .......... .......... .......... .......... .         100%  103K=2.4s
+
+2010-03-07 22:33:34 (59.9 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Asian-Antiques-.20082.html' saved [144828/144828]
+

@@ -1,0 +1,13 @@
+--2010-03-07 22:38:27--  http://photography.shop.ebay.com/Camcorders-/11724/i.html
+Resolving photography.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to photography.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 133925 (131K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Camcorders-.11724.html'
+
+     0K .......... .......... .......... .......... .......... 38% 99.5K 1s
+    50K .......... .......... .......... .......... .......... 76%  217K 0s
+   100K .......... .......... ..........                      100%  817K=0.8s
+
+2010-03-07 22:38:29 (170 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Camcorders-.11724.html' saved [133925/133925]
+

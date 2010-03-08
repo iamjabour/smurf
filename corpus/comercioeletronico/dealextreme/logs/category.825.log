@@ -1,0 +1,14 @@
+--2010-03-07 21:39:42--  http://www.dealextreme.com/products.dx/category.825
+Resolving www.dealextreme.com... 75.126.79.130, 74.86.141.61
+Connecting to www.dealextreme.com|75.126.79.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 154500 (151K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/dealextreme/category.825.html'
+
+     0K .......... .......... .......... .......... .......... 33% 61.3K 2s
+    50K .......... .......... .......... .......... .......... 66%  215K 1s
+   100K .......... .......... .......... .......... .......... 99%  238K 0s
+   150K                                                       100% 1676G=1.3s
+
+2010-03-07 21:39:44 (120 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/dealextreme/category.825.html' saved [154500/154500]
+

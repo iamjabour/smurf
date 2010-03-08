@@ -1,0 +1,13 @@
+--2010-03-07 22:45:17--  http://collectibles.shop.ebay.com/Pez-Keychains-Promo-Glasses-/14005/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 132420 (129K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Pez-Keychains-Promo-Glasses-.14005.html'
+
+     0K .......... .......... .......... .......... .......... 38% 98.8K 1s
+    50K .......... .......... .......... .......... .......... 77%  199K 0s
+   100K .......... .......... .........                       100%  127K=1.0s
+
+2010-03-07 22:45:19 (131 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Pez-Keychains-Promo-Glasses-.14005.html' saved [132420/132420]
+

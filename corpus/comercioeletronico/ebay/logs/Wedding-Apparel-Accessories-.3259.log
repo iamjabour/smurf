@@ -1,0 +1,13 @@
+--2010-03-07 22:41:47--  http://clothing.shop.ebay.com/Wedding-Apparel-Accessories-/3259/i.html
+Resolving clothing.shop.ebay.com... 66.135.205.140, 66.135.213.210, 66.135.213.214, ...
+Connecting to clothing.shop.ebay.com|66.135.205.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 123675 (121K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Wedding-Apparel-Accessories-.3259.html'
+
+     0K .......... .......... .......... .......... .......... 41%  111K 1s
+    50K .......... .......... .......... .......... .......... 82%  224K 0s
+   100K .......... ..........                                 100%  133K=0.8s
+
+2010-03-07 22:41:49 (145 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Wedding-Apparel-Accessories-.3259.html' saved [123675/123675]
+

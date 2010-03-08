@@ -1,0 +1,13 @@
+--2010-03-07 22:35:40--  http://baby.shop.ebay.com/Nursery-Furniture-/20422/i.html
+Resolving baby.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to baby.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 118912 (116K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Nursery-Furniture-.20422.html'
+
+     0K .......... .......... .......... .......... .......... 43% 94.1K 1s
+    50K .......... .......... .......... .......... .......... 86%  196K 0s
+   100K .......... ......                                     100%  818K=0.8s
+
+2010-03-07 22:35:42 (144 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Nursery-Furniture-.20422.html' saved [118912/118912]
+

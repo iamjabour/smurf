@@ -1,0 +1,13 @@
+--2010-03-07 22:39:33--  http://photography.shop.ebay.com/Projection-Equipment-/15250/i.html
+Resolving photography.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to photography.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 114973 (112K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Projection-Equipment-.15250.html'
+
+     0K .......... .......... .......... .......... .......... 44% 74.4K 1s
+    50K .......... .......... .......... .......... .......... 89%  835K 0s
+   100K .......... ..                                         100% 73.8K=0.9s
+
+2010-03-07 22:39:35 (125 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Projection-Equipment-.15250.html' saved [114973/114973]
+

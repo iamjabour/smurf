@@ -1,0 +1,13 @@
+--2010-03-07 22:35:23--  http://baby.shop.ebay.com/Feeding-/20400/i.html
+Resolving baby.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to baby.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 119552 (117K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Feeding-.20400.html'
+
+     0K .......... .......... .......... .......... .......... 42% 34.8K 2s
+    50K .......... .......... .......... .......... .......... 85% 49.5K 0s
+   100K .......... ......                                     100% 81.5K=2.7s
+
+2010-03-07 22:35:27 (44.0 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Feeding-.20400.html' saved [119552/119552]
+

@@ -1,0 +1,13 @@
+--2010-03-07 22:45:33--  http://collectibles.shop.ebay.com/Postcards-/914/i.html
+Resolving collectibles.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to collectibles.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 141938 (139K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Postcards-.914.html'
+
+     0K .......... .......... .......... .......... .......... 36%  118K 1s
+    50K .......... .......... .......... .......... .......... 72%  262K 0s
+   100K .......... .......... .......... ........             100%  231K=0.8s
+
+2010-03-07 22:45:34 (178 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Postcards-.914.html' saved [141938/141938]
+

@@ -1,0 +1,13 @@
+--2010-03-07 22:34:28--  http://antiques.shop.ebay.com/Rugs-Carpets-/37978/i.html
+Resolving antiques.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to antiques.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 147872 (144K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Rugs-Carpets-.37978.html'
+
+     0K .......... .......... .......... .......... .......... 34% 36.5K 3s
+    50K .......... .......... .......... .......... .......... 69% 83.4K 1s
+   100K .......... .......... .......... .......... ....      100% 79.1K=2.5s
+
+2010-03-07 22:34:31 (57.0 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Rugs-Carpets-.37978.html' saved [147872/147872]
+

@@ -1,0 +1,13 @@
+--2010-03-07 22:39:07--  http://photography.shop.ebay.com/Lighting-Studio-Equipment-/30078/i.html
+Resolving photography.shop.ebay.com... 66.135.202.88, 66.135.205.140, 66.135.213.210, ...
+Connecting to photography.shop.ebay.com|66.135.202.88|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 126541 (124K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Lighting-Studio-Equipment-.30078.html'
+
+     0K .......... .......... .......... .......... .......... 40% 25.4K 3s
+    50K .......... .......... .......... .......... .......... 80% 25.5K 1s
+   100K .......... .......... ...                             100% 58.2K=4.3s
+
+2010-03-07 22:39:12 (28.5 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Lighting-Studio-Equipment-.30078.html' saved [126541/126541]
+

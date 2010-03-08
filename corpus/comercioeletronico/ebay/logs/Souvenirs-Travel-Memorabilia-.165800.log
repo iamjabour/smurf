@@ -1,0 +1,13 @@
+--2010-03-07 22:46:04--  http://collectibles.shop.ebay.com/Souvenirs-Travel-Memorabilia-/165800/i.html
+Resolving collectibles.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to collectibles.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 128829 (126K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Souvenirs-Travel-Memorabilia-.165800.html'
+
+     0K .......... .......... .......... .......... .......... 39% 22.2K 3s
+    50K .......... .......... .......... .......... .......... 79% 19.6K 1s
+   100K .......... .......... .....                           100% 42.0K=5.4s
+
+2010-03-07 22:46:11 (23.2 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Souvenirs-Travel-Memorabilia-.165800.html' saved [128829/128829]
+

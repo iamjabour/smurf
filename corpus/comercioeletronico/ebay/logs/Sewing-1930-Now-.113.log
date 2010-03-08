@@ -1,0 +1,13 @@
+--2010-03-07 22:45:54--  http://collectibles.shop.ebay.com/Sewing-1930-Now-/113/i.html
+Resolving collectibles.shop.ebay.com... 66.211.180.26, 66.135.202.88, 66.135.205.140, ...
+Connecting to collectibles.shop.ebay.com|66.211.180.26|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 132130 (129K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Sewing-1930-Now-.113.html'
+
+     0K .......... .......... .......... .......... .......... 38% 13.9K 6s
+    50K .......... .......... .......... .......... .......... 77%  825K 1s
+   100K .......... .......... .........                       100%  155K=3.8s
+
+2010-03-07 22:45:58 (33.7 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Sewing-1930-Now-.113.html' saved [132130/132130]
+

@@ -1,0 +1,13 @@
+--2010-03-07 22:39:26--  http://photography.shop.ebay.com/Photo-Printers-Paper-/30021/i.html
+Resolving photography.shop.ebay.com... 66.135.213.210, 66.135.213.214, 66.211.160.10, ...
+Connecting to photography.shop.ebay.com|66.135.213.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 112218 (110K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Photo-Printers-Paper-.30021.html'
+
+     0K .......... .......... .......... .......... .......... 45% 92.2K 1s
+    50K .......... .......... .......... .......... .......... 91%  186K 0s
+   100K .........                                             100%  825K=0.8s
+
+2010-03-07 22:39:27 (133 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/ebay/Photo-Printers-Paper-.30021.html' saved [112218/112218]
+
