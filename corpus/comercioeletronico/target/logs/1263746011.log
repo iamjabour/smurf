@@ -1,0 +1,21 @@
+--2010-03-16 12:14:34--  http://www.target.com/Occasion-Dresswear-Girls-Clothing-Shoes/b/ref=sc_fe_l_5/189-4367687-8045148?ie=UTF8&node=1263746011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Occasion-Dresswear-Girls-Clothing-Shoes/b/ref=sc_fe_l_5?ie=UTF8&node=1263746011 [following]
+--2010-03-16 12:14:34--  http://www.target.com/Occasion-Dresswear-Girls-Clothing-Shoes/b/ref=sc_fe_l_5?ie=UTF8&node=1263746011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Occasion-Dresswear-Girls-Clothing-Shoes/b?ie=UTF8&node=1263746011 [following]
+--2010-03-16 12:14:34--  http://www.target.com/Occasion-Dresswear-Girls-Clothing-Shoes/b?ie=UTF8&node=1263746011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1263746011.html'
+
+     0K .......... .......... .......... .......... .......... 65.6K
+    50K .......... .......... .......... .......... .......... 66.7K
+   100K ........                                               54.9K=1.7s
+
+2010-03-16 12:14:37 (65.1 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1263746011.html' saved [111329]
+

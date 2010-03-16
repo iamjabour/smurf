@@ -1,0 +1,22 @@
+--2010-03-16 12:04:27--  http://www.target.com/Weekend-Wear-Plus-Size-Womens/b/ref=sc_pgb_r_12_0_673320011_2/189-4367687-8045148?ie=UTF8&node=16378181
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Weekend-Wear-Plus-Size-Womens/b/ref=sc_pgb_r_12_0_673320011_2?ie=UTF8&node=16378181 [following]
+--2010-03-16 12:04:28--  http://www.target.com/Weekend-Wear-Plus-Size-Womens/b/ref=sc_pgb_r_12_0_673320011_2?ie=UTF8&node=16378181
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Weekend-Wear-Plus-Size-Womens/b?ie=UTF8&node=16378181 [following]
+--2010-03-16 12:04:28--  http://www.target.com/Weekend-Wear-Plus-Size-Womens/b?ie=UTF8&node=16378181
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/16378181.html'
+
+     0K .......... .......... .......... .......... .......... 47.9K
+    50K .......... .......... .......... .......... .......... 66.9K
+   100K .......... .......... .......... .......... .......... 64.8K
+   150K                                                         790G=2.6s
+
+2010-03-16 12:04:32 (58.7 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/16378181.html' saved [154024]
+

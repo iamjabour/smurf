@@ -1,0 +1,23 @@
+--2010-03-16 12:14:18--  http://www.target.com/b/ref=sc_fe_l_5/189-4367687-8045148?ie=UTF8&node=2240174011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/b/ref=sc_fe_l_5?ie=UTF8&node=2240174011 [following]
+--2010-03-16 12:14:18--  http://www.target.com/b/ref=sc_fe_l_5?ie=UTF8&node=2240174011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/b?ie=UTF8&node=2240174011 [following]
+--2010-03-16 12:14:18--  http://www.target.com/b?ie=UTF8&node=2240174011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/2240174011.html'
+
+     0K .......... .......... .......... .......... .......... 37.0K
+    50K .......... .......... .......... .......... .......... 83.4K
+   100K .......... .......... .......... .......... .......... 55.6K
+   150K .......... .......... .......... .......... .......... 76.0K
+   200K .......... .......... .......... ...                    112K=3.8s
+
+2010-03-16 12:14:23 (61.4 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/2240174011.html' saved [239527]
+

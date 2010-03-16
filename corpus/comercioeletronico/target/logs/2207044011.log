@@ -1,0 +1,23 @@
+--2010-03-16 12:06:44--  http://www.target.com/Best-Rated-Beauty/b/ref=sc_fe_l_6/189-4367687-8045148?ie=UTF8&node=2207044011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Best-Rated-Beauty/b/ref=sc_fe_l_6?ie=UTF8&node=2207044011 [following]
+--2010-03-16 12:06:44--  http://www.target.com/Best-Rated-Beauty/b/ref=sc_fe_l_6?ie=UTF8&node=2207044011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Best-Rated-Beauty/b?ie=UTF8&node=2207044011 [following]
+--2010-03-16 12:06:45--  http://www.target.com/Best-Rated-Beauty/b?ie=UTF8&node=2207044011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/2207044011.html'
+
+     0K .......... .......... .......... .......... .......... 66.5K
+    50K .......... .......... .......... .......... ..........  105K
+   100K .......... .......... .......... .......... ..........  119K
+   150K .......... .......... .......... .......... ..........  151K
+   200K .......... .......... .......... .......... .......     146K=2.3s
+
+2010-03-16 12:06:48 (107 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/2207044011.html' saved [253800]
+

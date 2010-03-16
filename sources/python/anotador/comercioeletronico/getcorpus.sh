@@ -22,6 +22,7 @@ else
 	$(mkdir "$DIR/proof_$corpus")
 fi
 
+echo $corpus
 
 #fazendo download dos arquivos descritos no corpus.txt
 i=0
@@ -48,10 +49,18 @@ do
 	elif [ $corpus == "dealextreme" ]
 	then
 		f=${line#*products.dx/}
-	elif [ $corpus=="ebay" ]
+	elif [ $corpus == "ebay" ]
 	then
 		f=${line#*ebay.com/}
 		f=${f%/*}
+	fi
+	if [ $corpus == "americanas" ]
+	then
+		f=${line#*americanas.com.br/}
+		f=${f#*/}
+	elif [ $corpus == "target" ]
+	then 
+		f=${line#*node=}
 	fi
 
 

@@ -1,0 +1,20 @@
+--2010-03-16 12:01:48--  http://www.target.com/Skinny-Jeans-Juniors-Clothing-Womens/b/ref=sc_pgb_r_6_0_13796461_2/189-4367687-8045148?ie=UTF8&node=1253605011
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Skinny-Jeans-Juniors-Clothing-Womens/b/ref=sc_pgb_r_6_0_13796461_2?ie=UTF8&node=1253605011 [following]
+--2010-03-16 12:01:48--  http://www.target.com/Skinny-Jeans-Juniors-Clothing-Womens/b/ref=sc_pgb_r_6_0_13796461_2?ie=UTF8&node=1253605011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Skinny-Jeans-Juniors-Clothing-Womens/b?ie=UTF8&node=1253605011 [following]
+--2010-03-16 12:01:48--  http://www.target.com/Skinny-Jeans-Juniors-Clothing-Womens/b?ie=UTF8&node=1253605011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1253605011.html'
+
+     0K .......... .......... .......... .......... .......... 41.8K
+    50K .......... .......... .......... .......... .........  55.3K=2.1s
+
+2010-03-16 12:01:51 (47.6 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1253605011.html' saved [101942]
+

@@ -1,0 +1,21 @@
+--2010-03-16 12:06:00--  http://www.target.com/Soap-Glory-Lips-Beauty/b/ref=sc_fe_l_1/189-4367687-8045148?ie=UTF8&node=1268196011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Soap-Glory-Lips-Beauty/b/ref=sc_fe_l_1?ie=UTF8&node=1268196011 [following]
+--2010-03-16 12:06:01--  http://www.target.com/Soap-Glory-Lips-Beauty/b/ref=sc_fe_l_1?ie=UTF8&node=1268196011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Soap-Glory-Lips-Beauty/b?ie=UTF8&node=1268196011 [following]
+--2010-03-16 12:06:01--  http://www.target.com/Soap-Glory-Lips-Beauty/b?ie=UTF8&node=1268196011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1268196011.html'
+
+     0K .......... .......... .......... .......... .......... 66.1K
+    50K .......... .......... .......... .......... .......... 80.0K
+   100K .......... ...                                         90.0K=1.5s
+
+2010-03-16 12:06:03 (74.1 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1268196011.html' saved [115884]
+

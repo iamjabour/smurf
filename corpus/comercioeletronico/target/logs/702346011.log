@@ -1,0 +1,21 @@
+--2010-03-16 12:14:05--  http://www.target.com/NP-Set-Lips-Beauty/b/ref=sc_fe_l_1/189-4367687-8045148?ie=UTF8&node=702346011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/NP-Set-Lips-Beauty/b/ref=sc_fe_l_1?ie=UTF8&node=702346011 [following]
+--2010-03-16 12:14:05--  http://www.target.com/NP-Set-Lips-Beauty/b/ref=sc_fe_l_1?ie=UTF8&node=702346011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/NP-Set-Lips-Beauty/b?ie=UTF8&node=702346011 [following]
+--2010-03-16 12:14:06--  http://www.target.com/NP-Set-Lips-Beauty/b?ie=UTF8&node=702346011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/702346011.html'
+
+     0K .......... .......... .......... .......... .......... 41.1K
+    50K .......... .......... .......... .......... .......... 41.8K
+   100K .......... .......... .......... .......               49.5K=3.2s
+
+2010-03-16 12:14:10 (43.4 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/702346011.html' saved [140335]
+

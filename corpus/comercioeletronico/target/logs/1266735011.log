@@ -1,0 +1,22 @@
+--2010-03-16 12:07:39--  http://www.target.com/Sunless-Tanners-Bath-Body-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=1266735011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Sunless-Tanners-Bath-Body-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1266735011 [following]
+--2010-03-16 12:07:40--  http://www.target.com/Sunless-Tanners-Bath-Body-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1266735011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Sunless-Tanners-Bath-Body-Beauty/b?ie=UTF8&node=1266735011 [following]
+--2010-03-16 12:07:40--  http://www.target.com/Sunless-Tanners-Bath-Body-Beauty/b?ie=UTF8&node=1266735011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1266735011.html'
+
+     0K .......... .......... .......... .......... .......... 63.5K
+    50K .......... .......... .......... .......... .......... 66.2K
+   100K .......... .......... .......... .......... .......... 48.4K
+   150K .......... .......... .....                            56.7K=3.0s
+
+2010-03-16 12:07:44 (58.0 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1266735011.html' saved [179555]
+

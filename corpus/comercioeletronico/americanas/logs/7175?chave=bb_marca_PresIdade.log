@@ -1,0 +1,11 @@
+--2010-03-16 13:23:25--  http://www.americanas.com.br/hs/7175?chave=bb_marca_PresIdade
+Resolving www.americanas.com.br... 143.108.13.103, 143.108.13.105
+Connecting to www.americanas.com.br|143.108.13.103|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 38790 (38K) [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/americanas/7175?chave=bb_marca_PresIdade.html'
+
+     0K .......... .......... .......... .......              100%  747K=0.05s
+
+2010-03-16 13:23:25 (747 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/americanas/7175?chave=bb_marca_PresIdade.html' saved [38790/38790]
+

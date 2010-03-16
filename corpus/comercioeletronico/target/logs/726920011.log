@@ -1,0 +1,23 @@
+--2010-03-16 12:13:43--  http://www.target.com/Tools-Sonia-Kashuk-Design/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=726920011
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Tools-Sonia-Kashuk-Design/b/ref=sc_fe_l_2?ie=UTF8&node=726920011 [following]
+--2010-03-16 12:13:43--  http://www.target.com/Tools-Sonia-Kashuk-Design/b/ref=sc_fe_l_2?ie=UTF8&node=726920011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Tools-Sonia-Kashuk-Design/b?ie=UTF8&node=726920011 [following]
+--2010-03-16 12:13:44--  http://www.target.com/Tools-Sonia-Kashuk-Design/b?ie=UTF8&node=726920011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/726920011.html'
+
+     0K .......... .......... .......... .......... .......... 25.9K
+    50K .......... .......... .......... .......... .......... 58.7K
+   100K .......... .......... .......... .......... .......... 89.7K
+   150K .......... .......... .......... .......... ..........  103K
+   200K .......... .......... .......... .......... ...        35.4K=5.1s
+
+2010-03-16 12:13:50 (48.2 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/726920011.html' saved [249275]
+

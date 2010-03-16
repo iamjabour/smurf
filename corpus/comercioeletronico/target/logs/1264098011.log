@@ -1,0 +1,21 @@
+--2010-03-16 12:01:43--  http://www.target.com/Icon-Marika-Workout-Wear-Women/b/ref=sc_pgp_r_12_0_2172906011_2/189-4367687-8045148?ie=UTF8&node=1264098011
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Icon-Marika-Workout-Wear-Women/b/ref=sc_pgp_r_12_0_2172906011_2?ie=UTF8&node=1264098011 [following]
+--2010-03-16 12:01:43--  http://www.target.com/Icon-Marika-Workout-Wear-Women/b/ref=sc_pgp_r_12_0_2172906011_2?ie=UTF8&node=1264098011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Icon-Marika-Activewear-Womens/b?ie=UTF8&node=1264098011 [following]
+--2010-03-16 12:01:43--  http://www.target.com/Icon-Marika-Activewear-Womens/b?ie=UTF8&node=1264098011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1264098011.html'
+
+     0K .......... .......... .......... .......... .......... 66.7K
+    50K .......... .......... .......... .......... ..........  157K
+   100K .......... .......... .......... .......... .           144K=1.4s
+
+2010-03-16 12:01:46 (104 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1264098011.html' saved [145028]
+

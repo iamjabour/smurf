@@ -1,0 +1,21 @@
+--2010-03-16 12:16:08--  http://www.target.com/Boys-Jeans-Clothing-Shoes-Kids/b/ref=sc_fe_l_4/189-4367687-8045148?ie=UTF8&node=240680011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Boys-Jeans-Clothing-Shoes-Kids/b/ref=sc_fe_l_4?ie=UTF8&node=240680011 [following]
+--2010-03-16 12:16:08--  http://www.target.com/Boys-Jeans-Clothing-Shoes-Kids/b/ref=sc_fe_l_4?ie=UTF8&node=240680011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Boys-Jeans-Clothing-Shoes-Kids/b?ie=UTF8&node=240680011 [following]
+--2010-03-16 12:16:09--  http://www.target.com/Boys-Jeans-Clothing-Shoes-Kids/b?ie=UTF8&node=240680011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/240680011.html'
+
+     0K .......... .......... .......... .......... .......... 41.7K
+    50K .......... .......... .......... .......... .......... 82.1K
+   100K .......... .......... .......                          32.9K=2.6s
+
+2010-03-16 12:16:12 (48.3 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/240680011.html' saved [130182]
+

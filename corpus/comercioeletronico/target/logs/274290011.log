@@ -1,0 +1,24 @@
+--2010-03-16 12:16:36--  http://www.target.com/Cherokee-Boys/b/ref=sc_fe_l_4/189-4367687-8045148?ie=UTF8&node=274290011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Cherokee-Boys/b/ref=sc_fe_l_4?ie=UTF8&node=274290011 [following]
+--2010-03-16 12:16:37--  http://www.target.com/Cherokee-Boys/b/ref=sc_fe_l_4?ie=UTF8&node=274290011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Cherokee-Boys/b?ie=UTF8&node=274290011 [following]
+--2010-03-16 12:16:37--  http://www.target.com/Cherokee-Boys/b?ie=UTF8&node=274290011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/274290011.html'
+
+     0K .......... .......... .......... .......... .......... 37.2K
+    50K .......... .......... .......... .......... .......... 66.2K
+   100K .......... .......... .......... .......... .......... 44.0K
+   150K .......... .......... .......... .......... .......... 66.8K
+   200K .......... .......... .......... .......... .......... 66.3K
+   250K ...                                                    7013G=4.7s
+
+2010-03-16 12:16:43 (53.5 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/274290011.html' saved [259765]
+

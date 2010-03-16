@@ -1,0 +1,21 @@
+--2010-03-16 12:10:13--  http://www.target.com/Davidoff-Mens-Fragrance-Fragrances-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=1254575011
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Davidoff-Mens-Fragrance-Fragrances-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1254575011 [following]
+--2010-03-16 12:10:13--  http://www.target.com/Davidoff-Mens-Fragrance-Fragrances-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1254575011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Davidoff-Mens-Fragrance-Fragrances-Beauty/b?ie=UTF8&node=1254575011 [following]
+--2010-03-16 12:10:14--  http://www.target.com/Davidoff-Mens-Fragrance-Fragrances-Beauty/b?ie=UTF8&node=1254575011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1254575011.html'
+
+     0K .......... .......... .......... .......... .......... 52.8K
+    50K .......... .......... .......... .......... .......... 79.9K
+   100K .......... .......... .......... ....                  78.0K=2.0s
+
+2010-03-16 12:10:17 (66.8 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1254575011.html' saved [138061]
+

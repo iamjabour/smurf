@@ -1,0 +1,23 @@
+--2010-03-16 12:06:04--  http://www.target.com/Straightening-Irons-Hair-Care-Beauty/b/ref=sc_iw_l_3/189-4367687-8045148?node=13828331
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Straightening-Irons-Hair-Care-Beauty/b/ref=sc_iw_l_3?node=13828331 [following]
+--2010-03-16 12:06:05--  http://www.target.com/Straightening-Irons-Hair-Care-Beauty/b/ref=sc_iw_l_3?node=13828331
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Straightening-Irons-Hair-Care-Beauty/b?ie=UTF8&node=13828331 [following]
+--2010-03-16 12:06:05--  http://www.target.com/Straightening-Irons-Hair-Care-Beauty/b?ie=UTF8&node=13828331
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/13828331.html'
+
+     0K .......... .......... .......... .......... .......... 66.2K
+    50K .......... .......... .......... .......... ..........  105K
+   100K .......... .......... .......... .......... ..........  120K
+   150K .......... .......... .......... .......... ..........  149K
+   200K .......... .......... .......... .......... .......     152K=2.3s
+
+2010-03-16 12:06:08 (108 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/13828331.html' saved [253405]
+

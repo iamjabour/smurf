@@ -1,0 +1,23 @@
+--2010-03-16 12:12:54--  http://www.target.com/Coarse-Hair-Products-Care-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=1267337011
+Resolving www.target.com... 207.171.166.49
+Connecting to www.target.com|207.171.166.49|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Coarse-Hair-Products-Care-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1267337011 [following]
+--2010-03-16 12:12:54--  http://www.target.com/Coarse-Hair-Products-Care-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1267337011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Coarse-Hair-Products-Care-Beauty/b?ie=UTF8&node=1267337011 [following]
+--2010-03-16 12:12:54--  http://www.target.com/Coarse-Hair-Products-Care-Beauty/b?ie=UTF8&node=1267337011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1267337011.html'
+
+     0K .......... .......... .......... .......... .......... 78.7K
+    50K .......... .......... .......... .......... ..........  308K
+   100K .......... .......... .......... .......... ..........  337K
+   150K .......... .......... .......... .......... ..........  251K
+   200K .......... .......... .......... .......... ........    351K=1.3s
+
+2010-03-16 12:12:57 (194 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1267337011.html' saved [254112]
+

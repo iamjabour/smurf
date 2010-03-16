@@ -1,0 +1,21 @@
+--2010-03-16 12:02:44--  http://www.target.com/Plus-Size-Activewear-Womens/b/ref=sc_iw_r_2_0/189-4367687-8045148?node=13768851
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Plus-Size-Activewear-Womens/b/ref=sc_iw_r_2_0?node=13768851 [following]
+--2010-03-16 12:02:45--  http://www.target.com/Plus-Size-Activewear-Womens/b/ref=sc_iw_r_2_0?node=13768851
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Plus-Size-Activewear-Womens/b?ie=UTF8&node=13768851 [following]
+--2010-03-16 12:02:45--  http://www.target.com/Plus-Size-Activewear-Womens/b?ie=UTF8&node=13768851
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/13768851.html'
+
+     0K .......... .......... .......... .......... .......... 61.2K
+    50K .......... .......... .......... .......... .......... 92.2K
+   100K .......... .                                           81.2K=1.5s
+
+2010-03-16 12:02:47 (74.3 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/13768851.html' saved [113963]
+

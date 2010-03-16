@@ -1,0 +1,21 @@
+--2010-03-16 12:08:55--  http://www.target.com/Cosmetic-Bags-Clutches-Cosmetics-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=2054902011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Cosmetic-Bags-Clutches-Cosmetics-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=2054902011 [following]
+--2010-03-16 12:08:55--  http://www.target.com/Cosmetic-Bags-Clutches-Cosmetics-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=2054902011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Cosmetic-Bags-Clutches-Cosmetics-Beauty/b?ie=UTF8&node=2054902011 [following]
+--2010-03-16 12:08:56--  http://www.target.com/Cosmetic-Bags-Clutches-Cosmetics-Beauty/b?ie=UTF8&node=2054902011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/2054902011.html'
+
+     0K .......... .......... .......... .......... .......... 55.5K
+    50K .......... .......... .......... .......... .......... 67.0K
+   100K .......... .......... .....                            86.8K=1.9s
+
+2010-03-16 12:08:59 (64.7 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/2054902011.html' saved [128783]
+

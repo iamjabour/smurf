@@ -1,0 +1,21 @@
+--2010-03-16 12:05:56--  http://www.target.com/Soap-Glory-Cosmetic-Bags-Gift/b/ref=sc_fe_l_1/189-4367687-8045148?ie=UTF8&node=1290268011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Soap-Glory-Cosmetic-Bags-Gift/b/ref=sc_fe_l_1?ie=UTF8&node=1290268011 [following]
+--2010-03-16 12:05:57--  http://www.target.com/Soap-Glory-Cosmetic-Bags-Gift/b/ref=sc_fe_l_1?ie=UTF8&node=1290268011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Soap-Glory-Cosmetic-Bags-Gift/b?ie=UTF8&node=1290268011 [following]
+--2010-03-16 12:05:57--  http://www.target.com/Soap-Glory-Cosmetic-Bags-Gift/b?ie=UTF8&node=1290268011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1290268011.html'
+
+     0K .......... .......... .......... .......... .......... 64.7K
+    50K .......... .......... .......... .......... ..........  111K
+   100K .......... .......... .........                         164K=1.4s
+
+2010-03-16 12:05:59 (92.3 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1290268011.html' saved [132725]
+

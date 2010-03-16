@@ -1,0 +1,21 @@
+--2010-03-16 12:07:24--  http://www.target.com/Bath-Salts-Body-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=676928011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Bath-Salts-Body-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=676928011 [following]
+--2010-03-16 12:07:24--  http://www.target.com/Bath-Salts-Body-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=676928011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Bath-Salts-Body-Beauty/b?ie=UTF8&node=676928011 [following]
+--2010-03-16 12:07:24--  http://www.target.com/Bath-Salts-Body-Beauty/b?ie=UTF8&node=676928011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/676928011.html'
+
+     0K .......... .......... .......... .......... .......... 42.1K
+    50K .......... .......... .......... .......... .......... 56.4K
+   100K .......... .......... .......... .......... ......     38.3K=3.3s
+
+2010-03-16 12:07:29 (44.6 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/676928011.html' saved [150439]
+

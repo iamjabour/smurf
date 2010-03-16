@@ -1,0 +1,23 @@
+--2010-03-16 12:11:14--  http://www.target.com/Mens-Fragrances-Citrus-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=367871011
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Mens-Fragrances-Citrus-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=367871011 [following]
+--2010-03-16 12:11:15--  http://www.target.com/Mens-Fragrances-Citrus-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=367871011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Mens-Fragrances-Citrus-Beauty/b?ie=UTF8&node=367871011 [following]
+--2010-03-16 12:11:15--  http://www.target.com/Mens-Fragrances-Citrus-Beauty/b?ie=UTF8&node=367871011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/367871011.html'
+
+     0K .......... .......... .......... .......... .......... 79.8K
+    50K .......... .......... .......... .......... ..........  112K
+   100K .......... .......... .......... .......... ..........  116K
+   150K .......... .......... .......... .......... ..........  154K
+   200K .......... .......... .......... ......                 127K=2.1s
+
+2010-03-16 12:11:19 (112 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/367871011.html' saved [242566]
+

@@ -1,0 +1,23 @@
+--2010-03-16 12:11:27--  http://www.target.com/Mens-Fragrances-Woodsy-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=367875011
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Mens-Fragrances-Woodsy-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=367875011 [following]
+--2010-03-16 12:11:30--  http://www.target.com/Mens-Fragrances-Woodsy-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=367875011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Mens-Fragrances-Woodsy-Beauty/b?ie=UTF8&node=367875011 [following]
+--2010-03-16 12:11:30--  http://www.target.com/Mens-Fragrances-Woodsy-Beauty/b?ie=UTF8&node=367875011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/367875011.html'
+
+     0K .......... .......... .......... .......... .......... 41.4K
+    50K .......... .......... .......... .......... .......... 66.9K
+   100K .......... .......... .......... .......... .......... 55.9K
+   150K .......... .......... .......... .......... .......... 47.2K
+   200K .......... .......... .......... .....                 47.7K=4.6s
+
+2010-03-16 12:11:36 (50.6 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/367875011.html' saved [241038]
+

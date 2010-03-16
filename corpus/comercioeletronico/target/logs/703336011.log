@@ -1,0 +1,20 @@
+--2010-03-16 12:14:14--  http://www.target.com/NP-Set-Top-5-Beauty/b/ref=sc_fe_l_1/189-4367687-8045148?ie=UTF8&node=703336011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/NP-Set-Top-5-Beauty/b/ref=sc_fe_l_1?ie=UTF8&node=703336011 [following]
+--2010-03-16 12:14:15--  http://www.target.com/NP-Set-Top-5-Beauty/b/ref=sc_fe_l_1?ie=UTF8&node=703336011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/NP-Set-Top-5-Beauty/b?ie=UTF8&node=703336011 [following]
+--2010-03-16 12:14:15--  http://www.target.com/NP-Set-Top-5-Beauty/b?ie=UTF8&node=703336011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/703336011.html'
+
+     0K .......... .......... .......... .......... .......... 79.3K
+    50K .......... .......... .......... .....                  238K=0.8s
+
+2010-03-16 12:14:17 (109 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/703336011.html' saved [87116]
+

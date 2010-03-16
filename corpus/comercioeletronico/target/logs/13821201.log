@@ -1,0 +1,23 @@
+--2010-03-16 12:11:57--  http://www.target.com/Hair-Dryers-Care-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=13821201
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Hair-Dryers-Care-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=13821201 [following]
+--2010-03-16 12:11:58--  http://www.target.com/Hair-Dryers-Care-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=13821201
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Hair-Dryers-Care-Beauty/b?ie=UTF8&node=13821201 [following]
+--2010-03-16 12:11:58--  http://www.target.com/Hair-Dryers-Care-Beauty/b?ie=UTF8&node=13821201
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/13821201.html'
+
+     0K .......... .......... .......... .......... .......... 78.8K
+    50K .......... .......... .......... .......... ..........  111K
+   100K .......... .......... .......... .......... ..........  119K
+   150K .......... .......... .......... .......... ..........  117K
+   200K .......... .......... .......... .......... ...        84.4K=2.5s
+
+2010-03-16 12:12:02 (99.4 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/13821201.html' saved [249682]
+

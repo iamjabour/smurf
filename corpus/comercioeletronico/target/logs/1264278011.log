@@ -1,0 +1,24 @@
+--2010-03-16 12:07:45--  http://www.target.com/Eye-Shadow-Cosmetics-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=1264278011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Eye-Shadow-Cosmetics-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1264278011 [following]
+--2010-03-16 12:07:46--  http://www.target.com/Eye-Shadow-Cosmetics-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1264278011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Eye-Shadow-Cosmetics-Beauty/b?ie=UTF8&node=1264278011 [following]
+--2010-03-16 12:07:46--  http://www.target.com/Eye-Shadow-Cosmetics-Beauty/b?ie=UTF8&node=1264278011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1264278011.html'
+
+     0K .......... .......... .......... .......... .......... 81.9K
+    50K .......... .......... .......... .......... .......... 53.7K
+   100K .......... .......... .......... .......... .......... 84.6K
+   150K .......... .......... .......... .......... .......... 63.2K
+   200K .......... .......... .......... .......... .......... 47.0K
+   250K                                                         639G=4.0s
+
+2010-03-16 12:07:51 (62.8 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1264278011.html' saved [256343]
+

@@ -1,0 +1,23 @@
+--2010-03-16 12:04:06--  http://www.target.com/Tankinis-Swimwear-Womens/b/ref=sc_iw_r_1_1/189-4367687-8045148?node=15959161
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Tankinis-Swimwear-Womens/b/ref=sc_iw_r_1_1?node=15959161 [following]
+--2010-03-16 12:04:07--  http://www.target.com/Tankinis-Swimwear-Womens/b/ref=sc_iw_r_1_1?node=15959161
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Tankinis-Swimwear-Womens/b?ie=UTF8&node=15959161 [following]
+--2010-03-16 12:04:07--  http://www.target.com/Tankinis-Swimwear-Womens/b?ie=UTF8&node=15959161
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/15959161.html'
+
+     0K .......... .......... .......... .......... .......... 65.4K
+    50K .......... .......... .......... .......... .......... 55.8K
+   100K .......... .......... .......... .......... .......... 54.5K
+   150K .......... .......... .......... .......... .......... 66.1K
+   200K .......... .......... ........                         46.2K=3.9s
+
+2010-03-16 12:04:12 (57.9 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/15959161.html' saved [233693]
+

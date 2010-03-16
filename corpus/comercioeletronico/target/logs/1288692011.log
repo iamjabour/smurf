@@ -1,0 +1,23 @@
+--2010-03-16 12:04:00--  http://www.target.com/Womens-Halter-Tops-Swimwear/b/ref=sc_iw_r_1_1/189-4367687-8045148?node=1288692011
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Womens-Halter-Tops-Swimwear/b/ref=sc_iw_r_1_1?node=1288692011 [following]
+--2010-03-16 12:04:00--  http://www.target.com/Womens-Halter-Tops-Swimwear/b/ref=sc_iw_r_1_1?node=1288692011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Womens-Halter-Tops-Swimwear/b?ie=UTF8&node=1288692011 [following]
+--2010-03-16 12:04:00--  http://www.target.com/Womens-Halter-Tops-Swimwear/b?ie=UTF8&node=1288692011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1288692011.html'
+
+     0K .......... .......... .......... .......... .......... 67.5K
+    50K .......... .......... .......... .......... .......... 49.6K
+   100K .......... .......... .......... .......... .......... 66.9K
+   150K .......... .......... .......... .......... .......... 77.8K
+   200K .......... ...                                          134K=3.2s
+
+2010-03-16 12:04:04 (66.0 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1288692011.html' saved [219008]
+

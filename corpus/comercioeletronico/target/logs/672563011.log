@@ -1,0 +1,21 @@
+--2010-03-16 12:07:30--  http://www.target.com/Body-Spray-Bath-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=672563011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Body-Spray-Bath-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=672563011 [following]
+--2010-03-16 12:07:30--  http://www.target.com/Body-Spray-Bath-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=672563011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Body-Spray-Bath-Beauty/b?ie=UTF8&node=672563011 [following]
+--2010-03-16 12:07:31--  http://www.target.com/Body-Spray-Bath-Beauty/b?ie=UTF8&node=672563011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/672563011.html'
+
+     0K .......... .......... .......... .......... .......... 41.2K
+    50K .......... .......... .......... .......... .......... 55.5K
+   100K ..                                                     19.9K=2.3s
+
+2010-03-16 12:07:34 (45.5 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/672563011.html' saved [105401]
+

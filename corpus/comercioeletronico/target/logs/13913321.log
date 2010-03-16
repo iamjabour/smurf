@@ -1,0 +1,23 @@
+--2010-03-16 12:02:05--  http://www.target.com/Rain-Boots-Womens-Shoes/b/ref=sc_iw_r_2_0/189-4367687-8045148?node=13913321
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Rain-Boots-Womens-Shoes/b/ref=sc_iw_r_2_0?node=13913321 [following]
+--2010-03-16 12:02:05--  http://www.target.com/Rain-Boots-Womens-Shoes/b/ref=sc_iw_r_2_0?node=13913321
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Rain-Boots-Womens-Shoes/b?ie=UTF8&node=13913321 [following]
+--2010-03-16 12:02:05--  http://www.target.com/Rain-Boots-Womens-Shoes/b?ie=UTF8&node=13913321
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/13913321.html'
+
+     0K .......... .......... .......... .......... .......... 67.0K
+    50K .......... .......... .......... .......... .......... 64.9K
+   100K .......... .......... .......... .......... .......... 48.2K
+   150K .......... .......... .......... .......... .......... 73.5K
+   200K .......... .......... .......... .......... ...        48.1K=4.1s
+
+2010-03-16 12:02:11 (58.8 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/13913321.html' saved [249415]
+

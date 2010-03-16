@@ -1,0 +1,21 @@
+--2010-03-16 12:08:42--  http://www.target.com/Lip-Liner-Cosmetics-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=1264285011
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Lip-Liner-Cosmetics-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1264285011 [following]
+--2010-03-16 12:08:43--  http://www.target.com/Lip-Liner-Cosmetics-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1264285011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Lip-Liner-Cosmetics-Beauty/b?ie=UTF8&node=1264285011 [following]
+--2010-03-16 12:08:43--  http://www.target.com/Lip-Liner-Cosmetics-Beauty/b?ie=UTF8&node=1264285011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1264285011.html'
+
+     0K .......... .......... .......... .......... .......... 54.1K
+    50K .......... .......... .......... .......... .......... 79.3K
+   100K .......... .......... .......... ..                    82.4K=2.0s
+
+2010-03-16 12:08:46 (68.0 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1264285011.html' saved [136135]
+

@@ -1,0 +1,23 @@
+--2010-03-16 12:16:21--  http://www.target.com/Boys-Shirts-Tees-Clothing-Shoes/b/ref=sc_fe_l_4/189-4367687-8045148?ie=UTF8&node=172845011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Boys-Shirts-Tees-Clothing-Shoes/b/ref=sc_fe_l_4?ie=UTF8&node=172845011 [following]
+--2010-03-16 12:16:22--  http://www.target.com/Boys-Shirts-Tees-Clothing-Shoes/b/ref=sc_fe_l_4?ie=UTF8&node=172845011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Boys-Shirts-Tees-Clothing-Shoes/b?ie=UTF8&node=172845011 [following]
+--2010-03-16 12:16:22--  http://www.target.com/Boys-Shirts-Tees-Clothing-Shoes/b?ie=UTF8&node=172845011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/172845011.html'
+
+     0K .......... .......... .......... .......... .......... 46.8K
+    50K .......... .......... .......... .......... .......... 78.5K
+   100K .......... .......... .......... .......... .......... 86.1K
+   150K .......... .......... .......... .......... .......... 35.0K
+   200K .......... .......... .......... .....                 76.6K=4.2s
+
+2010-03-16 12:16:27 (56.4 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/172845011.html' saved [241033]
+

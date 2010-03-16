@@ -1,0 +1,12 @@
+--2010-03-16 13:23:21--  http://www.americanas.com.br/AcomLine/17278/37708
+Resolving www.americanas.com.br... 143.108.13.103, 143.108.13.105
+Connecting to www.americanas.com.br|143.108.13.103|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 59196 (58K) [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/americanas/17278.37708.html'
+
+     0K .......... .......... .......... .......... .......... 86%  802K 0s
+    50K .......                                               100%  867K=0.07s
+
+2010-03-16 13:23:21 (810 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/americanas/17278.37708.html' saved [59196/59196]
+

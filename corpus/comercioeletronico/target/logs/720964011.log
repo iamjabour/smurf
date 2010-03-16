@@ -1,0 +1,21 @@
+--2010-03-16 12:05:03--  http://www.target.com/Boots-Forest-Beauty/b/ref=sc_fe_l_4/189-4367687-8045148?ie=UTF8&node=720964011
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Boots-Forest-Beauty/b/ref=sc_fe_l_4?ie=UTF8&node=720964011 [following]
+--2010-03-16 12:05:03--  http://www.target.com/Boots-Forest-Beauty/b/ref=sc_fe_l_4?ie=UTF8&node=720964011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Boots-Forest-Beauty/b?ie=UTF8&node=720964011 [following]
+--2010-03-16 12:05:03--  http://www.target.com/Boots-Forest-Beauty/b?ie=UTF8&node=720964011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/720964011.html'
+
+     0K .......... .......... .......... .......... .......... 55.5K
+    50K .......... .......... .......... .......... .......... 97.9K
+   100K ..........                                              104K=1.5s
+
+2010-03-16 12:05:05 (73.1 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/720964011.html' saved [113596]
+

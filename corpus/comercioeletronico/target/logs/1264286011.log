@@ -1,0 +1,23 @@
+--2010-03-16 12:08:48--  http://www.target.com/Lipstick-Cosmetics-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=1264286011
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Lipstick-Cosmetics-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1264286011 [following]
+--2010-03-16 12:08:48--  http://www.target.com/Lipstick-Cosmetics-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1264286011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Lipstick-Cosmetics-Beauty/b?ie=UTF8&node=1264286011 [following]
+--2010-03-16 12:08:48--  http://www.target.com/Lipstick-Cosmetics-Beauty/b?ie=UTF8&node=1264286011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1264286011.html'
+
+     0K .......... .......... .......... .......... .......... 65.8K
+    50K .......... .......... .......... .......... .......... 56.5K
+   100K .......... .......... .......... .......... .......... 66.0K
+   150K .......... .......... .......... .......... .......... 51.3K
+   200K .......... .......... .......... .......... ...        71.1K=4.0s
+
+2010-03-16 12:08:53 (61.0 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1264286011.html' saved [248880]
+

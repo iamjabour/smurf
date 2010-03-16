@@ -1,0 +1,22 @@
+--2010-03-16 12:01:52--  http://www.target.com/Bikini-Intimates-Womens-Clothing/b/ref=sc_iw_r_2_0/189-4367687-8045148?node=13768341
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Bikini-Intimates-Womens-Clothing/b/ref=sc_iw_r_2_0?node=13768341 [following]
+--2010-03-16 12:01:53--  http://www.target.com/Bikini-Intimates-Womens-Clothing/b/ref=sc_iw_r_2_0?node=13768341
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Bikini-Intimates-Womens-Clothing/b?ie=UTF8&node=13768341 [following]
+--2010-03-16 12:01:53--  http://www.target.com/Bikini-Intimates-Womens-Clothing/b?ie=UTF8&node=13768341
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/13768341.html'
+
+     0K .......... .......... .......... .......... .......... 41.5K
+    50K .......... .......... .......... .......... .......... 66.2K
+   100K .......... .......... .......... .......... .......... 57.3K
+   150K .......... .......... .......... ..                    53.9K=3.4s
+
+2010-03-16 12:01:57 (53.1 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/13768341.html' saved [186763]
+

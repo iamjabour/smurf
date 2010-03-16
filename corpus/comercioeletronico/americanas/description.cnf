@@ -1,0 +1,9 @@
+{
+"name": "comercioeletronico",
+"prooftype": "CeProof",
+"corpus": 
+[
+	{"name":"americanas", "path":".", "proof":"proof", "type':"files"}
+]
+}
+

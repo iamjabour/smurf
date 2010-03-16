@@ -1,0 +1,21 @@
+--2010-03-16 12:09:21--  http://www.target.com/Dolce-Gabbana-Womens-Fragrance-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=1254236011
+Resolving www.target.com... 72.21.206.1
+Connecting to www.target.com|72.21.206.1|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Dolce-Gabbana-Womens-Fragrance-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1254236011 [following]
+--2010-03-16 12:09:21--  http://www.target.com/Dolce-Gabbana-Womens-Fragrance-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1254236011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Dolce-Gabbana-Womens-Fragrance-Beauty/b?ie=UTF8&node=1254236011 [following]
+--2010-03-16 12:09:22--  http://www.target.com/Dolce-Gabbana-Womens-Fragrance-Beauty/b?ie=UTF8&node=1254236011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1254236011.html'
+
+     0K .......... .......... .......... .......... .......... 63.8K
+    50K .......... .......... .......... .......... .......... 49.6K
+   100K .......... .......... ..                               48.7K=2.2s
+
+2010-03-16 12:09:25 (54.4 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1254236011.html' saved [124931]
+

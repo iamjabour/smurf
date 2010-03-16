@@ -1,0 +1,21 @@
+--2010-03-16 12:10:01--  http://www.target.com/Giorgio-Armani-Mens-Fragrance-Beauty/b/ref=sc_fe_l_2/189-4367687-8045148?ie=UTF8&node=1253923011
+Resolving www.target.com... 72.21.210.133
+Connecting to www.target.com|72.21.210.133|:80... connected.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Giorgio-Armani-Mens-Fragrance-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1253923011 [following]
+--2010-03-16 12:10:01--  http://www.target.com/Giorgio-Armani-Mens-Fragrance-Beauty/b/ref=sc_fe_l_2?ie=UTF8&node=1253923011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 301 MovedPermanently
+Location: http://www.target.com/Giorgio-Armani-Mens-Fragrance-Beauty/b?ie=UTF8&node=1253923011 [following]
+--2010-03-16 12:10:02--  http://www.target.com/Giorgio-Armani-Mens-Fragrance-Beauty/b?ie=UTF8&node=1253923011
+Reusing existing connection to www.target.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1253923011.html'
+
+     0K .......... .......... .......... .......... .......... 63.6K
+    50K .......... .......... .......... .......... .......... 56.3K
+   100K .......... ......                                      55.5K=2.0s
+
+2010-03-16 12:10:04 (59.1 KB/s) - `/home/iamjabour/workspacePessoal/tese/sources/python/anotador/comercioeletronico/download/target/1253923011.html' saved [119453]
+
