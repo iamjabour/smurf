@@ -26,26 +26,49 @@ class Ce(Base):
         lists = []
 
         # create productlist candidates
+        biggestList = False
         for k, v in self.__labels.iteritems():
 #            print k, v
             for i in v:
                 pass
 #                print i.str
                 #marker.mark(i.dom, 'product')
+            if not biggestList or\
+                len(v[0].parent.childNodes) > len(biggestList.childNodes):
+                biggestList = v[0].parent
             lists.append(v[0].parent)
 
         plists = []
-        biggest = 0
+        biggesttext = 0
+        biggestChild = 0
         for i in lists:
 #                plists.append(i)
                 print len(i.text), i.text[0:100]
-                biggest = max(len(i.text), biggest)
+                biggesttext = max(len(i.text), biggesttext)
 
-        print biggest
+        print biggesttext, biggestList
+        plists = [biggestList]
+
+        print lists
         for i in lists:
-            if self._c(i.text,biggest,5):
+            if self._c(i.text,biggesttext,5):
                 print 'add', i.text[0:100]
-                plists.append(i)
+                isparent = False
+                for k in plists:
+                    n = k
+                    while n != None:
+                        if n in plists:
+                            isparent = True
+                        n = n.parent
+                if not isparent:
+                    n = i
+                    while n != None:
+                        if n in plists:
+                            isparent = True
+                        n = n.parent
+
+                if not isparent:
+                    plists.append(i)
 
         for k, v in self.__labels.iteritems():
             for i in v:
@@ -68,6 +91,7 @@ class Ce(Base):
         """
         Retorna apenas os nos que contem um cluster com tamannho de pelo menos 2 elementos
         """
+        self._comp+= 1
         for x in xrange(0, len(node.childNodes)):
             currNode = node.childNodes[x]
 
@@ -86,16 +110,18 @@ class Ce(Base):
                 do = True
 
             if node.result[x] and do:
-                if self.__labels.has_key(node.result[x]):
-                    self.__labels[node.result[x]].append(currNode)
+                if self.__labels.has_key(self._comp):
+                    self.__labels[self._comp].append(currNode)
                 else:
-                    self.__labels.update({node.result[x]: [currNode]})
+                    self.__labels.update({self._comp: [currNode]})
+            else:
+                self._comp += 1
 
     def process(self, dom, marker):
 
         self._comp = 0
         tree = Node().loadNodeTree(dom, 0, True)
-        self.dfs(tree, maxDist=0, height=2)
+        self.dfs(tree, 0.6)
         self._mark(tree, marker)
         result = marker.process()
 

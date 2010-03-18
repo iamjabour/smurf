@@ -36,10 +36,17 @@ class Node(object):
         treeNode.depth = depth
 
         if depth > 0:
-            treeNode.str = xmlNode.localName.lower().strip()
-            treeNode.tags.append(xmlNode.localName.lower().strip())
+            if xmlNode.localName != None:
+                treeNode.str = xmlNode.localName.lower().strip()
+                treeNode.tags.append(xmlNode.localName.lower().strip())
+
+            else:
+                treeNode.str = "erro"
+                treeNode.tags.append("erro")
+
             if useText:
                 treeNode.text = xmlNode.textContent.encode('utf8')
+
             treeNode.tag = xmlNode.localName
 
         for x in xrange(0,len(xmlNode.childNodes)):

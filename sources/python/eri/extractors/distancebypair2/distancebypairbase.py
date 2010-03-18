@@ -2,13 +2,18 @@
 import sys
 from eri.utils.distances import stringDistance
 from eri.utils.distances import simpleTreeMatching
+from eri.utils.match import match2
+from eri.utils.match import match as match1
+from eri.utils.match import treematch
 
 class DistanceByPairBase(object):
     """
     Esse módulo busca nós adjecentes com distancia de edição menor que uma
     proporção, passada por parametro, e os agrupa em componentes.
     """
-    def match2(self, node, esp, maxDist, height, tags=False, printtag=False):
+
+
+    def m2(self, node, esp, maxDist, height, tags=False, printtag=False):
         s1 = None
         s2 = None
 
@@ -45,7 +50,7 @@ class DistanceByPairBase(object):
         #for
         return result
 
-    def match(self, node, esp, maxDist, height, tags=False, printtag=False):
+    def m(self, node, esp, maxDist, height, tags=False, printtag=False):
         global s1
         global s2
         s1 = ""
@@ -108,7 +113,7 @@ class DistanceByPairBase(object):
         #for
         return result
 
-    def dfs(self, node, esp=0, maxDist=0.3, height=3):
+    def dfs(self, node, maxDist=0.5, height=3):
         """
         Navega em profundidade na árvore buscando nós adjacentes com distancia
         de edição menor que maxDist e os agrupa na mesma componente.
@@ -119,12 +124,16 @@ class DistanceByPairBase(object):
         na mesma componente
         """
 
-#        node.result = self.match(node,esp,maxDist, height)
-        node.result = self.match2(node,esp,maxDist, height)
+#        print 'maxDist', maxDist
+#        node.result = match1(node, maxDist,height=3, tags=True)
+#        node.result = match2(node, 0.6,height=3, tags=True)
+#        node.result = self.m2(node, 0, maxDist, height, tags=True)
+#        node.result = match2(node,maxDist, tags=True)
+        node.result = treematch(node, maxDist)
 
         for x in xrange(0,len(node.childNodes)):
             if not node.result[x]:
-                self.dfs(node.childNodes[x], esp+1)
+                self.dfs(node.childNodes[x], maxDist, height)
 
 
     def _mark(self, node, marker):

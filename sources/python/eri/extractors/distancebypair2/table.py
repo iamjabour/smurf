@@ -2,6 +2,8 @@
 from eri.extractors.distancebypair2.distancebypairbase import DistanceByPairBase as Base
 import sys
 from eri.extractors.distancebypair2.node import Node
+from eri.utils.match import match
+from eri.utils.match import treematch
 
 class Table(Base):
     """
@@ -66,7 +68,10 @@ class Table(Base):
 
         for table in itables:
             #self.dfs(table)
-            table.result = self.match(table,0,0.5,0,printtag=False,tags=True)
+            #table.result = self.match(table,0,0.5,0,printtag=False,tags=True)
+#            table.result = match(table,0.5,0,printtag=False,tags=True)
+            table.result = treematch(table, 0.5)
+
             print table.result
 
             d = {}

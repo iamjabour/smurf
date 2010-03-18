@@ -43,9 +43,9 @@ def simpleTreeMatching(a, b):
         return 0
 
     m, n = len(a.childNodes), len(b.childNodes)
-    print m, n
+#    print m, n
     M = [ [0] * (n+1) for i in xrange(m+1) ]
-    print M
+#    print M
     for i in xrange(m):
         for j in xrange(n):
             pass
