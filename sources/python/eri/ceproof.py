@@ -1,3 +1,4 @@
+import pdb
 
 class CeProof(object):
     """
@@ -16,7 +17,7 @@ class CeProof(object):
         Get from provided tree all proof nodes. That's means, tables nodes with
         attribute genuinetable = yes
         """
-
+#        print node.nodeType node.
 #        print 'load proof'
 #        if node.localName and node.localName.lower() == 'table':
         if node.hasAttribute('proof_productlist') and \
@@ -37,3 +38,17 @@ class CeProof(object):
         self.__resetLabels()
         self.dfs(dom)
         return self.labels
+
+if __name__ == "__main__":
+    from eri.utils.parsedom import ParseDom
+    import sys
+    if len(sys.argv) < 2:
+        print "erro"
+    else:
+
+        p = ParseDom()
+
+        d = p.parse(sys.argv[1])
+ #       c = CeProof()
+ #       c.getProof(d)
+
