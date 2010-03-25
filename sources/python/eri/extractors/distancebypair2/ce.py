@@ -2,12 +2,38 @@
 from eri.extractors.distancebypair2.distancebypairbase import DistanceByPairBase as Base
 import sys
 from eri.extractors.distancebypair2.node import Node
+#from eri.utils.match import match2 as match
+#from eri.utils.match import match as match
+from eri.utils.match import treematch as match
 
 class Ce(Base):
     """
     Esse módulo busca nós adjecentes com distancia de edição menor que uma
     proporção, passada por parametro, e os agrupa em componentes.
     """
+
+    def __init__(self):
+        self.maxDist = 0.6
+        self.height = 0
+        self.tags = True
+
+    def dfs(self, node, maxDist, height, tags):
+        """
+        Navega em profundidade na árvore buscando nós adjacentes com distancia
+        de edição menor que maxDist e os agrupa na mesma componente.
+
+        @param Node node: No atual da dfs
+        @param int esp: Nível da árvore
+        @param float maxDist: Proporção máxima de diferença para ser agrupado
+        na mesma componente
+        """
+
+#        print 'maxDist', maxDist
+        node.result = match(node, maxDist, height, tags)
+
+        for x in xrange(0,len(node.childNodes)):
+            if not node.result[x]:
+                self.dfs(node.childNodes[x], maxDist, height, tags)
 
     def _mark(self, node, marker):
         """
@@ -56,10 +82,10 @@ class Ce(Base):
                 isparent = False
                 for k in plists:
                     n = k
-                    while n != None:
-                        if n in plists:
-                            isparent = True
-                        n = n.parent
+#                    while n != None:
+#                        if n in plists:
+#                            isparent = True
+#                        n = n.parent
                 if not isparent:
                     n = i
                     while n != None:
@@ -77,7 +103,8 @@ class Ce(Base):
 
 
         for pl in plists:
-            marker.mark(pl.dom, 'productlist')
+            if pl:
+                marker.mark(pl.dom, 'productlist')
 
 
         return
@@ -95,12 +122,12 @@ class Ce(Base):
         for x in xrange(0, len(node.childNodes)):
             currNode = node.childNodes[x]
 
-#            print x, node.result
+            print x, node.result
             if not node.result[x]:
                 self._submark(currNode)
             else:
                 pass
-#                print currNode.parent.dom.tagName, currNode.str
+                print currNode.parent.dom.tagName, currNode.str
 
             do = False
 
@@ -121,7 +148,7 @@ class Ce(Base):
 
         self._comp = 0
         tree = Node().loadNodeTree(dom, 0, True)
-        self.dfs(tree, 0.6)
+        self.dfs(tree, 0.6, self.height, self.tags)
         self._mark(tree, marker)
         result = marker.process()
 

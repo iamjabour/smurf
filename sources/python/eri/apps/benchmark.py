@@ -70,10 +70,10 @@ class Benchmark:
             if not doc:
                 break
 
+            print doc.id,  doc.path
             proof = self.corpus.getProof(doc)
             result = (0.0,0.0)
             for extractor in self.extractors:
-                print doc.id,  doc.path
                 if not self.pfilenames:
                     self.marker.reset()
                     extractor.process(doc.content, self.marker)

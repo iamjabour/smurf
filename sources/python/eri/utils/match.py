@@ -3,7 +3,7 @@ from eri.utils.distances import simpleTreeMatching
 
 __debug = False
 
-def match2(node, maxDist=0, height=0, tags=False, printtag=False):
+def match2(node, maxDist=0, height=3, tags=False, printtag=False):
     if __debug:
         print "Debug mode: eri.utils.match.match2()"
 
@@ -49,7 +49,7 @@ def match2(node, maxDist=0, height=0, tags=False, printtag=False):
 
     return result
 
-def match(node, maxDist=0, height=0, tags=False, printtag=False):
+def match(node, maxDist=0, height=3, tags=False, printtag=False):
     global __debug
     if __debug:
         print "Debug mode: eri.utils.match.match()"
@@ -101,8 +101,7 @@ def match(node, maxDist=0, height=0, tags=False, printtag=False):
     return result
 
 
-def treematch(node, maxDist=0.0):
-
+def treematch(node, maxDist=0.0, height=3, tags=False):
     __comp = 1
     start = 0
 
@@ -120,12 +119,13 @@ def treematch(node, maxDist=0.0):
 
             if __debug:
                 print 'matchcount, refid, matchid, r:', matchCount, start, matchId, r
-            finish = (matchCount *r)+start+r
-            maxMatch = check(node, maxDist,  r, start, finish)
+#            finish = (matchCount *r)+start+r
+            finish = min(((r*matchCount)+start)+r,len(node.childNodes) )
+#           print 'finish:', finish
+            maxMatch = check(node, maxDist,  r, start, finish)+1
 
 
-
-#            print 'maxmatch!', maxMatch
+ #           print 'maxmatch!', maxMatch
 
             if maxMatch:
                 for i in xrange(start, min(maxMatch,len(node.childNodes))):
@@ -179,19 +179,21 @@ def check(node, maxDist, r, first, last):
 
     maxmatch = False
     i = first+r
-    while i+r < last:
+    while i+r <= last:
 #        print i, i+r, last
         for k in xrange(0, r):
 #            print k , first+k, i+k
             a = node.childNodes[first+k]
             b = node.childNodes[i+k]
             d = float(simpleTreeMatching(a,b))/max(len(a.tags), len(b.tags),1)
+#            print a.tags,'\n', b.tags
 
             if 1-d <= maxDist:
-                maxmatch = (r*i)+k
+                maxmatch = i+k
+#                print maxmatch
             else:
 #                print 'not match'
-                return maxmatch-k
+                return maxmatch
 
         i += r
     return maxmatch
@@ -203,29 +205,59 @@ if __name__ == "__main__":
     from eri.extractors.distancebypair2.node import Node
     import test_trees
 
-    html = test_trees.tree3
-    dom = libxml2dom.parseString(html)
-    root = Node(dom)
-    root = root.loadNodeTree(dom, 0, True)
+    if True:
+        #__debug = True
 
-    div1 = root.childNodes[0].childNodes[0].childNodes[0]
-    div2 = root.childNodes[0].childNodes[0].childNodes[1]
+        html = test_trees.tree3
+        dom = libxml2dom.parseString(html)
+        root = Node(dom)
+        root = root.loadNodeTree(dom, 0, True)
 
-    body = root.childNodes[0].childNodes[0]
-#    print 'div1', div1.tags
-#    print 'div2', div2.tags
-    print 'body', body.tags
+        div1 = root.childNodes[0].childNodes[0].childNodes[0]
+        div2 = root.childNodes[0].childNodes[0].childNodes[1]
 
-    __debug = True
+        body = root.childNodes[0].childNodes[0]
+    #    print 'div1', div1.tags
+    #    print 'div2', div2.tags
+    #    print 'body', body.tags
 
-    print treematch(body)
-    #tree2
-    if False:
         r = treematch(body)
+        if not r == [1, 1, 1, 1, 1, False, False]:
+            print 'False', r
+
+    #tree2
+    if True:
+        html = test_trees.tree2
+        dom = libxml2dom.parseString(html)
+        root = Node(dom)
+        root = root.loadNodeTree(dom, 0, True)
+
+        div1 = root.childNodes[0].childNodes[0].childNodes[0]
+        div2 = root.childNodes[0].childNodes[0].childNodes[1]
+
+        body = root.childNodes[0].childNodes[0]
+    #    print 'div1', div1.tags
+    #    print 'div2', div2.tags
+    #    print 'body', body.tags
+        r = treematch(body)
+        #print r
         if not r == [False, 2, 2, 2, 2, 2, 2, False, 4, 4, 4, 4, 4, 4]:
             print "Flase", r
 
-    if False:#tree1 and 2
+    if True:#tree1 and 2
+
+        html = test_trees.tree1
+        dom = libxml2dom.parseString(html)
+        root = Node(dom)
+        root = root.loadNodeTree(dom, 0, True)
+
+        div1 = root.childNodes[0].childNodes[0].childNodes[0]
+        div2 = root.childNodes[0].childNodes[0].childNodes[1]
+
+        body = root.childNodes[0].childNodes[0]
+    #    print 'div1', div1.tags
+    #    print 'div2', div2.tags
+    #    print 'body', body.tags
         __debug = False
         r = match2(div1, maxDist=.00, height=0, tags=False, printtag=False)
         if not r == [1,1,False] :

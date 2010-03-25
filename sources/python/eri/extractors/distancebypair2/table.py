@@ -2,14 +2,22 @@
 from eri.extractors.distancebypair2.distancebypairbase import DistanceByPairBase as Base
 import sys
 from eri.extractors.distancebypair2.node import Node
-from eri.utils.match import match
-from eri.utils.match import treematch
+
+# chose match function
+#from eri.utils.match import match as match #mathc1
+#from eri.utils.match import match2 as match #match2
+from eri.utils.match import treematch as match #match3
 
 class Table(Base):
     """
     Esse módulo busca nós adjecentes com distancia de edição menor que uma
     proporção, passada por parametro, e os agrupa em componentes.
     """
+
+    def __init__(self):
+        self.maxDist = 0.5
+        self.height = 0 #use in match 1 and 2
+        self.tags = True #use in mathc1
 
     def tDfs(self, node, vet):
         """
@@ -67,12 +75,9 @@ class Table(Base):
         print 'itables', len(itables)
 
         for table in itables:
-            #self.dfs(table)
-            #table.result = self.match(table,0,0.5,0,printtag=False,tags=True)
-#            table.result = match(table,0.5,0,printtag=False,tags=True)
-            table.result = treematch(table, 0.5)
+            table.result = match(table, self.maxDist,self.height, self.tags)
 
-            print table.result
+            #print table.result
 
             d = {}
             for o in table.result:
