@@ -82,5 +82,5 @@ if __name__ == '__main__':
     a = root.childNodes[0].childNodes[0].childNodes[0]
     b = root.childNodes[0].childNodes[0].childNodes[1]
 
-    print a.tag, b.tag
+    #print a.tag, b.tag
     print simpleTreeMatching(a,b)
