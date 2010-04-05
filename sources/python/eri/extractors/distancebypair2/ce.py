@@ -2,8 +2,8 @@
 from eri.extractors.distancebypair2.distancebypairbase import DistanceByPairBase as Base
 import sys
 from eri.extractors.distancebypair2.node import Node
-#from eri.utils.match import match2 as match
 #from eri.utils.match import match as match
+#from eri.utils.match import match2 as match
 from eri.utils.match import treematch as match
 
 class Ce(Base):
@@ -28,7 +28,6 @@ class Ce(Base):
         na mesma componente
         """
 
-#        print 'maxDist', maxDist
         node.result = match(node, maxDist, height, tags)
 
         for x in xrange(0,len(node.childNodes)):
@@ -46,68 +45,78 @@ class Ce(Base):
         table = []
         self.__labels = {}
         self._submark(node)
+        # labels são as componentes criadas pela dfs retiradas da arvore
 
-#        print self.__labels
+        biggestComponent = self._biggestComponent()
+        lastValid = self._lastValid()
+        biggestsText = self._biggestsText()
+
+
+#        marker.mark(biggestComponent.dom, 'productlist')
+        marker.mark(lastValid.dom, 'productlist')
+
+        for i in biggestsText:
+            pass
+            marker.mark(i.dom, 'productlist')
+
+    def _biggestsText(self):
+        lists = []
+
+        biggestText = 0
+        for k, v in self.__labels.iteritems():
+                biggestText = max(biggestText, len(v[0].parent.text))
+                lists.append(v[0].parent)
+
+        plists = []
+        for i in lists:
+            if self._c(i.text,biggestText,5):
+                plists.append(i)
+
+        return plists
+
+    def _lastValid(self):
+        """
+            retorna o ultimo no com mais de um filho valido
+            (com mais de x caracteres)
+        """
 
         lists = []
+        CHILDMIN = 2
+        TEXTMIN = 150
+        # create productlist candidates
+
+        biggestList = False
+        for k, v in self.__labels.iteritems():
+            vale = 0
+            for i in v:
+                if  TEXTMIN < len(i.text):
+                    vale += 1
+            if vale > 2:
+                lists.append(v[0].parent)
+
+        pl = None
+        for i in lists:
+            if pl and  i.id > pl.id:
+                pl = i
+            elif not pl:
+                pl = i
+
+        return pl
+
+    def _biggestComponent(self):
+        """
+            return biggest component
+        """
 
         # create productlist candidates
         biggestList = False
         for k, v in self.__labels.iteritems():
-#            print k, v
-            for i in v:
-                pass
-#                print i.str
-                #marker.mark(i.dom, 'product')
-            if not biggestList or\
-                len(v[0].parent.childNodes) > len(biggestList.childNodes):
-                biggestList = v[0].parent
-            lists.append(v[0].parent)
+            if not biggestList or \
+                len(v) > len(biggestList):
+                biggestList = v
 
-        plists = []
-        biggesttext = 0
-        biggestChild = 0
-        for i in lists:
-#                plists.append(i)
-                print len(i.text), i.text[0:100]
-                biggesttext = max(len(i.text), biggesttext)
-
-        print biggesttext, biggestList
-        plists = [biggestList]
-
-        print lists
-        for i in lists:
-            if self._c(i.text,biggesttext,5):
-                print 'add', i.text[0:100]
-                isparent = False
-                for k in plists:
-                    n = k
-#                    while n != None:
-#                        if n in plists:
-#                            isparent = True
-#                        n = n.parent
-                if not isparent:
-                    n = i
-                    while n != None:
-                        if n in plists:
-                            isparent = True
-                        n = n.parent
-
-                if not isparent:
-                    plists.append(i)
-
-        for k, v in self.__labels.iteritems():
-            for i in v:
-                if i.parent in plists:
-                    marker.mark(i.dom, 'product')
-
-
-        for pl in plists:
-            if pl:
-                marker.mark(pl.dom, 'productlist')
-
-
-        return
+        # retornar o no da maior lista como sendo o productlist
+        return v[0].parent
 
     def _c(self, a, val, m ):
         if abs(len(a) - val) < m:
@@ -122,12 +131,12 @@ class Ce(Base):
         for x in xrange(0, len(node.childNodes)):
             currNode = node.childNodes[x]
 
-            print x, node.result
+            #print x, node.result
             if not node.result[x]:
                 self._submark(currNode)
             else:
                 pass
-                print currNode.parent.dom.tagName, currNode.str
+                #print currNode.parent.dom.tagName, currNode.str
 
             do = False
 
