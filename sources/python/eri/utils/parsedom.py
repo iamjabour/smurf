@@ -55,6 +55,7 @@ class ParseDom(object):
                 htmlString = unicodeHtml
 
         htmlString = sanitizer.removeJavaScript(htmlString)
+        htmlString = sanitizer.removeNoScript(htmlString)
 #        htmlString = sanitizer.replaceHtmlForDiv(htmlString)
 
         if chardet:

@@ -7,6 +7,8 @@ regexes = {}
 regexes['script'] = re.compile(r'<script[^>]*>.*?</script>', \
     re.IGNORECASE | re.DOTALL)
 regexes['html'] = re.compile(r'<(/?)html>', re.IGNORECASE)
+regexes['noscript'] = re.compile(r'<noscript[^>]*>.*?</noscript>', \
+    re.IGNORECASE | re.DOTALL)
 
 
 def removeTag(docString, tag, replacement=''):
@@ -71,6 +73,24 @@ def removeJavaScript(docString):
 
     return regexes['script'].sub(
         '<script><!--   REMOVED   //--></script>',
+        docString
+    )
+
+def removeNoScript(docString):
+    """
+    JavaScript code containing literal HTML tags cause the parser to create
+    new nodes, breaking the script code and producing garbage in the DOM tree,
+    even if the code is surrounded by <!-- html comment //--> tags.
+
+    This function truncates the script code to a simple comment.
+    """
+
+    # Mozilla Firefox considers script code everything up to the "</script>"
+    # character sequence. As such, a simple ungreedy regular expression should
+    # be enough to cover the majority of cases.
+
+    return regexes['noscript'].sub(
+        '<noscript><!--   REMOVED   //--></noscript>',
         docString
     )
 
