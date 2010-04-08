@@ -54,10 +54,10 @@ class Ce(Base):
         biggestsText = self._biggestsText()
         biggestParent = self._biggestParent()
 
-        print 'biggestComponent', biggestComponent.text[:100].strip()
-        print 'lastValid', lastValid.text[:100].strip()
-        print 'biggestParent', biggestParent.tags[:50], biggestParent.text[:100].strip()
-        print 'biggestsText', biggestsText
+#        print 'biggestComponent', biggestComponent.text[:100].strip()
+#        print 'lastValid', lastValid.text[:100].strip()
+#        print 'biggestParent', biggestParent.tags[:50], biggestParent.text[:100].strip()
+#        print 'biggestsText', biggestsText
 
 
         if biggestComponent:
@@ -72,8 +72,8 @@ class Ce(Base):
 
         for i in biggestsText:
             pass
-            print i.result
-            print 'biggestText', len(i.text), i.text[:100]
+#            print i.result
+#            print 'biggestText', len(i.text), i.text[:100]
             marker.mark(i.dom, 'productlist')
 
     def _biggestParent(self):

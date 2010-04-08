@@ -22,7 +22,7 @@ class CeProof(object):
 #        if node.localName and node.localName.lower() == 'table':
         if node.hasAttribute('proof_productlist') and \
           node.getAttribute('proof_productlist') == 'true':
-            print 'find productlist'
+#            print 'find productlist'
             self.labels['productlist'].append(node)
         elif node.hasAttribute('proof_product') and \
           node.getAttribute('proof_product') == 'true':

@@ -71,6 +71,7 @@ def removeJavaScript(docString):
     # character sequence. As such, a simple ungreedy regular expression should
     # be enough to cover the majority of cases.
 
+    return removeTag(docString, 'script', '<!-- script-REMOVED //-->')
     return regexes['script'].sub(
         '<script><!--   REMOVED   //--></script>',
         docString
@@ -89,10 +90,18 @@ def removeNoScript(docString):
     # character sequence. As such, a simple ungreedy regular expression should
     # be enough to cover the majority of cases.
 
+    return removeTag(docString, 'noscript', '<!-- noscript-REMOVED //-->')
     return regexes['noscript'].sub(
         '<noscript><!--   REMOVED   //--></noscript>',
         docString
     )
+
+def cleanHtml(docString):
+    html = docString
+#    html = removeTag(html, 'script', '')
+#    html = removeTag(html, 'noscript', '')
+#    html = removeTag(html, 'style', '')
+    return html
 
 def replaceHtmlForDiv(docString):
     """
