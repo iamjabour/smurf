@@ -1,0 +1,13 @@
+--2010-04-08 12:14:45--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=3967&name=GameCube-accessories&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/3967.html'
+
+     0K .......... .......... .......... .......... ..........  410K
+    50K .......... .......... .......... .......... ..........  832K
+   100K ........                                                965K=0.2s
+
+2010-04-08 12:14:46 (570 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/3967.html' saved [111500]
+

@@ -1,0 +1,13 @@
+--2010-04-08 12:15:49--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=384&name=Plasma-TV-Accessories&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 146990 (144K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/384.html'
+
+     0K .......... .......... .......... .......... .......... 34%  183K 1s
+    50K .......... .......... .......... .......... .......... 69%  659K 0s
+   100K .......... .......... .......... .......... ...       100%  862K=0.4s
+
+2010-04-08 12:15:50 (359 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/384.html' saved [146990/146990]
+

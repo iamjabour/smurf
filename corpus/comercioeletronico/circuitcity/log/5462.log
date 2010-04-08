@@ -1,0 +1,13 @@
+--2010-04-08 12:13:21--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=5462&name=Karaoke-Products&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/5462.html'
+
+     0K .......... .......... .......... .......... ..........  410K
+    50K .......... .......... .......... .......... ..........  850K
+   100K                                                        96.9G=0.2s
+
+2010-04-08 12:13:22 (553 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/5462.html' saved [102452]
+

@@ -1,0 +1,13 @@
+--2010-04-08 12:13:10--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4678&name=Network-Media-Players&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4678.html'
+
+     0K .......... .......... .......... .......... ..........  409K
+    50K .......... .......... .......... .......... ..........  849K
+   100K .......... .......... .......... .....                  836K=0.2s
+
+2010-04-08 12:13:10 (606 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4678.html' saved [139129]
+

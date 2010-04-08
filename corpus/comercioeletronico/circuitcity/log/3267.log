@@ -1,0 +1,13 @@
+--2010-04-08 12:14:28--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=3267&name=Xbox-360-Games&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/3267.html'
+
+     0K .......... .......... .......... .......... ..........  411K
+    50K .......... .......... .......... .......... ..........  842K
+   100K .......... .......... .......... .......... ......      846K=0.2s
+
+2010-04-08 12:14:29 (620 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/3267.html' saved [149867]
+

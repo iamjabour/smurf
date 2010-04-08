@@ -1,0 +1,13 @@
+--2010-04-08 12:14:07--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=237&name=Power-Inverters&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/237.html'
+
+     0K .......... .......... .......... .......... ..........  407K
+    50K .......... .......... .......... .......... ..........  853K
+   100K .......... .......... .......... .......                836K=0.2s
+
+2010-04-08 12:14:07 (607 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/237.html' saved [140395]
+

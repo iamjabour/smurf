@@ -1,0 +1,13 @@
+--2010-04-08 12:15:28--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=5384&name=Hair-Care&Nav=%7Cc:4635%7C&Sort=0&Recs=10
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/5384.html'
+
+     0K .......... .......... .......... .......... ..........  411K
+    50K .......... .......... .......... .......... ..........  832K
+   100K ....                                                   1.07M=0.2s
+
+2010-04-08 12:15:28 (562 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/5384.html' saved [107174]
+

@@ -1,0 +1,13 @@
+--2010-04-08 12:14:50--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=1541&name=Office-Chairs&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1541.html'
+
+     0K .......... .......... .......... .......... ..........  347K
+    50K .......... .......... .......... .......... ..........  846K
+   100K .......... .......... .......... .....                  839K=0.2s
+
+2010-04-08 12:14:51 (552 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1541.html' saved [138332]
+

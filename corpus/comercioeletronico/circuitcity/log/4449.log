@@ -1,0 +1,13 @@
+--2010-04-08 12:15:32--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4449&name=Hard-Disk-Camcorders&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 130316 (127K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4449.html'
+
+     0K .......... .......... .......... .......... .......... 39%  193K 0s
+    50K .......... .......... .......... .......... .......... 78%  674K 0s
+   100K .......... .......... .......                         100%  842K=0.4s
+
+2010-04-08 12:15:33 (348 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4449.html' saved [130316/130316]
+

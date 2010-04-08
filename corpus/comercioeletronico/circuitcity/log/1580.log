@@ -1,0 +1,13 @@
+--2010-04-08 12:15:37--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=1580&name=Optics&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 137769 (135K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1580.html'
+
+     0K .......... .......... .......... .......... .......... 37%  186K 0s
+    50K .......... .......... .......... .......... .......... 74%  598K 0s
+   100K .......... .......... .......... ....                 100%  855K=0.4s
+
+2010-04-08 12:15:38 (343 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1580.html' saved [137769/137769]
+

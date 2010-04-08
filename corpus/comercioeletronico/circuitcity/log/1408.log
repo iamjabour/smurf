@@ -1,0 +1,13 @@
+--2010-04-08 12:12:44--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=1408&name=Component-Video-Cable&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1408.html'
+
+     0K .......... .......... .......... .......... ..........  408K
+    50K .......... .......... .......... .......... ..........  845K
+   100K .......... .......... .......... .........              848K=0.2s
+
+2010-04-08 12:12:45 (612 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1408.html' saved [143251]
+

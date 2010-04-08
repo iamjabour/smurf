@@ -1,0 +1,12 @@
+--2010-04-08 12:12:52--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=452&name=Fiber-Optic-Toslink-Cables&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/452.html'
+
+     0K .......... .......... .......... .......... ..........  413K
+    50K .......... .......... .......... .......... ......      854K=0.2s
+
+2010-04-08 12:12:53 (549 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/452.html' saved [98490]
+

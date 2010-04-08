@@ -1,0 +1,13 @@
+--2010-04-08 12:13:05--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4671&name=DVD-Players-at-[SITE-NAME]&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4671.html'
+
+     0K .......... .......... .......... .......... ..........  411K
+    50K .......... .......... .......... .......... ..........  842K
+   100K .......... .......... .......... .........              846K=0.2s
+
+2010-04-08 12:13:06 (612 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4671.html' saved [142954]
+

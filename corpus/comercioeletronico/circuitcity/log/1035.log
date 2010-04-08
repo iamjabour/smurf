@@ -1,0 +1,13 @@
+--2010-04-08 12:15:36--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=1035&name=Document-Cameras&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 102791 (100K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1035.html'
+
+     0K .......... .......... .......... .......... .......... 49%  192K 0s
+    50K .......... .......... .......... .......... .......... 99%  676K 0s
+   100K                                                       100%  728G=0.3s
+
+2010-04-08 12:15:37 (300 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1035.html' saved [102791/102791]
+

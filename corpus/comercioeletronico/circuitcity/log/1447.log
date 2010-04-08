@@ -1,0 +1,13 @@
+--2010-04-08 12:14:57--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=1447&name=File-Cabinets&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1447.html'
+
+     0K .......... .......... .......... .......... ..........  411K
+    50K .......... .......... .......... .......... ..........  846K
+   100K .....                                                   866K=0.2s
+
+2010-04-08 12:14:58 (563 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1447.html' saved [107697]
+

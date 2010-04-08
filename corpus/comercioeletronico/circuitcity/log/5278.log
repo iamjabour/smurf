@@ -1,0 +1,13 @@
+--2010-04-08 12:13:52--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=5278&name=Motorized-TV-Wall-Mounts&Nav=%7Cc:717%7C&Sort=0&Recs=10
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/5278.html'
+
+     0K .......... .......... .......... .......... ..........  409K
+    50K .......... .......... .......... .......... ..........  842K
+   100K .                                                      1.26M=0.2s
+
+2010-04-08 12:13:53 (554 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/5278.html' saved [103487]
+

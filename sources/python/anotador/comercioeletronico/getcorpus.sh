@@ -61,7 +61,12 @@ do
 	elif [ $corpus == "target" ]
 	then 
 		f=${line#*node=}
+	elif [ $corpus == "circuitcity" ]
+	then
+		f=${f#*CatId=}
+		f=${f%&name*}
 	fi
+
 
 
 	file=${f/\//.}

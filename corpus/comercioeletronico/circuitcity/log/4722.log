@@ -1,0 +1,13 @@
+--2010-04-08 12:13:45--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4722&name=Surround-Sound-Systems&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4722.html'
+
+     0K .......... .......... .......... .......... ..........  348K
+    50K .......... .......... .......... .......... ..........  828K
+   100K .......... .......... ......                            888K=0.2s
+
+2010-04-08 12:13:46 (542 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4722.html' saved [129963]
+

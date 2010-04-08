@@ -1,0 +1,13 @@
+--2010-04-08 12:15:12--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4219&name=PCIE-Solid-State-Hard-Drives&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4219.html'
+
+     0K .......... .......... .......... .......... ..........  398K
+    50K .......... .......... .......... .......... ..........  836K
+   100K                                                        1149G=0.2s
+
+2010-04-08 12:15:13 (543 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4219.html' saved [103017]
+

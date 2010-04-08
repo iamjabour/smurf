@@ -1,0 +1,13 @@
+--2010-04-08 12:15:48--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4718&name=Portable-TVs&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4718.html'
+
+     0K .......... .......... .......... .......... ..........  344K
+    50K .......... .......... .......... .......... ..........  849K
+   100K .........                                               837K=0.2s
+
+2010-04-08 12:15:49 (508 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4718.html' saved [112516]
+

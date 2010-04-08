@@ -1,0 +1,13 @@
+--2010-04-08 12:13:31--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4599&name=floor-standing-speakers&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4599.html'
+
+     0K .......... .......... .......... .......... ..........  406K
+    50K .......... .......... .......... .......... ..........  756K
+   100K .......... .......... .......... .....                  455K=0.3s
+
+2010-04-08 12:13:32 (507 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4599.html' saved [138820]
+
