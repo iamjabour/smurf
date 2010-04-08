@@ -47,30 +47,60 @@ class Ce(Base):
         self._submark(node)
         # labels são as componentes criadas pela dfs retiradas da arvore
 
+#        print self.__labels
+
         biggestComponent = self._biggestComponent()
         lastValid = self._lastValid()
         biggestsText = self._biggestsText()
+        biggestParent = self._biggestParent()
+
+        print 'biggestComponent', biggestComponent.text[:100].strip()
+        print 'lastValid', lastValid.text[:100].strip()
+        print 'biggestParent', biggestParent.tags[:50], biggestParent.text[:100].strip()
+        print 'biggestsText', biggestsText
 
 
-#        marker.mark(biggestComponent.dom, 'productlist')
-        marker.mark(lastValid.dom, 'productlist')
+        if biggestComponent:
+    #        marker.mark(biggestComponent.dom, 'productlist')
+            pass
+
+        if lastValid:
+            marker.mark(lastValid.dom, 'productlist')
+
+        if biggestParent:
+            marker.mark(biggestParent.dom, 'productlist')
 
         for i in biggestsText:
             pass
+            print i.result
+            print 'biggestText', len(i.text), i.text[:100]
             marker.mark(i.dom, 'productlist')
+
+    def _biggestParent(self):
+        lists = []
+        MIN = 200
+        biggestParent = False
+        for k, v in self.__labels.iteritems():
+            if not biggestParent:
+                biggestParent = v[0].parent
+            elif len(biggestParent.text) < len(v[0].parent.text) and \
+             len(v[0].parent.text) > MIN:
+                biggestParent = v[0].parent
+        return biggestParent
 
     def _biggestsText(self):
         lists = []
 
         biggestText = 0
         for k, v in self.__labels.iteritems():
-                biggestText = max(biggestText, len(v[0].parent.text))
-                lists.append(v[0].parent)
+                biggestText = max(biggestText, len(v[0].text))
+                lists.append(v[0])
 
         plists = []
         for i in lists:
             if self._c(i.text,biggestText,5):
-                plists.append(i)
+                if i.parent not in plists:
+                    plists.append(i.parent)
 
         return plists
 
@@ -94,7 +124,7 @@ class Ce(Base):
             if vale > 2:
                 lists.append(v[0].parent)
 
-        pl = None
+        pl = False
         for i in lists:
             if pl and  i.id > pl.id:
                 pl = i
@@ -107,7 +137,7 @@ class Ce(Base):
         """
             return biggest component
         """
-
+        v = False
         # create productlist candidates
         biggestList = False
         for k, v in self.__labels.iteritems():
@@ -116,7 +146,10 @@ class Ce(Base):
                 biggestList = v
 
         # retornar o no da maior lista como sendo o productlist
-        return v[0].parent
+        if v:
+            return v[0].parent
+        else:
+            return False
 
     def _c(self, a, val, m ):
         if abs(len(a) - val) < m:
