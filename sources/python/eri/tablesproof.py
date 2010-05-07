@@ -12,13 +12,9 @@ class TablesProof(object):
         Get from provided tree all proof nodes. That's means, tables nodes with
         attribute genuinetable = yes
         """
+        if self.getProofInf(node) == 'table':
+            self.labels['table'].append(node)
 
-        if node.localName and node.localName.lower() == 'table':
-            if node.hasAttribute('genuinetable') and \
-              node.getAttribute('genuinetable') == 'yes':
-                self.labels['table'].append(node)
-#            else:
-#                self.labels['other'].append(node)
         for child in node.childNodes:
             self.dfs(child)
 
@@ -30,3 +26,16 @@ class TablesProof(object):
         self.labels = {'table':[]}
         self.dfs(dom)
         return self.labels
+
+    def getProofInf(self, node):
+        if node == None:
+            return 'other'
+        if node.localName and node.localName.lower() == 'table':
+            if node.hasAttribute('genuinetable') and \
+              node.getAttribute('genuinetable') == 'yes':
+                return 'table'
+#                self.labels['table'].append(node)
+            else:
+#                self.labels['other'].append(node)
+                return 'other'
+
