@@ -22,8 +22,11 @@ class Table(Base):
         self.maxDist = 0.5
         self.height = 0 #use in match 1 and 2
         self.tags = True #use in mathc1
-        self.csvoutfile = open('out.csv', 'w') #None
-        print model, corpora
+        self.csvoutfile = False
+        #self.csvoutfile = open('out.csv', 'w') #None
+        
+
+        #print model, corpora
         self.classifier = WekaClassifier(model, corpora)
 
     def tDfs(self, node, vet):
@@ -114,18 +117,18 @@ class Table(Base):
             if tr == 0:
                 tr += 1
 
-            line = (td, tr, td/float(tr), table.depth, table.proof)
+            line = (len(table.text)/max(float(c),1.0), c, td, tr, td/float(tr), table.depth)
 
-            if self.csvoutfile != None:
-                print >> self.csvoutfile, "%d, %d, %.02f, %d, %s" % line
+            if self.csvoutfile:
+                for element in line:
+                    print >> self.csvoutfile, element, ",",
+                print >> self.csvoutfile, table.proof
+            else:
+                classification = self.classifier.classify(line)
 
-            classification = self.classifier.classify(line[:-1])
-
-            print "mark:", classification
-            if classification.strip() == 'table':
-                marker.mark(table.dom, 'table')
-
-
+    #            print "mark:", classification
+                if classification.strip() == 'table':
+                    marker.mark(table.dom, 'table')
 
 
     def _mark(self, dom, marker, post=False):
@@ -147,13 +150,14 @@ class Table(Base):
 
     def process(self, dom, marker):
 
+        print ".",
         self._comp = 0
         self._mark2(dom, marker, True)
 #        self._mark(dom,marker)
         result = marker.process()
 
         if not result:
-            print '\n\nResultado Vazio\n\n'
+#            print '\n\nResultado Vazio\n\n'
             return dom.toString()
         else:
             return dom.toString()
