@@ -1,5 +1,5 @@
 # -*- coding: latin-1 -*-
-from distancebypairbase import DistanceByPairBase as Base
+from eri.extractors.distancebypair2.distancebypairbase import DistanceByPairBase as Base
 import sys
 from node import Node
 from wekaclassifier import WekaClassifier
@@ -8,6 +8,7 @@ from eri.utils.match import match as match #mathc1
 #from eri.utils.match import match2 as match #match2
 #from eri.utils.match import treematch as match #match3
 import os
+import math
 
 class Table(Base):
     """
@@ -24,8 +25,8 @@ class Table(Base):
         self.tags = True #use in mathc1
         self.csvoutfile = False
         #self.csvoutfile = open('out.csv', 'w') #None
-        
 
+        self.head = False
         #print model, corpora
         self.classifier = WekaClassifier(model, corpora)
 
@@ -45,7 +46,7 @@ class Table(Base):
 
         return i
 
-    def count_tr_td(self,node):
+    def count(self,node):
         td = 0
         tr = 0
 
@@ -67,95 +68,178 @@ class Table(Base):
                 tr += 1
 
         for child in node.childNodes:
-            (ctr,ctd) = self.count_tr_td(child)
+            (ctr,ctd) = self.count(child)
             tr += ctr
             td += ctd
         return (tr,td)
 
+    def count_tr_td(self,node, cells, text, lenght):
+        td = 0
+        tr = 0
 
-    def _mark2(self, dom, marker, postProcess=False):
+        if node.dom.localName == 'td' or node.dom.localName == 'th':
+            try:
+                t = node.dom.textContent
+            except UnicodeDecodeError:
+                t = ""
 
+            cells[-1] += 1
+
+        elif node.dom.localName == 'tr':
+            try:
+                t = node.dom.textContent
+            except UnicodeDecodeError:
+                t = ""
+
+            cells.append(0)
+            text.append(len(text))
+            lenght.append(0)
+        elif len(cells) > 0:
+            lenght[-1] += 1
+
+        for child in node.childNodes:
+            self.count_tr_td(child, cells, text, lenght)
+
+    def c(self, node):
+#        print "NODE", node.tags
+        print
+
+        cells = []
+        text = []
+        lenght = []
+
+        self.count_tr_td(node, cells, text, lenght)
+
+        print cells
+        print text
+        print lenght
+
+        f = {}
+        r = len(cells)
+
+        if r == 0:
+            r += 1
+            cells.append(1)
+
+
+        if max(cells) == 0:
+            cells[0] = 1
+
+        fc = sum(cells)/float(r)
+        f.update({"fc":fc})
+
+        fdc = 0
+        for i in cells:
+            fdc += (i - fc) * (i - fc)
+        fdc = fdc / float(r)
+        fdc = math.sqrt(fdc)
+        f.update({"fdc":fdc})
+
+        fr = sum(cells) / float(max(cells))
+        f.update({"fr":fr})
+
+        fdr = 0
+        for i in cells:
+            fdr += (i - fr) * (i - fr)
+        fdr = fdr / float(max(cells))
+        fdr = math.sqrt(fdr)
+        f.update({"fdr":fdr})
+
+
+        fcl = sum(text) / float(sum(cells))
+        f.update({"fcl":fcl})
+
+
+        fdcl = 0
+        for i in text:
+            fdcl += (i - fdcl) * (i - fdcl)
+        fdcl = fdcl / float(sum(cells))
+        fdcl = math.sqrt(fdcl)
+        f.update({"fdcl":fdcl})
+
+        fclc = sum(text) / float(sum(cells))
+        f.update({"fclc":fclc})
+
+        ci = [0] * len(cells)
+
+        for i in xrange(len(cells)):
+            ci[i] = 0
+
+        tr, td = self.count(node)
+
+        f.update({"tr":tr,"td":td})
+
+        if tr == 0:
+            tr += 1
+
+        f.update({"td_tr": td / float(tr)})
+
+
+        ftl = 0
+        for i in node.tags:
+            ftl += len(i)
+        ftl = ftl / float(len(node.tags))
+        f.update({"ftl":ftl})
+
+        line = []
+        for k,v in f.items():
+            line.append(v)
+            print k, v, " ",
+            if not self.head and self.csvoutfile:
+                print >> self.csvoutfile, k , ",",
+        print
+        if not self.head and self.csvoutfile:
+            self.head = True
+            print >> self.csvoutfile, "class"
+
+        if self.csvoutfile:
+            for v in line:
+                print >> self.csvoutfile, v, ",",
+            print >> self.csvoutfile, node.proof
+        else:
+            classification = self.classifier.classify(line)
+#            print "mark:", classification
+            if classification.strip() == 'table':
+                return True
+        return False
+
+
+    def lf(self, dom, marker, process=2):
         tables = dom.getElementsByTagName('table')
         tree = Node().loadNodeTree(dom,0)
 
         itables = []
         self.tDfs(tree,itables)
 
-#        print 'tables',  len(tables)
-#        print 'itables', len(itables)
-
         for table in itables:
-            table.result = match(table, self.maxDist,self.height, self.tags)
-
-            #print table.result
-
-            d = {}
-            for o in table.result:
-                if o:
-                    d.setdefault(o,0)
-                    d[o]+=1
-
             c = 0
-            for i in d:
-                c += d[i]
+            if process > 0:
+                table.result = match(table, self.maxDist,self.height, self.tags)
 
-            td, tr = 0, 1
+                #print table.result
 
-            if postProcess:
-                (tr,td) = self.count_tr_td(table)
-                if c >= 2:
-                    if tr > 0 and td/float(tr) > 1:
- #                       print td/float(tr)
-#                        marker.mark(table.dom,'table')
-                        pass
-            else:
-                if c >= 2:
-#                    marker.mark(table.dom,'table')
-                    pass
+                d = {}
+                for o in table.result:
+                    if o:
+                        d.setdefault(o,0)
+                        d[o]+=1
 
+                for i in d:
+                    c += d[i]
 
-            if tr == 0:
-                tr += 1
-
-            line = (len(table.text)/max(float(c),1.0), c, td, tr, td/float(tr), table.depth)
-
-            if self.csvoutfile:
-                for element in line:
-                    print >> self.csvoutfile, element, ",",
-                print >> self.csvoutfile, table.proof
-            else:
-                classification = self.classifier.classify(line)
-
-    #            print "mark:", classification
-                if classification.strip() == 'table':
-                    marker.mark(table.dom, 'table')
-
-
-    def _mark(self, dom, marker, post=False):
-        tables = dom.getElementsByTagName('table')
-        tree = Node().loadNodeTree(dom,0)
-
-        itables = []
-        self.tDfs(tree,itables)
-
-        print 'tables',  len(tables)
-        print 'itables', len(itables)
-
-        for table in itables:
-            (tr,td) = self.count_tr_td(table)
-            if tr > 0 and td/float(tr) > 1:
-#                print 'mark', td/float(tr)
+            if process == 0 and self.c(table):
+                marker.mark(table.dom, 'table')
+            elif process == 1 and c >= 2:
                 marker.mark(table.dom,'table')
-
+            elif process == 2 and c >= 2 and self.c(table):
+                marker.mark(table.dom, 'table')
 
     def process(self, dom, marker):
 
         print ".",
         self._comp = 0
-        self._mark2(dom, marker, True)
-#        self._mark(dom,marker)
+        self.lf(dom, marker, 2)
         result = marker.process()
-
         if not result:
 #            print '\n\nResultado Vazio\n\n'
             return dom.toString()
@@ -190,5 +274,5 @@ if __name__ == '__main__':
 
     extractor = Table()
     result = extractor.process(dom, marker)
-    print >> out, result
+#    print >> out, result
 
