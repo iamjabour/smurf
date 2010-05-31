@@ -1,0 +1,13 @@
+--2010-04-08 12:13:30--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4600&name=center-channel-speakers&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4600.html'
+
+     0K .......... .......... .......... .......... ..........  408K
+    50K .......... .......... .......... .......... ..........  828K
+   100K .......... .......... .                                 893K=0.2s
+
+2010-04-08 12:13:30 (587 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4600.html' saved [124578]
+

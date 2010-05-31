@@ -1,0 +1,13 @@
+--2010-04-08 12:14:52--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=1532&name=Entertainment-Furniture&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1532.html'
+
+     0K .......... .......... .......... .......... ..........  344K
+    50K .......... .......... .......... .......... ..........  846K
+   100K .......... .......... .......... .......                838K=0.2s
+
+2010-04-08 12:14:53 (552 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1532.html' saved [141233]
+

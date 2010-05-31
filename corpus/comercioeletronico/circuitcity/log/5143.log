@@ -1,0 +1,12 @@
+--2010-04-08 12:13:58--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=5143&name=Musical-Amplifiers&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/5143.html'
+
+     0K .......... .......... .......... .......... ..........  405K
+    50K .......... .......... .......... .......... .....       792K=0.2s
+
+2010-04-08 12:13:59 (529 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/5143.html' saved [98050]
+

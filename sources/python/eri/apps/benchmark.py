@@ -46,7 +46,7 @@ class Benchmark:
         # inicializa uma lista vazia onde serao guardados os resultados
         self.benchmark = []
 
-    def process(self):
+    def process(self, debug=False):
         """
         Executa o benchmark, amarzenando os resultados parciais em
         self.benchmark. para visualizar o resultado de forma adequada utilize
@@ -57,7 +57,9 @@ class Benchmark:
         while True:
             count += 1
             doc = None
-            print count, self.limit
+            if debug:
+                print count, self.limit
+
             if  count <= self.limit:
                 doc = self.corpus.getDocument()
             elif self.limit <= 0:
@@ -69,8 +71,10 @@ class Benchmark:
 
             if not doc:
                 break
+
             try:
-                print doc.id,  doc.path
+                if debug:
+                    print doc.id,  doc.path
             except:
                 pass
             proof = self.corpus.getProof(doc)
@@ -168,6 +172,10 @@ if __name__ == '__main__':
 
     parser.add_option('-n', '--names', action='store', type='int', \
         default=False, help='just print file names')
+
+    parser.add_option('-v', '--verbose', action='store', type='int', \
+        default=False, help='print debug informations')
+
     (opt, args) = parser.parse_args()
 
     if len(sys.argv) < 3:
@@ -190,7 +198,10 @@ if __name__ == '__main__':
     print 'benchmark'
     b = Benchmark(args[1], opt.config, [extractor], limit= opt.limit, output=output, pfilenames = names)
 
-    b.process()
+    if opt.verbose:
+        b.process(debug=True)
+    else:
+        b.process()
     b.pprint()
 
 

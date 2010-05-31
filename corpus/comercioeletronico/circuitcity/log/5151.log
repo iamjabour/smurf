@@ -1,0 +1,13 @@
+--2010-04-08 12:13:57--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=5151&name=Musical-Keyboard&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/5151.html'
+
+     0K .......... .......... .......... .......... ..........  410K
+    50K .......... .......... .......... .......... ..........  835K
+   100K .......... .......... .......... .....                  842K=0.2s
+
+2010-04-08 12:13:58 (605 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/5151.html' saved [138704]
+

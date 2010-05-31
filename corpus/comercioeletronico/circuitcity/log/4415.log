@@ -1,0 +1,16 @@
+--2010-04-08 12:15:23--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4415&name=New-Arrivals-on-USB-Removable-Flash-Memory&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: http://www.circuitcity.com [following]
+--2010-04-08 12:15:23--  http://www.circuitcity.com/
+Reusing existing connection to www.circuitcity.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4415.html'
+
+     0K .......... .......... .......... .......... ..........  336K
+    50K .......... .......... .......... .......... ........    789K=0.2s
+
+2010-04-08 12:15:23 (469 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4415.html' saved [101125]
+

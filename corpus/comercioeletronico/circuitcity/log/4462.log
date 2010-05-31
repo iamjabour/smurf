@@ -1,0 +1,13 @@
+--2010-04-08 12:15:41--  http://www.circuitcity.com/applications/category/category_slc.asp?MfrId=566&CatId=4462
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4462.html'
+
+     0K .......... .......... .......... .......... ..........  411K
+    50K .......... .......... .......... .......... ..........  846K
+   100K .......... .......... .......... .....                  848K=0.2s
+
+2010-04-08 12:15:41 (609 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4462.html' saved [138779]
+

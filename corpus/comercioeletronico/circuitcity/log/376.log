@@ -1,0 +1,13 @@
+--2010-04-08 12:14:58--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=376&name=Compact-Flash-Cards&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/376.html'
+
+     0K .......... .......... .......... .......... ..........  340K
+    50K .......... .......... .......... .......... ..........  850K
+   100K .......... .......... .......... .......... .           841K=0.3s
+
+2010-04-08 12:14:59 (555 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/376.html' saved [145059]
+

@@ -5,11 +5,12 @@
 [
 	{"name":"bestbuy", "path":"bestbuy", "proof":"bestbuy/proof", "type':"files"},
 	{"name":"submarino", "path":"submarino", "proof":"submarino/proof", "type":"files"},
-	{"name":"mysimon", "path":"mysimon", "proof":"mysimon/proof", "type':"files"},	
+	{"name":"mysimon", "path":"mysimon", "proof":"mysimon/proof", "type':"files"},
 	{"name":"dealextreme", "path":"dealextreme", "proof":"dealextreme/proof", "type':"files"},
 	{"name":"ebay", "path":"ebay", "proof":"ebay/proof", "type':"files"},
 	{"name":"americanas", "path":"americanas", "proof":"americanas/proof", "type':"files"},
-	{"name":"target", "path":"target", "proof":"target/proof", "type':"files"}
+	{"name":"target", "path":"target", "proof":"target/proof", "type':"files"},
+	{"name":"circuitcity", "path":"circuitcity", "proof":"circuitcity/proof", "type':"files"}
 ]
 }
 

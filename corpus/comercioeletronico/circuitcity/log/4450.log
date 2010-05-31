@@ -1,0 +1,13 @@
+--2010-04-08 12:15:34--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4450&name=Flash-Camcorders&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 144973 (142K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4450.html'
+
+     0K .......... .......... .......... .......... .......... 35%  179K 1s
+    50K .......... .......... .......... .......... .......... 70%  738K 0s
+   100K .......... .......... .......... .......... .         100%  850K=0.4s
+
+2010-04-08 12:15:34 (358 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4450.html' saved [144973/144973]
+

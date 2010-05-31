@@ -1,0 +1,13 @@
+--2010-04-08 12:14:40--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=1886&name=Intel-Gaming-Desktop-PCs&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1886.html'
+
+     0K .......... .......... .......... .......... ..........  346K
+    50K .......... .......... .......... .......... ..........  851K
+   100K .......... .......... .......... .......... ........    776K=0.3s
+
+2010-04-08 12:14:41 (558 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1886.html' saved [151855]
+

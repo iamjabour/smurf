@@ -1,0 +1,13 @@
+--2010-04-08 12:15:25--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4454&name=7%22-Picture-Frames&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4454.html'
+
+     0K .......... .......... .......... .......... ..........  407K
+    50K .......... .......... .......... .......... ..........  846K
+   100K .......... .......... .......... ........               843K=0.2s
+
+2010-04-08 12:15:26 (608 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4454.html' saved [141993]
+

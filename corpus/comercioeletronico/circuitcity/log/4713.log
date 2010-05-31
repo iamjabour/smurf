@@ -1,0 +1,13 @@
+--2010-04-08 12:14:11--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=4713&name=Home-Theaters&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4713.html'
+
+     0K .......... .......... .......... .......... ..........  345K
+    50K .......... .......... .......... .......... ..........  688K
+   100K .......... .......... .......... .........              840K=0.3s
+
+2010-04-08 12:14:12 (528 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/4713.html' saved [142898]
+

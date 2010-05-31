@@ -1,0 +1,13 @@
+--2010-04-08 12:15:14--  http://www.circuitcity.com/applications/category/category_slc.asp?CatId=1994&name=2GB-Flash-Memory&
+Resolving www.circuitcity.com... 96.7.198.48
+Connecting to www.circuitcity.com|96.7.198.48|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 142905 (140K) [text/html]
+Saving to: `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1994.html'
+
+     0K .......... .......... .......... .......... .......... 35%  192K 0s
+    50K .......... .......... .......... .......... .......... 71%  527K 0s
+   100K .......... .......... .......... .........            100%  655K=0.4s
+
+2010-04-08 12:15:14 (336 KB/s) - `/home/iamjabour/workspace/tese/sources/python/anotador/comercioeletronico/download/circuitcity/1994.html' saved [142905/142905]
+

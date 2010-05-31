@@ -36,7 +36,7 @@ class ParseDom(object):
         else:
             raise SystemExit, "Parser nao sabe tratar esse tipo de path"
 
-        return parseString(string,encoding)
+        return self.parseString(string,encoding)
 
     def parseString(self, htmlString, encoding='utf-8'):
         """
@@ -54,10 +54,11 @@ class ParseDom(object):
             if unicodeHtml:
                 htmlString = unicodeHtml
 
-        htmlString = sanitizer.removeJavaScript(htmlString)
-        htmlString = sanitizer.removeNoScript(htmlString)
+#        html = sanitizer.removeJavaScript(htmlString)
+#        html = sanitizer.removeNoScript(html)
+        html = sanitizer.cleanHtml(htmlString)
 #        htmlString = sanitizer.replaceHtmlForDiv(htmlString)
-
+#        print html
         if chardet:
             # Resets any content that may be on the buffer
             self._detector.reset()
@@ -66,7 +67,7 @@ class ParseDom(object):
             # Try processing the webpage
             # If the doc.encoding attribute is set, it is used to speed up the
             # process and bypass encoding detection
-            dom = self._parse(htmlString)
+            dom = self._parse(html)
 
         except UnicodeDecodeError, ex:
             if not chardet:
@@ -88,7 +89,7 @@ class ParseDom(object):
 
             try:
                 # Try processing the webpage with the detected encoding
-                dom = self._parse(htmlString, encoding)
+                dom = self._parse(html, encoding)
                 #self.__logObj.addInfo( \
                 #    "Detected encoding '%s' for document" % \
                 #    (encoding))

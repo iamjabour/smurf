@@ -56,8 +56,10 @@ class Node(object):
                     continue
                 elif xmlChild.localName == 'hr':
                     continue
-#                elif xmlChild.localName == 'noscript':
-#                    continue
+                elif xmlChild.localName == 'style':
+                    continue
+                elif xmlChild.localName == 'noscript':
+                    continue
 
                 childNode = Node.loadNodeTree(xmlChild, depth + 1, useText)
                 childNode.parent = treeNode
