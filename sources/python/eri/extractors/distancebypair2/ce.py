@@ -51,9 +51,11 @@ class Ce(Base):
         lastValid = self._lastValid()
         biggestsText = self._biggestsText()
 
+        if biggestComponent and biggestComponent != None:
+            marker.mark(biggestComponent.dom, 'productlist')
 
-#        marker.mark(biggestComponent.dom, 'productlist')
-        marker.mark(lastValid.dom, 'productlist')
+        if lastValid and lastValid != None:
+            marker.mark(lastValid.dom, 'productlist')
 
         for i in biggestsText:
             pass
@@ -107,7 +109,6 @@ class Ce(Base):
         """
             return biggest component
         """
-
         # create productlist candidates
         biggestList = False
         for k, v in self.__labels.iteritems():
@@ -116,7 +117,10 @@ class Ce(Base):
                 biggestList = v
 
         # retornar o no da maior lista como sendo o productlist
-        return v[0].parent
+        if biggestList:
+            return biggestList[0].parent
+        else:
+            return None
 
     def _c(self, a, val, m ):
         if abs(len(a) - val) < m:

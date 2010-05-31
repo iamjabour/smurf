@@ -4,9 +4,9 @@ import sys
 from eri.extractors.distancebypair2.node import Node
 
 # chose match function
-#from eri.utils.match import match as match #mathc1
-#from eri.utils.match import match2 as match #match2
-from eri.utils.match import treematch as match #match3
+#from eri.utils.match import match as match #mathc1 # ou matchdistance
+#from eri.utils.match import match2 as match #match2 ou matchtreedistance
+from eri.utils.match import treematch as match #match3 ou matchingtrees
 
 class Table(Base):
     """
@@ -17,7 +17,7 @@ class Table(Base):
     def __init__(self):
         self.maxDist = 0.5
         self.height = 0 #use in match 1 and 2
-        self.tags = True #use in mathc1
+        self.tags = False #use in mathc1
 
     def tDfs(self, node, vet):
         """
@@ -38,7 +38,6 @@ class Table(Base):
     def count_tr_td(self,node):
         td = 0
         tr = 0
-
         if node.dom.localName == 'td' or node.dom.localName == 'th':
             try:
                 text = node.dom.textContent
@@ -56,11 +55,21 @@ class Table(Base):
             if len(text.strip()) > 2:
                 tr += 1
 
+        if node.dom.localName == 'frame' or node.dom.localName == 'img'\
+            or node.dom.localName == 'form':
+            pass
+            #return (0,0, False)
+
         for child in node.childNodes:
-            (ctr,ctd) = self.count_tr_td(child)
+            (ctr,ctd, t) = self.count_tr_td(child)
+
+            if not t:
+                pass
+                #return (0,0, False)
+
             tr += ctr
             td += ctd
-        return (tr,td)
+        return (tr,td, True)
 
 
     def _mark2(self, dom, marker, postProcess=False):
@@ -75,32 +84,41 @@ class Table(Base):
         print 'itables', len(itables)
 
         for table in itables:
-            table.result = match(table, self.maxDist,self.height, self.tags)
-
-            #print table.result
-
-            d = {}
-            for o in table.result:
-                if o:
-                    d.setdefault(o,0)
-                    d[o]+=1
-
-            c = 0
-            for i in d:
-                c += d[i]
+            p = False
 
             if postProcess:
-                if c >= 2:
-                    (tr,td) = self.count_tr_td(table)
-                    if tr > 0 and td/float(tr) > 1:
+                (tr,td, t) = self.count_tr_td(table)
+            else:
+                (tr, td) = 0,1
+
+            if tr > 0 and td/float(tr) > 1:
+                p = True
+
+            if p or not postProcess:
+                table.result = match(table, self.maxDist,self.height, self.tags)
+
+                #print table.result
+
+                d = {}
+                for o in table.result:
+                    if o:
+                        d.setdefault(o,0)
+                        d[o]+=1
+
+                c = 0
+                for i in d:
+                    c += d[i]
+
+                if postProcess:
+                    if c >= 2:
                         print 'mark', td/float(tr)
                         marker.mark(table.dom,'table')
-            else:
-                if c >= 2:
-                    marker.mark(table.dom,'table')
+                else:
+                    if c >= 2:
+                        marker.mark(table.dom,'table')
 
 
-    def _mark(self, dom, marker, post=False):
+    def _mark(self, dom, marker, post=True):
         tables = dom.getElementsByTagName('table')
         tree = Node().loadNodeTree(dom,0)
 
@@ -111,17 +129,20 @@ class Table(Base):
         print 'itables', len(itables)
 
         for table in itables:
-            (tr,td) = self.count_tr_td(table)
-            if tr > 0 and td/float(tr) > 1:
-                print 'mark', td/float(tr)
-                marker.mark(table.dom,'table')
+            if post:
+                (tr,td, t) = self.count_tr_td(table)
+                if tr > 0 and td/float(tr) > 1:
+                    print 'mark', td/float(tr)
+                    marker.mark(table.dom,'table')
+            else:
+                marker.mark(table.dom, 'table')
 
 
     def process(self, dom, marker):
 
         self._comp = 0
         self._mark2(dom, marker, True)
-#        self._mark(dom,marker)
+#        self._mark(dom,marker, True)
         result = marker.process()
 
         if not result:

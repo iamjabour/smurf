@@ -69,8 +69,10 @@ class Benchmark:
 
             if not doc:
                 break
-
-            print doc.id,  doc.path
+            try:
+                print doc.id,  doc.path
+            except:
+                pass
             proof = self.corpus.getProof(doc)
             result = (0.0,0.0)
             for extractor in self.extractors:

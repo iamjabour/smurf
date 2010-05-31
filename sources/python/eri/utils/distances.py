@@ -1,3 +1,9 @@
+import difflib
+
+def stringDiff(first, second):
+    return difflib.SequenceMatcher(None, first, second).ratio()
+
+
 def stringDistance(first, second, cost={'a':1, 'd':1, 'c':1}):
     """
     Find the Levenshtein distance between two strings.

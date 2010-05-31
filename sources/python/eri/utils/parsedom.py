@@ -106,6 +106,8 @@ class ParseDom(object):
         """
         Parse HTML to DOM Document
         """
+        if len(htlString) < 2:
+            return None
         if encode:
             dom = parseString(htmlString, html=1, unfinished=1, htmlencoding=encode)
             self._testDom(dom)
