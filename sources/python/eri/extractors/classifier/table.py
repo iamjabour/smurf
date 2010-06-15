@@ -234,11 +234,20 @@ class Table(Base):
             elif process == 2 and c >= 2 and self.c(table):
                 marker.mark(table.dom, 'table')
 
+    def all(self, dom, marker):
+        tables = dom.getElementsByTagName('table')
+        tree = Node().loadNodeTree(dom,0)
+
+        itables = []
+        self.tDfs(tree,itables)
+        for table in itables:
+            marker.mark(table.dom, 'table')
     def process(self, dom, marker):
 
         print ".",
         self._comp = 0
-        self.lf(dom, marker, 2)
+        #self.lf(dom, marker, 2)
+        self.all(dom, marker)
         result = marker.process()
         if not result:
 #            print '\n\nResultado Vazio\n\n'

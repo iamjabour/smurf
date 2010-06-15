@@ -5,8 +5,8 @@ from eri.extractors.distancebypair2.node import Node
 
 # chose match function
 #from eri.utils.match import match as match #mathc1 # ou matchdistance
-#from eri.utils.match import match2 as match #match2 ou matchtreedistance
-from eri.utils.match import treematch as match #match3 ou matchingtrees
+from eri.utils.match import match2 as match #match2 ou matchtreedistance
+#from eri.utils.match import treematch as match #match3 ou matchingtrees
 
 class Table(Base):
     """
@@ -17,7 +17,7 @@ class Table(Base):
     def __init__(self):
         self.maxDist = 0.5
         self.height = 0 #use in match 1 and 2
-        self.tags = False #use in mathc1
+        self.tags = True #use in mathc1
 
     def tDfs(self, node, vet):
         """
@@ -141,8 +141,8 @@ class Table(Base):
     def process(self, dom, marker):
 
         self._comp = 0
-        self._mark2(dom, marker, True)
-#        self._mark(dom,marker, True)
+#        self._mark2(dom, marker, True)
+        self._mark(dom,marker, True)
         result = marker.process()
 
         if not result:
