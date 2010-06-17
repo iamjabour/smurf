@@ -24,7 +24,7 @@ class Table(Base):
         self.height = 0 #use in match 1 and 2
         self.tags = True #use in mathc1
         self.csvoutfile = False
-        #self.csvoutfile = open('out.csv', 'w') #None
+        self.csvoutfile = open('out.csv', 'w') #None
 
         self.head = False
         #print model, corpora
@@ -46,10 +46,9 @@ class Table(Base):
 
         return i
 
-    def count(self,node):
+    def count_table(self,node):
         td = 0
         tr = 0
-
         if node.dom.localName == 'td' or node.dom.localName == 'th':
             try:
                 text = node.dom.textContent
@@ -67,11 +66,21 @@ class Table(Base):
             if len(text.strip()) > 2:
                 tr += 1
 
+        if node.dom.localName == 'frame' or node.dom.localName == 'img'\
+            or node.dom.localName == 'form':
+            pass
+            #return (0,0, False)
+
         for child in node.childNodes:
-            (ctr,ctd) = self.count(child)
+            (ctr,ctd, t) = self.count_table(child)
+
+            if not t:
+                pass
+                #return (0,0, False)
+
             tr += ctr
             td += ctd
-        return (tr,td)
+        return (tr,td, True)
 
     def count_tr_td(self,node, cells, text, lenght):
         td = 0
@@ -100,7 +109,7 @@ class Table(Base):
         for child in node.childNodes:
             self.count_tr_td(child, cells, text, lenght)
 
-    def c(self, node):
+    def c(self, node, pred=False):
 #        print "NODE", node.tags
         print
 
@@ -115,6 +124,9 @@ class Table(Base):
         print lenght
 
         f = {}
+
+        f.update({"pred":pred})
+
         r = len(cells)
 
         if r == 0:
@@ -165,7 +177,7 @@ class Table(Base):
         for i in xrange(len(cells)):
             ci[i] = 0
 
-        tr, td = self.count(node)
+        tr, td, t = self.count_table(node)
 
         f.update({"tr":tr,"td":td})
 
@@ -215,6 +227,7 @@ class Table(Base):
             c = 0
             if process > 0:
                 table.result = match(table, self.maxDist,self.height, self.tags)
+                tr, td, t = self.count_table(table)
 
                 #print table.result
 
@@ -227,11 +240,16 @@ class Table(Base):
                 for i in d:
                     c += d[i]
 
+            pred = 0
+            if c >= 2:
+                if tr > 0 and td/float(tr) > 1:
+                    pred = 1
+
             if process == 0 and self.c(table):
                 marker.mark(table.dom, 'table')
-            elif process == 1 and c >= 2:
+            elif process == 1 and pred == 1:
                 marker.mark(table.dom,'table')
-            elif process == 2 and c >= 2 and self.c(table):
+            elif process == 2 and pred == 2 and self.c(table, pred):
                 marker.mark(table.dom, 'table')
 
     def all(self, dom, marker):
@@ -241,6 +259,28 @@ class Table(Base):
         itables = []
         self.tDfs(tree,itables)
         for table in itables:
+            c = 0
+            table.result = match(table, self.maxDist,self.height, self.tags)
+            tr, td, t = self.count_table(table)
+
+            #print table.result
+
+            d = {}
+            for o in table.result:
+                if o:
+                    d.setdefault(o,0)
+                    d[o]+=1
+
+            for i in d:
+                c += d[i]
+
+            pred = 0
+            if c >= 2:
+                if tr > 0 and td/float(tr) > 1:
+                    pred = 1
+
+            self.c(table, pred)
+
             marker.mark(table.dom, 'table')
     def process(self, dom, marker):
 
