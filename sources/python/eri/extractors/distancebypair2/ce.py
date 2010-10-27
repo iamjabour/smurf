@@ -17,6 +17,14 @@ class Ce(Base):
         self.height = 0
         self.tags = True
 
+
+    def markall(self, node, marker):
+        if node.dom.nodeType == node.dom.ELEMENT_NODE:
+            marker.mark(node.dom, 'productlist')
+        for x in xrange(len(node.childNodes)):
+            self.markall(node.childNodes[x], marker)
+
+
     def dfs(self, node, maxDist, height, tags):
         """
         Navega em profundidade na árvore buscando nós adjacentes com distancia
@@ -34,7 +42,7 @@ class Ce(Base):
             if not node.result[x]:
                 self.dfs(node.childNodes[x], maxDist, height, tags)
 
-    def _mark(self, node, marker):
+    def _mark(self, node, marker, post=False):
         """
         Marca a sub arvore dos nos recortados como sendo tabela, utilizando o markador recebido
 
@@ -47,34 +55,78 @@ class Ce(Base):
         self._submark(node)
         # labels são as componentes criadas pela dfs retiradas da arvore
 
+        biggestComponent = False
+        lastValid = False
+        biggestsText = []
+        biggestParent = False
+        moreimage = False
+
 #        print self.__labels
+        if not post:
+            for k, v in self.__labels.iteritems():
+                marker.mark(v[1].parent.dom, 'productlist')
+
+            return
 
         biggestComponent = self._biggestComponent()
-        lastValid = self._lastValid()
-        biggestsText = self._biggestsText()
-        biggestParent = self._biggestParent()
+#        lastValid = self._lastValid()
+#        biggestsText = self._biggestsText()
+#        biggestParent = self._biggestParent()
 
+        moreimage = self._moreimage()
 #        print 'biggestComponent', biggestComponent.text[:100].strip()
 #        print 'lastValid', lastValid.text[:100].strip()
 #        print 'biggestParent', biggestParent.tags[:50], biggestParent.text[:100].strip()
 #        print 'biggestsText', biggestsText
 
-
+        biggestNode = None
         if biggestComponent:
-    #        marker.mark(biggestComponent.dom, 'productlist')
-            pass
+            find = False
+            for i in biggestComponent:
+                if len(i.text.strip())> 0 and self._countimg(i.parent) >= 2:
+#                    while i.dom.name != "div":
+#                        i = i.parent
+#                    print 'a', i.dom.name
+                    marker.mark(i.parent.dom, 'productlist')
+                    biggestNode = i.parent
+                    find = True
+                    break
+            if find:
+                for i in biggestComponent:
+                   marker.mark(i.dom, 'product')
 
-        if lastValid:
-            marker.mark(lastValid.dom, 'productlist')
+        if moreimage:
+            if biggestNode == None or not self._notAncestral(biggestNode, moreimage[1].parent):
+                i = moreimage[1]
+#                while i.dom.name != "div":
+#                    i = i.parent
+#                print 'b', i.dom.name, i.text
+                marker.mark(i.parent.dom, 'productlist')
+                for i in moreimage:
+                    marker.mark(i.dom, 'product')
 
-        if biggestParent:
-            marker.mark(biggestParent.dom, 'productlist')
 
-        for i in biggestsText:
-            pass
+#        if lastValid:
+#            marker.mark(lastValid.dom, 'productlist')
+
+#        if biggestParent:
+#            marker.mark(biggestParent.dom, 'productlist')
+
+#        for i in biggestsText:
+#            pass
 #            print i.result
 #            print 'biggestText', len(i.text), i.text[:100]
-            marker.mark(i.dom, 'productlist')
+#            marker.mark(i.dom, 'productlist')
+
+    def _notAncestral(self, node, ancestral):
+
+        if node.parent == ancestral:
+            return True
+
+        elif node.parent == None:
+            return False
+
+        return self._notAncestral(node.parent, ancestral)
 
     def _biggestParent(self):
         lists = []
@@ -133,21 +185,50 @@ class Ce(Base):
 
         return pl
 
+    def _moreimage(self):
+
+        size, biggest = 0, False
+        for k, v in self.__labels.iteritems():
+            imgs = 0
+            ig = 0
+            if v[0].parent.depth > 3:
+                for i in v:
+                    imgs += self._countimg(i)
+                ig = self._countimg(v[0].parent)
+                #print v
+                #print len(v), v[0].parent.depth, ig, imgs
+            if imgs >= size or ig >= size:
+                biggest = v
+                size = max(imgs, ig)
+
+
+#        print 'size', size
+        return biggest
+
+    def _countimg(self, node):
+        count = 0
+        for i in node.tags:
+            if i.strip() == "img":
+                count += 1
+        return count
+
     def _biggestComponent(self):
         """
             return biggest component
         """
-        v = False
+        v = []
         # create productlist candidates
-        biggestList = False
+        biggestList = []
         for k, v in self.__labels.iteritems():
-            if not biggestList or \
-                len(v) > len(biggestList):
+            if len(biggestList) == 0 or \
+                len(v) >= len(biggestList):
                 biggestList = v
+#                print len(v)
 
         # retornar o no da maior lista como sendo o productlist
         if v:
-            return v[0].parent
+#            print len(biggestList)
+            return biggestList
         else:
             return False
 
@@ -191,7 +272,8 @@ class Ce(Base):
         self._comp = 0
         tree = Node().loadNodeTree(dom, 0, True)
         self.dfs(tree, 0.6, self.height, self.tags)
-        self._mark(tree, marker)
+        self._mark(tree, marker, True)
+#        self.markall(tree, marker)
         result = marker.process()
 
         if not result:
