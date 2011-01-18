@@ -1,0 +1,75 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module sanitizer</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>sanitizer</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/iamjabour/workspacePessoal/tese/sources/python/eri/utils/sanitizer.py">/home/iamjabour/workspacePessoal/tese/sources/python/eri/utils/sanitizer.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="re.html">re</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-removeJavaScript"><strong>removeJavaScript</strong></a>(docString)</dt><dd><tt>JavaScript&nbsp;code&nbsp;containing&nbsp;literal&nbsp;HTML&nbsp;tags&nbsp;cause&nbsp;the&nbsp;parser&nbsp;to&nbsp;create<br>
+new&nbsp;nodes,&nbsp;breaking&nbsp;the&nbsp;script&nbsp;code&nbsp;and&nbsp;producing&nbsp;garbage&nbsp;in&nbsp;the&nbsp;DOM&nbsp;tree,<br>
+even&nbsp;if&nbsp;the&nbsp;code&nbsp;is&nbsp;surrounded&nbsp;by&nbsp;&lt;!--&nbsp;html&nbsp;comment&nbsp;//--&gt;&nbsp;tags.<br>
+&nbsp;<br>
+This&nbsp;function&nbsp;truncates&nbsp;the&nbsp;script&nbsp;code&nbsp;to&nbsp;a&nbsp;simple&nbsp;comment.</tt></dd></dl>
+ <dl><dt><a name="-removeTag"><strong>removeTag</strong></a>(docString, tag, replacement<font color="#909090">=''</font>)</dt><dd><tt>Removes&nbsp;a&nbsp;given&nbsp;tag&nbsp;from&nbsp;the&nbsp;HTML.&nbsp;This&nbsp;function&nbsp;supports&nbsp;nested&nbsp;tags.<br>
+For&nbsp;example,&nbsp;consider&nbsp;this&nbsp;example:<br>
+&nbsp;<br>
+&lt;div&gt;some&nbsp;text&lt;/div&gt;<br>
+&lt;p&gt;more&nbsp;text&lt;/p&gt;<br>
+&lt;div&gt;<br>
+&nbsp;&nbsp;&lt;div&gt;hello&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;p&gt;cruel&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;div&gt;world&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;p&gt;even&nbsp;more&nbsp;text&lt;/p&gt;<br>
+&lt;div&gt;footer&lt;/div&gt;<br>
+&nbsp;<br>
+Removing&nbsp;all&nbsp;&lt;div&gt;&nbsp;tags&nbsp;would&nbsp;return&nbsp;this:<br>
+&nbsp;<br>
+&lt;p&gt;more&nbsp;text&lt;/p&gt;<br>
+&lt;p&gt;even&nbsp;more&nbsp;text&lt;/p&gt;<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;superior&nbsp;to&nbsp;a&nbsp;single&nbsp;regular&nbsp;expression,&nbsp;as&nbsp;it&nbsp;does&nbsp;not&nbsp;suffer<br>
+from&nbsp;greediness&nbsp;(or&nbsp;lack&nbsp;thereof).&nbsp;Instead,&nbsp;it&nbsp;follows&nbsp;the&nbsp;structure&nbsp;of<br>
+the&nbsp;HTML&nbsp;document&nbsp;correctly.</tt></dd></dl>
+ <dl><dt><a name="-replaceHtmlForDiv"><strong>replaceHtmlForDiv</strong></a>(docString)</dt><dd><tt>Documents&nbsp;with&nbsp;more&nbsp;than&nbsp;a&nbsp;single&nbsp;&lt;HTML&gt;&nbsp;tag&nbsp;can&nbsp;sometimes&nbsp;cause<br>
+unexpected&nbsp;behaviour&nbsp;on&nbsp;the&nbsp;parser,&nbsp;such&nbsp;as&nbsp;not&nbsp;parsing&nbsp;content&nbsp;that<br>
+is&nbsp;inside&nbsp;an&nbsp;outer&nbsp;&lt;HTML&gt;&nbsp;but&nbsp;outside&nbsp;a&nbsp;nested,&nbsp;inner&nbsp;&lt;HTML&gt;&nbsp;tag.<br>
+&nbsp;<br>
+This&nbsp;function&nbsp;tries&nbsp;to&nbsp;avoid&nbsp;this&nbsp;by&nbsp;replacing&nbsp;the&nbsp;&lt;HTML&gt;&nbsp;tags&nbsp;for<br>
+&lt;DIV&gt;&nbsp;tags,&nbsp;which&nbsp;the&nbsp;parser&nbsp;can&nbsp;handle&nbsp;without&nbsp;much&nbsp;hassle.<br>
+&nbsp;<br>
+It&nbsp;is&nbsp;unknown&nbsp;at&nbsp;this&nbsp;point&nbsp;if&nbsp;this&nbsp;might&nbsp;affect&nbsp;the&nbsp;parser&nbsp;in<br>
+identifying&nbsp;the&nbsp;correct&nbsp;encoding&nbsp;by&nbsp;looking&nbsp;at&nbsp;the&nbsp;&lt;meta&gt;&nbsp;tags,&nbsp;since<br>
+it&nbsp;seems&nbsp;it&nbsp;does&nbsp;give&nbsp;special&nbsp;treatment&nbsp;to&nbsp;&lt;HTML&gt;&nbsp;tags.<br>
+&nbsp;<br>
+The&nbsp;outer&nbsp;&lt;HTML&gt;&nbsp;tags&nbsp;could&nbsp;be&nbsp;preserved,&nbsp;but&nbsp;at&nbsp;this&nbsp;point&nbsp;this&nbsp;just<br>
+generates&nbsp;unnecessary&nbsp;overhead.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>regexes</strong> = {'html': &lt;_sre.SRE_Pattern object at 0x7fb92f3756b0&gt;, 'script': &lt;_sre.SRE_Pattern object at 0x1f46640&gt;}</td></tr></table>
+</body></html>

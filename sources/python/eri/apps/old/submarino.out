@@ -1,0 +1,128 @@
+benchmark
+1 30
+find productlist
+0 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201385.pesca.html
+2 30
+find productlist
+1 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201381.monitores+cardiacos.html
+3 30
+find productlist
+2 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201402.volei.html
+4 30
+find productlist
+3 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201369.camping.html
+5 30
+find productlist
+4 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201441.cozinha+criativa.html
+6 30
+find productlist
+5 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/202745.business+e+economics.html
+7 30
+find productlist
+6 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201363.barcos+e+inflaveis.html
+8 30
+find productlist
+7 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/844.dvd+players.html
+9 30
+find productlist
+8 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201365.bicicletas+e+acessorios.html
+10 30
+find productlist
+9 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/956.depuradores+e+exaustores.html
+11 30
+find productlist
+10 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/211808.acessorios+para+ipod.html
+12 30
+find productlist
+11 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201396.limpeza.html
+13 30
+find productlist
+12 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/220868.coifas.html
+14 30
+find productlist
+13 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/202926.gps.html
+15 30
+find productlist
+14 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/1112.arquitetura+e+urbanismo.html
+16 30
+find productlist
+15 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/842.home+theater.html
+17 30
+find productlist
+16 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201389.moda+esportiva.html
+18 30
+find productlist
+17 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/219328.racks+e+bagageiros.html
+19 30
+find productlist
+18 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201375.instrumentos+de+orientacao+e+gps.html
+20 30
+find productlist
+19 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/841.tv.html
+21 30
+find productlist
+20 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/1058.identificadores+de+chamada.html
+22 30
+find productlist
+21 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/1506.playstation+portatil+-+psp.html
+23 30
+find productlist
+22 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201419.ferros+eletricos.html
+24 30
+find productlist
+23 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/1532.xbox.html
+25 30
+find productlist
+24 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/666.notebooks+e+acessorios.html
+26 30
+find productlist
+25 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/551.importados.html
+27 30
+find productlist
+26 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201407.cafeteiras.html
+28 30
+find productlist
+27 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/201379.mergulho.html
+29 30
+find productlist
+28 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/1059.centrais+telefonicas.html
+30 30
+find productlist
+29 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/submarino/proof/984.filmadoras+digitais.html
+31 30
+0 {'product': [18, 20, 51], 'productlist': [1, 1, 3]}
+1 {'product': [20, 20, 59], 'productlist': [1, 1, 5]}
+2 {'product': [20, 20, 49], 'productlist': [1, 1, 3]}
+3 {'product': [20, 20, 87], 'productlist': [1, 1, 5]}
+4 {'product': [20, 20, 64], 'productlist': [1, 1, 5]}
+5 {'product': [20, 20, 52], 'productlist': [1, 1, 4]}
+6 {'product': [20, 20, 54], 'productlist': [1, 1, 4]}
+7 {'product': [20, 20, 64], 'productlist': [1, 1, 5]}
+8 {'product': [20, 20, 93], 'productlist': [1, 1, 5]}
+9 {'product': [20, 20, 63], 'productlist': [1, 1, 5]}
+10 {'product': [20, 20, 73], 'productlist': [1, 1, 4]}
+11 {'product': [20, 20, 70], 'productlist': [1, 1, 5]}
+12 {'product': [20, 20, 62], 'productlist': [1, 1, 5]}
+13 {'product': [20, 20, 80], 'productlist': [1, 1, 5]}
+14 {'product': [20, 20, 52], 'productlist': [1, 1, 4]}
+15 {'product': [20, 20, 78], 'productlist': [1, 1, 5]}
+16 {'product': [20, 20, 66], 'productlist': [1, 1, 5]}
+17 {'product': [20, 20, 49], 'productlist': [1, 1, 3]}
+18 {'product': [20, 20, 59], 'productlist': [1, 1, 5]}
+19 {'product': [20, 20, 73], 'productlist': [1, 1, 5]}
+20 {'product': [0, 1, 34], 'productlist': [0, 1, 3]}
+21 {'product': [20, 20, 52], 'productlist': [1, 1, 4]}
+22 {'product': [20, 20, 71], 'productlist': [1, 1, 5]}
+23 {'product': [19, 20, 51], 'productlist': [1, 1, 4]}
+24 {'product': [20, 20, 72], 'productlist': [1, 1, 5]}
+25 {'product': [20, 20, 52], 'productlist': [1, 1, 4]}
+26 {'product': [20, 20, 91], 'productlist': [1, 1, 5]}
+27 {'product': [20, 20, 59], 'productlist': [1, 1, 5]}
+28 {'product': [12, 12, 47], 'productlist': [1, 1, 4]}
+29 {'product': [20, 20, 49], 'productlist': [1, 1, 3]}
+
+total
+{'product': [569, 573, 1876], 'productlist': [29, 30, 132]}
+
+key	recall	precision
+{'product': [0.99301919720767884, 0.30330490405117272, 0.46467946100449165], 'productlist': [0.96666666666666667, 0.2196969696969697, 0.35802469135802473]}

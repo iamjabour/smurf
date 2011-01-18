@@ -1,0 +1,128 @@
+benchmark
+1 30
+find productlist
+0 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat144500050022.html
+2 30
+find productlist
+1 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/abcat0102007.html
+3 30
+find productlist
+2 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/abcat0107034.html
+4 30
+find productlist
+3 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat152100050031.html
+5 30
+find productlist
+4 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat151600050022.html
+6 30
+find productlist
+5 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat152100050028.html
+7 30
+find productlist
+6 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat152100050016.html
+8 30
+find productlist
+7 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat152100050032.html
+9 30
+find productlist
+8 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/abcat0208011.html
+10 30
+find productlist
+9 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat151600050040.html
+11 30
+find productlist
+10 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat143000050009.html
+12 30
+find productlist
+11 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat156300050012.html
+13 30
+find productlist
+12 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat175600050016.html
+14 30
+find productlist
+13 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat152100050026.html
+15 30
+find productlist
+14 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat152100050023.html
+16 30
+find productlist
+15 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat166000050027.html
+17 30
+find productlist
+16 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/abcat0208031.html
+18 30
+find productlist
+17 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/abcat0107022.html
+19 30
+find productlist
+18 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat143000050016.html
+20 30
+find productlist
+19 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat138100050028.html
+21 30
+find productlist
+20 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/abcat0102005.html
+22 30
+find productlist
+21 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat165900050050.html
+23 30
+find productlist
+22 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat152100050025.html
+24 30
+find productlist
+23 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat151600050038.html
+25 30
+find productlist
+24 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/abcat0106008.html
+26 30
+find productlist
+25 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat142900050010.html
+27 30
+find productlist
+26 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/abcat0107019.html
+28 30
+find productlist
+27 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/abcat0107032.html
+29 30
+find productlist
+28 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/abcat0106002.html
+30 30
+find productlist
+29 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/bestbuy/proof/pcmcat158900050018.html
+31 30
+0 {'product': [15, 15, 46], 'productlist': [1, 1, 7]}
+1 {'product': [8, 8, 50], 'productlist': [1, 1, 9]}
+2 {'product': [15, 15, 53], 'productlist': [1, 1, 8]}
+3 {'product': [5, 5, 32], 'productlist': [1, 1, 6]}
+4 {'product': [5, 5, 38], 'productlist': [1, 1, 8]}
+5 {'product': [4, 4, 32], 'productlist': [1, 1, 6]}
+6 {'product': [15, 15, 63], 'productlist': [1, 1, 10]}
+7 {'product': [15, 15, 48], 'productlist': [1, 1, 8]}
+8 {'product': [15, 15, 58], 'productlist': [1, 1, 9]}
+9 {'product': [9, 9, 44], 'productlist': [1, 1, 8]}
+10 {'product': [15, 15, 48], 'productlist': [1, 1, 8]}
+11 {'product': [6, 6, 34], 'productlist': [1, 1, 7]}
+12 {'product': [15, 15, 54], 'productlist': [1, 1, 8]}
+13 {'product': [15, 15, 58], 'productlist': [1, 1, 10]}
+14 {'product': [11, 12, 41], 'productlist': [1, 1, 7]}
+15 {'product': [5, 5, 39], 'productlist': [1, 1, 8]}
+16 {'product': [14, 14, 50], 'productlist': [1, 1, 8]}
+17 {'product': [6, 6, 40], 'productlist': [1, 1, 8]}
+18 {'product': [3, 3, 26], 'productlist': [1, 1, 6]}
+19 {'product': [13, 13, 38], 'productlist': [1, 1, 6]}
+20 {'product': [15, 15, 65], 'productlist': [1, 1, 10]}
+21 {'product': [3, 3, 31], 'productlist': [1, 1, 6]}
+22 {'product': [9, 9, 39], 'productlist': [1, 1, 8]}
+23 {'product': [4, 4, 34], 'productlist': [1, 1, 7]}
+24 {'product': [9, 9, 38], 'productlist': [1, 1, 7]}
+25 {'product': [15, 15, 52], 'productlist': [1, 1, 9]}
+26 {'product': [10, 10, 40], 'productlist': [1, 1, 7]}
+27 {'product': [5, 5, 28], 'productlist': [1, 1, 6]}
+28 {'product': [15, 15, 44], 'productlist': [1, 1, 7]}
+29 {'product': [15, 15, 62], 'productlist': [1, 1, 9]}
+
+total
+{'product': [309, 310, 1325], 'productlist': [30, 30, 231]}
+
+key	recall	precision
+{'product': [0.99677419354838714, 0.23320754716981132, 0.37798165137614675], 'productlist': [1.0, 0.12987012987012986, 0.22988505747126434]}

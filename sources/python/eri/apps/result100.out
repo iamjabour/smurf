@@ -1,0 +1,1298 @@
+benchmark
+0 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/industry.ebi.ac.uk.w2h.Doc.help.mangpage.html
+tables 15
+itables 7
+[False]
+[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+[False]
+[15, 15, 15, 15, False, 17, 17]
+[False]
+[25, 25, 25]
+[26, 26, 26]
+1 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.ovonic.com.news.Nov14_2000.html
+tables 1
+itables 1
+[False, False, 3, 3, False, False, False, False, False, False, False, False, False, False, False, False, False, 17, 17, 17]
+2 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/news.cnet.com.news.0-1005-200-1507039.html
+tables 17
+itables 15
+[False, False, False, 4, 4]
+[False]
+[False, False, False, False, False, False, False, False, False]
+[False]
+[False]
+[False, 192, 192, 192, 192, 192]
+[False, False]
+[False, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232]
+[False, 254, 254, 254, 254, 254, 254, 254]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+3 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.dieoff.org.page114.htm
+tables 4
+itables 4
+[False]
+[False, False, 7, 7, 7, 7, 7]
+[False, 12, 12, 12, 12, 12]
+[False, 18, 18, 18, 18, 18]
+4 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.microsoft.com.OpenType.OTSpec.base.htm
+tables 28
+itables 27
+[False]
+[False]
+[False]
+[False]
+[17, 17, 17, 17]
+[18, 18, 18]
+[19, 19, 19]
+[20, 20, 20]
+[21, 21, 21]
+[22, 22, 22, 22, 22]
+[23, 23, 23]
+[24, 24, 24, 24]
+[25, 25, 25, 25, 25]
+[26, 26, 26, 26]
+[27, 27, 27]
+[28, 28, 28, 28, 28]
+[29, 29, 29, 29]
+[False, False, 32, 32, 32, False, 34, 34, False, 36, 36, 36, 36, False, 38, 38, 38, 38, 38, 38, 38, 38, 38]
+[False, False, 64, 64, 64, 64, 64]
+[False, False, 75, 75, 75, 75, 75, False, 77, 77, False, 79, 79, False, 81, 81]
+[105, 105, 105, 105]
+[106, 106, 106, 106]
+[False, 108, 108, 108, False, False, 111, 111, False, 113, 113, 114, 114, 114, 115, 115, 115, 115, False, 117, 117, False, 119, 119, False, 121, 121, False, 123, 123]
+[False, False, 170, 170, 171, 171, False, 173, 173, 173, False, False, 176, 176, False, 178, 178, False, 180, 180, 180, 180, 180, 180, False, 182, 182, False, 184, 184]
+[False, False, 234, 234]
+[False, False, 245, 245, 245, 245]
+[False, False, 256, 256, False, False, 259, 259, 259, 259, 259, 259, 259, 259]
+5 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.Science.Technology.Electronics.Test.Programming_Services.index.html
+tables 10
+itables 8
+[False]
+[False]
+[False]
+[False]
+[38, 38, 38, 38, 38]
+[39, 39, 39, 39, 39]
+[40, 40]
+[False, False]
+6 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.washingtonpost.com.wp-dyn.politics.elections.2000.index.html
+tables 26
+itables 21
+[False]
+[False]
+[False, False]
+[106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+[False, False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False, False, False]
+[False]
+[False]
+7 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.cnn.com.2001.US.01.25.power.woes.gov.index.html
+tables 23
+itables 14
+[False]
+[False]
+[False]
+[False, 18, 18, 18]
+[False, False, False]
+[False, False, False, False, 35, 35, False, 37, 37, False, False, False, False, False, False, False, False, False, False, False, False]
+[False, False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+8 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/chicagosports.com.notfound.index.html
+tables 13
+itables 9
+[False, False]
+[False]
+[False]
+[False, False]
+[False, 36, 36, 36, 36, 36, 36, 36, 36, 36, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 38, 38, 39, 39, 39, False, 41, 41, 41]
+[False, False]
+[False, False]
+[False]
+[False, False, False, 95, 95, 95, 95, 95, 95, 95, False]
+9 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www2.gol.com.users.isett.stock.pages.philippines.html
+tables 25
+itables 23
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[139, 139, 139]
+[False]
+[False]
+10 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.cme.com.clearing.doc.pb.lch-xm-results-file-layout.htm
+tables 1
+itables 1
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+11 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/w.moreover.com.site.about.press.articles.press2.html
+tables 5
+itables 3
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, False, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+12 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/cfa-www.harvard.edu.7Eagoodman.scf.SCF.results.html
+tables 2
+itables 2
+[1, 1, 1, 1, 1, 1, 1, 1]
+[2, 2, 2, 2, 2]
+13 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.nolalive.com.top50stocks.index.html
+tables 3
+itables 2
+[1, 1, 1, 1, 1, 1, 1, False, 3, 3, 3, 4, 4, 5, 5, 5, 5]
+[False, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16]
+14 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.saleshelp.com.valuereseller.distributor.html
+tables 2
+itables 2
+[False]
+[12, 12, 12, 12, 12, 13, 13, 13, False, False, False, False]
+15 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.results-net.com.index.html
+tables 0
+itables 0
+
+
+Resultado Vazio
+
+
+16 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.nashintl.com.flightsch.html
+tables 9
+itables 8
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, False, False, 83, 83, 83, 83, 83, 83, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, False, False, 104, 104, 104, 104, 104, 104, 104, 104, 104, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, False, False, 125, 125, 125, 125, 125, 125, 125, 125, 125, 125, 125, 125, 125, 125, 125, 125, 125, 125, False, False, False, False, False, False, False, False]
+[137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137, 137]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+17 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.crmdaily.com.perl.story.5431.html
+tables 18
+itables 13
+[False, False]
+[False, False]
+[False]
+[86, 86]
+[87, 87]
+[False]
+[False, False]
+[False, False]
+[False, 150, 150, 150, 150]
+[False, 155, 155, 155, 155, 155, 155, 155, 155, 155, False]
+[166, 166, 166]
+[False, False]
+[False, False, False, False, False, 377, 377, False, False, False, False]
+18 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/minneapolisfed.org.research.sr.sr229.html
+tables 1
+itables 1
+[1, 1, 1]
+19 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.kiplinger.com.columns.value.index.html
+tables 17
+itables 11
+[False]
+[14, 14, 14, 14, 14, 14]
+[15, 15, 15]
+[16, 16, 16, 16, 16]
+[17, 17, 17, 17, 17]
+[18, 18, 18, 18, 18, 18, 18]
+[19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19]
+[20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+[False, False]
+[False, False]
+[False, False]
+20 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.softballplayer.com.CitizensPark.2001Schedule.citizenspark.htm
+tables 2
+itables 2
+[False, False]
+[7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+21 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.asiaweek.com.asiaweek.features.asiaweek1000.2000.a1000primer.html
+tables 12
+itables 7
+[False]
+[False]
+[False, False, False]
+[False]
+[False]
+[False, False]
+[False]
+
+
+Resultado Vazio
+
+
+22 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.Science.Social_Sciences.Ethnic_Studies.Chicano_Studies.index.html
+tables 11
+itables 9
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[47, 47, 47, 47, 47]
+[False, False]
+[False, False]
+23 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.usabasketball.com.Men.boxscore_spain_000905.html
+tables 7
+itables 6
+[False, False]
+[False, False, False]
+[False, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57]
+[False, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61]
+[64, 64, 64]
+[False]
+24 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.kiplinger.com.tools.college1.html
+tables 4
+itables 2
+[False, False]
+[False, False, False, False, False, False, False, False, 45, 45, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+25 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.terryfinn.com.index.html
+tables 4
+itables 3
+[False]
+[21, 21, 21, 21, 21, 21, 21, 21]
+[False]
+26 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.pressdemocrat.com.business.ncsi.index.html
+tables 6
+itables 3
+[False]
+[False, 14, 14, 14, 14, 14]
+[False, False, False]
+27 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.phlx.com.market.point.html
+tables 3
+itables 3
+[False]
+[False]
+[32, 32, 32, 32, 32]
+28 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.Business.Advertising.Promotional_Items.Business_Items.Corporate_Gifts.index.html
+tables 26
+itables 24
+[False]
+[False]
+[False]
+[False]
+[38, 38, 38, 38, 38]
+[39, 39, 39, 39, 39]
+[40, 40, 40, 40, 40]
+[41, 41, 41, 41, 41]
+[42, 42, 42, 42, 42]
+[43, 43, 43, 43, 43]
+[44, 44, 44, 44, 44]
+[45, 45, 45, 45, 45]
+[46, 46, 46, 46, 46]
+[47, 47, 47, 47, 47]
+[48, 48, 48, 48, 48]
+[49, 49, 49, 49, 49]
+[50, 50, 50, 50, 50]
+[51, 51, 51, 51, 51]
+[52, 52, 52, 52, 52]
+[53, 53, 53, 53, 53]
+[54, 54, 54, 54, 54]
+[False, 56, 56, 56, 56]
+[False, False]
+[False]
+29 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/crash.simplenet.com.shining.index.html
+tables 0
+itables 0
+
+
+Resultado Vazio
+
+
+30 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.nrel.gov.icap.results.html
+tables 5
+itables 3
+[False, 2, 2, False, 4, 4, 4, 4, 5, 5]
+[False]
+[False]
+31 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.csinet.org.thecsishow.program.schedule.htm
+tables 21
+itables 19
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False, False, False, 141, 141, 141, False, 143, 143, 143, 143, 143, 143, 143, 143, 143]
+[False, 204, 204, 204, 204, False, 206, 206, 206, 206, 206, 206, False, 208, 208, 208, 208, 208, 208, 208, 208, 208, 208, 208, 208, 208, False, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, False, False, False]
+32 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.dow.com.carpet.lifespan.table.htm
+tables 6
+itables 2
+[False, False, 3, 3, False, False]
+[False]
+33 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/nationalaccounts.niwi.knaw.nl.table.product1.htm
+tables 1
+itables 1
+[False, False, False, False, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+34 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.mottcorp.com.news.news_tss.htm
+tables 4
+itables 2
+[False]
+[False, False, 5, 5, 5, False, False, 8, 8, 8, 8]
+35 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.Business.Industries.Security.Investigation.Records_Research.index.html
+tables 35
+itables 33
+[False]
+[False]
+[False]
+[False]
+[38, 38, 38, 38, 38]
+[39, 39, 39, 39, 39]
+[40, 40, 40, 40, 40]
+[41, 41, 41, 41, 41]
+[42, 42, 42, 42, 42]
+[43, 43, 43, 43, 43]
+[44, 44, 44, 44, 44]
+[45, 45, 45, 45, 45]
+[46, 46, 46, 46, 46]
+[47, 47, 47, 47, 47]
+[48, 48, 48, 48, 48]
+[49, 49, 49, 49, 49]
+[50, 50, 50, 50, 50]
+[51, 51, 51, 51, 51]
+[52, 52, 52, 52, 52]
+[53, 53, 53, 53, 53]
+[54, 54, 54, 54, 54]
+[55, 55, 55, 55, 55]
+[56, 56, 56, 56, 56]
+[57, 57, 57, 57, 57]
+[58, 58, 58, 58, 58]
+[59, 59, 59, 59, 59]
+[60, 60, 60, 60, 60]
+[61, 61, 61, 61, 61]
+[62, 62, 62, 62, False]
+[72, 72, 72, 72, 72]
+[73, 73]
+[False, False]
+[False]
+36 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.rpginc.com.research.r001b.htm
+tables 6
+itables 4
+[False]
+[7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, False, False, False]
+[False, False]
+[False, False]
+37 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.News.Politics.International_Politics.index.html
+tables 11
+itables 9
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[False, False]
+[False]
+
+
+Resultado Vazio
+
+
+38 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.ups.com.europe.fi.using.custserv.engdoop.html
+tables 5
+itables 4
+[False, False]
+[49, 49, 50, 50, 50, False, False]
+[59, 59, 59, 59, 59, 59, 59, 59, 59, 59, False]
+[False, False, False, False]
+39 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.tennessean.com.sii.longterm.sports.predsked2000.shtml
+tables 13
+itables 12
+[False, False]
+[False]
+[26, 26, 26, 26, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, False, False, False, 31, 31, 32, 32]
+[False]
+[False, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47]
+[False, False, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54]
+[False, False, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63]
+[False, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70]
+[False, 76, 76, 76, 76, 76, 76, 76, 76, 76, 76, 76]
+[False, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82]
+[False, 88, 88, 88, 88]
+[False]
+40 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.dps.state.ny.us.index.html
+tables 4
+itables 3
+[1, 1, 1]
+[2, 2, 2, 2, 2, 2, 2]
+[3, 3, 3, 3, 3, 3, 3]
+41 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.crmdaily.com.perl.story.7892.html
+tables 19
+itables 14
+[False, False]
+[False, False]
+[False]
+[85, 85]
+[86, 86]
+[False]
+[False, False]
+[False, False]
+[False, False]
+[False, 203, 203, 203, 203]
+[False, 208, 208, 208, 208, 208, 208, 208, 208, 208, False]
+[219, 219, 219]
+[False, False]
+[False, False, False, False, False, 430, 430, False, False, False, False]
+42 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.caracasstock.com.newpage.english.6.htm
+tables 12
+itables 11
+[False]
+[3, 3, 3, 3, False]
+[9, 9, 9, 9, 9]
+[10, 10, 10, 10]
+[False, False, False, False]
+[35, 35]
+[False, False, False]
+[False, False, False]
+[False]
+[False]
+[False]
+43 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.panynj.gov.bonds.bondemail.html
+tables 1
+itables 1
+[1, 1, 1, 1, 2, 2, 2, 2, False, False]
+44 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.freep.com.sports.michstate.tix15_20010315.htm
+tables 16
+itables 12
+[False]
+[False]
+[False]
+[False, False, False]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False]
+[242, 242]
+[False, False]
+[False, False, False, False, False, False]
+[False]
+[False]
+[False]
+45 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.ecb.int.target.stats.01_table2.htm
+tables 2
+itables 2
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, 67, 67, 67, 67, 67, 67, 67, 67, 67, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, 101, 101, 101, 101, 101, 101, 101, 101, 101, 101, 101, 101, False, False, False, False, False, False, False, False]
+[False]
+46 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.prars.com.index.html
+tables 5
+itables 2
+[False, 2, 2]
+[False]
+47 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.rtjgolf.com.grand_score.htm
+tables 7
+itables 6
+[False, False]
+[False]
+[False, 33, 33, 33]
+[False, 38, 38, 38, 38, 38, 38, 38]
+[False, 42, 42, 42, 42, 42, 42, 42]
+[False, 46, 46, 46, 46, 46, 46, 46]
+48 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.waterman-steamship.com.export.htm
+tables 3
+itables 2
+[1, 1, 1]
+[2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, False, 6, 6, False, 8, 8, 8, 8, 8, 8, 8, False, False, 11, 11, False, False, 14, 14, 14]
+49 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.uk.key-tourist-info.com.weather.index.html
+tables 5
+itables 4
+[False]
+[5, 5]
+[False]
+[False]
+50 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.washingtonpost.com.wp-dyn.sports.highschools.results.index.html
+tables 21
+itables 13
+[False]
+[False]
+[False]
+[False]
+[91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91]
+[False]
+[False]
+[False]
+[False]
+[False, False]
+[False, False]
+[False]
+[False]
+51 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.lycos.com.wguide.network.net_484514.html
+tables 8
+itables 7
+[False, 2, 2, 2, 2]
+[False]
+[False, False]
+[False]
+[False, False, False, False]
+[False]
+[False]
+52 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/special.northernlight.com.irl.schedule.htm
+tables 6
+itables 5
+[False, False]
+[False]
+[False, False, 24, 24, 24, 24, 24, 24, 24, 24, 24]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[]
+53 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.rgf.com.Engineering20Data.value_engineering_1.htm
+tables 4
+itables 3
+[False, False, 3, 3, False, False]
+[False, False, 126, 126, 126, 126, 126, 126, 126, 126, False]
+[False]
+54 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.vitesse.com.news.041700.shtml
+tables 19
+itables 10
+[1, 1, False]
+[59, 59, False]
+[65, 65, 65]
+[False]
+[False]
+[False]
+[False, False, False, False, 99, 99, 99, 99, 99, 99, 99]
+[False, 119, 119, False, 121, 121, 121, 121, 121, 121, 121]
+[False]
+[130, 130, 130, 130, 130, 130, 130]
+55 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/construction.about.com.industry.construction.library.weekly.aa082298.htm
+tables 35
+itables 20
+[False]
+[]
+[False]
+[False]
+[False]
+[False]
+[False, False]
+[False]
+[False]
+[False, False, False, False, False, False, False, False, False]
+[False]
+[False]
+[False]
+[False]
+[206, 206, 206]
+[]
+[]
+[]
+[False, False]
+[False, False, False, False]
+56 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.coulee.com.ka9fox.scores.shtml
+tables 1
+itables 1
+[False]
+
+
+Resultado Vazio
+
+
+57 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.Business.Major_Companies.Publicly_Traded.C.index.html
+tables 137
+itables 135
+[False]
+[False]
+[False]
+[False]
+[37, 37, 37, 37, 37]
+[38, 38, 38, 38, 38]
+[39, 39, 39, 39, 39]
+[40, 40, 40, 40, 40]
+[41, 41, 41, 41, 41]
+[42, 42, 42, 42, 42]
+[43, 43, 43, 43, 43]
+[44, 44, 44, 44, 44]
+[45, 45, 45, 45, 45]
+[46, 46, 46, 46, 46]
+[47, 47, 47, 47, 47]
+[48, 48, 48, 48, 48]
+[49, 49, 49, 49, 49]
+[50, 50, 50, 50, 50]
+[51, 51, 51, 51, 51]
+[52, 52, 52, 52, 52]
+[53, 53, 53, 53, 53]
+[54, 54, 54, 54, 54]
+[55, 55, 55, 55, 55]
+[56, 56, 56, 56, 56]
+[57, 57, 57, 57, 57]
+[58, 58, 58, 58, 58]
+[59, 59, 59, 59, 59]
+[60, 60, 60, 60, 60]
+[61, 61, 61, 61, 61]
+[62, 62, 62, 62, 62]
+[63, 63, 63, 63, 63]
+[64, 64, 64, 64, 64]
+[65, 65, 65, 65, 65]
+[66, 66, 66, 66, 66]
+[67, 67, 67, 67, 67]
+[68, 68, 68, 68, 68]
+[69, 69, 69, 69, 69]
+[70, 70, 70, 70, 70]
+[71, 71, 71, 71, 71]
+[72, 72, 72, 72, 72]
+[73, 73, 73, 73, 73]
+[74, 74, 74, 74, 74]
+[75, 75, 75, 75, 75]
+[76, 76, 76, 76, 76]
+[77, 77, 77, 77, 77]
+[78, 78, 78, 78, 78]
+[79, 79, 79, 79, 79]
+[80, 80, 80, 80, 80]
+[81, 81, 81, 81, 81]
+[82, 82, 82, 82, 82]
+[83, 83, 83, 83, 83]
+[84, 84, 84, 84, 84]
+[85, 85, 85, 85, 85]
+[86, 86, 86, 86, 86]
+[87, 87, 87, 87, 87]
+[88, 88, 88, 88, 88]
+[89, 89, 89, 89, 89]
+[90, 90, 90, 90, 90]
+[91, 91, 91, 91, 91]
+[92, 92, 92, 92, 92]
+[93, 93, 93, 93, 93]
+[94, 94, 94, 94, 94]
+[95, 95, 95, 95, 95]
+[96, 96, 96, 96, 96]
+[97, 97, 97, 97, 97]
+[98, 98, 98, 98, 98]
+[99, 99, 99, 99, 99]
+[100, 100, 100, 100, 100]
+[101, 101, 101, 101, 101]
+[102, 102, 102, 102, 102]
+[103, 103, 103, 103, 103]
+[104, 104, 104, 104, 104]
+[105, 105, 105, 105, 105]
+[106, 106, 106, 106, 106]
+[107, 107, 107, 107, 107]
+[108, 108, 108, 108, 108]
+[109, 109, 109, 109, 109]
+[110, 110, 110, 110, 110]
+[111, 111, 111, 111, 111]
+[112, 112, 112, 112, 112]
+[113, 113, 113, 113, 113]
+[114, 114, 114, 114, 114]
+[115, 115, 115, 115, 115]
+[116, 116, 116, 116, 116]
+[117, 117, 117, 117, 117]
+[118, 118, 118, 118, 118]
+[119, 119, 119, 119, 119]
+[120, 120, 120, 120, 120]
+[121, 121, 121, 121, 121]
+[122, 122, 122, 122, 122]
+[123, 123, 123, 123, 123]
+[124, 124, 124, 124, 124]
+[125, 125, 125, 125, 125]
+[126, 126, 126, 126, 126]
+[127, 127, 127, 127, 127]
+[128, 128, 128, 128, 128]
+[129, 129, 129, 129, 129]
+[130, 130, 130, 130, 130]
+[131, 131, 131, 131, 131]
+[132, 132, 132, 132, 132]
+[133, 133, 133, 133, 133]
+[134, 134, 134, 134, 134]
+[135, 135, 135, 135, 135]
+[136, 136, 136, 136, 136]
+[137, 137, 137, 137, 137]
+[138, 138, 138, 138, 138]
+[139, 139, 139, 139, 139]
+[140, 140, 140, 140, 140]
+[141, 141, 141, 141, 141]
+[142, 142, 142, 142, 142]
+[143, 143, 143, 143, 143]
+[144, 144, 144, 144, 144]
+[145, 145, 145, 145, 145]
+[146, 146, 146, 146, 146]
+[147, 147, 147, 147, 147]
+[148, 148, 148, 148, 148]
+[149, 149, 149, 149, 149]
+[150, 150, 150, 150, 150]
+[151, 151, 151, 151, 151]
+[152, 152, 152, 152, 152]
+[153, 153, 153, 153, 153]
+[154, 154, 154, 154, 154]
+[155, 155, 155, 155, 155]
+[156, 156, 156, 156, 156]
+[157, 157, 157, 157, 157]
+[158, 158, 158, 158, 158]
+[159, 159, 159, 159, 159]
+[False, 161, 161, 162, 162]
+[False, 175, 175, False, False]
+[False, 199, 199, False, False]
+[224, 224, 224, 224, 224]
+[False, False, False, 228, 228]
+[False, False, False, 254, 254]
+[False, False]
+[False, False]
+58 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.agilent.com.about.newsroom.presrel.2000.31mar2000b.html
+tables 9
+itables 4
+[False, False]
+[False]
+[180, 180, 180, 180, False]
+[False, False]
+59 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.ncees.org.professional.principles.html
+tables 2
+itables 2
+[False, False, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, False, 5, 5, False, False, False, False, 10, 10]
+[False]
+60 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.royalbank.com.rtcap.01funds.01hfund.html
+tables 18
+itables 12
+[False, False]
+[False, False, 30, 30, 30, 30, False, False, 33, 33, 33, 33, False, False, 36, 36, 36, 36, 36, 36, 36, 36, False, False, 39, 39, 39, 39, 39, 39, 39, 39, False, False, 42, 42, 42, 42, 42, 42, 42, 42, False, False, False, False, False]
+[False, False]
+[False]
+[False]
+[False, False]
+[False, False]
+[False, False, 146, 146, 146, 146, 146, 146, 146, 146, 146, 146, False, False, 149, 149, 149, 149, 149, 149, 149, 149]
+[False]
+[False]
+[False]
+[False]
+61 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.mfdirect.com.eng.about.value.html
+tables 3
+itables 3
+[False, False]
+[False, False, 15, 15, 15, 15, 16, 16, 17, 17]
+[False]
+62 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.cnib.ca.score.score97.40score.index.html
+tables 2
+itables 1
+[False, False, 3, 3]
+63 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.News.Media.Journalism.Photojournalism.Agencies.index.html
+tables 10
+itables 8
+[False]
+[False]
+[False]
+[False]
+[38, 38, 38, 38, 38]
+[39, 39, 39, 39, 39]
+[40, 40, 40, 40, 40]
+[False, False]
+64 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.News.Colleges_and_Universities.News_Services.index.html
+tables 11
+itables 9
+[False]
+[False]
+[False]
+[False]
+[29, 29, 29, 29, 29]
+[30, 30, 30, 30, 30]
+[31, 31, 31, 31, 31]
+[32, 32, 32, False]
+[False, False]
+65 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.Business.Training_and_Schools.Health_and_Safety.Fire_Sciences.index.html
+tables 13
+itables 11
+[False]
+[False]
+[False]
+[False]
+[37, 37, 37, 37, 37]
+[38, 38, 38, 38, 38]
+[39, 39, 39, 39, 39]
+[40, 40, 40, 40, 40]
+[41, 41, False]
+[False, False]
+[False]
+66 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.doxamed.com.Stock.index.html
+tables 9
+itables 7
+[False]
+[False]
+[False]
+[False]
+[False, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25]
+[False]
+[False]
+67 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.nmbiz.com.issues.01.Apr.index.html
+tables 12
+itables 5
+[False, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, 18, 18, False, False, False, False]
+[False, False, False, False, False, False, False, False, False, False]
+[False, False]
+[False]
+68 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.moduletruck.com.Mechanical.Contents.htm
+tables 3
+itables 2
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[False]
+69 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.Business.Advertising.Agencies.Branding.index.html
+tables 19
+itables 17
+[False]
+[False]
+[False]
+[False]
+[37, 37, 37, 37, 37]
+[38, 38, 38, 38, 38]
+[39, 39, 39, 39, 39]
+[40, 40, 40, 40, 40]
+[41, 41, 41, 41, 41]
+[42, 42, 42, 42, 42]
+[43, 43, 43, 43, 43]
+[44, 44, 44, 44, 44]
+[45, 45, 45, 45, 45]
+[46, 46, 46, 46, 46]
+[47, 47, 47, 47, 47]
+[48, 48, 48, 48, False]
+[False, False]
+70 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.Regional.North_America.United_States.Massachusetts.Localities.G.Greenfield.Business_and_Economy.Organizations.index.html
+tables 8
+itables 6
+[False]
+[False]
+[False]
+[False]
+[42, 42, 42, 42]
+[False, False]
+71 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.Business.Business_Services.Two_Way_Radio.Technical_Resources.Maps.index.html
+tables 10
+itables 8
+[False]
+[False]
+[False]
+[False]
+[38, 38, 38, 38, 38]
+[39, 39]
+[False, False]
+[False]
+72 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/detnews.com.2001.politics.0104.05.b04-206613.htm
+tables 4
+itables 3
+[False, False, False, False]
+[False]
+[False, False]
+
+
+Resultado Vazio
+
+
+73 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.News.Current_Events.Media_and_Free_Speech.Public_Interest.index.html
+tables 13
+itables 11
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[51, 51, 51, 51, 51]
+[52, 52, 52, 52, 52]
+[53, 53]
+[False, False]
+[False]
+74 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.mmd.admin.state.mn.us.schedule.htm
+tables 1
+itables 1
+[False, False, 3, 3, False, False, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+75 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.radio.gov.uk.topics.mpsafety.school-audit.stewres.htm
+tables 5
+itables 5
+[False]
+[10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+[11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11]
+[12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, False, 14, 14, 14, 14, 14, 14, 14, 14, 14]
+[False]
+76 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.cato.org.pubs.wtpapers.taxcuts2.html
+tables 3
+itables 3
+[False]
+[False, False, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13]
+[26, 26, 26, False, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, False, 30, 30, 30, 30, 30, 30, False, 32, 32, 32, 32, 32, 32, 32, False]
+77 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.oliverchronicle.com.oliver.schedule.htm
+tables 2
+itables 1
+[False, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, False, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+78 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.cc.gatech.edu.gvu.user_surveys.index.html
+tables 4
+itables 3
+[False, False]
+[False]
+[False, False]
+
+
+Resultado Vazio
+
+
+79 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.nfpa.org.education.Professional_Development_and_C.Certification_Programs.CFPS.Exam_Schedule.exam_schedule.html
+tables 15
+itables 5
+[1, 1, False, 3, 3, 3, 3, False]
+[False]
+[32, 32, 32, 32, 32]
+[33, 33, False, 35, 35, 35]
+[False]
+80 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/cogprints.soton.ac.uk.documents.disk0.00.00.03.66.index.html
+tables 4
+itables 3
+[False]
+[False]
+[32, 32, 32, 32]
+81 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.myrtlebeachaccess.com.cust.index.html
+tables 1
+itables 1
+[False, False, 3, 3, 3, 3, 3, 3, 3, 3, False, False]
+82 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.printmd.com.ccsched.htm
+tables 4
+itables 1
+[False, False, 3, 3, 3, 3, 3, 3, False, 5, 5, 5, 5, 5, False, 7, 7]
+83 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.Business.Industries.Retail.Companies.index.html
+tables 14
+itables 12
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[50, 50, 50, 50, 50]
+[51, 51, 51, 51, 51]
+[52, 52, 52, 52, 52]
+[53, 53, 53, 54, 54]
+[False, False]
+[False]
+84 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.aicpa.org.belt.schfind.htm
+tables 5
+itables 5
+[False, False]
+[False, 19, 19, 19, 19, False, False]
+[30, 30, 30, 30, False, False, False, False, 35, 35, 35]
+[False, 48, 48, 48]
+[50, 50, False, False]
+85 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/composite.about.com.industry.composite.library.weekly.aa981103.htm
+tables 35
+itables 20
+[False]
+[]
+[False]
+[False]
+[False]
+[False]
+[False, False]
+[False]
+[False]
+[False, False, False, False, False, False, False, False, False]
+[False]
+[False]
+[False]
+[False]
+[216, 216, 216]
+[]
+[]
+[]
+[False, False]
+[False, False, False, False]
+86 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.mathworks.com.access.helpdesk.help.toolbox.dspblks.singularvaluedecompositio.shtml
+tables 4
+itables 4
+[False]
+[False, 10, 10, 10, 10, 10, 10, 10, False]
+[False]
+[False]
+87 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.csmonitor.com.atcsmonitor.specials.oly2000.cal.schedule.html
+tables 7
+itables 4
+[False, False]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False, False, 2001, 2001, 2001, False]
+[False, False, 2012, 2012, 2012, 2012, 2012, 2012, 2012, 2012, 2012, False]
+88 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.newsfactor.com.perl.story.8694.html
+tables 19
+itables 14
+[False, False]
+[False, False]
+[False]
+[52, 52]
+[53, 53]
+[False]
+[False, False]
+[False, False]
+[False, False]
+[False, 122, 122]
+[False, 127, 127, 127, 127, 127, 127, 127, 127, 127, False]
+[138, 138, 138]
+[False, False]
+[False, False, 365, 365, False, 367, 367, False, False, False]
+89 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/directory.google.com.Top.News.By_Subject.Information_Technology.Internet.index.html
+tables 15
+itables 13
+[False]
+[False]
+[False]
+[False]
+[False]
+[False]
+[56, 56, 56, 56, 56]
+[57, 57, 57, 57, 57]
+[58, 58, 58, 58, 58]
+[59, 59, 59, 59, 59]
+[60, 60, 60, 60, 60]
+[False, False]
+[False]
+90 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/archive.sportserver.com.newsroom.sports.oth.1998.oth.mor.feat.archive.022698.mor11636.html
+tables 0
+itables 0
+
+
+Resultado Vazio
+
+
+91 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/greenvillenews.com.obits.archives.20010308001616.htm
+tables 6
+itables 5
+[False, False]
+[False, False, False, False]
+[False, False, False, False]
+[False, False, False, False]
+[False]
+
+
+Resultado Vazio
+
+
+92 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.crmdaily.com.perl.story.5375.html
+tables 19
+itables 14
+[False, False]
+[False, False]
+[False]
+[52, 52]
+[53, 53]
+[False]
+[False, False]
+[False, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119]
+[False, False]
+[False, 135, 135]
+[False, 140, 140, 140, 140, 140, 140, 140, 140, 140, False]
+[151, 151, 151]
+[False, False]
+[False, False, 376, 376, False, 378, 378, False, False, False]
+93 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.p-com.com.service.training.schedule.html
+tables 3
+itables 2
+[1, 1, 1, 1, 1]
+[False, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+94 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.uspto.gov.web.offices.ac.qs.ope.1999.fee2000.htm
+tables 7
+itables 7
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False]
+[False, False, False, False, False, False, False, False, False, False, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, False, False, 69, 69, 69, False, False, 72, 72, 72, 72, 72, 72, False, False, False, 76, 76, 77, 77, 77, False, False, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, False, False, False, 143, 143, 143, 143, 143, False, False, 146, 146, 146, False, False, 149, 149, 149, 149, 149, 149, 149, 149, 149, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, False, False, False, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, 194, False, False, 197, 197, 197, 197, 197, 197, 197, False, 199, 199, 200, 200, 200, 200, False, False, False, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, False, False, False, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, False, False, False, 253, 253, 253, 253, 253, 253, 253, 253, False, False, 256, 256, 256, 256, False, False, False, False, False, False, False, False, False, False, False]
+[False, False, False, False, False, False, False, False, False, False, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, 321, False, False, 324, 324, 324, 324, 324, 324, 324, 324, 324, 324, 324, 324, 324, 324, 324, 324, 324, False, False, 327, 327, 327, False, False, False, False, False, False, False, False]
+95 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.csfs.ca.pplus.TestExpectedResults.html
+tables 5
+itables 5
+[False, 2, 2, 2, 2, 3, 3, 3, 3, 3]
+[False, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+[False, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+[False, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34]
+[False, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48]
+96 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.naplesnews.com.01.04.bonita.d572592a1.htm
+tables 2
+itables 2
+[False]
+[False, False]
+
+
+Resultado Vazio
+
+
+97 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.tarik.com.au.wchistory.html
+tables 24
+itables 20
+[False]
+[6, 6, 6, 6, 6, 6]
+[False, False, 9, 9, 9, 9, 9, 9, 9, 9]
+[False, False, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21]
+[False]
+[42, 42, 42, 42, 42]
+[43, 43, 43, 43, 43]
+[44, 44, 44, 44, 44]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False]
+[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+[False]
+98 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.unl.edu.amc.e-exams.e6-amc12.2000stats12.html
+tables 5
+itables 4
+[False, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+[False, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+[False, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18]
+[False, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26]
+99 /home/iamjabour/workspacePessoal/tese/corpus/machine_learning_tableextraction_paper2/webtablegrnd/html/www.defenselink.mil.news.Jun1997.b06051997_bt286-97.html
+tables 8
+itables 7
+[False, False, False]
+[False]
+[False, False, False, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, False, 37, 37, 37, 37, 37, False, False, False, 41, 41, False, False]
+[False]
+[137, 137, False]
+[False, False, 145, 145, 145, 145, 145, 145, 145, 145, False, False, False, 149, 149, 149, 149, 149, 149, 149, False, False, 152, 152, 152, False, False, 155, 155, 155, 155, 155, 155, False, False, False, False, 160, 160, False, False, False, False]
+[False]
+0 {'table': [2, 2, 4]}
+1 {'table': [1, 1, 1]}
+2 {'table': [0, 1, 4]}
+3 {'table': [3, 3, 3]}
+4 {'table': [23, 23, 23]}
+5 {'table': [0, 0, 3]}
+6 {'table': [0, 0, 1]}
+7 {'table': [1, 1, 2]}
+8 {'table': [0, 0, 2]}
+9 {'table': [0, 0, 1]}
+10 {'table': [1, 1, 1]}
+11 {'table': [1, 2, 1]}
+12 {'table': [2, 2, 2]}
+13 {'table': [2, 2, 2]}
+14 {'table': [0, 0, 1]}
+15 {'table': [0, 0, 0]}
+16 {'table': [4, 4, 4]}
+17 {'table': [1, 1, 6]}
+18 {'table': [1, 1, 1]}
+19 {'table': [0, 0, 7]}
+20 {'table': [1, 1, 1]}
+21 {'table': [0, 0, 0]}
+22 {'table': [0, 0, 1]}
+23 {'table': [3, 3, 3]}
+24 {'table': [0, 0, 1]}
+25 {'table': [1, 1, 1]}
+26 {'table': [0, 0, 1]}
+27 {'table': [1, 1, 1]}
+28 {'table': [0, 0, 18]}
+29 {'table': [0, 0, 0]}
+30 {'table': [1, 1, 1]}
+31 {'table': [2, 2, 2]}
+32 {'table': [1, 1, 1]}
+33 {'table': [1, 1, 1]}
+34 {'table': [1, 1, 1]}
+35 {'table': [0, 0, 27]}
+36 {'table': [0, 0, 1]}
+37 {'table': [0, 0, 0]}
+38 {'table': [1, 1, 2]}
+39 {'table': [7, 7, 8]}
+40 {'table': [0, 0, 3]}
+41 {'table': [1, 1, 6]}
+42 {'table': [4, 7, 4]}
+43 {'table': [0, 0, 1]}
+44 {'table': [0, 0, 1]}
+45 {'table': [1, 1, 1]}
+46 {'table': [0, 0, 1]}
+47 {'table': [4, 4, 4]}
+48 {'table': [1, 1, 2]}
+49 {'table': [0, 1, 1]}
+50 {'table': [0, 0, 1]}
+51 {'table': [0, 0, 1]}
+52 {'table': [1, 1, 1]}
+53 {'table': [1, 1, 2]}
+54 {'table': [3, 3, 6]}
+55 {'table': [0, 0, 1]}
+56 {'table': [0, 0, 0]}
+57 {'table': [0, 0, 129]}
+58 {'table': [1, 1, 1]}
+59 {'table': [1, 1, 1]}
+60 {'table': [0, 2, 2]}
+61 {'table': [1, 1, 1]}
+62 {'table': [0, 0, 1]}
+63 {'table': [0, 0, 3]}
+64 {'table': [0, 0, 4]}
+65 {'table': [0, 0, 5]}
+66 {'table': [0, 0, 1]}
+67 {'table': [0, 0, 1]}
+68 {'table': [1, 1, 1]}
+69 {'table': [0, 0, 12]}
+70 {'table': [0, 0, 1]}
+71 {'table': [0, 0, 2]}
+72 {'table': [0, 0, 0]}
+73 {'table': [0, 0, 3]}
+74 {'table': [1, 1, 1]}
+75 {'table': [2, 2, 3]}
+76 {'table': [2, 2, 2]}
+77 {'table': [1, 1, 1]}
+78 {'table': [0, 0, 0]}
+79 {'table': [1, 2, 3]}
+80 {'table': [1, 1, 1]}
+81 {'table': [1, 1, 1]}
+82 {'table': [1, 1, 1]}
+83 {'table': [0, 0, 4]}
+84 {'table': [0, 0, 4]}
+85 {'table': [0, 0, 1]}
+86 {'table': [1, 1, 1]}
+87 {'table': [0, 1, 2]}
+88 {'table': [1, 1, 6]}
+89 {'table': [0, 0, 5]}
+90 {'table': [0, 0, 0]}
+91 {'table': [0, 0, 0]}
+92 {'table': [1, 1, 7]}
+93 {'table': [1, 1, 2]}
+94 {'table': [5, 5, 5]}
+95 {'table': [5, 5, 5]}
+96 {'table': [0, 0, 0]}
+97 {'table': [2, 9, 6]}
+98 {'table': [4, 4, 4]}
+99 {'table': [1, 1, 3]}
+
+total
+{'table': [113, 130, 412]}
+
+key	recall	precision
+{'table': [0.86923076923076925, 0.27427184466019416]}

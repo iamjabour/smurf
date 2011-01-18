@@ -1,0 +1,235 @@
+benchmark
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+0 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+1 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+2 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+3 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+4 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+5 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+6 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+7 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+8 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+9 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+10 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+11 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+12 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+13 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+14 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+15 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+16 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+17 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+18 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+19 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+20 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+21 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+22 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+23 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+24 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+25 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+26 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+27 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+28 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+29 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+30 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+31 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+32 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+33 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+34 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+35 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+36 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+37 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+38 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+39 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+40 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+41 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+42 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+43 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+44 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+45 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+46 {'product': [49, 51, 149], 'productlist': [1, 1, 1]}
+47 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+48 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+49 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+50 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+51 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+52 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+53 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+54 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+55 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+56 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+57 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+58 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+59 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+60 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+61 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+62 {'product': [44, 46, 134], 'productlist': [1, 1, 1]}
+63 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+64 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+65 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+66 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+67 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+68 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+69 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+70 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+71 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+72 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+73 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+74 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+75 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+76 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+77 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+78 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+79 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+80 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+81 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+82 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+83 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+84 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+85 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+86 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+87 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+88 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+89 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+90 {'product': [44, 44, 133], 'productlist': [1, 1, 1]}
+91 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+92 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+93 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+94 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+95 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+96 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+97 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+98 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+99 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+100 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+101 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+102 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+103 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+104 {'product': [46, 48, 140], 'productlist': [1, 1, 1]}
+105 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+106 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+107 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+108 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+109 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+110 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+111 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+112 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+113 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+114 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+115 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+116 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+117 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+118 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+119 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+120 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+121 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+122 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+123 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+124 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+125 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+126 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+127 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+128 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+129 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+130 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+131 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+132 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+133 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+134 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+135 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+136 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+137 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+138 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+139 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+140 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+141 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+142 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+143 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+144 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+145 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+146 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+147 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+148 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+149 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+150 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+151 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+152 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+153 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+154 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+155 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+156 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+157 {'product': [51, 51, 158], 'productlist': [1, 1, 1]}
+158 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+159 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+160 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+161 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+162 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+163 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+164 {'product': [50, 50, 151], 'productlist': [1, 1, 1]}
+165 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+166 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+167 {'product': [50, 52, 152], 'productlist': [1, 1, 1]}
+
+total
+{'product': [7804, 8006, 23753], 'productlist': [156, 156, 156]}
+
+key	recall	precision
+{'product': [0.97476892330751941, 0.32854797288763526, 0.49145124216757458], 'productlist': [1.0, 1.0, 1.0]}

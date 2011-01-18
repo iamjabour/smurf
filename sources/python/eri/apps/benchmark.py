@@ -6,7 +6,7 @@ from eri.corpus import Corpus
 import os
 
 class Benchmark:
-    def __init__(self, corpusPath, configFile=None, extractors=[], limit=int(2**31-1), output=None, pfilenames=False):
+    def __init__(self, corpusPath, configFile=None, extractors=[], limit=int(2**31-1), output=None, pfilenames=False, initial = 0):
 
         if not configFile:
             # verifica se existe o arquivo de configuracao padrao e o carrega
@@ -43,6 +43,8 @@ class Benchmark:
 
         self.limit = limit # configura o limite para o que foi escolhido
 
+        self.initial = initial
+
         # inicializa uma lista vazia onde serao guardados os resultados
         self.benchmark = []
 
@@ -52,7 +54,7 @@ class Benchmark:
         self.benchmark. para visualizar o resultado de forma adequada utilize
         pprint()
         """
-        count = 0
+        count = self.initial
 
         while True:
             count += 1
@@ -60,16 +62,14 @@ class Benchmark:
             if debug:
                 print count, self.limit
 
-            if  count <= self.limit:
+            if  self.limit != int(2**31-1) and  count <= self.limit:
+                doc = self.corpus.getDocument(id=count)
+            elif self.limit == int(2**31-1):
                 doc = self.corpus.getDocument()
-            elif self.limit <= 0:
-                doc = self.corpus.getDocument(id=abs(self.limit))
-                count = int(2**31-1) #infinito
-                self.limit = count
             else:
                 break
 
-            if not doc:
+            if not doc or doc == None:
                 break
 
             try:
@@ -160,6 +160,12 @@ if __name__ == '__main__':
 
     # logging-related options
     parser.add_option(
+        '-i', '--init', action='store', type='int', \
+        default=False, \
+        help="Set initial file to hierarchical corpus"
+        )
+
+    parser.add_option(
         '-l', '--limit', action='store', type='int', \
         default=False, \
         help="Set limit to hierarchical corpus" + \
@@ -196,7 +202,7 @@ if __name__ == '__main__':
     m, c = args[0].split('.')
     extractor = dimport("eri.extractors.%s" % m.lower(), c)
     print 'benchmark'
-    b = Benchmark(args[1], opt.config, [extractor], limit= opt.limit, output=output, pfilenames = names)
+    b = Benchmark(args[1], opt.config, [extractor], limit= opt.limit, output=output, pfilenames = names, initial= opt.init)
 
     if opt.verbose:
         b.process(debug=True)

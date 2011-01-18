@@ -1,0 +1,765 @@
+benchmark
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+
+
+Resultado Vazio
+
+
+0 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+1 {'product': [0, 8, 0], 'productlist': [1, 1, 29]}
+2 {'product': [0, 15, 0], 'productlist': [1, 1, 30]}
+3 {'product': [0, 5, 0], 'productlist': [1, 1, 28]}
+4 {'product': [0, 5, 0], 'productlist': [1, 1, 28]}
+5 {'product': [0, 4, 0], 'productlist': [1, 1, 28]}
+6 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+7 {'product': [0, 15, 0], 'productlist': [1, 1, 33]}
+8 {'product': [0, 15, 0], 'productlist': [1, 1, 33]}
+9 {'product': [0, 9, 0], 'productlist': [1, 1, 30]}
+10 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+11 {'product': [0, 6, 0], 'productlist': [1, 1, 27]}
+12 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+13 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+14 {'product': [0, 12, 0], 'productlist': [1, 1, 31]}
+15 {'product': [0, 5, 0], 'productlist': [1, 1, 28]}
+16 {'product': [0, 14, 0], 'productlist': [1, 1, 27]}
+17 {'product': [0, 6, 0], 'productlist': [1, 1, 28]}
+18 {'product': [0, 3, 0], 'productlist': [1, 1, 26]}
+19 {'product': [0, 13, 0], 'productlist': [1, 1, 27]}
+20 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+21 {'product': [0, 3, 0], 'productlist': [1, 1, 28]}
+22 {'product': [0, 9, 0], 'productlist': [1, 1, 29]}
+23 {'product': [0, 4, 0], 'productlist': [1, 1, 28]}
+24 {'product': [0, 9, 0], 'productlist': [1, 1, 27]}
+25 {'product': [0, 15, 0], 'productlist': [1, 1, 30]}
+26 {'product': [0, 10, 0], 'productlist': [1, 1, 28]}
+27 {'product': [0, 5, 0], 'productlist': [1, 1, 27]}
+28 {'product': [0, 15, 0], 'productlist': [1, 1, 27]}
+29 {'product': [0, 15, 0], 'productlist': [1, 1, 30]}
+30 {'product': [0, 6, 0], 'productlist': [1, 1, 29]}
+31 {'product': [0, 15, 0], 'productlist': [1, 1, 33]}
+32 {'product': [0, 15, 0], 'productlist': [1, 1, 33]}
+33 {'product': [0, 15, 0], 'productlist': [1, 1, 31]}
+34 {'product': [0, 15, 0], 'productlist': [1, 1, 27]}
+35 {'product': [0, 10, 0], 'productlist': [1, 1, 29]}
+36 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+37 {'product': [0, 4, 0], 'productlist': [1, 1, 29]}
+38 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+39 {'product': [0, 15, 0], 'productlist': [1, 1, 34]}
+40 {'product': [0, 15, 0], 'productlist': [1, 1, 33]}
+41 {'product': [0, 11, 0], 'productlist': [1, 1, 27]}
+42 {'product': [0, 15, 0], 'productlist': [1, 1, 31]}
+43 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+44 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+45 {'product': [0, 7, 0], 'productlist': [1, 1, 28]}
+46 {'product': [0, 15, 0], 'productlist': [1, 1, 35]}
+47 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+48 {'product': [0, 11, 0], 'productlist': [1, 1, 27]}
+49 {'product': [0, 15, 0], 'productlist': [1, 1, 33]}
+50 {'product': [0, 15, 0], 'productlist': [1, 1, 30]}
+51 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+52 {'product': [0, 8, 0], 'productlist': [1, 1, 27]}
+53 {'product': [0, 15, 0], 'productlist': [1, 1, 35]}
+54 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+55 {'product': [0, 15, 0], 'productlist': [1, 1, 34]}
+56 {'product': [0, 12, 0], 'productlist': [1, 1, 29]}
+57 {'product': [0, 6, 0], 'productlist': [1, 1, 29]}
+58 {'product': [0, 15, 0], 'productlist': [1, 1, 33]}
+59 {'product': [0, 10, 0], 'productlist': [1, 1, 28]}
+60 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+61 {'product': [0, 15, 0], 'productlist': [1, 1, 27]}
+62 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+63 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+64 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+65 {'product': [0, 15, 0], 'productlist': [1, 1, 34]}
+66 {'product': [0, 1, 0], 'productlist': [1, 1, 23]}
+67 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+68 {'product': [0, 10, 0], 'productlist': [1, 1, 28]}
+69 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+70 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+71 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+72 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+73 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+74 {'product': [0, 15, 0], 'productlist': [1, 1, 31]}
+75 {'product': [0, 9, 0], 'productlist': [1, 1, 28]}
+76 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+77 {'product': [0, 14, 0], 'productlist': [1, 1, 29]}
+78 {'product': [0, 15, 0], 'productlist': [1, 1, 35]}
+79 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+80 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+81 {'product': [0, 15, 0], 'productlist': [1, 1, 34]}
+82 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+83 {'product': [0, 1, 0], 'productlist': [1, 1, 22]}
+84 {'product': [0, 8, 0], 'productlist': [1, 1, 28]}
+85 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+86 {'product': [0, 12, 0], 'productlist': [1, 1, 29]}
+87 {'product': [0, 11, 0], 'productlist': [1, 1, 28]}
+88 {'product': [0, 15, 0], 'productlist': [1, 1, 30]}
+89 {'product': [0, 15, 0], 'productlist': [1, 1, 31]}
+90 {'product': [0, 15, 0], 'productlist': [1, 1, 33]}
+91 {'product': [0, 15, 0], 'productlist': [1, 1, 34]}
+92 {'product': [0, 9, 0], 'productlist': [1, 1, 28]}
+93 {'product': [0, 2, 0], 'productlist': [1, 1, 26]}
+94 {'product': [0, 15, 0], 'productlist': [1, 1, 34]}
+95 {'product': [0, 13, 0], 'productlist': [1, 1, 28]}
+96 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+97 {'product': [0, 15, 0], 'productlist': [1, 1, 34]}
+98 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+99 {'product': [0, 14, 0], 'productlist': [1, 1, 27]}
+100 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+101 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+102 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+103 {'product': [0, 15, 0], 'productlist': [1, 1, 31]}
+104 {'product': [0, 15, 0], 'productlist': [1, 1, 30]}
+105 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+106 {'product': [0, 2, 0], 'productlist': [1, 1, 27]}
+107 {'product': [0, 6, 0], 'productlist': [1, 1, 27]}
+108 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+109 {'product': [0, 2, 0], 'productlist': [1, 1, 28]}
+110 {'product': [0, 7, 0], 'productlist': [1, 1, 26]}
+111 {'product': [0, 15, 0], 'productlist': [1, 1, 33]}
+112 {'product': [0, 15, 0], 'productlist': [1, 1, 35]}
+113 {'product': [0, 15, 0], 'productlist': [1, 1, 36]}
+114 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+115 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+116 {'product': [0, 1, 0], 'productlist': [1, 1, 22]}
+117 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+118 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+119 {'product': [0, 15, 0], 'productlist': [1, 1, 29]}
+120 {'product': [0, 3, 0], 'productlist': [1, 1, 28]}
+121 {'product': [0, 2, 0], 'productlist': [1, 1, 27]}
+122 {'product': [0, 9, 0], 'productlist': [1, 1, 28]}
+123 {'product': [0, 6, 0], 'productlist': [1, 1, 28]}
+124 {'product': [0, 15, 0], 'productlist': [1, 1, 31]}
+125 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+126 {'product': [0, 5, 0], 'productlist': [1, 1, 28]}
+127 {'product': [0, 7, 0], 'productlist': [1, 1, 29]}
+128 {'product': [0, 1, 0], 'productlist': [1, 1, 22]}
+129 {'product': [0, 14, 0], 'productlist': [1, 1, 28]}
+130 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+131 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+132 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+133 {'product': [0, 1, 0], 'productlist': [1, 1, 22]}
+134 {'product': [0, 15, 0], 'productlist': [1, 1, 28]}
+135 {'product': [0, 6, 0], 'productlist': [1, 1, 29]}
+136 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+137 {'product': [0, 13, 0], 'productlist': [1, 1, 27]}
+138 {'product': [0, 15, 0], 'productlist': [1, 1, 35]}
+139 {'product': [0, 11, 0], 'productlist': [1, 1, 27]}
+140 {'product': [0, 10, 0], 'productlist': [1, 1, 29]}
+141 {'product': [0, 1, 0], 'productlist': [1, 1, 22]}
+142 {'product': [0, 15, 0], 'productlist': [1, 1, 34]}
+143 {'product': [0, 14, 0], 'productlist': [1, 1, 28]}
+144 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+145 {'product': [0, 8, 0], 'productlist': [1, 1, 28]}
+146 {'product': [0, 15, 0], 'productlist': [1, 1, 32]}
+147 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+148 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+149 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+150 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+151 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+152 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+153 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+154 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+155 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+156 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+157 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+158 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+159 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+160 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+161 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+162 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+163 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+164 {'product': [0, 20, 0], 'productlist': [1, 1, 19]}
+165 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+166 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+167 {'product': [0, 1, 0], 'productlist': [0, 1, 17]}
+168 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+169 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+170 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+171 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+172 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+173 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+174 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+175 {'product': [0, 12, 0], 'productlist': [1, 1, 18]}
+176 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+177 {'product': [0, 6, 0], 'productlist': [1, 1, 18]}
+178 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+179 {'product': [0, 12, 0], 'productlist': [1, 1, 18]}
+180 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+181 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+182 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+183 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+184 {'product': [0, 1, 0], 'productlist': [0, 1, 19]}
+185 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+186 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+187 {'product': [0, 0, 0], 'productlist': [0, 1, 16]}
+188 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+189 {'product': [0, 14, 0], 'productlist': [1, 1, 17]}
+190 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+191 {'product': [0, 5, 0], 'productlist': [1, 1, 18]}
+192 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+193 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+194 {'product': [0, 6, 0], 'productlist': [1, 1, 17]}
+195 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+196 {'product': [0, 17, 0], 'productlist': [1, 1, 17]}
+197 {'product': [0, 7, 0], 'productlist': [1, 1, 19]}
+198 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+199 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+200 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+201 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+202 {'product': [0, 2, 0], 'productlist': [0, 1, 20]}
+203 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+204 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+205 {'product': [0, 8, 0], 'productlist': [1, 1, 17]}
+206 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+207 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+208 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+209 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+210 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+211 {'product': [0, 16, 0], 'productlist': [1, 1, 18]}
+212 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+213 {'product': [0, 6, 0], 'productlist': [1, 1, 16]}
+214 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+215 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+216 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+217 {'product': [0, 18, 0], 'productlist': [1, 1, 18]}
+218 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+219 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+220 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+221 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+222 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+223 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+224 {'product': [0, 20, 0], 'productlist': [1, 1, 19]}
+225 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+226 {'product': [0, 1, 0], 'productlist': [0, 1, 18]}
+227 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+228 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+229 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+230 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+231 {'product': [0, 5, 0], 'productlist': [1, 1, 19]}
+232 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+233 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+234 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+235 {'product': [0, 20, 0], 'productlist': [1, 1, 20]}
+236 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+237 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+238 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+239 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+240 {'product': [0, 1, 0], 'productlist': [0, 1, 19]}
+241 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+242 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+243 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+244 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+245 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+246 {'product': [0, 12, 0], 'productlist': [1, 1, 18]}
+247 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+248 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+249 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+250 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+251 {'product': [0, 20, 0], 'productlist': [1, 1, 22]}
+252 {'product': [0, 6, 0], 'productlist': [1, 1, 18]}
+253 {'product': [0, 20, 0], 'productlist': [1, 1, 21]}
+254 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+255 {'product': [0, 19, 0], 'productlist': [1, 1, 11]}
+256 {'product': [0, 15, 0], 'productlist': [1, 1, 12]}
+257 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+258 {'product': [0, 7, 0], 'productlist': [1, 1, 9]}
+259 {'product': [0, 10, 0], 'productlist': [1, 1, 9]}
+260 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+261 {'product': [0, 25, 0], 'productlist': [1, 1, 12]}
+262 {'product': [0, 8, 0], 'productlist': [1, 1, 9]}
+263 {'product': [0, 2, 0], 'productlist': [1, 1, 10]}
+264 {'product': [0, 18, 0], 'productlist': [1, 1, 11]}
+265 {'product': [0, 11, 0], 'productlist': [1, 1, 11]}
+266 {'product': [0, 5, 0], 'productlist': [1, 1, 11]}
+267 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+268 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+269 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+270 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+271 {'product': [0, 14, 0], 'productlist': [1, 1, 11]}
+272 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+273 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+274 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+275 {'product': [0, 16, 0], 'productlist': [1, 1, 11]}
+276 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+277 {'product': [0, 15, 0], 'productlist': [1, 1, 11]}
+278 {'product': [0, 5, 0], 'productlist': [1, 1, 11]}
+279 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+280 {'product': [0, 25, 0], 'productlist': [1, 1, 13]}
+281 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+282 {'product': [0, 25, 0], 'productlist': [1, 1, 12]}
+283 {'product': [0, 8, 0], 'productlist': [1, 1, 9]}
+284 {'product': [0, 10, 0], 'productlist': [1, 1, 9]}
+285 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+286 {'product': [0, 3, 0], 'productlist': [1, 1, 9]}
+287 {'product': [0, 11, 0], 'productlist': [1, 1, 11]}
+288 {'product': [0, 14, 0], 'productlist': [1, 1, 12]}
+289 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+290 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+291 {'product': [0, 16, 0], 'productlist': [1, 1, 13]}
+292 {'product': [0, 4, 0], 'productlist': [1, 1, 11]}
+293 {'product': [0, 10, 0], 'productlist': [1, 1, 11]}
+294 {'product': [0, 4, 0], 'productlist': [1, 1, 9]}
+295 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+296 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+297 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+298 {'product': [0, 25, 0], 'productlist': [1, 1, 14]}
+299 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+300 {'product': [0, 25, 0], 'productlist': [1, 1, 12]}
+301 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+302 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+303 {'product': [0, 4, 0], 'productlist': [1, 1, 11]}
+304 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+305 {'product': [0, 25, 0], 'productlist': [1, 1, 13]}
+306 {'product': [0, 10, 0], 'productlist': [1, 1, 11]}
+307 {'product': [0, 24, 0], 'productlist': [1, 1, 12]}
+308 {'product': [0, 14, 0], 'productlist': [1, 1, 13]}
+309 {'product': [0, 14, 0], 'productlist': [1, 1, 11]}
+310 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+311 {'product': [0, 17, 0], 'productlist': [1, 1, 11]}
+312 {'product': [0, 7, 0], 'productlist': [1, 1, 11]}
+313 {'product': [0, 9, 0], 'productlist': [1, 1, 11]}
+314 {'product': [0, 15, 0], 'productlist': [1, 1, 11]}
+315 {'product': [0, 9, 0], 'productlist': [1, 1, 10]}
+316 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+317 {'product': [0, 25, 0], 'productlist': [1, 1, 13]}
+318 {'product': [0, 25, 0], 'productlist': [1, 1, 13]}
+319 {'product': [0, 25, 0], 'productlist': [1, 1, 12]}
+320 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+321 {'product': [0, 17, 0], 'productlist': [1, 1, 11]}
+322 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+323 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+324 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+325 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+326 {'product': [0, 25, 0], 'productlist': [1, 1, 13]}
+327 {'product': [0, 9, 0], 'productlist': [1, 1, 11]}
+328 {'product': [0, 10, 0], 'productlist': [1, 1, 10]}
+329 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+330 {'product': [0, 25, 0], 'productlist': [1, 1, 12]}
+331 {'product': [0, 7, 0], 'productlist': [1, 1, 9]}
+332 {'product': [0, 6, 0], 'productlist': [1, 1, 9]}
+333 {'product': [0, 11, 0], 'productlist': [1, 1, 11]}
+334 {'product': [0, 16, 0], 'productlist': [1, 1, 10]}
+335 {'product': [0, 4, 0], 'productlist': [1, 1, 10]}
+336 {'product': [0, 23, 0], 'productlist': [1, 1, 11]}
+337 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+338 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+339 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+340 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+341 {'product': [0, 25, 0], 'productlist': [1, 1, 10]}
+342 {'product': [0, 13, 0], 'productlist': [1, 1, 11]}
+343 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+344 {'product': [0, 25, 0], 'productlist': [1, 1, 13]}
+345 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+346 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+347 {'product': [0, 5, 0], 'productlist': [1, 1, 10]}
+348 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+349 {'product': [0, 11, 0], 'productlist': [1, 1, 11]}
+350 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+351 {'product': [0, 13, 0], 'productlist': [1, 1, 11]}
+352 {'product': [0, 8, 0], 'productlist': [1, 1, 12]}
+353 {'product': [0, 8, 0], 'productlist': [1, 1, 11]}
+354 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+355 {'product': [0, 8, 0], 'productlist': [1, 1, 11]}
+356 {'product': [0, 6, 0], 'productlist': [1, 1, 11]}
+357 {'product': [0, 5, 0], 'productlist': [1, 1, 13]}
+358 {'product': [0, 17, 0], 'productlist': [1, 1, 11]}
+359 {'product': [0, 21, 0], 'productlist': [1, 1, 11]}
+360 {'product': [0, 20, 0], 'productlist': [1, 1, 11]}
+361 {'product': [0, 16, 0], 'productlist': [1, 1, 12]}
+362 {'product': [0, 5, 0], 'productlist': [1, 1, 12]}
+363 {'product': [0, 0, 0], 'productlist': [1, 1, 11]}
+364 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+365 {'product': [0, 4, 0], 'productlist': [1, 1, 9]}
+366 {'product': [0, 15, 0], 'productlist': [1, 1, 11]}
+367 {'product': [0, 25, 0], 'productlist': [1, 1, 10]}
+368 {'product': [0, 7, 0], 'productlist': [1, 1, 11]}
+369 {'product': [0, 25, 0], 'productlist': [1, 1, 11]}
+370 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+371 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+372 {'product': [0, 51, 0], 'productlist': [1, 1, 34]}
+373 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+374 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+375 {'product': [0, 50, 0], 'productlist': [1, 1, 35]}
+376 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+377 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+378 {'product': [0, 51, 0], 'productlist': [1, 1, 35]}
+379 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+380 {'product': [0, 52, 0], 'productlist': [1, 1, 37]}
+381 {'product': [0, 52, 0], 'productlist': [1, 1, 34]}
+382 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+383 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+384 {'product': [0, 52, 0], 'productlist': [1, 1, 40]}
+385 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+386 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+387 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+388 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+389 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+390 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+391 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+392 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+393 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+394 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+395 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+396 {'product': [0, 52, 0], 'productlist': [1, 1, 35]}
+397 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+398 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+399 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+400 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+401 {'product': [0, 52, 0], 'productlist': [1, 1, 38]}
+402 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+403 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+404 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+405 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+406 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+407 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+408 {'product': [0, 52, 0], 'productlist': [1, 1, 35]}
+409 {'product': [0, 52, 0], 'productlist': [1, 1, 35]}
+410 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+411 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+412 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+413 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+414 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+415 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+416 {'product': [0, 51, 0], 'productlist': [1, 1, 35]}
+417 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+418 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+419 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+420 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+421 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+422 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+423 {'product': [0, 52, 0], 'productlist': [1, 1, 34]}
+424 {'product': [0, 51, 0], 'productlist': [1, 1, 35]}
+425 {'product': [0, 52, 0], 'productlist': [1, 1, 38]}
+426 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+427 {'product': [0, 52, 0], 'productlist': [1, 1, 33]}
+428 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+429 {'product': [0, 52, 0], 'productlist': [1, 1, 38]}
+430 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+431 {'product': [0, 50, 0], 'productlist': [1, 1, 34]}
+432 {'product': [0, 46, 0], 'productlist': [1, 1, 38]}
+433 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+434 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+435 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+436 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+437 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+438 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+439 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+440 {'product': [0, 51, 0], 'productlist': [1, 1, 35]}
+441 {'product': [0, 50, 0], 'productlist': [1, 1, 33]}
+442 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+443 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+444 {'product': [0, 52, 0], 'productlist': [1, 1, 38]}
+445 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+446 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+447 {'product': [0, 52, 0], 'productlist': [1, 1, 34]}
+448 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+449 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+450 {'product': [0, 52, 0], 'productlist': [1, 1, 34]}
+451 {'product': [0, 52, 0], 'productlist': [1, 1, 39]}
+452 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+453 {'product': [0, 50, 0], 'productlist': [1, 1, 35]}
+454 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+455 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+456 {'product': [0, 51, 0], 'productlist': [1, 1, 35]}
+457 {'product': [0, 52, 0], 'productlist': [1, 1, 38]}
+458 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+459 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+460 {'product': [0, 44, 0], 'productlist': [1, 1, 36]}
+461 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+462 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+463 {'product': [0, 51, 0], 'productlist': [1, 1, 35]}
+464 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+465 {'product': [0, 52, 0], 'productlist': [1, 1, 38]}
+466 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+467 {'product': [0, 52, 0], 'productlist': [1, 1, 37]}
+468 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+469 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+470 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+471 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+472 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+473 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+474 {'product': [0, 48, 0], 'productlist': [1, 1, 36]}
+475 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+476 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+477 {'product': [0, 52, 0], 'productlist': [1, 1, 35]}
+478 {'product': [0, 52, 0], 'productlist': [1, 1, 34]}
+479 {'product': [0, 52, 0], 'productlist': [1, 1, 37]}
+480 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+481 {'product': [0, 52, 0], 'productlist': [1, 1, 35]}
+482 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+483 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+484 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+485 {'product': [0, 50, 0], 'productlist': [1, 1, 35]}
+486 {'product': [0, 52, 0], 'productlist': [1, 1, 37]}
+487 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+488 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+489 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+490 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+491 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+492 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+493 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+494 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+495 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+496 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+497 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+498 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+499 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+500 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+501 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+502 {'product': [0, 52, 0], 'productlist': [1, 1, 35]}
+503 {'product': [0, 52, 0], 'productlist': [1, 1, 37]}
+504 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+505 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+506 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+507 {'product': [0, 50, 0], 'productlist': [1, 1, 39]}
+508 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+509 {'product': [0, 52, 0], 'productlist': [1, 1, 35]}
+510 {'product': [0, 52, 0], 'productlist': [1, 1, 34]}
+511 {'product': [0, 52, 0], 'productlist': [1, 1, 34]}
+512 {'product': [0, 50, 0], 'productlist': [1, 1, 35]}
+513 {'product': [0, 51, 0], 'productlist': [1, 1, 37]}
+514 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+515 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+516 {'product': [0, 52, 0], 'productlist': [1, 1, 35]}
+517 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+518 {'product': [0, 50, 0], 'productlist': [1, 1, 35]}
+519 {'product': [0, 52, 0], 'productlist': [1, 1, 34]}
+520 {'product': [0, 50, 0], 'productlist': [1, 1, 35]}
+521 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+522 {'product': [0, 52, 0], 'productlist': [1, 1, 35]}
+523 {'product': [0, 52, 0], 'productlist': [1, 1, 38]}
+524 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+525 {'product': [0, 52, 0], 'productlist': [1, 1, 37]}
+526 {'product': [0, 52, 0], 'productlist': [1, 1, 38]}
+527 {'product': [0, 51, 0], 'productlist': [1, 1, 36]}
+528 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+529 {'product': [0, 50, 0], 'productlist': [1, 1, 35]}
+530 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+531 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+532 {'product': [0, 52, 0], 'productlist': [1, 1, 34]}
+533 {'product': [0, 52, 0], 'productlist': [1, 1, 35]}
+534 {'product': [0, 50, 0], 'productlist': [1, 1, 36]}
+535 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+536 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+537 {'product': [0, 52, 0], 'productlist': [1, 1, 36]}
+538 {'product': [0, 3, 0], 'productlist': [1, 1, 23]}
+539 {'product': [0, 10, 0], 'productlist': [1, 1, 25]}
+540 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+541 {'product': [0, 10, 0], 'productlist': [1, 1, 28]}
+542 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+543 {'product': [0, 6, 0], 'productlist': [1, 1, 23]}
+544 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+545 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+546 {'product': [0, 8, 0], 'productlist': [1, 1, 25]}
+547 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+548 {'product': [0, 1, 0], 'productlist': [0, 1, 22]}
+549 {'product': [0, 4, 0], 'productlist': [1, 1, 23]}
+550 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+551 {'product': [0, 10, 0], 'productlist': [1, 1, 29]}
+552 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+553 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+554 {'product': [0, 6, 0], 'productlist': [1, 1, 23]}
+555 {'product': [0, 10, 0], 'productlist': [1, 1, 28]}
+556 {'product': [0, 2, 0], 'productlist': [0, 1, 24]}
+557 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+558 {'product': [0, 2, 0], 'productlist': [0, 1, 23]}
+559 {'product': [0, 10, 0], 'productlist': [1, 1, 31]}
+560 {'product': [0, 3, 0], 'productlist': [1, 1, 25]}
+561 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+562 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+563 {'product': [0, 10, 0], 'productlist': [1, 1, 29]}
+564 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+565 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+566 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+567 {'product': [0, 3, 0], 'productlist': [1, 1, 24]}
+568 {'product': [0, 8, 0], 'productlist': [1, 1, 23]}
+569 {'product': [0, 8, 0], 'productlist': [1, 1, 25]}
+570 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+571 {'product': [0, 9, 0], 'productlist': [1, 1, 24]}
+572 {'product': [0, 3, 0], 'productlist': [1, 1, 22]}
+573 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+574 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+575 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+576 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+577 {'product': [0, 4, 0], 'productlist': [1, 1, 25]}
+578 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+579 {'product': [0, 3, 0], 'productlist': [1, 1, 23]}
+580 {'product': [0, 10, 0], 'productlist': [1, 1, 29]}
+581 {'product': [0, 6, 0], 'productlist': [1, 1, 25]}
+582 {'product': [0, 9, 0], 'productlist': [1, 1, 24]}
+583 {'product': [0, 10, 0], 'productlist': [1, 1, 28]}
+584 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+585 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+586 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+587 {'product': [0, 10, 0], 'productlist': [1, 1, 28]}
+588 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+589 {'product': [0, 2, 0], 'productlist': [0, 1, 24]}
+590 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+591 {'product': [0, 9, 0], 'productlist': [1, 1, 24]}
+592 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+593 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+594 {'product': [0, 4, 0], 'productlist': [1, 1, 23]}
+595 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+596 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+597 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+598 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+599 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+600 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+601 {'product': [0, 10, 0], 'productlist': [1, 1, 23]}
+602 {'product': [0, 10, 0], 'productlist': [1, 1, 29]}
+603 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+604 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+605 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+606 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+607 {'product': [0, 10, 0], 'productlist': [1, 1, 31]}
+608 {'product': [0, 4, 0], 'productlist': [1, 1, 23]}
+609 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+610 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+611 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+612 {'product': [0, 8, 0], 'productlist': [1, 1, 24]}
+613 {'product': [0, 10, 0], 'productlist': [1, 1, 23]}
+614 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+615 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+616 {'product': [0, 6, 0], 'productlist': [1, 1, 24]}
+617 {'product': [0, 2, 0], 'productlist': [0, 1, 23]}
+618 {'product': [0, 3, 0], 'productlist': [1, 1, 22]}
+619 {'product': [0, 2, 0], 'productlist': [0, 1, 24]}
+620 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+621 {'product': [0, 2, 0], 'productlist': [0, 1, 23]}
+622 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+623 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+624 {'product': [0, 7, 0], 'productlist': [1, 1, 26]}
+625 {'product': [0, 10, 0], 'productlist': [1, 1, 25]}
+626 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+627 {'product': [0, 10, 0], 'productlist': [1, 1, 28]}
+628 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+629 {'product': [0, 2, 0], 'productlist': [0, 1, 23]}
+630 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+631 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+632 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+633 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+634 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+635 {'product': [0, 10, 0], 'productlist': [1, 1, 25]}
+636 {'product': [0, 10, 0], 'productlist': [1, 1, 29]}
+637 {'product': [0, 7, 0], 'productlist': [1, 1, 24]}
+638 {'product': [0, 9, 0], 'productlist': [1, 1, 24]}
+639 {'product': [0, 2, 0], 'productlist': [0, 1, 23]}
+640 {'product': [0, 5, 0], 'productlist': [1, 1, 23]}
+641 {'product': [0, 4, 0], 'productlist': [1, 1, 24]}
+642 {'product': [0, 10, 0], 'productlist': [1, 1, 29]}
+643 {'product': [0, 10, 0], 'productlist': [1, 1, 25]}
+644 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+645 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+646 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+647 {'product': [0, 10, 0], 'productlist': [1, 1, 24]}
+648 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+649 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+650 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+651 {'product': [0, 2, 0], 'productlist': [0, 1, 24]}
+652 {'product': [0, 10, 0], 'productlist': [1, 1, 31]}
+653 {'product': [0, 5, 0], 'productlist': [1, 1, 28]}
+654 {'product': [0, 10, 0], 'productlist': [1, 1, 29]}
+655 {'product': [0, 10, 0], 'productlist': [1, 1, 29]}
+656 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+657 {'product': [0, 10, 0], 'productlist': [1, 1, 23]}
+658 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+659 {'product': [0, 1, 0], 'productlist': [0, 1, 22]}
+660 {'product': [0, 7, 0], 'productlist': [1, 1, 22]}
+661 {'product': [0, 10, 0], 'productlist': [1, 1, 31]}
+662 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+663 {'product': [0, 6, 0], 'productlist': [1, 1, 25]}
+664 {'product': [0, 7, 0], 'productlist': [1, 1, 24]}
+665 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+666 {'product': [0, 1, 0], 'productlist': [0, 1, 23]}
+667 {'product': [0, 8, 0], 'productlist': [1, 1, 23]}
+668 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+669 {'product': [0, 9, 0], 'productlist': [1, 1, 24]}
+670 {'product': [0, 2, 0], 'productlist': [0, 1, 23]}
+671 {'product': [0, 8, 0], 'productlist': [1, 1, 23]}
+672 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+673 {'product': [0, 7, 0], 'productlist': [1, 1, 25]}
+674 {'product': [0, 10, 0], 'productlist': [1, 1, 30]}
+675 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+676 {'product': [0, 2, 0], 'productlist': [0, 1, 24]}
+677 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+678 {'product': [0, 10, 0], 'productlist': [1, 1, 28]}
+679 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+680 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+681 {'product': [0, 2, 0], 'productlist': [0, 1, 23]}
+682 {'product': [0, 10, 0], 'productlist': [1, 1, 26]}
+683 {'product': [0, 4, 0], 'productlist': [1, 1, 23]}
+684 {'product': [0, 0, 0], 'productlist': [0, 0, 0]}
+685 {'product': [0, 5, 0], 'productlist': [1, 1, 22]}
+686 {'product': [0, 4, 0], 'productlist': [1, 1, 23]}
+687 {'product': [0, 10, 0], 'productlist': [1, 1, 27]}
+
+total
+{'product': [0, 14524, 0], 'productlist': [653, 674, 17260]}
+
+key	recall	precision
+{'product': [0.0, 1, 0.0], 'productlist': [0.96884272997032639, 0.037833140208574742, 0.072822571651611476]}

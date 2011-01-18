@@ -5,8 +5,8 @@ from eri.extractors.distancebypair2.node import Node
 
 # chose match function
 #from eri.utils.match import match as match #mathc1 # ou matchdistance
-from eri.utils.match import match2 as match #match2 ou matchtreedistance
-#from eri.utils.match import treematch as match #match3 ou matchingtrees
+#from eri.utils.match import match2 as match #match2 ou matchtreedistance
+from eri.utils.match import treematch as match #match3 ou matchingtrees
 
 class Table(Base):
     """
@@ -80,8 +80,8 @@ class Table(Base):
         itables = []
         self.tDfs(tree,itables)
 
-        print 'tables',  len(tables)
-        print 'itables', len(itables)
+        #print 'tables',  len(tables)
+        #print 'itables', len(itables)
 
         for table in itables:
             p = False
@@ -125,14 +125,14 @@ class Table(Base):
         itables = []
         self.tDfs(tree,itables)
 
-        print 'tables',  len(tables)
-        print 'itables', len(itables)
+        #print 'tables',  len(tables)
+        #print 'itables', len(itables)
 
         for table in itables:
             if post:
                 (tr,td, t) = self.count_tr_td(table)
                 if tr > 0 and td/float(tr) > 1:
-                    print 'mark', td/float(tr)
+#                    print 'mark', td/float(tr)
                     marker.mark(table.dom,'table')
             else:
                 marker.mark(table.dom, 'table')
@@ -142,7 +142,7 @@ class Table(Base):
 
         self._comp = 0
 #        self._mark2(dom, marker, True)
-        self._mark(dom,marker, True)
+        self._mark(dom,marker, False)
         result = marker.process()
 
         if not result:

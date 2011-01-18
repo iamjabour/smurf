@@ -1,0 +1,128 @@
+benchmark
+1 30
+find productlist
+0 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/mens-watches.html
+2 30
+find productlist
+1 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.bloom.html
+3 30
+find productlist
+2 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.graco.html
+4 30
+find productlist
+3 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.html
+5 30
+find productlist
+4 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.crocodile-creek.html
+6 30
+find productlist
+5 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.get-enterprises.html
+7 30
+find productlist
+6 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/home-decor.html
+8 30
+find productlist
+7 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/cribs-and-bassinets.html
+9 30
+find productlist
+8 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.lullaby.html
+10 30
+find productlist
+9 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.baby-smart.html
+11 30
+find productlist
+10 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.wela-electronic.html
+12 30
+find productlist
+11 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.green-baby.html
+13 30
+find productlist
+12 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.kelty.html
+14 30
+find productlist
+13 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/tires-and-wheels.html
+15 30
+find productlist
+14 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.playtex.html
+16 30
+find productlist
+15 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/digital-cameras.html
+17 30
+find productlist
+16 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/bath-and-body.html
+18 30
+find productlist
+17 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.skip-hop.html
+19 30
+find productlist
+18 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/sunglasses.html
+20 30
+find productlist
+19 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/necklaces.html
+21 30
+find productlist
+20 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.gerber-blades.html
+22 30
+find productlist
+21 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.mud-pie.html
+23 30
+find productlist
+22 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/hair-care.html
+24 30
+find productlist
+23 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.summer-infant.html
+25 30
+find productlist
+24 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.rc2.html
+26 30
+find productlist
+25 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/mens-clothing-suits.html
+27 30
+find productlist
+26 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/vacuums.html
+28 30
+find productlist
+27 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/baby-care-baby-activity.html
+29 30
+find productlist
+28 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/flat-panel-plasma-and-lcd-tvs.html
+30 30
+find productlist
+29 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/mysimon/proof/nursing-and-feeding.under-the-nile.html
+31 30
+0 {'product': [25, 25, 48], 'productlist': [1, 1, 3]}
+1 {'product': [19, 19, 44], 'productlist': [1, 1, 2]}
+2 {'product': [15, 15, 44], 'productlist': [1, 1, 2]}
+3 {'product': [25, 25, 44], 'productlist': [1, 1, 3]}
+4 {'product': [7, 7, 35], 'productlist': [1, 1, 2]}
+5 {'product': [10, 10, 36], 'productlist': [1, 1, 2]}
+6 {'product': [0, 0, 49], 'productlist': [1, 1, 3]}
+7 {'product': [25, 25, 47], 'productlist': [1, 1, 3]}
+8 {'product': [8, 8, 28], 'productlist': [1, 1, 2]}
+9 {'product': [2, 2, 22], 'productlist': [1, 1, 2]}
+10 {'product': [18, 18, 45], 'productlist': [1, 1, 2]}
+11 {'product': [11, 11, 45], 'productlist': [1, 1, 2]}
+12 {'product': [5, 5, 44], 'productlist': [1, 1, 2]}
+13 {'product': [0, 0, 48], 'productlist': [1, 1, 3]}
+14 {'product': [25, 25, 45], 'productlist': [1, 1, 2]}
+15 {'product': [23, 25, 41], 'productlist': [1, 1, 2]}
+16 {'product': [25, 25, 43], 'productlist': [1, 1, 3]}
+17 {'product': [14, 14, 44], 'productlist': [1, 1, 2]}
+18 {'product': [25, 25, 47], 'productlist': [1, 1, 3]}
+19 {'product': [0, 0, 49], 'productlist': [1, 1, 3]}
+20 {'product': [25, 25, 45], 'productlist': [1, 1, 2]}
+21 {'product': [16, 16, 44], 'productlist': [1, 1, 2]}
+22 {'product': [25, 25, 45], 'productlist': [1, 1, 3]}
+23 {'product': [15, 15, 45], 'productlist': [1, 1, 2]}
+24 {'product': [5, 5, 44], 'productlist': [1, 1, 2]}
+25 {'product': [0, 0, 43], 'productlist': [1, 1, 3]}
+26 {'product': [25, 25, 48], 'productlist': [1, 1, 3]}
+27 {'product': [25, 25, 44], 'productlist': [1, 1, 3]}
+28 {'product': [23, 25, 40], 'productlist': [1, 1, 3]}
+29 {'product': [8, 8, 33], 'productlist': [1, 1, 2]}
+
+total
+{'product': [449, 453, 1279], 'productlist': [30, 30, 73]}
+
+key	recall	precision
+{'product': [0.99116997792494477, 0.35105551211884284, 0.51847575057736717], 'productlist': [1.0, 0.41095890410958902, 0.58252427184466027]}

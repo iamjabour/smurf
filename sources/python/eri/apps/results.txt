@@ -1,0 +1,527 @@
+benchmark
+1 10
+find productlist
+0 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/americanas/proof/594.35320.html
+66  
+               
+               
+               
+                
+862 	
+										
+					
+
+
+Banheira Avulsa Decorada Turma da MÃ´nica - LilÃ¡s - HÃ©rcules
+ R$ 34,9
+1063 	
+										
+					
+
+
+Banheira Standard Zoo - Verde - HÃ©rcules
+De: R$ 179,90
+Por: R$ 179,00
+ou 5
+2426 AlimentaÃ§Ã£oAlimentos InfantisBabadoresCadeirÃ£oCoposKit AlimentaÃ§Ã£oLeite PapinhasPrato
+517 
+            DÃºvidas
+               Troca e DevoluÃ§Ã£o 
+               Central de Atendiment
+2426 AlimentaÃ§Ã£oAlimentos InfantisBabadoresCadeirÃ£oCoposKit AlimentaÃ§Ã£oLeite PapinhasPrato
+4594  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+6121 
+
+
+
+	Mostrando 1 - 20 produto(s) do total de 28 distribuído(s) em 2 página(s) 
+
+	
+	
+
+
+
+
+3886 
+            
+              Departamentos
+              Alimentos & Bebidas
+                 
+      
+6121
+add 
+
+
+
+	Mostrando 1 - 20 produto(s) do total de 28 distribuído(s) em 2 página(s) 
+
+	
+	
+
+
+
+
+2 10
+find productlist
+1 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/americanas/proof/8936.17739.html
+4594  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+3543 
+
+
+
+	Mostrando 1 - 14 produto(s) do total de 14 distribuído(s) em 1 página(s) 
+
+	
+	
+
+
+
+
+517 
+            DÃºvidas
+               Troca e DevoluÃ§Ã£o 
+               Central de Atendiment
+3886 
+            
+              Departamentos
+              Alimentos & Bebidas
+                 
+      
+66  
+               
+               
+               
+                
+4594
+add  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+3 10
+find productlist
+2 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/americanas/proof/8936.19287.html
+3886 
+            
+              Departamentos
+              Alimentos & Bebidas
+                 
+      
+5003 
+
+
+
+	Mostrando 1 - 20 produto(s) do total de 23 distribuído(s) em 2 página(s) 
+
+	
+	
+
+
+
+
+517 
+            DÃºvidas
+               Troca e DevoluÃ§Ã£o 
+               Central de Atendiment
+4594  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+66  
+               
+               
+               
+                
+5003
+add 
+
+
+
+	Mostrando 1 - 20 produto(s) do total de 23 distribuído(s) em 2 página(s) 
+
+	
+	
+
+
+
+
+4 10
+find productlist
+3 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/americanas/proof/17278.41965.html
+1527 GPS
+DVD Player AutomotivoMonitoresDVD PlayerDVD Player c/ Tela
+Som AutomotivoSom AutomotivoAcessÃ³
+1527 GPS
+DVD Player AutomotivoMonitoresDVD PlayerDVD Player c/ Tela
+Som AutomotivoSom AutomotivoAcessÃ³
+1325 	
+										
+					
+
+
+Subwoofer Marinizado 10"  600W de PotÃªncia - M10 - Hurricane Marine Audio
+
+4594  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+517 
+            DÃºvidas
+               Troca e DevoluÃ§Ã£o 
+               Central de Atendiment
+3886 
+            
+              Departamentos
+              Alimentos & Bebidas
+                 
+      
+66  
+               
+               
+               
+                
+4594
+add  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+5 10
+find productlist
+4 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/americanas/proof/8936.8994.html
+3886 
+            
+              Departamentos
+              Alimentos & Bebidas
+                 
+      
+4395 
+
+
+
+	Mostrando 1 - 20 produto(s) do total de 44 distribuído(s) em 3 página(s) 
+
+	
+	
+
+
+
+
+517 
+            DÃºvidas
+               Troca e DevoluÃ§Ã£o 
+               Central de Atendiment
+4594  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+66  
+               
+               
+               
+                
+4594
+add  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+6 10
+find productlist
+5 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/americanas/proof/8936.54143.html
+4594  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+66  
+               
+               
+               
+                
+517 
+            DÃºvidas
+               Troca e DevoluÃ§Ã£o 
+               Central de Atendiment
+3886 
+            
+              Departamentos
+              Alimentos & Bebidas
+                 
+      
+3637 
+
+
+
+	Mostrando 1 - 17 produto(s) do total de 17 distribuído(s) em 1 página(s) 
+
+	
+	
+
+
+
+
+4594
+add  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+7 10
+find productlist
+6 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/americanas/proof/8936.45445.html
+4594  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+66  
+               
+               
+               
+                
+517 
+            DÃºvidas
+               Troca e DevoluÃ§Ã£o 
+               Central de Atendiment
+3886 
+            
+              Departamentos
+              Alimentos & Bebidas
+                 
+      
+4461 
+
+
+
+	Mostrando 1 - 20 produto(s) do total de 20 distribuído(s) em 1 página(s) 
+
+	
+	
+
+
+
+
+4594
+add  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+8 10
+find productlist
+7 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/americanas/proof/594.14060.html
+2426 AlimentaÃ§Ã£oAlimentos InfantisBabadoresCadeirÃ£oCoposKit AlimentaÃ§Ã£oLeite PapinhasPrato
+5075 
+
+
+
+	Mostrando 1 - 14 produto(s) do total de 14 distribuído(s) em 1 página(s) 
+
+	
+	
+
+
+
+
+2426 AlimentaÃ§Ã£oAlimentos InfantisBabadoresCadeirÃ£oCoposKit AlimentaÃ§Ã£oLeite PapinhasPrato
+3886 
+            
+              Departamentos
+              Alimentos & Bebidas
+                 
+      
+4594  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+773 	
+										
+					
+
+
+BabÃ¡ EletrÃ´nica BÃ¡sica 49MHZ - Branca c/ Cinza - Alcance de 180m - 1
+517 
+            DÃºvidas
+               Troca e DevoluÃ§Ã£o 
+               Central de Atendiment
+66  
+               
+               
+               
+                
+5075
+add 
+
+
+
+	Mostrando 1 - 14 produto(s) do total de 14 distribuído(s) em 1 página(s) 
+
+	
+	
+
+
+
+
+9 10
+find productlist
+8 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/americanas/proof/17278.34924.html
+517 
+            DÃºvidas
+               Troca e DevoluÃ§Ã£o 
+               Central de Atendiment
+1527 GPS
+DVD Player AutomotivoMonitoresDVD PlayerDVD Player c/ Tela
+Som AutomotivoSom AutomotivoAcessÃ³
+66  
+               
+               
+               
+                
+1527 GPS
+DVD Player AutomotivoMonitoresDVD PlayerDVD Player c/ Tela
+Som AutomotivoSom AutomotivoAcessÃ³
+12699 
+
+
+
+	Mostrando 1 - 20 produto(s) do total de 74 distribuído(s) em 4 página(s) 
+
+	
+	
+
+
+
+
+4594  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+3886 
+            
+              Departamentos
+              Alimentos & Bebidas
+                 
+      
+12699
+add 
+
+
+
+	Mostrando 1 - 20 produto(s) do total de 74 distribuído(s) em 4 página(s) 
+
+	
+	
+
+
+
+
+10 10
+find productlist
+9 /home/iamjabour/workspacePessoal/tese/corpus/comercioeletronico/americanas/proof/594.14035.html
+66  
+               
+               
+               
+                
+2426 AlimentaÃ§Ã£oAlimentos InfantisBabadoresCadeirÃ£oCoposKit AlimentaÃ§Ã£oLeite PapinhasPrato
+5111 
+
+
+
+	Mostrando 1 - 20 produto(s) do total de 93 distribuído(s) em 5 página(s) 
+
+	
+	
+
+
+
+
+2426 AlimentaÃ§Ã£oAlimentos InfantisBabadoresCadeirÃ£oCoposKit AlimentaÃ§Ã£oLeite PapinhasPrato
+517 
+            DÃºvidas
+               Troca e DevoluÃ§Ã£o 
+               Central de Atendiment
+4594  
+          
+            
+              Departamentos
+              Alimentos & Bebidas
+            
+872 	
+										
+					
+
+
+A Banda - Dican
+ R$ 169,90
+ou 5x de R$ 33,98
+sem juros
+
+					
+			
+				
+		
+3886 
+            
+              Departamentos
+              Alimentos & Bebidas
+                 
+      
+5111
+add 
+
+
+
+	Mostrando 1 - 20 produto(s) do total de 93 distribuído(s) em 5 página(s) 
+
+	
+	
+
+
+
+
+11 10
+0 {'product': [0, 20, 3], 'productlist': [1, 1, 1]}
+1 {'product': [0, 14, 13], 'productlist': [0, 1, 1]}
+2 {'product': [0, 20, 5], 'productlist': [1, 1, 1]}
+3 {'product': [0, 4, 13], 'productlist': [0, 1, 1]}
+4 {'product': [0, 20, 13], 'productlist': [0, 1, 1]}
+5 {'product': [0, 17, 13], 'productlist': [0, 1, 1]}
+6 {'product': [0, 20, 13], 'productlist': [0, 1, 1]}
+7 {'product': [0, 14, 3], 'productlist': [1, 1, 1]}
+8 {'product': [0, 20, 5], 'productlist': [1, 1, 1]}
+9 {'product': [0, 20, 4], 'productlist': [1, 1, 1]}
+
+total
+{'product': [0, 169, 85], 'productlist': [5, 10, 10]}
+
+key	recall	precision
+{'product': [0.0, 0.0, 0.0], 'productlist': [0.5, 0.5, 0.5]}

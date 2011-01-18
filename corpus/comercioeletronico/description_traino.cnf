@@ -1,0 +1,11 @@
+{
+"name": "comercioeletronico",
+"prooftype": "CeProof",
+"corpus": 
+[
+	{"name":"americanas", "path":"americanas", "proof":"americanas/proof", "type':"files"},
+	{"name":"target", "path":"target", "proof":"target/proof", "type":"files"},
+	{"name":"dealextreme", "path":"dealextreme", "proof":"dealextreme/proof", "type':"files"}
+]
+}
+
