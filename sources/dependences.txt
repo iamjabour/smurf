@@ -1,0 +1,6 @@
+for unix:
+libxml2
+for python:
+python-libxml2
+libxml2dom
+
